@@ -18,6 +18,13 @@ const NAV = [
   ['Hakkında', 'hakkinda'],
 ] as const;
 
+// Yazar kartındaki sayaç: yayımlanmış yazı sayısı; yalnızca henüz yayımlanmamış (taslak) yazısı olan yazarlar için "Yakında".
+const byAuthor = (list: typeof ARTICLES, name: string) => list.filter((a) => a.author.replace(/^(FM|GM)\s+/, '') === name).length;
+const authorCount = (name: string) => {
+  const n = byAuthor(PUBLISHED, name);
+  return n > 0 || byAuthor(ARTICLES, name) === 0 ? `${n} yazı` : 'Yakında';
+};
+
 const CATS = ['Tümü', ...Array.from(new Set(PUBLISHED.map((a) => a.cat)))];
 
 const AUTHORS = [
@@ -25,6 +32,7 @@ const AUTHORS = [
   { name: 'Selin Kaya', role: 'Röportaj & Turnuva', bio: 'Turnuva salonlarından haber ve portreler.' },
   { name: 'Kerem Aydın', role: 'Analiz Editörü', bio: 'Açılış teorisi ve motor destekli analizler.' },
   { name: 'Ahmad Al-Khatib', role: 'Konuk yazar', bio: 'Ürdün’ün ilk Büyükustası (GM)' },
+  { name: 'Tarık Selbes', role: 'Turnuva günlükleri', bio: 'FIDE Ustası (FM); uluslararası usta (IM) yolunda, üç normu tamam.' },
 ];
 
 function useReveal() {
@@ -196,7 +204,7 @@ export default function Index() {
                 {a.thumb && <ProgressiveImage path={a.thumb} alt={a.thumbAlt ?? ''} />}
                 {a.diagram && <FenDiagram fen={a.diagram} orientation={a.diagramOrientation} label={a.diagramAlt ?? a.title} caption={a.diagramCaption} fill={i === 0} />}
                 <p className="f-mono text-[#C8893E] mt-6">{a.cat} · {a.read || a.date}</p>
-                <h3 className={`f-display mt-3 ${a.draft ? '' : 'group-hover:italic'} transition-all ${i === 0 ? 'text-5xl md:text-6xl' : 'text-3xl md:text-4xl'}`}>{a.title}</h3>
+                <h3 className={`f-display mt-3 ${a.draft ? '' : 'group-hover:italic'} transition-all ${i === 0 ? 'text-5xl md:text-6xl' : 'text-3xl md:text-4xl'}`}>{a.titleLines ? <>{a.titleLines[0]}<br /><em className="italic text-[#C8893E]">{a.titleLines[1]}</em></> : a.title}</h3>
                 {a.dek && <p className="text-[#F1E9DC]/70 mt-3 max-w-xl">{a.dek}</p>}
                 <p className="f-mono text-[#A89A88] mt-4">{a.author}</p>
               </>
@@ -256,7 +264,7 @@ export default function Index() {
               <h3 className="f-display text-3xl">{au.name}</h3>
               <p className="f-mono text-[#C8893E] mt-3">{au.role}</p>
               <p className="text-[#F1E9DC]/70 mt-4">{au.bio}</p>
-              <p className="f-mono text-[#A89A88] mt-6">{PUBLISHED.filter((a) => a.author.replace(/^(FM|GM)\s+/, '') === au.name).length} yazı</p>
+              <p className="f-mono text-[#A89A88] mt-6">{authorCount(au.name)}</p>
             </div>
           ))}
         </div>

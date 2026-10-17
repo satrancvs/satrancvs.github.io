@@ -7,7 +7,7 @@ import data from './articles.json';
 
 export type Article = {
   id: string; slug: string; cat: string; title: string; dek?: string; author: string; translator?: string; read: string;
-  excerpt?: string; date?: string; chunks?: string[]; photo?: boolean; thumb?: string; thumbAlt?: string; diagram?: string; diagramAlt?: string; diagramCaption?: string; diagramOrientation?: 'white' | 'black'; draft?: boolean; body: string[];
+  excerpt?: string; date?: string; chunks?: string[]; photo?: boolean; thumb?: string; thumbAlt?: string; diagram?: string; diagramAlt?: string; diagramCaption?: string; titleLines?: [string, string]; diagramOrientation?: 'white' | 'black'; draft?: boolean; body: string[];
 };
 
 // Gövdesi markdown dosyasından gelen yazılar (id -> dosya)

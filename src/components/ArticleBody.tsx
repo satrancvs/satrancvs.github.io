@@ -267,7 +267,7 @@ const mdOptions = {
   overrides: {
     h3: { props: { className: 'f-display text-4xl md:text-5xl mt-16 mb-6 text-[#F1E9DC]' } },
     a: { props: { className: 'text-[#C8893E] underline underline-offset-4', target: '_blank', rel: 'noreferrer' } },
-    blockquote: { props: { className: 'my-8 border-l-2 border-[#C8893E] pl-6 italic text-[#F1E9DC]/75' } },
+    blockquote: { props: { className: 'my-8 border-l-2 border-[#C8893E] pl-6 italic text-[#F1E9DC]/75 [&>p+p]:mt-5' } },
     strong: { props: { className: 'font-semibold text-[#F1E9DC]' } },
   },
 };
