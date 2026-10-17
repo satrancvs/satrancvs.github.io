@@ -1,5 +1,3 @@
-*Bu yazı ilk olarak 2016 yılında* ***Satrançsever*** *dergisinin 3. sayısında yayınlanmıştır.*
-
 Masamızın üzerinde, dünyanın bir numarası Magnus Carlsen’in de çok ilgi çekici bulduğu kitaplardan biri var.
 
 Satranca başladığımızda her şeyin iyi gittiği, oyundan zevk alınan güzel bir dönemin ardından bazı engellerle karşılaşırız. O engeller, aslında yeterince iyi olmadığımızı fark ettiğimiz anlar ya da daha doğru bir deyişle satrancın daha iyi oynanabileceğine bizi ikna eden rakiplerdir çoğunlukla. İlk kitabımızı ve bizi yenen rakibimizin tavsiyelerini alıp oyunumuz üzerine çalışırız. Taktikler, klasikler, açılışlar, oyunortası ve oyunsonu... İşler tekrar yoluna girer, ta ki ayağımız başka bir taşa takılana kadar. Bu taş çoğunlukla sağlam bir kaya olur; ne yapsak etsek de belli bir seviyenin ötesine geçmenin imkânsız olduğunu hissederiz.
