@@ -14,7 +14,7 @@
   {
     "id": "karlsruhe",
     "slug": "karlsruhe-ve-yol-ayrimlari",
-    "cat": "Analizli oyunlar",
+    "cat": "Turnuva günlükleri",
     "title": "Karlsruhe ve yol ayrımları",
     "author": "FM Tarık Selbes",
     "read": "",
@@ -24,13 +24,18 @@
     "diagramOrientation": "black",
     "diagramAlt": "Watarkar–Selbes partisinde 22. Ff4! sonrası konum: Siyah oynar",
     "diagramCaption": "Watarkar – Selbes, GRENKE Açık A kategorisi, 02.04.2026. 22. Ff4! sonrası, Siyah oynar.",
-    "body": []
+    "body": [],
+    "titleLines": [
+      "Karlsruhe ve",
+      "yol ayrımları"
+    ],
+    "dek": "Üç IM normunu tamamlayan FM Tarık Selbes, 2400 Elo barajını aştığında uluslararası usta ünvanına kavuşacak. Yolun duraklarından biri: Karlsruhe, GRENKE Chess Open 2026 A kategorisi."
   },
   {
     "id": "zebra",
     "slug": "zebralar-icin-satranc",
     "cat": "Kitap incelemeleri",
-    "title": "Zebralar için Satranç",
+    "title": "\"Zebralar için Satranç\"",
     "dek": "Büyükusta Jonathan Rowson'ın \"Chess for Zebras\" kitabı üzerine: satrançta takılıp kaldığımızda farklı düşünmek.",
     "author": "FM Nazmi Can Doğan",
     "read": "10 dk",
@@ -39,19 +44,6 @@
     "body": [
       "Masamızın üzerinde, dünyanın bir numarası Magnus Carlsen'in de çok ilgi çekici bulduğu kitaplardan biri var.",
       "Büyükusta Jonathan Rowson'ın \"Chess for Zebras\" kitabı üzerine bir inceleme."
-    ]
-  },
-  {
-    "id": "roportaj",
-    "slug": "kaybetmeyi-ogrenmeden-ustalasamazsin",
-    "cat": "Röportaj",
-    "title": "“Kaybetmeyi öğrenmeden ustalaşamazsın”",
-    "dek": "Genç bir büyükusta ile hazırlık, yorgunluk ve turnuva psikolojisi üzerine.",
-    "author": "Selin Kaya",
-    "read": "11 dk",
-    "body": [
-      "Bir turnuvanın son turunda, saat düşerken neler hissedilir? Konuğumuz kariyerinin dönüm noktalarını anlatıyor.",
-      "“İlk yıllarda her yenilgi bir hakaret gibiydi. Sonra fark ettim ki en çok kaybettiğim partilerden öğreniyorum.”"
     ]
   },
   {
@@ -78,19 +70,6 @@
     "body": [
       "Damı Gambiti yüz yılı aşkın süredir üst düzey satrancın merkezinde.",
       "Bu yazıda ana varyantları ve son yıllarda öne çıkan yan yolları inceliyoruz."
-    ]
-  },
-  {
-    "id": "turnuva",
-    "slug": "bir-hafta-sonunda-dokuz-tur",
-    "cat": "Turnuva",
-    "title": "Bir hafta sonunda dokuz tur",
-    "dek": "Açık turnuvaların yorucu ve büyüleyici dünyasından notlar.",
-    "author": "Selin Kaya",
-    "read": "7 dk",
-    "body": [
-      "Sabah dokuzda başlayan ilk tur, gece yarısına doğru biten son parti…",
-      "Açık turnuvalar, satrancın en demokratik sahnesi."
     ]
   },
   {
