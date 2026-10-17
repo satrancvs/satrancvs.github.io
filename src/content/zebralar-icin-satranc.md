@@ -8,7 +8,7 @@ O hâlde, yazılışından kısa bir süre sonra satranç literatüründe saygı
 
 Satranç otoriteleri tarafından takdirle karşılanan ***"Seven Deadly Chess Sins"*** ("Yedi Ölümcül Satranç Günahı") kitabından sonra karşımızda yine en az onun kadar etkileyici bir kitap var: ***"Chess for Zebras"*** ("Zebralar için Satranç").
 
-![Jonathan Rowson'ın Chess for Zebras kitabının kapağı](images/chess-for-zebras-cover.jpg "Jonathan Rowson, *Chess for Zebras* (Gambit, 2005). Kapak: [gambitbooks.com](http://www.gambitbooks.com/bigimg/Chess_for_Zebras_Big.jpg)")
+![Jonathan Rowson'ın Chess for Zebras kitabının kapağı](images/chess-for-zebras-cover.jpg "Jonathan Rowson, “Chess for Zebras” kapak görseli · Gambit, 2005 · Kaynak: [Gambit Books](http://www.gambitbooks.com/bigimg/Chess_for_Zebras_Big.jpg)")
 
 Kitap üç bölümden oluşuyor: İlk bölüm daha çok satranç oyuncusunun psikolojisine değinirken, ikinci bölüm Rowson'ın da belirttiği gibi, oyuncu psikolojisi konusundan ziyade teknik olarak satrancın kendisiyle en dolu bölüm. "Benim için işe yarayan bir şey" kısmında Rowson, **Kasparov**'un "artık satrancı tam olarak kapsamadığını düşündüğü" üç boyutlu düşünüşünü (Materyal, Nitelik ve Zaman) eleştirip üzerine saat ("clock ticking") faktörünü ekleyerek ilerliyor. Özellikle bu kısımlar benim gibi zaman sıkışmasına sık giren oyuncular için önemli bölümler barındırıyor. Yazarın "düşünme zamanının fırsat maliyeti" diyerek açıkladığı bölüm gibi:
 
@@ -28,7 +28,7 @@ Kitabı için pek çok farklı isim düşündükten sonra *"Chess for Zebras: Th
 
 > "Toynak sesi duyunca zebra gelsin aklına."
 
-![Su içen üç zebra](images/three-zebras-drinking.jpg "Su içen üç zebra. Tanzanya'da safaride çekilmiş bu fotoğrafın sahibi John Storr; [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Three_Zebras_Drinking.jpg) üzerinde kamu malı olarak paylaşılıyor.")
+![Su içen üç zebra](images/three-zebras-drinking.jpg "Su içen üç zebra, 1997 · Fotoğraf: John Storr · Lisans: Kamu malı · Kaynak: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Three_Zebras_Drinking.jpg)")
 
 Peki bu nasıl yapılabilir? Kitap düşünce kalıplarını yıkma fikriyle "farklı düşünmenin" izini sürüyor. Daha doğrusu Rowson ustalığa giden yolunda neler öğrendiğini ve neleri "unutması" (*unlearning*) gerektiğini anlatıyor. İlerleyen bölümler boyunca döne dolaşa aynı şeyi hatırlatıyor okura: **"Gelişme, konfor alanınızın sınırında başlar."** (*"Improvement begins at the edge of your comfort zone"*) Yani sınırlarınızı zorlamadığınız sürece gelişme yok.
 
@@ -65,7 +65,7 @@ Kitap boyunca konuya eşlik eden örneklerde kendi partilerini, oynarkenki düş
 >
 > Belki de kendime karşı fazla acımasızım ve belki buna kendini kandırma demek daha adildir. Sanıyorum bu hikâyeyi ilk söylediğimde egomu korumak ve bu oyunun özel durumunu muhafaza etmek istiyordum. Yaşayan efsaneye karşı oyunun böylesine erken bölümünde acemice bir gafla kaybettiğim fikrine isyan ediyordum. Bunun yerine, oyun hakkında kulağa daha anlamlı gelen bir hikâye anlattım.
 
-![Düşünen Viktor Korchnoi](images/korchnoi-nunn-ohra-1988.jpg "Viktor Korchnoi, 1988 OHRA turnuvasının son turunda Nunn'a karşı oynarken (Amsterdam, 11 Ağustos 1988). Fotoğraf: Rob Bogaerts / Anefo, Nationaal Archief; [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ohra_schaaktoernooi,_laatste_ronde_(kroongroep)_winnaar_Kortsjnoij_in_actie_teg,_Bestanddeelnr_934-2962.jpg) üzerinde CC0 (kamu malı) olarak paylaşılıyor.")
+![Düşünen Viktor Korchnoi](images/korchnoi-nunn-ohra-1988.jpg "Viktor Korchnoi, 1988 · Fotoğraf: Rob Bogaerts / Anefo · Hollanda Ulusal Arşivi · Lisans: [CC0 1.0 (Kamu Bağışı)](https://creativecommons.org/publicdomain/zero/1.0/deed.tr) · Kaynak: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ohra_schaaktoernooi,_laatste_ronde_(kroongroep)_winnaar_Kortsjnoij_in_actie_teg,_Bestanddeelnr_934-2962.jpg)")
 
 > Bu hikâye şunu demek istiyordu: O yaratıcıydı ve ben de yaratıcıydım. Ama ben o kadar yaratıcıydım ki kendimi kaptırdım ve onun anahtar hamlesini görmeme rağmen (çünkü, hey, ben bir Büyükustayım), devamını kaçırdım (çünkü, hey, kimse mükemmel değil). Bu hikâye uydurmada (fabulation) beni en çok vuran şey, üçüncü ya da dördüncü kez olayların bu versiyonunu anlattığımda **artık kendim de böyle olduğuna inanmaya başladım**! O akşam kız arkadaşımla konuştuğumda dahi benzer şeyler söyledim. Ama oyunu bilgisayara verdiğimde basitçe 12. d5 hamlesini kaçırdığım gerçeğiyle yüzleştim. Hamleyi görmüştüm fakat yalnızca 11... Qf6 hamlesini oynadıktan sonra. 11... Qf6 hamlesini oynadıktan hemen sonra 12. d5 hamlesinin o kadar ciddi olmadığını (rahatlama) hissettim fakat sonra 14. Rxd5 (of!) hamlesini gördüm, muhtemelen oyunun kalanında özgüvenimi sağlam tutmak için kendime kaçırdığım şeyin bu olduğunu söyledim.
 >
