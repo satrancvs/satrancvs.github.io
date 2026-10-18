@@ -11,12 +11,16 @@ Satranç otoriteleri tarafından takdirle karşılanan ***"Seven Deadly Chess Si
 Kitap üç bölümden oluşuyor: İlk bölüm daha çok satranç oyuncusunun psikolojisine değinirken, ikinci bölüm Rowson'ın da belirttiği gibi, oyuncu psikolojisi konusundan ziyade teknik olarak satrancın kendisiyle en dolu bölüm. "Benim için işe yarayan bir şey" kısmında Rowson, **Kasparov**'un "artık satrancı tam olarak kapsamadığını düşündüğü" üç boyutlu düşünüşünü (Materyal, Nitelik ve Zaman) eleştirip üzerine saat ("clock ticking") faktörünü ekleyerek ilerliyor. Özellikle bu kısımlar benim gibi zaman sıkışmasına sık giren oyuncular için önemli bölümler barındırıyor. Yazarın "düşünme zamanının fırsat maliyeti" diyerek açıkladığı bölüm gibi:
 
 > Örneğin, bazen iki hamle arasında tercih yapmanız gerekir. Birinin yeterli, diğerininse çok daha kuvvetli olduğunu, hatta forse kazandığını görebiliyorsunuzdur. Ancak, kazanç olup olmadığını bulabilmek için dakikalarca düşünmeniz gerekmektedir. (...) Pratik gücün en önemli parçalarından birinin zaman faktörünü böyle anlarda değerlendirebilmek olduğuna inanıyorum. (...) Şimdi yirmi dakika kaybedersem, daha sonraki fırsatları kesinlikle kaçıracağım; peki böyle bir yatırım yapmaya değer mi?
+>
+> — Jonathan Rowson, Chess for Zebras
 
 Kitap ilerledikçe pek çok büyükustanın fikirlerine, konuşmalarına (Motwani, Suba, Psakhis, McShane, Hübner, Seirawan vs.), başka eserlerden referanslara yer verilmesi okumayı çok daha sürükleyici ve keyifli kılıyor.
 
 Üçüncü bölüm olan "Siyah ve beyaz hakkında rengarenk düşünme" bölümünde ise Siyah ve Beyazın avantaj ve dezavantajlarına, açılış ve hazırlık meselesine odaklanıyor:
 
 > Çok garip bulduğum bir şey, çoğu oyuncunun en üst seviyelerde açılış hazırlığının pek çok oyuncu ve hatta iyi Büyükustalar için bile olduğundan çok daha fazla önemli olduğunu fark edemiyor görünmeleri. (...) Sevdiğiniz oyuncuların hamlelerine ve fikirlerine özenmeye çalışmak mantıklı ancak onların yaptığı satranç çalışmasına özenmek büyük bir hata olur, **çünkü 2650'yi 2750'ye ulaştırmaya faydalı olacak bir çalışma 1650'yi 1750'ye ve hatta 2550'yi 2650'ye ulaştırmak için faydalı olmayabilir**.
+>
+> — Jonathan Rowson, Chess for Zebras
 
 Oldukça eğlenceli (şu başlıklara bir bakın: *"Cebinizde bir delik olduğunu düşünürken ne yapmalı?"*, *"Satranç neden çok zor?"* ya da *"Konsantre ol! Konsantre ol? Konsantre ol."*) ama derin meselelere el atmaktan çekinmeyen bir serbestlikle yazılmış olması çok hoşuma gitti. Bu yönüyle daha çok satrançta belli bir seviyeye gelmiş, ilerlemekte güçlük çeken yetişkin sporcu veya antrenörlere hitap eder görünümde.
 
@@ -35,10 +39,14 @@ Peki bu nasıl yapılabilir? Kitap düşünce kalıplarını yıkma fikriyle "fa
 Yalnız yanlış anlaşılmasın, Rowson'ın her derde deva olacak -ve bulmayı umduğum- türden bir "sihirli formülü" yok. Tam tersine, her sorunun kesin bir çözümü olduğunu iddia eden yaklaşımlara şüpheyle yaklaşılmasını öğütlüyor.
 
 > Oyuncunun gücü arttıkça, kendisine bir konumda ne olduğu sorulduğunda daha büyük ihtimalle 'bilmiyorum' diyerek başlayacaktır.
+>
+> — Jonathan Rowson, Chess for Zebras
 
 Her şeyi bildiğimiz o sahte kesinlik alanından çıkıp belirsizlikle yüzleşebilmeyi ilerleme sayıyor. Bunu her bölüm için iyi seçilmiş, bazıları yazarın kendisi tarafından oynanmış partilerle örnekliyor.
 
 > Satranca, 'bilmiyorum, düşünelim' zihniyeti ile yaklaşmak, 'bu böyle ve bunu kanıtlayacağım' şeklinde yaklaşmaktan çok daha akıllıcadır.
+>
+> — Jonathan Rowson, Chess for Zebras
 
 Aynı yaklaşımla, "atak bir oyuncuyum", "konumsal oynamayı severim", "hesap yapmam, sezgilerimle oynarım" gibi yaklaşımlarla oyuncunun kendi tarzına ve hamlelerine sınırlar çizmesini, onun satrancının gelişimi önündeki en büyük engellerden biri olarak görüyor ve kitabın her bölümüne özenle seçilerek konmuş epigraflarından Karpov'a ait olan sözüyle bunu açıklıyor: "Tarz mı? Benim bir tarzım yok."
 
@@ -63,12 +71,14 @@ Kitap boyunca konuya eşlik eden örneklerde kendi partilerini, oynarkenki düş
 > Korchnoi ile oynamak çok özel bir durum, hele onunla daha önce hiç oynamadıysanız. Böylesine sıra dışı bir oyundan ve oyun sonrası analizinden sonra, pek çok insan bana bu tecrübeyi sormak istedi. Benim açıklamam şu şekildeydi: Düzensiz bir açılış oynadı, yanıt olarak biraz fazla yaratıcı oynadım ve sonradan gaf olduğu ortaya çıkan zekice bir hamle yaptım... Bu açıklamayı birkaç kez yaptığımı ve 11... Qf6 hamlesinden söz ettiğimi hatırlıyorum. Daha sonra dinleyenlerden "Ya! Demek 12.d5 hamlesini kaçırdın!" diyerek araya girenlere çabucak "Hayır, 12. d5'i gördüm fakat d5'i iki kez alabildiğini görmedim" yanıtını verdim. **Bu kulağa makul geliyor, fakat aslında, tamamen yalan.**
 >
 > Belki de kendime karşı fazla acımasızım ve belki buna kendini kandırma demek daha adildir. Sanıyorum bu hikâyeyi ilk söylediğimde egomu korumak ve bu oyunun özel durumunu muhafaza etmek istiyordum. Yaşayan efsaneye karşı oyunun böylesine erken bölümünde acemice bir gafla kaybettiğim fikrine isyan ediyordum. Bunun yerine, oyun hakkında kulağa daha anlamlı gelen bir hikâye anlattım.
-
-![Düşünen Viktor Korchnoi](images/korchnoi-nunn-ohra-1988.jpg "Viktor Korchnoi, 1988 · Fotoğraf: Rob Bogaerts / Anefo · Hollanda Ulusal Arşivi · Lisans: [CC0 1.0 (Kamu Bağışı)](https://creativecommons.org/publicdomain/zero/1.0/deed.tr) · Kaynak: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ohra_schaaktoernooi,_laatste_ronde_(kroongroep)_winnaar_Kortsjnoij_in_actie_teg,_Bestanddeelnr_934-2962.jpg)")
-
+>
+> ![Düşünen Viktor Korchnoi](images/korchnoi-nunn-ohra-1988.jpg "Viktor Korchnoi, 1988 · Fotoğraf: Rob Bogaerts / Anefo · Hollanda Ulusal Arşivi · Lisans: [CC0 1.0 (Kamu Bağışı)](https://creativecommons.org/publicdomain/zero/1.0/deed.tr) · Kaynak: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ohra_schaaktoernooi,_laatste_ronde_(kroongroep)_winnaar_Kortsjnoij_in_actie_teg,_Bestanddeelnr_934-2962.jpg)")
+>
 > Bu hikâye şunu demek istiyordu: O yaratıcıydı ve ben de yaratıcıydım. Ama ben o kadar yaratıcıydım ki kendimi kaptırdım ve onun anahtar hamlesini görmeme rağmen (çünkü, hey, ben bir Büyükustayım), devamını kaçırdım (çünkü, hey, kimse mükemmel değil). Bu hikâye uydurmada (fabulation) beni en çok vuran şey, üçüncü ya da dördüncü kez olayların bu versiyonunu anlattığımda **artık kendim de böyle olduğuna inanmaya başladım**! O akşam kız arkadaşımla konuştuğumda dahi benzer şeyler söyledim. Ama oyunu bilgisayara verdiğimde basitçe 12. d5 hamlesini kaçırdığım gerçeğiyle yüzleştim. Hamleyi görmüştüm fakat yalnızca 11... Qf6 hamlesini oynadıktan sonra. 11... Qf6 hamlesini oynadıktan hemen sonra 12. d5 hamlesinin o kadar ciddi olmadığını (rahatlama) hissettim fakat sonra 14. Rxd5 (of!) hamlesini gördüm, muhtemelen oyunun kalanında özgüvenimi sağlam tutmak için kendime kaçırdığım şeyin bu olduğunu söyledim.
 >
 > Şimdi bu itirafı okuyucuların kendilerine karşı daha dürüst olmaları için cesaretlenmeleri amacıyla paylaşıyorum. Kendini kandırma, neredeyse tanımı gereği, çok aldatıcı bir olgudur fakat inanıyorum ki bu bizim tecrübelerimizi hikâyeleştirme eğilimimizle yakından ilişkilidir. Tecrübelerimiz çoğu defa tutarsız ve benlik algımızı tehdit edici olduğunda, tutarlı ya da ilgi çeken hikâyeler yaratacak şekilde evrimleşmemiz anlamlı görünüyor.
+>
+> — Jonathan Rowson, Chess for Zebras
 
 Uzunca bir bölümünü alıntıladığım yazımı kitabın en güzel tavsiyelerinden birisiyle bitiriyorum:
 
