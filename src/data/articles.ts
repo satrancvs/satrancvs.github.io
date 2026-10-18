@@ -9,7 +9,7 @@ import data from './articles.json';
 
 export type Article = {
   id: string; slug: string; cat: string; title: string; dek?: string; author: string; authorLabel?: string; translator?: string;
-  excerpt?: string; date?: string; chunks?: string[]; photo?: boolean; thumb?: string; thumbAlt?: string; thumbPosition?: string; diagram?: string; diagramAlt?: string; diagramCaption?: string; titleLines?: [string, string]; note?: string; diagramOrientation?: 'white' | 'black'; diagramBadge?: { square: string; glyph: string }; draft?: boolean; body: string[];
+  excerpt?: string; date?: string; chunks?: string[]; photo?: boolean; thumb?: string; thumbAlt?: string; thumbPosition?: string; diagram?: string; diagramAlt?: string; diagramCaption?: string; titleLines?: [string, string]; note?: string; diagramOrientation?: 'white' | 'black'; diagramBadge?: { square: string; glyph: string }; diagramArrow?: { from: string; to: string }; draft?: boolean; body: string[];
 };
 
 // Gövdesi markdown dosyasından gelen yazılar (id -> dosya)
