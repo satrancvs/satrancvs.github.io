@@ -32,7 +32,7 @@ const AUTHORS = [
   { name: 'Nazmi Can Doğan', role: 'Genel Yayın Yönetmeni', bio: 'FIDE Ustası (FM)' },
   { name: 'Kerem Aydın', role: 'Analiz Editörü', bio: 'Açılış teorisi ve motor destekli analizler.' },
   { name: 'Ahmad Al-Khatib', role: 'Konuk yazar', bio: 'Ürdün’ün ilk Büyükustası (GM)' },
-  { name: 'Tarık Selbes', role: 'Turnuva günlükleri', bio: 'FIDE Ustası (FM); uluslararası usta (IM) yolunda, üç normu tamam.' },
+  { name: 'Tarık Selbes', role: 'Kurucu, Yazar', bio: 'FIDE Ustası (FM); uluslararası usta (IM) yolunda, üç normu tamam.' },
 ];
 
 function useReveal() {
