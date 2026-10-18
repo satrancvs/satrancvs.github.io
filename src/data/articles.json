@@ -19,7 +19,10 @@
     "date": "Ekim 2026",
     "diagram": "5rk1/1pq4p/2pp2p1/r3bn2/p1P2BbP/2NP2P1/PP1Q2BK/4RR2 b - - 1 22",
     "diagramAlt": "Watarkar–Selbes partisinde 22. Ff4! sonrası konum: Siyah oynar",
-    "diagramBadge": { "square": "f4", "glyph": "!" },
+    "diagramBadge": {
+      "square": "f4",
+      "glyph": "!"
+    },
     "diagramCaption": "Watarkar – Selbes, GRENKE Açık A kategorisi, 2 Nisan 2026. 22. Ff4! sonrası tahtada oluşan konum. Hamle sırası Siyahta.",
     "body": [
       "Yazı hazırlanıyor, çok yakında burada olacak."
@@ -73,15 +76,17 @@
     "date": "Ekim 2026"
   },
   {
-    "id": "mugla",
-    "slug": "ammandan-mugladan-turkiyede-reytingler-aldatici-mi",
-    "cat": "Analizli oyunlar",
-    "title": "Amman'dan Muğla'ya: Türkiye'de reytingler aldatıcı mı?",
-    "dek": "Satranç tahtasında 1653 reytingli bir oyuncunun ünvanlı bir ustaya karşı şansı var mı? Ürdünlü Büyükusta Al-Khatib’den Türkiye’ye kısa bir bakış.",
-    "author": "GM Ahmad Al-Khatib",
-    "translator": "Oğul Köseoğlu",
+    "id": "tarih",
+    "slug": "istanbul-kahvehanelerinde-satrancin-yuz-yili",
+    "cat": "Satranç tarihi",
+    "title": "İstanbul kahvehanelerinde satrancın yüz yılı",
+    "dek": "Osmanlı’dan Cumhuriyet’e, masa başında oynanan partilerin izinde.",
+    "author": "Kerem Aydın",
     "date": "Ekim 2026",
-    "body": []
+    "body": [
+      "19. yüzyıl sonunda İstanbul’da satranç, belirli kahvehanelerde toplanan meraklıların oyunuydu.",
+      "Arşiv kayıtları ve eski gazete sütunları üzerinden bu kayıp kültürü yeniden kuruyoruz."
+    ]
   },
   {
     "id": "gomori",
@@ -94,5 +99,16 @@
     "body": [
       "Yazı hazırlanıyor, çok yakında burada olacak."
     ]
+  },
+  {
+    "id": "mugla",
+    "slug": "ammandan-mugladan-turkiyede-reytingler-aldatici-mi",
+    "cat": "Analizli oyunlar",
+    "title": "Amman'dan Muğla'ya: Türkiye'de reytingler aldatıcı mı?",
+    "dek": "Satranç tahtasında 1653 reytingli bir oyuncunun ünvanlı bir ustaya karşı şansı var mı? Ürdünlü Büyükusta Al-Khatib’den Türkiye’ye kısa bir bakış.",
+    "author": "GM Ahmad Al-Khatib",
+    "translator": "Oğul Köseoğlu",
+    "date": "Ekim 2026",
+    "body": []
   }
 ]
