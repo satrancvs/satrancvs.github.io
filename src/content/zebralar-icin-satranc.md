@@ -16,7 +16,7 @@ Kitap üç bölümden oluşuyor: İlk bölüm daha çok satranç oyuncusunun psi
 
 Kitap ilerledikçe pek çok büyükustanın fikirlerine, konuşmalarına (Motwani, Suba, Psakhis, McShane, Hübner, Seirawan vs.), başka eserlerden referanslara yer verilmesi okumayı çok daha sürükleyici ve keyifli kılıyor.
 
-Üçüncü bölüm olan "Siyah ve beyaz hakkında rengarenk düşünme" bölümünde ise Siyah ve Beyazın avantaj ve dezavantajlarına, açılış ve hazırlık meselesine odaklanıyor:
+Üçüncü bölüm olan *"Siyah ve beyaz hakkında rengarenk düşünme"* bölümünde ise Siyah ve Beyazın avantaj ve dezavantajlarına, açılış ve hazırlık meselesine odaklanıyor:
 
 > Çok garip bulduğum bir şey, çoğu oyuncunun en üst seviyelerde açılış hazırlığının pek çok oyuncu ve hatta iyi Büyükustalar için bile olduğundan çok daha fazla önemli olduğunu fark edemiyor görünmeleri. (...) Sevdiğiniz oyuncuların hamlelerine ve fikirlerine özenmeye çalışmak mantıklı ancak onların yaptığı satranç çalışmasına özenmek büyük bir hata olur, **çünkü 2650'yi 2750'ye ulaştırmaya faydalı olacak bir çalışma 1650'yi 1750'ye ve hatta 2550'yi 2650'ye ulaştırmak için faydalı olmayabilir**.
 >
