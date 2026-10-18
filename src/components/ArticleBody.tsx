@@ -225,7 +225,14 @@ const captionOptions = {
 
 // Fotoğraf içeren alıntı (Korchnoi): `> ` satırları tek kutuda; araya giren görsel Figure olarak kutunun içinde kalır,
 // kaynak satırı (— ...) en sonda bir kez gelir.
-function QuoteWithFigure({ chunk }: { chunk: string }) {
+// Alıntı içindeki tek başına `[FEN "..."]` satırı statik bir diyagram (<fen>) olur (Capablanca alıntısı): yazı sütununda ortalı, en çok 340 px.
+const FEN_BLOCK = /^\[FEN\s+"([^"]+)"\]$/;
+function FenBlock({ fen, ready }: { fen: string; ready: boolean }) {
+  useEffect(() => { if (ready) window.ChessPublica?.initAll(); }, [ready]);
+  return <div role="img" aria-label="Diyagram" className="art-fen" dangerouslySetInnerHTML={{ __html: `<fen>${fen}</fen>` }} />;
+}
+
+function QuoteWithFigure({ chunk, ready }: { chunk: string; ready: boolean }) {
   const blocks = chunk.split('\n').map((l) => l.replace(/^>\s?/, '')).join('\n').split(/\n\s*\n/).map((b) => b.trim()).filter(Boolean);
   const last = blocks[blocks.length - 1] ?? '';
   const cite = /^[—–-]\s+\S/.test(last) ? last.replace(/^[—–-]\s+/, '') : null;
@@ -234,6 +241,8 @@ function QuoteWithFigure({ chunk }: { chunk: string }) {
     <blockquote className="quote">
       {body.map((b, k) => (IMG_CHUNK.test(b)
         ? <Figure key={k} chunk={b} />
+        : FEN_BLOCK.test(b)
+        ? <FenBlock key={k} fen={b.match(FEN_BLOCK)![1]} ready={ready} />
         : <Markdown key={k} options={{ ...mdOptions, forceBlock: true }}>{b}</Markdown>))}
       {cite && <footer className="quote-cite f-mono">— {cite}</footer>}
     </blockquote>
@@ -345,7 +354,7 @@ function gameMoves(chunks: string[], i: number): { moves: string; own: boolean }
 }
 
 export default function ArticleBody({ chunks }: { chunks: string[] }) {
-  const hasGames = chunks.some((c) => c.trim().startsWith('[Event '));
+  const hasGames = chunks.some((c) => c.trim().startsWith('[Event ') || (c.startsWith('>') && /^>\s*\[FEN\s/m.test(c)));
   const cp = useChessPublica(hasGames);
   // ChessPublica yüklenemezse eski düz metin görünümüne düşülür.
   const useFallback = cp === 'error';
@@ -414,8 +423,11 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       const game = useFallback
         ? <Game header={c} moves={moves} />
         : <PgnGame header={c} moves={moves} />;
+      // <pgn> (oynatıcısız) oyunlar bir başlangıç FEN'inden başlıyorsa, hamle metninin üstünde o konum bir diyagramla gösterilir.
+      const startFen = !useFallback && !WATCH_TAG.test(c) && !puzzleSide(c, moves) ? c.match(/\[FEN\s+"([^"]+)"\]/i)?.[1] : undefined;
       out.push(
         <GameSection key={i} item={item}>
+          {startFen && <FenBlock fen={startFen} ready={cp === 'ready'} />}
           {game}
         </GameSection>,
       );
@@ -433,8 +445,8 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
           {c.replace(/<\/?pre>/g, '').replace(/^\n/, '')}
         </pre>,
       );
-    } else if (c.startsWith('>') && /^>\s*!\[/m.test(c)) {
-      out.push(<QuoteWithFigure key={i} chunk={c} />);
+    } else if (c.startsWith('>') && /^>\s*(!\[|\[FEN\s)/m.test(c)) {
+      out.push(<QuoteWithFigure key={i} chunk={c} ready={cp === 'ready'} />);
     } else if (IMG_CHUNK.test(c)) {
       out.push(<Figure key={i} chunk={c} />);
     } else if (c.startsWith('<figure')) {

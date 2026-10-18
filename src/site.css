@@ -71,6 +71,13 @@
 .fen-diagram .fen-container { max-width: none; margin: 0; width: 100%; }
 .fen-diagram .jc-board { width: 100%; }
 
+/* Alıntı içindeki statik diyagram (<fen>): ortalı, en çok 340 px; ham FEN metni gizli, tahta kutuyu doldurur. */
+.art-fen { width: 100%; max-width: 340px; margin: 1.75rem auto; aspect-ratio: 1; }
+.art-fen:not(:has(.jc-board)) { background: rgba(241, 233, 220, .03); }
+.art-fen fen { display: none; }
+.art-fen .fen-container { max-width: none; margin: 0; width: 100%; }
+.art-fen .jc-board { width: 100%; }
+
 /* Oyun henüz kurulmadıysa ham PGN metni görünmesin; kutu o sırada boş bir yer tutucu olur (sayfa kaymasın) */
 .cp-game pgn,
 .cp-game pgn-player:not(:has(.player-wrapper)) { display: none; }
