@@ -274,7 +274,7 @@ export default function Index() {
         <div className="md:col-span-7 reveal">
           <Label n="04">Hakkında</Label>
           <h2 className="f-display text-[clamp(40px,5.5vw,88px)] mt-8">
-            <span className="flex items-center gap-4"><FaviconBullet className="shrink-0" /><span>Satranç <em className="italic text-[#C8893E]">vs.</em></span></span>
+            <span className="flex items-center gap-[calc(13.25px_-_0.054em)]"><FaviconBullet className="shrink-0" /><span>Satranç <em className="italic text-[#C8893E]">vs.</em></span></span>
             <em className="italic text-[#C8893E]">‘Satranç ve siz’ demek.</em>
           </h2>
           <p className="text-[#F1E9DC]/75 leading-relaxed mt-10 max-w-xl">Satranç vs., satranç üzerine uzun okumalar, analizler ve hikâyeler yayımlayan bağımsız bir dergidir. Bir fincan kahve eşliğinde, acele etmeden okunsun diye.</p>
