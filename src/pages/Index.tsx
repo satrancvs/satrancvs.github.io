@@ -201,7 +201,7 @@ export default function Index() {
             const cls = `block text-left reveal ${i === 0 ? 'md:col-span-7 md:row-span-2' : 'md:col-span-5'}${a.diagram ? ' md:flex md:flex-col' : ''}`;
             const inner = (
               <>
-                {a.thumb && <ProgressiveImage path={a.thumb} alt={a.thumbAlt ?? ''} />}
+                {a.thumb && <ProgressiveImage path={a.thumb} alt={a.thumbAlt ?? ''} thumb position={a.thumbPosition} />}
                 {a.diagram && <FenDiagram fen={a.diagram} orientation={a.diagramOrientation} label={a.diagramAlt ?? a.title} caption={a.diagramCaption} fill={i === 0} />}
                 <p className="f-mono text-[#C8893E] mt-6">{a.cat} · {a.read || a.date}</p>
                 <h3 className={`f-display mt-3 ${a.draft ? '' : 'group-hover:italic'} transition-all ${i === 0 ? 'text-5xl md:text-6xl' : 'text-3xl md:text-4xl'}`}>{a.titleLines ? <>{a.titleLines[0]}<br /><em className="italic text-[#C8893E]">{a.titleLines[1]}</em></> : a.title}</h3>
