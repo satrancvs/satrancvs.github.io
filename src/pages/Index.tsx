@@ -229,8 +229,8 @@ export default function Index() {
             <div role="tablist" aria-label="Tüm yazılar" className="mt-12">
               <button role="tab" aria-selected={cat === 'Tümü'} onClick={() => setCat('Tümü')} className={tabCls(cat === 'Tümü')}>Tümü</button>
             </div>
-            <p className="f-mono text-[#0E0C0A]/60 mt-8">Köşeler</p>
-            <div role="tablist" aria-label="Köşeler" className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-2">
+            <h2 className="f-display text-[clamp(56px,7vw,120px)] mt-16"><em className="italic">Köşeler</em></h2>
+            <div role="tablist" aria-label="Köşeler" className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-8">
               {CORNERS.map((k, i) => (
                 <span key={k} className="inline-flex items-center gap-x-3 whitespace-nowrap">
                 <button role="tab" aria-selected={cat === k} onClick={() => setCat(k)} className={tabCls(cat === k)}>{k}</button>
