@@ -95,14 +95,14 @@
 /* Fotoğraf künyeleri: sitenin mono fontu, okunur boyutta (f-mono'dan farkı: büyük harf ve geniş harf aralığı yok). */
 .credit { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; line-height: 1.75; letter-spacing: 0; text-transform: none; }
 
-/* Alıntı (blockquote): koyu kutu, sol üst köşede büyük altın tırnak işareti (daire yok); metin gövdeyle aynı yazı tipi, sola yaslı,
-   italiksiz. Kaynak satırı (— ...) mono. Kalın vurgu daha parlak ve yarı kalın. */
-.quote { position: relative; margin: 3rem 0; padding: 3.75rem 3rem 2.5rem; background: #17130F; border: 1px solid #2E2620; }
-.quote::before { content: '\201C'; position: absolute; top: 0.125rem; left: 1.25rem; font-family: 'Fraunces', serif; font-weight: 600; font-size: 84px; line-height: 1; color: #C8893E; pointer-events: none; }
+/* Alıntı (blockquote): koyu kutu; sol üst köşede, kutunun üst kenarına oturan sayfa renginde yuvarlak (kenarlıksız): kutunun o kısmını
+   oyar, içinde büyük altın tırnak işareti durur. Metin gövdeyle aynı yazı tipi, sola yaslı, italiksiz. Kaynak satırı (— ...) mono. */
+.quote { position: relative; margin: 4.5rem 0 3rem; padding: 3.25rem 3rem 2.5rem; background: #17130F; border: 1px solid #2E2620; }
+.quote::before { content: '\201C'; position: absolute; top: -32px; left: 1.5rem; width: 64px; height: 64px; box-sizing: border-box; padding-top: 26px; border-radius: 50%; background: #0E0C0A; display: flex; align-items: center; justify-content: center; font-family: 'Fraunces', serif; font-weight: 600; font-size: 56px; line-height: 1; color: #C8893E; pointer-events: none; }
 .quote > p + p { margin-top: 1.25rem; }
 .quote strong { font-weight: 600; color: #F1E9DC; }
 .quote-cite { display: block; margin-top: 1.5rem; font-size: 11px; line-height: 1.6; color: #A89A88; }
 @media (max-width: 639px) {
-  .quote { margin: 2.5rem 0; padding: 3.25rem 1.5rem 2rem; }
-  .quote::before { top: 0.125rem; left: 1rem; font-size: 68px; }
+  .quote { margin: 4rem 0 2.5rem; padding: 3rem 1.5rem 2rem; }
+  .quote::before { top: -28px; left: 1rem; width: 56px; height: 56px; padding-top: 22px; font-size: 48px; }
 }
