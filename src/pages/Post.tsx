@@ -72,15 +72,16 @@ export default function Post() {
     <div className="sk min-h-screen bg-[#0E0C0A]">
       <Link to="/" state={{ top: true }} aria-label="Ana sayfaya dön" className="fixed top-5 right-5 z-50 w-12 h-12 rounded-full bg-[#F1E9DC] text-[#0E0C0A] grid place-items-center hover:bg-[#C8893E]"><X /></Link>
       <article className="max-w-[760px] mx-auto px-6 pt-32 relative pb-32">
-        <p className="f-mono text-[#C8893E]">{a.cat} · {a.date}</p>
+        <p className="f-mono text-[#C8893E]">{a.cat}</p>
         <h1 className="f-display text-[clamp(44px,6vw,88px)] mt-6">{a.title}</h1>
         {(a.dek ?? a.excerpt) && (
-          <p className="text-xl font-normal text-[#F1E9DC]/80 mt-8 italic [&_em]:not-italic" style={{ fontFamily: 'Fraunces, serif', fontVariationSettings: "'opsz' 72" }}>
+          <p className="text-lg leading-[1.8] text-[#F1E9DC]/85 mt-8">
             <Markdown options={{ forceInline: true }}>{(a.dek ?? a.excerpt) as string}</Markdown>
           </p>
         )}
         <div className="mt-8 pb-8 border-b border-[#2E2620]">
           <p className="f-mono text-[#A89A88]">{a.authorLabel ?? 'Yazar'}: {a.author}{a.translator && ` · Türkçesi: ${a.translator}`}</p>
+          {a.date && <p className="f-mono text-[#A89A88] mt-3">{a.date}</p>}
           {/* Yazı başka bir yerde yayımlandıysa künye notu: yazar satırının altında, aynı yazı tipiyle, sağa yaslı. */}
           {a.note && <p className="f-mono text-[#A89A88] text-right mt-3"><Markdown options={{ forceInline: true, overrides: { a: { props: { className: 'underline underline-offset-2 hover:text-[#F1E9DC]', target: '_blank', rel: 'noreferrer' } } } }}>{a.note}</Markdown></p>}
         </div>

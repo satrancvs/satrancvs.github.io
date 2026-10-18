@@ -30,11 +30,13 @@ const authorCount = (name: string) => {
 const CORNERS = Array.from(new Set(PUBLISHED.map((a) => a.cat)));
 const tabCls = (on: boolean) => `f-mono h-11 border-b-2 transition-colors ${on ? 'border-[#C8893E] text-[#0E0C0A]' : 'border-transparent text-[#0E0C0A]/50 hover:text-[#0E0C0A]'}`;
 
-const AUTHORS = [
-  { name: 'Nazmi Can Doğan', role: 'Genel Yayın Yönetmeni', bio: 'FIDE Ustası (FM)' },
-  { name: 'Kerem Aydın', role: 'Analiz Editörü', bio: 'Açılış teorisi ve motor destekli analizler.' },
-  { name: 'Tarık Selbes', role: 'Kurucu, Yazar', bio: 'FIDE Ustası (FM); uluslararası usta (IM) yolunda, üç normu tamam.' },
-  { name: 'Ahmad Al-Khatib', role: 'Konuk yazar', bio: 'Ürdün’ün ilk Büyükustası (GM)' },
+// bio, href (bio'yu bağlantı yapar) ve sayaç isteğe bağlıdır; boşsa kartta gösterilmez.
+const AUTHORS: { name: string; role: string; bio?: string; href?: string; count?: boolean }[] = [
+  { name: 'Nazmi Can Doğan', role: 'Genel Yayın Yönetmeni', bio: 'FIDE Ustası (FM)', count: true },
+  { name: 'Kerem Aydın', role: 'Analiz Editörü', bio: 'Açılış teorisi ve motor destekli analizler.', count: true },
+  { name: 'Tarık Selbes', role: 'Kurucu, Yazar', bio: 'FIDE Ustası (FM); uluslararası usta (IM) yolunda, üç normu tamam.', count: true },
+  { name: 'Oğul Köseoğlu', role: 'Kurucu, Editör, Yazar', bio: 'Amatör satranç oyuncusu, profesyonel çevirmen', href: 'https://ogulkoseoglu.com', count: true },
+  { name: 'Ahmad Al-Khatib', role: 'Konuk yazar', bio: 'Ürdün’ün ilk Büyükustası (GM)', count: true },
 ];
 
 function useReveal() {
@@ -215,7 +217,7 @@ export default function Index() {
             // üstünde etkindir; yanındaki boş alan tıklanmaz (a'da pointer-events kapalı, çocuklarda açık).
             return a.draft
               ? <div key={a.id} className={cls}>{inner}</div>
-              : <Link key={a.id} to={articlePath(a)} className={`group pointer-events-none [&>*]:pointer-events-auto ${cls}`}>{inner}</Link>;
+              : <Link key={a.id} to={articlePath(a)} className={`group pointer-events-none [&>*:not(.fen-wrap)]:pointer-events-auto ${cls}`}>{inner}</Link>;
           })}
         </div>
       </section>
@@ -229,8 +231,8 @@ export default function Index() {
             <div role="tablist" aria-label="Tüm yazılar" className="mt-12">
               <button role="tab" aria-selected={cat === 'Tümü'} onClick={() => setCat('Tümü')} className={tabCls(cat === 'Tümü')}>Tümü</button>
             </div>
-            <p className="f-mono text-[#0E0C0A]/60 mt-8">Köşeler</p>
-            <div role="tablist" aria-label="Köşeler" className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-2">
+            <h2 className="f-display text-[clamp(56px,7vw,120px)] mt-16"><em className="italic">Köşeler</em></h2>
+            <div role="tablist" aria-label="Köşeler" className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-8">
               {CORNERS.map((k, i) => (
                 <span key={k} className="inline-flex items-center gap-x-3 whitespace-nowrap">
                 <button role="tab" aria-selected={cat === k} onClick={() => setCat(k)} className={tabCls(cat === k)}>{k}</button>
@@ -263,14 +265,14 @@ export default function Index() {
           <Label n="03">Yazarlar</Label>
           <h2 className="f-display text-[clamp(48px,7vw,120px)] mt-8">Katkıda <em className="italic text-[#C8893E]">bulunanlar</em></h2>
         </div>
-        <div className="max-w-[1440px] mx-auto px-6 md:px-10 mt-16 grid sm:grid-cols-2 lg:grid-cols-4 border-t border-[#2E2620]">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-10 mt-16 grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 border-t border-[#2E2620]">
           {AUTHORS.map((au, i) => (
             <div key={au.name} className="group p-8 border-b sm:border-r border-[#2E2620] hover:bg-[#1A1512] transition-colors">
               <span className={`block w-14 h-14 mb-8 ${(i % 2) ? 'bg-[#F1E9DC]' : 'bg-[#3A2C22]'} grid place-items-center f-display text-3xl ${(i % 2) ? 'text-[#0E0C0A]' : 'text-[#C8893E]'}`}>{'♔♕♖♘♗'[i]}</span>
               <h3 className="f-display text-3xl">{au.name}</h3>
               <p className="f-mono text-[#C8893E] mt-3">{au.role}</p>
-              <p className="text-[#F1E9DC]/70 mt-4">{au.bio}</p>
-              <p className="f-mono text-[#A89A88] mt-6">{authorCount(au.name)}</p>
+              {au.bio && <p className="text-[#F1E9DC]/70 mt-4">{au.href ? <a href={au.href} target="_blank" rel="noreferrer" className="underline decoration-[#C8893E]/50 underline-offset-4 hover:text-[#C8893E] hover:decoration-[#C8893E]">{au.bio}</a> : au.bio}</p>}
+              {au.count && <p className="f-mono text-[#A89A88] mt-6">{authorCount(au.name)}</p>}
             </div>
           ))}
         </div>

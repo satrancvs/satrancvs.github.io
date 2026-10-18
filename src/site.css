@@ -32,6 +32,8 @@
 .cp-game .pgn-container:not(pgn-study .pgn-container, pgn-player .pgn-container) .pgn-variation .pgn-variation { padding-left: 1.2em; font-style: italic; }
 /* <pgn-player> sayfada ortalanır */
 .cp-game pgn-player { --board-size: min(400px, calc(100vw - 3rem)); display: block; width: fit-content; max-width: 100%; margin-left: auto; margin-right: auto; }
+/* <pgn-player> yorumu yazı gövdesiyle aynı satır aralığında (paket 1.5 verir; gövde ve <pgn> metni 1.8) */
+.cp-game .video-comment { line-height: 1.8; }
 /* Varyantlı yorumlarda sağ alta oturan oynat düğmesi metnin son satırını kapatmasın */
 .cp-game .video-comment:has(> .comment-play-btn) { padding-bottom: 3rem; }
 /* Yorumun son satırına taşınan oynat düğmesi: satır içi, metinle aynı hizada */
@@ -92,3 +94,15 @@
 
 /* Fotoğraf künyeleri: sitenin mono fontu, okunur boyutta (f-mono'dan farkı: büyük harf ve geniş harf aralığı yok). */
 .credit { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; line-height: 1.75; letter-spacing: 0; text-transform: none; }
+
+/* Alıntı (blockquote): koyu kutu, sol üst köşede büyük altın tırnak işareti (daire yok); metin gövdeyle aynı yazı tipi, sola yaslı,
+   italiksiz. Kaynak satırı (— ...) mono. Kalın vurgu daha parlak ve yarı kalın. */
+.quote { position: relative; margin: 3rem 0; padding: 3.75rem 3rem 2.5rem; background: #17130F; border: 1px solid #2E2620; }
+.quote::before { content: '\201C'; position: absolute; top: 0.125rem; left: 1.25rem; font-family: 'Fraunces', serif; font-weight: 600; font-size: 84px; line-height: 1; color: #C8893E; pointer-events: none; }
+.quote > p + p { margin-top: 1.25rem; }
+.quote strong { font-weight: 600; color: #F1E9DC; }
+.quote-cite { display: block; margin-top: 1.5rem; font-size: 11px; line-height: 1.6; color: #A89A88; }
+@media (max-width: 639px) {
+  .quote { margin: 2.5rem 0; padding: 3.25rem 1.5rem 2rem; }
+  .quote::before { top: 0.125rem; left: 1rem; font-size: 68px; }
+}
