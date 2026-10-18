@@ -226,10 +226,11 @@ const captionOptions = {
 // Fotoğraf içeren alıntı (Korchnoi): `> ` satırları tek kutuda; araya giren görsel Figure olarak kutunun içinde kalır,
 // kaynak satırı (— ...) en sonda bir kez gelir.
 // Alıntı içindeki tek başına `[FEN "..."]` satırı statik bir diyagram (<fen>) olur (Capablanca alıntısı): yazı sütununda ortalı, en çok 340 px.
-const FEN_BLOCK = /^\[FEN\s+"([^"]+)"\]$/;
-function FenBlock({ fen, ready }: { fen: string; ready: boolean }) {
+// `[FEN "…"] (crop: top-half)`: yalnızca tahtanın üst yarısı (8–5. yataylar) gösterilir.
+const FEN_BLOCK = /^\[FEN\s+"([^"]+)"\](\s*\(crop:\s*top-half\))?$/;
+function FenBlock({ fen, ready, crop = false }: { fen: string; ready: boolean; crop?: boolean }) {
   useEffect(() => { if (ready) window.ChessPublica?.initAll(); }, [ready]);
-  return <div role="img" aria-label="Diyagram" className="art-fen" dangerouslySetInnerHTML={{ __html: `<fen>${fen}</fen>` }} />;
+  return <div role="img" aria-label="Diyagram" className={`art-fen${crop ? ' art-fen-top' : ''}`} dangerouslySetInnerHTML={{ __html: `<fen>${fen}</fen>` }} />;
 }
 
 function QuoteWithFigure({ chunk, ready }: { chunk: string; ready: boolean }) {
@@ -242,7 +243,7 @@ function QuoteWithFigure({ chunk, ready }: { chunk: string; ready: boolean }) {
       {body.map((b, k) => (IMG_CHUNK.test(b)
         ? <Figure key={k} chunk={b} />
         : FEN_BLOCK.test(b)
-        ? <FenBlock key={k} fen={b.match(FEN_BLOCK)![1]} ready={ready} />
+        ? <FenBlock key={k} fen={b.match(FEN_BLOCK)![1]} crop={!!b.match(FEN_BLOCK)![2]} ready={ready} />
         : <Markdown key={k} options={{ ...mdOptions, forceBlock: true }}>{b}</Markdown>))}
       {cite && <footer className="quote-cite f-mono">— {cite}</footer>}
     </blockquote>
