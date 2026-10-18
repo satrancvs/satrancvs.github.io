@@ -49,7 +49,7 @@ export default function FenDiagram({ fen, label, caption, orientation, badge, fi
   // Boyut değişince yeni <fen> kurulur; paket zaten yüklüyse yeniden taratılır.
   useEffect(() => { if (status === 'ready' && size > 0) window.ChessPublica?.initAll(); }, [status, size]);
   return (
-    <div className={`fen-wrap${fill ? ' fen-fill' : ''}`}>
+    <div className={`fen-wrap mt-8${fill ? ' fen-fill' : ''}`}>
       <div ref={box} role="img" aria-label={label} className="fen-diagram">
         {near && size > 0 && (
           <div key={size} className="absolute left-0 top-0 pointer-events-auto" style={{ width: size, height: size }}>
