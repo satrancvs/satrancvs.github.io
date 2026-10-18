@@ -26,18 +26,20 @@ export default function FenDiagram({ fen, label, caption, orientation, badge, ar
     io.observe(box.current);
     return () => io.disconnect();
   }, [near]);
+  // `fill` modunda alt yazı tahtanın hemen altında, kutunun içinde durur; tahta için ayrılan yükseklikten bu pay düşülür.
+  const capReserve = fill && caption ? 84 : 0;
   useEffect(() => {
     const el = box.current;
     if (!el || typeof ResizeObserver === 'undefined') return;
     let t: number | undefined;
     const ro = new ResizeObserver(([e]) => {
-      const s = Math.floor(Math.min(e.contentRect.width, e.contentRect.height, MAX));
+      const s = Math.floor(Math.min(e.contentRect.width, e.contentRect.height - capReserve, MAX));
       window.clearTimeout(t);
       t = window.setTimeout(() => setSize((prev) => (Math.abs(prev - s) >= 2 ? s : prev)), 120);
     });
     ro.observe(el);
     return () => { window.clearTimeout(t); ro.disconnect(); };
-  }, []);
+  }, [capReserve]);
   const status = useChessPublica(near);
   // Rozet, karenin sağ üst köşesine biner (tahta siyah tarafından çizildiyse sütun ve sıra ters).
   const cell = size / 8;
@@ -77,14 +79,16 @@ export default function FenDiagram({ fen, label, caption, orientation, badge, ar
                 </g>
               </svg>
             )}
+            {caption && fill && <p className="f-mono normal-case text-[#A89A88] absolute left-0" style={{ top: size + 12, width: size }}>{caption}</p>}
             {badge && badgeAt && (
               <div aria-hidden className="gm-badge" style={{ background: GLYPH_COLOR[badge.glyph] ?? '#00AA00', right: badgeAt.right, top: badgeAt.top, zIndex: 30, width: size * 0.055, height: size * 0.055, fontSize: size * 0.04, boxShadow: `0 1px ${size * 0.01}px #00000073` }}>{badge.glyph}</div>
             )}
           </div>
         )}
       </div>
-      {/* Tahta sola yaslıdır; alt yazı da sola yaslanır ve tahtadan geniş olmaz. */}
-      {caption && <p className="f-mono normal-case text-[#A89A88] mt-3 pointer-events-auto" style={size > 0 ? { maxWidth: size } : undefined}>{caption}</p>}
+      {/* Tahta sola yaslıdır; alt yazı da sola yaslanır ve tahtadan geniş olmaz. `fill`'de alt yazı kutunun içinde, tahtanın hemen altındadır
+          (aksi halde kutu tahtadan uzun olduğunda alt yazı çok aşağıda kalır). Kart bağlantısı yalnızca içerik üstünde etkindir (Index.tsx). */}
+      {caption && !fill && <p className="f-mono normal-case text-[#A89A88] mt-3 pointer-events-auto" style={size > 0 ? { maxWidth: size } : undefined}>{caption}</p>}
     </div>
   );
 }
