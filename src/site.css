@@ -62,9 +62,9 @@
 .fen-wrap { width: 100%; display: flex; flex-direction: column; }
 .fen-diagram { position: relative; width: 100%; max-width: 400px; aspect-ratio: 1; }
 .fen-diagram:not(:has(.jc-board)) { background: rgba(241, 233, 220, .03); }
-/* md ve üstünde (FenDiagram `fill`): tahta kutunun genişliğine kadar (en çok 572 px, yani eski 636 px boyunun %90’ı) büyür; kart yüksekliği tahtaya göre belirlenir. */
+/* md ve üstünde (FenDiagram `fill`): tahta kutunun genişliğine kadar (en çok 515 px) büyür; kart yüksekliği tahtaya göre belirlenir. */
 @media (min-width: 768px) {
-  .fen-wrap.fen-fill .fen-diagram { max-width: 572px; }
+  .fen-wrap.fen-fill .fen-diagram { max-width: 515px; }
 }
 .fen-diagram fen { display: none; }
 /* ChessPublica .fen-container'ı --board-size ile sınırlar ve dikey boşluk verir; burada boyutu kutu belirler. */
