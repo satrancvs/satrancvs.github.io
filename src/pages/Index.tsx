@@ -19,7 +19,9 @@ const NAV = [
 ] as const;
 
 // Yazar kartındaki sayaç: yayımlanmış yazı sayısı; yalnızca henüz yayımlanmamış (taslak) yazısı olan yazarlar için "Yakında".
-const byAuthor = (list: typeof ARTICLES, name: string) => list.filter((a) => a.author.replace(/^(FM|GM)\s+/, '') === name).length;
+// Çevirmen de sayılır (Gömöri yazısı: yazar Eugen Gömöri, Türkçesi Tarık Selbes).
+const bare = (n?: string) => n?.replace(/^(FM|GM)\s+/, '');
+const byAuthor = (list: typeof ARTICLES, name: string) => list.filter((a) => bare(a.author) === name || bare(a.translator) === name).length;
 const authorCount = (name: string) => {
   const n = byAuthor(PUBLISHED, name);
   return n > 0 || byAuthor(ARTICLES, name) === 0 ? `${n} yazı` : 'Yakında';
@@ -31,8 +33,8 @@ const tabCls = (on: boolean) => `f-mono h-11 border-b-2 transition-colors ${on ?
 const AUTHORS = [
   { name: 'Nazmi Can Doğan', role: 'Genel Yayın Yönetmeni', bio: 'FIDE Ustası (FM)' },
   { name: 'Kerem Aydın', role: 'Analiz Editörü', bio: 'Açılış teorisi ve motor destekli analizler.' },
-  { name: 'Ahmad Al-Khatib', role: 'Konuk yazar', bio: 'Ürdün’ün ilk Büyükustası (GM)' },
   { name: 'Tarık Selbes', role: 'Kurucu, Yazar', bio: 'FIDE Ustası (FM); uluslararası usta (IM) yolunda, üç normu tamam.' },
+  { name: 'Ahmad Al-Khatib', role: 'Konuk yazar', bio: 'Ürdün’ün ilk Büyükustası (GM)' },
 ];
 
 function useReveal() {
