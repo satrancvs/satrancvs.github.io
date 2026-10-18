@@ -2,7 +2,7 @@ Amman'daki evimden binlerce kilometre uzakta, Muğla'da, birkaç yıl önce kat�
 
 Oyun ilerledikçe pozisyonu kontrol altına almayı başarsam da rakibimin elde ettiği sağlam konum tüm kazanma çabalarımı boşa çıkardı. Sonunda elimde kalan tek şey, anlatmaya değer bir hikâye ve pek de mutluluk duymadığım bir yarım puan oldu. Yorumlar, o gün tahta başında aklımdan geçenlerin ta kendisi.
 
-[Event "Muğla"]
+[Event "Marmaris Karya IM Turnuvası"]
 [Site "Muğla"]
 [Date "2022.01.25"]
 [White "Okan İnci"]
@@ -18,7 +18,7 @@ Bu oyun kuvvetiyle Beyazın reytinginin 1653 olduğuna inanmak mümkün mü? Tü
 
 ### Oyunu baştan izleyin
 
-[Event "Muğla"]
+[Event "Marmaris Karya IM Turnuvası"]
 [Site "Muğla"]
 [Date "2022.01.25"]
 [White "Okan İnci"]

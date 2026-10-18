@@ -115,6 +115,9 @@ function surname(name?: string) {
   return (name ?? '').split(',')[0].trim();
 }
 
+// PGN'de "Soyad, Ad" yazılan adı başlıkta "Ad Soyad" gösterir.
+const fullName = (name?: string) => (name ?? '').split(',').map((x) => x.trim()).filter(Boolean).reverse().join(' ');
+
 function gameToc(chunks: string[]): GameItem[] {
   const items: GameItem[] = [];
   chunks.forEach((c) => {
@@ -125,8 +128,9 @@ function gameToc(chunks: string[]): GameItem[] {
     items.push({
       id: `oyun-${t.Round || n}${watch ? '-izle' : ''}`,
       watch,
-      place: [t.Site, (t.Date ?? '').match(/^\d{4}/)?.[0]].filter(Boolean).join(', '),
-      players: `${t.White}${t.WhiteElo ? ` (${t.WhiteElo})` : ''} – ${t.Black}${t.BlackElo ? ` (${t.BlackElo})` : ''}`,
+      // Turnuva, yer, yıl; art arda aynı değer (örn. Event ve Site aynıysa) bir kez yazılır.
+      place: [t.Event, t.Site, (t.Date ?? '').match(/^\d{4}/)?.[0]].filter((v, i, a) => v && v !== a[i - 1]).join(', '),
+      players: `${fullName(t.White)}${t.WhiteElo ? ` (${t.WhiteElo})` : ''} – ${fullName(t.Black)}${t.BlackElo ? ` (${t.BlackElo})` : ''}`,
       round: t.Round || String(n),
       hasRound: !!t.Round,
       label: `${surname(t.White)} – ${surname(t.Black)}`,
@@ -185,16 +189,19 @@ function Toc({ items, onGo }: { items: TocItem[]; onGo: (id: string) => void }) 
 
 // Oyun bölümü: tur başlığı ve altında oyun (her zaman açık).
 function GameSection({ item, children }: { item: GameItem; children: React.ReactNode }) {
+  // [Round] etiketi olan oyunlar turnuva listesi biçiminde (N. tur, oyuncular, sonuç) başlar; etiketi olmayan oyunlar ve izleme
+  // bölümü oyuncuları (Elo ile) ve altında "Turnuva, Yer, Yıl" satırını gösterir.
+  const info = item.watch || !item.hasRound;
   return (
     <section id={item.id} className="my-4 border-b border-[#2E2620] scroll-mt-8">
-      {item.watch && (
-        <div className="mx-auto mb-4 w-full max-w-[400px] py-2 text-center">
+      {info && (
+        <div className="mx-auto mb-4 w-full max-w-[520px] py-2 text-center">
           <h4 className="text-[#F1E9DC]/90">{item.players}</h4>
           {item.place && <p className="mt-1 text-[#A89A88]">{item.place}</p>}
         </div>
       )}
-      {!item.watch && <h4 className="flex items-baseline gap-4 py-4 mb-4 text-[#F1E9DC]/90 md:grid md:grid-cols-[1fr_400px_1fr] md:gap-0">
-        <span className="f-mono text-[#C8893E] w-[5rem] shrink-0">{item.hasRound && `${item.round}. tur`}</span>
+      {!info && <h4 className="flex items-baseline gap-4 py-4 mb-4 text-[#F1E9DC]/90 md:grid md:grid-cols-[1fr_400px_1fr] md:gap-0">
+        <span className="f-mono text-[#C8893E] w-[5rem] shrink-0">{`${item.round}. tur`}</span>
         <span className="flex-1 md:text-center">{item.label}</span>
         <span className="f-mono text-[#A89A88] md:justify-self-end">{item.result}</span>
       </h4>}
