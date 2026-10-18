@@ -225,7 +225,7 @@ export default function Index() {
                 {a.dek && <p className="text-[#F1E9DC]/70 mt-3 max-w-xl w-fit"><Markdown options={{ forceInline: true }}>{a.dek}</Markdown></p>}
                 <p className="f-mono text-[#A89A88] mt-4 w-fit max-w-full">{a.authorLabel ?? 'Yazar'}: {a.author}</p>
                 {/* Diyagram metnin altında; ilk kartta kalan yüksekliği doldurur (FenDiagram `fill`). */}
-                {a.diagram && <FenDiagram fen={a.diagram} orientation={a.diagramOrientation} badge={a.diagramBadge} label={a.diagramAlt ?? a.title} caption={a.diagramCaption} fill={i === 0} />}
+                {a.diagram && <FenDiagram fen={a.diagram} orientation={a.diagramOrientation} badge={a.diagramBadge} arrow={a.diagramArrow} label={a.diagramAlt ?? a.title} caption={a.diagramCaption} fill={i === 0} />}
               </>
             );
             // Taslak (yayımlanmamış) yazı tıklanmaz: sayfası yok. Bağlantı yalnızca içeriğin (görsel, diyagram, metin satırları)
