@@ -8,7 +8,7 @@ Hangi taşları değişeceğimize karar vermek pek çok konumda gerçekten zor o
 
 > Pek çok bakımdan Chigorin’in stili, Alekhine’in stiline öncüllük etmiştir. 20. yüzyıl ortalarında Chigorin’in oyunları üzerine büyük bir duayen olan Boris Spassky de gençliğinde benzer bir üslupla oynuyordu.
 >
-> — Garry Kasparov, "My Great Predecessors, Part 1"
+> — Garry Kasparov, "On My Great Predecessors, Part 1", Everyman Chess, 2003.
 
 Ne var ki Chigorin’in tarihin testinden geçememiş, günümüzde kabul görmemiş bazı önerileri de vardı: Chigorin satrançta atın filden daha iyi bir taş olduğunu savunuyordu. Bu görüş, Chigorin'in iki atının Lasker'in fil çiftine karşı galip geldiği Lasker - Chigorin, Hastings, 1895 partisiyle kendisine geniş destekçi kazanmış, satranç çevrelerinde atı file tercih eden oyunculara "Chigorinci" denmeye başlanmış.
 
