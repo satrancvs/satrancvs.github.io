@@ -72,7 +72,7 @@ export default function Post() {
     <div className="sk min-h-screen bg-[#0E0C0A]">
       <Link to="/" state={{ top: true }} aria-label="Ana sayfaya dön" className="fixed top-5 right-5 z-50 w-12 h-12 rounded-full bg-[#F1E9DC] text-[#0E0C0A] grid place-items-center hover:bg-[#C8893E]"><X /></Link>
       <article className="max-w-[760px] mx-auto px-6 pt-32 relative pb-32">
-        <p className="f-mono text-[#C8893E]">{a.cat} · {a.read ? `${a.read} okuma` : a.date}</p>
+        <p className="f-mono text-[#C8893E]">{a.cat} · {a.date}</p>
         <h1 className="f-display text-[clamp(44px,6vw,88px)] mt-6">{a.title}</h1>
         {(a.dek ?? a.excerpt) && (
           <p className="text-xl font-normal text-[#F1E9DC]/80 mt-8 italic [&_em]:not-italic" style={{ fontFamily: 'Fraunces, serif', fontVariationSettings: "'opsz' 72" }}>

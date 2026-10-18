@@ -6,7 +6,6 @@
     "title": "Mar del Plata 1982: Jan Timman ve bir zaferin anatomisi",
     "excerpt": "İlk turda Larsen’e yenilen Jan Timman, Karpov’un da aralarında bulunduğu rakiplerini geride bırakarak 1982 Mar del Plata turnuvasını nasıl kazandı?",
     "author": "FM Nazmi Can Doğan",
-    "read": "",
     "date": "Ekim 2026",
     "photo": true,
     "body": []
@@ -17,8 +16,7 @@
     "cat": "Turnuva günlükleri",
     "title": "Karlsruhe ve yol ayrımları",
     "author": "FM Tarık Selbes",
-    "read": "",
-    "date": "Yakında",
+    "date": "Ekim 2026",
     "diagram": "5rk1/1pq4p/2pp2p1/r3bn2/p1P2BbP/2NP2P1/PP1Q2BK/4RR2 b - - 1 22",
     "diagramAlt": "Watarkar–Selbes partisinde 22. Ff4! sonrası konum: Siyah oynar",
     "diagramCaption": "Watarkar – Selbes, GRENKE Açık A kategorisi, 2 Nisan 2026. 22. Ff4! sonrası tahtada oluşan konum. Hamle sırası Siyahta.",
@@ -38,14 +36,14 @@
     "title": "\"Zebralar için Satranç\"",
     "dek": "Masamızın üzerinde, dünyanın bir numarası Magnus Carlsen’in de çok ilgi çekici bulduğu kitaplardan biri var: Büyük Usta Jonathan Rowson’ın 'Chess for Zebras' kitabı.",
     "author": "FM Nazmi Can Doğan",
-    "read": "10 dk",
     "thumb": "images/three-zebras-drinking.jpg",
     "thumbAlt": "Su içen üç zebra",
     "body": [
       "Masamızın üzerinde, dünyanın bir numarası Magnus Carlsen’in de çok ilgi çekici bulduğu kitaplardan biri var: Büyük Usta Jonathan Rowson’ın 'Chess for Zebras' kitabı.",
       "Satranca başladığımızda her şeyin iyi gittiği, oyundan zevk alınan güzel bir dönemin ardından bazı engellerle karşılaşırız."
     ],
-    "note": "İlk yayın: [Satrançsever](https://www.satrancdukkanim.com/satranc-dergisi-satrancsever-pmk14), sayı 3 · 2016"
+    "note": "İlk yayın: [Satrançsever](https://www.satrancdukkanim.com/satranc-dergisi-satrancsever-pmk14), sayı 3 · 2016",
+    "date": "Ekim 2026"
   },
   {
     "id": "analiz",
@@ -54,11 +52,11 @@
     "title": "Kale oyunsonlarında Lucena köprüsü",
     "dek": "Her kulüp oyuncusunun bilmesi gereken pozisyonu adım adım çözüyoruz.",
     "author": "Kerem Aydın",
-    "read": "8 dk",
     "body": [
       "Lucena pozisyonu, piyonu yedinci yataya ulaşmış kale oyunsonlarında kazanç tekniğidir.",
       "Anahtar fikir: kaleyi dördüncü yataya getirip şaha bir “köprü” kurmak. Böylece rakip kalenin yandan şahları kesilir."
-    ]
+    ],
+    "date": "Ekim 2026"
   },
   {
     "id": "acilis",
@@ -67,11 +65,11 @@
     "title": "Damı Gambiti’nin yeniden doğuşu",
     "dek": "Klasik bir açılış, modern motorlarla nasıl yeni bir hayat buldu?",
     "author": "Kerem Aydın",
-    "read": "10 dk",
     "body": [
       "Damı Gambiti yüz yılı aşkın süredir üst düzey satrancın merkezinde.",
       "Bu yazıda ana varyantları ve son yıllarda öne çıkan yan yolları inceliyoruz."
-    ]
+    ],
+    "date": "Ekim 2026"
   },
   {
     "id": "mugla",
@@ -81,7 +79,6 @@
     "dek": "Satranç tahtasında 1653 reytingli bir oyuncunun ünvanlı bir ustaya karşı şansı var mı? Ürdünlü Büyükusta Al-Khatib’den Türkiye’ye kısa bir bakış.",
     "author": "GM Ahmad Al-Khatib",
     "translator": "Oğul Köseoğlu",
-    "read": "",
     "date": "Ekim 2026",
     "body": []
   }
