@@ -25,7 +25,8 @@ const authorCount = (name: string) => {
   return n > 0 || byAuthor(ARTICLES, name) === 0 ? `${n} yazı` : 'Yakında';
 };
 
-const CATS = ['Tümü', ...Array.from(new Set(PUBLISHED.map((a) => a.cat)))];
+const CORNERS = Array.from(new Set(PUBLISHED.map((a) => a.cat)));
+const tabCls = (on: boolean) => `f-mono h-11 border-b-2 transition-colors ${on ? 'border-[#C8893E] text-[#0E0C0A]' : 'border-transparent text-[#0E0C0A]/50 hover:text-[#0E0C0A]'}`;
 
 const AUTHORS = [
   { name: 'Nazmi Can Doğan', role: 'Genel Yayın Yönetmeni', bio: 'FIDE Ustası (FM)' },
@@ -222,13 +223,15 @@ export default function Index() {
           <div className="md:col-span-3 reveal">
             <p className="f-mono text-[#0E0C0A]/60"><span className="text-[#9A5F1E]">02</span> — Bu Sayıdaki</p>
             <h2 className="f-display text-[clamp(56px,7vw,120px)] mt-8">Tüm<br /><em className="italic">yazılar</em></h2>
-            <p className="f-mono text-[#0E0C0A]/60 mt-12">Köşeler</p>
+            <div role="tablist" aria-label="Tüm yazılar" className="mt-12">
+              <button role="tab" aria-selected={cat === 'Tümü'} onClick={() => setCat('Tümü')} className={tabCls(cat === 'Tümü')}>Tümü</button>
+            </div>
+            <p className="f-mono text-[#0E0C0A]/60 mt-8">Köşeler</p>
             <div role="tablist" aria-label="Köşeler" className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-2">
-              {CATS.map((k, i) => (
+              {CORNERS.map((k, i) => (
                 <span key={k} className="inline-flex items-center gap-x-3 whitespace-nowrap">
-                <button role="tab" aria-selected={cat === k} onClick={() => setCat(k)}
-                  className={`f-mono h-11 border-b-2 transition-colors ${cat === k ? 'border-[#C8893E] text-[#0E0C0A]' : 'border-transparent text-[#0E0C0A]/50 hover:text-[#0E0C0A]'}`}>{k}</button>
-                {i < CATS.length - 1 && <span aria-hidden className="f-mono text-[#0E0C0A]/35">·</span>}
+                <button role="tab" aria-selected={cat === k} onClick={() => setCat(k)} className={tabCls(cat === k)}>{k}</button>
+                {i < CORNERS.length - 1 && <span aria-hidden className="f-mono text-[#0E0C0A]/35">·</span>}
                 </span>
               ))}
             </div>
