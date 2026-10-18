@@ -5,7 +5,8 @@ import FaviconBullet from '@/components/FaviconBullet';
 const SOCIAL_READY = false;
 const SOCIAL = [[Instagram, 'Instagram', 'https://instagram.com/satrancvs'], [Twitter, 'X', 'https://x.com/satrancvs'], [Youtube, 'YouTube', 'https://youtube.com/@satrancvs']] as const;
 
-const WORDMARK_CLASS = 'block w-full f-display text-[17vw] leading-[1] whitespace-nowrap text-center pt-6 pb-[2vw] hover:opacity-80 transition-opacity';
+// Bağlantı/düğme yalnızca yazının genişliği kadar (w-fit): iki yanındaki boşluk tıklanmaz.
+const WORDMARK_CLASS = 'block w-fit max-w-full mx-auto f-display text-[17vw] leading-[1] whitespace-nowrap text-center pt-6 pb-[2vw] hover:opacity-80 transition-opacity';
 
 const Wordmark = () => (
   <>
