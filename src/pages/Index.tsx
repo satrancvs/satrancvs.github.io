@@ -175,7 +175,7 @@ export default function Index() {
               <span className="block overflow-hidden pb-[0.2em] -mb-[0.2em]"><span className="rise italic text-[#C8893E]" style={{ animationDelay: '.3s' }}>ve bir zaferin anatomisi</span></span>
             </h1>
             <div className="mt-10 flex flex-col md:flex-row md:items-end justify-between gap-8">
-              <p className="max-w-md text-lg text-[#F1E9DC]/80"><Markdown options={{ forceInline: true }}>{cover.excerpt ?? cover.dek ?? ''}</Markdown> <span className="f-mono text-[#A89A88] block mt-3">Yazar: {cover.author}</span></p>
+              <p className="max-w-md text-lg text-[#F1E9DC]/80"><Markdown options={{ forceInline: true }}>{cover.excerpt ?? cover.dek ?? ''}</Markdown> <span className="f-mono text-[#A89A88] block mt-3">{cover.authorLabel ?? 'Yazar'}: {cover.author}</span></p>
               <Link to={articlePath(cover)} className="group pointer-events-auto inline-flex items-center gap-3 rounded-full bg-[#F1E9DC] text-[#0E0C0A] h-14 px-8 font-semibold hover:bg-[#C8893E] transition-colors self-start">Yazıyı oku <ArrowUpRight size={18} className="group-hover:rotate-45 transition-transform" /></Link>
             </div>
           </div>
@@ -201,11 +201,11 @@ export default function Index() {
             const inner = (
               <>
                 {a.thumb && <ProgressiveImage path={a.thumb} alt={a.thumbAlt ?? ''} thumb position={a.thumbPosition} />}
-                {a.diagram && <FenDiagram fen={a.diagram} orientation={a.diagramOrientation} label={a.diagramAlt ?? a.title} caption={a.diagramCaption} fill={i === 0} />}
+                {a.diagram && <FenDiagram fen={a.diagram} orientation={a.diagramOrientation} badge={a.diagramBadge} label={a.diagramAlt ?? a.title} caption={a.diagramCaption} fill={i === 0} />}
                 <p className="f-mono text-[#C8893E] mt-6">{a.cat} · {a.date}</p>
                 <h3 className={`f-display mt-3 ${a.draft ? '' : 'group-hover:italic'} transition-all ${i === 0 ? 'text-5xl md:text-6xl' : 'text-3xl md:text-4xl'}`}>{a.titleLines ? <>{a.titleLines[0]}<br /><em className="italic text-[#C8893E]">{a.titleLines[1]}</em></> : a.title}</h3>
                 {a.dek && <p className="text-[#F1E9DC]/70 mt-3 max-w-xl">{a.dek}</p>}
-                <p className="f-mono text-[#A89A88] mt-4">Yazar: {a.author}</p>
+                <p className="f-mono text-[#A89A88] mt-4">{a.authorLabel ?? 'Yazar'}: {a.author}</p>
               </>
             );
             // Taslak (yayımlanmamış) yazı tıklanmaz: sayfası yok.
@@ -220,9 +220,10 @@ export default function Index() {
       <section id="koseler" className="bg-[#F1E9DC] text-[#0E0C0A]">
         <div className="max-w-[1440px] mx-auto px-6 md:px-10 py-24 md:py-40 grid md:grid-cols-12 gap-10">
           <div className="md:col-span-3 reveal">
-            <p className="f-mono text-[#0E0C0A]/60"><span className="text-[#9A5F1E]">02</span> — Köşeler</p>
+            <p className="f-mono text-[#0E0C0A]/60"><span className="text-[#9A5F1E]">02</span> — Bu Sayıdaki</p>
             <h2 className="f-display text-[clamp(56px,7vw,120px)] mt-8">Tüm<br /><em className="italic">yazılar</em></h2>
-            <div role="tablist" className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-12">
+            <p className="f-mono text-[#0E0C0A]/60 mt-12">Köşeler</p>
+            <div role="tablist" aria-label="Köşeler" className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-2">
               {CATS.map((k, i) => (
                 <span key={k} className="inline-flex items-center gap-x-3 whitespace-nowrap">
                 <button role="tab" aria-selected={cat === k} onClick={() => setCat(k)}
