@@ -215,7 +215,7 @@ export default function Index() {
             // üstünde etkindir; yanındaki boş alan tıklanmaz (a'da pointer-events kapalı, çocuklarda açık).
             return a.draft
               ? <div key={a.id} className={cls}>{inner}</div>
-              : <Link key={a.id} to={articlePath(a)} className={`group pointer-events-none [&>*]:pointer-events-auto ${cls}`}>{inner}</Link>;
+              : <Link key={a.id} to={articlePath(a)} className={`group pointer-events-none [&>*:not(.fen-wrap)]:pointer-events-auto ${cls}`}>{inner}</Link>;
           })}
         </div>
       </section>
