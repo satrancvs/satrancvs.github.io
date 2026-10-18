@@ -10,7 +10,7 @@ const GLYPH_COLOR: Record<string, string> = { '!!': '#1aa34a', '!': '#00AA00', '
 // o zamana kadar yer tutucu yer ayırır, sayfa kaymaz. Ham FEN metni CSS'le (.fen-diagram fen) gizlenir.
 //
 // Tahta kutunun soluna yaslanır; `caption` tahtanın altına, sola yaslı bir bilgi satırı olarak girer.
-// `fill`: md ve üstünde tahta 400 px yerine 572 px'e kadar büyür (CSS). Kutunun içeriği mutlak konumlu olduğu için kutu boyutunu
+// `fill`: md ve üstünde tahta 400 px yerine 515 px'e kadar büyür (CSS). Kutunun içeriği mutlak konumlu olduğu için kutu boyutunu
 // CSS'teki en-boy oranı verir. ChessPublica tahtayı çizildiği andaki genişliğe göre kurar, bu yüzden boyut değişince <fen> yeniden kurulur (key).
 export default function FenDiagram({ fen, label, caption, orientation, badge, arrow, fill = false }: { fen: string; label: string; caption?: string; orientation?: 'white' | 'black'; badge?: { square: string; glyph: string }; arrow?: { from: string; to: string }; fill?: boolean }) {
   const box = useRef<HTMLDivElement>(null);
