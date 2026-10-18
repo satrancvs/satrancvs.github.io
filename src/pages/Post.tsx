@@ -80,7 +80,7 @@ export default function Post() {
           </p>
         )}
         <div className="mt-8 pb-8 border-b border-[#2E2620]">
-          <p className="f-mono text-[#A89A88]">Yazar: {a.author}{a.translator && ` · Türkçesi: ${a.translator}`}</p>
+          <p className="f-mono text-[#A89A88]">{a.authorLabel ?? 'Yazar'}: {a.author}{a.translator && ` · Türkçesi: ${a.translator}`}</p>
           {/* Yazı başka bir yerde yayımlandıysa künye notu: yazar satırının altında, aynı yazı tipiyle, sağa yaslı. */}
           {a.note && <p className="f-mono text-[#A89A88] text-right mt-3"><Markdown options={{ forceInline: true, overrides: { a: { props: { className: 'underline underline-offset-2 hover:text-[#F1E9DC]', target: '_blank', rel: 'noreferrer' } } } }}>{a.note}</Markdown></p>}
         </div>
