@@ -60,7 +60,7 @@
 /* Ana sayfa kartındaki statik diyagram (<fen>): boyutu FenDiagram.tsx verir; tahta kutunun sağına yaslıdır, altındaki bilgi satırı
    .fen-wrap içinde yer alır. Ham FEN metni gizli, tahta kutuyu doldurur. */
 .fen-wrap { width: 100%; display: flex; flex-direction: column; }
-.fen-diagram { position: relative; width: 100%; max-width: 400px; margin-left: auto; aspect-ratio: 1; }
+.fen-diagram { position: relative; width: 100%; max-width: 400px; aspect-ratio: 1; }
 .fen-diagram:not(:has(.jc-board)) { background: rgba(241, 233, 220, .03); }
 /* md ve üstünde (FenDiagram `fill`): kapsayıcı kartın kalan yüksekliğini doldurur, tahta kutusu da bilgi satırının üstünde kalanı alır;
    boyutu FenDiagram.tsx ölçüp tahtayı ona göre kurar. */

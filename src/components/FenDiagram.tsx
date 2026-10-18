@@ -9,7 +9,7 @@ const GLYPH_COLOR: Record<string, string> = { '!!': '#1aa34a', '!': '#00AA00', '
 // Ana sayfa kartları için statik ChessPublica diyagramı (<fen>). Paket yalnızca diyagram ekrana yaklaşınca yüklenir;
 // o zamana kadar yer tutucu yer ayırır, sayfa kaymaz. Ham FEN metni CSS'le (.fen-diagram fen) gizlenir.
 //
-// Tahta kutunun sağına yaslanır; `caption` tahtanın altına, sağa yaslı bir bilgi satırı olarak girer.
+// Tahta kutunun soluna yaslanır; `caption` tahtanın altına, sola yaslı bir bilgi satırı olarak girer.
 // `fill`: md ve üstünde kartın kalan yüksekliğini doldurur (kart, ızgara satırlarının yüksekliğine esner; böylece soldaki kart
 // sağdaki kartlarla aynı boyda biter). Tahta, kutunun genişliği ve yüksekliğinden küçük olanına göre kare çizilir. Kutunun
 // içeriği mutlak konumlu olduğu için kartın doğal yüksekliğine katılmaz ve ızgara satırlarını büyütmez. ChessPublica tahtayı
@@ -52,7 +52,7 @@ export default function FenDiagram({ fen, label, caption, orientation, badge, fi
     <div className={`fen-wrap${fill ? ' fen-fill' : ''}`}>
       <div ref={box} role="img" aria-label={label} className="fen-diagram">
         {near && size > 0 && (
-          <div key={size} className="absolute right-0 top-0 pointer-events-auto" style={{ width: size, height: size }}>
+          <div key={size} className="absolute left-0 top-0 pointer-events-auto" style={{ width: size, height: size }}>
             <div dangerouslySetInnerHTML={{ __html: `<fen${orientation ? ` orientation="${orientation}"` : ''}>${fen}</fen>` }} />
             {badge && badgeAt && (
               <div aria-hidden className="gm-badge" style={{ background: GLYPH_COLOR[badge.glyph] ?? '#00AA00', right: badgeAt.right, top: badgeAt.top, zIndex: 30, width: size * 0.055, height: size * 0.055, fontSize: size * 0.04, boxShadow: `0 1px ${size * 0.01}px #00000073` }}>{badge.glyph}</div>
@@ -60,8 +60,8 @@ export default function FenDiagram({ fen, label, caption, orientation, badge, fi
           </div>
         )}
       </div>
-      {/* Tahta sağa yaslıdır; alt yazı da sağa yaslanır ve tahtadan geniş olmaz. */}
-      {caption && <p className="f-mono normal-case text-[#A89A88] text-right ml-auto mt-3 pointer-events-auto" style={size > 0 ? { maxWidth: size } : undefined}>{caption}</p>}
+      {/* Tahta sola yaslıdır; alt yazı da sola yaslanır ve tahtadan geniş olmaz. */}
+      {caption && <p className="f-mono normal-case text-[#A89A88] mt-3 pointer-events-auto" style={size > 0 ? { maxWidth: size } : undefined}>{caption}</p>}
     </div>
   );
 }
