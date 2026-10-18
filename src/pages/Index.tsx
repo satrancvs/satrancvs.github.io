@@ -34,7 +34,7 @@ const tabCls = (on: boolean) => `f-mono h-11 border-b-2 transition-colors ${on ?
 // hesaplanır (yazar veya çevirmen); sayı verilirse o gösterilir.
 const AUTHORS: { name: string; role: string; bio?: string; count?: boolean | number }[] = [
   { name: 'Nazmi Can Doğan', role: 'Kurucu, Yayın Yönetmeni', bio: 'FIDE ustası (FM). [YouTube kanalında](https://www.youtube.com/satranchess) içerik üretiyor ve canlı yayınlar yapıyor.', count: 3 },
-  { name: 'Tarık Selbes', role: 'Kurucu, Yazar', bio: 'FIDE ustası (FM). [Café Chigorin](https://cafechigorin.com/) sitesinde satranç tarihi, teorisi ve kültürü üzerine yazıyor.', count: true },
+  { name: 'Tarık Selbes', role: 'Kurucu, Yazar', bio: 'FIDE ustası (FM). [Café Chigorin](https://cafechigorin.com/) kişisel blogunda satranç tarihi, teorisi ve kültürü üzerine yazıyor.', count: true },
   { name: 'Oğul Köseoğlu', role: 'Kurucu, Editör', bio: 'Amatör satranç oyuncusu, profesyonel [çevirmen](https://ogulkoseoglu.com/). Satranç vs. ve [ChessPublica](https://chesspublica.github.io/) için web geliştirici.', count: 2 },
   { name: 'Ahmad Al-Khatib', role: 'Konuk yazar', bio: 'Ürdün’ün ilk büyük ustası (GM). [YouTube kanalında](https://www.youtube.com/@GMAhmadAlkhatib) satranç içerikleri üretiyor.', count: true },
 ];
