@@ -13,7 +13,7 @@
   {
     "id": "karlsruhe",
     "slug": "karlsruhe-ve-yol-ayrimlari",
-    "cat": "Turnuva günlükleri",
+    "cat": "Turnuva günlüğü",
     "title": "Karlsruhe ve yol ayrımları",
     "author": "FM Tarık Selbes",
     "date": "Ekim 2026",
@@ -23,7 +23,7 @@
       "square": "f4",
       "glyph": "!"
     },
-    "diagramCaption": "Watarkar – Selbes, GRENKE Açık A kategorisi, 2 Nisan 2026. 22. Ff4! sonrası tahtada oluşan konum. Hamle sırası Siyahta.",
+    "diagramCaption": "Watarkar – Selbes, 2 Nisan 2026, GRENKE Açık A kategorisi. 22. Ff4! Hamle sırası Siyahta.",
     "body": [
       "Yazı hazırlanıyor, çok yakında burada olacak."
     ],
@@ -36,7 +36,7 @@
   {
     "id": "zebra",
     "slug": "zebralar-icin-satranc",
-    "cat": "Kitap incelemeleri",
+    "cat": "Kitap incelemesi",
     "title": "\"Zebralar için Satranç\"",
     "dek": "Masamızın üzerinde, dünyanın bir numarası Magnus Carlsen’in de çok ilgi çekici bulduğu kitaplardan biri var: Büyük Usta Jonathan Rowson’ın 'Chess for Zebras' kitabı.",
     "author": "FM Nazmi Can Doğan",
@@ -52,7 +52,7 @@
   {
     "id": "analiz",
     "slug": "kale-oyunsonlarinda-lucena-koprusu",
-    "cat": "Analizli oyunlar",
+    "cat": "Analizli oyun",
     "title": "Kale oyunsonlarında Lucena köprüsü",
     "dek": "Her kulüp oyuncusunun bilmesi gereken pozisyonu adım adım çözüyoruz.",
     "author": "Kerem Aydın",
@@ -65,7 +65,7 @@
   {
     "id": "acilis",
     "slug": "dami-gambitinin-yeniden-dogusu",
-    "cat": "Açılışlar",
+    "cat": "Açılış",
     "title": "Damı Gambiti’nin yeniden doğuşu",
     "dek": "Klasik bir açılış, modern motorlarla nasıl yeni bir hayat buldu?",
     "author": "Kerem Aydın",
@@ -92,7 +92,7 @@
     "id": "gomori",
     "slug": "eugen-gomoriden-alti-ustaya-tek-bir-soru",
     "cat": "Satranç tarihi",
-    "title": "Altı ustaya tek bir soru, altı yanıt: \"Nasıl satranç ustası oldum?\"",
+    "title": "Altı usta anlatıyor: \"Nasıl satranç ustası oldum?\"",
     "author": "Eugen Gömöri",
     "authorLabel": "Anket",
     "translator": "FM Tarık Selbes",
@@ -104,7 +104,7 @@
   {
     "id": "mugla",
     "slug": "ammandan-mugladan-turkiyede-reytingler-aldatici-mi",
-    "cat": "Analizli oyunlar",
+    "cat": "Analizli oyun",
     "title": "Amman'dan Muğla'ya: Türkiye'de reytingler aldatıcı mı?",
     "dek": "Satranç tahtasında 1653 reytingli bir oyuncunun ünvanlı bir ustaya karşı şansı var mı? Ürdünlü Büyükusta Al-Khatib’den Türkiye’ye kısa bir bakış.",
     "author": "GM Ahmad Al-Khatib",

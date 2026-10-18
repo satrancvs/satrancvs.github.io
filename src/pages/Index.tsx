@@ -19,19 +19,22 @@ const NAV = [
 ] as const;
 
 // Yazar kartındaki sayaç: yayımlanmış yazı sayısı; yalnızca henüz yayımlanmamış (taslak) yazısı olan yazarlar için "Yakında".
-const byAuthor = (list: typeof ARTICLES, name: string) => list.filter((a) => a.author.replace(/^(FM|GM)\s+/, '') === name).length;
+// Çevirmen de sayılır (Gömöri yazısı: yazar Eugen Gömöri, Türkçesi Tarık Selbes).
+const bare = (n?: string) => n?.replace(/^(FM|GM)\s+/, '');
+const byAuthor = (list: typeof ARTICLES, name: string) => list.filter((a) => bare(a.author) === name || bare(a.translator) === name).length;
 const authorCount = (name: string) => {
   const n = byAuthor(PUBLISHED, name);
   return n > 0 || byAuthor(ARTICLES, name) === 0 ? `${n} yazı` : 'Yakında';
 };
 
-const CATS = ['Tümü', ...Array.from(new Set(PUBLISHED.map((a) => a.cat)))];
+const CORNERS = Array.from(new Set(PUBLISHED.map((a) => a.cat)));
+const tabCls = (on: boolean) => `f-mono h-11 border-b-2 transition-colors ${on ? 'border-[#C8893E] text-[#0E0C0A]' : 'border-transparent text-[#0E0C0A]/50 hover:text-[#0E0C0A]'}`;
 
 const AUTHORS = [
   { name: 'Nazmi Can Doğan', role: 'Genel Yayın Yönetmeni', bio: 'FIDE Ustası (FM)' },
   { name: 'Kerem Aydın', role: 'Analiz Editörü', bio: 'Açılış teorisi ve motor destekli analizler.' },
+  { name: 'Tarık Selbes', role: 'Kurucu, Yazar', bio: 'FIDE Ustası (FM); uluslararası usta (IM) yolunda, üç normu tamam.' },
   { name: 'Ahmad Al-Khatib', role: 'Konuk yazar', bio: 'Ürdün’ün ilk Büyükustası (GM)' },
-  { name: 'Tarık Selbes', role: 'Turnuva günlükleri', bio: 'FIDE Ustası (FM); uluslararası usta (IM) yolunda, üç normu tamam.' },
 ];
 
 function useReveal() {
@@ -202,16 +205,17 @@ export default function Index() {
               <>
                 {a.thumb && <ProgressiveImage path={a.thumb} alt={a.thumbAlt ?? ''} thumb position={a.thumbPosition} />}
                 {a.diagram && <FenDiagram fen={a.diagram} orientation={a.diagramOrientation} badge={a.diagramBadge} label={a.diagramAlt ?? a.title} caption={a.diagramCaption} fill={i === 0} />}
-                <p className="f-mono text-[#C8893E] mt-6">{a.cat} · {a.date}</p>
-                <h3 className={`f-display mt-3 ${a.draft ? '' : 'group-hover:italic'} transition-all ${i === 0 ? 'text-5xl md:text-6xl' : 'text-3xl md:text-4xl'}`}>{a.titleLines ? <>{a.titleLines[0]}<br /><em className="italic text-[#C8893E]">{a.titleLines[1]}</em></> : a.title}</h3>
-                {a.dek && <p className="text-[#F1E9DC]/70 mt-3 max-w-xl">{a.dek}</p>}
-                <p className="f-mono text-[#A89A88] mt-4">{a.authorLabel ?? 'Yazar'}: {a.author}</p>
+                <p className="f-mono text-[#C8893E] mt-6 w-fit max-w-full">{a.cat} · {a.date}</p>
+                <h3 className={`f-display mt-3 w-fit max-w-full ${a.draft ? '' : 'group-hover:italic'} transition-all ${i === 0 ? 'text-5xl md:text-6xl' : 'text-3xl md:text-4xl'}`}>{a.titleLines ? <>{a.titleLines[0]}<br /><em className="italic text-[#C8893E]">{a.titleLines[1]}</em></> : a.title}</h3>
+                {a.dek && <p className="text-[#F1E9DC]/70 mt-3 max-w-xl w-fit">{a.dek}</p>}
+                <p className="f-mono text-[#A89A88] mt-4 w-fit max-w-full">{a.authorLabel ?? 'Yazar'}: {a.author}</p>
               </>
             );
-            // Taslak (yayımlanmamış) yazı tıklanmaz: sayfası yok.
+            // Taslak (yayımlanmamış) yazı tıklanmaz: sayfası yok. Bağlantı yalnızca içeriğin (görsel, diyagram, metin satırları)
+            // üstünde etkindir; yanındaki boş alan tıklanmaz (a'da pointer-events kapalı, çocuklarda açık).
             return a.draft
               ? <div key={a.id} className={cls}>{inner}</div>
-              : <Link key={a.id} to={articlePath(a)} className={`group ${cls}`}>{inner}</Link>;
+              : <Link key={a.id} to={articlePath(a)} className={`group pointer-events-none [&>*]:pointer-events-auto ${cls}`}>{inner}</Link>;
           })}
         </div>
       </section>
@@ -222,13 +226,15 @@ export default function Index() {
           <div className="md:col-span-3 reveal">
             <p className="f-mono text-[#0E0C0A]/60"><span className="text-[#9A5F1E]">02</span> — Bu Sayıdaki</p>
             <h2 className="f-display text-[clamp(56px,7vw,120px)] mt-8">Tüm<br /><em className="italic">yazılar</em></h2>
-            <p className="f-mono text-[#0E0C0A]/60 mt-12">Köşeler</p>
+            <div role="tablist" aria-label="Tüm yazılar" className="mt-12">
+              <button role="tab" aria-selected={cat === 'Tümü'} onClick={() => setCat('Tümü')} className={tabCls(cat === 'Tümü')}>Tümü</button>
+            </div>
+            <p className="f-mono text-[#0E0C0A]/60 mt-8">Köşeler</p>
             <div role="tablist" aria-label="Köşeler" className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-2">
-              {CATS.map((k, i) => (
+              {CORNERS.map((k, i) => (
                 <span key={k} className="inline-flex items-center gap-x-3 whitespace-nowrap">
-                <button role="tab" aria-selected={cat === k} onClick={() => setCat(k)}
-                  className={`f-mono h-11 border-b-2 transition-colors ${cat === k ? 'border-[#C8893E] text-[#0E0C0A]' : 'border-transparent text-[#0E0C0A]/50 hover:text-[#0E0C0A]'}`}>{k}</button>
-                {i < CATS.length - 1 && <span aria-hidden className="f-mono text-[#0E0C0A]/35">·</span>}
+                <button role="tab" aria-selected={cat === k} onClick={() => setCat(k)} className={tabCls(cat === k)}>{k}</button>
+                {i < CORNERS.length - 1 && <span aria-hidden className="f-mono text-[#0E0C0A]/35">·</span>}
                 </span>
               ))}
             </div>
@@ -275,7 +281,7 @@ export default function Index() {
         <div className="md:col-span-7 reveal">
           <Label n="04">Hakkında</Label>
           <h2 className="f-display text-[clamp(40px,5.5vw,88px)] mt-8">
-            <span className="flex items-center gap-[calc(13.25px_-_0.054em)]"><FaviconBullet className="shrink-0" /><span>Satranç <em className="italic text-[#C8893E]">vs.</em></span></span>
+            <span className="block"><FaviconBullet className="inline-block align-top mt-[0.075em] mr-[calc(13.25px_-_0.054em)]" />Satranç <em className="italic text-[#C8893E]">vs.</em></span>
             <em className="italic text-[#C8893E]">‘Satranç ve siz’ demek.</em>
           </h2>
           <p className="text-[#F1E9DC]/75 leading-relaxed mt-10 max-w-xl">Satranç vs., satranç üzerine uzun okumalar, analizler ve hikâyeler yayımlayan bağımsız bir dergidir. Bir fincan kahve eşliğinde, acele etmeden okunsun diye.</p>
