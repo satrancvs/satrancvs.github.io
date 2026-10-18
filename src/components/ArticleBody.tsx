@@ -82,11 +82,14 @@ function puzzleSide(header: string, moves: string): 'w' | 'b' | null {
 // görünmez (kutu, oyun gelene kadar boş bir yer tutucudur). Adreste #bağlantı varsa kaydırma konumu doğru
 // hesaplansın diye hepsi hemen kurulur.
 const WATCH_TAG = /^\[View\s+"player"\]\s*$/im;
+// [EventLine "..."]: oyun başlığındaki etkinlik satırını (Etkinlik, Yer, yıl yerine) kendi metniyle verir; satır içi Markdown/HTML (<i>) kullanılabilir.
+// ChessPublica'ya geçirilmez.
+const EVENT_LINE_TAG = /^\[EventLine\s+"[^"]*"\]\s*$/im;
 
 function PgnGame({ header, moves }: { header: string; moves: string }) {
   // [View "player"] etiketi oyunu (bulmaca işareti olmasa da) <pgn-player> ile çizdirir; ChessPublica'ya geçirilmez.
   const watch = WATCH_TAG.test(header);
-  const clean = header.replace(WATCH_TAG, '').trim();
+  const clean = header.replace(WATCH_TAG, '').replace(EVENT_LINE_TAG, '').trim();
   const side = puzzleSide(clean, moves);
   const head = side === 'b' && !/\[Orientation\s/i.test(clean) ? `${clean}\n[Orientation "black"]` : clean;
   const raw = `${head}\n\n${moves.trim()}`.replace(/&/g, '&amp;').replace(/</g, '&lt;');
@@ -130,7 +133,7 @@ function gameToc(chunks: string[]): GameItem[] {
       id: `oyun-${t.Round || n}${watch ? '-izle' : ''}`,
       watch,
       // Turnuva, yer, yıl; art arda aynı değer (örn. Event ve Site aynıysa) bir kez yazılır.
-      place: [t.Event, t.Site, (t.Date ?? '').match(/^\d{4}/)?.[0]].filter((v, i, a) => v && v !== a[i - 1]).join(', '),
+      place: t.EventLine || [t.Event, t.Site, (t.Date ?? '').match(/^\d{4}/)?.[0]].filter((v, i, a) => v && v !== a[i - 1]).join(', '),
       players: `${fullName(t.White)}${t.WhiteElo ? ` (${t.WhiteElo})` : ''} – ${fullName(t.Black)}${t.BlackElo ? ` (${t.BlackElo})` : ''}`,
       round: t.Round || String(n),
       hasRound: !!t.Round,
@@ -198,7 +201,7 @@ function GameSection({ item, children }: { item: GameItem; children: React.React
       {info && (
         <div className="mx-auto mb-4 w-full max-w-[520px] py-2 text-center">
           <h4 className="text-[#F1E9DC]/90">{item.players}</h4>
-          {item.place && <p className="mt-1 text-[#A89A88]">{item.place}</p>}
+          {item.place && <p className="mt-1 text-[#A89A88]"><Markdown options={{ forceInline: true }}>{item.place}</Markdown></p>}
         </div>
       )}
       {!info && <h4 className="flex items-baseline gap-4 py-4 mb-4 text-[#F1E9DC]/90 md:grid md:grid-cols-[1fr_400px_1fr] md:gap-0">

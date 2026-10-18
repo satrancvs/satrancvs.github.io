@@ -26,9 +26,10 @@
 .cp-game .pgn-container .pgn-variation .pgn-variation > .jc-board-wrapper { --dw: calc(min(400px, 94cqw) - 6rem); filter: saturate(0.4) opacity(0.7); }
 /* Hamle kalitesi rozeti (!, ?!, ??) sabit 22px'tir ve küçülmüş diyagramı bastırır; diyagramla birlikte ölçeklenir (400px'te 22px). */
 .cp-game .jc-board-wrapper .gm-badge { width: calc(var(--dw, 400px) * 0.055); height: calc(var(--dw, 400px) * 0.055); font-size: calc(var(--dw, 400px) * 0.04); box-shadow: 0 1px calc(var(--dw, 400px) * 0.01) #00000073; }
-/* Yalnızca düz <pgn> görünümü (study/player değil): varyant metninin solunda soluk dikey çizgi; her satırda tekrarlanır ki diyagramın yanından geçmesin.
-   ChessPublica bu paragrafları satır içi yapar, bu yüzden box-decoration-break: clone. İç içe varyant bir kademe içeri girer ve italik olur. */
-.cp-game .pgn-container:not(pgn-study .pgn-container, pgn-player .pgn-container) .pgn-variation > p { padding-left: 0.8em; border-left: 2px solid color-mix(in srgb, #A89A88 45%, transparent); -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+/* Yalnızca düz <pgn> görünümü (study/player değil): varyant metninin solunda tek, kesintisiz ince dikey çizgi. Her varyant satırı (p) blok
+   olduğu için çizgi paragraf boyunca sürer; araya giren diyagram ayrı öğe olduğundan çizgiyi böler, yanından geçmez. İç içe varyant bir kademe
+   içeri girer ve italik olur. */
+.cp-game .pgn-container:not(pgn-study .pgn-container, pgn-player .pgn-container) .pgn-variation > p { display: block; padding-left: 0.8em; border-left: 1px solid color-mix(in srgb, #A89A88 55%, transparent); }
 .cp-game .pgn-container:not(pgn-study .pgn-container, pgn-player .pgn-container) .pgn-variation .pgn-variation { padding-left: 1.2em; font-style: italic; }
 /* <pgn-player> sayfada ortalanır */
 .cp-game pgn-player { --board-size: min(400px, calc(100vw - 3rem)); display: block; width: fit-content; max-width: 100%; margin-left: auto; margin-right: auto; }

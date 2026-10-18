@@ -4,11 +4,11 @@ Böylesine bir kayaya ilk toslayışım epey uzun zaman öncesine dayansa da, h�
 
 O hâlde, yazılışından kısa bir süre sonra satranç literatüründe saygın bir yer edinmeyi başarmış bu eserin yazarından kısaca söz ederek başlayalım: Sayısız turnuva zaferinin yanında İngiltere ve İskoçya şampiyonlukları bulunan İskoç Büyükusta Jonathan Rowson, satrançtaki tescilli başarısının yanına Oxford ve Harvard'da gördüğü felsefe ve psikoloji öğrenimlerini de eklemiş. Nöroloji bilimi ve öğrenmenin psikolojisi üzerine bilgilerini satranç oyunculuğu ve antrenörlükten edindiği tecrübelerle birleştirmiş: "Kitabı yazmaya başladığım sırada 2600'a çok yakındım ve İngiltere şampiyonuydum. Paylaşılmaya değer şeylerin izini sürdüğümü hissediyordum" diyor.
 
-Satranç otoriteleri tarafından takdirle karşılanan ***"Seven Deadly Chess Sins"*** ("Yedi Ölümcül Satranç Günahı") kitabından sonra karşımızda yine en az onun kadar etkileyici bir kitap var: ***"Chess for Zebras"*** ("Zebralar için Satranç").
+Satranç otoriteleri tarafından takdirle karşılanan ***"Seven Deadly Chess Sins"*** (Yedi Ölümcül Satranç Günahı) kitabından sonra karşımızda yine en az onun kadar etkileyici bir kitap var: ***"Chess for Zebras"*** (Zebralar için Satranç).
 
 ![Jonathan Rowson'ın Chess for Zebras kitabının kapağı](images/chess-for-zebras-cover.jpg "Jonathan Rowson, “Chess for Zebras” kapak görseli · Gambit, 2005 · Kaynak: [Gambit Books](http://www.gambitbooks.com/bigimg/Chess_for_Zebras_Big.jpg)")
 
-Kitap üç bölümden oluşuyor: İlk bölüm daha çok satranç oyuncusunun psikolojisine değinirken, ikinci bölüm Rowson'ın da belirttiği gibi, oyuncu psikolojisi konusundan ziyade teknik olarak satrancın kendisiyle en dolu bölüm. "Benim için işe yarayan bir şey" kısmında Rowson, **Kasparov**'un "artık satrancı tam olarak kapsamadığını düşündüğü" üç boyutlu düşünüşünü (Materyal, Nitelik ve Zaman) eleştirip üzerine saat ("clock ticking") faktörünü ekleyerek ilerliyor. Özellikle bu kısımlar benim gibi zaman sıkışmasına sık giren oyuncular için önemli bölümler barındırıyor. Yazarın "düşünme zamanının fırsat maliyeti" diyerek açıkladığı bölüm gibi:
+Kitap üç bölümden oluşuyor: İlk bölüm daha çok satranç oyuncusunun psikolojisine değinirken, ikinci bölüm Rowson'ın da belirttiği gibi, oyuncu psikolojisi konusundan ziyade teknik olarak satrancın kendisiyle en dolu bölüm. "Benim için işe yarayan bir şey" kısmında Rowson, **Kasparov**'un "artık satrancı tam olarak kapsamadığını düşündüğü" üç boyutlu düşünüşünü (*Materyal*, *Nitelik* ve *Zaman*) eleştirip üzerine saat (*"clock ticking"*) faktörünü ekleyerek ilerliyor. Özellikle bu kısımlar benim gibi zaman sıkışmasına sık giren oyuncular için önemli bölümler barındırıyor. Yazarın "düşünme zamanının fırsat maliyeti" diyerek açıkladığı bölüm gibi:
 
 > Örneğin, bazen iki hamle arasında tercih yapmanız gerekir. Birinin yeterli, diğerininse çok daha kuvvetli olduğunu, hatta forse kazandığını görebiliyorsunuzdur. Ancak, kazanç olup olmadığını bulabilmek için dakikalarca düşünmeniz gerekmektedir. (...) Pratik gücün en önemli parçalarından birinin zaman faktörünü böyle anlarda değerlendirebilmek olduğuna inanıyorum. (...) Şimdi yirmi dakika kaybedersem, daha sonraki fırsatları kesinlikle kaçıracağım; peki böyle bir yatırım yapmaya değer mi?
 >
@@ -16,7 +16,7 @@ Kitap üç bölümden oluşuyor: İlk bölüm daha çok satranç oyuncusunun psi
 
 Kitap ilerledikçe pek çok büyükustanın fikirlerine, konuşmalarına (Motwani, Suba, Psakhis, McShane, Hübner, Seirawan vs.), başka eserlerden referanslara yer verilmesi okumayı çok daha sürükleyici ve keyifli kılıyor.
 
-Üçüncü bölüm olan "Siyah ve beyaz hakkında rengarenk düşünme" bölümünde ise Siyah ve Beyazın avantaj ve dezavantajlarına, açılış ve hazırlık meselesine odaklanıyor:
+Üçüncü bölüm olan *"Siyah ve beyaz hakkında rengarenk düşünme"* bölümünde ise Siyah ve Beyazın avantaj ve dezavantajlarına, açılış ve hazırlık meselesine odaklanıyor:
 
 > Çok garip bulduğum bir şey, çoğu oyuncunun en üst seviyelerde açılış hazırlığının pek çok oyuncu ve hatta iyi Büyükustalar için bile olduğundan çok daha fazla önemli olduğunu fark edemiyor görünmeleri. (...) Sevdiğiniz oyuncuların hamlelerine ve fikirlerine özenmeye çalışmak mantıklı ancak onların yaptığı satranç çalışmasına özenmek büyük bir hata olur, **çünkü 2650'yi 2750'ye ulaştırmaya faydalı olacak bir çalışma 1650'yi 1750'ye ve hatta 2550'yi 2650'ye ulaştırmak için faydalı olmayabilir**.
 >
@@ -54,9 +54,10 @@ Burada söylenmek istenen "oyuncunun bir tarzı olmamalı" değil, bu yaklaşım
 
 Kitap boyunca konuya eşlik eden örneklerde kendi partilerini, oynarkenki düşüncelerini ve hissettiklerini içten (belki de aşırı içten) bir şekilde paylaşması kitabın en büyük artılarından.
 
-Şimdi ilk bölümün kaba bir özeti sayılabilecek bir kısmını paylaşmak istiyorum. Bir satranç kitabında içtenliğiyle böylesine beni yakalayan ve söyledikleriyle bana ayna tutan başka bir bölüm hatırlamıyorum. Sözünü ettiğim, Hikâye Uydurma (*Fabulation*) alt başlığında Rowson'ın yakın zamanda hayata gözlerini yuman Viktor Korchnoi ile karşılaşması:
+Şimdi ilk bölümün kaba bir özeti sayılabilecek bir kısmını paylaşmak istiyorum. Bir satranç kitabında içtenliğiyle böylesine beni yakalayan ve söyledikleriyle bana ayna tutan başka bir bölüm hatırlamıyorum. Sözünü ettiğim, Hikâye Uydurma *(Fabulation)* alt başlığında Rowson'ın yakın zamanda hayata gözlerini yuman Viktor Korchnoi ile karşılaşması:
 
 [Event "Monarch Assurance 13th"]
+[EventLine "13. <i>Monarch Assurance</i> Turnuvası"]
 [Site "Port Erin"]
 [Date "2004.09.29"]
 [White "Korchnoi, Viktor"]
@@ -82,6 +83,8 @@ Kitap boyunca konuya eşlik eden örneklerde kendi partilerini, oynarkenki düş
 
 Uzunca bir bölümünü alıntıladığım yazımı kitabın en güzel tavsiyelerinden birisiyle bitiriyorum:
 
-"Daha iyi oyuncu olmak istiyorsanız daha iyi alışkanlıklara sahip olmak gerekir ve daha iyi alışkanlıklar antrenman ile gelişir. En iyi antrenman, güç kararlar için kendinizi sorumluluk almaya zorladığınızda, sizi konfor alanınızın dışına çıkmaya itendir. (...) Sonuçlarımızı geliştirmenin en kesin yolunun evde kompleks örnekler çözmekten geçtiğini düşünüyorum. Bunu olabildiğince sık, uzun vadeli ve disiplinli bir şekilde yapmalı. **Bu konsantre olmayı alışkanlığa çevirmede yardımcı olacak ve oyunlarımızın kritik konumlarında konsantre olmayı kolaylaştıracaktır.**"
+> Daha iyi oyuncu olmak istiyorsanız daha iyi alışkanlıklara sahip olmak gerekir ve daha iyi alışkanlıklar antrenman ile gelişir. En iyi antrenman, güç kararlar için kendinizi sorumluluk almaya zorladığınızda, sizi konfor alanınızın dışına çıkmaya itendir. (...) Sonuçlarımızı geliştirmenin en kesin yolunun evde kompleks örnekler çözmekten geçtiğini düşünüyorum. Bunu olabildiğince sık, uzun vadeli ve disiplinli bir şekilde yapmalı. **Bu konsantre olmayı alışkanlığa çevirmede yardımcı olacak ve oyunlarımızın kritik konumlarında konsantre olmayı kolaylaştıracaktır.**
+>
+> — Jonathan Rowson, Chess for Zebras
 
 Şimdiye kadar sadece üç kitabı bulunan Büyükusta Jonathan Rowson'ın sıradaki eserinin konusunu bilemiyorum, fakat düşünmeyi teşvik eden her cümlesi okunmaya değer görünüyor.
