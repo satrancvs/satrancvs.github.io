@@ -77,6 +77,9 @@
 .art-fen fen { display: none; }
 .art-fen .fen-container { max-width: none; margin: 0; width: 100%; }
 .art-fen .jc-board { width: 100%; }
+/* Üst yarı kesiti: tahta yarım yüksekliğe kırpılır, alt kenara tahta çerçevesi çizilir. */
+.art-fen-top { aspect-ratio: 2 / 1; overflow: hidden; border-bottom: 2px solid #404040; }
+.art-fen-top:not(:has(.jc-board)) { aspect-ratio: 2 / 1; }
 
 /* Oyun henüz kurulmadıysa ham PGN metni görünmesin; kutu o sırada boş bir yer tutucu olur (sayfa kaymasın) */
 .cp-game pgn,
