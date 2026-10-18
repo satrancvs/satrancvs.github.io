@@ -201,7 +201,7 @@ export default function Index() {
             const inner = (
               <>
                 {a.thumb && <ProgressiveImage path={a.thumb} alt={a.thumbAlt ?? ''} thumb position={a.thumbPosition} />}
-                {a.diagram && <FenDiagram fen={a.diagram} orientation={a.diagramOrientation} label={a.diagramAlt ?? a.title} caption={a.diagramCaption} fill={i === 0} />}
+                {a.diagram && <FenDiagram fen={a.diagram} orientation={a.diagramOrientation} badge={a.diagramBadge} label={a.diagramAlt ?? a.title} caption={a.diagramCaption} fill={i === 0} />}
                 <p className="f-mono text-[#C8893E] mt-6">{a.cat} · {a.date}</p>
                 <h3 className={`f-display mt-3 ${a.draft ? '' : 'group-hover:italic'} transition-all ${i === 0 ? 'text-5xl md:text-6xl' : 'text-3xl md:text-4xl'}`}>{a.titleLines ? <>{a.titleLines[0]}<br /><em className="italic text-[#C8893E]">{a.titleLines[1]}</em></> : a.title}</h3>
                 {a.dek && <p className="text-[#F1E9DC]/70 mt-3 max-w-xl">{a.dek}</p>}

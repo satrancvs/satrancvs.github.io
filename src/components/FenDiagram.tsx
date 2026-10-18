@@ -3,6 +3,9 @@ import { useChessPublica } from '@/lib/chesspublica';
 
 const MAX = 640;
 
+// ChessPublica'nın statik <fen> tahtası hamle rozeti çizmez; <pgn>'deki .gm-badge ile aynı görünümde (renk, boyutun 0,055'i) kendimiz koyarız.
+const GLYPH_COLOR: Record<string, string> = { '!!': '#1aa34a', '!': '#00AA00', '!?': '#0000FF', '?!': '#FF8C00', '?': '#E69F00', '??': '#CC0000' };
+
 // Ana sayfa kartları için statik ChessPublica diyagramı (<fen>). Paket yalnızca diyagram ekrana yaklaşınca yüklenir;
 // o zamana kadar yer tutucu yer ayırır, sayfa kaymaz. Ham FEN metni CSS'le (.fen-diagram fen) gizlenir.
 //
@@ -11,7 +14,7 @@ const MAX = 640;
 // sağdaki kartlarla aynı boyda biter). Tahta, kutunun genişliği ve yüksekliğinden küçük olanına göre kare çizilir. Kutunun
 // içeriği mutlak konumlu olduğu için kartın doğal yüksekliğine katılmaz ve ızgara satırlarını büyütmez. ChessPublica tahtayı
 // çizildiği andaki genişliğe göre kurar, bu yüzden boyut değişince <fen> yeniden kurulur (key).
-export default function FenDiagram({ fen, label, caption, orientation, fill = false }: { fen: string; label: string; caption?: string; orientation?: 'white' | 'black'; fill?: boolean }) {
+export default function FenDiagram({ fen, label, caption, orientation, badge, fill = false }: { fen: string; label: string; caption?: string; orientation?: 'white' | 'black'; badge?: { square: string; glyph: string }; fill?: boolean }) {
   const box = useRef<HTMLDivElement>(null);
   const [near, setNear] = useState(() => typeof IntersectionObserver === 'undefined');
   const [size, setSize] = useState(0);
@@ -36,14 +39,25 @@ export default function FenDiagram({ fen, label, caption, orientation, fill = fa
     return () => { window.clearTimeout(t); ro.disconnect(); };
   }, []);
   const status = useChessPublica(near);
+  // Rozet, karenin sağ üst köşesine biner (tahta siyah tarafından çizildiyse sütun ve sıra ters).
+  const cell = size / 8;
+  const badgeAt = badge && /^[a-h][1-8]$/.test(badge.square) ? (() => {
+    const f = badge.square.charCodeAt(0) - 97, r = Number(badge.square[1]) - 1;
+    const black = orientation === 'black';
+    return { right: (black ? f : 7 - f) * cell - cell * 0.05, top: (black ? r : 7 - r) * cell - cell * 0.05 };
+  })() : null;
   // Boyut değişince yeni <fen> kurulur; paket zaten yüklüyse yeniden taratılır.
   useEffect(() => { if (status === 'ready' && size > 0) window.ChessPublica?.initAll(); }, [status, size]);
   return (
     <div className={`fen-wrap${fill ? ' fen-fill' : ''}`}>
       <div ref={box} role="img" aria-label={label} className="fen-diagram">
         {near && size > 0 && (
-          <div key={size} className="absolute right-0 top-0" style={{ width: size, height: size }}
-            dangerouslySetInnerHTML={{ __html: `<fen${orientation ? ` orientation="${orientation}"` : ''}>${fen}</fen>` }} />
+          <div key={size} className="absolute right-0 top-0" style={{ width: size, height: size }}>
+            <div dangerouslySetInnerHTML={{ __html: `<fen${orientation ? ` orientation="${orientation}"` : ''}>${fen}</fen>` }} />
+            {badge && badgeAt && (
+              <div aria-hidden className="gm-badge" style={{ background: GLYPH_COLOR[badge.glyph] ?? '#00AA00', right: badgeAt.right, top: badgeAt.top, zIndex: 30, width: size * 0.055, height: size * 0.055, fontSize: size * 0.04, boxShadow: `0 1px ${size * 0.01}px #00000073` }}>{badge.glyph}</div>
+            )}
+          </div>
         )}
       </div>
       {/* Tahta sağa yaslıdır; alt yazı da sağa yaslanır ve tahtadan geniş olmaz. */}
