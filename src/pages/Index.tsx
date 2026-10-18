@@ -216,7 +216,7 @@ export default function Index() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mt-16">
           {featured.map((a, i) => {
-            const cls = `block text-left reveal ${i === 0 ? 'md:col-span-7 md:row-span-2' : 'md:col-span-5'}${a.diagram ? ' md:flex md:flex-col' : ''}`;
+            const cls = `block text-left reveal ${i === 0 ? 'md:col-span-7 md:row-span-2' : `md:col-span-5${i === featured.length - 1 ? ' md:self-end' : ''}`}${a.diagram ? ' md:flex md:flex-col' : ''}`;
             const inner = (
               <>
                 {a.thumb && <ProgressiveImage path={a.thumb} alt={a.thumbAlt ?? ''} thumb position={a.thumbPosition} />}
