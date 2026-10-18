@@ -30,12 +30,12 @@ const authorCount = (name: string) => {
 const CORNERS = Array.from(new Set(PUBLISHED.map((a) => a.cat)));
 const tabCls = (on: boolean) => `f-mono h-11 border-b-2 transition-colors ${on ? 'border-[#C8893E] text-[#0E0C0A]' : 'border-transparent text-[#0E0C0A]/50 hover:text-[#0E0C0A]'}`;
 
-// bio ve sayaç isteğe bağlı: boşsa kartta gösterilmez (Oğul Köseoğlu).
-const AUTHORS: { name: string; role: string; bio?: string; count?: boolean }[] = [
+// bio, href (bio'yu bağlantı yapar) ve sayaç isteğe bağlıdır; boşsa kartta gösterilmez.
+const AUTHORS: { name: string; role: string; bio?: string; href?: string; count?: boolean }[] = [
   { name: 'Nazmi Can Doğan', role: 'Genel Yayın Yönetmeni', bio: 'FIDE Ustası (FM)', count: true },
   { name: 'Kerem Aydın', role: 'Analiz Editörü', bio: 'Açılış teorisi ve motor destekli analizler.', count: true },
   { name: 'Tarık Selbes', role: 'Kurucu, Yazar', bio: 'FIDE Ustası (FM); uluslararası usta (IM) yolunda, üç normu tamam.', count: true },
-  { name: 'Oğul Köseoğlu', role: 'Kurucu, Editör' },
+  { name: 'Oğul Köseoğlu', role: 'Kurucu, Editör, Yazar', bio: 'Amatör satranç oyuncusu, profesyonel çevirmen', href: 'https://ogulkoseoglu.com' },
   { name: 'Ahmad Al-Khatib', role: 'Konuk yazar', bio: 'Ürdün’ün ilk Büyükustası (GM)', count: true },
 ];
 
@@ -271,7 +271,7 @@ export default function Index() {
               <span className={`block w-14 h-14 mb-8 ${(i % 2) ? 'bg-[#F1E9DC]' : 'bg-[#3A2C22]'} grid place-items-center f-display text-3xl ${(i % 2) ? 'text-[#0E0C0A]' : 'text-[#C8893E]'}`}>{'♔♕♖♘♗'[i]}</span>
               <h3 className="f-display text-3xl">{au.name}</h3>
               <p className="f-mono text-[#C8893E] mt-3">{au.role}</p>
-              {au.bio && <p className="text-[#F1E9DC]/70 mt-4">{au.bio}</p>}
+              {au.bio && <p className="text-[#F1E9DC]/70 mt-4">{au.href ? <a href={au.href} target="_blank" rel="noreferrer" className="underline decoration-[#C8893E]/50 underline-offset-4 hover:text-[#C8893E] hover:decoration-[#C8893E]">{au.bio}</a> : au.bio}</p>}
               {au.count && <p className="f-mono text-[#A89A88] mt-6">{authorCount(au.name)}</p>}
             </div>
           ))}
