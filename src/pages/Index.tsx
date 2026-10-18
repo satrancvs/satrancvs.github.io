@@ -206,7 +206,7 @@ export default function Index() {
                 <p className="f-mono text-[#C8893E] mt-6">{a.cat} · {a.read || a.date}</p>
                 <h3 className={`f-display mt-3 ${a.draft ? '' : 'group-hover:italic'} transition-all ${i === 0 ? 'text-5xl md:text-6xl' : 'text-3xl md:text-4xl'}`}>{a.titleLines ? <>{a.titleLines[0]}<br /><em className="italic text-[#C8893E]">{a.titleLines[1]}</em></> : a.title}</h3>
                 {a.dek && <p className="text-[#F1E9DC]/70 mt-3 max-w-xl">{a.dek}</p>}
-                <p className="f-mono text-[#A89A88] mt-4">{a.author}</p>
+                <p className="f-mono text-[#A89A88] mt-4">Yazar: {a.author}</p>
               </>
             );
             // Taslak (yayımlanmamış) yazı tıklanmaz: sayfası yok.
