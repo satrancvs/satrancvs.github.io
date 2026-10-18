@@ -33,7 +33,7 @@ const tabCls = (on: boolean) => `f-mono h-11 border-b-2 transition-colors ${on ?
 // bio (Markdown bağlantıları olabilir) ve sayaç isteğe bağlıdır; boşsa kartta gösterilmez. count: true yayımlanmış yazılardan
 // hesaplanır (yazar veya çevirmen); sayı verilirse o gösterilir.
 const AUTHORS: { name: string; role: string; bio?: string; count?: boolean | number }[] = [
-  { name: 'Nazmi Can Doğan', role: 'Kurucu, Yayın Yönetmeni', bio: 'FIDE ustası (FM)', count: 3 },
+  { name: 'Nazmi Can Doğan', role: 'Kurucu, Yayın Yönetmeni', bio: '[FIDE ustası (FM)](https://www.youtube.com/satranchess)', count: 3 },
   { name: 'Tarık Selbes', role: 'Kurucu, Yazar', bio: 'FIDE Ustası (FM); uluslararası usta (IM) yolunda, üç normu tamam.', count: true },
   { name: 'Oğul Köseoğlu', role: 'Kurucu, Editör', bio: 'Amatör satranç oyuncusu, profesyonel [çevirmen](https://ogulkoseoglu.com/). Satranç vs. ve [Chesspublica](https://chesspublica.github.io/) için web geliştirici.', count: 2 },
   { name: 'Ahmad Al-Khatib', role: 'Konuk yazar', bio: 'Ürdün’ün ilk büyük ustası (GM).', count: true },
