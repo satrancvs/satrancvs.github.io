@@ -220,9 +220,10 @@ export default function Index() {
       <section id="koseler" className="bg-[#F1E9DC] text-[#0E0C0A]">
         <div className="max-w-[1440px] mx-auto px-6 md:px-10 py-24 md:py-40 grid md:grid-cols-12 gap-10">
           <div className="md:col-span-3 reveal">
-            <p className="f-mono text-[#0E0C0A]/60"><span className="text-[#9A5F1E]">02</span> — Köşeler</p>
+            <p className="f-mono text-[#0E0C0A]/60"><span className="text-[#9A5F1E]">02</span> — Bu Sayıdaki</p>
             <h2 className="f-display text-[clamp(56px,7vw,120px)] mt-8">Tüm<br /><em className="italic">yazılar</em></h2>
-            <div role="tablist" className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-12">
+            <p className="f-mono text-[#0E0C0A]/60 mt-12">Köşeler</p>
+            <div role="tablist" aria-label="Köşeler" className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-2">
               {CATS.map((k, i) => (
                 <span key={k} className="inline-flex items-center gap-x-3 whitespace-nowrap">
                 <button role="tab" aria-selected={cat === k} onClick={() => setCat(k)}
