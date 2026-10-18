@@ -16,7 +16,7 @@ Oyun ilerledikçe pozisyonu kontrol altına almayı başarsam da rakibimin elde 
 
 Bu oyun kuvvetiyle Beyazın reytinginin 1653 olduğuna inanmak mümkün mü? Türkiye'de oyuncuların reytingleri hak ettiklerinin çok altında. Muğlalı oyuncu Okan İnci'ye tebrik ve başarılar...
 
-### Oyunu baştan izleyin
+### Oyunu izleyin
 
 [Event "Marmaris Karya IM Turnuvası"]
 [Site "Muğla"]
