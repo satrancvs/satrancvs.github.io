@@ -57,6 +57,7 @@ Kitap boyunca konuya eşlik eden örneklerde kendi partilerini, oynarkenki düş
 Şimdi ilk bölümün kaba bir özeti sayılabilecek bir kısmını paylaşmak istiyorum. Bir satranç kitabında içtenliğiyle böylesine beni yakalayan ve söyledikleriyle bana ayna tutan başka bir bölüm hatırlamıyorum. Sözünü ettiğim, Hikâye Uydurma *(Fabulation)* alt başlığında Rowson'ın yakın zamanda hayata gözlerini yuman Viktor Korchnoi ile karşılaşması:
 
 [Event "Monarch Assurance 13th"]
+[EventLine "13. <i>Monarch Assurance</i> Turnuvası"]
 [Site "Port Erin"]
 [Date "2004.09.29"]
 [White "Korchnoi, Viktor"]
