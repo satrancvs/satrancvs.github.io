@@ -217,8 +217,9 @@ export default function Index() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mt-16">
           {featured.map((a, i) => {
             // İnce ayraçlar (Tüm yazılar listesindeki çizgi gibi): kartlar arası boşluğun ortasında; mobilde alt alta kartların arasında yatay,
-            // masaüstünde birinci kartın sağında dikey, sağ sütundaki kartlar arasında yatay.
-            const sep = i === featured.length - 1 ? '' : ' after:absolute after:bg-[#F1E9DC]/15 after:pointer-events-none after:inset-x-0 after:-bottom-5 after:h-px' + (i === 0 ? ' md:after:inset-x-auto md:after:-right-5 md:after:top-0 md:after:bottom-0 md:after:h-auto md:after:w-px' : '');
+            // masaüstünde birinci kartın sağında dikey (içeriğin sağ kenarı, 515 px, ile sağ sütun arasının ortasında), sağ sütundaki kartlar arasında yatay.
+            // İkisi de border (1 px, piksele oturur); arka plan çizgisi kesirli konumda bulanıklaşıp yatay olandan farklı görünüyordu.
+            const sep = i === featured.length - 1 ? '' : ' after:absolute after:border-[#F1E9DC]/15 after:pointer-events-none after:inset-x-0 after:-bottom-5 after:border-b' + (i === 0 ? ' md:after:inset-x-auto md:after:right-auto md:after:left-[calc((min(100%,515px)+100%+40px)/2)] md:after:top-0 md:after:bottom-0 md:after:border-b-0 md:after:border-l' : '');
             const cls = `relative block text-left reveal${sep} ${i === 0 ? 'md:col-span-7 md:row-span-2' : `md:col-span-5${i === featured.length - 1 ? ' md:self-end' : ''}`}${a.diagram ? ' md:flex md:flex-col' : ''}`;
             const inner = (
               <>
