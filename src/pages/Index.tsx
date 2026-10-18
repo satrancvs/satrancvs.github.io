@@ -216,7 +216,10 @@ export default function Index() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mt-16">
           {featured.map((a, i) => {
-            const cls = `block text-left reveal ${i === 0 ? 'md:col-span-7 md:row-span-2' : `md:col-span-5${i === featured.length - 1 ? ' md:self-end' : ''}`}${a.diagram ? ' md:flex md:flex-col' : ''}`;
+            // İnce ayraçlar (Tüm yazılar listesindeki çizgi gibi): kartlar arası boşluğun ortasında; mobilde alt alta kartların arasında yatay,
+            // masaüstünde birinci kartın sağında dikey, sağ sütundaki kartlar arasında yatay.
+            const sep = i === featured.length - 1 ? '' : ' after:absolute after:bg-[#F1E9DC]/15 after:pointer-events-none after:inset-x-0 after:-bottom-5 after:h-px' + (i === 0 ? ' md:after:inset-x-auto md:after:-right-5 md:after:top-0 md:after:bottom-0 md:after:h-auto md:after:w-px' : '');
+            const cls = `relative block text-left reveal${sep} ${i === 0 ? 'md:col-span-7 md:row-span-2' : `md:col-span-5${i === featured.length - 1 ? ' md:self-end' : ''}`}${a.diagram ? ' md:flex md:flex-col' : ''}`;
             const inner = (
               <>
                 {a.thumb && <ProgressiveImage path={a.thumb} alt={a.thumbAlt ?? ''} thumb position={a.thumbPosition} />}

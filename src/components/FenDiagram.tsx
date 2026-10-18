@@ -16,6 +16,8 @@ export default function FenDiagram({ fen, label, caption, orientation, badge, ar
   const box = useRef<HTMLDivElement>(null);
   const [near, setNear] = useState(() => typeof IntersectionObserver === 'undefined');
   const [size, setSize] = useState(0);
+  const cap = useRef<HTMLParagraphElement>(null);
+  const [maxH, setMaxH] = useState<number>();
   useEffect(() => {
     if (near || !box.current) return;
     const io = new IntersectionObserver((entries) => {
@@ -36,6 +38,18 @@ export default function FenDiagram({ fen, label, caption, orientation, badge, ar
     ro.observe(el);
     return () => { window.clearTimeout(t); ro.disconnect(); };
   }, []);
+  // Kural: tahta + alt yazı (üstteki sabit başlık da düşülerek) ekran yüksekliğini aşmaz; tahtanın üst sınırı CSS'e `--fen-cap` olarak verilir.
+  useEffect(() => {
+    const update = () => {
+      const head = document.querySelector('header')?.getBoundingClientRect().height ?? 80;
+      const capH = cap.current ? cap.current.offsetHeight + 12 : 0;
+      const m = Math.max(200, Math.floor(window.innerHeight - head - capH - 16));
+      setMaxH((prev) => (prev !== undefined && Math.abs(prev - m) < 2 ? prev : m));
+    };
+    update();
+    window.addEventListener('resize', update);
+    return () => window.removeEventListener('resize', update);
+  }, [caption, size]);
   const status = useChessPublica(near);
   // Rozet, karenin sağ üst köşesine biner (tahta siyah tarafından çizildiyse sütun ve sıra ters).
   const cell = size / 8;
@@ -63,7 +77,7 @@ export default function FenDiagram({ fen, label, caption, orientation, badge, ar
   useEffect(() => { if (status === 'ready' && size > 0) window.ChessPublica?.initAll(); }, [status, size]);
   return (
     <div className={`fen-wrap mt-8${fill ? ' fen-fill' : ''}`}>
-      <div ref={box} role="img" aria-label={label} className="fen-diagram">
+      <div ref={box} role="img" aria-label={label} className="fen-diagram" style={maxH ? ({ '--fen-cap': `${maxH}px` } as React.CSSProperties) : undefined}>
         {near && size > 0 && (
           <div key={size} className="absolute left-0 top-0 pointer-events-auto" style={{ width: size, height: size }}>
             <div dangerouslySetInnerHTML={{ __html: `<fen${orientation ? ` orientation="${orientation}"` : ''}>${fen}</fen>` }} />
@@ -82,7 +96,7 @@ export default function FenDiagram({ fen, label, caption, orientation, badge, ar
         )}
       </div>
       {/* Tahta sola yaslıdır; alt yazı da sola yaslanır ve tahtadan geniş olmaz. Kart bağlantısı yalnızca içerik üstünde etkindir (Index.tsx). */}
-      {caption && <p className="f-mono normal-case text-[#A89A88] mt-3 pointer-events-auto" style={size > 0 ? { maxWidth: size } : undefined}>{caption}</p>}
+      {caption && <p ref={cap} className="f-mono normal-case text-[#A89A88] mt-3 pointer-events-auto" style={size > 0 ? { maxWidth: size } : undefined}>{caption}</p>}
     </div>
   );
 }
