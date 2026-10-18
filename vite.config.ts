@@ -61,14 +61,18 @@ function articlePages() {
         for (const a of articles) {
           const url = `${SITE_URL}/${a.slug}/`;
           const title = `${toTypography(a.title)} — Satranç vs.`;
-          const desc = toTypography((a.excerpt ?? a.dek).replace(/[*_]/g, ''));
+          // Özeti (excerpt/dek) olmayan yazıda sitenin genel açıklaması kalır.
+          const descRaw = a.excerpt ?? a.dek;
           let html = template.replace(/<title[^>]*>[^<]*<\/title>/, `<title>${esc(title)}</title>`);
-          html = setMeta(html, 'name', 'description', desc);
+          if (descRaw) {
+            const desc = toTypography(descRaw.replace(/[*_]/g, ''));
+            html = setMeta(html, 'name', 'description', desc);
+            html = setMeta(html, 'property', 'og:description', desc);
+            html = setMeta(html, 'name', 'twitter:description', desc);
+          }
           html = setMeta(html, 'property', 'og:title', title);
-          html = setMeta(html, 'property', 'og:description', desc);
           html = setMeta(html, 'property', 'og:type', 'article');
           html = setMeta(html, 'name', 'twitter:title', title);
-          html = setMeta(html, 'name', 'twitter:description', desc);
           const extra = [`<link rel="canonical" href="${url}" />`, `<meta property="og:url" content="${url}" />`];
           if (a.photo) {
             const img = `${SITE_URL}/images/jan-timman-1973.jpg`;

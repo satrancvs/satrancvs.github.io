@@ -3,6 +3,7 @@ import timmanMd from '@/content/mar-del-plata-1982.md?raw';
 import muglaMd from '@/content/amman-mugla.md?raw';
 import zebraMd from '@/content/zebralar-icin-satranc.md?raw';
 import karlsruheMd from '@/content/karlsruhe-ve-yol-ayrimlari.md?raw';
+import gomoriMd from '@/content/eugen-gomori.md?raw';
 import { toTypography } from '@/lib/curly';
 import data from './articles.json';
 
@@ -17,6 +18,7 @@ const CHUNKS: Record<string, string[]> = {
   mugla: splitArticle(muglaMd).chunks,
   zebra: splitArticle(zebraMd).chunks,
   karlsruhe: splitArticle(karlsruheMd).chunks,
+  gomori: splitArticle(gomoriMd).chunks,
 };
 
 // Makale metinleri/üst bilgileri articles.json'da (build sırasında prerender de bunu okur);
