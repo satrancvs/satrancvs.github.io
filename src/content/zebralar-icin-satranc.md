@@ -82,6 +82,8 @@ Kitap boyunca konuya eşlik eden örneklerde kendi partilerini, oynarkenki düş
 
 Uzunca bir bölümünü alıntıladığım yazımı kitabın en güzel tavsiyelerinden birisiyle bitiriyorum:
 
-"Daha iyi oyuncu olmak istiyorsanız daha iyi alışkanlıklara sahip olmak gerekir ve daha iyi alışkanlıklar antrenman ile gelişir. En iyi antrenman, güç kararlar için kendinizi sorumluluk almaya zorladığınızda, sizi konfor alanınızın dışına çıkmaya itendir. (...) Sonuçlarımızı geliştirmenin en kesin yolunun evde kompleks örnekler çözmekten geçtiğini düşünüyorum. Bunu olabildiğince sık, uzun vadeli ve disiplinli bir şekilde yapmalı. **Bu konsantre olmayı alışkanlığa çevirmede yardımcı olacak ve oyunlarımızın kritik konumlarında konsantre olmayı kolaylaştıracaktır.**"
+> Daha iyi oyuncu olmak istiyorsanız daha iyi alışkanlıklara sahip olmak gerekir ve daha iyi alışkanlıklar antrenman ile gelişir. En iyi antrenman, güç kararlar için kendinizi sorumluluk almaya zorladığınızda, sizi konfor alanınızın dışına çıkmaya itendir. (...) Sonuçlarımızı geliştirmenin en kesin yolunun evde kompleks örnekler çözmekten geçtiğini düşünüyorum. Bunu olabildiğince sık, uzun vadeli ve disiplinli bir şekilde yapmalı. **Bu konsantre olmayı alışkanlığa çevirmede yardımcı olacak ve oyunlarımızın kritik konumlarında konsantre olmayı kolaylaştıracaktır.**
+>
+> — Jonathan Rowson, Chess for Zebras
 
 Şimdiye kadar sadece üç kitabı bulunan Büyükusta Jonathan Rowson'ın sıradaki eserinin konusunu bilemiyorum, fakat düşünmeyi teşvik eden her cümlesi okunmaya değer görünüyor.
