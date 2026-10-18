@@ -10,10 +10,8 @@ const GLYPH_COLOR: Record<string, string> = { '!!': '#1aa34a', '!': '#00AA00', '
 // o zamana kadar yer tutucu yer ayırır, sayfa kaymaz. Ham FEN metni CSS'le (.fen-diagram fen) gizlenir.
 //
 // Tahta kutunun soluna yaslanır; `caption` tahtanın altına, sola yaslı bir bilgi satırı olarak girer.
-// `fill`: md ve üstünde kartın kalan yüksekliğini doldurur (kart, ızgara satırlarının yüksekliğine esner; böylece soldaki kart
-// sağdaki kartlarla aynı boyda biter). Tahta, kutunun genişliği ve yüksekliğinden küçük olanına göre kare çizilir. Kutunun
-// içeriği mutlak konumlu olduğu için kartın doğal yüksekliğine katılmaz ve ızgara satırlarını büyütmez. ChessPublica tahtayı
-// çizildiği andaki genişliğe göre kurar, bu yüzden boyut değişince <fen> yeniden kurulur (key).
+// `fill`: md ve üstünde tahta 400 px yerine 572 px'e kadar büyür (CSS). Kutunun içeriği mutlak konumlu olduğu için kutu boyutunu
+// CSS'teki en-boy oranı verir. ChessPublica tahtayı çizildiği andaki genişliğe göre kurar, bu yüzden boyut değişince <fen> yeniden kurulur (key).
 export default function FenDiagram({ fen, label, caption, orientation, badge, arrow, fill = false }: { fen: string; label: string; caption?: string; orientation?: 'white' | 'black'; badge?: { square: string; glyph: string }; arrow?: { from: string; to: string }; fill?: boolean }) {
   const box = useRef<HTMLDivElement>(null);
   const [near, setNear] = useState(() => typeof IntersectionObserver === 'undefined');
@@ -26,20 +24,18 @@ export default function FenDiagram({ fen, label, caption, orientation, badge, ar
     io.observe(box.current);
     return () => io.disconnect();
   }, [near]);
-  // `fill` modunda alt yazı tahtanın hemen altında, kutunun içinde durur; tahta için ayrılan yükseklikten bu pay düşülür.
-  const capReserve = fill && caption ? 84 : 0;
   useEffect(() => {
     const el = box.current;
     if (!el || typeof ResizeObserver === 'undefined') return;
     let t: number | undefined;
     const ro = new ResizeObserver(([e]) => {
-      const s = Math.floor(Math.min(e.contentRect.width, e.contentRect.height - capReserve, MAX));
+      const s = Math.floor(Math.min(e.contentRect.width, e.contentRect.height, MAX));
       window.clearTimeout(t);
       t = window.setTimeout(() => setSize((prev) => (Math.abs(prev - s) >= 2 ? s : prev)), 120);
     });
     ro.observe(el);
     return () => { window.clearTimeout(t); ro.disconnect(); };
-  }, [capReserve]);
+  }, []);
   const status = useChessPublica(near);
   // Rozet, karenin sağ üst köşesine biner (tahta siyah tarafından çizildiyse sütun ve sıra ters).
   const cell = size / 8;
@@ -79,16 +75,14 @@ export default function FenDiagram({ fen, label, caption, orientation, badge, ar
                 </g>
               </svg>
             )}
-            {caption && fill && <p className="f-mono normal-case text-[#A89A88] absolute left-0" style={{ top: size + 12, width: size }}>{caption}</p>}
             {badge && badgeAt && (
               <div aria-hidden className="gm-badge" style={{ background: GLYPH_COLOR[badge.glyph] ?? '#00AA00', right: badgeAt.right, top: badgeAt.top, zIndex: 30, width: size * 0.055, height: size * 0.055, fontSize: size * 0.04, boxShadow: `0 1px ${size * 0.01}px #00000073` }}>{badge.glyph}</div>
             )}
           </div>
         )}
       </div>
-      {/* Tahta sola yaslıdır; alt yazı da sola yaslanır ve tahtadan geniş olmaz. `fill`'de alt yazı kutunun içinde, tahtanın hemen altındadır
-          (aksi halde kutu tahtadan uzun olduğunda alt yazı çok aşağıda kalır). Kart bağlantısı yalnızca içerik üstünde etkindir (Index.tsx). */}
-      {caption && !fill && <p className="f-mono normal-case text-[#A89A88] mt-3 pointer-events-auto" style={size > 0 ? { maxWidth: size } : undefined}>{caption}</p>}
+      {/* Tahta sola yaslıdır; alt yazı da sola yaslanır ve tahtadan geniş olmaz. Kart bağlantısı yalnızca içerik üstünde etkindir (Index.tsx). */}
+      {caption && <p className="f-mono normal-case text-[#A89A88] mt-3 pointer-events-auto" style={size > 0 ? { maxWidth: size } : undefined}>{caption}</p>}
     </div>
   );
 }
