@@ -63,10 +63,7 @@ export default function Post() {
 
   if (!a) return <NotFound />;
 
-  // Yazı dosyasının ilk paragrafı (düz metinse), fotoğrafın üstünde giriş olarak gösterilir.
-  const isPlain = (c?: string) => !!c && !/^(!\[|\[Event |<|#|>)/.test(c.trim());
-  const lead = a.chunks && a.photo && isPlain(a.chunks[0]) ? a.chunks[0] : null;
-  const rest = a.chunks && lead ? a.chunks.slice(1) : a.chunks;
+  const rest = a.chunks;
 
   return (
     <div className="sk min-h-screen bg-[#0E0C0A]">
@@ -84,7 +81,7 @@ export default function Post() {
           {/* Yazı başka bir yerde yayımlandıysa künye notu: yazar satırının altında, aynı yazı tipiyle, sola yaslı. */}
           {a.note && <p className="f-mono text-[#A89A88] mt-3"><Markdown options={{ forceInline: true, overrides: { a: { props: { className: 'underline underline-offset-2 hover:text-[#F1E9DC]', target: '_blank', rel: 'noreferrer' } } } }}>{a.note}</Markdown></p>}
         </div>
-        {lead && <div className="mt-10"><ArticleBody chunks={[lead]} /></div>}
+        {/* Fotoğraf yazının en üstünde, künyenin hemen altında. */}
         {a.photo && (
           <figure className="mt-10 mx-auto w-fit max-w-full">
             <ProgressiveImage path="images/jan-timman-1973.jpg" alt={PHOTO.alt} lazy={false} />

@@ -1,3 +1,5 @@
+![Su içen üç zebra](images/three-zebras-drinking.jpg "Su içen üç zebra, 1997 · Fotoğraf: John Storr · Lisans: Kamu malı · Kaynak: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Three_Zebras_Drinking.jpg)")
+
 Satranca başladığımızda her şeyin iyi gittiği, oyundan zevk alınan güzel bir dönemin ardından bazı engellerle karşılaşırız. O engeller, aslında yeterince iyi olmadığımızı fark ettiğimiz anlar ya da daha doğru bir deyişle satrancın daha iyi oynanabileceğine bizi ikna eden rakiplerdir çoğunlukla. İlk kitabımızı ve bizi yenen rakibimizin tavsiyelerini alıp oyunumuz üzerine çalışırız. Taktikler, klasikler, açılışlar, oyunortası ve oyunsonu... İşler tekrar yoluna girer, ta ki ayağımız başka bir taşa takılana kadar. Bu taş çoğunlukla sağlam bir kaya olur; ne yapsak etsek de belli bir seviyenin ötesine geçmenin imkânsız olduğunu hissederiz.
 
 Böylesine bir kayaya ilk toslayışım epey uzun zaman öncesine dayansa da, hâlâ benzer kayalara toslamaya devam ediyorum. Bu konuda yalnız olmadığımı ve sözünü ettiğim durumun yaygın bir sorun olduğunu satrançsever dostlarımdan, hayat hikâyelerini bildiğim satranç ustalarından daha sonra öğrendim. Bu sorunların bir büyükusta tarafından incelenmiş olduğunu duyduğumda açıkçası çok merak etmiş, bana satrancı daha iyi oynamanın "sihirli formülünü" sunacağını ummuştum. Daha sonra basım tarihi 2005 olan bu kitapla şimdi elinizde tutmakta olduğunuz derginin basılmasını sağlayan **Analiz Yayıncılık** standında karşılaştım.
@@ -31,8 +33,6 @@ Kitabı için pek çok farklı isim düşündükten sonra *"Chess for Zebras: Th
 > Toynak sesi duyunca zebra gelsin aklına.
 >
 > — Sufi deyişi
-
-![Su içen üç zebra](images/three-zebras-drinking.jpg "Su içen üç zebra, 1997 · Fotoğraf: John Storr · Lisans: Kamu malı · Kaynak: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Three_Zebras_Drinking.jpg)")
 
 Peki bu nasıl yapılabilir? Kitap düşünce kalıplarını yıkma fikriyle "farklı düşünmenin" izini sürüyor. Daha doğrusu Rowson ustalığa giden yolunda neler öğrendiğini ve neleri "unutması" (*unlearning*) gerektiğini anlatıyor. İlerleyen bölümler boyunca döne dolaşa aynı şeyi hatırlatıyor okura: **"Gelişme, konfor alanınızın sınırında başlar."** (*"Improvement begins at the edge of your comfort zone"*) Yani sınırlarınızı zorlamadığınız sürece gelişme yok.
 
