@@ -32,6 +32,8 @@
 .cp-game .pgn-container:not(pgn-study .pgn-container, pgn-player .pgn-container) .pgn-variation .pgn-variation { padding-left: 1.2em; font-style: italic; }
 /* <pgn-player> sayfada ortalanır */
 .cp-game pgn-player { --board-size: min(400px, calc(100vw - 3rem)); display: block; width: fit-content; max-width: 100%; margin-left: auto; margin-right: auto; }
+/* <pgn-player> yorumu yazı gövdesiyle aynı satır aralığında (paket 1.5 verir; gövde ve <pgn> metni 1.8) */
+.cp-game .video-comment { line-height: 1.8; }
 /* Varyantlı yorumlarda sağ alta oturan oynat düğmesi metnin son satırını kapatmasın */
 .cp-game .video-comment:has(> .comment-play-btn) { padding-bottom: 3rem; }
 /* Yorumun son satırına taşınan oynat düğmesi: satır içi, metinle aynı hizada */

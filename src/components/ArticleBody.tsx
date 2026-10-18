@@ -41,7 +41,7 @@ function Game({ header, moves }: { header: string; moves: string }) {
         {t.Round && <span>{t.Round}. tur · </span>}
         {t.White} {t.WhiteElo && `(${t.WhiteElo})`} — {t.Black} {t.BlackElo && `(${t.BlackElo})`} · {result}
       </figcaption>
-      <p className="mt-4 text-[17px] leading-[1.9] text-[#F1E9DC]/85" style={{ fontVariantNumeric: 'tabular-nums' }}>
+      <p className="mt-4 text-lg leading-[1.8] text-[#F1E9DC]/85" style={{ fontVariantNumeric: 'tabular-nums' }}>
         {parts.map((p, i) =>
           p.startsWith('{') ? (
             <span key={i} className="italic text-[#A89A88]"> {p.slice(1, -1).trim()} </span>
