@@ -107,7 +107,7 @@ Yıldızının parladığı yıllarda profesyonel satranç oynamak yerine mühen
 
 1982'ye dönecek olursak, acaba Timman 0,5/2 ile başladığı turnuvanın ilerleyen turlarını **8/8 ile** devam ettirebileceğini hayal edebilir miydi? Şimdi sırada Timman'ın kariyerindeki **en beğendiği oyunu** olarak nitelediği bir parti var.
 
-Reyting sıralamasında Karpov'dan sonra ikinci sırada yer alan Timman'ın, Merano'dan yorgun dönen dünya şampiyonu karşısında nasıl bir performans sergileyeceği belki de kendisi için turnuvanın kaderini belirleyecek ve olası bir maçta dünya şampiyonu karşısındaki şansını gösterecekti.
+Panno'ya karşı felaketin eşiğinden dönen Timman'ın, Karpov karşısında da şansı yaver gidecek miydi? Reyting sıralamasında Karpov'dan sonra ikinci sırada yer alan Timman'ın, Merano'dan yorgun dönen dünya şampiyonu karşısında nasıl bir performans sergileyeceği belki de kendisi için turnuvanın kaderini belirleyecek ve olası bir maçta dünya şampiyonu karşısındaki şansını gösterecekti.
 
 ![Anatoly Karpov ön planda, Jan Timman arka planda (siyah-beyaz fotoğraf)](images/karpov-timman-1979.jpg "Ön planda Karpov, arka planda Timman, 1979 · Fotoğraf: Koen Suyk / Anefo · Hollanda Ulusal Arşivi · Lisans: [CC0 1.0 (Kamu Bağışı)](https://creativecommons.org/publicdomain/zero/1.0/deed.tr) · Kaynak: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2e_Ronde_Karpov_op_de_voorgrond,_Timman_op_de_achtergrond,_Bestanddeelnr_930-5234.jpg)")
 
