@@ -220,6 +220,23 @@ const captionOptions = {
   overrides: { a: { props: { className: 'underline underline-offset-2 hover:text-[#F1E9DC]', target: '_blank', rel: 'noreferrer' } } },
 };
 
+// Fotoğraf içeren alıntı (Korchnoi): `> ` satırları tek kutuda; araya giren görsel Figure olarak kutunun içinde kalır,
+// kaynak satırı (— ...) en sonda bir kez gelir.
+function QuoteWithFigure({ chunk }: { chunk: string }) {
+  const blocks = chunk.split('\n').map((l) => l.replace(/^>\s?/, '')).join('\n').split(/\n\s*\n/).map((b) => b.trim()).filter(Boolean);
+  const last = blocks[blocks.length - 1] ?? '';
+  const cite = /^[—–-]\s+\S/.test(last) ? last.replace(/^[—–-]\s+/, '') : null;
+  const body = cite ? blocks.slice(0, -1) : blocks;
+  return (
+    <blockquote className="quote">
+      {body.map((b, k) => (IMG_CHUNK.test(b)
+        ? <Figure key={k} chunk={b} />
+        : <Markdown key={k} options={{ ...mdOptions, forceBlock: true }}>{b}</Markdown>))}
+      {cite && <footer className="quote-cite f-mono">— {cite}</footer>}
+    </blockquote>
+  );
+}
+
 function Figure({ chunk }: { chunk: string }) {
   const m = chunk.match(IMG_CHUNK);
   if (!m) return null;
@@ -413,6 +430,8 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
           {c.replace(/<\/?pre>/g, '').replace(/^\n/, '')}
         </pre>,
       );
+    } else if (c.startsWith('>') && /^>\s*!\[/m.test(c)) {
+      out.push(<QuoteWithFigure key={i} chunk={c} />);
     } else if (IMG_CHUNK.test(c)) {
       out.push(<Figure key={i} chunk={c} />);
     } else if (c.startsWith('<figure')) {
