@@ -54,7 +54,7 @@ Burada söylenmek istenen "oyuncunun bir tarzı olmamalı" değil, bu yaklaşım
 
 Kitap boyunca konuya eşlik eden örneklerde kendi partilerini, oynarkenki düşüncelerini ve hissettiklerini içten (belki de aşırı içten) bir şekilde paylaşması kitabın en büyük artılarından.
 
-Şimdi ilk bölümün kaba bir özeti sayılabilecek bir kısmını paylaşmak istiyorum. Bir satranç kitabında içtenliğiyle böylesine beni yakalayan ve söyledikleriyle bana ayna tutan başka bir bölüm hatırlamıyorum. Sözünü ettiğim, Hikâye Uydurma (*Fabulation*) alt başlığında Rowson'ın yakın zamanda hayata gözlerini yuman Viktor Korchnoi ile karşılaşması:
+Şimdi ilk bölümün kaba bir özeti sayılabilecek bir kısmını paylaşmak istiyorum. Bir satranç kitabında içtenliğiyle böylesine beni yakalayan ve söyledikleriyle bana ayna tutan başka bir bölüm hatırlamıyorum. Sözünü ettiğim, Hikâye Uydurma *(Fabulation)* alt başlığında Rowson'ın yakın zamanda hayata gözlerini yuman Viktor Korchnoi ile karşılaşması:
 
 [Event "Monarch Assurance 13th"]
 [Site "Port Erin"]
