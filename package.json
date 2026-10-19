@@ -93,7 +93,6 @@
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1",
     "vite-plugin-sitemap": "^0.8.2",
-    "vite-prerender-plugin": "^0.5.13",
-    "web-push": "^3.6.7"
+    "vite-prerender-plugin": "^0.5.13"
   }
 }
