@@ -20,6 +20,8 @@ Fakat Grenke için şartlar son derece elverişliydi. Stuttgart havalimanındaki
 
 İstasyondan valizi sürüyerek çok da uzun olmayan bir yürüyüşle vardığım salona on dakika mesafedeki nispeten uygun fiyatlı otelim Hotel Barbarossa hiç de kötü olmayan bir oda ve kahvaltı sunuyordu ve Alman mutfağı başarısızlık halinde suçlayabileceğim son sığınağım gibi görünüyordu. İlerleyen günlerde kentin ana meydanına yakın bir konumda bulunan Japon restoranı Izakaya bu son kozu da elimden alacaktı. İlk gün tek turun ardından üst üste dört gün çift tur oynanan yoğun turnuva programını saymazsak elbette.
 
+![Turnuva salonunun girişi](images/salon.jpg "Turnuva salonunun girişi. · Fotoğraf: Tarık Selbes")
+
 İlk akşam kongre merkezinin dışına asılmış “Dünyanın en büyük satranç turnuvasına hoş geldiniz” yazısına bir göz atış ve şehir merkezine kısa bir yürüyüşle geçti. Gerçekten dünyanın en büyük satranç turnuvasına geldiğimi ancak ertesi gün ilk tur için salona geldiğimde tam olarak idrak edebilecektim. Devasa bir salon içerisinde yüzlerce masa ve insan, eşlendirmenin tur saatinde bile hâlâ belli olmaması ve dikey numaralandırma düzeni nedeniyle en azından bu duruma alışana dek masanızı bulmanın imkansızlığı… Sadece A kategorisinde bile başlangıç listesinde başını GM Pavel Eljanov’un çektiği 998 (!) katılımcı olduğunu söylemek herhalde yeterli olur -ki daha B ve C kategorileri ile freestyle turnuvasındaki üç kategoriden bahsetmedim bile.
 
 Telefonu her zamanki gibi odada bıraktığım için eşlendirmeyi de ancak sorarak öğrenmiş ve doğru masada oturduğumdan bile tam emin olamayarak tahta başına geçmiştim. Freestyle kategorisinde her tur öncesi oynanacak pozisyon için çekilen kuranın ve açılış töreninin ardından başlayan tur öncesi az da olsa heyecanlıydım.
