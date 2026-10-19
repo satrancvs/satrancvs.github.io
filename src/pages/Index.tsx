@@ -339,7 +339,7 @@ export default function Index() {
           </div>
           <div className="mt-10 max-w-xl">
             <p className="f-mono text-[#C8893E]">Telif hakları</p>
-            <p className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.9] text-[#F1E9DC]/75 mt-4">Sitede yayınlanan yazıların telif hakları yazarlarına, dijital mecrada yayınlama yetkisi ise Satranç vs.’ye aittir. Önceden yazılı izin alınmaksızın kısmen veya tamamen kopyalanamaz, çoğaltılamaz ve kaynak gösterilmeden başka platformlarda yayınlanamaz.</p>
+            <p className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.9] text-[#F1E9DC]/75 mt-4">Satranç vs. dijital satranç dergisi’nde yayınlanan yazıların telif hakları yazarlarına, dijital mecrada yayınlama yetkisi ise Satranç vs. dijital satranç dergisi’ne aittir. Önceden yazılı izin alınmaksızın kısmen veya tamamen kopyalanamaz, çoğaltılamaz ve kaynak gösterilmeden başka platformlarda yayınlanamaz.</p>
           </div>
         </div>
         <div id="bulten" className="md:col-span-12 mt-10 border border-[#2E2620] p-8 md:p-14 grid md:grid-cols-2 gap-8 items-end">
