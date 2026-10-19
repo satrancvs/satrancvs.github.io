@@ -207,6 +207,9 @@ importers:
       autoprefixer:
         specifier: ^10.4.20
         version: 10.5.1(postcss@8.5.15)
+      chess.js:
+        specifier: ^1.4.0
+        version: 1.4.0
       eslint:
         specifier: ^9.9.0
         version: 9.39.4(jiti@1.21.7)
@@ -1912,6 +1915,9 @@ packages:
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
+
+  chess.js@1.4.0:
+    resolution: {integrity: sha512-BBJgrrtKQOzFLonR0l+k64A98NLemPwNsCskwb+29bRwobUa4iTm51E1kwGPbWXAcfdDa18nad6vpPPKPWarqw==}
 
   chokidar@3.6.0:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
@@ -5053,6 +5059,8 @@ snapshots:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+
+  chess.js@1.4.0: {}
 
   chokidar@3.6.0:
     dependencies:

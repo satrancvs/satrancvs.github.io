@@ -3,11 +3,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node scripts/check-games.mjs && vite build",
     "lint": "eslint --quiet ./src",
     "preview": "vite preview",
     "postinstall": "echo 'Dependencies installed successfully'",
-    "test": "node --test tests/*.test.js"
+    "test": "node --test tests/*.test.js",
+    "check:games": "node scripts/check-games.mjs",
+    "check:render": "node scripts/check-render.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -78,6 +80,7 @@
     "@typescript-eslint/parser": "^8.42.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.20",
+    "chess.js": "^1.4.0",
     "eslint": "^9.9.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
