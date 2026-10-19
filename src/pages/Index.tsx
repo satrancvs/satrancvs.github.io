@@ -186,8 +186,8 @@ export default function Index() {
             ))}
             <span title="Yakında..." aria-disabled="true" className="f-mono text-[#A89A88] opacity-40 cursor-not-allowed select-none"><span className="text-[#C8893E]">0{NAV.length + 1}</span> {NAV_SOON}</span>
           </nav>
-          {/* Bülten servisi hazır olana kadar devre dışı. Altı menü öğesiyle birlikte dar masaüstünde (< xl) yer yetmediği için düğme yalnızca xl'de görünür. */}
-          <span title="Yakında..." aria-disabled="true" className="hidden xl:inline-flex shrink-0 whitespace-nowrap rounded-full bg-[#F1E9DC] text-[#0E0C0A] px-6 h-11 items-center text-sm font-semibold opacity-50 cursor-not-allowed select-none">Bültene Abone Ol</span>
+          {/* Bülten bölümüne götürür (bölümdeki e-posta formu servis hazır olana kadar devre dışıdır). Altı menü öğesiyle birlikte dar masaüstünde (< xl) yer yetmediği için düğme yalnızca xl'de görünür. */}
+          <a href="#bulten" className="hidden xl:inline-flex shrink-0 whitespace-nowrap rounded-full bg-[#F1E9DC] text-[#0E0C0A] px-6 h-11 items-center text-sm font-semibold transition-colors hover:bg-[#C8893E]">Bültene Abone Ol</a>
           <button aria-label="Menüyü aç" onClick={() => setOpen(true)} className="lg:hidden w-11 h-11 grid place-items-center"><MenuIcon /></button>
         </div>
       </header>
