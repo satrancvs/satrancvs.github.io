@@ -1,0 +1,250 @@
+/* Satranç vs. dijital dergi — 170 × 240 mm. Renkler siteden: ink #0E0C0A, espresso #1A1512, çizgi #2E2620, krem #F1E9DC, krema #C8893E. */
+:root {
+  --ink: #0E0C0A; --esp: #1A1512; --line: #2E2620; --cream: #F1E9DC; --paper: #F4EEE2;
+  --amber: #C8893E; --amber-d: #9A5F1E; --muted: #A89A88; --text: #1E1914; --soft: #6E6253;
+  --display: 'Fraunces', 'Times New Roman', serif; --body: 'Manrope', 'Helvetica Neue', sans-serif; --mono: 'JetBrains Mono', 'DejaVu Sans Mono', monospace;
+}
+@page { size: 170mm 240mm; margin: 0; }
+@page cover { margin: 0; background: #0E0C0A; }
+@page opener { margin: 0; background: #0E0C0A; }
+@page toc { margin: 0; background: #F4EEE2; }
+@page backm { margin: 20mm 19mm 23mm 19mm; background: #F4EEE2;
+  @bottom-left { content: "SATRANÇ VS.  ·  EKİM 2026"; font: 500 5.6pt/1 'JetBrains Mono', monospace; letter-spacing: .16em; color: #8A7B68; vertical-align: top; padding-top: 7mm; }
+  @bottom-right { content: counter(page); font: 500 7pt/1 'JetBrains Mono', monospace; letter-spacing: .1em; color: #1B1612; vertical-align: top; padding-top: 6.6mm; } }
+@page backcover { margin: 0; background: #0E0C0A; }
+
+* { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+html { background: var(--paper); }
+body { margin: 0; font: 400 9.4pt/1.62 var(--body); color: var(--text); font-variant-numeric: lining-nums; }
+a { color: inherit; }
+em { font-style: italic; }
+
+/* ------------------------------------------------------------ taş figürleri */
+.fg, .nag { font-family: 'FreeSerif', 'DejaVu Sans', serif; font-weight: 400; font-style: normal; }
+.fg { font-size: 1.12em; line-height: 0; }
+.nag { font-size: 1em; letter-spacing: 0; }
+
+/* ------------------------------------------------------------ KAPAK */
+.cover, .opener, .backcover { width: 170mm; height: 239.5mm; position: relative; overflow: hidden; color: var(--cream); background: var(--ink); break-after: page; }
+.cover { page: cover; }
+.cv-bg { position: absolute; inset: 0; background: url(img/cover-bg.jpg) center top / cover no-repeat; }
+.cv-files { position: absolute; left: 19mm; right: 19mm; display: flex; justify-content: space-between; font: 500 5.6pt/1 var(--mono); letter-spacing: .1em; color: rgba(241,233,220,.55); text-transform: uppercase; }
+.cv-files-top { top: 9mm; }
+.cv-ranks { position: absolute; right: 7mm; top: 52mm; bottom: 62mm; display: flex; flex-direction: column; justify-content: space-between; font: 500 5.6pt/1 var(--mono); color: rgba(241,233,220,.4); }
+.cv-top { position: absolute; top: 17mm; left: 19mm; right: 19mm; }
+.cv-mast { font: 300 66pt/.92 var(--display); letter-spacing: -.035em; margin: 0; color: var(--cream); }
+.cv-mast em { color: var(--amber); font-weight: 300; }
+.cv-tag { text-shadow: 0 0 3mm #000, 0 0 1.5mm #000; margin: 4mm 0 0; font: 500 6.4pt/1.5 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: rgba(241,233,220,.7); max-width: 80mm; }
+.cv-bottom { position: absolute; left: 19mm; right: 19mm; bottom: 20mm; }
+.cv-cat { font: 500 6.4pt/1 var(--mono); letter-spacing: .2em; color: var(--amber); margin: 0 0 4.5mm; text-transform: uppercase; }
+.cv-bottom h1 { font: 400 30pt/1.04 var(--display); letter-spacing: -.02em; margin: 0; color: var(--cream); }
+.cv-bottom h1 em { color: var(--amber); font-weight: 300; }
+.cv-by { font: 500 6.4pt/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: rgba(241,233,220,.7); margin: 5mm 0 0; }
+.cv-list { list-style: none; margin: 8mm 0 0; padding: 4mm 0 0; border-top: .2mm solid rgba(241,233,220,.28); display: grid; grid-template-columns: 1fr 1fr; gap: 2.2mm 6mm; font: 400 7.2pt/1.35 var(--body); color: rgba(241,233,220,.86); }
+.cv-list span { display: block; font: 500 5pt/1 var(--mono); letter-spacing: .18em; text-transform: uppercase; color: var(--amber); margin-bottom: .8mm; }
+.cv-foot { position: absolute; left: 19mm; right: 19mm; bottom: 8mm; display: flex; justify-content: space-between; font: 500 5.2pt/1 var(--mono); letter-spacing: .18em; color: rgba(241,233,220,.5); }
+
+/* ------------------------------------------------------------ İÇİNDEKİLER */
+.toc { page: toc; width: 170mm; height: 239.5mm; padding: 24mm 19mm 16mm; background: var(--paper); position: relative; break-after: page; display: flex; flex-direction: column; }
+.eyebrow { font: 500 6.4pt/1 var(--mono); letter-spacing: .2em; text-transform: uppercase; color: var(--soft); margin: 0; }
+.eyebrow span { color: var(--amber-d); }
+.toc h2, .backm h2 { font: 300 36pt/1 var(--display); letter-spacing: -.03em; margin: 6mm 0 8mm; color: var(--ink); }
+.backm h2 { font-size: 30pt; margin-bottom: 7mm; }
+.backm h2 em { color: var(--amber-d); }
+.toc ol { list-style: none; margin: 0; padding: 0; border-top: .25mm solid var(--ink); }
+.toc li a { display: grid; grid-template-columns: 11mm 1fr 13mm; align-items: baseline; gap: 2mm; padding: 4.2mm 0 4mm; border-bottom: .15mm solid rgba(30,25,20,.28); text-decoration: none; color: var(--text); }
+.t-no { font: 500 7pt/1 var(--mono); color: var(--amber-d); letter-spacing: .08em; }
+.t-main { display: block; }
+.t-cat { display: block; font: 500 5.4pt/1 var(--mono); letter-spacing: .18em; text-transform: uppercase; color: var(--amber-d); margin-bottom: 1.4mm; }
+.t-title { display: block; font: 400 13.4pt/1.18 var(--display); letter-spacing: -.012em; color: var(--ink); }
+.t-by { display: block; font: 500 6pt/1.3 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--soft); margin-top: 1.6mm; }
+.t-pg { font: 300 italic 17pt/1 var(--display); color: var(--ink); text-align: right; }
+.toc-foot { margin-top: auto; border-top: .15mm solid rgba(30,25,20,.28); padding-top: 4mm; font: 400 8pt/1.55 var(--body); color: var(--soft); max-width: 110mm; }
+
+/* ------------------------------------------------------------ MAKALE AÇILIŞI */
+.opener { page: opener; padding: 22mm 19mm 11mm; display: flex; flex-direction: column; justify-content: space-between; }
+.op-top { display: flex; justify-content: space-between; align-items: flex-start; }
+.op-no { font: 300 96pt/.8 var(--display); letter-spacing: -.05em; color: transparent; -webkit-text-stroke: .35mm var(--amber); }
+.op-of { font: 500 5.8pt/1 var(--mono); letter-spacing: .2em; color: var(--muted); padding-top: 2mm; }
+.op-mid { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 6mm 0; }
+.op-cat { font: 500 6.6pt/1 var(--mono); letter-spacing: .2em; text-transform: uppercase; color: var(--amber); margin: 0 0 6mm; }
+.opener h1 { font: 400 34pt/1.04 var(--display); letter-spacing: -.025em; margin: 0; color: var(--cream); max-width: 132mm; }
+.opener h1 em { color: var(--amber); font-weight: 300; }
+.op-dek { font: 400 10.4pt/1.62 var(--body); color: rgba(241,233,220,.82); margin: 8mm 0 0; max-width: 118mm; }
+.op-by { font: 500 6.2pt/1.6 var(--mono); letter-spacing: .15em; text-transform: uppercase; color: var(--muted); margin: 7mm 0 0; padding-top: 4mm; border-top: .2mm solid var(--line); max-width: 118mm; }
+.onote { font: 500 5.8pt/1.7 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 2mm 0 0; max-width: 118mm; }
+.onote a { color: var(--cream); }
+.op-body { margin-top: 10mm; max-width: 118mm; color: rgba(241,233,220,.82); font-size: 9.6pt; }
+.op-body p { margin: 0 0 3.4mm; }
+.op-foot { display: flex; justify-content: space-between; font: 500 5.2pt/1 var(--mono); letter-spacing: .16em; color: rgba(241,233,220,.5); padding-top: 4mm; border-top: .2mm solid var(--line); }
+.op-foot a { text-decoration: none; color: rgba(241,233,220,.6); }
+
+/* ------------------------------------------------------------ MAKALE GÖVDESİ */
+.art { width: 100%; }
+.abody p { margin: 0 0 3.3mm; orphans: 2; widows: 2; text-wrap: pretty; }
+.abody p.lead::first-letter { font: 300 40pt/.78 var(--display); float: left; color: var(--amber-d); padding: 1.2mm 2mm 0 0; }
+.abody a { color: var(--amber-d); text-decoration: underline; text-underline-offset: .6mm; text-decoration-thickness: .15mm; }
+.abody strong { font-weight: 700; color: #14100C; }
+.abody h3 { font: 400 20pt/1.12 var(--display); letter-spacing: -.02em; margin: 10mm 0 4.5mm; color: var(--ink); break-after: avoid; }
+.abody h3::before { content: ""; display: block; width: 11mm; height: .55mm; background: var(--amber); margin-bottom: 3.2mm; }
+.abody ul { list-style: none; padding: 0; margin: 0 0 4mm; }
+.abody ul li { position: relative; padding-left: 5.5mm; margin-bottom: 1.4mm; }
+.abody ul li::before { content: ""; position: absolute; left: 0; top: .62em; width: 1.4mm; height: 1.4mm; background: var(--amber); }
+
+/* fotoğraflar */
+.ph { margin: 0; }
+.ph img { display: block; width: 100%; height: auto; }
+.ph .credit, .credit { font: 500 5.6pt/1.65 var(--mono); letter-spacing: .07em; text-transform: uppercase; color: var(--soft); margin: 2.2mm 0 0; }
+.credit a { color: inherit; }
+.ph.center { margin: 7mm auto; break-inside: avoid; }
+.ph-h.center { width: 118mm; }
+.ph-v.center { width: 62mm; }
+.ph-s.center { width: 38mm; }
+.ph-c.center { width: 42mm; }
+.ph.center .credit { text-align: center; }
+.ph-s.center .credit, .ph-c.center .credit, .ph-v.center .credit { width: 100mm; margin-left: 50%; transform: translateX(-50%); }
+.side { display: grid; gap: 7mm; margin: 6mm 0 5mm; align-items: start; break-inside: avoid; }
+.side.sr { grid-template-columns: 1fr 56mm; }
+.side.sr .ph { order: 2; }
+.side.sl { grid-template-columns: 56mm 1fr; }
+.side.k-s.sr, .side.k-c.sr { grid-template-columns: 1fr 40mm; }
+.side.k-s.sl, .side.k-c.sl { grid-template-columns: 40mm 1fr; }
+.side .sb > :first-child { margin-top: 0; }
+.side .sb p { margin: 0 0 3.2mm; }
+.side .sb .quote { margin: 3mm 0 0; }
+.side .ph .credit { font-size: 5.2pt; }
+
+/* alıntılar */
+.quote { position: relative; background: var(--esp); color: var(--cream); margin: 6.5mm 0; padding: 8.5mm 8mm 6mm 11mm; break-inside: avoid; box-decoration-break: clone; }
+.quote.q-long { break-inside: auto; }
+.quote::before { content: "\201C"; position: absolute; left: 3.6mm; top: 2.6mm; font: 400 40pt/1 var(--display); color: var(--amber); }
+.quote p { font: 300 italic 10pt/1.58 var(--display); margin: 0 0 2.6mm !important; color: var(--cream); text-wrap: pretty; }
+.quote strong { color: #fff; font-weight: 600; }
+.quote a { color: var(--amber); }
+.quote .fg { font-style: normal; }
+.quote-cite { font: 500 5.8pt/1.7 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--amber); margin-top: 3.4mm; padding-top: 2.6mm; border-top: .15mm solid var(--line); }
+.quote-cite a { color: inherit; }
+.q-poem p { font-size: 11pt; line-height: 1.55; }
+.q-right { margin-left: 32%; text-align: right; }
+.q-right::before { left: auto; right: 4mm; }
+.quote .ph.in-quote { width: 54mm; margin: 2mm auto 4mm; }
+.quote .ph .credit { color: var(--muted); }
+.pq { display: grid; grid-template-columns: 34mm 1fr; gap: 6mm; align-items: start; margin: 7mm 0; break-inside: avoid; }
+.pq .quote { margin: 0; }
+.pq .ph .credit { font-size: 5pt; letter-spacing: .05em; }
+.art-fen { width: 60mm; margin: 5mm auto; break-inside: avoid; }
+
+/* oyunlar */
+.game { margin: 8mm 0 6mm; }
+.gh { break-after: avoid; border-top: .5mm solid var(--ink); border-bottom: .15mm solid rgba(30,25,20,.35); padding: 3mm 0 2.6mm; margin-bottom: 3.5mm; }
+.gh-round { display: grid; grid-template-columns: 26mm 1fr 26mm; align-items: baseline; }
+.gr { font: 500 6.6pt/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--amber-d); }
+.gp { font: 400 13.5pt/1.1 var(--display); letter-spacing: -.01em; text-align: center; color: var(--ink); }
+.gs { font: 500 7pt/1 var(--mono); letter-spacing: .1em; color: var(--soft); text-align: right; }
+.gh-info { text-align: center; }
+.gh-info h4 { font: 400 13pt/1.2 var(--display); letter-spacing: -.01em; margin: 0; color: var(--ink); }
+.gh-info p { font: 500 5.8pt/1.5 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--soft); margin: 1.6mm 0 0 !important; }
+.gh-info .gs { display: block; text-align: center; margin-top: 1.6mm; color: var(--amber-d); }
+.game .gann { font: 500 5.6pt/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--soft); text-align: center; margin: -1mm 0 4mm !important; }
+.game .mv { font-size: 9.5pt; margin: 0 0 1.8mm; text-wrap: pretty; }
+.game .m { font-weight: 700; color: #14100C; }
+.game .c { color: #54483B; font-weight: 400; }
+.game .gc { margin: 0 0 2.2mm !important; padding-left: 3.6mm; border-left: .5mm solid var(--amber); color: #342B22; font-size: 9.2pt; }
+.gcd { display: grid; grid-template-columns: 1fr 40mm; gap: 5mm; align-items: start; margin: 1.5mm 0 3.2mm; break-inside: avoid; }
+.gcd .gc { margin: 0 !important; }
+.dgc { display: flex; justify-content: center; margin: 2.4mm 0 3.4mm; break-inside: avoid; }
+.dg { margin: 0; width: 40mm; text-align: center; break-inside: avoid; }
+.dg.sm { width: 32mm; }
+.dg figcaption { font: 500 5.2pt/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--soft); margin-top: 1.4mm; }
+.dg .pzl { color: var(--amber-d); font-weight: 700; }
+.dg.pz .bd { outline: .5mm solid var(--amber); outline-offset: .6mm; }
+.var { margin: .6mm 0 2.6mm 4mm; padding-left: 3.2mm; border-left: .25mm solid #BFAE92; font-size: 8.7pt; line-height: 1.58; }
+.var .vl { margin: 0 0 1.2mm !important; }
+.var .vm { font-weight: 600; color: #1E1914; }
+.var .c { color: #5A4E40; }
+.var .dgc { justify-content: flex-start; margin: 1.6mm 0 2.4mm; }
+
+/* diyagram tahtası */
+.bd { display: grid; grid-template-columns: repeat(8, 1fr); aspect-ratio: 1 / 1; width: 100%; border: .3mm solid #2A211A; background: #A9805A; }
+.bd.crop { aspect-ratio: 2 / 1; }
+.bd i { position: relative; display: block; background-size: 100% 100%; background-repeat: no-repeat; }
+.bd i.l { background-color: #EBDCC0; }
+.bd i.d { background-color: #A9805A; }
+.bd i.hl.l { background-color: #E5C57E; }
+.bd i.hl.d { background-color: #C9964E; }
+.bd b { position: absolute; font: 600 3.3pt/1 var(--mono); }
+.bd b.rl { top: .25mm; left: .35mm; }
+.bd b.fl { right: .35mm; bottom: .2mm; }
+.bd i.l b { color: #A9805A; }
+.bd i.d b { color: #EBDCC0; }
+
+/* çapraz tablo, video, devam */
+.crosstable { font: 400 7.1pt/1.55 var(--mono); background: #EDE3D0; border-left: .6mm solid var(--amber); padding: 5mm 5mm 5mm 6mm; margin: 6mm 0; white-space: pre; overflow: hidden; color: var(--text); break-inside: avoid; font-variant-ligatures: none; }
+.video { display: flex; gap: 5mm; align-items: flex-start; border: .25mm solid #BFAE92; padding: 5mm; margin: 6mm 0; break-inside: avoid; }
+.vplay { flex: none; width: 10mm; height: 10mm; border-radius: 50%; background: var(--ink); color: var(--amber); display: grid; place-items: center; font-size: 8pt; padding-left: .6mm; }
+.vlabel { font: 500 5.8pt/1.5 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--amber-d); margin: 0 0 1.6mm !important; }
+.vcap { font-size: 8.4pt; line-height: 1.5; color: var(--soft); margin: 0 0 1mm !important; }
+.vlink { margin: 2mm 0 0 !important; font: 500 6pt/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; }
+.tbc { margin: 11mm 0 0; text-align: center; break-inside: avoid; }
+.tbc-label { display: flex; align-items: center; gap: 4mm; font: 500 6.2pt/1 var(--mono); letter-spacing: .24em; text-transform: uppercase; color: var(--amber-d); margin: 0 0 4.5mm !important; }
+.tbc-label::before, .tbc-label::after { content: ""; flex: 1; border-top: .2mm solid #BFAE92; }
+.tbc-text { margin: 0 !important; }
+.tbc-text a { display: inline-block; text-decoration: none !important; border: .3mm solid var(--ink); border-radius: 99px; padding: 1.5mm 5mm; color: var(--ink) !important; font: 600 8pt/1.3 var(--body); }
+
+/* künye / arka sayfalar */
+.backm { page: backm; }
+.authors { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm 8mm; }
+.au { border-top: .25mm solid var(--ink); padding-top: 3mm; break-inside: avoid; }
+.au-ic { display: inline-grid; place-items: center; width: 9mm; height: 9mm; background: var(--esp); color: var(--amber); font: 400 15pt/1 'FreeSerif', serif; margin-bottom: 3mm; }
+.au h3 { font: 400 14pt/1.15 var(--display); letter-spacing: -.015em; margin: 0; color: var(--ink); }
+.au-role { font: 500 5.6pt/1.4 var(--mono); letter-spacing: .15em; text-transform: uppercase; color: var(--amber-d); margin: 1.6mm 0 2.4mm !important; }
+.au p { margin: 0; font-size: 8.4pt; line-height: 1.55; color: var(--soft); }
+.au a, .about a, .legal a { color: var(--amber-d); }
+.about { max-width: 118mm; margin: 4mm 0 0; font-size: 9pt; color: var(--text); }
+.legal { margin-top: 9mm; border-top: .25mm solid var(--ink); padding-top: 4mm; font: 400 7.2pt/1.7 var(--body); color: var(--soft); }
+.legal p { margin: 0; }
+.legal .lg-h { font: 500 5.8pt/1 var(--mono); letter-spacing: .2em; text-transform: uppercase; color: var(--amber-d); margin-bottom: 2mm; }
+.legal ul { margin: 0; padding-left: 4mm; }
+.legal li { margin-bottom: 1.4mm; }
+.backcover { page: backcover; display: flex; flex-direction: column; justify-content: space-between; padding: 0 19mm; }
+.bc-mid { margin-top: 86mm; }
+.bc-mast { font: 300 54pt/.95 var(--display); letter-spacing: -.035em; margin: 0; }
+.bc-mast em { color: var(--amber); }
+.bc-line { font: 300 17pt/1.2 var(--display); color: var(--amber); margin: 6mm 0 0; }
+.bc-foot { padding-bottom: 15mm; font: 400 8.6pt/1.6 var(--body); color: rgba(241,233,220,.72); }
+.bc-foot p { margin: 0 0 2mm; }
+.bc-url { font: 500 6.6pt/1.5 var(--mono); letter-spacing: .12em; text-transform: uppercase; }
+.bc-url a { color: var(--cream); text-decoration: none; }
+.bc-copy { font: 500 5.2pt/1.6 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: rgba(241,233,220,.45); margin-top: 6mm !important; }
+a { overflow-wrap: anywhere; }
+.op-foot { gap: 6mm; } .op-foot a { text-align: right; min-width: 0; }
+.op-foot span { white-space: nowrap; }
+html, body { overflow-x: hidden; }
+.game .gann { break-after: avoid; }
+.game > .dgc:first-of-type { break-before: avoid; }
+.cv-tag { text-shadow: none !important; color: rgba(241,233,220,.92) !important; font-size: 6.8pt !important; max-width: 100mm !important; }
+.toc { padding-top: 20mm; padding-bottom: 12mm; }
+.toc h2 { margin: 4mm 0 5mm; font-size: 32pt; }
+.toc li a { padding: 3mm 0 2.8mm; }
+.t-title { font-size: 12.6pt; }
+.toc-foot { padding-top: 3mm; }
+.kc { text-transform: none; letter-spacing: .02em; }
+.abody h3::before { display: none !important; }
+.abody h3 { padding-top: 3.4mm; background: linear-gradient(var(--amber), var(--amber)) top left / 11mm .55mm no-repeat; }
+.pq { break-inside: auto; }
+.pq .quote { break-inside: auto; }
+.pq .ph { break-inside: avoid; }
+.backm h2 { font-size: 24pt; margin: 4mm 0 5mm; }
+.authors { gap: 4mm 8mm; }
+.au-ic { margin-bottom: 2mm; }
+.about { font-size: 8.4pt; margin-top: 2.4mm; }
+.legal { margin-top: 5mm; font-size: 6.8pt; line-height: 1.55; }
+.legal li { margin-bottom: 1mm; }
+.pq { break-inside: avoid; }
+.pq .quote p { font-size: 9.2pt; line-height: 1.5; margin-bottom: 2.2mm !important; }
+.pq .quote { padding: 7.5mm 7mm 5mm 10mm; }
+.backm { margin-top: -6mm; }
+.backm .au p { font-size: 8pt; }
+.legal { margin-top: 3mm; }
+.backm .about { margin-top: 1.6mm; }
+.backm .eyebrow[style] { margin-top: 6mm !important; }

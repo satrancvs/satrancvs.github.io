@@ -1,0 +1,13 @@
+import { chromium } from 'playwright';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const HERE = path.dirname(fileURLToPath(import.meta.url));
+const out = process.argv[2] || path.join(HERE, 'magazine.pdf');
+const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH || '/opt/pw-browsers/chromium' });
+const page = await browser.newPage();
+await page.goto('file://' + path.join(HERE, 'magazine.html'), { waitUntil: 'load' });
+await page.evaluate(() => document.fonts.ready);
+await page.waitForTimeout(800);
+await page.pdf({ path: out, preferCSSPageSize: true, printBackground: true, outline: true, tagged: true, displayHeaderFooter: false });
+await browser.close();
+console.log('pdf ->', out);
