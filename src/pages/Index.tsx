@@ -8,7 +8,7 @@ import FaviconBullet from '@/components/FaviconBullet';
 import ProgressiveImage from '@/components/ProgressiveImage';
 import FenDiagram from '@/components/FenDiagram';
 import { preloadChessPublica } from '@/lib/chesspublica';
-import { ARTICLES, PUBLISHED, articlePath } from '@/data/articles';
+import { ARTICLES, LISTED, PUBLISHED, articlePath } from '@/data/articles';
 import '../site.css';
 
 const NAV = [
@@ -143,7 +143,7 @@ export default function Index() {
 
   const [cover, ...rest] = ARTICLES;
   const featured = rest.slice(0, 3);
-  const list = PUBLISHED.filter((a) => cat === 'Tümü' || a.cat === cat);
+  const list = LISTED.filter((a) => cat === 'Tümü' || a.cat === cat);
 
   return (
     <div className="sk min-h-screen overflow-x-hidden">

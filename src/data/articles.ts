@@ -40,5 +40,11 @@ export const ARTICLES: Article[] = (data as Article[]).map((a) => typo(CHUNKS[a.
 // bildirimi yoktur. Yazı hazır olunca `draft` kaldırılır.
 export const PUBLISHED = ARTICLES.filter((a) => !a.draft);
 
+// "Bu Sayıdaki Tüm yazılar" listesinin sırası (a1, b2, …). Kapak ve "Öne çıkanlar" articles.json sırasını izler, liste bundan bağımsızdır.
+// Burada olmayan (yeni) yazılar listenin sonuna, articles.json sırasıyla eklenir.
+const LIST_ORDER = ['kapak', 'karlsruhe', 'atfil', 'analiz', 'acilis', 'zebra', 'gomori', 'mugla'];
+const rank = (a: Article) => { const i = LIST_ORDER.indexOf(a.id); return i >= 0 ? i : LIST_ORDER.length + ARTICLES.indexOf(a); };
+export const LISTED = [...PUBLISHED].sort((x, y) => rank(x) - rank(y));
+
 export const articleBySlug = (slug?: string) => PUBLISHED.find((a) => a.slug === slug);
 export const articlePath = (a: Article) => `/${a.slug}/`;
