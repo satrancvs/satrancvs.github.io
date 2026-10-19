@@ -250,7 +250,9 @@ function FenBlock({ fen, ready, crop = false }: { fen: string; ready: boolean; c
 }
 
 // " · " in a quote's source line breaks the line (Frost poem: author/title, then translator).
-const citeLines = (cite: string): ReactNode => cite.split(' · ').flatMap((part, i) => (i ? [<br key={i} />, part] : [part]));
+const citeNodes = (nodes: ReactNode[]): ReactNode[] => nodes.flatMap((n, k) => (typeof n === 'string' ? n.split(' · ').flatMap((part, i) => (i ? [<br key={`${k}-${i}`} />, part] : [part])) : [n]));
+// Kaynak satırı satır içi Markdown/HTML alabilir: yabancı adlarda `<span lang="en">…</span>` büyük harfe çevirmede Türkçe İ yerine o dilin kuralını kullandırır.
+const CiteMd = ({ cite }: { cite: string }) => <>{cite.split(' · ').map((part, i) => <span key={i}>{i > 0 && <br />}<Markdown options={{ forceInline: true }}>{part}</Markdown></span>)}</>;
 
 function QuoteWithFigure({ chunk, ready }: { chunk: string; ready: boolean }) {
   const blocks = chunk.split('\n').map((l) => l.replace(/^>\s?/, '')).join('\n').split(/\n\s*\n/).map((b) => b.trim()).filter(Boolean);
@@ -264,7 +266,7 @@ function QuoteWithFigure({ chunk, ready }: { chunk: string; ready: boolean }) {
         : FEN_BLOCK.test(b)
         ? <FenBlock key={k} fen={b.match(FEN_BLOCK)![1]} crop={!!b.match(FEN_BLOCK)![2]} ready={ready} />
         : <Markdown key={k} options={{ ...mdOptions, forceBlock: true }}>{b}</Markdown>))}
-      {cite && <footer className="quote-cite f-mono">— {citeLines(cite)}</footer>}
+      {cite && <footer className="quote-cite f-mono">— <CiteMd cite={cite} /></footer>}
     </blockquote>
   );
 }
@@ -328,13 +330,27 @@ function Video({ chunk }: { chunk: string }) {
 function Quote({ children }: { children?: ReactNode }) {
   const kids = Children.toArray(children);
   const last = kids[kids.length - 1];
-  const lastText = isValidElement<{ children?: ReactNode }>(last) ? Children.toArray(last.props.children).join('') : '';
-  const cite = /^\s*[—–-]\s+\S/.test(lastText) ? lastText.replace(/^\s*[—–-]\s+/, '') : null;
+  const lastKids = isValidElement<{ children?: ReactNode }>(last) ? Children.toArray(last.props.children) : [];
+  const first = lastKids[0];
+  const dash = typeof first === 'string' ? first.match(/^\s*[—–-]\s+([\s\S]*)$/) : null;
+  const cite = dash && (dash[1] || lastKids.length > 1) ? [dash[1], ...lastKids.slice(1)] : null;
   return (
     <blockquote className="quote">
       {cite ? kids.slice(0, -1) : kids}
-      {cite && <footer className="quote-cite f-mono">— {citeLines(cite)}</footer>}
+      {cite && <footer className="quote-cite f-mono">— {citeNodes(cite)}</footer>}
     </blockquote>
+  );
+}
+
+// "Devamı gelecek. Kaçırmamak için [bültene abone ol](/#bulten)." paragrafı yazının bir parçası değildir; ayrı, sakin bir kapanış bloğu olarak çizilir.
+const CONTINUED = /^Devamı gelecek\./;
+function Continued({ text }: { text: string }) {
+  const rest = text.replace(CONTINUED, '').trim().replace(/\.$/, ''); // son nokta bağlantı hapından sonra tek başına kalmasın
+  return (
+    <aside className="to-be-continued" aria-label="Devamı gelecek">
+      <p className="tbc-label f-mono">Devamı gelecek</p>
+      <p className="tbc-text"><Markdown options={{ forceInline: true, overrides: { a: { props: { className: 'tbc-link' } } } }}>{rest}</Markdown></p>
+    </aside>
   );
 }
 
@@ -456,6 +472,8 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
         </GameSection>,
       );
       if (own) i++;
+    } else if (CONTINUED.test(c)) {
+      out.push(<Continued key={i} text={c} />);
     } else if (FEN_ONLY.test(c)) {
       out.push(<FenBlock key={i} fen={c.match(FEN_ONLY)![1]} ready={cp === 'ready'} />);
     } else if (c.startsWith('### ')) {

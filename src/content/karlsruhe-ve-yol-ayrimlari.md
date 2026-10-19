@@ -4,7 +4,7 @@
 > Ben gittim daha az geçilmişinden  
 > Bütün farkı yaratan bu oldu.
 >
-> — Robert Frost, “The Road not Taken” · Türkçesi: Selahattin Özpalabıyıklar
+> — <span lang="en">Robert Frost, “The Road not Taken”</span> · Türkçesi: Selahattin Özpalabıyıklar
 
 Hayatta bazen öyle kritik yol ayrımlarına geliriz ki, seçtiğimiz yol neredeyse geri dönüşü olmayan bir şekilde tüm hikayemizin seyrini belirler. Hemen herkes gibi ben de lise sonrası böyle bir yol ayrımı yaşamıştım: Üniversiteyi Almanya'da mı yoksa Türkiye’de mi okuyacağıma karar vermem gerekiyordu. Sonunda biraz da ailevi nedenlerle "konformist" bir tercih yaparak Ankara’nın yolunu tuttuysam da Frost'un ormanındaki diğer patikayı seçseydim gideceğim şehir Karlsruhe olacaktı.
 

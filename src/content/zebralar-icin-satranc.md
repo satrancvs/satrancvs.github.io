@@ -14,7 +14,7 @@ Kitap üç bölümden oluşuyor: İlk bölüm daha çok satranç oyuncusunun psi
 
 > Örneğin, bazen iki hamle arasında tercih yapmanız gerekir. Birinin yeterli, diğerininse çok daha kuvvetli olduğunu, hatta forse kazandığını görebiliyorsunuzdur. Ancak, kazanç olup olmadığını bulabilmek için dakikalarca düşünmeniz gerekmektedir. (...) Pratik gücün en önemli parçalarından birinin zaman faktörünü böyle anlarda değerlendirebilmek olduğuna inanıyorum. (...) Şimdi yirmi dakika kaybedersem, daha sonraki fırsatları kesinlikle kaçıracağım; peki böyle bir yatırım yapmaya değer mi?
 >
-> — Jonathan Rowson, Chess for Zebras
+> — <span lang="en">Jonathan Rowson, Chess for Zebras</span>
 
 Kitap ilerledikçe pek çok büyük ustanın fikirlerine, konuşmalarına (Motwani, Suba, Psakhis, McShane, Hübner, Seirawan vs.), başka eserlerden referanslara yer verilmesi okumayı çok daha sürükleyici ve keyifli kılıyor.
 
@@ -22,7 +22,7 @@ Kitap ilerledikçe pek çok büyük ustanın fikirlerine, konuşmalarına (Motwa
 
 > Çok garip bulduğum bir şey, çoğu oyuncunun en üst seviyelerde açılış hazırlığının pek çok oyuncu ve hatta iyi büyük ustalar için bile olduğundan çok daha fazla önemli olduğunu fark edemiyor görünmeleri. (...) Sevdiğiniz oyuncuların hamlelerine ve fikirlerine özenmeye çalışmak mantıklı ancak onların yaptığı satranç çalışmasına özenmek büyük bir hata olur, **çünkü 2650'yi 2750'ye ulaştırmaya faydalı olacak bir çalışma 1650'yi 1750'ye ve hatta 2550'yi 2650'ye ulaştırmak için faydalı olmayabilir**.
 >
-> — Jonathan Rowson, Chess for Zebras
+> — <span lang="en">Jonathan Rowson, Chess for Zebras</span>
 
 Oldukça eğlenceli (şu başlıklara bir bakın: *"Cebinizde bir delik olduğunu düşünürken ne yapmalı?"*, *"Satranç neden çok zor?"* ya da *"Konsantre ol! Konsantre ol? Konsantre ol."*) ama derin meselelere el atmaktan çekinmeyen bir serbestlikle yazılmış olması çok hoşuma gitti. Bu yönüyle daha çok satrançta belli bir seviyeye gelmiş, ilerlemekte güçlük çeken yetişkin sporcu veya antrenörlere hitap eder görünümde.
 
@@ -40,13 +40,13 @@ Yalnız yanlış anlaşılmasın, Rowson'ın her derde deva olacak -ve bulmayı 
 
 > Oyuncunun gücü arttıkça, kendisine bir konumda ne olduğu sorulduğunda daha büyük ihtimalle 'bilmiyorum' diyerek başlayacaktır.
 >
-> — Jonathan Rowson, Chess for Zebras
+> — <span lang="en">Jonathan Rowson, Chess for Zebras</span>
 
 Her şeyi bildiğimiz o sahte kesinlik alanından çıkıp belirsizlikle yüzleşebilmeyi ilerleme sayıyor. Bunu her bölüm için iyi seçilmiş, bazıları yazarın kendisi tarafından oynanmış partilerle örnekliyor.
 
 > Satranca, 'bilmiyorum, düşünelim' zihniyeti ile yaklaşmak, 'bu böyle ve bunu kanıtlayacağım' şeklinde yaklaşmaktan çok daha akıllıcadır.
 >
-> — Jonathan Rowson, Chess for Zebras
+> — <span lang="en">Jonathan Rowson, Chess for Zebras</span>
 
 Aynı yaklaşımla, "atak bir oyuncuyum", "konumsal oynamayı severim", "hesap yapmam, sezgilerimle oynarım" gibi yaklaşımlarla oyuncunun kendi tarzına ve hamlelerine sınırlar çizmesini, onun satrancının gelişimi önündeki en büyük engellerden biri olarak görüyor ve kitabın her bölümüne özenle seçilerek konmuş epigraflarından Karpov'a ait olan sözüyle bunu açıklıyor: "Tarz mı? Benim bir tarzım yok."
 
@@ -79,12 +79,12 @@ Kitap boyunca konuya eşlik eden örneklerde kendi partilerini, oynarkenki düş
 >
 > Şimdi bu itirafı okuyucuların kendilerine karşı daha dürüst olmaları için cesaretlenmeleri amacıyla paylaşıyorum. Kendini kandırma, neredeyse tanımı gereği, çok aldatıcı bir olgudur fakat inanıyorum ki bu bizim tecrübelerimizi hikâyeleştirme eğilimimizle yakından ilişkilidir. Tecrübelerimiz çoğu defa tutarsız ve benlik algımızı tehdit edici olduğunda, tutarlı ya da ilgi çeken hikâyeler yaratacak şekilde evrimleşmemiz anlamlı görünüyor.
 >
-> — Jonathan Rowson, Chess for Zebras
+> — <span lang="en">Jonathan Rowson, Chess for Zebras</span>
 
 Uzunca bir bölümünü alıntıladığım yazımı kitabın en güzel tavsiyelerinden birisiyle bitiriyorum:
 
 > Daha iyi oyuncu olmak istiyorsanız daha iyi alışkanlıklara sahip olmak gerekir ve daha iyi alışkanlıklar antrenman ile gelişir. En iyi antrenman, güç kararlar için kendinizi sorumluluk almaya zorladığınızda, sizi konfor alanınızın dışına çıkmaya itendir. (...) Sonuçlarımızı geliştirmenin en kesin yolunun evde kompleks örnekler çözmekten geçtiğini düşünüyorum. Bunu olabildiğince sık, uzun vadeli ve disiplinli bir şekilde yapmalı. **Bu konsantre olmayı alışkanlığa çevirmede yardımcı olacak ve oyunlarımızın kritik konumlarında konsantre olmayı kolaylaştıracaktır.**
 >
-> — Jonathan Rowson, Chess for Zebras
+> — <span lang="en">Jonathan Rowson, Chess for Zebras</span>
 
 Şimdiye kadar sadece üç kitabı bulunan Büyük Usta Jonathan Rowson'ın sıradaki eserinin konusunu bilemiyorum, fakat düşünmeyi teşvik eden her cümlesi okunmaya değer görünüyor.

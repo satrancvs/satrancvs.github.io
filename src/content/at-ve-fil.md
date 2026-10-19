@@ -8,7 +8,7 @@ Hangi taşları değişeceğimize karar vermek pek çok konumda gerçekten zor o
 
 > Pek çok bakımdan Chigorin’in stili, Alekhine’in stiline öncüllük etmiştir. 20. yüzyıl ortalarında Chigorin’in oyunları üzerine büyük bir duayen olan Boris Spassky de gençliğinde benzer bir üslupla oynuyordu.
 >
-> — Garry Kasparov, "On My Great Predecessors, Part 1", Everyman Chess, 2003.
+> — <span lang="en">Garry Kasparov, "On My Great Predecessors, Part 1", Everyman Chess, 2003.</span>
 
 Ne var ki Chigorin’in tarihin testinden geçememiş, günümüzde kabul görmemiş bazı önerileri de vardı: **Chigorin satrançta atın filden daha iyi bir taş olduğunu savunuyordu.** Bu görüş, Chigorin'in iki atının Lasker'in fil çiftine karşı galip geldiği **Lasker - Chigorin, Hastings, 1895** partisiyle kendisine geniş destekçi kazanmış, satranç çevrelerinde atı file tercih eden oyunculara "Chigorinci" denmeye başlanmış.
 
@@ -28,13 +28,13 @@ Ne var ki Chigorin’in tarihin testinden geçememiş, günümüzde kabul görme
 
 > Chigorin'in pratik dehası, modern teorik ilkeleri hiçe sayma hakkı varmış gibi bir görünüm sunuyor, ama ben buna ısrarla karşı çıkmak zorundayım. Siyahın konumu daha zayıf; Beyazın iki fili ve sağlam bir merkezi, duble f-piyonunun dezavantajını fazlasıyla telafi edecektir. Kaleler için açılan iki at dikeyi de iki kale piyonunun izole kalmasını dengelemeli. Zaten pratikte Siyah bu piyonlara saldıramıyor.
 >
-> — Steinitz, W. "The Hastings Chess Tournament 1895", 1896.
+> — <span lang="en">Steinitz, W. "The Hastings Chess Tournament 1895", 1896.</span>
 
 Birkaç yıl sonra Chigorin görüşlerini bir kez daha Steinitz karşısında sınama imkânı bulacaktı. İkili daha önce Havana’da iki kez dünya şampiyonluğu maçında karşılaşmış (1889 ve 1892), Chigorin ikisini de kaybetmişti. Bu kez sahne Viyana’ydı ve eski dünya şampiyonu Steinitz artık 62 yaşındaydı. “Uluslararası İmparatorluk Jübilesi Satranç Turnuvası, Viyana, 1898” [kitabının](https://books.googleusercontent.com/books/content?req=AKW5QaebXyzRgHqFIuyO85OtHrh1fesPPgZrdVgfwU5jY_y0x4qhEYPuFfKMVkmYgEa__TapBWFHXxwtDHMmxkYlYXyZ2NiBFxLKmriS_K8Hd6H7gtk-i2FdwqCxk5dP6asCv0W4-upwWPNVXMKHTfUpHnrPCjbcXl9zLdpbh6kuTY92KWoz9vfFJmLZiAeGvNgxdtLlAr08_oZLIOV2TtacJg2G-E_E8APvYfEPmeTTRowzX0D3wTQ3WSzzA8_eBBQwCzT2AeO9-9aVZTbJZUuzp48ru5bLvWL8_aLCx5X61ChhRePr2z8) birinci tur raporunda şöyle anlatılıyor:
 
 > Günün en yoğun ilgiye mazhar olan karşılaşması, Steinitz–Chigorin oyunuydu. Steinitz’ın Vezir Gambiti’ni Chigorin 2… Nb8–c6 hamlesiyle reddetti. Yaşlı usta, bu açılışı hayranlık uyandıran bir tazelikle oynadı ve 41 hamlede kazandı.
 >
-> — Internationales Kaiser-Jubiläums-Schachturnier, Wien 1898, birinci tur raporu
+> — <span lang="de">Internationales Kaiser-Jubiläums-Schachturnier, Wien 1898</span>, birinci tur raporu
 
 [Event "Viyana Uluslararası Satranç Turnuvası"]
 [Site "Viyana"]
@@ -49,13 +49,13 @@ Steinitz'in konuya dair görüşleri elbette birkaç pratik başarıyla sınırl
 
 > Filin göreli değeri, ustalar ve otoriteler arasında farklı görüşlere yol açmıştır. Bazıları oyunsonunda fili ata belirgin bir şekilde tercih etmiştir. Vezir veya kaleyle birlikteyken atın filden daha iyi olduğu da öne sürülmüştür. Ama dikkatimizi çeken pozisyonların ortalamasını ve her iki taş lehine kesin olan birkaç istisnayı dikkatle değerlendirdikten sonra şu sonuca vardık: Filin gücü, pratik amaçlar bakımından, açılışta, oyunortasında, oyunsonunda ve diğer taşlarla çoğu kombinasyonda ona atfedilen, at karşısındaki üstün matematiksel üstünlüğünü haklı çıkarmaktadır.
 >
-> — Steinitz, W. "The Modern Chess Instructor", 1889.
+> — <span lang="en">Steinitz, W. "The Modern Chess Instructor", 1889.</span>
 
 İkinci dünya şampiyonu Lasker ise kaleme aldığı Satranç El Kitabı'nda meseleye yaklaşırken daha temkinli, neredeyse felsefi bir tavır takınıyordu:
 
 > Bazı satranç dostları atı file, bazıları ise fili ata tercih eder ve taş değişmeleri buna göre yapar. Haklı olan kim? Yoksa bu işlerde ne haklı ne haksız mı var? Belki de bu taşların karşılıklı değeri, akıl sır ermez rastlantıların hükmü altındadır. Biliyoruz ki _ceteris paribus_ (diğer her şey eşitken) at ve fil eşittir, her ikisi de _ceteris paribus_ üç piyon değerindedir. Ancak "_ceteris paribus_" teriminin içerdiği varsayım önemlidir: "diğer bütün koşullar eşitken" - _ceteris paribus_'un anlamı budur. Ama gerçekte ‘diğer bütün koşullar’ **hiçbir zaman** eşit değildir. Tüm koşulları eşit ağırlıkta ya da önemde saymak, yaptığımız bir **varsayımdır**. _Ceteris paribus_'u hesaba katmamak, bizi öyle bir saçmalığın pençesine düşürür ki gururlu akıl deliliğe yakın, sendeleyen bir romantizme düşer.
 >
-> — Lasker, E. Lasker's Manual of Chess. 1927.
+> — <span lang="en">Lasker, E. Lasker's Manual of Chess. 1927.</span>
 
 Üçüncü dünya şampiyonu **Capablanca** ise _Satrancın Temelleri_ adlı kitabında, konuyu tek tek örneklerle, o vakte kadar yapılmış en ayrıntılı şekilde ele alır:
 
@@ -69,7 +69,7 @@ Steinitz'in konuya dair görüşleri elbette birkaç pratik başarıyla sınırl
 >
 > Elbette bu ilkeler, pozisyonun gereklerine göre değişiklik göstermeli. Sabit bir oyun hattı vermek _ahmaklık_ olurdu. **Her oyunsonu farklıdır ve rakibin ne yapmayı planladığına göre farklı ele alınmayı gerektirir. Asıl önemli olan, oluşabilecek pozisyonları gözünde canlandırarak yapılan hesaplamadır.**
 >
-> — Capablanca, J. R. "Chess Fundamentals", 1921.
+> — <span lang="en">Capablanca, J. R. "Chess Fundamentals", 1921.</span>
 
 Capablanca’nın yerinde uyarısını dikkate almayan oyuncunun başına neler gelebileceğini incelikle sergileyen bir oyunla devam edelim. Bu defa file karşı ata sahip olan taraf, Capa’nın büyük rakibi ve halefi, dördüncü dünya şampiyonu **Alexander Alekhine**. Analiz ve yorumlar ise Büyük Usta Johan Hellsten’den.
 
