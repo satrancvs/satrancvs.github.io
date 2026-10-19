@@ -110,6 +110,7 @@
 .quote::before { content: '\201C'; position: absolute; top: -32px; left: -32px; width: 64px; height: 64px; box-sizing: border-box; padding-top: 26px; border-radius: 50%; background: #0E0C0A; display: flex; align-items: center; justify-content: center; font-family: 'Fraunces', serif; font-weight: 600; font-size: 56px; line-height: 1; color: #C8893E; pointer-events: none; }
 .quote > p + p { margin-top: 1.25rem; }
 .quote strong { font-weight: 600; color: #F1E9DC; }
+.quote-right .quote { text-align: right; }
 .quote-cite { display: block; margin-top: 1.5rem; font-size: 11px; line-height: 1.6; color: #A89A88; }
 @media (max-width: 639px) {
   .quote { margin: 4rem 0 2.5rem; padding: 3rem 1.5rem 2rem; }

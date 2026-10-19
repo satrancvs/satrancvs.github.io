@@ -1,3 +1,4 @@
+> [sağa yaslı]
 > Bir ormanda yol ikiye ayrıldı, ve ben –  
 > Ben gittim daha az geçilmişinden  
 > Bütün farkı yaratan bu oldu işte

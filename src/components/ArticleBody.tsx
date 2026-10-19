@@ -459,9 +459,11 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     } else if (c.startsWith('<figure')) {
       out.push(<Video key={i} chunk={c} />);
     } else {
+      // Alıntının ilk satırı `> [sağa yaslı]` ise o alıntı sağa yaslanır (satır metne girmez).
+      const right = /^>\s*\[sağa yaslı\]\s*(\n|$)/.test(c);
       out.push(
-        <div key={i} className="[&>p]:mb-6 [&>h3]:mb-6">
-          <Markdown options={{ ...mdOptions, forceBlock: true }}>{c}</Markdown>
+        <div key={i} className={`[&>p]:mb-6 [&>h3]:mb-6${right ? ' quote-right' : ''}`}>
+          <Markdown options={{ ...mdOptions, forceBlock: true }}>{right ? c.replace(/^>\s*\[sağa yaslı\]\s*\n?/, '') : c}</Markdown>
         </div>,
       );
     }
