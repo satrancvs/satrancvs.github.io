@@ -29,6 +29,15 @@ const authorCount = (name: string) => {
   return n > 0 || byAuthor(ARTICLES, name) === 0 ? `${n} yazı` : 'Yakında';
 };
 
+// "Hakkında" bölümündeki atıflar (inline Markdown). Yeni bir üçüncü taraf yazılım/görsel eklenince buraya ve public/chesspublica/LICENSES.txt'ye eklenir.
+const ATTRIBUTIONS = [
+  'Oyun ve diyagramlar: [ChessPublica](https://chesspublica.github.io/) (MIT) ve içindeki [jQuery](https://jquery.com/) (MIT), [chess.js](https://github.com/jhlywa/chess.js) (BSD-2-Clause) ve [chessboard.js](https://chessboardjs.com/) (MIT, © Chris Oakman). [Lisans metinleri](/chesspublica/LICENSES.txt).',
+  'Satranç taşı görselleri: [Colin M.L. Burnett](https://commons.wikimedia.org/wiki/User:Cburnett) (Cburnett), Wikimedia Commons aracılığıyla, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.tr).',
+  'Yazı tipleri: [Fraunces](https://fonts.google.com/specimen/Fraunces), [Manrope](https://fonts.google.com/specimen/Manrope) ve [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) (SIL Open Font License), Google Fonts aracılığıyla.',
+  'Simgeler: [Lucide](https://lucide.dev/) (ISC).',
+  'Fotoğraflar: Künyeler (fotoğrafçı, kaynak, lisans) her fotoğrafın altında yer alır.',
+];
+
 const CORNERS = Array.from(new Set(PUBLISHED.map((a) => a.cat)));
 const tabCls = (on: boolean) => `f-mono h-11 border-b-2 transition-colors ${on ? 'border-[#C8893E] text-[#0E0C0A]' : 'border-transparent text-[#0E0C0A]/50 hover:text-[#0E0C0A]'}`;
 
@@ -310,6 +319,15 @@ export default function Index() {
             <em className="italic text-[#C8893E]">‘Satranç ve siz’ demek.</em>
           </h2>
           <p className="text-[#F1E9DC]/75 leading-relaxed mt-10 max-w-xl">Satranç vs., satranç üzerine uzun okumalar, analizler ve hikâyeler yayımlayan bağımsız bir dergidir. Bir fincan kahve eşliğinde, acele etmeden okunsun diye.</p>
+          {/* Atıflar: sitede kullanılan üçüncü taraf yazılım ve görseller (lisans metinleri public/chesspublica/LICENSES.txt). */}
+          <div className="mt-12 max-w-xl">
+            <p className="f-mono text-[#C8893E]">Atıflar</p>
+            <ul className="mt-4 space-y-2 text-sm leading-relaxed text-[#A89A88] list-none p-0">
+              {ATTRIBUTIONS.map((t, i) => (
+                <li key={i}><Markdown options={{ forceInline: true, overrides: { a: { props: { className: 'underline underline-offset-2 hover:text-[#F1E9DC]', target: '_blank', rel: 'noreferrer' } } } }}>{t}</Markdown></li>
+              ))}
+            </ul>
+          </div>
         </div>
         <div id="bulten" className="md:col-span-12 mt-10 border border-[#2E2620] p-8 md:p-14 grid md:grid-cols-2 gap-8 items-end">
           <div><p className="f-mono text-[#C8893E]">Bülten</p><h3 className="f-display text-4xl md:text-6xl mt-4">Her ay bir hamle, <em className="italic">e-postanda.</em></h3></div>
