@@ -298,7 +298,8 @@ function Video({ chunk }: { chunk: string }) {
   const title = chunk.match(/<iframe[^>]*\btitle="([^"]*)"/)?.[1] ?? 'YouTube videosu';
   const capLines = (chunk.match(/<figcaption>([\s\S]*?)<\/figcaption>/)?.[1] ?? '')
     .split(/<br\s*\/?>/)
-    .map((l) => l.replace(/<[^>]+>/g, '').trim())
+    
+    .map((l) => l.trim())
     .filter(Boolean);
   const src = `https://www.youtube-nocookie.com/embed/${id[1]}${id[2] ? `?start=${id[2]}` : ''}`;
   const href = `https://www.youtube.com/watch?v=${id[1]}${id[2] ? `&t=${id[2]}s` : ''}`;
@@ -316,7 +317,7 @@ function Video({ chunk }: { chunk: string }) {
         />
       </div>
       <figcaption className="credit mt-3 text-[#A89A88]">
-        {capLines.map((l) => (/[.!?…]$/.test(l) ? l : `${l}.`)).join(' ')}{' '}
+        <Markdown options={captionOptions}>{capLines.map((l) => (/[.!?…]$/.test(l.replace(/<[^>]+>/g, '')) ? l : `${l}.`)).join(' ')}</Markdown>{' '}
         <a href={href} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-[#F1E9DC]">YouTube'da aç</a>
       </figcaption>
     </figure>

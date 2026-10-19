@@ -2,7 +2,7 @@ Satranç ustası olmak, en nadir, özel ve ilginç mesleklerden biri. Prof. Dr. 
 
 ### Alexander Alekhine
 
-![Alexander Alekhine](images/alekhine-1913.jpg "Dördüncü Dünya Şampiyonu Alexander Alekhine · “Новое Время” (Yeni Zaman) Gazetesi, Eylül 1913. Wikimedia Commons aracılığıyla")
+![Alexander Alekhine](images/alekhine-1913.jpg "Dördüncü Dünya Şampiyonu <span lang="en">Alexander Alekhine</span> · “Новое Время” (Yeni Zaman) Gazetesi, Eylül 1913. <span lang="en">Wikimedia Commons</span> aracılığıyla")
 
 > Öncelikle gerçeği aramak ve ondan sonra da mücadele unsuru nedeniyle satranç ustası oldum.
 >
@@ -16,7 +16,7 @@ Satranç ustası olmak, en nadir, özel ve ilginç mesleklerden biri. Prof. Dr. 
 
 ### Aron Nimzowitsch
 
-![Aron Nimzowitsch](images/nimzowitsch.jpg "Döneminin en iyi oyuncularından, hipermodern okulun önde gelen ismi Aron Nimzowitsch · “Избранные партии международного турнира в Карлсбаде” (Karlsbad Uluslararası Satranç Turnuvası’ndan Seçilmiş Oyunlar) kitabından, 1929. Wikimedia Commons aracılığıyla")
+![Aron Nimzowitsch](images/nimzowitsch.jpg "Döneminin en iyi oyuncularından, hipermodern okulun önde gelen ismi <span lang="en">Aron Nimzowitsch</span> · “Избранные партии международного турнира в Карлсбаде” (Karlsbad Uluslararası Satranç Turnuvası’ndan Seçilmiş Oyunlar) kitabından, 1929. <span lang="en">Wikimedia Commons</span> aracılığıyla")
 
 > Satranç hayatın bir aynasıdır, satranççıların dünyasından başka hiçbir yerde fanatizm -esasen çok hakir gördüğüm bir şey- bu ölçüde çiçek açmış ve serpilmemiştir. Kısmen şaka yollu diyebilirim ki benim için yıllar içerisinde bir ihtiyaç haline gelen insan toplumuna karşı “antipati”me daha yoğun bir hedef bulmak için satranç oynuyorum ve bu yüzden usta oldum. Mizahı bir kenara bırakırsak şöyle derim:
 >
@@ -30,7 +30,7 @@ Satranç ustası olmak, en nadir, özel ve ilginç mesleklerden biri. Prof. Dr. 
 
 ### Richard Réti
 
-![Richard Réti](images/reti.jpg "Dünya Şampiyonlarının korkulu rüyası, bir diğer hipermodernist Richard Réti · 64 (Sovyet satranç dergisi), 1925. Wikimedia Commons aracılığıyla")
+![Richard Réti](images/reti.jpg "Dünya Şampiyonlarının korkulu rüyası, bir diğer hipermodernist <span lang="en">Richard Réti</span> · 64 (Sovyet satranç dergisi), 1925. <span lang="en">Wikimedia Commons</span> aracılığıyla")
 
 > Gençliğimde sevdiğim iki uğraş vardı: matematik ve satranç. İlgimi matematiğe değil de satranca yöneltmem hususunda beni harekete geçiren şey satrancın matematiğe göre daha canlı ve yaşama dair olmasıdır. Bilmeyenlere tuhaf veya paradoksal görünecek bir neden. Matematik derken genel, pratik matematikten değil tamamen spekülatif bir karaktere sahip, sonlu ve sonsuz elemanlara sahip kümeler ve onların oluşturdukları yapılar ile ilgilenen modern matematikten bahsediyorum.
 >
@@ -44,7 +44,7 @@ Satranç ustası olmak, en nadir, özel ve ilginç mesleklerden biri. Prof. Dr. 
 
 ### Akiba Rubinstein
 
-![Akiba Rubinstein](images/rubinstein-1908.jpg "Dünya Şampiyonu ünvanını alamamış en güçlü oyunculardan Akiba Rubinstein · Deutsche Schachzeitung (Alman Satranç Gazetesi) Ocak, 1908. Wikimedia Commons aracılığıyla")
+![Akiba Rubinstein](images/rubinstein-1908.jpg "Dünya Şampiyonu ünvanını alamamış en güçlü oyunculardan <span lang="en">Akiba Rubinstein</span> · <span lang="de">Deutsche Schachzeitung</span> (Alman Satranç Gazetesi) Ocak, 1908. <span lang="en">Wikimedia Commons</span> aracılığıyla")
 
 > Satranç bana on dört yaşında, okulda gösterilmişti. On altı yaşında teoriyle ilgilenmeye başladım. Daha sonra büyük üstat Salwe’nin yaşadığı Lodz’a gitmem bana öğütlendi. Gelişimimi orada tamamladım, diyebilirim ki Salwe’nin yanında çıraklığımı yaptım. Böylece usta oldum.
 >
@@ -58,7 +58,7 @@ Satranç ustası olmak, en nadir, özel ve ilginç mesleklerden biri. Prof. Dr. 
 
 ### Rudolf Spielmann
 
-![Rudolf Spielmann](images/spielmann.jpg "Romantik ekolün 20. yüzyıldaki son temsilcilerinden Rudolf Spielmann · Polonya Ulusal Dijital Arşivi, 1950. Wikimedia Commons aracılığıyla")
+![Rudolf Spielmann](images/spielmann.jpg "Romantik ekolün 20. yüzyıldaki son temsilcilerinden <span lang="en">Rudolf Spielmann</span> · Polonya Ulusal Dijital Arşivi, 1950. <span lang="en">Wikimedia Commons</span> aracılığıyla")
 
 > Önceleri bir iş adamıydım, ama daha sonra mesleğimde ilerleyemeyeceğimi gördüm ve aşama aşama bana daha fazla başarı vadeden satranca geçiş yaptım.
 >
@@ -70,7 +70,7 @@ Satranç ustası olmak, en nadir, özel ve ilginç mesleklerden biri. Prof. Dr. 
 
 ### Prof. Dr. Milan Vidmar
 
-![Milan Vidmar](images/vidmar-1930.jpg "FIDE tarafından Büyükusta ünvanının ilk verildiği oyunculardan Milan Vidmar · Fotoğraf: Veličan Bešter, 1930. Kamuya ait, Wikimedia Commons aracılığıyla")
+![Milan Vidmar](images/vidmar-1930.jpg "FIDE tarafından Büyükusta ünvanının ilk verildiği oyunculardan <span lang="en">Milan Vidmar</span> · Fotoğraf: <span lang="sl">Veličan Bešter</span>, 1930. Kamuya ait, <span lang="en">Wikimedia Commons</span> aracılığıyla")
 
 > Satranç beni daha gençlik yıllarımda kendine bağladı. Bu yaşlarda, tabii eğer satranç oyununa bir yeteneği varsa, insan başarının zevkini satrançta nispeten daha kolay elde eder. Bu küçük başarılar daha büyüklerinin öncüsüdür, genç adam denilebilir ki sarhoş olmuştur ve satranç ustalığı için gereken atmosfer böylece yaratılmış olur.
 >

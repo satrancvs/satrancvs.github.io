@@ -10,7 +10,7 @@ Hayatta bazen öyle kritik yol ayrımlarına geliriz ki, seçtiğimiz yol nerede
 
 On sekizinci yüzyılda bir Alman asilzadesinin kurduğu bu şirin ve yeşil kente yolum ancak yirmi bir yıllık bir gecikmeyle, bu Nisan ayında düştü. “Dünyanın en büyük açık turnuvası” sloganıyla düzenlenen, Magnus Carlsen başta olmak üzere birçok elit satranççının da freestyle kategorisinde yarıştığı Grenke Açık’ta oynamaya karar vermiştim. Böylece bu gezi, bir satranç turnuvasının ötesinde benim için kişisel bir anlam da taşıyordu. Belki de bu yüzden birçok Alman kentini sıkıcı bulmama rağmen Karlsruhe’yi sevdim.
 
-![Karlsruhe’nin simgesi olan piramit](images/piramit.jpg "Karlsruhe’nin simgesi olan piramit.  Kenti kuran asilzade Karl Wilhelm von Baden-Durlach’ın ebedi istirahatgahı olan kilisenin yerine yapılmış. · Fotoğraf: Tarık Selbes")
+![Karlsruhe’nin simgesi olan piramit](images/piramit.jpg "Karlsruhe’nin simgesi olan piramit.  Kenti kuran asilzade <span lang="de">Karl Wilhelm von Baden-Durlach</span>’ın ebedi istirahatgahı olan kilisenin yerine yapılmış. · Fotoğraf: Tarık Selbes")
 
 Geçen yılın sonlarında Polonya’da üçüncü ve son IM normumu almamın ardından satranca eskisinden daha ciddi olarak eğilme ve turnuvalara daha profesyonelce yaklaşma şeklindeki bir karar almıştım ve Grenke Açık da bu karar sonrası oynadığım ilk turnuvaydı. Her ne kadar öncesinde istediğim gibi hazırlanamasam da en azından turnuva salonuna yakın bir otelde kalmak ve turnuva süresince satranç dersi vermeye hemen hemen tamamen ara vermek gibi birkaç önemli iyileştirme yaptım. Maalesef artık genç denemeyecek bir yaşta olduğum için enerjimi idareli kullanmam gerekiyor.
 
