@@ -1,9 +1,15 @@
-import { Instagram, Twitter, Youtube } from 'lucide-react';
+import { Instagram, Youtube } from 'lucide-react';
+import type { ComponentType } from 'react';
 import { Link } from 'react-router-dom';
 import FaviconBullet from '@/components/FaviconBullet';
 
 const SOCIAL_READY = false;
-const SOCIAL = [[Instagram, 'Instagram', 'https://instagram.com/satrancvs'], [Twitter, 'X', 'https://x.com/satrancvs'], [Youtube, 'YouTube', 'https://youtube.com/@satrancvs']] as const;
+// Lucide'te X logosu yok (`Twitter` eski kuş simgesidir); X'in güncel logosu satır içi SVG olarak çizilir (Simple Icons, CC0).
+const XIcon = ({ size = 24 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" /></svg>
+);
+
+const SOCIAL = [[Instagram, 'Instagram', 'https://instagram.com/satrancvs'], [XIcon, 'X', 'https://x.com/satrancvs'], [Youtube, 'YouTube', 'https://youtube.com/@satrancvs']] as const;
 
 // Bağlantı/düğme yalnızca yazının genişliği kadar (w-fit): iki yanındaki boşluk tıklanmaz.
 const WORDMARK_CLASS = 'block w-fit max-w-full mx-auto f-display text-[17vw] leading-[1] whitespace-nowrap text-center pt-6 pb-[2vw] hover:opacity-80 transition-opacity';
@@ -30,7 +36,7 @@ export default function SiteFooter({ page = 'home' }: { page?: 'home' | 'post' }
             Hesaplar açılınca SOCIAL_READY true yapılır. */}
         <div title={SOCIAL_READY ? undefined : 'Yakında...'} aria-disabled={SOCIAL_READY ? undefined : true} className={`flex gap-3 ${SOCIAL_READY ? '' : 'cursor-not-allowed opacity-60'}`}>
           {SOCIAL.map(([Icon, l, href]) => {
-            const I = Icon as typeof Instagram;
+            const I = Icon as ComponentType<{ size?: number }>;
             const base = 'w-11 h-11 rounded-full border border-[#2E2620] grid place-items-center';
             return SOCIAL_READY
               ? <a key={l as string} href={href as string} target="_blank" rel="noreferrer" aria-label={l as string} className={`${base} hover:bg-[#C8893E] hover:text-[#0E0C0A]`}><I size={18} /></a>
