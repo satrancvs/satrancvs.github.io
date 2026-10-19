@@ -30,6 +30,8 @@ Oldukça eğlenceli (şu başlıklara bir bakın: *"Cebinizde bir delik olduğun
 
 Kitabı için pek çok farklı isim düşündükten sonra *"Chess for Zebras: Thinking Differently about Black and White"* (Zebralar İçin Satranç: Siyah ve Beyaz Hakkında Farklı Düşünme) adında karar kılan Jonathan Rowson, bir sufi deyişinden etkilenmiş. Toynak seslerinin atları çağrıştırmasından yola çıkan Rowson, bize zebraları işaret ediyor. Mesajı kısaca "kendinize farklı düşünmek için izin verin" olan Sufi deyişi şöyle:
 
+> [sağa yaslı]
+> [şiir]
 > Toynak sesi duyunca zebra gelsin aklına.
 >
 > — Sufi deyişi
