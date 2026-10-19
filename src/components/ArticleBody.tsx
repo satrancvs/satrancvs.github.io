@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 import Markdown from 'markdown-to-jsx';
 import { useChessPublica } from '@/lib/chesspublica';
 import { curlyComments, curlyProse, watchComments } from '@/lib/curly-dom';
-import ProgressiveImage from '@/components/ProgressiveImage';
+import ProgressiveImage, { boxWidth, isSmallImage } from '@/components/ProgressiveImage';
 import { watchInlinePlay } from '@/lib/inline-play';
 import { watchLocalization } from '@/lib/localize-dom';
 import { watchVariationFix } from '@/lib/variation-fix';
@@ -275,11 +275,12 @@ function Figure({ chunk }: { chunk: string }) {
   const [, alt, path, caption] = m;
   // Kitap kapağı küçük gösterilir; dar görselin altındaki künye okunabilsin diye künye kapaktan geniş tutulur.
   const cover = /^images\/[^/]*(adventurous-way|chess-for-zebras)/.test(path);
+  const small = cover || isSmallImage(path);
   return (
-    <figure className={`my-10 mx-auto max-w-full ${cover ? 'w-full md:max-w-[480px] text-center' : 'w-fit'}`}>
+    <figure className={`my-10 mx-auto w-full ${small ? 'md:max-w-[480px] text-center' : ''}`} style={small ? undefined : { maxWidth: boxWidth(path) }}>
       <ProgressiveImage path={path} alt={alt} cover={cover} />
       {caption && (
-        <figcaption className={`credit mt-3 text-[#A89A88] ${cover ? '' : 'w-0 min-w-full'}`}>
+        <figcaption className="credit mt-3 text-[#A89A88]">
           <Markdown options={captionOptions}>{caption}</Markdown>
         </figcaption>
       )}

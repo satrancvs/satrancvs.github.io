@@ -9,7 +9,7 @@ import { toTypography } from '@/lib/curly';
 import data from './articles.json';
 
 export type Article = {
-  id: string; slug: string; cat: string; title: string; dek?: string; author: string; authorLabel?: string; translator?: string;
+  id: string; slug: string; cat: string; title: string; dek?: string; author: string; authorLang?: string; authorLabel?: string; translator?: string;
   excerpt?: string; date?: string; chunks?: string[]; photo?: boolean; thumb?: string; thumbAlt?: string; thumbPosition?: string; diagram?: string; diagramAlt?: string; diagramCaption?: string; titleLines?: [string, string]; note?: string; diagramOrientation?: 'white' | 'black'; diagramBadge?: { square: string; glyph: string }; diagramArrow?: { from: string; to: string }; draft?: boolean; body: string[];
 };
 
@@ -39,6 +39,12 @@ export const ARTICLES: Article[] = (data as Article[]).map((a) => typo(CHUNKS[a.
 // `draft`: henüz yayımlanmamış yazı. Yalnızca ana sayfadaki "Öne çıkanlar" kartında görünür (tıklanmaz); sayfası, sitemap kaydı, listesi ve
 // bildirimi yoktur. Yazı hazır olunca `draft` kaldırılır.
 export const PUBLISHED = ARTICLES.filter((a) => !a.draft);
+
+// "Bu Sayıdaki Tüm yazılar" listesinin sırası (a1, b2, …). Kapak ve "Öne çıkanlar" articles.json sırasını izler, liste bundan bağımsızdır.
+// Burada olmayan (yeni) yazılar listenin sonuna, articles.json sırasıyla eklenir.
+const LIST_ORDER = ['kapak', 'karlsruhe', 'atfil', 'analiz', 'acilis', 'zebra', 'gomori', 'mugla'];
+const rank = (a: Article) => { const i = LIST_ORDER.indexOf(a.id); return i >= 0 ? i : LIST_ORDER.length + ARTICLES.indexOf(a); };
+export const LISTED = [...PUBLISHED].sort((x, y) => rank(x) - rank(y));
 
 export const articleBySlug = (slug?: string) => PUBLISHED.find((a) => a.slug === slug);
 export const articlePath = (a: Article) => `/${a.slug}/`;

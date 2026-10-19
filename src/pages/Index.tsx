@@ -7,7 +7,8 @@ import SiteFooter from '@/components/SiteFooter';
 import FaviconBullet from '@/components/FaviconBullet';
 import ProgressiveImage from '@/components/ProgressiveImage';
 import FenDiagram from '@/components/FenDiagram';
-import { ARTICLES, PUBLISHED, articlePath } from '@/data/articles';
+import { preloadChessPublica } from '@/lib/chesspublica';
+import { ARTICLES, LISTED, PUBLISHED, articlePath } from '@/data/articles';
 import '../site.css';
 
 const NAV = [
@@ -19,6 +20,7 @@ const NAV = [
 ] as const;
 
 // Yazar kartındaki sayaç: yayımlanmış yazı sayısı; yalnızca henüz yayımlanmamış (taslak) yazısı olan yazarlar için "Yakında".
+// authorLang (örn. "hu"): yazar adının dili; büyük harfe çevirmede Türkçe İ yerine o dilin kuralı kullanılır (GÖMÖRI).
 // Çevirmen de sayılır (Gömöri yazısı: yazar Eugen Gömöri, Türkçesi Tarık Selbes).
 const bare = (n?: string) => n?.replace(/^(FM|GM)\s+/, '');
 const byAuthor = (list: typeof ARTICLES, name: string) => list.filter((a) => bare(a.author) === name || bare(a.translator) === name).length;
@@ -26,6 +28,15 @@ const authorCount = (name: string) => {
   const n = byAuthor(PUBLISHED, name);
   return n > 0 || byAuthor(ARTICLES, name) === 0 ? `${n} yazı` : 'Yakında';
 };
+
+// "Hakkında" bölümündeki atıflar (inline Markdown). Yeni bir üçüncü taraf yazılım/görsel eklenince buraya ve public/chesspublica/LICENSES.txt'ye eklenir.
+const ATTRIBUTIONS = [
+  'Oyun ve diyagramlar: [ChessPublica](https://chesspublica.github.io/) (MIT) ve içindeki [jQuery](https://jquery.com/) (MIT), [chess.js](https://github.com/jhlywa/chess.js) (BSD-2-Clause) ve [chessboard.js](https://chessboardjs.com/) (MIT, © Chris Oakman). [Lisans metinleri](/chesspublica/LICENSES.txt).',
+  'Satranç taşı görselleri: [Colin M.L. Burnett](https://commons.wikimedia.org/wiki/User:Cburnett) (Cburnett), Wikimedia Commons aracılığıyla, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.tr).',
+  'Yazı tipleri: [Fraunces](https://fonts.google.com/specimen/Fraunces), [Manrope](https://fonts.google.com/specimen/Manrope) ve [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) (SIL Open Font License), Google Fonts aracılığıyla.',
+  'Simgeler: [Lucide](https://lucide.dev/) (ISC).',
+  'Fotoğraflar: Künyeler (fotoğrafçı, kaynak, lisans) her fotoğrafın altında yer alır.',
+];
 
 const CORNERS = Array.from(new Set(PUBLISHED.map((a) => a.cat)));
 const tabCls = (on: boolean) => `f-mono h-11 border-b-2 transition-colors ${on ? 'border-[#C8893E] text-[#0E0C0A]' : 'border-transparent text-[#0E0C0A]/50 hover:text-[#0E0C0A]'}`;
@@ -115,6 +126,8 @@ export default function Index() {
   }, []);
   // Yazı adresi doğrudan açıldıysa sekme başlığı yazının başlığıdır; yazı sayfası çıkarken onu geri yüklediği için burada sabitliyoruz.
   useEffect(() => { document.title = 'Satranç vs.'; }, []);
+  // Öne çıkanlardaki diyagram için ChessPublica ve taş görselleri sayfa yüklenince boşta önceden indirilir (diyagram ekrana gelince hazır olur).
+  useEffect(() => { if (ARTICLES.some((x) => x.diagram)) preloadChessPublica(); }, []);
   // Yazı sayfasındaki büyük “Satranç vs.” yazısı buraya state={{ top: true }} ile gelir: sayfa başına git.
   const { state } = useLocation();
   useEffect(() => { if ((state as { top?: boolean } | null)?.top) window.scrollTo(0, 0); }, [state]);
@@ -139,7 +152,7 @@ export default function Index() {
 
   const [cover, ...rest] = ARTICLES;
   const featured = rest.slice(0, 3);
-  const list = PUBLISHED.filter((a) => cat === 'Tümü' || a.cat === cat);
+  const list = LISTED.filter((a) => cat === 'Tümü' || a.cat === cat);
 
   return (
     <div className="sk min-h-screen overflow-x-hidden">
@@ -194,7 +207,7 @@ export default function Index() {
               <span className="block overflow-hidden pb-[0.2em] -mb-[0.2em]"><span className="rise italic text-[#C8893E]" style={{ animationDelay: '.3s' }}>ve bir zaferin anatomisi</span></span>
             </h1>
             <div className="mt-10 flex flex-col md:flex-row md:items-end justify-between gap-8">
-              <p className="max-w-md text-lg text-[#F1E9DC]/80"><Markdown options={{ forceInline: true }}>{cover.excerpt ?? cover.dek ?? ''}</Markdown> <span className="f-mono text-[#A89A88] block mt-3">{cover.authorLabel ?? 'Yazar'}: {cover.author}</span></p>
+              <p className="max-w-md text-lg text-[#F1E9DC]/80"><Markdown options={{ forceInline: true }}>{cover.excerpt ?? cover.dek ?? ''}</Markdown> <span className="f-mono text-[#A89A88] block mt-3">{cover.authorLabel ?? 'Yazar'}: <span lang={cover.authorLang}>{cover.author}</span></span></p>
               <Link to={articlePath(cover)} className="group pointer-events-auto inline-flex items-center gap-3 rounded-full bg-[#F1E9DC] text-[#0E0C0A] h-14 px-8 font-semibold hover:bg-[#C8893E] transition-colors self-start">Yazıyı oku <ArrowUpRight size={18} className="group-hover:rotate-45 transition-transform" /></Link>
             </div>
           </div>
@@ -227,7 +240,7 @@ export default function Index() {
                 <p className={`f-mono text-[#C8893E] w-fit max-w-full ${a.thumb ? 'mt-6' : ''}`}>{a.cat} · {a.date}</p>
                 <h3 className={`f-display mt-3 w-fit max-w-full ${a.draft ? '' : 'group-hover:italic'} transition-all ${i === 0 ? 'text-5xl md:text-6xl' : 'text-3xl md:text-4xl'}`}>{a.titleLines ? <>{a.titleLines[0]}<br /><em className="italic text-[#C8893E]">{a.titleLines[1]}</em></> : a.title}</h3>
                 {a.dek && <p className="text-[#F1E9DC]/70 mt-3 max-w-xl w-fit"><Markdown options={{ forceInline: true }}>{a.dek}</Markdown></p>}
-                <p className="f-mono text-[#A89A88] mt-4 w-fit max-w-full">{a.authorLabel ?? 'Yazar'}: {a.author}</p>
+                <p className="f-mono text-[#A89A88] mt-4 w-fit max-w-full">{a.authorLabel ?? 'Yazar'}: <span lang={a.authorLang}>{a.author}</span></p>
                 {/* Diyagram metnin altında; ilk kartta kalan yüksekliği doldurur (FenDiagram `fill`). */}
                 {a.diagram && <FenDiagram fen={a.diagram} orientation={a.diagramOrientation} badge={a.diagramBadge} arrow={a.diagramArrow} label={a.diagramAlt ?? a.title} caption={a.diagramCaption} fill={i === 0} />}
               </>
@@ -306,6 +319,17 @@ export default function Index() {
             <em className="italic text-[#C8893E]">‘Satranç ve siz’ demek.</em>
           </h2>
           <p className="text-[#F1E9DC]/75 leading-relaxed mt-10 max-w-xl">Satranç vs., satranç üzerine uzun okumalar, analizler ve hikâyeler yayımlayan bağımsız bir dergidir. Bir fincan kahve eşliğinde, acele etmeden okunsun diye.</p>
+          <p className="text-[#F1E9DC]/75 leading-relaxed mt-6 max-w-xl">Bize ulaşmak, yayın ekibine katılmak ya da yazılarınızı iletmek için <a href="mailto:editor@satrancvs.com" className="underline underline-offset-2 hover:text-[#F1E9DC]">editor@satrancvs.com</a> adresine e-posta gönderebilirsiniz. Yayın ekibi, paylaştığınız tüm öneri ve yazıları büyük bir özenle inceler; değerlendirme süreci zaman alabildiğinden yanıtlardaki olası gecikmelerde göstereceğiniz sabır ve anlayış için şimdiden teşekkür ederiz.</p>
+          <p className="text-[#F1E9DC]/75 leading-relaxed mt-6 max-w-xl">Sitede yayınlanan yazıların telif hakları yazarlarına, yayınlama ve çoğaltma yetkisi ise Satranç vs.’ye aittir. Önceden yazılı izin alınmaksızın kısmen veya tamamen kopyalanamaz, çoğaltılamaz ve kaynak gösterilmeden başka platformlarda yayınlanamaz.</p>
+          {/* Atıflar: sitede kullanılan üçüncü taraf yazılım ve görseller (lisans metinleri public/chesspublica/LICENSES.txt). */}
+          <div className="mt-12 max-w-xl">
+            <p className="f-mono text-[#C8893E]">Atıflar</p>
+            <ul className="mt-4 space-y-2 text-sm leading-relaxed text-[#A89A88] list-none p-0">
+              {ATTRIBUTIONS.map((t, i) => (
+                <li key={i}><Markdown options={{ forceInline: true, overrides: { a: { props: { className: 'underline underline-offset-2 hover:text-[#F1E9DC]', target: '_blank', rel: 'noreferrer' } } } }}>{t}</Markdown></li>
+              ))}
+            </ul>
+          </div>
         </div>
         <div id="bulten" className="md:col-span-12 mt-10 border border-[#2E2620] p-8 md:p-14 grid md:grid-cols-2 gap-8 items-end">
           <div><p className="f-mono text-[#C8893E]">Bülten</p><h3 className="f-display text-4xl md:text-6xl mt-4">Her ay bir hamle, <em className="italic">e-postanda.</em></h3></div>

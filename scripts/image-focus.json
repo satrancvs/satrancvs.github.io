@@ -1,0 +1,7 @@
+{
+  "_": "Fotoğraf standart orana kırpılırken tutulacak yer: dosya adı -> [x, y] (0-1; varsayılan [0.5, 0.5]). Kırpma bir kez yapılır; sonra dosya standarda uyar.",
+  "piramit.jpg": [
+    0.5,
+    0.12
+  ]
+}

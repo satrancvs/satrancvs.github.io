@@ -1,32 +1,29 @@
 #!/usr/bin/env python3
 """public/images/*.jpg dosyalarını fotoğraf standardına getirir ve önizlemeleri (image-meta.json) yeniler.
 
-Standart (docs yok, kural burada; ProgressiveImage.tsx'teki gösterim kutusunun 2 katı = retina):
-  - Fotoğraf: 1200 x 1440 px kutusuna sığar (gösterim kutusu 600 x 720 px). Yatay 3:2 -> 1200 x 800, dikey 2:3 -> 960 x 1440.
-  - Kitap kapağı (dosya adında `adventurous-way` veya `chess-for-zebras`): 480 x 720 px kutusuna sığar (gösterim 240 x 360 px).
-  - Oran korunur, kırpılmaz, asla büyütülmez. Kutuyu %3'ten fazla aşan dosya küçültülüp JPEG kalite 82, progressive, EXIF'siz
-    yeniden kodlanır; kutuya sığan dosyalara dokunulmaz (her çalıştırmada yeniden sıkıştırıp kaliteyi düşürmemek için).
-  - Dosya boyutu hedefi: 300 KB altı (aşanlar uyarıyla listelenir).
+Standart (ayrıntı ve sayılar: scripts/imgstd.py; gösterim ProgressiveImage.tsx'te):
+  - yatay  (h): 3:2, gösterim 600 x 400, dosya en fazla 1200 x 800
+  - dikey  (v): 2:3, gösterim 400 x 600, dosya en fazla  800 x 1200
+  - küçük  (s): 2:3, gösterim 240 x 360, dosya en fazla  480 x 720 (kitap kapağı, düşük çözünürlüklü dikey fotoğraf)
+  Dosya standart orana KIRPILIR (varsayılan merkezden; tutulacak yer için scripts/image-focus.json), gerekirse küçültülür,
+  asla büyütülmez. Standarda zaten uyan dosyaya dokunulmaz (her çalıştırmada yeniden sıkıştırıp kaliteyi düşürmemek için).
+  JPEG kalite 82, progressive. Dosya boyutu hedefi: 300 KB altı (aşanlar uyarıyla listelenir).
 
 Kullanım:
   python3 scripts/optimize-images.py          # uygular, sonra image-placeholders.py'yi çalıştırır
   python3 scripts/optimize-images.py --check  # yalnızca raporlar; standarda uymayan dosya varsa 1 ile çıkar
 Pillow gerekir.
 """
-import glob, os, re, subprocess, sys
+import glob, json, os, subprocess, sys
 from PIL import Image
 
+sys.path.insert(0, os.path.dirname(__file__))
+import imgstd
+
 ROOT = os.path.join(os.path.dirname(__file__), '..')
-PHOTO_BOX = (1200, 1440)
-COVER_BOX = (480, 720)
-TOLERANCE = 1.03
 QUALITY = 82
 BUDGET_KB = 300
-COVER = re.compile(r'adventurous-way|chess-for-zebras')
-
-
-def box_for(name):
-    return COVER_BOX if COVER.search(name) else PHOTO_BOX
+FOCUS = json.load(open(os.path.join(os.path.dirname(__file__), 'image-focus.json')))
 
 
 def main():
@@ -35,22 +32,30 @@ def main():
     rows = []
     for f in sorted(glob.glob(os.path.join(ROOT, 'public/images/*.jpg'))):
         name = os.path.basename(f)
-        bw, bh = box_for(name)
         im = Image.open(f).convert('RGB')
         w, h = im.size
         kb = os.path.getsize(f) / 1024
-        too_big = w > bw * TOLERANCE or h > bh * TOLERANCE
+        kind, err = imgstd.classify(name, w, h)
         note = ''
-        if too_big:
+        if err:
             bad += 1
-            scale = min(bw / w, bh / h)
-            nw, nh = max(1, round(w * scale)), max(1, round(h * scale))
+            note = 'HATA: ' + err
+        elif not imgstd.is_standard(kind, w, h):
+            bad += 1
+            tw, th = imgstd.target_size(kind, w, h)
             if check:
-                note = f'-> {nw}x{nh} olmalı'
+                note = f'-> {kind} {tw}x{th} olmalı'
             else:
-                im.resize((nw, nh), Image.LANCZOS).save(f, 'JPEG', quality=QUALITY, optimize=True, progressive=True)
+                cw, ch = imgstd.crop_size(w, h, imgstd.RATIO[kind])
+                fx, fy = FOCUS.get(name, [0.5, 0.5])
+                left = round((w - cw) * fx)
+                top = round((h - ch) * fy)
+                out = im.crop((left, top, left + cw, top + ch)).resize((tw, th), Image.LANCZOS)
+                out.save(f, 'JPEG', quality=QUALITY, optimize=True, progressive=True)
                 changed += 1
-                note = f'-> {nw}x{nh}'
+                note = f'-> {kind} {tw}x{th}'
+        else:
+            note = kind
         after = os.path.getsize(f) / 1024
         if after > BUDGET_KB:
             note += f'  UYARI: {after:.0f} KB > {BUDGET_KB} KB'
@@ -61,7 +66,7 @@ def main():
     if check:
         print(f'\n{bad} dosya standarda uymuyor.' if bad else '\nTüm dosyalar standarda uyuyor.')
         sys.exit(1 if bad else 0)
-    print(f'\n{changed} dosya yeniden boyutlandırıldı.')
+    print(f'\n{changed} dosya standarda getirildi.')
     subprocess.run([sys.executable, os.path.join(os.path.dirname(__file__), 'image-placeholders.py')], check=True)
 
 

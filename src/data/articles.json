@@ -19,6 +19,7 @@
     "date": "Ekim 2026",
     "diagram": "3q1rk1/1p3pbp/2pp2p1/6r1/p1PnP1bP/2NP2P1/PP1Q2BK/R4R2 w - - 0 18",
     "diagramAlt": "Watarkar–Selbes partisinde 17... Rxg5!! sonrası konum: Beyaz oynar",
+    "diagramOrientation": "black",
     "diagramBadge": {
       "square": "g5",
       "glyph": "!!"
@@ -42,12 +43,12 @@
     "slug": "zebralar-icin-satranc",
     "cat": "Kitap incelemesi",
     "title": "\"Zebralar için Satranç\"",
-    "dek": "Masamızın üzerinde, dünyanın bir numarası Magnus Carlsen’in de çok ilgi çekici bulduğu kitaplardan biri var: Büyük Usta Jonathan Rowson’ın \"Chess for Zebras\" kitabı.",
+    "dek": "Masamızın üzerinde, dünyanın bir numarası Magnus Carlsen’in de çok ilgi çekici bulduğu kitaplardan biri var: Büyük Usta Jonathan Rowson’ın *\"Chess for Zebras\"* kitabı.",
     "author": "FM Nazmi Can Doğan",
     "thumb": "images/three-zebras-drinking.jpg",
     "thumbAlt": "Su içen üç zebra",
     "body": [
-      "Masamızın üzerinde, dünyanın bir numarası Magnus Carlsen’in de çok ilgi çekici bulduğu kitaplardan biri var: Büyük Usta Jonathan Rowson’ın \"Chess for Zebras\" kitabı.",
+      "Masamızın üzerinde, dünyanın bir numarası Magnus Carlsen’in de çok ilgi çekici bulduğu kitaplardan biri var: Büyük Usta Jonathan Rowson’ın *\"Chess for Zebras\"* kitabı.",
       "Satranca başladığımızda her şeyin iyi gittiği, oyundan zevk alınan güzel bir dönemin ardından bazı engellerle karşılaşırız."
     ],
     "note": "İlk yayın: [Satrançsever](https://www.satrancdukkanim.com/satranc-dergisi-satrancsever-pmk14), sayı 3 · 2016",
@@ -85,9 +86,11 @@
     "cat": "Satranç tarihi",
     "title": "1926 yılından: \"Nasıl usta oldum?\"",
     "author": "Eugen Gömöri",
+    "authorLang": "hu",
     "authorLabel": "Anket",
     "translator": "FM Tarık Selbes",
     "date": "Ekim 2026",
+    "note": "İlk yayın: [Wiener Schachzeitung](https://en.wikipedia.org/wiki/Wiener_Schachzeitung \"lang:en\"), 1926 · Çeviri: [cafechigorin.com](https://cafechigorin.com \"lang:en\"), 2020",
     "body": []
   },
   {

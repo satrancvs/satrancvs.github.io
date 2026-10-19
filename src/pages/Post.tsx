@@ -4,11 +4,24 @@ import { X } from 'lucide-react';
 import Markdown from 'markdown-to-jsx';
 import SiteFooter from '@/components/SiteFooter';
 import ArticleBody from '@/components/ArticleBody';
-import ProgressiveImage from '@/components/ProgressiveImage';
+import ProgressiveImage, { boxWidth } from '@/components/ProgressiveImage';
 import PhotoCredit, { PHOTO } from '@/components/PhotoCredit';
 import { articleBySlug } from '@/data/articles';
 import NotFound from './NotFound';
 import '../site.css';
+
+// `.f-mono` büyük harfe çevirir ve sayfa dili Türkçe olduğu için yabancı adlardaki i "İ" olur (CAFECHİGORİN). Bağlantının başlığı
+// "lang:en" ise bağlantı o dille işaretlenir (büyük harf dönüşümü o dilin kuralıyla yapılır) ve başlık gösterilmez.
+// Ayrıca `.f-mono` harf aralığı her harfin arkasına boşluk ekler; bağlantının son harfinden sonraki bu boşluk da altı çizilirdi:
+// son harfin harf aralığı sıfırlanır, çizgi yalnızca sözcüğün üstünde kalır.
+function NoteLink({ children, title, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement>) {
+  const lang = title?.match(/^lang:([a-z]{2})$/)?.[1];
+  const rest = lang ? { ...props, lang } : { ...props, title };
+  const kids = Array.isArray(children) ? children : [children];
+  const last = kids[kids.length - 1];
+  if (typeof last !== 'string' || !last) return <a {...rest}>{children}</a>;
+  return <a {...rest}>{kids.slice(0, -1)}{last.slice(0, -1)}<span style={{ letterSpacing: 0 }}>{last.slice(-1)}</span></a>;
+}
 
 export default function Post() {
   const { slug } = useParams();
@@ -77,15 +90,18 @@ export default function Post() {
           </p>
         )}
         <div className="mt-8 pb-8 border-b border-[#2E2620]">
-          <p className="f-mono text-[#A89A88]">{[`${a.authorLabel ?? 'Yazar'}: ${a.author}`, a.translator && `Türkçesi: ${a.translator}`, a.date].filter(Boolean).join(' · ')}</p>
+          <p className="f-mono text-[#A89A88]">
+            {a.authorLabel ?? 'Yazar'}: <span lang={a.authorLang}>{a.author}</span>
+            {a.translator && ` · Türkçesi: ${a.translator}`} · {a.date}
+          </p>
           {/* Yazı başka bir yerde yayımlandıysa künye notu: yazar satırının altında, aynı yazı tipiyle, sola yaslı. */}
-          {a.note && <p className="f-mono text-[#A89A88] mt-3"><Markdown options={{ forceInline: true, overrides: { a: { props: { className: 'underline underline-offset-2 hover:text-[#F1E9DC]', target: '_blank', rel: 'noreferrer' } } } }}>{a.note}</Markdown></p>}
+          {a.note && <p className="f-mono text-[#A89A88] mt-3"><Markdown options={{ forceInline: true, overrides: { a: { component: NoteLink, props: { className: 'underline underline-offset-2 hover:text-[#F1E9DC]', target: '_blank', rel: 'noreferrer' } } } }}>{a.note}</Markdown></p>}
         </div>
         {/* Fotoğraf yazının en üstünde, künyenin hemen altında. */}
         {a.photo && (
-          <figure className="mt-10 mx-auto w-fit max-w-full">
+          <figure className="mt-10 mx-auto w-full" style={{ maxWidth: boxWidth('images/jan-timman-1973.jpg') }}>
             <ProgressiveImage path="images/jan-timman-1973.jpg" alt={PHOTO.alt} lazy={false} />
-            <figcaption className="mt-3 w-0 min-w-full"><PhotoCredit /></figcaption>
+            <figcaption className="mt-3"><PhotoCredit /></figcaption>
           </figure>
         )}
         <div className="mt-10 space-y-6 text-lg leading-[1.8] text-[#F1E9DC]/85">

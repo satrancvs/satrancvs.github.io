@@ -1,5 +1,3 @@
-Bu yazının orijinali Avusturya’da yayınlanan Wiener Schachzeitung’da 1926 yılında basılmıştır. Çeviri metin ilk olarak 2020’de cafechigorin.com kişisel blog sayfasında yayınlanmıştır.
-
 Satranç ustası olmak, en nadir, özel ve ilginç mesleklerden biri. Prof. Dr. Vidmar veya Dr. Treybal gibi amatörler, daha doğrusu turnuva profesyonelleri, için bile –Dr. Alekhine de şimdilerde Paris’te bir avukatlık bürosu açmak istiyor– satranç başlıca geçim kaynağıdır. Bu yüzden Semmering Turnuvası münasebetiyle bir dizi ünlü katılımcıdan kendilerini satranca neyin çektiğini ve onları bu oyuna bağlayan şeyin ne olduğunu ifade etmelerini istedim. İlginç ve yer yer psikolojik açıdan değerli cevaplarını aşağıda bulabilirsiniz.
 
 ![Alexander Alekhine](images/alekhine-1913.jpg "Dördüncü Dünya Şampiyonu Alexander Alekhine · “Новое Время” (Yeni Zaman) Gazetesi, Eylül 1913. Wikimedia Commons aracılığıyla")

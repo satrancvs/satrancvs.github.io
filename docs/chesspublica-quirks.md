@@ -118,3 +118,10 @@ instead (`.cp-game mark` in `src/site.css`, red). Seeing it means the line is wr
 `<pgn>` parses moves strictly: a redundant disambiguation (`Nfd6` when only one knight can reach d6) is `Error parsing PGN: Invalid move`, and
 so is an ambiguous move (`Ne2` with two candidates). chess.js in its default lenient mode accepts both, so `scripts/check-games.mjs` uses
 `strict: true`. `scripts/check-render.mjs` renders every article in a browser as a second safety net.
+
+## Piece images are self-hosted
+The bundle drew pieces from `https://chessboardjs.com/img/chesspieces/wikipedia/{piece}.png` (12 third-party requests on every first diagram).
+`ChessPublica.all.min.js`, `helpers.js` and `pgn-player.js` now point to `/chesspublica/pieces/{piece}.png` (copies of those files; the
+"Wikipedia" piece set is by Colin M.L. Burnett, CC BY-SA 3.0 / GFDL). The home page preloads the bundle and the 12 pieces when the browser is idle
+(`preloadChessPublica` in `src/lib/chesspublica.ts`, called from `Index.tsx`), and `FenDiagram` needs only the base bundle (`useChessPublica(near, { player: false })`),
+not the `<pgn-player>` module. The board stays hidden until the pieces are drawn; the placeholder says "Diyagram yükleniyor…".
