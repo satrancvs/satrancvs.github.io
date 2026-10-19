@@ -18,13 +18,11 @@ Satranç ustası olmak, en nadir, özel ve ilginç mesleklerden biri. Prof. Dr. 
 
 ![Aron Nimzowitsch](images/nimzowitsch.jpg "“Избранные партии международного турнира в Карлсбаде” (Karlsbad Uluslararası Satranç Turnuvası’ndan Seçilmiş Oyunlar) kitabından, 1929 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Aron_Nimzowitsch2.jpg)")
 
-> Satranç hayatın bir aynasıdır, satranççıların dünyasından başka hiçbir yerde fanatizm -esasen çok hakir gördüğüm bir şey- bu ölçüde çiçek açmış ve serpilmemiştir. Kısmen şaka yollu diyebilirim ki benim için yıllar içerisinde bir ihtiyaç haline gelen insan toplumuna karşı “antipati”me daha yoğun bir hedef bulmak için satranç oynuyorum ve bu yüzden usta oldum. Mizahı bir kenara bırakırsak şöyle derim:
+> Satranç hayatın bir aynasıdır, satranççıların dünyasından başka hiçbir yerde fanatizm -esasen çok hakir gördüğüm bir şey- bu ölçüde çiçek açmış ve serpilmemiştir. Kısmen şaka yollu diyebilirim ki benim için yıllar içerisinde bir ihtiyaç haline gelen insan toplumuna karşı “antipatime” daha yoğun bir hedef bulmak için satranç oynuyorum ve bu yüzden usta oldum. Mizahı bir kenara bırakırsak şöyle derim:
 >
-> 1- Başarıya tapınmayı hakir görürüm;
->
-> 2- Fakat bu, satranç dünyasında özellikle fazla serpilmiştir;
->
-> 3- Başarı fanatizmini burada da gözlemlemek genel olarak kötümser dünya görüşümü tasdik ediyor ve bu yüzden hoşuma gidiyor.
+> 1\. Başarıya tapınmayı hakir görürüm;  
+> 2\. Fakat bu, satranç dünyasında özellikle fazla serpilmiştir;  
+> 3\. Başarı fanatizmini burada da gözlemlemek genel olarak kötümser dünya görüşümü tasdik ediyor ve bu yüzden hoşuma gidiyor.
 >
 > — <span lang="en">Aron Nimzowitsch</span>
 
