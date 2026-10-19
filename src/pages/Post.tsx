@@ -10,13 +10,17 @@ import { articleBySlug } from '@/data/articles';
 import NotFound from './NotFound';
 import '../site.css';
 
-// `.f-mono` harf aralığı her harfin arkasına boşluk ekler; bağlantının son harfinden sonraki bu boşluk da altı çizilirdi.
-// Son harfin harf aralığı sıfırlanır, çizgi yalnızca sözcüğün üstünde kalır.
-function NoteLink({ children, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement>) {
+// `.f-mono` büyük harfe çevirir ve sayfa dili Türkçe olduğu için yabancı adlardaki i "İ" olur (CAFECHİGORİN). Bağlantının başlığı
+// "lang:en" ise bağlantı o dille işaretlenir (büyük harf dönüşümü o dilin kuralıyla yapılır) ve başlık gösterilmez.
+// Ayrıca `.f-mono` harf aralığı her harfin arkasına boşluk ekler; bağlantının son harfinden sonraki bu boşluk da altı çizilirdi:
+// son harfin harf aralığı sıfırlanır, çizgi yalnızca sözcüğün üstünde kalır.
+function NoteLink({ children, title, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement>) {
+  const lang = title?.match(/^lang:([a-z]{2})$/)?.[1];
+  const rest = lang ? { ...props, lang } : { ...props, title };
   const kids = Array.isArray(children) ? children : [children];
   const last = kids[kids.length - 1];
-  if (typeof last !== 'string' || !last) return <a {...props}>{children}</a>;
-  return <a {...props}>{kids.slice(0, -1)}{last.slice(0, -1)}<span style={{ letterSpacing: 0 }}>{last.slice(-1)}</span></a>;
+  if (typeof last !== 'string' || !last) return <a {...rest}>{children}</a>;
+  return <a {...rest}>{kids.slice(0, -1)}{last.slice(0, -1)}<span style={{ letterSpacing: 0 }}>{last.slice(-1)}</span></a>;
 }
 
 export default function Post() {
