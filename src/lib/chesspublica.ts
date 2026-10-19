@@ -55,7 +55,23 @@ function loadPlayer(): Promise<void> {
   return playerLoading;
 }
 
-const load = (player: boolean) => (player ? loadBase().then(loadPlayer) : loadBase());
+// <pgn-study> (pgn-study.js; init.js ve puzzle.js'i içe aktarır) yalnızca [View "study"] oyunu olan yazılarda yüklenir.
+let studyLoading: Promise<void> | null = null;
+function loadStudy(): Promise<void> {
+  if (customElements.get('pgn-study')) return Promise.resolve();
+  if (studyLoading) return studyLoading;
+  studyLoading = loadPlayer().then(() => new Promise<void>((resolve, reject) => {
+    const mod = document.createElement('script');
+    mod.type = 'module';
+    mod.src = `${BASE}/pgn-study.js`;
+    mod.onload = () => resolve();
+    mod.onerror = () => { studyLoading = null; reject(new Error('pgn-study yüklenemedi')); };
+    document.head.appendChild(mod);
+  }));
+  return studyLoading;
+}
+
+const load = (player: boolean, study: boolean) => (study ? loadStudy() : player ? loadBase().then(loadPlayer) : loadBase());
 
 const PIECES = ['wP', 'wN', 'wB', 'wR', 'wQ', 'wK', 'bP', 'bN', 'bB', 'bR', 'bQ', 'bK'];
 
@@ -70,13 +86,13 @@ export function preloadChessPublica() {
 }
 
 /** `active` true iken ChessPublica'yı yükler ve sayfadaki <pgn> öğelerini çizdirir. */
-export function useChessPublica(active: boolean, { player = true }: { player?: boolean } = {}) {
+export function useChessPublica(active: boolean, { player = true, study = false }: { player?: boolean; study?: boolean } = {}) {
   const [status, setStatus] = useState<'idle' | 'loading' | 'ready' | 'error'>('idle');
   useEffect(() => {
     if (!active) return;
     let cancelled = false;
     setStatus('loading');
-    load(player)
+    load(player, study)
       .then(() => {
         if (cancelled) return;
         window.ChessPublica?.initAll();
@@ -84,6 +100,6 @@ export function useChessPublica(active: boolean, { player = true }: { player?: b
       })
       .catch(() => { if (!cancelled) setStatus('error'); });
     return () => { cancelled = true; };
-  }, [active, player]);
+  }, [active, player, study]);
   return status;
 }

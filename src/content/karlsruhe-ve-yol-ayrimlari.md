@@ -64,6 +64,6 @@ Masaya otururken sadece rakibimin isminin Yash Watarkar olduğu ve Siyah taşlar
 [BlackElo "2246"]
 [Annotator "FM Tarık Selbes"]
 [EventLine "GRENKE Açık - A kategorisi, 02.04.2026"]
-[View "player"]
+[View "study"]
 
 Devamı gelecek. Kaçırmamak için [bültene abone ol](/#bulten).

@@ -1,0 +1,509 @@
+/* ChessPublica — Element Initializers */
+
+import {
+  PIECE_THEME,
+  fetchText,
+  splitIntoPgnGames,
+  toFigurine,
+  parseCAL,
+  parseCSL,
+  formatComment,
+  createReadyGate,
+} from "./helpers.js";
+import { lucideIconUrl } from "./icons.js";
+import { renderFullPGN } from "./pgn.js";
+import { renderAnnotations } from "./board.js";
+import { createPuzzle } from "./puzzle.js";
+
+/* ── Error helper ─────────────────────────────────────────── */
+
+function showError(wrapper, message) {
+  wrapper.innerHTML = "";
+  var err = document.createElement("div");
+  err.className = "cp-error";
+  err.style.color = "red";
+  err.style.fontFamily = "monospace";
+  err.style.whiteSpace = "pre-wrap";
+  err.style.padding = "0.5rem";
+  err.style.border = "1px solid red";
+  err.style.margin = "1rem 0";
+  err.textContent = "ChessPublica error: " + message;
+  wrapper.appendChild(err);
+}
+
+/* ── Header parsing ───────────────────────────────────────── */
+
+function parseHeader(text, name) {
+  var m = text.match(new RegExp("\\[" + name + '\\s+"([^"]*)"\\]', "i"));
+  return m ? m[1] : null;
+}
+
+function isBracketHeaderForm(text) {
+  return /\[\s*\w+\s+"[^"]*"\s*\]/.test(text);
+}
+
+/* ── <pgn> ────────────────────────────────────────────────── */
+
+/* Shown in place of a <pgn>'s content while its src is being fetched —
+   mirrors <pgn-player>'s title-icon + spinner loading state (see
+   pgn-player.js) so a page with several <pgn> elements doesn't just show
+   blank space while each one loads. Cleared (wrapper.innerHTML = "")
+   before the real content — or an error — replaces it. */
+function showLoading(wrapper) {
+  var title = document.createElement("div");
+  title.className = "video-title pgn-title";
+
+  var emojiSpan = document.createElement("span");
+  emojiSpan.className = "video-title-emoji lucide-icon";
+  emojiSpan.style.setProperty("--icon", lucideIconUrl("text-initial"));
+  title.appendChild(emojiSpan);
+
+  wrapper.appendChild(title);
+
+  var line = document.createElement("p");
+  line.className = "pgn-loading-line";
+  wrapper.appendChild(line);
+
+  var spinnerWrap = document.createElement("div");
+  spinnerWrap.className = "pgn-spinner-wrap";
+  var spinner = document.createElement("div");
+  spinner.className = "pgn-spinner";
+  spinnerWrap.appendChild(spinner);
+  wrapper.appendChild(spinnerWrap);
+}
+
+function initCustomElements(selector, wrapperClass, renderFn, opts) {
+  var preserveInlineHTML = !!(opts && opts.preserveInlineHTML);
+
+  document.querySelectorAll(selector).forEach(function (el) {
+    if (el.dataset.cpRendered === "1") return;
+    el.dataset.cpRendered = "1";
+
+    /* For <pgn> we read innerHTML (not textContent) so that inline HTML
+       the author put inside comments — e.g. <br>, <strong>, Kramdown-
+       produced <em>…</em> from *italic* — survives into the tokenizer
+       and can be rendered by the sanitizing formatComment() helper. */
+    var inlineRaw = preserveInlineHTML
+      ? el.innerHTML
+      : el.textContent;
+
+    var wrapper = document.createElement("div");
+    wrapper.className = wrapperClass;
+    el.replaceWith(wrapper);
+
+    /* Per-element opt-in, off by default, so every <pgn> renders exactly
+       as it always has — see renderFullPGN()'s doc comment in pgn.js.
+       chesspublica.github.io/pgn-study/ sets this attribute on its own
+       <pgn> to get clickable moves; no other page does, so their output
+       is unaffected. */
+    var renderOptions = { clickableMoves: el.hasAttribute("clickable-moves") };
+
+    var src = el.getAttribute("src");
+
+    if (src) {
+      showLoading(wrapper);
+
+      var loadFromSrc = function () {
+        fetchText(src)
+          .then(function (text) {
+            try {
+              wrapper.innerHTML = "";
+              renderFn(text, wrapper, renderOptions);
+            } catch (e) {
+              showError(wrapper, "failed to render <" + selector + "> from " + src + ": " + e.message);
+            }
+          })
+          .catch(function (e) {
+            showError(wrapper, "failed to load " + src + ": " + e.message);
+          });
+      };
+
+      /* Defer the network fetch until the element is about to scroll into
+         view — mirrors <pgn-player>'s own preload gate (see
+         pgn-player.js's connectedCallback) so a page embedding many
+         <pgn>/<puzzle> elements doesn't fire every fetch at once on load,
+         and instead loads top-to-bottom as the reader scrolls down. */
+      if (typeof IntersectionObserver !== "undefined") {
+        var preloadIo = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting) {
+            preloadIo.disconnect();
+            loadFromSrc();
+          }
+        }, { rootMargin: "600px" });
+        preloadIo.observe(wrapper);
+      } else {
+        loadFromSrc();
+      }
+    } else {
+      var text = inlineRaw.trim();
+      if (!text) {
+        showError(wrapper, "<" + selector + "> is empty (no inline content and no src attribute).");
+        return;
+      }
+      try {
+        renderFn(text, wrapper, renderOptions);
+      } catch (e) {
+        showError(wrapper, "failed to render <" + selector + ">: " + e.message);
+      }
+    }
+  });
+}
+
+export function initPgnElements() {
+  initCustomElements("pgn", "pgn-container game-card", renderFullPGN, {
+    preserveInlineHTML: true,
+  });
+}
+
+/* ── <fen> ────────────────────────────────────────────────── */
+
+function validateFen(fen) {
+  if (typeof Chess === "undefined") return true; // can't validate without chess.js
+  try {
+    var c = new Chess();
+    if (typeof c.validate_fen === "function") {
+      var v = c.validate_fen(fen);
+      return v && v.valid;
+    }
+    return new Chess(fen) && true;
+  } catch (e) {
+    return false;
+  }
+}
+
+export function initFenElements() {
+  document.querySelectorAll("fen").forEach(function (el) {
+    if (el.dataset.cpRendered === "1") return;
+    el.dataset.cpRendered = "1";
+
+    /* Read innerHTML (not textContent) so inline HTML the author put
+       inside a [Caption "..."] header — e.g. <br>, <strong> — survives
+       into parseHeader(). The caption is passed through the sanitizing
+       formatComment() before being inserted into the DOM. */
+    var raw = el.innerHTML.trim();
+    var wrapper = document.createElement("div");
+    wrapper.className = "fen-container";
+    el.replaceWith(wrapper);
+
+    if (!raw) {
+      showError(wrapper, "<fen> element is empty.");
+      return;
+    }
+
+    var fenStr;
+    var caption = el.getAttribute("caption") || "";
+    var orientation = (el.getAttribute("orientation") || "").toLowerCase();
+
+    if (isBracketHeaderForm(raw)) {
+      fenStr = parseHeader(raw, "FEN");
+      var capHdr = parseHeader(raw, "Caption");
+      var oriHdr = parseHeader(raw, "Orientation");
+      if (capHdr) caption = capHdr;
+      if (oriHdr) orientation = oriHdr.toLowerCase();
+      if (!fenStr) {
+        showError(wrapper, '<fen> bracket-header form requires a [FEN "..."] header.');
+        return;
+      }
+    } else {
+      /* Raw-FEN form: strip any {brace blocks} so Lichess-style
+         annotation tags (e.g. {[%csl Ge4]}) may follow the FEN line. */
+      fenStr = raw.replace(/\{[^}]*\}/g, "").trim();
+    }
+
+    if (!validateFen(fenStr)) {
+      showError(wrapper, "invalid FEN string: " + fenStr);
+      return;
+    }
+
+    if (orientation && orientation !== "white" && orientation !== "black") {
+      showError(wrapper, 'invalid Orientation "' + orientation + '" — must be "white" or "black".');
+      return;
+    }
+
+    /* Parse [%csl ...] and [%cal ...] annotations from anywhere in the
+       raw element content. Both bracket-header and raw-FEN forms are
+       supported — tags may live inside {brace comments} or stand alone. */
+    var squareMarks = [];
+    var arrows = [];
+    var cslRe = /\[%csl\s+([^\]]+)\]/g;
+    var calRe = /\[%cal\s+([^\]]+)\]/g;
+    var m;
+    while ((m = cslRe.exec(raw))) squareMarks = squareMarks.concat(parseCSL(m[1]));
+    while ((m = calRe.exec(raw))) arrows = arrows.concat(parseCAL(m[1]));
+
+    var boardDiv = document.createElement("div");
+    boardDiv.className = "cp-board";
+    wrapper.appendChild(boardDiv);
+
+    if (caption) {
+      var cap = document.createElement("div");
+      cap.className = "fen-caption";
+      cap.innerHTML = formatComment(caption);
+      wrapper.appendChild(cap);
+    }
+
+    requestAnimationFrame(function () {
+      try {
+        var widget = Chessboard(boardDiv, {
+          position: fenStr,
+          orientation: orientation || "white",
+          pieceTheme: PIECE_THEME,
+        });
+        var annotations = (squareMarks.length || arrows.length)
+          ? { squareMarks: squareMarks, arrows: arrows }
+          : null;
+        if (annotations) {
+          renderAnnotations(boardDiv, annotations);
+        }
+
+        /* Keep the board (and its annotation overlay) in sync with the
+           container width. chessboard.js sizes its inner .board-b72b1
+           in fixed pixels at init, so when the viewport resizes the
+           outer .cp-board scales via CSS max-width but the inner squares
+           stay put — leaving any circles/arrows misaligned. Observing
+           .cp-board lets us re-run widget.resize() and re-draw the
+           annotations on top of the freshly-laid-out squares. */
+        if (typeof ResizeObserver !== "undefined" && widget && typeof widget.resize === "function") {
+          var pendingFrame = null;
+          var ro = new ResizeObserver(function () {
+            if (pendingFrame) return;
+            pendingFrame = requestAnimationFrame(function () {
+              pendingFrame = null;
+              widget.resize();
+              if (annotations) renderAnnotations(boardDiv, annotations);
+            });
+          });
+          ro.observe(boardDiv);
+        }
+      } catch (e) {
+        showError(wrapper, "failed to render board: " + e.message);
+      }
+    });
+  });
+}
+
+/* ── <puzzle> ─────────────────────────────────────────────── */
+
+function renderPuzzleHeader(wrapper, raw, packInfo) {
+  var white = parseHeader(raw, "White");
+  var black = parseHeader(raw, "Black");
+  var event = parseHeader(raw, "Event");
+  var date = parseHeader(raw, "Date");
+  var caption = parseHeader(raw, "Caption");
+
+  var line1 = "";
+  var line2 = "";
+
+  if (packInfo) {
+    line1 = "Puzzle " + packInfo.index + " / " + packInfo.total;
+    var packParts = [];
+    if (event) packParts.push(event);
+    if (date) packParts.push(date);
+    line2 = packParts.join(", ");
+  } else {
+    if (white || black) line1 = (white || "?") + " — " + (black || "?");
+    var parts = [];
+    if (event) parts.push(event);
+    if (date) parts.push(date);
+    line2 = parts.join(", ");
+    if (!line1 && line2) {
+      line1 = line2;
+      line2 = "";
+    }
+  }
+
+  if (line1 || line2) {
+    var title = document.createElement("div");
+    title.className = "video-title cp-puzzle-title";
+
+    var emojiSpan = document.createElement("span");
+    emojiSpan.className = "video-title-emoji lucide-icon";
+    emojiSpan.style.setProperty("--icon", lucideIconUrl("puzzle"));
+    title.appendChild(emojiSpan);
+
+    var textDiv = document.createElement("div");
+    textDiv.className = "video-title-text";
+
+    if (line1) {
+      var l1 = document.createElement("div");
+      l1.className = "video-title-players";
+      l1.textContent = line1;
+      textDiv.appendChild(l1);
+    }
+    if (line2) {
+      var l2 = document.createElement("div");
+      l2.className = "video-title-event";
+      l2.textContent = line2;
+      textDiv.appendChild(l2);
+    }
+
+    title.appendChild(textDiv);
+    wrapper.appendChild(title);
+  }
+
+  return caption;
+}
+
+/* `markReady` is the gate created up-front (in initPuzzleElements) for
+   `wrapper` — passed through here so both the empty-content and
+   multi-game-pack paths always settle it (resolve or reject) rather than
+   leaving it pending forever when a PGN fails to load or parse. */
+function renderPuzzleFromText(raw, wrapper, markReady) {
+  if (!raw || !raw.trim()) {
+    var emptyMsg = "<puzzle> is empty (no inline content and no src attribute).";
+    showError(wrapper, emptyMsg);
+    markReady.fail(new Error(emptyMsg));
+    return;
+  }
+
+  var games = splitIntoPgnGames(raw);
+  if (games.length > 1) {
+    /* Each pack item is an independent board with its own readiness
+       gate (see renderSinglePuzzle); the pack container itself becomes
+       ready once every item has been built. */
+    games.forEach(function (game, i) {
+      var sub = document.createElement("div");
+      sub.className = "cp-puzzle cp-puzzle-pack-item";
+      sub.style.marginBottom = "1.5rem";
+      wrapper.appendChild(sub);
+      renderSinglePuzzle(game, sub, { index: i + 1, total: games.length });
+    });
+    markReady({ engine: wrapper });
+    return;
+  }
+
+  renderSinglePuzzle(raw, wrapper, null, markReady);
+}
+
+function renderSinglePuzzle(raw, wrapper, packInfo, markReady) {
+  var caption = renderPuzzleHeader(wrapper, raw, packInfo);
+
+  var boardHost = document.createElement("div");
+  boardHost.className = "cp-puzzle-board";
+  wrapper.appendChild(boardHost);
+
+  /* Always create the caption slot (even when no initial caption is
+     set) so that per-move comments have a home to render into. */
+  var cap = document.createElement("div");
+  cap.className = "fen-caption";
+  if (caption) cap.textContent = caption;
+  wrapper.appendChild(cap);
+
+  /* The original <puzzle> tag is replaced by `wrapper` above, so that's
+     the persistent node consumers can hold a reference to (or delegate
+     "cp-ready" listening through) once the puzzle board finishes
+     building. Pack items don't get one up-front, so create their own. */
+  if (!markReady) markReady = createReadyGate(wrapper);
+
+  try {
+    var before = boardHost.innerHTML;
+    createPuzzle(boardHost, {
+      rawPGN: raw,
+      captionEl: cap,
+      initialCaption: caption || "",
+    });
+    if (boardHost.innerHTML === before) {
+      var msg = "could not parse <puzzle>: missing FEN or moves.";
+      showError(wrapper, msg);
+      markReady.fail(new Error(msg));
+      return;
+    }
+    markReady({ engine: boardHost });
+  } catch (e) {
+    showError(wrapper, "failed to render <puzzle>: " + e.message);
+    markReady.fail(e);
+  }
+}
+
+export function initPuzzleElements() {
+  document.querySelectorAll("puzzle").forEach(function (oldEl) {
+    if (oldEl.dataset.cpRendered === "1") return;
+    oldEl.dataset.cpRendered = "1";
+
+    var wrapper = document.createElement("div");
+    wrapper.className = "cp-puzzle";
+    oldEl.replaceWith(wrapper);
+
+    /* Create the readiness gate synchronously, before any async fetch,
+       so `wrapper.ready` always exists and always settles — including
+       when the PGN fails to load (network error, timeout, 404) or fails
+       to parse — instead of consumers finding it undefined or pending
+       forever. */
+    var markReady = createReadyGate(wrapper);
+
+    var src = oldEl.getAttribute("src");
+    if (src) {
+      var loadFromSrc = function () {
+        fetchText(src)
+          .then(function (text) { renderPuzzleFromText(text, wrapper, markReady); })
+          .catch(function (e) {
+            showError(wrapper, "failed to load puzzle from " + src + ": " + e.message);
+            markReady.fail(e);
+          });
+      };
+
+      /* Defer until about to scroll into view — see the matching comment
+         in initCustomElements() above (<pgn>'s loader). */
+      if (typeof IntersectionObserver !== "undefined") {
+        var preloadIo = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting) {
+            preloadIo.disconnect();
+            loadFromSrc();
+          }
+        }, { rootMargin: "600px" });
+        preloadIo.observe(wrapper);
+      } else {
+        loadFromSrc();
+      }
+    } else {
+      /* Read innerHTML (not textContent) so inline HTML the author
+         put inside comments — <br>, <strong>, Kramdown-produced
+         <em>…</em> — survives into the tokenizer and can be rendered
+         by the sanitizing formatComment() helper. */
+      renderPuzzleFromText(oldEl.innerHTML, wrapper, markReady);
+    }
+  });
+}
+
+/* ── Figurine notation in prose ───────────────────────────────────────── */
+
+/* Matches SAN move tokens that contain a piece letter and therefore benefit
+   from figurine conversion.  Pawn moves (e4, exd5 …) are left untouched.
+   The trailing \b intentionally excludes "+" and "#" from the match so that
+   the suffix stays in place while only the piece letter is converted. */
+var _RE_PROSE_SAN = /\b(O-O-O|O-O|[KQRBN][a-h]?[1-8]?x?[a-h][1-8](?:=[KQRBN])?)\b/g;
+
+function _figurinifyNode(node) {
+  if (node.nodeType === 3 /* TEXT_NODE */) {
+    var orig = node.textContent;
+    _RE_PROSE_SAN.lastIndex = 0;
+    var updated = orig.replace(_RE_PROSE_SAN, toFigurine);
+    if (updated !== orig) node.textContent = updated;
+  } else if (node.nodeType === 1 /* ELEMENT_NODE */) {
+    var tag = node.tagName;
+    /* Leave code blocks and other non-prose elements verbatim. */
+    if (tag === "CODE" || tag === "PRE" || tag === "SCRIPT" || tag === "STYLE") return;
+    for (var i = 0; i < node.childNodes.length; i++) {
+      _figurinifyNode(node.childNodes[i]);
+    }
+  }
+}
+
+/**
+ * Convert SAN piece letters to Unicode figurines in every <p> and heading
+ * on the page, skipping elements that live inside chess element containers
+ * (those are already handled by the chess engine).
+ */
+export function initFigurineProse() {
+  document.querySelectorAll("p, h1, h2, h3, h4, h5, h6").forEach(function (el) {
+    if (el.closest("pgn, puzzle, pgn-player, fen, .pgn-container, .cp-puzzle, .cp-board-wrapper")) return;
+    _figurinifyNode(el);
+  });
+}
+
+export function initAll() {
+  initPgnElements();
+  initFenElements();
+  initPuzzleElements();
+  initFigurineProse();
+}

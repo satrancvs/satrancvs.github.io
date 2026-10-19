@@ -32,7 +32,7 @@
 .cp-game .pgn-container:not(pgn-study .pgn-container, pgn-player .pgn-container) .pgn-variation > p { display: block; padding-left: 0.8em; border-left: 1px solid color-mix(in srgb, #A89A88 55%, transparent); }
 .cp-game .pgn-container:not(pgn-study .pgn-container, pgn-player .pgn-container) .pgn-variation .pgn-variation { padding-left: 1.2em; font-style: italic; }
 /* <pgn-player> sayfada ortalanır */
-.cp-game pgn-player { --board-size: min(400px, calc(100vw - 3rem)); display: block; width: fit-content; max-width: 100%; margin-left: auto; margin-right: auto; }
+.cp-game pgn-player:not(pgn-study pgn-player) { --board-size: min(400px, calc(100vw - 3rem)); display: block; width: fit-content; max-width: 100%; margin-left: auto; margin-right: auto; }
 /* <pgn-player> yorumu yazı gövdesiyle aynı satır aralığında (paket 1.5 verir; gövde ve <pgn> metni 1.8) */
 .cp-game .video-comment { line-height: 1.8; }
 /* Varyantlı yorumlarda sağ alta oturan oynat düğmesi metnin son satırını kapatmasın */
@@ -131,3 +131,47 @@
 .tbc-link { display: inline-flex; align-items: center; gap: .5rem; margin-left: .35rem; padding: .35rem 1.1rem; border: 1px solid #C8893E; border-radius: 999px; color: #F1E9DC; text-decoration: none; transition: background .2s, color .2s; }
 .tbc-link::after { content: '\2192'; }
 .tbc-link:hover { background: #C8893E; color: #0E0C0A; }
+
+/* <pgn-study> ([View "study"]): her genişlikte tek sütun. Üstte tahta, altında geri/ileri düğmeleri, altında kayan hamle ve yorum listesi.
+   ChessPublica'nın iki sütunlu 90vw paneli yerine yazı sütunu kadar geniş sabit yükseklikli bir kutudur. Eski sitedeki study.css'in mobil düzeni. */
+.cp-game pgn-study {
+  --frame-pad: 1rem; font-size: 100%; display: flex; flex-direction: column; width: 100%; max-width: 44rem; margin: 0 auto;
+  height: min(90vh, 52rem); padding: 1rem 1rem .6rem; box-sizing: border-box; overflow: hidden;
+  border: 1px solid #2E2620; border-radius: 6px; background: #14110E; color: #F1E9DC;
+}
+.cp-game pgn-study > .pgn-study-mobile-title,
+.cp-game pgn-study > .pgn-study-resizer,
+.cp-game pgn-study .pgn-study-move-picker { display: none; }
+.cp-game pgn-study > pgn-player {
+  flex: 0 0 auto; overflow: hidden; container-type: inline-size; width: 100%; margin: 0; display: block;
+  --board-size: min(400px, 94cqw, 42vh);
+}
+.cp-game pgn-study pgn-player .player-wrapper { min-height: 0; margin: 0 auto; }
+.cp-game pgn-study > .pgn-container {
+  display: block; width: 100%; flex: 1 1 0; min-height: 0; overflow-y: auto; margin: 0; padding: 0 .5rem 0 4px;
+}
+/* Şerit: tahtanın altında, üst çizgiyle ayrılmış; üstteki çerçeveye taşan negatif kenar boşlukları kalkar. */
+.cp-game pgn-study.cp-ready > .pgn-study-ribbon {
+  order: 2; margin: .5rem 0 .6rem; padding: .35rem 0; border: 0; border-top: 1px solid #2E2620; border-bottom: 1px solid #2E2620; background: transparent;
+}
+.cp-game pgn-study > pgn-player { order: 1; }
+.cp-game pgn-study > .pgn-container { order: 3; }
+.cp-game pgn-study .pgn-study-ribbon-btn { width: 2.4rem; height: 2.4rem; color: #F1E9DC; }
+.cp-game pgn-study .pgn-study-ribbon-btn:hover:not(:disabled) { background: rgba(241, 233, 220, .1); }
+.cp-game pgn-study .pgn-study-ribbon-btn .lucide-icon { width: 1.3rem; height: 1.3rem; }
+.cp-game pgn-study .pgn-study-ribbon-btn[data-pgn-nav] svg { width: 1.7rem; height: 1.7rem; }
+.cp-game pgn-study .pgn-study-ribbon-toprow { justify-content: space-between; }
+/* Şeridin içindeki iki kutu (indir/çevir solda, geri/ileri sağda) */
+.cp-game pgn-study .pgn-study-settings-inline { display: contents; }
+/* Hamle listesi: koyu zemine uygun renkler (paket açık temalıdır). */
+.cp-game pgn-study .pgn-container .pgn-move:hover { background: rgba(241, 233, 220, .1); }
+.cp-game pgn-study .pgn-container .pgn-move-active { background: #C8893E; color: #0E0C0A; box-shadow: 0 0 0 2px #C8893E; }
+.cp-game pgn-study .pgn-container .pgn-comment.pgn-comment-active,
+.cp-game pgn-study .pgn-container .pgn-comment-inline.pgn-comment-active { background: rgba(200, 137, 62, .16); box-shadow: 0 0 0 2px rgba(200, 137, 62, .16); font-weight: 400; }
+.cp-game pgn-study .pgn-container { color: #F1E9DC; line-height: 1.8; }
+.cp-game pgn-study .pgn-container::-webkit-scrollbar { width: 6px; }
+.cp-game pgn-study .pgn-container::-webkit-scrollbar-thumb { background: #C8893E; }
+/* Yükleme yer tutucusu da aynı kutuda. */
+.cp-game .pgn-study-loading { width: 100%; max-width: 44rem; height: min(90vh, 52rem); margin: 0 auto; padding: 1rem; display: flex; flex-direction: column; box-sizing: border-box; border: 1px solid #2E2620; background: #14110E; }
+.cp-game .pgn-study-loading-board { width: 100%; max-width: 400px; margin: 0 auto; }
+.cp-game .pgn-study-loading-side { color: #A89A88; }
