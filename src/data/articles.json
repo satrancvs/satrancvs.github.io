@@ -80,19 +80,6 @@
     "date": "Ekim 2026"
   },
   {
-    "id": "tarih",
-    "slug": "istanbul-kahvehanelerinde-satrancin-yuz-yili",
-    "cat": "Satranç tarihi",
-    "title": "İstanbul kahvehanelerinde satrancın yüz yılı",
-    "dek": "Osmanlı’dan Cumhuriyet’e, masa başında oynanan partilerin izinde.",
-    "author": "Kerem Aydın",
-    "date": "Ekim 2026",
-    "body": [
-      "19. yüzyıl sonunda İstanbul’da satranç, belirli kahvehanelerde toplanan meraklıların oyunuydu.",
-      "Arşiv kayıtları ve eski gazete sütunları üzerinden bu kayıp kültürü yeniden kuruyoruz."
-    ]
-  },
-  {
     "id": "gomori",
     "slug": "eugen-gomoriden-alti-ustaya-tek-bir-soru",
     "cat": "Satranç tarihi",
@@ -121,7 +108,7 @@
     "slug": "at-ve-fil-satrancta-at-mi-daha-degerli-yoksa-fil-mi",
     "cat": "Satranç tarihi",
     "title": "At ve fil: Satrançta at mı daha değerli yoksa fil mi?",
-    "dek": "Tek bir soru, dünya şampiyonlarının hamleleri ve görüşleriyle.",
+    "dek": "Satrancın en eski tartışmalarından biri, dünya şampiyonlarının oyunlarıyla.",
     "author": "Oğul Köseoğlu",
     "date": "Ekim 2026",
     "body": []
