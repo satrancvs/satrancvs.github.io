@@ -2,6 +2,8 @@ Bu yazının orijinali Avusturya’da yayınlanan Wiener Schachzeitung’da 1926
 
 Satranç ustası olmak, en nadir, özel ve ilginç mesleklerden biri. Prof. Dr. Vidmar veya Dr. Treybal gibi amatörler, daha doğrusu turnuva profesyonelleri, için bile –Dr. Alekhine de şimdilerde Paris’te bir avukatlık bürosu açmak istiyor– satranç başlıca geçim kaynağıdır. Bu yüzden Semmering Turnuvası münasebetiyle bir dizi ünlü katılımcıdan kendilerini satranca neyin çektiğini ve onları bu oyuna bağlayan şeyin ne olduğunu ifade etmelerini istedim. İlginç ve yer yer psikolojik açıdan değerli cevaplarını aşağıda bulabilirsiniz.
 
+![Alexander Alekhine](images/alekhine-1913.jpg "Dördüncü Dünya Şampiyonu Alexander Alekhine · “Новое Время” (Yeni Zaman) Gazetesi, Eylül 1913. Wikimedia Commons aracılığıyla")
+
 ### Alexander Alekhine
 
 Öncelikle gerçeği aramak ve ondan sonra da mücadele unsuru nedeniyle satranç ustası oldum.
@@ -24,6 +26,8 @@ Satranç hayatın bir aynasıdır, satranççıların dünyasından başka hiçb
 
 3- Başarı fanatizmini burada da gözlemlemek genel olarak kötümser dünya görüşümü tasdik ediyor ve bu yüzden hoşuma gidiyor.
 
+![Richard Réti](images/reti.jpg "Dünya Şampiyonlarının korkulu rüyası, bir diğer hipermodernist Richard Réti · 64 (Sovyet satranç dergisi), 1925. Wikimedia Commons aracılığıyla")
+
 ### Richard Réti
 
 Gençliğimde sevdiğim iki uğraş vardı: matematik ve satranç. İlgimi matematiğe değil de satranca yöneltmem hususunda beni harekete geçiren şey satrancın matematiğe göre daha canlı ve yaşama dair olmasıdır. Bilmeyenlere tuhaf veya paradoksal görünecek bir neden. Matematik derken genel, pratik matematikten değil tamamen spekülatif bir karaktere sahip, sonlu ve sonsuz elemanlara sahip kümeler ve onların oluşturdukları yapılar ile ilgilenen modern matematikten bahsediyorum.
@@ -45,6 +49,8 @@ Kendimde bir eğilim ve yetenek hissetmiştim. Sıradışı bir şekilde iyi bir
 Beni oyuna bağlayan şey estetik zevk. Güzel bir kombinezon bende estetik bir zevk yaratıyor. Adeta bir humma haline giriyorum.
 
 Satranç sadece bir sanat değil aynı zamanda bir bilimdir. Zafer ve diğer her şey bilimsel temeller üzerinde gerçekleşir. Rakibin zayıf tarafı, karelerin işgali vs. bunların hepsi satrancın bilimsel kısmına aittir.
+
+![Rudolf Spielmann](images/spielmann.jpg "Romantik ekolün 20. yüzyıldaki son temsilcilerinden Rudolf Spielmann · Polonya Ulusal Dijital Arşivi, 1950. Wikimedia Commons aracılığıyla")
 
 ### Rudolf Spielmann
 
