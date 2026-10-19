@@ -324,10 +324,8 @@ export default function Index() {
         </div>
         {/* Sağ sütun (md ve üstü): yalnızca mono içerik — telif notu ve atıflar; mobilde alt alta. */}
         <div className="md:col-span-6 reveal md:pt-[4.5rem]">
-          <p className="f-mono text-[#C8893E]">Telif hakları</p>
-          <p className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.9] text-[#F1E9DC]/75 mt-4 max-w-xl">Sitede yayınlanan yazıların telif hakları yazarlarına, dijital mecrada yayınlama yetkisi ise Satranç vs.’ye aittir. Önceden yazılı izin alınmaksızın kısmen veya tamamen kopyalanamaz, çoğaltılamaz ve kaynak gösterilmeden başka platformlarda yayınlanamaz.</p>
           {/* Atıflar: sitede kullanılan üçüncü taraf yazılım ve görseller (lisans metinleri public/chesspublica/LICENSES.txt). */}
-          <div className="mt-10 max-w-xl">
+          <div className="max-w-xl">
             <p className="f-mono text-[#C8893E]">Atıflar</p>
             <ul className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.8] mt-3 space-y-1 text-[#A89A88] list-disc pl-5 marker:text-[#C8893E]">
               {ATTRIBUTIONS.map((t, i) => (
@@ -335,6 +333,8 @@ export default function Index() {
               ))}
             </ul>
           </div>
+          <div className="mt-10 max-w-xl"><p className="f-mono text-[#C8893E]">Telif hakları</p>
+          <p className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.9] text-[#F1E9DC]/75 mt-4 max-w-xl">Sitede yayınlanan yazıların telif hakları yazarlarına, dijital mecrada yayınlama yetkisi ise Satranç vs.’ye aittir. Önceden yazılı izin alınmaksızın kısmen veya tamamen kopyalanamaz, çoğaltılamaz ve kaynak gösterilmeden başka platformlarda yayınlanamaz.</p></div>
         </div>
         <div id="bulten" className="md:col-span-12 mt-10 border border-[#2E2620] p-8 md:p-14 grid md:grid-cols-2 gap-8 items-end">
           <div><p className="f-mono text-[#C8893E]">Bülten</p><h3 className="f-display text-4xl md:text-6xl mt-4">Her ay bir hamle, <em className="italic">e-postanda.</em></h3></div>
