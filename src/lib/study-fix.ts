@@ -4,11 +4,13 @@
 // ChessPublica'nın iç yapısına (`_engine`, `_loopRAF`, `_variationPlayTick`) bağlıdır; bu alanlara yalnızca bu dosyada
 // erişilir. Ayrıntı: docs/chesspublica-quirks.md.
 type Engine = {
-  state?: { index?: number; playing?: boolean };
+  state?: { index?: number; playing?: boolean; moves?: string[]; startFEN?: string };
   _loopRAF: () => void;
   _variationPlayTick: (variation: { playing: boolean; index: number; maxIndex: number }) => void;
   _variation?: { playing: boolean; index: number; maxIndex: number } | null;
   variationGoTo: (index: number) => void;
+  goTo: (index: number) => void;
+  board?: { fen: () => string };
   togglePlay?: () => void;
 };
 type Player = HTMLElement & { _engine?: Engine };
@@ -30,6 +32,34 @@ const NAV = [
   { dir: 'next', label: 'Bir hamle ileri', icon: circleArrow('<path d="M8 12h8"/><path d="m12 16 4-4-4-4"/>') },
 ] as const;
 
+// Düzyazıdaki tıklanabilir hamleler (linkProseMoves) bir satır oluşturur: biri tıklanınca ileri/geri düğmesi ve ok tuşları satırı izler.
+// Satır bitince bir sonraki ileri, ChessPublica'nın kendi ana hat adımına geçer; satırın başındayken geri, yorumun bağlı olduğu ana hat
+// konumuna döner. Tahtadaki konum tıklanan hamlenin konumuyla uyuşmuyorsa (okur başka yere gittiyse) satır unutulur.
+let proseLine: { run: string; step: number } | null = null;
+const placement = (fen: string) => fen.split(' ')[0];
+
+function proseSpans(study: Element, run: string) {
+  return Array.from(study.querySelectorAll<HTMLElement>(`.cp-prose-move[data-run="${run}"]`));
+}
+
+/** Düzyazı satırındayken bir adım atar; ChessPublica'nın kendi adımına bırakılacaksa false döner. */
+function proseStep(study: Element, dir: 'prev' | 'next') {
+  if (!proseLine) return false;
+  const engine = engineOf(study);
+  const spans = proseSpans(study, proseLine.run);
+  const current = spans[proseLine.step];
+  if (!engine?.board || !current || placement(engine.board.fen()) !== placement(current.dataset.fen ?? '')) { proseLine = null; return false; }
+  if (dir === 'next') {
+    if (proseLine.step < spans.length - 1) { spans[proseLine.step + 1].click(); return true; }
+    proseLine = null; // satır bitti: sıradaki ileri ana hamleye geçer
+    return false;
+  }
+  if (proseLine.step > 0) { spans[proseLine.step - 1].click(); return true; }
+  proseLine = null;
+  engine.goTo(engine.state?.index ?? 0); // yorumun bağlı olduğu ana hat konumu
+  return true;
+}
+
 // ChessPublica, bir dal noktasında düz "ileri" adımını, dal seçicisindeki ana hat satırına tıklanana kadar reddeder.
 // Seçici gizlidir; okur her zaman ana hatta ilerler. Tıklama zaten bir adımdır: dal çözüldüyse true döner.
 function resolveBranch(study: Element) {
@@ -46,6 +76,7 @@ function resolveBranch(study: Element) {
 const activate = (study: Element) => study.querySelector('.player-wrapper')?.dispatchEvent(new MouseEvent('mouseenter'));
 
 function step(study: Element, dir: 'prev' | 'next') {
+  if (proseStep(study, dir)) return;
   if (dir === 'next' && resolveBranch(study)) return;
   study.querySelector('.player-container')?.scrollIntoView({ block: 'nearest' });
   activate(study);
@@ -67,6 +98,7 @@ function installKeyboard() {
     if (!dir) return;
     active.querySelector('.player-container')?.scrollIntoView({ block: 'nearest' });
     activate(active);
+    if (proseStep(active, dir)) { e.preventDefault(); e.stopImmediatePropagation(); return; }
     // Dal noktasında ChessPublica'nın kendi işleyicisi ilerlemez; çözmek zaten adımdır, aynı tuş ikinci kez ilerletmesin.
     if (dir === 'next' && resolveBranch(active)) { e.preventDefault(); e.stopImmediatePropagation(); }
   });
@@ -93,6 +125,7 @@ function linkProseMoves(study: Element) {
   const fens = [(game as ChessGame).fen()];
   for (const san of state.moves) { if (!game.move(san, { sloppy: true, strict: false })) break; fens.push(game.fen()); }
 
+  let runCount = 0;
   study.querySelectorAll<HTMLElement>('.pgn-moves > p.pgn-comment').forEach((comment) => {
     const prev = comment.previousElementSibling;
     const last = prev?.classList.contains('pgn-mainline') ? Array.from(prev.querySelectorAll<HTMLElement>('.pgn-move[data-ply]')).pop() : null;
@@ -107,6 +140,8 @@ function linkProseMoves(study: Element) {
     // Bir satır, araya düz yazı girse de ("2. ♘c3 oynarsa hemen 2… ♗b4 oynayacaktım, devamında 3. ♘d5 …") sıradaki sayı işareti
     // satırın bir sonraki hamlesiyse sürer; aksi halde işaret yeni bir satır başlatır (yorumun bağlı olduğu konumdan).
     let run: ChessGame | null = null;
+    let runId = '';
+    let step = 0;
     let pending: ChessGame[] = []; // yeni satırın olası başlangıç konumları; ilk oynanabilen hamle birini seçer
     let armed = false; // bir sonraki hamle metni bir sayı işaretinden ya da bağlanan hamleden hemen sonra mı geliyor
     for (const node of nodes) {
@@ -140,7 +175,7 @@ function linkProseMoves(study: Element) {
         if (!run) {
           for (const g of pending) {
             try { res = g.move(toSan(m[3]), { sloppy: true, strict: false }); } catch { res = null; }
-            if (res) { run = g; break; }
+            if (res) { run = g; runId = String(runCount++); step = 0; break; }
           }
           pending = [];
         } else {
@@ -153,6 +188,8 @@ function linkProseMoves(study: Element) {
         span.dataset.fen = run.fen();
         span.dataset.from = res.from;
         span.dataset.to = res.to;
+        span.dataset.run = runId;
+        span.dataset.step = String(step++);
         span.textContent = m[3];
         frag.append(span);
         at = end;
@@ -197,6 +234,13 @@ function prepare(study: HTMLElement) {
   study.addEventListener('touchstart', mark, { passive: true });
   active = study;
   linkProseMoves(study);
+  // Tıklanan düzyazı hamlesi satırı belirler; başka bir hamle ya da diyagram tıklanırsa satır unutulur.
+  study.addEventListener('click', (e) => {
+    const target = e.target as Element | null;
+    const span = target?.closest<HTMLElement>('.cp-prose-move');
+    if (span?.dataset.run !== undefined) proseLine = { run: span.dataset.run, step: Number(span.dataset.step) };
+    else if (target?.closest('.pgn-move, .pgn-clickable-diagram')) proseLine = null;
+  });
   // Tahta tıklaması ve dal seçicisi aynı oyuncuya gider; ilk tuşa basıldığında klavye bu çalışmanın olmalı.
   activate(study);
 }
