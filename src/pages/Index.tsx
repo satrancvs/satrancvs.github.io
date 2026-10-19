@@ -132,8 +132,23 @@ export default function Index() {
   // Öne çıkanlardaki diyagram için ChessPublica ve taş görselleri sayfa yüklenince boşta önceden indirilir (diyagram ekrana gelince hazır olur).
   useEffect(() => { if (ARTICLES.some((x) => x.diagram)) preloadChessPublica(); }, []);
   // Yazı sayfasındaki büyük “Satranç vs.” yazısı buraya state={{ top: true }} ile gelir: sayfa başına git.
-  const { state } = useLocation();
+  const { state, hash } = useLocation();
   useEffect(() => { if ((state as { top?: boolean } | null)?.top) window.scrollTo(0, 0); }, [state]);
+  // Adreste #bölüm varsa (/#yazarlar, yazılardaki /#bulten bağlantısı) o bölüme gidilir. Ana sayfa yukarıda sayfa başına alındığı için tarayıcı
+  // bağlantıyı kendisi kaydırmaz; fotoğraflar ve diyagramlar yüklendikçe sayfa yüksekliği değiştiğinden konum birkaç kez yeniden uygulanır
+  // (Post.tsx'teki gibi) ve kullanıcı kaydırmaya başlarsa bırakılır. Bölümlerin scroll-margin'i sabit menünün altında kalmayı önler.
+  useEffect(() => {
+    const id = decodeURIComponent(hash.slice(1));
+    if (!id) return;
+    let live = true;
+    const go = () => { if (live) document.getElementById(id)?.scrollIntoView({ block: 'start', behavior: 'instant' }); };
+    const stop = () => { live = false; timers.forEach(clearTimeout); };
+    const timers = [0, 150, 500, 1200, 2500].map((ms) => window.setTimeout(go, ms));
+    timers.push(window.setTimeout(stop, 2700));
+    const events = ['wheel', 'touchstart', 'keydown', 'mousedown'] as const;
+    events.forEach((ev) => window.addEventListener(ev, stop, { once: true, passive: true }));
+    return () => { stop(); events.forEach((ev) => window.removeEventListener(ev, stop)); };
+  }, [hash]);
   const heroRef = useRef<HTMLElement>(null);
   const [hero, setHero] = useState({ w: 0, h: 0 });
   useEffect(() => {
