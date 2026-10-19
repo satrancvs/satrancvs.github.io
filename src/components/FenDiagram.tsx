@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import Markdown from 'markdown-to-jsx';
 import { useChessPublica } from '@/lib/chesspublica';
 
 const MAX = 640;
@@ -95,7 +96,7 @@ export default function FenDiagram({ fen, label, caption, orientation, badge, ar
   return (
     <div className={`fen-wrap mt-8${fill ? ' fen-fill' : ''}`}>
       <div ref={box} role="img" aria-label={label} className="fen-diagram" style={maxH ? ({ '--fen-cap': `${maxH}px` } as React.CSSProperties) : undefined}>
-        {!shown && status !== 'error' && <p aria-live="polite" className="fen-loading f-mono normal-case text-[#A89A88]/70">Diyagram yükleniyor…</p>}
+        {!shown && status !== 'error' && <p aria-live="polite" className="fen-loading f-mono text-[#A89A88]/70">Diyagram yükleniyor…</p>}
         {near && size > 0 && (
           <div key={size} className={`fen-stage absolute left-0 top-0 pointer-events-auto${shown ? ' fen-shown' : ''}`} style={{ width: size, height: size }}>
             <div dangerouslySetInnerHTML={{ __html: `<fen${orientation ? ` orientation="${orientation}"` : ''}>${fen}</fen>` }} />
@@ -114,7 +115,7 @@ export default function FenDiagram({ fen, label, caption, orientation, badge, ar
         )}
       </div>
       {/* Tahta sola yaslıdır; alt yazı da sola yaslanır ve tahtadan geniş olmaz. Kart bağlantısı yalnızca içerik üstünde etkindir (Index.tsx). */}
-      {caption && <p ref={cap} className="f-mono normal-case text-[#A89A88] mt-3 pointer-events-auto" style={size > 0 ? { maxWidth: size } : undefined}>{caption}</p>}
+      {caption && <p ref={cap} className="f-mono !text-[11px] !tracking-[0.1em] leading-[1.9] text-[#A89A88] mt-3 pointer-events-auto" style={size > 0 ? { maxWidth: size } : undefined}><Markdown options={{ forceInline: true }}>{caption}</Markdown></p>}
     </div>
   );
 }

@@ -95,7 +95,7 @@
 }
 .cp-game.cp-placeholder::before { content: "Oyun yükleniyor..."; }
 .cp-game.cp-placeholder::before,
-.cp-loading { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0; color: #A89A88; }
+.cp-loading { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #A89A88; }
 .cp-game:has(.player-wrapper, .pgn-container, .jc-board-wrapper) .cp-loading { display: none; }
 
 /* Çapraz tablo: sabit genişlikli, okunaklı bir mono font (JetBrains Mono) ve hafif bir çerçeve. */
@@ -105,7 +105,8 @@
   width: fit-content; max-width: 100%; margin-left: auto; margin-right: auto; }
 
 /* Fotoğraf künyeleri: sitenin mono fontu, okunur boyutta (f-mono'dan farkı: büyük harf ve geniş harf aralığı yok). */
-.credit { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; line-height: 1.75; letter-spacing: 0; text-transform: none; }
+.credit { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 10.5px; line-height: 1.9; letter-spacing: .08em; text-transform: uppercase; }
+.keep-case { text-transform: none; letter-spacing: 0; white-space: nowrap; }
 
 /* Alıntı (blockquote): koyu kutu; sol üst köşede, kutunun üst kenarına oturan sayfa renginde yuvarlak (kenarlıksız): kutunun o kısmını
    oyar, içinde büyük altın tırnak işareti durur. Metin gövdeyle aynı yazı tipi, sola yaslı, italiksiz. Kaynak satırı (— ...) mono. */

@@ -31,10 +31,11 @@ const authorCount = (name: string) => {
 
 // "Hakkında" bölümündeki atıflar (inline Markdown). Yeni bir üçüncü taraf yazılım/görsel eklenince buraya ve public/chesspublica/LICENSES.txt'ye eklenir.
 const ATTRIBUTIONS = [
-  'Oyun ve diyagramlar: [ChessPublica](https://chesspublica.github.io/) (MIT) ve içindeki [jQuery](https://jquery.com/) (MIT), [chess.js](https://github.com/jhlywa/chess.js) (BSD-2-Clause) ve [chessboard.js](https://chessboardjs.com/) (MIT, © Chris Oakman). [Lisans metinleri](/chesspublica/LICENSES.txt).',
-  'Satranç taşı görselleri: [Colin M.L. Burnett](https://commons.wikimedia.org/wiki/User:Cburnett) (Cburnett), Wikimedia Commons aracılığıyla, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.tr).',
-  'Yazı tipleri: [Fraunces](https://fonts.google.com/specimen/Fraunces), [Manrope](https://fonts.google.com/specimen/Manrope) ve [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) (SIL Open Font License), Google Fonts aracılığıyla.',
-  'Simgeler: [Lucide](https://lucide.dev/) (ISC).',
+  // Büyük harfli mono stilde yabancı adlar <span lang="en"> ile işaretlenir (Türkçe İ yerine I).
+  'Oyun ve diyagramlar: [<span lang="en">ChessPublica</span>](https://chesspublica.github.io/) (MIT) ve içindeki [<span lang="en">jQuery</span>](https://jquery.com/) (MIT), [chess.js](https://github.com/jhlywa/chess.js) (BSD-2-Clause) ve [chessboard.js](https://chessboardjs.com/) (MIT, © <span lang="en">Chris Oakman</span>). [Lisans metinleri](/chesspublica/LICENSES.txt).',
+  'Satranç taşı görselleri: [<span lang="en">Colin M.L. Burnett</span>](https://commons.wikimedia.org/wiki/User:Cburnett) (Cburnett), <span lang="en">Wikimedia Commons</span> aracılığıyla, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.tr).',
+  'Yazı tipleri: [Fraunces](https://fonts.google.com/specimen/Fraunces), [Manrope](https://fonts.google.com/specimen/Manrope) ve [<span lang="en">JetBrains Mono</span>](https://fonts.google.com/specimen/JetBrains+Mono) (<span lang="en">SIL Open Font License</span>), <span lang="en">Google Fonts</span> aracılığıyla.',
+  'Simgeler: [<span lang="en">Lucide</span>](https://lucide.dev/) (ISC).',
   'Fotoğraflar: Künyeler (fotoğrafçı, kaynak, lisans) her fotoğrafın altında yer alır.',
 ];
 
@@ -215,7 +216,7 @@ export default function Index() {
         {cover.photo && (
           <div className="absolute inset-x-0 bottom-3 z-20 pointer-events-none">
             <div className="max-w-[1440px] mx-auto px-6 md:px-10 flex md:justify-end">
-              <PhotoCredit className="max-w-[520px] md:text-right pointer-events-auto" />
+              <PhotoCredit className="max-w-[520px] md:text-right pointer-events-auto !uppercase tracking-[0.08em]" />
             </div>
           </div>
         )}
@@ -319,15 +320,16 @@ export default function Index() {
             <em className="italic text-[#C8893E]">‘Satranç ve siz’ demek.</em>
           </h2>
           <p className="text-[#F1E9DC]/75 leading-relaxed mt-10 max-w-xl">Satranç vs., satranç üzerine uzun okumalar, analizler ve hikâyeler yayınlayan bağımsız bir dergidir. Bir fincan kahve eşliğinde, acele etmeden okunsun diye.</p>
+          <p className="text-[#F1E9DC]/75 leading-relaxed mt-6 max-w-xl">Bize ulaşmak, yayın ekibine katılmak ya da yazı taslaklarınızı göndermek için <a href="mailto:editor@satrancvs.com" className="underline underline-offset-2 hover:text-[#F1E9DC]">editor@satrancvs.com</a> adresine e-posta gönderebilirsiniz. Yayın ekibi, paylaştığınız tüm öneri ve yazı taslaklarını büyük bir özenle inceler. Değerlendirme süreci zaman alabildiğinden yanıtlardaki olası gecikmelerde göstereceğiniz sabır ve anlayış için şimdiden teşekkür ederiz.</p>
         </div>
-        {/* Sağ sütun (md ve üstü): iletişim, telif notu ve atıflar; mobilde alt alta. */}
+        {/* Sağ sütun (md ve üstü): yalnızca mono içerik — telif notu ve atıflar; mobilde alt alta. */}
         <div className="md:col-span-6 reveal md:pt-[4.5rem]">
-          <p className="text-[#F1E9DC]/75 leading-relaxed max-w-xl">Bize ulaşmak, yayın ekibine katılmak ya da yazı taslaklarınızı göndermek için <a href="mailto:editor@satrancvs.com" className="underline underline-offset-2 hover:text-[#F1E9DC]">editor@satrancvs.com</a> adresine e-posta gönderebilirsiniz. Yayın ekibi, paylaştığınız tüm öneri ve yazı taslaklarını büyük bir özenle inceler. Değerlendirme süreci zaman alabildiğinden yanıtlardaki olası gecikmelerde göstereceğiniz sabır ve anlayış için şimdiden teşekkür ederiz.</p>
-          <p className="credit !text-[12px] text-[#F1E9DC]/75 mt-6 max-w-xl">Sitede yayınlanan yazıların telif hakları yazarlarına, yayınlama ve çoğaltma yetkisi ise Satranç vs.’ye aittir. Önceden yazılı izin alınmaksızın kısmen veya tamamen kopyalanamaz, çoğaltılamaz ve kaynak gösterilmeden başka platformlarda yayınlanamaz.</p>
+          <p className="f-mono text-[#C8893E]">Telif hakları</p>
+          <p className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.9] text-[#F1E9DC]/75 mt-4 max-w-xl">Sitede yayınlanan yazıların telif hakları yazarlarına, yayınlama ve çoğaltma yetkisi ise Satranç vs.’ye aittir. Önceden yazılı izin alınmaksızın kısmen veya tamamen kopyalanamaz, çoğaltılamaz ve kaynak gösterilmeden başka platformlarda yayınlanamaz.</p>
           {/* Atıflar: sitede kullanılan üçüncü taraf yazılım ve görseller (lisans metinleri public/chesspublica/LICENSES.txt). */}
           <div className="mt-12 max-w-xl">
             <p className="f-mono text-[#C8893E]">Atıflar</p>
-            <ul className="mt-4 space-y-2 text-sm leading-relaxed text-[#A89A88] list-none p-0">
+            <ul className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.9] mt-4 space-y-3 text-[#A89A88] list-none p-0">
               {ATTRIBUTIONS.map((t, i) => (
                 <li key={i}><Markdown options={{ forceInline: true, overrides: { a: { props: { className: 'underline underline-offset-2 hover:text-[#F1E9DC]', target: '_blank', rel: 'noreferrer' } } } }}>{t}</Markdown></li>
               ))}

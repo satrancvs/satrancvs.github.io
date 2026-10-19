@@ -9,9 +9,9 @@ export default function PhotoCredit({ className = '' }: { className?: string }) 
   const link = 'underline underline-offset-2 hover:text-[#F1E9DC]';
   return (
     <p className={`credit text-[#A89A88] ${className}`}>
-      Jan Timman, 1973 · Fotoğraf: Rob Mieremet / Anefo · Hollanda Ulusal Arşivi · Lisans:{' '}
+      <span lang="nl">Jan Timman</span>, 1973 · Fotoğraf: <span lang="nl">Rob Mieremet / Anefo</span> · Hollanda Ulusal Arşivi · Lisans:{' '}
       <a href={PHOTO.license} target="_blank" rel="noreferrer" className={link}>CC0 1.0 (Kamu Bağışı)</a>
-      {' '}· Kaynak: <a href={PHOTO.page} target="_blank" rel="noreferrer" className={link}>Wikimedia Commons</a>
+      {' '}· Kaynak: <a href={PHOTO.page} target="_blank" rel="noreferrer" lang="en" className={link}>Wikimedia Commons</a>
     </p>
   );
 }
