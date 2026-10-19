@@ -1,9 +1,47 @@
 [
-  { "file": "at-ve-fil.md", "run": "fxg5 Nxg5 h4", "reason": "Threat after 36.Ke2 (white would play it if Black passed); not a line." },
-  { "file": "at-ve-fil.md", "run": "Nxb4 cxb4 Nxa4 exf7 Nxb4", "reason": "Continuation of the 47.dxe5 Nc6 variation, but White's 48th move is missing in the source text. Ask the author." },
-  { "file": "karlsruhe-ve-yol-ayrimlari.md", "run": "Be7 Nge2 Nd4 Nxd4 cxd4 Ne2", "reason": "6...Be7 is impossible in the game (the bishop is already on g7) and ...cxd4 cannot capture. Ask the author." },
-  { "file": "mar-del-plata-1982.md", "run": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6", "reason": "Move-order note from the start position (transposition), not an alternative to a move." },
-  { "file": "mar-del-plata-1982.md", "run": "e4 e6 d4 d5 exd5 exd5 c4", "reason": "Move-order note from the start position (transposition)." },
-  { "file": "mar-del-plata-1982.md", "run": "e4 c5 Nf3 d6 Bb5 Bd7 Bxd7 Nxd7 O-O Ngf6 Qe2 e6", "reason": "Move-order note from the start position (transposition)." },
-  { "file": "mar-del-plata-1982.md", "run": "e4 c5 c3 Nf6 e5 Nd5 c4", "reason": "Move-order note from the start position (transposition)." }
+  {
+    "file": "at-ve-fil.md",
+    "run": "fxg5 Nxg5 h4",
+    "reason": "Threat after 36.Ke2 (white would play it if Black passed); not a line."
+  },
+  {
+    "file": "mar-del-plata-1982.md",
+    "run": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6",
+    "reason": "Move-order note from the start position (transposition), not an alternative to a move."
+  },
+  {
+    "file": "mar-del-plata-1982.md",
+    "run": "e4 e6 d4 d5 exd5 exd5 c4",
+    "reason": "Move-order note from the start position (transposition)."
+  },
+  {
+    "file": "mar-del-plata-1982.md",
+    "run": "e4 c5 Nf3 d6 Bb5 Bd7 Bxd7 Nxd7 O-O Ngf6 Qe2 e6",
+    "reason": "Move-order note from the start position (transposition)."
+  },
+  {
+    "file": "mar-del-plata-1982.md",
+    "run": "e4 c5 c3 Nf6 e5 Nd5 c4",
+    "reason": "Move-order note from the start position (transposition)."
+  },
+  {
+    "file": "at-ve-fil.md",
+    "run": "Bxc3 bxc3 Qxd5 Rb1 b5 Bg5",
+    "reason": "Printed in Kasparov's book exactly so (Hastings 1895, note to 12.Qa4+); Qxd5 cannot capture Black's own bishop on d5, so it is a misprint in the book. Not a variation."
+  },
+  {
+    "file": "at-ve-fil.md",
+    "run": "Rxg7 Ng6 Qxb7",
+    "reason": "Threat after 11.Qb3 (Black has a move in between), not a line."
+  },
+  {
+    "file": "at-ve-fil.md",
+    "run": "fxg5 Nxg5 e4",
+    "reason": "Threat after 36.Ke2 (Black has a move in between), not a line."
+  },
+  {
+    "file": "at-ve-fil.md",
+    "run": "Bd4 Ke6 b4",
+    "reason": "Printed so in Kasparov's book (note to 47.Rd2): after 49.axb5 the white pawn stands on b5, so 52.b4 is a misprint. The variation stops at 51...Ke6."
+  }
 ]

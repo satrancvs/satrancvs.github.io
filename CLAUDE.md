@@ -15,7 +15,7 @@ ChessPublica drops or mangles text it cannot parse, so every game that is added 
    *strict* mode (ChessPublica rejects redundant disambiguation such as `Nfd6` when `Nd6` is enough, and ambiguous `Ne2`) and fails on:
    an illegal move anywhere (main line, variations), unbalanced or nested `{ }` / `( )`, a `(12. Ne2 …)` line inside a comment that cannot be
    played from there (ChessPublica would delete it), a game header without movetext, `[Round "?"]`, `[#]` in a `<pgn>` game, and **move lines in
-   comment prose that are not a real variation** (2+ numbered plies). Genuine exceptions (move-order notes from the start position, threats, source
+   comment prose that are not a real variation** (2+ numbered plies; book style `9 e5` without a dot counts too, and a `( … )`/`[ … ]` in the prose breaks a run). Genuine exceptions (move-order notes from the start position, threats, source
    typos waiting for the author) go in `scripts/check-games.allow.json` with a reason; never allowlist something that can be a variation.
 2. **Every move that is playable from the position becomes a real variation** (`( 12. Ne2 f5 … )`, placed after the move it replaces and its
    comment; a continuation line goes after the *next* main-line move as an alternative to it). Keep the prose in the comment as well. Single
