@@ -121,3 +121,12 @@
   .quote::before { top: -28px; left: -16px; width: 56px; height: 56px; padding-top: 22px; font-size: 48px; }
 }
 .cp-game mark { background: none; color: #B42318; font-weight: 600; }
+
+/* Yazı sonundaki "Devamı gelecek" bloğu: yazıdan ayrı, ortalı, iki yanında ince çizgi; bülten bağlantısı ince çerçeveli hap. */
+.to-be-continued { margin: 5rem 0 0; text-align: center; }
+.tbc-label { display: flex; align-items: center; gap: 1.25rem; color: #C8893E; margin: 0; }
+.tbc-label::before, .tbc-label::after { content: ''; flex: 1; height: 1px; background: #2E2620; }
+.tbc-text { margin: 1.5rem 0 0; font-size: 15px; line-height: 2.6; color: #A89A88; }
+.tbc-link { display: inline-flex; align-items: center; gap: .5rem; margin-left: .35rem; padding: .35rem 1.1rem; border: 1px solid #C8893E; border-radius: 999px; color: #F1E9DC; text-decoration: none; transition: background .2s, color .2s; }
+.tbc-link::after { content: '\2192'; }
+.tbc-link:hover { background: #C8893E; color: #0E0C0A; }

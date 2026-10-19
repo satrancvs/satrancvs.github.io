@@ -11,6 +11,7 @@ import imgstd
 
 root = os.path.join(os.path.dirname(__file__), '..')
 meta = {}
+color_files = set(json.load(open(os.path.join(os.path.dirname(__file__), 'image-color.json')))['colors'])  # renkli gösterilecekler
 for f in sorted(glob.glob(os.path.join(root, 'public/images/*.jpg'))):
     im = Image.open(f).convert('RGB')
     w, h = im.size
@@ -19,7 +20,7 @@ for f in sorted(glob.glob(os.path.join(root, 'public/images/*.jpg'))):
     tiny.save(buf, 'JPEG', quality=45, optimize=True)
     kind, _ = imgstd.classify(os.path.basename(f), w, h)  # h yatay, v dikey, s küçük (scripts/imgstd.py)
     meta['images/' + os.path.basename(f)] = {
-        'w': w, 'h': h, 'kind': kind, 'lqip': 'data:image/jpeg;base64,' + base64.b64encode(buf.getvalue()).decode(),
+        'w': w, 'h': h, 'kind': kind, **({'color': True} if os.path.basename(f) in color_files else {}), 'lqip': 'data:image/jpeg;base64,' + base64.b64encode(buf.getvalue()).decode(),
     }
 out = os.path.join(root, 'src/data/image-meta.json')
 with open(out, 'w') as fh:

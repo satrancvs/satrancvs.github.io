@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import imageMeta from '@/data/image-meta.json';
 
 // kind (scripts/imgstd.py): h yatay 3:2 (600 x 400), v dikey 2:3 (400 x 600), s küçük 2:3 (240 x 360: kitap kapağı ve düşük çözünürlüklü dikey fotoğraf).
-type Meta = { w: number; h: number; kind: 'h' | 'v' | 's'; lqip: string };
+type Meta = { w: number; h: number; kind: 'h' | 'v' | 's'; color?: boolean; lqip: string };
 // Gösterim kutuları: genişlik (px) ve en-boy oranı. Hepsi aynı standardı paylaşır; sayfada başka boy olmaz.
 const BOX = { h: { w: 600, ar: '3 / 2' }, v: { w: 400, ar: '2 / 3' }, s: { w: 240, ar: '2 / 3' } } as const;
 const META = imageMeta as Record<string, Meta>;
@@ -18,6 +18,8 @@ const META = imageMeta as Record<string, Meta>;
 export default function ProgressiveImage({ path, alt, lazy = true, cover = false, thumb = false, position }: { path: string; alt: string; lazy?: boolean; cover?: boolean; thumb?: boolean; position?: string }) {
   const key = path.replace(/^\//, '');
   const meta = META[key];
+  // Fotoğraflar varsayılan siyah-beyaz gösterilir; kapaklar ve scripts/image-color.json'daki (çağdaş renkli) fotoğraflar renkli kalır.
+  const gray = !cover && !meta?.color;
   const src = /^(https?:)?\/\//.test(path) ? path : `${import.meta.env.BASE_URL}${key}`;
   const ref = useRef<HTMLImageElement>(null);
   const [loaded, setLoaded] = useState(false);
@@ -32,7 +34,7 @@ export default function ProgressiveImage({ path, alt, lazy = true, cover = false
       className={`relative block max-w-full overflow-hidden ${thumb ? 'w-full' : 'mx-auto'}`}
       style={{ width: thumb ? undefined : `min(${BOX[meta.kind].w}px, 100%)`, aspectRatio: thumb ? '3 / 2' : BOX[meta.kind].ar } as CSSProperties}
     >
-      <img src={meta.lqip} alt="" aria-hidden className={`absolute inset-0 h-full w-full scale-110 object-cover blur-xl ${cover ? '' : 'grayscale'}`} style={{ objectPosition: position }} />
+      <img src={meta.lqip} alt="" aria-hidden className={`absolute inset-0 h-full w-full scale-110 object-cover blur-xl ${gray ? 'grayscale' : ''}`} style={{ objectPosition: position }} />
       <img
         ref={ref}
         src={src}
@@ -44,7 +46,7 @@ export default function ProgressiveImage({ path, alt, lazy = true, cover = false
         decoding="async"
         onLoad={() => setLoaded(true)}
         onError={() => setLoaded(true)}
-        className={`absolute inset-0 h-full w-full object-cover ${cover ? '' : 'grayscale'} transition-opacity duration-500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+        className={`absolute inset-0 h-full w-full object-cover ${gray ? 'grayscale' : ''} transition-opacity duration-500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
         style={{ objectPosition: position }}
       />
     </span>

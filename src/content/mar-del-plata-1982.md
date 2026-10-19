@@ -29,7 +29,7 @@ Timman şöyle [anlatıyordu](https://es.chessbase.com/post/zenon-franco-683-mag
 
 > Acı bir öksürük ve çatlamış dudaklarla kıvranırken, Madrid'den Arjantin Pampas'ına giden, on saatlik direkt gece uçuşuna bindim. Córdoba'da uçaktan indiğimizde hava kararmaya başlamıştı ama güneş hâlâ parlıyordu. Çimenlerin taze kokusunu derin bir nefesle içime çektim. Daha sonra öğrendim ki Arjantin'in bu bölgesi akciğer rahatsızlığı olan insanlar için sevilen bir uğrak noktasıymış.
 >
-> — Jan Timman
+> — <span lang="nl">Jan Timman</span>
 
 Clarín turnuvasını 1979 senesinde Spassky ve Petrosian'ı da yenerek, 1980'de ise Karpov ve Timman önünde kazanan Bent Larsen, 1982'ye gelindiğinde harika bir sonuç elde edemese de ilk tura zaferle başlamıştı. Aynı yıl Buenos Aires'e taşınan Larsen, ömrünün sonuna kadar orada ikamet edecekti.
 
@@ -63,7 +63,7 @@ Garry Kasparov, _"My Great Predecessors"_ (Benim Ustalarım) serisinin dördünc
 
 > Najdorf, tıpkı Arjantin Şampiyonası'nda olduğu gibi defalarca birinci bitirdiği, geleneksel Buenos Aires ve _Mar del Plata_ turnuvalarının ilham kaynağıydı. Daha sonraki yıllarda, yaşının ağırlığı kendini hissettirmeye başladığında, bu turnuvalara onur konuğu olarak katılırdı. Bazen masaların arasında dolaşıp pozisyonları büyük bir ilgiyle incelerken kendini kaybeder ve boş sandalyelerden birine oturuverirdi. Oyuncular gülümser, belki de içlerinden Najdorf'un tahtada aniden bir hamle yapıp yapmayacağını merak ederlerdi.
 >
-> — Garry Kasparov, My Great Predecessors, 4. cilt
+> — <span lang="en">Garry Kasparov, My Great Predecessors</span>, 4. cilt
 
 İkinci Dünya Savaşı nedeniyle ülkesine dönmeyerek Arjantin'de kalan Najdorf, ülke satrancının gelişimine katkı sunmuş ve Oscar Panno gibi isimlere ilham kaynağı olmuştu.
 
@@ -188,7 +188,7 @@ Timman, turnuva hakkında kapsamlı yazılar yayınlayan turnuvanın sponsoru _C
 
 > Beyaz taşlarla oynayan Portisch'in her zaman zaferi hedefleyeceğini biliyordum. Dahası, sıralamada yarım puan geride olduğu için beni yakalamasının tek yolu kazanmaktı. Bu yüzden bu oyun önemliydi ve dikkatlice hazırlandım.
 >
-> — Jan Timman, Clarín
+> — <span lang="en">Jan Timman, Clarín</span>
 
 [Event "Mar del Plata"]
 [Site "Mar del Plata"]
