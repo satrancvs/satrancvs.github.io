@@ -17,13 +17,13 @@
     "title": "Karlsruhe ve yol ayrımları",
     "author": "FM Tarık Selbes",
     "date": "Ekim 2026",
-    "diagram": "2bq1rk1/1p3pbp/2pp2p1/r7/p1PnPB2/2NP2PP/PP1Q2BK/R4R2 w - - 2 16",
-    "diagramAlt": "Watarkar–Selbes partisinde 15... Ra5!? sonrası konum: Beyaz oynar",
+    "diagram": "3q1rk1/1p3pbp/2pp2p1/6r1/p1PnP1bP/2NP2P1/PP1Q2BK/R4R2 w - - 0 18",
+    "diagramAlt": "Watarkar–Selbes partisinde 17... Rxg5!! sonrası konum: Beyaz oynar",
     "diagramBadge": {
-      "square": "a5",
-      "glyph": "!?"
+      "square": "g5",
+      "glyph": "!!"
     },
-    "diagramCaption": "Watarkar – Selbes, 2 Nisan 2026, GRENKE Açık A kategorisi. 15... Ra5!? Hamle sırası Beyazda.",
+    "diagramCaption": "Watarkar – Selbes, 2 Nisan 2026, GRENKE Açık A kategorisi. 17... Rxg5!! Hamle sırası Beyazda.",
     "body": [
       "Yazı hazırlanıyor, çok yakında burada olacak."
     ],
@@ -33,8 +33,8 @@
     ],
     "dek": "Üç IM normunu tamamlayan FM Tarık Selbes, 2400 Elo barajını aştığında uluslararası usta ünvanına kavuşacak. Yolun duraklarından biri: Karlsruhe, GRENKE Açık Satranç Turnuvası 2026, A kategorisi.",
     "diagramArrow": {
-      "from": "a8",
-      "to": "a5"
+      "from": "a5",
+      "to": "g5"
     }
   },
   {
