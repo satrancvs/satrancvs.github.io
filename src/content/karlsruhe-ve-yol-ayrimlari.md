@@ -1,7 +1,8 @@
 > [sağa yaslı]
+> [şiir]
 > Bir ormanda yol ikiye ayrıldı, ve ben –  
 > Ben gittim daha az geçilmişinden  
-> Bütün farkı yaratan bu oldu işte
+> Bütün farkı yaratan bu oldu.
 >
 > — Robert Frost, “The Road not Taken” · Türkçesi: Selahattin Özpalabıyıklar
 

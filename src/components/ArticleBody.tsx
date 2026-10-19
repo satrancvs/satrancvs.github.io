@@ -459,11 +459,16 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     } else if (c.startsWith('<figure')) {
       out.push(<Video key={i} chunk={c} />);
     } else {
-      // Alıntının ilk satırı `> [sağa yaslı]` ise o alıntı sağa yaslanır (satır metne girmez).
-      const right = /^>\s*\[sağa yaslı\]\s*(\n|$)/.test(c);
+      // Alıntının başındaki `> [sağa yaslı]` ve `> [şiir]` satırları (metne girmez) alıntıyı sağa yaslar / Fraunces italik yapar.
+      let body = c;
+      const marks: string[] = [];
+      for (let m = body.match(/^>\s*\[(sağa yaslı|şiir)\]\s*(\n|$)/); m; m = body.match(/^>\s*\[(sağa yaslı|şiir)\]\s*(\n|$)/)) {
+        marks.push(m[1] === 'şiir' ? 'quote-poem' : 'quote-right');
+        body = body.slice(m[0].length);
+      }
       out.push(
-        <div key={i} className={`[&>p]:mb-6 [&>h3]:mb-6${right ? ' quote-right' : ''}`}>
-          <Markdown options={{ ...mdOptions, forceBlock: true }}>{right ? c.replace(/^>\s*\[sağa yaslı\]\s*\n?/, '') : c}</Markdown>
+        <div key={i} className={['[&>p]:mb-6 [&>h3]:mb-6', ...marks].join(' ')}>
+          <Markdown options={{ ...mdOptions, forceBlock: true }}>{body}</Markdown>
         </div>,
       );
     }

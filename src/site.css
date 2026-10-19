@@ -111,6 +111,7 @@
 .quote > p + p { margin-top: 1.25rem; }
 .quote strong { font-weight: 600; color: #F1E9DC; }
 .quote-right .quote { text-align: right; }
+.quote-poem .quote > p { font-family: 'Fraunces', serif; font-style: italic; }
 .quote-cite { display: block; margin-top: 1.5rem; font-size: 11px; line-height: 1.6; color: #A89A88; }
 @media (max-width: 639px) {
   .quote { margin: 4rem 0 2.5rem; padding: 3rem 1.5rem 2rem; }
