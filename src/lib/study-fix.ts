@@ -13,6 +13,11 @@ type Engine = {
 };
 type Player = HTMLElement & { _engine?: Engine };
 
+type ChessGame = { move: (san: string, opts?: object) => { from: string; to: string } | null; fen: () => string; turn: () => string };
+declare global {
+  interface Window { Chess?: new (fen?: string) => ChessGame }
+}
+
 const STUDY = 'pgn-study';
 const engineOf = (study: Element) => (study.querySelector('pgn-player') as Player | null)?._engine ?? null;
 
@@ -72,6 +77,92 @@ function installKeyboard() {
   }, true);
 }
 
+// Yorum metnindeki hamle dizileri ("Beyaz 2. ♘c3 oynarsa hemen 2… ♗b4 oynayacaktım, devamında 3. ♘d5 ♗e7 4. d4 d6") ayrı bir varyant
+// yazmadan tıklanabilir olur: yorumun bağlı olduğu konumdan oynanabilen her hamle, study'nin kendi varyant hamlesi gibi (data-fen,
+// data-from, data-to) tahtayı o konuma götürür. Oynanamayan ya da sırası uymayan metin düz kalır. Yalnızca ana hat yorumları.
+const FIGURINE: Record<string, string> = { '♔': 'K', '♕': 'Q', '♖': 'R', '♗': 'B', '♘': 'N' };
+const SAN = '(?:[♔♕♖♗♘KQRBN]?[a-h]?[1-8]?x?[a-h][1-8](?:=[QRBN♕♖♗♘])?|O-O-O|O-O)[+#]?';
+const PROSE_TOKEN = new RegExp(`(\\d+)(\\.{3}|\\.|…)|(${SAN})(?![\\p{L}\\d])`, 'gu');
+const toSan = (t: string) => t.replace(/[♔♕♖♗♘]/g, (c) => FIGURINE[c]);
+
+function linkProseMoves(study: Element) {
+  const Chess = window.Chess;
+  const state = (study.querySelector('pgn-player') as (Player & { _engine?: { state?: { moves?: string[]; startFEN?: string } } }) | null)?._engine?.state;
+  if (!Chess || !state?.moves) return;
+  const game = new Chess(state.startFEN || undefined);
+  const fens = [(game as ChessGame).fen()];
+  for (const san of state.moves) { if (!game.move(san, { sloppy: true, strict: false })) break; fens.push(game.fen()); }
+
+  study.querySelectorAll<HTMLElement>('.pgn-moves > p.pgn-comment').forEach((comment) => {
+    const prev = comment.previousElementSibling;
+    const last = prev?.classList.contains('pgn-mainline') ? Array.from(prev.querySelectorAll<HTMLElement>('.pgn-move[data-ply]')).pop() : null;
+    const ply = last ? Number(last.dataset.ply) : NaN;
+    // Yorumdaki satır, yorumun bağlı olduğu hamleden sonraki konumdan ya da (o hamlenin alternatifiyse) önceki konumdan başlar.
+    const bases = [fens[ply + 1], fens[ply]].filter(Boolean);
+    if (!bases.length) return;
+    const walker = document.createTreeWalker(comment, NodeFilter.SHOW_TEXT);
+    const nodes: Text[] = [];
+    for (let n = walker.nextNode(); n; n = walker.nextNode()) nodes.push(n as Text);
+    // Dizi, yorumun metin düğümleri boyunca sürer (varyant dışı); her yeni sayı işareti dizinin başlangıcı olur.
+    // Bir satır, araya düz yazı girse de ("2. ♘c3 oynarsa hemen 2… ♗b4 oynayacaktım, devamında 3. ♘d5 …") sıradaki sayı işareti
+    // satırın bir sonraki hamlesiyse sürer; aksi halde işaret yeni bir satır başlatır (yorumun bağlı olduğu konumdan).
+    let run: ChessGame | null = null;
+    let pending: ChessGame[] = []; // yeni satırın olası başlangıç konumları; ilk oynanabilen hamle birini seçer
+    let armed = false; // bir sonraki hamle metni bir sayı işaretinden ya da bağlanan hamleden hemen sonra mı geliyor
+    for (const node of nodes) {
+      const text = node.data;
+      const frag = document.createDocumentFragment();
+      let at = 0;
+      let lastEnd = -1; // son bağlanan hamlenin bittiği yer (bu metin düğümünde)
+      let markEnd = -1; // son sayı işaretinin bittiği yer
+      for (const m of text.matchAll(PROSE_TOKEN)) {
+        const index = m.index ?? 0;
+        const end = index + m[0].length;
+        if (m[1] !== undefined) {
+          const no = Number(m[1]);
+          const black = m[2] !== '.';
+          const adjacent = run && lastEnd >= 0 && /^[\s\u00a0\u2060]*$/.test(text.slice(lastEnd, index));
+          const expected = run ? Number(run.fen().split(' ')[5]) : 0; // sıradaki tam hamle numarası
+          const continues = run && (run.turn() === 'b') === black && no === expected;
+          if (!(adjacent || continues)) {
+            run = null;
+            pending = bases.map((f) => new Chess(f)).filter((g) => (g.turn() === 'b') === black && no === Number(g.fen().split(' ')[5]));
+          }
+          armed = !!run || pending.length > 0;
+          markEnd = end;
+          continue;
+        }
+        if (!armed || (!run && !pending.length)) continue;
+        // Hamle, sayı işaretinden ya da önceki hamleden yalnızca boşlukla ayrılmış olmalı.
+        const since = lastEnd >= 0 && lastEnd > markEnd ? lastEnd : markEnd;
+        if (since < 0 || !/^[\s\u00a0\u2060]*$/.test(text.slice(since, index))) { armed = false; continue; }
+        let res: { from: string; to: string } | null = null;
+        if (!run) {
+          for (const g of pending) {
+            try { res = g.move(toSan(m[3]), { sloppy: true, strict: false }); } catch { res = null; }
+            if (res) { run = g; break; }
+          }
+          pending = [];
+        } else {
+          try { res = run.move(toSan(m[3]), { sloppy: true, strict: false }); } catch { res = null; }
+        }
+        if (!res || !run) { run = null; armed = false; continue; }
+        frag.append(text.slice(at, index));
+        const span = document.createElement('span');
+        span.className = 'pgn-move cp-prose-move';
+        span.dataset.fen = run.fen();
+        span.dataset.from = res.from;
+        span.dataset.to = res.to;
+        span.textContent = m[3];
+        frag.append(span);
+        at = end;
+        lastEnd = at;
+      }
+      if (at > 0) { frag.append(text.slice(at)); node.replaceWith(frag); }
+    }
+  });
+}
+
 function prepare(study: HTMLElement) {
   const engine = engineOf(study);
   if (engine) {
@@ -105,6 +196,7 @@ function prepare(study: HTMLElement) {
   study.addEventListener('click', mark);
   study.addEventListener('touchstart', mark, { passive: true });
   active = study;
+  linkProseMoves(study);
   // Tahta tıklaması ve dal seçicisi aynı oyuncuya gider; ilk tuşa basıldığında klavye bu çalışmanın olmalı.
   activate(study);
 }

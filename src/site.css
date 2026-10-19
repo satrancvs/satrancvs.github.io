@@ -18,12 +18,12 @@
 .cp-game .jc-board-wrapper [class*="board-b72b1"] { margin-left: auto; margin-right: auto; }
 /* ChessPublica kutusunun yatay iç boşluğu kaldırıldı: oyun metni yazı metniyle aynı hizada başlar. */
 .cp-game .pgn-container { padding-left: 0; padding-right: 0; container-type: inline-size; }
-/* Satır içi diyagramlar (eski siteden): ana hat diyagramı 400px (dar ekranda sütun genişliği); varyant içindeki diyagram daha küçük ve soluk,
+/* Satır içi diyagramlar (eski siteden): ana hat diyagramı 400px (dar ekranda sütunun %98,7'si: 390 px ekranda tahta 340 px); varyant içindeki diyagram daha küçük ve soluk,
    her iç içe düzeyde bir adım daha. Bu ChessPublica sürümünde diyagram `.jc-board-wrapper`'dır (chessboard.js, kurulurken kapsayıcının
    genişliğine göre boyutlanır; max-width bu yüzden tahtayı gerçekten küçültür). cqw, yukarıdaki container-type'a bağlıdır. */
-.cp-game .pgn-container .jc-board-wrapper { --dw: min(400px, 94cqw); max-width: var(--dw); }
-.cp-game .pgn-container .pgn-variation > .jc-board-wrapper { --dw: calc(min(400px, 94cqw) - 3rem); filter: saturate(0.7) opacity(0.85); }
-.cp-game .pgn-container .pgn-variation .pgn-variation > .jc-board-wrapper { --dw: calc(min(400px, 94cqw) - 6rem); filter: saturate(0.4) opacity(0.7); }
+.cp-game .pgn-container .jc-board-wrapper { --dw: min(400px, 98.7cqw); max-width: var(--dw); }
+.cp-game .pgn-container .pgn-variation > .jc-board-wrapper { --dw: calc(min(400px, 98.7cqw) - 3rem); filter: saturate(0.7) opacity(0.85); }
+.cp-game .pgn-container .pgn-variation .pgn-variation > .jc-board-wrapper { --dw: calc(min(400px, 98.7cqw) - 6rem); filter: saturate(0.4) opacity(0.7); }
 /* Hamle kalitesi rozeti (!, ?!, ??) sabit 22px'tir ve küçülmüş diyagramı bastırır; diyagramla birlikte ölçeklenir (400px'te 22px). */
 .cp-game .jc-board-wrapper .gm-badge { width: calc(var(--dw, 400px) * 0.055); height: calc(var(--dw, 400px) * 0.055); font-size: calc(var(--dw, 400px) * 0.04); box-shadow: 0 1px calc(var(--dw, 400px) * 0.01) #00000073; }
 /* Yalnızca düz <pgn> görünümü (study/player değil): varyant metninin solunda tek, kesintisiz ince dikey çizgi. Her varyant satırı (p) blok
@@ -74,8 +74,8 @@
 .fen-diagram .fen-container { max-width: none; margin: 0; width: 100%; }
 .fen-diagram .jc-board { width: 100%; }
 
-/* Alıntı içindeki statik diyagram (<fen>): ortalı, en çok 340 px; ham FEN metni gizli, tahta kutuyu doldurur. */
-.art-fen { width: 100%; max-width: 340px; margin: 1.75rem auto; aspect-ratio: 1; }
+/* Alıntı içindeki statik diyagram (<fen>): ortalı, en çok 396 px (390 px ekranda 340 px); ham FEN metni gizli, tahta kutuyu doldurur. */
+.art-fen { width: min(396px, calc(100% - 2px)); margin: 1.75rem auto; aspect-ratio: 1; }
 .art-fen:not(:has(.jc-board)) { background: rgba(241, 233, 220, .03); }
 .art-fen fen { display: none; }
 .art-fen .fen-container { max-width: none; margin: 0; width: 100%; }
@@ -120,6 +120,8 @@
 @media (max-width: 639px) {
   .quote { margin: 4rem 0 2.5rem; padding: 3rem 1.5rem 2rem; }
   .quote::before { top: -28px; left: -16px; width: 56px; height: 56px; padding-top: 22px; font-size: 48px; }
+  /* Alıntı kutusundaki <fen> kutunun yan dolgusuna taşar: 390 px ekranda tahta 340 px (kutunun iç genişliği). */
+  .quote .art-fen { width: calc(100% + 3rem); margin-left: -1.5rem; margin-right: -1.5rem; }
 }
 .cp-game mark { background: none; color: #B42318; font-weight: 600; }
 
@@ -147,10 +149,10 @@
 .cp-game pgn-study .pgn-study-move-picker { display: none; }
 .cp-game pgn-study > pgn-player {
   flex: 0 0 auto; overflow: hidden; container-type: inline-size; width: 100%; margin: 0; display: block;
-  /* Yazıdaki diyagramla aynı boy: min(400px, sütunun %94'ü). cqw oyuncunun genişliğidir; çerçevenin 2 × (yan dolgu + 1px) payı ve yazıdaki diyagramın tahta/sarmalayıcı farkı (+3 px) ile study tahtasının iç farkı (−3,7 px) eklenir. */
+  /* Yazıdaki diyagramla aynı boy: min(400px, sütunun %98,7'si). cqw oyuncunun genişliğidir; çerçevenin 2 × (yan dolgu + 1px) payı ve yazıdaki diyagramın tahta/sarmalayıcı farkı (+3 px) ile study tahtasının iç farkı (−3,7 px) eklenir. */
 }
 /* cqw, değişkenin tanımlandığı öğeye değil üst kapsayıcıya göre çözülür; bu yüzden değişken oyuncunun içindeki sarmalayıcıda tanımlanır. */
-.cp-game pgn-study pgn-player .player-wrapper { --board-size: min(400px, calc(94cqw + var(--study-pad) * 1.88 + 8.6px)); }
+.cp-game pgn-study pgn-player .player-wrapper { --board-size: min(400px, calc(98.7cqw + var(--study-pad) * 1.974 + 4px)); }
 .cp-game pgn-study pgn-player .player-wrapper { min-height: 0; margin: 0 auto; }
 .cp-game pgn-study > .pgn-container {
   display: block; width: 100%; flex: 1 1 0; min-height: 0; overflow-y: auto; margin: 0; padding: 0 .5rem 0 4px;
@@ -199,3 +201,6 @@
   .cp-game pgn-study > .pgn-container { grid-column: 2; grid-row: 1 / -1; padding: 0 .75rem 0 0; }
   .cp-game .pgn-study-loading { display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 1fr); column-gap: 1.5rem; align-items: start; }
 }
+
+/* Yorum metnindeki tıklanabilir hamleler (study-fix.ts linkProseMoves): düz yazıda, altı noktalı çizgili. */
+.cp-game pgn-study .cp-prose-move { cursor: pointer; border-radius: 3px; text-decoration: underline dotted #C8893E; text-underline-offset: 3px; }

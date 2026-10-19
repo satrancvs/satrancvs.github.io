@@ -18,7 +18,7 @@ const GAME = '.cp-game';
 // use .video-comment / .variation-comment. Move text lives in `.pgn-mainline` and is not listed on purpose.
 export const COMMENT_SELECTOR = '.pgn-comment, .pgn-variation-line, .variation-comment, .video-comment';
 
-const needsWork = (text: string) => text.includes('"') || text.includes("'") || text.includes('--') || text.includes('1/2');
+const needsWork = (text: string) => text.includes('"') || text.includes("'") || text.includes('--') || text.includes('1/2') || text.includes('…') || text.includes('...');
 
 /** Converts every eligible text node under `root`; `skip` can exclude whole subtrees. */
 export function curlyPass(root: Element, skip?: (el: Element) => boolean) {

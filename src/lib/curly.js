@@ -29,7 +29,16 @@ export function toHalves(text) {
   return text.replace(/(^|[^\p{L}\p{N}/.,])1\/2(?![\p{L}\p{N}/]|[.,]\p{N})/gu, '$1½');
 }
 
-// Everything the prose gets: curly quotes, em dashes and halves.
+// "…♘c6", "12… ♗e6", "...e5": the dots that mark Black's move never end a line before the move itself. A space after
+// them becomes a no-break space; with no space, a word joiner (U+2060) forbids the break. Only before something that
+// reads as a move (a figurine, a piece letter or pawn file with its square, a castling), so ordinary prose
+// ("bekleyince… sonra") still wraps.
+const BLACK_MOVE = /(…|\.{3})([ \u00a0]?)(?=[♔♕♖♗♘]|[KQRBN]?[a-h]?x?[a-h][1-8]|O-O)/g;
+export function keepEllipsisWithMove(text) {
+  return text.replace(BLACK_MOVE, (_, dots, space) => `${dots}${space ? '\u00a0' : '\u2060'}`);
+}
+
+// Everything the prose gets: curly quotes, em dashes, halves, and Black's "…" glued to its move.
 export function toTypography(text) {
-  return toHalves(toCurly(text));
+  return keepEllipsisWithMove(toHalves(toCurly(text)));
 }
