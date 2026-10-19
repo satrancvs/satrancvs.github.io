@@ -9,6 +9,24 @@ had to work around. Read it before changing anything that involves ChessPublica:
 copy of the bundle), `src/lib/chesspublica.ts`, game rendering in `src/components/ArticleBody.tsx`, or the diagram/comment
 CSS in `src/site.css`. The note at the top of that file lists how this site differs from the old one.
 
+## Rule: nothing in an article may be lost silently (new articles AND every new/edited game)
+ChessPublica drops or mangles text it cannot parse, so every game that is added or edited goes through this checklist:
+1. **`pnpm check:games`** (`scripts/check-games.mjs`; also run by `pnpm build`, `pnpm test` and the deploy workflow). It uses chess.js in
+   *strict* mode (ChessPublica rejects redundant disambiguation such as `Nfd6` when `Nd6` is enough, and ambiguous `Ne2`) and fails on:
+   an illegal move anywhere (main line, variations), unbalanced or nested `{ }` / `( )`, a `(12. Ne2 …)` line inside a comment that cannot be
+   played from there (ChessPublica would delete it), a game header without movetext, `[Round "?"]`, `[#]` in a `<pgn>` game, and **move lines in
+   comment prose that are not a real variation** (2+ numbered plies). Genuine exceptions (move-order notes from the start position, threats, source
+   typos waiting for the author) go in `scripts/check-games.allow.json` with a reason; never allowlist something that can be a variation.
+2. **Every move that is playable from the position becomes a real variation** (`( 12. Ne2 f5 … )`, placed after the move it replaces and its
+   comment; a continuation line goes after the *next* main-line move as an alternative to it). Keep the prose in the comment as well. Single
+   numbered moves are only warnings (`pnpm check:games --warnings`), but convert them too when they are alternatives.
+3. **`pnpm build && pnpm preview` then `pnpm check:render`** (`scripts/check-render.mjs`, Playwright; set `CHROMIUM_PATH=/opt/pw-browsers/chromium`
+   in this environment) renders every published article and fails on `Error parsing PGN`, invalid moves or the red ⚠ marker. Look at the page, too.
+4. ChessPublica itself must never delete content quietly: the patched bundle shows `⚠ Geçersiz hamle dizisi: …` (`<mark>`) for an unplayable
+   inline line (see `docs/chesspublica-quirks.md`). If you find another place where it swallows text, patch it to show an error and add a check.
+5. Check the prose too: move numbers must match the position (`12… ♗e6`, not `15. ♗e6`; `♘ge2` when both knights can go), and a line the
+   author describes must actually be playable. Ask the author when the source text cannot be right.
+
 ## Ported from the old Jekyll site (`satranckahvesi-eski`)
 - `scripts/send-push.mjs`, `scripts/push/apps-script.gs`: new-article web-push notifications. Only these two are ported so
   far; the browser side (service worker, subscribe UI), the GitHub Action and the setup README still live in the old repo.

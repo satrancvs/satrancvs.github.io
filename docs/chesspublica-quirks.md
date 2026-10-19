@@ -113,3 +113,8 @@ A parenthesised line that starts with a move number inside a `{ }` comment (`(21
 comment's position and becomes a variation. Upstream, an illegal line was deleted without a trace; the bundle
 (`Mt` in `ChessPublica.all.min.js`) and `pgn.js` (`renderInlinePgnReferences`) now emit `<mark>⚠ Geçersiz hamle dizisi: …</mark>`
 instead (`.cp-game mark` in `src/site.css`, red). Seeing it means the line is wrong or placed on the wrong move.
+
+## Strict SAN
+`<pgn>` parses moves strictly: a redundant disambiguation (`Nfd6` when only one knight can reach d6) is `Error parsing PGN: Invalid move`, and
+so is an ambiguous move (`Ne2` with two candidates). chess.js in its default lenient mode accepts both, so `scripts/check-games.mjs` uses
+`strict: true`. `scripts/check-render.mjs` renders every article in a browser as a second safety net.
