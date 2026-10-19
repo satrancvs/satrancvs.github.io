@@ -326,18 +326,20 @@ export default function Index() {
           <p className="text-[#F1E9DC]/75 leading-relaxed mt-10 max-w-xl">Satranç vs., satranç üzerine uzun okumalar, analizler ve hikâyeler yayınlayan bağımsız bir dergidir. Bir fincan kahve eşliğinde, acele etmeden okunsun diye.</p>
           <p className="text-[#F1E9DC]/75 leading-relaxed mt-6 max-w-xl">Bize ulaşmak, yayın ekibine katılmak ya da yazı taslaklarınızı göndermek için <a href="mailto:editor@satrancvs.com" className="underline underline-offset-2 hover:text-[#F1E9DC]">editor@satrancvs.com</a> adresine e-posta gönderebilirsiniz. Yayın ekibi, paylaştığınız tüm öneri ve yazı taslaklarını büyük bir özenle inceler. Değerlendirme süreci zaman alabildiğinden yanıtlardaki olası gecikmelerde göstereceğiniz sabır ve anlayış için şimdiden teşekkür ederiz.</p>
         </div>
-        {/* Sağ sütun (md ve üstü): yalnızca mono içerik — telif notu ve atıflar; mobilde alt alta. */}
+        {/* Sağ sütun (md ve üstü): yalnızca mono içerik — üstte atıflar, altta telif notu; mobilde alt alta. */}
         <div className="md:col-span-6 reveal md:pt-[4.5rem]">
-          <p className="f-mono text-[#C8893E]">Telif hakları</p>
-          <p className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.9] text-[#F1E9DC]/75 mt-4 max-w-xl">Sitede yayınlanan yazıların telif hakları yazarlarına, dijital mecrada yayınlama yetkisi ise Satranç vs.’ye aittir. Önceden yazılı izin alınmaksızın kısmen veya tamamen kopyalanamaz, çoğaltılamaz ve kaynak gösterilmeden başka platformlarda yayınlanamaz.</p>
           {/* Atıflar: sitede kullanılan üçüncü taraf yazılım ve görseller (lisans metinleri public/chesspublica/LICENSES.txt). */}
-          <div className="mt-10 max-w-xl">
+          <div className="max-w-xl">
             <p className="f-mono text-[#C8893E]">Atıflar</p>
             <ul className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.8] mt-3 space-y-1 text-[#A89A88] list-disc pl-5 marker:text-[#C8893E]">
               {ATTRIBUTIONS.map((t, i) => (
                 <li key={i}><Markdown options={{ forceInline: true, overrides: { a: { props: { className: 'underline underline-offset-2 hover:text-[#F1E9DC]', target: '_blank', rel: 'noreferrer' } } } }}>{t}</Markdown></li>
               ))}
             </ul>
+          </div>
+          <div className="mt-10 max-w-xl">
+            <p className="f-mono text-[#C8893E]">Telif hakları</p>
+            <p className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.9] text-[#F1E9DC]/75 mt-4">Sitede yayınlanan yazıların telif hakları yazarlarına, dijital mecrada yayınlama yetkisi ise Satranç vs.’ye aittir. Önceden yazılı izin alınmaksızın kısmen veya tamamen kopyalanamaz, çoğaltılamaz ve kaynak gösterilmeden başka platformlarda yayınlanamaz.</p>
           </div>
         </div>
         <div id="bulten" className="md:col-span-12 mt-10 border border-[#2E2620] p-8 md:p-14 grid md:grid-cols-2 gap-8 items-end">
