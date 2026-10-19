@@ -2,6 +2,8 @@
 // (ChessPublica drops or mangles text it cannot parse). Run: `pnpm check:games` (also part of `pnpm test`).
 //
 // Errors (fail the build):
+//  (an article with a `linkedProse` entry in check-games.allow.json may keep move lines in comment prose instead of variations; each numbered
+//   prose move must still be playable from the comment's position)
 //  - unbalanced / nested `{ }` or `( )` in movetext;
 //  - an illegal move anywhere (main line, variations, nested variations);
 //  - a `(12. Ne2 ...)` move line inside a comment that is illegal from the comment's position
@@ -15,6 +17,7 @@ import { Chess } from 'chess.js';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { ProseLinker } from '../src/lib/prose-moves.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const FIG = { '♔': 'K', '♕': 'Q', '♖': 'R', '♗': 'B', '♘': 'N' };
@@ -25,6 +28,9 @@ const normText = (t) => t.replace(/[♔♕♖♗♘]/g, (c) => FIG[c]).replace(/
 const allowPath = path.join(ROOT, 'scripts/check-games.allow.json');
 const ALLOW = fs.existsSync(allowPath) ? JSON.parse(fs.readFileSync(allowPath, 'utf8')) : [];
 const allowed = (file, run) => ALLOW.some((a) => a.file === file && a.run === run);
+// `linkedProse` entries: the article's games may keep their move lines in the comment prose instead of as variations (the study view makes
+// them clickable, see src/lib/prose-moves.js). Every numbered prose move must then be playable from the comment's position.
+const linkedProse = (file) => ALLOW.some((a) => a.file === file && a.linkedProse);
 
 const tagOf = (hdr, name) => (hdr.match(new RegExp(`\\[${name} "([^"]*)"\\]`)) || [])[1];
 
@@ -146,7 +152,13 @@ export function checkContent(dir = path.join(ROOT, 'src/content')) {
           const ok = sans.length && [c.fenAfter, c.fenBefore].some((f) => new Chess(f).turn() === (black ? 'b' : 'w') && playFrom(f, sans));
           if (!ok) errors.push(`${where}: comment contains "${pm[0].slice(0, 70)}", a move line ChessPublica cannot play (it would be deleted)`);
         }
-        // (b) prose move lines that are not real variations.
+        // (b0) linkedProse article: no variation needed, but every numbered prose move must be playable (same rules as the study's clickable moves).
+        if (linkedProse(file)) {
+          const prose = normText(c.text).replace(/\.\.\./g, '…');
+          const { failed } = new ProseLinker(Chess, [c.fenAfter, c.fenBefore]).scan(prose);
+          for (const f of failed) errors.push(`${where}: prose move "${f.text}" after a move number cannot be played from the comment's position (typo or wrong move number?): "…${prose.slice(Math.max(0, f.index - 30), f.index + 25).replace(/\s+/g, ' ')}…"`);
+          continue;
+        }
         for (const r of proseRuns(c.text)) {
           if (covered(w.lines, r.sans)) continue;
           const text = r.sans.join(' ');
