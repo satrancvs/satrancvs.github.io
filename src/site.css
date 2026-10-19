@@ -117,3 +117,4 @@
   .quote { margin: 4rem 0 2.5rem; padding: 3rem 1.5rem 2rem; }
   .quote::before { top: -28px; left: -16px; width: 56px; height: 56px; padding-top: 22px; font-size: 48px; }
 }
+.cp-game mark { background: none; color: #B42318; font-weight: 600; }

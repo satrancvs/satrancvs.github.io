@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 //  - paketin kendi basit <pgn-player> tanımı kaldırıldı; <pgn-player> artık ayrı ES modülünden
 //    (pgn-player.js + helpers/pgn/icons/board.js) gelir ve [P] ile bulmaca görünümü sağlar;
 //  - <pgn> oyun başlığı (kt) <pgn-player> başlığıyla aynı biçime getirildi: unvan + Elo, Event ve tarih (.?? kırpılır);
+//  - geçersiz parantezli hamle dizisi (yorum içinde) sessizce silinmez, kırmızı uyarı olarak gösterilir (pgn.js + paket);
 //  - global nesneye window.ChessPublica takma adı eklendi (paket yalnızca window.JekyllChess veriyordu).
 const BASE = `${import.meta.env.BASE_URL}chesspublica`;
 

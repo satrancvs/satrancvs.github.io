@@ -107,3 +107,9 @@ the scroll waits for every `<pgn-player>`/`<pgn-study>` to be ready (`allElement
   color show as a seam.
 - `!important` appears exactly three times (`icons.css`, `player.css`), each to override an `--icon` custom
   property that ChessPublica sets in an inline `style`, which nothing else can beat.
+
+## Illegal move lines in comments are shown as an error (patched here)
+A parenthesised line that starts with a move number inside a `{ }` comment (`(21... Ne7 22. Nxb4)`) is played from the
+comment's position and becomes a variation. Upstream, an illegal line was deleted without a trace; the bundle
+(`Mt` in `ChessPublica.all.min.js`) and `pgn.js` (`renderInlinePgnReferences`) now emit `<mark>⚠ Geçersiz hamle dizisi: …</mark>`
+instead (`.cp-game mark` in `src/site.css`, red). Seeing it means the line is wrong or placed on the wrong move.
