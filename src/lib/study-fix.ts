@@ -97,8 +97,9 @@ function linkProseMoves(study: Element) {
     const prev = comment.previousElementSibling;
     const last = prev?.classList.contains('pgn-mainline') ? Array.from(prev.querySelectorAll<HTMLElement>('.pgn-move[data-ply]')).pop() : null;
     const ply = last ? Number(last.dataset.ply) : NaN;
-    const base = fens[ply + 1];
-    if (!base) return;
+    // Yorumdaki satır, yorumun bağlı olduğu hamleden sonraki konumdan ya da (o hamlenin alternatifiyse) önceki konumdan başlar.
+    const bases = [fens[ply + 1], fens[ply]].filter(Boolean);
+    if (!bases.length) return;
     const walker = document.createTreeWalker(comment, NodeFilter.SHOW_TEXT);
     const nodes: Text[] = [];
     for (let n = walker.nextNode(); n; n = walker.nextNode()) nodes.push(n as Text);
@@ -106,6 +107,7 @@ function linkProseMoves(study: Element) {
     // Bir satır, araya düz yazı girse de ("2. ♘c3 oynarsa hemen 2… ♗b4 oynayacaktım, devamında 3. ♘d5 …") sıradaki sayı işareti
     // satırın bir sonraki hamlesiyse sürer; aksi halde işaret yeni bir satır başlatır (yorumun bağlı olduğu konumdan).
     let run: ChessGame | null = null;
+    let pending: ChessGame[] = []; // yeni satırın olası başlangıç konumları; ilk oynanabilen hamle birini seçer
     let armed = false; // bir sonraki hamle metni bir sayı işaretinden ya da bağlanan hamleden hemen sonra mı geliyor
     for (const node of nodes) {
       const text = node.data;
@@ -123,20 +125,28 @@ function linkProseMoves(study: Element) {
           const expected = run ? Number(run.fen().split(' ')[5]) : 0; // sıradaki tam hamle numarası
           const continues = run && (run.turn() === 'b') === black && no === expected;
           if (!(adjacent || continues)) {
-            const g = new Chess(base);
-            run = (g.turn() === 'b') === black && no === Number(g.fen().split(' ')[5]) ? g : null;
+            run = null;
+            pending = bases.map((f) => new Chess(f)).filter((g) => (g.turn() === 'b') === black && no === Number(g.fen().split(' ')[5]));
           }
-          armed = !!run;
+          armed = !!run || pending.length > 0;
           markEnd = end;
           continue;
         }
-        if (!run || !armed) continue;
+        if (!armed || (!run && !pending.length)) continue;
         // Hamle, sayı işaretinden ya da önceki hamleden yalnızca boşlukla ayrılmış olmalı.
         const since = lastEnd >= 0 && lastEnd > markEnd ? lastEnd : markEnd;
         if (since < 0 || !/^[\s\u00a0]*$/.test(text.slice(since, index))) { armed = false; continue; }
         let res: { from: string; to: string } | null = null;
-        try { res = run.move(toSan(m[3]), { sloppy: true, strict: false }); } catch { res = null; }
-        if (!res) { run = null; armed = false; continue; }
+        if (!run) {
+          for (const g of pending) {
+            try { res = g.move(toSan(m[3]), { sloppy: true, strict: false }); } catch { res = null; }
+            if (res) { run = g; break; }
+          }
+          pending = [];
+        } else {
+          try { res = run.move(toSan(m[3]), { sloppy: true, strict: false }); } catch { res = null; }
+        }
+        if (!res || !run) { run = null; armed = false; continue; }
         frag.append(text.slice(at, index));
         const span = document.createElement('span');
         span.className = 'pgn-move cp-prose-move';
