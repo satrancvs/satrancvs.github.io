@@ -4,8 +4,8 @@
 >
 > - ChessPublica is a **local, patched copy** at `public/chesspublica/` (not loaded from the CDN), loaded lazily by
 >   `src/lib/chesspublica.ts` on article pages that contain games. It ships **without `pgn-player.js`**, so
->   `<pgn-player>` / `<pgn-study>` (study view, puzzles, view switching, scroll restoration) are **not available**;
->   the site only uses `<pgn>`.
+>   `<pgn-player>` (separate module) and, for `[View "study"]` games, `<pgn-study>` (`pgn-study.js`, one-column layout,
+>   `src/lib/study-fix.ts`; no puzzles there) are loaded on demand; view switching and the old scroll restoration are **not available**.
 > - Patches made directly in `public/chesspublica/ChessPublica.all.min.js`: (1) removed the block that tried to load
 >   `./pgn-player.js` via `new URL(..., undefined)`, which threw in the single-file build before the global was set;
 >   (2) `window.ChessPublica` is an alias of `window.JekyllChess`; (3) the `[FEN "..."]` header is used as the start

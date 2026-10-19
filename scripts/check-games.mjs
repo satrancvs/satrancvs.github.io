@@ -123,7 +123,7 @@ export function checkContent(dir = path.join(ROOT, 'src/content')) {
       const white = tagOf(hdr, 'White'); const black = tagOf(hdr, 'Black');
       const where = `${file}: ${white ?? '?'} – ${black ?? '?'}`;
       const fen = tagOf(hdr, 'FEN');
-      const isPlayer = tagOf(hdr, 'View') === 'player';
+      const isPlayer = ['player', 'study'].includes(tagOf(hdr, 'View'));
       if (tagOf(hdr, 'Round') === '?') errors.push(`${where}: [Round "?"] prints "? . tur"; remove the tag`);
       const next = chunks[i + 1] ?? '';
       const hasMoves = /^(\d+\s?\.|\{)/.test(next);

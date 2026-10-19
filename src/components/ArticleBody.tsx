@@ -6,6 +6,7 @@ import { curlyComments, curlyProse, watchComments } from '@/lib/curly-dom';
 import ProgressiveImage, { boxWidth, isSmallImage } from '@/components/ProgressiveImage';
 import { watchInlinePlay } from '@/lib/inline-play';
 import { watchLocalization } from '@/lib/localize-dom';
+import { watchStudy } from '@/lib/study-fix';
 import { watchVariationFix } from '@/lib/variation-fix';
 
 // Makale gövdesi: markdown metni + PGN oyun blokları + çapraz tablo + video bağlantısı.
@@ -81,7 +82,9 @@ function puzzleSide(header: string, moves: string): 'w' | 'b' | null {
 // Oyunlar ekrana yaklaşınca (1500 px kala) yüklenir: sayfa açılırken 13 oyun birden kurulmaz, ham PGN metni de
 // görünmez (kutu, oyun gelene kadar boş bir yer tutucudur). Adreste #bağlantı varsa kaydırma konumu doğru
 // hesaplansın diye hepsi hemen kurulur.
-const WATCH_TAG = /^\[View\s+"player"\]\s*$/im;
+// [View "study"]: aynı oyun <pgn-study> (tahta üstte, altında hamle ve yorum listesi) ile çizilir; uzun yorumlu oyunlar için.
+const WATCH_TAG = /^\[View\s+"(?:player|study)"\]\s*$/im;
+const STUDY_TAG = /^\[View\s+"study"\]\s*$/im;
 // [EventLine "..."]: oyun başlığındaki etkinlik satırını (Etkinlik, Yer, yıl yerine) kendi metniyle verir; satır içi Markdown/HTML (<i>) kullanılabilir.
 // ChessPublica'ya geçirilmez.
 const EVENT_LINE_TAG = /^\[EventLine\s+"[^"]*"\]\s*$/im;
@@ -89,15 +92,18 @@ const EVENT_LINE_TAG = /^\[EventLine\s+"[^"]*"\]\s*$/im;
 function PgnGame({ header, moves }: { header: string; moves: string }) {
   // [View "player"] etiketi oyunu (bulmaca işareti olmasa da) <pgn-player> ile çizdirir; ChessPublica'ya geçirilmez.
   const watch = WATCH_TAG.test(header);
+  const study = STUDY_TAG.test(header);
   const clean = header.replace(WATCH_TAG, '').replace(EVENT_LINE_TAG, '').trim();
-  const side = puzzleSide(clean, moves);
+  const side = study ? null : puzzleSide(clean, moves);
   const head = side === 'b' && !/\[Orientation\s/i.test(clean) ? `${clean}\n[Orientation "black"]` : clean;
-  const tag = side || watch ? 'pgn-player' : 'pgn';
+  const tag = study ? 'pgn-study' : side || watch ? 'pgn-player' : 'pgn';
   // ChessPublica <pgn> ilk hamleden önceki yorumu çizmez; oyun metninin başındaki `{ … }` yorumu bu yüzden ayrılıp oyunun üstünde bir paragraf olarak gösterilir.
   const lead = tag === 'pgn' ? moves.match(/^\s*\{([^}]*)\}\s*/) : null;
   const movetext = lead ? moves.slice(lead[0].length) : moves;
   const intro = lead?.[1].replace(/\[D\]/g, '').trim();
-  const raw = `${head}\n\n${movetext.trim()}`.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+  // <pgn-study>'de bulmaca olmaz: [P] işaretleri silinir.
+  const text = study ? movetext.replace(/\{\s*\[P\s*\d*\]\s*\}|\[P\s*\d*\]/g, '') : movetext;
+  const raw = `${head}\n\n${text.trim()}`.replace(/&/g, '&amp;').replace(/</g, '&lt;');
   const box = useRef<HTMLDivElement>(null);
   const [near, setNear] = useState(() => typeof window === 'undefined' || typeof IntersectionObserver === 'undefined' || !!window.location.hash);
   useEffect(() => {
@@ -394,7 +400,8 @@ function gameMoves(chunks: string[], i: number): { moves: string; own: boolean }
 
 export default function ArticleBody({ chunks }: { chunks: string[] }) {
   const hasGames = chunks.some((c) => c.trim().startsWith('[Event ') || FEN_ONLY.test(c.trim()) || (c.startsWith('>') && /^>\s*\[FEN\s/m.test(c)));
-  const cp = useChessPublica(hasGames);
+  const hasStudy = chunks.some((c) => STUDY_TAG.test(c));
+  const cp = useChessPublica(hasGames, { study: hasStudy });
   // ChessPublica yüklenemezse eski düz metin görünümüne düşülür.
   const useFallback = cp === 'error';
   const games = gameToc(chunks);
@@ -432,7 +439,8 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     const stopLocalize = watchLocalization(el);
     const stopInlinePlay = watchInlinePlay(el);
     const stopVariationFix = watchVariationFix(el);
-    return () => { stopCurly(); stopLocalize(); stopInlinePlay(); stopVariationFix(); };
+    const stopStudy = watchStudy(el);
+    return () => { stopCurly(); stopLocalize(); stopInlinePlay(); stopVariationFix(); stopStudy(); };
   }, [chunks]);
   useEffect(() => {
     const el = rootRef.current;
