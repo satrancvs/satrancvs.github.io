@@ -359,7 +359,7 @@ export default function Index() {
           </div>
         </div>
         <div id="bulten" className="md:col-span-12 mt-10 scroll-mt-28 border border-[#2E2620] p-8 md:p-14 grid md:grid-cols-2 gap-8 items-end">
-          <div><p className="f-mono text-[#C8893E]">Bülten</p><h3 className="f-display text-4xl md:text-6xl mt-4">Her ay bir hamle, <em className="italic">e-postanda.</em></h3></div>
+          <div><p className="f-mono text-[#C8893E]">Bülten</p><h3 className="f-display text-4xl md:text-6xl mt-4">Yeni yazılar, <em className="italic">e-postanda.</em></h3></div>
           {/* Bülten servisi hazır olana kadar devre dışı; devre dışı öğeler tooltip göstermediği için title kapsayıcıda. */}
           <form onSubmit={(e) => e.preventDefault()} title="Yakında..." aria-disabled="true" className="flex flex-col sm:flex-row gap-3 cursor-not-allowed opacity-60">
             <label htmlFor="em" className="sr-only">E-posta</label>
