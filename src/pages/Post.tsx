@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, Navigate, useParams } from 'react-router-dom';
 import { X } from 'lucide-react';
 import Markdown from 'markdown-to-jsx';
 import SiteFooter from '@/components/SiteFooter';
 import ArticleBody from '@/components/ArticleBody';
 import ProgressiveImage, { boxWidth } from '@/components/ProgressiveImage';
 import PhotoCredit, { PHOTO } from '@/components/PhotoCredit';
-import { articleBySlug } from '@/data/articles';
+import { articleByOldSlug, articleBySlug, articlePath } from '@/data/articles';
 import NotFound from './NotFound';
 import '../site.css';
 
@@ -23,7 +23,15 @@ function NoteLink({ children, title, ...props }: React.AnchorHTMLAttributes<HTML
   return <a {...rest}>{kids.slice(0, -1)}{last.slice(0, -1)}<span style={{ letterSpacing: 0 }}>{last.slice(-1)}</span></a>;
 }
 
+// Adresi değişen yazının eski adresi yeni adrese yönlendirilir (kanca kuralları için ayrı bileşen).
 export default function Post() {
+  const { slug } = useParams();
+  const moved = !articleBySlug(slug) ? articleByOldSlug(slug) : undefined;
+  if (moved) return <Navigate to={articlePath(moved)} replace />;
+  return <PostPage />;
+}
+
+function PostPage() {
   const { slug } = useParams();
   const a = articleBySlug(slug);
 

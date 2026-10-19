@@ -9,7 +9,7 @@ import { toTypography } from '@/lib/curly';
 import data from './articles.json';
 
 export type Article = {
-  id: string; slug: string; cat: string; title: string; dek?: string; author: string; authorLang?: string; authorLabel?: string; translator?: string;
+  id: string; slug: string; oldSlugs?: string[]; cat: string; title: string; dek?: string; author: string; authorLang?: string; authorLabel?: string; translator?: string;
   excerpt?: string; date?: string; chunks?: string[]; photo?: boolean; thumb?: string; thumbAlt?: string; thumbPosition?: string; diagram?: string; diagramAlt?: string; diagramCaption?: string; titleLines?: [string, string]; note?: string; diagramOrientation?: 'white' | 'black'; diagramBadge?: { square: string; glyph: string }; diagramArrow?: { from: string; to: string }; draft?: boolean; body: string[];
 };
 
@@ -47,4 +47,6 @@ const rank = (a: Article) => { const i = LIST_ORDER.indexOf(a.id); return i >= 0
 export const LISTED = [...PUBLISHED].sort((x, y) => rank(x) - rank(y));
 
 export const articleBySlug = (slug?: string) => PUBLISHED.find((a) => a.slug === slug);
+// Adresi değişen yazının eski adresi (articles.json `oldSlugs`): ziyaretçi yeni adrese yönlendirilir (Post.tsx), vite.config.ts de dist/<eski>/index.html yönlendirme sayfası yazar.
+export const articleByOldSlug = (slug?: string) => PUBLISHED.find((a) => slug && a.oldSlugs?.includes(slug));
 export const articlePath = (a: Article) => `/${a.slug}/`;
