@@ -53,6 +53,8 @@ Masaya otururken sadece rakibimin isminin Yash Watarkar olduğu ve Siyah taşlar
 - ...a3, ...h5-h4 ve ...♗e5 fikirlerinin nasıl birlikte çalıştığını,
 - ve küçük piyon yapısı değişikliklerinin bütün konum değerlendirmesini nasıl değiştirebildiğini izledik.
 
+### Oyunu inceleyin
+
 [Event "GRENKE Açık"]
 [Site "Karlsruhe"]
 [Date "2026.04.02"]
