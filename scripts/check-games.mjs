@@ -79,7 +79,10 @@ const playFrom = (fen, sans) => { try { const g = new Chess(fen); for (const s o
 
 // Prose runs: numbered SAN tokens in comment text (figurines normalised). Returns [{ sans, numbered }].
 function proseRuns(text) {
-  const toks = normText(text).replace(/[,;:()]/g, ' ').split(/\s+/).filter(Boolean)
+  const raw = normText(text).replace(/[,;:]/g, ' ').replace(/[()[\]]/g, ' | ').split(/\s+/).filter(Boolean);
+  // Book style "9 e5" (number without a dot) counts as a numbered move when a SAN token follows.
+  const isSan = (x) => SAN.test(strip(x.replace(/[!?]+$/, '')));
+  const toks = raw.map((x, i) => (/^\d{1,3}$/.test(x) && raw[i + 1] && isSan(raw[i + 1]) ? x + '.' : x))
     .map((x) => x.replace(/[’'][a-zçğıöşüâî]+$/i, '').replace(/[.]+$/, (d) => (/^\d+$/.test(x.slice(0, -d.length)) ? d : '')));
   const runs = [];
   for (let k = 0; k < toks.length; k++) {
