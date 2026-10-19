@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 
 // Sender (sender.net) gömülü formu. Hesap kimliği ve form kimliği herkese açık değerlerdir.
 const SENDER_ACCOUNT = '9750f024779783';
-const SENDER_FORM = 'dJ6392';
+const SENDER_FORM = 'aKr3VR';
 const SENDER_SRC = 'https://cdn.sender.net/accounts_resources/universal.js';
 const SCRIPT_ID = 'sender-universal';
 
