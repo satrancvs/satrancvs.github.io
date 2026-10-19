@@ -135,18 +135,22 @@
 /* <pgn-study> ([View "study"]): her genişlikte tek sütun. Üstte tahta, altında geri/ileri düğmeleri, altında kayan hamle ve yorum listesi.
    ChessPublica'nın iki sütunlu 90vw paneli yerine yazı sütunu kadar geniş sabit yükseklikli bir kutudur. Eski sitedeki study.css'in mobil düzeni. */
 .cp-game pgn-study {
-  --study-pad: 1rem; --frame-pad: 1rem; font-size: 100%; display: flex; flex-direction: column; width: 100%; max-width: 44rem; margin: 0 auto;
-  height: min(90vh, 52rem); min-height: 38rem; padding: 1rem var(--study-pad) .6rem; box-sizing: border-box; overflow: hidden;
-  border: 1px solid #2E2620; border-radius: 6px; background: #14110E; color: #F1E9DC;
+  --frame-pad: 1rem; font-size: 100%; display: flex; flex-direction: column; width: 100%; margin: 0 auto;
+  height: calc(min(90vh, 52rem) - 6rem); min-height: 32rem; padding: 0; box-sizing: border-box; overflow: hidden; color: #F1E9DC;
+  border: 0; border-radius: 0; background: transparent; box-shadow: none;
 }
+/* Çerçeve: oyunun başlığı (oyuncular, turnuva) ile panel aynı kutuda. GameSection, study oyununa bu sınıfı verir. */
+.study-frame { --study-pad: 1rem; max-width: 44rem; margin: 1rem auto; padding: 1rem var(--study-pad) .6rem; border: 1px solid #2E2620; border-radius: 6px; background: #14110E; }
+.study-frame > div:first-child { margin-bottom: .75rem; padding-top: 0; }
 .cp-game pgn-study > .pgn-study-mobile-title,
 .cp-game pgn-study > .pgn-study-resizer,
 .cp-game pgn-study .pgn-study-move-picker { display: none; }
 .cp-game pgn-study > pgn-player {
   flex: 0 0 auto; overflow: hidden; container-type: inline-size; width: 100%; margin: 0; display: block;
-  /* Yazıdaki diyagramla aynı boy: min(400px, sütunun %94'ü). cqw oyuncunun genişliğidir; panelin 2 × (yan dolgu + 1px çerçeve) payı eklenir. */
-  --board-size: min(400px, calc(94cqw + var(--study-pad) * 1.88 + 2px));
+  /* Yazıdaki diyagramla aynı boy: min(400px, sütunun %94'ü). cqw oyuncunun genişliğidir; çerçevenin 2 × (yan dolgu + 1px) payı ve yazıdaki diyagramın tahta/sarmalayıcı farkı (+3 px) ile study tahtasının iç farkı (−3,7 px) eklenir. */
 }
+/* cqw, değişkenin tanımlandığı öğeye değil üst kapsayıcıya göre çözülür; bu yüzden değişken oyuncunun içindeki sarmalayıcıda tanımlanır. */
+.cp-game pgn-study pgn-player .player-wrapper { --board-size: min(400px, calc(94cqw + var(--study-pad) * 1.88 + 8.6px)); }
 .cp-game pgn-study pgn-player .player-wrapper { min-height: 0; margin: 0 auto; }
 .cp-game pgn-study > .pgn-container {
   display: block; width: 100%; flex: 1 1 0; min-height: 0; overflow-y: auto; margin: 0; padding: 0 .5rem 0 4px;
@@ -173,12 +177,25 @@
 .cp-game pgn-study .pgn-container::-webkit-scrollbar { width: 6px; }
 .cp-game pgn-study .pgn-container::-webkit-scrollbar-thumb { background: #C8893E; }
 /* Yükleme yer tutucusu da aynı kutuda. */
-.cp-game .pgn-study-loading { width: 100%; max-width: 44rem; height: min(90vh, 52rem); margin: 0 auto; padding: 1rem; display: flex; flex-direction: column; box-sizing: border-box; border: 1px solid #2E2620; background: #14110E; }
+.cp-game .pgn-study-loading { width: 100%; height: calc(min(90vh, 52rem) - 6rem); min-height: 32rem; margin: 0 auto; padding: 0; display: flex; flex-direction: column; box-sizing: border-box; }
 .cp-game .pgn-study-loading-board { width: 100%; max-width: 400px; margin: 0 auto; }
 .cp-game .pgn-study-loading-side { color: #A89A88; }
 /* Dar ekranda panelin yan dolgusu yok: tahta yazıdaki diyagramla aynı boyda (sütunun %94'ü) sığsın; liste ve şerit kendi dolgusunu taşır. */
 @media (max-width: 640px) {
-  .cp-game pgn-study { --study-pad: 0px; }
+  .study-frame { --study-pad: 0px; }
   .cp-game pgn-study > .pgn-container { padding: 0 .9rem 0 .9rem; }
   .cp-game pgn-study.cp-ready > .pgn-study-ribbon { margin-left: .9rem; margin-right: .9rem; }
+}
+
+/* Geniş ekranda (≥ 56em) iki sütun: solda tahta ve düğme şeridi, sağda kayan hamle ve yorum listesi. Dar ekran tek sütun kalır. */
+@media (min-width: 56em) {
+  /* Çerçeve yazı sütunundan taşar (62rem, ekrana sığdığı kadar) ve ortalanır; sağdaki liste yeterince geniş kalır. */
+  .study-frame { --study-pad: 1.25rem; width: min(62rem, calc(100vw - 3rem)); max-width: none; margin-left: 50%; transform: translateX(-50%); }
+  .cp-game pgn-study, .cp-game .pgn-study-loading { height: calc(min(90vh, 44rem) - 6rem); min-height: 26rem; }
+  .cp-game pgn-study { display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 1fr); grid-template-rows: auto 1fr; column-gap: 1.5rem; }
+  .cp-game pgn-study > pgn-player { grid-column: 1; grid-row: 1; }
+  .cp-game pgn-study pgn-player .player-wrapper { --board-size: min(400px, 100cqw); }
+  .cp-game pgn-study.cp-ready > .pgn-study-ribbon { grid-column: 1; grid-row: 2; align-self: start; margin-bottom: 0; }
+  .cp-game pgn-study > .pgn-container { grid-column: 2; grid-row: 1 / -1; padding: 0 .75rem 0 0; }
+  .cp-game .pgn-study-loading { display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 1fr); column-gap: 1.5rem; align-items: start; }
 }

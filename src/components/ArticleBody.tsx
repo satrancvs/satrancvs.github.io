@@ -211,7 +211,7 @@ function GameSection({ item, watchId, watchLabel, onWatch, children }: { item: G
   // bölümü oyuncuları (Elo ile) ve altında "Turnuva, Yer, Yıl" satırını gösterir.
   const info = item.watch || !item.hasRound;
   return (
-    <section id={item.id} className="my-4 border-b border-[#2E2620] scroll-mt-8">
+    <section id={item.id} className={`scroll-mt-8 ${item.study ? 'study-frame' : 'my-4 border-b border-[#2E2620]'}`}>
       {info && (
         <div className="mx-auto mb-4 w-full max-w-[520px] py-2 text-center">
           <h4 className="text-[#F1E9DC]/90">{item.players}</h4>
