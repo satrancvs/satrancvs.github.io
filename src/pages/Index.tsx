@@ -325,7 +325,7 @@ export default function Index() {
         {/* Sağ sütun (md ve üstü): yalnızca mono içerik — telif notu ve atıflar; mobilde alt alta. */}
         <div className="md:col-span-6 reveal md:pt-[4.5rem]">
           <p className="f-mono text-[#C8893E]">Telif hakları</p>
-          <p className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.9] text-[#F1E9DC]/75 mt-4 max-w-xl">Sitede yayınlanan yazıların telif hakları yazarlarına, yayınlama ve çoğaltma yetkisi ise Satranç vs.’ye aittir. Önceden yazılı izin alınmaksızın kısmen veya tamamen kopyalanamaz, çoğaltılamaz ve kaynak gösterilmeden başka platformlarda yayınlanamaz.</p>
+          <p className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.9] text-[#F1E9DC]/75 mt-4 max-w-xl">Sitede yayınlanan yazıların telif hakları yazarlarına, dijital mecrada yayınlama yetkisi ise Satranç vs.’ye aittir. Önceden yazılı izin alınmaksızın kısmen veya tamamen kopyalanamaz, çoğaltılamaz ve kaynak gösterilmeden başka platformlarda yayınlanamaz.</p>
           {/* Atıflar: sitede kullanılan üçüncü taraf yazılım ve görseller (lisans metinleri public/chesspublica/LICENSES.txt). */}
           <div className="mt-10 max-w-xl">
             <p className="f-mono text-[#C8893E]">Atıflar</p>
