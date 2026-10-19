@@ -1,57 +1,62 @@
-import { useEffect, useRef } from 'react';
+import { useState } from 'react';
+import { Mail } from 'lucide-react';
 
-// Sender (sender.net) gömülü formu. Hesap kimliği ve form kimliği herkese açık değerlerdir.
-const SENDER_ACCOUNT = '9750f024779783';
+// Bülten kaydı Sender (sender.net) formuna gider. Sender'ın kendi gömülü formu (iframe) tasarımı sitenin
+// CSS'ine açık olmadığı için form burada çizilir; kayıt, Sender'ın formunun kullandığı herkese açık adrese gönderilir.
+const SENDER_API = 'https://stats.sender.net';
 const SENDER_FORM = 'aKr3VR';
-const SENDER_SRC = 'https://cdn.sender.net/accounts_resources/universal.js';
-const SCRIPT_ID = 'sender-universal';
 
-type SenderWindow = Window & { Sender?: string; sender?: unknown };
+type Status = 'idle' | 'sending' | 'done' | 'error';
 
-// Sender'ın kurulum kodunun karşılığı (https://cdn.sender.net/accounts_resources/universal.js).
-function loadSender() {
-  const w = window as SenderWindow;
-  // Ana sayfaya dönüşte form div'i yeniden oluşur; script eski div'i bulmuş olacağından temiz bir yükleme yapılır.
-  document.getElementById(SCRIPT_ID)?.remove();
-  delete w.sender;
-  w.Sender = 'sender';
-  const q: unknown[] = [];
-  const sender = ((...args: unknown[]) => { q.push(args); }) as ((...a: unknown[]) => void) & { q?: unknown[]; l?: number; on?: (e: string, cb: () => void) => void; listeners?: Record<string, Array<() => void>> };
-  sender.q = q;
-  sender.l = Date.now();
-  sender.on = (event, callback) => {
-    sender.listeners = sender.listeners || {};
-    (sender.listeners[event] = sender.listeners[event] || []).push(callback);
-  };
-  w.sender = sender;
-  const s = document.createElement('script');
-  s.id = SCRIPT_ID;
-  s.async = true;
-  s.src = SENDER_SRC;
-  document.head.appendChild(s);
-  sender(SENDER_ACCOUNT);
-}
-
-// Üçüncü taraf script'i yalnızca form görünür alana yaklaşınca yüklenir (makale sayfalarında hiç yüklenmez).
 export default function NewsletterForm() {
-  const ref = useRef<HTMLDivElement>(null);
+  const [email, setEmail] = useState('');
+  const [status, setStatus] = useState<Status>('idle');
+  const [message, setMessage] = useState('');
 
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    let done = false;
-    const start = () => { if (!done) { done = true; loadSender(); } };
-    if (typeof IntersectionObserver === 'undefined') { start(); return; }
-    const io = new IntersectionObserver((entries) => {
-      if (entries.some((e) => e.isIntersecting)) { io.disconnect(); start(); }
-    }, { rootMargin: '600px 0px' });
-    io.observe(el);
-    return () => io.disconnect();
-  }, []);
+  const submit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (status === 'sending') return;
+    setStatus('sending');
+    setMessage('');
+    try {
+      const res = await fetch(`${SENDER_API}/forms/${SENDER_FORM}/subscribe`, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ email: email.trim(), site_visit: true, url: window.location.href }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || data.success === false) throw new Error(data.message || '');
+      setStatus('done');
+    } catch (err) {
+      setStatus('error');
+      setMessage('Kayıt alınamadı. E-posta adresini kontrol edip tekrar dene.');
+    }
+  };
+
+  if (status === 'done') {
+    return (
+      <div role="status" className="newsletter-form">
+        <p className="f-display text-2xl md:text-3xl">Teşekkürler.</p>
+        <p className="mt-3 text-[#A89A88]">Kaydın alındı. Bir sonraki sayıyı e-postana göndereceğiz.</p>
+      </div>
+    );
+  }
 
   return (
-    <div ref={ref} className="newsletter-form min-h-[3.5rem]">
-      <div className="sender-form-field" data-sender-form-id={SENDER_FORM} />
-    </div>
+    <form onSubmit={submit} className="newsletter-form">
+      <div className="flex flex-col sm:flex-row gap-3">
+        <label htmlFor="em" className="sr-only">E-posta</label>
+        <input id="em" name="email" type="email" required autoComplete="email" maxLength={320} value={email}
+          onChange={(e) => setEmail(e.target.value)} placeholder="e-posta adresin"
+          className="flex-1 min-w-0 h-14 bg-transparent border-b border-[#F1E9DC]/40 focus:border-[#C8893E] outline-none text-lg text-[#F1E9DC] placeholder:text-[#A89A88] transition-colors" />
+        <button type="submit" disabled={status === 'sending'}
+          className="h-14 px-8 rounded-full bg-[#F1E9DC] text-[#0E0C0A] font-semibold inline-flex items-center gap-2 justify-center hover:bg-white transition-colors disabled:opacity-60">
+          <Mail size={18} /> {status === 'sending' ? 'Gönderiliyor…' : 'Abone ol'}
+        </button>
+      </div>
+      <p aria-live="polite" className={`mt-3 text-sm min-h-[1.25rem] ${status === 'error' ? 'text-[#E07A5F]' : 'text-[#A89A88]'}`}>
+        {status === 'error' ? message : 'Gizliliğine değer veriyoruz: e-posta adresin yalnızca bülten için kullanılır, istediğin an abonelikten çıkabilirsin.'}
+      </p>
+    </form>
   );
 }
