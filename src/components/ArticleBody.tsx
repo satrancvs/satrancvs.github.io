@@ -249,6 +249,9 @@ function FenBlock({ fen, ready, crop = false }: { fen: string; ready: boolean; c
   return <div role="img" aria-label="Diyagram" className={`art-fen${crop ? ' art-fen-top' : ''}`} dangerouslySetInnerHTML={{ __html: `<fen>${fen}</fen>` }} />;
 }
 
+// " · " in a quote's source line breaks the line (Frost poem: author/title, then translator).
+const citeLines = (cite: string): ReactNode => cite.split(' · ').flatMap((part, i) => (i ? [<br key={i} />, part] : [part]));
+
 function QuoteWithFigure({ chunk, ready }: { chunk: string; ready: boolean }) {
   const blocks = chunk.split('\n').map((l) => l.replace(/^>\s?/, '')).join('\n').split(/\n\s*\n/).map((b) => b.trim()).filter(Boolean);
   const last = blocks[blocks.length - 1] ?? '';
@@ -261,7 +264,7 @@ function QuoteWithFigure({ chunk, ready }: { chunk: string; ready: boolean }) {
         : FEN_BLOCK.test(b)
         ? <FenBlock key={k} fen={b.match(FEN_BLOCK)![1]} crop={!!b.match(FEN_BLOCK)![2]} ready={ready} />
         : <Markdown key={k} options={{ ...mdOptions, forceBlock: true }}>{b}</Markdown>))}
-      {cite && <footer className="quote-cite f-mono">— {cite}</footer>}
+      {cite && <footer className="quote-cite f-mono">— {citeLines(cite)}</footer>}
     </blockquote>
   );
 }
@@ -329,7 +332,7 @@ function Quote({ children }: { children?: ReactNode }) {
   return (
     <blockquote className="quote">
       {cite ? kids.slice(0, -1) : kids}
-      {cite && <footer className="quote-cite f-mono">— {cite}</footer>}
+      {cite && <footer className="quote-cite f-mono">— {citeLines(cite)}</footer>}
     </blockquote>
   );
 }

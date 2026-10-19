@@ -366,8 +366,10 @@ export function renderInlinePgnReferences(commentText, current, parentNode, orig
 
       return variationRoot.next ? renderInlineVariationText(variationRoot.next) : "";
     } catch (_e) {
-      // Drop invalid inline snippets, same as before.
-      return "";
+      /* Illegal inline line: show an error marker instead of silently
+         deleting the text (patched; <mark> survives the comment sanitizer). */
+      return "<mark>\u26A0 Ge\u00E7ersiz hamle dizisi: " +
+        inner.replace(/&/g, "&amp;").replace(/</g, "&lt;") + "</mark>";
     }
   });
 }

@@ -49,4 +49,17 @@ Masaya otururken sadece rakibimin isminin Yash Watarkar olduğu ve Siyah taşlar
 - ...a3, ...h5-h4 ve ...♗e5 fikirlerinin nasıl birlikte çalıştığını,
 - ve küçük piyon yapısı değişikliklerinin bütün konum değerlendirmesini nasıl değiştirebildiğini izledik.
 
+[Event "GRENKE Açık"]
+[Site "Karlsruhe"]
+[Date "2026.04.02"]
+[Round "1"]
+[White "Yash Watarkar"]
+[Black "Tarık Selbes"]
+[Result "0-1"]
+[WhiteElo "2018"]
+[BlackElo "2246"]
+[Annotator "FM Tarık Selbes"]
+[EventLine "GRENKE Açık - A kategorisi, 02.04.2026"]
+[View "player"]
+
 Devamı gelecek. Kaçırmamak için [bültene abone ol](/#bulten).
