@@ -9,7 +9,7 @@
 ================================================================ */
 
 export var PIECE_THEME =
-  "https://chessboardjs.com/img/chesspieces/wikipedia/{piece}.png";
+  "/chesspublica/pieces/{piece}.png";
 
 export var NBSP = "\u00A0";
 

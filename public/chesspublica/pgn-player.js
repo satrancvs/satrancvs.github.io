@@ -1820,7 +1820,7 @@ class VideoEngine {
 
     this.board = Chessboard(this.boardEl, {
       position:   "start",
-      pieceTheme: "https://chessboardjs.com/img/chesspieces/wikipedia/{piece}.png",
+      pieceTheme: "/chesspublica/pieces/{piece}.png",
       moveSpeed:  200,
       draggable:  true,
       onDragStart: (source, piece) => this.puzzle.canDrag(piece),

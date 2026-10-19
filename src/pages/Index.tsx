@@ -7,6 +7,7 @@ import SiteFooter from '@/components/SiteFooter';
 import FaviconBullet from '@/components/FaviconBullet';
 import ProgressiveImage from '@/components/ProgressiveImage';
 import FenDiagram from '@/components/FenDiagram';
+import { preloadChessPublica } from '@/lib/chesspublica';
 import { ARTICLES, PUBLISHED, articlePath } from '@/data/articles';
 import '../site.css';
 
@@ -116,6 +117,8 @@ export default function Index() {
   }, []);
   // Yazı adresi doğrudan açıldıysa sekme başlığı yazının başlığıdır; yazı sayfası çıkarken onu geri yüklediği için burada sabitliyoruz.
   useEffect(() => { document.title = 'Satranç vs.'; }, []);
+  // Öne çıkanlardaki diyagram için ChessPublica ve taş görselleri sayfa yüklenince boşta önceden indirilir (diyagram ekrana gelince hazır olur).
+  useEffect(() => { if (ARTICLES.some((x) => x.diagram)) preloadChessPublica(); }, []);
   // Yazı sayfasındaki büyük “Satranç vs.” yazısı buraya state={{ top: true }} ile gelir: sayfa başına git.
   const { state } = useLocation();
   useEffect(() => { if ((state as { top?: boolean } | null)?.top) window.scrollTo(0, 0); }, [state]);

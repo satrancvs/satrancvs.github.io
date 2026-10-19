@@ -61,7 +61,10 @@
    .fen-wrap içinde yer alır. Ham FEN metni gizli, tahta kutuyu doldurur. */
 .fen-wrap { width: 100%; display: flex; flex-direction: column; }
 .fen-diagram { position: relative; width: 100%; max-width: min(400px, var(--fen-cap, 400px)); aspect-ratio: 1; }
-.fen-diagram:not(:has(.jc-board)) { background: rgba(241, 233, 220, .03); }
+.fen-diagram:not(:has(.fen-shown)) { background: rgba(241, 233, 220, .03); }
+.fen-loading { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; margin: 0; }
+.fen-stage { opacity: 0; transition: opacity .35s ease; }
+.fen-stage.fen-shown { opacity: 1; }
 /* md ve üstünde (FenDiagram `fill`): tahta kutunun genişliğine kadar (en çok 515 px) büyür; kart yüksekliği tahtaya göre belirlenir. */
 @media (min-width: 768px) {
   .fen-wrap.fen-fill .fen-diagram { max-width: min(515px, var(--fen-cap, 515px)); }

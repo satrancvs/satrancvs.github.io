@@ -22,7 +22,7 @@ export default function FenDiagram({ fen, label, caption, orientation, badge, ar
     if (near || !box.current) return;
     const io = new IntersectionObserver((entries) => {
       if (entries.some((e) => e.isIntersecting)) { setNear(true); io.disconnect(); }
-    }, { rootMargin: '600px 0px' });
+    }, { rootMargin: '1200px 0px' });
     io.observe(box.current);
     return () => io.disconnect();
   }, [near]);
@@ -50,7 +50,24 @@ export default function FenDiagram({ fen, label, caption, orientation, badge, ar
     window.addEventListener('resize', update);
     return () => window.removeEventListener('resize', update);
   }, [caption, size]);
-  const status = useChessPublica(near);
+  const status = useChessPublica(near, { player: false });
+  // Tahta, taş görselleri de yüklenene kadar gizli kalır (yarım çizilmiş tahta görünmesin); o sürede yer tutucuda "Yükleniyor…" yazar.
+  const [shown, setShown] = useState(false);
+  useEffect(() => {
+    if (status !== 'ready' || size === 0 || !box.current) return;
+    let stop = false;
+    const t0 = performance.now();
+    const tick = () => {
+      if (stop) return;
+      const imgs = box.current ? Array.from(box.current.querySelectorAll('img')) : [];
+      const drawn = !!box.current?.querySelector('.jc-board') && imgs.length > 0;
+      if ((drawn && imgs.every((i) => i.complete)) || performance.now() - t0 > 6000) setShown(true);
+      else requestAnimationFrame(tick);
+    };
+    setShown(false);
+    tick();
+    return () => { stop = true; };
+  }, [status, size]);
   // Rozet, karenin sağ üst köşesine biner (tahta siyah tarafından çizildiyse sütun ve sıra ters).
   const cell = size / 8;
   const badgeAt = badge && /^[a-h][1-8]$/.test(badge.square) ? (() => {
@@ -78,8 +95,9 @@ export default function FenDiagram({ fen, label, caption, orientation, badge, ar
   return (
     <div className={`fen-wrap mt-8${fill ? ' fen-fill' : ''}`}>
       <div ref={box} role="img" aria-label={label} className="fen-diagram" style={maxH ? ({ '--fen-cap': `${maxH}px` } as React.CSSProperties) : undefined}>
+        {!shown && status !== 'error' && <p aria-live="polite" className="fen-loading f-mono normal-case text-[#A89A88]/70">Diyagram yükleniyor…</p>}
         {near && size > 0 && (
-          <div key={size} className="absolute left-0 top-0 pointer-events-auto" style={{ width: size, height: size }}>
+          <div key={size} className={`fen-stage absolute left-0 top-0 pointer-events-auto${shown ? ' fen-shown' : ''}`} style={{ width: size, height: size }}>
             <div dangerouslySetInnerHTML={{ __html: `<fen${orientation ? ` orientation="${orientation}"` : ''}>${fen}</fen>` }} />
             {arrowGeom && (
               <svg aria-hidden width={size} height={size} className="absolute left-0 top-0 pointer-events-none" style={{ zIndex: 20 }}>
