@@ -123,7 +123,7 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
 }
 
 // İçindekiler: yazıdaki tüm oyunlar, [Event] başlıklarından otomatik çıkarılır.
-type GameItem = { id: string; key: string; round: string; hasRound: boolean; label: string; result: string; watch: boolean; players: string; place: string };
+type GameItem = { id: string; key: string; round: string; hasRound: boolean; label: string; result: string; watch: boolean; study: boolean; at: number; players: string; place: string };
 type TocItem = { id: string; label: string; markup: string };
 
 function surname(name?: string) {
@@ -135,7 +135,7 @@ const fullName = (name?: string) => (name ?? '').split(',').map((x) => x.trim())
 
 function gameToc(chunks: string[]): GameItem[] {
   const items: GameItem[] = [];
-  chunks.forEach((c) => {
+  chunks.forEach((c, at) => {
     if (!c.trim().startsWith('[Event ')) return;
     const t = parseTags(c);
     const n = items.length + 1;
@@ -144,6 +144,8 @@ function gameToc(chunks: string[]): GameItem[] {
       id: `oyun-${t.Round || n}${watch ? '-izle' : ''}`,
       key: gameKey(c),
       watch,
+      study: STUDY_TAG.test(c),
+      at,
       // Turnuva, yer, yıl; art arda aynı değer (örn. Event ve Site aynıysa) bir kez yazılır.
       place: t.EventLine || [t.Event, t.Site, (t.Date ?? '').match(/^\d{4}/)?.[0]].filter((v, i, a) => v && v !== a[i - 1]).join(', '),
       players: `${fullName(t.White)}${t.WhiteElo ? ` (${t.WhiteElo})` : ''} – ${fullName(t.Black)}${t.BlackElo ? ` (${t.BlackElo})` : ''}`,
@@ -204,7 +206,7 @@ function Toc({ items, onGo }: { items: TocItem[]; onGo: (id: string) => void }) 
 }
 
 // Oyun bölümü: tur başlığı ve altında oyun (her zaman açık).
-function GameSection({ item, watchId, onWatch, children }: { item: GameItem; watchId?: string; onWatch?: (id: string) => void; children: React.ReactNode }) {
+function GameSection({ item, watchId, watchLabel, onWatch, children }: { item: GameItem; watchId?: string; watchLabel?: string; onWatch?: (id: string) => void; children: React.ReactNode }) {
   // [Round] etiketi olan oyunlar turnuva listesi biçiminde (N. tur, oyuncular, sonuç) başlar; etiketi olmayan oyunlar ve izleme
   // bölümü oyuncuları (Elo ile) ve altında "Turnuva, Yer, Yıl" satırını gösterir.
   const info = item.watch || !item.hasRound;
@@ -225,7 +227,7 @@ function GameSection({ item, watchId, onWatch, children }: { item: GameItem; wat
         <div className="mb-4 flex justify-center">
           <button type="button" onClick={() => onWatch(watchId)}
             className="f-mono h-9 rounded-full border border-[#2E2620] px-5 text-[#C8893E] transition-colors hover:bg-[#1A1512]">
-            Oyunu izle ↓
+            {watchLabel ?? 'Oyunu izle'} ↓
           </button>
         </div>
       )}
@@ -469,13 +471,17 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       const { moves, own } = gameMoves(chunks, i);
       // Aynı oyunun yazının sonunda oynatıcılı (View "player") bir bölümü varsa, metin halinin başlığına oraya kaydıran bir düğme konur.
       const watchItem = !item.watch ? games.find((g) => g.watch && g.key === item.key) : undefined;
+      // Düğme, izleme bölümünün hemen önünde "###" başlığı varsa (Oyunu izleyin / Oyunu inceleyin) o başlığa kaydırır, yoksa bölümün kendisine.
+      const watchTarget = watchItem && chunks[watchItem.at - 1]?.trim().startsWith('### ')
+        ? toc[chunks.slice(0, watchItem.at - 1).filter((x) => x.trim().startsWith('### ')).length]?.id ?? watchItem.id
+        : watchItem?.id;
       const game = useFallback
         ? <Game header={c} moves={moves} />
         : <PgnGame header={c} moves={moves} />;
       // <pgn> (oynatıcısız) oyunlar bir başlangıç FEN'inden başlıyorsa, hamle metninin üstünde o konum bir diyagramla gösterilir.
       const startFen = !useFallback && !WATCH_TAG.test(c) && !puzzleSide(c, moves) ? c.match(/\[FEN\s+"([^"]+)"\]/i)?.[1] : undefined;
       out.push(
-        <GameSection key={i} item={item} watchId={watchItem?.id} onWatch={(id) => scrollToGame(id, true)}>
+        <GameSection key={i} item={item} watchId={watchTarget} watchLabel={watchItem?.study ? 'Oyunu incele' : undefined} onWatch={(id) => scrollToGame(id, true)}>
           {startFen && <FenBlock fen={startFen} ready={cp === 'ready'} />}
           {game}
         </GameSection>,
