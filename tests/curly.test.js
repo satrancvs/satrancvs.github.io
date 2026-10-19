@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { toCurly, toEmDashes, toHalves, toTypography } from '../src/lib/curly.js';
+import { keepEllipsisWithMove, toCurly, toEmDashes, toHalves, toTypography } from '../src/lib/curly.js';
 
 test('apostrophes close, quotes open after whitespace and brackets', () => {
   assert.equal(toCurly("İstanbul'da"), 'İstanbul’da');
@@ -34,4 +34,12 @@ test('"1/2" inside a longer number, a date, a path or a word is left alone', () 
 
 test('toTypography applies quotes, dashes and halves together', () => {
   assert.equal(toTypography('"Berabere" dedi: 1/2-1/2'), '“Berabere” dedi: ½-½');
+});
+
+test("Black's dots stay with the move: no-break space or word joiner, ordinary prose still wraps", () => {
+  assert.equal(keepEllipsisWithMove('…♘c6'), '…\u2060♘c6');
+  assert.equal(keepEllipsisWithMove('12… ♗e6'), '12…\u00a0♗e6');
+  assert.equal(keepEllipsisWithMove('3... f5 ve ...Rxe5 ile …O-O'), '3...\u00a0f5 ve ...\u2060Rxe5 ile …\u2060O-O');
+  assert.equal(keepEllipsisWithMove('bekleyince… sonra, Rakip… bakıma…'), 'bekleyince… sonra, Rakip… bakıma…');
+  assert.equal(toTypography('1… e5’i'), '1…\u00a0e5’i');
 });

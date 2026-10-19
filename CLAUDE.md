@@ -33,6 +33,7 @@ ChessPublica drops or mangles text it cannot parse, so every game that is added 
   Config is `push.config.json` (empty until notifications are set up).
 - `src/lib/curly.js` (+ `tests/curly.test.js`) and `src/lib/curly-dom.ts`: curly quotes, em dashes and "1/2" → "½" for
   article prose and PGN comments (never move text). Run the tests with `pnpm test`.
+  `keepEllipsisWithMove` (part of `toTypography`): Black's "…" / "..." never ends a line before its move (`…♘c6`, `12… ♗e6`): a space after it becomes a no-break space, no space gets a word joiner U+2060. Only before something that reads as a move, so ordinary prose with "…" still wraps; `study-fix.ts` accepts both characters between a move number and its move.
 - Still to port if wanted: `scripts/check_content_links.rb`, `scripts/build-assets.mjs` (Jekyll-specific), other tests.
 - `<pgn-player>` (puzzle view): `public/chesspublica/pgn-player.js` + `helpers.js`, `pgn.js`, `icons.js`, `board.js` are copied verbatim from ChessPublica's `assets/`; the bundle's own `<pgn-player>` definition was removed so the module can define it. Games with a `[P]`/`[Pn]` comment render as `<pgn-player>` (`PgnGame` in `ArticleBody.tsx`), others as `<pgn>`.
 - `src/lib/localize-dom.ts` (port of the old `localize.js`): translates the player's hardcoded English UI strings (puzzle hint, "show solution", settings buttons). If ChessPublica changes those strings or class names (`.puzzle-hint-text`, `.puzzle-hint-btn`), update it. The old "Puzzle solved!" patch is not ported: this `pgn-player.js` has no such string.

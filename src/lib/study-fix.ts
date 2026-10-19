@@ -121,7 +121,7 @@ function linkProseMoves(study: Element) {
         if (m[1] !== undefined) {
           const no = Number(m[1]);
           const black = m[2] !== '.';
-          const adjacent = run && lastEnd >= 0 && /^[\s\u00a0]*$/.test(text.slice(lastEnd, index));
+          const adjacent = run && lastEnd >= 0 && /^[\s\u00a0\u2060]*$/.test(text.slice(lastEnd, index));
           const expected = run ? Number(run.fen().split(' ')[5]) : 0; // sıradaki tam hamle numarası
           const continues = run && (run.turn() === 'b') === black && no === expected;
           if (!(adjacent || continues)) {
@@ -135,7 +135,7 @@ function linkProseMoves(study: Element) {
         if (!armed || (!run && !pending.length)) continue;
         // Hamle, sayı işaretinden ya da önceki hamleden yalnızca boşlukla ayrılmış olmalı.
         const since = lastEnd >= 0 && lastEnd > markEnd ? lastEnd : markEnd;
-        if (since < 0 || !/^[\s\u00a0]*$/.test(text.slice(since, index))) { armed = false; continue; }
+        if (since < 0 || !/^[\s\u00a0\u2060]*$/.test(text.slice(since, index))) { armed = false; continue; }
         let res: { from: string; to: string } | null = null;
         if (!run) {
           for (const g of pending) {
