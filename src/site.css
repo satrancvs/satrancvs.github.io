@@ -135,8 +135,8 @@
 /* <pgn-study> ([View "study"]): her genişlikte tek sütun. Üstte tahta, altında geri/ileri düğmeleri, altında kayan hamle ve yorum listesi.
    ChessPublica'nın iki sütunlu 90vw paneli yerine yazı sütunu kadar geniş sabit yükseklikli bir kutudur. Eski sitedeki study.css'in mobil düzeni. */
 .cp-game pgn-study {
-  --frame-pad: 1rem; font-size: 100%; display: flex; flex-direction: column; width: 100%; max-width: 44rem; margin: 0 auto;
-  height: min(90vh, 52rem); padding: 1rem 1rem .6rem; box-sizing: border-box; overflow: hidden;
+  --study-pad: 1rem; --frame-pad: 1rem; font-size: 100%; display: flex; flex-direction: column; width: 100%; max-width: 44rem; margin: 0 auto;
+  height: min(90vh, 52rem); min-height: 38rem; padding: 1rem var(--study-pad) .6rem; box-sizing: border-box; overflow: hidden;
   border: 1px solid #2E2620; border-radius: 6px; background: #14110E; color: #F1E9DC;
 }
 .cp-game pgn-study > .pgn-study-mobile-title,
@@ -144,7 +144,8 @@
 .cp-game pgn-study .pgn-study-move-picker { display: none; }
 .cp-game pgn-study > pgn-player {
   flex: 0 0 auto; overflow: hidden; container-type: inline-size; width: 100%; margin: 0; display: block;
-  --board-size: min(400px, 94cqw, 42vh);
+  /* Yazıdaki diyagramla aynı boy: min(400px, sütunun %94'ü). cqw oyuncunun genişliğidir; panelin 2 × (yan dolgu + 1px çerçeve) payı eklenir. */
+  --board-size: min(400px, calc(94cqw + var(--study-pad) * 1.88 + 2px));
 }
 .cp-game pgn-study pgn-player .player-wrapper { min-height: 0; margin: 0 auto; }
 .cp-game pgn-study > .pgn-container {
@@ -175,3 +176,9 @@
 .cp-game .pgn-study-loading { width: 100%; max-width: 44rem; height: min(90vh, 52rem); margin: 0 auto; padding: 1rem; display: flex; flex-direction: column; box-sizing: border-box; border: 1px solid #2E2620; background: #14110E; }
 .cp-game .pgn-study-loading-board { width: 100%; max-width: 400px; margin: 0 auto; }
 .cp-game .pgn-study-loading-side { color: #A89A88; }
+/* Dar ekranda panelin yan dolgusu yok: tahta yazıdaki diyagramla aynı boyda (sütunun %94'ü) sığsın; liste ve şerit kendi dolgusunu taşır. */
+@media (max-width: 640px) {
+  .cp-game pgn-study { --study-pad: 0px; }
+  .cp-game pgn-study > .pgn-container { padding: 0 .9rem 0 .9rem; }
+  .cp-game pgn-study.cp-ready > .pgn-study-ribbon { margin-left: .9rem; margin-right: .9rem; }
+}
