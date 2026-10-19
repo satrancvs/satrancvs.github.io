@@ -83,6 +83,12 @@ function articlePages() {
           fs.mkdirSync(dir, { recursive: true });
           fs.writeFileSync(path.join(dir, 'index.html'), html);
           urls.push(url);
+          // Eski adresler (`oldSlugs`): yeni adrese yönlendiren küçük bir sayfa (arama motorları için canonical, tarayıcı için refresh + script).
+          for (const old of a.oldSlugs ?? []) {
+            const oldDir = path.join(outDir, old);
+            fs.mkdirSync(oldDir, { recursive: true });
+            fs.writeFileSync(path.join(oldDir, 'index.html'), `<!doctype html>\n<html lang="tr"><head><meta charset="utf-8" /><title>${esc(title)}</title><link rel="canonical" href="${url}" /><meta http-equiv="refresh" content="0; url=/${a.slug}/" /><meta name="robots" content="noindex" /><script>location.replace(${JSON.stringify(`/${a.slug}/`)} + location.hash);</script></head><body><a href="${url}">${esc(title)}</a></body></html>\n`);
+          }
         }
         const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${u}</loc></url>`).join('\n')}\n</urlset>\n`;
         fs.writeFileSync(path.join(outDir, 'sitemap.xml'), xml);

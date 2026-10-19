@@ -82,7 +82,8 @@
   },
   {
     "id": "gomori",
-    "slug": "eugen-gomoriden-alti-ustaya-tek-bir-soru",
+    "slug": "1926-yilindan-nasil-usta-oldum",
+    "oldSlugs": ["eugen-gomoriden-alti-ustaya-tek-bir-soru"],
     "cat": "Satranç tarihi",
     "title": "1926 yılından: \"Nasıl usta oldum?\"",
     "author": "Eugen Gömöri",
@@ -95,7 +96,8 @@
   },
   {
     "id": "mugla",
-    "slug": "ammandan-mugladan-turkiyede-reytingler-aldatici-mi",
+    "slug": "ammandan-muglaya-turkiyede-reytingler-aldatici-mi",
+    "oldSlugs": ["ammandan-mugladan-turkiyede-reytingler-aldatici-mi"],
     "cat": "Analizli oyun",
     "title": "Amman'dan Muğla'ya: Türkiye'de reytingler aldatıcı mı?",
     "dek": "Satranç tahtasında 1653 reytingli bir oyuncunun ünvanlı bir ustaya karşı şansı var mı? Ürdünlü Büyük Usta Al-Khatib’den Türkiye’ye kısa bir bakış.",
