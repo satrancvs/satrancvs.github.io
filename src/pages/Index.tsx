@@ -31,12 +31,12 @@ const authorCount = (name: string) => {
 
 // "Hakkında" bölümündeki atıflar (inline Markdown). Yeni bir üçüncü taraf yazılım/görsel eklenince buraya ve public/chesspublica/LICENSES.txt'ye eklenir.
 const ATTRIBUTIONS = [
-  // Büyük harfli mono stilde yabancı adlar <span lang="en"> ile işaretlenir (Türkçe İ yerine I).
-  'Oyun ve diyagramlar: [<span lang="en">ChessPublica</span>](https://chesspublica.github.io/) (MIT) ve içindeki [<span lang="en">jQuery</span>](https://jquery.com/) (MIT), [chess.js](https://github.com/jhlywa/chess.js) (BSD-2-Clause) ve [chessboard.js](https://chessboardjs.com/) (MIT, © <span lang="en">Chris Oakman</span>). [Lisans metinleri](/chesspublica/LICENSES.txt).',
-  'Satranç taşı görselleri: [<span lang="en">Colin M.L. Burnett</span>](https://commons.wikimedia.org/wiki/User:Cburnett) (Cburnett), <span lang="en">Wikimedia Commons</span> aracılığıyla, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.tr).',
-  'Yazı tipleri: [Fraunces](https://fonts.google.com/specimen/Fraunces), [Manrope](https://fonts.google.com/specimen/Manrope) ve [<span lang="en">JetBrains Mono</span>](https://fonts.google.com/specimen/JetBrains+Mono) (<span lang="en">SIL Open Font License</span>), <span lang="en">Google Fonts</span> aracılığıyla.',
-  'Simgeler: [<span lang="en">Lucide</span>](https://lucide.dev/) (ISC).',
-  'Fotoğraflar: Künyeler (fotoğrafçı, kaynak, lisans) her fotoğrafın altında yer alır.',
+  // Kısa, madde işaretli liste; büyük harfli mono stilde yabancı adlar <span lang="en"> ile işaretlenir (Türkçe İ yerine I).
+  '[<span lang="en">ChessPublica</span>](https://chesspublica.github.io/), [<span lang="en">jQuery</span>](https://jquery.com/), [chessboard.js](https://chessboardjs.com/) (MIT) · [chess.js](https://github.com/jhlywa/chess.js) (BSD-2) · [Lisans metinleri](/chesspublica/LICENSES.txt)',
+  'Taş görselleri: [<span lang="en">Colin M.L. Burnett</span>](https://commons.wikimedia.org/wiki/User:Cburnett) ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.tr))',
+  'Yazı tipleri: [Fraunces](https://fonts.google.com/specimen/Fraunces), [Manrope](https://fonts.google.com/specimen/Manrope), [<span lang="en">JetBrains Mono</span>](https://fonts.google.com/specimen/JetBrains+Mono) (<span lang="en">SIL OFL</span>)',
+  'Simgeler: [<span lang="en">Lucide</span>](https://lucide.dev/) (ISC)',
+  'Fotoğraflar: künyeler her fotoğrafın altında',
 ];
 
 const CORNERS = Array.from(new Set(PUBLISHED.map((a) => a.cat)));
@@ -327,9 +327,9 @@ export default function Index() {
           <p className="f-mono text-[#C8893E]">Telif hakları</p>
           <p className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.9] text-[#F1E9DC]/75 mt-4 max-w-xl">Sitede yayınlanan yazıların telif hakları yazarlarına, yayınlama ve çoğaltma yetkisi ise Satranç vs.’ye aittir. Önceden yazılı izin alınmaksızın kısmen veya tamamen kopyalanamaz, çoğaltılamaz ve kaynak gösterilmeden başka platformlarda yayınlanamaz.</p>
           {/* Atıflar: sitede kullanılan üçüncü taraf yazılım ve görseller (lisans metinleri public/chesspublica/LICENSES.txt). */}
-          <div className="mt-12 max-w-xl">
+          <div className="mt-10 max-w-xl">
             <p className="f-mono text-[#C8893E]">Atıflar</p>
-            <ul className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.9] mt-4 space-y-3 text-[#A89A88] list-none p-0">
+            <ul className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.8] mt-3 space-y-1 text-[#A89A88] list-disc pl-5 marker:text-[#C8893E]">
               {ATTRIBUTIONS.map((t, i) => (
                 <li key={i}><Markdown options={{ forceInline: true, overrides: { a: { props: { className: 'underline underline-offset-2 hover:text-[#F1E9DC]', target: '_blank', rel: 'noreferrer' } } } }}>{t}</Markdown></li>
               ))}
