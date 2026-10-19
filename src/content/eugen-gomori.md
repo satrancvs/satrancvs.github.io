@@ -2,7 +2,7 @@ Satranç ustası olmak, en nadir, özel ve ilginç mesleklerden biri. Prof. Dr. 
 
 ### Alexander Alekhine
 
-![Alexander Alekhine](images/alekhine-1913.jpg "“Новое Время” (Yeni Zaman) Gazetesi, Eylül 1913 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Alexander_Alekhine_in_1913.jpeg)")
+![Alexander Alekhine](images/alekhine-1913.jpg "Fotoğraf: “Новое Время” (Yeni Zaman) Gazetesi, Eylül 1913 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Alexander_Alekhine_in_1913.jpeg)")
 
 > Öncelikle gerçeği aramak ve ondan sonra da mücadele unsuru nedeniyle satranç ustası oldum.
 >
@@ -16,7 +16,7 @@ Satranç ustası olmak, en nadir, özel ve ilginç mesleklerden biri. Prof. Dr. 
 
 ### Aron Nimzowitsch
 
-![Aron Nimzowitsch](images/nimzowitsch.jpg "“Избранные партии международного турнира в Карлсбаде” (Karlsbad Uluslararası Satranç Turnuvası’ndan Seçilmiş Oyunlar) kitabından, 1929 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Aron_Nimzowitsch2.jpg)")
+![Aron Nimzowitsch](images/nimzowitsch.jpg "Fotoğraf: “Избранные партии международного турнира в Карлсбаде” (Karlsbad Uluslararası Satranç Turnuvası’ndan Seçilmiş Oyunlar) kitabından, 1929 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Aron_Nimzowitsch2.jpg)")
 
 > Satranç hayatın bir aynasıdır, satranççıların dünyasından başka hiçbir yerde fanatizm -esasen çok hakir gördüğüm bir şey- bu ölçüde çiçek açmış ve serpilmemiştir. Kısmen şaka yollu diyebilirim ki benim için yıllar içerisinde bir ihtiyaç haline gelen insan toplumuna karşı “antipatime” daha yoğun bir hedef bulmak için satranç oynuyorum ve bu yüzden usta oldum. Mizahı bir kenara bırakırsak şöyle derim:
 >
@@ -28,7 +28,7 @@ Satranç ustası olmak, en nadir, özel ve ilginç mesleklerden biri. Prof. Dr. 
 
 ### Richard Réti
 
-![Richard Réti](images/reti.jpg "64 (Sovyet satranç dergisi), 1925 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Richard_Reti.jpg)")
+![Richard Réti](images/reti.jpg "Fotoğraf: 64 (Sovyet satranç dergisi), 1925 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Richard_Reti.jpg)")
 
 > Gençliğimde sevdiğim iki uğraş vardı: matematik ve satranç. İlgimi matematiğe değil de satranca yöneltmem hususunda beni harekete geçiren şey satrancın matematiğe göre daha canlı ve yaşama dair olmasıdır. Bilmeyenlere tuhaf veya paradoksal görünecek bir neden. Matematik derken genel, pratik matematikten değil tamamen spekülatif bir karaktere sahip, sonlu ve sonsuz elemanlara sahip kümeler ve onların oluşturdukları yapılar ile ilgilenen modern matematikten bahsediyorum.
 >
@@ -42,7 +42,7 @@ Satranç ustası olmak, en nadir, özel ve ilginç mesleklerden biri. Prof. Dr. 
 
 ### Akiba Rubinstein
 
-![Akiba Rubinstein](images/rubinstein-1908.jpg "<span lang="de">Deutsche Schachzeitung</span> (Alman Satranç Gazetesi) Ocak, 1908 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Akiba-Rubinstein.png)")
+![Akiba Rubinstein](images/rubinstein-1908.jpg "Fotoğraf: <span lang="de">Deutsche Schachzeitung</span> (Alman Satranç Gazetesi) Ocak, 1908 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Akiba-Rubinstein.png)")
 
 > Satranç bana on dört yaşında, okulda gösterilmişti. On altı yaşında teoriyle ilgilenmeye başladım. Daha sonra büyük üstat Salwe’nin yaşadığı Lodz’a gitmem bana öğütlendi. Gelişimimi orada tamamladım, diyebilirim ki Salwe’nin yanında çıraklığımı yaptım. Böylece usta oldum.
 >
@@ -56,7 +56,7 @@ Satranç ustası olmak, en nadir, özel ve ilginç mesleklerden biri. Prof. Dr. 
 
 ### Rudolf Spielmann
 
-![Rudolf Spielmann](images/spielmann.jpg "Polonya Ulusal Dijital Arşivi, 1950 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:%D0%A0%D1%83%D0%B4%D0%BE%D0%BB%D1%8C%D1%84_%D0%A8%D0%BF%D1%96%D0%BB%D1%8C%D0%BC%D0%B0%D0%BD.jpg)")
+![Rudolf Spielmann](images/spielmann.jpg "Fotoğraf: Polonya Ulusal Dijital Arşivi, 1950 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:%D0%A0%D1%83%D0%B4%D0%BE%D0%BB%D1%8C%D1%84_%D0%A8%D0%BF%D1%96%D0%BB%D1%8C%D0%BC%D0%B0%D0%BD.jpg)")
 
 > Önceleri bir iş adamıydım, ama daha sonra mesleğimde ilerleyemeyeceğimi gördüm ve aşama aşama bana daha fazla başarı vadeden satranca geçiş yaptım.
 >
