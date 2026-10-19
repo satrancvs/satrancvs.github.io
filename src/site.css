@@ -202,5 +202,5 @@
   .cp-game .pgn-study-loading { display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 1fr); column-gap: 1.5rem; align-items: start; }
 }
 
-/* Yorum metnindeki tıklanabilir hamleler (study-fix.ts linkProseMoves): düz yazıda, altı noktalı çizgili. */
-.cp-game pgn-study .cp-prose-move { cursor: pointer; border-radius: 3px; text-decoration: underline dotted #C8893E; text-underline-offset: 3px; }
+/* Yorum metnindeki tıklanabilir hamleler (study-fix.ts linkProseMoves): düz yazıdan ayırt edilmez, imleç el olur; üzerine gelince/etkinken study'nin .pgn-move vurgusu. */
+.cp-game pgn-study .cp-prose-move { cursor: pointer; border-radius: 3px; }
