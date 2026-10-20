@@ -301,7 +301,11 @@ function Figure({ chunk }: { chunk: string }) {
 
 // YouTube videosu: markdown'daki <figure class="video-embed"> bloğundan video kimliği, başlangıç (`start`) ve isteğe bağlı bitiş (`end`) saniyesi,
 // başlık ve açıklama okunur; gizlilik dostu youtube-nocookie alan adıyla gömülü oynatıcı çizilir.
+// `<figure data-poster="/images/…">` varsa önce o kapak görseli ve bir oynat düğmesi gösterilir; YouTube oynatıcısı (ve
+// onun kapak görseli, "More videos" şeridi) yalnızca düğmeye basılınca yüklenir ve kendiliğinden oynar.
 function Video({ chunk }: { chunk: string }) {
+  const poster = chunk.match(/<figure[^>]*\bdata-poster="([^"]+)"/)?.[1];
+  const [started, setStarted] = useState(!poster);
   const id = chunk.match(/embed\/([\w-]+)(?:\?start=(\d+)(?:&(?:amp;)?end=(\d+))?)?/);
   if (!id) return null;
   const title = chunk.match(/<iframe[^>]*\btitle="([^"]*)"/)?.[1] ?? 'YouTube videosu';
@@ -312,20 +316,29 @@ function Video({ chunk }: { chunk: string }) {
     .filter(Boolean);
   // rel=0: öneriler yalnızca aynı kanaldan; iv_load_policy=3: video üstü notlar kapalı; playsinline: iPhone'da tam ekrana geçmeden oynar.
   const embedQuery = `?${[id[2] && `start=${id[2]}`, id[3] && `end=${id[3]}`, 'rel=0', 'iv_load_policy=3', 'playsinline=1'].filter(Boolean).join('&')}`;
-  const src = `https://www.youtube-nocookie.com/embed/${id[1]}${embedQuery}`;
+  const src = `https://www.youtube-nocookie.com/embed/${id[1]}${embedQuery}${poster ? '&autoplay=1' : ''}`;
   const href = `https://www.youtube.com/watch?v=${id[1]}${id[2] ? `&t=${id[2]}s` : ''}`;
   return (
     <figure className="my-10 mx-auto w-full md:max-w-[600px]">
       <div className="relative w-full overflow-hidden bg-black" style={{ aspectRatio: '16 / 9' }}>
-        <iframe
-          src={src}
-          title={title}
-          loading="lazy"
-          allowFullScreen
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          className="absolute inset-0 h-full w-full border-0"
-        />
+        {started ? (
+          <iframe
+            src={src}
+            title={title}
+            loading="lazy"
+            allowFullScreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            className="absolute inset-0 h-full w-full border-0"
+          />
+        ) : (
+          <button type="button" onClick={() => setStarted(true)} aria-label={`Videoyu oynat: ${title}`} className="group absolute inset-0 block h-full w-full cursor-pointer border-0 p-0">
+            <img src={poster} alt="" loading="lazy" className="h-full w-full object-cover" />
+            <span className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-black/60 text-[#F1E9DC] transition-colors group-hover:bg-black/80 group-focus-visible:bg-black/80">
+              <svg viewBox="0 0 24 24" className="ml-1 h-7 w-7" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+            </span>
+          </button>
+        )}
       </div>
       <figcaption className="credit mt-3 text-[#A89A88]">
         <Markdown options={captionOptions}>{capLines.map((l) => (/[.!?…]$/.test(l.replace(/<[^>]+>/g, '')) ? l : `${l}.`)).join(' ')}</Markdown>{' '}
