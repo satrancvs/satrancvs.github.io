@@ -8,6 +8,7 @@ import { watchInlinePlay } from '@/lib/inline-play';
 import { watchLocalization } from '@/lib/localize-dom';
 import { watchStudy } from '@/lib/study-fix';
 import { watchVariationFix } from '@/lib/variation-fix';
+import { splitChunks } from '@/lib/split-chunks';
 
 // Makale gövdesi: markdown metni + PGN oyun blokları + çapraz tablo + video bağlantısı.
 
@@ -89,6 +90,13 @@ const STUDY_TAG = /^\[View\s+"study"\]\s*$/im;
 // ChessPublica'ya geçirilmez.
 const EVENT_LINE_TAG = /^\[EventLine\s+"[^"]*"\]\s*$/im;
 
+// Oyun yorumlarında (`{ … }`): `### Başlık` satırı başlık (`.cp-heading`, İçindekiler'e girer), boş satır paragraf ayracıdır.
+// ChessPublica yorumlarda yalnızca satır içi etiketlere izin verir; başlık bu yüzden class'ı izinli bir <span>'dır (bkz. docs/chesspublica-quirks.md).
+const COMMENT_HEADING = /(^|\n)[ \t]*###[ \t]+([^\n]+)\n*/g;
+const commentMarkup = (movetext: string) =>
+  movetext.replace(/\{([^}]*)\}/g, (_, body: string) =>
+    `{${body.replace(COMMENT_HEADING, (_m, pre: string, title: string) => `${pre}<span class="cp-heading">${title.trim()}</span> `).replace(/\n[ \t]*\n\s*/g, '<br><br>')}}`);
+
 function PgnGame({ header, moves }: { header: string; moves: string }) {
   // [View "player"] etiketi oyunu (bulmaca işareti olmasa da) <pgn-player> ile çizdirir; ChessPublica'ya geçirilmez.
   const watch = WATCH_TAG.test(header);
@@ -103,7 +111,8 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
   const intro = lead?.[1].replace(/\[D\]/g, '').trim();
   // <pgn-study>'de bulmaca olmaz: [P] işaretleri silinir.
   const text = study ? movetext.replace(/\{\s*\[P\s*\d*\]\s*\}|\[P\s*\d*\]/g, '') : movetext;
-  const raw = `${head}\n\n${text.trim()}`.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+  // Etiketler (başlık <span>'ı, <br>) kaçışlandıktan SONRA eklenir: <pgn> içeriğini innerHTML ile okur, etiketler böyle gerçek etiket olarak ChessPublica'ya ulaşır.
+  const raw = commentMarkup(`${head}\n\n${text.trim()}`.replace(/&/g, '&amp;').replace(/</g, '&lt;'));
   const box = useRef<HTMLDivElement>(null);
   const [near, setNear] = useState(() => typeof window === 'undefined' || typeof IntersectionObserver === 'undefined' || !!window.location.hash);
   useEffect(() => {
@@ -124,7 +133,8 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
 
 // İçindekiler: yazıdaki tüm oyunlar, [Event] başlıklarından otomatik çıkarılır.
 type GameItem = { id: string; key: string; round: string; hasRound: boolean; label: string; result: string; watch: boolean; study: boolean; at: number; players: string; place: string };
-type TocItem = { id: string; label: string; markup: string };
+// `chunk`: başlığın geçtiği paragraf; `at`: İçindekiler'in (ilk öğe için) önüne konacağı paragraf; `game`: oyun yorumundaki başlıkta, oyun bölümünün kimliği.
+type TocItem = { id: string; label: string; markup: string; chunk: number; at: number; game?: string };
 
 function surname(name?: string) {
   return (name ?? '').split(',')[0].trim();
@@ -172,16 +182,24 @@ function slugify(text: string) {
 const headingText = (chunk: string) => chunk.replace(/^###\s+/, '').trim();
 const headingLabel = (chunk: string) => headingText(chunk).replace(/[*_]/g, '');
 
-function sectionToc(chunks: string[]): TocItem[] {
+function sectionToc(chunks: string[], games: GameItem[]): TocItem[] {
   const seen = new Set<string>();
   const items: TocItem[] = [];
-  chunks.forEach((c) => {
-    if (!c.trim().startsWith('### ')) return;
-    const label = headingLabel(c.trim());
+  const add = (label: string, markup: string, chunk: number, at: number, game?: string) => {
     let id = slugify(label) || `bolum-${items.length + 1}`;
     while (seen.has(id)) id += '-2';
     seen.add(id);
-    items.push({ id, label, markup: headingText(c.trim()) });
+    items.push({ id, label, markup, chunk, at, game });
+  };
+  chunks.forEach((raw, i) => {
+    const c = raw.trim();
+    if (c.startsWith('### ')) return add(headingLabel(c), headingText(c), i, i);
+    // Oyun yorumlarındaki "### Başlık" satırları (hamle metni paragrafı, başlık paragrafından sonra gelir).
+    const game = chunks[i - 1]?.trim().startsWith('[Event ') && MOVETEXT_START.test(c) ? games.find((g) => g.at === i - 1) : undefined;
+    if (!game) return;
+    for (const m of c.matchAll(/\{([^}]*)\}/g)) {
+      for (const h of m[1].matchAll(/(?:^|\n)[ \t]*###[ \t]+([^\n]+)/g)) add(h[1].replace(/[*_]/g, '').trim(), h[1].trim(), i, i - 1, game.id);
+    }
   });
   return items;
 }
@@ -379,7 +397,7 @@ const mdOptions = {
 // Markdown dosyasını paragraf bloklarına böler. Giriş (dek) metni articles.json'dan gelir;
 // dosyanın hiçbir paragrafı sayfadan ayrılmaz.
 export function splitArticle(md: string) {
-  return { chunks: md.trim().split(/\n\s*\n/) };
+  return { chunks: splitChunks(md) };
 }
 
 // Oyunun hamle metni başlıktan sonraki paragraftır. [View "player"] başlığının ardından hamle metni gelmiyorsa
@@ -410,22 +428,23 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
   // ChessPublica yüklenemezse eski düz metin görünümüne düşülür.
   const useFallback = cp === 'error';
   const games = gameToc(chunks);
-  const toc = sectionToc(chunks);
-  let headingNo = 0;
+  const toc = sectionToc(chunks, games);
   // Tembel yüklenen fotoğraflar kaydırma sırasında sayfa yüksekliğini değiştirir; bu yüzden kaydırma
   // bittikten sonra konum (scroll-mt-8 = 32 px) gerekirse yeniden düzeltilir.
-  const scrollToGame = (id: string, smooth: boolean) => {
-    const go = (behavior: ScrollBehavior) => document.getElementById(id)?.scrollIntoView({ behavior, block: 'start' });
+  // `fallback`: oyun yorumundaki başlık oyun henüz kurulmadıysa (tembel yükleme) önce oyun bölümüne gidilir; başlık çizilince konum düzeltilir.
+  const scrollToGame = (id: string, smooth: boolean, fallback?: string) => {
+    const find = () => document.getElementById(id) ?? (fallback ? document.getElementById(fallback) : null);
+    const go = (behavior: ScrollBehavior) => find()?.scrollIntoView({ behavior, block: 'start' });
     go(smooth ? 'smooth' : 'auto');
     [900, 1800].forEach((ms) =>
       window.setTimeout(() => {
-        const el = document.getElementById(id);
+        const el = find();
         if (el && Math.abs(el.getBoundingClientRect().top - 32) > 4) go('auto');
       }, ms),
     );
   };
   const goTo = (id: string) => {
-    scrollToGame(id, true);
+    scrollToGame(id, true, toc.find((t) => t.id === id)?.game);
     window.history.replaceState(null, '', `#${id}`);
   };
   let gameNo = 0;
@@ -445,7 +464,12 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     const stopInlinePlay = watchInlinePlay(el);
     const stopVariationFix = watchVariationFix(el);
     const stopStudy = watchStudy(el);
-    return () => { stopCurly(); stopLocalize(); stopInlinePlay(); stopVariationFix(); stopStudy(); };
+    // Oyun yorumlarındaki başlıklara (.cp-heading) İçindekiler'deki kimlik verilir (sectionToc ile aynı slugify).
+    const idHeadings = () => el.querySelectorAll('.cp-heading').forEach((h) => { const id = slugify(h.textContent ?? ''); if (id && h.id !== id) h.id = id; });
+    idHeadings();
+    const headingObserver = new MutationObserver(idHeadings);
+    headingObserver.observe(el, { childList: true, subtree: true });
+    return () => { stopCurly(); stopLocalize(); stopInlinePlay(); stopVariationFix(); stopStudy(); headingObserver.disconnect(); };
   }, [chunks]);
   useEffect(() => {
     const el = rootRef.current;
@@ -460,12 +484,12 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     if (cp !== 'ready' && cp !== 'error') return;
     const id = decodeURIComponent(window.location.hash.slice(1));
     if (!id) return;
-    window.setTimeout(() => scrollToGame(id, false), 80);
+    window.setTimeout(() => scrollToGame(id, false, toc.find((t) => t.id === id)?.game), 80);
   }, [cp]); // eslint-disable-line react-hooks/exhaustive-deps
 
   for (let i = 0; i < chunks.length; i++) {
     const c = chunks[i].trim();
-    if (toc.length > 1 && !tocPlaced && c.startsWith('### ')) {
+    if (toc.length > 1 && !tocPlaced && i === toc[0].at) {
       out.push(<Toc key="toc" items={toc} onGo={goTo} />);
       tocPlaced = true;
     }
@@ -476,7 +500,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       const watchItem = !item.watch ? games.find((g) => g.watch && g.key === item.key) : undefined;
       // Düğme, izleme bölümünün hemen önünde "###" başlığı varsa (Oyunu izleyin / Oyunu inceleyin) o başlığa kaydırır, yoksa bölümün kendisine.
       const watchTarget = watchItem && chunks[watchItem.at - 1]?.trim().startsWith('### ')
-        ? toc[chunks.slice(0, watchItem.at - 1).filter((x) => x.trim().startsWith('### ')).length]?.id ?? watchItem.id
+        ? toc.find((t) => t.chunk === watchItem.at - 1)?.id ?? watchItem.id
         : watchItem?.id;
       const game = useFallback
         ? <Game header={c} moves={moves} />
@@ -496,7 +520,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     } else if (FEN_ONLY.test(c)) {
       out.push(<FenBlock key={i} fen={c.match(FEN_ONLY)![1]} ready={cp === 'ready'} />);
     } else if (c.startsWith('### ')) {
-      const section = toc[headingNo++];
+      const section = toc.find((t) => t.chunk === i);
       out.push(
         <h3 key={i} id={section?.id} className="f-display text-4xl md:text-5xl mt-16 mb-6 text-[#F1E9DC] scroll-mt-8">
           <Markdown options={{ forceInline: true }}>{headingText(c)}</Markdown>

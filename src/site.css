@@ -204,3 +204,6 @@
 
 /* Yorum metnindeki tıklanabilir hamleler (study-fix.ts linkProseMoves): düz yazıdan ayırt edilmez, imleç el olur; üzerine gelince/etkinken study'nin .pgn-move vurgusu. */
 .cp-game pgn-study .cp-prose-move { cursor: pointer; border-radius: 3px; }
+
+/* Oyun yorumundaki "### Başlık" (ArticleBody.tsx commentMarkup): makale ### başlığıyla aynı yazı tipi, yorumun içinde. */
+.cp-game .cp-heading { display: block; margin: 3rem 0 1rem; scroll-margin-top: 2rem; font-family: 'Fraunces', serif; font-weight: 300; font-variation-settings: 'opsz' 72; font-style: normal; letter-spacing: -0.04em; line-height: 1; font-size: clamp(2.25rem, 5vw, 3rem); color: #F1E9DC; }

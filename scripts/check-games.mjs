@@ -18,6 +18,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { ProseLinker } from '../src/lib/prose-moves.js';
+import { splitChunks } from '../src/lib/split-chunks.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const FIG = { '♔': 'K', '♕': 'Q', '♖': 'R', '♗': 'B', '♘': 'N' };
@@ -121,7 +122,7 @@ export function checkContent(dir = path.join(ROOT, 'src/content')) {
   const errors = [];
   const warnings = [];
   for (const file of fs.readdirSync(dir).filter((f) => f.endsWith('.md')).sort()) {
-    const chunks = fs.readFileSync(path.join(dir, file), 'utf8').trim().split(/\n\s*\n/);
+    const chunks = splitChunks(fs.readFileSync(path.join(dir, file), 'utf8'));
     const gameMoves = []; // for "[View player]" copies
     for (let i = 0; i < chunks.length; i++) {
       const hdr = chunks[i];
