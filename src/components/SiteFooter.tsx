@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import FaviconBullet from '@/components/FaviconBullet';
 
 const SOCIAL_READY = false;
-// Lucide'te X logosu yok (`Twitter` eski kuş simgesidir); X'in güncel logosu satır içi SVG olarak çizilir (Simple Icons, CC0).
+// Lucide'te X logosu yok (`Twitter` eski kuş simgesidir); X'in güncel logosu satır içi SVG olarak çizilir (Simple Icons, CC0); diğer simgelerden biraz büyük göründüğü için %90 boyutta.
 const XIcon = ({ size = 24 }: { size?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" /></svg>
+  <svg width={size * 0.9} height={size * 0.9} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" /></svg>
 );
 
 const SOCIAL = [[Instagram, 'Instagram', 'https://instagram.com/satrancvs'], [XIcon, 'X', 'https://x.com/satrancvs'], [Youtube, 'YouTube', 'https://youtube.com/@satrancvs']] as const;
