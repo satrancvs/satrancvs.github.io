@@ -1,5 +1,6 @@
 import { Children, Fragment, isValidElement, useEffect, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
+import { createPortal } from 'react-dom';
 import Markdown from 'markdown-to-jsx';
 import { useChessPublica } from '@/lib/chesspublica';
 import { curlyComments, curlyProse, watchComments } from '@/lib/curly-dom';
@@ -93,9 +94,13 @@ const EVENT_LINE_TAG = /^\[EventLine\s+"[^"]*"\]\s*$/im;
 // Oyun yorumlarında (`{ … }`): `### Başlık` satırı başlık (`.cp-heading`, İçindekiler'e girer), boş satır paragraf ayracıdır.
 // ChessPublica yorumlarda yalnızca satır içi etiketlere izin verir; başlık bu yüzden class'ı izinli bir <span>'dır (bkz. docs/chesspublica-quirks.md).
 const COMMENT_HEADING = /(^|\n)[ \t]*###[ \t]+([^\n]+)\n*/g;
+// Yorumun içindeki tek başına bir satır olan `![açıklama](yol "künye")` bir fotoğraftır: PgnGame satırı `@@FIG0@@` yer tutucusuyla değiştirir,
+// commentMarkup yer tutucuyu boş bir <span class="cp-fig"> yapar, ChessPublica çizdikten sonra Figure bu <span>'a portal ile basılır (yazıdaki fotoğrafla aynı bileşen).
+const COMMENT_FIG_LINE = /^[ \t]*(!\[[^\n]*\))[ \t]*$/gm;
+const COMMENT_FIG = /(^|\n)[ \t]*@@FIG\d+@@[ \t]*\n*/g;
 const commentMarkup = (movetext: string) =>
   movetext.replace(/\{([^}]*)\}/g, (_, body: string) =>
-    `{${body.replace(COMMENT_HEADING, (_m, pre: string, title: string) => `${pre}<span class="cp-heading">${title.trim()}</span> `).replace(/\n[ \t]*\n\s*/g, '<br><br>')}}`);
+    `{${body.replace(COMMENT_FIG, (_m, pre: string) => `${pre}<span class="cp-fig"></span>\n`).replace(COMMENT_HEADING, (_m, pre: string, title: string) => `${pre}<span class="cp-heading">${title.trim()}</span> `).replace(/\n[ \t]*\n\s*/g, '<br><br>')}}`);
 
 function PgnGame({ header, moves }: { header: string; moves: string }) {
   // [View "player"] etiketi oyunu (bulmaca işareti olmasa da) <pgn-player> ile çizdirir; ChessPublica'ya geçirilmez.
@@ -110,7 +115,9 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
   const movetext = lead ? moves.slice(lead[0].length) : moves;
   const intro = lead?.[1].replace(/\[D\]/g, '').trim();
   // <pgn-study>'de bulmaca olmaz: [P] işaretleri silinir.
-  const text = study ? movetext.replace(/\{\s*\[P\s*\d*\]\s*\}|\[P\s*\d*\]/g, '') : movetext;
+  const figs: string[] = [];
+  const noFigs = movetext.replace(/\{[^}]*\}/g, (c) => c.replace(COMMENT_FIG_LINE, (_m, fig: string) => `@@FIG${figs.push(fig) - 1}@@`));
+  const text = study ? noFigs.replace(/\{\s*\[P\s*\d*\]\s*\}|\[P\s*\d*\]/g, '') : noFigs;
   // Etiketler (başlık <span>'ı, <br>) kaçışlandıktan SONRA eklenir: <pgn> içeriğini innerHTML ile okur, etiketler böyle gerçek etiket olarak ChessPublica'ya ulaşır.
   const raw = commentMarkup(`${head}\n\n${text.trim()}`.replace(/&/g, '&amp;').replace(/</g, '&lt;'));
   const box = useRef<HTMLDivElement>(null);
@@ -125,10 +132,22 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
   }, [near]);
   // Sonradan kurulan düz <pgn> öğeleri için ChessPublica yeniden taratılır (<pgn-player> kendini kurar).
   useEffect(() => { if (near) window.ChessPublica?.initAll(); }, [near]);
+  // Yorumlardaki fotoğraf yer tutucuları (.cp-fig) ChessPublica çizdikçe bulunur; Figure'lar portal ile içlerine basılır.
+  const [slots, setSlots] = useState<Element[]>([]);
+  useEffect(() => {
+    if (!near || !figs.length || !box.current) return;
+    const el = box.current;
+    const find = () => setSlots((prev) => { const now = [...el.querySelectorAll('.cp-fig')]; return now.length === prev.length && now.every((n, k) => n === prev[k]) ? prev : now; });
+    find();
+    const mo = new MutationObserver(find);
+    mo.observe(el, { childList: true, subtree: true });
+    return () => mo.disconnect();
+  }, [near]); // eslint-disable-line react-hooks/exhaustive-deps
   const game = near
     ? <div ref={box} className="cp-game pb-4" dangerouslySetInnerHTML={{ __html: `<div class="cp-loading">Oyun yükleniyor...</div><${tag}>\n${raw}\n</${tag}>` }} />
     : <div ref={box} className="cp-game cp-placeholder pb-4" />;
-  return intro ? <><p className="pb-4">{intro}</p>{game}</> : game;
+  const figures = slots.map((el, k) => figs[k] && createPortal(<Figure chunk={figs[k]} />, el, `fig${k}`));
+  return intro ? <><p className="pb-4">{intro}</p>{game}{figures}</> : <>{game}{figures}</>;
 }
 
 // İçindekiler: yazıdaki tüm oyunlar, [Event] başlıklarından otomatik çıkarılır.
