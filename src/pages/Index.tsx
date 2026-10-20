@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { ArrowUpRight, Menu as MenuIcon, X, Mail } from 'lucide-react';
+import { ArrowUpRight, Menu as MenuIcon, X } from 'lucide-react';
 import Markdown from 'markdown-to-jsx';
 import { Link, useLocation } from 'react-router-dom';
 import PhotoCredit, { PHOTO } from '@/components/PhotoCredit';
@@ -7,6 +7,7 @@ import SiteFooter from '@/components/SiteFooter';
 import FaviconBullet from '@/components/FaviconBullet';
 import ProgressiveImage from '@/components/ProgressiveImage';
 import FenDiagram from '@/components/FenDiagram';
+import NewsletterForm from '@/components/NewsletterForm';
 import { preloadChessPublica } from '@/lib/chesspublica';
 import { ARTICLES, LISTED, PUBLISHED, articlePath } from '@/data/articles';
 import '../site.css';
@@ -186,7 +187,7 @@ export default function Index() {
             ))}
             <span title="Yakında..." aria-disabled="true" className="f-mono text-[#A89A88] opacity-40 cursor-not-allowed select-none"><span className="text-[#C8893E]">0{NAV.length + 1}</span> {NAV_SOON}</span>
           </nav>
-          {/* Bülten bölümüne götürür (bölümdeki e-posta formu servis hazır olana kadar devre dışıdır). Altı menü öğesiyle birlikte dar masaüstünde (< xl) yer yetmediği için düğme yalnızca xl'de görünür. */}
+          {/* Bülten bölümüne götürür. Altı menü öğesiyle birlikte dar masaüstünde (< xl) yer yetmediği için düğme yalnızca xl'de görünür. */}
           <a href="#bulten" className="hidden xl:inline-flex shrink-0 whitespace-nowrap rounded-full bg-[#F1E9DC] text-[#0E0C0A] px-6 h-11 items-center text-sm font-semibold transition-colors hover:bg-[#C8893E]">Bültene Abone Ol</a>
           <button aria-label="Menüyü aç" onClick={() => setOpen(true)} className="lg:hidden w-11 h-11 grid place-items-center"><MenuIcon /></button>
         </div>
@@ -360,13 +361,7 @@ export default function Index() {
         </div>
         <div id="bulten" className="md:col-span-12 mt-10 scroll-mt-28 border border-[#2E2620] p-8 md:p-14 grid md:grid-cols-2 gap-8 items-end">
           <div><p className="f-mono text-[#C8893E]">Bülten</p><h3 className="f-display text-4xl md:text-6xl mt-4">Yeni yazılar, <em className="italic">e-postanda.</em></h3></div>
-          {/* Bülten servisi hazır olana kadar devre dışı; devre dışı öğeler tooltip göstermediği için title kapsayıcıda. */}
-          <form onSubmit={(e) => e.preventDefault()} title="Yakında..." aria-disabled="true" className="flex flex-col sm:flex-row gap-3 cursor-not-allowed opacity-60">
-            <label htmlFor="em" className="sr-only">E-posta</label>
-            <input id="em" type="email" disabled placeholder="e-posta adresin"
-              className="flex-1 h-14 bg-transparent border-b border-[#F1E9DC]/40 outline-none text-lg cursor-not-allowed" />
-            <button type="button" disabled className="h-14 px-8 rounded-full bg-[#F1E9DC] text-[#0E0C0A] font-semibold inline-flex items-center gap-2 justify-center cursor-not-allowed"><Mail size={18} /> Abone ol</button>
-          </form>
+          <NewsletterForm />
         </div>
       </section>
 
