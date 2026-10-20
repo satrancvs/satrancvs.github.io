@@ -299,10 +299,10 @@ function Figure({ chunk }: { chunk: string }) {
   );
 }
 
-// YouTube videosu: markdown'daki <figure class="video-embed"> bloğundan video kimliği, başlangıç saniyesi,
+// YouTube videosu: markdown'daki <figure class="video-embed"> bloğundan video kimliği, başlangıç (`start`) ve isteğe bağlı bitiş (`end`) saniyesi,
 // başlık ve açıklama okunur; gizlilik dostu youtube-nocookie alan adıyla gömülü oynatıcı çizilir.
 function Video({ chunk }: { chunk: string }) {
-  const id = chunk.match(/embed\/([\w-]+)(?:\?start=(\d+))?/);
+  const id = chunk.match(/embed\/([\w-]+)(?:\?start=(\d+)(?:&(?:amp;)?end=(\d+))?)?/);
   if (!id) return null;
   const title = chunk.match(/<iframe[^>]*\btitle="([^"]*)"/)?.[1] ?? 'YouTube videosu';
   const capLines = (chunk.match(/<figcaption>([\s\S]*?)<\/figcaption>/)?.[1] ?? '')
@@ -310,7 +310,7 @@ function Video({ chunk }: { chunk: string }) {
     
     .map((l) => l.trim())
     .filter(Boolean);
-  const src = `https://www.youtube-nocookie.com/embed/${id[1]}${id[2] ? `?start=${id[2]}` : ''}`;
+  const src = `https://www.youtube-nocookie.com/embed/${id[1]}${id[2] ? `?start=${id[2]}${id[3] ? `&end=${id[3]}` : ''}` : ''}`;
   const href = `https://www.youtube.com/watch?v=${id[1]}${id[2] ? `&t=${id[2]}s` : ''}`;
   return (
     <figure className="my-10 mx-auto w-full md:max-w-[600px]">
