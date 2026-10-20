@@ -53,7 +53,7 @@ Clarín turnuvasını 1979 senesinde Spassky ve Petrosian'ı da yenerek, 1980'de
 <figcaption><span lang="nl">“Liefde voor Hout”</span> (Ahşap Aşkı) · TV belgeseli (VPRO), 1979 · Yönetmen: Jop Pannekoek<br>Belgeselin bu bölümünde <span lang="nl">Timman</span>, Andersson ve Ree sohbet ederken görülebilir.</figcaption>
 </figure>
 
-Sade, teknik konumlara olan hâkimiyeti nedeniyle bir oyunsonu efsanesi olarak anılan Andersson, 1982 Clarín turnuvasını bir galibiyet ve on iki beraberlikle bitirmişti.
+Sade, teknik konumlara olan hâkimiyeti nedeniyle bir oyunsonu efsanesi olarak anılan Andersson, büyük başarılarının yanı sıra Elo reyting sıralamasında dünyada dört numaraya kadar yükselmişti. Hem yazışmalı ve hem masabaşı satrançta en üst düzeye çıkabilen nadir oyunculardan olan İsveçli büyük usta, 1982 Clarin turnuvasını 1 galibiyet ve 12 beraberlikle bitirmişti.
 
 ### *Don Miguel* karşısında ilk kazanç
 
