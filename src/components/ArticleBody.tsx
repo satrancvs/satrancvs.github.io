@@ -250,6 +250,7 @@ const captionOptions = {
 // Alıntı içindeki tek başına `[FEN "..."]` satırı statik bir diyagram (<fen>) olur (Capablanca alıntısı): yazı sütununda ortalı, en çok 340 px.
 // `[FEN "…"] (crop: top-half)`: yalnızca tahtanın üst yarısı (8–5. yataylar) gösterilir.
 // Tek başına duran `[FEN "…"]` paragrafı (alıntı dışında) statik diyagram olur (etüt).
+const FIRST_MOVE_DIAGRAM = /^\s*\d+\.(?:\.\.)?\s*\S+\s*\{\s*\[D\]/;
 const FEN_ONLY = /^\[FEN\s+"([^"]+)"\]$/;
 const FEN_BLOCK = /^\[FEN\s+"([^"]+)"\](\s*\(crop:\s*top-half\))?$/;
 function FenBlock({ fen, ready, crop = false }: { fen: string; ready: boolean; crop?: boolean }) {
@@ -479,7 +480,8 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
         ? <Game header={c} moves={moves} />
         : <PgnGame header={c} moves={moves} />;
       // <pgn> (oynatıcısız) oyunlar bir başlangıç FEN'inden başlıyorsa, hamle metninin üstünde o konum bir diyagramla gösterilir.
-      const startFen = !useFallback && !WATCH_TAG.test(c) && !puzzleSide(c, moves) ? c.match(/\[FEN\s+"([^"]+)"\]/i)?.[1] : undefined;
+      // İlk hamlenin hemen ardından yazarın kendi diyagramı ([D]) geliyorsa başlangıç diyagramı gösterilmez (Andersson–Timman).
+      const startFen = !useFallback && !WATCH_TAG.test(c) && !puzzleSide(c, moves) && !FIRST_MOVE_DIAGRAM.test(moves) ? c.match(/\[FEN\s+"([^"]+)"\]/i)?.[1] : undefined;
       out.push(
         <GameSection key={i} item={item} watchId={watchTarget} watchLabel={watchItem?.study ? 'Oyunu incele' : undefined} onWatch={(id) => scrollToGame(id, true)}>
           {startFen && <FenBlock fen={startFen} ready={cp === 'ready'} />}
