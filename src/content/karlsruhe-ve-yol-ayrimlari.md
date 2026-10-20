@@ -12,23 +12,41 @@ On sekizinci yüzyılda bir Alman asilzadesinin kurduğu bu şirin ve yeşil ken
 
 ![Karlsruhe’nin simgesi olan piramit](images/piramit.jpg "Karlsruhe’nin simgesi olan piramit.  Kenti kuran asilzade <span lang="de">Karl Wilhelm von Baden-Durlach</span>’ın ebedi istirahatgahı olan kilisenin yerine yapılmış. · Fotoğraf: Tarık Selbes")
 
-Geçen yılın sonlarında Polonya’da üçüncü ve son IM normumu almamın ardından satranca eskisinden daha ciddi olarak eğilme ve turnuvalara daha profesyonelce yaklaşma şeklindeki bir karar almıştım ve Grenke Açık da bu karar sonrası oynadığım ilk turnuvaydı. Her ne kadar öncesinde istediğim gibi hazırlanamasam da en azından turnuva salonuna yakın bir otelde kalmak ve turnuva süresince satranç dersi vermeye hemen hemen tamamen ara vermek gibi birkaç önemli iyileştirme yaptım. Maalesef artık genç denemeyecek bir yaşta olduğum için enerjimi idareli kullanmam gerekiyor.
+Geçen yılın sonlarında Polonya’da üçüncü ve son IM normumu almamın ardından satranca eskisinden daha ciddi olarak eğilme ve turnuvalara daha profesyonelce yaklaşma şeklindeki bir karar almıştım ve Grenke Açık da bu karar sonrası oynadığım ilk turnuvaydı.
 
-Bu noktada birkaç örnek verirsem bu değişikliğin önemi daha iyi anlaşılır zannediyorum. Örneğin Legnica’da düzenlenen 2013 Avrupa Bireysel Satranç Şampiyonası esnasında 19. yüzyıldan kalma temizlik yüzü görmemiş, duşu lavabo olarak kullanmanız gereken bir evde kalmış ve ev sahibinin epilepsi hastası köpeğine bakmıştım. Kirli çarşafların üzerinde uyku tulumumdan çıkmamaya çalışarak uyuduğum gecelerde odaya giren köpeğin -hastalığı nedeniyle ona Dogstoyevski adını takmıştım- karanlıkta cam gibi parlayan sıradışı bir yeşil renge sahip gözlerini hala hatırlarım.
+Her ne kadar öncesinde istediğim gibi hazırlanamasam da en azından turnuva salonuna yakın bir otelde kalmak ve turnuva süresince satranç dersi vermeye hemen hemen tamamen ara vermek gibi birkaç önemli iyileştirme yaptım. Maalesef artık genç denemeyecek bir yaşta olduğum için enerjimi idareli kullanmam gerekiyor.
 
-Polonya’da oynadığım bir başka turnuvada da yine “couchsurfing” yapmış ve son iki gece kaldığım evde ev sahibimin Kont Dracula’yı kıskandıracak derecedeki noktürnal hayatı yüzünden son iki tura uykusuz çıkmıştım. İki turdan sadece yarım puan alsam norm alacaktım ancak bahane bulmak istemesem de belki de biraz da bu uykusuzluk yüzünden her iki oyunu da kaybederek seneler önce normlarımı tamamlama fırsatını geri tepmiştim.
+Bu noktada birkaç örnek verirsem bu değişikliğin önemi daha iyi anlaşılır zannediyorum. Örneğin Legnica’da düzenlenen 2013 Avrupa Bireysel Satranç Şampiyonası esnasında 19. yüzyıldan kalma temizlik yüzü görmemiş, duşu lavabo olarak kullanmanız gereken bir evde kalmış ve ev sahibinin epilepsi hastası köpeğine bakmıştım.
 
-Fakat Grenke için şartlar son derece elverişliydi. Stuttgart havalimanındaki anlamsız derecede kaotik ve uzun kuyruğu saymazsak -Avrupa’daki havalimanları AB’nin ve de özellikle Almanya’nın çöküşü hakkında Spenglervari teoriler üretmenize neden oluyor- nispeten konforlu bir uçuş ve tren yolculuğunun ardından turnuvadan bir gün önce, 1 Nisan günü vardığım Karlsruhe’de İstanbul’un aksine tam bir bahar havası vardı.
+Kirli çarşafların üzerinde uyku tulumumdan çıkmamaya çalışarak uyuduğum gecelerde odaya giren köpeğin -hastalığı nedeniyle ona Dogstoyevski adını takmıştım- karanlıkta cam gibi parlayan sıradışı bir yeşil renge sahip gözlerini hala hatırlarım.
 
-İstasyondan valizi sürüyerek çok da uzun olmayan bir yürüyüşle vardığım salona on dakika mesafedeki nispeten uygun fiyatlı otelim Hotel Barbarossa hiç de kötü olmayan bir oda ve kahvaltı sunuyordu ve Alman mutfağı başarısızlık halinde suçlayabileceğim son sığınağım gibi görünüyordu. İlerleyen günlerde kentin ana meydanına yakın bir konumda bulunan Japon restoranı Izakaya bu son kozu da elimden alacaktı. İlk gün tek turun ardından üst üste dört gün çift tur oynanan yoğun turnuva programını saymazsak elbette.
+Polonya’da oynadığım bir başka turnuvada da yine “couchsurfing” yapmış ve son iki gece kaldığım evde ev sahibimin Kont Dracula’yı kıskandıracak derecedeki noktürnal hayatı yüzünden son iki tura uykusuz çıkmıştım.
+
+İki turdan sadece yarım puan alsam norm alacaktım ancak bahane bulmak istemesem de belki de biraz da bu uykusuzluk yüzünden her iki oyunu da kaybederek seneler önce normlarımı tamamlama fırsatını geri tepmiştim.
+
+Fakat Grenke için şartlar son derece elverişliydi.
+
+Stuttgart havalimanındaki anlamsız derecede kaotik ve uzun kuyruğu saymazsak -Avrupa’daki havalimanları AB’nin ve de özellikle Almanya’nın çöküşü hakkında Spenglervari teoriler üretmenize neden oluyor- nispeten konforlu bir uçuş ve tren yolculuğunun ardından turnuvadan bir gün önce, 1 Nisan günü vardığım Karlsruhe’de İstanbul’un aksine tam bir bahar havası vardı.
+
+İstasyondan valizi sürüyerek çok da uzun olmayan bir yürüyüşle vardığım salona on dakika mesafedeki nispeten uygun fiyatlı otelim Hotel Barbarossa hiç de kötü olmayan bir oda ve kahvaltı sunuyordu ve Alman mutfağı başarısızlık halinde suçlayabileceğim son sığınağım gibi görünüyordu.
+
+İlerleyen günlerde kentin ana meydanına yakın bir konumda bulunan Japon restoranı Izakaya bu son kozu da elimden alacaktı. İlk gün tek turun ardından üst üste dört gün çift tur oynanan yoğun turnuva programını saymazsak elbette.
 
 ![Turnuva salonunun girişi](images/salon.jpg "Turnuva salonunun girişi. · Fotoğraf: Tarık Selbes")
 
-İlk akşam kongre merkezinin dışına asılmış “Dünyanın en büyük satranç turnuvasına hoş geldiniz” yazısına bir göz atış ve şehir merkezine kısa bir yürüyüşle geçti. Gerçekten dünyanın en büyük satranç turnuvasına geldiğimi ancak ertesi gün ilk tur için salona geldiğimde tam olarak idrak edebilecektim. Devasa bir salon içerisinde yüzlerce masa ve insan, eşlendirmenin tur saatinde bile hâlâ belli olmaması ve dikey numaralandırma düzeni nedeniyle en azından bu duruma alışana dek masanızı bulmanın imkansızlığı… Sadece A kategorisinde bile başlangıç listesinde başını GM Pavel Eljanov’un çektiği 998 (!) katılımcı olduğunu söylemek herhalde yeterli olur -ki daha B ve C kategorileri ile freestyle turnuvasındaki üç kategoriden bahsetmedim bile.
+İlk akşam kongre merkezinin dışına asılmış “Dünyanın en büyük satranç turnuvasına hoş geldiniz” yazısına bir göz atış ve şehir merkezine kısa bir yürüyüşle geçti. Gerçekten dünyanın en büyük satranç turnuvasına geldiğimi ancak ertesi gün ilk tur için salona geldiğimde tam olarak idrak edebilecektim.
 
-Telefonu her zamanki gibi odada bıraktığım için eşlendirmeyi de ancak sorarak öğrenmiş ve doğru masada oturduğumdan bile tam emin olamayarak tahta başına geçmiştim. Freestyle kategorisinde her tur öncesi oynanacak pozisyon için çekilen kuranın ve açılış töreninin ardından başlayan tur öncesi az da olsa heyecanlıydım.
+Devasa bir salon içerisinde yüzlerce masa ve insan, eşlendirmenin tur saatinde bile hâlâ belli olmaması ve dikey numaralandırma düzeni nedeniyle en azından bu duruma alışana dek masanızı bulmanın imkansızlığı…
 
-Masaya otururken sadece rakibimin isminin Yash Watarkar olduğu ve Siyah taşlarla oynayacağım bilgisine sahiptim. Rakibimin hangi açılışı oynadığından ve hatta oyun kuvvetinden bile bihaber vaziyetteydim. Fakat düşük ratinge sahip de olsa her Hintli oyuncu gibi genç rakibimin tehlikeli olabileceğini biliyordum. Bu nedenle ilk turdan bir kazaya uğramamak gerekiyordu ve her ne kadar bazı badireler atlattıysam da bunu başardım.
+Sadece A kategorisinde bile başlangıç listesinde başını GM Pavel Eljanov’un çektiği 998 (!) katılımcı olduğunu söylemek herhalde yeterli olur -ki daha B ve C kategorileri ile freestyle turnuvasındaki üç kategoriden bahsetmedim bile.
+
+Telefonu her zamanki gibi odada bıraktığım için eşlendirmeyi de ancak sorarak öğrenmiş ve doğru masada oturduğumdan bile tam emin olamayarak tahta başına geçmiştim.
+
+Freestyle kategorisinde her tur öncesi oynanacak pozisyon için çekilen kuranın ve açılış töreninin ardından başlayan tur öncesi az da olsa heyecanlıydım.
+
+Masaya otururken sadece rakibimin isminin Yash Watarkar olduğu ve Siyah taşlarla oynayacağım bilgisine sahiptim. Rakibimin hangi açılışı oynadığından ve hatta oyun kuvvetinden bile bihaber vaziyetteydim.
+
+Fakat düşük ratinge sahip de olsa her Hintli oyuncu gibi genç rakibimin tehlikeli olabileceğini biliyordum. Bu nedenle ilk turdan bir kazaya uğramamak gerekiyordu ve her ne kadar bazı badireler atlattıysam da bunu başardım.
 
 [Event "GRENKE Açık"]
 [Site "Karlsruhe"]
