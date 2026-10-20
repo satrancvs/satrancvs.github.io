@@ -90,6 +90,8 @@ const STUDY_TAG = /^\[View\s+"study"\]\s*$/im;
 // [EventLine "..."]: oyun başlığındaki etkinlik satırını (Etkinlik, Yer, yıl yerine) kendi metniyle verir; satır içi Markdown/HTML (<i>) kullanılabilir.
 // ChessPublica'ya geçirilmez.
 const EVENT_LINE_TAG = /^\[EventLine\s+"[^"]*"\]\s*$/im;
+// [Frame "quote"]: oyun, alıntı kutusunun (.quote) içinde çizilir (diyagram + <pgn>); oyuncu başlığı yerine EventLine kaynak satırı olur (Palavan'ın analizi).
+const QUOTE_TAG = /^\[Frame\s+"quote"\]\s*$/im;
 
 // Oyun yorumlarında (`{ … }`): `### Başlık` satırı başlık (`.cp-heading`, İçindekiler'e girer), boş satır paragraf ayracıdır.
 // ChessPublica yorumlarda yalnızca satır içi etiketlere izin verir; başlık bu yüzden class'ı izinli bir <span>'dır (bkz. docs/chesspublica-quirks.md).
@@ -106,7 +108,7 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
   // [View "player"] etiketi oyunu (bulmaca işareti olmasa da) <pgn-player> ile çizdirir; ChessPublica'ya geçirilmez.
   const watch = WATCH_TAG.test(header);
   const study = STUDY_TAG.test(header);
-  const clean = header.replace(WATCH_TAG, '').replace(EVENT_LINE_TAG, '').trim();
+  const clean = header.replace(WATCH_TAG, '').replace(EVENT_LINE_TAG, '').replace(QUOTE_TAG, '').trim();
   const side = study ? null : puzzleSide(clean, moves);
   const head = side === 'b' && !/\[Orientation\s/i.test(clean) ? `${clean}\n[Orientation "black"]` : clean;
   const tag = study ? 'pgn-study' : side || watch ? 'pgn-player' : 'pgn';
@@ -541,6 +543,19 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       // <pgn> (oynatıcısız) oyunlar bir başlangıç FEN'inden başlıyorsa, hamle metninin üstünde o konum bir diyagramla gösterilir.
       // İlk hamlenin hemen ardından yazarın kendi diyagramı ([D]) geliyorsa başlangıç diyagramı gösterilmez (Andersson–Timman).
       const startFen = !useFallback && !WATCH_TAG.test(c) && !puzzleSide(c, moves) && !FIRST_MOVE_DIAGRAM.test(moves) ? c.match(/\[FEN\s+"([^"]+)"\]/i)?.[1] : undefined;
+      if (QUOTE_TAG.test(c)) {
+        out.push(
+          <section key={i} id={item.id} className="scroll-mt-8">
+            <blockquote className="quote quote-game">
+              {startFen && <FenBlock fen={startFen} ready={cp === 'ready'} />}
+              {game}
+              {item.place && <footer className="quote-cite f-mono">— <CiteMd cite={item.place} /></footer>}
+            </blockquote>
+          </section>,
+        );
+        if (own) i++;
+        continue;
+      }
       out.push(
         <GameSection key={i} item={item} watchId={watchTarget} watchLabel={watchItem?.study ? 'Oyunu incele' : undefined} onWatch={(id) => scrollToGame(id, true)}>
           {startFen && <FenBlock fen={startFen} ready={cp === 'ready'} />}

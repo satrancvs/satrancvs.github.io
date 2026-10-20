@@ -102,7 +102,7 @@ export default function FenDiagram({ fen, label, caption, orientation, badge, ar
             <div dangerouslySetInnerHTML={{ __html: `<fen${orientation ? ` orientation="${orientation}"` : ''}>${fen}</fen>` }} />
             {arrowGeom && (
               <svg aria-hidden width={size} height={size} className="absolute left-0 top-0 pointer-events-none" style={{ zIndex: 20 }}>
-                <g fill="#4a4a4a" stroke="#4a4a4a" opacity="0.5">
+                <g fill="#4a4a4a" stroke="#4a4a4a" opacity="0.32">
                   <line x1={arrowGeom.a.x} y1={arrowGeom.a.y} x2={arrowGeom.base.x} y2={arrowGeom.base.y} strokeWidth={arrowGeom.w} strokeLinecap="butt" />
                   <polygon points={arrowGeom.poly} strokeWidth="0" />
                 </g>

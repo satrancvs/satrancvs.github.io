@@ -55,19 +55,6 @@
     "date": "Ekim 2026"
   },
   {
-    "id": "acilis",
-    "slug": "dami-gambitinin-yeniden-dogusu",
-    "cat": "Açılış",
-    "title": "Damı Gambiti’nin yeniden doğuşu",
-    "dek": "Klasik bir açılış, modern motorlarla nasıl yeni bir hayat buldu?",
-    "author": "Kerem Aydın",
-    "body": [
-      "Damı Gambiti yüz yılı aşkın süredir üst düzey satrancın merkezinde.",
-      "Bu yazıda ana varyantları ve son yıllarda öne çıkan yan yolları inceliyoruz."
-    ],
-    "date": "Ekim 2026"
-  },
-  {
     "id": "gomori",
     "slug": "1926-yilindan-nasil-usta-oldum",
     "oldSlugs": ["eugen-gomoriden-alti-ustaya-tek-bir-soru"],
@@ -106,11 +93,22 @@
   {
     "id": "aronian",
     "slug": "aronian-degismeli-caro-kann-dersi",
-    "cat": "Analizli oyun",
+    "cat": "Açılış",
     "title": "Aronian’dan Değişmeli Caro-Kann dersi",
     "dek": "Değişmeli Caro-Kann yeniden diriliyor. Peki Aronian’ın yaklaşımını özel kılan ne?",
     "author": "FM Nazmi Can Doğan",
     "note": "İlk yayın: [satranchess.com](https://www.satranchess.com/) · 2022",
+    "date": "Ekim 2026",
+    "body": []
+  },
+  {
+    "id": "palavan",
+    "slug": "1944-yilindan-selim-palavan-kimdir",
+    "cat": "Satranç tarihi",
+    "title": "1944 yılından: İstanbul Şatranç şampiyonu Selim Palavan kimdir?",
+    "dek": "Şatranç oyunundaki değeri, oyun merakı, bu fikir sporunun memleketimizde yayılması hususundaki düşünceleri.",
+    "author": "Behiç Besler",
+    "note": "İlk yayın: Türkiye Şatranç Mecmuası, sayı 1 · 1944 · Kaynak: [İstanbul Satranç Derneği](https://www.isd1943.org.tr/selim-palavan/)",
     "date": "Ekim 2026",
     "body": []
   }
