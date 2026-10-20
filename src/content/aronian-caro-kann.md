@@ -1,8 +1,8 @@
+![Levon Aronian hamle yaparken, Tata Steel 2023 (siyah-beyaz fotoğraf)](images/levon-aronian-2023.jpg "<span lang="en">Levon Aronian</span>, 2023 <span lang="en">Tata Steel</span> Satranç Turnuvası'nda hamle yaparken · Fotoğraf: <span lang="nl">Frans Peeters</span> · Lisans: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/deed.tr) · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Levon_Aronian_in_2023.jpg)")
+
 FIDE Grand Prix 2022 incelemeye değer pek çok oyuna sahne olmuştu. Aronian ile Keymer arasındaki mücadelede, açılış hazırlığı ve oyun anlayışı konusunda çok önemli meseleleri görme şansımız olacak. Bu oyunu bölümlere ayırıp daha rahat incelemeye çalışacağız.
 
 Bazı partilerin açılış bölümlerine daha fazla eğilmemizin sebebi elbette o açılışla daha haşır neşir olmamız veya ilgilenmek istememiz. Örneğin Caro-Kann Savunması’nın değişmeli varyantını ben de beyaz taşlarla oynamayı seviyorum, bu nedenle inceleyeceğimiz oyun benim için ayrıca önemli.
-
-![Levon Aronian hamle yaparken, Tata Steel 2023 (siyah-beyaz fotoğraf)](images/levon-aronian-2023.jpg "<span lang="en">Levon Aronian</span>, 2023 <span lang="en">Tata Steel</span> Satranç Turnuvası'nda hamle yaparken · Fotoğraf: <span lang="nl">Frans Peeters</span> · Lisans: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/deed.tr) · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Levon_Aronian_in_2023.jpg)")
 
 [Event "FIDE Grand Prix"]
 [Site "Berlin"]
