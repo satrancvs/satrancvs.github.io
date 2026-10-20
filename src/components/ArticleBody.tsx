@@ -132,12 +132,13 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
   }, [near]);
   // Sonradan kurulan düz <pgn> öğeleri için ChessPublica yeniden taratılır (<pgn-player> kendini kurar).
   useEffect(() => { if (near) window.ChessPublica?.initAll(); }, [near]);
-  // Yorumlardaki fotoğraf yer tutucuları (.cp-fig) ChessPublica çizdikçe bulunur; Figure'lar portal ile içlerine basılır.
+  // Yorumlardaki fotoğraf yer tutucuları (.cp-fig) ChessPublica çizdikçe bulunur; Figure'lar portal ile içlerine basılır. Yalnızca ÇİZİLMİŞ çıktıdaki (.pgn-container) yer tutucular
+  // sayılır: ham <pgn> kaynağındakine basılırsa ChessPublica kaynağı okurken künyeyi yorumun içine metin olarak da kopyalar.
   const [slots, setSlots] = useState<Element[]>([]);
   useEffect(() => {
     if (!near || !figs.length || !box.current) return;
     const el = box.current;
-    const find = () => setSlots((prev) => { const now = [...el.querySelectorAll('.cp-fig')]; return now.length === prev.length && now.every((n, k) => n === prev[k]) ? prev : now; });
+    const find = () => setSlots((prev) => { const now = [...el.querySelectorAll('.pgn-container .cp-fig')]; return now.length === prev.length && now.every((n, k) => n === prev[k]) ? prev : now; });
     find();
     const mo = new MutationObserver(find);
     mo.observe(el, { childList: true, subtree: true });
