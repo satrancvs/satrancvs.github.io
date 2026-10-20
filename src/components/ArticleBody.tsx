@@ -250,6 +250,7 @@ const captionOptions = {
 // Alıntı içindeki tek başına `[FEN "..."]` satırı statik bir diyagram (<fen>) olur (Capablanca alıntısı): yazı sütununda ortalı, en çok 340 px.
 // `[FEN "…"] (crop: top-half)`: yalnızca tahtanın üst yarısı (8–5. yataylar) gösterilir.
 // Tek başına duran `[FEN "…"]` paragrafı (alıntı dışında) statik diyagram olur (etüt).
+const FIRST_MOVE_DIAGRAM = /^\s*\d+\.(?:\.\.)?\s*\S+\s*\{\s*\[D\]/;
 const FEN_ONLY = /^\[FEN\s+"([^"]+)"\]$/;
 const FEN_BLOCK = /^\[FEN\s+"([^"]+)"\](\s*\(crop:\s*top-half\))?$/;
 function FenBlock({ fen, ready, crop = false }: { fen: string; ready: boolean; crop?: boolean }) {
@@ -298,10 +299,10 @@ function Figure({ chunk }: { chunk: string }) {
   );
 }
 
-// YouTube videosu: markdown'daki <figure class="video-embed"> bloğundan video kimliği, başlangıç saniyesi,
+// YouTube videosu: markdown'daki <figure class="video-embed"> bloğundan video kimliği, başlangıç (`start`) ve isteğe bağlı bitiş (`end`) saniyesi,
 // başlık ve açıklama okunur; gizlilik dostu youtube-nocookie alan adıyla gömülü oynatıcı çizilir.
 function Video({ chunk }: { chunk: string }) {
-  const id = chunk.match(/embed\/([\w-]+)(?:\?start=(\d+))?/);
+  const id = chunk.match(/embed\/([\w-]+)(?:\?start=(\d+)(?:&(?:amp;)?end=(\d+))?)?/);
   if (!id) return null;
   const title = chunk.match(/<iframe[^>]*\btitle="([^"]*)"/)?.[1] ?? 'YouTube videosu';
   const capLines = (chunk.match(/<figcaption>([\s\S]*?)<\/figcaption>/)?.[1] ?? '')
@@ -309,7 +310,9 @@ function Video({ chunk }: { chunk: string }) {
     
     .map((l) => l.trim())
     .filter(Boolean);
-  const src = `https://www.youtube-nocookie.com/embed/${id[1]}${id[2] ? `?start=${id[2]}` : ''}`;
+  // rel=0: öneriler yalnızca aynı kanaldan; iv_load_policy=3: video üstü notlar kapalı; playsinline: iPhone'da tam ekrana geçmeden oynar.
+  const embedQuery = `?${[id[2] && `start=${id[2]}`, id[3] && `end=${id[3]}`, 'rel=0', 'iv_load_policy=3', 'playsinline=1'].filter(Boolean).join('&')}`;
+  const src = `https://www.youtube-nocookie.com/embed/${id[1]}${embedQuery}`;
   const href = `https://www.youtube.com/watch?v=${id[1]}${id[2] ? `&t=${id[2]}s` : ''}`;
   return (
     <figure className="my-10 mx-auto w-full md:max-w-[600px]">
@@ -479,7 +482,8 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
         ? <Game header={c} moves={moves} />
         : <PgnGame header={c} moves={moves} />;
       // <pgn> (oynatıcısız) oyunlar bir başlangıç FEN'inden başlıyorsa, hamle metninin üstünde o konum bir diyagramla gösterilir.
-      const startFen = !useFallback && !WATCH_TAG.test(c) && !puzzleSide(c, moves) ? c.match(/\[FEN\s+"([^"]+)"\]/i)?.[1] : undefined;
+      // İlk hamlenin hemen ardından yazarın kendi diyagramı ([D]) geliyorsa başlangıç diyagramı gösterilmez (Andersson–Timman).
+      const startFen = !useFallback && !WATCH_TAG.test(c) && !puzzleSide(c, moves) && !FIRST_MOVE_DIAGRAM.test(moves) ? c.match(/\[FEN\s+"([^"]+)"\]/i)?.[1] : undefined;
       out.push(
         <GameSection key={i} item={item} watchId={watchTarget} watchLabel={watchItem?.study ? 'Oyunu incele' : undefined} onWatch={(id) => scrollToGame(id, true)}>
           {startFen && <FenBlock fen={startFen} ready={cp === 'ready'} />}
