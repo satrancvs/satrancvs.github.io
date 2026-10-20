@@ -48,7 +48,7 @@ Clarín turnuvasını 1979 senesinde Spassky ve Petrosian'ı da yenerek, 1980'de
 
 21... e5 { [D] Romanovsky'nin oyunun "dördüncü aşaması" dediği, vezir ve kalelerin tahtada olduğu bir final var karşımızda. Oyunun gidişatı olaysız olsa da, siyah şahın biraz daha zayıf ve beyaz taşların aktif olması nedeniyle Beyazın konumu daha iyi olabilir. Elbette yalnızca Stockfish'in desteğiyle bu üstünlüğü artırmaya çalışmak mümkün olabilir. } (21... Qf6 22. Qc1 Qf5 $10) 22. Rc4 (22. f3 { Stockfish Siyaha ...f6 oynatarak yedinci yatayı zayıflatmayı öneriyor. } 22... Rac8 23. Qe3 f6 24. Rd1 $14) 22... Rac8 23. Rc1 Rxc4 24. Qxc4 Rd8 25. hxg5 hxg5 26. Qc2 Qe6 27. Qe4 Rd4 28. Qa8 a5 29. Rc8 Qd5+ 30. Qxd5 Rxd5 1/2-1/2
 
-<figure class="video-embed">
+<figure class="video-embed" data-poster="/images/liefde-voor-hout-1147.jpg">
 <iframe src="https://www.youtube.com/embed/E48r-JTSAVM?start=707&end=1187" title="Timman, Andersson ve Ree" allowfullscreen loading="lazy"></iframe>
 <figcaption><span lang="nl">“Liefde voor Hout”</span> (Ahşap Aşkı) · TV belgeseli (VPRO), 1979 · Yönetmen: Jop Pannekoek<br>Belgeselin bu bölümünde <span lang="nl">Timman</span>, Andersson ve Ree sohbet ederken görülebilir.</figcaption>
 </figure>
