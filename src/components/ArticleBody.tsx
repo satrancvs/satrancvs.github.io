@@ -310,7 +310,9 @@ function Video({ chunk }: { chunk: string }) {
     
     .map((l) => l.trim())
     .filter(Boolean);
-  const src = `https://www.youtube-nocookie.com/embed/${id[1]}${id[2] ? `?start=${id[2]}${id[3] ? `&end=${id[3]}` : ''}` : ''}`;
+  // rel=0: öneriler yalnızca aynı kanaldan; iv_load_policy=3: video üstü notlar kapalı; playsinline: iPhone'da tam ekrana geçmeden oynar.
+  const embedQuery = `?${[id[2] && `start=${id[2]}`, id[3] && `end=${id[3]}`, 'rel=0', 'iv_load_policy=3', 'playsinline=1'].filter(Boolean).join('&')}`;
+  const src = `https://www.youtube-nocookie.com/embed/${id[1]}${embedQuery}`;
   const href = `https://www.youtube.com/watch?v=${id[1]}${id[2] ? `&t=${id[2]}s` : ''}`;
   return (
     <figure className="my-10 mx-auto w-full md:max-w-[600px]">
