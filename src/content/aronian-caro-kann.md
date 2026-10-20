@@ -17,7 +17,7 @@ Bazı partilerin açılış bölümlerine daha fazla eğilmemizin sebebi elbette
 
 ### Açılış felsefesi
 
-Şimdiye kadar gördüğümüz oyunlarda hızlı gelişim hedefi ile oynamaya çalışan Beyaz farklı bir yola sapıyor. Aronian’ın nereye ulaşmak istediğini ancak şimdi anlamaya çalışalım.
+Şimdiye kadar gördüğümüz oyunlarda hızlı gelişim hedefi ile oynamaya çalışan Beyaz farklı bir yola sapıyor. Aronian’ın nereye ulaşmak istediğini şimdi anlamaya çalışalım.
 
 Siyahın fil çifti var ve Beyazın piyon yapısı merkezdeki duble izole nedeniyle adeta felaketi andırıyor. Ancak c ve e dikeylerindeki baskı, çok iyi yerleşmiş hafif taşlar ve c8 karesinde işsiz kalan fil ile birleşince pratikte Siyaha oynaması zor bir durum görüyoruz. Beyazın üstünlüğü aktif taş oyunu yaratabilmesinde.
 
