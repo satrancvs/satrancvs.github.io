@@ -55,19 +55,6 @@
     "date": "Ekim 2026"
   },
   {
-    "id": "analiz",
-    "slug": "kale-oyunsonlarinda-lucena-koprusu",
-    "cat": "Analizli oyun",
-    "title": "Kale oyunsonlarında Lucena köprüsü",
-    "dek": "Her kulüp oyuncusunun bilmesi gereken pozisyonu adım adım çözüyoruz.",
-    "author": "Kerem Aydın",
-    "body": [
-      "Lucena pozisyonu, piyonu yedinci yataya ulaşmış kale oyunsonlarında kazanç tekniğidir.",
-      "Anahtar fikir: kaleyi dördüncü yataya getirip şaha bir “köprü” kurmak. Böylece rakip kalenin yandan şahları kesilir."
-    ],
-    "date": "Ekim 2026"
-  },
-  {
     "id": "acilis",
     "slug": "dami-gambitinin-yeniden-dogusu",
     "cat": "Açılış",
