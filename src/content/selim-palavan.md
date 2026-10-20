@@ -24,11 +24,13 @@ Bütün İstanbul’un ve hatta memleketimizin her köşesindeki şatranç merak
 
 – 1934’te Odessa’da eski dünya şampiyonlarından Hollandalı Max Euwe ile berabere kaldığım zaman hissetmiş olduğum zevk ve heyecanı hemen hemen başka hiçbir zaman duymadım. Sanki o gün dünyalar benim olmuştu.
 
-[Event "Selim Palavan’ın analizi"]
+[Event "Odessa, Ukrayna"]
 [Frame "quote"]
 [EventLine "Analiz: Selim Palavan · Kaynak: Selim Palavan, <i>Satranç</i>, TEB Yayınları"]
-[White "Beyaz"]
-[Black "Siyah"]
+[Site "Odessa, Ukrayna"]
+[Date "1934.??.??"]
+[White "Selim Palavan"]
+[Black "Max Euwe"]
 [Result "1/2-1/2"]
 [SetUp "1"]
 [FEN "2r5/1p6/3RB1nk/1K6/7P/3P3P/8/8 b - - 0 1"]

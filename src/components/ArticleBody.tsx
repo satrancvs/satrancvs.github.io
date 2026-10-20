@@ -154,7 +154,7 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
 }
 
 // İçindekiler: yazıdaki tüm oyunlar, [Event] başlıklarından otomatik çıkarılır.
-type GameItem = { id: string; key: string; round: string; hasRound: boolean; label: string; result: string; watch: boolean; study: boolean; at: number; players: string; place: string };
+type GameItem = { id: string; key: string; round: string; hasRound: boolean; label: string; result: string; watch: boolean; study: boolean; at: number; players: string; place: string; venue: string; credit: string };
 // `chunk`: başlığın geçtiği paragraf; `at`: İçindekiler'in (ilk öğe için) önüne konacağı paragraf; `game`: oyun yorumundaki başlıkta, oyun bölümünün kimliği.
 type TocItem = { id: string; label: string; markup: string; chunk: number; at: number; game?: string };
 
@@ -179,6 +179,8 @@ function gameToc(chunks: string[]): GameItem[] {
       study: STUDY_TAG.test(c),
       at,
       // Turnuva, yer, yıl; art arda aynı değer (örn. Event ve Site aynıysa) bir kez yazılır.
+      venue: [t.Event, t.Site, (t.Date ?? '').match(/^\d{4}/)?.[0]].filter((v, i, a) => v && v !== a[i - 1]).join(', '),
+      credit: t.EventLine ?? '',
       place: t.EventLine || [t.Event, t.Site, (t.Date ?? '').match(/^\d{4}/)?.[0]].filter((v, i, a) => v && v !== a[i - 1]).join(', '),
       players: `${fullName(t.White)}${t.WhiteElo ? ` (${t.WhiteElo})` : ''} – ${fullName(t.Black)}${t.BlackElo ? ` (${t.BlackElo})` : ''}`,
       round: t.Round || String(n),
@@ -547,9 +549,13 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
         out.push(
           <section key={i} id={item.id} className="scroll-mt-8">
             <blockquote className="quote quote-game">
+              <div className="mx-auto mb-4 w-full max-w-[520px] py-2 text-center not-italic">
+                <h4 className="text-[#F1E9DC]/90">{item.players}</h4>
+                {item.venue && <p className="mt-1 text-[#A89A88]">{item.venue}</p>}
+              </div>
               {startFen && <FenBlock fen={startFen} ready={cp === 'ready'} />}
               {game}
-              {item.place && <footer className="quote-cite f-mono">— <CiteMd cite={item.place} /></footer>}
+              {item.credit && <footer className="quote-cite f-mono">— <CiteMd cite={item.credit} /></footer>}
             </blockquote>
           </section>,
         );
