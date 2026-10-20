@@ -22,9 +22,7 @@ Kirli çarşafların üzerinde uyku tulumumdan çıkmamaya çalışarak uyuduğu
 
 Polonya’da oynadığım bir başka turnuvada da yine “couchsurfing” yapmış ve son iki gece kaldığım evde ev sahibimin Kont Dracula’yı kıskandıracak derecedeki noktürnal hayatı yüzünden son iki tura uykusuz çıkmıştım.
 
-İki turdan sadece yarım puan alsam norm alacaktım ancak bahane bulmak istemesem de belki de biraz da bu uykusuzluk yüzünden her iki oyunu da kaybederek seneler önce normlarımı tamamlama fırsatını geri tepmiştim.
-
-Fakat Grenke için şartlar son derece elverişliydi.
+İki turdan sadece yarım puan alsam norm alacaktım ancak bahane bulmak istemesem de belki de biraz da bu uykusuzluk yüzünden her iki oyunu da kaybederek seneler önce normlarımı tamamlama fırsatını geri tepmiştim. Fakat Grenke için şartlar son derece elverişliydi.
 
 Stuttgart havalimanındaki anlamsız derecede kaotik ve uzun kuyruğu saymazsak -Avrupa’daki havalimanları AB’nin ve de özellikle Almanya’nın çöküşü hakkında Spenglervari teoriler üretmenize neden oluyor- nispeten konforlu bir uçuş ve tren yolculuğunun ardından turnuvadan bir gün önce, 1 Nisan günü vardığım Karlsruhe’de İstanbul’un aksine tam bir bahar havası vardı.
 
