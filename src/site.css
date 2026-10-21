@@ -5,6 +5,8 @@
 .f-display { font-family:'Fraunces',serif; letter-spacing:-0.04em; line-height:.9; font-weight:300; font-variation-settings:'opsz' 72; }
 .art-prose, .quote > p { font-family:'Newsreader',serif; font-size:1.1875rem; line-height:1.7; font-optical-sizing:auto; }
 .art-prose strong, .quote > p strong { font-weight:600; }
+.cp-game .pgn-comment, .cp-game .pgn-comment-inline, .cp-game .pgn-variation, .cp-game .video-comment, .cp-game .comment-body { font-family:'Newsreader',serif; font-size:1.1875rem; line-height:1.7; font-optical-sizing:auto; }
+.cp-game .pgn-variation .pgn-move { font-family:'Manrope',sans-serif; font-size:1rem; }
 .f-mono { font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.2em; text-transform:uppercase; }
 .reveal { transition: transform .9s cubic-bezier(.2,.7,.1,1), opacity .9s cubic-bezier(.2,.7,.1,1); }
 .reveal.pre { opacity:0; transform:translateY(40px); }
