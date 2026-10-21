@@ -130,7 +130,7 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
   const noFigs = movetext.replace(/\{[^}]*\}/g, (c) => c.replace(COMMENT_FIG_LINE, (_m, fig: string) => (study && COMMENT_FEN.test(fig) ? '' : `@@FIG${figs.push(fig) - 1}@@`)));
   const text = study ? noFigs.replace(/\{\s*\[P\s*\d*\]\s*\}|\[P\s*\d*\]/g, '') : noFigs;
   // Etiketler (başlık <span>'ı, <br>) kaçışlandıktan SONRA eklenir: <pgn> içeriğini innerHTML ile okur, etiketler böyle gerçek etiket olarak ChessPublica'ya ulaşır.
-  const raw = commentMarkup(`${head}\n\n${text.trim()}`.replace(/&/g, '&amp;').replace(/</g, '&lt;'));
+  const raw = commentMarkup(`${head}\n\n${text.trim()}`.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/&lt;(\/?mark)>/g, '<$1>')); // <mark>…</mark> (yazar incelemesi için kırmızı işaret) kaçışlanmaz
   const box = useRef<HTMLDivElement>(null);
   const [near, setNear] = useState(() => typeof window === 'undefined' || typeof IntersectionObserver === 'undefined' || !!window.location.hash);
   useEffect(() => {
