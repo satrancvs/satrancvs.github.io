@@ -248,5 +248,5 @@
 .speed-label { font-family: 'JetBrains Mono', ui-monospace, monospace; font-weight: 600; letter-spacing: 0; line-height: 1.4; }
 
 /* Oynatıcının hamle şeridinde etkin hamlenin vurgu kutusu (.white-half.active): büyütülmüş taş simgeleri (Figurine) yazı tipinin kendi
-   yüksekliğini aştığı için kutunun üstü kesik görünüyordu; kutu dikeyde biraz genişler (satır yüksekliği/yerleşim değişmez). */
-.cp-game .white-half { padding-block: .2em; }
+   yüksekliğini aştığı için kutunun üstü kesik görünüyordu; kutu dikeyde biraz genişler (satır yüksekliği/yerleşim değişmez); taş simgeli yazıda kutunun altı üstünden bol kaldığı için dolgu yukarı kaydırıldı (üst .35em, alt .05em). */
+.cp-game .white-half { padding-block: .35em .05em; }
