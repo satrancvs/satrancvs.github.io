@@ -220,3 +220,19 @@
 
 /* Oyun yorumundaki "### Başlık" (ArticleBody.tsx commentMarkup): makale ### başlığıyla aynı yazı tipi, yorumun içinde. */
 .cp-game .cp-heading { display: block; margin: 3rem 0 1rem; scroll-margin-top: 2rem; font-family: 'Fraunces', serif; font-weight: 300; font-variation-settings: 'opsz' 72; font-style: normal; letter-spacing: -0.04em; line-height: 1; font-size: clamp(2.25rem, 5vw, 3rem); color: #F1E9DC; }
+
+/* Palavan–Euwe: Beyaz taraflı oynatıcı bitince tahta Siyah tarafına dönen bulmaca (src/components/FlipGame.tsx). Arka yüz (bulmaca) baştan çizilir ama görünmez
+   ve yer kaplamaz (tahta genişliği bilinsin diye gerçek genişlikte); dönüş bitince öne gelir. Altındaki yorumlar hamle bulundukça (ya da analizdeki bir hamle denenince) açılır. */
+.flip-stage { position: relative; }
+.flip-stage .flip-face { transform-origin: 50% 50%; }
+.flip-stage .flip-back { position: absolute; top: 0; left: 0; right: 0; visibility: hidden; pointer-events: none; }
+.flip-stage .flip-back.is-active { position: relative; visibility: visible; pointer-events: auto; }
+.flip-stage .flip-back.is-solved .video-comment { display: none; }
+.puzzle-notes { margin-top: .5rem; }
+.puzzle-notes p { margin: 0 0 1.1rem; font-size: clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height: 1.7; color: rgba(241,233,220,.95); animation: pn-in .55s cubic-bezier(.2,.7,.2,1) both; }
+.puzzle-notes .pn-move { font-weight: 500; }
+.puzzle-notes .pn-line { margin-left: 1.25rem; padding-left: .75rem; border-left: 2px solid rgba(128,128,128,.3); }
+.puzzle-notes .pn-line.flash { animation: pn-in .55s cubic-bezier(.2,.7,.2,1) both, pn-flash 1.4s ease; }
+@keyframes pn-in { from { opacity: 0; transform: translateY(.6rem); } to { opacity: 1; transform: none; } }
+@keyframes pn-flash { 0%, 100% { background: transparent; } 25% { background: rgba(200,137,62,.2); } }
+@media (prefers-reduced-motion: reduce) { .puzzle-notes p, .puzzle-notes .pn-line.flash { animation: none; } }

@@ -108,6 +108,18 @@ the scroll waits for every `<pgn-player>`/`<pgn-study>` to be ready (`allElement
 - `!important` appears exactly three times (`icons.css`, `player.css`), each to override an `--icon` custom
   property that ChessPublica sets in an inline `style`, which nothing else can beat.
 
+## Flip puzzle: events added to `pgn-player.js` (patched here, `src/components/FlipGame.tsx`)
+Two additions to `public/chesspublica/pgn-player.js`, both marked `Site patch` in the file:
+- the existing `cp-move` event now carries `detail.gameOver` (the last move and its comment are showing);
+- `PuzzleMode._notify()` dispatches a bubbling `cp-puzzle` event on the player for main-line puzzles: `step` (the solver's
+  move was found), `reply` (the opponent's forced reply), `wrong` (a move that is not the solution; `detail.attempt` is its SAN) and
+  `solved`. `detail` has the SAN, glyph, move number/colour, the comment and the side variations anchored at that move.
+`FlipGame` (a `[Frame "quote"]` game with `[Flip "puzzle"]` + the next game with the same players/date) uses them: the first game is a
+`<pgn-player>` (White's side), the second the puzzle (`{[Pn]}`, Black's side) stacked behind it; when the first player is on its last move
+the card flips (reading time `1.4 s + 45 ms × comment length`) and the puzzle's comments are written under it as moves are found, or when a
+move that starts a variation in the analysis is tried. The puzzle's own comment box (lead sentence in `{[Pn] …}`) is hidden once solved.
+If ChessPublica fails to load, both games are drawn one after the other without the flip. Re-check these hooks if `pgn-player.js` is replaced.
+
 ## Illegal move lines in comments are shown as an error (patched here)
 A parenthesised line that starts with a move number inside a `{ }` comment (`(21... Ne7 22. Nxb4)`) is played from the
 comment's position and becomes a variation. Upstream, an illegal line was deleted without a trace; the bundle

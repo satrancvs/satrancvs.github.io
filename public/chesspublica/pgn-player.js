@@ -1254,7 +1254,9 @@ class PuzzleMode {
     const move = this.chess.move({ from, to, promotion: "q" });
 
     if (!move || normalizeSAN(move.san) !== normalizeSAN(expectedSAN)) {
+      const attempt = move ? move.san : null;
       if (move) this.chess.undo();
+      this._notify("wrong", this.startIndex + 1 + this.solvedCount, { attempt });
       this._shake();
       return "snapback";
     }
@@ -1292,7 +1294,9 @@ class PuzzleMode {
       this._clearSelection();
 
       if (!move || normalizeSAN(move.san) !== normalizeSAN(expectedSAN)) {
+        const attempt = move ? move.san : null;
         if (move) this.chess.undo();
+        this._notify("wrong", this.startIndex + 1 + this.solvedCount, { attempt });
         this._shake();
         return;
       }
@@ -1332,6 +1336,36 @@ class PuzzleMode {
     if (!move) return;
 
     this._advance();
+  }
+
+  /* Site patch: reports puzzle progress to the page as a bubbling "cp-puzzle" CustomEvent (main-line puzzles only):
+       type "step" (the solver's move was found), "reply" (the opponent's forced reply was played), "wrong" (a move
+       that is not the solution was tried; detail.attempt is its SAN) and "solved". detail carries what the page needs
+       to show the annotation of that move: SAN, glyph, move number/colour, the comment and the side variations
+       anchored at that move. See src/components/FlipGame.tsx. */
+  _notify(type, idx, extra) {
+    if (!this._ctx || this._ctx.isVariation) return;
+    const st = this.engine.state;
+    const has = idx !== null && idx !== undefined;
+    const fen = has ? (st.cache[idx] || "") : "";
+    const f = fen.split(" ");
+    this.engine.container.dispatchEvent(new CustomEvent("cp-puzzle", {
+      bubbles: true,
+      detail: Object.assign({
+        type,
+        index: has ? idx : null,
+        san: has ? st.moves[idx] : null,
+        glyph: has ? (st.glyphs[idx] || "") : "",
+        black: f[1] === "b",
+        moveNumber: parseInt(f[5], 10) || 1,
+        comment: has ? (st.comments[idx] || "") : "",
+        variations: has ? (st.variations[idx] || []).map(v => ({
+          moves: v.moves.slice(),
+          comments: Array.from(v.commentsByMove, c => c || ""),
+          glyphs: Array.from(v.nagsByMove, n => nagsToGlyph(n) || ""),
+        })) : [],
+      }, extra || {}),
+    }));
   }
 
   _shake() {
@@ -1398,6 +1432,7 @@ class PuzzleMode {
     const absoluteIdx = this.startIndex + 1 + this.solvedCount;
     this.solvedCount++;
     this._renderPly(absoluteIdx);
+    this._notify("step", absoluteIdx);
 
     if (this.solvedCount >= this.plies) {
       this._finish();
@@ -1415,6 +1450,7 @@ class PuzzleMode {
       this.chess.move(this.expected[this.solvedCount], { sloppy: true });
       this.solvedCount++;
       this._renderPly(replyIdx);
+      this._notify("reply", replyIdx);
       if (this.solvedCount >= this.plies) this._finish();
     }, 300);
   }
@@ -1426,6 +1462,7 @@ class PuzzleMode {
     const ctx        = this._ctx;
 
     this.marker.solved = true;
+    this._notify("solved", null);
     this._deactivate();
 
     if (ctx.isVariation) {
@@ -2628,7 +2665,8 @@ class VideoEngine {
        can match the event to the right <pgn>. */
     this.container.dispatchEvent(new CustomEvent("cp-move", {
       bubbles: true,
-      detail: { moveIndex: moveIdx, headers: this.state.headers },
+      /* Site patch: gameOver lets the page react when the last move (and its comment) is showing. */
+      detail: { moveIndex: moveIdx, headers: this.state.headers, gameOver: i >= this.state.moves.length },
     }));
   }
 

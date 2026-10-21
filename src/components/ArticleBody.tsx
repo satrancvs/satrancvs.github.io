@@ -1,6 +1,7 @@
 import { Children, Fragment, isValidElement, useEffect, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
 import { createPortal } from 'react-dom';
+import FlipGame from '@/components/FlipGame';
 import Markdown from 'markdown-to-jsx';
 import { useChessPublica } from '@/lib/chesspublica';
 import { curlyComments, curlyProse, watchComments } from '@/lib/curly-dom';
@@ -92,6 +93,9 @@ const STUDY_TAG = /^\[View\s+"study"\]\s*$/im;
 const EVENT_LINE_TAG = /^\[EventLine\s+"[^"]*"\]\s*$/im;
 // [Frame "quote"]: oyun, alıntı kutusunun (.quote) içinde çizilir (diyagram + <pgn>); oyuncu başlığı yerine EventLine kaynak satırı olur (Palavan'ın analizi).
 const QUOTE_TAG = /^\[Frame\s+"quote"\]\s*$/im;
+// `[Flip "puzzle"]` (yalnızca bir `[Frame "quote"]` oyununda): oyun <pgn-player> ile çizilir ve bitince, hemen ardından gelen aynı oyunun bulmaca hali (FlipGame)
+// tahta Siyah tarafına dönerek öne gelir. Etiket ChessPublica'ya geçirilmez.
+const FLIP_TAG = /^\[Flip\s+"[^"]*"\]\s*$/im;
 
 // Oyun yorumlarında (`{ … }`): `### Başlık` satırı başlık (`.cp-heading`, İçindekiler'e girer), boş satır paragraf ayracıdır.
 // ChessPublica yorumlarda yalnızca satır içi etiketlere izin verir; başlık bu yüzden class'ı izinli bir <span>'dır (bkz. docs/chesspublica-quirks.md).
@@ -106,9 +110,9 @@ const commentMarkup = (movetext: string) =>
 
 function PgnGame({ header, moves }: { header: string; moves: string }) {
   // [View "player"] etiketi oyunu (bulmaca işareti olmasa da) <pgn-player> ile çizdirir; ChessPublica'ya geçirilmez.
-  const watch = WATCH_TAG.test(header);
+  const watch = WATCH_TAG.test(header) || FLIP_TAG.test(header);
   const study = STUDY_TAG.test(header);
-  const clean = header.replace(WATCH_TAG, '').replace(EVENT_LINE_TAG, '').replace(QUOTE_TAG, '').trim();
+  const clean = header.replace(WATCH_TAG, '').replace(EVENT_LINE_TAG, '').replace(QUOTE_TAG, '').replace(FLIP_TAG, '').trim();
   const side = study ? null : puzzleSide(clean, moves);
   const head = side === 'b' && !/\[Orientation\s/i.test(clean) ? `${clean}\n[Orientation "black"]` : clean;
   const tag = study ? 'pgn-study' : side || watch ? 'pgn-player' : 'pgn';
@@ -544,19 +548,25 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
         : <PgnGame header={c} moves={moves} />;
       // <pgn> (oynatıcısız) oyunlar bir başlangıç FEN'inden başlıyorsa, hamle metninin üstünde o konum bir diyagramla gösterilir.
       // İlk hamlenin hemen ardından yazarın kendi diyagramı ([D]) geliyorsa başlangıç diyagramı gösterilmez (Andersson–Timman).
-      const startFen = !useFallback && !WATCH_TAG.test(c) && !puzzleSide(c, moves) && !FIRST_MOVE_DIAGRAM.test(moves) ? c.match(/\[FEN\s+"([^"]+)"\]/i)?.[1] : undefined;
+      const startFen = !useFallback && !WATCH_TAG.test(c) && !FLIP_TAG.test(c) && !puzzleSide(c, moves) && !FIRST_MOVE_DIAGRAM.test(moves) ? c.match(/\[FEN\s+"([^"]+)"\]/i)?.[1] : undefined;
       if (QUOTE_TAG.test(c)) {
         // Hemen ardından aynı oyunun bulmaca (oynatıcılı) hali geliyorsa o da aynı kutunun içine girer (Palavan–Euwe).
         const nextAt = i + (own ? 2 : 1);
         const nextItem = chunks[nextAt]?.trim().startsWith('[Event ') ? games[gameNo] : undefined;
         const puzzle = nextItem && !nextItem.watch && nextItem.key === item.key ? nextItem : undefined;
         let puzzleBox: ReactNode = null;
+        let flipBox: ReactNode = null;
         let skip = own ? 1 : 0;
         if (puzzle) {
           gameNo++;
           const hdr = chunks[nextAt].trim();
           const pm = gameMoves(chunks, nextAt);
-          puzzleBox = <div id={puzzle.id} className="scroll-mt-8 mt-8">{useFallback ? <Game header={hdr} moves={pm.moves} /> : <PgnGame header={hdr} moves={pm.moves} />}</div>;
+          // `[Flip "puzzle"]`: oynatıcı (analiz) bitince tahta döner, bulmaca öne gelir (FlipGame). ChessPublica yüklenemediyse düz sıralı halde kalır.
+          if (FLIP_TAG.test(c) && !useFallback) {
+            flipBox = <div id={puzzle.id} className="scroll-mt-8"><FlipGame front={game} back={<PgnGame header={hdr} moves={pm.moves} />} /></div>;
+          } else {
+            puzzleBox = <div id={puzzle.id} className="scroll-mt-8 mt-8">{useFallback ? <Game header={hdr} moves={pm.moves} /> : <PgnGame header={hdr} moves={pm.moves} />}</div>;
+          }
           skip = nextAt - i + (pm.own ? 1 : 0);
         }
         out.push(
@@ -567,7 +577,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
                 {item.venue && <p className="mt-1 text-[#A89A88]">{item.venue}</p>}
               </div>
               {startFen && <FenBlock fen={startFen} ready={cp === 'ready'} />}
-              {game}
+              {flipBox ?? game}
               {puzzleBox}
               {item.credit && <footer className="quote-cite f-mono">— <CiteMd cite={item.credit} /></footer>}
             </blockquote>
