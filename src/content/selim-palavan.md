@@ -1,5 +1,7 @@
 ![Prof. Dr. Selim Palavan](images/selim-palavan.jpg "Prof. Dr. Selim Palavan (1909–1995) · Kaynak: İstanbul Satranç Derneği arşivi · © İSD")
 
+### 1944 yılından: İstanbul Şatranç şampiyonu Selim Palavan kimdir?
+
 İstanbul Türk Şatranç klübünün Tokatlıyan otelindeki salonundan içeriye girince bir köşede Bay Selim Palavan’ı şatranç masasının başında buldum.
 
 **– Kolay gele bay Selim, gene bir etüd mü ?**
