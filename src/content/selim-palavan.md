@@ -50,7 +50,7 @@ Bütün İstanbul’un ve hatta memleketimizin her köşesindeki şatranç merak
 [SetUp "1"]
 [FEN "2r5/1p6/3RB1nk/1K6/7P/3P3P/8/8 b - - 0 1"]
 
-{[P]} 1... Rc6 $3 2. Rxc6 bxc6+ 3. Kc5 Nf4 4. Bf5 Nxd3+ 5. Bxd3 1/2-1/2
+{[P7]} 1... Rc6 $3 2. Rxc6 bxc6+ 3. Kc5 Nf4 4. Bf5 Nxd3+ 5. Bxd3 1/2-1/2
 
 – Mühendis mektebinde doçent olan ve 34 yaşında bulunan bay Selim Palavan’ın şatranç ile meşgul olabilmek için nasıl vakit bulduğunu anlayabilmek merakına kapılarak şu suali sordum:
 
