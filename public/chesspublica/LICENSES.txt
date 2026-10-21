@@ -5,6 +5,10 @@ ChessPublica  https://chesspublica.github.io/
   MIT License. Copyright (c) 2026 ChessPublica contributors.
   (public/chesspublica/*.js and *.css are a patched local copy; see docs/chesspublica-quirks.md in the repository.)
 
+Noto Sans Math, Noto Sans Symbols 2  https://fonts.google.com/noto
+  SIL Open Font License 1.1. Copyright 2022 The Noto Project Authors. https://openfontlicense.org
+  (Only a few glyphs are kept in public/fonts/*.woff2: the chess evaluation signs and the chess figurines.)
+
 jQuery v3.7.1  https://jquery.com/
   MIT License. Copyright OpenJS Foundation and other contributors. https://jquery.org/license
 
