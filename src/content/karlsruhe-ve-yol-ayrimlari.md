@@ -20,7 +20,7 @@ Bu noktada birkaç örnek verirsem bu değişikliğin önemi daha iyi anlaşıl�
 
 Kirli çarşafların üzerinde uyku tulumumdan çıkmamaya çalışarak uyuduğum gecelerde odaya giren köpeğin -hastalığı nedeniyle ona Dogstoyevski adını takmıştım- karanlıkta cam gibi parlayan sıradışı bir yeşil renge sahip gözlerini hâlâ hatırlarım.
 
-Polonya’da oynadığım bir başka turnuvada da yine “couchsurfing” yapmış ve son iki gece kaldığım evde ev sahibimin Kont Dracula’yı kıskandıracak derecedeki noktürnal hayatı yüzünden son iki tura uykusuz çıkmıştım.
+Polonya’da oynadığım bir başka turnuvada da yine “*couchsurfing*” yapmış ve son iki gece kaldığım evde ev sahibimin Kont Dracula’yı kıskandıracak derecedeki noktürnal hayatı yüzünden son iki tura uykusuz çıkmıştım.
 
 İki turdan sadece yarım puan alsam norm alacaktım ancak bahane bulmak istemesem de belki de biraz da bu uykusuzluk yüzünden her iki oyunu da kaybederek seneler önce normlarımı tamamlama fırsatını geri tepmiştim. Fakat Grenke için şartlar son derece elverişliydi.
 
