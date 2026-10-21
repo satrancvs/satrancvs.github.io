@@ -48,7 +48,7 @@ export const PUBLISHED = ARTICLES.filter((a) => !a.draft);
 
 // "Bu Sayıdaki Tüm yazılar" listesinin sırası (a1, b2, …). Kapak ve "Öne çıkanlar" articles.json sırasını izler, liste bundan bağımsızdır.
 // Burada olmayan (yeni) yazılar listenin sonuna, articles.json sırasıyla eklenir.
-const LIST_ORDER = ['giris', 'kapak', 'karlsruhe', 'atfil', 'aronian', 'zebra', 'gomori', 'mugla'];
+const LIST_ORDER = ['giris', 'kapak', 'karlsruhe', 'mugla', 'atfil', 'aronian', 'zebra', 'palavan'];
 const rank = (a: Article) => { const i = LIST_ORDER.indexOf(a.id); return i >= 0 ? i : LIST_ORDER.length + ARTICLES.indexOf(a); };
 export const LISTED = [...PUBLISHED].sort((x, y) => rank(x) - rank(y));
 
