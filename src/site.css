@@ -160,6 +160,7 @@
 .cp-game pgn-study > .pgn-study-mobile-title,
 .cp-game pgn-study > .pgn-study-resizer,
 .cp-game pgn-study .pgn-study-move-picker { display: none; }
+.cp-game pgn-study .pgn-clickable-diagram { display: none; }
 .cp-game pgn-study > pgn-player {
   flex: 0 0 auto; overflow: hidden; container-type: inline-size; width: 100%; margin: 0; display: block;
   /* Yazıdaki diyagramla aynı boy: min(400px, sütunun %98,7'si). cqw oyuncunun genişliğidir; çerçevenin 2 × (yan dolgu + 1px) payı ve yazıdaki diyagramın tahta/sarmalayıcı farkı (+3 px) ile study tahtasının iç farkı (−3,7 px) eklenir. */
