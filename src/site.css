@@ -9,7 +9,6 @@
 .cp-game .pgn-variation .pgn-move { font-family:'Manrope',sans-serif; font-size:1rem; }
 .btn-mono { font-family:'JetBrains Mono',monospace; font-size:13px; letter-spacing:.08em; text-transform:uppercase; font-weight:600; }
 .btn-mono.ghost { font-weight:500; }
-.art-sub { font-family:'Newsreader',serif; font-style:italic; font-size:1.3125rem; font-weight:320; line-height:1.5; color:#A89A88; margin:-.75rem 0 2rem; }
 .f-mono { font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.2em; text-transform:uppercase; }
 .reveal { transition: transform .9s cubic-bezier(.2,.7,.1,1), opacity .9s cubic-bezier(.2,.7,.1,1); }
 .reveal.pre { opacity:0; transform:translateY(40px); }
