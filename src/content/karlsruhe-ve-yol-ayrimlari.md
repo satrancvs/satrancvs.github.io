@@ -8,7 +8,7 @@
 
 Hayatta bazen öyle kritik yol ayrımlarına geliriz ki, seçtiğimiz yol neredeyse geri dönüşü olmayan bir şekilde tüm hikayemizin seyrini belirler. Hemen herkes gibi ben de lise sonrası böyle bir yol ayrımı yaşamıştım: Üniversiteyi Almanya'da mı yoksa Türkiye’de mi okuyacağıma karar vermem gerekiyordu. Sonunda biraz da ailevi nedenlerle "konformist" bir tercih yaparak Ankara’nın yolunu tuttuysam da Frost'un ormanındaki diğer patikayı seçseydim gideceğim şehir Karlsruhe olacaktı.
 
-On sekizinci yüzyılda bir Alman asilzadesinin kurduğu bu şirin ve yeşil kente yolum ancak yirmi bir yıllık bir gecikmeyle, bu Nisan ayında düştü. “Dünyanın en büyük açık turnuvası” sloganıyla düzenlenen, Magnus Carlsen başta olmak üzere birçok elit satranççının da freestyle kategorisinde yarıştığı Grenke Açık’ta oynamaya karar vermiştim. Böylece bu gezi, bir satranç turnuvasının ötesinde benim için kişisel bir anlam da taşıyordu. Belki de bu yüzden birçok Alman kentini sıkıcı bulmama rağmen Karlsruhe’yi sevdim.
+On sekizinci yüzyılda bir Alman asilzadesinin kurduğu bu şirin ve yeşil kente yolum ancak yirmi bir yıllık bir gecikmeyle, bu Nisan ayında düştü. “Dünyanın en büyük açık turnuvası” sloganıyla düzenlenen, Magnus Carlsen başta olmak üzere birçok elit satranççının da *freestyle* kategorisinde yarıştığı Grenke Açık’ta oynamaya karar vermiştim. Böylece bu gezi, bir satranç turnuvasının ötesinde benim için kişisel bir anlam da taşıyordu. Belki de bu yüzden birçok Alman kentini sıkıcı bulmama rağmen Karlsruhe’yi sevdim.
 
 ![Karlsruhe’nin simgesi olan piramit](images/piramit.jpg "Karlsruhe’nin simgesi olan piramit.  Kenti kuran asilzade <span lang="de">Karl Wilhelm von Baden-Durlach</span>’ın ebedi istirahatgahı olan kilisenin yerine yapılmış. · Fotoğraf: Tarık Selbes")
 
@@ -36,13 +36,13 @@ Stuttgart havalimanındaki anlamsız derecede kaotik ve uzun kuyruğu saymazsak 
 
 Devasa bir salon içerisinde yüzlerce masa ve insan, eşlendirmenin tur saatinde bile hâlâ belli olmaması ve dikey numaralandırma düzeni nedeniyle en azından bu duruma alışana dek masanızı bulmanın imkansızlığı…
 
-Sadece A kategorisinde bile başlangıç listesinde başını GM Pavel Eljanov’un çektiği 998 (!) katılımcı olduğunu söylemek herhalde yeterli olur –ki daha B ve C kategorileri ile freestyle turnuvasındaki üç kategoriden bahsetmedim bile.
+Sadece A kategorisinde bile başlangıç listesinde başını GM Pavel Eljanov’un çektiği 998 (!) katılımcı olduğunu söylemek herhalde yeterli olur –ki daha B ve C kategorileri ile *freestyle* turnuvasındaki üç kategoriden bahsetmedim bile.
 
 Telefonu her zamanki gibi odada bıraktığım için eşlendirmeyi de ancak sorarak öğrenmiş ve doğru masada oturduğumdan bile emin olamayarak tahta başına geçmiştim.
 
-Freestyle kategorisinde her tur öncesi oynanacak pozisyon için çekilen kuranın ve açılış töreninin ardından başlayan tur öncesi az da olsa heyecanlıydım.
+*Freestyle* kategorisinde her tur öncesi oynanacak pozisyon için çekilen kuranın ve açılış töreninin ardından başlayan tur öncesi az da olsa heyecanlıydım.
 
-Masaya otururken sadece rakibimin isminin Yash Watarkar olduğu ve Siyah taşlarla oynayacağım bilgisine sahiptim. Rakibimin hangi açılışı oynadığından ve hatta oyun kuvvetinden bile bihaber vaziyetteydim.
+Masaya otururken sadece rakibimin isminin Yash Watarkar olduğu ve siyah taşlarla oynayacağım bilgisine sahiptim. Rakibimin hangi açılışı oynadığından ve hatta oyun kuvvetinden bile bihaber vaziyetteydim.
 
 Fakat düşük ratinge sahip de olsa her Hintli oyuncu gibi genç rakibimin tehlikeli olabileceğini biliyordum. Bu nedenle ilk turdan bir kazaya uğramamak gerekiyordu ve her ne kadar bazı badireler atlattıysam da bunu başardım.
 
