@@ -117,7 +117,8 @@ Two additions to `public/chesspublica/pgn-player.js`, both marked `Site patch` i
 `FlipGame` (a `[Frame "quote"]` game with `[Flip "puzzle"]` + the next game with the same players/date) uses them: the first game is a
 `<pgn-player>` (White's side), the second the puzzle (`{[Pn]}`, Black's side) stacked behind it; when the first player is on its last move
 the player's replay button (`.comment-play-btn`, re-created by ChessPublica on every render, so a MutationObserver converts it: `cloneNode` drops its `onclick`, icon `circle-play`) becomes a play button and pressing it flips the card (never automatically), and the puzzle's comments are written under it as moves are found, or when a
-move that starts a variation in the analysis is tried. The puzzle's own comment box (lead sentence in `{[Pn] …}`) is hidden once solved.
+move that starts a variation in the analysis is tried. (Superseded: the move comments are shown by the player itself, see below; `FlipGame` only adds the variation lines.)
+Main-line puzzles also use the player's own comment box (patch `PuzzleMode._showComment`/`_playReply`): after the solver's correct move the comment of that move, if any, is shown with a Play button at its end and the opponent's reply waits for it; no comment = the reply follows after 300 ms as before. The reply's own comment is shown with the reply, the box is cleared on positions without a comment, and after the last solver move `_finish()` resumes normal playback (final comment + Replay). The puzzle's own comment box (lead sentence in `{[Pn] …}`) is hidden once solved.
 If ChessPublica fails to load, both games are drawn one after the other without the flip. Re-check these hooks if `pgn-player.js` is replaced.
 
 ## Illegal move lines in comments are shown as an error (patched here)

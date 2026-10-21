@@ -66,8 +66,6 @@ export default function FlipGame({ front, back }: { front: ReactNode; back: Reac
 
     let flipped = false;
     let atEnd = false;
-    let solved = false;
-    let finalShown = false;
 
     const flip = () => {
       if (flipped) return;
@@ -94,17 +92,7 @@ export default function FlipGame({ front, back }: { front: ReactNode; back: Reac
 
     // Ön oynatıcı son hamlesine ve yorumuna geldi: okuma süresi kadar bekleyip döndür (okur geri sarsa vazgeç).
     const onMove = (e: Event) => {
-      const target = e.target as Node;
-      // Bulmaca çözülünce oynatıcı kalan son hamleyi kendisi oynar; hamle ve yorumu da alttaki yorum akışına eklenir.
-      if (b.contains(target)) {
-        const move = (e as CustomEvent).detail;
-        if (solved && !finalShown && move?.gameOver && move.moveIndex >= 0) {
-          finalShown = true;
-          queue = queue.then(() => loadFormat()).then(({ formatComment }) => addFinal(move.moveIndex, formatComment)).catch(() => {});
-        }
-        return;
-      }
-      if (flipped || !f.contains(target)) return;
+      if (flipped || !f.contains(e.target as Node)) return;
       atEnd = !!(e as CustomEvent).detail?.gameOver;
       if (atEnd) requestAnimationFrame(toPlay);
     };
@@ -130,7 +118,6 @@ export default function FlipGame({ front, back }: { front: ReactNode; back: Reac
 
     // Bulmaca yorumları: sıralı işlenir (biçimleyici modülü eşzamansız yüklenir).
     const shown = new Map<string, HTMLElement>();
-    let para: HTMLElement | null = null;
     let queue: Promise<void> = Promise.resolve();
 
     const addLine = (v: Variation, d: PuzzleDetail, fmt: Format, reveal: boolean) => {
@@ -140,7 +127,6 @@ export default function FlipGame({ front, back }: { front: ReactNode; back: Reac
         if (reveal) { old.classList.remove('flash'); void old.offsetWidth; old.classList.add('flash'); }
         return;
       }
-      para = null;
       const p = document.createElement('p');
       p.className = reveal ? 'pn-line flash' : 'pn-line';
       p.innerHTML = fmt(lineText(v, d));
@@ -149,47 +135,22 @@ export default function FlipGame({ front, back }: { front: ReactNode; back: Reac
       shown.set(key, p);
     };
 
+    // Hamlelerin yorumları oynatıcının kendi yorum kutusunda (tahtanın altında) görünür (pgn-player.js yaması, `_showComment`).
+    // Burada yalnızca yan varyantlar (analizdeki alternatif hamleler) alta satır olarak eklenir: hamle bulununca ya da analizdeki bir hamle denenince.
     const handle = (d: PuzzleDetail, fmt: Format) => {
-      if (d.type === 'solved') {
-        b.classList.add('is-solved');
-        return;
-      }
+      if (d.type === 'solved') return;
       if (d.type === 'wrong') {
         // Çözüm değil ama analizde geçen bir hamle denendi: o hamleyle başlayan yan varyant açılır.
         const hit = d.attempt ? d.variations.find((v) => v.moves[0] && norm(v.moves[0]) === norm(d.attempt as string)) : undefined;
         if (hit) addLine(hit, d, fmt, true);
         return;
       }
-      const startsParagraph = !para;
-      if (!para) {
-        para = document.createElement('p');
-        para.className = 'pn-para';
-        notes.appendChild(para);
-      }
-      const label = !d.black || startsParagraph ? `${d.moveNumber}${d.black ? '…' : '.'} ${d.san}${d.glyph}` : `${d.san}${d.glyph}`;
-      para.insertAdjacentHTML('beforeend', `${para.childNodes.length ? ' ' : ''}<span class="pn-move">${fmt(label)}</span>`);
-      if (d.comment) {
-        para.insertAdjacentHTML('beforeend', ` <span class="pn-comment">${fmt(d.comment)}</span>`);
-        curlyPass(para);
-        para = null;
-      } else {
-        curlyPass(para);
-      }
       d.variations.forEach((v) => addLine(v, d, fmt, false));
-    };
-
-    // Son hamle: ayrıntı oynatıcının durumundan okunur (olay yalnızca hamle sırasını taşır).
-    const addFinal = (idx: number, fmt: Format) => {
-      const st = (b.querySelector('pgn-player') as unknown as { _engine?: { state?: { cache: string[]; moves: string[]; glyphs: string[]; comments: string[] } } } | null)?._engine?.state;
-      if (!st) return;
-      const fen = (st.cache[idx] || '').split(' ');
-      handle({ type: 'reply', index: idx, san: st.moves[idx], glyph: st.glyphs[idx] || '', black: fen[1] === 'b', moveNumber: parseInt(fen[5], 10) || 1, comment: st.comments[idx] || '', variations: [] }, fmt);
     };
 
     const onPuzzle = (e: Event) => {
       const d = (e as CustomEvent<PuzzleDetail>).detail;
       if (!d || !b.contains(e.target as Node)) return;
-      if (d.type === 'solved') solved = true;
       queue = queue.then(() => loadFormat().then(({ formatComment }) => handle(d, formatComment))).catch(() => {});
     };
 

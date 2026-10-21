@@ -1434,7 +1434,17 @@ class PuzzleMode {
     this._renderPly(absoluteIdx);
     this._notify("step", absoluteIdx);
 
-    if (this.solvedCount >= this.plies) {
+    const done = this.solvedCount >= this.plies;
+    const next = () => (done ? this._finish() : this._playReply());
+
+    /* Site patch (main-line puzzles): the comment of the position the solver just reached is shown under the board
+       (the player's own comment box) and the opponent's reply waits for the Play button at the end of that comment,
+       exactly like normal playback. Without a comment the reply follows automatically, as before. */
+    if (!this._ctx.isVariation) {
+      if (this._showComment(absoluteIdx, next)) return;
+    }
+
+    if (done) {
       this._finish();
       return;
     }
@@ -1444,15 +1454,35 @@ class PuzzleMode {
        the next entry in `expected` (already sourced from the right game/
        variation moves in _activate), so no separate mainline-only lookup
        is needed here. */
-    setTimeout(() => {
-      if (!this.active) return; // torn down (nav away) while waiting
-      const replyIdx = this.startIndex + 1 + this.solvedCount;
-      this.chess.move(this.expected[this.solvedCount], { sloppy: true });
-      this.solvedCount++;
-      this._renderPly(replyIdx);
-      this._notify("reply", replyIdx);
-      if (this.solvedCount >= this.plies) this._finish();
-    }, 300);
+    setTimeout(() => this._playReply(), 300);
+  }
+
+  _playReply() {
+    if (!this.active) return; // torn down (nav away) while waiting
+    const replyIdx = this.startIndex + 1 + this.solvedCount;
+    this.chess.move(this.expected[this.solvedCount], { sloppy: true });
+    this.solvedCount++;
+    this._renderPly(replyIdx);
+    this._notify("reply", replyIdx);
+    if (!this._ctx.isVariation) this._showComment(replyIdx, null);
+    if (this.solvedCount >= this.plies) this._finish();
+  }
+
+  /* Site patch: puts the comment of main-line move `idx` into the player's own comment box (under the board); clears the
+     box when the position has none. With `onPlay` the box gets its Play button (at the end of the comment text) and
+     `onPlay` runs when it is pressed; returns true when a comment is showing and onPlay is therefore pending. Side
+     variations are left out here (FlipGame.tsx shows them). */
+  _showComment(idx, onPlay) {
+    const engine = this.engine;
+    const box = engine.commentBox;
+    if (!box || !box.el) return false;
+    const st = engine.state;
+    const has = box.update(idx, st.comments, [], st.diagrams, st.cache[idx + 1] || null, !!onPlay, st.cache[idx] || null, 1, false, false);
+    if (!onPlay || !has) return false;
+    const btn = box.el.querySelector(".comment-play-btn");
+    if (!btn) return false;
+    btn.onclick = () => { btn.remove(); onPlay(); };
+    return true;
   }
 
   _finish() {
