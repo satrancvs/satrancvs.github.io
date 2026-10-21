@@ -24,7 +24,7 @@ Polonya’da oynadığım bir başka turnuvada da yine “*couchsurfing*” yapm
 
 İki turdan sadece yarım puan alsam norm alacaktım ancak bahane bulmak istemesem de belki biraz uykusuzluk yüzünden her iki oyunu da kaybederek seneler önce normlarımı tamamlama fırsatını geri tepmiştim. Fakat Grenke için şartlar son derece elverişliydi.
 
-Stuttgart havalimanındaki anlamsız derecede kaotik ve uzun kuyruğu saymazsak -Avrupa’daki havalimanları AB’nin ve de özellikle Almanya’nın çöküşü hakkında Spenglervari teoriler üretmenize neden oluyor- nispeten konforlu bir uçuş ve tren yolculuğunun ardından turnuvadan bir gün önce, 1 Nisan günü vardığım Karlsruhe’de İstanbul’un aksine tam bir bahar havası vardı.
+Stuttgart havalimanındaki anlamsız derecede kaotik ve uzun kuyruğu saymazsak -Avrupa’daki havalimanları AB’nin ve de özellikle Almanya’nın çöküşü hakkında Spenglervari teoriler üretmenize neden oluyor- nispeten konforlu bir uçuş ve tren yolculuğunun ardından, turnuvadan bir gün önce, 1 Nisan günü vardığım Karlsruhe’de İstanbul’un aksine tam bir bahar havası vardı.
 
 İstasyondan valizi sürüyerek çok da uzun olmayan bir yürüyüşle vardığım salona on dakika mesafedeki nispeten uygun fiyatlı otelim Hotel Barbarossa hiç de kötü olmayan bir oda ve kahvaltı sunuyordu ve Alman mutfağı başarısızlık halinde suçlayabileceğim son sığınağım gibi görünüyordu.
 
