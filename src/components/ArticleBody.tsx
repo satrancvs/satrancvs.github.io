@@ -159,7 +159,7 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
     ? <div ref={box} className="cp-game pb-4" dangerouslySetInnerHTML={{ __html: `<div class="cp-loading">Oyun yükleniyor...</div><${tag}>\n${raw}\n</${tag}>` }} />
     : <div ref={box} className="cp-game cp-placeholder pb-4" />;
   const figures = slots.map((el, k) => figs[k] && createPortal(COMMENT_FEN.test(figs[k]) ? <FenBlock fen={figs[k].match(COMMENT_FEN)![1]} ready analysis badge={(m => (m[2] ? { glyph: m[2], square: m[3] } : undefined))(figs[k].match(COMMENT_FEN)!)} /> : <Figure chunk={figs[k]} />, el, `fig${k}`));
-  return intro ? <><p className="pb-4">{intro}</p>{game}{figures}</> : <>{game}{figures}</>;
+  return intro ? <><p className="art-prose pb-4">{intro}</p>{game}{figures}</> : <>{game}{figures}</>;
 }
 
 // İçindekiler: yazıdaki tüm oyunlar, [Event] başlıklarından otomatik çıkarılır.
