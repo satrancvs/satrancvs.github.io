@@ -102,7 +102,10 @@ const FLIP_TAG = /^\[Flip\s+"[^"]*"\]\s*$/im;
 const COMMENT_HEADING = /(^|\n)[ \t]*###[ \t]+([^\n]+)\n*/g;
 // Yorumun içindeki tek başına bir satır olan `![açıklama](yol "künye")` bir fotoğraftır: PgnGame satırı `@@FIG0@@` yer tutucusuyla değiştirir,
 // commentMarkup yer tutucuyu boş bir <span class="cp-fig"> yapar, ChessPublica çizdikten sonra Figure bu <span>'a portal ile basılır (yazıdaki fotoğrafla aynı bileşen).
-const COMMENT_FIG_LINE = /^[ \t]*(!\[[^\n]*\))[ \t]*$/gm;
+// Aynı mekanizma, yorumun içindeki tek başına bir `[FEN "…"]` satırı için de geçerlidir: oyunda oynanmayan (analizdeki) bir konumun statik diyagramı çizilir
+// (`[D]` yalnızca oyunun o anki konumunu çizer). Çalışma görünümünde (`pgn-study`) canlı tahta olduğu için FEN satırları silinir.
+const COMMENT_FIG_LINE = /^[ \t]*(!\[[^\n]*\)|\[FEN\s+"[^"\n]+"\])[ \t]*$/gm;
+const COMMENT_FEN = /^\[FEN\s+"([^"]+)"\]$/;
 const COMMENT_FIG = /(^|\n)[ \t]*@@FIG\d+@@[ \t]*\n*/g;
 // Yorumda tek başına bir `[boşluk]` satırı boş bir paragraftır (yazarın metnindeki boş satır): paragraf ayracına bir satır daha eklenir.
 // Boş satırlar paragraflar bölünürken birleştiği için (split-chunks.js) fazladan boş satır yazılamaz, bu işaret kullanılır.
@@ -125,7 +128,7 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
   const intro = lead?.[1].replace(/\[D\]/g, '').trim();
   // <pgn-study>'de bulmaca olmaz: [P] işaretleri silinir.
   const figs: string[] = [];
-  const noFigs = movetext.replace(/\{[^}]*\}/g, (c) => c.replace(COMMENT_FIG_LINE, (_m, fig: string) => `@@FIG${figs.push(fig) - 1}@@`));
+  const noFigs = movetext.replace(/\{[^}]*\}/g, (c) => c.replace(COMMENT_FIG_LINE, (_m, fig: string) => (study && COMMENT_FEN.test(fig) ? '' : `@@FIG${figs.push(fig) - 1}@@`)));
   const text = study ? noFigs.replace(/\{\s*\[P\s*\d*\]\s*\}|\[P\s*\d*\]/g, '') : noFigs;
   // Etiketler (başlık <span>'ı, <br>) kaçışlandıktan SONRA eklenir: <pgn> içeriğini innerHTML ile okur, etiketler böyle gerçek etiket olarak ChessPublica'ya ulaşır.
   const raw = commentMarkup(`${head}\n\n${text.trim()}`.replace(/&/g, '&amp;').replace(/</g, '&lt;'));
@@ -156,7 +159,7 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
   const game = near
     ? <div ref={box} className="cp-game pb-4" dangerouslySetInnerHTML={{ __html: `<div class="cp-loading">Oyun yükleniyor...</div><${tag}>\n${raw}\n</${tag}>` }} />
     : <div ref={box} className="cp-game cp-placeholder pb-4" />;
-  const figures = slots.map((el, k) => figs[k] && createPortal(<Figure chunk={figs[k]} />, el, `fig${k}`));
+  const figures = slots.map((el, k) => figs[k] && createPortal(COMMENT_FEN.test(figs[k]) ? <FenBlock fen={figs[k].match(COMMENT_FEN)![1]} ready /> : <Figure chunk={figs[k]} />, el, `fig${k}`));
   return intro ? <><p className="pb-4">{intro}</p>{game}{figures}</> : <>{game}{figures}</>;
 }
 
