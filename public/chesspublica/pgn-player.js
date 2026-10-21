@@ -1435,7 +1435,7 @@ class PuzzleMode {
     this._notify("step", absoluteIdx);
 
     const done = this.solvedCount >= this.plies;
-    const next = () => (done ? this._finish() : this._playReply());
+    const next = () => (done ? this._finish(true) : this._playReply());
 
     /* Site patch (main-line puzzles): the comment of the position the solver just reached is shown under the board
        (the player's own comment box) and the opponent's reply waits for the Play button at the end of that comment,
@@ -1485,7 +1485,9 @@ class PuzzleMode {
     return true;
   }
 
-  _finish() {
+  /* `shown` (site patch): the last solved move's comment was already read under the board (_advance), so playback resumes
+     with the move after it instead of showing that comment (and its Play button) a second time. */
+  _finish(shown = false) {
     const engine    = this.engine;
     const startIndex = this.startIndex;
     const plies      = this.plies;
@@ -1514,7 +1516,7 @@ class PuzzleMode {
     /* Auto-resume: play() advances state.index by 1 itself, so pre-set it
        to the position we're already showing (right after the last solved
        ply) and let the normal play loop take over from there. */
-    engine.state.index = startIndex + plies;
+    engine.state.index = startIndex + plies + (shown ? 1 : 0);
     engine.play();
   }
 }

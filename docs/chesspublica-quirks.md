@@ -138,3 +138,6 @@ The bundle drew pieces from `https://chessboardjs.com/img/chesspieces/wikipedia/
 "Wikipedia" piece set is by Colin M.L. Burnett, CC BY-SA 3.0 / GFDL). The home page preloads the bundle and the 12 pieces when the browser is idle
 (`preloadChessPublica` in `src/lib/chesspublica.ts`, called from `Index.tsx`), and `FenDiagram` needs only the base bundle (`useChessPublica(near, { player: false })`),
 not the `<pgn-player>` module. The board stays hidden until the pieces are drawn; the placeholder says "Diyagram yükleniyor…".
+
+### Puzzle resume after a gated comment
+`PuzzleMode._finish(shown)` (site patch): when the solver's last move had a comment that was already read under the board (`_advance` → `_showComment`), pressing its Play button resumes playback from the *next* move (`state.index` + 1). Upstream sets the index one lower, so `play()` re-ran `goTo` on the same position, showed the same comment again with a new Play button and paused (Mar del Plata, Timman–Larsen: "Siyahın güçlü seçeneklerinden yalnızca biri." never went away).
