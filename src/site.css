@@ -134,7 +134,7 @@
 .tbc-label { display: flex; align-items: center; gap: 1.25rem; color: #C8893E; margin: 0; }
 .tbc-label::before, .tbc-label::after { content: ''; flex: 1; height: 1px; background: #2E2620; }
 .tbc-text { margin: 1.5rem 0 0; font-size: 15px; line-height: 2.6; color: #A89A88; }
-.tbc-link { display: inline-flex; align-items: center; gap: .5rem; margin-left: .35rem; padding: .35rem 1.1rem; border: 1px solid #C8893E; border-radius: 999px; color: #F1E9DC; text-decoration: none; transition: background .2s, color .2s; }
+.tbc-link { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; display: inline-flex; align-items: center; gap: .5rem; margin-left: .35rem; padding: .35rem 1.1rem; border: 1px solid #C8893E; border-radius: 999px; color: #F1E9DC; text-decoration: none; transition: background .2s, color .2s; }
 .tbc-link::after { content: '\2192'; }
 .tbc-link:hover { background: #C8893E; color: #0E0C0A; }
 
