@@ -16,7 +16,7 @@ Geçen yılın sonlarında Polonya’da üçüncü ve son IM normumu almamın ar
 
 Her ne kadar öncesinde istediğim gibi hazırlanamasam da en azından turnuva salonuna yakın bir otelde kalmak ve turnuva süresince satranç dersi vermeye hemen hemen tamamen ara vermek gibi birkaç önemli iyileştirme yaptım. Maalesef artık genç denemeyecek bir yaşta olduğum için enerjimi idareli kullanmam gerekiyor.
 
-Bu noktada birkaç örnek verirsem bu değişikliğin önemi daha iyi anlaşılır zannediyorum. Örneğin Legnica’da düzenlenen 2013 Avrupa Bireysel Satranç Şampiyonası esnasında 19. yüzyıldan kalma temizlik yüzü görmemiş, duşu lavabo olarak kullanmanız gereken bir evde kalmış ve ev sahibinin epilepsi hastası köpeğine bakmıştım.
+Bu noktada birkaç örnek verirsem bu değişikliğin önemi daha iyi anlaşılır zannediyorum. Örneğin Legnica’da düzenlenen 2013 Avrupa Bireysel Satranç Şampiyonası esnasında 19. yüzyıldan kalma, temizlik yüzü görmemiş, duşu lavabo olarak kullanmanız gereken bir evde kalmış ve ev sahibinin epilepsi hastası köpeğine bakmıştım.
 
 Kirli çarşafların üzerinde uyku tulumumdan çıkmamaya çalışarak uyuduğum gecelerde odaya giren köpeğin -hastalığı nedeniyle ona Dogstoyevski adını takmıştım- karanlıkta cam gibi parlayan sıradışı bir yeşil renge sahip gözlerini hala hatırlarım.
 
