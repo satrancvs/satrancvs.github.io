@@ -233,6 +233,8 @@
 .flip-stage { position: relative; }
 .flip-stage .flip-face { transform-origin: 50% 50%; }
 .flip-stage .flip-back { position: absolute; top: 0; left: 0; right: 0; visibility: hidden; pointer-events: none; }
+/* Bulmacada hamle listesi boş (hamleler çözülene kadar gizli, çözülünce yorum görünür) ama 38 px yer tutuyordu: ipucu satırı ile yorum arasında büyük boşluk kalıyordu. */
+.flip-stage .flip-back .video-moves { display: none; }
 .flip-stage .flip-back.is-active { position: relative; visibility: visible; pointer-events: auto; }
 .puzzle-notes { margin-top: .5rem; }
 .puzzle-notes p { margin: 0 0 1.1rem; font-size: clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height: 1.7; color: rgba(241,233,220,.95); animation: pn-in .55s cubic-bezier(.2,.7,.2,1) both; }
