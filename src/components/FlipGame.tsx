@@ -136,7 +136,7 @@ export default function FlipGame({ front, back }: { front: ReactNode; back: Reac
     };
 
     // Hamlelerin yorumları oynatıcının kendi yorum kutusunda (tahtanın altında) görünür (pgn-player.js yaması, `_showComment`).
-    // Burada yalnızca yan varyantlar (analizdeki alternatif hamleler) alta satır olarak eklenir: hamle bulununca ya da analizdeki bir hamle denenince.
+    // Burada yalnızca yan varyantlar (analizdeki alternatif hamleler) alta satır olarak eklenir, yalnızca analizdeki bir hamle denenince (hamle bulununca kendiliğinden açılmaz).
     const handle = (d: PuzzleDetail, fmt: Format) => {
       if (d.type === 'solved') return;
       if (d.type === 'wrong') {
@@ -145,7 +145,6 @@ export default function FlipGame({ front, back }: { front: ReactNode; back: Reac
         if (hit) addLine(hit, d, fmt, true);
         return;
       }
-      d.variations.forEach((v) => addLine(v, d, fmt, false));
     };
 
     const onPuzzle = (e: Event) => {
