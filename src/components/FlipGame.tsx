@@ -3,8 +3,8 @@ import type { ReactNode } from 'react';
 import { curlyPass } from '@/lib/curly-dom';
 
 // Palavan–Euwe: önce Beyaz tarafından bir oynatıcı (analiz), bitince tahta Siyah tarafına döner ve aynı konum bir bulmacaya dönüşür.
-// Önde `front` (oynatıcı), arkada `back` (bulmaca) durur; arka yüz, ön oynatıcının son hamlesi ve yorumu göründükten kısa süre sonra
-// kendiliğinden öne gelir. Bulmacanın altındaki yorumlar okur hamleyi bulunca (ya da analizdeki bir hamleyi denerse) açılır.
+// Önde `front` (oynatıcı), arkada `back` (bulmaca) durur; ön oynatıcı son hamlesine gelince yorumun yanında bir oynat düğmesi çıkar,
+// arka yüz o düğmeye basılınca öne gelir (kendiliğinden dönmez). Bulmacanın altındaki yorumlar okur hamleyi bulunca (ya da analizdeki bir hamleyi denerse) açılır.
 // Oynatıcıdan gelen `cp-move` (gameOver) ve `cp-puzzle` olayları public/chesspublica/pgn-player.js'deki site yamalarıdır.
 
 type Variation = { moves: string[]; comments: string[]; glyphs: string[] };
@@ -22,6 +22,7 @@ type PuzzleDetail = {
 
 type Format = (text: string) => string;
 const HELPERS = '/chesspublica/helpers.js';
+const ICONS = '/chesspublica/icons.js';
 let helpers: Promise<{ formatComment: Format }> | null = null;
 // ChessPublica'nın kendi yorum biçimleyicisi (markdown + figürin simgeleri); oynatıcıyla aynı modül örneği.
 const loadFormat = () => (helpers ??= import(/* @vite-ignore */ HELPERS));
@@ -64,7 +65,7 @@ export default function FlipGame({ front, back }: { front: ReactNode; back: Reac
     if (!rootEl || !f || !b || !notes) return;
 
     let flipped = false;
-    let timer: number | undefined;
+    let atEnd = false;
     let solved = false;
     let finalShown = false;
 
@@ -104,11 +105,28 @@ export default function FlipGame({ front, back }: { front: ReactNode; back: Reac
         return;
       }
       if (flipped || !f.contains(target)) return;
-      window.clearTimeout(timer);
-      if (!(e as CustomEvent).detail?.gameOver) return;
-      const chars = f.querySelector('.comment-body')?.textContent?.length ?? 0;
-      timer = window.setTimeout(flip, 1400 + chars * 45);
+      atEnd = !!(e as CustomEvent).detail?.gameOver;
+      if (atEnd) requestAnimationFrame(toPlay);
     };
+
+    // Ön oynatıcı son hamlesindeyken yorumun yanındaki "başa dön" düğmesi bir "oynat" düğmesine çevrilir; tahta yalnızca ona basılınca döner.
+    // (cloneNode oynatıcının onclick işleyicisini taşımaz; yeni düğmeye döndürme işlevi bağlanır.)
+    const toPlay = async () => {
+      if (flipped || !atEnd) return;
+      const { lucideIconUrl } = await import(/* @vite-ignore */ ICONS);
+      f.querySelectorAll('.comment-play-btn').forEach((btn) => {
+        if (btn.hasAttribute('data-flip')) return;
+        const next = btn.cloneNode(true) as HTMLElement;
+        next.setAttribute('data-flip', '1');
+        const icon = next.querySelector('.lucide-icon') as HTMLElement | null;
+        icon?.style.setProperty('--icon', lucideIconUrl('circle-play'));
+        icon?.setAttribute('aria-label', 'Play');
+        next.addEventListener('click', flip);
+        btn.replaceWith(next);
+      });
+    };
+    const watch = new MutationObserver(() => { if (atEnd && !flipped) void toPlay(); });
+    watch.observe(f, { childList: true, subtree: true });
 
     // Bulmaca yorumları: sıralı işlenir (biçimleyici modülü eşzamansız yüklenir).
     const shown = new Map<string, HTMLElement>();
@@ -178,7 +196,7 @@ export default function FlipGame({ front, back }: { front: ReactNode; back: Reac
     rootEl.addEventListener('cp-move', onMove);
     rootEl.addEventListener('cp-puzzle', onPuzzle);
     return () => {
-      window.clearTimeout(timer);
+      watch.disconnect();
       rootEl.removeEventListener('cp-move', onMove);
       rootEl.removeEventListener('cp-puzzle', onPuzzle);
     };

@@ -116,7 +116,7 @@ Two additions to `public/chesspublica/pgn-player.js`, both marked `Site patch` i
   `solved`. `detail` has the SAN, glyph, move number/colour, the comment and the side variations anchored at that move.
 `FlipGame` (a `[Frame "quote"]` game with `[Flip "puzzle"]` + the next game with the same players/date) uses them: the first game is a
 `<pgn-player>` (White's side), the second the puzzle (`{[Pn]}`, Black's side) stacked behind it; when the first player is on its last move
-the card flips (reading time `1.4 s + 45 ms × comment length`) and the puzzle's comments are written under it as moves are found, or when a
+the player's replay button (`.comment-play-btn`, re-created by ChessPublica on every render, so a MutationObserver converts it: `cloneNode` drops its `onclick`, icon `circle-play`) becomes a play button and pressing it flips the card (never automatically), and the puzzle's comments are written under it as moves are found, or when a
 move that starts a variation in the analysis is tried. The puzzle's own comment box (lead sentence in `{[Pn] …}`) is hidden once solved.
 If ChessPublica fails to load, both games are drawn one after the other without the flip. Re-check these hooks if `pgn-player.js` is replaced.
 
