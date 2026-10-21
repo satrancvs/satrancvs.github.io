@@ -100,7 +100,7 @@ function PostPage() {
         <div className="mt-8 pb-8 border-b border-[#2E2620]">
           <p className="f-mono text-[#A89A88]">
             {a.authorLabel ?? 'Yazar'}: <span lang={a.authorLang}>{a.author}</span>
-            {a.translator && ` · Türkçesi: ${a.translator}`} · {a.date}
+            {a.translator && ` · Türkçesi: ${a.translator}`} · <span className="whitespace-nowrap">{a.date}</span>
           </p>
           {/* Yazı başka bir yerde yayımlandıysa künye notu: yazar satırının altında, aynı yazı tipiyle, sola yaslı. */}
           {a.note && <p className="f-mono text-[#A89A88] mt-3"><Markdown options={{ forceInline: true, overrides: { a: { component: NoteLink, props: { className: 'underline underline-offset-2 hover:text-[#F1E9DC]', target: '_blank', rel: 'noreferrer' } } } }}>{a.note}</Markdown></p>}
