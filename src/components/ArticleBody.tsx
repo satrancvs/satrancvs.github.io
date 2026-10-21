@@ -601,7 +601,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
         body = body.slice(m[0].length);
       }
       out.push(
-        <div key={i} className={['[&>p]:mb-6 [&>h3]:mb-6', ...marks].join(' ')}>
+        <div key={i} className={['art-prose [&>p]:mb-6 [&>h3]:mb-6', ...marks].join(' ')}>
           <Markdown options={{ ...mdOptions, forceBlock: true }}>{body}</Markdown>
         </div>,
       );
