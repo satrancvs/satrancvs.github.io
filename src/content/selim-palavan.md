@@ -54,7 +54,7 @@ Bütün İstanbul’un ve hatta memleketimizin her köşesindeki şatranç merak
 
 – Mühendis mektebinde doçent olan ve 34 yaşında bulunan bay Selim Palavan’ın şatranç ile meşgul olabilmek için nasıl vakit bulduğunu anlayabilmek merakına kapılarak şu suali sordum: **Boş vakitlerinizi daima şatranca mı hasredersiniz ?**
 
-– Vakit bulduğum zaman haftanın ekseri günleri kulübe gelerek şatranç ile ve evimde de biraz piyano ile meşgul olurum.
+– Vakit bulduğum zaman haftanın ekseri günleri klübe gelerek şatranç ile ve evimde de biraz piyano ile meşgul olurum.
 
 Kıymetli şatranççımızın; memleketimizde bir kafa sporu ve zeka oyunu olan şatranca karşı bilhassa gençlerimiz arasında bir alaka uyandırması için, düşüncelerini anlamanın yerinde olacağını tahmin ederek:
 
