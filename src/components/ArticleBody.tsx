@@ -104,9 +104,12 @@ const COMMENT_HEADING = /(^|\n)[ \t]*###[ \t]+([^\n]+)\n*/g;
 // commentMarkup yer tutucuyu boş bir <span class="cp-fig"> yapar, ChessPublica çizdikten sonra Figure bu <span>'a portal ile basılır (yazıdaki fotoğrafla aynı bileşen).
 const COMMENT_FIG_LINE = /^[ \t]*(!\[[^\n]*\))[ \t]*$/gm;
 const COMMENT_FIG = /(^|\n)[ \t]*@@FIG\d+@@[ \t]*\n*/g;
+// Yorumda tek başına bir `[boşluk]` satırı boş bir paragraftır (yazarın metnindeki boş satır): paragraf ayracına bir satır daha eklenir.
+// Boş satırlar paragraflar bölünürken birleştiği için (split-chunks.js) fazladan boş satır yazılamaz, bu işaret kullanılır.
+const COMMENT_GAP = /(?:\n[ \t]*\n)?[ \t]*\[boşluk\][ \t]*(?:\n[ \t]*\n\s*)?/g;
 const commentMarkup = (movetext: string) =>
   movetext.replace(/\{([^}]*)\}/g, (_, body: string) =>
-    `{${body.replace(COMMENT_FIG, (_m, pre: string) => `${pre}<span class="cp-fig"></span>\n`).replace(COMMENT_HEADING, (_m, pre: string, title: string) => `${pre}<span class="cp-heading">${title.trim()}</span> `).replace(/\n[ \t]*\n\s*/g, '<br><br>')}}`);
+    `{${body.replace(COMMENT_FIG, (_m, pre: string) => `${pre}<span class="cp-fig"></span>\n`).replace(COMMENT_HEADING, (_m, pre: string, title: string) => `${pre}<span class="cp-heading">${title.trim()}</span> `).replace(COMMENT_GAP, '<br><br><br>').replace(/\n[ \t]*\n\s*/g, '<br><br>')}}`);
 
 function PgnGame({ header, moves }: { header: string; moves: string }) {
   // [View "player"] etiketi oyunu (bulmaca işareti olmasa da) <pgn-player> ile çizdirir; ChessPublica'ya geçirilmez.
