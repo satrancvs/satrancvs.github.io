@@ -62,7 +62,7 @@ Fakat düşük ratinge sahip de olsa her Hintli oyuncu gibi genç rakibimin tehl
 
 İlk tur için kusursuz bir oyun değildi, fakat öğretici yönünün son derece fazla olduğunu düşünüyorum. Bu oyunda neler gördük?
 
-- Botvinnik sisteminin güçlü ve zayıf yanlarını
+- Botvinnik Sistemi’nin güçlü ve zayıf yanlarını
 - Bu yapıda beyazın f4 sürüşünün neden yanlış olabildiğini,
 - Fianchetto sistemlerine karşı ...f5 planının her zaman doğru olmayacağını,
 - Siyahın ...♖xg5!! kalite fedasının ardında yatan stratejik mantığı,
