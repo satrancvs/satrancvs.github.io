@@ -22,6 +22,16 @@ const NAV = [
 // Altıncı menü öğesi: sayfa hazır olana kadar devre dışı (tıklanmaz, "Yakında...").
 const NAV_SOON = 'Geçmiş sayılar';
 
+// "Hakkında" bölümündeki atıflar (inline Markdown). Yeni bir üçüncü taraf yazılım/görsel eklenince buraya ve public/chesspublica/LICENSES.txt'ye eklenir.
+const ATTRIBUTIONS = [
+  // Kısa, madde işaretli liste; büyük harfli mono stilde yabancı adlar <span lang="en"> ile işaretlenir (Türkçe İ yerine I).
+  // Yazı tipleri (SIL OFL) ve Lucide simgeleri (ISC) için görünür atıf istenmedi; listede yer almaz. Lucide'in ISC lisans metni (telif notu)
+  // yine de public/chesspublica/LICENSES.txt içinde durur ("Lisans metinleri" bağlantısı).
+  '[<span lang="en">ChessPublica</span>](https://chesspublica.github.io/), [<span lang="en">jQuery</span>](https://jquery.com/), [chessboard.js](https://chessboardjs.com/) (MIT) · [chess.js](https://github.com/jhlywa/chess.js) (BSD-2) · [Lisans metinleri](/chesspublica/LICENSES.txt)',
+  'Taş görselleri: [<span lang="en">Colin M.L. Burnett</span>](https://commons.wikimedia.org/wiki/User:Cburnett) ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.tr))',
+  'Fotoğraflar: künyeler her fotoğrafın altında',
+];
+
 // authorLang (örn. "hu"): yazar adının dili; büyük harfe çevirmede Türkçe İ yerine o dilin kuralı kullanılır (GÖMÖRI).
 const CORNERS = Array.from(new Set(PUBLISHED.map((a) => a.cat)));
 const tabCls = (on: boolean) => `f-mono h-11 border-b-2 transition-colors ${on ? 'border-[#C8893E] text-[#0E0C0A]' : 'border-transparent text-[#0E0C0A]/50 hover:text-[#0E0C0A]'}`;
