@@ -18,7 +18,7 @@ Her ne kadar öncesinde istediğim gibi hazırlanamasam da en azından turnuva s
 
 Bu noktada birkaç örnek verirsem bu değişikliğin önemi daha iyi anlaşılır zannediyorum. Örneğin Legnica’da düzenlenen 2013 Avrupa Bireysel Satranç Şampiyonası esnasında 19. yüzyıldan kalma, temizlik yüzü görmemiş, duşu lavabo olarak kullanmanız gereken bir evde kalmış ve ev sahibinin epilepsi hastası köpeğine bakmıştım.
 
-Kirli çarşafların üzerinde uyku tulumumdan çıkmamaya çalışarak uyuduğum gecelerde odaya giren köpeğin -hastalığı nedeniyle ona Dogstoyevski adını takmıştım- karanlıkta cam gibi parlayan sıradışı bir yeşil renge sahip gözlerini hala hatırlarım.
+Kirli çarşafların üzerinde uyku tulumumdan çıkmamaya çalışarak uyuduğum gecelerde odaya giren köpeğin -hastalığı nedeniyle ona Dogstoyevski adını takmıştım- karanlıkta cam gibi parlayan sıradışı bir yeşil renge sahip gözlerini hâlâ hatırlarım.
 
 Polonya’da oynadığım bir başka turnuvada da yine “couchsurfing” yapmış ve son iki gece kaldığım evde ev sahibimin Kont Dracula’yı kıskandıracak derecedeki noktürnal hayatı yüzünden son iki tura uykusuz çıkmıştım.
 
