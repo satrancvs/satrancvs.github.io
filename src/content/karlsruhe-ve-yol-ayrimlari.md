@@ -6,7 +6,7 @@
 >
 > — <span lang="en">Robert Frost, “The Road not Taken”</span> · Türkçesi: Selahattin Özpalabıyıklar
 
-Geçen yıl üç uluslararası usta normunu tamamladığımda satranca daha ciddi yaklaşmaya karar verdim. Ne de olsa artık IM ünvanına kavuşabilmek için 2400 Elo barajını aşmam yeterli. Bu kararın ardından yolun ilk durağı: GRENKE Açık Satranç Turnuvası 2026, A kategorisi.
+Geçen yıl üç uluslararası usta (IM) normunu tamamladım. Geriye yalnızca 2400 Elo barajını aşmak kaldı. Bu hedefe giden yolun ilk durağı: Karlsruhe’deki GRENKE Açık Satranç Turnuvası 2026, A kategorisi.
 
 ![Turnuva salonunun girişi](images/salon.jpg "Turnuva salonunun girişi. · Fotoğraf: Tarık Selbes")
 
