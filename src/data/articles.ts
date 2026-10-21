@@ -7,11 +7,12 @@ import gomoriMd from '@/content/eugen-gomori.md?raw';
 import atFilMd from '@/content/at-ve-fil.md?raw';
 import aronianMd from '@/content/aronian-caro-kann.md?raw';
 import palavanMd from '@/content/selim-palavan.md?raw';
+import girisMd from '@/content/ilk-sayi-ilk-hamle.md?raw';
 import { toTypography } from '@/lib/curly';
 import data from './articles.json';
 
 export type Article = {
-  id: string; slug: string; oldSlugs?: string[]; cat: string; title: string; dek?: string; author: string; authorLang?: string; authorLabel?: string; translator?: string;
+  id: string; slug: string; oldSlugs?: string[]; cat?: string; title: string; dek?: string; author: string; authorLang?: string; authorLabel?: string; translator?: string;
   excerpt?: string; date?: string; chunks?: string[]; photo?: boolean; thumb?: string; thumbAlt?: string; thumbPosition?: string; diagram?: string; diagramAlt?: string; diagramCaption?: string; titleLines?: [string, string]; note?: string; diagramOrientation?: 'white' | 'black'; diagramBadge?: { square: string; glyph: string }; diagramArrow?: { from: string; to: string }; draft?: boolean; body: string[];
 };
 
@@ -25,6 +26,7 @@ const CHUNKS: Record<string, string[]> = {
   atfil: splitArticle(atFilMd).chunks,
   aronian: splitArticle(aronianMd).chunks,
   palavan: splitArticle(palavanMd).chunks,
+  giris: splitArticle(girisMd).chunks,
 };
 
 // Makale metinleri/üst bilgileri articles.json'da (build sırasında prerender de bunu okur);
@@ -46,7 +48,7 @@ export const PUBLISHED = ARTICLES.filter((a) => !a.draft);
 
 // "Bu Sayıdaki Tüm yazılar" listesinin sırası (a1, b2, …). Kapak ve "Öne çıkanlar" articles.json sırasını izler, liste bundan bağımsızdır.
 // Burada olmayan (yeni) yazılar listenin sonuna, articles.json sırasıyla eklenir.
-const LIST_ORDER = ['kapak', 'karlsruhe', 'atfil', 'aronian', 'zebra', 'gomori', 'mugla'];
+const LIST_ORDER = ['giris', 'kapak', 'karlsruhe', 'atfil', 'aronian', 'zebra', 'gomori', 'mugla'];
 const rank = (a: Article) => { const i = LIST_ORDER.indexOf(a.id); return i >= 0 ? i : LIST_ORDER.length + ARTICLES.indexOf(a); };
 export const LISTED = [...PUBLISHED].sort((x, y) => rank(x) - rank(y));
 

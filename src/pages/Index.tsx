@@ -42,7 +42,7 @@ const ATTRIBUTIONS = [
   'Fotoğraflar: künyeler her fotoğrafın altında',
 ];
 
-const CORNERS = Array.from(new Set(PUBLISHED.map((a) => a.cat)));
+const CORNERS = Array.from(new Set(PUBLISHED.map((a) => a.cat).filter((c): c is string => !!c)));
 const tabCls = (on: boolean) => `f-mono h-11 border-b-2 transition-colors ${on ? 'border-[#C8893E] text-[#0E0C0A]' : 'border-transparent text-[#0E0C0A]/50 hover:text-[#0E0C0A]'}`;
 
 // bio (Markdown bağlantıları olabilir) ve sayaç isteğe bağlıdır; boşsa kartta gösterilmez. count: true yayımlanmış yazılardan
@@ -221,7 +221,7 @@ export default function Index() {
         </div>
         <div className="absolute inset-x-0 bottom-0 z-20 pointer-events-none">
           <div className="max-w-[1440px] mx-auto px-6 md:px-10 pb-28 md:pb-16">
-            <p className="f-mono text-[#C8893E] mb-6">{cover.cat} · <span className="whitespace-nowrap">{cover.date}</span></p>
+            <p className="f-mono text-[#C8893E] mb-6">{cover.cat && <>{cover.cat} · </>}<span className="whitespace-nowrap">{cover.date}</span></p>
             <h1 className="f-display text-[clamp(40px,6.5vw,112px)] max-w-[26ch]">
               <span className="block overflow-hidden pb-[0.2em] -mb-[0.2em]"><span className="rise">Mar del Plata 1982:</span></span>
               <span className="block overflow-hidden pb-[0.2em] -mb-[0.2em]"><span className="rise italic text-[#C8893E]" style={{ animationDelay: '.15s' }}>Jan Timman</span></span>
@@ -258,7 +258,7 @@ export default function Index() {
             const inner = (
               <>
                 {a.thumb && <ProgressiveImage path={a.thumb} alt={a.thumbAlt ?? ''} thumb position={a.thumbPosition} />}
-                <p className={`f-mono text-[#C8893E] w-fit max-w-full ${a.thumb ? 'mt-6' : ''}`}>{a.cat} · <span className="whitespace-nowrap">{a.date}</span></p>
+                <p className={`f-mono text-[#C8893E] w-fit max-w-full ${a.thumb ? 'mt-6' : ''}`}>{a.cat && <>{a.cat} · </>}<span className="whitespace-nowrap">{a.date}</span></p>
                 <h3 className={`f-display mt-3 w-fit max-w-full ${a.draft ? '' : 'group-hover:italic'} transition-all ${i === 0 ? 'text-5xl md:text-6xl' : 'text-3xl md:text-4xl'}`}>{a.titleLines ? <>{a.titleLines[0]}<br /><em className="italic text-[#C8893E]">{a.titleLines[1]}</em></> : a.title}</h3>
                 {a.dek && <p className="text-[#F1E9DC]/70 mt-3 max-w-xl w-fit"><Markdown options={{ forceInline: true }}>{a.dek}</Markdown></p>}
                 <p className="f-mono text-[#A89A88] mt-4 w-fit max-w-full">{a.authorLabel ?? 'Yazar'}: <span lang={a.authorLang}>{a.author}</span></p>
@@ -300,8 +300,8 @@ export default function Index() {
                 <Link to={articlePath(a)} className="group w-full text-left grid grid-cols-[48px_1fr_auto] md:grid-cols-[48px_1fr_auto] items-center gap-4 md:gap-6 py-7 border-b border-[#0E0C0A]/15">
                   <span className="f-mono normal-case text-[#0E0C0A]/40">{String.fromCharCode(97 + (i % 8))}{i + 1}</span>
                   <div>
-                    <p className="f-mono text-[#9A5F1E] text-[11px]">{a.cat}</p>
-                    <p className="f-display text-2xl md:text-4xl mt-2 group-hover:italic group-hover:translate-x-2 transition-all duration-500">{a.title}</p>
+                    {a.cat && <p className="f-mono text-[#9A5F1E] text-[11px]">{a.cat}</p>}
+                    <p className={`f-display text-2xl md:text-4xl ${a.cat ? 'mt-2' : ''} group-hover:italic group-hover:translate-x-2 transition-all duration-500`}>{a.title}</p>
                     <p className="text-sm text-[#0E0C0A]/60 mt-2">{a.author} · <span className="whitespace-nowrap">{a.date}</span></p>
                   </div>
                   <ArrowUpRight className="group-hover:rotate-45 transition-transform" />

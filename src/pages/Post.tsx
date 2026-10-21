@@ -90,8 +90,8 @@ function PostPage() {
     <div className="sk min-h-screen bg-[#0E0C0A]">
       <Link to="/" state={{ top: true }} aria-label="Ana sayfaya dön" className="fixed top-5 right-5 z-50 w-12 h-12 rounded-full bg-[#F1E9DC] text-[#0E0C0A] grid place-items-center hover:bg-[#C8893E]"><X /></Link>
       <article className="max-w-[760px] mx-auto px-6 pt-32 relative pb-32">
-        <p className="f-mono text-[#C8893E]">{a.cat}</p>
-        <h1 className="f-display text-[clamp(44px,6vw,88px)] mt-6">{a.title}</h1>
+        {a.cat && <p className="f-mono text-[#C8893E]">{a.cat}</p>}
+        <h1 className={`f-display text-[clamp(44px,6vw,88px)] ${a.cat ? 'mt-6' : ''}`}>{a.title}</h1>
         {(a.dek ?? a.excerpt) && (
           <p className="text-lg leading-[1.8] text-[#F1E9DC]/85 mt-8">
             <Markdown options={{ forceInline: true }}>{(a.dek ?? a.excerpt) as string}</Markdown>
