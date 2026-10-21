@@ -2,6 +2,8 @@
 
 ### İstanbul Şatranç şampiyonu Selim Palavan kimdir?
 
+#### Şatranç oyunundaki değeri, oyun merakı, bu fikir sporunun memleketimizde yayılması hususundaki düşünceleri.
+
 İstanbul Türk Şatranç klübünün Tokatlıyan otelindeki salonundan içeriye girince bir köşede Bay Selim Palavan’ı şatranç masasının başında buldum.
 
 **– Kolay gele bay Selim, gene bir etüd mü ?**

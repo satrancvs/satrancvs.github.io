@@ -424,6 +424,7 @@ function Continued({ text }: { text: string }) {
 const mdOptions = {
   overrides: {
     h3: { props: { className: 'f-display text-4xl md:text-5xl mt-16 mb-6 text-[#F1E9DC]' } },
+    h4: { props: { className: 'art-sub' } },
     a: { props: { className: 'text-[#C8893E] underline underline-offset-4', target: '_blank', rel: 'noreferrer' } },
     blockquote: { component: Quote },
     ul: { props: { className: 'list-disc pl-6 mb-6 space-y-2 marker:text-[#C8893E]' } },
