@@ -44,7 +44,7 @@ Telefonu her zamanki gibi odada bıraktığım için eşlendirmeyi de ancak sora
 
 Masaya otururken sadece rakibimin isminin Yash Watarkar olduğu ve siyah taşlarla oynayacağım bilgisine sahiptim. Rakibimin hangi açılışı oynadığından ve hatta oyun kuvvetinden bile bihaber vaziyetteydim.
 
-Fakat düşük ratinge sahip de olsa her Hintli oyuncu gibi genç rakibimin tehlikeli olabileceğini biliyordum. Bu nedenle ilk turdan bir kazaya uğramamak gerekiyordu ve her ne kadar bazı badireler atlattıysam da bunu başardım.
+Düşük reytinge sahip de olsa her Hintli oyuncu gibi genç rakibimin tehlikeli olabileceğini biliyordum. Bu nedenle ilk turdan bir kazaya uğramamak gerekiyordu ve her ne kadar bazı badireler atlattıysam da bunu başardım.
 
 [Event "GRENKE Açık"]
 [Site "Karlsruhe"]
