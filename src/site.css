@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Manrope:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
-.sk { background:#0E0C0A; color:#F1E9DC; font-family:'Manrope',sans-serif; }
+.sk { background:#0E0C0A; color:#F1E9DC; font-family:'Newsreader',serif; font-weight:320; font-optical-sizing:auto; }
 .sk ::selection { background:#C8893E; color:#0E0C0A; }
 .f-display { font-family:'Fraunces',serif; letter-spacing:-0.04em; line-height:.9; font-weight:300; font-variation-settings:'opsz' 72; }
 .art-prose, .quote > p { font-family:'Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height:1.7; font-optical-sizing:auto; font-weight:320; color:rgba(241,233,220,.95); }
 .art-prose strong, .art-prose b, .quote strong, .cp-game :is(.pgn-comment, .pgn-comment-inline, .pgn-variation, .video-comment, .comment-body) :is(strong, b) { font-weight:500; }
 .cp-game .pgn-comment, .cp-game .pgn-comment-inline, .cp-game .pgn-variation, .cp-game .video-comment, .cp-game .comment-body { font-family:'Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height:1.7; font-optical-sizing:auto; font-weight:320; color:rgba(241,233,220,.95); }
-.cp-game .pgn-variation .pgn-move { font-family:'Manrope',sans-serif; font-size:1rem; }
 .btn-mono { font-family:'JetBrains Mono',monospace; font-size:13px; letter-spacing:.08em; text-transform:uppercase; font-weight:600; }
 .btn-mono.ghost { font-weight:500; }
+.cp-game .pgn-mainline { font-weight:500; }
+.mono-field { font-family:'JetBrains Mono',monospace; font-size:16px; letter-spacing:.01em; }
+.mono-note { font-family:'JetBrains Mono',monospace; font-size:12.5px; line-height:1.85; letter-spacing:.01em; }
 .f-mono { font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.2em; text-transform:uppercase; }
 .reveal { transition: transform .9s cubic-bezier(.2,.7,.1,1), opacity .9s cubic-bezier(.2,.7,.1,1); }
 .reveal.pre { opacity:0; transform:translateY(40px); }

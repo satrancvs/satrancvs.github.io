@@ -218,7 +218,7 @@ export default function Index() {
               <span className="block overflow-hidden pb-[0.2em] -mb-[0.2em]"><span className="rise italic text-[#C8893E]" style={{ animationDelay: '.3s' }}>ve bir zaferin anatomisi</span></span>
             </h1>
             <div className="mt-10 flex flex-col md:flex-row md:items-end justify-between gap-8">
-              <p className="max-w-md text-lg text-[#F1E9DC]/80"><Markdown options={{ forceInline: true }}>{cover.excerpt ?? cover.dek ?? ''}</Markdown> <span className="f-mono text-[#A89A88] block mt-3">{cover.authorLabel ?? 'Yazar'}: <span lang={cover.authorLang}>{cover.author}</span></span></p>
+              <p className="max-w-md text-[1.3125rem] leading-[1.5] text-[#F1E9DC]/80"><Markdown options={{ forceInline: true }}>{cover.excerpt ?? cover.dek ?? ''}</Markdown> <span className="f-mono text-[#A89A88] block mt-3">{cover.authorLabel ?? 'Yazar'}: <span lang={cover.authorLang}>{cover.author}</span></span></p>
               <Link to={articlePath(cover)} className="btn-mono group pointer-events-auto inline-flex items-center gap-3 rounded-full bg-[#F1E9DC] text-[#0E0C0A] h-14 px-8 hover:bg-[#C8893E] transition-colors self-start">Yazıyı oku <ArrowUpRight size={18} className="group-hover:rotate-45 transition-transform" /></Link>
             </div>
           </div>
@@ -250,7 +250,7 @@ export default function Index() {
                 {a.thumb && <ProgressiveImage path={a.thumb} alt={a.thumbAlt ?? ''} thumb position={a.thumbPosition} />}
                 <p className={`f-mono text-[#C8893E] w-fit max-w-full ${a.thumb ? 'mt-6' : ''}`}>{a.cat} · <span className="whitespace-nowrap">{a.date}</span></p>
                 <h3 className={`f-display mt-3 w-fit max-w-full ${a.draft ? '' : 'group-hover:italic'} transition-all ${i === 0 ? 'text-5xl md:text-6xl' : 'text-3xl md:text-4xl'}`}>{a.titleLines ? <>{a.titleLines[0]}<br /><em className="italic text-[#C8893E]">{a.titleLines[1]}</em></> : a.title}</h3>
-                {a.dek && <p className="text-[#F1E9DC]/70 mt-3 max-w-xl w-fit"><Markdown options={{ forceInline: true }}>{a.dek}</Markdown></p>}
+                {a.dek && <p className="text-[1.1875rem] leading-[1.5] text-[#F1E9DC]/70 mt-3 max-w-xl w-fit"><Markdown options={{ forceInline: true }}>{a.dek}</Markdown></p>}
                 <p className="f-mono text-[#A89A88] mt-4 w-fit max-w-full">{a.authorLabel ?? 'Yazar'}: <span lang={a.authorLang}>{a.author}</span></p>
                 {/* Diyagram metnin altında; ilk kartta kalan yüksekliği doldurur (FenDiagram `fill`). */}
                 {a.diagram && <FenDiagram fen={a.diagram} orientation={a.diagramOrientation} badge={a.diagramBadge} arrow={a.diagramArrow} label={a.diagramAlt ?? a.title} caption={a.diagramCaption} fill={i === 0} />}
@@ -292,7 +292,7 @@ export default function Index() {
                   <div>
                     <p className="f-mono text-[#9A5F1E] text-[11px]">{a.cat}</p>
                     <p className="f-display text-2xl md:text-4xl mt-2 group-hover:italic group-hover:translate-x-2 transition-all duration-500">{a.title}</p>
-                    <p className="text-sm text-[#0E0C0A]/60 mt-2">{a.author} · <span className="whitespace-nowrap">{a.date}</span></p>
+                    <p className="text-base text-[#0E0C0A]/60 mt-2">{a.author} · <span className="whitespace-nowrap">{a.date}</span></p>
                   </div>
                   <ArrowUpRight className="group-hover:rotate-45 transition-transform" />
                 </Link>
@@ -314,7 +314,7 @@ export default function Index() {
               <span className={`block w-14 h-14 mb-8 ${(i % 2) ? 'bg-[#F1E9DC]' : 'bg-[#3A2C22]'} grid place-items-center f-display text-3xl ${(i % 2) ? 'text-[#0E0C0A]' : 'text-[#C8893E]'}`}>{'♔♕♖♘♗'[i]}</span>
               <h3 className="f-display text-3xl">{au.name}</h3>
               <p className="f-mono text-[#C8893E] mt-3">{au.role}</p>
-              {au.bio && <p className="text-[#F1E9DC]/70 mt-4"><Markdown options={{ forceInline: true, overrides: { a: { props: { className: 'underline decoration-[#C8893E]/50 underline-offset-4 hover:text-[#C8893E] hover:decoration-[#C8893E]', target: '_blank', rel: 'noreferrer' } } } }}>{au.bio}</Markdown></p>}
+              {au.bio && <p className="text-[1.1875rem] leading-[1.5] text-[#F1E9DC]/70 mt-4"><Markdown options={{ forceInline: true, overrides: { a: { props: { className: 'underline decoration-[#C8893E]/50 underline-offset-4 hover:text-[#C8893E] hover:decoration-[#C8893E]', target: '_blank', rel: 'noreferrer' } } } }}>{au.bio}</Markdown></p>}
             </div>
           ))}
         </div>
@@ -329,8 +329,8 @@ export default function Index() {
             <span className="block"><FaviconBullet className="inline-block align-top mt-[0.075em] mr-[calc(13.25px_-_0.054em)]" />Satranç <em className="italic text-[#C8893E]">vs.</em></span>
             <em className="italic text-[#C8893E]">‘Satranç ve siz’ demek.</em>
           </h2>
-          <p className="text-[#F1E9DC]/75 leading-relaxed mt-10 max-w-xl">Satranç vs., satranç yazıları yayınlayan bağımsız bir dijital dergidir.</p>
-          <p className="text-[#F1E9DC]/75 leading-relaxed mt-6 max-w-xl">Bize ulaşmak, yayın ekibine katılmak ya da yazı taslaklarınızı göndermek için <a href="mailto:editor@satrancvs.com" className="underline underline-offset-2 hover:text-[#F1E9DC]">editor@satrancvs.com</a> adresine e-posta gönderebilirsiniz. Yayın ekibi, paylaştığınız tüm öneri ve yazı taslaklarını büyük bir özenle inceler. Değerlendirme süreci zaman alabildiğinden yanıtlardaki olası gecikmelerde göstereceğiniz sabır ve anlayış için şimdiden teşekkür ederiz.</p>
+          <p className="text-[1.1875rem] text-[#F1E9DC]/75 leading-relaxed mt-10 max-w-xl">Satranç vs., satranç yazıları yayınlayan bağımsız bir dijital dergidir.</p>
+          <p className="text-[1.1875rem] text-[#F1E9DC]/75 leading-relaxed mt-6 max-w-xl">Bize ulaşmak, yayın ekibine katılmak ya da yazı taslaklarınızı göndermek için <a href="mailto:editor@satrancvs.com" className="underline underline-offset-2 hover:text-[#F1E9DC]">editor@satrancvs.com</a> adresine e-posta gönderebilirsiniz. Yayın ekibi, paylaştığınız tüm öneri ve yazı taslaklarını büyük bir özenle inceler. Değerlendirme süreci zaman alabildiğinden yanıtlardaki olası gecikmelerde göstereceğiniz sabır ve anlayış için şimdiden teşekkür ederiz.</p>
         </div>
         {/* Sağ sütun (md ve üstü): yalnızca mono içerik — üstte atıflar, altta telif notu; mobilde alt alta. Sütun aşağı hizalıdır (md:self-end): son satırı sol sütunun son satırıyla aynı taban çizgisindedir. */}
         <div className="md:col-span-6 reveal md:self-end">

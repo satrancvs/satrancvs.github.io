@@ -45,7 +45,7 @@ function Game({ header, moves }: { header: string; moves: string }) {
         {t.Round && <span>{t.Round}. tur · </span>}
         {t.White} {t.WhiteElo && `(${t.WhiteElo})`} — {t.Black} {t.BlackElo && `(${t.BlackElo})`} · {result}
       </figcaption>
-      <p className="mt-4 text-lg leading-[1.8] text-[#F1E9DC]/85" style={{ fontVariantNumeric: 'tabular-nums' }}>
+      <p className="mt-4 text-[1.3125rem] leading-[1.7] text-[#F1E9DC]/85" style={{ fontVariantNumeric: 'tabular-nums' }}>
         {parts.map((p, i) =>
           p.startsWith('{') ? (
             <span key={i} className="italic text-[#A89A88]"> {p.slice(1, -1).trim()} </span>
@@ -623,7 +623,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
   }
   if (toc.length > 1 && !tocPlaced) out.unshift(<Toc key="toc" items={toc} onGo={goTo} />);
   return (
-    <div ref={rootRef} className="text-lg leading-[1.8] text-[#F1E9DC]/85" data-cp={cp}>
+    <div ref={rootRef} className="text-[1.3125rem] leading-[1.7] text-[#F1E9DC]/85" data-cp={cp}>
       {out}
     </div>
   );

@@ -93,7 +93,7 @@ function PostPage() {
         <p className="f-mono text-[#C8893E]">{a.cat}</p>
         <h1 className="f-display text-[clamp(44px,6vw,88px)] mt-6">{a.title}</h1>
         {(a.dek ?? a.excerpt) && (
-          <p className="text-lg leading-[1.8] text-[#F1E9DC]/85 mt-8">
+          <p className="text-[1.3125rem] leading-[1.6] text-[#F1E9DC]/85 mt-8">
             <Markdown options={{ forceInline: true }}>{(a.dek ?? a.excerpt) as string}</Markdown>
           </p>
         )}
@@ -112,7 +112,7 @@ function PostPage() {
             <figcaption className="mt-3"><PhotoCredit /></figcaption>
           </figure>
         )}
-        <div className="mt-10 space-y-6 text-lg leading-[1.8] text-[#F1E9DC]/85">
+        <div className="mt-10 space-y-6 text-[1.3125rem] leading-[1.7] text-[#F1E9DC]/85">
           {rest ? <ArticleBody chunks={rest} /> : a.body.map((p, i) => <p key={i} className={i === 0 ? 'first-letter:f-display first-letter:text-7xl first-letter:float-left first-letter:mr-3 first-letter:text-[#C8893E] first-letter:leading-[0.8]' : ''}>{p}</p>)}
         </div>
       </article>
