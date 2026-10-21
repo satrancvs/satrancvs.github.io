@@ -42,6 +42,8 @@
 /* Yalnızca düz <pgn> görünümü (study/player değil): varyant metninin solunda tek, kesintisiz ince dikey çizgi. Her varyant satırı (p) blok
    olduğu için çizgi paragraf boyunca sürer; araya giren diyagram ayrı öğe olduğundan çizgiyi böler, yanından geçmez. İç içe varyant bir kademe
    içeri girer ve italik olur. */
+/* Hamlenin altındaki yorum 1rem kenar boşluğu + 1rem iç boşlukla başlar, üstündeki yorum ise yalnızca 1rem kenar boşluğuyla biter: hamlenin üstü ve altı eşit olsun. */
+.cp-game .pgn-container:not(pgn-study .pgn-container, pgn-player .pgn-container) .pgn-comment { margin-bottom: 2rem; }
 .cp-game .pgn-container:not(pgn-study .pgn-container, pgn-player .pgn-container) .pgn-variation > p { display: block; padding-left: 0.8em; border-left: 1px solid color-mix(in srgb, #A89A88 55%, transparent); }
 .cp-game .pgn-container:not(pgn-study .pgn-container, pgn-player .pgn-container) .pgn-variation .pgn-variation { padding-left: 1.2em; font-style: italic; }
 /* <pgn-player> sayfada ortalanır */
