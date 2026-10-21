@@ -50,7 +50,7 @@ export default function NewsletterForm() {
           onChange={(e) => setEmail(e.target.value)} placeholder="e-posta adresin"
           className="flex-1 min-w-0 h-14 bg-transparent border-b border-[#F1E9DC]/40 focus:border-[#C8893E] outline-none text-lg text-[#F1E9DC] placeholder:text-[#A89A88] transition-colors" />
         <button type="submit" disabled={status === 'sending'}
-          className="f-mono h-14 px-8 rounded-full bg-[#F1E9DC] text-[#0E0C0A] inline-flex items-center gap-2 justify-center hover:bg-white transition-colors disabled:opacity-60">
+          className="btn-mono h-14 px-8 rounded-full bg-[#F1E9DC] text-[#0E0C0A] inline-flex items-center gap-2 justify-center hover:bg-white transition-colors disabled:opacity-60">
           <Mail size={18} /> {status === 'sending' ? 'Gönderiliyor…' : 'Abone ol'}
         </button>
       </div>

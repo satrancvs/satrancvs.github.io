@@ -268,7 +268,7 @@ function GameSection({ item, watchId, watchLabel, onWatch, children }: { item: G
       {watchId && onWatch && (
         <div className="mb-4 flex justify-center">
           <button type="button" onClick={() => onWatch(watchId)}
-            className="f-mono h-9 rounded-full border border-[#2E2620] px-5 text-[#C8893E] transition-colors hover:bg-[#1A1512]">
+            className="btn-mono ghost h-9 rounded-full border border-[#2E2620] px-5 text-[#C8893E] transition-colors hover:bg-[#1A1512]">
             {watchLabel ?? 'Oyunu izle'} ↓
           </button>
         </div>

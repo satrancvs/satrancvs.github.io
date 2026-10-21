@@ -178,7 +178,7 @@ export default function Index() {
             <span title="Yakında..." aria-disabled="true" className="f-mono text-[#A89A88] opacity-40 cursor-not-allowed select-none"><span className="text-[#C8893E]">0{NAV.length + 1}</span> {NAV_SOON}</span>
           </nav>
           {/* Bülten bölümüne götürür. Altı menü öğesiyle birlikte dar masaüstünde (< xl) yer yetmediği için düğme yalnızca xl'de görünür. */}
-          <a href="#bulten" className="f-mono hidden xl:inline-flex shrink-0 whitespace-nowrap rounded-full bg-[#F1E9DC] text-[#0E0C0A] px-6 h-11 items-center transition-colors hover:bg-[#C8893E]">Bültene Abone Ol</a>
+          <a href="#bulten" className="btn-mono hidden xl:inline-flex shrink-0 whitespace-nowrap rounded-full bg-[#F1E9DC] text-[#0E0C0A] px-6 h-11 items-center transition-colors hover:bg-[#C8893E]">Bültene Abone Ol</a>
           <button aria-label="Menüyü aç" onClick={() => setOpen(true)} className="lg:hidden w-11 h-11 grid place-items-center"><MenuIcon /></button>
         </div>
       </header>
@@ -219,7 +219,7 @@ export default function Index() {
             </h1>
             <div className="mt-10 flex flex-col md:flex-row md:items-end justify-between gap-8">
               <p className="max-w-md text-lg text-[#F1E9DC]/80"><Markdown options={{ forceInline: true }}>{cover.excerpt ?? cover.dek ?? ''}</Markdown> <span className="f-mono text-[#A89A88] block mt-3">{cover.authorLabel ?? 'Yazar'}: <span lang={cover.authorLang}>{cover.author}</span></span></p>
-              <Link to={articlePath(cover)} className="f-mono group pointer-events-auto inline-flex items-center gap-3 rounded-full bg-[#F1E9DC] text-[#0E0C0A] h-14 px-8 hover:bg-[#C8893E] transition-colors self-start">Yazıyı oku <ArrowUpRight size={18} className="group-hover:rotate-45 transition-transform" /></Link>
+              <Link to={articlePath(cover)} className="btn-mono group pointer-events-auto inline-flex items-center gap-3 rounded-full bg-[#F1E9DC] text-[#0E0C0A] h-14 px-8 hover:bg-[#C8893E] transition-colors self-start">Yazıyı oku <ArrowUpRight size={18} className="group-hover:rotate-45 transition-transform" /></Link>
             </div>
           </div>
         </div>
