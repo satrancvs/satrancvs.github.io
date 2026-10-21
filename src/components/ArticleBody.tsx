@@ -107,13 +107,14 @@ const COMMENT_HEADING = /(^|\n)[ \t]*###[ \t]+([^\n]+)\n*/g;
 // (`[D]` yalnızca oyunun o anki konumunu çizer). Çalışma görünümünde (`pgn-study`) canlı tahta olduğu için FEN satırları silinir.
 const COMMENT_FIG_LINE = /^[ \t]*(!\[[^\n]*\)|\[FEN\s+"[^"\n]+"\](?:[ \t]*\[[?!]{1,2}[ \t]+[a-h][1-8]\])?)[ \t]*$/gm;
 const COMMENT_FEN = /^\[FEN\s+"([^"]+)"\](?:\s*\[([?!]{1,2})\s+([a-h][1-8])\])?$/;
-const COMMENT_FIG = /(^|\n)[ \t]*@@FIG\d+@@[ \t]*\n*/g;
+// Önceki boş satır da yutulur: blok olan figürün üst boşluğu yalnızca kendi kenar boşluğu olsun (altıyla eşit), araya <br><br> girmesin.
+const COMMENT_FIG = /\s*@@FIG\d+@@[ \t]*\n*/g;
 // Yorumda tek başına bir `[boşluk]` satırı boş bir paragraftır (yazarın metnindeki boş satır): paragraf ayracına bir satır daha eklenir.
 // Boş satırlar paragraflar bölünürken birleştiği için (split-chunks.js) fazladan boş satır yazılamaz, bu işaret kullanılır.
 const COMMENT_GAP = /(?:\n[ \t]*\n)?[ \t]*\[boşluk\][ \t]*(?:\n[ \t]*\n\s*)?/g;
 const commentMarkup = (movetext: string) =>
   movetext.replace(/\{([^}]*)\}/g, (_, body: string) =>
-    `{${body.replace(COMMENT_FIG, (_m, pre: string) => `${pre}<span class="cp-fig"></span>\n`).replace(COMMENT_HEADING, (_m, pre: string, title: string) => `${pre}<span class="cp-heading">${title.trim()}</span> `).replace(COMMENT_GAP, '<br><br><br>').replace(/\n[ \t]*\n\s*/g, '<br><br>')}}`);
+    `{${body.replace(COMMENT_FIG, '<span class="cp-fig"></span>\n').replace(COMMENT_HEADING, (_m, pre: string, title: string) => `${pre}<span class="cp-heading">${title.trim()}</span> `).replace(COMMENT_GAP, '<br><br><br>').replace(/\n[ \t]*\n\s*/g, '<br><br>')}}`);
 
 function PgnGame({ header, moves }: { header: string; moves: string }) {
   // [View "player"] etiketi oyunu (bulmaca işareti olmasa da) <pgn-player> ile çizdirir; ChessPublica'ya geçirilmez.
