@@ -546,6 +546,19 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       // İlk hamlenin hemen ardından yazarın kendi diyagramı ([D]) geliyorsa başlangıç diyagramı gösterilmez (Andersson–Timman).
       const startFen = !useFallback && !WATCH_TAG.test(c) && !puzzleSide(c, moves) && !FIRST_MOVE_DIAGRAM.test(moves) ? c.match(/\[FEN\s+"([^"]+)"\]/i)?.[1] : undefined;
       if (QUOTE_TAG.test(c)) {
+        // Hemen ardından aynı oyunun bulmaca (oynatıcılı) hali geliyorsa o da aynı kutunun içine girer (Palavan–Euwe).
+        const nextAt = i + (own ? 2 : 1);
+        const nextItem = chunks[nextAt]?.trim().startsWith('[Event ') ? games[gameNo] : undefined;
+        const puzzle = nextItem && !nextItem.watch && nextItem.key === item.key ? nextItem : undefined;
+        let puzzleBox: ReactNode = null;
+        let skip = own ? 1 : 0;
+        if (puzzle) {
+          gameNo++;
+          const hdr = chunks[nextAt].trim();
+          const pm = gameMoves(chunks, nextAt);
+          puzzleBox = <div id={puzzle.id} className="scroll-mt-8 mt-8">{useFallback ? <Game header={hdr} moves={pm.moves} /> : <PgnGame header={hdr} moves={pm.moves} />}</div>;
+          skip = nextAt - i + (pm.own ? 1 : 0);
+        }
         out.push(
           <section key={i} id={item.id} className="scroll-mt-8">
             <blockquote className="quote quote-game">
@@ -555,11 +568,12 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
               </div>
               {startFen && <FenBlock fen={startFen} ready={cp === 'ready'} />}
               {game}
+              {puzzleBox}
               {item.credit && <footer className="quote-cite f-mono">— <CiteMd cite={item.credit} /></footer>}
             </blockquote>
           </section>,
         );
-        if (own) i++;
+        i += skip;
         continue;
       }
       out.push(
