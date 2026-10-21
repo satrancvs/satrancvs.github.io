@@ -55,18 +55,14 @@
     "date": "Ekim-Kasım-Aralık 2026"
   },
   {
-    "id": "gomori",
-    "slug": "1926-yilindan-nasil-usta-oldum",
-    "oldSlugs": ["eugen-gomoriden-alti-ustaya-tek-bir-soru"],
+    "id": "palavan",
+    "slug": "1944-yilindan-selim-palavan-kimdir",
     "cat": "Satranç tarihi",
-    "title": "1926 yılından: \"Nasıl usta oldum?\"",
-    "author": "Eugen Gömöri",
-    "authorLang": "hu",
-    "authorLabel": "Anket",
-    "translator": "FM Tarık Selbes",
+    "title": "1944 yılından: Selim Palavan kimdir?",
+    "dek": "_Türkiye Şatranç Mecmuası_’nın ilk sayısında basılan bu söyleşiyi, özgün yazımına dokunmadan, Selim Palavan’ın Max Euwe’ye karşı oynadığı oyundan bir diyagramla sunuyoruz.",
+    "author": "Behiç Besler",
+    "note": "İlk yayın: Türkiye Şatranç Mecmuası, sayı 1, 1944<br>Kaynak: [İstanbul Satranç Derneği](https://www.isd1943.org.tr/selim-palavan/) · © İSD",
     "date": "Ekim-Kasım-Aralık 2026",
-    "draft": true,
-    "note": "İlk yayın: [Wiener Schachzeitung](https://en.wikipedia.org/wiki/Wiener_Schachzeitung \"lang:en\"), 1926 · Çeviri: [cafechigorin.com](https://cafechigorin.com \"lang:en\"), 2020",
     "body": []
   },
   {
@@ -103,23 +99,27 @@
     "body": []
   },
   {
-    "id": "palavan",
-    "slug": "1944-yilindan-selim-palavan-kimdir",
-    "cat": "Satranç tarihi",
-    "title": "1944 yılından: Selim Palavan kimdir?",
-    "dek": "_Türkiye Şatranç Mecmuası_’nın ilk sayısında basılan bu söyleşiyi, özgün yazımına dokunmadan, Selim Palavan’ın Max Euwe’ye karşı oynadığı oyundan bir diyagramla sunuyoruz.",
-    "author": "Behiç Besler",
-    "note": "İlk yayın: Türkiye Şatranç Mecmuası, sayı 1, 1944<br>Kaynak: [İstanbul Satranç Derneği](https://www.isd1943.org.tr/selim-palavan/) · © İSD",
-    "date": "Ekim-Kasım-Aralık 2026",
-    "body": []
-  },
-  {
     "id": "giris",
     "slug": "ilk-sayi-ilk-hamle",
     "title": "İlk sayı, ilk hamle",
     "dek": "_Satranç vs._’nin ilk sayısına hoş geldiniz.",
     "author": "Yayın ekibi",
     "date": "Ekim-Kasım-Aralık 2026",
+    "body": []
+  },
+  {
+    "id": "gomori",
+    "slug": "1926-yilindan-nasil-usta-oldum",
+    "oldSlugs": ["eugen-gomoriden-alti-ustaya-tek-bir-soru"],
+    "cat": "Satranç tarihi",
+    "title": "1926 yılından: \"Nasıl usta oldum?\"",
+    "author": "Eugen Gömöri",
+    "authorLang": "hu",
+    "authorLabel": "Anket",
+    "translator": "FM Tarık Selbes",
+    "date": "Ekim-Kasım-Aralık 2026",
+    "draft": true,
+    "note": "İlk yayın: [Wiener Schachzeitung](https://en.wikipedia.org/wiki/Wiener_Schachzeitung \"lang:en\"), 1926 · Çeviri: [cafechigorin.com](https://cafechigorin.com \"lang:en\"), 2020",
     "body": []
   }
 ]
