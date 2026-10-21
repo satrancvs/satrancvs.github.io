@@ -10,6 +10,7 @@ import { watchInlinePlay } from '@/lib/inline-play';
 import { watchLocalization } from '@/lib/localize-dom';
 import { watchStudy } from '@/lib/study-fix';
 import { watchVariationFix } from '@/lib/variation-fix';
+import { GLYPH_COLOR } from '@/components/FenDiagram';
 import { splitChunks } from '@/lib/split-chunks';
 
 // Makale gövdesi: markdown metni + PGN oyun blokları + çapraz tablo + video bağlantısı.
@@ -104,8 +105,8 @@ const COMMENT_HEADING = /(^|\n)[ \t]*###[ \t]+([^\n]+)\n*/g;
 // commentMarkup yer tutucuyu boş bir <span class="cp-fig"> yapar, ChessPublica çizdikten sonra Figure bu <span>'a portal ile basılır (yazıdaki fotoğrafla aynı bileşen).
 // Aynı mekanizma, yorumun içindeki tek başına bir `[FEN "…"]` satırı için de geçerlidir: oyunda oynanmayan (analizdeki) bir konumun statik diyagramı çizilir
 // (`[D]` yalnızca oyunun o anki konumunu çizer). Çalışma görünümünde (`pgn-study`) canlı tahta olduğu için FEN satırları silinir.
-const COMMENT_FIG_LINE = /^[ \t]*(!\[[^\n]*\)|\[FEN\s+"[^"\n]+"\])[ \t]*$/gm;
-const COMMENT_FEN = /^\[FEN\s+"([^"]+)"\]$/;
+const COMMENT_FIG_LINE = /^[ \t]*(!\[[^\n]*\)|\[FEN\s+"[^"\n]+"\](?:[ \t]*\[[?!]{1,2}[ \t]+[a-h][1-8]\])?)[ \t]*$/gm;
+const COMMENT_FEN = /^\[FEN\s+"([^"]+)"\](?:\s*\[([?!]{1,2})\s+([a-h][1-8])\])?$/;
 const COMMENT_FIG = /(^|\n)[ \t]*@@FIG\d+@@[ \t]*\n*/g;
 // Yorumda tek başına bir `[boşluk]` satırı boş bir paragraftır (yazarın metnindeki boş satır): paragraf ayracına bir satır daha eklenir.
 // Boş satırlar paragraflar bölünürken birleştiği için (split-chunks.js) fazladan boş satır yazılamaz, bu işaret kullanılır.
@@ -159,7 +160,7 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
   const game = near
     ? <div ref={box} className="cp-game pb-4" dangerouslySetInnerHTML={{ __html: `<div class="cp-loading">Oyun yükleniyor...</div><${tag}>\n${raw}\n</${tag}>` }} />
     : <div ref={box} className="cp-game cp-placeholder pb-4" />;
-  const figures = slots.map((el, k) => figs[k] && createPortal(COMMENT_FEN.test(figs[k]) ? <FenBlock fen={figs[k].match(COMMENT_FEN)![1]} ready /> : <Figure chunk={figs[k]} />, el, `fig${k}`));
+  const figures = slots.map((el, k) => figs[k] && createPortal(COMMENT_FEN.test(figs[k]) ? <FenBlock fen={figs[k].match(COMMENT_FEN)![1]} ready analysis badge={(m => (m[2] ? { glyph: m[2], square: m[3] } : undefined))(figs[k].match(COMMENT_FEN)!)} /> : <Figure chunk={figs[k]} />, el, `fig${k}`));
   return intro ? <><p className="pb-4">{intro}</p>{game}{figures}</> : <>{game}{figures}</>;
 }
 
@@ -305,9 +306,16 @@ const captionOptions = {
 const FIRST_MOVE_DIAGRAM = /^\s*\d+\.(?:\.\.)?\s*\S+\s*\{\s*\[D\]/;
 const FEN_ONLY = /^\[FEN\s+"([^"]+)"\]$/;
 const FEN_BLOCK = /^\[FEN\s+"([^"]+)"\](\s*\(crop:\s*top-half\))?$/;
-function FenBlock({ fen, ready, crop = false }: { fen: string; ready: boolean; crop?: boolean }) {
+// `analysis`: oyunda oynanmamış bir analiz konumu (yorumdaki FEN satırı): varyant diyagramları gibi küçük ve soluk; `badge`: karenin sağ üst köşesinde hamle rozeti.
+function FenBlock({ fen, ready, crop = false, analysis = false, badge }: { fen: string; ready: boolean; crop?: boolean; analysis?: boolean; badge?: { glyph: string; square: string } }) {
   useEffect(() => { if (ready) window.ChessPublica?.initAll(); }, [ready]);
-  return <div role="img" aria-label="Diyagram" className={`art-fen${crop ? ' art-fen-top' : ''}`} dangerouslySetInnerHTML={{ __html: `<fen>${fen}</fen>` }} />;
+  const at = badge && { right: `${(7 - (badge.square.charCodeAt(0) - 97)) * 12.5 - 0.6}%`, top: `${(8 - Number(badge.square[1])) * 12.5 - 0.6}%` };
+  return (
+    <div role="img" aria-label={analysis ? 'Analiz diyagramı' : 'Diyagram'} className={`art-fen${crop ? ' art-fen-top' : ''}${analysis ? ' art-fen-analysis' : ''}`}>
+      <div dangerouslySetInnerHTML={{ __html: `<fen>${fen}</fen>` }} />
+      {badge && at && <div aria-hidden className="gm-badge art-fen-badge" style={{ background: GLYPH_COLOR[badge.glyph] ?? '#00AA00', ...at }}>{badge.glyph}</div>}
+    </div>
+  );
 }
 
 // " · " in a quote's source line breaks the line (poem: author/title, then translator).

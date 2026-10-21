@@ -90,7 +90,11 @@
 /* Alıntı içindeki statik diyagram (<fen>): ortalı, en çok 396 px (390 px ekranda 340 px); ham FEN metni gizli, tahta kutuyu doldurur. */
 .art-fen { width: min(396px, calc(100% - 2px)); margin: 1.75rem auto; aspect-ratio: 1; }
 .art-fen:not(:has(.jc-board)) { background: rgba(241, 233, 220, .03); }
+.art-fen { position: relative; container-type: inline-size; }
 .art-fen fen { display: none; }
+/* Yorumdaki FEN satırı = analiz konumu: varyant diyagramları gibi biraz küçük ve soluk; rozet kareye göre yüzdeyle konumlanır. */
+.art-fen-analysis { width: min(340px, calc(100% - 2px)); filter: saturate(0.7) opacity(0.85); }
+.art-fen-badge { position: absolute; z-index: 30; width: 5.5%; height: 5.5%; font-size: 4cqw; box-shadow: 0 1px .8cqw #00000073; }
 .art-fen .fen-container { max-width: none; margin: 0; width: 100%; }
 .art-fen .jc-board { width: 100%; }
 /* Üst yarı kesiti: tahta yarım yüksekliğe kırpılır, alt kenara tahta çerçevesi çizilir. */

@@ -5,7 +5,7 @@ import { useChessPublica } from '@/lib/chesspublica';
 const MAX = 640;
 
 // ChessPublica'nın statik <fen> tahtası hamle rozeti çizmez; <pgn>'deki .gm-badge ile aynı görünümde (renk, boyutun 0,055'i) kendimiz koyarız.
-const GLYPH_COLOR: Record<string, string> = { '!!': '#1aa34a', '!': '#00AA00', '!?': '#0000FF', '?!': '#FF8C00', '?': '#E69F00', '??': '#CC0000' };
+export const GLYPH_COLOR: Record<string, string> = { '!!': '#1aa34a', '!': '#00AA00', '!?': '#0000FF', '?!': '#FF8C00', '?': '#E69F00', '??': '#CC0000' };
 
 // Ana sayfa kartları için statik ChessPublica diyagramı (<fen>). Paket yalnızca diyagram ekrana yaklaşınca yüklenir;
 // o zamana kadar yer tutucu yer ayırır, sayfa kaymaz. Ham FEN metni CSS'le (.fen-diagram fen) gizlenir.
