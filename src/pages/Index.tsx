@@ -22,36 +22,16 @@ const NAV = [
 // Altıncı menü öğesi: sayfa hazır olana kadar devre dışı (tıklanmaz, "Yakında...").
 const NAV_SOON = 'Geçmiş sayılar';
 
-// Yazar kartındaki sayaç: yayımlanmış yazı sayısı; yalnızca henüz yayımlanmamış (taslak) yazısı olan yazarlar için "Yakında".
 // authorLang (örn. "hu"): yazar adının dili; büyük harfe çevirmede Türkçe İ yerine o dilin kuralı kullanılır (GÖMÖRI).
-// Çevirmen de sayılır (Gömöri yazısı: yazar Eugen Gömöri, Türkçesi Tarık Selbes).
-const bare = (n?: string) => n?.replace(/^(FM|GM)\s+/, '');
-const byAuthor = (list: typeof ARTICLES, name: string) => list.filter((a) => bare(a.author) === name || bare(a.translator) === name).length;
-const authorCount = (name: string) => {
-  const n = byAuthor(PUBLISHED, name);
-  return n > 0 || byAuthor(ARTICLES, name) === 0 ? `${n} yazı` : 'Yakında';
-};
-
-// "Hakkında" bölümündeki atıflar (inline Markdown). Yeni bir üçüncü taraf yazılım/görsel eklenince buraya ve public/chesspublica/LICENSES.txt'ye eklenir.
-const ATTRIBUTIONS = [
-  // Kısa, madde işaretli liste; büyük harfli mono stilde yabancı adlar <span lang="en"> ile işaretlenir (Türkçe İ yerine I).
-  // Yazı tipleri (SIL OFL) ve Lucide simgeleri (ISC) için görünür atıf istenmedi; listede yer almaz. Lucide'in ISC lisans metni (telif notu)
-  // yine de public/chesspublica/LICENSES.txt içinde durur ("Lisans metinleri" bağlantısı).
-  '[<span lang="en">ChessPublica</span>](https://chesspublica.github.io/), [<span lang="en">jQuery</span>](https://jquery.com/), [chessboard.js](https://chessboardjs.com/) (MIT) · [chess.js](https://github.com/jhlywa/chess.js) (BSD-2) · [Lisans metinleri](/chesspublica/LICENSES.txt)',
-  'Taş görselleri: [<span lang="en">Colin M.L. Burnett</span>](https://commons.wikimedia.org/wiki/User:Cburnett) ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.tr))',
-  'Fotoğraflar: künyeler her fotoğrafın altında',
-];
-
 const CORNERS = Array.from(new Set(PUBLISHED.map((a) => a.cat)));
 const tabCls = (on: boolean) => `f-mono h-11 border-b-2 transition-colors ${on ? 'border-[#C8893E] text-[#0E0C0A]' : 'border-transparent text-[#0E0C0A]/50 hover:text-[#0E0C0A]'}`;
 
-// bio (Markdown bağlantıları olabilir) ve sayaç isteğe bağlıdır; boşsa kartta gösterilmez. count: true yayımlanmış yazılardan
-// hesaplanır (yazar veya çevirmen); sayı verilirse o gösterilir.
-const AUTHORS: { name: string; role: string; bio?: string; count?: boolean | number }[] = [
-  { name: 'Nazmi Can Doğan', role: 'Kurucu, Yayın Yönetmeni', bio: 'FIDE ustası (FM). [YouTube kanalında](https://www.youtube.com/satranchess) içerik üretiyor ve canlı yayınlar yapıyor.', count: 3 },
-  { name: 'Oğul Köseoğlu', role: 'Kurucu, Editör', bio: 'Amatör satranççı, profesyonel [çevirmen](https://ogulkoseoglu.com/). Satranç vs.’nin ve [ChessPublica](https://chesspublica.github.io/)’nın web geliştiricisi.', count: 2 },
-  { name: 'Tarık Selbes', role: 'Kurucu, Yazar', bio: 'FIDE ustası (FM). [Café Chigorin](https://cafechigorin.com/) kişisel blogunda satranç tarihi, teorisi ve kültürü üzerine yazıyor.', count: true },
-  { name: 'Ahmad Al-Khatib', role: 'Konuk yazar', bio: 'Ürdün’ün ilk büyük ustası (GM). [YouTube kanalında](https://www.youtube.com/@GMAhmadAlkhatib) satranç içerikleri üretiyor.', count: true },
+// bio (Markdown bağlantıları olabilir) isteğe bağlıdır; boşsa kartta gösterilmez.
+const AUTHORS: { name: string; role: string; bio?: string }[] = [
+  { name: 'Nazmi Can Doğan', role: 'Kurucu, Yayın Yönetmeni', bio: 'FIDE ustası (FM). [YouTube kanalında](https://www.youtube.com/satranchess) içerik üretiyor ve canlı yayınlar yapıyor.' },
+  { name: 'Oğul Köseoğlu', role: 'Kurucu, Editör', bio: 'Amatör satranççı, profesyonel [çevirmen](https://ogulkoseoglu.com/). Satranç vs.’nin ve [ChessPublica](https://chesspublica.github.io/)’nın web geliştiricisi.' },
+  { name: 'Tarık Selbes', role: 'Kurucu, Yazar', bio: 'FIDE ustası (FM). [Café Chigorin](https://cafechigorin.com/) kişisel blogunda satranç tarihi, teorisi ve kültürü üzerine yazıyor.' },
+  { name: 'Ahmad Al-Khatib', role: 'Konuk yazar', bio: 'Ürdün’ün ilk büyük ustası (GM). [YouTube kanalında](https://www.youtube.com/@GMAhmadAlkhatib) satranç içerikleri üretiyor.' },
 ];
 
 function useReveal() {
@@ -325,7 +305,6 @@ export default function Index() {
               <h3 className="f-display text-3xl">{au.name}</h3>
               <p className="f-mono text-[#C8893E] mt-3">{au.role}</p>
               {au.bio && <p className="text-[#F1E9DC]/70 mt-4"><Markdown options={{ forceInline: true, overrides: { a: { props: { className: 'underline decoration-[#C8893E]/50 underline-offset-4 hover:text-[#C8893E] hover:decoration-[#C8893E]', target: '_blank', rel: 'noreferrer' } } } }}>{au.bio}</Markdown></p>}
-              {au.count && <p className="f-mono text-[#A89A88] mt-6">{typeof au.count === 'number' ? `${au.count} yazı` : authorCount(au.name)}</p>}
             </div>
           ))}
         </div>
