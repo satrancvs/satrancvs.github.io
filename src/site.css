@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Manrope:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Manrope:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=JetBrains+Mono:wght@400&display=swap');
 
 .sk { background:#0E0C0A; color:#F1E9DC; font-family:'Manrope',sans-serif; }
 .sk ::selection { background:#C8893E; color:#0E0C0A; }
 .f-display { font-family:'Fraunces',serif; letter-spacing:-0.04em; line-height:.9; font-weight:300; font-variation-settings:'opsz' 72; }
-.art-prose, .quote > p { font-family:'Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height:1.7; font-optical-sizing:auto; }
+.art-prose, .quote > p { font-family:'Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height:1.7; font-optical-sizing:auto; font-weight:350; }
 .art-prose strong, .quote > p strong { font-weight:600; }
-.cp-game .pgn-comment, .cp-game .pgn-comment-inline, .cp-game .pgn-variation, .cp-game .video-comment, .cp-game .comment-body { font-family:'Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height:1.7; font-optical-sizing:auto; }
+.cp-game .pgn-comment, .cp-game .pgn-comment-inline, .cp-game .pgn-variation, .cp-game .video-comment, .cp-game .comment-body { font-family:'Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height:1.7; font-optical-sizing:auto; font-weight:350; }
 .cp-game .pgn-variation .pgn-move { font-family:'Manrope',sans-serif; font-size:1rem; }
 .f-mono { font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.2em; text-transform:uppercase; }
 .reveal { transition: transform .9s cubic-bezier(.2,.7,.1,1), opacity .9s cubic-bezier(.2,.7,.1,1); }
