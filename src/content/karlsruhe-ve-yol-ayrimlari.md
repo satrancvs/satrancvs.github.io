@@ -89,7 +89,7 @@ Turnuvaya gergin bir başlangıç.
 
 İlk turun ardından şehir merkezinde kısa bir yürüyüş yaptım. On sekizinci yüzyılda bir Alman asilzadesinin kurduğu bu şirin ve yeşil kente ilk defa yolum düşüyordu. Bu gezi, bir satranç turnuvasının ötesinde benim için kişisel bir anlam taşıyordu.
 
-Lise eğitimimi tamamladığımda üniversiteyi Almanya'da mı yoksa Türkiye’de mi okuyacağıma karar vermem gerekiyordu. Sonunda tercihimi yaparak Ankara’nın yolunu tuttuysam da bu yol ayrımında diğer patikayı seçseydim gideceğim şehir tam da burası, Karlsruhe olacaktı. Belki de bu yüzden birçok Alman kentini sıkıcı bulmama rağmen Karlsruhe’yi sevdim.
+Lise eğitimimi tamamladığımda üniversiteyi Almanya'da mı yoksa Türkiye’de mi okuyacağıma karar vermem gerekiyordu. Sonunda tercihimi yaparak Ankara’nın yolunu tuttuysam da bu yol ayrımında diğer patikayı seçseydim üniversite eğitimim için yerleşeceğim şehir tam da burası, Karlsruhe olacaktı. Belki de bu yüzden birçok Alman kentini sıkıcı bulmama rağmen Karlsruhe’yi sevdim.
 
 ![Karlsruhe’nin simgesi olan piramit](images/piramit.jpg "Karlsruhe’nin simgesi olan piramit.  Kenti kuran asilzade <span lang="de">Karl Wilhelm von Baden-Durlach</span>’ın ebedi istirahatgahı olan kilisenin yerine yapılmış. · Fotoğraf: Tarık Selbes")
 
