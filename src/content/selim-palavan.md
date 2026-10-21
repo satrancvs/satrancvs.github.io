@@ -1,5 +1,9 @@
 ![Prof. Dr. Selim Palavan](images/selim-palavan.jpg "Prof. Dr. Selim Palavan (1909–1995) · Kaynak: İstanbul Satranç Derneği arşivi · © İSD")
 
+### İstanbul Şatranç şampiyonu Selim Palavan kimdir?
+
+*Şatranç oyunundaki değeri, oyun merakı, bu fikir sporunun memleketimizde yayılması hususundaki düşünceleri.*
+
 İstanbul Türk Şatranç klübünün Tokatlıyan otelindeki salonundan içeriye girince bir köşede Bay Selim Palavan’ı şatranç masasının başında buldum.
 
 **– Kolay gele bay Selim, gene bir etüd mü ?**
@@ -46,7 +50,7 @@ Bütün İstanbul’un ve hatta memleketimizin her köşesindeki şatranç merak
 [SetUp "1"]
 [FEN "2r5/1p6/3RB1nk/1K6/7P/3P3P/8/8 b - - 0 1"]
 
-{[P]} 1... Rc6 $3 2. Rxc6 bxc6+ 3. Kc5 Nf4 4. Bf5 Nxd3+ 5. Bxd3 1/2-1/2
+{[P7]} 1... Rc6 $3 2. Rxc6 bxc6+ 3. Kc5 Nf4 4. Bf5 Nxd3+ 5. Bxd3 1/2-1/2
 
 – Mühendis mektebinde doçent olan ve 34 yaşında bulunan bay Selim Palavan’ın şatranç ile meşgul olabilmek için nasıl vakit bulduğunu anlayabilmek merakına kapılarak şu suali sordum:
 

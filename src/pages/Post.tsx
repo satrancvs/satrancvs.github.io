@@ -93,7 +93,7 @@ function PostPage() {
         {a.cat && <p className="f-mono text-[#C8893E]">{a.cat}</p>}
         <h1 className={`f-display text-[clamp(44px,6vw,88px)] ${a.cat ? 'mt-6' : ''}`}>{a.title}</h1>
         {(a.dek ?? a.excerpt) && (
-          <p className="text-lg leading-[1.8] text-[#F1E9DC]/85 mt-8">
+          <p className="text-[1.3125rem] leading-[1.6] text-[#F1E9DC]/85 mt-8">
             <Markdown options={{ forceInline: true }}>{(a.dek ?? a.excerpt) as string}</Markdown>
           </p>
         )}
@@ -102,8 +102,8 @@ function PostPage() {
             {a.authorLabel ?? 'Yazar'}: <span lang={a.authorLang}>{a.author}</span>
             {a.translator && ` · Türkçesi: ${a.translator}`} · <span className="whitespace-nowrap">{a.date}</span>
           </p>
-          {/* Yazı başka bir yerde yayımlandıysa künye notu: yazar satırının altında, aynı yazı tipiyle, sola yaslı. */}
-          {a.note && <p className="f-mono text-[#A89A88] mt-3"><Markdown options={{ forceInline: true, overrides: { a: { component: NoteLink, props: { className: 'underline underline-offset-2 hover:text-[#F1E9DC]', target: '_blank', rel: 'noreferrer' } } } }}>{a.note}</Markdown></p>}
+          {/* Yazı başka bir yerde yayımlandıysa künye notu: yazar satırının altında, aynı yazı tipiyle, sola yaslı. `<br>` ile ayrılan her satır ayrı bir satır (paragraf) olur. */}
+          {a.note?.split(/<br\s*\/?>/i).map((line, i) => <p key={i} className="f-mono text-[#A89A88] mt-3"><Markdown options={{ forceInline: true, overrides: { a: { component: NoteLink, props: { className: 'underline underline-offset-2 hover:text-[#F1E9DC]', target: '_blank', rel: 'noreferrer' } } } }}>{line}</Markdown></p>)}
         </div>
         {/* Fotoğraf yazının en üstünde, künyenin hemen altında. */}
         {a.photo && (
@@ -112,7 +112,7 @@ function PostPage() {
             <figcaption className="mt-3"><PhotoCredit /></figcaption>
           </figure>
         )}
-        <div className="mt-10 space-y-6 text-lg leading-[1.8] text-[#F1E9DC]/85">
+        <div className="mt-10 space-y-6 text-[1.3125rem] leading-[1.7] text-[#F1E9DC]/85">
           {rest ? <ArticleBody chunks={rest} /> : a.body.map((p, i) => <p key={i} className={i === 0 ? 'first-letter:f-display first-letter:text-7xl first-letter:float-left first-letter:mr-3 first-letter:text-[#C8893E] first-letter:leading-[0.8]' : ''}>{p}</p>)}
         </div>
       </article>

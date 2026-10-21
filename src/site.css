@@ -1,8 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
-.sk { background:#0E0C0A; color:#F1E9DC; font-family:'Manrope',sans-serif; }
+/* Satranç simgeleri (± ∓ ⩱ ⩲ ∞ □ + − = ve ♔–♟ figürinleri) Newsreader'da yok ya da çok küçük; yazıyla aynı boya gelsin diye Noto Sans Math / Symbols 2
+   alt kümeleri (SIL OFL, yalnızca bu karakterler) büyütülerek (size-adjust) kullanılır. Yığının başına konur ki Newsreader'ın kendi ± ve + işaretlerinin yerine geçsinler. */
+@font-face { font-family:'Eval'; src:url('/fonts/noto-sans-math-eval.woff2') format('woff2'); font-display:swap; size-adjust:125%; unicode-range:U+00B1,U+2213,U+221E,U+25A1,U+2A71,U+2A72; }
+@font-face { font-family:'EvalPM'; src:url('/fonts/noto-sans-math-eval.woff2') format('woff2'); font-display:swap; size-adjust:90%; unicode-range:U+002B,U+003D,U+2212; }
+@font-face { font-family:'Figurine'; src:url('/fonts/noto-sans-symbols2-chess.woff2') format('woff2'); font-display:swap; size-adjust:110%; unicode-range:U+2654-265F; }
+.sk { background:#0E0C0A; color:#F1E9DC; font-family:'Eval','EvalPM','Figurine','Newsreader',serif; font-weight:320; font-optical-sizing:auto; }
 .sk ::selection { background:#C8893E; color:#0E0C0A; }
 .f-display { font-family:'Fraunces',serif; letter-spacing:-0.04em; line-height:.9; font-weight:300; font-variation-settings:'opsz' 72; }
+.art-prose, .quote > p { font-family:'Eval','EvalPM','Figurine','Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height:1.7; font-optical-sizing:auto; font-weight:320; color:rgba(241,233,220,.95); }
+.art-prose strong, .art-prose b, .quote strong, .cp-game :is(.pgn-comment, .pgn-comment-inline, .pgn-variation, .video-comment, .comment-body) :is(strong, b) { font-weight:500; }
+.cp-game .pgn-comment, .cp-game .pgn-comment-inline, .cp-game .pgn-variation, .cp-game .video-comment, .cp-game .comment-body { font-family:'Eval','EvalPM','Figurine','Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height:1.7; font-optical-sizing:auto; font-weight:320; color:rgba(241,233,220,.95); }
+.btn-mono { font-family:'JetBrains Mono',monospace; font-size:13px; letter-spacing:.08em; text-transform:uppercase; font-weight:600; }
+.btn-mono.ghost { font-weight:500; }
+.cp-game .pgn-mainline { font-weight:500; }
+.mono-field { font-family:'JetBrains Mono',monospace; font-size:16px; letter-spacing:.01em; }
+.mono-note { font-family:'JetBrains Mono',monospace; font-size:12.5px; line-height:1.85; letter-spacing:.01em; }
 .f-mono { font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.2em; text-transform:uppercase; }
 .reveal { transition: transform .9s cubic-bezier(.2,.7,.1,1), opacity .9s cubic-bezier(.2,.7,.1,1); }
 .reveal.pre { opacity:0; transform:translateY(40px); }
@@ -113,7 +126,7 @@
 .quote { position: relative; margin: 4.5rem 0 3rem; padding: 3.25rem 3rem 2.5rem; background: #17130F; border: 1px solid #2E2620; }
 .quote::before { content: '\201C'; position: absolute; top: -32px; left: -32px; width: 64px; height: 64px; box-sizing: border-box; padding-top: 26px; border-radius: 50%; background: #0E0C0A; display: flex; align-items: center; justify-content: center; font-family: 'Fraunces', serif; font-weight: 600; font-size: 56px; line-height: 1; color: #C8893E; pointer-events: none; }
 .quote > p + p { margin-top: 1.25rem; }
-.quote strong { font-weight: 600; color: #F1E9DC; }
+.quote strong { color: #F1E9DC; }
 .quote-right .quote { text-align: right; }
 .quote-poem .quote > p { font-family: 'Fraunces', serif; font-style: italic; }
 .quote-cite { display: block; margin-top: 1.5rem; font-size: 11px; line-height: 1.6; color: #A89A88; }
@@ -130,7 +143,7 @@
 .tbc-label { display: flex; align-items: center; gap: 1.25rem; color: #C8893E; margin: 0; }
 .tbc-label::before, .tbc-label::after { content: ''; flex: 1; height: 1px; background: #2E2620; }
 .tbc-text { margin: 1.5rem 0 0; font-size: 15px; line-height: 2.6; color: #A89A88; }
-.tbc-link { display: inline-flex; align-items: center; gap: .5rem; margin-left: .35rem; padding: .35rem 1.1rem; border: 1px solid #C8893E; border-radius: 999px; color: #F1E9DC; text-decoration: none; transition: background .2s, color .2s; }
+.tbc-link { font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; font-weight: 500; display: inline-flex; align-items: center; gap: .5rem; margin-left: .35rem; padding: .35rem 1.1rem; border: 1px solid #C8893E; border-radius: 999px; color: #F1E9DC; text-decoration: none; transition: background .2s, color .2s; }
 .tbc-link::after { content: '\2192'; }
 .tbc-link:hover { background: #C8893E; color: #0E0C0A; }
 

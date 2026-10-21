@@ -45,7 +45,7 @@ function Game({ header, moves }: { header: string; moves: string }) {
         {t.Round && <span>{t.Round}. tur · </span>}
         {t.White} {t.WhiteElo && `(${t.WhiteElo})`} — {t.Black} {t.BlackElo && `(${t.BlackElo})`} · {result}
       </figcaption>
-      <p className="mt-4 text-lg leading-[1.8] text-[#F1E9DC]/85" style={{ fontVariantNumeric: 'tabular-nums' }}>
+      <p className="mt-4 text-[1.3125rem] leading-[1.7] text-[#F1E9DC]/85" style={{ fontVariantNumeric: 'tabular-nums' }}>
         {parts.map((p, i) =>
           p.startsWith('{') ? (
             <span key={i} className="italic text-[#A89A88]"> {p.slice(1, -1).trim()} </span>
@@ -268,7 +268,7 @@ function GameSection({ item, watchId, watchLabel, onWatch, children }: { item: G
       {watchId && onWatch && (
         <div className="mb-4 flex justify-center">
           <button type="button" onClick={() => onWatch(watchId)}
-            className="f-mono h-9 rounded-full border border-[#2E2620] px-5 text-[#C8893E] transition-colors hover:bg-[#1A1512]">
+            className="btn-mono ghost h-9 rounded-full border border-[#2E2620] px-5 text-[#C8893E] transition-colors hover:bg-[#1A1512]">
             {watchLabel ?? 'Oyunu izle'} ↓
           </button>
         </div>
@@ -546,6 +546,19 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       // İlk hamlenin hemen ardından yazarın kendi diyagramı ([D]) geliyorsa başlangıç diyagramı gösterilmez (Andersson–Timman).
       const startFen = !useFallback && !WATCH_TAG.test(c) && !puzzleSide(c, moves) && !FIRST_MOVE_DIAGRAM.test(moves) ? c.match(/\[FEN\s+"([^"]+)"\]/i)?.[1] : undefined;
       if (QUOTE_TAG.test(c)) {
+        // Hemen ardından aynı oyunun bulmaca (oynatıcılı) hali geliyorsa o da aynı kutunun içine girer (Palavan–Euwe).
+        const nextAt = i + (own ? 2 : 1);
+        const nextItem = chunks[nextAt]?.trim().startsWith('[Event ') ? games[gameNo] : undefined;
+        const puzzle = nextItem && !nextItem.watch && nextItem.key === item.key ? nextItem : undefined;
+        let puzzleBox: ReactNode = null;
+        let skip = own ? 1 : 0;
+        if (puzzle) {
+          gameNo++;
+          const hdr = chunks[nextAt].trim();
+          const pm = gameMoves(chunks, nextAt);
+          puzzleBox = <div id={puzzle.id} className="scroll-mt-8 mt-8">{useFallback ? <Game header={hdr} moves={pm.moves} /> : <PgnGame header={hdr} moves={pm.moves} />}</div>;
+          skip = nextAt - i + (pm.own ? 1 : 0);
+        }
         out.push(
           <section key={i} id={item.id} className="scroll-mt-8">
             <blockquote className="quote quote-game">
@@ -555,11 +568,12 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
               </div>
               {startFen && <FenBlock fen={startFen} ready={cp === 'ready'} />}
               {game}
+              {puzzleBox}
               {item.credit && <footer className="quote-cite f-mono">— <CiteMd cite={item.credit} /></footer>}
             </blockquote>
           </section>,
         );
-        if (own) i++;
+        i += skip;
         continue;
       }
       out.push(
@@ -601,7 +615,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
         body = body.slice(m[0].length);
       }
       out.push(
-        <div key={i} className={['[&>p]:mb-6 [&>h3]:mb-6', ...marks].join(' ')}>
+        <div key={i} className={['art-prose [&>p]:mb-6 [&>h3]:mb-6', ...marks].join(' ')}>
           <Markdown options={{ ...mdOptions, forceBlock: true }}>{body}</Markdown>
         </div>,
       );
@@ -609,7 +623,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
   }
   if (toc.length > 1 && !tocPlaced) out.unshift(<Toc key="toc" items={toc} onGo={goTo} />);
   return (
-    <div ref={rootRef} className="text-lg leading-[1.8] text-[#F1E9DC]/85" data-cp={cp}>
+    <div ref={rootRef} className="text-[1.3125rem] leading-[1.7] text-[#F1E9DC]/85" data-cp={cp}>
       {out}
     </div>
   );

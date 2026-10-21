@@ -48,13 +48,13 @@ export default function NewsletterForm() {
         <label htmlFor="em" className="sr-only">E-posta</label>
         <input id="em" name="email" type="email" required autoComplete="email" maxLength={320} value={email}
           onChange={(e) => setEmail(e.target.value)} placeholder="e-posta adresin"
-          className="flex-1 min-w-0 h-14 bg-transparent border-b border-[#F1E9DC]/40 focus:border-[#C8893E] outline-none text-lg text-[#F1E9DC] placeholder:text-[#A89A88] transition-colors" />
+          className="flex-1 min-w-0 h-14 bg-transparent border-b border-[#F1E9DC]/40 focus:border-[#C8893E] outline-none mono-field text-[#F1E9DC] placeholder:text-[#A89A88] transition-colors" />
         <button type="submit" disabled={status === 'sending'}
-          className="h-14 px-8 rounded-full bg-[#F1E9DC] text-[#0E0C0A] font-semibold inline-flex items-center gap-2 justify-center hover:bg-white transition-colors disabled:opacity-60">
+          className="btn-mono h-14 px-8 rounded-full bg-[#F1E9DC] text-[#0E0C0A] inline-flex items-center gap-2 justify-center hover:bg-white transition-colors disabled:opacity-60">
           <Mail size={18} /> {status === 'sending' ? 'Gönderiliyor…' : 'Abone ol'}
         </button>
       </div>
-      <p aria-live="polite" className={`mt-3 text-sm min-h-[1.25rem] ${status === 'error' ? 'text-[#E07A5F]' : 'text-[#A89A88]'}`}>
+      <p aria-live="polite" className={`mono-note mt-3 min-h-[1.25rem] ${status === 'error' ? 'text-[#E07A5F]' : 'text-[#A89A88]'}`}>
         {status === 'error' ? message : 'Gizliliğine değer veriyoruz: e-posta adresin yalnızca bülten için kullanılır, istediğin an abonelikten çıkabilirsin.'}
       </p>
     </form>
