@@ -141,3 +141,5 @@ not the `<pgn-player>` module. The board stays hidden until the pieces are drawn
 
 ### Puzzle resume after a gated comment
 `PuzzleMode._finish(shown)` (site patch): when the solver's last move had a comment that was already read under the board (`_advance` → `_showComment`), pressing its Play button resumes playback from the *next* move (`state.index` + 1). Upstream sets the index one lower, so `play()` re-ran `goTo` on the same position, showed the same comment again with a new Play button and paused (Mar del Plata, Timman–Larsen: "Siyahın güçlü seçeneklerinden yalnızca biri." never went away).
+
+While a gated comment waits for its Play button (`_showComment` with `onPlay`), the player container has `puzzle-awaiting-play` (the "find the best move" hint row is hidden, `site.css`) and Space presses that button (capture-phase keydown, so the engine's own Space handler does not toggle playback). Released when the button is pressed, another comment is shown or the puzzle is deactivated.

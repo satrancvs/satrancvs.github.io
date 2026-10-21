@@ -1205,6 +1205,7 @@ class PuzzleMode {
   }
 
   _deactivate() {
+    if (this._releasePlayWait) { this._releasePlayWait(); this._releasePlayWait = null; }
     this.active      = false;
     this.startIndex  = null;
     this.chess       = null;
@@ -1473,6 +1474,7 @@ class PuzzleMode {
      `onPlay` runs when it is pressed; returns true when a comment is showing and onPlay is therefore pending. Side
      variations are left out here (FlipGame.tsx shows them). */
   _showComment(idx, onPlay) {
+    if (this._releasePlayWait) { this._releasePlayWait(); this._releasePlayWait = null; }
     const engine = this.engine;
     const box = engine.commentBox;
     if (!box || !box.el) return false;
@@ -1481,7 +1483,25 @@ class PuzzleMode {
     if (!onPlay || !has) return false;
     const btn = box.el.querySelector(".comment-play-btn");
     if (!btn) return false;
-    btn.onclick = () => { btn.remove(); onPlay(); };
+    /* While the comment waits for its Play button the question ("find the best move") no longer applies, and Space presses
+       the button like it does in normal playback (capture phase, so the engine's own Space handler does not toggle play). */
+    const root = engine.container;
+    root.classList.add("puzzle-awaiting-play");
+    const onKey = (e) => {
+      if (e.code !== "Space" || VideoEngine.activeEngine !== engine) return;
+      const live = box.el.querySelector(".comment-play-btn");
+      if (!live) return;
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      live.click();
+    };
+    const release = () => {
+      root.classList.remove("puzzle-awaiting-play");
+      document.removeEventListener("keydown", onKey, true);
+    };
+    document.addEventListener("keydown", onKey, true);
+    btn.onclick = () => { release(); btn.remove(); onPlay(); };
+    this._releasePlayWait = release;
     return true;
   }
 
