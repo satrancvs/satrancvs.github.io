@@ -32,7 +32,7 @@ Stuttgart havalimanındaki anlamsız derecede kaotik ve uzun kuyruğu saymazsak 
 
 ![Turnuva salonunun girişi](images/salon.jpg "Turnuva salonunun girişi. · Fotoğraf: Tarık Selbes")
 
-İlk akşam kongre merkezinin dışına asılmış “Dünyanın en büyük satranç turnuvasına hoş geldiniz” yazısına bir göz atış ve şehir merkezine kısa bir yürüyüşle geçti. Gerçekten dünyanın en büyük satranç turnuvasına geldiğimi ancak ertesi gün ilk tur için salona geldiğimde tam olarak idrak edebilecektim.
+İlk akşam kongre merkezinin dışına asılmış “Dünyanın en büyük satranç turnuvasına hoş geldiniz” yazısına bir göz atış ve şehir merkezine kısa bir yürüyüşle geçti. Gerçekten dünyanın en büyük satranç turnuvasına geldiğimi ancak ertesi gün ilk tur için salona girdiğimde tam olarak idrak edebilecektim.
 
 Devasa bir salon içerisinde yüzlerce masa ve insan, eşlendirmenin tur saatinde bile hâlâ belli olmaması ve dikey numaralandırma düzeni nedeniyle en azından bu duruma alışana dek masanızı bulmanın imkansızlığı…
 
