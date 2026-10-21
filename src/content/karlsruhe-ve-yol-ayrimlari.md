@@ -38,7 +38,7 @@ Devasa bir salon içerisinde yüzlerce masa ve insan, eşlendirmenin tur saatind
 
 Sadece A kategorisinde bile başlangıç listesinde başını GM Pavel Eljanov’un çektiği 998 (!) katılımcı olduğunu söylemek herhalde yeterli olur –ki daha B ve C kategorileri ile freestyle turnuvasındaki üç kategoriden bahsetmedim bile.
 
-Telefonu her zamanki gibi odada bıraktığım için eşlendirmeyi de ancak sorarak öğrenmiş ve doğru masada oturduğumdan bile tam emin olamayarak tahta başına geçmiştim.
+Telefonu her zamanki gibi odada bıraktığım için eşlendirmeyi de ancak sorarak öğrenmiş ve doğru masada oturduğumdan bile emin olamayarak tahta başına geçmiştim.
 
 Freestyle kategorisinde her tur öncesi oynanacak pozisyon için çekilen kuranın ve açılış töreninin ardından başlayan tur öncesi az da olsa heyecanlıydım.
 
