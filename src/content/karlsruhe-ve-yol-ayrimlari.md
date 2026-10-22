@@ -6,9 +6,9 @@ Devasa bir salon içerisinde yüzlerce masa ve insan, eşlendirmenin tur saatind
 
 Sadece A kategorisinde bile başlangıç listesinde başını GM Pavel Eljanov’un çektiği 998 (!) katılımcı olduğunu söylemek herhalde yeterli olur –ki daha B ve C kategorileri ile *freestyle* turnuvasındaki üç kategoriden bahsetmedim bile.
 
-Masaya otururken sadece rakibimin isminin Yash Watarkar olduğu ve siyah taşlarla oynayacağım bilgisine sahiptim. Rakibimin hangi açılışı oynadığından ve hatta oyun kuvvetinden bile bihaber vaziyetteydim.
+Masaya otururken sadece rakibimin adını ve siyah taşlarla oynayacağımı biliyordum. Rakibimin hangi açılışı oynadığından ve hatta oyun kuvvetinden bile bihaber vaziyetteydim.
 
-Düşük reytinge sahip de olsa her Hintli oyuncu gibi genç rakibimin tehlikeli olabileceğini biliyordum. Bu nedenle ilk turdan bir kazaya uğramamak gerekiyordu ve her ne kadar bazı badireler atlattıysam da bunu başardım.
+Bir diğer bildiğim, düşük reytinge sahip de olsa, Hindistan'dan çıkan her oyuncu gibi genç rakibimin de tehlikeli olabileceğiydi. Bu nedenle ilk turdan bir kazaya uğramamak gerekiyordu ve her ne kadar bazı badireler atlattıysam da bunu başardım.
 
 [Event "GRENKE Açık"]
 [Site "Karlsruhe"]
