@@ -78,7 +78,7 @@ Modern satrancın kurucusu olarak kabul edilen Steinitz'in konuya dair görüşl
 >
 > — José Raúl Capablanca, _"Chess Fundamentals"_ (Satrancın Temelleri), 1921.</span>
 
-Capablanca'nın bahsettiği iltifat, boş tahtada merkezde duran bir filin, tahtanın kenarındaki bir atı hapsederek hareketsiz kılabilme becerisiydi.
+Capablanca'nın bahsettiği iltifat, boş tahtada merkezde duran bir filin, tahtanın kenarındaki bir atı hapsederek hareketsiz kılabilme becerisiydi. Elbette bu, boş tahtada olduğu gibi, merkez piyonlarının tahtadan kalkmış olduğu ve atın tahtanın kenarında kaldığı oyunortası konumları için de geçerli bir tema.
 
 [FEN "3n4/8/8/3B4/8/8/8/8 w - - 0 1"] (crop: top-half)
 
