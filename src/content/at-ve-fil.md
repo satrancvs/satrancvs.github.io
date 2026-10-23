@@ -2,7 +2,7 @@
 
 Satrançta en sık karşılaştığımız materyal dengesizliklerinden biri file karşı at. Fil ve at, farklı hareket kurallarına sahip, birbirinden tamamen ayrı taşlar. Dolayısıyla tahtadaki güçleri de farklı olsa gerek.
 
-19. yüzyılın ortalarından günümüze, bu iki hafif taşın değerlerini belirlemek için ciddi bir çaba harcanmış. Ama bu çabaya girişenler, büyük bir güçlükle karşılaşmış: Bu iki taşın gücü ancak özgül konuma bağlı olarak değişiklik gösteren diğer öğelere göre değerlendirilebilir.
+Bu iki hafif taşın değerlerini belirlemek için 19. yüzyılın ortalarından günümüze ciddi bir çaba harcanmış. Ama bu çabaya girişenler, büyük bir güçlükle karşılaşmış: Bu iki taşın gücü ancak özgül konuma bağlı olarak değişiklik gösteren diğer öğelere göre değerlendirilebilir.
 
 At ve filin değeri her bir konumda, tahtada bulunan diğer taşlar (koordinasyon), piyonların durduğu kareler (piyon yapısı), şah güvenliği ya da aktivitesi, inisiyatif, dinamik ve taktik imkanların bolluğu ya da yokluğu gibi pek çok ayrı sebeple belirlenebiliyor.
 
