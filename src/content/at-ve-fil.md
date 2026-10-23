@@ -71,12 +71,15 @@ Modern satrancın kurucusu olarak kabul edilen Steinitz'in konuya dair görüşl
 Üçüncü dünya şampiyonu **José Raúl Capablanca** ise _Satrancın Temelleri_ adlı kitabında konuyu o vakte kadar yapılmış en ayrıntılı şekilde ele alarak _çoğu durumda_ filin üstün olduğu yönündeki düşüncesini anlatır:
 
 > Genel teorik açıdan fil ve at aynı değerde sayılmalıdır, ama bana göre çoğu durumda daha değerli olan taş fildir. Fil çoğu zaman üç piyondan biraz daha değerlidir, ama at çok nadiren üç piyon değerinde olur, hatta bazen değeri bu kadar dahi etmeyebilir.
+>
 > Amatörler arasında genellikle atın daha değerli taş olduğu düşünülebilir. Bunun başlıca sebebi, fil ile karşılaştırıldığında atın hem siyah hem beyaz karelere hükmedebilmesidir. Ama gözden kaçan şu ki, at herhangi bir anda yalnızca tek bir renkteki kareler arasından seçim yapabilir.
->Atı bir kanattan diğerine götürmek de file kıyasla çok daha uzun sürer. Ayrıca, aşağıdaki örnekte görüleceği gibi fil atı “pat edebilir.” Bu, atın asla karşılık veremeyeceği bir _iltifat_:
+>
+> Atı bir kanattan diğerine götürmek de file kıyasla çok daha uzun sürer. Ayrıca, aşağıdaki örnekte görüleceği gibi fil atı “pat edebilir.” Bu, atın asla karşılık veremeyeceği bir _iltifat_:
 >
 > [FEN "3n4/8/8/3B4/8/8/8/8 w - - 0 1"] (crop: top-half)
 >
 > Oyuncu ne kadar zayıfsa, at onun için o kadar korkunçtur. Ama oyuncu güçlendikçe filin değeri ona daha da belirgin hâle gelir ve doğal olarak buna karşılık atın file göre değerlendirmesinde bir düşüş yaşanır -ya da yaşanmalıdır.
+>
 > Bu konuda, pek çok başka konuda olduğu gibi, günümüz ustaları eski kuşakların ustalarından çok daha ilerdedir. Çok uzun olmayan bir süre önce en iyi ustaların bazıları -örneğin Pillsbury ve Chigorin- atı file tercih ediyorlardı. Oysa bugün yukarıdaki ifadelerime tamamen katılmayacak neredeyse hiçbir usta yok.
 > — José Raúl Capablanca, _"Chess Fundamentals"_ (Satrancın Temelleri), 1921.</span>
 
