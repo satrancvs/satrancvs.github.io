@@ -113,7 +113,7 @@ Ne var ki Capablanca, çağları aşıp günümüze kadar geçerliliğini korumu
 >
 > — Capablanca, a.g.e.
 
-Capablanca’nın bu yerli yerinde uyarısını dikkate almayan oyuncunun başına neler gelebileceğini incelikle sergileyen bir oyunla devam edelim.
+Capablanca’nın bu yerinde uyarısını dikkate almayan oyuncunun başına neler gelebileceğini incelikle sergileyen bir oyunla devam edelim.
 
 Bu defa file karşı ata sahip olan taraf, Capa’nın büyük rakibi ve halefi, dördüncü dünya şampiyonu **Alexander Alekhine**. Analiz ve yorumlar ise Büyük Usta Johan Hellsten’den.
 
