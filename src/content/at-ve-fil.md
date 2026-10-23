@@ -1,20 +1,20 @@
 ![At ve fil](images/at-fil.jpg "[House of Staunton](https://www.houseofstaunton.com/products/the-capablanca-series-luxury-chess-pieces-4-0-king?v=62553719538033) Capablanca Serisi ahşap satranç taşları · Görsel yapay zeka ile üretilmiştir · Google Gemini 3")
 
-Satrançta en sık karşılaştığımız materyal dengesizliklerinden biri file karşı at. Fil ve at, farklı hareket kurallarına sahip, birbirinden tamamen ayrı taşlar. Dolayısıyla tahtadaki güçleri de farklı olsa gerek. 19. yüzyılın ortalarından günümüze, bu iki hafif taşın değerlerini belirlemek için ciddi bir çaba harcanmış. Ama bu çabaya girişenler, büyük bir güçlükle karşılaşmış: İki taşın gücü, her spesifik konumda, başka pek çok öğeye bağlı.
+Satrançta en sık karşılaştığımız materyal dengesizliklerinden biri file karşı at. Fil ve at, farklı hareket kurallarına sahip, birbirinden tamamen ayrı taşlar. Dolayısıyla tahtadaki güçleri de farklı olsa gerek. 19. yüzyılın ortalarından günümüze, bu iki hafif taşın değerlerini belirlemek için ciddi bir çaba harcanmış. Ama bu çabaya girişenler, büyük bir güçlükle karşılaşmış: Bu iki taşın gücü ancak özgül konuma bağlı olarak değişiklik gösteren diğer öğelere göre değerlendirilebilir.
 
-At ve filin değeri her bir konumda, tahtada bulunan diğer taşlar (koordinasyon), piyonların durduğu kareler (piyon yapısı), şah güvenliği ya da aktivitesi, inisiyatif veya dinamik ve taktik imkanların bolluğu ya da yokluğu gibi pek çok ayrı sebeple belirlenebiliyor.
+At ve filin değeri her bir konumda, tahtada bulunan diğer taşlar (koordinasyon), piyonların durduğu kareler (piyon yapısı), şah güvenliği ya da aktivitesi, inisiyatif, dinamik ve taktik imkanların bolluğu ya da yokluğu gibi pek çok ayrı sebeple belirlenebiliyor.
 
 Satranç tekniğinin en önemli konularından biri, file karşı atla ya da ata karşı fille üst düzeyde oynayabilme becerisini geliştirmek. Ustaların yazı ve oyunlarını incelediğimizde, bu iki taşı ne zaman ve nasıl değişeceğini bilmenin, yani doğru anı fark edip doğru kararı verebilmenin önemini görüyoruz.
 
-Hangi taşları değişeceğimize karar vermek pek çok konumda gerçekten zor olabilir. Pek çok oyuncu, sıklıkla kişisel eğilimler geliştirir. Sovyetler Birliği'nde atın filden daha güçlü olduğuna inanan eski bir düşünce okulunda bahsedilir: **Chigorin okulu**. Garry Kasparov’a göre Mikhail Chigorin (1850–1908) kendinden sonra gelen büyük oyuncular için yolu açmıştır:
+Hangi taşları değişeceğimize karar vermek pek çok konumda gerçekten zor olabilir. Pek çok oyuncu, sıklıkla kişisel eğilimler geliştirmiş. Sovyetler Birliği'nde atın filden daha güçlü olduğuna inanan eski bir düşünce okulunda bahsedilirmiş: **Chigorin okulu**. Garry Kasparov’a göre Mikhail Chigorin (1850–1908) kendinden sonra gelen büyük oyuncular için yolu açmıştır:
 
 > Pek çok bakımdan Chigorin’in stili, Alekhine’in stiline öncüllük etmiştir. 20. yüzyıl ortalarında Chigorin’in oyunları üzerine büyük bir duayen olan Boris Spassky de gençliğinde benzer bir üslupla oynuyordu.
 >
 > — <span lang="en">Garry Kasparov, _"On My Great Predecessors, Part 1"_ (Benim Ustalarım), Everyman Chess, 2003.</span>
 
-Ne var ki Chigorin’in tarihin testinden geçememiş, günümüzde kabul görmemiş bazı önerileri de vardı: **Chigorin satrançta atın filden daha iyi bir taş olduğunu savunuyordu.** Bu görüş, Chigorin'in iki atının Lasker'in fil çiftine karşı galip geldiği **Lasker - Chigorin, Hastings, 1895** partisiyle kendisine geniş destekçi kazanmış, satranç çevrelerinde atı file tercih eden oyunculara "Chigorinci" denmeye başlanmış.
+Ne var ki Chigorin’in tarihin testinden geçememiş, günümüzde kabul görmemiş bazı önerileri de vardı: **Chigorin satrançta atın filden daha iyi bir taş olduğunu savunuyordu.** Bu görüş, Chigorin'in iki atının Lasker'in fil çifti karşısında galip geldiği **Lasker - Chigorin, Hastings, 1895** partisiyle kendisine geniş destekçi kazanmış.
 
-İşte Chigorin'in fillerini oyunun erken safhasında Lasker'in atlarıyla değişip tahtada kalan iki atıyla kazandığı o parti –yorumlar Garry Kasparov'a ait:
+İşte Chigorin'in her iki filini de oyunun erken safhasında Lasker'in atlarıyla değişip tahtada kalan iki atıyla kazandığı o parti –yorumlar Garry Kasparov'a ait:
 
 [Event "Hastings"]
 [Site "Hastings"]
