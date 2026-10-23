@@ -17,7 +17,7 @@ const WORDMARK_CLASS = 'block w-fit max-w-full mx-auto f-display text-[17vw] lea
 const Wordmark = () => (
   <>
     <FaviconBullet className="inline-block align-top mt-[0.135em] mr-[calc(13.25px_-_0.054em)]" />
-    Satranç <em className="italic text-[#C8893E]">vs.</em>
+    Satranç <em className="italic text-[color:var(--accent)]">vs.</em>
   </>
 );
 
@@ -28,29 +28,29 @@ export default function SiteFooter({ page = 'home' }: { page?: 'home' | 'post' }
     window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
   };
   return (
-    <footer className="border-t border-[#2E2620]">
+    <footer className="border-t border-[color:var(--line)]">
       {page === 'home' && (
       <div className="max-w-[1440px] mx-auto px-6 md:px-10 py-12 flex flex-col md:flex-row justify-between gap-6">
-        <p className="f-mono text-[#A89A88]">İletişim: <a href="mailto:editor@satrancvs.com" className="text-[#F1E9DC] hover:text-[#C8893E]">editor@satrancvs.com</a></p>
+        <p className="f-mono text-[color:var(--mute)]">İletişim: <a href="mailto:editor@satrancvs.com" className="text-[color:var(--fg)] hover:text-[color:var(--accent)]">editor@satrancvs.com</a></p>
         {/* Hesaplar hazır olana kadar devre dışı (bülten formundaki gibi): devre dışı öğeler ipucu göstermediği için title kapsayıcıda.
             Hesaplar açılınca SOCIAL_READY true yapılır. */}
         <div title={SOCIAL_READY ? undefined : 'Yakında...'} aria-disabled={SOCIAL_READY ? undefined : true} className={`flex gap-3 ${SOCIAL_READY ? '' : 'cursor-not-allowed opacity-60'}`}>
           {SOCIAL.map(([Icon, l, href]) => {
             const I = Icon as ComponentType<{ size?: number }>;
-            const base = 'w-11 h-11 rounded-full border border-[#2E2620] grid place-items-center';
+            const base = 'w-11 h-11 rounded-full border border-[color:var(--line)] grid place-items-center';
             return SOCIAL_READY
-              ? <a key={l as string} href={href as string} target="_blank" rel="noreferrer" aria-label={l as string} className={`${base} hover:bg-[#C8893E] hover:text-[#0E0C0A]`}><I size={18} /></a>
+              ? <a key={l as string} href={href as string} target="_blank" rel="noreferrer" aria-label={l as string} className={`${base} hover:bg-[color:var(--accent)] hover:text-[color:var(--bg)]`}><I size={18} /></a>
               : <button key={l as string} type="button" disabled aria-label={`${l} (yakında)`} className={`${base} pointer-events-none`}><I size={18} /></button>;
           })}
         </div>
       </div>
       )}
-      <div className={`overflow-hidden ${page === 'home' ? 'border-t border-[#2E2620]' : ''}`}>
+      <div className={`overflow-hidden ${page === 'home' ? 'border-t border-[color:var(--line)]' : ''}`}>
         {page === 'home'
           ? <button type="button" onClick={toTop} aria-label="Sayfanın başına dön" className={WORDMARK_CLASS}><Wordmark /></button>
           : <Link to="/" state={{ top: true }} aria-label="Ana sayfaya git" className={WORDMARK_CLASS}><Wordmark /></Link>}
       </div>
-      <div className="max-w-[1440px] mx-auto px-6 md:px-10 py-6 flex justify-between f-mono text-[#A89A88]">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-10 py-6 flex justify-between f-mono text-[color:var(--mute)]">
         <span>© 2026 Satranç vs. Dijital Satranç Dergisi</span>
       </div>
     </footer>
