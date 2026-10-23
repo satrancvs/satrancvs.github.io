@@ -1,4 +1,4 @@
-![At ve fil](images/at-fil.jpg "[House of Staunton](https://www.houseofstaunton.com/products/the-capablanca-series-luxury-chess-pieces-4-0-king?v=62553719538033) Capablanca Serisi ahşap satranç taşları · Görsel yapay zeka ile üretilmiştir · Google Gemini 3")
+![At ve fil](images/at-fil.jpg "[House of Staunton](https://www.houseofstaunton.com/products/the-capablanca-series-luxury-chess-pieces-4-0-king?v=62553719538033) Capablanca Serisi ahşap satranç taşları · Görsel, yapay zeka ile üretilmiştir · Google Gemini 3")
 
 Satrançta en sık karşılaştığımız materyal dengesizliklerinden biri file karşı at. Fil ve at, farklı hareket kurallarına sahip, birbirinden tamamen ayrı taşlar. Dolayısıyla tahtadaki güçleri de farklı olsa gerek.
 
