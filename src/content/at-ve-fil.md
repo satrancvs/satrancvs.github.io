@@ -68,7 +68,7 @@ Modern satrancın kurucusu olarak kabul edilen Steinitz'in konuya dair görüşl
 > [FEN "3n4/8/8/3B4/8/8/8/8 w - - 0 1"] (crop: top-half)
 >
 > Oyuncu ne kadar zayıfsa, at onun için o kadar korkunçtur. Ama oyuncu güçlendikçe filin değeri ona daha da belirgin hâle gelir ve doğal olarak buna karşılık atın file göre değerlendirmesinde bir düşüş yaşanır -ya da yaşanmalıdır. Bu konuda, pek çok başka konuda olduğu gibi, günümüz ustaları eski kuşakların ustalarından çok daha ilerdedir. Çok uzun olmayan bir süre önce en iyi ustaların bazıları -örneğin Pillsbury ve Chigorin- atı file tercih ediyorlardı. Oysa bugün yukarıdaki ifadelerime tamamen katılmayacak neredeyse hiçbir usta yok.
-> > — <span lang="en">José Raúl Capablanca, _"Chess Fundamentals"_ (Satrancın Temelleri), 1921.</span>
+> — José Raúl Capablanca, _"Chess Fundamentals"_ (Satrancın Temelleri), 1921.</span>
 
 ### Capablanca Kuralı
 
