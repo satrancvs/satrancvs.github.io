@@ -10,7 +10,9 @@ At ve filin değeri her bir konumda, tahtada bulunan diğer taşlar (koordinasyo
 
 Satranç tekniğinin en önemli konularından biri, file karşı atla ya da ata karşı fille üst düzeyde oynayabilme becerisini geliştirmek. Ustaların yazı ve oyunlarını incelediğimizde, bu iki taşı ne zaman ve nasıl değişeceğini bilmenin, yani doğru anı fark edip doğru kararı verebilmenin önemini görüyoruz.
 
-Hangi taşları değişeceğimize karar vermek pek çok konumda gerçekten zor olabilir. Pek çok oyuncu, sıklıkla kişisel eğilimler geliştirmiş. Sovyetler Birliği'nde atın filden daha güçlü olduğuna inanan eski bir düşünce okulunda bahsedilirmiş: **Chigorin okulu**. Garry Kasparov’a göre Mikhail Chigorin (1850–1908) kendinden sonra gelen büyük oyuncular için yolu açmıştır:
+Hangi taşları değişeceğimize karar vermek pek çok konumda gerçekten zor olabilir. Pek çok oyuncu, sıklıkla kişisel eğilimler geliştirmiş. Sovyetler Birliği'nde atın filden daha güçlü olduğuna inanan eski bir düşünce okulunda bahsedilirmiş: **Chigorin okulu**. Garry Kasparov’a göre Mikhail Chigorin (1850–1908) kendinden sonra gelen büyük oyuncular için yolu açmıştır.
+
+![Mikhail Chigorin](images/Chigorin.jpg "Cleveland Public Library · Digital Public Library of America, Public Domain, https://commons.wikimedia.org/w/index.php?curid=178871027")
 
 > Pek çok bakımdan Chigorin’in stili, Alekhine’in stiline öncüllük etmiştir. 20. yüzyıl ortalarında Chigorin’in oyunları üzerine büyük bir duayen olan Boris Spassky de gençliğinde benzer bir üslupla oynuyordu.
 >
@@ -50,19 +52,24 @@ Birkaç yıl sonra Chigorin görüşlerini bu defa Steinitz karşısında sınam
 [Result "1-0"]
 
 1. d4 d5 2. c4 Nc6 { Kasparov, bu hamleye !? (ilginç hamle) notu düşerek şöyle diyor: "Taşlarla merkeze baskı yaparak ardından saldırı veya blokaj ile devam etmek, hipermodern dönemin Alekhine Savunması, Grünfeld Savınması ve tüm Nimzo-Hint yapıları gibi keşiflerini öngören, zamanının hayli ilerisinde bir fikirdi. Nimzowitsch'in Chigorin'den 'hocam' diye bahsetmesine şaşırmamalı." } 3. cxd5 ( 3. Nf3 Bg4 4. cxd5 Bxf3 5. gxf3 Qxd5 6. e3 e5 7. Nc3 Bb4 8. Bd2 Bxc3 9. bxc3 Qd6 10. Rb1 b6 {[D]} 11. f4 exf4 12. e4 { Kasparov-Smyslov, 1984 Adaylar finali } ) 3... Qxd5 4. Nf3 e5 5. Nc3 Bb4 6. dxe5 Qxd1+ 7. Kxd1 Bg4 8. h3 Bxf3 9. exf3 O-O-O+ 10. Kc2 Nxe5 11. Be3 { [D] Her iki tarafın da tahtada merkez piyonlarının bulunmadığı **açık konumlarda** filin attan biraz daha iyi olduğu düşünülür.
+
 **Uzun menzilli** taşlar olan filler, açık konumlarda tahtanın her iki kanadında birden tehditler yaratabilirken atlar ise **-kısa menzilleriyle-** aynı anda iki kanatta sıklıkla etkili olamaz. } 11... a6 12. f4 Nc6 13. Bc4 Nd4+ 14. Kc1 Nh6 { Chigorin, f piyonunu korumak istiyor. Bunun yerine Stockfish’e göre Siyah 14… Ne7 ile piyonu bırakmayı tercih edebilirdi. } ( 14... Ne7 15. Bxf7 Nef5 $1 16. Rd1 Bc5 $1 { Siyahın **dinamik imkânları**, piyon eksiğini telafi etmeye yeterli görünüyor. } ) 15. g4 b5 16. Rd1 $1 { Ünlem işareti, turnuva kitabının editörlerine ait. } 16... c5 ( 16... Bxc3 17. bxc3 ( 17. Bf1 Ndf5 $1 { [D] Stockfish, birkaç hamle önceden tespit edilmesi _insanüstü_ zorlukta görünen bu dinamik imkânla Siyahın eşitliği koruyabileceğini gösteriyor. } ) 17... bxc4 18. Bxd4 f6 { Stockfish’e göre konum aşağı yukarı eşit. } ) 17. Bf1 { [%cal Gf1g2,Gg2a8] [%csl Rd5] Steinitz, **üzerinde piyon bulunmayan** h1-a8 uzun çaprazına yerleşen filin üstünlüğü elde etmeye yeteceğini gösteriyor. Bu filin aktivitesi, konumu belirleyecek önemli bir faktör, çünkü Siyahın açık kareli fili bulunmadığından Beyazın bu fili tahtadaki **rakipsiz taş**.
 
 Fil, kendi bulunduğu şah kanadını, rakibin vezir kanadını ve -bu konumda en önemlisi- merkezi kontrol ederek **beyaz atın d5’e girişini** sağlayacak. Siyahın son hamlesinin d5 karesini nasıl zayıflattığını da göz önünde bulunduralım. } 17... Rhe8 18. Bg2 f5 19. g5 Ng8 { [D] } 20. Nd5 $1 { Kazanan hamle. (Ünlem işareti ve yorum, turnuva kitabının editörlerine ait.) } 20... Ne6 21. a4 bxa4 ({ Stockfish de bu hamle yerine daha makul bir savunma denemesi gibi görünen} 21... Ne7 {fikrini öneriyor. Ancak muhtemelen} 22. Nxb4 cxb4 23. axb5 Rxd1+ 24. Kxd1 Rd8+ 25. Kc2 axb5 26. Ra8+ {hamlelerinden sonraki konumun, oyunda oluşan konumdan kritik önemde bir farkı olmayacaktı. }) 22. Rxa4 a5 23. Nxb4 axb4 24. Ra8+ Kc7 25. Rdxd8 Rxd8 26. Rxd8 Nxd8 ( 26... Kxd8 27. Bd5 { Beyaz kazanır. } ) 27. Bxc5 { [D] Beyazın aktif fillerine karşı ikisi de sekizinci yatayda kalan siyah atlar, piyon yapısını korumakta başarılı olamıyor. Siyah 41. hamlede terk etti. } 1-0
 
 ### Steinitz ve "Yeni Okul"
 
-Modern satrancın kurucusu olarak saygın bir yere sahip olan Steinitz'in konuya dair görüşleri, elbette birkaç pratik başarıyla sınırlı değildi. Steinitz, döneminin belki de en geniş etkili yazarı ve satranç kuramcısıydı. _Modern Satranç Kılavuzu_ adlı kitabında meseleyi teorik olarak şöyle ele alıyordu:
+Modern satrancın kurucusu olarak saygın bir yere sahip olan Steinitz'in konuya dair görüşleri, elbette birkaç pratik başarıyla sınırlı değildi. Steinitz, döneminin belki de en geniş etkili satranç yazarı ve kuramcısıydı. _Modern Satranç Kılavuzu_ adlı kitabında meseleyi teorik olarak şöyle ele alıyordu:
+
+![Wilhelm Steinitz](images/Steinitz.jpg "By Schumann, Fritz - Cleveland Public Library Digital Public Library of America. Public Domain, https://commons.wikimedia.org/w/index.php?curid=178869232")
 
 > Filin göreli değeri, ustalar ve otoriteler arasında farklı görüşlere yol açmıştır. Bazıları oyunsonunda fili ata belirgin bir şekilde tercih etmiştir. Vezir veya kaleyle birlikteyken atın filden daha iyi olduğu da öne sürülmüştür. Ama dikkatimizi çeken pozisyonların ortalamasını ve her iki taş lehine kesin olan birkaç istisnayı dikkatle değerlendirdikten sonra şu sonuca vardık: Filin gücü, pratik amaçlar bakımından, açılışta, oyunortasında, oyunsonunda ve diğer taşlarla çoğu kombinasyonda ona atfedilen, at karşısındaki matematiksel üstünlüğünü haklı çıkarmaktadır.
 >
 > — <span lang="en">Wilhelm Steinitz, _"The Modern Chess Instructor"_ (Modern Satranç Kılavuzu), 1889.</span>
 
 İlk dünya şampiyonu Steinitz'in file bariz bir tercih göstermesine rağmen çağdaşı ve ikinci dünya şampiyonu Emanuel Lasker ise kaleme aldığı _Satranç El Kitabı_'nda meseleye çok daha temkinli, felsefi bir bakışla yaklaşıyordu. Zaten Lasker, İngiltere ve Amerika Birleşik Devletleri'ndeki üniversitelerde görev yapmış bir matematikçi ve aynı zamanda _Mücadele_ (1906), _Dünyayı Anlamak_ (1913), _Erişilemez Olanın Felsefesi_ (1918) adlı kitaplarıyla felsefe alanında çalışmalar yapmış ilginç bir kişilikti.
+
+![Emanuel Lasker](images/Lasker.jpg "By Bundesarchiv, Bild 102-00459 / CC-BY-SA 3.0, CC BY-SA 3.0 de, https://commons.wikimedia.org/w/index.php?curid=5478910")
 
 > Bazı satranç dostları atı file, bazıları ise fili ata tercih eder ve taş değişmeleri buna göre yapar. Haklı olan kim? Yoksa bu işlerde ne haklı ne haksız mı var? Belki de bu taşların karşılıklı değeri, akıl sır ermez rastlantıların hükmü altındadır. Biliyoruz ki _ceteris paribus_ (diğer her şey eşitken) at ve fil eşittir, her ikisi de _ceteris paribus_ üç piyon değerindedir. Ancak "_ceteris paribus_" teriminin içerdiği varsayım önemlidir: "diğer bütün koşullar eşitken" - _ceteris paribus_'un anlamı budur. **Ama gerçekte ‘diğer bütün koşullar’ hiçbir zaman eşit değildir. Tüm koşulları eşit ağırlıkta ya da önemde saymak, bize ait bir varsayımdır**. _Ceteris paribus_'u hesaba katmamak, bizi öyle bir saçmalığın pençesine düşürür ki gururlu akıl deliliğe yakın, sendeleyen bir romantizme düşer.
 >
@@ -77,6 +84,8 @@ Satranç dünyasını yalnızca çocuk yaşta kendini belli eden dehasıyla değ
 > Atı bir kanattan diğerine götürmek de file kıyasla çok daha uzun sürer. Ayrıca, aşağıdaki örnekte görüleceği gibi fil atı “pat edebilir.” Bu, atın asla karşılık veremeyeceği bir _iltifat_.
 >
 > — José Raúl Capablanca, _"Chess Fundamentals"_ (Satrancın Temelleri), 1921.</span>
+
+![José Raúl Capablanca](images/Capablanca.jpg "By Harris & Ewing, photographer - Library of CongressCatalog: https://lccn.loc.gov/2016866174Image download: https://cdn.loc.gov/service/pnp/hec/05400/05488v.jpgOriginal url: https://www.loc.gov/pictures/item/2016866174/, Public Domain, https://commons.wikimedia.org/w/index.php?curid=67186745")
 
 Capablanca'nın bahsettiği örnek, boş tahtada merkezde duran bir filin, tahtanın kenarındaki bir atı hapsederek hareketsiz kılabilme becerisiydi. Elbette bu, boş tahtada olduğu gibi, merkez piyonlarının tahtadan kalkmış olduğu ve atın tahtanın kenarında kaldığı oyunortası konumları için de geçerli bir tema.
 
