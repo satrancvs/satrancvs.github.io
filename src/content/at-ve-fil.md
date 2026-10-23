@@ -68,7 +68,7 @@ Modern satrancın kurucusu olarak saygın bir yere sahip olan Steinitz'in konuya
 >
 > — <span lang="en">Emanuel Lasker, _"Lasker's Manual of Chess"_ (Lasker'in Satanç El Kitabı), 1927.</span>
 
-Üçüncü dünya şampiyonu **José Raúl Capablanca** ise _Satrancın Temelleri_ adlı kitabında konuyu o vakte kadar yapılmış en ayrıntılı şekilde ele alarak _çoğu durumda_ filin üstün olduğu yönündeki düşüncesini anlatır:
+Satranç dünyasını yalnızca çocuk yaşta kendini belli eden dehasıyla değil, nezih karakteri, dış görünüşü ve satranç yazarlığıyla da büyüleyen üçüncü dünya şampiyonu **José Raúl Capablanca** ise _Satrancın Temelleri_ adlı kitabında konuyu o vakte kadar yapılmış en ayrıntılı şekilde ele alarak _çoğu durumda_ filin üstün olduğu yönündeki düşüncesini anlatıyordu:
 
 > Genel teorik açıdan fil ve at aynı değerde sayılmalıdır, ama bana göre çoğu durumda daha değerli olan taş fildir. Fil çoğu zaman üç piyondan biraz daha değerlidir, ama at çok nadiren üç piyon değerinde olur, hatta bazen değeri bu kadar dahi etmeyebilir.
 >
