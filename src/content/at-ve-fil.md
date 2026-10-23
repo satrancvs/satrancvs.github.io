@@ -74,20 +74,25 @@ Modern satrancın kurucusu olarak kabul edilen Steinitz'in konuya dair görüşl
 >
 > Amatörler arasında genellikle atın daha değerli taş olduğu düşünülebilir. Bunun başlıca sebebi, fil ile karşılaştırıldığında atın hem siyah hem beyaz karelere hükmedebilmesidir. Ama gözden kaçan şu ki, at herhangi bir anda yalnızca tek bir renkteki kareler arasından seçim yapabilir.
 >
-> Atı bir kanattan diğerine götürmek de file kıyasla çok daha uzun sürer. Ayrıca, aşağıdaki örnekte görüleceği gibi fil atı “pat edebilir.” Bu, atın asla karşılık veremeyeceği bir _iltifat_:
+> Atı bir kanattan diğerine götürmek de file kıyasla çok daha uzun sürer. Ayrıca, aşağıdaki örnekte görüleceği gibi fil atı “pat edebilir.” Bu, atın asla karşılık veremeyeceği bir _iltifat_.
 >
-> [FEN "3n4/8/8/3B4/8/8/8/8 w - - 0 1"] (crop: top-half)
->
+> — José Raúl Capablanca, _"Chess Fundamentals"_ (Satrancın Temelleri), 1921.</span>
+
+Capablanca'nın bahsettiği iltifat, boş tahtada merkezde duran bir filin, tahtanın kenarındaki bir atı hapsederek hareketsiz kılabilme becerisiydi.
+
+[FEN "3n4/8/8/3B4/8/8/8/8 w - - 0 1"] (crop: top-half)
+
 > Oyuncu ne kadar zayıfsa, at onun için o kadar korkunçtur. Ama oyuncu güçlendikçe filin değeri ona daha da belirgin hâle gelir ve doğal olarak buna karşılık atın file göre değerlendirmesinde bir düşüş yaşanır -ya da yaşanmalıdır.
 >
 > Bu konuda, pek çok başka konuda olduğu gibi, günümüz ustaları eski kuşakların ustalarından çok daha ilerdedir. Çok uzun olmayan bir süre önce en iyi ustaların bazıları -örneğin Pillsbury ve Chigorin- atı file tercih ediyorlardı. Oysa bugün yukarıdaki ifadelerime tamamen katılmayacak neredeyse hiçbir usta yok.
-> — José Raúl Capablanca, _"Chess Fundamentals"_ (Satrancın Temelleri), 1921.</span>
+>
+> — Capablanca, a.g.e.
 
 ### Capablanca Kuralı
 
-Capablanca bu karşılaştırma ve tavsiyenin ardından ileride **Capablanca kuralı** diye anılacak olan ilkesini şöyle sunar: _"Rakibinizin fili varsa, piyonlarınızı rakibinizin filinin rengiyle aynı karelerde [birbirlerini korur hâlde] tutun. Sizin filiniz varsa -rakibin fili olsun olmasın- piyonlarınızı kendi filinizin renginin **tersindeki** karelerde tutun."_
+Capablanca bu karşılaştırma ve tavsiyenin ardından ileride **Capablanca kuralı** diye anılacak olan ilkesini şöyle sunar: _"Rakibinizin fili varsa, piyonlarınızı rakibinizin filinin rengiyle aynı karelerde_ [birbirlerini korur hâlde] _tutun. Sizin filiniz varsa -rakibin fili olsun olmasın- piyonlarınızı kendi filinizin renginin **tersindeki** karelerde tutun."_
 
-Yani rakibimizin beyaz kareli bir fili varsa, piyonlarımızı beyaz karelerde piyon zinciri oluşturacak şekilde tutarak rakip filin etkili olabileceği kareleri kontrol etmek isteriz.
+Yani rakibimizin beyaz kareli bir fili varsa, piyonlarımızı beyaz karelerde piyon zinciri oluşturacak şekilde tutarak rakip filin etkili olabileceği kareleri kontrol altına almak isteriz.
 
 Ancak tahtada bizim bir filimiz varsa önceliklerimiz değişir. Böyle bir hâlde rakibin filinden önce kendi filimizin iyiliğini düşünmemiz gerekir ve piyonlarımızı filimizle aynı renkli karelere **koymamaya** dikkat ederiz.
 
@@ -97,7 +102,7 @@ Ne var ki Capablanca, çağları aşıp günümüze kadar geçerliliğini korumu
 
 > Elbette bu ilkeler, pozisyonun gereklerine göre değişiklik göstermeli. Sabit bir oyun hattı vermek _ahmaklık_ olurdu. **Her oyun farklıdır ve rakibin ne yapmayı planladığına göre farklı ele alınmayı gerektirir. Asıl önemli olan, oluşabilecek pozisyonları gözünüzde canlandırarak yapılan hesaplamadır.**
 >
-> — <span lang="en">Capablanca, a.g.e.</span>
+> — Capablanca, a.g.e.
 
 Capablanca’nın bu yerli yerinde uyarısını dikkate almayan oyuncunun başına neler gelebileceğini incelikle sergileyen bir oyunla devam edelim.
 
