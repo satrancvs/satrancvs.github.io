@@ -43,7 +43,7 @@ Birkaç yıl sonra Chigorin görüşlerini bu defa Steinitz karşısında sınam
 > — <span lang="de">Internationales Kaiser-Jubiläums-Schachturnier, Wien 1898</span>, birinci tur raporu
 
 [Event "Viyana Uluslararası Satranç Turnuvası"]
-[Site "Viyana"]
+[Site ""]
 [Date "1898.06.01"]
 [White "Wilhelm Steinitz"]
 [Black "Mikhail Chigorin"]
