@@ -55,7 +55,7 @@ Fil, kendi bulunduğu şah kanadını, rakibin vezir kanadını ve -bu konumda e
 
 ### Steinitz ve "Yeni Okul"
 
-Modern satrancın kurucusu olarak kabul edilen Steinitz'in konuya dair görüşleri elbette birkaç pratik başarıyla sınırlı değildi, Steinitz, döneminin belki de en geniş etkili yazarı ve satranç kuramcısıydı. Modern Satranç Kılavuzu adlı kitabında meseleyi teorik olarak şöyle ele alıyordu:
+Modern satrancın kurucusu olarak kabul edilen Steinitz'in konuya dair görüşleri elbette birkaç pratik başarıyla sınırlı değildi, Steinitz, döneminin belki de en geniş etkili yazarı ve satranç kuramcısıydı. _Modern Satranç Kılavuzu_ adlı kitabında meseleyi teorik olarak şöyle ele alıyordu:
 
 > Filin göreli değeri, ustalar ve otoriteler arasında farklı görüşlere yol açmıştır. Bazıları oyunsonunda fili ata belirgin bir şekilde tercih etmiştir. Vezir veya kaleyle birlikteyken atın filden daha iyi olduğu da öne sürülmüştür. Ama dikkatimizi çeken pozisyonların ortalamasını ve her iki taş lehine kesin olan birkaç istisnayı dikkatle değerlendirdikten sonra şu sonuca vardık: Filin gücü, pratik amaçlar bakımından, açılışta, oyunortasında, oyunsonunda ve diğer taşlarla çoğu kombinasyonda ona atfedilen, at karşısındaki matematiksel üstünlüğünü haklı çıkarmaktadır.
 >
