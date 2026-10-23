@@ -1,3 +1,5 @@
+![Yayın ekibi](images/editor.avif "Görsel: Sofia Gazarian · [Lisans](https://unsplash.com/license) · Kaynak: [Unsplash](https://unsplash.com/)")
+
 Satranç, Türkiye’de ve günümüzde yazıyla pek yan yana gelmeyen bir oyun. Kitapçı raflarında birkaç kitap, internette dağınık bir iki blog yazısı ve birkaç popüler video kanalı, bir de zaman zaman parlak çıkışlar yapıp ne yazık ki hayatına devam edemeyen süreli yayınlar buluyoruz.
 
 Bir oyunun hikâyesini, bir oyuncunun portresini, bir turnuvanın havasını ya da tek bir hamlenin etrafında dönen uzun bir düşünceyi okumak istediğimizde ise çoğunlukla elimiz boş kalıyor. Satranç hakkında Türkçe yazılı içerik, uzunca süredir ayakta durmakta zorlanıyor.
