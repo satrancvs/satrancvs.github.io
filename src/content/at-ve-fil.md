@@ -1,6 +1,8 @@
 ![At ve fil](images/at-fil.jpg "[House of Staunton](https://www.houseofstaunton.com/products/the-capablanca-series-luxury-chess-pieces-4-0-king?v=62553719538033) Capablanca Serisi ahşap satranç taşları · Görsel yapay zeka ile üretilmiştir · Google Gemini 3")
 
-Satrançta en sık karşılaştığımız materyal dengesizliklerinden biri file karşı at. Fil ve at, farklı hareket kurallarına sahip, birbirinden tamamen ayrı taşlar. Dolayısıyla tahtadaki güçleri de farklı olsa gerek. 19. yüzyılın ortalarından günümüze, bu iki hafif taşın değerlerini belirlemek için ciddi bir çaba harcanmış. Ama bu çabaya girişenler, büyük bir güçlükle karşılaşmış: Bu iki taşın gücü ancak özgül konuma bağlı olarak değişiklik gösteren diğer öğelere göre değerlendirilebilir.
+Satrançta en sık karşılaştığımız materyal dengesizliklerinden biri file karşı at. Fil ve at, farklı hareket kurallarına sahip, birbirinden tamamen ayrı taşlar. Dolayısıyla tahtadaki güçleri de farklı olsa gerek.
+
+19. yüzyılın ortalarından günümüze, bu iki hafif taşın değerlerini belirlemek için ciddi bir çaba harcanmış. Ama bu çabaya girişenler, büyük bir güçlükle karşılaşmış: Bu iki taşın gücü ancak özgül konuma bağlı olarak değişiklik gösteren diğer öğelere göre değerlendirilebilir.
 
 At ve filin değeri her bir konumda, tahtada bulunan diğer taşlar (koordinasyon), piyonların durduğu kareler (piyon yapısı), şah güvenliği ya da aktivitesi, inisiyatif, dinamik ve taktik imkanların bolluğu ya da yokluğu gibi pek çok ayrı sebeple belirlenebiliyor.
 
