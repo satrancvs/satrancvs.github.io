@@ -6,9 +6,9 @@ Bu iki hafif taşın değerlerini belirlemek için 19. yüzyılın ortalarından
 
 At ve filin değeri her bir konumda, tahtada bulunan diğer taşlar (koordinasyon), piyonların durduğu kareler (piyon yapısı), şah güvenliği ya da aktivitesi, inisiyatif, dinamik ve taktik imkanların bolluğu ya da yokluğu gibi pek çok ayrı sebeple belirlenebiliyor.
 
-Satranç tekniğinin en önemli konularından biri, file karşı atla ya da ata karşı fille üst düzeyde oynayabilme becerisini geliştirmek. Ustaların yazı ve oyunlarını incelediğimizde, bu iki taşı ne zaman ve nasıl değişeceğini bilmenin, yani doğru anı fark edip doğru kararı verebilmenin önemini görüyoruz.
-
 ### Chigorin'in atları
+
+Satranç tekniğinin en önemli konularından biri, file karşı atla ya da ata karşı fille üst düzeyde oynayabilme becerisini geliştirmek. Ustaların yazı ve oyunlarını incelediğimizde, bu iki taşı ne zaman ve nasıl değişeceğini bilmenin, yani doğru anı fark edip doğru kararı verebilmenin önemini görüyoruz.
 
 Hangi taşları değişeceğimize karar vermek pek çok konumda gerçekten zor olabilir. Pek çok oyuncu, sıklıkla kişisel eğilimler geliştirmiş. Sovyetler Birliği'nde atın filden daha güçlü olduğuna inanan eski bir düşünce okulunda bahsedilirmiş: **Chigorin okulu**. Garry Kasparov’a göre Mikhail Chigorin (1850–1908) kendinden sonra gelen büyük oyuncular için yolu açmıştır:
 
