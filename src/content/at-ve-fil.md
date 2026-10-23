@@ -56,13 +56,13 @@ Fil, kendi bulunduğu şah kanadını, rakibin vezir kanadını ve -bu konumda e
 
 ### Steinitz ve "Yeni Okul"
 
-Modern satrancın kurucusu olarak kabul edilen Steinitz'in konuya dair görüşleri elbette birkaç pratik başarıyla sınırlı değildi, Steinitz, döneminin belki de en geniş etkili yazarı ve satranç kuramcısıydı. _Modern Satranç Kılavuzu_ adlı kitabında meseleyi teorik olarak şöyle ele alıyordu:
+Modern satrancın kurucusu olarak saygın bir yere sahip olan Steinitz'in konuya dair görüşleri, elbette birkaç pratik başarıyla sınırlı değildi. Steinitz, döneminin belki de en geniş etkili yazarı ve satranç kuramcısıydı. _Modern Satranç Kılavuzu_ adlı kitabında meseleyi teorik olarak şöyle ele alıyordu:
 
 > Filin göreli değeri, ustalar ve otoriteler arasında farklı görüşlere yol açmıştır. Bazıları oyunsonunda fili ata belirgin bir şekilde tercih etmiştir. Vezir veya kaleyle birlikteyken atın filden daha iyi olduğu da öne sürülmüştür. Ama dikkatimizi çeken pozisyonların ortalamasını ve her iki taş lehine kesin olan birkaç istisnayı dikkatle değerlendirdikten sonra şu sonuca vardık: Filin gücü, pratik amaçlar bakımından, açılışta, oyunortasında, oyunsonunda ve diğer taşlarla çoğu kombinasyonda ona atfedilen, at karşısındaki matematiksel üstünlüğünü haklı çıkarmaktadır.
 >
 > — <span lang="en">Wilhelm Steinitz, _"The Modern Chess Instructor"_ (Modern Satranç Kılavuzu), 1889.</span>
 
-İlk dünya şampiyonu Steinitz'in file bariz bir tercih göstermesine rağmen çağdaşı ve ikinci dünya şampiyonu Emanuel Lasker ise kaleme aldığı _Satranç El Kitabı_'nda meseleye çok daha temkinli, neredeyse felsefi bir tavırla yaklaşıyordu:
+İlk dünya şampiyonu Steinitz'in file bariz bir tercih göstermesine rağmen çağdaşı ve ikinci dünya şampiyonu Emanuel Lasker ise kaleme aldığı _Satranç El Kitabı_'nda meseleye çok daha temkinli, felsefi bir bakışla yaklaşıyordu. Zaten Lasker, İngiltere ve Amerika Birleşik Devletleri'ndeki üniversitelerde görev yapmış bir matematikçi ve aynı zamanda _Mücadele_ (1906), _Dünyayı Anlamak_ (1913), _Erişilemez Olanın Felsefesi_ (1918) adlı kitaplarıyla felsefe alanında çalışmalar yapmış ilginç bir kişilikti.
 
 > Bazı satranç dostları atı file, bazıları ise fili ata tercih eder ve taş değişmeleri buna göre yapar. Haklı olan kim? Yoksa bu işlerde ne haklı ne haksız mı var? Belki de bu taşların karşılıklı değeri, akıl sır ermez rastlantıların hükmü altındadır. Biliyoruz ki _ceteris paribus_ (diğer her şey eşitken) at ve fil eşittir, her ikisi de _ceteris paribus_ üç piyon değerindedir. Ancak "_ceteris paribus_" teriminin içerdiği varsayım önemlidir: "diğer bütün koşullar eşitken" - _ceteris paribus_'un anlamı budur. **Ama gerçekte ‘diğer bütün koşullar’ hiçbir zaman eşit değildir. Tüm koşulları eşit ağırlıkta ya da önemde saymak, bize ait bir varsayımdır**. _Ceteris paribus_'u hesaba katmamak, bizi öyle bir saçmalığın pençesine düşürür ki gururlu akıl deliliğe yakın, sendeleyen bir romantizme düşer.
 >
