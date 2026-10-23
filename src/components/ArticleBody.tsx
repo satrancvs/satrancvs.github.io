@@ -42,15 +42,15 @@ function Game({ header, moves }: { header: string; moves: string }) {
   const result = (t.Result ?? '').replace('1/2-1/2', '½–½').replace(/-/g, '–');
   const parts = cleanMoves(moves).split(/(\{[^}]*\})/g).filter(Boolean);
   return (
-    <figure className="border-t border-[#2E2620] pt-4 pb-4">
-      <figcaption className="f-mono text-[#C8893E] leading-relaxed">
+    <figure className="border-t border-[color:var(--line)] pt-4 pb-4">
+      <figcaption className="f-mono text-[color:var(--accent)] leading-relaxed">
         {t.Round && <span>{t.Round}. tur · </span>}
         {t.White} {t.WhiteElo && `(${t.WhiteElo})`} — {t.Black} {t.BlackElo && `(${t.BlackElo})`} · {result}
       </figcaption>
-      <p className="mt-4 text-[1.3125rem] leading-[1.7] text-[#F1E9DC]/85" style={{ fontVariantNumeric: 'tabular-nums' }}>
+      <p className="mt-4 text-[1.3125rem] leading-[1.7] text-[color:rgb(var(--fg-rgb)/0.85)]" style={{ fontVariantNumeric: 'tabular-nums' }}>
         {parts.map((p, i) =>
           p.startsWith('{') ? (
-            <span key={i} className="italic text-[#A89A88]"> {p.slice(1, -1).trim()} </span>
+            <span key={i} className="italic text-[color:var(--mute)]"> {p.slice(1, -1).trim()} </span>
           ) : (
             <Fragment key={i}>{p}</Fragment>
           ),
@@ -240,13 +240,13 @@ function sectionToc(chunks: string[], games: GameItem[]): TocItem[] {
 function Toc({ items, onGo }: { items: TocItem[]; onGo: (id: string) => void }) {
   return (
     <nav aria-label="İçindekiler" className="mt-16 mb-10">
-      <h3 className="f-display text-3xl md:text-4xl text-[#F1E9DC] mb-6">İçindekiler</h3>
-      <ol className="border-t border-[#2E2620]">
+      <h3 className="f-display text-3xl md:text-4xl text-[color:var(--fg)] mb-6">İçindekiler</h3>
+      <ol className="border-t border-[color:var(--line)]">
         {items.map((it, n) => (
-          <li key={it.id} className="border-b border-[#2E2620]">
+          <li key={it.id} className="border-b border-[color:var(--line)]">
             <a href={`#${it.id}`} onClick={(e) => { e.preventDefault(); onGo(it.id); }}
-              className="group flex items-baseline gap-4 py-3 text-[#F1E9DC]/85 hover:text-[#C8893E] transition-colors">
-              <span className="f-mono text-[#C8893E] w-[3rem] shrink-0">{String(n + 1).padStart(2, '0')}</span>
+              className="group flex items-baseline gap-4 py-3 text-[color:rgb(var(--fg-rgb)/0.85)] hover:text-[color:var(--accent)] transition-colors">
+              <span className="f-mono text-[color:var(--accent)] w-[3rem] shrink-0">{String(n + 1).padStart(2, '0')}</span>
               <span className="flex-1"><Markdown options={{ forceInline: true }}>{it.markup}</Markdown></span>
             </a>
           </li>
@@ -262,22 +262,22 @@ function GameSection({ item, watchId, watchLabel, onWatch, children }: { item: G
   // bölümü oyuncuları (Elo ile) ve altında "Turnuva, Yer, Yıl" satırını gösterir.
   const info = item.watch || !item.hasRound;
   return (
-    <section id={item.id} className={`scroll-mt-8 ${item.study ? 'study-frame' : 'my-4 border-b border-[#2E2620]'}`}>
+    <section id={item.id} className={`scroll-mt-8 ${item.study ? 'study-frame' : 'my-4 border-b border-[color:var(--line)]'}`}>
       {info && (
         <div className="mx-auto mb-4 w-full max-w-[520px] py-2 text-center">
-          <h4 className="text-[#F1E9DC]/90">{item.players}</h4>
-          {item.place && <p className="mt-1 text-[#A89A88]"><Markdown options={{ forceInline: true }}>{item.place}</Markdown></p>}
+          <h4 className="text-[color:rgb(var(--fg-rgb)/0.9)]">{item.players}</h4>
+          {item.place && <p className="mt-1 text-[color:var(--mute)]"><Markdown options={{ forceInline: true }}>{item.place}</Markdown></p>}
         </div>
       )}
-      {!info && <h4 className="flex items-baseline gap-4 py-4 mb-4 text-[#F1E9DC]/90 md:grid md:grid-cols-[1fr_400px_1fr] md:gap-0">
-        <span className="f-mono text-[#C8893E] w-[5rem] shrink-0">{`${item.round}. tur`}</span>
+      {!info && <h4 className="flex items-baseline gap-4 py-4 mb-4 text-[color:rgb(var(--fg-rgb)/0.9)] md:grid md:grid-cols-[1fr_400px_1fr] md:gap-0">
+        <span className="f-mono text-[color:var(--accent)] w-[5rem] shrink-0">{`${item.round}. tur`}</span>
         <span className="flex-1 md:text-center">{item.label}</span>
-        <span className="f-mono text-[#A89A88] md:justify-self-end">{item.result}</span>
+        <span className="f-mono text-[color:var(--mute)] md:justify-self-end">{item.result}</span>
       </h4>}
       {watchId && onWatch && (
         <div className="mb-4 flex justify-center">
           <button type="button" onClick={() => onWatch(watchId)}
-            className="btn-mono ghost h-9 rounded-full border border-[#2E2620] px-5 text-[#C8893E] transition-colors hover:bg-[#1A1512]">
+            className="btn-mono ghost h-9 rounded-full border border-[color:var(--line)] px-5 text-[color:var(--accent)] transition-colors hover:bg-[color:var(--hover-bg)]">
             {watchLabel ?? 'Oyunu izle'} ↓
           </button>
         </div>
@@ -293,7 +293,7 @@ const IMG_CHUNK = /^!\[([^\]]*)\]\(([^)\s]+)(?:\s+"([\s\S]*)")?\)$/;
 
 const captionOptions = {
   forceInline: true,
-  overrides: { a: { props: { className: 'underline underline-offset-2 hover:text-[#F1E9DC]', target: '_blank', rel: 'noreferrer' } } },
+  overrides: { a: { props: { className: 'underline underline-offset-2 hover:text-[color:var(--fg)]', target: '_blank', rel: 'noreferrer' } } },
 };
 
 // Fotoğraf içeren alıntı (Korchnoi): `> ` satırları tek kutuda; araya giren görsel Figure olarak kutunun içinde kalır,
@@ -349,7 +349,7 @@ function Figure({ chunk }: { chunk: string }) {
     <figure className={`my-10 mx-auto w-full ${small ? 'md:max-w-[480px] text-center' : ''}`} style={small ? undefined : { maxWidth: boxWidth(path) }}>
       <ProgressiveImage path={path} alt={alt} cover={cover} />
       {caption && (
-        <figcaption className="credit mt-3 text-[#A89A88]">
+        <figcaption className="credit mt-3 text-[color:var(--mute)]">
           <Markdown options={captionOptions}>{caption}</Markdown>
         </figcaption>
       )}
@@ -398,9 +398,9 @@ function Video({ chunk }: { chunk: string }) {
           </button>
         )}
       </div>
-      <figcaption className="credit mt-3 text-[#A89A88]">
+      <figcaption className="credit mt-3 text-[color:var(--mute)]">
         <Markdown options={captionOptions}>{capLines.map((l) => (/[.!?…]$/.test(l.replace(/<[^>]+>/g, '')) ? l : `${l}.`)).join(' ')}</Markdown>{' '}
-        <a href={href} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-[#F1E9DC]">YouTube'da aç</a>
+        <a href={href} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-[color:var(--fg)]">YouTube'da aç</a>
       </figcaption>
     </figure>
   );
@@ -439,11 +439,11 @@ function Continued({ text }: { text: string }) {
 
 const mdOptions = {
   overrides: {
-    h3: { props: { className: 'f-display text-4xl md:text-5xl mt-16 mb-6 text-[#F1E9DC]' } },
-    a: { props: { className: 'text-[#C8893E] underline underline-offset-4', target: '_blank', rel: 'noreferrer' } },
+    h3: { props: { className: 'f-display text-4xl md:text-5xl mt-16 mb-6 text-[color:var(--fg)]' } },
+    a: { props: { className: 'text-[color:var(--accent)] underline underline-offset-4', target: '_blank', rel: 'noreferrer' } },
     blockquote: { component: Quote },
-    ul: { props: { className: 'list-disc pl-6 mb-6 space-y-2 marker:text-[#C8893E]' } },
-    strong: { props: { className: 'font-semibold text-[#F1E9DC]' } },
+    ul: { props: { className: 'list-disc pl-6 mb-6 space-y-2 marker:text-[color:var(--accent)]' } },
+    strong: { props: { className: 'font-semibold text-[color:var(--fg)]' } },
   },
 };
 
@@ -585,8 +585,8 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
           <section key={i} id={item.id} className="scroll-mt-8">
             <blockquote className="quote quote-game">
               <div className="mx-auto mb-4 w-full max-w-[520px] py-2 text-center not-italic">
-                <h4 className="text-[#F1E9DC]/90">{item.players}</h4>
-                {item.venue && <p className="mt-1 text-[#A89A88]">{item.venue}</p>}
+                <h4 className="text-[color:rgb(var(--fg-rgb)/0.9)]">{item.players}</h4>
+                {item.venue && <p className="mt-1 text-[color:var(--mute)]">{item.venue}</p>}
               </div>
               {startFen && <FenBlock fen={startFen} ready={cp === 'ready'} />}
               {flipBox ?? game}
@@ -612,7 +612,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     } else if (c.startsWith('### ')) {
       const section = toc.find((t) => t.chunk === i);
       out.push(
-        <h3 key={i} id={section?.id} className="f-display text-4xl md:text-5xl mt-16 mb-6 text-[#F1E9DC] scroll-mt-8">
+        <h3 key={i} id={section?.id} className="f-display text-4xl md:text-5xl mt-16 mb-6 text-[color:var(--fg)] scroll-mt-8">
           <Markdown options={{ forceInline: true }}>{headingText(c)}</Markdown>
         </h3>,
       );
@@ -645,7 +645,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
   }
   if (toc.length > 1 && !tocPlaced) out.unshift(<Toc key="toc" items={toc} onGo={goTo} />);
   return (
-    <div ref={rootRef} className="text-[1.3125rem] leading-[1.7] text-[#F1E9DC]/85" data-cp={cp}>
+    <div ref={rootRef} className="text-[1.3125rem] leading-[1.7] text-[color:rgb(var(--fg-rgb)/0.85)]" data-cp={cp}>
       {out}
     </div>
   );

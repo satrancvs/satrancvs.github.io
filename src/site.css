@@ -5,12 +5,17 @@
 @font-face { font-family:'Eval'; src:url('/fonts/noto-sans-math-eval.woff2') format('woff2'); font-display:swap; size-adjust:125%; unicode-range:U+00B1,U+2213,U+221E,U+25A1,U+2A71,U+2A72; }
 @font-face { font-family:'EvalPM'; src:url('/fonts/noto-sans-math-eval.woff2') format('woff2'); font-display:swap; size-adjust:90%; unicode-range:U+002B,U+003D,U+2212; }
 @font-face { font-family:'Figurine'; src:url('/fonts/noto-sans-symbols2-chess.woff2') format('woff2'); font-display:swap; size-adjust:110%; unicode-range:U+2654-265F; }
-.sk { background:#0E0C0A; color:#F1E9DC; font-family:'Eval','EvalPM','Figurine','Newsreader',serif; font-weight:320; font-optical-sizing:auto; }
-.sk ::selection { background:#C8893E; color:#0E0C0A; }
+/* Renk değişkenleri. Varsayılan (koyu) değerler sitenin özgün renkleridir; ana sayfa yalnızca bunları kullanır. Yazı sayfasının kök öğesi `.sk-light` sınıfını
+   alınca (Post.tsx'teki tema düğmesi) açık değerler geçerli olur. Tahta ve taşlar iki temada da aynı kalır. */
+.sk { --bg:#0E0C0A; --fg:#F1E9DC; --fg-rgb:241 233 220; --mute:#A89A88; --line:#2E2620; --accent:#C8893E; --box:#17130F; --box2:#14110E; --hover-bg:#1A1512; }
+.sk.sk-light { --bg:#F7F1E5; --fg:#1D1812; --fg-rgb:29 24 18; --mute:#6A5D4E; --line:#DDD2BF; --accent:#94591A; --box:#EEE5D3; --box2:#F0E8D8; --hover-bg:#EBE1CE; color-scheme:light; }
+.sk:not(.sk-light) { color-scheme:dark; }
+.sk { background:var(--bg); color:var(--fg); font-family:'Eval','EvalPM','Figurine','Newsreader',serif; font-weight:320; font-optical-sizing:auto; }
+.sk ::selection { background:var(--accent); color:var(--bg); }
 .f-display { font-family:'Fraunces',serif; letter-spacing:-0.04em; line-height:.9; font-weight:300; font-variation-settings:'opsz' 72; }
-.art-prose, .quote > p { font-family:'Eval','EvalPM','Figurine','Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height:1.7; font-optical-sizing:auto; font-weight:320; color:rgba(241,233,220,.95); }
+.art-prose, .quote > p { font-family:'Eval','EvalPM','Figurine','Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height:1.7; font-optical-sizing:auto; font-weight:320; color:rgb(var(--fg-rgb) / .95); }
 .art-prose strong, .art-prose b, .quote strong, .cp-game :is(.pgn-comment, .pgn-comment-inline, .pgn-variation, .video-comment, .comment-body) :is(strong, b) { font-weight:500; }
-.cp-game .pgn-mainline, .cp-game .pgn-comment, .cp-game .pgn-comment-inline, .cp-game .pgn-variation, .cp-game .video-comment, .cp-game .comment-body { font-family:'Eval','EvalPM','Figurine','Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height:1.7; font-optical-sizing:auto; font-weight:320; color:rgba(241,233,220,.95); }
+.cp-game .pgn-mainline, .cp-game .pgn-comment, .cp-game .pgn-comment-inline, .cp-game .pgn-variation, .cp-game .video-comment, .cp-game .comment-body { font-family:'Eval','EvalPM','Figurine','Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height:1.7; font-optical-sizing:auto; font-weight:320; color:rgb(var(--fg-rgb) / .95); }
 .btn-mono { font-family:'JetBrains Mono',monospace; font-size:13px; letter-spacing:.08em; text-transform:uppercase; font-weight:600; }
 .btn-mono.ghost { font-weight:500; }
 .cp-game .pgn-mainline { font-weight:500; }
@@ -44,7 +49,7 @@
    içeri girer ve italik olur. */
 /* Hamlenin altındaki yorum 1rem kenar boşluğu + 1rem iç boşlukla başlar, üstündeki yorum ise yalnızca 1rem kenar boşluğuyla biter: hamlenin üstü ve altı eşit olsun. */
 .cp-game .pgn-container:not(pgn-study .pgn-container, pgn-player .pgn-container) .pgn-comment { margin-bottom: 2rem; }
-.cp-game .pgn-container:not(pgn-study .pgn-container, pgn-player .pgn-container) .pgn-variation > p { display: block; padding-left: 0.8em; border-left: 1px solid color-mix(in srgb, #A89A88 55%, transparent); }
+.cp-game .pgn-container:not(pgn-study .pgn-container, pgn-player .pgn-container) .pgn-variation > p { display: block; padding-left: 0.8em; border-left: 1px solid color-mix(in srgb, var(--mute) 55%, transparent); }
 .cp-game .pgn-container:not(pgn-study .pgn-container, pgn-player .pgn-container) .pgn-variation .pgn-variation { padding-left: 1.2em; font-style: italic; }
 /* <pgn-player> sayfada ortalanır */
 .cp-game pgn-player:not(pgn-study pgn-player) { --board-size: min(400px, calc(100vw - 3rem)); display: block; width: fit-content; max-width: 100%; margin-left: auto; margin-right: auto; }
@@ -63,11 +68,11 @@
 /* <pgn-player> yorumlarındaki [D] diyagramı: tahta zaten üstte duruyor, tekrar göstermeye gerek yok */
 .cp-game pgn-player .comment-diagram { display: none; }
 /* <pgn-player> hamle listesinin altındaki kaydırma çubuğu: kırmızı yerine sitenin turuncusu */
-.cp-game .video-moves::-webkit-scrollbar-thumb { background: #C8893E; }
+.cp-game .video-moves::-webkit-scrollbar-thumb { background: var(--accent); }
 /* Varyant içinde yalnızca varyant metnindeki yorumu tekrar eden yorum satırı gizlenir (bkz. variation-fix.ts) */
 .cp-game .video-comment .comment-line.cp-duplicate { display: none; }
-/* Bulmaca konumunda tahtanın çerçevesi mavi yerine sitenin turuncusu (#C8893E, tur numaralarındaki renk) */
-.cp-game .player-container.puzzle-active .board-wrap .board-b72b1 { box-shadow: 0 0 0 3px #C8893E; }
+/* Bulmaca konumunda tahtanın çerçevesi mavi yerine sitenin turuncusu (var(--accent), tur numaralarındaki renk) */
+.cp-game .player-container.puzzle-active .board-wrap .board-b72b1 { box-shadow: 0 0 0 3px var(--accent); }
 /* Oyun başlığı (oyuncular, etkinlik, tarih) gösterilmez: bilgi tur başlığında (GameSection) var */
 .cp-game .pgn-headers { display: none; }
 .cp-game .video-title:has(.video-title-text) { display: none; }
@@ -76,7 +81,7 @@
    .fen-wrap içinde yer alır. Ham FEN metni gizli, tahta kutuyu doldurur. */
 .fen-wrap { width: 100%; display: flex; flex-direction: column; }
 .fen-diagram { position: relative; width: 100%; max-width: min(400px, var(--fen-cap, 400px)); aspect-ratio: 1; }
-.fen-diagram:not(:has(.fen-shown)) { background: rgba(241, 233, 220, .03); }
+.fen-diagram:not(:has(.fen-shown)) { background: rgb(var(--fg-rgb) / .03); }
 .fen-loading { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; margin: 0; }
 .fen-stage { opacity: 0; transition: opacity .35s ease; }
 .fen-stage.fen-shown { opacity: 1; }
@@ -91,7 +96,7 @@
 
 /* Alıntı içindeki statik diyagram (<fen>): ortalı, en çok 396 px (390 px ekranda 340 px); ham FEN metni gizli, tahta kutuyu doldurur. */
 .art-fen { width: min(396px, calc(100% - 2px)); margin: 1.75rem auto; aspect-ratio: 1; }
-.art-fen:not(:has(.jc-board)) { background: rgba(241, 233, 220, .03); }
+.art-fen:not(:has(.jc-board)) { background: rgb(var(--fg-rgb) / .03); }
 .art-fen { position: relative; container-type: inline-size; }
 .art-fen fen { display: none; }
 /* Yorumdaki FEN satırı = analiz konumu: varyant diyagramları gibi biraz küçük ve soluk; rozet kareye göre yüzdeyle konumlanır. */
@@ -109,18 +114,18 @@
 /* Oyun kurulana kadar kutu ortalı bir "Oyun yükleniyor..." yazısı gösterir (yer tutucuda ::before, kurulmuş
    kutuda .cp-loading); oyun gelince yazı kalkar, min-height de biter. (:has içinde :has kullanılamaz.) */
 .cp-game:not(:has(.player-wrapper, .pgn-container, .jc-board-wrapper)) {
-  min-height: 36rem; background: rgba(241, 233, 220, .03);
+  min-height: 36rem; background: rgb(var(--fg-rgb) / .03);
   display: flex; align-items: center; justify-content: center;
 }
 .cp-game.cp-placeholder::before { content: "Oyun yükleniyor..."; }
 .cp-game.cp-placeholder::before,
-.cp-loading { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #A89A88; }
+.cp-loading { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); }
 .cp-game:has(.player-wrapper, .pgn-container, .jc-board-wrapper) .cp-loading { display: none; }
 
 /* Çapraz tablo: sabit genişlikli, okunaklı bir mono font (JetBrains Mono) ve hafif bir çerçeve. */
 .crosstable { font-family: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace; font-size: 13.5px; line-height: 1.75;
-  letter-spacing: 0; text-transform: none; font-variant-ligatures: none; color: rgba(241,233,220,.88);
-  background: #14110E; border-top: 1px solid #2E2620; border-bottom: 1px solid #2E2620; padding: 1.25rem 1.5rem; tab-size: 2;
+  letter-spacing: 0; text-transform: none; font-variant-ligatures: none; color: rgb(var(--fg-rgb) / .88);
+  background: var(--box2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 1.25rem 1.5rem; tab-size: 2;
   width: fit-content; max-width: 100%; margin-left: auto; margin-right: auto; }
 
 /* Fotoğraf künyeleri: sitenin mono fontu, okunur boyutta (f-mono'dan farkı: büyük harf ve geniş harf aralığı yok). */
@@ -129,13 +134,13 @@
 
 /* Alıntı (blockquote): koyu kutu; sol üst köşede, kutunun üst kenarına oturan sayfa renginde yuvarlak (kenarlıksız): kutunun o kısmını
    oyar, içinde büyük altın tırnak işareti durur. Metin gövdeyle aynı yazı tipi, sola yaslı, italiksiz. Kaynak satırı (— ...) mono. */
-.quote { position: relative; margin: 4.5rem 0 3rem; padding: 3.25rem 3rem 2.5rem; background: #17130F; border: 1px solid #2E2620; }
-.quote::before { content: '\201C'; position: absolute; top: -32px; left: -32px; width: 64px; height: 64px; box-sizing: border-box; padding-top: 26px; border-radius: 50%; background: #0E0C0A; display: flex; align-items: center; justify-content: center; font-family: 'Fraunces', serif; font-weight: 600; font-size: 56px; line-height: 1; color: #C8893E; pointer-events: none; }
+.quote { position: relative; margin: 4.5rem 0 3rem; padding: 3.25rem 3rem 2.5rem; background: var(--box); border: 1px solid var(--line); }
+.quote::before { content: '\201C'; position: absolute; top: -32px; left: -32px; width: 64px; height: 64px; box-sizing: border-box; padding-top: 26px; border-radius: 50%; background: var(--bg); display: flex; align-items: center; justify-content: center; font-family: 'Fraunces', serif; font-weight: 600; font-size: 56px; line-height: 1; color: var(--accent); pointer-events: none; }
 .quote > p + p { margin-top: 1.25rem; }
-.quote strong { color: #F1E9DC; }
+.quote strong { color: var(--fg); }
 .quote-right .quote { text-align: right; }
 .quote-poem .quote > p { font-family: 'Fraunces', serif; font-style: italic; }
-.quote-cite { display: block; margin-top: 1.5rem; font-size: 11px; line-height: 1.6; color: #A89A88; }
+.quote-cite { display: block; margin-top: 1.5rem; font-size: 11px; line-height: 1.6; color: var(--mute); }
 @media (max-width: 639px) {
   .quote { margin: 4rem 0 2.5rem; padding: 3rem 1.5rem 2rem; }
   .quote::before { top: -28px; left: -16px; width: 56px; height: 56px; padding-top: 22px; font-size: 48px; }
@@ -146,22 +151,22 @@
 
 /* Yazı sonundaki "Devamı gelecek" bloğu: yazıdan ayrı, ortalı, iki yanında ince çizgi; bülten bağlantısı ince çerçeveli hap. */
 .to-be-continued { margin: 5rem 0 0; text-align: center; }
-.tbc-label { display: flex; align-items: center; gap: 1.25rem; color: #C8893E; margin: 0; }
-.tbc-label::before, .tbc-label::after { content: ''; flex: 1; height: 1px; background: #2E2620; }
-.tbc-text { margin: 1.5rem 0 0; font-size: 15px; line-height: 2.6; color: #A89A88; }
-.tbc-link { font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; font-weight: 500; display: inline-flex; align-items: center; gap: .5rem; margin-left: .35rem; padding: .35rem 1.1rem; border: 1px solid #C8893E; border-radius: 999px; color: #F1E9DC; text-decoration: none; transition: background .2s, color .2s; }
+.tbc-label { display: flex; align-items: center; gap: 1.25rem; color: var(--accent); margin: 0; }
+.tbc-label::before, .tbc-label::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+.tbc-text { margin: 1.5rem 0 0; font-size: 15px; line-height: 2.6; color: var(--mute); }
+.tbc-link { font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; font-weight: 500; display: inline-flex; align-items: center; gap: .5rem; margin-left: .35rem; padding: .35rem 1.1rem; border: 1px solid var(--accent); border-radius: 999px; color: var(--fg); text-decoration: none; transition: background .2s, color .2s; }
 .tbc-link::after { content: '\2192'; }
-.tbc-link:hover { background: #C8893E; color: #0E0C0A; }
+.tbc-link:hover { background: var(--accent); color: var(--bg); }
 
 /* <pgn-study> ([View "study"]): her genişlikte tek sütun. Üstte tahta, altında geri/ileri düğmeleri, altında kayan hamle ve yorum listesi.
    ChessPublica'nın iki sütunlu 90vw paneli yerine yazı sütunu kadar geniş sabit yükseklikli bir kutudur. Eski sitedeki study.css'in mobil düzeni. */
 .cp-game pgn-study {
   --frame-pad: 1rem; font-size: 100%; display: flex; flex-direction: column; width: 100%; margin: 0 auto;
-  height: calc(min(90vh, 52rem) - 6rem); min-height: 32rem; padding: 0; box-sizing: border-box; overflow: hidden; color: #F1E9DC;
+  height: calc(min(90vh, 52rem) - 6rem); min-height: 32rem; padding: 0; box-sizing: border-box; overflow: hidden; color: var(--fg);
   border: 0; border-radius: 0; background: transparent; box-shadow: none;
 }
 /* Çerçeve: oyunun başlığı (oyuncular, turnuva) ile panel aynı kutuda. GameSection, study oyununa bu sınıfı verir. */
-.study-frame { --study-pad: 1rem; max-width: 44rem; margin: 1rem auto; padding: 1rem var(--study-pad) .6rem; border: 1px solid #2E2620; border-radius: 6px; background: #14110E; }
+.study-frame { --study-pad: 1rem; max-width: 44rem; margin: 1rem auto; padding: 1rem var(--study-pad) .6rem; border: 1px solid var(--line); border-radius: 6px; background: var(--box2); }
 .study-frame > div:first-child { margin-bottom: .75rem; padding-top: 0; }
 .cp-game pgn-study > .pgn-study-mobile-title,
 .cp-game pgn-study > .pgn-study-resizer,
@@ -179,29 +184,29 @@
 }
 /* Şerit: tahtanın altında, üst çizgiyle ayrılmış; üstteki çerçeveye taşan negatif kenar boşlukları kalkar. */
 .cp-game pgn-study.cp-ready > .pgn-study-ribbon {
-  order: 2; margin: .5rem 0 .6rem; padding: .35rem 0; border: 0; border-top: 1px solid #2E2620; border-bottom: 1px solid #2E2620; background: transparent;
+  order: 2; margin: .5rem 0 .6rem; padding: .35rem 0; border: 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: transparent;
 }
 .cp-game pgn-study > pgn-player { order: 1; }
 .cp-game pgn-study > .pgn-container { order: 3; }
-.cp-game pgn-study .pgn-study-ribbon-btn { width: 2.4rem; height: 2.4rem; color: #F1E9DC; }
-.cp-game pgn-study .pgn-study-ribbon-btn:hover:not(:disabled) { background: rgba(241, 233, 220, .1); }
+.cp-game pgn-study .pgn-study-ribbon-btn { width: 2.4rem; height: 2.4rem; color: var(--fg); }
+.cp-game pgn-study .pgn-study-ribbon-btn:hover:not(:disabled) { background: rgb(var(--fg-rgb) / .1); }
 .cp-game pgn-study .pgn-study-ribbon-btn .lucide-icon { width: 1.3rem; height: 1.3rem; }
 .cp-game pgn-study .pgn-study-ribbon-btn[data-pgn-nav] svg { width: 1.7rem; height: 1.7rem; }
 .cp-game pgn-study .pgn-study-ribbon-toprow { justify-content: space-between; }
 /* Şeridin içindeki iki kutu (indir/çevir solda, geri/ileri sağda) */
 .cp-game pgn-study .pgn-study-settings-inline { display: contents; }
 /* Hamle listesi: koyu zemine uygun renkler (paket açık temalıdır). */
-.cp-game pgn-study .pgn-container .pgn-move:hover { background: rgba(241, 233, 220, .1); }
-.cp-game pgn-study .pgn-container .pgn-move-active { background: #C8893E; color: #0E0C0A; box-shadow: 0 0 0 2px #C8893E; }
+.cp-game pgn-study .pgn-container .pgn-move:hover { background: rgb(var(--fg-rgb) / .1); }
+.cp-game pgn-study .pgn-container .pgn-move-active { background: var(--accent); color: var(--bg); box-shadow: 0 0 0 2px var(--accent); }
 .cp-game pgn-study .pgn-container .pgn-comment.pgn-comment-active,
-.cp-game pgn-study .pgn-container .pgn-comment-inline.pgn-comment-active { background: rgba(200, 137, 62, .16); box-shadow: 0 0 0 2px rgba(200, 137, 62, .16); font-weight: 400; }
-.cp-game pgn-study .pgn-container { color: #F1E9DC; line-height: 1.8; }
+.cp-game pgn-study .pgn-container .pgn-comment-inline.pgn-comment-active { background: color-mix(in srgb, var(--accent) 16%, transparent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 16%, transparent); font-weight: 400; }
+.cp-game pgn-study .pgn-container { color: var(--fg); line-height: 1.8; }
 .cp-game pgn-study .pgn-container::-webkit-scrollbar { width: 6px; }
-.cp-game pgn-study .pgn-container::-webkit-scrollbar-thumb { background: #C8893E; }
+.cp-game pgn-study .pgn-container::-webkit-scrollbar-thumb { background: var(--accent); }
 /* Yükleme yer tutucusu da aynı kutuda. */
 .cp-game .pgn-study-loading { width: 100%; height: calc(min(90vh, 52rem) - 6rem); min-height: 32rem; margin: 0 auto; padding: 0; display: flex; flex-direction: column; box-sizing: border-box; }
 .cp-game .pgn-study-loading-board { width: 100%; max-width: 400px; margin: 0 auto; }
-.cp-game .pgn-study-loading-side { color: #A89A88; }
+.cp-game .pgn-study-loading-side { color: var(--mute); }
 /* Dar ekranda panelin yan dolgusu yok: tahta yazıdaki diyagramla aynı boyda (sütunun %94'ü) sığsın; liste ve şerit kendi dolgusunu taşır. */
 @media (max-width: 640px) {
   .study-frame { --study-pad: 0px; }
@@ -226,7 +231,7 @@
 .cp-game pgn-study .cp-prose-move { cursor: pointer; border-radius: 3px; }
 
 /* Oyun yorumundaki "### Başlık" (ArticleBody.tsx commentMarkup): makale ### başlığıyla aynı yazı tipi, yorumun içinde. */
-.cp-game .cp-heading { display: block; margin: 3rem 0 1rem; scroll-margin-top: 2rem; font-family: 'Fraunces', serif; font-weight: 300; font-variation-settings: 'opsz' 72; font-style: normal; letter-spacing: -0.04em; line-height: 1; font-size: clamp(2.25rem, 5vw, 3rem); color: #F1E9DC; }
+.cp-game .cp-heading { display: block; margin: 3rem 0 1rem; scroll-margin-top: 2rem; font-family: 'Fraunces', serif; font-weight: 300; font-variation-settings: 'opsz' 72; font-style: normal; letter-spacing: -0.04em; line-height: 1; font-size: clamp(2.25rem, 5vw, 3rem); color: var(--fg); }
 
 /* Palavan–Euwe: Beyaz taraflı oynatıcı bitince tahta Siyah tarafına dönen bulmaca (src/components/FlipGame.tsx). Arka yüz (bulmaca) baştan çizilir ama görünmez
    ve yer kaplamaz (tahta genişliği bilinsin diye gerçek genişlikte); dönüş bitince öne gelir. Altındaki yorumlar hamle bulundukça (ya da analizdeki bir hamle denenince) açılır. */
@@ -239,11 +244,11 @@
 .flip-stage .flip-back .video-moves { display: none; }
 .flip-stage .flip-back.is-active { position: relative; visibility: visible; pointer-events: auto; }
 .puzzle-notes { margin-top: .5rem; }
-.puzzle-notes p { margin: 0 0 1.1rem; font-size: clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height: 1.7; color: rgba(241,233,220,.95); animation: pn-in .55s cubic-bezier(.2,.7,.2,1) both; }
+.puzzle-notes p { margin: 0 0 1.1rem; font-size: clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height: 1.7; color: rgb(var(--fg-rgb) / .95); animation: pn-in .55s cubic-bezier(.2,.7,.2,1) both; }
 .puzzle-notes .pn-line { margin-left: 1.25rem; padding-left: .75rem; border-left: 2px solid rgba(128,128,128,.3); }
 .puzzle-notes .pn-line.flash { animation: pn-in .55s cubic-bezier(.2,.7,.2,1) both, pn-flash 1.4s ease; }
 @keyframes pn-in { from { opacity: 0; transform: translateY(.6rem); } to { opacity: 1; transform: none; } }
-@keyframes pn-flash { 0%, 100% { background: transparent; } 25% { background: rgba(200,137,62,.2); } }
+@keyframes pn-flash { 0%, 100% { background: transparent; } 25% { background: color-mix(in srgb, var(--accent) 20%, transparent); } }
 @media (prefers-reduced-motion: reduce) { .puzzle-notes p, .puzzle-notes .pn-line.flash { animation: none; } }
 
 /* Oynatıcının ayarlar düğmesindeki hız yazısı (0.5x, 1x, 2x): serif yerine mono. */
