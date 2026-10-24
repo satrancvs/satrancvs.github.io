@@ -12,7 +12,11 @@ Satranç otoriteleri tarafından takdirle karşılanan ***"Seven Deadly Chess Si
 
 Kitap üç bölümden oluşuyor: İlk bölüm daha çok satranç oyuncusunun psikolojisine değinirken, ikinci bölüm Rowson'ın da belirttiği gibi, oyuncu psikolojisi konusundan ziyade teknik olarak satrancın kendisiyle en dolu bölüm. "Benim için işe yarayan bir şey" kısmında Rowson, **Kasparov**'un "artık satrancı tam olarak kapsamadığını düşündüğü" üç boyutlu düşünüşünü (*materyal*, *nitelik* ve *zaman*) eleştirip üzerine *saat* (*"clock ticking"*) faktörünü ekleyerek ilerliyor. Özellikle bu kısımlar benim gibi zaman sıkışmasına sık giren oyuncular için önemli bölümler barındırıyor. Yazarın "düşünme zamanının fırsat maliyeti" diyerek açıkladığı bölüm gibi:
 
-> Örneğin, bazen iki hamle arasında tercih yapmanız gerekir. Birinin yeterli, diğerininse çok daha kuvvetli olduğunu, hatta forse kazandığını görebiliyorsunuzdur. Ancak, kazanç olup olmadığını bulabilmek için dakikalarca düşünmeniz gerekmektedir. (...) Pratik gücün en önemli parçalarından birinin zaman faktörünü böyle anlarda değerlendirebilmek olduğuna inanıyorum. (...) Şimdi yirmi dakika kaybedersem, daha sonraki fırsatları kesinlikle kaçıracağım; peki böyle bir yatırım yapmaya değer mi?
+> Örneğin, bazen iki hamle arasında tercih yapmanız gerekir. Birinin yeterli, diğerininse çok daha kuvvetli olduğunu, hatta forse kazandığını görebiliyorsunuzdur. Ancak, kazanç olup olmadığını bulabilmek için dakikalarca düşünmeniz gerekmektedir.
+>
+> Pratik gücün en önemli parçalarından birinin zaman faktörünü böyle anlarda değerlendirebilmek olduğuna inanıyorum.
+>
+> Şimdi yirmi dakika kaybedersem, daha sonraki fırsatları kesinlikle kaçıracağım; peki böyle bir yatırım yapmaya değer mi?
 >
 > — <span lang="en">Jonathan Rowson, Chess for Zebras</span>
 
@@ -20,7 +24,9 @@ Kitap ilerledikçe pek çok büyük ustanın fikirlerine, konuşmalarına (Motwa
 
 Üçüncü bölüm olan *"Siyah ve Beyaz hakkında rengarenk düşünme"* bölümünde ise Siyah ve Beyazın avantaj ve dezavantajlarına, açılış ve hazırlık meselesine odaklanıyor:
 
-> Çok garip bulduğum bir şey, çoğu oyuncunun en üst seviyelerde açılış hazırlığının pek çok oyuncu ve hatta iyi büyük ustalar için bile olduğundan çok daha fazla önemli olduğunu fark edemiyor görünmeleri. (...) Sevdiğiniz oyuncuların hamlelerine ve fikirlerine özenmeye çalışmak mantıklı ancak onların yaptığı satranç çalışmasına özenmek büyük bir hata olur, **çünkü 2650'yi 2750'ye ulaştırmaya faydalı olacak bir çalışma 1650'yi 1750'ye ve hatta 2550'yi 2650'ye ulaştırmak için faydalı olmayabilir**.
+> Çok garip bulduğum bir şey, çoğu oyuncunun en üst seviyelerde açılış hazırlığının pek çok oyuncu ve hatta iyi büyük ustalar için bile olduğundan çok daha fazla önemli olduğunu fark edemiyor görünmeleri.
+>
+> Sevdiğiniz oyuncuların hamlelerine ve fikirlerine özenmeye çalışmak mantıklı ancak onların yaptığı satranç çalışmasına özenmek büyük bir hata olur, çünkü 2650'yi 2750'ye ulaştırmaya faydalı olacak bir çalışma 1650'yi 1750'ye ve hatta 2550'yi 2650'ye ulaştırmak için faydalı olmayabilir.
 >
 > — <span lang="en">Jonathan Rowson, Chess for Zebras</span>
 
@@ -89,7 +95,9 @@ Kitap boyunca konuya eşlik eden örneklerde kendi partilerini, oynarkenki düş
 
 Uzunca bir bölümünü alıntıladığım yazımı kitabın en güzel tavsiyelerinden birisiyle bitiriyorum:
 
-> Daha iyi oyuncu olmak istiyorsanız daha iyi alışkanlıklara sahip olmak gerekir ve daha iyi alışkanlıklar antrenman ile gelişir. En iyi antrenman, güç kararlar için kendinizi sorumluluk almaya zorladığınızda, sizi konfor alanınızın dışına çıkmaya itendir. (...) Sonuçlarımızı geliştirmenin en kesin yolunun evde kompleks örnekler çözmekten geçtiğini düşünüyorum. Bunu olabildiğince sık, uzun vadeli ve disiplinli bir şekilde yapmalı. Bu konsantre olmayı alışkanlığa çevirmede yardımcı olacak ve oyunlarımızın kritik konumlarında konsantre olmayı kolaylaştıracaktır.
+> Daha iyi oyuncu olmak istiyorsanız daha iyi alışkanlıklara sahip olmak gerekir ve daha iyi alışkanlıklar antrenman ile gelişir. En iyi antrenman, güç kararlar için kendinizi sorumluluk almaya zorladığınızda, sizi konfor alanınızın dışına çıkmaya itendir.
+>
+> Sonuçlarımızı geliştirmenin en kesin yolunun evde kompleks örnekler çözmekten geçtiğini düşünüyorum. Bunu olabildiğince sık, uzun vadeli ve disiplinli bir şekilde yapmalı. Bu konsantre olmayı alışkanlığa çevirmede yardımcı olacak ve oyunlarımızın kritik konumlarında konsantre olmayı kolaylaştıracaktır.
 >
 > — <span lang="en">Jonathan Rowson, Chess for Zebras</span>
 

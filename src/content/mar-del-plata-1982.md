@@ -262,9 +262,11 @@ Son tura turnuva şampiyonluğunu garanti ederek giren Timman, bir başka efsane
 [BlackElo "2655"]
 [Annotator "FM Nazmi Can Doğan"]
 
-1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. g3 Bb7 5. Bg2 Be7 6. O-O O-O 7. Nc3 Ne4 8. Nxe4 Bxe4 9. Nh4 {[D] Beyazla hızlı bir beraberlik yapmak için uygun seçim. } 9... Bxg2 10. Nxg2 d5 11. Qa4 Qd7 12. Qxd7 Nxd7 13. cxd5 exd5 14. Be3 c6 { Taraflar beraberlikte anlaştılar. Bu beraberlikle birlikte Timman, 1982 Mar del Plata turnuvasını ikinci ile arasında 1,5 puan farkla kazanmış oldu. } 1/2-1/2
+1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. g3 Bb7 5. Bg2 Be7 6. O-O O-O 7. Nc3 Ne4 8. Nxe4 Bxe4 9. Nh4 {[D] Beyazla hızlı bir beraberlik yapmak için uygun seçim. } 9... Bxg2 10. Nxg2 d5 11. Qa4 Qd7 12. Qxd7 Nxd7 13. cxd5 exd5 14. Be3 c6 1/2-1/2 { Taraflar beraberlikte anlaştılar.}
 
 ![Jan Timman, Tilburg, 1979 (siyah-beyaz fotoğraf)](images/jan-timman-tilburg-1979.jpg "<span lang="nl">Jan Timman</span>, 1979 · Fotoğraf: Rob C. Croes / Anefo · Hollanda Ulusal Arşivi · Lisans: [CC0 1.0 (Kamu Bağışı)](https://creativecommons.org/publicdomain/zero/1.0/deed.tr) · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:4e_Ronde_Jan_Timman,_Bestanddeelnr_930-5268.jpg)")
+
+Bu beraberlikle birlikte Timman, 1982 Mar del Plata turnuvasını ikinci ile arasında 1,5 puan farkla kazanmış oldu.
 
 Ocak 1982 reyting listesinde 2720 puanlı dünya şampiyonu Anatoly Karpov'un ardından 2655 Elo ile ikinci sırada yer alan Jan Timman, bu turnuvayla sıralamadaki yerinin tesadüf olmadığını satranç dünyasına gösteriyordu. Ne var ki bu, Timman'ın kariyerinin zirvesiydi. Sonraki yıllarda ise Kasparov'un yükselişiyle birlikte Elo sıralamasında ancak üçüncü sıraya kadar çıkabilmişti.
 
