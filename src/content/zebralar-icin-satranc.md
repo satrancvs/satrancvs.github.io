@@ -70,7 +70,7 @@ Burada söylenmek istenen "oyuncunun bir tarzı olmamalı" değil, bu yaklaşım
 
 Kitap boyunca konuya eşlik eden örneklerde kendi partilerini, oynarkenki düşüncelerini ve hissettiklerini içten (belki de aşırı içten) bir şekilde paylaşması kitabın en büyük artılarından.
 
-Şimdi ilk bölümün kaba bir özeti sayılabilecek bir kısmını paylaşmak istiyorum. Bir satranç kitabında içtenliğiyle böylesine beni yakalayan ve söyledikleriyle bana ayna tutan başka bir bölüm hatırlamıyorum. Sözünü ettiğim, Hikâye Uydurma *(Fabulation)* alt başlığında Rowson'ın yakın zamanda hayata gözlerini yuman **Viktor Korchnoi** ile karşılaşması:
+Şimdi ilk bölümün kaba bir özeti sayılabilecek bir kısmını paylaşmak istiyorum. Bir satranç kitabında içtenliğiyle böylesine beni yakalayan ve söyledikleriyle bana ayna tutan başka bir bölüm hatırlamıyorum. Sözünü ettiğim, Hikâye Uydurma (*Fabulation*) alt başlığında Rowson'ın yakın zamanda hayata gözlerini yuman **Viktor Korchnoi** ile karşılaşması:
 
 [Event "Monarch Assurance 13th"]
 [EventLine "13. <i>Monarch Assurance</i> Turnuvası"]
@@ -97,7 +97,7 @@ Daha önce hiçbir satranç kitabında eşine rastlamadığım bir özeleştiriy
 
 ![Düşünen Viktor Korchnoi](images/korchnoi-nunn-ohra-1988.jpg "Viktor Korchnoi, 1988 · Fotoğraf: Rob Bogaerts / Anefo · Hollanda Ulusal Arşivi · Lisans: [CC0 1.0 (Kamu Bağışı)](https://creativecommons.org/publicdomain/zero/1.0/deed.tr) · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Ohra_schaaktoernooi,_laatste_ronde_(kroongroep)_winnaar_Kortsjnoij_in_actie_teg,_Bestanddeelnr_934-2962.jpg)")
 
-> Bu hikâye şunu demek istiyordu: O yaratıcıydı ve ben de yaratıcıydım. Ama ben o kadar yaratıcıydım ki kendimi kaptırdım ve onun anahtar hamlesini görmeme rağmen (çünkü, hey, ben bir büyük ustayım), devamını kaçırdım (çünkü, hey, kimse mükemmel değil). Bu hikâye uydurmada (fabulation) beni en çok vuran şey, üçüncü ya da dördüncü kez olayların bu versiyonunu anlattığımda artık kendim de böyle olduğuna inanmaya başladım!
+> Bu hikâye şunu demek istiyordu: O yaratıcıydı ve ben de yaratıcıydım. Ama ben o kadar yaratıcıydım ki kendimi kaptırdım ve onun anahtar hamlesini görmeme rağmen (çünkü, hey, ben bir büyük ustayım), devamını kaçırdım (çünkü, hey, kimse mükemmel değil). Bu hikâye uydurmada (*fabulation*) beni en çok vuran şey, üçüncü ya da dördüncü kez olayların bu versiyonunu anlattığımda artık kendim de böyle olduğuna inanmaya başladım!
 >
 > O akşam kız arkadaşımla konuştuğumda dahi benzer şeyler söyledim. Ama oyunu bilgisayara verdiğimde basitçe 12. d5 hamlesini kaçırdığım gerçeğiyle yüzleştim. Hamleyi görmüştüm fakat anca 11... Qf6 hamlesini ==oynadıktan sonra==.
 >
