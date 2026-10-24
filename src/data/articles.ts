@@ -12,7 +12,7 @@ import { toTypography } from '@/lib/curly';
 import data from './articles.json';
 
 export type Article = {
-  id: string; slug: string; oldSlugs?: string[]; cat?: string; title: string; dek?: string; author: string; authorLang?: string; authorLabel?: string; translator?: string; credit?: { text: string; href: string };
+  id: string; slug: string; oldSlugs?: string[]; cat?: string; cats?: string[]; title: string; dek?: string; author: string; authorLang?: string; authorLabel?: string; translator?: string; credit?: { text: string; href: string };
   excerpt?: string; date?: string; chunks?: string[]; photo?: boolean; thumb?: string; thumbAlt?: string; thumbPosition?: string; diagram?: string; diagramAlt?: string; diagramCaption?: string; titleLines?: [string, string]; note?: string; diagramOrientation?: 'white' | 'black'; diagramBadge?: { square: string; glyph: string }; diagramArrow?: { from: string; to: string }; draft?: boolean; body: string[];
 };
 
@@ -56,3 +56,7 @@ export const articleBySlug = (slug?: string) => PUBLISHED.find((a) => a.slug ===
 // Adresi değişen yazının eski adresi (articles.json `oldSlugs`): ziyaretçi yeni adrese yönlendirilir (Post.tsx), vite.config.ts de dist/<eski>/index.html yönlendirme sayfası yazar.
 export const articleByOldSlug = (slug?: string) => PUBLISHED.find((a) => slug && a.oldSlugs?.includes(slug));
 export const articlePath = (a: Article) => `/${a.slug}/`;
+
+// Bir yazı birden çok köşede görünebilir: `cats` (articles.json) verilmişse hepsi, yoksa `cat`. Etiket olarak köşe adları " · " ile birleştirilir.
+export const catsOf = (a: Article): string[] => a.cats ?? (a.cat ? [a.cat] : []);
+export const catLabel = (a: Article): string => catsOf(a).join(' · ');

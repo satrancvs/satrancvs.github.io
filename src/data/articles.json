@@ -57,7 +57,8 @@
   {
     "id": "palavan",
     "slug": "1944-yilindan-selim-palavan-kimdir",
-    "cat": "Söyleşi",
+    "cat": "Satranç tarihi",
+    "cats": ["Satranç tarihi", "Söyleşi"],
     "title": "1944 yılından: Selim Palavan kimdir?",
     "dek": "_Türkiye Şatranç Mecmuası_’nın ilk sayısında basılan bu söyleşiyi, dönemin özgün yazımına (_şatranç, dolayisile_ vb.) dokunmadan, Palavan’ın Euwe ile oyunundan bir diyagramla sunuyoruz.",
     "author": "Behiç Besler",
@@ -92,6 +93,7 @@
     "id": "aronian",
     "slug": "aronian-degismeli-caro-kann-dersi",
     "cat": "Açılış dosyası",
+    "cats": ["Açılış dosyası", "Analizli oyun"],
     "title": "Aronian’dan Değişmeli Caro-Kann dersi",
     "dek": "Değişmeli Caro-Kann yeniden diriliyor. Peki Aronian’ın yaklaşımını özel kılan ne?",
     "author": "FM Nazmi Can Doğan",

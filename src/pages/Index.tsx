@@ -9,7 +9,7 @@ import ProgressiveImage from '@/components/ProgressiveImage';
 import FenDiagram from '@/components/FenDiagram';
 import NewsletterForm from '@/components/NewsletterForm';
 import { preloadChessPublica } from '@/lib/chesspublica';
-import { ARTICLES, LISTED, PUBLISHED, articlePath } from '@/data/articles';
+import { ARTICLES, LISTED, PUBLISHED, articlePath, catLabel, catsOf } from '@/data/articles';
 import '../site.css';
 
 // Ana sayfadan en son ayrılırken kaydırma konumu (yazı sayfasındaki çarpı buraya döner).
@@ -47,8 +47,9 @@ function CreditLink({ credit }: { credit: { text: string; href: string } }) {
 // authorLang (örn. "hu"): yazar adının dili; büyük harfe çevirmede Türkçe İ yerine o dilin kuralı kullanılır (GÖMÖRI).
 // Köşelerin görünme sırası. Henüz yazısı olmayan köşe (örn. Söyleşi) sekmelerde görünmez; yazısı çıkınca (articles.json `cat`) bu sırayla yerini alır.
 // Listede olmayan bir kategori yine de gizlenmez, sona eklenir.
+const intro = PUBLISHED.find((a) => a.id === 'giris');
 const CORNER_ORDER = ['Satranç tarihi', 'Turnuva günlüğü', 'Literatür inceleme', 'Analizli oyun', 'Açılış dosyası', 'Özel dosya', 'Söyleşi'];
-const USED = new Set(PUBLISHED.map((a) => a.cat).filter((c): c is string => !!c));
+const USED = new Set(PUBLISHED.flatMap((a) => catsOf(a)));
 const CORNERS = [...CORNER_ORDER.filter((c) => USED.has(c)), ...[...USED].filter((c) => !CORNER_ORDER.includes(c))];
 const tabCls = (on: boolean) => `f-mono h-11 border-b-2 transition-colors ${on ? 'border-[#C8893E] text-[#0E0C0A]' : 'border-transparent text-[#0E0C0A]/50 hover:text-[#0E0C0A]'}`;
 
@@ -198,7 +199,7 @@ export default function Index() {
 
   const [cover, ...rest] = ARTICLES;
   const featured = rest.slice(0, 3);
-  const list = LISTED.filter((a) => cat === 'Tümü' || a.cat === cat);
+  const list = LISTED.filter((a) => cat === 'Tümü' || catsOf(a).includes(cat));
 
   return (
     <div className="sk min-h-screen overflow-x-hidden">
@@ -208,15 +209,17 @@ export default function Index() {
             <span className="grid grid-cols-2 w-7 h-7 border border-[#F1E9DC]"><span className="bg-[#C8893E]" /><span /><span /><span className="bg-[#F1E9DC]" /></span>
             <span className="f-display text-2xl tracking-tight">Satranç <em className="italic text-[#C8893E]">vs.</em></span>
           </a>
-          <nav className="hidden lg:flex gap-5 xl:gap-10 whitespace-nowrap">
+          <nav className="hidden lg:flex gap-6 xl:gap-10 whitespace-nowrap">
             {NAV.map(([l, id], i) => (
               <a key={id} href={`#${id}`} className="f-mono text-[#A89A88] hover:text-[#F1E9DC] transition-colors"><span className="text-[#C8893E]">0{i + 1}</span> {l}</a>
             ))}
-            <span title="Yakında..." aria-disabled="true" className="f-mono text-[#A89A88] opacity-40 cursor-not-allowed select-none"><span className="text-[#C8893E]">0{NAV.length + 1}</span> {NAV_SOON}</span>
+            <span title="Yakında..." aria-disabled="true" className="hidden xl:inline f-mono text-[#A89A88] opacity-40 cursor-not-allowed select-none"><span className="text-[#C8893E]">0{NAV.length + 1}</span> {NAV_SOON}</span>
           </nav>
-          {/* Bülten bölümüne götürür. Altı menü öğesiyle birlikte dar masaüstünde (< xl) yer yetmediği için düğme yalnızca xl'de görünür. */}
-          <a href="#bulten" className="btn-mono hidden xl:inline-flex shrink-0 whitespace-nowrap rounded-full bg-[#F1E9DC] text-[#0E0C0A] px-6 h-11 items-center transition-colors hover:bg-[#C8893E]">Bültene Abone Ol</a>
-          <button aria-label="Menüyü aç" onClick={() => setOpen(true)} className="lg:hidden w-11 h-11 grid place-items-center"><MenuIcon /></button>
+          {/* Bülten bölümüne götürür; her genişlikte görünür: masaüstünde menüden sonra, dar ekranda menü düğmesinin yanında (çok dar telefonda kısa yazı "Abone Ol", 360 px altında menü ekranındaki düğme kalır). */}
+          <div className="flex items-center gap-3 shrink-0">
+            <a href="#bulten" className="btn-mono max-[359px]:hidden inline-flex shrink-0 whitespace-nowrap rounded-full bg-[#F1E9DC] text-[#0E0C0A] px-4 sm:px-6 h-11 items-center transition-colors hover:bg-[#C8893E]"><span className="sm:hidden">Abone Ol</span><span className="hidden sm:inline">Bültene Abone Ol</span></a>
+            <button aria-label="Menüyü aç" onClick={() => setOpen(true)} className="lg:hidden w-11 h-11 grid place-items-center"><MenuIcon /></button>
+          </div>
         </div>
       </header>
       {open && (
@@ -225,6 +228,7 @@ export default function Index() {
           <div className="flex-1 flex flex-col justify-center gap-4">
             {NAV.map(([l, id]) => <a key={id} href={`#${id}`} onClick={() => setOpen(false)} className="f-display text-6xl">{l}</a>)}
             <span title="Yakında..." aria-disabled="true" className="f-display text-6xl opacity-30 cursor-not-allowed select-none">{NAV_SOON}</span>
+            <a href="#bulten" onClick={() => setOpen(false)} className="btn-mono mt-6 self-start inline-flex whitespace-nowrap rounded-full bg-[#F1E9DC] text-[#0E0C0A] px-6 h-11 items-center">Bültene Abone Ol</a>
           </div>
         </div>
       )}
@@ -248,7 +252,7 @@ export default function Index() {
         </div>
         <div className="relative mt-auto pt-12 z-20 pointer-events-none">
           <div className="max-w-[1440px] mx-auto px-6 md:px-10 pb-28 md:pb-16">
-            <p className="f-mono text-[#C8893E] mb-6">{cover.cat && <>{cover.cat} · </>}<span className="whitespace-nowrap">{cover.date}</span></p>
+            <p className="f-mono text-[#C8893E] mb-6">{catLabel(cover) && <>{catLabel(cover)} · </>}<span className="whitespace-nowrap">{cover.date}</span></p>
             <h1 className="f-display text-[clamp(40px,6.5vw,112px)] max-w-[26ch]">
               <span className="block overflow-hidden pb-[0.2em] -mb-[0.2em]"><span className="rise">Mar del Plata, 1982:</span></span>
               <span className="block overflow-hidden pb-[0.2em] -mb-[0.2em]"><span className="rise italic text-[#C8893E]" style={{ animationDelay: '.15s' }}>Jan Timman</span></span>
@@ -285,7 +289,7 @@ export default function Index() {
             const inner = (
               <>
                 {a.thumb && <ProgressiveImage path={a.thumb} alt={a.thumbAlt ?? ''} thumb position={a.thumbPosition} />}
-                <p className={`f-mono text-[#C8893E] w-fit max-w-full ${a.thumb ? 'mt-6' : ''}`}>{a.cat && <>{a.cat} · </>}<span className="whitespace-nowrap">{a.date}</span></p>
+                <p className={`f-mono text-[#C8893E] w-fit max-w-full ${a.thumb ? 'mt-6' : ''}`}>{catLabel(a) && <>{catLabel(a)} · </>}<span className="whitespace-nowrap">{a.date}</span></p>
                 <h3 className={`f-display mt-3 w-fit max-w-full ${a.draft ? '' : 'group-hover:italic'} transition-all ${i === 0 ? 'text-5xl md:text-6xl' : 'text-3xl md:text-4xl'}`}>{a.titleLines ? <>{a.titleLines[0]}<br /><em className="italic text-[#C8893E]">{a.titleLines[1]}</em></> : a.title}</h3>
                 {a.dek && <p className="text-[1.1875rem] leading-[1.5] text-[#F1E9DC]/70 mt-3 max-w-xl w-fit"><Markdown options={{ forceInline: true }}>{a.dek}</Markdown></p>}
                 <p className="f-mono text-[#A89A88] mt-4 w-fit max-w-full">{a.credit ? <CreditLink credit={a.credit} /> : <>{a.authorLabel ?? 'Yazar'}: <span lang={a.authorLang}>{a.author}</span></>}</p>
@@ -327,8 +331,8 @@ export default function Index() {
                 <Link to={articlePath(a)} className="group w-full text-left grid grid-cols-[48px_1fr_auto] md:grid-cols-[48px_1fr_auto] items-center gap-4 md:gap-6 py-7 border-b border-[#0E0C0A]/15">
                   <span className="f-mono normal-case text-[#0E0C0A]/40">{String.fromCharCode(97 + (i % 8))}{i + 1}</span>
                   <div>
-                    {a.cat && <p className="f-mono text-[#9A5F1E] text-[11px]">{a.cat}</p>}
-                    <p className={`f-display text-2xl md:text-4xl ${a.cat ? 'mt-2' : ''} group-hover:italic group-hover:translate-x-2 transition-all duration-500`}>{a.title}</p>
+                    {catLabel(a) && <p className="f-mono text-[#9A5F1E] text-[11px]">{catLabel(a)}</p>}
+                    <p className={`f-display text-2xl md:text-4xl ${catLabel(a) ? 'mt-2' : ''} group-hover:italic group-hover:translate-x-2 transition-all duration-500`}>{a.title}</p>
                     <p className="text-base text-[#0E0C0A]/60 mt-2">{a.credit ? <CreditLink credit={a.credit} /> : a.author} · <span className="whitespace-nowrap">{a.date}</span></p>
                   </div>
                   <ArrowUpRight className="group-hover:rotate-45 transition-transform" />
@@ -367,22 +371,37 @@ export default function Index() {
             <em className="italic text-[#C8893E]">‘Satranç ve siz’ demek.</em>
           </h2>
           <p className="text-[1.1875rem] text-[#F1E9DC]/75 leading-relaxed mt-10 max-w-xl">Satranç vs.; satranç tarihi yazıları, açılış dosyaları, turnuva günlükleri, analizli oyunlar, satranç literatür incelemeleri, özel dosyalar ve söyleşiler yayınlayan bağımsız bir dijital dergidir.</p>
-          <p className="text-[1.1875rem] text-[#F1E9DC]/75 leading-relaxed mt-6 max-w-xl">Bize ulaşmak, yayın ekibine katılmak ya da yazı taslaklarınızı göndermek için <a href="mailto:editor@satrancvs.com" className="underline underline-offset-2 hover:text-[#F1E9DC]">editor@satrancvs.com</a> adresine e-posta gönderebilirsiniz. Yayın ekibi, paylaştığınız tüm öneri ve yazı taslaklarını büyük bir özenle inceler. Değerlendirme süreci zaman alabildiğinden yanıtlardaki olası gecikmelerde göstereceğiniz sabır ve anlayış için şimdiden teşekkür ederiz.</p>
+          {/* İlk sayı yazısına (giris) götüren kart: dergiyi neden çıkardığımızı anlatan yazı. */}
+          {intro && (
+            <Link to={articlePath(intro)} className="group mt-8 max-w-xl flex items-center justify-between gap-6 border border-[#2E2620] hover:border-[#C8893E] transition-colors px-6 py-5">
+              <span className="block">
+                <span className="block f-mono text-[#C8893E] text-[11px]">Dergiyi neden çıkardık?</span>
+                <span className="block f-display text-3xl md:text-4xl mt-2 group-hover:italic transition-all">{intro.title}</span>
+                <span className="block text-base text-[#A89A88] mt-2 leading-snug">Satranç vs.’nin hikâyesi ve sizi masaya çağıran ilk sayı yazısı.</span>
+              </span>
+              <ArrowUpRight className="shrink-0 group-hover:rotate-45 transition-transform" />
+            </Link>
+          )}
         </div>
-        {/* Sağ sütun (md ve üstü): yalnızca mono içerik — üstte atıflar, altta telif notu; mobilde alt alta. Sütun aşağı hizalıdır (md:self-end): son satırı sol sütunun son satırıyla aynı taban çizgisindedir. */}
-        <div className="md:col-span-6 reveal md:self-end">
+        {/* Sağ sütun (md ve üstü): üstte iletişim paragrafı, altta mono içerik (atıflar, telif notu); sütun sol sütunla aynı yüksekliğe gerilir, alt grup sol sütunun son satırıyla aynı taban çizgisindedir. Mobilde sol sütunun altına alt alta dizilir. */}
+        <div className="md:col-span-6 reveal md:flex md:flex-col md:justify-between md:gap-12">
+          {/* İletişim paragrafı: tek sütunda sol sütunun hemen altında (sıra aynı), iki sütunda sağ sütunun üstünde; atıflar ve telif notu sütunun altında kalır (son satırı sol sütunun son satırıyla aynı taban çizgisinde). */}
+          <p className="text-[1.1875rem] text-[#F1E9DC]/75 leading-relaxed max-w-xl">Bize ulaşmak, yayın ekibine katılmak ya da yazı taslaklarınızı göndermek için <a href="mailto:editor@satrancvs.com" className="underline underline-offset-2 hover:text-[#F1E9DC]">editor@satrancvs.com</a> adresine e-posta gönderebilirsiniz. Yayın ekibi, paylaştığınız tüm öneri ve yazı taslaklarını büyük bir özenle inceler. Değerlendirme süreci zaman alabildiğinden yanıtlardaki olası gecikmelerde göstereceğiniz sabır ve anlayış için şimdiden teşekkür ederiz.</p>
+
           {/* Atıflar: sitede kullanılan üçüncü taraf yazılım ve görseller (lisans metinleri public/chesspublica/LICENSES.txt). */}
-          <div className="max-w-xl">
-            <p className="f-mono text-[#C8893E]">Atıflar</p>
-            <ul className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.8] mt-3 space-y-1 text-[#A89A88] list-disc pl-5 marker:text-[#C8893E]">
-              {ATTRIBUTIONS.map((t, i) => (
-                <li key={i}><Markdown options={{ forceInline: true, overrides: { a: { props: { className: 'underline underline-offset-2 hover:text-[#F1E9DC]', target: '_blank', rel: 'noreferrer' } } } }}>{t}</Markdown></li>
-              ))}
-            </ul>
-          </div>
-          <div className="mt-10 max-w-xl">
-            <p className="f-mono text-[#C8893E]">Telif hakları</p>
-            <p className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.9] text-[#F1E9DC]/75 mt-4">Satranç vs. dijital satranç dergisinde yayınlanan yazıların telif hakları yazarlarına, dijital mecrada yayınlama yetkisi ise (aksi belirtilmedikçe) Satranç vs. dijital satranç dergisine aittir. Önceden yazılı izin alınmaksızın kısmen veya tamamen kopyalanamaz, çoğaltılamaz ve kaynak gösterilmeden başka platformlarda yayınlanamaz.</p>
+          <div>
+          <div className="max-w-xl mt-12 md:mt-0">
+              <p className="f-mono text-[#C8893E]">Atıflar</p>
+              <ul className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.8] mt-3 space-y-1 text-[#A89A88] list-disc pl-5 marker:text-[#C8893E]">
+                {ATTRIBUTIONS.map((t, i) => (
+                  <li key={i}><Markdown options={{ forceInline: true, overrides: { a: { props: { className: 'underline underline-offset-2 hover:text-[#F1E9DC]', target: '_blank', rel: 'noreferrer' } } } }}>{t}</Markdown></li>
+                ))}
+              </ul>
+            </div>
+            <div className="mt-10 max-w-xl">
+              <p className="f-mono text-[#C8893E]">Telif hakları</p>
+              <p className="f-mono !text-[11px] !tracking-[0.12em] leading-[1.9] text-[#F1E9DC]/75 mt-4">Satranç vs. dijital satranç dergisinde yayınlanan yazıların telif hakları yazarlarına, dijital mecrada yayınlama yetkisi ise (aksi belirtilmedikçe) Satranç vs. dijital satranç dergisine aittir. Önceden yazılı izin alınmaksızın kısmen veya tamamen kopyalanamaz, çoğaltılamaz ve kaynak gösterilmeden başka platformlarda yayınlanamaz.</p>
+            </div>
           </div>
         </div>
         <div id="bulten" className="md:col-span-12 mt-10 scroll-mt-28 border border-[#2E2620] p-8 md:p-14 grid md:grid-cols-2 gap-8 items-end">

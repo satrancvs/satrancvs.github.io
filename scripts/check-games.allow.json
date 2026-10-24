@@ -43,10 +43,5 @@
     "file": "at-ve-fil.md",
     "run": "Bd4 Ke6 b4",
     "reason": "Printed so in Kasparov's book (note to 47.Rd2): after 49.axb5 the white pawn stands on b5, so 52.b4 is a misprint. The variation stops at 51...Ke6."
-  },
-  {
-    "file": "karlsruhe-ve-yol-ayrimlari.md",
-    "linkedProse": true,
-    "reason": "The author wants every line written once, in the comment prose, with no duplicate variations. In the study view the prose moves are clickable (src/lib/prose-moves.js, linkProseMoves in src/lib/study-fix.ts); the checker verifies each numbered prose move is playable."
   }
 ]
