@@ -8,9 +8,9 @@ Atın ve filin değeri; tahtadaki diğer taşlarla koordinasyonlarına, piyonlar
 
 ### Chigorin'in atları
 
-Satranç tekniğinin önemli konularından biri, at-fil ya da fil-at dengesizliğinin bulunduğu konumları üst düzeyde oynayabilmektir.Ustaların yazılarını ve oyunlarını incelediğimizde, bu iki taştan hangisini ne zaman değişmek gerektiğini bilmenin, yani doğru anı fark edip doğru kararı vermenin önemini görüyoruz.
+Satranç tekniğinin önemli konularından biri, at-fil ya da fil-at dengesizliğinin bulunduğu konumları üst düzeyde oynayabilmektir. Ustaların yazılarını ve oyunlarını incelediğimizde, bu iki taştan hangisini ne zaman değişmek gerektiğini bilmenin, yani doğru anı fark edip doğru kararı vermenin önemini görüyoruz.
 
-Hangi taşları değişeceğimize karar vermek pek çok konumda gerçekten zor olabilir. Pek çok oyuncu, sıklıkla kişisel eğilimler geliştirmiş. Sovyetler Birliği'nde atın filden daha güçlü olduğuna inanan eski bir düşünce okulunda bahsedilirmiş: **Chigorin okulu**. Garry Kasparov’a göre Mikhail Chigorin (1850–1908) kendinden sonra gelen büyük oyuncular için yolu açmıştır.
+Hangi taşları değişeceğimize oyun esnasında, masada karar vermek gerçekten zor olabilir. Satranç tarihinde pek çok büyük oyuncu, sıklıkla kişisel eğilimler geliştirmiş. Sovyetler Birliği'nde atın filden daha güçlü olduğuna inanan eski bir düşünce okulundan bahsedilirmiş: **Chigorin okulu**. Garry Kasparov’a göre Mikhail Chigorin (1850–1908) kendinden sonra gelen büyük oyuncular için yolu açmıştır.
 
 ![Mikhail Chigorin (siyah-beyaz fotoğraf)](images/Chigorin.jpg "<span lang="ru">Mikhail Chigorin</span> · Fotoğraf: Cleveland Halk Kütüphanesi · Amerika Dijital Halk Kütüphanesi · Lisans: Kamu malı · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=178871027)")
 
