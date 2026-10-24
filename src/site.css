@@ -218,6 +218,9 @@
 
 /* Palavan–Euwe: alıntı kutusundaki (.quote) çalışma görünümü her genişlikte tek sütun kalır (iki sütun yalnızca .study-frame içinde). */
 .quote-game { --study-pad: 0px; }
+/* Kutudaki çalışma görünümü: sabit panel yüksekliği yerine tahta + şerit + en az bir paragraf gösteren kayan liste. */
+.quote-game pgn-study { height: auto; min-height: 0; overflow: visible; }
+.quote-game pgn-study > .pgn-container { flex: none; height: 24rem; max-height: 70vh; }
 
 /* Geniş ekranda (≥ 56em) iki sütun: solda tahta ve düğme şeridi, sağda kayan hamle ve yorum listesi. Dar ekran tek sütun kalır. */
 @media (min-width: 56em) {
