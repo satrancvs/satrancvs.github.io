@@ -74,6 +74,8 @@
      tahtanın soluna konur; sütunlar yazı sütunundan sola/sağa taşar. */
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment > .comment-line { position: absolute; top: 0; right: calc(100% + 340px + 3rem); width: 280px; min-height: var(--board-size); display: flex; flex-direction: column; text-align: left; margin-top: 0; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment > .comment-line .comment-text-block { margin-top: auto; flex: 0 0 auto; }
+  /* Varyantın içindeyken yorum zaten varyant metninde görünüyorsa sol satır gizlenir (variation-fix.ts .cp-duplicate); yukarıdaki display: flex bu kuralı ezmesin. */
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment > .comment-line.cp-duplicate { display: none; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment > .comment-line + .variation-block, .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment > .variation-block:first-child { margin-top: auto; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment > .comment-line .comment-icon { display: none; }
 }
