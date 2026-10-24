@@ -233,7 +233,7 @@ export default function Index() {
       </section>
 
       {/* ÖNE ÇIKANLAR */}
-      <section id="yazilar" className="max-w-[1440px] mx-auto px-6 md:px-10 py-24 md:py-40">
+      <section id="one-cikanlar" className="max-w-[1440px] mx-auto px-6 md:px-10 py-24 md:py-40">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 reveal">
           <div><Label n="01">Bu Sayıda</Label>
             <h2 className="f-display text-[clamp(48px,7vw,120px)] mt-8">Öne <em className="italic text-[#C8893E]">çıkanlar</em></h2></div>
@@ -266,7 +266,7 @@ export default function Index() {
       </section>
 
       {/* KATEGORİLER / ARŞİV */}
-      <section id="koseler" className="bg-[#F1E9DC] text-[#0E0C0A]">
+      <section id="yazilar" className="bg-[#F1E9DC] text-[#0E0C0A]">
         <div className="max-w-[1440px] mx-auto px-6 md:px-10 py-24 md:py-40 grid md:grid-cols-12 gap-10">
           <div ref={leftCol} className="md:col-span-3 reveal relative">
             <p className="f-mono text-[#0E0C0A]/60"><span className="text-[#9A5F1E]">02</span> — Bu Sayıdaki</p>
@@ -274,7 +274,7 @@ export default function Index() {
             <div role="tablist" aria-label="Tüm yazılar" className="mt-12">
               <button role="tab" aria-selected={cat === 'Tümü'} onClick={() => setCat('Tümü')} className={tabCls(cat === 'Tümü')}>Tümü</button>
             </div>
-            <h2 ref={koseHead} className="f-display text-[clamp(36px,4.5vw,72px)] mt-14"><em className="italic">Köşeler</em></h2>
+            <h2 id="koseler" ref={koseHead} className="f-display text-[clamp(36px,4.5vw,72px)] mt-14 scroll-mt-28"><em className="italic">Köşeler</em></h2>
             <div role="tablist" aria-label="Köşeler" className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-8">
               {CORNERS.map((k, i) => (
                 <span key={k} className="inline-flex items-center gap-x-3 whitespace-nowrap">
