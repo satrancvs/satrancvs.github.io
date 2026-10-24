@@ -31,6 +31,7 @@ Bütün İstanbul’un ve hatta memleketimizin her köşesindeki şatranç merak
 [Event "Odessa, Ukrayna"]
 [Frame "quote"]
 [Flip "puzzle"]
+[View "study"]
 [EventLine "Analiz: Selim Palavan · Kaynak: Selim Palavan, <i>Satranç</i>, TEB Yayınları"]
 [Site "Odessa, Ukrayna"]
 [Date "1934.??.??"]

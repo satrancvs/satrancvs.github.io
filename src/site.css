@@ -14,6 +14,8 @@
 .sk ::selection { background:var(--accent); color:var(--bg); }
 .f-display { font-family:'Fraunces',serif; letter-spacing:-0.04em; line-height:.9; font-weight:300; font-variation-settings:'opsz' 72; }
 .art-prose, .quote > p { font-family:'Eval','EvalPM','Figurine','Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height:1.7; font-optical-sizing:auto; font-weight:320; color:rgb(var(--fg-rgb) / .95); }
+/* Oyun başlığındaki oyuncu adları (GameSection, alıntı kutusu): metinle aynı boyutta, kalın. */
+.game-names { font-family:'Eval','EvalPM','Figurine','Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); font-weight:500; line-height:1.7; color:rgb(var(--fg-rgb) / .95); }
 .art-prose strong, .art-prose b, .quote strong, .cp-game :is(.pgn-comment, .pgn-comment-inline, .pgn-variation, .video-comment, .comment-body) :is(strong, b) { font-weight:500; }
 .cp-game .pgn-mainline, .cp-game .pgn-comment, .cp-game .pgn-comment-inline, .cp-game .pgn-variation, .cp-game .video-comment, .cp-game .comment-body { font-family:'Eval','EvalPM','Figurine','Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height:1.7; font-optical-sizing:auto; font-weight:320; color:rgb(var(--fg-rgb) / .95); }
 .btn-mono { font-family:'JetBrains Mono',monospace; font-size:13px; letter-spacing:.08em; text-transform:uppercase; font-weight:600; }
@@ -214,17 +216,20 @@
   .cp-game pgn-study.cp-ready > .pgn-study-ribbon { margin-left: .9rem; margin-right: .9rem; }
 }
 
+/* Palavan–Euwe: alıntı kutusundaki (.quote) çalışma görünümü her genişlikte tek sütun kalır (iki sütun yalnızca .study-frame içinde). */
+.quote .flip-stage { --study-pad: 0px; }
+
 /* Geniş ekranda (≥ 56em) iki sütun: solda tahta ve düğme şeridi, sağda kayan hamle ve yorum listesi. Dar ekran tek sütun kalır. */
 @media (min-width: 56em) {
   /* Çerçeve yazı sütunundan taşar (62rem, ekrana sığdığı kadar) ve ortalanır; sağdaki liste yeterince geniş kalır. */
   .study-frame { --study-pad: 1.25rem; width: min(62rem, calc(100vw - 3rem)); max-width: none; margin-left: 50%; transform: translateX(-50%); }
-  .cp-game pgn-study, .cp-game .pgn-study-loading { height: calc(min(90vh, 44rem) - 6rem); min-height: 26rem; }
-  .cp-game pgn-study { display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 1fr); grid-template-rows: auto 1fr; column-gap: 1.5rem; }
-  .cp-game pgn-study > pgn-player { grid-column: 1; grid-row: 1; }
-  .cp-game pgn-study pgn-player .player-wrapper { --board-size: min(400px, 100cqw); }
-  .cp-game pgn-study.cp-ready > .pgn-study-ribbon { grid-column: 1; grid-row: 2; align-self: start; margin-bottom: 0; }
-  .cp-game pgn-study > .pgn-container { grid-column: 2; grid-row: 1 / -1; padding: 0 .75rem 0 0; }
-  .cp-game .pgn-study-loading { display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 1fr); column-gap: 1.5rem; align-items: start; }
+  .study-frame pgn-study, .study-frame .pgn-study-loading { height: calc(min(90vh, 44rem) - 6rem); min-height: 26rem; }
+  .study-frame pgn-study { display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 1fr); grid-template-rows: auto 1fr; column-gap: 1.5rem; }
+  .study-frame pgn-study > pgn-player { grid-column: 1; grid-row: 1; }
+  .study-frame pgn-study pgn-player .player-wrapper { --board-size: min(400px, 100cqw); }
+  .study-frame pgn-study.cp-ready > .pgn-study-ribbon { grid-column: 1; grid-row: 2; align-self: start; margin-bottom: 0; }
+  .study-frame pgn-study > .pgn-container { grid-column: 2; grid-row: 1 / -1; padding: 0 .75rem 0 0; }
+  .study-frame .pgn-study-loading { display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 1fr); column-gap: 1.5rem; align-items: start; }
 }
 
 /* Oyun yorumundaki "### Başlık" (ArticleBody.tsx commentMarkup): makale ### başlığıyla aynı yazı tipi, yorumun içinde. */
