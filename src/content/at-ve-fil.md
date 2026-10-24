@@ -1,4 +1,4 @@
-![At ve fil](images/at-fil.jpg "[House of Staunton](https://www.houseofstaunton.com/products/the-capablanca-series-luxury-chess-pieces-4-0-king?v=62553719538033) Capablanca Serisi ahşap satranç taşları · Görsel, yapay zeka ile üretilmiştir · Google Gemini 3")
+![Satranç tahtasında yan yana duran fil ve at (renkli, yapay zekâyla üretilmiş görsel)](images/at-fil.jpg "<span lang="en">House of Staunton Capablanca</span> serisi ahşap satranç taşları · Görsel: <span lang="en">Google Gemini 3</span> (yapay zekâ ile üretilmiştir) · Kaynak: [<span lang="en">House of Staunton</span>](https://www.houseofstaunton.com/products/the-capablanca-series-luxury-chess-pieces-4-0-king?v=62553719538033)")
 
 Satrançta en sık karşılaştığımız materyal dengesizliklerinden biri file karşı at. Fil ve at, farklı hareket kurallarına sahip, birbirinden tamamen ayrı taşlar. Dolayısıyla tahtadaki güçleri de farklı olsa gerek.
 
@@ -12,7 +12,7 @@ Satranç tekniğinin en önemli konularından biri, file karşı atla ya da ata 
 
 Hangi taşları değişeceğimize karar vermek pek çok konumda gerçekten zor olabilir. Pek çok oyuncu, sıklıkla kişisel eğilimler geliştirmiş. Sovyetler Birliği'nde atın filden daha güçlü olduğuna inanan eski bir düşünce okulunda bahsedilirmiş: **Chigorin okulu**. Garry Kasparov’a göre Mikhail Chigorin (1850–1908) kendinden sonra gelen büyük oyuncular için yolu açmıştır.
 
-![Mikhail Chigorin](images/Chigorin.jpg "Cleveland Public Library · Digital Public Library of America, Public Domain, https://commons.wikimedia.org/w/index.php?curid=178871027")
+![Mikhail Chigorin (siyah-beyaz fotoğraf)](images/Chigorin.jpg "<span lang="ru">Mikhail Chigorin</span> · Fotoğraf: <span lang="en">Cleveland Public Library</span> (Cleveland Halk Kütüphanesi) · <span lang="en">Digital Public Library of America</span> (Amerika Dijital Halk Kütüphanesi) · Lisans: Kamu malı · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=178871027)")
 
 > Pek çok bakımdan Chigorin’in stili, Alekhine’in stiline öncüllük etmiştir. 20. yüzyıl ortalarında Chigorin’in oyunları üzerine büyük bir duayen olan Boris Spassky de gençliğinde benzer bir üslupla oynuyordu.
 >
@@ -61,7 +61,7 @@ Fil, kendi bulunduğu şah kanadını, rakibin vezir kanadını ve -bu konumda e
 
 Modern satrancın kurucusu olarak saygın bir yere sahip olan Steinitz'in konuya dair görüşleri, elbette birkaç pratik başarıyla sınırlı değildi. Steinitz, döneminin belki de en geniş etkili satranç yazarı ve kuramcısıydı. _Modern Satranç Kılavuzu_ adlı kitabında meseleyi teorik olarak şöyle ele alıyordu:
 
-![Wilhelm Steinitz](images/Steinitz.jpg "By Schumann, Fritz - Cleveland Public Library Digital Public Library of America. Public Domain, https://commons.wikimedia.org/w/index.php?curid=178869232")
+![Wilhelm Steinitz (siyah-beyaz fotoğraf)](images/Steinitz.jpg "<span lang="de">Wilhelm Steinitz</span> · Fotoğraf: <span lang="de">Fritz Schumann</span> · <span lang="en">Cleveland Public Library</span> (Cleveland Halk Kütüphanesi) · <span lang="en">Digital Public Library of America</span> (Amerika Dijital Halk Kütüphanesi) · Lisans: Kamu malı · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=178869232)")
 
 > Filin göreli değeri, ustalar ve otoriteler arasında farklı görüşlere yol açmıştır. Bazıları oyunsonunda fili ata belirgin bir şekilde tercih etmiştir. Vezir veya kaleyle birlikteyken atın filden daha iyi olduğu da öne sürülmüştür. Ama dikkatimizi çeken pozisyonların ortalamasını ve her iki taş lehine kesin olan birkaç istisnayı dikkatle değerlendirdikten sonra şu sonuca vardık: Filin gücü, pratik amaçlar bakımından, açılışta, oyunortasında, oyunsonunda ve diğer taşlarla çoğu kombinasyonda ona atfedilen, at karşısındaki matematiksel üstünlüğünü haklı çıkarmaktadır.
 >
@@ -69,7 +69,7 @@ Modern satrancın kurucusu olarak saygın bir yere sahip olan Steinitz'in konuya
 
 İlk dünya şampiyonu Steinitz'in file bariz bir tercih göstermesine rağmen çağdaşı ve ikinci dünya şampiyonu Emanuel Lasker ise kaleme aldığı _Satranç El Kitabı_'nda meseleye çok daha temkinli, felsefi bir bakışla yaklaşıyordu.
 
-![Emanuel Lasker](images/Lasker.jpg "By Bundesarchiv, Bild 102-00459 / CC-BY-SA 3.0, CC BY-SA 3.0 de, https://commons.wikimedia.org/w/index.php?curid=5478910")
+![Emanuel Lasker (siyah-beyaz fotoğraf)](images/Lasker.jpg "<span lang="de">Emanuel Lasker</span> · Fotoğraf: <span lang="de">Bundesarchiv</span> (Alman Federal Arşivi), <span lang="de">Bild 102-00459</span> · Lisans: [CC BY-SA 3.0 DE](https://creativecommons.org/licenses/by-sa/3.0/de/deed.tr) · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=5478910)")
 
 Emanuel Lasker, İngiltere ve Amerika Birleşik Devletleri'ndeki üniversitelerde matematik dersleri vermenin yanı sıra, _Mücadele_ (1906), _Dünyayı Anlamak_ (1913) ve _Erişilemez Olanın Felsefesi_ (1918) adlı kitaplarıyla felsefe alanında da çalışmalar yapmış çok yönlü bir düşünürdü.
 
@@ -81,7 +81,7 @@ Emanuel Lasker, İngiltere ve Amerika Birleşik Devletleri'ndeki üniversitelerd
 >
 > — <span lang="en">Emanuel Lasker, _"Lasker's Manual of Chess"_ (Lasker'in Satanç El Kitabı), 1927.</span>
 
-![José Raúl Capablanca](images/Capablanca.jpg "By Harris & Ewing, photographer - Library of CongressCatalog: https://lccn.loc.gov/2016866174Image download: https://cdn.loc.gov/service/pnp/hec/05400/05488v.jpgOriginal url: https://www.loc.gov/pictures/item/2016866174/, Public Domain, https://commons.wikimedia.org/w/index.php?curid=67186745")
+![José Raúl Capablanca (siyah-beyaz fotoğraf)](images/Capablanca.jpg "<span lang="es">José Raúl Capablanca</span> · Fotoğraf: <span lang="en">Harris & Ewing</span> · <span lang="en">Library of Congress</span> (Amerikan Kongre Kütüphanesi) · Lisans: Kamu malı · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=67186745)")
 
 Satranç dünyasını yalnızca çocuk yaşta kendini belli eden dehasıyla değil, nezih karakteri, dış görünüşü ve satranç yazarlığıyla da büyüleyen üçüncü dünya şampiyonu **José Raúl Capablanca** ise _Satrancın Temelleri_ adlı kitabında konuyu o vakte kadar yapılmış en ayrıntılı şekilde ele alarak _çoğu durumda_ filin üstün olduğu yönündeki düşüncesini anlatıyordu:
 
