@@ -135,7 +135,7 @@ function PostPage() {
       <button type="button" onClick={toggleTheme} aria-pressed={light} aria-label={light ? 'Koyu temaya geç' : 'Açık temaya geç'} title={light ? 'Koyu tema' : 'Açık tema'} className="fixed top-5 right-[4.75rem] z-50 w-12 h-12 rounded-full border border-[color:rgb(var(--fg-rgb)/0.4)] bg-[color:var(--bg)] text-[color:var(--fg)] grid place-items-center hover:border-[color:var(--accent)] hover:text-[color:var(--accent)] transition-colors">
         {light ? <Moon size={20} aria-hidden /> : <Sun size={20} aria-hidden />}
       </button>
-      <Link to="/" state={{ top: true }} aria-label="Ana sayfaya dön" className="fixed top-5 right-5 z-50 w-12 h-12 rounded-full bg-[color:var(--fg)] text-[color:var(--bg)] grid place-items-center hover:bg-[color:var(--accent)]"><X /></Link>
+      <Link to="/" state={{ restore: true }} aria-label="Ana sayfaya dön" className="fixed top-5 right-5 z-50 w-12 h-12 rounded-full bg-[color:var(--fg)] text-[color:var(--bg)] grid place-items-center hover:bg-[color:var(--accent)]"><X /></Link>
       <article className="max-w-[760px] mx-auto px-6 pt-32 relative pb-32">
         {a.cat && <p className="f-mono text-[color:var(--accent)]">{a.cat}</p>}
         <h1 className={`f-display text-[clamp(44px,6vw,88px)] ${a.cat ? 'mt-6' : ''}`}>{a.title}</h1>

@@ -12,6 +12,9 @@ import { preloadChessPublica } from '@/lib/chesspublica';
 import { ARTICLES, LISTED, PUBLISHED, articlePath } from '@/data/articles';
 import '../site.css';
 
+// Ana sayfadan en son ayrılırken kaydırma konumu (yazı sayfasındaki çarpı buraya döner).
+let homeY = 0;
+
 const NAV = [
   ['Kapak', 'kapak'],
   ['Yazılar', 'yazilar'],
@@ -114,16 +117,35 @@ export default function Index() {
   useReveal();
   // Ana sayfa her açılışta (yenileme, geri tuşu dahil) sayfa başında görünür: tarayıcı bu girişin kaydırma konumunu
   // geri yüklemesin. Sonraki girişler (yazı sayfaları) kendi kaydırma konumunu hatırlar, bkz. Post.tsx.
+  // Yazıdaki çarpı (state={{ restore: true }}) okuru ana sayfada ayrıldığı yere (örn. Yazılar bölümüne) geri getirir: ayrılırken konum `homeY`'de tutulur
+  // (düzen cleanup'ı DOM kaldırılmadan, kaydırma konumu kısalan sayfaya göre kırpılmadan önce çalışır). Yenileme, geri/ileri ve diğer girişler yine sayfa başından açılır.
+  const loc = useLocation();
+  const restoreTo = useRef<number | null>(null);
+  if (restoreTo.current === null) restoreTo.current = (loc.state as { restore?: boolean } | null)?.restore ? homeY : 0;
   useLayoutEffect(() => {
     window.history.scrollRestoration = 'manual';
-    window.scrollTo(0, 0);
+    window.scrollTo(0, restoreTo.current ?? 0);
+    return () => { homeY = window.scrollY; };
+  }, []);
+  // Fotoğraflar ve diyagramlar yüklendikçe sayfa yüksekliği değiştiği için konum birkaç kez yeniden uygulanır; okur kaydırmaya başlarsa bırakılır.
+  useEffect(() => {
+    const target = restoreTo.current ?? 0;
+    if (!target) return;
+    let live = true;
+    const go = () => { if (live) window.scrollTo(0, target); };
+    const stop = () => { live = false; timers.forEach(clearTimeout); };
+    const timers = [150, 500, 1200, 2500].map((ms) => window.setTimeout(go, ms));
+    timers.push(window.setTimeout(stop, 2700));
+    const events = ['wheel', 'touchstart', 'keydown', 'mousedown'] as const;
+    events.forEach((ev) => window.addEventListener(ev, stop, { once: true, passive: true }));
+    return () => { stop(); events.forEach((ev) => window.removeEventListener(ev, stop)); };
   }, []);
   // Yazı adresi doğrudan açıldıysa sekme başlığı yazının başlığıdır; yazı sayfası çıkarken onu geri yüklediği için burada sabitliyoruz.
   useEffect(() => { document.title = 'Satranç vs.'; }, []);
   // Öne çıkanlardaki diyagram için ChessPublica ve taş görselleri sayfa yüklenince boşta önceden indirilir (diyagram ekrana gelince hazır olur).
   useEffect(() => { if (ARTICLES.some((x) => x.diagram)) preloadChessPublica(); }, []);
   // Yazı sayfasındaki büyük “Satranç vs.” yazısı buraya state={{ top: true }} ile gelir: sayfa başına git.
-  const { state, hash } = useLocation();
+  const { state, hash } = loc;
   useEffect(() => { if ((state as { top?: boolean } | null)?.top) window.scrollTo(0, 0); }, [state]);
   // Adreste #bölüm varsa (/#yazarlar, yazılardaki /#bulten bağlantısı) o bölüme gidilir. Ana sayfa yukarıda sayfa başına alındığı için tarayıcı
   // bağlantıyı kendisi kaydırmaz; fotoğraflar ve diyagramlar yüklendikçe sayfa yüksekliği değiştiğinden konum birkaç kez yeniden uygulanır
