@@ -68,9 +68,9 @@
 /* Yeterince geniş ekranda (sağa taşan sütuna ekranda yer kalır) tahta yazı sütununun ortasında durur, yorum sütunu sağa, sütunun dışına taşar; genişlikler aynı, yalnızca konum kayar. */
 @media (min-width: 71.5em) {
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) { transform: translateX(calc((100% - 340px) / 2)); }
-  /* Üç sütun: hamlenin kendi yorumu tahtanın soluna (üstü tahtanın üstüyle hizalı, aşağı doğru uzar, sağa yaslı), varyantlar tahtanın sağına. Yorum satırı .video-comment'e (position: relative, sağ sütunda) göre
+  /* Üç sütun: hamlenin kendi yorumu tahtanın soluna (üstü tahtanın üstüyle hizalı, aşağı doğru uzar, sola yaslı), varyantlar tahtanın sağına. Yorum satırı .video-comment'e (position: relative, sağ sütunda) göre
      tahtanın soluna konur; sütunlar yazı sütunundan sola/sağa taşar. */
-  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment > .comment-line { position: absolute; top: 0; right: calc(100% + 340px + 3rem); width: 280px; display: flex; align-items: flex-start; justify-content: flex-end; text-align: right; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment > .comment-line { position: absolute; top: 0; right: calc(100% + 340px + 3rem); width: 280px; display: flex; align-items: flex-start; justify-content: flex-start; text-align: left; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment > .comment-line .comment-icon { display: none; }
 }
 /* <pgn-player> yorumu yazı gövdesiyle aynı satır aralığında (paket 1.5 verir; gövde ve <pgn> metni 1.8) */
