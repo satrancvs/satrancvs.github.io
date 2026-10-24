@@ -34,6 +34,16 @@ const ATTRIBUTIONS = [
   'Fotoğraflar: künyeler her fotoğrafın altında',
 ];
 
+// `credit` (articles.json): yazar adı yerine gösterilen ve bir adrese bağlanan künye (ana sayfa kartı ve "Tüm yazılar" satırı; örn. © İSD). Kart ve satır zaten bir <Link> olduğundan
+// iç içe <a> olmasın diye bağlantı rol="link" bir <span>'dır: tıklanınca (orta tuş ve Enter dahil) adres yeni sekmede açılır, kartın yazı bağlantısı tetiklenmez.
+function CreditLink({ credit }: { credit: { text: string; href: string } }) {
+  const open = (e: React.SyntheticEvent) => { e.preventDefault(); e.stopPropagation(); window.open(credit.href, '_blank', 'noopener,noreferrer'); };
+  return (
+    <span role="link" tabIndex={0} onClick={open} onAuxClick={open} onKeyDown={(e) => { if (e.key === 'Enter') open(e); }}
+      className="underline underline-offset-2 cursor-pointer hover:text-[#C8893E] transition-colors">{credit.text}</span>
+  );
+}
+
 // authorLang (örn. "hu"): yazar adının dili; büyük harfe çevirmede Türkçe İ yerine o dilin kuralı kullanılır (GÖMÖRI).
 // Köşelerin görünme sırası. Henüz yazısı olmayan köşe (örn. Söyleşi) sekmelerde görünmez; yazısı çıkınca (articles.json `cat`) bu sırayla yerini alır.
 // Listede olmayan bir kategori yine de gizlenmez, sona eklenir.
@@ -278,7 +288,7 @@ export default function Index() {
                 <p className={`f-mono text-[#C8893E] w-fit max-w-full ${a.thumb ? 'mt-6' : ''}`}>{a.cat && <>{a.cat} · </>}<span className="whitespace-nowrap">{a.date}</span></p>
                 <h3 className={`f-display mt-3 w-fit max-w-full ${a.draft ? '' : 'group-hover:italic'} transition-all ${i === 0 ? 'text-5xl md:text-6xl' : 'text-3xl md:text-4xl'}`}>{a.titleLines ? <>{a.titleLines[0]}<br /><em className="italic text-[#C8893E]">{a.titleLines[1]}</em></> : a.title}</h3>
                 {a.dek && <p className="text-[1.1875rem] leading-[1.5] text-[#F1E9DC]/70 mt-3 max-w-xl w-fit"><Markdown options={{ forceInline: true }}>{a.dek}</Markdown></p>}
-                <p className="f-mono text-[#A89A88] mt-4 w-fit max-w-full">{a.authorLabel ?? 'Yazar'}: <span lang={a.authorLang}>{a.author}</span></p>
+                <p className="f-mono text-[#A89A88] mt-4 w-fit max-w-full">{a.credit ? <CreditLink credit={a.credit} /> : <>{a.authorLabel ?? 'Yazar'}: <span lang={a.authorLang}>{a.author}</span></>}</p>
                 {/* Diyagram metnin altında; ilk kartta kalan yüksekliği doldurur (FenDiagram `fill`). */}
                 {a.diagram && <FenDiagram fen={a.diagram} orientation={a.diagramOrientation} badge={a.diagramBadge} arrow={a.diagramArrow} label={a.diagramAlt ?? a.title} caption={a.diagramCaption} fill={i === 0} />}
               </>
@@ -319,7 +329,7 @@ export default function Index() {
                   <div>
                     {a.cat && <p className="f-mono text-[#9A5F1E] text-[11px]">{a.cat}</p>}
                     <p className={`f-display text-2xl md:text-4xl ${a.cat ? 'mt-2' : ''} group-hover:italic group-hover:translate-x-2 transition-all duration-500`}>{a.title}</p>
-                    <p className="text-base text-[#0E0C0A]/60 mt-2">{a.author} · <span className="whitespace-nowrap">{a.date}</span></p>
+                    <p className="text-base text-[#0E0C0A]/60 mt-2">{a.credit ? <CreditLink credit={a.credit} /> : a.author} · <span className="whitespace-nowrap">{a.date}</span></p>
                   </div>
                   <ArrowUpRight className="group-hover:rotate-45 transition-transform" />
                 </Link>
