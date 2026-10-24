@@ -96,7 +96,7 @@ Satranç dünyasını yalnızca çocuk yaşta kendini belli eden dehasıyla değ
 Capablanca'nın bahsettiği örnek, boş tahtada merkezde duran bir filin, tahtanın kenarındaki bir atı hapsederek hareketsiz kılabilme becerisiydi.
 
 [FEN "3n4/8/8/3B4/8/8/8/8 w - - 0 1"] (crop: top-half)
-{ [%cal Gd5a8,Gd5g8] [%csl Rb7,Rc6,Rf7,Re6] }
+{ [%cal Gd5a8,Gd5g8,Rd8b7,Rd8c6,Rd8e6,Rd8f7] }
 
 Elbette bu, boş tahtada olduğu gibi, merkez piyonlarının tahtadan kalkmış olduğu ve atın tahtanın kenarında kaldığı oyunortası konumları için de geçerli bir tema.
 
