@@ -1149,12 +1149,11 @@ class PuzzleMode {
     return true;
   }
 
-  /* Play button is shown only once the variation has reached its last move. */
+  /* The way back to the puzzle is the inline play button at the end of the variation's comment (variation-fix.ts keeps one there);
+     the big board play button stays hidden while browsing so there is only one. */
   syncBrowseUi() {
-    const v = this.engine._variation;
-    if (!this.browsing || !v) return;
-    if (v.index >= v.fens.length - 1) this.engine.showPlayBtn();
-    else this.engine.hidePlayBtn();
+    if (!this.browsing || !this.engine._variation) return;
+    this.engine.hidePlayBtn();
   }
 
   /* Leave the variation and return to the puzzle position (the puzzle starts over from there). */

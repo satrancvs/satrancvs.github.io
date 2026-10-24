@@ -102,6 +102,8 @@
 .cp-game .video-comment .comment-line.cp-duplicate { display: none; }
 /* Bulmaca konumunda tahtanın çerçevesi mavi yerine sitenin turuncusu (var(--accent), tur numaralarındaki renk) */
 .cp-game .player-container.puzzle-active .board-wrap .board-b72b1 { box-shadow: 0 0 0 3px var(--accent); }
+/* Bulmaca kenarlığı (3 px, tahtanın dışına) gelince ayarlar çarkı ve açılan içeriği de o kadar yukarı kayar; kenarlığın üstüne binmez. */
+.cp-game .player-container.puzzle-active .board-toolbar { transform: translateY(calc(-100% - 3px)); }
 /* Oyun başlığı (oyuncular, etkinlik, tarih) gösterilmez: bilgi tur başlığında (GameSection) var */
 .cp-game .pgn-headers { display: none; }
 .cp-game .video-title:has(.video-title-text) { display: none; }
