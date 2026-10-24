@@ -47,6 +47,7 @@ function CreditLink({ credit }: { credit: { text: string; href: string } }) {
 // authorLang (örn. "hu"): yazar adının dili; büyük harfe çevirmede Türkçe İ yerine o dilin kuralı kullanılır (GÖMÖRI).
 // Köşelerin görünme sırası. Henüz yazısı olmayan köşe (örn. Söyleşi) sekmelerde görünmez; yazısı çıkınca (articles.json `cat`) bu sırayla yerini alır.
 // Listede olmayan bir kategori yine de gizlenmez, sona eklenir.
+const intro = PUBLISHED.find((a) => a.id === 'giris');
 const CORNER_ORDER = ['Satranç tarihi', 'Turnuva günlüğü', 'Literatür inceleme', 'Analizli oyun', 'Açılış dosyası', 'Özel dosya', 'Söyleşi'];
 const USED = new Set(PUBLISHED.flatMap((a) => catsOf(a)));
 const CORNERS = [...CORNER_ORDER.filter((c) => USED.has(c)), ...[...USED].filter((c) => !CORNER_ORDER.includes(c))];
@@ -370,7 +371,18 @@ export default function Index() {
             <em className="italic text-[#C8893E]">‘Satranç ve siz’ demek.</em>
           </h2>
           <p className="text-[1.1875rem] text-[#F1E9DC]/75 leading-relaxed mt-10 max-w-xl">Satranç vs.; satranç tarihi yazıları, açılış dosyaları, turnuva günlükleri, analizli oyunlar, satranç literatür incelemeleri, özel dosyalar ve söyleşiler yayınlayan bağımsız bir dijital dergidir.</p>
-          <p className="text-[1.1875rem] text-[#F1E9DC]/75 leading-relaxed mt-6 max-w-xl">Bize ulaşmak, yayın ekibine katılmak ya da yazı taslaklarınızı göndermek için <a href="mailto:editor@satrancvs.com" className="underline underline-offset-2 hover:text-[#F1E9DC]">editor@satrancvs.com</a> adresine e-posta gönderebilirsiniz. Yayın ekibi, paylaştığınız tüm öneri ve yazı taslaklarını büyük bir özenle inceler. Değerlendirme süreci zaman alabildiğinden yanıtlardaki olası gecikmelerde göstereceğiniz sabır ve anlayış için şimdiden teşekkür ederiz.</p>
+          {/* İlk sayı yazısına (giris) götüren kart: dergiyi neden çıkardığımızı anlatan yazı. */}
+          {intro && (
+            <Link to={articlePath(intro)} className="group mt-8 max-w-xl flex items-center justify-between gap-6 border border-[#2E2620] hover:border-[#C8893E] transition-colors px-6 py-5">
+              <span className="block">
+                <span className="block f-mono text-[#C8893E] text-[11px]">Dergiyi neden çıkardık?</span>
+                <span className="block f-display text-3xl md:text-4xl mt-2 group-hover:italic transition-all">{intro.title}</span>
+                <span className="block text-base text-[#A89A88] mt-2 leading-snug">Satranç vs.’nin hikâyesi ve sizi masaya çağıran ilk sayı yazısı.</span>
+              </span>
+              <ArrowUpRight className="shrink-0 group-hover:rotate-45 transition-transform" />
+            </Link>
+          )}
+          <p className="text-[1.1875rem] text-[#F1E9DC]/75 leading-relaxed mt-8 max-w-xl">Bize ulaşmak, yayın ekibine katılmak ya da yazı taslaklarınızı göndermek için <a href="mailto:editor@satrancvs.com" className="underline underline-offset-2 hover:text-[#F1E9DC]">editor@satrancvs.com</a> adresine e-posta gönderebilirsiniz. Yayın ekibi, paylaştığınız tüm öneri ve yazı taslaklarını büyük bir özenle inceler. Değerlendirme süreci zaman alabildiğinden yanıtlardaki olası gecikmelerde göstereceğiniz sabır ve anlayış için şimdiden teşekkür ederiz.</p>
         </div>
         {/* Sağ sütun (md ve üstü): yalnızca mono içerik — üstte atıflar, altta telif notu; mobilde alt alta. Sütun aşağı hizalıdır (md:self-end): son satırı sol sütunun son satırıyla aynı taban çizgisindedir. */}
         <div className="md:col-span-6 reveal md:self-end">
