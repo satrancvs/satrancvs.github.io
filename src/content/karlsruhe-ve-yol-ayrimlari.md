@@ -4,7 +4,8 @@ Turnuvadan bir gün önce, 1 Nisan günü vardığım Karlsruhe’de İstanbul�
 
 Devasa bir salon içerisinde yüzlerce masa ve insan, eşlendirmenin tur saatinde bile hâlâ belli olmaması ve dikey numaralandırma düzeni nedeniyle en azından bu duruma alışana dek masanızı bulmanın imkansızlığı…
 
-Sadece A kategorisinde bile başlangıç listesinde başını GM Pavel Eljanov’un çektiği 998 (!) katılımcı olduğunu söylemek herhalde yeterli olur –ki daha B ve C kategorileri ile *freestyle* turnuvasındaki üç kategoriden bahsetmedim bile.
+Sadece A kategorisinde bile başlangıç listesinde başını GM Pavel Eljanov’un çektiği 998 (!<img width="316" height="313" alt="image" src="https://github.com/user-attachments/assets/c1daae0f-8c8e-4592-8249-4f72a58c282d" />
+) katılımcı olduğunu söylemek herhalde yeterli olur –ki daha B ve C kategorileri ile *freestyle* turnuvasındaki üç kategoriden bahsetmedim bile.
 
 Masaya otururken sadece rakibimin adını ve siyah taşlarla oynayacağımı biliyordum. Rakibimin hangi açılışı oynadığından ve hatta oyun kuvvetinden bile bihaber vaziyetteydim.
 
