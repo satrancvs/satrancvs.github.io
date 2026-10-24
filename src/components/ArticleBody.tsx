@@ -460,7 +460,7 @@ const mdOptions = {
     a: { props: { className: 'text-[color:var(--accent)] underline underline-offset-4', target: '_blank', rel: 'noreferrer' } },
     blockquote: { component: Quote },
     ul: { props: { className: 'list-disc pl-6 mb-6 space-y-2 marker:text-[color:var(--accent)]' } },
-    strong: { props: { className: 'font-semibold text-[color:var(--fg)]' } },
+    strong: { props: { className: 'hl' } },
   },
 };
 
