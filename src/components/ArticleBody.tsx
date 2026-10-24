@@ -108,6 +108,8 @@ const COMMENT_HEADING = /(^|\n)[ \t]*###[ \t]+([^\n]+)\n*/g;
 // Aynı mekanizma, yorumun içindeki tek başına bir `[FEN "…"]` satırı için de geçerlidir: oyunda oynanmayan (analizdeki) bir konumun statik diyagramı çizilir
 // (`[D]` yalnızca oyunun o anki konumunu çizer). Çalışma görünümünde (`pgn-study`) canlı tahta olduğu için FEN satırları silinir.
 const COMMENT_FIG_LINE = /^[ \t]*(!\[[^\n]*\)|\[FEN\s+"[^"\n]+"\](?:[ \t]*\[[?!]{1,2}[ \t]+[a-h][1-8]\])?)[ \t]*$/gm;
+// Yazar FEN'i yorumun ortasına (aynı satıra) yazmış olabilir; ChessPublica onu oyunun başlangıç konumu sanır, bu yüzden her zaman kendi satırına alınır.
+const COMMENT_FEN_INLINE = /(\[FEN\s+"[^"\n]+"\](?:[ \t]*\[[?!]{1,2}[ \t]+[a-h][1-8]\])?)/g;
 const COMMENT_FEN = /^\[FEN\s+"([^"]+)"\](?:\s*\[([?!]{1,2})\s+([a-h][1-8])\])?$/;
 // Önceki boş satır da yutulur: blok olan figürün üst boşluğu yalnızca kendi kenar boşluğu olsun (altıyla eşit), araya <br><br> girmesin.
 const COMMENT_FIG = /\s*@@FIG\d+@@[ \t]*\n*/g;
@@ -149,7 +151,7 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
   const intro = lead?.[1].replace(/\[D\]/g, '').trim();
   // <pgn-study>'de bulmaca olmaz: [P] işaretleri silinir.
   const figs: string[] = [];
-  const noFigs = movetext.replace(/\{[^}]*\}/g, (c) => c.replace(COMMENT_FIG_LINE, (_m, fig: string) => (study && COMMENT_FEN.test(fig) ? '' : `@@FIG${figs.push(fig) - 1}@@`)));
+  const noFigs = movetext.replace(/\{[^}]*\}/g, (c) => c.replace(COMMENT_FEN_INLINE, '\n$1\n').replace(COMMENT_FIG_LINE, (_m, fig: string) => (study && COMMENT_FEN.test(fig) ? '' : `@@FIG${figs.push(fig) - 1}@@`)));
   const text = study ? noFigs.replace(/\{\s*\[P\s*\d*\]\s*\}|\[P\s*\d*\]/g, '') : noFigs;
   // Etiketler (başlık <span>'ı, <br>) kaçışlandıktan SONRA eklenir: <pgn> içeriğini innerHTML ile okur, etiketler böyle gerçek etiket olarak ChessPublica'ya ulaşır.
   const raw = commentMarkup(`${head}\n\n${text.trim()}`.replace(/&/g, '&amp;').replace(/</g, '&lt;'));
