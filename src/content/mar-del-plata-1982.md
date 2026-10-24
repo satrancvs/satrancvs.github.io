@@ -1,4 +1,4 @@
-Bu yazı, geçtiğimiz aylarda yaşamını yitiren Hollandalı Büyük Usta ==Jan Timman=='ın (1951-2026) kariyerinden bir turnuvaya odaklanacak. Timman'ın reyting listesinde dünya şampiyonu ==Karpov'un ardından ikinci sırada== yer aldığı 1982 senesine gideceğiz. Arjantin'in iyileştirici havasında Timman'ın partilerinin öğretici anlarına odaklanacağız.
+Bu yazı, geçtiğimiz aylarda yaşamını yitiren Hollandalı Büyük Usta **Jan Timman**'ın (1951-2026) kariyerinden bir turnuvaya odaklanacak. Timman'ın reyting listesinde dünya şampiyonu Karpov'un ardından ==ikinci sırada== yer aldığı 1982 senesine gideceğiz. Arjantin'in iyileştirici havasında Timman'ın partilerinin öğretici anlarına odaklanacağız.
 
 Oyunların önemli anlarında okuyucuyu Timman ile birlikte hamleleri bulmaya davet ediyorum. Timman'ın turnuva oyunlarını incelerken satranç tarihinin başka efsane isimlerine de elbette değinme şansımız olacak. Benim için öğretici olan bu denemenin okuyucu için de faydalı olacağını umuyorum.
 
@@ -21,9 +21,9 @@ Oyunların önemli anlarında okuyucuyu Timman ile birlikte hamleleri bulmaya da
 
 {[P]} 31... Bxc5! { Siyahın güçlü seçeneklerinden yalnızca biri. } 32. Rxc5 Nxc5 33. Bxe5 { [P] } ( 33. Qxc5 Rd2 $19 { Siyahın 31. hamlesinin ana fikri buydu. } ) 33... Nd3! $19 { Bu hamle sayesinde artık 34. Qxh6+ üstünlük sağlamaz. Siyahın ...Nxe5 tehdidi bu fikrin başarılı olmasına engel oluyor. Kalite fazla olan Siyah, kolaylıkla olmasa da oyunu kazanmayı bildi. } 0-1
 
-Dünya satrancının ilk on isminden beşinin katıldığı (==Karpov, Timman, Polugaevsky, Portisch, Andersson==) 1982 Mar del Plata turnuvası, Timman'ın kariyerinin en önemli zaferlerinden biriydi.
+Dünya satrancının ilk on isminden beşinin katıldığı (**Karpov**, **Timman**, **Polugaevsky**, **Portisch**, **Andersson**) 1982 Mar del Plata turnuvası, Timman'ın kariyerinin en önemli zaferlerinden biriydi.
 
-Öğretici eserleriyle tanınan ==Zenón Franco Ocampos=='un (1956-2024) [aktardığına göre](https://es.chessbase.com/post/zenon-franco-683-magistral-clarin-1982) turnuvanın hemen öncesinde Timman hastaydı. İlk turu kaybederek kötü bir başlangıç yapan Timman, Güney Amerika havasının kendisine yaradığını sonraki turlarda hissedecek ve Arjantin'de oynanan son Clarín turnuvasını kazanacaktı.
+Öğretici eserleriyle tanınan **Zenón Franco Ocampos**'un (1956-2024) [aktardığına göre](https://es.chessbase.com/post/zenon-franco-683-magistral-clarin-1982) turnuvanın hemen öncesinde Timman hastaydı. İlk turu kaybederek kötü bir başlangıç yapan Timman, Güney Amerika havasının kendisine yaradığını sonraki turlarda hissedecek ve Arjantin'de oynanan son Clarín turnuvasını kazanacaktı.
 
 Timman şöyle [anlatıyordu](https://es.chessbase.com/post/zenon-franco-683-magistral-clarin-1982):
 
@@ -57,7 +57,7 @@ Sade, teknik konumlara olan hâkimiyeti nedeniyle bir oyunsonu efsanesi olarak a
 
 ### *Don Miguel* karşısında ilk kazanç
 
-Turnuva oynandığı sırada yetmiş bir yaşında olan ==Miguel Najdorf==, yaşına rağmen bu devler arenasında yalnızca üç oyun kaybetmişti. Otuz yaşındaki rakibi Timman ise belki de bu oyunun yarattığı ivmeyle turnuva zaferine imza atacaktı.
+Turnuva oynandığı sırada yetmiş bir yaşında olan **Miguel Najdorf**, yaşına rağmen bu devler arenasında yalnızca üç oyun kaybetmişti. Otuz yaşındaki rakibi Timman ise belki de bu oyunun yarattığı ivmeyle turnuva zaferine imza atacaktı.
 
 Garry Kasparov, _My Great Predecessors_ (Benim Ustalarım) serisinin dördüncü cildinde Najdorf'a ayırdığı bölümde şöyle anlatıyordu:
 
@@ -111,7 +111,7 @@ Panno'ya karşı felaketin eşiğinden dönen Timman'ın, Karpov karşısında d
 
 ![Anatoly Karpov ön planda, Jan Timman arka planda (siyah-beyaz fotoğraf)](images/karpov-timman-1979.jpg "Ön planda Karpov, arka planda <span lang="nl">Timman</span>, 1979 · Fotoğraf: Koen Suyk / Anefo · Hollanda Ulusal Arşivi · Lisans: [CC0 1.0 (Kamu Bağışı)](https://creativecommons.org/publicdomain/zero/1.0/deed.tr) · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:2e_Ronde_Karpov_op_de_voorgrond,_Timman_op_de_achtergrond,_Bestanddeelnr_930-5234.jpg)")
 
-Karpov ise bundan önceki Clarín turnuvası ile beraber o yıllarda neredeyse önüne çıkan ==her turnuvayı kazanmaktaydı==. Timman ve Polugaevsky'e göre, **Korchnoi**'ya karşı henüz birkaç ay önce ==ünvanını savunmuş== olması şampiyonun 1982 Clarín turnuvasındaki performansını olumsuz etkilemişti.
+Karpov ise bundan önceki Clarín turnuvası ile beraber o yıllarda neredeyse önüne çıkan ==her turnuvayı kazanmaktaydı==. Timman ve Polugaevsky'e göre, **Korchnoi**'ya karşı henüz birkaç ay önce ünvanını savunmuş olması şampiyonun 1982 Clarín turnuvasındaki performansını olumsuz etkilemişti.
 
 [Event "Mar del Plata"]
 [Site "Mar del Plata"]
@@ -161,7 +161,7 @@ Daha sonra Uluslararası Usta ünvanına kavuşacak **Sergio Carlos Giardelli** 
 
 1. d4 Nf6 2. c4 e6 3. Nf3 b6 { Vezir-Hint Savunması, kariyeri boyunca Timman'ın önemli silahlarından biri olagelmişti. } 4. Nc3 Bb4 { Artık aynı zamanda Nimzo-Hint sularındayız. } 5. Qb3 c5 6. a3 Ba5! {Gerginliği tutmak oldukça elverişli. } 7. dxc5 bxc5 8. Be3 Ne4! (8... d6 9. O-O-O {Belki de Beyazın planıydı. }) 9. g3 Nc6! 10. Bg2?? { [P] Beyaz, tehdidi gözden kaçırıyor. } 10... Rb8 11. Qc2 { [P] } 11... Rxb2! 12. Qxe4 Bxc3+ 13. Kf1 { Siyah, piyon fazla ve şahın konumu nedeniyle Beyazın bunu telafi etmesi güç görünüyor. } 13... Qa5 14. Rd1 Bf6 15. Ne1 Qa4 16. Rc1 Bd4 17. Bxd4 Nxd4 18. e3 Nb3 19. Qe5 Ra2 20. Qxg7 Rf8 0-1
 
-Fischer'in yakın dostu ve yardımcısı Arjantinli Büyük Usta **Miguel Quinteros** 1972'de Spassky'e karşı hazırlanırken Fischer'e yardım etmiş ve hatta 1992 senesindeki rövanş maçında da Fischer'in yanında bulunmuştu. Orijinal oyun stiliyle bilinen Quinteros, aynı zamanda ==Apartheid== rejimi zamanında yasaklı Güney Afrika'da satranç oynayıp yasağı delen ve bundan ötürü "üç yıl men" cezası alan oldukça tartışmalı bir figür.
+Fischer'in yakın dostu ve yardımcısı Arjantinli Büyük Usta **Miguel Quinteros** 1972'de Spassky'e karşı hazırlanırken Fischer'e yardım etmiş ve hatta 1992 senesindeki rövanş maçında da Fischer'in yanında bulunmuştu. Orijinal oyun stiliyle bilinen Quinteros, aynı zamanda _Apartheid_ rejimi zamanında yasaklı Güney Afrika'da satranç oynayıp yasağı delen ve bundan ötürü "üç yıl men" cezası alan oldukça tartışmalı bir figür.
 
 ![Jan Timman hamle sırası kendisinde, Amsterdam, 1978 (siyah-beyaz fotoğraf)](images/jan-timman-amsterdam-1978-b.jpg "<span lang="nl">Jan Timman</span>, 1978 · Fotoğraf: Rob Croes / Anefo · Hollanda Ulusal Arşivi · Lisans: [CC0 1.0 (Kamu Bağışı)](https://creativecommons.org/publicdomain/zero/1.0/deed.tr) · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:IBM_schaaktoernooi_3e_ronde_Timman_aan_zet,_Bestanddeelnr_929-8190.jpg)")
 
