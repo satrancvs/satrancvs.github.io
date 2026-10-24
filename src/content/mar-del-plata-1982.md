@@ -257,6 +257,7 @@ Son tura turnuva şampiyonluğunu garanti ederek giren Timman, bir başka efsane
 [White "Lev Polugaevsky"]
 [Black "Jan Timman"]
 [Result "1/2-1/2"]
+[ResultInline "1"]
 [WhiteElo "2600"]
 [BlackElo "2655"]
 [Annotator "FM Nazmi Can Doğan"]
