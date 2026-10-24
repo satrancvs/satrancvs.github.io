@@ -141,7 +141,7 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
   // [View "player"] etiketi oyunu (bulmaca işareti olmasa da) <pgn-player> ile çizdirir; ChessPublica'ya geçirilmez.
   const watch = WATCH_TAG.test(header) || FLIP_TAG.test(header);
   const study = STUDY_TAG.test(header);
-  const clean = header.replace(WATCH_TAG, '').replace(EVENT_LINE_TAG, '').replace(RESULT_INLINE_TAG, '').replace(QUOTE_TAG, '').replace(FLIP_TAG, '').trim();
+  const clean = header.replace(WATCH_TAG, '').replace(EVENT_LINE_TAG, '').replace(RESULT_INLINE_TAG, '').replace(QUOTE_TAG, '').replace(FLIP_TAG, '').replace(/\n\s*\n/g, '\n').trim(); // ChessPublica ends the header at the first blank line: a removed tag line must not leave one
   const resultInline = RESULT_INLINE_TAG.test(header);
   const side = study ? null : puzzleSide(clean, moves);
   const head = side === 'b' && !/\[Orientation\s/i.test(clean) ? `${clean}\n[Orientation "black"]` : clean;

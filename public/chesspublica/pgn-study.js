@@ -116,6 +116,8 @@ class PgnStudyElement extends HTMLElement {
 
     const studyEl = this;
     studyEl.insertAdjacentHTML('beforebegin', LOADING_HTML);
+    /* Site patch (several studies on one page): everything below looks up its elements inside this study, never through document-wide ids. */
+    const loadingEl = studyEl.previousElementSibling;
 
     /* <pgn-study> holds the PGN text exactly once — either inline as its
        own content, or fetched from a `src` URL (e.g. a Lichess study/game
@@ -144,7 +146,7 @@ class PgnStudyElement extends HTMLElement {
       try {
         pgnText = await fetchText(src);
       } catch (e) {
-        document.getElementById('pgnStudyLoading')?.remove();
+        loadingEl?.remove();
         const err = document.createElement('div');
         err.style.cssText = 'color:red;font-family:monospace;white-space:pre-wrap;padding:0.5rem;border:1px solid red;margin:1rem 0;';
         err.textContent = `ChessPublica error: failed to load <pgn-study> from ${src}: ${e.message}`;
@@ -299,7 +301,7 @@ initPgnElements();
         };
         Object.entries(ribbonIconMap).forEach(([id, selector]) => {
             const iconUrl = playerEl.querySelector(selector)?.style.getPropertyValue('--icon');
-            if (iconUrl) document.getElementById(id).style.setProperty('--icon', iconUrl);
+            if (iconUrl) studyEl.querySelector('#' + id).style.setProperty('--icon', iconUrl);
         });
 
         // The collapse toggle, play/pause button, and TOC button have no
@@ -314,14 +316,14 @@ initPgnElements();
         // collapse toggle's own icon starts as "circle-x" (expanded —
         // click to collapse); syncCollapseToggle() below swaps it to
         // "maximize-2" (collapsed — click to expand) and back.
-        document.getElementById('pgnStudyPlayPauseIcon').style.setProperty('--icon', lucideIconUrl('circle-play'));
-        document.getElementById('pgnStudyTocIcon').style.setProperty('--icon', lucideIconUrl('list'));
-        document.getElementById('pgnStudySettingsIcon').style.setProperty('--icon', lucideIconUrl('settings'));
+        studyEl.querySelector('#pgnStudyPlayPauseIcon').style.setProperty('--icon', lucideIconUrl('circle-play'));
+        studyEl.querySelector('#pgnStudyTocIcon').style.setProperty('--icon', lucideIconUrl('list'));
+        studyEl.querySelector('#pgnStudySettingsIcon').style.setProperty('--icon', lucideIconUrl('settings'));
         // Same "A≡" glyph pgn.js/pgn-player.js already use for a game's own
         // title byline (.video-title-emoji) — already the site's existing
         // shorthand for "article text", so reused here rather than adding
         // a new icon to assets/icons.js's curated set.
-        document.getElementById('pgnStudyArticleIcon').style.setProperty('--icon', lucideIconUrl('text-initial'));
+        studyEl.querySelector('#pgnStudyArticleIcon').style.setProperty('--icon', lucideIconUrl('text-initial'));
 
         /* ARTICLE ribbon button (mobile only — see its own CSS) — a plain
            layout toggle with no engine/board dependency at all, so it's
@@ -329,7 +331,7 @@ initPgnElements();
            wait on the engine to finish loading first): a reader should
            still be able to read the article text even if the interactive
            board somehow fails to come up. */
-        const articleBtn = document.querySelector('.pgn-study-ribbon-btn[data-ribbon-action="article"]');
+        const articleBtn = studyEl.querySelector('.pgn-study-ribbon-btn[data-ribbon-action="article"]');
         articleBtn.disabled = false;
         articleBtn.addEventListener('click', () => {
             const active = studyEl.classList.toggle('mobile-article-view');
@@ -344,8 +346,8 @@ initPgnElements();
         // .pgn-study-collapsed's own CSS (above) acts on to hide every
         // other direct child of <pgn-study> and shrink the frame down to
         // just the ribbon.
-        const collapseToggle = document.getElementById('pgnStudyCollapseToggle');
-        const collapseIcon = document.getElementById('pgnStudyCollapseIcon');
+        const collapseToggle = studyEl.querySelector('#pgnStudyCollapseToggle');
+        const collapseIcon = studyEl.querySelector('#pgnStudyCollapseIcon');
         function syncCollapseToggle() {
             const collapsed = studyEl.classList.contains('pgn-study-collapsed');
             const label = collapsed ? 'Expand' : 'Collapse';
@@ -356,7 +358,7 @@ initPgnElements();
         }
         function setCollapsed(collapsed) {
             if (studyEl.classList.contains('pgn-study-collapsed') === collapsed) return;
-            document.getElementById('pgnStudyLoading')?.remove();
+            loadingEl?.remove();
             studyEl.classList.toggle('pgn-study-collapsed', collapsed);
             syncCollapseToggle();
             /* Un-collapsing hands pgn-player's board back its real size in
@@ -404,8 +406,8 @@ initPgnElements();
         let readyEngine = null;
 
         function revealStudy() {
-            document.getElementById('pgnStudyLoading')?.classList.remove('visible');
-            document.getElementById('pgnStudyLoading')?.remove();
+            loadingEl?.classList.remove('visible');
+            loadingEl?.remove();
             studyEl.classList.add('cp-ready');
             columnResizer.setToMaxWidth();
             if (readyEngine && readyEngine.board && typeof readyEngine.board.resize === "function") {
@@ -473,9 +475,9 @@ initPgnElements();
                 // pulled into its own pill instead of cloning the whole
                 // block (which carries its own unwanted block-level
                 // layout/spacing built for a full column, not a ribbon).
-                const ribbonTitleIcon = document.getElementById('pgnStudyRibbonTitleIcon');
-                const ribbonTitleText = document.getElementById('pgnStudyRibbonTitleText');
-                const ribbonTitleSubtext = document.getElementById('pgnStudyRibbonTitleSubtext');
+                const ribbonTitleIcon = studyEl.querySelector('#pgnStudyRibbonTitleIcon');
+                const ribbonTitleText = studyEl.querySelector('#pgnStudyRibbonTitleText');
+                const ribbonTitleSubtext = studyEl.querySelector('#pgnStudyRibbonTitleSubtext');
                 const titleIconUrl = originalTitle.querySelector('.video-title-emoji')?.style.getPropertyValue('--icon');
                 if (titleIconUrl) ribbonTitleIcon.style.setProperty('--icon', titleIconUrl);
                 ribbonTitleText.textContent =
@@ -673,11 +675,11 @@ initPgnElements();
             // to sit on the play/pause button, but the speed button is
             // the one this multiplier is actually about) — resynced
             // straight from its own click handler below.
-            const speedBadge = document.getElementById('pgnStudySpeedBadge');
+            const speedBadge = studyEl.querySelector('#pgnStudySpeedBadge');
             const syncSpeedBadge = () => { speedBadge.textContent = engine.state.speed + 'x'; };
             syncSpeedBadge();
 
-            document.querySelectorAll('.pgn-study-ribbon-btn').forEach(btn => {
+            studyEl.querySelectorAll('.pgn-study-ribbon-btn').forEach(btn => {
                 const action = btn.dataset.ribbonAction;
                 const target = playerEl.querySelector(`.settings-btn[data-action="${action}"]`);
                 if (!target) return;
@@ -714,8 +716,8 @@ initPgnElements();
                latter left this button stuck on "Play" — silently wrong,
                not just unsynced — the entire time a variation was
                actually auto-playing. */
-            const playPauseBtn = document.querySelector('.pgn-study-ribbon-btn[data-ribbon-action="toggle-play"]');
-            const playPauseIcon = document.getElementById('pgnStudyPlayPauseIcon');
+            const playPauseBtn = studyEl.querySelector('.pgn-study-ribbon-btn[data-ribbon-action="toggle-play"]');
+            const playPauseIcon = studyEl.querySelector('#pgnStudyPlayPauseIcon');
             const syncPlayPauseButton = () => {
                 const playing = engine.state.playing || !!(engine._variation && engine._variation.playing);
                 playPauseIcon.style.setProperty('--icon', lucideIconUrl(playing ? 'pause' : 'circle-play'));
@@ -762,8 +764,8 @@ initPgnElements();
                here since buildOpeningToc() below still needs to fetch
                and render it first — toggling just expands/collapses an
                empty shell either way until then. */
-            const tocBtn = document.querySelector('.pgn-study-ribbon-btn[data-ribbon-action="toc"]');
-            const tocAccordion = document.getElementById('pgnStudyTocAccordion');
+            const tocBtn = studyEl.querySelector('.pgn-study-ribbon-btn[data-ribbon-action="toc"]');
+            const tocAccordion = studyEl.querySelector('#pgnStudyTocAccordion');
             tocBtn.disabled = false;
             tocBtn.addEventListener('click', () => {
                 tocAccordion.classList.toggle('open');
@@ -772,8 +774,8 @@ initPgnElements();
             /* Settings ribbon button — shows/hides the flip/speed/download
                group inline in the ribbon's right-hand side (see the
                markup above and .pgn-study-settings-inline's CSS). */
-            const settingsBtn = document.querySelector('.pgn-study-ribbon-btn[data-ribbon-action="settings"]');
-            const settingsInline = document.getElementById('pgnStudySettingsInline');
+            const settingsBtn = studyEl.querySelector('.pgn-study-ribbon-btn[data-ribbon-action="settings"]');
+            const settingsInline = studyEl.querySelector('#pgnStudySettingsInline');
             settingsBtn.disabled = false;
             settingsBtn.addEventListener('click', () => {
                 settingsInline.classList.toggle('open');
@@ -1562,7 +1564,7 @@ initPgnElements();
                     });
                 }
 
-                const accordion = document.getElementById('pgnStudyTocAccordion');
+                const accordion = studyEl.querySelector('#pgnStudyTocAccordion');
                 const accordionHeading = document.createElement('h3');
                 accordionHeading.className = 'pgn-study-toc-heading';
                 accordionHeading.textContent = 'Table of Contents';
