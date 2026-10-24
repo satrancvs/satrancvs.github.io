@@ -217,7 +217,7 @@
 }
 
 /* Palavan–Euwe: alıntı kutusundaki (.quote) çalışma görünümü her genişlikte tek sütun kalır (iki sütun yalnızca .study-frame içinde). */
-.quote .flip-stage { --study-pad: 0px; }
+.quote-game { --study-pad: 0px; }
 
 /* Geniş ekranda (≥ 56em) iki sütun: solda tahta ve düğme şeridi, sağda kayan hamle ve yorum listesi. Dar ekran tek sütun kalır. */
 @media (min-width: 56em) {

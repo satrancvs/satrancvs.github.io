@@ -602,7 +602,10 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       const startFen = !useFallback && !WATCH_TAG.test(c) && !FLIP_TAG.test(c) && !puzzleSide(c, moves) && !FIRST_MOVE_DIAGRAM.test(moves) ? c.match(/\[FEN\s+"([^"]+)"\]/i)?.[1] : undefined;
       if (QUOTE_TAG.test(c)) {
         // Hemen ardından aynı oyunun bulmaca (oynatıcılı) hali geliyorsa o da aynı kutunun içine girer (Palavan–Euwe).
-        const nextAt = i + (own ? 2 : 1);
+        let nextAt = i + (own ? 2 : 1);
+        // İki oyunun arasındaki düz paragraf (Palavan: "Fakat Siyahlar zarif bir kombinezonla…") aynı kutunun içinde, ikisinin arasında kalır.
+        const bridge = chunks[nextAt] && !/^(\[Event |#|>|-|!\[|<|\[FEN)/.test(chunks[nextAt].trim()) && chunks[nextAt + 1]?.trim().startsWith('[Event ') ? chunks[nextAt].trim() : undefined;
+        if (bridge) nextAt++;
         const nextItem = chunks[nextAt]?.trim().startsWith('[Event ') ? games[gameNo] : undefined;
         const puzzle = nextItem && !nextItem.watch && nextItem.key === item.key ? nextItem : undefined;
         let puzzleBox: ReactNode = null;
@@ -614,9 +617,9 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
           const pm = gameMoves(chunks, nextAt);
           // `[Flip "puzzle"]`: oynatıcı (analiz) bitince tahta döner, bulmaca öne gelir (FlipGame). ChessPublica yüklenemediyse düz sıralı halde kalır.
           if (FLIP_TAG.test(c) && !useFallback) {
-            flipBox = <div id={puzzle.id} className="scroll-mt-8"><FlipGame front={game} back={<PgnGame header={hdr} moves={pm.moves} />} /></div>;
+            flipBox = <div id={puzzle.id} className="scroll-mt-8"><FlipGame front={game} between={bridge ? <p><Markdown options={{ forceInline: true }}>{bridge}</Markdown></p> : undefined} back={<PgnGame header={hdr} moves={pm.moves} />} /></div>;
           } else {
-            puzzleBox = <div id={puzzle.id} className="scroll-mt-8 mt-8">{useFallback ? <Game header={hdr} moves={pm.moves} /> : <PgnGame header={hdr} moves={pm.moves} />}</div>;
+            puzzleBox = <>{bridge && <p><Markdown options={{ forceInline: true }}>{bridge}</Markdown></p>}<div id={puzzle.id} className="scroll-mt-8 mt-8">{useFallback ? <Game header={hdr} moves={pm.moves} /> : <PgnGame header={hdr} moves={pm.moves} />}</div></>;
           }
           skip = nextAt - i + (pm.own ? 1 : 0);
         }

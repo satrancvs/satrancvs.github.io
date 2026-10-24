@@ -49,7 +49,7 @@ function lineText(v: Variation, d: PuzzleDetail) {
   return out.join(' ');
 }
 
-export default function FlipGame({ front, back }: { front: ReactNode; back: ReactNode }) {
+export default function FlipGame({ front, between, back }: { front: ReactNode; between?: ReactNode; back: ReactNode }) {
   const root = useRef<HTMLDivElement>(null);
   const backEl = useRef<HTMLDivElement>(null);
   const notesEl = useRef<HTMLDivElement>(null);
@@ -106,6 +106,7 @@ export default function FlipGame({ front, back }: { front: ReactNode; back: Reac
   return (
     <div ref={root} className="flip-stage">
       <div className="flip-face flip-front">{front}</div>
+      {between}
       <div ref={backEl} className="flip-face flip-back is-active">
         {back}
         <div ref={notesEl} className="puzzle-notes" aria-live="polite" />
