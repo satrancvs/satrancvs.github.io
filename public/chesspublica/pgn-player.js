@@ -1089,6 +1089,7 @@ class GoodMove {
       this._badge.remove();
       this._badge = null;
     }
+    this.boardEl.querySelectorAll(".gm-badge").forEach((el) => el.remove());
   }
 }
 
@@ -2702,6 +2703,9 @@ class VideoEngine {
 
     if (this.goodMove) {
       requestAnimationFrame(() => {
+        /* A variation entered in the meantime (a click on a variation move calls goTo() first) must keep its own badge:
+           this late mainline badge would stay on a square the variation no longer has the piece on. */
+        if (this._variation) return;
         const lastMove = moveIdx >= 0 ? this.state.history?.[moveIdx] : null;
         this.goodMove.render(moveIdx, this.state.glyphs, this.state.moves, lastMove);
       });
