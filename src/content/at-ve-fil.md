@@ -75,7 +75,7 @@ Emanuel Lasker, İngiltere ve Amerika Birleşik Devletleri'ndeki üniversitelerd
 
 > Bazı satranç dostları atı file, bazıları ise fili ata tercih eder ve taş değişmeleri buna göre yapar. Haklı olan kim? Yoksa bu işlerde ne haklı ne haksız mı var? Belki de bu taşların karşılıklı değeri, akıl sır ermez rastlantıların hükmü altındadır.
 >
-> Biliyoruz ki _ceteris paribus_ (diğer her şey eşitken) at ve fil eşittir, her ikisi de _ceteris paribus_ üç piyon değerindedir. Ancak "_ceteris paribus_" teriminin içerdiği varsayım önemlidir: "diğer bütün koşullar eşitken" -_ceteris paribus_'un anlamı budur.
+> Biliyoruz ki _ceteris paribus_ (diğer her şey eşitken) at ve fil eşittir, her ikisi de _ceteris paribus_ üç piyon değerindedir. Ancak "_ceteris paribus_" teriminin içerdiği varsayım önemlidir: "diğer bütün koşullar eşitken" – _ceteris paribus_'un anlamı budur.
 >
 > Ama gerçekte ‘diğer bütün koşullar’ hiçbir zaman eşit değildir. Tüm koşulları eşit ağırlıkta ya da önemde saymak, bize ait bir varsayımdır.
 >
