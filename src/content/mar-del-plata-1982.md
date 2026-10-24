@@ -1,4 +1,4 @@
-Bu yazı, geçtiğimiz aylarda yaşamını yitiren Hollandalı Büyük Usta **Jan Timman**'ın (1951-2026) kariyerinden bir turnuvaya odaklanacak. Timman'ın reyting listesinde dünya şampiyonu ==Karpov'un ardından ikinci sırada== yer aldığı 1982 senesine gideceğiz. Arjantin'in iyileştirici havasında Timman'ın partilerinin öğretici anlarına odaklanacağız.
+Bu yazı, geçtiğimiz aylarda yaşamını yitiren Hollandalı Büyük Usta ==Jan Timman=='ın (1951-2026) kariyerinden bir turnuvaya odaklanacak. Timman'ın reyting listesinde dünya şampiyonu ==Karpov'un ardından ikinci sırada== yer aldığı 1982 senesine gideceğiz. Arjantin'in iyileştirici havasında Timman'ın partilerinin öğretici anlarına odaklanacağız.
 
 Oyunların önemli anlarında okuyucuyu Timman ile birlikte hamleleri bulmaya davet ediyorum. Timman'ın turnuva oyunlarını incelerken satranç tarihinin başka efsane isimlerine de elbette değinme şansımız olacak. Benim için öğretici olan bu denemenin okuyucu için de faydalı olacağını umuyorum.
 
@@ -21,9 +21,9 @@ Oyunların önemli anlarında okuyucuyu Timman ile birlikte hamleleri bulmaya da
 
 {[P]} 31... Bxc5! { Siyahın güçlü seçeneklerinden yalnızca biri. } 32. Rxc5 Nxc5 33. Bxe5 { [P] } ( 33. Qxc5 Rd2 $19 { Siyahın 31. hamlesinin ana fikri buydu. } ) 33... Nd3! $19 { Bu hamle sayesinde artık 34. Qxh6+ üstünlük sağlamaz. Siyahın ...Nxe5 tehdidi bu fikrin başarılı olmasına engel oluyor. Kalite fazla olan Siyah, kolaylıkla olmasa da oyunu kazanmayı bildi. } 0-1
 
-Dünya satrancının ilk on isminden beşinin katıldığı (**Karpov, Timman, Polugaevsky, Portisch, Andersson**) 1982 Mar del Plata turnuvası, Timman'ın kariyerinin en önemli zaferlerinden biriydi.
+Dünya satrancının ilk on isminden beşinin katıldığı (==Karpov, Timman, Polugaevsky, Portisch, Andersson==) 1982 Mar del Plata turnuvası, Timman'ın kariyerinin en önemli zaferlerinden biriydi.
 
-Öğretici eserleriyle tanınan **Zenón Franco Ocampos**'un (1956-2024) [aktardığına göre](https://es.chessbase.com/post/zenon-franco-683-magistral-clarin-1982) turnuvanın hemen öncesinde Timman hastaydı. İlk turu kaybederek kötü bir başlangıç yapan Timman, Güney Amerika havasının kendisine yaradığını sonraki turlarda hissedecek ve Arjantin'de oynanan son Clarín turnuvasını kazanacaktı.
+Öğretici eserleriyle tanınan ==Zenón Franco Ocampos=='un (1956-2024) [aktardığına göre](https://es.chessbase.com/post/zenon-franco-683-magistral-clarin-1982) turnuvanın hemen öncesinde Timman hastaydı. İlk turu kaybederek kötü bir başlangıç yapan Timman, Güney Amerika havasının kendisine yaradığını sonraki turlarda hissedecek ve Arjantin'de oynanan son Clarín turnuvasını kazanacaktı.
 
 Timman şöyle [anlatıyordu](https://es.chessbase.com/post/zenon-franco-683-magistral-clarin-1982):
 
@@ -57,9 +57,9 @@ Sade, teknik konumlara olan hâkimiyeti nedeniyle bir oyunsonu efsanesi olarak a
 
 ### *Don Miguel* karşısında ilk kazanç
 
-Turnuva oynandığı sırada yetmiş bir yaşında olan **Miguel Najdorf**, yaşına rağmen bu devler arenasında yalnızca üç oyun kaybetmişti. Otuz yaşındaki rakibi Timman ise belki de bu oyunun yarattığı ivmeyle turnuva zaferine imza atacaktı.
+Turnuva oynandığı sırada yetmiş bir yaşında olan ==Miguel Najdorf==, yaşına rağmen bu devler arenasında yalnızca üç oyun kaybetmişti. Otuz yaşındaki rakibi Timman ise belki de bu oyunun yarattığı ivmeyle turnuva zaferine imza atacaktı.
 
-Garry Kasparov, _"My Great Predecessors"_ (Benim Ustalarım) serisinin dördüncü cildinde _**Najdorf**_'a ayırdığı bölümde şöyle anlatıyordu:
+Garry Kasparov, _My Great Predecessors_ (Benim Ustalarım) serisinin dördüncü cildinde Najdorf'a ayırdığı bölümde şöyle anlatıyordu:
 
 > Najdorf, tıpkı Arjantin Şampiyonası'nda olduğu gibi defalarca birinci bitirdiği, geleneksel Buenos Aires ve _Mar del Plata_ turnuvalarının ilham kaynağıydı. Daha sonraki yıllarda, yaşının ağırlığı kendini hissettirmeye başladığında, bu turnuvalara onur konuğu olarak katılırdı. Bazen masaların arasında dolaşıp pozisyonları büyük bir ilgiyle incelerken kendini kaybeder ve boş sandalyelerden birine oturuverirdi. Oyuncular gülümser, belki de içlerinden Najdorf'un tahtada aniden bir hamle yapıp yapmayacağını merak ederlerdi.
 >
