@@ -143,3 +143,7 @@ While a gated comment waits for its Play button (`_showComment` with `onPlay`), 
 
 ### Stale mainline badge in a variation (site patch)
 `goTo()` draws the mainline quality badge in a `requestAnimationFrame`. A click on a variation move calls `goTo()` first and then enters the variation, so the late mainline badge (`?` on g7) stayed on the variation board. The callback now returns when `_variation` is set, and `GoodMove._clear()` removes every `.gm-badge` of the board.
+
+### Browsing a side variation during an unsolved puzzle (site patch in `pgn-player.js`)
+Upstream blocks every variation click/arrow/play while a puzzle is active (`puzzle.active`). The Timman puzzles show side lines next to the puzzle, so `PuzzleMode` got a `browsing` state:
+`enterBrowse()` (called by a var-move click and the variation's play icon; refused for puzzles inside a variation) lets the reader step through a variation (clicks, arrows, variation autoplay) while the puzzle stays unsolved: the mainline move list stays hidden, dragging/hint are ignored (`canDrag`, `handleDrop`, `handleSquareClick`, `showHint`), `handleVariationArrival` returns early so the puzzle is not deactivated. At the variation's last move `syncBrowseUi()` shows the big play button (`showVariationPosition` calls it); `play()` / space / ArrowLeft before the first move call `endBrowse()`: exit the variation, deactivate and `goTo(state.index)` again, which re-activates the puzzle at its start position (a half-solved multi-ply puzzle starts over).

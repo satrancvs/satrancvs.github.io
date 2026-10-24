@@ -66,6 +66,9 @@
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment { grid-column: 2; grid-row: 1 / span 2; width: auto; max-width: none; margin: 0; display: flex; flex-direction: column; min-height: var(--board-size); }
   /* Kısa yorumlar tahtanın alt kenarına hizalanır; tahtadan uzun olanlar üstten başlayıp aşağı uzar (üstte boşluk kalmaz, taşma yukarı olmaz). */
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment > .comment-line:first-child { margin-top: auto; }
+  /* Duraklatılmış konumda (yorumsuz [D] işareti) tahtanın ortasındaki büyük oynat düğmesi sağ sütuna, sola yaslı ve tahtanın alt kenarına hizalı taşınır; varyantlar düğmenin üstünde kalır. */
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .board-wrap .play { top: auto; bottom: 0; left: calc(100% + 1.5rem); transform: none; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .player-wrapper:has(.board-wrap .play:not(.hidden)) .video-comment { padding-bottom: 3.5rem; box-sizing: border-box; }
 }
 /* Yeterince geniş ekranda (sağa taşan sütuna ekranda yer kalır) tahta yazı sütununun ortasında durur, yorum sütunu sağa, sütunun dışına taşar; genişlikler aynı, yalnızca konum kayar. */
 @media (min-width: 71.5em) {
@@ -74,6 +77,8 @@
      tahtanın soluna konur; sütunlar yazı sütunundan sola/sağa taşar. */
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment > .comment-line { position: absolute; top: 0; right: calc(100% + 340px + 3rem); width: 280px; min-height: var(--board-size); display: flex; flex-direction: column; text-align: left; margin-top: 0; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment > .comment-line .comment-text-block { margin-top: auto; flex: 0 0 auto; }
+  /* Varyantın içindeyken yorum zaten varyant metninde görünüyorsa sol satır gizlenir (variation-fix.ts .cp-duplicate); yukarıdaki display: flex bu kuralı ezmesin. */
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment > .comment-line.cp-duplicate { display: none; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment > .comment-line + .variation-block, .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment > .variation-block:first-child { margin-top: auto; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment > .comment-line .comment-icon { display: none; }
 }

@@ -662,12 +662,29 @@ function loadPGN(pgn) {
        down the variation state a variation puzzle depends on) before
        goTo() ever gets a chance to no-op, so the guard has to live here
        too. */
-    if (engine.puzzle && engine.puzzle.active) return;
+    if (engine.puzzle && engine.puzzle.active && !engine.puzzle.browsing) return;
 
     // Only handle arrow keys if the player is visible in the viewport
     const rect = engine.container.getBoundingClientRect();
     const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
     if (!isVisible) return;
+
+    /* Site patch: stepping a side variation while the puzzle waits — never leaves it by arrows except back to the puzzle. */
+    if (engine.puzzle && engine.puzzle.browsing && engine._variation) {
+      if (e.code !== "ArrowRight" && e.code !== "ArrowLeft") return;
+      e.preventDefault();
+      engine._enterKeyboardMode();
+      if (engine._variation.playing) engine._pauseVariationPlay();
+      const vi = engine._variation.index;
+      if (e.code === "ArrowRight") {
+        if (vi < engine._variation.fens.length - 1) engine.variationGoTo(vi + 1);
+      } else if (vi > 1) {
+        engine.variationGoTo(vi - 1);
+      } else {
+        engine.puzzle.endBrowse();
+      }
+      return;
+    }
 
     if (e.code === "ArrowRight") {
       e.preventDefault();
@@ -1114,6 +1131,41 @@ class PuzzleMode {
     this.marker         = null; // the puzzle marker object currently being solved — flagged .solved on completion
     this._ctx           = null; // source of fens/moves: mainline state or an active variation
     this.selectedSquare = null; // click-to-move: square holding the picked-up piece, if any
+    this.browsing       = false; // Site patch: a side variation is being stepped through while the puzzle waits (unsolved)
+  }
+
+  /* Site patch — browsing a side variation during an unsolved mainline puzzle.
+     The reader may click/step through a variation shown next to the puzzle; the puzzle stays unsolved
+     (the mainline list stays hidden) and its state is kept. At the variation's end the play button
+     returns to the puzzle position (endBrowse). Returns false when the click must stay blocked
+     (puzzles inside a variation keep the original behavior). */
+  enterBrowse() {
+    if (!this.active) return true;
+    if (this.browsing) return true;
+    if (this._ctx && this._ctx.isVariation) return false;
+    this.browsing = true;
+    this._clearSelection();
+    return true;
+  }
+
+  /* Play button is shown only once the variation has reached its last move. */
+  syncBrowseUi() {
+    const v = this.engine._variation;
+    if (!this.browsing || !v) return;
+    if (v.index >= v.fens.length - 1) this.engine.showPlayBtn();
+    else this.engine.hidePlayBtn();
+  }
+
+  /* Leave the variation and return to the puzzle position (the puzzle starts over from there). */
+  endBrowse() {
+    if (!this.browsing) return;
+    const engine = this.engine;
+    this.browsing = false;
+    if (engine._variation && engine._variation.playing) engine._pauseVariationPlay();
+    engine.exitVariation();
+    engine.hidePlayBtn();
+    this._deactivate();
+    engine.goTo(engine.state.index);
   }
 
   /* Called from VideoEngine.goTo() for every moveIndex the player lands on. */
@@ -1142,6 +1194,7 @@ class PuzzleMode {
      marker is attached to, fens/verbose are the variation's own FEN and
      move-detail arrays (varFENs/varVerbose), built fresh each render. */
   handleVariationArrival(varIndex, variation, fens, verbose) {
+    if (this.browsing) return; // Site patch: the puzzle waits while a side variation is browsed
     const marker = variation.puzzles && variation.puzzles[varIndex];
 
     if (!marker || marker.solved) {
@@ -1221,13 +1274,13 @@ class PuzzleMode {
 
   /* Board's onDragStart — only let the solver pick up their own pieces. */
   canDrag(piece) {
-    if (!this.active) return false;
+    if (!this.active || this.browsing) return false;
     return !!piece && piece[0] === this.chess.turn();
   }
 
   /* Board's onDrop. */
   handleDrop(from, to) {
-    if (!this.active) return "snapback";
+    if (!this.active || this.browsing) return "snapback";
 
     /* chessboard.js calls onDrop with from === to for a plain click that
        never actually moved the mouse (a click is a mousedown+mouseup
@@ -1271,7 +1324,7 @@ class PuzzleMode {
      square to attempt the move — an alternative to dragging. Mirrors
      handleDrop()'s validation so both input methods behave identically. */
   handleSquareClick(square) {
-    if (!this.active) return;
+    if (!this.active || this.browsing) return;
 
     const piece       = this.chess.get(square);
     const solverColor = this.chess.turn();
@@ -1331,7 +1384,7 @@ class PuzzleMode {
      success path; the move is already known correct so there's no
      from/to to validate against. */
   showHint() {
-    if (!this.active) return;
+    if (!this.active || this.browsing) return;
 
     const expectedSAN = this.expected[this.solvedCount];
     const move = this.chess.move(expectedSAN, { sloppy: true });
@@ -1740,7 +1793,7 @@ class VideoComment {
        off to PuzzleMode the same way a manual click does. */
     const playLimit = puzzleHideFrom === Infinity ? variation.moves.length : puzzleHideFrom;
     const playVariation = () => {
-      if (this.engine.puzzle && this.engine.puzzle.active) return;
+      if (this.engine.puzzle && !this.engine.puzzle.enterBrowse()) return;
       this.engine.toggleVariationPlay(variation, varFENs, varVerbose, content, icon, playLimit);
     };
     icon.onclick = playVariation;
@@ -1790,7 +1843,7 @@ class VideoComment {
       moveSpan.onclick = () => {
         /* Don't let clicking elsewhere abandon an unsolved puzzle —
            mirrors goTo()'s own guard for mainline navigation. */
-        if (this.engine.puzzle && this.engine.puzzle.active) return;
+        if (this.engine.puzzle && !this.engine.puzzle.enterBrowse()) return;
 
         /* A hidden move belongs to an unsolved puzzle's solution —
            jumping straight to it would skip solving entirely. */
@@ -2008,7 +2061,7 @@ class VideoEngine {
     if (this.hintBtn) {
       this.hintBtn.addEventListener("click", (e) => {
         e.stopPropagation();
-        if (this.puzzle.active) this.puzzle.showHint();
+        if (this.puzzle.active && !this.puzzle.browsing) this.puzzle.showHint();
       }, { signal });
     }
 
@@ -2254,7 +2307,7 @@ class VideoEngine {
   variationGoTo(index) {
     /* Solving is the only way to advance past an unsolved variation puzzle
        — mirrors goTo()'s own guard for the mainline. */
-    if (this.puzzle && this.puzzle.active) return;
+    if (this.puzzle && this.puzzle.active && !this.puzzle.browsing) return;
 
     this._variation.index = index;
     const fen   = this._variation.fens[index];
@@ -2293,7 +2346,7 @@ class VideoEngine {
      already enforces, so autoplay hands off to PuzzleMode instead of
      revealing the solution. */
   toggleVariationPlay(variation, fens, verbose, contentEl, iconEl, maxIndex) {
-    if (this.puzzle && this.puzzle.active) return;
+    if (this.puzzle && this.puzzle.active && !this.puzzle.browsing) return;
 
     const isSameBlock = this._variation
       && this._variation.variationObj === variation
@@ -2439,6 +2492,7 @@ class VideoEngine {
        (mainline or a different variation), exactly like goTo() already
        does for the main line below. */
     this._updateVariationCommentBox(fen);
+    if (this.puzzle && this.puzzle.browsing) this.puzzle.syncBrowseUi(); // Site patch
 
     /* Notify the page a variation position is showing — the "cp-move"
        counterpart (see goTo()) for every path that lands here:
@@ -2730,6 +2784,9 @@ class VideoEngine {
 
   play() {
 
+    /* Site patch: at the end of a side variation browsed during a puzzle, play returns to the puzzle. */
+    if (this.puzzle && this.puzzle.browsing) { this.puzzle.endBrowse(); return; }
+
     /* Same reasoning as the goTo() guard: don't let play() spin up the
        autoplay loop while an unsolved puzzle is active — otherwise
        _loopRAF() would keep ticking state.index forward every second with
@@ -2771,6 +2828,10 @@ class VideoEngine {
      existing `if (engine._variation) { … }` branch (see
      setupGestures()) doing the equivalent for single-step navigation. */
   togglePlay(showIcon = true) {
+    if (this.puzzle && this.puzzle.browsing && this._variation && this._variation.index >= this._variation.fens.length - 1) {
+      this.puzzle.endBrowse(); // Site patch: space at the variation's end returns to the puzzle
+      return;
+    }
     if (this._variation) {
       this.state.playing = false;
       if (this._variation.playing) {
