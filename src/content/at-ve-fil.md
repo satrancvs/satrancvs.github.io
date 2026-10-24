@@ -88,7 +88,7 @@ Emanuel Lasker, İngiltere ve Amerika Birleşik Devletleri'ndeki üniversitelerd
 
 Satranç dünyasını yalnızca çocuk yaşta kendini belli eden dehasıyla değil, nezih karakteri, dış görünüşü ve satranç yazarlığıyla da büyüleyen üçüncü dünya şampiyonu **José Raúl Capablanca** ise _Satrancın Temelleri_ adlı kitabında konuyu o vakte kadar yapılmış en ayrıntılı şekilde ele alarak _çoğu durumda_ filin üstün olduğu yönündeki düşüncesini anlatıyordu:
 
-> Genel teorik açıdan fil ve at aynı değerde sayılmalıdır, ama bana göre çoğu durumda daha değerli olan taş fildir. Fil çoğu zaman üç piyondan biraz daha değerlidir, ama at çok nadiren üç piyon değerinde olur, hatta bazen değeri bu kadar dahi etmeyebilir.
+> Genel kabul gören teoriler bakımından fil ve at aynı değerde sayılmalıdır, ama bana göre çoğu durumda daha değerli olan taş fildir. Fil çoğu zaman üç piyondan biraz daha değerlidir, ama at çok nadiren üç piyon değerinde olur, hatta bazen değeri bu kadar dahi etmeyebilir.
 >
 > Amatörler arasında genellikle atın daha değerli taş olduğu düşünülebilir. Bunun başlıca sebebi, fil ile karşılaştırıldığında atın hem siyah hem beyaz karelere hükmedebilmesidir. Ama gözden kaçan şu ki, at herhangi bir anda yalnızca tek bir renkteki kareler arasından seçim yapabilir.
 >
