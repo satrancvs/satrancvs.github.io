@@ -1144,6 +1144,7 @@ class PuzzleMode {
     if (this.browsing) return true;
     if (this._ctx && this._ctx.isVariation) return false;
     this.browsing = true;
+    this.engine.container.classList.add("puzzle-browsing"); // hides the "find the best move" row while a variation is shown
     this._clearSelection();
     return true;
   }
@@ -1161,6 +1162,7 @@ class PuzzleMode {
     if (!this.browsing) return;
     const engine = this.engine;
     this.browsing = false;
+    engine.container.classList.remove("puzzle-browsing");
     if (engine._variation && engine._variation.playing) engine._pauseVariationPlay();
     engine.exitVariation();
     engine.hidePlayBtn();
@@ -1268,6 +1270,8 @@ class PuzzleMode {
     this._ctx        = null;
     this.engine._puzzleActive = false;
     this.engine.container.classList.remove("puzzle-active");
+    this.browsing = false;
+    this.engine.container.classList.remove("puzzle-browsing");
     if (this.engine.hintText) this.engine.hintText.textContent = "";
     this._clearSelection();
   }

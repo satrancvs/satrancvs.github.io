@@ -267,6 +267,8 @@
    (ya da analizdeki bir hamle denenince) açılır. */
 /* Bulmacada hamle bulundu, yorumun Play düğmesi bekleniyor: "en iyi hamleyi bulun" ipucu satırı gösterilmez. */
 .cp-game .player-container.puzzle-awaiting-play .puzzle-hint-row { display: none; }
+/* Bulmaca beklerken bir varyant gezilirken (PuzzleMode.browsing) "en iyi hamleyi bulun" satırı ve ipucu düğmesi gizlenir; yer kaplamaya devam eder, tahtanın altı oynamaz. */
+.cp-game .player-container.puzzle-browsing .puzzle-hint-row { visibility: hidden; }
 .flip-stage { position: relative; }
 .flip-stage .flip-face { transform-origin: 50% 50%; }
 .flip-stage .flip-back { position: absolute; top: 0; left: 0; right: 0; visibility: hidden; pointer-events: none; }
