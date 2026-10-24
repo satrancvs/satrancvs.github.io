@@ -57,13 +57,13 @@
 .cp-game pgn-player:not(pgn-study pgn-player) { --board-size: min(400px, calc(100vw - 3rem)); display: block; width: fit-content; max-width: 100%; margin-left: auto; margin-right: auto; }
 /* Alıntı kutusunun içinde (Palavan bulmacası) telefonda kutunun yan dolgusu (1.5rem + 1px kenar) da düşülür; yoksa tahta kutudan taşıp kırpılıyordu. */
 .quote-game pgn-player:not(pgn-study pgn-player) { --board-size: min(400px, calc(100vw - 6.25rem)); }
-/* Bulmaca oynatıcıları (Timman yazısı): geniş ekranda tahtanın sağında hamle satırı ve yorum/varyantlar, yazı sütunundan taşan 62 rem'lik bir şeritte (alıntı kutusundakiler hariç). */
+/* Bulmaca oynatıcıları (Timman yazısı): geniş ekranda yazı sütununa sığan iki sütun. Solda tahta ve altında hamle listesi, sağda yorum ve varyantlar (alıntı kutusundakiler hariç). */
 @media (min-width: 56em) {
-  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) { width: min(62rem, calc(100vw - 3rem)); max-width: none; margin-left: 50%; transform: translateX(-50%); }
-  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .player-wrapper { display: grid; grid-template-columns: 400px minmax(0, 1fr); grid-template-rows: auto 1fr; column-gap: 1.5rem; align-items: start; width: 100% !important; max-width: none !important; }
-  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .player-container { grid-column: 1; grid-row: 1 / span 2; }
-  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-moves { grid-column: 2; grid-row: 1; width: auto; max-width: none; }
-  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment { grid-column: 2; grid-row: 2; width: auto; max-width: none; margin: 0; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) { --board-size: 340px; width: 100%; max-width: none; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .player-wrapper { display: grid; grid-template-columns: 340px minmax(0, 1fr); grid-template-rows: auto 1fr; column-gap: 1.5rem; align-items: start; width: 100% !important; max-width: none !important; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .player-container { grid-column: 1; grid-row: 1; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-moves { grid-column: 1; grid-row: 2; width: auto; max-width: none; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment { grid-column: 2; grid-row: 1 / span 2; width: auto; max-width: none; margin: 0; }
 }
 /* <pgn-player> yorumu yazı gövdesiyle aynı satır aralığında (paket 1.5 verir; gövde ve <pgn> metni 1.8) */
 .cp-game .video-comment { line-height: 1.8; }
