@@ -35,7 +35,11 @@ const ATTRIBUTIONS = [
 ];
 
 // authorLang (örn. "hu"): yazar adının dili; büyük harfe çevirmede Türkçe İ yerine o dilin kuralı kullanılır (GÖMÖRI).
-const CORNERS = Array.from(new Set(PUBLISHED.map((a) => a.cat).filter((c): c is string => !!c)));
+// Köşelerin görünme sırası. Henüz yazısı olmayan köşe (örn. Söyleşi) sekmelerde görünmez; yazısı çıkınca (articles.json `cat`) bu sırayla yerini alır.
+// Listede olmayan bir kategori yine de gizlenmez, sona eklenir.
+const CORNER_ORDER = ['Satranç tarihi', 'Turnuva günlüğü', 'Literatür inceleme', 'Analizli oyun', 'Açılış dosyası', 'Özel dosya', 'Söyleşi'];
+const USED = new Set(PUBLISHED.map((a) => a.cat).filter((c): c is string => !!c));
+const CORNERS = [...CORNER_ORDER.filter((c) => USED.has(c)), ...[...USED].filter((c) => !CORNER_ORDER.includes(c))];
 const tabCls = (on: boolean) => `f-mono h-11 border-b-2 transition-colors ${on ? 'border-[#C8893E] text-[#0E0C0A]' : 'border-transparent text-[#0E0C0A]/50 hover:text-[#0E0C0A]'}`;
 
 // bio (Markdown bağlantıları olabilir) isteğe bağlıdır; boşsa kartta gösterilmez.
