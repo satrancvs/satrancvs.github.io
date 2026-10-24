@@ -99,7 +99,9 @@ Daha önce hiçbir satranç kitabında eşine rastlamadığım bir özeleştiriy
 
 > Bu hikâye şunu demek istiyordu: O yaratıcıydı ve ben de yaratıcıydım. Ama ben o kadar yaratıcıydım ki kendimi kaptırdım ve onun anahtar hamlesini görmeme rağmen (çünkü, hey, ben bir büyük ustayım), devamını kaçırdım (çünkü, hey, kimse mükemmel değil). Bu hikâye uydurmada (fabulation) beni en çok vuran şey, üçüncü ya da dördüncü kez olayların bu versiyonunu anlattığımda artık kendim de böyle olduğuna inanmaya başladım!
 >
-> O akşam kız arkadaşımla konuştuğumda dahi benzer şeyler söyledim. Ama oyunu bilgisayara verdiğimde basitçe 12. d5 hamlesini kaçırdığım gerçeğiyle yüzleştim. Hamleyi görmüştüm fakat yalnızca 11... Qf6 hamlesini oynadıktan sonra. 11... Qf6 hamlesini oynadıktan hemen sonra 12. d5 hamlesinin o kadar ciddi olmadığını (rahatlama) hissettim fakat sonra 14. Rxd5 (of!) hamlesini gördüm, muhtemelen oyunun kalanında özgüvenimi sağlam tutmak için kendime kaçırdığım şeyin bu olduğunu söyledim.
+> O akşam kız arkadaşımla konuştuğumda dahi benzer şeyler söyledim. Ama oyunu bilgisayara verdiğimde basitçe 12. d5 hamlesini kaçırdığım gerçeğiyle yüzleştim. Hamleyi görmüştüm fakat anca 11... Qf6 hamlesini ==oynadıktan sonra==.
+>
+> 11... Qf6 hamlesini oynadıktan hemen sonra 12. d5 hamlesinin o kadar ciddi olmadığını hissettim (rahatlama) fakat sonra 14. Rxd5 hamlesini gördüm (of!). Muhtemelen oyunun kalanında özgüvenimi sağlam tutmak için kendime kaçırdığım şeyin bu olduğunu söyledim.
 
 Bu hikayenin bizlere kıssadan hissesiyse şu şekilde:
 
