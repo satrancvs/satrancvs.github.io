@@ -46,7 +46,7 @@ Kitabı için pek çok farklı isim düşündükten sonra *"Chess for Zebras: Th
 >
 > — Sufi deyişi
 
-Peki bu nasıl yapılabilir? Kitap düşünce kalıplarını yıkma fikriyle "farklı düşünmenin" izini sürüyor. Daha doğrusu Rowson ustalığa giden yolunda neler öğrendiğini ve neleri "unutması" (*unlearning*) gerektiğini anlatıyor. İlerleyen bölümler boyunca döne dolaşa aynı şeyi hatırlatıyor okura: **"Gelişme, konfor alanınızın sınırında başlar."** (*"Improvement begins at the edge of your comfort zone"*) Yani sınırlarınızı zorlamadığınız sürece gelişme yok.
+Peki bu nasıl yapılabilir? Kitap düşünce kalıplarını yıkma fikriyle "farklı düşünmenin" izini sürüyor. Daha doğrusu Rowson ustalığa giden yolunda neler öğrendiğini ve neleri "unutması" (*unlearning*) gerektiğini anlatıyor. İlerleyen bölümler boyunca döne dolaşa aynı şeyi hatırlatıyor okura: =="Gelişme, konfor alanınızın sınırında başlar."== (*"Improvement begins at the edge of your comfort zone"*) Yani sınırlarınızı zorlamadığınız sürece gelişme yok.
 
 Yalnız yanlış anlaşılmasın, Rowson'ın her derde deva olacak -ve bulmayı umduğum- türden bir "sihirli formülü" yok. Tam tersine, her sorunun kesin bir çözümü olduğunu iddia eden yaklaşımlara şüpheyle yaklaşılmasını öğütlüyor.
 

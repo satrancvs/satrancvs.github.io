@@ -113,7 +113,7 @@ const COMMENT_FEN = /^\[FEN\s+"([^"]+)"\](?:\s*\[([?!]{1,2})\s+([a-h][1-8])\])?$
 const COMMENT_FIG = /\s*@@FIG\d+@@[ \t]*\n*/g;
 const commentMarkup = (movetext: string) =>
   movetext.replace(/\{([^}]*)\}/g, (_, body: string) =>
-    `{${body.replace(COMMENT_FIG, '<span class="cp-fig"></span>\n').replace(COMMENT_HEADING, (_m, pre: string, title: string) => `${pre}<span class="cp-heading">${title.trim()}</span> `).replace(/\n[ \t]*\n\s*/g, '<br><br>')}}`);
+    `{${body.replace(COMMENT_FIG, '<span class="cp-fig"></span>\n').replace(COMMENT_HEADING, (_m, pre: string, title: string) => `${pre}<span class="cp-heading">${title.trim()}</span> `).replace(/==(?=\S)([^=]+?)(?<=\S)==/g, '<ins>$1</ins>').replace(/\n[ \t]*\n\s*/g, '<br><br>')}}`);
 
 function PgnGame({ header, moves }: { header: string; moves: string }) {
   // [View "player"] etiketi oyunu (bulmaca işareti olmasa da) <pgn-player> ile çizdirir; ChessPublica'ya geçirilmez.
@@ -460,7 +460,7 @@ const mdOptions = {
     a: { props: { className: 'text-[color:var(--accent)] underline underline-offset-4', target: '_blank', rel: 'noreferrer' } },
     blockquote: { component: Quote },
     ul: { props: { className: 'list-disc pl-6 mb-6 space-y-2 marker:text-[color:var(--accent)]' } },
-    strong: { props: { className: 'hl' } },
+    strong: { props: { className: 'font-semibold text-[color:var(--fg)]' } },
   },
 };
 
