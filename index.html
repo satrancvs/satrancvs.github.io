@@ -9,6 +9,22 @@
     <meta name="theme-color" content="#0E0C0A" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>html,html body{background:#0E0C0A}</style>
+    <script>
+      // Açık tema kullanacak okur için (kendi seçimi 'light' ya da seçimi yokken sistem teması açık) yazı sayfaları ilk boyamadan açık zeminle başlar
+      // (ana sayfa her zaman koyu). Post.tsx devralınca bu stili kaldırır; tercih sırası Post.tsx'teki ile aynıdır.
+      try {
+        var saved = null;
+        try { saved = localStorage.getItem('theme'); } catch (e) {}
+        var light = saved === 'light' || (saved !== 'dark' && window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches);
+        if (light && !/^\/(blog\/?)?$/.test(location.pathname)) {
+          var st = document.createElement('style');
+          st.id = 'early-theme';
+          st.textContent = 'html,html body{background:#F7F1E5}';
+          document.head.appendChild(st);
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F7F1E5');
+        }
+      } catch (e) {}
+    </script>
     <title data-mgx-overview="title">Satranç vs.</title>
     <meta data-mgx-overview="description" name="description" content="Satranç üzerine uzun okumalar, analizler, röportajlar ve hikâyeler yayımlayan bağımsız dergi." />
     <meta name="author" content="Satranç vs." />

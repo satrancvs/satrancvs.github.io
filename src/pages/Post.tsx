@@ -24,9 +24,16 @@ function NoteLink({ children, title, ...props }: React.AnchorHTMLAttributes<HTML
   return <a {...rest}>{kids.slice(0, -1)}{last.slice(0, -1)}<span style={{ letterSpacing: 0 }}>{last.slice(-1)}</span></a>;
 }
 
-// Tema yalnızca yazı sayfalarında vardır (ana sayfa her zaman koyu). Seçim tarayıcıda saklanır; kayıt yoksa koyu açılır.
+// Tema yalnızca yazı sayfalarında vardır (ana sayfa her zaman koyu). Öncelik: okurun kendi seçimi (localStorage; depolama kapalıysa oturum boyunca bellekte,
+// böylece yazıdan yazıya geçerken de korunur) > sistem teması (prefers-color-scheme) > koyu. Seçim yoksa sistem teması değişince sayfa da değişir.
 const THEME_KEY = 'theme';
-const readTheme = (): 'dark' | 'light' => { try { return localStorage.getItem(THEME_KEY) === 'light' ? 'light' : 'dark'; } catch { return 'dark'; } };
+let themeMem: 'dark' | 'light' | null = null;
+const systemTheme = (): 'dark' | 'light' => (window.matchMedia?.('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+const savedTheme = (): 'dark' | 'light' | null => {
+  try { const v = localStorage.getItem(THEME_KEY); if (v === 'light' || v === 'dark') return v; } catch { /* depolama erişilemez */ }
+  return themeMem;
+};
+const readTheme = (): 'dark' | 'light' => savedTheme() ?? systemTheme();
 
 // Adresi değişen yazının eski adresi yeni adrese yönlendirilir (kanca kuralları için ayrı bileşen).
 export default function Post() {
@@ -45,22 +52,27 @@ function PostPage() {
   const toggleTheme = useCallback(() => {
     setTheme((t) => {
       const next = t === 'light' ? 'dark' : 'light';
+      themeMem = next;
       try { localStorage.setItem(THEME_KEY, next); } catch { /* özel pencere vb. */ }
       return next;
     });
   }, []);
-  // Başka sekmede değişen seçim bu sekmeye de uygulanır.
+  // Başka sekmede değişen seçim bu sekmeye de uygulanır; okurun seçimi yokken sistem teması değişirse sayfa onu izler.
   useEffect(() => {
     const onStorage = (e: StorageEvent) => { if (e.key === THEME_KEY) setTheme(readTheme()); };
     window.addEventListener('storage', onStorage);
-    return () => window.removeEventListener('storage', onStorage);
+    const mq = window.matchMedia?.('(prefers-color-scheme: light)');
+    const onSystem = () => { if (!savedTheme()) setTheme(systemTheme()); };
+    mq?.addEventListener?.('change', onSystem);
+    return () => { window.removeEventListener('storage', onStorage); mq?.removeEventListener?.('change', onSystem); };
   }, []);
+  // index.html'deki erken betik, açık tema seçilmişse yazı sayfasını ilk boyamadan önce açık zeminle başlatır (koyudan açığa yanıp sönme olmasın); React devralınca kaldırılır.
+  useEffect(() => { document.getElementById('early-theme')?.remove(); }, []);
   // Sayfanın dışındaki alanlar (aşırı kaydırma / iOS'ta içeriğin altındaki boşluk, adres çubuğu rengi) temaya uysun; html VE body boyanır (iOS ikisinden birini kullanabilir); yazıdan ayrılınca koyu hale döner (ana sayfa etkilenmez).
   useEffect(() => {
-    if (!a) return; // yazı yoksa 404 sayfası kendi (koyu) rengiyle görünür
+    if (!a) { document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#0E0C0A'); return; } // yazı yoksa 404 sayfası kendi (koyu) rengiyle görünür
     const bg = light ? '#F7F1E5' : '#0E0C0A';
     const meta = document.querySelector('meta[name="theme-color"]');
-    const prevMeta = meta?.getAttribute('content');
     const html = document.documentElement;
     const prevBg = html.style.backgroundColor;
     const prevBodyBg = document.body.style.backgroundColor;
@@ -71,7 +83,7 @@ function PostPage() {
     html.classList.toggle('post-light', light);
     return () => {
       html.classList.remove('post-page', 'post-light');
-      if (prevMeta != null) meta?.setAttribute('content', prevMeta);
+      meta?.setAttribute('content', '#0E0C0A');
       html.style.backgroundColor = prevBg;
       document.body.style.backgroundColor = prevBodyBg;
     };
