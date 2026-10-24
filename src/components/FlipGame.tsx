@@ -2,10 +2,9 @@ import { useEffect, useRef } from 'react';
 import type { ReactNode } from 'react';
 import { curlyPass } from '@/lib/curly-dom';
 
-// Palavan–Euwe: önce Beyaz tarafından bir oynatıcı (analiz), bitince tahta Siyah tarafına döner ve aynı konum bir bulmacaya dönüşür.
-// Önde `front` (oynatıcı), arkada `back` (bulmaca) durur; ön oynatıcı son hamlesine gelince yorumun yanında bir oynat düğmesi çıkar,
-// arka yüz o düğmeye basılınca öne gelir (kendiliğinden dönmez). Bulmacanın altındaki yorumlar okur hamleyi bulunca (ya da analizdeki bir hamleyi denerse) açılır.
-// Oynatıcıdan gelen `cp-move` (gameOver) ve `cp-puzzle` olayları public/chesspublica/pgn-player.js'deki site yamalarıdır.
+// Palavan–Euwe: iki ayrı oynatıcı alt alta durur. Üstte Beyaz tarafından analiz (`front`), altında Siyah tarafından bulmaca (`back`).
+// Bulmacanın altındaki yorumlar okur hamleyi bulunca (ya da analizdeki bir hamleyi denerse) açılır; yan varyantlar yalnızca denenince satır olarak eklenir.
+// Oynatıcıdan gelen `cp-puzzle` olayı public/chesspublica/pgn-player.js'deki site yamasıdır. (Eskiden analiz bitince tahta dönerdi; kaldırıldı.)
 
 type Variation = { moves: string[]; comments: string[]; glyphs: string[] };
 type PuzzleDetail = {
@@ -28,7 +27,6 @@ let helpers: Promise<{ formatComment: Format }> | null = null;
 const loadFormat = () => (helpers ??= import(/* @vite-ignore */ HELPERS));
 
 const norm = (san: string) => san.replace(/[+#!?]/g, '');
-const REDUCED = () => typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
 // "1… Rf8 2. Bg4 Kg7 yorum 3. Rd7 …": yan varyantın hamleleri ve yorumları, numaralarıyla tek satır metin.
 function lineText(v: Variation, d: PuzzleDetail) {
@@ -53,68 +51,14 @@ function lineText(v: Variation, d: PuzzleDetail) {
 
 export default function FlipGame({ front, back }: { front: ReactNode; back: ReactNode }) {
   const root = useRef<HTMLDivElement>(null);
-  const frontEl = useRef<HTMLDivElement>(null);
   const backEl = useRef<HTMLDivElement>(null);
   const notesEl = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const rootEl = root.current;
-    const f = frontEl.current;
     const b = backEl.current;
     const notes = notesEl.current;
-    if (!rootEl || !f || !b || !notes) return;
-
-    let flipped = false;
-    let atEnd = false;
-
-    const flip = () => {
-      if (flipped) return;
-      flipped = true;
-      rootEl.style.minHeight = `${rootEl.offsetHeight}px`;
-      const swap = () => {
-        f.style.display = 'none';
-        b.classList.add('is-active');
-        b.removeAttribute('aria-hidden');
-      };
-      const unlock = () => { rootEl.style.minHeight = ''; };
-      if (REDUCED() || !f.animate || !b.animate) {
-        swap();
-        unlock();
-        return;
-      }
-      const edge = 'perspective(1400px) rotateY(90deg)';
-      const flat = 'perspective(1400px) rotateY(0deg)';
-      f.animate([{ transform: flat, opacity: 1 }, { transform: edge, opacity: 0.35 }], { duration: 420, easing: 'cubic-bezier(.5,0,.85,.45)', fill: 'forwards' }).onfinish = () => {
-        swap();
-        b.animate([{ transform: 'perspective(1400px) rotateY(-90deg)', opacity: 0.35 }, { transform: flat, opacity: 1 }], { duration: 560, easing: 'cubic-bezier(.2,.7,.2,1)' }).onfinish = unlock;
-      };
-    };
-
-    // Ön oynatıcı son hamlesine ve yorumuna geldi: okuma süresi kadar bekleyip döndür (okur geri sarsa vazgeç).
-    const onMove = (e: Event) => {
-      if (flipped || !f.contains(e.target as Node)) return;
-      atEnd = !!(e as CustomEvent).detail?.gameOver;
-      if (atEnd) requestAnimationFrame(toPlay);
-    };
-
-    // Ön oynatıcı son hamlesindeyken yorumun yanındaki "başa dön" düğmesi bir "oynat" düğmesine çevrilir; tahta yalnızca ona basılınca döner.
-    // (cloneNode oynatıcının onclick işleyicisini taşımaz; yeni düğmeye döndürme işlevi bağlanır.)
-    const toPlay = async () => {
-      if (flipped || !atEnd) return;
-      const { lucideIconUrl } = await import(/* @vite-ignore */ ICONS);
-      f.querySelectorAll('.comment-play-btn').forEach((btn) => {
-        if (btn.hasAttribute('data-flip')) return;
-        const next = btn.cloneNode(true) as HTMLElement;
-        next.setAttribute('data-flip', '1');
-        const icon = next.querySelector('.lucide-icon') as HTMLElement | null;
-        icon?.style.setProperty('--icon', lucideIconUrl('circle-play'));
-        icon?.setAttribute('aria-label', 'Play');
-        next.addEventListener('click', flip);
-        btn.replaceWith(next);
-      });
-    };
-    const watch = new MutationObserver(() => { if (atEnd && !flipped) void toPlay(); });
-    watch.observe(f, { childList: true, subtree: true });
+    if (!rootEl || !b || !notes) return;
 
     // Bulmaca yorumları: sıralı işlenir (biçimleyici modülü eşzamansız yüklenir).
     const shown = new Map<string, HTMLElement>();
@@ -153,19 +97,16 @@ export default function FlipGame({ front, back }: { front: ReactNode; back: Reac
       queue = queue.then(() => loadFormat().then(({ formatComment }) => handle(d, formatComment))).catch(() => {});
     };
 
-    rootEl.addEventListener('cp-move', onMove);
     rootEl.addEventListener('cp-puzzle', onPuzzle);
     return () => {
-      watch.disconnect();
-      rootEl.removeEventListener('cp-move', onMove);
       rootEl.removeEventListener('cp-puzzle', onPuzzle);
     };
   }, []);
 
   return (
     <div ref={root} className="flip-stage">
-      <div ref={frontEl} className="flip-face flip-front">{front}</div>
-      <div ref={backEl} className="flip-face flip-back" aria-hidden="true">
+      <div className="flip-face flip-front">{front}</div>
+      <div ref={backEl} className="flip-face flip-back is-active">
         {back}
         <div ref={notesEl} className="puzzle-notes" aria-live="polite" />
       </div>

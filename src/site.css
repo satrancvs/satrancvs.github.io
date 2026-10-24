@@ -230,8 +230,8 @@
 /* Oyun yorumundaki "### Başlık" (ArticleBody.tsx commentMarkup): makale ### başlığıyla aynı yazı tipi, yorumun içinde. */
 .cp-game .cp-heading { display: block; margin: 3rem 0 1rem; scroll-margin-top: 2rem; font-family: 'Fraunces', serif; font-weight: 300; font-variation-settings: 'opsz' 72; font-style: normal; letter-spacing: -0.04em; line-height: 1; font-size: clamp(2.25rem, 5vw, 3rem); color: var(--fg); }
 
-/* Palavan–Euwe: Beyaz taraflı oynatıcı bitince tahta Siyah tarafına dönen bulmaca (src/components/FlipGame.tsx). Arka yüz (bulmaca) baştan çizilir ama görünmez
-   ve yer kaplamaz (tahta genişliği bilinsin diye gerçek genişlikte); dönüş bitince öne gelir. Altındaki yorumlar hamle bulundukça (ya da analizdeki bir hamle denenince) açılır. */
+/* Palavan–Euwe: üstte Beyaz taraflı analiz oynatıcısı, altında Siyah taraflı bulmaca oynatıcısı (src/components/FlipGame.tsx). Bulmacanın altındaki yorumlar hamle bulundukça
+   (ya da analizdeki bir hamle denenince) açılır. */
 /* Bulmacada hamle bulundu, yorumun Play düğmesi bekleniyor: "en iyi hamleyi bulun" ipucu satırı gösterilmez. */
 .cp-game .player-container.puzzle-awaiting-play .puzzle-hint-row { display: none; }
 .flip-stage { position: relative; }
@@ -239,7 +239,7 @@
 .flip-stage .flip-back { position: absolute; top: 0; left: 0; right: 0; visibility: hidden; pointer-events: none; }
 /* Bulmacada hamle listesi boş (hamleler çözülene kadar gizli, çözülünce yorum görünür) ama 38 px yer tutuyordu: ipucu satırı ile yorum arasında büyük boşluk kalıyordu. */
 .flip-stage .flip-back .video-moves { display: none; }
-.flip-stage .flip-back.is-active { position: relative; visibility: visible; pointer-events: auto; }
+.flip-stage .flip-back.is-active { position: relative; visibility: visible; pointer-events: auto; margin-top: 2.5rem; }
 .puzzle-notes { margin-top: .5rem; }
 .puzzle-notes p { margin: 0 0 1.1rem; font-size: clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height: 1.7; color: rgb(var(--fg-rgb) / .95); animation: pn-in .55s cubic-bezier(.2,.7,.2,1) both; }
 .puzzle-notes .pn-line { margin-left: 1.25rem; padding-left: .75rem; border-left: 2px solid rgba(128,128,128,.3); }

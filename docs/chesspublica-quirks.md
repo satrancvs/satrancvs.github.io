@@ -114,12 +114,9 @@ Two additions to `public/chesspublica/pgn-player.js`, both marked `Site patch` i
 - `PuzzleMode._notify()` dispatches a bubbling `cp-puzzle` event on the player for main-line puzzles: `step` (the solver's
   move was found), `reply` (the opponent's forced reply), `wrong` (a move that is not the solution; `detail.attempt` is its SAN) and
   `solved`. `detail` has the SAN, glyph, move number/colour, the comment and the side variations anchored at that move.
-`FlipGame` (a `[Frame "quote"]` game with `[Flip "puzzle"]` + the next game with the same players/date) uses them: the first game is a
-`<pgn-player>` (White's side), the second the puzzle (`{[Pn]}`, Black's side) stacked behind it; when the first player is on its last move
-the player's replay button (`.comment-play-btn`, re-created by ChessPublica on every render, so a MutationObserver converts it: `cloneNode` drops its `onclick`, icon `circle-play`) becomes a play button and pressing it flips the card (never automatically), and the puzzle's comments are written under it as moves are found, or when a
-move that starts a variation in the analysis is tried. (Superseded: the move comments are shown by the player itself, see below; `FlipGame` only adds the variation lines.)
+`FlipGame` (a `[Frame "quote"]` game with `[Flip "puzzle"]` + the next game with the same players/date) stacks two players: the first game is a `<pgn-player>` (White's side, the analysis), the second the puzzle (`{[Pn]}`, Black's side) under it. It listens to `cp-puzzle` and writes the side variation of the analysis as a line under the puzzle only when the reader tries its first move. (The earlier card flip between the two, and the `gameOver` detail of `cp-move` it needed, are no longer used.)
 Main-line puzzles also use the player's own comment box (patch `PuzzleMode._showComment`/`_playReply`): after the solver's correct move the comment of that move, if any, is shown with a Play button at its end and the opponent's reply waits for it; no comment = the reply follows after 300 ms as before. The reply's own comment is shown with the reply, the box is cleared on positions without a comment, and after the last solver move `_finish()` resumes normal playback (final comment + Replay). The puzzle's own comment box (lead sentence in `{[Pn] …}`) is hidden once solved.
-If ChessPublica fails to load, both games are drawn one after the other without the flip. Re-check these hooks if `pgn-player.js` is replaced.
+If ChessPublica fails to load, both games are drawn one after the other as plain text. Re-check these hooks if `pgn-player.js` is replaced.
 
 ## Illegal move lines in comments are shown as an error (patched here)
 A parenthesised line that starts with a move number inside a `{ }` comment (`(21... Ne7 22. Nxb4)`) is played from the
