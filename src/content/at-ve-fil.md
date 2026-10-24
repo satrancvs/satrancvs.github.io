@@ -23,7 +23,7 @@ Ne var ki Chigorin’in zamanın sınavını geçememiş ve günümüzde kabul g
 İşte Chigorin'in her iki filini de oyunun erken safhasında **Emanuel Lasker**'in atlarıyla değişip tahtada kalan iki atıyla kazandığı o parti –yorumlar **Garry Kasparov**'a ait:
 
 [Event "Hastings"]
-[View "study"]
+[View "player"]
 [Site "Hastings"]
 [Date "1895.08.06"]
 [White "Emanuel Lasker"]
@@ -49,7 +49,7 @@ Birkaç yıl sonra Chigorin görüşlerini bu defa Steinitz karşısında sınam
 > — <span lang="de">Internationales Kaiser-Jubiläums-Schachturnier, Wien 1898</span>, birinci tur raporu
 
 [Event "Viyana Uluslararası Satranç Turnuvası"]
-[View "study"]
+[View "player"]
 [Site ""]
 [Date "1898.06.01"]
 [White "Wilhelm Steinitz"]
@@ -138,7 +138,7 @@ Capablanca’nın bu yerinde uyarısını dikkate almayan oyuncunun başına nel
 Bu defa file karşı ata sahip olan taraf, Capa’nın büyük rakibi ve halefi, dördüncü dünya şampiyonu **Alexander Alekhine**. Analiz ve yorumlar ise Büyük Usta Johan Hellsten’den.
 
 [Event "Hastings"]
-[View "study"]
+[View "player"]
 [Site "Hastings"]
 [Date "1926.??.??"]
 [White "Alexander Alekhine"]

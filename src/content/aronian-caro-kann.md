@@ -41,3 +41,15 @@ Daha önce d7 atının hareket kabiliyetinin sınırlandığını söylemiştik.
 Daha önce de belirttiğimiz gibi eğer savaş bir tarafta kazanılamıyorsa ==bir başka cephe açılmasına== ihtiyaç duyulur. Beyaz, her ne kadar kalesi ve filiyle harikalar yaratsa da kazanmak için yeterli durmuyor. Bu yüzden şimdi şah kanadında ikinci bir cephe açmaya çalışacak. } 33. Kg3 Rc3+ 34. f3 Rc6 35. h4 Rc8 (35... h5 36. Kf4 { İkinci cephe açıldı. }) 36. h5 Rc6 37. Kh4 Rc8 38. g4 Ke8 (38... g5+ 39. Kg3 Ke8 40. f4 { Siyah konumunu bir arada tutamaz. } 40... f6 (40... Rc3+ 41. Kf2 $18 { [%cal Ga7a8,Gf4g5] }) 41. f5 $18) 39. f4 Kd8 { Aronian, elindeki şah kanadını ==piyon ile yarma== yöntemlerinden şık birini kullanıyor. } 40. hxg6 fxg6 41. g5 h5 { Yoksa ikinci cephe açma planı başarısız mı oldu? } 42. f5! { Hayır, başarıyla açılan ikinci cephe oyunu bitirmeye yeterli. Siyah terk eder. Güzel bir oyuna güzel bir son. Oyun devam etseydi: } 42... exf5 (42... gxf5 43. g6 Ke8 44. Kxh5 $18) 43. e6 Nb8 44. Rg7 $18 { [%cal Gg7g8] } 1-0
 
 Aronian’dan mükemmel bir performans, harika bir ders.
+
+### Oyunu inceleyin
+
+[Event "FIDE Grand Prix"]
+[Site "Berlin"]
+[Date "2022.02.06"]
+[White "Aronian, Levon"]
+[Black "Keymer, Vincent"]
+[Result "1-0"]
+[WhiteElo "2772"]
+[BlackElo "2664"]
+[View "study"]
