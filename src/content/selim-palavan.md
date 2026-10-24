@@ -43,7 +43,7 @@ Bütün İstanbul’un ve hatta memleketimizin her köşesindeki şatranç merak
 
 { Siyahların durumu zordur: Beyazlar hem kaleyi hem de Bf5 hamlesi ile (figürleri değiştikten sonra) kazanılmış bir piyon finalini elde etmekle tehdit ederler. Siyahlar ikinci tehdide karşı bir tedbir alır da 1… Rf8 oynarsa, Beyazlar şöyle devam eder: } 1... Rf8 2. Bg4 Kg7 { Atı 3. h5 tehdidinden kurtarmak için. } 3. Rd7 Rf7 { Aksi takdirde 4. Rxb7 ±. } 4. Rxf7+ Kxf7 5. Bh5 { ve Beyazlar hafif figürleri de değiştirerek piyon oyunsonunu kolayca kazanır. }
 
-Fakat Siyahlar zarif bir kombinezonla partiyi kurtarıyorlar.
+Fakat Siyahlar zarif bir kombinezonla partiyi kurtarıyorlar:
 
 [Event "Odessa, Ukrayna"]
 [Site "Odessa, Ukrayna"]
