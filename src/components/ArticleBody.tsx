@@ -304,13 +304,13 @@ function GameSection({ item, watchId, watchLabel, onWatch, children }: { item: G
     <section id={item.id} className={`scroll-mt-8 ${item.study ? 'study-frame' : 'my-4 border-b border-[color:var(--line)]'}`}>
       {info && (
         <div className="mx-auto mb-4 w-full max-w-[520px] py-2 text-center">
-          <h4 className="text-[color:rgb(var(--fg-rgb)/0.9)]">{item.players}</h4>
+          <h4 className="game-names">{item.players}</h4>
           {item.place && <p className="mt-1 text-[color:var(--mute)]"><Markdown options={{ forceInline: true }}>{item.place}</Markdown></p>}
         </div>
       )}
       {!info && <h4 className="flex items-baseline gap-4 py-4 mb-4 text-[color:rgb(var(--fg-rgb)/0.9)] md:grid md:grid-cols-[1fr_400px_1fr] md:gap-0">
         <span className="f-mono text-[color:var(--accent)] w-[5rem] shrink-0">{`${item.round}. tur`}</span>
-        <span className="flex-1 md:text-center">{item.label}</span>
+        <span className="game-names flex-1 md:text-center">{item.label}</span>
         <span className="f-mono text-[color:var(--mute)] md:justify-self-end">{item.result}</span>
       </h4>}
       {watchId && onWatch && (
@@ -624,7 +624,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
           <section key={i} id={item.id} className="scroll-mt-8">
             <blockquote className="quote quote-game">
               <div className="mx-auto mb-4 w-full max-w-[520px] py-2 text-center not-italic">
-                <h4 className="text-[color:rgb(var(--fg-rgb)/0.9)]">{item.players}</h4>
+                <h4 className="game-names">{item.players}</h4>
                 {item.venue && <p className="mt-1 text-[color:var(--mute)]">{item.venue}</p>}
               </div>
               {startFen && <FenBlock fen={startFen} ready={cp === 'ready'} />}
