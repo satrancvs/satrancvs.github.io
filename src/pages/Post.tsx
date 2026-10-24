@@ -54,23 +54,27 @@ function PostPage() {
     window.addEventListener('storage', onStorage);
     return () => window.removeEventListener('storage', onStorage);
   }, []);
-  // Sayfanın dışındaki alanlar (aşırı kaydırma, adres çubuğu rengi) temaya uysun; yazıdan ayrılınca koyu hale döner (ana sayfa etkilenmez).
+  // Sayfanın dışındaki alanlar (aşırı kaydırma / iOS'ta içeriğin altındaki boşluk, adres çubuğu rengi) temaya uysun; html VE body boyanır (iOS ikisinden birini kullanabilir); yazıdan ayrılınca koyu hale döner (ana sayfa etkilenmez).
   useEffect(() => {
+    if (!a) return; // yazı yoksa 404 sayfası kendi (koyu) rengiyle görünür
     const bg = light ? '#F7F1E5' : '#0E0C0A';
     const meta = document.querySelector('meta[name="theme-color"]');
     const prevMeta = meta?.getAttribute('content');
     const html = document.documentElement;
     const prevBg = html.style.backgroundColor;
+    const prevBodyBg = document.body.style.backgroundColor;
     meta?.setAttribute('content', bg);
     html.style.backgroundColor = bg;
+    document.body.style.backgroundColor = bg;
     html.classList.add('post-page');
     html.classList.toggle('post-light', light);
     return () => {
       html.classList.remove('post-page', 'post-light');
       if (prevMeta != null) meta?.setAttribute('content', prevMeta);
       html.style.backgroundColor = prevBg;
+      document.body.style.backgroundColor = prevBodyBg;
     };
-  }, [light]);
+  }, [light, a]);
 
   // Okuma konumu: yazı sayfası yenilendiğinde ya da sonradan tekrar açıldığında kaldığın yerden devam eder.
   // Tarayıcının kendi geri yüklemesi tembel yüklenen fotoğraf/oyunlar yüzünden yanlış yere düşebildiği için
