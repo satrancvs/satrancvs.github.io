@@ -302,14 +302,15 @@ const captionOptions = {
 // `[FEN "…"] (crop: top-half)`: yalnızca tahtanın üst yarısı (8–5. yataylar) gösterilir.
 // Tek başına duran `[FEN "…"]` paragrafı (alıntı dışında) statik diyagram olur (etüt).
 const FIRST_MOVE_DIAGRAM = /^\s*\d+\.(?:\.\.)?\s*\S+\s*\{\s*\[D\]/;
-const FEN_BLOCK = /^\[FEN\s+"([^"]+)"\](\s*\(crop:\s*top-half\))?$/;
+// İsteğe bağlı ikinci satır `{ [%cal Gd5a8,Gd5g8] [%csl Rb7,Rc6] }`: oklar (cal) ve işaretli kareler (csl); <fen> bunu son satır olarak okur.
+const FEN_BLOCK = /^\[FEN\s+"([^"]+)"\](\s*\(crop:\s*top-half\))?(?:[ \t]*\n[ \t]*(\{\s*(?:\[%(?:cal|csl)\s[^\]]*\]\s*)+\}))?$/;
 // `analysis`: oyunda oynanmamış bir analiz konumu (yorumdaki FEN satırı): varyant diyagramları gibi küçük ve soluk; `badge`: karenin sağ üst köşesinde hamle rozeti.
-function FenBlock({ fen, ready, crop = false, analysis = false, badge }: { fen: string; ready: boolean; crop?: boolean; analysis?: boolean; badge?: { glyph: string; square: string } }) {
+function FenBlock({ fen, ready, crop = false, marks, analysis = false, badge }: { fen: string; ready: boolean; crop?: boolean; marks?: string; analysis?: boolean; badge?: { glyph: string; square: string } }) {
   useEffect(() => { if (ready) window.ChessPublica?.initAll(); }, [ready]);
   const at = badge && { right: `${(7 - (badge.square.charCodeAt(0) - 97)) * 12.5 - 0.6}%`, top: `${(8 - Number(badge.square[1])) * 12.5 - 0.6}%` };
   return (
     <div role="img" aria-label={analysis ? 'Analiz diyagramı' : 'Diyagram'} className={`art-fen${crop ? ' art-fen-top' : ''}${analysis ? ' art-fen-analysis' : ''}`}>
-      <div dangerouslySetInnerHTML={{ __html: `<fen>${fen}</fen>` }} />
+      <div dangerouslySetInnerHTML={{ __html: `<fen>${fen}${marks ? `\n${marks}` : ''}</fen>` }} />
       {badge && at && <div aria-hidden className="gm-badge art-fen-badge" style={{ background: GLYPH_COLOR[badge.glyph] ?? '#00AA00', ...at }}>{badge.glyph}</div>}
     </div>
   );
@@ -330,7 +331,7 @@ function QuoteWithFigure({ chunk, ready }: { chunk: string; ready: boolean }) {
       {body.map((b, k) => (IMG_CHUNK.test(b)
         ? <Figure key={k} chunk={b} />
         : FEN_BLOCK.test(b)
-        ? <FenBlock key={k} fen={b.match(FEN_BLOCK)![1]} crop={!!b.match(FEN_BLOCK)![2]} ready={ready} />
+        ? <FenBlock key={k} fen={b.match(FEN_BLOCK)![1]} crop={!!b.match(FEN_BLOCK)![2]} marks={b.match(FEN_BLOCK)![3]} ready={ready} />
         : <Markdown key={k} options={{ ...mdOptions, forceBlock: true }}>{b}</Markdown>))}
       {cite && <footer className="quote-cite f-mono">— <CiteMd cite={cite} /></footer>}
     </blockquote>
@@ -608,7 +609,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       out.push(<Continued key={i} text={c} />);
     } else if (FEN_BLOCK.test(c)) {
       const m = c.match(FEN_BLOCK)!;
-      out.push(<FenBlock key={i} fen={m[1]} crop={!!m[2]} ready={cp === 'ready'} />);
+      out.push(<FenBlock key={i} fen={m[1]} crop={!!m[2]} marks={m[3]} ready={cp === 'ready'} />);
     } else if (c.startsWith('### ')) {
       const section = toc.find((t) => t.chunk === i);
       out.push(
