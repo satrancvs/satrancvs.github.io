@@ -302,7 +302,6 @@ const captionOptions = {
 // `[FEN "…"] (crop: top-half)`: yalnızca tahtanın üst yarısı (8–5. yataylar) gösterilir.
 // Tek başına duran `[FEN "…"]` paragrafı (alıntı dışında) statik diyagram olur (etüt).
 const FIRST_MOVE_DIAGRAM = /^\s*\d+\.(?:\.\.)?\s*\S+\s*\{\s*\[D\]/;
-const FEN_ONLY = /^\[FEN\s+"([^"]+)"\]$/;
 const FEN_BLOCK = /^\[FEN\s+"([^"]+)"\](\s*\(crop:\s*top-half\))?$/;
 // `analysis`: oyunda oynanmamış bir analiz konumu (yorumdaki FEN satırı): varyant diyagramları gibi küçük ve soluk; `badge`: karenin sağ üst köşesinde hamle rozeti.
 function FenBlock({ fen, ready, crop = false, analysis = false, badge }: { fen: string; ready: boolean; crop?: boolean; analysis?: boolean; badge?: { glyph: string; square: string } }) {
@@ -475,7 +474,7 @@ function gameMoves(chunks: string[], i: number): { moves: string; own: boolean }
 }
 
 export default function ArticleBody({ chunks }: { chunks: string[] }) {
-  const hasGames = chunks.some((c) => c.trim().startsWith('[Event ') || FEN_ONLY.test(c.trim()) || (c.startsWith('>') && /^>\s*\[FEN\s/m.test(c)));
+  const hasGames = chunks.some((c) => c.trim().startsWith('[Event ') || FEN_BLOCK.test(c.trim()) || (c.startsWith('>') && /^>\s*\[FEN\s/m.test(c)));
   const hasStudy = chunks.some((c) => STUDY_TAG.test(c));
   const cp = useChessPublica(hasGames, { study: hasStudy });
   // ChessPublica yüklenemezse eski düz metin görünümüne düşülür.
@@ -607,8 +606,9 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       if (own) i++;
     } else if (CONTINUED.test(c)) {
       out.push(<Continued key={i} text={c} />);
-    } else if (FEN_ONLY.test(c)) {
-      out.push(<FenBlock key={i} fen={c.match(FEN_ONLY)![1]} ready={cp === 'ready'} />);
+    } else if (FEN_BLOCK.test(c)) {
+      const m = c.match(FEN_BLOCK)!;
+      out.push(<FenBlock key={i} fen={m[1]} crop={!!m[2]} ready={cp === 'ready'} />);
     } else if (c.startsWith('### ')) {
       const section = toc.find((t) => t.chunk === i);
       out.push(
