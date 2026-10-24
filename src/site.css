@@ -65,6 +65,10 @@
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-moves { grid-column: 1; grid-row: 2; width: auto; max-width: none; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) .video-comment { grid-column: 2; grid-row: 1 / span 2; width: auto; max-width: none; margin: 0; }
 }
+/* Yeterince geniş ekranda (sağa taşan sütuna ekranda yer kalır) tahta yazı sütununun ortasında durur, yorum sütunu sağa, sütunun dışına taşar; genişlikler aynı, yalnızca konum kayar. */
+@media (min-width: 71.5em) {
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player) { transform: translateX(calc((100% - 340px) / 2)); }
+}
 /* <pgn-player> yorumu yazı gövdesiyle aynı satır aralığında (paket 1.5 verir; gövde ve <pgn> metni 1.8) */
 .cp-game .video-comment { line-height: 1.8; }
 /* Varyantlı yorumlarda sağ alta oturan oynat düğmesi metnin son satırını kapatmasın */
