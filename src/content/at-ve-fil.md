@@ -82,7 +82,7 @@ Emanuel Lasker, İngiltere ve Amerika Birleşik Devletleri'ndeki üniversitelerd
 >
 > Fakat gerçekte ‘diğer bütün koşullar’ hiçbir zaman eşit değildir. Tüm koşulları eşit ağırlıkta ya da önemde saymak, bize ait bir varsayımdır.
 >
-> — <span lang="en">Emanuel Lasker, _"Lasker's Manual of Chess"_ (Lasker'in Satanç El Kitabı), 1927.</span>
+> — Emanuel Lasker, "Lasker's Manual of Chess" (Lasker'in Satranç El Kitabı), 1927.
 
 ![José Raúl Capablanca (siyah-beyaz fotoğraf)](images/Capablanca.jpg "<span lang="es">José Raúl Capablanca</span> · Fotoğraf: <span lang="en">Harris & Ewing</span> · Amerikan Kongre Kütüphanesi · Lisans: Kamu malı · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=67186745)")
 
