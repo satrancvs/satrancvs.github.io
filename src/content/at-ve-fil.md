@@ -67,13 +67,21 @@ Modern satrancın kurucusu olarak saygın bir yere sahip olan Steinitz'in konuya
 >
 > — <span lang="en">Wilhelm Steinitz, _"The Modern Chess Instructor"_ (Modern Satranç Kılavuzu), 1889.</span>
 
-İlk dünya şampiyonu Steinitz'in file bariz bir tercih göstermesine rağmen çağdaşı ve ikinci dünya şampiyonu Emanuel Lasker ise kaleme aldığı _Satranç El Kitabı_'nda meseleye çok daha temkinli, felsefi bir bakışla yaklaşıyordu. Zaten Lasker, İngiltere ve Amerika Birleşik Devletleri'ndeki üniversitelerde görev yapmış bir matematikçi ve aynı zamanda _Mücadele_ (1906), _Dünyayı Anlamak_ (1913), _Erişilemez Olanın Felsefesi_ (1918) adlı kitaplarıyla felsefe alanında çalışmalar yapmış ilginç bir kişilikti.
+İlk dünya şampiyonu Steinitz'in file bariz bir tercih göstermesine rağmen çağdaşı ve ikinci dünya şampiyonu Emanuel Lasker ise kaleme aldığı _Satranç El Kitabı_'nda meseleye çok daha temkinli, felsefi bir bakışla yaklaşıyordu.
 
 ![Emanuel Lasker](images/Lasker.jpg "By Bundesarchiv, Bild 102-00459 / CC-BY-SA 3.0, CC BY-SA 3.0 de, https://commons.wikimedia.org/w/index.php?curid=5478910")
 
-> Bazı satranç dostları atı file, bazıları ise fili ata tercih eder ve taş değişmeleri buna göre yapar. Haklı olan kim? Yoksa bu işlerde ne haklı ne haksız mı var? Belki de bu taşların karşılıklı değeri, akıl sır ermez rastlantıların hükmü altındadır. Biliyoruz ki _ceteris paribus_ (diğer her şey eşitken) at ve fil eşittir, her ikisi de _ceteris paribus_ üç piyon değerindedir. Ancak "_ceteris paribus_" teriminin içerdiği varsayım önemlidir: "diğer bütün koşullar eşitken" - _ceteris paribus_'un anlamı budur. **Ama gerçekte ‘diğer bütün koşullar’ hiçbir zaman eşit değildir. Tüm koşulları eşit ağırlıkta ya da önemde saymak, bize ait bir varsayımdır**. _Ceteris paribus_'u hesaba katmamak, bizi öyle bir saçmalığın pençesine düşürür ki gururlu akıl deliliğe yakın, sendeleyen bir romantizme düşer.
+Emanuel Lasker, İngiltere ve Amerika Birleşik Devletleri'ndeki üniversitelerde matematik dersleri vermenin yanı sıra, _Mücadele_ (1906), _Dünyayı Anlamak_ (1913) ve _Erişilemez Olanın Felsefesi_ (1918) adlı kitaplarıyla felsefe alanında da çalışmalar yapmış çok yönlü bir düşünürdü.
+
+> Bazı satranç dostları atı file, bazıları ise fili ata tercih eder ve taş değişmeleri buna göre yapar. Haklı olan kim? Yoksa bu işlerde ne haklı ne haksız mı var? Belki de bu taşların karşılıklı değeri, akıl sır ermez rastlantıların hükmü altındadır.
+>
+> Biliyoruz ki _ceteris paribus_ (diğer her şey eşitken) at ve fil eşittir, her ikisi de _ceteris paribus_ üç piyon değerindedir. Ancak "_ceteris paribus_" teriminin içerdiği varsayım önemlidir: "diğer bütün koşullar eşitken" -_ceteris paribus_'un anlamı budur.
+>
+> Ama gerçekte ‘diğer bütün koşullar’ hiçbir zaman eşit değildir. Tüm koşulları eşit ağırlıkta ya da önemde saymak, bize ait bir varsayımdır.
 >
 > — <span lang="en">Emanuel Lasker, _"Lasker's Manual of Chess"_ (Lasker'in Satanç El Kitabı), 1927.</span>
+
+![José Raúl Capablanca](images/Capablanca.jpg "By Harris & Ewing, photographer - Library of CongressCatalog: https://lccn.loc.gov/2016866174Image download: https://cdn.loc.gov/service/pnp/hec/05400/05488v.jpgOriginal url: https://www.loc.gov/pictures/item/2016866174/, Public Domain, https://commons.wikimedia.org/w/index.php?curid=67186745")
 
 Satranç dünyasını yalnızca çocuk yaşta kendini belli eden dehasıyla değil, nezih karakteri, dış görünüşü ve satranç yazarlığıyla da büyüleyen üçüncü dünya şampiyonu **José Raúl Capablanca** ise _Satrancın Temelleri_ adlı kitabında konuyu o vakte kadar yapılmış en ayrıntılı şekilde ele alarak _çoğu durumda_ filin üstün olduğu yönündeki düşüncesini anlatıyordu:
 
@@ -85,11 +93,11 @@ Satranç dünyasını yalnızca çocuk yaşta kendini belli eden dehasıyla değ
 >
 > — José Raúl Capablanca, _"Chess Fundamentals"_ (Satrancın Temelleri), 1921.</span>
 
-![José Raúl Capablanca](images/Capablanca.jpg "By Harris & Ewing, photographer - Library of CongressCatalog: https://lccn.loc.gov/2016866174Image download: https://cdn.loc.gov/service/pnp/hec/05400/05488v.jpgOriginal url: https://www.loc.gov/pictures/item/2016866174/, Public Domain, https://commons.wikimedia.org/w/index.php?curid=67186745")
-
-Capablanca'nın bahsettiği örnek, boş tahtada merkezde duran bir filin, tahtanın kenarındaki bir atı hapsederek hareketsiz kılabilme becerisiydi. Elbette bu, boş tahtada olduğu gibi, merkez piyonlarının tahtadan kalkmış olduğu ve atın tahtanın kenarında kaldığı oyunortası konumları için de geçerli bir tema.
+Capablanca'nın bahsettiği örnek, boş tahtada merkezde duran bir filin, tahtanın kenarındaki bir atı hapsederek hareketsiz kılabilme becerisiydi.
 
 [FEN "3n4/8/8/3B4/8/8/8/8 w - - 0 1"] (crop: top-half)
+
+Elbette bu, boş tahtada olduğu gibi, merkez piyonlarının tahtadan kalkmış olduğu ve atın tahtanın kenarında kaldığı oyunortası konumları için de geçerli bir tema.
 
 > Oyuncu ne kadar zayıfsa, at onun için o kadar korkunçtur. Ama oyuncu güçlendikçe filin değeri ona daha da belirgin hâle gelir ve doğal olarak buna karşılık atın file göre değerlendirmesinde bir düşüş yaşanır -ya da yaşanmalıdır.
 >
