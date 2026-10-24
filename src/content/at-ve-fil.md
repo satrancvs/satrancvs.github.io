@@ -124,6 +124,8 @@ Ne var ki Capablanca, çağları aşıp günümüze kadar geçerliliğini korumu
 
 Capablanca’nın bu yerinde uyarısını dikkate almayan oyuncunun başına neler gelebileceğini incelikle sergileyen bir oyunla devam edelim.
 
+![Alexander Alekhine](images/alekhine-1913.jpg "Fotoğraf: “Новое Время” (Yeni Zaman) Gazetesi, Eylül 1913 · Kaynak: Wikimedia Commons")
+
 Bu defa file karşı ata sahip olan taraf, Capa’nın büyük rakibi ve halefi, dördüncü dünya şampiyonu **Alexander Alekhine**. Analiz ve yorumlar ise Büyük Usta Johan Hellsten’den.
 
 [Event "Hastings"]
