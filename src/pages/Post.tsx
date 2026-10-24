@@ -3,6 +3,7 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import { Moon, Sun, X } from 'lucide-react';
 import Markdown from 'markdown-to-jsx';
 import SiteFooter from '@/components/SiteFooter';
+import OverlayScrollbar from '@/components/OverlayScrollbar';
 import ArticleBody from '@/components/ArticleBody';
 import ProgressiveImage, { boxWidth } from '@/components/ProgressiveImage';
 import PhotoCredit, { PHOTO } from '@/components/PhotoCredit';
@@ -132,6 +133,7 @@ function PostPage() {
 
   return (
     <div className={`sk min-h-screen bg-[color:var(--bg)]${light ? ' sk-light' : ''}`}>
+      <OverlayScrollbar />
       <button type="button" onClick={toggleTheme} aria-pressed={light} aria-label={light ? 'Koyu temaya geç' : 'Açık temaya geç'} title={light ? 'Koyu tema' : 'Açık tema'} className="fixed top-5 right-[4.75rem] z-50 w-12 h-12 rounded-full border border-[color:rgb(var(--fg-rgb)/0.4)] bg-[color:var(--bg)] text-[color:var(--fg)] grid place-items-center hover:border-[color:var(--accent)] hover:text-[color:var(--accent)] transition-colors">
         {light ? <Moon size={20} aria-hidden /> : <Sun size={20} aria-hidden />}
       </button>

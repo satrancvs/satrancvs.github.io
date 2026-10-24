@@ -287,3 +287,6 @@ html.post-page::-webkit-scrollbar-thumb:hover { background: var(--sb-thumb-hover
 :is(.art-prose, .quote > p, .puzzle-notes) mark:nth-of-type(3n), .puzzle-notes ins:nth-of-type(3n),
 .cp-game :is(.pgn-comment, .pgn-comment-inline, .pgn-variation, .video-comment, .comment-body) ins:nth-of-type(3n) { background-image: var(--hl-3); }
 @media print { :is(.art-prose, .quote > p) mark { background: none; font-weight: 600; } }
+/* Katmanlı (overlay) kaydırma çubuğu olan cihazlarda yerel çubuk gizlenir; yerine OverlayScrollbar.tsx çizilir (aynı turuncu tutamaç). */
+html.post-custom-sb { scrollbar-width: none; }
+html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
