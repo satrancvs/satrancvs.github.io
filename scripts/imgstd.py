@@ -13,6 +13,8 @@ COVER = re.compile(r'adventurous-way|chess-for-zebras')
 RATIO = {'h': 3 / 2, 'v': 2 / 3, 's': 2 / 3}
 DISPLAY = {'h': (600, 400), 'v': (400, 600), 's': (240, 360)}
 MAX_FILE = {'h': (1200, 800), 'v': (800, 1200), 's': (480, 720)}
+# Düz renkli (vektör) illüstrasyonlar düşük çözünürlükte de keskin kalır; yatay boyut sınırından muaf (yine de büyütülmez).
+LOW_RES_OK = {'editor.jpg'}
 MIN_NATIVE = 1.5  # kırpılmış alan gösterim kutusunun en az bu katı olmalı (h ve v için)
 
 
@@ -29,7 +31,7 @@ def classify(name, w, h):
     if w >= h:
         cw, ch = crop_size(w, h, RATIO['h'])
         need = DISPLAY['h']
-        err = None if cw >= need[0] * MIN_NATIVE and ch >= need[1] * MIN_NATIVE else f'yatay fotoğraf çok küçük ({cw}x{ch} kırpılabilir; en az {int(need[0]*MIN_NATIVE)}x{int(need[1]*MIN_NATIVE)} gerekir)'
+        err = None if name in LOW_RES_OK or cw >= need[0] * MIN_NATIVE and ch >= need[1] * MIN_NATIVE else f'yatay fotoğraf çok küçük ({cw}x{ch} kırpılabilir; en az {int(need[0]*MIN_NATIVE)}x{int(need[1]*MIN_NATIVE)} gerekir)'
         return 'h', err
     cw, ch = crop_size(w, h, RATIO['v'])
     need = DISPLAY['v']

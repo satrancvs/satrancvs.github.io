@@ -1,4 +1,4 @@
-![Yayın ekibi](images/editor.avif "Görsel: Sofia Gazarian · [Lisans](https://unsplash.com/license) · Kaynak: [Unsplash](https://unsplash.com/)")
+![Yayın ekibi](images/editor.jpg "Görsel: Sofia Gazarian · [Lisans](https://unsplash.com/license) · Kaynak: [Unsplash](https://unsplash.com/)")
 
 Satranç, Türkiye’de ve günümüzde yazıyla pek yan yana gelmeyen bir oyun. Kitapçı raflarında birkaç kitap, internette dağınık bir iki blog yazısı ve birkaç popüler video kanalı, bir de zaman zaman parlak çıkışlar yapıp ne yazık ki hayatına devam edemeyen süreli yayınlar buluyoruz.
 

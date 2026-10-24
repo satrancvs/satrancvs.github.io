@@ -2,6 +2,7 @@
   "_": "Renkli gösterilecek fotoğraflar (varsayılan siyah-beyaz; kitap kapakları dosya adından zaten renkli). Çağdaş renkli fotoğraflar buraya eklenir.",
   "colors": [
     "salon.jpg",
-    "piramit.jpg"
+    "piramit.jpg",
+    "editor.jpg"
   ]
 }
