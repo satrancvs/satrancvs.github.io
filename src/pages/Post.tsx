@@ -63,7 +63,10 @@ function PostPage() {
     const prevBg = html.style.backgroundColor;
     meta?.setAttribute('content', bg);
     html.style.backgroundColor = bg;
+    html.classList.add('post-page');
+    html.classList.toggle('post-light', light);
     return () => {
+      html.classList.remove('post-page', 'post-light');
       if (prevMeta != null) meta?.setAttribute('content', prevMeta);
       html.style.backgroundColor = prevBg;
     };

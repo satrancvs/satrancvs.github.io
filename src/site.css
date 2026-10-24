@@ -257,3 +257,15 @@
 /* Oynatıcının hamle şeridinde etkin hamlenin vurgu kutusu (.white-half.active): büyütülmüş taş simgeleri (Figurine) yazı tipinin kendi
    yüksekliğini aştığı için kutunun üstü kesik görünüyordu; kutu dikeyde biraz genişler (satır yüksekliği/yerleşim değişmez); taş simgeli yazıda kutunun altı üstünden bol kaldığı için dolgu yukarı kaydırıldı (üst .35em, alt .05em). */
 .cp-game .white-half { padding-block: .35em .05em; }
+
+/* Yazı sayfalarında sayfa kaydırma çubuğu (Post.tsx `html.post-page` sınıfını ekler; ana sayfa varsayılan çubuğu korur): geniş, belirgin, turuncu tutamaç.
+   Chrome/Safari ::-webkit-scrollbar ile boyanır (Chrome scrollbar-color verilince onu yok sayar, bu yüzden Firefox için ayrı @supports). */
+html.post-page { --sb-track: #17130F; --sb-thumb: #C8893E; --sb-thumb-hover: #E0A258; }
+html.post-page.post-light { --sb-track: #EBE1CE; --sb-thumb: #B8741F; --sb-thumb-hover: #96590F; }
+html.post-page::-webkit-scrollbar { width: 18px; height: 18px; background: var(--sb-track); }
+html.post-page::-webkit-scrollbar-track { background: var(--sb-track); }
+html.post-page::-webkit-scrollbar-thumb { background: var(--sb-thumb); border: 3px solid var(--sb-track); border-radius: 999px; min-height: 64px; }
+html.post-page::-webkit-scrollbar-thumb:hover { background: var(--sb-thumb-hover); }
+@supports not selector(::-webkit-scrollbar) {
+  html.post-page { scrollbar-width: auto; scrollbar-color: var(--sb-thumb) var(--sb-track); }
+}
