@@ -92,7 +92,7 @@ Satranç dünyasını yalnızca çocuk yaşta kendini belli eden dehasıyla değ
 >
 > Amatörler arasında genellikle atın daha değerli taş olduğu düşünülebilir. Bunun başlıca sebebi, fil ile karşılaştırıldığında atın hem siyah hem beyaz karelere hükmedebilmesidir. Ama gözden kaçan şu ki, at herhangi bir anda yalnızca tek bir renkteki kareler arasından seçim yapabilir.
 >
-> Atı bir kanattan diğerine götürmek de file kıyasla çok daha uzun sürer. Ayrıca, aşağıdaki örnekte görüleceği gibi fil atı “pat edebilir.” Bu, atın asla karşılık veremeyeceği bir _iltifat_.
+> Atı bir kanattan diğerine götürmek de file kıyasla çok daha uzun sürer. Ayrıca, aşağıdaki örnekte görüleceği gibi fil atı 'pat edebilir.' Bu, atın asla karşılık veremeyeceği bir _iltifat_.
 >
 > — José Raúl Capablanca, _"Chess Fundamentals"_ (Satrancın Temelleri), 1921.</span>
 
