@@ -77,7 +77,7 @@ Emanuel Lasker, İngiltere ve Amerika Birleşik Devletleri'ndeki üniversitelerd
 >
 > Biliyoruz ki _ceteris paribus_ (diğer her şey eşitken) at ve fil eşittir, her ikisi de _ceteris paribus_ üç piyon değerindedir. Ancak "_ceteris paribus_" teriminin içerdiği varsayım önemlidir: "diğer bütün koşullar eşitken" -_ceteris paribus_'un anlamı budur.
 >
-> Ama gerçekte ‘diğer bütün koşullar’ hiçbir zaman eşit değildir. Tüm koşulları eşit ağırlıkta ya da önemde saymak, bize ait bir varsayımdır.
+> Fakat gerçekte ‘diğer bütün koşullar’ hiçbir zaman eşit değildir. Tüm koşulları eşit ağırlıkta ya da önemde saymak, bize ait bir varsayımdır.
 >
 > — <span lang="en">Emanuel Lasker, _"Lasker's Manual of Chess"_ (Lasker'in Satanç El Kitabı), 1927.</span>
 
