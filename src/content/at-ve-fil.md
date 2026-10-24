@@ -72,11 +72,11 @@ Modern satrancın kurucusu olarak saygın bir yere sahip olan Steinitz'in konuya
 >
 > — <span lang="en">Wilhelm Steinitz, _"The Modern Chess Instructor"_ (Modern Satranç Kılavuzu), 1889.</span>
 
-![Emanuel Lasker (siyah-beyaz fotoğraf)](images/Lasker.jpg "<span lang="de">Emanuel Lasker</span> · Fotoğraf: Alman Federal Arşivi (<span lang="de">Bild 102-00459</span>) · Lisans: [CC BY-SA 3.0 DE](https://creativecommons.org/licenses/by-sa/3.0/de/deed.tr) · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=5478910)")
-
 İlk dünya şampiyonu Steinitz'in file bariz bir tercih göstermesine rağmen çağdaşı ve ikinci dünya şampiyonu Emanuel Lasker ise kaleme aldığı _Satranç El Kitabı_'nda meseleye çok daha temkinli, felsefi bir bakışla yaklaşıyordu.
 
 Emanuel Lasker, İngiltere ve Amerika Birleşik Devletleri'ndeki üniversitelerde matematik dersleri vermenin yanı sıra, _Mücadele_ (1906), _Dünyayı Anlamak_ (1913) ve _Erişilemez Olanın Felsefesi_ (1918) adlı kitaplarıyla felsefe alanında da çalışmalar yapmış çok yönlü bir düşünürdü.
+
+![Emanuel Lasker (siyah-beyaz fotoğraf)](images/Lasker.jpg "<span lang="de">Emanuel Lasker</span> · Fotoğraf: Alman Federal Arşivi (<span lang="de">Bild 102-00459</span>) · Lisans: [CC BY-SA 3.0 DE](https://creativecommons.org/licenses/by-sa/3.0/de/deed.tr) · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=5478910)")
 
 > Bazı satranç dostları atı file, bazıları ise fili ata tercih eder ve taş değişmeleri buna göre yapar. Haklı olan kim? Yoksa bu işlerde ne haklı ne haksız mı var? Belki de bu taşların karşılıklı değeri, akıl sır ermez rastlantıların hükmü altındadır.
 >
