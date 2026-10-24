@@ -7,6 +7,7 @@ Böylesine bir kayaya ilk toslayışım epey uzun zaman öncesine dayansa da, h�
 O hâlde, yazılışından kısa bir süre sonra satranç literatüründe saygın bir yer edinmeyi başarmış bu eserin yazarından kısaca söz ederek başlayalım: Sayısız turnuva zaferinin yanında İngiltere ve İskoçya şampiyonlukları bulunan İskoç Büyük Usta Jonathan Rowson, satrançtaki tescilli başarısının yanına Oxford ve Harvard'da gördüğü felsefe ve psikoloji öğrenimlerini de eklemiş. Nöroloji bilimi ve öğrenmenin psikolojisi üzerine bilgilerini satranç oyunculuğu ve antrenörlükten edindiği tecrübelerle birleştirmiş. 
 
 > Kitabı yazmaya başladığım sırada 2600'a çok yakındım ve İngiltere şampiyonuydum. Paylaşılmaya değer şeylerin izini sürdüğümü hissediyordum.
+> 
 > — <span lang="en">Jonathan Rowson, Chess for Zebras</span>
 
 Satranç otoriteleri tarafından takdirle karşılanan ***"Seven Deadly Chess Sins"*** (Yedi Ölümcül Satranç Günahı) kitabından sonra karşımızda yine en az onun kadar etkileyici bir kitap var: ***"Chess for Zebras"*** (Zebralar için Satranç).
