@@ -75,11 +75,14 @@ function PostPage() {
   // Okuma konumu: yazı sayfası yenilendiğinde ya da sonradan tekrar açıldığında kaldığın yerden devam eder.
   // Tarayıcının kendi geri yüklemesi tembel yüklenen fotoğraf/oyunlar yüzünden yanlış yere düşebildiği için
   // konum yazı başına localStorage'da tutulur ve yazı yüksekliği oturana kadar birkaç kez uygulanır.
+  // Yazının sonuna gelinmişse konum silinir (yazı bitmiş sayılır), bir dahaki giriş baştan açılır.
   useEffect(() => {
     if (!a) return;
     const key = `scroll:${a.slug}`;
     const read = () => { try { return Number(localStorage.getItem(key)) || 0; } catch { return 0; } };
-    const write = (y: number) => { try { if (y > 300) localStorage.setItem(key, String(Math.round(y))); else localStorage.removeItem(key); } catch { /* özel pencere vb. */ } };
+    // Okur yazının sonuna geldiyse (yazı gövdesinin alt kenarı ekrana girdiyse) yazıyı bitirmiş sayılır: konum hatırlanmaz, sonraki girişte yazı baştan açılır.
+    const finished = () => { const end = document.querySelector('article')?.getBoundingClientRect().bottom; return end !== undefined && end <= window.innerHeight + 200; };
+    const write = (y: number) => { try { if (y > 300 && !finished()) localStorage.setItem(key, String(Math.round(y))); else localStorage.removeItem(key); } catch { /* özel pencere vb. */ } };
     window.history.scrollRestoration = 'manual'; // geri yüklemeyi biz yaparız; tekrar 'auto' yapılmaz (ana sayfaya geri dönüşte yüklenmesin)
     const target = window.location.hash ? 0 : read();
     window.scrollTo(0, 0);
