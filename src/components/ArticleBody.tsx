@@ -113,9 +113,10 @@ const COMMENT_FEN_INLINE = /(\[FEN\s+"[^"\n]+"\](?:[ \t]*\[[?!]{1,2}[ \t]+[a-h][
 const COMMENT_FEN = /^\[FEN\s+"([^"]+)"\](?:\s*\[([?!]{1,2})\s+([a-h][1-8])\])?$/;
 // Önceki boş satır da yutulur: blok olan figürün üst boşluğu yalnızca kendi kenar boşluğu olsun (altıyla eşit), araya <br><br> girmesin.
 const COMMENT_FIG = /\s*@@FIG\d+@@[ \t]*\n*/g;
+// Yorumdaki her satır sonu (boş satır ya da tek \n) paragraf sonudur; yazar paragrafları tek satır sonuyla ayırmış olabilir. Figürün kendi \n'i (yukarıda) hariç.
 const commentMarkup = (movetext: string) =>
   movetext.replace(/\{([^}]*)\}/g, (_, body: string) =>
-    `{${body.replace(COMMENT_FIG, '<span class="cp-fig"></span>\n').replace(COMMENT_HEADING, (_m, pre: string, title: string) => `${pre}<span class="cp-heading">${title.trim()}</span> `).replace(/==(?=\S)([^=]+?)(?<=\S)==/g, '<ins>$1</ins>').replace(/\n[ \t]*\n\s*/g, '<br><br>')}}`);
+    `{${body.replace(COMMENT_FIG, '<span class="cp-fig"></span>\n').replace(COMMENT_HEADING, (_m, pre: string, title: string) => `${pre}<span class="cp-heading">${title.trim()}</span> `).replace(/==(?=\S)([^=]+?)(?<=\S)==/g, '<ins>$1</ins>').replace(/(?<!<span class="cp-fig"><\/span>)\n\s*/g, '<br><br>')}}`);
 
 // ChessPublica `<pgn>`/`<pgn-study>` varyantın ilk hamlesinden ÖNCEKİ yorumu `( { metin } 35... Re1 )` sessizce siler (ana hattaki ilk yorum gibi); ayrıca bir varyantın
 // ardından yazılan yorumu varyanttan önce çizer. Bu yüzden varyantın başındaki yorum, varyantın önündeki hamlenin yorumuna eklenir (yorum yoksa yeni yorum açılır): metin,
