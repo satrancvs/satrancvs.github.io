@@ -110,6 +110,8 @@
 .art-fen .jc-board { width: 100%; }
 /* Üst yarı kesiti: tahta yarım yüksekliğe kırpılır, alt kenara tahta çerçevesi çizilir. */
 .art-fen-top { aspect-ratio: 2 / 1; overflow: hidden; border-bottom: 2px solid #404040; }
+/* Kırpılmış diyagramdaki oklar (At ve fil: filin gittiği kareler, atın tehdit ettikleri) çok parlaktı: boyut aynı, renk soluk. */
+.art-fen-top .board-overlay { opacity: .5; filter: saturate(.7); }
 .art-fen-top:not(:has(.jc-board)) { aspect-ratio: 2 / 1; }
 
 /* Oyun henüz kurulmadıysa ham PGN metni görünmesin; kutu o sırada boş bir yer tutucu olur (sayfa kaymasın) */
