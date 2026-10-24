@@ -12,7 +12,7 @@ Satranç tekniğinin önemli konularından biri, at-fil ya da fil-at dengesizli�
 
 Hangi taşları değişeceğimize karar vermek pek çok konumda gerçekten zor olabilir. Pek çok oyuncu, sıklıkla kişisel eğilimler geliştirmiş. Sovyetler Birliği'nde atın filden daha güçlü olduğuna inanan eski bir düşünce okulunda bahsedilirmiş: **Chigorin okulu**. Garry Kasparov’a göre Mikhail Chigorin (1850–1908) kendinden sonra gelen büyük oyuncular için yolu açmıştır.
 
-![Mikhail Chigorin (siyah-beyaz fotoğraf)](images/Chigorin.jpg "<span lang="ru">Mikhail Chigorin</span> · Fotoğraf: <span lang="en">Cleveland Public Library</span> (Cleveland Halk Kütüphanesi) · <span lang="en">Digital Public Library of America</span> (Amerika Dijital Halk Kütüphanesi) · Lisans: Kamu malı · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=178871027)")
+![Mikhail Chigorin (siyah-beyaz fotoğraf)](images/Chigorin.jpg "<span lang="ru">Mikhail Chigorin</span> · Fotoğraf: Cleveland Halk Kütüphanesi · Amerika Dijital Halk Kütüphanesi · Lisans: Kamu malı · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=178871027)")
 
 > Chigorin’in oyun tarzı birçok bakımdan Alekhine’in tarzının öncüsü olmuştur. 20. yüzyılın ortalarında, Chigorin’in oyunlarını iyi bilen Boris Spassky de gençliğinde benzer bir üslupla oynuyordu.
 >
@@ -61,13 +61,13 @@ Fil, kendi bulunduğu şah kanadını, rakibin vezir kanadını ve -bu konumda e
 
 Modern satrancın kurucusu olarak saygın bir yere sahip olan Steinitz'in konuya dair görüşleri, elbette birkaç pratik başarıyla sınırlı değildi. Steinitz, döneminin belki de en geniş etkili satranç yazarı ve kuramcısıydı. _Modern Satranç Kılavuzu_ adlı kitabında meseleyi teorik olarak şöyle ele alıyordu:
 
-![Wilhelm Steinitz (siyah-beyaz fotoğraf)](images/Steinitz.jpg "<span lang="de">Wilhelm Steinitz</span> · Fotoğraf: <span lang="de">Fritz Schumann</span> · <span lang="en">Cleveland Public Library</span> (Cleveland Halk Kütüphanesi) · <span lang="en">Digital Public Library of America</span> (Amerika Dijital Halk Kütüphanesi) · Lisans: Kamu malı · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=178869232)")
+![Wilhelm Steinitz (siyah-beyaz fotoğraf)](images/Steinitz.jpg "<span lang="de">Wilhelm Steinitz</span> · Fotoğraf: <span lang="de">Fritz Schumann</span> · Cleveland Halk Kütüphanesi · Amerika Dijital Halk Kütüphanesi · Lisans: Kamu malı · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=178869232)")
 
 > Filin göreli değeri, ustalar ve otoriteler arasında farklı görüşlere yol açmıştır. Bazıları oyunsonunda fili ata belirgin bir şekilde tercih etmiştir. Vezir veya kaleyle birlikteyken atın filden daha iyi olduğu da öne sürülmüştür. Ama dikkatimizi çeken pozisyonların ortalamasını ve her iki taş lehine kesin olan birkaç istisnayı dikkatle değerlendirdikten sonra şu sonuca vardık: Filin gücü, pratik amaçlar bakımından, açılışta, oyunortasında, oyunsonunda ve diğer taşlarla çoğu kombinasyonda ona atfedilen, at karşısındaki matematiksel üstünlüğünü haklı çıkarmaktadır.
 >
 > — <span lang="en">Wilhelm Steinitz, _"The Modern Chess Instructor"_ (Modern Satranç Kılavuzu), 1889.</span>
 
-![Emanuel Lasker (siyah-beyaz fotoğraf)](images/Lasker.jpg "<span lang="de">Emanuel Lasker</span> · Fotoğraf: <span lang="de">Bundesarchiv</span> (Alman Federal Arşivi), <span lang="de">Bild 102-00459</span> · Lisans: [CC BY-SA 3.0 DE](https://creativecommons.org/licenses/by-sa/3.0/de/deed.tr) · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=5478910)")
+![Emanuel Lasker (siyah-beyaz fotoğraf)](images/Lasker.jpg "<span lang="de">Emanuel Lasker</span> · Fotoğraf: Alman Federal Arşivi (<span lang="de">Bild 102-00459</span>) · Lisans: [CC BY-SA 3.0 DE](https://creativecommons.org/licenses/by-sa/3.0/de/deed.tr) · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=5478910)")
 
 İlk dünya şampiyonu Steinitz'in file bariz bir tercih göstermesine rağmen çağdaşı ve ikinci dünya şampiyonu Emanuel Lasker ise kaleme aldığı _Satranç El Kitabı_'nda meseleye çok daha temkinli, felsefi bir bakışla yaklaşıyordu.
 
@@ -81,7 +81,7 @@ Emanuel Lasker, İngiltere ve Amerika Birleşik Devletleri'ndeki üniversitelerd
 >
 > — <span lang="en">Emanuel Lasker, _"Lasker's Manual of Chess"_ (Lasker'in Satanç El Kitabı), 1927.</span>
 
-![José Raúl Capablanca (siyah-beyaz fotoğraf)](images/Capablanca.jpg "<span lang="es">José Raúl Capablanca</span> · Fotoğraf: <span lang="en">Harris & Ewing</span> · <span lang="en">Library of Congress</span> (Amerikan Kongre Kütüphanesi) · Lisans: Kamu malı · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=67186745)")
+![José Raúl Capablanca (siyah-beyaz fotoğraf)](images/Capablanca.jpg "<span lang="es">José Raúl Capablanca</span> · Fotoğraf: <span lang="en">Harris & Ewing</span> · Amerikan Kongre Kütüphanesi · Lisans: Kamu malı · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=67186745)")
 
 Satranç dünyasını yalnızca çocuk yaşta kendini belli eden dehasıyla değil, nezih karakteri, dış görünüşü ve satranç yazarlığıyla da büyüleyen üçüncü dünya şampiyonu **José Raúl Capablanca** ise _Satrancın Temelleri_ adlı kitabında konuyu o vakte kadar yapılmış en ayrıntılı şekilde ele alarak _çoğu durumda_ filin üstün olduğu yönündeki düşüncesini anlatıyordu:
 
@@ -96,7 +96,7 @@ Satranç dünyasını yalnızca çocuk yaşta kendini belli eden dehasıyla değ
 Capablanca'nın bahsettiği örnek, boş tahtada merkezde duran bir filin, tahtanın kenarındaki bir atı hapsederek hareketsiz kılabilme becerisiydi.
 
 [FEN "3n4/8/8/3B4/8/8/8/8 w - - 0 1"] (crop: top-half)
-{ [%cal Gd5a8,Gd5g8] [%csl Rb7,Rc6,Rf7,Re6] }
+{ [%cal Gd5a8,Gd5g8,Rd8b7,Rd8c6,Rd8e6,Rd8f7] }
 
 Elbette bu, boş tahtada olduğu gibi, merkez piyonlarının tahtadan kalkmış olduğu ve atın tahtanın kenarında kaldığı oyunortası konumları için de geçerli bir tema.
 
