@@ -7,7 +7,7 @@ import OverlayScrollbar from '@/components/OverlayScrollbar';
 import ArticleBody from '@/components/ArticleBody';
 import ProgressiveImage, { boxWidth } from '@/components/ProgressiveImage';
 import PhotoCredit, { PHOTO } from '@/components/PhotoCredit';
-import { articleByOldSlug, articleBySlug, articlePath } from '@/data/articles';
+import { articleByOldSlug, articleBySlug, articlePath, catLabel } from '@/data/articles';
 import NotFound from './NotFound';
 import '../site.css';
 
@@ -151,8 +151,8 @@ function PostPage() {
       </button>
       <Link to="/" state={{ restore: true }} aria-label="Ana sayfaya dön" className="fixed top-5 right-5 z-50 w-12 h-12 rounded-full bg-[color:var(--fg)] text-[color:var(--bg)] grid place-items-center hover:bg-[color:var(--accent)]"><X /></Link>
       <article className="max-w-[760px] mx-auto px-6 pt-32 relative pb-32">
-        {a.cat && <p className="f-mono text-[color:var(--accent)]">{a.cat}</p>}
-        <h1 className={`f-display text-[clamp(44px,6vw,88px)] ${a.cat ? 'mt-6' : ''}`}>{a.title}</h1>
+        {catLabel(a) && <p className="f-mono text-[color:var(--accent)]">{catLabel(a)}</p>}
+        <h1 className={`f-display text-[clamp(44px,6vw,88px)] ${catLabel(a) ? 'mt-6' : ''}`}>{a.title}</h1>
         {(a.dek ?? a.excerpt) && (
           <p className="text-[1.3125rem] leading-[1.6] text-[color:rgb(var(--fg-rgb)/0.85)] mt-8">
             <Markdown options={{ forceInline: true }}>{(a.dek ?? a.excerpt) as string}</Markdown>
