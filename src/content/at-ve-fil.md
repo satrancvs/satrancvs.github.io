@@ -111,7 +111,11 @@ Elbette bu, boş tahtada olduğu gibi, merkez piyonlarının tahtadan kalkmış 
 
 ### Capablanca Kuralı
 
-Capablanca bu karşılaştırma ve tavsiyenin ardından günümüzde ==Capablanca Kuralı== diye anılan ilkesini şöyle sunar: _"Rakibinizin fili varsa, piyonlarınızı rakibinizin filinin rengiyle aynı karelerde_ [birbirlerini korur hâlde] _tutun. Sizin filiniz varsa -rakibin fili olsun olmasın- piyonlarınızı kendi filinizin renginin ==tersindeki== karelerde tutun."_
+Capablanca bu karşılaştırma ve tavsiyenin ardından günümüzde ==Capablanca Kuralı== diye anılan ilkesini şöyle sunar: 
+
+> Rakibinizin fili varsa, piyonlarınızı rakibinizin filinin rengiyle aynı karelerde tutun. Sizin filiniz varsa -rakibin fili olsun olmasın- piyonlarınızı kendi filinizin renginin ==tersindeki== karelerde tutun.
+>
+> — Capablanca, a.g.e.
 
 Yani rakibimizin beyaz kareli bir fili varsa, piyonlarımızı beyaz karelerde piyon zinciri oluşturacak şekilde tutarak rakip filin etkili olabileceği kareleri kontrol altına almak isteriz.
 
@@ -121,7 +125,7 @@ Fil ile aynı renkli karelerde, filin hareket kabiliyetini kısıtlayan piyonlar
 
 Ne var ki Capablanca, çağları aşıp günümüze kadar geçerliliğini korumuş, hatta kural hâlini almış böylesi bir ilkeyi ilk defa formülize ederken bile okurun kulağına şu önemli gerçeği fısıldamayı ihmal etmiyordu:
 
-> Elbette bu ilkeler, pozisyonun gereklerine göre değişiklik göstermeli. Sabit bir oyun hattı vermek _ahmaklık_ olurdu. ==Her oyun farklıdır ve rakibin ne yapmayı planladığına göre farklı ele alınmayı gerektirir. Asıl önemli olan, oluşabilecek pozisyonları gözünüzde canlandırarak yapılan hesaplamadır.==
+> Elbette bu ilkeler, pozisyonun gereklerine göre değişiklik göstermeli. Sabit bir oyun hattı vermek _ahmaklık_ olurdu. Her oyun ==farklıdır== ve rakibin ne yapmayı planladığına göre farklı ele alınmayı gerektirir. Asıl önemli olan, oluşabilecek pozisyonları gözünüzde canlandırarak yapılan hesaplamadır.
 >
 > — Capablanca, a.g.e.
 
