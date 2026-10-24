@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { ArrowUpRight, Menu as MenuIcon, X } from 'lucide-react';
+import { ArrowUpRight, Mail, Menu as MenuIcon, X } from 'lucide-react';
 import Markdown from 'markdown-to-jsx';
 import { Link, useLocation, useNavigationType } from 'react-router-dom';
 import PhotoCredit, { PHOTO } from '@/components/PhotoCredit';
@@ -215,9 +215,9 @@ export default function Index() {
             ))}
             <span title="Yakında..." aria-disabled="true" className="hidden xl:inline f-mono text-[#A89A88] opacity-40 cursor-not-allowed select-none"><span className="text-[#C8893E]">0{NAV.length + 1}</span> {NAV_SOON}</span>
           </nav>
-          {/* Bülten bölümüne götürür; her genişlikte görünür: masaüstünde menüden sonra, dar ekranda menü düğmesinin yanında (çok dar telefonda kısa yazı "Abone Ol", 360 px altında menü ekranındaki düğme kalır). */}
+          {/* Bülten bölümüne götürür; her genişlikte görünür: masaüstünde menüden sonra, dar ekranda menü düğmesinin yanında (telefonda kısa yazı "Abone Ol", 360 px altında yalnızca zarf simgesi). */}
           <div className="flex items-center gap-3 shrink-0">
-            <a href="#bulten" className="btn-mono max-[359px]:hidden inline-flex shrink-0 whitespace-nowrap rounded-full bg-[#F1E9DC] text-[#0E0C0A] px-4 sm:px-6 h-11 items-center transition-colors hover:bg-[#C8893E]"><span className="sm:hidden">Abone Ol</span><span className="hidden sm:inline">Bültene Abone Ol</span></a>
+            <a href="#bulten" aria-label="Bültene Abone Ol" className="btn-mono inline-flex shrink-0 whitespace-nowrap rounded-full bg-[#F1E9DC] text-[#0E0C0A] max-[359px]:w-11 px-4 sm:px-6 max-[359px]:px-0 h-11 items-center justify-center transition-colors hover:bg-[#C8893E]"><Mail size={18} aria-hidden className="hidden max-[359px]:block" /><span className="max-[359px]:hidden sm:hidden">Abone Ol</span><span className="hidden sm:inline">Bültene Abone Ol</span></a>
             <button aria-label="Menüyü aç" onClick={() => setOpen(true)} className="lg:hidden w-11 h-11 grid place-items-center"><MenuIcon /></button>
           </div>
         </div>

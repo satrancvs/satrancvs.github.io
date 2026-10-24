@@ -115,6 +115,25 @@ const commentMarkup = (movetext: string) =>
   movetext.replace(/\{([^}]*)\}/g, (_, body: string) =>
     `{${body.replace(COMMENT_FIG, '<span class="cp-fig"></span>\n').replace(COMMENT_HEADING, (_m, pre: string, title: string) => `${pre}<span class="cp-heading">${title.trim()}</span> `).replace(/==(?=\S)([^=]+?)(?<=\S)==/g, '<ins>$1</ins>').replace(/\n[ \t]*\n\s*/g, '<br><br>')}}`);
 
+// ChessPublica `<pgn>`/`<pgn-study>` varyantın ilk hamlesinden ÖNCEKİ yorumu `( { metin } 35... Re1 )` sessizce siler (ana hattaki ilk yorum gibi); ayrıca bir varyantın
+// ardından yazılan yorumu varyanttan önce çizer. Bu yüzden varyantın başındaki yorum, varyantın önündeki hamlenin yorumuna eklenir (yorum yoksa yeni yorum açılır): metin,
+// varyant satırından hemen önce görünür ve kaybolmaz.
+function hoistVariationLeads(mt: string): string {
+  const toks = mt.match(/\{[^}]*\}|\(|\)|[^\s(){}]+/g) ?? [];
+  const out: string[] = [];
+  for (let i = 0; i < toks.length; i++) {
+    const t = toks[i];
+    if (t === '(' && toks[i + 1]?.startsWith('{')) {
+      const body = toks[++i].slice(1, -1).trim();
+      const prev = out[out.length - 1];
+      if (prev?.startsWith('{')) out[out.length - 1] = `{${prev.slice(1, -1).trimEnd()} ${body}}`;
+      else out.push(`{ ${body} }`);
+    }
+    out.push(t);
+  }
+  return out.join(' ');
+}
+
 function PgnGame({ header, moves }: { header: string; moves: string }) {
   // [View "player"] etiketi oyunu (bulmaca işareti olmasa da) <pgn-player> ile çizdirir; ChessPublica'ya geçirilmez.
   const watch = WATCH_TAG.test(header) || FLIP_TAG.test(header);
@@ -126,7 +145,7 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
   const tag = study ? 'pgn-study' : side || watch ? 'pgn-player' : 'pgn';
   // ChessPublica <pgn> ilk hamleden önceki yorumu çizmez; oyun metninin başındaki `{ … }` yorumu bu yüzden ayrılıp oyunun üstünde bir paragraf olarak gösterilir.
   const lead = tag === 'pgn' ? moves.match(/^\s*\{([^}]*)\}\s*/) : null;
-  const movetext = lead ? moves.slice(lead[0].length) : moves;
+  const movetext = hoistVariationLeads(lead ? moves.slice(lead[0].length) : moves);
   const intro = lead?.[1].replace(/\[D\]/g, '').trim();
   // <pgn-study>'de bulmaca olmaz: [P] işaretleri silinir.
   const figs: string[] = [];
