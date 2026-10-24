@@ -208,15 +208,17 @@ export default function Index() {
             <span className="grid grid-cols-2 w-7 h-7 border border-[#F1E9DC]"><span className="bg-[#C8893E]" /><span /><span /><span className="bg-[#F1E9DC]" /></span>
             <span className="f-display text-2xl tracking-tight">Satranç <em className="italic text-[#C8893E]">vs.</em></span>
           </a>
-          <nav className="hidden lg:flex gap-5 xl:gap-10 whitespace-nowrap">
+          <nav className="hidden lg:flex gap-6 xl:gap-10 whitespace-nowrap">
             {NAV.map(([l, id], i) => (
               <a key={id} href={`#${id}`} className="f-mono text-[#A89A88] hover:text-[#F1E9DC] transition-colors"><span className="text-[#C8893E]">0{i + 1}</span> {l}</a>
             ))}
-            <span title="Yakında..." aria-disabled="true" className="f-mono text-[#A89A88] opacity-40 cursor-not-allowed select-none"><span className="text-[#C8893E]">0{NAV.length + 1}</span> {NAV_SOON}</span>
+            <span title="Yakında..." aria-disabled="true" className="hidden xl:inline f-mono text-[#A89A88] opacity-40 cursor-not-allowed select-none"><span className="text-[#C8893E]">0{NAV.length + 1}</span> {NAV_SOON}</span>
           </nav>
-          {/* Bülten bölümüne götürür. Altı menü öğesiyle birlikte dar masaüstünde (< xl) yer yetmediği için düğme yalnızca xl'de görünür. */}
-          <a href="#bulten" className="btn-mono hidden xl:inline-flex shrink-0 whitespace-nowrap rounded-full bg-[#F1E9DC] text-[#0E0C0A] px-6 h-11 items-center transition-colors hover:bg-[#C8893E]">Bültene Abone Ol</a>
-          <button aria-label="Menüyü aç" onClick={() => setOpen(true)} className="lg:hidden w-11 h-11 grid place-items-center"><MenuIcon /></button>
+          {/* Bülten bölümüne götürür; her genişlikte görünür: masaüstünde menüden sonra, dar ekranda menü düğmesinin yanında (çok dar telefonda kısa yazı "Abone Ol", 360 px altında menü ekranındaki düğme kalır). */}
+          <div className="flex items-center gap-3 shrink-0">
+            <a href="#bulten" className="btn-mono max-[359px]:hidden inline-flex shrink-0 whitespace-nowrap rounded-full bg-[#F1E9DC] text-[#0E0C0A] px-4 sm:px-6 h-11 items-center transition-colors hover:bg-[#C8893E]"><span className="sm:hidden">Abone Ol</span><span className="hidden sm:inline">Bültene Abone Ol</span></a>
+            <button aria-label="Menüyü aç" onClick={() => setOpen(true)} className="lg:hidden w-11 h-11 grid place-items-center"><MenuIcon /></button>
+          </div>
         </div>
       </header>
       {open && (
@@ -225,6 +227,7 @@ export default function Index() {
           <div className="flex-1 flex flex-col justify-center gap-4">
             {NAV.map(([l, id]) => <a key={id} href={`#${id}`} onClick={() => setOpen(false)} className="f-display text-6xl">{l}</a>)}
             <span title="Yakında..." aria-disabled="true" className="f-display text-6xl opacity-30 cursor-not-allowed select-none">{NAV_SOON}</span>
+            <a href="#bulten" onClick={() => setOpen(false)} className="btn-mono mt-6 self-start inline-flex whitespace-nowrap rounded-full bg-[#F1E9DC] text-[#0E0C0A] px-6 h-11 items-center">Bültene Abone Ol</a>
           </div>
         </div>
       )}
