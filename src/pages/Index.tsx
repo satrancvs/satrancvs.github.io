@@ -18,7 +18,6 @@ let homeY = 0;
 const NAV = [
   ['Kapak', 'kapak'],
   ['Yazılar', 'yazilar'],
-  ['Köşeler', 'koseler'],
   ['Yazarlar', 'yazarlar'],
   ['Hakkında', 'hakkinda'],
 ] as const;
