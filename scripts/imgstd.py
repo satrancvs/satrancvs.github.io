@@ -17,6 +17,8 @@ MAX_FILE = {'h': (1200, 800), 'v': (800, 1200), 's': (480, 720)}
 LOW_RES_OK = {'editor.jpg'}
 # Düşük çözünürlüklü ama yazıda diğer portrelerle aynı boyda (dikey) gösterilmesi istenen portreler; kaynak büyütülmez, ekranda ~1,3x yoğunlukla kalır.
 VERTICAL_OK = {'Lasker.jpg'}
+# Eski portreler, çözünürlüğü yetse bile Selim Palavan'ın portresi gibi küçük kutuda (s) gösterilir (At ve fil yazısı).
+SMALL_OK = {'Chigorin.jpg', 'Steinitz.jpg', 'Lasker.jpg'}
 MIN_NATIVE = 1.5  # kırpılmış alan gösterim kutusunun en az bu katı olmalı (h ve v için)
 
 
@@ -28,7 +30,7 @@ def crop_size(w, h, ratio):
 
 def classify(name, w, h):
     """-> (sınıf, hata veya None)"""
-    if COVER.search(name):
+    if COVER.search(name) or name in SMALL_OK:
         return 's', None
     if w >= h:
         cw, ch = crop_size(w, h, RATIO['h'])
