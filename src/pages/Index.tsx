@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { ArrowUpRight, Menu as MenuIcon, X } from 'lucide-react';
 import Markdown from 'markdown-to-jsx';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigationType } from 'react-router-dom';
 import PhotoCredit, { PHOTO } from '@/components/PhotoCredit';
 import SiteFooter from '@/components/SiteFooter';
 import FaviconBullet from '@/components/FaviconBullet';
@@ -121,7 +121,9 @@ export default function Index() {
   // (düzen cleanup'ı DOM kaldırılmadan, kaydırma konumu kısalan sayfaya göre kırpılmadan önce çalışır). Yenileme, geri/ileri ve diğer girişler yine sayfa başından açılır.
   const loc = useLocation();
   const restoreTo = useRef<number | null>(null);
-  if (restoreTo.current === null) restoreTo.current = (loc.state as { restore?: boolean } | null)?.restore ? homeY : 0;
+  const navType = useNavigationType();
+  // Çarpı ya da tarayıcının geri/ileri tuşu (POP) konumu geri getirir; `homeY` yenilemede sıfırlanır (modül yeniden yüklenir), yani yenileme yine sayfa başından açar. Adreste #bölüm varsa o önceliklidir.
+  if (restoreTo.current === null) restoreTo.current = !loc.hash && ((loc.state as { restore?: boolean } | null)?.restore || navType === 'POP') ? homeY : 0;
   useLayoutEffect(() => {
     window.history.scrollRestoration = 'manual';
     window.scrollTo(0, restoreTo.current ?? 0);
