@@ -35,7 +35,11 @@ const ATTRIBUTIONS = [
 ];
 
 // authorLang (örn. "hu"): yazar adının dili; büyük harfe çevirmede Türkçe İ yerine o dilin kuralı kullanılır (GÖMÖRI).
-const CORNERS = Array.from(new Set(PUBLISHED.map((a) => a.cat).filter((c): c is string => !!c)));
+// Köşelerin görünme sırası. Henüz yazısı olmayan köşe (örn. Söyleşi) sekmelerde görünmez; yazısı çıkınca (articles.json `cat`) bu sırayla yerini alır.
+// Listede olmayan bir kategori yine de gizlenmez, sona eklenir.
+const CORNER_ORDER = ['Satranç tarihi', 'Turnuva günlüğü', 'Literatür inceleme', 'Analizli oyun', 'Açılış dosyası', 'Özel dosya', 'Söyleşi'];
+const USED = new Set(PUBLISHED.map((a) => a.cat).filter((c): c is string => !!c));
+const CORNERS = [...CORNER_ORDER.filter((c) => USED.has(c)), ...[...USED].filter((c) => !CORNER_ORDER.includes(c))];
 const tabCls = (on: boolean) => `f-mono h-11 border-b-2 transition-colors ${on ? 'border-[#C8893E] text-[#0E0C0A]' : 'border-transparent text-[#0E0C0A]/50 hover:text-[#0E0C0A]'}`;
 
 // bio (Markdown bağlantıları olabilir) isteğe bağlıdır; boşsa kartta gösterilmez.
@@ -352,7 +356,7 @@ export default function Index() {
             <span className="block"><FaviconBullet className="inline-block align-top mt-[0.075em] mr-[calc(13.25px_-_0.054em)]" />Satranç <em className="italic text-[#C8893E]">vs.</em></span>
             <em className="italic text-[#C8893E]">‘Satranç ve siz’ demek.</em>
           </h2>
-          <p className="text-[1.1875rem] text-[#F1E9DC]/75 leading-relaxed mt-10 max-w-xl">Satranç vs., satranç yazıları yayınlayan bağımsız bir dijital dergidir.</p>
+          <p className="text-[1.1875rem] text-[#F1E9DC]/75 leading-relaxed mt-10 max-w-xl">Satranç vs.; satranç tarihi yazıları, açılış dosyaları, turnuva günlükleri, analizli oyunlar, satranç literatür incelemeleri, özel dosyalar ve söyleşiler yayınlayan bağımsız bir dijital dergidir.</p>
           <p className="text-[1.1875rem] text-[#F1E9DC]/75 leading-relaxed mt-6 max-w-xl">Bize ulaşmak, yayın ekibine katılmak ya da yazı taslaklarınızı göndermek için <a href="mailto:editor@satrancvs.com" className="underline underline-offset-2 hover:text-[#F1E9DC]">editor@satrancvs.com</a> adresine e-posta gönderebilirsiniz. Yayın ekibi, paylaştığınız tüm öneri ve yazı taslaklarını büyük bir özenle inceler. Değerlendirme süreci zaman alabildiğinden yanıtlardaki olası gecikmelerde göstereceğiniz sabır ve anlayış için şimdiden teşekkür ederiz.</p>
         </div>
         {/* Sağ sütun (md ve üstü): yalnızca mono içerik — üstte atıflar, altta telif notu; mobilde alt alta. Sütun aşağı hizalıdır (md:self-end): son satırı sol sütunun son satırıyla aynı taban çizgisindedir. */}
