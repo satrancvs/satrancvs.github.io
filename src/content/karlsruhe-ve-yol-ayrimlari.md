@@ -72,10 +72,10 @@ Ancak bu plan yerine 30... ♕xb2 almam gerekirdi. Bu, zaman sıkışıklığın
 
 İlk tur için kusursuz bir oyun değildi, fakat öğretici yönünün son derece fazla olduğunu düşünüyorum. Bu oyunda neler gördük?
 
-- Botvinnik Sistemi’nin güçlü ve zayıf yanlarını
+- ==Botvinnik Sistemi==’nin güçlü ve zayıf yanlarını
 - Bu yapıda Beyazın f4 sürüşünün neden yanlış olabildiğini,
 - Fianchetto sistemlerine karşı ...f5 planının her zaman doğru olmayacağını,
-- Siyahın ...♖xg5!! kalite fedasının ardında yatan stratejik mantığı,
+- Siyahın ==...♖xg5!!== kalite fedasının ardında yatan stratejik mantığı,
 - ...a3, ...h5-h4 ve ...♗e5 fikirlerinin nasıl birlikte çalıştığını,
 - ve küçük piyon yapısı değişikliklerinin bütün konum değerlendirmesini nasıl değiştirebildiğini izledik.
 
