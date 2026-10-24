@@ -1,4 +1,4 @@
-![Prof. Dr. Selim Palavan](images/selim-palavan.jpg "Prof. Dr. Selim Palavan (1909–1995) · Kaynak: İstanbul Satranç Derneği arşivi · © İSD")
+![Prof. Dr. Selim Palavan](images/selim-palavan.jpg "Prof. Dr. Selim Palavan (1909–1995) · Kaynak: İstanbul Satranç Derneği arşivi · ©İSD")
 
 ### İstanbul Şatranç şampiyonu Selim Palavan kimdir ?
 

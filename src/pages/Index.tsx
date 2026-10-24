@@ -34,7 +34,7 @@ const ATTRIBUTIONS = [
   'Fotoğraflar: künyeler her fotoğrafın altında',
 ];
 
-// `credit` (articles.json): yazar adı yerine gösterilen ve bir adrese bağlanan künye (ana sayfa kartı ve "Tüm yazılar" satırı; örn. © İSD). Kart ve satır zaten bir <Link> olduğundan
+// `credit` (articles.json): yazar adı yerine gösterilen ve bir adrese bağlanan künye (ana sayfa kartı ve "Tüm yazılar" satırı; örn. ©İSD). Kart ve satır zaten bir <Link> olduğundan
 // iç içe <a> olmasın diye bağlantı rol="link" bir <span>'dır: tıklanınca (orta tuş ve Enter dahil) adres yeni sekmede açılır, kartın yazı bağlantısı tetiklenmez.
 function CreditLink({ credit }: { credit: { text: string; href: string } }) {
   const open = (e: React.SyntheticEvent) => { e.preventDefault(); e.stopPropagation(); window.open(credit.href, '_blank', 'noopener,noreferrer'); };
