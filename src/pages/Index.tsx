@@ -193,7 +193,7 @@ export default function Index() {
       )}
 
       {/* KAPAK */}
-      <section id="kapak" ref={heroRef} className="relative h-[100svh] min-h-[680px] overflow-hidden">
+      <section id="kapak" ref={heroRef} className="relative flex flex-col min-h-[max(100svh,680px)] overflow-hidden">
         {cover.photo && hero.w > 0 && (
           <>
             <img src={PHOTO.src} alt={PHOTO.alt} className="absolute inset-y-0 right-0 h-full object-cover object-[50%_20%] grayscale opacity-40 md:opacity-80"
@@ -204,12 +204,12 @@ export default function Index() {
           </>
         )}
         <ChessGrid w={hero.w} h={hero.h} />
-        <div className="absolute top-24 inset-x-0 z-20 pointer-events-none">
-          <div className="max-w-[1440px] mx-auto px-6 md:px-10 flex flex-col gap-1 sm:flex-row sm:justify-between f-mono text-[#A89A88]">
+        <div className="relative pt-24 z-20 pointer-events-none">
+          <div className="max-w-[1440px] mx-auto px-6 md:px-10 flex flex-col gap-2 sm:flex-row sm:justify-between f-mono text-[#A89A88]">
             <span>Dijital satranç dergisi</span><span>Sayı 1 · Ekim–Kasım–Aralık 2026</span>
           </div>
         </div>
-        <div className="absolute inset-x-0 bottom-0 z-20 pointer-events-none">
+        <div className="relative mt-auto pt-12 z-20 pointer-events-none">
           <div className="max-w-[1440px] mx-auto px-6 md:px-10 pb-28 md:pb-16">
             <p className="f-mono text-[#C8893E] mb-6">{cover.cat && <>{cover.cat} · </>}<span className="whitespace-nowrap">{cover.date}</span></p>
             <h1 className="f-display text-[clamp(40px,6.5vw,112px)] max-w-[26ch]">
