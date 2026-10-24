@@ -91,6 +91,8 @@ const WATCH_TAG = /^\[View\s+"(?:player|study)"\]\s*$/im;
 const STUDY_TAG = /^\[View\s+"study"\]\s*$/im;
 // [EventLine "..."]: oyun başlığındaki etkinlik satırını (Etkinlik, Yer, yıl yerine) kendi metniyle verir; satır içi Markdown/HTML (<i>) kullanılabilir.
 // ChessPublica'ya geçirilmez.
+// `[ResultInline "1"]`: sonucu (0-1) son hamlenin satırına alır; son hamlenin yorumu altında kalır (ChessPublica sonucu yorumdan sonra ayrı satıra yazar).
+const RESULT_INLINE_TAG = /^\[ResultInline\s+"[^"]*"\]\s*$/im;
 const EVENT_LINE_TAG = /^\[EventLine\s+"[^"]*"\]\s*$/im;
 // [Frame "quote"]: oyun, alıntı kutusunun (.quote) içinde çizilir (diyagram + <pgn>); oyuncu başlığı yerine EventLine kaynak satırı olur (Palavan'ın analizi).
 const QUOTE_TAG = /^\[Frame\s+"quote"\]\s*$/im;
@@ -117,7 +119,8 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
   // [View "player"] etiketi oyunu (bulmaca işareti olmasa da) <pgn-player> ile çizdirir; ChessPublica'ya geçirilmez.
   const watch = WATCH_TAG.test(header) || FLIP_TAG.test(header);
   const study = STUDY_TAG.test(header);
-  const clean = header.replace(WATCH_TAG, '').replace(EVENT_LINE_TAG, '').replace(QUOTE_TAG, '').replace(FLIP_TAG, '').trim();
+  const clean = header.replace(WATCH_TAG, '').replace(EVENT_LINE_TAG, '').replace(RESULT_INLINE_TAG, '').replace(QUOTE_TAG, '').replace(FLIP_TAG, '').trim();
+  const resultInline = RESULT_INLINE_TAG.test(header);
   const side = study ? null : puzzleSide(clean, moves);
   const head = side === 'b' && !/\[Orientation\s/i.test(clean) ? `${clean}\n[Orientation "black"]` : clean;
   const tag = study ? 'pgn-study' : side || watch ? 'pgn-player' : 'pgn';
@@ -143,6 +146,20 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
   }, [near]);
   // Sonradan kurulan düz <pgn> öğeleri için ChessPublica yeniden taratılır (<pgn-player> kendini kurar).
   useEffect(() => { if (near) window.ChessPublica?.initAll(); }, [near]);
+  useEffect(() => {
+    if (!near || !resultInline || !box.current) return;
+    const el = box.current;
+    const fix = () => {
+      const r = el.querySelector('.pgn-container .pgn-result');
+      const c = r?.previousElementSibling;
+      const m = c?.previousElementSibling;
+      if (r && c?.classList.contains('pgn-comment') && m?.classList.contains('pgn-mainline')) { m.append(`\u00a0${r.textContent}`); r.remove(); }
+    };
+    fix();
+    const mo = new MutationObserver(fix);
+    mo.observe(el, { childList: true, subtree: true });
+    return () => mo.disconnect();
+  }, [near]); // eslint-disable-line react-hooks/exhaustive-deps
   // Yorumlardaki fotoğraf yer tutucuları (.cp-fig) ChessPublica çizdikçe bulunur; Figure'lar portal ile içlerine basılır. Yalnızca ÇİZİLMİŞ çıktıdaki (.pgn-container) yer tutucular
   // sayılır: ham <pgn> kaynağındakine basılırsa ChessPublica kaynağı okurken künyeyi yorumun içine metin olarak da kopyalar.
   const [slots, setSlots] = useState<Element[]>([]);
