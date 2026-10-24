@@ -42,6 +42,8 @@ Bütün İstanbul’un ve hatta memleketimizin her köşesindeki şatranç merak
 
 { Siyahların durumu zordur: Beyazlar hem kaleyi hem de Bf5 hamlesi ile (figürleri değiştikten sonra) kazanılmış bir piyon finalini elde etmekle tehdit ederler. Siyahlar ikinci tehdide karşı bir tedbir alır da 1… Rf8 oynarsa, Beyazlar şöyle devam eder: } 1... Rf8 2. Bg4 Kg7 { Atı 3. h5 tehdidinden kurtarmak için. } 3. Rd7 Rf7 { Aksi takdirde 4. Rxb7 ±. } 4. Rxf7+ Kxf7 5. Bh5 { ve Beyazlar hafif figürleri de değiştirerek piyon oyunsonunu kolayca kazanır. }
 
+Fakat Siyahlar zarif bir kombinezonla partiyi kurtarıyorlar.
+
 [Event "Odessa, Ukrayna"]
 [Site "Odessa, Ukrayna"]
 [Date "1934.??.??"]
@@ -51,7 +53,7 @@ Bütün İstanbul’un ve hatta memleketimizin her köşesindeki şatranç merak
 [SetUp "1"]
 [FEN "2r5/1p6/3RB1nk/1K6/7P/3P3P/8/8 b - - 0 1"]
 
-{[P7] Fakat Siyahlar zarif bir kombinezonla partiyi kurtarıyorlar. } 1... Rc6 $3 ( 1... Rf8 2. Bg4 Kg7 { Atı 3. h5 tehdidinden kurtarmak için. } 3. Rd7 Rf7 { Aksi takdirde 4. Rxb7 ±. } 4. Rxf7+ Kxf7 5. Bh5 { ve Beyazlar hafif figürleri de değiştirerek piyon oyunsonunu kolayca kazanır. } ) 2. Rxc6 { Zorunlu bir hamle. } 2... bxc6+ 3. Kc5 { Veya 3. Kxc6 Ne5+ 4. K∞ Nxd3 =. } ( 3. Kxc6 Ne5+ ) 3... Nf4 4. Bf5 Nxd3+ $1 5. Bxd3 { ve parti beraberlikle biter. } 1/2-1/2
+{[P7]} 1... Rc6 $3 ( 1... Rf8 2. Bg4 Kg7 { Atı 3. h5 tehdidinden kurtarmak için. } 3. Rd7 Rf7 { Aksi takdirde 4. Rxb7 ±. } 4. Rxf7+ Kxf7 5. Bh5 { ve Beyazlar hafif figürleri de değiştirerek piyon oyunsonunu kolayca kazanır. } ) 2. Rxc6 { Zorunlu bir hamle. } 2... bxc6+ 3. Kc5 { Veya 3. Kxc6 Ne5+ 4. K∞ Nxd3 =. } ( 3. Kxc6 Ne5+ ) 3... Nf4 4. Bf5 Nxd3+ $1 5. Bxd3 { ve parti beraberlikle biter. } 1/2-1/2
 
 – Mühendis mektebinde doçent olan ve 34 yaşında bulunan bay Selim Palavan’ın şatranç ile meşgul olabilmek için nasıl vakit bulduğunu anlayabilmek merakına kapılarak şu suali sordum: **Boş vakitlerinizi daima şatranca mı hasredersiniz ?**
 
