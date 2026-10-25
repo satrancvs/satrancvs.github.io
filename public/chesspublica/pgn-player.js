@@ -1684,6 +1684,7 @@ class VideoComment {
       const iconSpan = document.createElement("span");
       iconSpan.className = "lucide-icon";
       if (isGameOver) {
+        btn.classList.add("cp-replay"); // site patch: the column layout puts the replay button beside the board (site.css)
         iconSpan.style.setProperty("--icon", lucideIconUrl("rotate-ccw"));
         iconSpan.setAttribute("aria-label", "Replay");
         btn.onclick = () => {
