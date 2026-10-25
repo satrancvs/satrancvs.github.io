@@ -328,3 +328,6 @@ html.post-custom-sb { scrollbar-width: none; }
 html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 
 .flip-stage > p { margin: 1.75rem 0 0; text-align: center; font-family: 'Eval','EvalPM','Figurine','Newsreader',serif; font-size: clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height: 1.7; font-optical-sizing: auto; font-weight: 320; color: rgb(var(--fg-rgb) / .95); }
+
+/* Varyantın başındaki yorum (var-lead.ts) varyant bloğunun hemen üstünde, varyantla aynı sütunda. */
+.cp-game .video-comment > .cp-var-lead { margin: 0 0 .25rem; }

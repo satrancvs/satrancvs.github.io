@@ -7,6 +7,7 @@ import { useChessPublica } from '@/lib/chesspublica';
 import { curlyComments, curlyProse, watchComments } from '@/lib/curly-dom';
 import ProgressiveImage, { boxWidth, isSmallImage } from '@/components/ProgressiveImage';
 import { watchInlinePlay } from '@/lib/inline-play';
+import { watchVarLead } from '@/lib/var-lead';
 import { watchLocalization } from '@/lib/localize-dom';
 import { watchStudy } from '@/lib/study-fix';
 import { watchVariationFix } from '@/lib/variation-fix';
@@ -121,17 +122,23 @@ const commentMarkup = (movetext: string) =>
 // ChessPublica `<pgn>`/`<pgn-study>` varyantın ilk hamlesinden ÖNCEKİ yorumu `( { metin } 35... Re1 )` sessizce siler (ana hattaki ilk yorum gibi); ayrıca bir varyantın
 // ardından yazılan yorumu varyanttan önce çizer. Bu yüzden varyantın başındaki yorum, varyantın önündeki hamlenin yorumuna eklenir (yorum yoksa yeni yorum açılır): metin,
 // varyant satırından hemen önce görünür ve kaybolmaz.
-function hoistVariationLeads(mt: string): string {
+function hoistVariationLeads(mt: string, markLeads = false): string {
   const toks = mt.match(/\{[^}]*\}|\(|\)|[^\s(){}]+/g) ?? [];
   const out: string[] = [];
+  let depth = 0;
+  let varIdx = 0; // kaçıncı ilk-düzey varyant (aynı hamleden sonra); <pgn-player>'da başı yorumlu varyantın yorumu varyant bloğuyla eşleşir (src/lib/var-lead.ts)
   for (let i = 0; i < toks.length; i++) {
     const t = toks[i];
     if (t === '(' && toks[i + 1]?.startsWith('{')) {
-      const body = toks[++i].slice(1, -1).trim();
+      let body = toks[++i].slice(1, -1).trim();
+      if (markLeads && depth === 0) body = `\uE000${varIdx}\uE001${body}\uE002`;
       const prev = out[out.length - 1];
       if (prev?.startsWith('{')) out[out.length - 1] = `{${prev.slice(1, -1).trimEnd()} ${body}}`;
       else out.push(`{ ${body} }`);
     }
+    if (t === '(') { if (depth === 0) varIdx++; depth++; }
+    else if (t === ')') depth = Math.max(0, depth - 1);
+    else if (depth === 0 && !t.startsWith('{') && !t.startsWith('$')) varIdx = 0;
     out.push(t);
   }
   return out.join(' ');
@@ -148,7 +155,7 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
   const tag = study ? 'pgn-study' : side || watch ? 'pgn-player' : 'pgn';
   // ChessPublica <pgn> ilk hamleden önceki yorumu çizmez; oyun metninin başındaki `{ … }` yorumu bu yüzden ayrılıp oyunun üstünde bir paragraf olarak gösterilir.
   const lead = tag === 'pgn' ? moves.match(/^\s*\{([^}]*)\}\s*/) : null;
-  const movetext = hoistVariationLeads(lead ? moves.slice(lead[0].length) : moves);
+  const movetext = hoistVariationLeads(lead ? moves.slice(lead[0].length) : moves, tag === 'pgn-player');
   const intro = lead?.[1].replace(/\[D\]/g, '').trim();
   // <pgn-study>'de bulmaca olmaz: [P] işaretleri silinir.
   const figs: string[] = [];
@@ -554,6 +561,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     const stopCurly = watchComments(el);
     const stopLocalize = watchLocalization(el);
     const stopInlinePlay = watchInlinePlay(el);
+    const stopVarLead = watchVarLead(el);
     const stopVariationFix = watchVariationFix(el);
     const stopStudy = watchStudy(el);
     // Oyun yorumlarındaki başlıklara (.cp-heading) İçindekiler'deki kimlik verilir (sectionToc ile aynı slugify).
@@ -561,7 +569,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     idHeadings();
     const headingObserver = new MutationObserver(idHeadings);
     headingObserver.observe(el, { childList: true, subtree: true });
-    return () => { stopCurly(); stopLocalize(); stopInlinePlay(); stopVariationFix(); stopStudy(); headingObserver.disconnect(); };
+    return () => { stopCurly(); stopLocalize(); stopInlinePlay(); stopVarLead(); stopVariationFix(); stopStudy(); headingObserver.disconnect(); };
   }, [chunks]);
   useEffect(() => {
     const el = rootRef.current;
