@@ -18,7 +18,7 @@ Gördüğümüz gibi, Capablanca'yı varyantlar ilgilendirmiyordu; planlanan kon
 Oyunsonunda hamle tekrarının önemli bir rolü vardır. Hamle tekrarıyla kazanca zorlayan tarafın psikolojik kazançlar elde ettiği de söylenebilir. Savunma yapmaya çalışan taraf çoğu kez baskıya dayanamaz ve işinizi kolaylaştıran yeni bir zayıflık yaratır. Oyunsonunda zaman zaman hamle tekrarı yapmalısınız! } 43. Ne2 g6 44. Rd3+ Ke6 45. Kd4 Ra6 46. Re3+ Kd6 47. Nc3 f5 48. b5 Ra8 { Piyonlar ilerlemeye başlıyor ve beyaz taşlar onları destekleyebiliyor. Capablanca'nın piyonlarını ancak taşları mümkün olan en güçlü konumlara yerleştiğinde ilerletmeye başladığına dikkat etmek gerekli. } ( { Elbette Siyah şimdi a3'te alamaz, çünkü: } 48... Rxa3 49. Ne4+ ) 49. Kc4 Be6+ 50. Kb4 c5+ 51. bxc6 Bg8 52. Nb5+ Kxc6 53. Rd3 { Beyaz artık a-piyonunu ilerletmeden idare edebilir. Siyahın şah kanadı piyonları zayıfladı ve biri düşüyor. } 53... g5 54. Rd6+ Kb7 55. fxg5 hxg5 56. Rg6 Rf8 57. Rxg5 f4 58. Nd4 { Çok önemli bir hamle. Capablanca rakibini ...f3 ile ilgili her türlü şanstan yoksun bırakıyor. } 58... Rc8 59. Rg7+ Kb6 60. Rg6+ Kb7 61. Nb5 Rf8 62. Nd6+ Kb8 63. h4 1-0
 
 
-Alekhine, 1937’deki dünya şampiyonluğu maçında **Max Euwe** karşısında, kale değişiminin ardından Siyahın atına karşı bu defa file sahip taraf. Analiz ve yorumlar Büyük Usta Israel Gelfer’e ait (a.g.e).
+Alekhine, 1937’deki dünya şampiyonluğu maçında **Max Euwe** karşısında. Kale değişiminin ardından Siyahın atına karşı bu defa file sahip taraf Alekhine. Analiz ve yorumlar Büyük Usta Israel Gelfer’e ait (a.g.e).
 
 [Event "Dünya Şampiyonası"]
 [Date "1937.??.??"]
