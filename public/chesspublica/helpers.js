@@ -314,7 +314,7 @@ export function fromFigurine(s) {
    list of attributes that are kept on that tag; all other attributes
    are stripped. */
 var ALLOWED_COMMENT_TAGS = {
-  br: [], b: [], strong: [], i: [], em: [], u: [], s: [], del: [], ins: [],
+  br: [], b: [], strong: [], i: [], em: [], u: [], s: [], del: [], ins: [], blockquote: [],
   code: [], kbd: [], mark: [], small: [], sub: [], sup: [],
   span: ["class", "data-san"],
   a: ["href", "title", "rel"]

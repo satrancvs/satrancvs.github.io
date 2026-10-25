@@ -404,3 +404,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .cp-game .variation-block.cp-lead-inline .variation-comment[data-for-mi="0"] { display: inline; }
 .cp-game .variation-block.cp-lead-inline .variation-comment[data-for-mi="0"] > span { display: inline; }
 .cp-game .variation-block.cp-lead-inline .variation-comment[data-for-mi="0"]::after { content: " "; }
+
+/* Oyun yorumundaki alıntı (`> metin`, ArticleBody.tsx commentMarkup): yazıdaki alıntı kutusunun küçük hali; sol köşesinde tırnak işareti. */
+.cp-game blockquote { position: relative; display: block; margin: 1rem 0 .5rem 1rem; padding: .9rem 1rem .9rem 1.25rem; background: var(--box); border: 1px solid var(--line); border-left: 3px solid var(--accent); }
+.cp-game blockquote::before { content: '\201C'; position: absolute; top: -.35rem; left: -1rem; width: 1.9rem; height: 1.9rem; box-sizing: border-box; border-radius: 50%; background: var(--bg); border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; padding-top: .55rem; font-family: 'Fraunces', serif; font-size: 1.6rem; line-height: 1; color: var(--accent); }
