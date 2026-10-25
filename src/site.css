@@ -102,6 +102,8 @@
 .cp-game .video-comment .comment-line.cp-duplicate { display: none; }
 /* Bulmaca konumunda tahtanın çerçevesi mavi yerine sitenin turuncusu (var(--accent), tur numaralarındaki renk) */
 .cp-game .player-container.puzzle-active .board-wrap .board-b72b1 { box-shadow: 0 0 0 3px var(--accent); }
+/* Bulmaca kenarlığı (3 px, tahtanın dışına) gelince ayarlar çarkı ve açılan içeriği de o kadar yukarı kayar; kenarlığın üstüne binmez. */
+.cp-game .player-container.puzzle-active .board-toolbar { transform: translateY(calc(-100% - 3px)); }
 /* Oyun başlığı (oyuncular, etkinlik, tarih) gösterilmez: bilgi tur başlığında (GameSection) var */
 .cp-game .pgn-headers { display: none; }
 .cp-game .video-title:has(.video-title-text) { display: none; }
@@ -267,6 +269,8 @@
    (ya da analizdeki bir hamle denenince) açılır. */
 /* Bulmacada hamle bulundu, yorumun Play düğmesi bekleniyor: "en iyi hamleyi bulun" ipucu satırı gösterilmez. */
 .cp-game .player-container.puzzle-awaiting-play .puzzle-hint-row { display: none; }
+/* Bulmaca beklerken bir varyant gezilirken (PuzzleMode.browsing) "en iyi hamleyi bulun" satırı ve ipucu düğmesi gizlenir; yer kaplamaya devam eder, tahtanın altı oynamaz. */
+.cp-game .player-container.puzzle-browsing .puzzle-hint-row { visibility: hidden; }
 .flip-stage { position: relative; }
 .flip-stage .flip-face { transform-origin: 50% 50%; }
 .flip-stage .flip-back { position: absolute; top: 0; left: 0; right: 0; visibility: hidden; pointer-events: none; }
