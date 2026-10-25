@@ -4,6 +4,7 @@ import { Moon, Sun, X } from 'lucide-react';
 import Markdown from 'markdown-to-jsx';
 import SiteFooter from '@/components/SiteFooter';
 import OverlayScrollbar from '@/components/OverlayScrollbar';
+import ShareButton from '@/components/ShareButton';
 import ArticleBody from '@/components/ArticleBody';
 import ProgressiveImage, { boxWidth } from '@/components/ProgressiveImage';
 import PhotoCredit, { PHOTO } from '@/components/PhotoCredit';
@@ -146,10 +147,11 @@ function PostPage() {
   return (
     <div className={`sk min-h-screen bg-[color:var(--bg)]${light ? ' sk-light' : ''}`}>
       <OverlayScrollbar />
-      <button type="button" onClick={toggleTheme} aria-pressed={light} aria-label={light ? 'Koyu temaya geç' : 'Açık temaya geç'} title={light ? 'Koyu tema' : 'Açık tema'} className="fixed top-5 right-[4.75rem] z-50 w-12 h-12 rounded-full border border-[color:rgb(var(--fg-rgb)/0.4)] bg-[color:var(--bg)] text-[color:var(--fg)] grid place-items-center hover:border-[color:var(--accent)] hover:text-[color:var(--accent)] transition-colors">
+      <button type="button" onClick={toggleTheme} aria-pressed={light} aria-label={light ? 'Koyu temaya geç' : 'Açık temaya geç'} title={light ? 'Koyu tema' : 'Açık tema'} className="fixed top-5 left-5 z-50 w-12 h-12 rounded-full border border-[color:rgb(var(--fg-rgb)/0.4)] bg-[color:var(--bg)] text-[color:var(--fg)] grid place-items-center hover:border-[color:var(--accent)] hover:text-[color:var(--accent)] transition-colors">
         {light ? <Moon size={20} aria-hidden /> : <Sun size={20} aria-hidden />}
       </button>
       <Link to="/" state={{ restore: true }} aria-label="Ana sayfaya dön" className="fixed top-5 right-5 z-50 w-12 h-12 rounded-full bg-[color:var(--fg)] text-[color:var(--bg)] grid place-items-center hover:bg-[color:var(--accent)]"><X /></Link>
+      <ShareButton title={a.title} url={`${window.location.origin}${articlePath(a)}`} />
       <article className="max-w-[760px] mx-auto px-6 pt-32 relative pb-32">
         {catLabel(a) && <p className="f-mono text-[color:var(--accent)]">{catLabel(a)}</p>}
         <h1 className={`f-display text-[clamp(44px,6vw,88px)] ${catLabel(a) ? 'mt-6' : ''}`}>{a.title}</h1>

@@ -298,7 +298,7 @@
 .to-be-continued { margin: 5rem 0 0; text-align: center; }
 .tbc-label { display: flex; align-items: center; gap: 1.25rem; color: var(--accent); margin: 0; }
 .tbc-label::before, .tbc-label::after { content: ''; flex: 1; height: 1px; background: var(--line); }
-.tbc-text { margin: 1.5rem 0 0; font-size: 15px; line-height: 2.6; color: var(--mute); }
+.tbc-text { margin: 1.5rem 0 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: .02em; line-height: 2.6; color: var(--mute); }
 .tbc-link { font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; font-weight: 500; display: inline-flex; align-items: center; gap: .5rem; margin-left: .35rem; padding: .35rem 1.1rem; border: 1px solid var(--accent); border-radius: 999px; color: var(--fg); text-decoration: none; transition: background .2s, color .2s; }
 .tbc-link::after { content: '\2192'; }
 .tbc-link:hover { background: var(--accent); color: var(--bg); }

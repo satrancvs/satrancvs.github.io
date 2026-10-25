@@ -86,8 +86,28 @@ export default function OverlayScrollbar() {
     window.scrollBy({ top: (down ? 1 : -1) * window.innerHeight * 0.9, behavior: 'smooth' });
   };
 
+  // Yerel katmanlı çubuklar gibi: yalnızca kaydırırken (ya da tutamacı sürüklerken / fare üzerindeyken) görünür, ~1 sn sonra solar.
+  // Gizliyken olayları yutmaz (`pointer-events: none`): sağ kenardan yapılan kaydırma jestleri doğal çalışır.
+  const keepOpen = (e: React.PointerEvent) => {
+    if (e.pointerType !== 'mouse') return;
+    window.clearTimeout(idle.current);
+    setActive(true);
+  };
+  const letGo = (e: React.PointerEvent) => {
+    if (e.pointerType !== 'mouse' || drag.current) return;
+    window.clearTimeout(idle.current);
+    idle.current = window.setTimeout(() => setActive(false), 900);
+  };
+
   return (
-    <div aria-hidden onPointerDown={page} style={{ touchAction: 'none' }} className="fixed right-0 top-0 bottom-0 z-40 w-6">
+    <div
+      aria-hidden
+      onPointerDown={page}
+      onPointerEnter={keepOpen}
+      onPointerLeave={letGo}
+      style={{ touchAction: 'none', opacity: active ? 1 : 0, pointerEvents: active ? 'auto' : 'none', transition: 'opacity .25s' }}
+      className="fixed right-0 top-0 bottom-0 z-40 w-6"
+    >
       <div className="absolute right-[3px] top-1 bottom-1 w-[10px] rounded-full pointer-events-none" style={{ background: 'var(--sb-track)', opacity: 0.6 }} />
       <div
         onPointerDown={startDrag}
@@ -95,7 +115,7 @@ export default function OverlayScrollbar() {
         onPointerUp={endDrag}
         onPointerCancel={endDrag}
         className="absolute right-[3px] w-[10px] rounded-full"
-        style={{ top: geo.top, height: geo.h, background: 'var(--sb-thumb)', opacity: active ? 1 : 0.8, touchAction: 'none', transition: 'opacity .2s' }}
+        style={{ top: geo.top, height: geo.h, background: 'var(--sb-thumb)', touchAction: 'none' }}
       />
     </div>
   );
