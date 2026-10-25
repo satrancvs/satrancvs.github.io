@@ -115,9 +115,10 @@ const COMMENT_FEN = /^\[FEN\s+"([^"]+)"\](?:\s*\[([?!]{1,2})\s+([a-h][1-8])\])?$
 // Önceki boş satır da yutulur: blok olan figürün üst boşluğu yalnızca kendi kenar boşluğu olsun (altıyla eşit), araya <br><br> girmesin.
 const COMMENT_FIG = /\s*@@FIG\d+@@[ \t]*\n*/g;
 // Yorumdaki her satır sonu (boş satır ya da tek \n) paragraf sonudur; yazar paragrafları tek satır sonuyla ayırmış olabilir. Figürün kendi \n'i (yukarıda) hariç.
-const commentMarkup = (movetext: string) =>
+// <pgn-player> kaynağı textContent ile okur (etiketler düşer): vurgu `<ins>` kaçışlı yazılır, metin olarak ulaşıp oynatıcının yorum süzgecinden geçer.
+const commentMarkup = (movetext: string, player = false) =>
   movetext.replace(/\{([^}]*)\}/g, (_, body: string) =>
-    `{${body.replace(COMMENT_FIG, '<span class="cp-fig"></span>\n').replace(COMMENT_HEADING, (_m, pre: string, title: string) => `${pre}<span class="cp-heading">${title.trim()}</span> `).replace(/==(?=\S)([^=]+?)(?<=\S)==/g, '<ins>$1</ins>').replace(/(?<!<span class="cp-fig"><\/span>)\n\s*/g, '<br><br>')}}`);
+    `{${body.replace(COMMENT_FIG, '<span class="cp-fig"></span>\n').replace(COMMENT_HEADING, (_m, pre: string, title: string) => `${pre}<span class="cp-heading">${title.trim()}</span> `).replace(/==(?=\S)([^=]+?)(?<=\S)==/g, player ? '&lt;ins&gt;$1&lt;/ins&gt;' : '<ins>$1</ins>').replace(/(?<!<span class="cp-fig"><\/span>)\n\s*/g, '<br><br>')}}`);
 
 // ChessPublica `<pgn>`/`<pgn-study>` varyantın ilk hamlesinden ÖNCEKİ yorumu `( { metin } 35... Re1 )` sessizce siler (ana hattaki ilk yorum gibi); ayrıca bir varyantın
 // ardından yazılan yorumu varyanttan önce çizer. Bu yüzden varyantın başındaki yorum, varyantın önündeki hamlenin yorumuna eklenir (yorum yoksa yeni yorum açılır): metin,
@@ -162,7 +163,7 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
   const noFigs = movetext.replace(/\{[^}]*\}/g, (c) => c.replace(COMMENT_FEN_INLINE, '\n$1\n').replace(COMMENT_FIG_LINE, (_m, fig: string) => (study && COMMENT_FEN.test(fig) ? '' : `@@FIG${figs.push(fig) - 1}@@`)));
   const text = study ? noFigs.replace(/\{\s*\[P\s*\d*\]\s*\}|\[P\s*\d*\]/g, '') : noFigs;
   // Etiketler (başlık <span>'ı, <br>) kaçışlandıktan SONRA eklenir: <pgn> içeriğini innerHTML ile okur, etiketler böyle gerçek etiket olarak ChessPublica'ya ulaşır.
-  const raw = commentMarkup(`${head}\n\n${text.trim()}`.replace(/&/g, '&amp;').replace(/</g, '&lt;'));
+  const raw = commentMarkup(`${head}\n\n${text.trim()}`.replace(/&/g, '&amp;').replace(/</g, '&lt;'), tag === 'pgn-player');
   const box = useRef<HTMLDivElement>(null);
   const [near, setNear] = useState(() => typeof window === 'undefined' || typeof IntersectionObserver === 'undefined' || !!window.location.hash);
   useEffect(() => {
