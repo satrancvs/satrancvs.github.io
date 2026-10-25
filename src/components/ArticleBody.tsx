@@ -131,9 +131,12 @@ function mergeComments(mt: string): string {
 }
 // Yorumda `> metin` ile başlayan satır alıntıdır (<blockquote>). <pgn-player> kaynağı textContent ile okur: etiket orada kaçışlı yazılır (vurgudaki <ins> gibi).
 const QUOTE_LINE = /(^|\n)[ \t]*>[ \t]*([^\n]+)/g;
-const commentMarkup = (movetext: string, player = false) =>
-  mergeComments(movetext).replace(/\{([^}]*)\}/g, (_, body: string) =>
-    `{${body.replace(COMMENT_FIG, '<span class="cp-fig"></span>\n').replace(COMMENT_HEADING, (_m, pre: string, title: string) => `${pre}<span class="cp-heading">${title.trim()}</span> `).replace(/==(?=\S)([^=]+?)(?<=\S)==/g, player ? '&lt;ins&gt;$1&lt;/ins&gt;' : '<ins>$1</ins>').replace(QUOTE_LINE, (_m, pre: string, text: string) => player ? `${pre}&lt;blockquote&gt;${text}&lt;/blockquote&gt;` : `${pre}<blockquote>${text}</blockquote>`).replace(/(?<!<span class="cp-fig"><\/span>)\n\s*/g, '<br><br>').replace(/(<br>)+(?=<blockquote>)/g, '').replace(/<\/blockquote>(<br>)+/g, '</blockquote>')}}`);
+const commentMarkup = (movetext: string, player = false) => {
+  // <pgn-player> kaynağı textContent ile okunur (ve boşlukları sadeleştirir): etiketler orada kaçışlı yazılır, oynatıcının yorum süzgecinden geçer (satır sonu <br> dahil).
+  const tag = (name: string) => (player ? `&lt;${name}&gt;` : `<${name}>`);
+  return mergeComments(movetext).replace(/\{([^}]*)\}/g, (_, body: string) =>
+    `{${body.replace(COMMENT_FIG, '<span class="cp-fig"></span>\n').replace(COMMENT_HEADING, (_m, pre: string, title: string) => `${pre}<span class="cp-heading">${title.trim()}</span> `).replace(/==(?=\S)([^=]+?)(?<=\S)==/g, player ? '&lt;ins&gt;$1&lt;/ins&gt;' : '<ins>$1</ins>').replace(QUOTE_LINE, (_m, pre: string, text: string) => `${pre}${tag('blockquote')}${text}${tag('/blockquote')}`).replace(/(?<!<span class="cp-fig"><\/span>)\n\s*/g, `${tag('br')}${tag('br')}`).replace(new RegExp(`(?:${tag('br')})+(?=${tag('blockquote')})`, 'g'), '').replace(new RegExp(`${tag('/blockquote')}(?:${tag('br')})+`, 'g'), tag('/blockquote'))}}`);
+}
 
 // ChessPublica `<pgn>`/`<pgn-study>` varyantın ilk hamlesinden ÖNCEKİ yorumu `( { metin } 35... Re1 )` sessizce siler (ana hattaki ilk yorum gibi); ayrıca bir varyantın
 // ardından yazılan yorumu varyanttan önce çizer. Bu yüzden varyantın başındaki yorum, varyantın önündeki hamlenin yorumuna eklenir (yorum yoksa yeni yorum açılır): metin,

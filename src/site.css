@@ -452,3 +452,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .cp-game blockquote::before { content: '\201C'; position: absolute; top: -.35rem; left: -1rem; width: 1.9rem; height: 1.9rem; box-sizing: border-box; border-radius: 50%; background: var(--bg); border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; padding-top: .55rem; font-family: 'Fraunces', serif; font-size: 1.6rem; line-height: 1; color: var(--accent); }
 .cp-game .variation-comment.cp-inline-c, .cp-game .variation-comment.cp-inline-c > span { display: inline; }
 .cp-game .variation-comment.cp-inline-c::after { content: " "; }
+/* Sağ sütundaki alıntı (var-lead.ts moveQuotes); varyantın içinde gezerken sol yorum gibi gizlenir. */
+.cp-game .video-comment > .cp-quote-right { flex: 0 0 auto; }
+.cp-game .video-comment > .cp-quote-right > blockquote { margin: .5rem 0 .75rem 1rem; }
+.cp-game .video-comment.cp-in-variation > .cp-quote-right { display: none; }

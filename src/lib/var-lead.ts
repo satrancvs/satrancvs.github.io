@@ -206,8 +206,29 @@ function split(box: Element) {
   el.style.setProperty('--cp-btop', `${Math.round(start + (hl ? hl + gap : 0))}px`);
 }
 
+// Üç sütunlu düzende sol yorumdaki alıntı kutusu (`> metin` → <blockquote>) sağ sütuna taşınır (`.cp-quote-right`, varyantların önünde); giriş cümleleri solda kalır.
+function moveQuotes(box: Element) {
+  const el = box as HTMLElement;
+  const line = box.querySelector(':scope > .comment-line');
+  if (!line || getComputedStyle(el).position !== 'static') return;
+  const quotes = Array.from(line.querySelectorAll('blockquote'));
+  if (!quotes.length) return;
+  let host = box.querySelector(':scope > .cp-quote-right');
+  if (!host) {
+    host = document.createElement('div');
+    host.className = 'cp-quote-right';
+    line.after(host);
+  }
+  quotes.forEach((q) => (host as Element).append(q));
+  // Alıntıdan arta kalan satır sonları (<br>) temizlenir.
+  line.querySelectorAll('.comment-body').forEach((body) => {
+    while (body.lastChild && (body.lastChild.nodeName === 'BR' || (body.lastChild.nodeType === 3 && !body.lastChild.textContent?.trim()))) body.lastChild.remove();
+  });
+}
+
 function refresh(box: Element) {
   process(box);
+  moveQuotes(box);
   balance(box);
   split(box);
   inlineContinuations(box);
