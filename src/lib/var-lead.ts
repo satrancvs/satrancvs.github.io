@@ -121,8 +121,17 @@ function classify(box: Element) {
   classes.forEach((c, k) => { if (line.classList.contains(c) !== want[k]) line.classList.toggle(c, want[k]); });
 }
 
+// Varyantın ilk hamlesinden sonraki yorum küçük harfle başlıyorsa (`23... Rd8 { ile savunmak …}`) hamlenin cümlesini sürdürür: satır içi akar (.cp-lead-inline).
+function inlineContinuations(box: Element) {
+  box.querySelectorAll('.variation-block').forEach((block) => {
+    const first = block.querySelector(':scope > .variation-content > .variation-comment[data-for-mi="0"]');
+    if (first && /^\p{Ll}/u.test(first.textContent?.trim() ?? '')) block.classList.add('cp-lead-inline');
+  });
+}
+
 function refresh(box: Element) {
   process(box);
+  inlineContinuations(box);
   reserve(box);
   classify(box);
 }

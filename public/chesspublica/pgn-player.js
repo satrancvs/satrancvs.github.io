@@ -2883,7 +2883,17 @@ class VideoEngine {
 
 
 
-  showPlayBtn() { if (this.playBtn) this.playBtn.classList.remove("hidden"); }
+  showPlayBtn() {
+    if (!this.playBtn) return;
+    /* Site patch: after the last move the board button restarts the game, so it shows the replay icon like the comment button does. */
+    const icon = this.playBtn.querySelector(".lucide-icon");
+    if (icon) {
+      const over = this.state.moves.length > 0 && this.state.index >= this.state.moves.length;
+      icon.style.setProperty("--icon", lucideIconUrl(over ? "rotate-ccw" : "circle-play"));
+      this.playBtn.setAttribute("aria-label", over ? "Replay" : "Play");
+    }
+    this.playBtn.classList.remove("hidden");
+  }
   hidePlayBtn() { if (this.playBtn) this.playBtn.classList.add("hidden");    }
 
   /* Set board orientation directly (no-op if already set) — used to apply
