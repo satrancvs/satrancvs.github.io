@@ -324,7 +324,8 @@ var ALLOWED_COMMENT_TAGS = {
    class names are stripped to prevent style/layout injection via the
    sanitizer, but our own inline-move spans need to keep their class
    so the puzzle engine can style/target them. */
-var ALLOWED_SPAN_CLASSES = /^cp-inline-move$/;
+/* Site patch: article headings (cp-heading) and photo slots (cp-fig) written by ArticleBody.tsx commentMarkup survive in the study view too. */
+var ALLOWED_SPAN_CLASSES = /^(?:cp-inline-move|cp-heading)$/;
 
 /* Only http(s), mailto, fragment and same-origin paths are allowed as
    link hrefs — blocks javascript: and data: URLs. */

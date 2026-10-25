@@ -226,9 +226,57 @@ function moveQuotes(box: Element) {
   });
 }
 
+// Sol yorum çok uzunsa (sağ sütun boşken ya da daha az doluyken) yorumun son paragrafları sağ sütuna (`.cp-more-right`, varyantların ve alıntının önüne) taşınır: ilk k paragraf solda
+// kalır, k iki sütunun yazı uzunlukları en dengeli olacak şekilde seçilir. Paragraflar `<br><br>` ile ayrılır; paragrafın düğümleri (vurgu, düğme dahil) bütün olarak taşınır.
+const SPREAD_MIN = 380;
+function spreadComment(box: Element) {
+  const el = box as HTMLElement;
+  const line = box.querySelector(':scope > .comment-line');
+  if (!line || getComputedStyle(el).position !== 'static') return;
+  const body = line.querySelector('.comment-body');
+  if (!body) return;
+  const nodes = Array.from(body.childNodes);
+  const paras: Node[][] = [[]];
+  for (let i = 0; i < nodes.length; i++) {
+    const n = nodes[i];
+    if (n.nodeName === 'BR' && nodes[i + 1]?.nodeName === 'BR') {
+      while (nodes[i + 1]?.nodeName === 'BR') i++;
+      paras.push([]);
+    } else paras[paras.length - 1].push(n);
+  }
+  const lens = paras.map((g) => g.reduce((a, n) => a + (n.textContent?.length ?? 0), 0));
+  const left = lens.reduce((a, b) => a + b, 0);
+  const rightNow = weight(Array.from(box.querySelectorAll(':scope > .variation-block, :scope > .cp-left-stack, :scope > .cp-quote-right, :scope > .cp-more-right')));
+  if (paras.length < 2 || left < SPREAD_MIN || left <= rightNow) return;
+  let keep = paras.length;
+  let best = Infinity;
+  for (let k = 1; k < paras.length; k++) {
+    const l = lens.slice(0, k).reduce((a, b) => a + b, 0);
+    const diff = Math.abs(l - (rightNow + left - l));
+    if (diff < best) { best = diff; keep = k; }
+  }
+  if (keep >= paras.length) return;
+  let host = box.querySelector(':scope > .cp-more-right');
+  if (!host) {
+    host = document.createElement('div');
+    host.className = 'cp-more-right';
+    line.after(host);
+  }
+  // Önce taşınacak paragraflar (araya giren <br>'lar atılır), sonra solda kalan paragrafın sonundaki <br>'lar temizlenir.
+  paras.slice(keep).forEach((g, i) => {
+    const p = document.createElement('p');
+    g.forEach((n) => p.append(n));
+    (host as Element).append(p);
+    if (!p.textContent?.trim() && !p.querySelector('button')) p.remove();
+    void i;
+  });
+  while (body.lastChild && (body.lastChild.nodeName === 'BR' || (body.lastChild.nodeType === 3 && !body.lastChild.textContent?.trim()))) body.lastChild.remove();
+}
+
 function refresh(box: Element) {
   process(box);
   moveQuotes(box);
+  spreadComment(box);
   balance(box);
   split(box);
   inlineContinuations(box);
