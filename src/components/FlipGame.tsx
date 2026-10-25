@@ -2,9 +2,11 @@ import { useEffect, useRef } from 'react';
 import type { ReactNode } from 'react';
 import { curlyPass } from '@/lib/curly-dom';
 
-// Palavan–Euwe: iki ayrı oynatıcı alt alta durur. Üstte Beyaz tarafından analiz (`front`), altında Siyah tarafından bulmaca (`back`).
+// Palavan–Euwe: tek oynatıcı gibi görünen iki oynatıcı. Önce Beyaz tarafından analiz (`front`) oynar; analizin son yorumundaki oynat düğmesine
+// basılınca analiz kaybolur, aynı yerde Siyah tarafından bulmaca (`back`, önünde `between` geçiş cümlesi) açılır. Bulmaca arka planda baştan çizili
+// durur (ChessPublica tahtayı çizim anındaki genişliğe göre boyutlandırır), görünmez ve yer kaplamaz.
 // Bulmacanın altındaki yorumlar okur hamleyi bulunca (ya da analizdeki bir hamleyi denerse) açılır; yan varyantlar yalnızca denenince satır olarak eklenir.
-// Oynatıcıdan gelen `cp-puzzle` olayı public/chesspublica/pgn-player.js'deki site yamasıdır. (Eskiden analiz bitince tahta dönerdi; kaldırıldı.)
+// Oynatıcıdan gelen `cp-move` (detail.gameOver) ve `cp-puzzle` olayları public/chesspublica/pgn-player.js'deki site yamalarıdır.
 
 type Variation = { moves: string[]; comments: string[]; glyphs: string[] };
 type PuzzleDetail = {
@@ -51,14 +53,52 @@ function lineText(v: Variation, d: PuzzleDetail) {
 
 export default function FlipGame({ front, between, back }: { front: ReactNode; between?: ReactNode; back: ReactNode }) {
   const root = useRef<HTMLDivElement>(null);
+  const frontEl = useRef<HTMLDivElement>(null);
   const backEl = useRef<HTMLDivElement>(null);
   const notesEl = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const rootEl = root.current;
+    const f = frontEl.current;
     const b = backEl.current;
     const notes = notesEl.current;
-    if (!rootEl || !b || !notes) return;
+    if (!rootEl || !f || !b || !notes) return;
+
+    let switched = false;
+    let atEnd = false;
+
+    // Analiz biter bitmez (son hamle ve yorumu görünürken) "başa dön" düğmesi bir "oynat" düğmesine çevrilir; ona basınca bulmaca açılır.
+    // Düğmeyi oynatıcı her çizimde yeniden oluşturur: izlenir. (cloneNode oynatıcının onclick işleyicisini taşımaz; yeni düğmeye işlev bağlanır.)
+    const showPuzzle = () => {
+      if (switched) return;
+      switched = true;
+      rootEl.style.minHeight = `${rootEl.offsetHeight}px`;
+      f.style.display = 'none';
+      b.classList.add('is-active');
+      b.removeAttribute('aria-hidden');
+      requestAnimationFrame(() => { rootEl.style.minHeight = ''; });
+    };
+    const toPlay = async () => {
+      if (switched || !atEnd) return;
+      const { lucideIconUrl } = await import(/* @vite-ignore */ ICONS);
+      f.querySelectorAll('.comment-play-btn').forEach((btn) => {
+        if (btn.hasAttribute('data-flip')) return;
+        const next = btn.cloneNode(true) as HTMLElement;
+        next.setAttribute('data-flip', '1');
+        const icon = next.querySelector('.lucide-icon') as HTMLElement | null;
+        icon?.style.setProperty('--icon', lucideIconUrl('circle-play'));
+        icon?.setAttribute('aria-label', 'Play');
+        next.addEventListener('click', showPuzzle);
+        btn.replaceWith(next);
+      });
+    };
+    const onMove = (e: Event) => {
+      if (switched || !f.contains(e.target as Node)) return;
+      atEnd = !!(e as CustomEvent).detail?.gameOver;
+      if (atEnd) requestAnimationFrame(() => void toPlay());
+    };
+    const watch = new MutationObserver(() => { if (atEnd && !switched) void toPlay(); });
+    watch.observe(f, { childList: true, subtree: true });
 
     // Bulmaca yorumları: sıralı işlenir (biçimleyici modülü eşzamansız yüklenir).
     const shown = new Map<string, HTMLElement>();
@@ -97,17 +137,20 @@ export default function FlipGame({ front, between, back }: { front: ReactNode; b
       queue = queue.then(() => loadFormat().then(({ formatComment }) => handle(d, formatComment))).catch(() => {});
     };
 
+    rootEl.addEventListener('cp-move', onMove);
     rootEl.addEventListener('cp-puzzle', onPuzzle);
     return () => {
+      watch.disconnect();
+      rootEl.removeEventListener('cp-move', onMove);
       rootEl.removeEventListener('cp-puzzle', onPuzzle);
     };
   }, []);
 
   return (
     <div ref={root} className="flip-stage">
-      <div className="flip-face flip-front">{front}</div>
-      {between}
-      <div ref={backEl} className="flip-face flip-back is-active">
+      <div ref={frontEl} className="flip-face flip-front">{front}</div>
+      <div ref={backEl} className="flip-face flip-back" aria-hidden="true">
+        {between}
         {back}
         <div ref={notesEl} className="puzzle-notes" aria-live="polite" />
       </div>
