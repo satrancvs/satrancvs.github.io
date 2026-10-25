@@ -79,9 +79,42 @@ function reserve(box: Element) {
   if (el.style.minHeight !== total) el.style.minHeight = total;
 }
 
+// Sol sütundaki yorum satırında: tek satırlık yorum sağa yaslanır (.cp-one-line), oynat düğmesi metinden ayrı kendi satırına düştüyse sağa yaslanır
+// (.cp-btn-alone). Ölçüm sınıflar kaldırılmışken yapılır, sonuç aynıysa sınıflara dokunulmaz (boyut gözlemcisiyle döngü olmasın).
+function classify(box: Element) {
+  const line = box.querySelector<HTMLElement>(':scope > .comment-line');
+  if (!line) return;
+  const classes = ['cp-one-line', 'cp-btn-alone'];
+  const had = classes.filter((c) => line.classList.contains(c));
+  const active = getComputedStyle(line).position === 'absolute' && getComputedStyle(line).display !== 'none';
+  let alone = false;
+  let oneLine = false;
+  if (active) {
+    had.forEach((c) => line.classList.remove(c));
+    const btn = line.querySelector<HTMLElement>('.comment-play-btn');
+    const tops = new Set<number>();
+    let bottom = 0;
+    for (const node of textNodes(line.querySelector('.comment-text-block') ?? line)) {
+      if (!node.data.trim() || btn?.contains(node)) continue;
+      const range = document.createRange();
+      range.selectNodeContents(node);
+      for (const r of Array.from(range.getClientRects())) {
+        if (!r.width) continue;
+        tops.add(Math.round(r.top / 4));
+        bottom = Math.max(bottom, r.bottom);
+      }
+    }
+    alone = !!btn && tops.size > 0 && btn.getBoundingClientRect().top >= bottom - 2;
+    oneLine = tops.size === 1 && !alone;
+  }
+  const want = [oneLine, alone];
+  classes.forEach((c, k) => { if (line.classList.contains(c) !== want[k]) line.classList.toggle(c, want[k]); });
+}
+
 function refresh(box: Element) {
   process(box);
   reserve(box);
+  classify(box);
 }
 
 export function watchVarLead(root: Element) {
@@ -95,10 +128,8 @@ export function watchVarLead(root: Element) {
   const observer = new MutationObserver((records) => {
     for (const record of records) {
       record.addedNodes.forEach((n) => n.nodeType === Node.ELEMENT_NODE && scan(n as Element));
-      if (record.type === 'attributes') {
-        const box = (record.target as Element).closest('.video-comment');
-        if (box) refresh(box);
-      }
+      // Yalnızca kutunun kendi sınıfı (cp-in-variation) izlenir; .comment-line sınıflarını biz değiştiriyoruz, izlenirse sonsuz döngü olur.
+      if (record.type === 'attributes' && (record.target as Element).matches('.video-comment')) refresh(record.target as Element);
       if (record.type === 'characterData') {
         const parent = (record.target as Node).parentElement?.closest('.video-comment');
         if (parent) refresh(parent);

@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { keepEllipsisWithMove, toCurly, toEmDashes, toHalves, toTypography } from '../src/lib/curly.js';
+import { keepEllipsisWithMove, toCurly, toEmDashes, toHalves, toParentheticalDashes, toTypography } from '../src/lib/curly.js';
 
 test('apostrophes close, quotes open after whitespace and brackets', () => {
   assert.equal(toCurly("İstanbul'da"), 'İstanbul’da');
@@ -42,4 +42,14 @@ test("Black's dots stay with the move: no-break space or word joiner, ordinary p
   assert.equal(keepEllipsisWithMove('3... f5 ve ...Rxe5 ile …O-O'), '3...\u00a0f5 ve ...\u2060Rxe5 ile …\u2060O-O');
   assert.equal(keepEllipsisWithMove('bekleyince… sonra, Rakip… bakıma…'), 'bekleyince… sonra, Rakip… bakıma…');
   assert.equal(toTypography('1… e5’i'), '1…\u00a0e5’i');
+});
+
+test('a hyphen that opens a parenthetical becomes an en dash (with its closing hyphen), alone too', () => {
+  assert.equal(toParentheticalDashes('g3 oynayarak -ya da hazırlayarak- g dikeyini'), 'g3 oynayarak –ya da hazırlayarak– g dikeyini');
+  assert.equal(toParentheticalDashes('kanadını ve -bu konumda en önemlisi- merkezi'), 'kanadını ve –bu konumda en önemlisi– merkezi');
+  assert.equal(toParentheticalDashes('yaşanır -ya da yaşanmalıdır'), 'yaşanır –ya da yaşanmalıdır');
+});
+
+test('hyphens inside words, moves, evaluations and list markers are left alone', () => {
+  for (const s of ['Nimzo-Hint yapıları', 'e4-e5 ve O-O', '27. c5 +- ve -+', '- madde', '0-0-0', 'a -1 puan']) assert.equal(toParentheticalDashes(s), s);
 });

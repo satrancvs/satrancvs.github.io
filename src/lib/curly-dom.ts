@@ -1,4 +1,4 @@
-// Curly quotes, em dashes and "1/2" → "½" applied to the rendered article.
+// Curly quotes, em dashes, parenthetical en dashes (" -ya da…-") and "1/2" → "½" applied to the rendered article.
 //
 // Ported from satranckahvesi-eski (`_js/text/curly-quotes.js`). Rules:
 //  - article prose is converted;
@@ -18,7 +18,7 @@ const GAME = '.cp-game';
 // use .video-comment / .variation-comment. Move text lives in `.pgn-mainline` and is not listed on purpose.
 export const COMMENT_SELECTOR = '.pgn-comment, .pgn-variation-line, .variation-comment, .video-comment';
 
-const needsWork = (text: string) => text.includes('"') || text.includes("'") || text.includes('--') || text.includes('1/2') || text.includes('…') || text.includes('...');
+const needsWork = (text: string) => text.includes('"') || text.includes("'") || text.includes('--') || text.includes('1/2') || text.includes('…') || text.includes('...') || /(^|[\s(])-\p{L}/u.test(text);
 
 /** Converts every eligible text node under `root`; `skip` can exclude whole subtrees. */
 export function curlyPass(root: Element, skip?: (el: Element) => boolean) {

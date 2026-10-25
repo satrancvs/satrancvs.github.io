@@ -1,4 +1,4 @@
-// Pure text transforms: straight quotes to curly quotes, "--" to an em dash, "1/2" to "½".
+// Pure text transforms: straight quotes to curly quotes, "--" to an em dash, a hyphen that opens a parenthetical to an en dash, "1/2" to "½".
 
 // "--" becomes "—" unless it stands alone between whitespace (the null-move
 // token in PGN movetext) or is part of a longer run of hyphens.
@@ -9,6 +9,16 @@ export function toEmDashes(text) {
     const aloneAfter = after === '' || /\s/.test(after);
     return aloneBefore && aloneAfter ? match : `${before}—`;
   });
+}
+
+// A hyphen that opens a parenthetical stands glued to the following word after a space ("g3 oynayarak -ya da hazırlayarak- g dikeyini"):
+// that is a dash, written as an en dash (–). A closing hyphen glued to the previous word is converted together with its opening one
+// (within one sentence); an opening hyphen alone ("yaşanır -ya da yaşanmalıdır") is converted on its own. Not touched: a hyphen inside
+// a word or move (Nimzo-Hint, e4-e5, O-O), a list marker ("- item": a space follows), "+-" / "-+" evaluations. No lookbehind (Safari < 16.4).
+export function toParentheticalDashes(text) {
+  return text
+    .replace(/(^|[\s(])-(?=\p{L})([^\n-]{1,160}?\p{L})-(?=[\s.,;:!?)]|$)/gu, '$1–$2–')
+    .replace(/(^|[\s(])-(?=\p{L})/gu, '$1–');
 }
 
 // A conventional SmartyPants pass: a quote after whitespace, an opening
@@ -38,7 +48,7 @@ export function keepEllipsisWithMove(text) {
   return text.replace(BLACK_MOVE, (_, dots, space) => `${dots}${space ? '\u00a0' : '\u2060'}`);
 }
 
-// Everything the prose gets: curly quotes, em dashes, halves, and Black's "…" glued to its move.
+// Everything the prose gets: curly quotes, em dashes, parenthetical en dashes, halves, and Black's "…" glued to its move.
 export function toTypography(text) {
-  return keepEllipsisWithMove(toHalves(toCurly(text)));
+  return keepEllipsisWithMove(toHalves(toParentheticalDashes(toCurly(text))));
 }

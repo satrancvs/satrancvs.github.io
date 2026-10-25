@@ -86,8 +86,35 @@
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line.cp-duplicate { display: none; }
   /* Varyantın içinde gezerken sol sütundaki ana hat yorumu görünmez; varyanttan çıkılıp o yorumun konumuna dönülünce (cp-in-variation kalkınca) yeniden görünür. */
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment.cp-in-variation > .comment-line { display: none; }
+  /* Sol sütun: tek satırlık yorum sağa (tahtaya doğru) yaslanır; oynat düğmesi metinden ayrı kendi satırına düştüyse o da sağa yaslanır (var-lead.ts sınıfları). */
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line.cp-one-line { text-align: right; justify-content: flex-end; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line.cp-btn-alone .comment-play-btn { display: flex; margin: 0 0 0 auto; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line + .variation-block, .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .variation-block:first-child { margin-top: auto; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line .comment-icon { display: none; }
+}
+/* Palavan'ın alıntı kutusundaki oynatıcılar da geniş ekranda (≥ 73em) üç sütun: kutu yazı sütunundan taşar (70rem), sol yorum | tahta | sağ yorum ve varyantlar. Kuralların
+   açıklamaları yukarıdaki Timman bloklarında; fark: tahta yazı sütununda değil, tahtanın solundaki yorum payı (280px + 3rem) .player-wrapper'ın sol dolgusuyla ayrılır. */
+@media (min-width: 73em) {
+  .quote.quote-game { width: min(70rem, calc(100vw - 3rem)); max-width: none; margin-left: 50%; transform: translateX(-50%); }
+  .quote-game pgn-player:not(pgn-study pgn-player) { --board-size: 340px; width: 100%; max-width: none; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .player-wrapper { padding-left: calc(280px + 3rem); display: grid; grid-template-columns: 340px minmax(0, 1fr); grid-template-rows: auto 1fr; column-gap: 1.5rem; align-items: start; width: 100% !important; max-width: none !important; min-height: 0 !important; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .player-container { grid-column: 1; grid-row: 1; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-moves { grid-column: 1; grid-row: 2; width: auto; max-width: none; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment { grid-column: 2; grid-row: 1 / span 2; width: auto; max-width: none; margin: 0; display: flex; flex-direction: column; min-height: var(--board-size); }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line:first-child { margin-top: auto; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .board-wrap .play { top: auto; bottom: 0; left: calc(100% + 1.5rem); transform: none; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .player-wrapper:not(:has(.video-comment .comment-play-btn)):has(.board-wrap .play:not(.hidden)) .video-comment { padding-bottom: 3.5rem; box-sizing: border-box; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .player-wrapper:has(.video-comment .comment-play-btn) .board-wrap .play { display: none; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .board-wrap .play { width: 2rem; height: 2rem; background: #000000b3; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .board-wrap .play .lucide-icon { width: 1.5rem; height: 1.5rem; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line { position: absolute; top: 0; right: calc(100% + 340px + 3rem); width: 280px; min-height: var(--board-size); display: flex; flex-direction: column; text-align: left; margin-top: 0; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line .comment-text-block { margin-top: auto; flex: 0 0 auto; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line.cp-duplicate { display: none; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment.cp-in-variation > .comment-line { display: none; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line.cp-one-line { text-align: right; justify-content: flex-end; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line.cp-btn-alone .comment-play-btn { display: flex; margin: 0 0 0 auto; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line + .variation-block, .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .variation-block:first-child { margin-top: auto; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line .comment-icon { display: none; }
 }
 /* <pgn-player> yorumu yazı gövdesiyle aynı satır aralığında (paket 1.5 verir; gövde ve <pgn> metni 1.8) */
 .cp-game .video-comment { line-height: 1.8; }
