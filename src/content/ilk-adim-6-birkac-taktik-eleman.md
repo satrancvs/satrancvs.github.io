@@ -168,47 +168,47 @@ Peki o zaman bu kuralın pratik anlamı nedir? Kısaca şu: tahtada korumasız b
 
 ### Oyun 6.1
 
-**Farago - Bliumberg**, *Budapeşte 1994*
+[Event "Budapeşte"]
+[White "Farago"]
+[Black "Bliumberg"]
+[Date "1994.??.??"]
+[Result "0-1"]
 
-1 d4 d5 2 c4 c6 3 ♘f3 dxc4 4 e3 ♗e6 5 ♘g5??
-
-[FEN "rn1qkbnr/pp2pppp/2p1b3/6N1/2pP4/4P3/PP3PPP/RNBQKB1R w - - 0 1"]
-
-5...♕a5+, ve g5'teki atını kaybeden *kuvvetli* büyükusta Ivan Farago oyunu terketti. Evet, büyükustalar da tek hamlelik hatalar yaparlar!
+1. d4 d5 2. c4 c6 3. Nf3 dxc4 4. e3 Be6 5. Ng5?? { [D] } 5... Qa5+ { ve g5'teki atını kaybeden *kuvvetli* büyükusta Ivan Farago oyunu terketti. Evet, büyükustalar da tek hamlelik hatalar yaparlar! } 0-1
 
 ### Oyun 6.2
 
-**Quakkelaar - Zenner**, *Yazışmalı 1984*
+[Event "Yazışmalı"]
+[White "Quakkelaar"]
+[Black "Zenner"]
+[Date "1984.??.??"]
+[Result "*"]
 
-1 e4 c6 2 d4 d5 3 ♘c3 dxe4 4 ♘xe4 ♘f6 5 ♘xf6+ exf6 6 ♗c4 ♕e7+
-
-7 ♘e2?? Bir an önce kısa rok atmayı amaçlayan bu makul görünüşlü hamle taktik bir engele takılır:
-
-[FEN "rnb1kb1r/pp2qppp/2p2p2/8/2BP4/8/PPP1NPPP/R1BQK2R w - - 0 1"]
-
-7...♕b4+! ve c4'teki fil kaybedilmiştir. İşin şaşırtıcı yanı bu hata bir yazışmalı satranç partisinda yapılmıştır, yani oyuncuların her hamle için birkaç günlük düşünme zamanı vardı!
+1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6. Bc4 Qe7+ 7. Ne2?? { [D] Bir an önce kısa rok atmayı amaçlayan bu makul görünüşlü hamle taktik bir engele takılır: } 7... Qb4+! { ve c4'teki fil kaybedilmiştir. İşin şaşırtıcı yanı bu hata bir yazışmalı satranç partisinda yapılmıştır, yani oyuncuların her hamle için birkaç günlük düşünme zamanı vardı! } *
 
 ### Ucu ucuna korunan taşlar
 
 Bir taşın saldıranları ve savunanları eşit sayıda ise, kendisi için havada kalmış demek yanlış olmaz. Böyle ucu ucuna korunan taşlar, üzerlerine fazladan binecek ilk saldırı yükünde tehlikeye girerler. İşte iki örnek:
 
-**Vasiukov - Razuvaev**,
+[Event "Polanica Zdroj"]
+[White "Vasiukov"]
+[Black "Razuvaev"]
+[Date "1972.??.??"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rnb1k2r/pp2ppbp/6pn/3q4/3P4/4BN2/PP3PPP/RN1QKB1R w - - 0 8"]
 
-*Polanica Zdroj 1972*
+{ Zamanının ilerigelen Sovyet ustalarından Razuvaev son hamlesinde atını h6'ya çıkmıştı. g7-fili tarafından korunan bu atın başına ne gelebilir ki? } 8. Qc1! { ve Siyahın hem c8-fili hem de h6-atı aynı anda saldırı altında kalmıştır. Taş kaybettiğini gören Siyah oyunu terketti. } 1-0
 
-[FEN "rnb1k2r/pp2ppbp/6pn/3q4/3P4/4BN2/PP3PPP/RN1QKB1R w - - 0 1"]
+[Event "Haifa"]
+[White "Renet"]
+[Black "Nunn"]
+[Date "1989.??.??"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "5rk1/6pp/p2br3/3p1p1q/R2P1Pb1/2P1B1P1/1P1N3P/4RQK1 b - - 0 22"]
 
-Zamanının ilerigelen Sovyet ustalarından Razuvaev son hamlesinde atını h6'ya çıkmıştı. g7-fili tarafından korunan bu atın başına ne gelebilir ki?
-
-8 ♕c1!, ve Siyahın hem c8-fili hem de h6-atı aynı anda saldırı altında kalmıştır. Taş kaybettiğini gören Siyah oyunu terketti.
-
-**Renet - Nunn**, *Haifa 1989*
-
-[FEN "5rk1/6pp/p2br3/3p1p1q/R2P1Pb1/2P1B1P1/1P1N3P/4RQK1 w - - 0 1"]
-
-Beyaz hiç bir şeyden şüphelenmeden a4'teki eri almıştı ve a6-erini de kazanmayı bekliyordu ama...
-
-22...♕e8! hamlesinden sonra hem kalesi, hem de fili istekte kalan Renet oyunu terketti.
+{ Beyaz hiç bir şeyden şüphelenmeden a4'teki eri almıştı ve a6-erini de kazanmayı bekliyordu ama... } 22... Qe8! { hamlesinden sonra hem kalesi, hem de fili istekte kalan Renet oyunu terketti. } 0-1
 
 ### 6d. Açarak saldırı
 
@@ -259,77 +259,73 @@ Bu konum, Diyagram 6.20b'de gösterilen konumun hafifçe değiştirilmiş halidi
 
 ### Açarak saldırı örnekleri
 
-**Miller - Chernev**, *New York 1928*
+[Event "New York"]
+[White "Miller"]
+[Black "Chernev"]
+[Date "1928.??.??"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1b1k2r/ppp1qppp/5B2/3Pn3/8/8/PPP2PPP/RN1QKB1R b - - 0 1"]
 
-[FEN "r1b1k2r/ppp1qppp/5B2/3Pn3/8/8/PPP2PPP/RN1QKB1R w - - 0 1"]
-
-Son hamlesiyle f6'daki atı kıran Beyaz, rakibinin bu fili hangi taşla geri alacağını düşünürken hiç beklemediği bir yanıtla karşılaştı: 1...♘f3# Çifte şahın gücünü gayet net gösteren bir örnektir.
+{ Son hamlesiyle f6'daki atı kıran Beyaz, rakibinin bu fili hangi taşla geri alacağını düşünürken hiç beklemediği bir yanıtla karşılaştı: } 1... Nf3# { Çifte şahın gücünü gayet net gösteren bir örnektir. } 0-1
 
 ### Oyun 6.3
 
-**Gedvilaite - Rutherford**, *1994*
+[Event ""]
+[White "Gedvilaite"]
+[Black "Rutherford"]
+[Date "1994.??.??"]
+[Result "*"]
 
-1 e4 e5 2 ♘f3 ♘f6 3 ♘xe5 ♘xe4 Daha çok oynanan hamle 3...d6'dır; 4 ♘f3 ♘xe4 Siyaha hayli rahat bir oyun verirdi. 4 ♕e2 ♘f6?? Ama bu hamle oyunu hemen kaybeden bir hatadır; Siyahın 4...♕e7 5 ♕xe4 d6 oynaması gerekirdi.
-
-[FEN "rnbqkb1r/pppp1ppp/5n2/4N3/8/8/PPPPQPPP/RNB1KB1R w - - 0 1"]
-
-5 ♘c6+! ve Siyah vezirini kaybeder.
+1. e4 e5 2. Nf3 Nf6 3. Nxe5 Nxe4 { Daha çok oynanan hamle 3... d6'dır; 4 Nf3 Nxe4 Siyaha hayli rahat bir oyun verirdi. } ( 3... d6 4. Nf3 Nxe4 ) 4. Qe2 Nf6?? { [D] Ama bu hamle oyunu hemen kaybeden bir hatadır; Siyahın 4... Qe7 5 Qxe4 d6 oynaması gerekirdi. } ( 4... Qe7 5. Qxe4 d6 ) 5. Nc6+! { ve Siyah vezirini kaybeder. } *
 
 Sıradaki oyunda Siyah boştaki eri görerek üzerine atılıyor, ne var ki açarak şah tehdidini görmezden gelmenin sonuçları hayli tatsız oluyor.
 
 ### Oyun 6.4
 
-**Noll - Kuederle**, *St.Ingbert 1991*
+[Event "St.Ingbert"]
+[White "Noll"]
+[Black "Kuederle"]
+[Date "1991.??.??"]
+[Result "*"]
 
-1 e4 e6 Merkeze ...d7-d5 karşısaldırısını hazırlayan, oldukça ünlü *Fransız Savunması*. 2 d4 d5 3 e5 c5 4 c3 ♘c6 5 ♘f3 ♕b6 Siyah, d4-eri üzerindeki baskıyı artırıyor.
-
-6 ♗d3 Ama şimdi beyaz vezirin yolu tıkanmış oldu - artık d4-eri boşta değil mi? Siyah bu sorunun yanıtını deneyerek bulmaya karar veriyor.
-
-6...cxd4 7 cxd4 ♘xd4? 8 ♘xd4 ♕xd4??
-
-[FEN "r1b1kbnr/pp3ppp/4p3/3pP3/3q4/3B4/PP3PPP/RNBQK2R w - - 0 1"]
-
-9 ♗b5+! ve filin aradan tempo kazanarak çekilmesi sonucu siyah vezir düşmüştür.
+1. e4 e6 { Merkeze ...d7-d5 karşısaldırısını hazırlayan, oldukça ünlü *Fransız Savunması*. } 2. d4 d5 3. e5 c5 4. c3 Nc6 5. Nf3 Qb6 { Siyah, d4-eri üzerindeki baskıyı artırıyor. } 6. Bd3 { Ama şimdi beyaz vezirin yolu tıkanmış oldu - artık d4-eri boşta değil mi? Siyah bu sorunun yanıtını deneyerek bulmaya karar veriyor. } 6... cxd4 7. cxd4 Nxd4? 8. Nxd4 Qxd4?? { [D] } 9. Bb5+! { ve filin aradan tempo kazanarak çekilmesi sonucu siyah vezir düşmüştür. } *
 
 Açarak şah ve çifte şah tehditleri her zaman maddi üstünlük için değil, kimi zaman da başka türden kazanımlar elde etmek için kullanılırlar:
 
-**Anderssen - Suhle**, *Breslau 1859*
-
+[Event "Breslau"]
+[White "Anderssen"]
+[Black "Suhle"]
+[Date "1859.??.??"]
+[Result "1-0"]
+[SetUp "1"]
 [FEN "2rq1r1k/pp3pRp/1b1p4/3p4/2n1P3/3B1P2/PB2NP1P/R6K w - - 0 1"]
 
-Romantik ekolün büyük ustası (ve modern satrancın başlangıcı kabul edilen Londra 1851 Turnuvası'nın galibi) Anderssen, çifte kış yardımıyla rakip şahı g8-karesine çekiyor:
-
-1 ♖g8+!! ♔xg8 2 ♖g1+ ♕g5 3 ♖xg5#
+{ Romantik ekolün büyük ustası (ve modern satrancın başlangıcı kabul edilen Londra 1851 Turnuvası'nın galibi) Anderssen, çifte kış yardımıyla rakip şahı g8-karesine çekiyor: } 1. Rg8+!! Kxg8 2. Rg1+ Qg5 3. Rxg5# 1-0
 
 Gayet net bir tablo. Çifte şahın gücünden yararlanabilmek için gerektiğinde vezir bile feda edilebilir, tıpkı bir sonraki örnekte olduğu gibi:
 
-**Maczuski - von Kolisch** *Paris 1863*
-
+[Event "Paris"]
+[White "Maczuski"]
+[Black "von Kolisch"]
+[Date "1863.??.??"]
+[Result "1-0"]
+[SetUp "1"]
 [FEN "r1b1k2r/ppp2ppp/2p5/8/3Qn1q1/8/PPPB2PP/2KR1B1R w - - 0 1"]
 
-1 ♕d8+!! ♔xd8 2 ♗g5+ ♔e8 3 ♖d8#
+1. Qd8+!! Kxd8 2. Bg5+ Ke8 3. Rd8# 1-0
 
 Bu matın biraz daha değişik çeşitlemeleri, satranç tarihine geçmiş başka karşılaşmalarda da ortaya çıkmıştır. İşte aralarında en ünlülerinden biri:
 
 ### Oyun 6.5
 
-**Reti - Tartakower**, *Viyana 1910*
+[Event "Viyana"]
+[White "Reti"]
+[Black "Tartakower"]
+[Date "1910.??.??"]
+[Result "1-0"]
 
-1 e4 c6 2 d4 d5 3 ♘c3 dxe4 4 ♘xe4 ♘f6 5 ♕d3 Günümüzde daha çok oynanan hamle 5 ♘xf6+ biçimindedir.
-
-5...e5?! Siyahın karşıoyun elde etmek için bu kadar aceleci davranmasına elbette gerek yoktu.
-
-6 dxe5 ♕a5+ Daha önce benzerlerini birçok kez gördüğümüz taktik olanak.
-
-7 ♗d2 ♕xe5 8 0-0-0! Beyaz bu taş fedası ile ne elde etmeyi umuyor? Tartakower pek bir şeyden şüphelenmemiş olmalı ki 8...♘xe4 9 ♖e1 ♗e6 10 ♖xe4 sonrasında ortaya çıkacak konumu kabul ederek atı almaya karar verdi. Ancak Beyazın aklından çok daha başka şeyler geçiyordu!
-
-8...♘xe4
-
-[FEN "rnb1kb1r/pp3ppp/2p5/4q3/4n3/3Q4/PPPB1PPP/2KR1BNR w - - 0 1"]
-
-9 ♕d8+!! ♔xd8 10 ♗g5+ ♔c7 Bunun yerine e8'e gitmek de bir şey değiştirmezdi: 10...♔e8 11 ♖d8#
-
-11 ♗d8# Hipermodern ekolün önde gelen iki ustası arasındaki bu mücadelenin sonu, satranç yazınının en ünlü mat diyagramları arasındadır.
+1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Qd3 { Günümüzde daha çok oynanan hamle 5 Nxf6+ biçimindedir. } 5... e5?! { Siyahın karşıoyun elde etmek için bu kadar aceleci davranmasına elbette gerek yoktu. } 6. dxe5 Qa5+ { Daha önce benzerlerini birçok kez gördüğümüz taktik olanak. } 7. Bd2 Qxe5 8. O-O-O! { Beyaz bu taş fedası ile ne elde etmeyi umuyor? Tartakower pek bir şeyden şüphelenmemiş olmalı ki 8... Nxe4 9 Re1 Be6 10 Rxe4 sonrasında ortaya çıkacak konumu kabul ederek atı almaya karar verdi. Ancak Beyazın aklından çok daha başka şeyler geçiyordu! } 8... Nxe4 { [D] } 9. Qd8+!! ( 9. Re1 Be6 10. Rxe4 ) 9... Kxd8 10. Bg5+ Kc7 { Bunun yerine e8'e gitmek de bir şey değiştirmezdi: 10... Ke8 11 Rd8# } ( 10... Ke8 11. Rd8# ) 11. Bd8# { Hipermodern ekolün önde gelen iki ustası arasındaki bu mücadelenin sonu, satranç yazınının en ünlü mat diyagramları arasındadır. } 1-0
 
 ### Diğer taktik elemanlar
 
