@@ -456,3 +456,17 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .cp-game .video-comment > .cp-quote-right { flex: 0 0 auto; }
 .cp-game .video-comment > .cp-quote-right > blockquote { margin: .5rem 0 .75rem 1rem; }
 .cp-game .video-comment.cp-in-variation > .cp-quote-right { display: none; }
+
+/* Palavan'ın bulmaca oynatıcısında (.flip-back) hamle listesi gizli: oynatıcı yalnızca tahta kadar yüksek, bu yüzden hamle listesi payı (46 px) sıfırlanır; tekrar düğmesi tahtanın alt kenarına oturur. */
+.quote-game .flip-back pgn-player .video-comment { padding-bottom: 0; }
+.quote-game .flip-back pgn-player .video-comment > .comment-play-btn.cp-replay { bottom: 0; }
+.quote-game .flip-back pgn-player .video-comment > .comment-line, .quote-game .flip-back pgn-player .video-comment > .cp-left-stack { padding-bottom: 0; }
+
+/* İnceleme görünümünde (pgn-study) yorumdaki başlıklar (### …) dar sütuna uygun: küçük boy ve boşluk (yoksa başlıktan önce çok boşluk kalıyordu). */
+.cp-game pgn-study .cp-heading { margin: 1rem 0 .5rem; font-size: 2rem; }
+.cp-game pgn-study br:has(+ .cp-heading), .cp-game pgn-study br:has(+ br + .cp-heading) { display: none; }
+/* Sağ sütuna taşınan yorum paragrafları (var-lead.ts spreadComment): yorumun devamı, sağ sütunda. */
+.cp-game .video-comment > .cp-more-right { flex: 0 0 auto; }
+.cp-game .video-comment > .cp-more-right > p { margin: 0 0 .75rem; }
+.cp-game .video-comment > .cp-more-right > p:last-child { margin-bottom: .25rem; }
+.cp-game .video-comment.cp-in-variation > .cp-more-right { display: none; }
