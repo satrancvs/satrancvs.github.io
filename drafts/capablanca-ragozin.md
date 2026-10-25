@@ -1,4 +1,3 @@
-<pgn>
 [Event "Moskova"]
 [Site "Moskova"]
 [Date "1936.05.17"]
@@ -26,4 +25,3 @@ The repetition of moves in the endgame plays an important role. Disregarding the
 21... g5 22. Rd6+ Kb7 23. fxg5 hxg5 24. Rg6 Rf8 25. Rxg5 f4 26. Nd4
 { A very important move. Capablanca deprives his opponent of any chance associated with ...f3. }
 26... Rc8 27. Rg7+ Kb6 28. Rg6+ Kb7 29. Nb5 Rf8 30. Nd6+ Kb8 31. h4 1-0
-</pgn>

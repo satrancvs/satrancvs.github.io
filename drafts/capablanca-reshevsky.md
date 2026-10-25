@@ -1,4 +1,3 @@
-<pgn>
 [Event "Nottingham"]
 [Site "Nottingham"]
 [Date "1936.08.20"]
@@ -38,4 +37,3 @@ We will now analyze the second possible plan: 5... Kf7 6. Ke2 Kf6 7. Kd3 Ke5. No
 
 Of course, in a practical game it would be impossible to calculate all the above variations. Therefore it is the general assessment of the position which assumes primary importance. Had Reshevsky chosen the second path, he would have gained a draw. Centralization of the king does not always give the desired result, but in the majority of cases it is necessary. }
 1-0
-</pgn>
