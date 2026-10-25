@@ -99,6 +99,8 @@ const EVENT_LINE_TAG = /^\[EventLine\s+"[^"]*"\]\s*$/im;
 const QUOTE_TAG = /^\[Frame\s+"quote"\]\s*$/im;
 // `[Flip "puzzle"]` (yalnızca bir `[Frame "quote"]` oyununda): oyun <pgn-player> ile çizilir ve bitince, hemen ardından gelen aynı oyunun bulmaca hali (FlipGame)
 // tahta Siyah tarafına dönerek öne gelir. Etiket ChessPublica'ya geçirilmez.
+// `[Player "1"]`: oyun (başlığı ve tur satırı korunarak) <pgn-player> ile çizilir; `[View "player"]`'dan farkı, GameSection'ın tur başlığını göstermesidir (Timman yazısı).
+const PLAYER_TAG = /^\[Player\s+"[^"]*"\]\s*$/im;
 const FLIP_TAG = /^\[Flip\s+"[^"]*"\]\s*$/im;
 
 // Oyun yorumlarında (`{ … }`): `### Başlık` satırı başlık (`.cp-heading`, İçindekiler'e girer), boş satır paragraf ayracıdır.
@@ -148,12 +150,13 @@ function hoistVariationLeads(mt: string, markLeads = false): string {
 function PgnGame({ header, moves }: { header: string; moves: string }) {
   // [View "player"] etiketi oyunu (bulmaca işareti olmasa da) <pgn-player> ile çizdirir; ChessPublica'ya geçirilmez.
   const watch = WATCH_TAG.test(header) || FLIP_TAG.test(header);
+  const asPlayer = PLAYER_TAG.test(header);
   const study = STUDY_TAG.test(header);
-  const clean = header.replace(WATCH_TAG, '').replace(EVENT_LINE_TAG, '').replace(RESULT_INLINE_TAG, '').replace(QUOTE_TAG, '').replace(FLIP_TAG, '').replace(/\n\s*\n/g, '\n').trim(); // ChessPublica ends the header at the first blank line: a removed tag line must not leave one
+  const clean = header.replace(WATCH_TAG, '').replace(EVENT_LINE_TAG, '').replace(RESULT_INLINE_TAG, '').replace(QUOTE_TAG, '').replace(FLIP_TAG, '').replace(PLAYER_TAG, '').replace(/\n\s*\n/g, '\n').trim(); // ChessPublica ends the header at the first blank line: a removed tag line must not leave one
   const resultInline = RESULT_INLINE_TAG.test(header);
   const side = study ? null : puzzleSide(clean, moves);
   const head = side === 'b' && !/\[Orientation\s/i.test(clean) ? `${clean}\n[Orientation "black"]` : clean;
-  const tag = study ? 'pgn-study' : side || watch ? 'pgn-player' : 'pgn';
+  const tag = study ? 'pgn-study' : side || watch || asPlayer ? 'pgn-player' : 'pgn';
   // ChessPublica <pgn> ilk hamleden önceki yorumu çizmez; oyun metninin başındaki `{ … }` yorumu bu yüzden ayrılıp oyunun üstünde bir paragraf olarak gösterilir.
   const lead = tag === 'pgn' ? moves.match(/^\s*\{([^}]*)\}\s*/) : null;
   const movetext = hoistVariationLeads(lead ? moves.slice(lead[0].length) : moves, tag === 'pgn-player');
@@ -608,7 +611,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
         : <PgnGame header={c} moves={moves} />;
       // <pgn> (oynatıcısız) oyunlar bir başlangıç FEN'inden başlıyorsa, hamle metninin üstünde o konum bir diyagramla gösterilir.
       // İlk hamlenin hemen ardından yazarın kendi diyagramı ([D]) geliyorsa başlangıç diyagramı gösterilmez (Andersson–Timman).
-      const startFen = !useFallback && !WATCH_TAG.test(c) && !FLIP_TAG.test(c) && !puzzleSide(c, moves) && !FIRST_MOVE_DIAGRAM.test(moves) ? c.match(/\[FEN\s+"([^"]+)"\]/i)?.[1] : undefined;
+      const startFen = !useFallback && !WATCH_TAG.test(c) && !FLIP_TAG.test(c) && !PLAYER_TAG.test(c) && !puzzleSide(c, moves) && !FIRST_MOVE_DIAGRAM.test(moves) ? c.match(/\[FEN\s+"([^"]+)"\]/i)?.[1] : undefined;
       if (QUOTE_TAG.test(c)) {
         // Hemen ardından aynı oyunun bulmaca (oynatıcılı) hali geliyorsa o da aynı kutunun içine girer (Palavan–Euwe).
         let nextAt = i + (own ? 2 : 1);
