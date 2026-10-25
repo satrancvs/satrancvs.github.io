@@ -114,7 +114,7 @@ function inlineContinuations(box: Element) {
 
 // Üç sütunlu düzende (kutu position: static) sağ sütuna çok içerik düşerse varyant blokları (başlarındaki .cp-var-lead ile) iki sütuna paylaştırılır: ilk k blok
 // sol sütundaki `.cp-left-stack` kutusuna taşınır (ana yorum varsa solda zaten durur). Karar yazı uzunluğuna göre verilir (yerleşimden bağımsız, kararlı).
-const BALANCE_MIN = 420;
+const BALANCE_MIN = 280;
 const topBlocks = (box: Element) => Array.from(box.querySelectorAll('.variation-block')).filter((b) => !b.parentElement?.closest('.variation-block'));
 const groupOf = (block: Element) => {
   const lead = block.previousElementSibling;
@@ -165,9 +165,43 @@ function balance(box: Element) {
   }
 }
 
+// Bölünemeyen tek bir varyant bloğu (iç varyantı yok) sütunlara iki sütunlu metin olarak yayılır (.cp-split): blok tahtanın iki yanına uzanan iki sütunlu bir kutu olur,
+// tarayıcı sütunları dengeler; ana yorum varsa onun altında sol sütunun başında durur. Tahtanın bulunduğu orta boşluk sütun aralığıdır. Yerleşim ölçülür: yorum + blok tahtanın
+// ortasına dikeyde ortalanır (`--cp-ltop`, `--cp-btop`).
+const SPLIT_MAX = 900;
+function split(box: Element) {
+  const el = box as HTMLElement;
+  const off = () => {
+    if (el.classList.contains('cp-split')) {
+      el.classList.remove('cp-split');
+      el.style.removeProperty('--cp-ltop');
+      el.style.removeProperty('--cp-btop');
+    }
+  };
+  const player = el.closest('pgn-player');
+  if (!player || getComputedStyle(el).position !== 'static') return off();
+  const blocks = topBlocks(box);
+  const line = el.querySelector<HTMLElement>(':scope > .comment-line');
+  const lineChars = line ? weight([line]) : 0;
+  const chars = blocks.length === 1 ? weight([blocks[0]]) : 0;
+  if (blocks.length !== 1 || blocks[0].parentElement !== box || box.querySelector(':scope > .cp-var-lead') || chars + lineChars <= BALANCE_MIN || chars + lineChars > SPLIT_MAX) return off();
+  if (!el.classList.contains('cp-split')) el.classList.add('cp-split');
+  const wrap = player.querySelector<HTMLElement>('.board-wrap');
+  if (!wrap) return;
+  const visibleLine = line && getComputedStyle(line).display !== 'none' ? line : null;
+  const gap = 12;
+  const hl = visibleLine ? visibleLine.offsetHeight : 0;
+  const hb = (blocks[0] as HTMLElement).offsetHeight;
+  const total = (hl ? hl + gap : 0) + hb;
+  const start = Math.max(0, wrap.offsetHeight / 2 - total / 2);
+  el.style.setProperty('--cp-ltop', `${Math.round(start)}px`);
+  el.style.setProperty('--cp-btop', `${Math.round(start + (hl ? hl + gap : 0))}px`);
+}
+
 function refresh(box: Element) {
   process(box);
   balance(box);
+  split(box);
   inlineContinuations(box);
   reserve(box);
   classify(box);
