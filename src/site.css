@@ -77,7 +77,7 @@
   /* Sütundaki içerik (tek satırlık varyant, kısa paragraf, düğme) hangi öğeyle başlarsa başlasın tahtanın alt kenarına hizalanır. */
   /* Sütunun içeriği tahtanın alt kenarına hizalanır (::before'un otomatik üst boşluğu; taşarsa boşluk sıfırlanır) ve kutu player'dan uzamaz: tahta boyunu aşınca kendi içinde kayar. */
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment::before { content: ''; margin-top: auto; }
-  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment { max-height: var(--board-size); overflow-y: auto; scrollbar-width: thin; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment { contain: size; align-self: stretch; min-height: 0; overflow-y: auto; scrollbar-width: thin; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-play-btn .lucide-icon { width: 1.5rem; height: 1.5rem; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .board-wrap .play { width: 2rem; height: 2rem; background: #000000b3; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .board-wrap .play .lucide-icon { width: 1.5rem; height: 1.5rem; }
@@ -89,7 +89,7 @@
      tahtanın soluna konur; sütunlar yazı sütunundan sola/sağa taşar. */
   /* Sol yorum satırı .player-wrapper'a göre konumlanır (kutu position: static): sağ sütun kayarken satır kırpılmaz. */
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment { position: static; }
-  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line { position: absolute; top: 0; right: calc(100% + 1.5rem); width: 280px; height: var(--board-size); overflow-y: auto; scrollbar-width: thin; display: flex; flex-direction: column; text-align: left; margin-top: 0; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line { position: absolute; top: 0; right: calc(100% + 1.5rem); width: 280px; bottom: 0; overflow-y: auto; scrollbar-width: thin; display: flex; flex-direction: column; text-align: left; margin-top: 0; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line .comment-text-block { margin-top: auto; flex: 0 0 auto; }
   /* Varyantın içindeyken yorum zaten varyant metninde görünüyorsa sol satır gizlenir (variation-fix.ts .cp-duplicate); yukarıdaki display: flex bu kuralı ezmesin. */
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line.cp-duplicate { display: none; }
@@ -119,13 +119,13 @@
   /* Sütundaki içerik (tek satırlık varyant, kısa paragraf, düğme) hangi öğeyle başlarsa başlasın tahtanın alt kenarına hizalanır. */
   /* Sütunun içeriği tahtanın alt kenarına hizalanır (::before'un otomatik üst boşluğu; taşarsa boşluk sıfırlanır) ve kutu player'dan uzamaz: tahta boyunu aşınca kendi içinde kayar. */
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment::before { content: ''; margin-top: auto; }
-  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment { max-height: var(--board-size); overflow-y: auto; scrollbar-width: thin; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment { contain: size; align-self: stretch; min-height: 0; overflow-y: auto; scrollbar-width: thin; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-play-btn .lucide-icon { width: 1.5rem; height: 1.5rem; }
   .quote-game pgn-player:not(pgn-study pgn-player) .board-wrap .play { width: 2rem; height: 2rem; background: #000000b3; }
   .quote-game pgn-player:not(pgn-study pgn-player) .board-wrap .play .lucide-icon { width: 1.5rem; height: 1.5rem; }
   /* Sol yorum satırı .player-wrapper'a göre konumlanır (kutu position: static): sağ sütun kayarken satır kırpılmaz. */
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment { position: static; }
-  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line { position: absolute; top: 0; left: 1.5rem; width: 280px; height: var(--board-size); overflow-y: auto; scrollbar-width: thin; display: flex; flex-direction: column; text-align: left; margin-top: 0; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line { position: absolute; top: 0; left: 1.5rem; width: 280px; bottom: 0; overflow-y: auto; scrollbar-width: thin; display: flex; flex-direction: column; text-align: left; margin-top: 0; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line .comment-text-block { margin-top: auto; flex: 0 0 auto; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line.cp-duplicate { display: none; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment.cp-in-variation > .comment-line { display: none; }
