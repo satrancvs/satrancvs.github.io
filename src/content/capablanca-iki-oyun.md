@@ -1,4 +1,4 @@
-Capablanca, 1936 Moskova Turnuvası'nda Ragozin karşısında, kale ve at ile kale ve fil arasındaki oyunsonunda acele etmiyor: önce taşlarını en güçlü karelere yerleştiriyor, ardından piyonlarını ilerletiyor. Analiz ve yorumlar Mikhail Shereshevsky'ye ait (_Endgame Strategy_, Pergamon, 1985).
+Capablanca'nın yıllar sonra Ragozin karşısında, bir piyon fazla girdiği oyunsonunda önce taşlarını en güçlü karelere yerleştirip ardından piyonlarını ilerletmesi hayli öğretici. Analiz ve yorumlar Mikhail Shereshevsky’ye ait (_Endgame Strategy_ (Oyunsonu Stratejisi), Pergamon, 1985).
 
 [Event "Moskova"]
 [Site "Moskova"]
