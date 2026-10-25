@@ -392,7 +392,7 @@ function FenBlock({ fen, ready, crop, marks, analysis = false, badge }: { fen: s
 }
 
 // " · " in a quote's source line breaks the line (poem: author/title, then translator).
-const citeNodes = (nodes: ReactNode[]): ReactNode[] => nodes.flatMap((n, k) => (typeof n === 'string' ? n.split(' · ').flatMap((part, i) => (i ? [<br key={`${k}-${i}`} />, part] : [part])) : [n]));
+const citeNodes = (nodes: ReactNode[]): ReactNode[] => nodes.flatMap<ReactNode>((n, k) => (typeof n === 'string' ? n.split(' · ').flatMap((part, i) => (i ? [<br key={`${k}-${i}`} />, part] : [part])) : [n]));
 // Kaynak satırı satır içi Markdown/HTML alabilir: yabancı adlarda `<span lang="en">…</span>` büyük harfe çevirmede Türkçe İ yerine o dilin kuralını kullandırır.
 const CiteMd = ({ cite }: { cite: string }) => <>{cite.split(' · ').map((part, i) => <span key={i}>{i > 0 && <br />}<Markdown options={{ forceInline: true }}>{part}</Markdown></span>)}</>;
 
