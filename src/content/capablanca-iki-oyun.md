@@ -25,9 +25,8 @@ Capablanca, 1936 Moskova Turnuvası'nda Ragozin karşısında, kale ve at ile ka
 [SetUp "1"]
 [FEN "5k2/r1p2pp1/4b2p/8/8/P4N1P/1P3PP1/2R3K1 w - - 0 33"]
 
-{ Capablanca, önce tüm yapması gerekenleri özetliyor:
-
-> "Beyazın planı, c-piyonunun ilerlemesini engellemek (bundan sonra b-piyonu zayıflayabilirdi) ve tahtanın beşinci yataya kadar olan bölümünü tümüyle denetlemek. Bu, şahı e3'e götürerek, kaleyi c3'e, atı d4'e, piyonları ise b4 ve f4'e yerleştirerek sağlanır. Böyle bir konuma ulaştıktan sonra Beyaz, vezir kanadı piyonlarını ilerletebilecektir."
+{ > Beyazın planı, c piyonunun ilerlemesini önlemek (aksi hâlde b piyonu zayıflayabilirdi) ve beşinci yataya kadar tahtanın tamamını denetlemektir. Bunun için şah e3’e, kale c3’e, at d4’e, piyonlar ise b4 ve f4’e yerleştirilir. Bu konuma ulaşıldığında Beyaz, vezir kanadı piyonlarını ilerletebilir.
+> — José Raúl Capablanca
 
 Gördüğümüz gibi, Capablanca'yı varyantlar ilgilendirmiyordu; planlanan konuma ne kadar sürede ve ne hızla ulaşılacağı da umurunda değildi. Önemli olan, gereken konum tipinin seçilmiş olması ve oyunun bu plana göre devam etmesiydi. } 33. Nd4 Rb7 34. b4 Bd7 35. f4 Ke7 36. Kf2 Ra7 37. Rc3 Kd6 38. Rd3 Ke7 39. Ke3 Ra4 40. Rc3 Kd6 { Beyazın planladığı konum tamamlandı. Şimdi karşısında yeni bir sorun var: vezir kanadı piyonlarını ilerletmek. Bunun için önce şahını, ilerletilecek piyonların yardımına götürmelidir. } 41. Rd3 Ke7 42. Rc3 Kd6 { Oyunsonunun temel kuralı şudur: acele etmeyin! Bir piyonu iki kare ya da bir kare ilerletme olanağı varsa, önce bir kare ilerletin, dikkatle çevrenize bakın ve ancak ondan sonra bir kare daha ilerletin.
 
