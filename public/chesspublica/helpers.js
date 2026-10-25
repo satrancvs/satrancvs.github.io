@@ -120,7 +120,8 @@ export function nagsToGlyph(nags) {
     }
   }
   if (!quality && !evalGlyph) return null;
-  return (quality || "") + (evalGlyph || "");
+  /* Site patch: a no-break space between the move-quality glyph and the evaluation glyph ("e4! ⩲", not "e4!⩲"). */
+  return (quality || "") + (quality && evalGlyph ? "\u00A0" : "") + (evalGlyph || "");
 }
 
 /**

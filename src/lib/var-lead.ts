@@ -114,7 +114,8 @@ function classify(box: Element) {
       }
     }
     alone = !!btn && tops.size > 0 && btn.getBoundingClientRect().top >= bottom - 2;
-    oneLine = tops.size === 1 && !alone;
+    // Altında sol yığın (varyantlar) ya da iki sütuna bölünmüş varyant (.cp-split) varsa tek satırlık yorum sağa yaslanmaz: sütunun geri kalanıyla aynı sol kenardan başlar.
+    oneLine = tops.size === 1 && !alone && !box.classList.contains('cp-split') && !box.querySelector(':scope > .cp-left-stack');
   }
   const want = [oneLine, alone];
   classes.forEach((c, k) => { if (line.classList.contains(c) !== want[k]) line.classList.toggle(c, want[k]); });
