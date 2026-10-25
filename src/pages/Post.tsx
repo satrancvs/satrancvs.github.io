@@ -147,7 +147,7 @@ function PostPage() {
   return (
     <div className={`sk min-h-screen bg-[color:var(--bg)]${light ? ' sk-light' : ''}`}>
       <OverlayScrollbar />
-      <button type="button" onClick={toggleTheme} aria-pressed={light} aria-label={light ? 'Koyu temaya geç' : 'Açık temaya geç'} title={light ? 'Koyu tema' : 'Açık tema'} className="fixed top-5 right-[4.75rem] z-50 w-12 h-12 rounded-full border border-[color:rgb(var(--fg-rgb)/0.4)] bg-[color:var(--bg)] text-[color:var(--fg)] grid place-items-center hover:border-[color:var(--accent)] hover:text-[color:var(--accent)] transition-colors">
+      <button type="button" onClick={toggleTheme} aria-pressed={light} aria-label={light ? 'Koyu temaya geç' : 'Açık temaya geç'} title={light ? 'Koyu tema' : 'Açık tema'} className="fixed top-5 left-5 z-50 w-12 h-12 rounded-full border border-[color:rgb(var(--fg-rgb)/0.4)] bg-[color:var(--bg)] text-[color:var(--fg)] grid place-items-center hover:border-[color:var(--accent)] hover:text-[color:var(--accent)] transition-colors">
         {light ? <Moon size={20} aria-hidden /> : <Sun size={20} aria-hidden />}
       </button>
       <Link to="/" state={{ restore: true }} aria-label="Ana sayfaya dön" className="fixed top-5 right-5 z-50 w-12 h-12 rounded-full bg-[color:var(--fg)] text-[color:var(--bg)] grid place-items-center hover:bg-[color:var(--accent)]"><X /></Link>
