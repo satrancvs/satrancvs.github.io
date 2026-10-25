@@ -2758,6 +2758,7 @@ class VideoEngine {
         );
         if (hasComment)          this.hidePlayBtn();
         else if (!this._keyboardMode || gameOver) this.showPlayBtn(); /* Site patch: after the last move the replay button shows even when the game was stepped through with the keyboard / the move list. */
+        else this.hidePlayBtn(); /* Site patch: keyboard stepping back from the end hides it again (it must show only after the last move). */
       }
     }
 
