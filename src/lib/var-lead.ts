@@ -65,11 +65,24 @@ function process(box: Element) {
   if (!line.textContent?.replace(/\s+/g, '')) line.remove();
 }
 
-// Eskiden üç sütunlu düzende sol yorum tahtadan uzunsa kutuya dolgu/min-height eklenirdi; artık sol yorum kendi içinde kayıyor (site.css), bu yüzden eski satır içi değerler yalnızca temizlenir.
+// Sağ sütun kutusunun alt dolgusu (46 px) yalnızca içeriği tahtanın ortasına hizalamak içindir. İçerik tahtadan birkaç piksel uzunsa ama dolguyla birlikte kutuya
+// sığıyorsa dolgu o kadar daralır: kaydıracak bir şey yokken kaydırma çubuğu çıkmaz. (Eski satır içi min-height değeri de temizlenir.)
 function reserve(box: Element) {
   const el = box as HTMLElement;
-  if (el.style.paddingBottom) el.style.paddingBottom = '';
   if (el.style.minHeight) el.style.minHeight = '';
+  if (el.style.paddingBottom) el.style.paddingBottom = '';
+  if (getComputedStyle(el).overflowY !== 'auto') return;
+  const flow = Array.from(el.children).filter((c) => {
+    const s = getComputedStyle(c);
+    return s.display !== 'none' && s.position !== 'absolute' && s.position !== 'fixed';
+  });
+  if (!flow.length) return;
+  const top = Math.min(...flow.map((c) => c.getBoundingClientRect().top));
+  const bottom = Math.max(...flow.map((c) => c.getBoundingClientRect().bottom));
+  const content = bottom - top;
+  const room = el.clientHeight - content; // dolgu dahil artan yer
+  const pad = parseFloat(getComputedStyle(el).paddingBottom);
+  if (content > 0 && room < pad && room >= 0) el.style.paddingBottom = `${Math.floor(room)}px`;
 }
 
 // Sol sütundaki yorum satırında: tek satırlık yorum sağa yaslanır (.cp-one-line), oynat düğmesi metinden ayrı kendi satırına düştüyse sağa yaslanır
