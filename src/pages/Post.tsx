@@ -99,8 +99,12 @@ function PostPage() {
     const key = `scroll:${a.slug}`;
     const read = () => { try { return Number(localStorage.getItem(key)) || 0; } catch { return 0; } };
     // Okur yazının sonuna geldiyse (yazı gövdesinin alt kenarı ekrana girdiyse) yazıyı bitirmiş sayılır: konum hatırlanmaz, sonraki girişte yazı baştan açılır.
-    const finished = () => { const end = document.querySelector('article')?.getBoundingClientRect().bottom; return end !== undefined && end <= window.innerHeight + 200; };
-    const write = (y: number) => { try { if (y > 300 && !finished()) localStorage.setItem(key, String(Math.round(y))); else localStorage.removeItem(key); } catch { /* özel pencere vb. */ } };
+    // Sayfanın (yazının altındaki bölümler dahil) sonuna 200 px kala da aynı sayılır.
+    const finished = () => {
+      const end = document.querySelector('article')?.getBoundingClientRect().bottom;
+      return (end !== undefined && end <= window.innerHeight + 200) || window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 200;
+    };
+    const write = (y: number, done = finished()) => { try { if (y > 300 && !done) localStorage.setItem(key, String(Math.round(y))); else localStorage.removeItem(key); } catch { /* özel pencere vb. */ } };
     window.history.scrollRestoration = 'manual'; // geri yüklemeyi biz yaparız; tekrar 'auto' yapılmaz (ana sayfaya geri dönüşte yüklenmesin)
     const target = window.location.hash ? 0 : read();
     window.scrollTo(0, 0);
@@ -116,8 +120,12 @@ function PostPage() {
       ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach((ev) => window.addEventListener(ev, stop, { once: true, passive: true }));
     }
     let raf = 0;
+    // Son kaydırma konumu ve "bitti" durumu kaydırma anında alınır: bekleme süresi dolmadan sayfadan çıkılırsa (aşağıda) eski, ortadaki konum kalmasın.
+    let last: { y: number; done: boolean } | null = null;
     const onScroll = () => {
-      if (restoring || raf) return;
+      if (restoring) return;
+      last = { y: window.scrollY, done: finished() };
+      if (raf) return;
       raf = window.setTimeout(() => { raf = 0; write(window.scrollY); }, 250);
     };
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -126,6 +134,7 @@ function PostPage() {
     return () => {
       // Ayrılırken yazılmaz: ana sayfa kaydırmayı sıfırladıktan sonra çalışır ve kayıtlı konumu silerdi.
       stop();
+      if (raf && last) write(last.y, last.done);
       clearTimeout(raf);
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('pagehide', onHide);
