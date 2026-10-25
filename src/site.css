@@ -112,6 +112,10 @@
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line.cp-one-line .comment-text-block { text-align: right; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line.cp-btn-alone .comment-play-btn { display: flex; margin: 0 0 0 auto; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line .comment-icon { display: none; }
+  /* Birden çok varyant olunca (üç sütun): ana yorum ve ilk varyant solda (yorum üst yarıda alta, varyant alt yarıda üste yaslı: diyagramın ortasında birleşik durur), ötekiler sağda. */
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment:has(> .comment-line):has(> .variation-block ~ .variation-block):not(:has(> .cp-var-lead[data-k="0"])) > .comment-line { bottom: calc(50% + 23px); min-height: 0; height: auto; padding-bottom: .5rem; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment:has(> .comment-line):has(> .variation-block ~ .variation-block):not(:has(> .cp-var-lead[data-k="0"])) > .comment-line .comment-text-block { margin-top: auto; margin-bottom: 0; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment:has(> .comment-line):has(> .variation-block ~ .variation-block):not(:has(> .cp-var-lead[data-k="0"])) > .variation-block:not(.variation-block ~ .variation-block) { position: absolute; top: calc(50% - 23px); bottom: 0; right: calc(100% + 1.5rem); width: 280px; margin: 0; padding: .5rem 0 46px; box-sizing: border-box; overflow-y: auto; scrollbar-width: thin; }
 }
 /* Palavan'ın alıntı kutusundaki oynatıcılar da geniş ekranda (≥ 73em) üç sütun: kutu yazı sütunundan taşar (70rem), sol yorum | tahta | sağ yorum ve varyantlar. Kuralların
    açıklamaları yukarıdaki Timman bloklarında; fark: tahta yazı sütununda değil, tahtanın solundaki yorum payı (280px + 3rem) .player-wrapper'ın sol dolgusuyla ayrılır. */
@@ -157,6 +161,10 @@
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line.cp-one-line .comment-text-block { text-align: right; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line.cp-btn-alone .comment-play-btn { display: flex; margin: 0 0 0 auto; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line .comment-icon { display: none; }
+  /* Birden çok varyant olunca (üç sütun): ana yorum ve ilk varyant solda (yorum üst yarıda alta, varyant alt yarıda üste yaslı: diyagramın ortasında birleşik durur), ötekiler sağda. */
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment:has(> .comment-line):has(> .variation-block ~ .variation-block):not(:has(> .cp-var-lead[data-k="0"])) > .comment-line { bottom: calc(50% + 23px); min-height: 0; height: auto; padding-bottom: .5rem; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment:has(> .comment-line):has(> .variation-block ~ .variation-block):not(:has(> .cp-var-lead[data-k="0"])) > .comment-line .comment-text-block { margin-top: auto; margin-bottom: 0; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment:has(> .comment-line):has(> .variation-block ~ .variation-block):not(:has(> .cp-var-lead[data-k="0"])) > .variation-block:not(.variation-block ~ .variation-block) { position: absolute; top: calc(50% - 23px); bottom: 0; left: 1.5rem; width: 280px; margin: 0; padding: .5rem 0 46px; box-sizing: border-box; overflow-y: auto; scrollbar-width: thin; }
 }
 /* <pgn-player> yorumu yazı gövdesiyle aynı satır aralığında (paket 1.5 verir; gövde ve <pgn> metni 1.8) */
 .cp-game .video-comment { line-height: 1.8; }
