@@ -197,7 +197,7 @@ export default function Index() {
     return () => window.removeEventListener('scroll', on);
   }, []);
 
-  const [cover, ...rest] = ARTICLES;
+  const [cover, ...rest] = ARTICLES.filter((a) => !a.unlisted);
   const featured = rest.slice(0, 3);
   const list = LISTED.filter((a) => cat === 'Tümü' || catsOf(a).includes(cat));
 

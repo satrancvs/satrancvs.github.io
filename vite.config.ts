@@ -73,7 +73,7 @@ function articlePages() {
           html = setMeta(html, 'property', 'og:title', title);
           html = setMeta(html, 'property', 'og:type', 'article');
           html = setMeta(html, 'name', 'twitter:title', title);
-          const extra = [`<link rel="canonical" href="${url}" />`, `<meta property="og:url" content="${url}" />`];
+          const extra = a.unlisted ? ['<meta name="robots" content="noindex, nofollow" />'] : [`<link rel="canonical" href="${url}" />`, `<meta property="og:url" content="${url}" />`];
           if (a.photo) {
             const img = `${SITE_URL}/images/jan-timman-1973.jpg`;
             extra.push(`<meta property="og:image" content="${img}" />`, `<meta name="twitter:image" content="${img}" />`, '<meta name="twitter:card" content="summary_large_image" />');
@@ -82,7 +82,7 @@ function articlePages() {
           const dir = path.join(outDir, a.slug);
           fs.mkdirSync(dir, { recursive: true });
           fs.writeFileSync(path.join(dir, 'index.html'), html);
-          urls.push(url);
+          if (!a.unlisted) urls.push(url);
           // Eski adresler (`oldSlugs`): yeni adrese yönlendiren küçük bir sayfa (arama motorları için canonical, tarayıcı için refresh + script).
           for (const old of a.oldSlugs ?? []) {
             const oldDir = path.join(outDir, old);
