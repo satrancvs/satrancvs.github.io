@@ -2,7 +2,7 @@
 
 /* Satranç simgeleri (± ∓ ⩱ ⩲ ∞ □ + − = ve ♔–♟ figürinleri) Newsreader'da yok ya da çok küçük; yazıyla aynı boya gelsin diye Noto Sans Math / Symbols 2
    alt kümeleri (SIL OFL, yalnızca bu karakterler) büyütülerek (size-adjust) kullanılır. Yığının başına konur ki Newsreader'ın kendi ± ve + işaretlerinin yerine geçsinler. */
-@font-face { font-family:'Eval'; src:url('/fonts/noto-sans-math-eval.woff2') format('woff2'); font-display:swap; size-adjust:125%; unicode-range:U+00B1,U+2213,U+221E,U+25A1,U+2A71,U+2A72; }
+@font-face { font-family:'Eval'; src:url('/fonts/noto-sans-math-eval.woff2') format('woff2'); font-display:swap; size-adjust:100%; unicode-range:U+00B1,U+2213,U+221E,U+25A1,U+2A71,U+2A72; }
 @font-face { font-family:'EvalPM'; src:url('/fonts/noto-sans-math-eval.woff2') format('woff2'); font-display:swap; size-adjust:90%; unicode-range:U+002B,U+003D,U+2212; }
 @font-face { font-family:'Figurine'; src:url('/fonts/noto-sans-symbols2-chess.woff2') format('woff2'); font-display:swap; size-adjust:110%; unicode-range:U+2654-265F; }
 /* Renk değişkenleri. Varsayılan (koyu) değerler sitenin özgün renkleridir; ana sayfa yalnızca bunları kullanır. Yazı sayfasının kök öğesi `.sk-light` sınıfını
@@ -77,9 +77,18 @@
   /* Sütundaki içerik (tek satırlık varyant, kısa paragraf, düğme) hangi öğeyle başlarsa başlasın tahtanın alt kenarına hizalanır. */
   /* Sütunun içeriği tahtanın alt kenarına hizalanır (::before'un otomatik üst boşluğu; taşarsa boşluk sıfırlanır) ve kutu player'dan uzamaz: tahta boyunu aşınca kendi içinde kayar. */
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment::before { content: ''; margin-top: auto; }
-  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment { max-height: var(--board-size); overflow-y: auto; scrollbar-width: thin; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment { contain: size; align-self: stretch; min-height: 0; overflow-y: auto; scrollbar-width: thin; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-play-btn .lucide-icon { width: 1.5rem; height: 1.5rem; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .board-wrap .play { width: 2rem; height: 2rem; background: #000000b3; }
+  /* Çark (ayarlar) düğmesi: ilk hamleden önce ve tahtanın üzerindeyken görünür; oynat'a basılıp ilk hamle yapılınca ve fare tahtadan ayrılınca gizlenir (yalnızca fare olan geniş ekran). */
+  /* Sütunlardaki (sol yorum, sağ yorum ve varyantlar) metin yazı gövdesinden biraz küçük, her yerde aynı boy (19 px) ve daha sık satır aralığı (1.5). */
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment, .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment .comment-body { font-size: 1.1875rem; line-height: 1.5; }
+  @media (hover: hover) {
+    .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .board-toolbar { opacity: 0; pointer-events: none; transition: opacity .15s; }
+    .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .player-wrapper:not(:has(.video-moves :is(.white-half, .black-half).active)) .board-toolbar,
+    .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .player-container:hover .board-toolbar,
+    .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .board-toolbar:focus-within { opacity: 1; pointer-events: auto; }
+  }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .board-wrap .play .lucide-icon { width: 1.5rem; height: 1.5rem; }
 }
 /* Yeterince geniş ekranda (sağa taşan sütuna ekranda yer kalır) tahta yazı sütununun ortasında durur, yorum sütunu sağa, sütunun dışına taşar; genişlikler aynı, yalnızca konum kayar. */
@@ -89,7 +98,7 @@
      tahtanın soluna konur; sütunlar yazı sütunundan sola/sağa taşar. */
   /* Sol yorum satırı .player-wrapper'a göre konumlanır (kutu position: static): sağ sütun kayarken satır kırpılmaz. */
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment { position: static; }
-  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line { position: absolute; top: 0; right: calc(100% + 1.5rem); width: 280px; height: var(--board-size); overflow-y: auto; scrollbar-width: thin; display: flex; flex-direction: column; text-align: left; margin-top: 0; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line { position: absolute; top: 0; right: calc(100% + 1.5rem); width: 280px; bottom: 0; overflow-y: auto; scrollbar-width: thin; display: flex; flex-direction: column; text-align: left; margin-top: 0; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line .comment-text-block { margin-top: auto; flex: 0 0 auto; }
   /* Varyantın içindeyken yorum zaten varyant metninde görünüyorsa sol satır gizlenir (variation-fix.ts .cp-duplicate); yukarıdaki display: flex bu kuralı ezmesin. */
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line.cp-duplicate { display: none; }
@@ -119,13 +128,22 @@
   /* Sütundaki içerik (tek satırlık varyant, kısa paragraf, düğme) hangi öğeyle başlarsa başlasın tahtanın alt kenarına hizalanır. */
   /* Sütunun içeriği tahtanın alt kenarına hizalanır (::before'un otomatik üst boşluğu; taşarsa boşluk sıfırlanır) ve kutu player'dan uzamaz: tahta boyunu aşınca kendi içinde kayar. */
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment::before { content: ''; margin-top: auto; }
-  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment { max-height: var(--board-size); overflow-y: auto; scrollbar-width: thin; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment { contain: size; align-self: stretch; min-height: 0; overflow-y: auto; scrollbar-width: thin; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-play-btn .lucide-icon { width: 1.5rem; height: 1.5rem; }
   .quote-game pgn-player:not(pgn-study pgn-player) .board-wrap .play { width: 2rem; height: 2rem; background: #000000b3; }
+  /* Çark (ayarlar) düğmesi: ilk hamleden önce ve tahtanın üzerindeyken görünür; oynat'a basılıp ilk hamle yapılınca ve fare tahtadan ayrılınca gizlenir (yalnızca fare olan geniş ekran). */
+  /* Sütunlardaki (sol yorum, sağ yorum ve varyantlar) metin yazı gövdesinden biraz küçük, her yerde aynı boy (19 px) ve daha sık satır aralığı (1.5). */
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment, .quote-game pgn-player:not(pgn-study pgn-player) .video-comment .comment-body { font-size: 1.1875rem; line-height: 1.5; }
+  @media (hover: hover) {
+    .quote-game pgn-player:not(pgn-study pgn-player) .board-toolbar { opacity: 0; pointer-events: none; transition: opacity .15s; }
+    .quote-game pgn-player:not(pgn-study pgn-player) .player-wrapper:not(:has(.video-moves :is(.white-half, .black-half).active)) .board-toolbar,
+    .quote-game pgn-player:not(pgn-study pgn-player) .player-container:hover .board-toolbar,
+    .quote-game pgn-player:not(pgn-study pgn-player) .board-toolbar:focus-within { opacity: 1; pointer-events: auto; }
+  }
   .quote-game pgn-player:not(pgn-study pgn-player) .board-wrap .play .lucide-icon { width: 1.5rem; height: 1.5rem; }
   /* Sol yorum satırı .player-wrapper'a göre konumlanır (kutu position: static): sağ sütun kayarken satır kırpılmaz. */
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment { position: static; }
-  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line { position: absolute; top: 0; left: 1.5rem; width: 280px; height: var(--board-size); overflow-y: auto; scrollbar-width: thin; display: flex; flex-direction: column; text-align: left; margin-top: 0; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line { position: absolute; top: 0; left: 1.5rem; width: 280px; bottom: 0; overflow-y: auto; scrollbar-width: thin; display: flex; flex-direction: column; text-align: left; margin-top: 0; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line .comment-text-block { margin-top: auto; flex: 0 0 auto; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line.cp-duplicate { display: none; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment.cp-in-variation > .comment-line { display: none; }
