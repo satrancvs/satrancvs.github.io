@@ -213,7 +213,18 @@ function moveQuotes(box: Element) {
   const el = box as HTMLElement;
   const line = box.querySelector(':scope > .comment-line');
   if (!line || getComputedStyle(el).position !== 'static') return;
-  const quotes = Array.from(line.querySelectorAll('blockquote'));
+  // Yalnızca yorumun sonundaki alıntı sağ sütuna gider; ardından metin gelen alıntı yerinde (solda) kalır, ardındaki paragraflar spreadComment ile sağa yayılır.
+  const readableAfter = (q: Element) => {
+    for (let n = q.nextSibling; n; n = n.nextSibling) {
+      if (n.nodeName === 'BR' || n.nodeName === 'BUTTON') continue;
+      if (n.nodeType === Node.TEXT_NODE && !n.textContent?.trim()) continue;
+      return true;
+    }
+    return false;
+  };
+  // Paragraflar zaten sağ sütuna yayılmışsa (spreadComment, `.cp-more-right`) alıntının ardında artık metin görünmez ama alıntı yine de yerinde kalır.
+  const spread = !!box.querySelector(':scope > .cp-more-right');
+  const quotes = spread ? [] : Array.from(line.querySelectorAll('blockquote')).filter((q) => !readableAfter(q));
   if (!quotes.length) return;
   let host = box.querySelector(':scope > .cp-quote-right');
   if (!host) {
@@ -244,6 +255,11 @@ function spreadComment(box: Element) {
     if (n.nodeName === 'BR' && nodes[i + 1]?.nodeName === 'BR') {
       while (nodes[i + 1]?.nodeName === 'BR') i++;
       paras.push([]);
+    } else if (n.nodeName === 'BLOCKQUOTE') {
+      // Yerinde kalan alıntı kendi başına bir paragraftır (çevresindeki <br>'ler biçimlendirmede atılmıştı).
+      if (paras[paras.length - 1].length) paras.push([]);
+      paras[paras.length - 1].push(n);
+      paras.push([]);
     } else paras[paras.length - 1].push(n);
   }
   const lens = paras.map((g) => g.reduce((a, n) => a + (n.textContent?.length ?? 0), 0));
@@ -265,13 +281,13 @@ function spreadComment(box: Element) {
     line.after(host);
   }
   // Önce taşınacak paragraflar (araya giren <br>'lar atılır), sonra solda kalan paragrafın sonundaki <br>'lar temizlenir.
-  paras.slice(keep).forEach((g, i) => {
+  // spreadComment birden çok kez çalışır (her DOM değişiminde): sonraki turda taşınan paragraflar önceki turda taşınanların ÖNÜNE konur, yoksa sıra bozulur.
+  const moved = paras.slice(keep).map((g) => {
     const p = document.createElement('p');
     g.forEach((n) => p.append(n));
-    (host as Element).append(p);
-    if (!p.textContent?.trim() && !p.querySelector('button')) p.remove();
-    void i;
-  });
+    return p;
+  }).filter((p) => p.textContent?.trim() || p.querySelector('button'));
+  (host as Element).prepend(...moved);
   while (body.lastChild && (body.lastChild.nodeName === 'BR' || (body.lastChild.nodeType === 3 && !body.lastChild.textContent?.trim()))) body.lastChild.remove();
 }
 
