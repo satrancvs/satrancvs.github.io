@@ -164,4 +164,17 @@ Bu defa file karşı ata sahip olan taraf, Capa’nın büyük rakibi ve halefi,
 
 Nh3 oynarsa Beyazın elinde iyi kazanç şansları olacak. } ) 6. f6+ Ke8 ( {Daha önce Primel'in de belirttiği gibi } 6... Ke6 $2 7. Nh3 { ile Beyaz kazanır. } ) 7. Nf3 { Siyahın tek seçeneğinin bir piyonu daha beyaz kareye koymak olduğu ortaya çıktı. Gerisi Alekhine için hayli kolay olacak. } 7... g4 8. Nh4 Be6 9. Ng6 $1 { At nihayet gitmek istediği hedefe, f4 karesine ulaştı. } 9... Bf7 10. Nf4 Kd7 11. Ke2 $1 { ==Zugzwang==. } 11... a5 12. Ke3 Bg8 13. Nxh5 Bf7 14. Nf4 Bg8 15. Ne2 { Şimdi f4 karesini kullanma sırası şahta. Böylelikle şah rakip kampa sızacak. Yates yine de sonuna kadar mücadele ediyor. } 15... Be6 16. Kf4 Ke8 17. Kg5 Kf7 18. Nc3 Kf8 19. Kg6 Kg8 20. f7+ $1 Kf8 21. Kf6 Bxf7 22. e6 Bh5 23. Nxd5 Be8 24. Nc3 { Beyazın d piyonunun ilerlemesinin an meselesi olduğunu gören Siyah terk etti. } 1-0
 
+Alekhine, 1937’deki dünya şampiyonluğu maçında **Max Euwe** karşısında. Kale değişiminin ardından Siyahın atına karşı bu defa file sahip taraf Alekhine. Analiz ve yorumlar FM Israel Gelfer’e ait (a.g.e).
+
+[Event "Dünya Şampiyonası"]
+[Date "1937.??.??"]
+[White "Alexander Alekhine"]
+[Black "Max Euwe"]
+[Result "1-0"]
+[View "player"]
+[SetUp "1"]
+[FEN "8/ppk4p/2pr1pn1/8/P1B2P2/2P3P1/7P/4R1K1 w - - 0 29"]
+
+29. h4! { Şah kanadındaki piyon çoğunluğunu harekete geçirerek atı yerinden ediyor. } 29... Kd7 30. Kf2 Ne7 31. Kf3 Nd5 { Beyaza fili yeniden konumlandırma olanağı tanıyan bir hata. } ( 31... Ke8 { daha dirençli olurdu. } ) 32. Bd3 $1 h6 33. Bf5+ Kd8 34. Kg4 Ne7 35. Bb1 Ke8 36. Kh5 { Şahın etkin katılımı hayati önemde. } 36... Kf7 37. Ba2+ { Filin bir çapraz hattan diğerine ne kadar rahatlıkla geçebildiğini gösteren bir örnek. } 37... Kf8 38. Kxh6 Rd7 39. Be6 Rd3 40. g4 Rxc3 41. g5 1-0
+
 Devamı gelecek. Kaçırmamak için [bültene abone ol](/#bulten).
