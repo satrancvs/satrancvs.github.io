@@ -456,3 +456,8 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .cp-game .video-comment > .cp-quote-right { flex: 0 0 auto; }
 .cp-game .video-comment > .cp-quote-right > blockquote { margin: .5rem 0 .75rem 1rem; }
 .cp-game .video-comment.cp-in-variation > .cp-quote-right { display: none; }
+
+/* Palavan'ın bulmaca oynatıcısında (.flip-back) hamle listesi gizli: oynatıcı yalnızca tahta kadar yüksek, bu yüzden hamle listesi payı (46 px) sıfırlanır; tekrar düğmesi tahtanın alt kenarına oturur. */
+.quote-game .flip-back pgn-player .video-comment { padding-bottom: 0; }
+.quote-game .flip-back pgn-player .video-comment > .comment-play-btn.cp-replay { bottom: 0; }
+.quote-game .flip-back pgn-player .video-comment > .comment-line, .quote-game .flip-back pgn-player .video-comment > .cp-left-stack { padding-bottom: 0; }
