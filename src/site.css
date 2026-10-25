@@ -80,6 +80,13 @@
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment { contain: size; align-self: stretch; min-height: 0; overflow-y: auto; scrollbar-width: thin; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-play-btn .lucide-icon { width: 1.5rem; height: 1.5rem; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .board-wrap .play { width: 2rem; height: 2rem; background: #000000b3; }
+  /* Çark (ayarlar) düğmesi: ilk hamleden önce ve tahtanın üzerindeyken görünür; oynat'a basılıp ilk hamle yapılınca ve fare tahtadan ayrılınca gizlenir (yalnızca fare olan geniş ekran). */
+  @media (hover: hover) {
+    .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .board-toolbar { opacity: 0; pointer-events: none; transition: opacity .15s; }
+    .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .player-wrapper:not(:has(.video-moves :is(.white-half, .black-half).active)) .board-toolbar,
+    .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .player-container:hover .board-toolbar,
+    .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .board-toolbar:focus-within { opacity: 1; pointer-events: auto; }
+  }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .board-wrap .play .lucide-icon { width: 1.5rem; height: 1.5rem; }
 }
 /* Yeterince geniş ekranda (sağa taşan sütuna ekranda yer kalır) tahta yazı sütununun ortasında durur, yorum sütunu sağa, sütunun dışına taşar; genişlikler aynı, yalnızca konum kayar. */
@@ -122,6 +129,13 @@
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment { contain: size; align-self: stretch; min-height: 0; overflow-y: auto; scrollbar-width: thin; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-play-btn .lucide-icon { width: 1.5rem; height: 1.5rem; }
   .quote-game pgn-player:not(pgn-study pgn-player) .board-wrap .play { width: 2rem; height: 2rem; background: #000000b3; }
+  /* Çark (ayarlar) düğmesi: ilk hamleden önce ve tahtanın üzerindeyken görünür; oynat'a basılıp ilk hamle yapılınca ve fare tahtadan ayrılınca gizlenir (yalnızca fare olan geniş ekran). */
+  @media (hover: hover) {
+    .quote-game pgn-player:not(pgn-study pgn-player) .board-toolbar { opacity: 0; pointer-events: none; transition: opacity .15s; }
+    .quote-game pgn-player:not(pgn-study pgn-player) .player-wrapper:not(:has(.video-moves :is(.white-half, .black-half).active)) .board-toolbar,
+    .quote-game pgn-player:not(pgn-study pgn-player) .player-container:hover .board-toolbar,
+    .quote-game pgn-player:not(pgn-study pgn-player) .board-toolbar:focus-within { opacity: 1; pointer-events: auto; }
+  }
   .quote-game pgn-player:not(pgn-study pgn-player) .board-wrap .play .lucide-icon { width: 1.5rem; height: 1.5rem; }
   /* Sol yorum satırı .player-wrapper'a göre konumlanır (kutu position: static): sağ sütun kayarken satır kırpılmaz. */
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment { position: static; }
