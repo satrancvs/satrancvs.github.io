@@ -25,6 +25,10 @@ const savedLines = new WeakMap<Player, Element | null>();
 
 function ensurePlayButton(box: Element) {
   // Düğme satır içine taşınmış olabilir (inline-play.ts): kutunun herhangi bir yerinde aranır, ikincisi eklenmez.
+  // Oynatıcı her yeniden çizimde kendi düğmesini ekler; bizim taşıdığımız varsa iki düğme olur: varyant içindeki (yoksa ilk) kalır.
+  const all = Array.from(box.querySelectorAll('.comment-play-btn'));
+  const keep = all.find((b) => b.closest('.variation-block')) ?? all[0];
+  all.forEach((b) => b !== keep && b.remove());
   let button = box.querySelector('.comment-play-btn');
   // Düğme varyant blokları geri konmadan önce yorum satırının içine taşınmış olabilir (satır gizliyse ya da varyanttan uzaktaysa görünmez):
   // kutuya geri konur, inline-play.ts onu en son varyantın son metnine taşır.
