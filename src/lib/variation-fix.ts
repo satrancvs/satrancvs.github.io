@@ -17,6 +17,8 @@ const detachVariation = (engine: Engine) => { engine._variation = null; };
 
 const kids = (el: Element) => Array.from(el.children);
 const isBlock = (el: Element) => el.classList.contains('variation-block');
+// Üst düzey varyant blokları: doğrudan kutuda ya da sol sütun kutusunda (.cp-left-stack, var-lead.ts) durabilir.
+const topBlocks = (box: Element) => Array.from(box.querySelectorAll('.variation-block')).filter((b) => !b.parentElement?.closest('.variation-block'));
 const textOf = (el?: Element | null) => (el?.textContent ?? '').replace(/\s+/g, ' ').trim();
 
 // Ana hatta en son görülen üst düzey varyant blokları ve onların bağlı olduğu ana hat yorumu (kopya), oyuncu başına.
@@ -90,7 +92,7 @@ function restore(player: Player) {
   if (!variation) {
     box.classList.remove('cp-in-variation');
     box.querySelector(':scope > .comment-line')?.classList.remove('cp-duplicate');
-    const blocks = kids(box).filter(isBlock);
+    const blocks = topBlocks(box);
     savedBlocks.set(player, blocks.length ? blocks : null);
     const line = box.querySelector(':scope > .comment-line');
     savedLines.set(player, line ? (line.cloneNode(true) as Element) : null);
@@ -101,10 +103,11 @@ function restore(player: Player) {
   const saved = savedBlocks.get(player);
   const content = variation.contentEl;
   if (saved && content && saved.some((block) => block.contains(content))) {
-    const present = kids(box).filter(isBlock);
-    const intact = present.length === saved.length && saved.every((block, i) => present[i] === block);
+    const present = topBlocks(box);
+    const intact = present.length === saved.length && saved.every((block) => box.contains(block));
     if (!intact) {
       present.forEach((block) => block.remove());
+      box.querySelectorAll(':scope > .cp-left-stack').forEach((stack) => stack.remove());
       saved.forEach((block) => box.append(block));
     }
   } else if (content && !box.contains(content)) {

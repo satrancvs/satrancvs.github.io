@@ -112,8 +112,62 @@ function inlineContinuations(box: Element) {
   });
 }
 
+// Üç sütunlu düzende (kutu position: static) sağ sütuna çok içerik düşerse varyant blokları (başlarındaki .cp-var-lead ile) iki sütuna paylaştırılır: ilk k blok
+// sol sütundaki `.cp-left-stack` kutusuna taşınır (ana yorum varsa solda zaten durur). Karar yazı uzunluğuna göre verilir (yerleşimden bağımsız, kararlı).
+const BALANCE_MIN = 420;
+const topBlocks = (box: Element) => Array.from(box.querySelectorAll('.variation-block')).filter((b) => !b.parentElement?.closest('.variation-block'));
+const groupOf = (block: Element) => {
+  const lead = block.previousElementSibling;
+  return lead?.classList.contains('cp-var-lead') ? [lead, block] : [block];
+};
+const weight = (els: Element[]) => els.reduce((n, e) => n + (e.textContent?.length ?? 0), 0);
+
+function balance(box: Element) {
+  const el = box as HTMLElement;
+  if (!el.closest('pgn-player') || getComputedStyle(el).position !== 'static') return;
+  let blocks = topBlocks(box);
+  // Tek bir üst düzey blok (içinde iç varyantlarıyla) bölünemez: iç varyantlar bloğun hemen ardına, kutuya alınır; ana varyant solda, iç varyantlar sağda kalabilir.
+  if (blocks.length === 1) {
+    const nested = Array.from(blocks[0].querySelectorAll('.variation-block')).filter((n) => n.parentElement?.closest('.variation-block') === blocks[0]);
+    if (nested.length && (blocks[0].textContent?.length ?? 0) > BALANCE_MIN) {
+      const host = blocks[0].parentElement as Element;
+      let ref = blocks[0].nextSibling;
+      nested.forEach((n) => host.insertBefore(n, ref));
+      blocks = topBlocks(box);
+    }
+  }
+  const stack = box.querySelector<HTMLElement>(':scope > .cp-left-stack');
+  const current = stack ? stack.querySelectorAll(':scope > .variation-block').length : 0;
+  if (blocks.length < 2) return;
+  const sizes = blocks.map((b) => weight(groupOf(b)));
+  const line = weight(Array.from(box.querySelectorAll(':scope > .comment-line')));
+  const total = line + sizes.reduce((a, b) => a + b, 0);
+  let want = 0;
+  if (total > BALANCE_MIN) {
+    let best = Infinity;
+    for (let k = 0; k < blocks.length; k++) {
+      const left = line + sizes.slice(0, k).reduce((a, b) => a + b, 0);
+      const diff = Math.abs(left - (total - left));
+      if (diff < best) { best = diff; want = k; }
+    }
+  }
+  if (want === current) return;
+  const groups = blocks.map(groupOf);
+  const anchor = box.querySelector(':scope > .comment-play-btn');
+  groups.forEach((g) => g.forEach((n) => (anchor ? box.insertBefore(n, anchor) : box.append(n))));
+  stack?.remove();
+  if (want > 0) {
+    const next = document.createElement('div');
+    next.className = 'cp-left-stack';
+    groups.slice(0, want).forEach((g) => g.forEach((n) => next.append(n)));
+    const line0 = box.querySelector(':scope > .comment-line');
+    if (line0) line0.after(next); else box.prepend(next);
+  }
+}
+
 function refresh(box: Element) {
   process(box);
+  balance(box);
   inlineContinuations(box);
   reserve(box);
   classify(box);
