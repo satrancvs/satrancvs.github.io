@@ -40,7 +40,15 @@ const typo = (a: Article): Article => ({
   body: a.body.map(toTypography),
 });
 
-export const ARTICLES: Article[] = (data as Article[]).map((a) => typo(CHUNKS[a.id] ? { ...a, chunks: CHUNKS[a.id] } : a));
+// "Satranca ilk adım" bölümleri (gizli önizleme): src/content/ilk-adim-<ad>.md, adres `ilk-adim-<jeton>-<ad>`.
+const BOOK_MD = import.meta.glob('@/content/ilk-adim-*.md', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+const bookChunks = (a: Article) => {
+  const name = a.slug.match(/^ilk-adim-[^-]+-(.+)$/)?.[1];
+  const md = name && BOOK_MD[`/src/content/ilk-adim-${name}.md`];
+  return md ? splitArticle(md).chunks : undefined;
+};
+
+export const ARTICLES: Article[] = (data as Article[]).map((a) => { const chunks = CHUNKS[a.id] ?? bookChunks(a); return typo(chunks ? { ...a, chunks } : a); });
 
 // `draft`: henüz yayımlanmamış yazı. Yalnızca ana sayfadaki "Öne çıkanlar" kartında görünür (tıklanmaz); sayfası, sitemap kaydı, listesi ve
 // bildirimi yoktur. Yazı hazır olunca `draft` kaldırılır.

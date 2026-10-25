@@ -2,6 +2,7 @@ import { Children, Fragment, isValidElement, useEffect, useRef, useState } from 
 import type { ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 import FlipGame from '@/components/FlipGame';
+import { Link } from 'react-router-dom';
 import Markdown from 'markdown-to-jsx';
 import { useChessPublica } from '@/lib/chesspublica';
 import { curlyComments, curlyProse, watchComments } from '@/lib/curly-dom';
@@ -371,13 +372,19 @@ const captionOptions = {
 // Tek başına duran `[FEN "…"]` paragrafı (alıntı dışında) statik diyagram olur (etüt).
 const FIRST_MOVE_DIAGRAM = /^\s*\d+\.(?:\.\.)?\s*\S+\s*\{\s*\[D\]/;
 // İsteğe bağlı ikinci satır `{ [%cal Gd5a8,Gd5g8] [%csl Rb7,Rc6] }`: oklar (cal) ve işaretli kareler (csl); <fen> bunu son satır olarak okur.
-const FEN_BLOCK = /^\[FEN\s+"([^"]+)"\](\s*\(crop:\s*top-half\))?(?:[ \t]*\n[ \t]*(\{\s*(?:\[%(?:cal|csl)\s[^\]]*\]\s*)+\}))?$/;
+const FEN_BLOCK = /^\[FEN\s+"([^"]+)"\](?:\s*\(crop:\s*((?:top|bottom)-(?:half|(?:left|right)-quarter))\))?(?:[ \t]*\n[ \t]*(\{\s*(?:\[%(?:cal|csl)\s[^\]]*\]\s*)+\}))?$/;
+// Yan yana duran diyagram sırası: art arda, boş satırsız `[FEN "…"]` (isteğe bağlı `(crop: …)`) satırları (Satranca ilk adım).
+const FEN_ROW = /^\[FEN\s+"[^"]+"\](?:[ \t]*\(crop:[^)]*\))?(?:\n\[FEN\s+"[^"]+"\](?:[ \t]*\(crop:[^)]*\))?)+$/;
+// Diyagramın (ya da sırasının) hemen altındaki tek satırlık italik paragraf onun altyazısıdır (`*Diyagram 3.1*`).
+const FEN_CAPTION = /^\*[^*\n]+\*$/;
+// Bölüm sonu gezintisi (Satranca ilk adım): `Önceki bölüm: [Ad](/adres/)<br>` ve `Sonraki bölüm: [Ad](/adres/)` satırları.
+const CHAPTER_NAV = /^(?:Önceki|Sonraki) bölüm:/;
 // `analysis`: oyunda oynanmamış bir analiz konumu (yorumdaki FEN satırı): varyant diyagramları gibi küçük ve soluk; `badge`: karenin sağ üst köşesinde hamle rozeti.
-function FenBlock({ fen, ready, crop = false, marks, analysis = false, badge }: { fen: string; ready: boolean; crop?: boolean; marks?: string; analysis?: boolean; badge?: { glyph: string; square: string } }) {
+function FenBlock({ fen, ready, crop, marks, analysis = false, badge }: { fen: string; ready: boolean; crop?: string; marks?: string; analysis?: boolean; badge?: { glyph: string; square: string } }) {
   useEffect(() => { if (ready) window.ChessPublica?.initAll(); }, [ready]);
   const at = badge && { right: `${(7 - (badge.square.charCodeAt(0) - 97)) * 12.5 - 0.6}%`, top: `${(8 - Number(badge.square[1])) * 12.5 - 0.6}%` };
   return (
-    <div role="img" aria-label={analysis ? 'Analiz diyagramı' : 'Diyagram'} className={`art-fen${crop ? ' art-fen-top' : ''}${analysis ? ' art-fen-analysis' : ''}`}>
+    <div role="img" aria-label={analysis ? 'Analiz diyagramı' : 'Diyagram'} className={`art-fen${crop === 'top-half' ? ' art-fen-top' : crop ? ` art-fen-crop art-fen-${crop}` : ''}${analysis ? ' art-fen-analysis' : ''}`}>
       <div dangerouslySetInnerHTML={{ __html: `<fen>${fen}${marks ? `\n${marks}` : ''}</fen>` }} />
       {badge && at && <div aria-hidden className="gm-badge art-fen-badge" style={{ background: GLYPH_COLOR[badge.glyph] ?? '#00AA00', ...at }}>{badge.glyph}</div>}
     </div>
@@ -399,7 +406,7 @@ function QuoteWithFigure({ chunk, ready }: { chunk: string; ready: boolean }) {
       {body.map((b, k) => (IMG_CHUNK.test(b)
         ? <Figure key={k} chunk={b} />
         : FEN_BLOCK.test(b)
-        ? <FenBlock key={k} fen={b.match(FEN_BLOCK)![1]} crop={!!b.match(FEN_BLOCK)![2]} marks={b.match(FEN_BLOCK)![3]} ready={ready} />
+        ? <FenBlock key={k} fen={b.match(FEN_BLOCK)![1]} crop={b.match(FEN_BLOCK)![2]} marks={b.match(FEN_BLOCK)![3]} ready={ready} />
         : <Markdown key={k} options={{ ...mdOptions, forceBlock: true }}>{b}</Markdown>))}
       {cite && <footer className="quote-cite f-mono">— <CiteMd cite={cite} /></footer>}
     </blockquote>
@@ -485,6 +492,10 @@ function Quote({ children }: { children?: ReactNode }) {
   const first = lastKids[0];
   const dash = typeof first === 'string' ? first.match(/^\s*[—–-]\s+([\s\S]*)$/) : null;
   const cite = dash && (dash[1] || lastKids.length > 1) ? [dash[1], ...lastKids.slice(1)] : null;
+  // `> **ÇALIŞMA 3.1** …` (Satranca ilk adım): okura verilen alıştırma; alıntı kutusu yerine sade bir çalışma kutusu.
+  const firstKids = isValidElement<{ children?: ReactNode }>(kids[0]) ? Children.toArray(kids[0].props.children) : [];
+  const lead = isValidElement<{ children?: ReactNode }>(firstKids[0]) ? Children.toArray(firstKids[0].props.children)[0] : undefined;
+  if (typeof lead === 'string' && /^ÇALIŞMA\b/.test(lead)) return <blockquote className="exercise">{kids}</blockquote>;
   return (
     <blockquote className="quote">
       {cite ? kids.slice(0, -1) : kids}
@@ -505,12 +516,55 @@ function Continued({ text }: { text: string }) {
   );
 }
 
+function DiagramCaption({ text }: { text: string }) {
+  return <p className="art-fen-caption"><Markdown options={{ forceInline: true }}>{text}</Markdown></p>;
+}
+
+// Bölüm sonundaki "Önceki bölüm / Sonraki bölüm" bağlantıları (iç adresler: sayfa yenilenmeden geçilir).
+function ChapterNav({ text }: { text: string }) {
+  const items = text.split(/\n|<br\s*\/?>/i).map((l) => l.trim()).filter(Boolean).map((l) => {
+    const m = l.match(/^(Önceki|Sonraki) bölüm:\s*\[([^\]]+)\]\(([^)]+)\)/);
+    return m && { next: m[1] === 'Sonraki', title: m[2], href: m[3] };
+  }).filter((x): x is { next: boolean; title: string; href: string } => !!x);
+  return (
+    <nav className="chapter-nav" aria-label="Bölümler">
+      {items.map((it) => (
+        <Link key={it.href} to={it.href} className={`chapter-nav-link${it.next ? ' next' : ''}`}>
+          <span className="f-mono">{it.next ? 'Sonraki bölüm →' : '← Önceki bölüm'}</span>
+          <span className="chapter-nav-title">{it.title}</span>
+        </Link>
+      ))}
+    </nav>
+  );
+}
+
+// Yazı içindeki `/…` adresleri (bölümler arası bağlantılar) aynı sekmede açılır; `/#…` ve dış adresler olduğu gibi (yeni sekme).
+function MdLink({ href, children, ...rest }: React.AnchorHTMLAttributes<HTMLAnchorElement>) {
+  const cls = 'text-[color:var(--accent)] underline underline-offset-4';
+  if (href && /^\/[^#/]/.test(href)) return <Link to={href} className={cls}>{children}</Link>;
+  return <a href={href} className={cls} target="_blank" rel="noreferrer" {...rest}>{children}</a>;
+}
+
+// Tek bir taş simgesi (♔–♟) taşıyan tablo hücresi büyütülür (Satranca ilk adım: taş tabloları).
+const cell = (Tag: 'td' | 'th') => function Cell({ children, ...rest }: React.TdHTMLAttributes<HTMLTableCellElement>) {
+  const only = Children.toArray(children);
+  const piece = only.length === 1 && typeof only[0] === 'string' && /^[\u2654-\u265F]$/.test(only[0].trim());
+  return <Tag {...rest} className={piece ? 'art-piece' : undefined}>{children}</Tag>;
+};
+
 const mdOptions = {
   overrides: {
     h3: { props: { className: 'f-display text-4xl md:text-5xl mt-16 mb-6 text-[color:var(--fg)]' } },
-    a: { props: { className: 'text-[color:var(--accent)] underline underline-offset-4', target: '_blank', rel: 'noreferrer' } },
+    h4: { props: { className: 'f-display text-3xl mt-12 mb-4 text-[color:var(--fg)]' } },
+    h5: { props: { className: 'f-display text-2xl italic mt-10 mb-3 text-[color:var(--fg)]' } },
+    a: { component: MdLink },
     blockquote: { component: Quote },
     ul: { props: { className: 'list-disc pl-6 mb-6 space-y-2 marker:text-[color:var(--accent)]' } },
+    ol: { props: { className: 'list-decimal pl-6 mb-6 space-y-2 marker:text-[color:var(--accent)]' } },
+    table: { props: { className: 'art-table' } },
+    td: { component: cell('td') },
+    th: { component: cell('th') },
+    hr: { props: { className: 'art-hr' } },
     strong: { props: { className: 'font-semibold text-[color:var(--fg)]' } },
   },
 };
@@ -679,9 +733,19 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       if (own) i++;
     } else if (CONTINUED.test(c)) {
       out.push(<Continued key={i} text={c} />);
+    } else if (FEN_ROW.test(c)) {
+      out.push(
+        <div key={i} className="art-fen-row">
+          {c.split('\n').map((l, k) => { const m = l.match(FEN_BLOCK)!; return <FenBlock key={k} fen={m[1]} crop={m[2]} ready={cp === 'ready'} />; })}
+        </div>,
+      );
+      if (FEN_CAPTION.test(chunks[i + 1]?.trim() ?? '')) out.push(<DiagramCaption key={`cap${i}`} text={chunks[++i].trim()} />);
     } else if (FEN_BLOCK.test(c)) {
       const m = c.match(FEN_BLOCK)!;
-      out.push(<FenBlock key={i} fen={m[1]} crop={!!m[2]} marks={m[3]} ready={cp === 'ready'} />);
+      out.push(<FenBlock key={i} fen={m[1]} crop={m[2]} marks={m[3]} ready={cp === 'ready'} />);
+      if (FEN_CAPTION.test(chunks[i + 1]?.trim() ?? '')) out.push(<DiagramCaption key={`cap${i}`} text={chunks[++i].trim()} />);
+    } else if (CHAPTER_NAV.test(c)) {
+      out.push(<ChapterNav key={i} text={c} />);
     } else if (c.startsWith('### ')) {
       const section = toc.find((t) => t.chunk === i);
       out.push(
