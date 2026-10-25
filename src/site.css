@@ -77,7 +77,7 @@
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment::before { content: ''; margin-top: auto; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment::after { content: ''; margin-bottom: auto; }
   /* Tek başına duran oynat düğmesi (başka içerik yok) tahtanın alt kenarına hizalanır. */
-  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment:has(> .comment-play-btn:only-child)::after { margin-bottom: 0; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment.cp-btn-only::after { margin-bottom: 0; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment { padding-bottom: 46px; box-sizing: border-box; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment { contain: size; align-self: stretch; min-height: 0; overflow-y: auto; scrollbar-width: thin; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-play-btn .lucide-icon { width: 1.5rem; height: 1.5rem; }
@@ -114,7 +114,6 @@
   /* Sol sütun: tek satırlık yorum sağa (tahtaya doğru) yaslanır; oynat düğmesi metinden ayrı kendi satırına düştüyse o da sağa yaslanır (var-lead.ts sınıfları). */
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line.cp-one-line { text-align: right; align-items: flex-end; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line.cp-one-line .comment-text-block { text-align: right; }
-  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line.cp-btn-alone .comment-play-btn { display: flex; margin: 0 0 0 auto; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line .comment-icon { display: none; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-play-btn.cp-replay { left: calc(340px + 1.5rem); bottom: 46px; }
   /* Tek bir uzun varyant (var-lead.ts split): blok tahtanın iki yanına uzanan iki sütunlu kutu; ortadaki sütun aralığı tahtanın yeridir (tıklamalar tahtaya geçer). */
@@ -150,7 +149,7 @@
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment::before { content: ''; margin-top: auto; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment::after { content: ''; margin-bottom: auto; }
   /* Tek başına duran oynat düğmesi (başka içerik yok) tahtanın alt kenarına hizalanır. */
-  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment:has(> .comment-play-btn:only-child)::after { margin-bottom: 0; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment.cp-btn-only::after { margin-bottom: 0; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment { padding-bottom: 46px; box-sizing: border-box; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment { contain: size; align-self: stretch; min-height: 0; overflow-y: auto; scrollbar-width: thin; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-play-btn .lucide-icon { width: 1.5rem; height: 1.5rem; }
@@ -177,7 +176,6 @@
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment.cp-in-variation > .comment-line { display: none; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line.cp-one-line { text-align: right; align-items: flex-end; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line.cp-one-line .comment-text-block { text-align: right; }
-  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line.cp-btn-alone .comment-play-btn { display: flex; margin: 0 0 0 auto; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-line .comment-icon { display: none; }
   /* Tek bir uzun varyant (var-lead.ts split): blok tahtanın iki yanına uzanan iki sütunlu kutu; ortadaki sütun aralığı tahtanın yeridir (tıklamalar tahtaya geçer). */
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment.cp-split > .variation-block { position: absolute; top: var(--cp-btop, 0px); left: 1.5rem; width: calc(560px + 340px + 3rem); margin: 0; pointer-events: none; }

@@ -75,6 +75,9 @@ function reserve(box: Element) {
 // Sol sütundaki yorum satırında: tek satırlık yorum sağa yaslanır (.cp-one-line), oynat düğmesi metinden ayrı kendi satırına düştüyse sağa yaslanır
 // (.cp-btn-alone). Ölçüm sınıflar kaldırılmışken yapılır, sonuç aynıysa sınıflara dokunulmaz (boyut gözlemcisiyle döngü olmasın).
 function classify(box: Element) {
+  // Kutuda görünür başka içerik yoksa yalnızca oynat düğmesi vardır: tahtanın alt kenarına hizalanır (.cp-btn-only).
+  const only = !!box.querySelector(':scope > .comment-play-btn') && Array.from(box.children).every((c) => c.matches('.comment-play-btn') || getComputedStyle(c).display === 'none' || !c.getBoundingClientRect().height);
+  if (box.classList.contains('cp-btn-only') !== only) box.classList.toggle('cp-btn-only', only);
   const line = box.querySelector<HTMLElement>(':scope > .comment-line');
   if (!line) return;
   const classes = ['cp-one-line', 'cp-btn-alone'];
@@ -194,7 +197,7 @@ function split(box: Element) {
   const line = el.querySelector<HTMLElement>(':scope > .comment-line');
   const lineChars = lineWeight(box);
   const chars = blocks.length === 1 ? weight([blocks[0]]) : 0;
-  if (blocks.length !== 1 || blocks[0].parentElement !== box || box.querySelector(':scope > .cp-var-lead') || chars + lineChars <= BALANCE_MIN || chars + lineChars > SPLIT_MAX) return off();
+  if (blocks.length !== 1 || blocks[0].parentElement !== box || blocks[0].querySelector('.variation-block') || box.querySelector(':scope > .cp-var-lead') || chars + lineChars <= BALANCE_MIN || chars + lineChars > SPLIT_MAX) return off();
   if (!el.classList.contains('cp-split')) el.classList.add('cp-split');
   const wrap = player.querySelector<HTMLElement>('.board-wrap');
   if (!wrap) return;
