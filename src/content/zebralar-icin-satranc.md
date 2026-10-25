@@ -10,7 +10,7 @@ O hâlde, yazılışından kısa bir süre sonra satranç literatüründe saygı
 > 
 > — Jonathan Rowson, Zebralar için Satranç
 
-Satranç otoriteleri tarafından takdirle karşılanan _Seven Deadly Chess Sins_ (Yedi Ölümcül Satranç Günahı) kitabından sonra karşımızda yine en az onun kadar etkileyici bir kitap var: =_Chess for Zebras_=.
+Satranç otoriteleri tarafından takdirle karşılanan _Seven Deadly Chess Sins_ (Yedi Ölümcül Satranç Günahı) kitabından sonra karşımızda yine en az onun kadar etkileyici bir kitap var: ==_Chess for Zebras_==.
 
 ![Jonathan Rowson'ın Chess for Zebras kitabının kapağı](images/chess-for-zebras-cover.jpg "<span lang="en">Jonathan Rowson, “Chess for Zebras”</span> kapak görseli · <span lang="en">Gambit</span>, 2005 · Kaynak: [<span lang="en">Gambit Books</span>](http://www.gambitbooks.com/bigimg/Chess_for_Zebras_Big.jpg)")
 
