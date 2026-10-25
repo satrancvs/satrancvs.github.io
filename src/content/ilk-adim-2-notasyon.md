@@ -30,67 +30,23 @@ Bunların yanı sıra:
 
 Satranç yazınını takip edebilmek için notasyonun *çok iyi bir biçimde* öğrenilmesi son derece önemlidir. Oyunların ve analizlerin kitaptan takip edilerek tahtada oynanması sırasında yanlış kareye konan bir taş her şeyi alt üst edecektir: en iyi ihtimalle oyun anlaşılmaz hale gelecek, daha kötü senaryoda ise okuyucunun kitapta anlatılandan farklı (ve yanlış!) şeyler öğrenmesine neden olacaktır. Notasyon yönteminin pekiştirilmesi için aşağıdaki oyunu tahtada taşları hareket ettirerek baştan sona oynayın. Unutmayın ki istenen şey hamleleri anlamlandırarak yorum yapmanız değil, taşları doğru yerlere koymayı öğrenmenizdir. Kontrol için tahtadaki konum her beş hamlede bir diyagram yardımıyla gösterilmiştir. Her diyagramda tahtanızdaki konumu kontrol edin ve arada bir fark varsa geri dönerek hatayı nerede yaptığınızı bulmaya çalışın. Sonraki bölümlere geçmeden önce notasyon konusuna tam olarak hakim olmanız son derece önemlidir.
 
-**Steinitz - Showalter** *Londra 1899*
+[Event "Londra"]
+[White "Steinitz"]
+[Black "Showalter"]
+[Date "1899.??.??"]
+[Result "1/2-1/2"]
+[EventLine "Londra 1899"]
 
-1 e2-e4 e7-e6 2 d2-d4 d7-d5 3 e4-e5 c7-c5 4 c2-c3 ♘b8-c6 5 ♘g1-f3 ♕d8-b6
+1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Nc6 5. Nf3 Qb6 { [D] } 6. Be2 Bd7 7. O-O Rc8 8. b3 cxd4 9. cxd4 Nge7 10. Na3 Nf5 { [D] } 11. Nc2 Nb4 12. Ne3 Nxe3 13. fxe3 Be7 14. Ne1 O-O 15. a3 Nc6 { [D] } 16. b4 f6 17. exf6 Bxf6 18. Nf3 Ne7 19. Bd2 Bb5 20. Bxb5 Qxb5 { [D] } 21. a4 Qd3 22. Qb1 Qxb1 23. Raxb1 Rc2 24. Rbc1 Rfc8 25. Rxc2 Rxc2 { [D] } 26. Rc1 Rxc1+ 27. Bxc1 Nc8 28. Kf2 Nb6 29. a5 Nc4 30. Nd2 Nxd2 { [D] } 31. Bxd2 a6 32. Ke2 Kf7 33. Kd3 Ke7 34. e4 dxe4+ 35. Kxe4 Kd6 { [D] } 36. Kd3 Kd5 37. Bc3 h5 38. h3 Be7 39. Be1 Bd6 40. g4 hxg4 { [D] } 41. hxg4 Be7 42. Bd2 Bd8 43. Be1 Bf6 44. Bf2 Be7 45. Be1 Bf6 { [D] } 46. Bf2 Bd8 47. Be1 g6 48. Bd2 Bh4 49. Bh6 Bf6 50. Be3 Bd8 51. Bd2 { [D] } 1/2-1/2
 
-[FEN "r1b1kbnr/pp3ppp/1qn1p3/2ppP3/3P4/2P2N2/PP3PPP/RNBQKB1R w - - 0 1"]
+[Event "Moskova"]
+[White "Spassky"]
+[Black "Petrosian"]
+[Date "1969.??.??"]
+[Result "1-0"]
+[EventLine "Moskova 1969"]
 
-6 ♗f1-e2 ♗c8-d7 7 0-0 ♖a8-c8 8 b2-b3 c5xd4 9 c3xd4 ♘g8-e7 10 ♘b1-a3 ♘e7-f5
-
-[FEN "2r1kb1r/pp1b1ppp/1qn1p3/3pPn2/3P4/NP3N2/P3BPPP/R1BQ1RK1 w - - 0 1"]
-
-11 ♘a3-c2 ♘c6-b4 12 ♘c2-e3 ♘f5xe3 13 f2xe3 ♗f8-e7 14 ♘f3-e1 0-0 15 a2-a3 ♘b4-c6
-
-[FEN "2r2rk1/pp1bbppp/1qn1p3/3pP3/3P4/PP2P3/4B1PP/R1BQNRK1 w - - 0 1"]
-
-16 b3-b4 f7-f6 17 e5xf6 ♗e7xf6 18 ♘e1-f3 ♘c6-e7 19 ♗c1-d2 ♗d7-b5 20 ♗e2xb5 ♕b6xb5
-
-[FEN "2r2rk1/pp2n1pp/4pb2/1q1p4/1P1P4/P3PN2/3B2PP/R2Q1RK1 w - - 0 1"]
-
-21 a3-a4 ♕b5-d3 22 ♕d1-b1 ♕d3xb1 23 ♖a1xb1 ♖c8-c2 24 ♖b1-c1 ♖f8-c8 25 ♖c1xc2 ♖c8xc2
-
-[FEN "6k1/pp2n1pp/4pb2/3p4/PP1P4/4PN2/2rB2PP/5RK1 w - - 0 1"]
-
-26 ♖f1-c1 ♖c2xc1+ 27 ♗d2xc1 ♘e7-c8 28 ♔g1-f2 ♘c8-b6 29 a4-a5 ♘b6-c4 30 ♘f3-d2 ♘c4xd2
-
-[FEN "6k1/pp4pp/4pb2/P2p4/1P1P4/4P3/3n1KPP/2B5 w - - 0 1"]
-
-31 ♗c1xd2 a7-a6 32 ♔f2-e2 ♔g8-f7 33 ♔e2-d3 ♔f7-e7 34 e3-e4 d5xe4+ 35 ♔d3xe4 ♔e7-d6
-
-[FEN "8/1p4pp/p2kpb2/P7/1P1PK3/8/3B2PP/8 w - - 0 1"]
-
-36 ♔e4-d3 ♔d6-d5 37 ♗d2-c3 h7-h5 38 h2-h3 ♗f6-e7 39 ♗c3-e1 ♗e7-d6 40 g2-g4 h5xg4
-
-[FEN "8/1p4p1/p2bp3/P2k4/1P1P2p1/3K3P/8/4B3 w - - 0 1"]
-
-41 h3xg4 ♗d6-e7 42 ♗e1-d2 ♗e7-d8 43 ♗d2-e1 ♗d8-f6 44 ♗e1-f2 ♗f6-e7 45 ♗f2-e1 ♗e7-f6
-
-[FEN "8/1p4p1/p3pb2/P2k4/1P1P2P1/3K4/8/4B3 w - - 0 1"]
-
-46 ♗e1-f2 ♗f6-d8 47 ♗f2-e1 g7-g6 48 ♗e1-d2 ♗d8-h4 49 ♗d2-h6 ♗h4-f6 50 ♗h6-e3 ♗f6-d8 51 ♗e3-d2 ½-½
-
-[FEN "3b4/1p6/p3p1p1/P2k4/1P1P2P1/3K4/3B4/8 w - - 0 1"]
-
-**Spassky - Petrosian** *Moskova 1969*
-
-1 e2-e4 c7-c5 2 ♘g1-f3 d7-d6 3 d2-d4 c5xd4 4 ♘f3xd4 ♘g8-f6 5 ♘b1-c3 a7-a6
-
-[FEN "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w - - 0 1"]
-
-6 ♗c1-g5 ♘b8-d7 7 ♗f1-c4 ♕d8-a5 8 ♕d1-d2 h7-h6 9 ♗g5xf6 ♘d7xf6 10 O-O-O e7-e6
-
-[FEN "r1b1kb1r/1p3pp1/p2ppn1p/q7/2BNP3/2N5/PPPQ1PPP/2KR3R w - - 0 1"]
-
-11 ♖h1-e1 ♗f8-e7 12 f2-f4 O-O 13 ♗c4-b3 ♖f8-e8 14 ♔c1-b1 ♗e7-f8 15 g2-g4 ♘f6xg4
-
-[FEN "r1b1rbk1/1p3pp1/p2pp2p/q7/3NPPn1/1BN5/PPPQ3P/1K1RR3 w - - 0 1"]
-
-16 ♕d2-g2 ♘g4-f6 17 ♖e1-g1 ♗c8-d7 18 f4-f5 ♔g8-h8 19 ♖d1-f1 ♕a5-d8 20 f5xe6 f7xe6
-
-[FEN "r2qrb1k/1p1b2p1/p2ppn1p/8/3NP3/1BN5/PPP3QP/1K3RR1 w - - 0 1"]
-
-21 e4-e5 d6xe5 22 ♘c3-e4 ♘f6-h5 23 ♕g2-g6 e5xd4 24 ♘e4-g5 1-0
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 { [D] } 6. Bg5 Nbd7 7. Bc4 Qa5 8. Qd2 h6 9. Bxf6 Nxf6 10. O-O-O e6 { [D] } 11. Rhe1 Be7 12. f4 O-O 13. Bb3 Re8 14. Kb1 Bf8 15. g4 Nxg4 { [D] } 16. Qg2 Nf6 17. Rg1 Bd7 18. f5 Kh8 19. Rdf1 Qd8 20. fxe6 fxe6 { [D] } 21. e5 dxe5 22. Ne4 Nh5 23. Qg6 exd4 24. Ng5 1-0
 
 Önceki bölüm: [Satranç kuralları](/ilk-adim-grs52xep8g-1-satranc-kurallari/)<br>
 Sonraki bölüm: [Basit matlar](/ilk-adim-grs52xep8g-3-basit-matlar/)

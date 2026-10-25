@@ -168,9 +168,7 @@ Kenar erlerinin dinamiklerinin diğer erlerden biraz farklı olduğunu en başta
 
 *Diyagram 8.9b*
 
-Diyagram 8.9a ve 8.9b'deki konumlar, hamle sırasından bağımsız olarak beraberliktir. İlk örnekte siyah şahın g8-h8 sarkaç hareketini yapması yeterlidir: 1...♔g8 2 h7+ ♔h8 3 ♔h6 pat, ya da doğrudan 1 h7 pat. İkinci örnekte aynı sarkaç hareketini f8-f7 arasında yapmak yeterlidir: 1...♔f8 Şimdi beyaz köşeden çıkmak istiyorsa orayı rakibinin ele geçirmesine izin vermek zorundadır: 2 ♔g6 ♔g8! ve beraberlik. Hamlenin kendisinde olması durumunda ise Beyaz 1
-
-♔h8 ♔f8 hamlelerinden sonra ya konum tekrarı yapmak zorundadır, ya da 2 h7 ♔f7 sonrasında kendisi pat olur!
+Diyagram 8.9a ve 8.9b'deki konumlar, hamle sırasından bağımsız olarak beraberliktir. İlk örnekte siyah şahın g8-h8 sarkaç hareketini yapması yeterlidir: 1...♔g8 2 h7+ ♔h8 3 ♔h6 pat, ya da doğrudan 1 h7 pat. İkinci örnekte aynı sarkaç hareketini f8-f7 arasında yapmak yeterlidir: 1...♔f8 Şimdi beyaz köşeden çıkmak istiyorsa orayı rakibinin ele geçirmesine izin vermek zorundadır: 2 ♔g6 ♔g8! ve beraberlik. Hamlenin kendisinde olması durumunda ise Beyaz 1.♔h8 ♔f8 hamlelerinden sonra ya konum tekrarı yapmak zorundadır, ya da 2. h7 ♔f7 sonrasında kendisi pat olur!
 
 Kenar erleri için anahtar kareler sabittir ve *erin hangi yatayda bulunduğuna bağlı olarak değişmezler*.
 
