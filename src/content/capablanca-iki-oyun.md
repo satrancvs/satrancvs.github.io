@@ -25,7 +25,7 @@ Bu oyun ve yorumlar Mikhail Shereshevsky'nin *Endgame Strategy* kitabından alı
 [SetUp "1"]
 [FEN "5k2/r1p2pp1/4b2p/8/8/P4N1P/1P3PP1/2R3K1 w - - 0 33"]
 
-{ Capablanca, öncelikle tüm yapması gerekenleri kısa ve öz biçimde belirliyor:
+{ Capablanca, önce tüm yapması gerekenleri özetliyor:
 
 > "Beyazın planı, c-piyonunun ilerlemesini engellemek (bundan sonra b-piyonu zayıflayabilirdi) ve tahtanın beşinci yataya kadar olan bölümünü tümüyle denetlemek. Bu, şahı e3'e götürerek, kaleyi c3'e, atı d4'e, piyonları ise b4 ve f4'e yerleştirerek sağlanır. Böyle bir konuma ulaştıktan sonra Beyaz, vezir kanadı piyonlarını ilerletebilecektir."
 
