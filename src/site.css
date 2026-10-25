@@ -81,6 +81,8 @@
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-play-btn .lucide-icon { width: 1.5rem; height: 1.5rem; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .board-wrap .play { width: 2rem; height: 2rem; background: #000000b3; }
   /* Çark (ayarlar) düğmesi: ilk hamleden önce ve tahtanın üzerindeyken görünür; oynat'a basılıp ilk hamle yapılınca ve fare tahtadan ayrılınca gizlenir (yalnızca fare olan geniş ekran). */
+  /* Sütunlardaki (sol yorum, sağ yorum ve varyantlar) metin yazı gövdesinden biraz küçük, her yerde aynı boy (19 px) ve daha sık satır aralığı (1.5). */
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment, .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment .comment-body { font-size: 1.1875rem; line-height: 1.5; }
   @media (hover: hover) {
     .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .board-toolbar { opacity: 0; pointer-events: none; transition: opacity .15s; }
     .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .player-wrapper:not(:has(.video-moves :is(.white-half, .black-half).active)) .board-toolbar,
@@ -130,6 +132,8 @@
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .comment-play-btn .lucide-icon { width: 1.5rem; height: 1.5rem; }
   .quote-game pgn-player:not(pgn-study pgn-player) .board-wrap .play { width: 2rem; height: 2rem; background: #000000b3; }
   /* Çark (ayarlar) düğmesi: ilk hamleden önce ve tahtanın üzerindeyken görünür; oynat'a basılıp ilk hamle yapılınca ve fare tahtadan ayrılınca gizlenir (yalnızca fare olan geniş ekran). */
+  /* Sütunlardaki (sol yorum, sağ yorum ve varyantlar) metin yazı gövdesinden biraz küçük, her yerde aynı boy (19 px) ve daha sık satır aralığı (1.5). */
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment, .quote-game pgn-player:not(pgn-study pgn-player) .video-comment .comment-body { font-size: 1.1875rem; line-height: 1.5; }
   @media (hover: hover) {
     .quote-game pgn-player:not(pgn-study pgn-player) .board-toolbar { opacity: 0; pointer-events: none; transition: opacity .15s; }
     .quote-game pgn-player:not(pgn-study pgn-player) .player-wrapper:not(:has(.video-moves :is(.white-half, .black-half).active)) .board-toolbar,
