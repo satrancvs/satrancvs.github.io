@@ -83,6 +83,9 @@
   /* Çark (ayarlar) düğmesi: ilk hamleden önce ve tahtanın üzerindeyken görünür; oynat'a basılıp ilk hamle yapılınca ve fare tahtadan ayrılınca gizlenir (yalnızca fare olan geniş ekran). */
   /* Sütunlardaki (sol yorum, sağ yorum ve varyantlar) metin yazı gövdesinden biraz küçük, her yerde aynı boy (19 px) ve daha sık satır aralığı (1.5). */
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment, .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment .comment-body { font-size: 1.1875rem; line-height: 1.5; }
+  /* Satır içindeki oynat düğmesi (cp-inline) 1.5 satır aralığına sığar: kaydırılan sütunda üstten/alttan kesilmez, kısa metinde kaydırma çubuğu çıkarmaz. */
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment .cp-inline { width: 1.625rem; height: 1.625rem; vertical-align: middle; margin: 0; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment .cp-inline .lucide-icon { width: 1.25rem; height: 1.25rem; }
   @media (hover: hover) {
     .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .board-toolbar { opacity: 0; pointer-events: none; transition: opacity .15s; }
     .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .player-wrapper:not(:has(.video-moves :is(.white-half, .black-half).active)) .board-toolbar,
@@ -134,6 +137,9 @@
   /* Çark (ayarlar) düğmesi: ilk hamleden önce ve tahtanın üzerindeyken görünür; oynat'a basılıp ilk hamle yapılınca ve fare tahtadan ayrılınca gizlenir (yalnızca fare olan geniş ekran). */
   /* Sütunlardaki (sol yorum, sağ yorum ve varyantlar) metin yazı gövdesinden biraz küçük, her yerde aynı boy (19 px) ve daha sık satır aralığı (1.5). */
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment, .quote-game pgn-player:not(pgn-study pgn-player) .video-comment .comment-body { font-size: 1.1875rem; line-height: 1.5; }
+  /* Satır içindeki oynat düğmesi (cp-inline) 1.5 satır aralığına sığar: kaydırılan sütunda üstten/alttan kesilmez, kısa metinde kaydırma çubuğu çıkarmaz. */
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment .cp-inline { width: 1.625rem; height: 1.625rem; vertical-align: middle; margin: 0; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment .cp-inline .lucide-icon { width: 1.25rem; height: 1.25rem; }
   @media (hover: hover) {
     .quote-game pgn-player:not(pgn-study pgn-player) .board-toolbar { opacity: 0; pointer-events: none; transition: opacity .15s; }
     .quote-game pgn-player:not(pgn-study pgn-player) .player-wrapper:not(:has(.video-moves :is(.white-half, .black-half).active)) .board-toolbar,
