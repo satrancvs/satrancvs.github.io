@@ -65,28 +65,11 @@ function process(box: Element) {
   if (!line.textContent?.replace(/\s+/g, '')) line.remove();
 }
 
-// Üç sütunlu düzende sol yorum satırı position: absolute olduğu için sayfa akışında yer kaplamaz; yorum tahtadan uzunsa altındaki içeriğin üstüne biner.
-// Kutunun (.video-comment) altına, sol yorumun tahtadan uzun kısmı kadar boşluk eklenir; sağ sütun içeriği (min-height + margin-top: auto) tahta hizasında kalır.
-const resizer = typeof ResizeObserver !== 'undefined'
-  ? new ResizeObserver((entries) => entries.forEach((e) => { const box = e.target.closest('.video-comment'); if (box) reserve(box); }))
-  : null;
-
+// Eskiden üç sütunlu düzende sol yorum tahtadan uzunsa kutuya dolgu/min-height eklenirdi; artık sol yorum kendi içinde kayıyor (site.css), bu yüzden eski satır içi değerler yalnızca temizlenir.
 function reserve(box: Element) {
-  const line = box.querySelector<HTMLElement>(':scope > .comment-line');
   const el = box as HTMLElement;
-  if (!line || getComputedStyle(line).position !== 'absolute' || getComputedStyle(line).display === 'none') {
-    if (el.style.paddingBottom) el.style.paddingBottom = '';
-    if (el.style.minHeight) el.style.minHeight = '';
-    return;
-  }
-  resizer?.observe(line);
-  const board = parseFloat(getComputedStyle(el).getPropertyValue('--board-size')) || 340;
-  const extra = Math.max(0, Math.ceil(line.offsetHeight - board));
-  // Kutu border-box: min-height dolguyu da kapsar, bu yüzden toplam yükseklik (tahta + fazlalık) ayrıca verilir.
-  const value = extra ? `${extra}px` : '';
-  const total = extra ? `${board + extra}px` : '';
-  if (el.style.paddingBottom !== value) el.style.paddingBottom = value;
-  if (el.style.minHeight !== total) el.style.minHeight = total;
+  if (el.style.paddingBottom) el.style.paddingBottom = '';
+  if (el.style.minHeight) el.style.minHeight = '';
 }
 
 // Sol sütundaki yorum satırında: tek satırlık yorum sağa yaslanır (.cp-one-line), oynat düğmesi metinden ayrı kendi satırına düştüyse sağa yaslanır
