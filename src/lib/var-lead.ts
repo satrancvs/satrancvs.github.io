@@ -213,7 +213,18 @@ function moveQuotes(box: Element) {
   const el = box as HTMLElement;
   const line = box.querySelector(':scope > .comment-line');
   if (!line || getComputedStyle(el).position !== 'static') return;
-  const quotes = Array.from(line.querySelectorAll('blockquote'));
+  // Yalnızca yorumun sonundaki alıntı sağ sütuna gider; ardından metin gelen alıntı yerinde (solda) kalır, ardındaki paragraflar spreadComment ile sağa yayılır.
+  const readableAfter = (q: Element) => {
+    for (let n = q.nextSibling; n; n = n.nextSibling) {
+      if (n.nodeName === 'BR' || n.nodeName === 'BUTTON') continue;
+      if (n.nodeType === Node.TEXT_NODE && !n.textContent?.trim()) continue;
+      return true;
+    }
+    return false;
+  };
+  // Paragraflar zaten sağ sütuna yayılmışsa (spreadComment, `.cp-more-right`) alıntının ardında artık metin görünmez ama alıntı yine de yerinde kalır.
+  const spread = !!box.querySelector(':scope > .cp-more-right');
+  const quotes = spread ? [] : Array.from(line.querySelectorAll('blockquote')).filter((q) => !readableAfter(q));
   if (!quotes.length) return;
   let host = box.querySelector(':scope > .cp-quote-right');
   if (!host) {
@@ -243,6 +254,11 @@ function spreadComment(box: Element) {
     const n = nodes[i];
     if (n.nodeName === 'BR' && nodes[i + 1]?.nodeName === 'BR') {
       while (nodes[i + 1]?.nodeName === 'BR') i++;
+      paras.push([]);
+    } else if (n.nodeName === 'BLOCKQUOTE') {
+      // Yerinde kalan alıntı kendi başına bir paragraftır (çevresindeki <br>'ler biçimlendirmede atılmıştı).
+      if (paras[paras.length - 1].length) paras.push([]);
+      paras[paras.length - 1].push(n);
       paras.push([]);
     } else paras[paras.length - 1].push(n);
   }

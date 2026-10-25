@@ -27,7 +27,7 @@ Bu oyun ve yorumlar Mikhail Shereshevsky'nin *Endgame Strategy* kitabından alı
 
 { Capablanca, öncelikle tüm yapması gerekenleri kısa ve öz biçimde belirliyor:
 
-"Beyazın planı, c-piyonunun ilerlemesini engellemek (bundan sonra b-piyonu zayıflayabilirdi) ve tahtanın beşinci yataya kadar olan bölümünü tümüyle denetlemek. Bu, şahı e3'e götürerek, kaleyi c3'e, atı d4'e, piyonları ise b4 ve f4'e yerleştirerek sağlanır. Böyle bir konuma ulaştıktan sonra Beyaz, vezir kanadı piyonlarını ilerletebilecektir."
+> "Beyazın planı, c-piyonunun ilerlemesini engellemek (bundan sonra b-piyonu zayıflayabilirdi) ve tahtanın beşinci yataya kadar olan bölümünü tümüyle denetlemek. Bu, şahı e3'e götürerek, kaleyi c3'e, atı d4'e, piyonları ise b4 ve f4'e yerleştirerek sağlanır. Böyle bir konuma ulaştıktan sonra Beyaz, vezir kanadı piyonlarını ilerletebilecektir."
 
 Gördüğümüz gibi, Capablanca'yı varyantlar ilgilendirmiyordu; planlanan konuma ne kadar sürede ve ne hızla ulaşılacağı da umurunda değildi. Önemli olan, gereken konum tipinin seçilmiş olması ve oyunun bu plana göre devam etmesiydi. } 33. Nd4 Rb7 34. b4 Bd7 35. f4 Ke7 36. Kf2 Ra7 37. Rc3 Kd6 38. Rd3 Ke7 39. Ke3 Ra4 40. Rc3 Kd6 { Beyazın planladığı konum tamamlandı. Şimdi karşısında yeni bir sorun var: vezir kanadı piyonlarını ilerletmek. Bunun için önce şahını, ilerletilecek piyonların yardımına götürmelidir. } 41. Rd3 Ke7 42. Rc3 Kd6 { Oyunsonunun temel kuralı şudur: acele etmeyin! Bir piyonu iki kare ya da bir kare ilerletme olanağı varsa, önce bir kare ilerletin, dikkatle çevrenize bakın ve ancak ondan sonra bir kare daha ilerletin.
 
