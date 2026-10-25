@@ -1,18 +1,3 @@
-Henüz çocuk denecek yaştaki Capablanca, Küba'nın önde gelen oyuncularından Juan Corzo karşısında, oyunsonunda atına karşı filiyle üstünlüğünü adım adım artırıyor. Analiz ve yorumlar Büyük Usta Israel Gelfer'e ait (_Positional Chess Handbook_, Batsford, 1991).
-
-[Event "Havana"]
-[Date "1901.??.??"]
-[White "José Raúl Capablanca"]
-[Black "Juan Corzo"]
-[Result "1-0"]
-[View "player"]
-[SetUp "1"]
-[FEN "8/pp3kpp/2pn4/3p1p2/3P4/4K1PP/PPP1B1P1/8 w - - 0 23"]
-
-23. Kf4 Kf6 24. h4 { Beyaz, ... g5+ hamlesine izin veremez } 24... g6 ( { Eğer şimdi } 24... h6 { oynarsa } 25. h5 ) 25. g4 h6 $2 { Kaybeden hamle. } ( { Doğru hamle } 25... fxg4 { olurdu. } ) 26. g5+ hxg5+ 27. hxg5+ Ke7 28. g4 { Bu fil için daha fazla alan kazanmak amacıyla. } 28... fxg4 29. Bd3 $1 Nf5 ( 29... Kf7 30. Kxg4 Kg7 31. Kf4 Nf7 { da yeterli olurdu. Nihayetinde Beyaz vezir kanadından içeri girecek. } ) 30. Kxg4 Nxd4 31. Bxg6 c5 32. Kh5 { Geçer piyanı vezir olma karesine taşımayı tehdit ediyor.
-
-İşin ilginç yanı, oyun sonuçta diğer kanatta kazanılıyor. } 32... Ne6 33. Kh6 Kf8 34. Bf5 Ng7 35. Bc8 { Bu konumda filin at karşısındaki üstünlüğü tartışılmaz. } 35... b6 36. g6 d4 { ... c4 ve ... d3 denemek amacıyla. } 37. b3 Kg8 38. a4 { Şahını vezir kanadına manevra etmeden önce Beyaz, ...b5 ve ...c4 hamlelerini engellemeye özen gösteriyor } 38... Kf8 39. Bg4 Ne8 40. Kh7 Ng7 41. Kh6 Ne8 42. Be2 Ng7 43. Bc4 Ne8 44. Kg5 Ke7 45. Kf5 Ng7+ ( 45... Kd6 46. Bf7 ) 46. Ke5 Nh5 47. Be2 Ng7 48. Kd5 Ne8 49. Kc6 { Meyveleri toplama zamanı. } 49... Ng7 50. Kb7 Kd6 51. Kxa7 Kc7 52. Ka6 Ne8 53. Bf3 Ng7 54. Bd5 Ne8 55. Bf7 Ng7 56. Kb5 Nf5 57. a5 Nd6+ $2 58. Ka6 bxa5 59. g7 1-0
-
 Capablanca, 1936 Moskova Turnuvası'nda Ragozin karşısında, kale ve at ile kale ve fil arasındaki oyunsonunda acele etmiyor: önce taşlarını en güçlü karelere yerleştiriyor, ardından piyonlarını ilerletiyor. Analiz ve yorumlar Mikhail Shereshevsky'ye ait (_Endgame Strategy_, Pergamon, 1985).
 
 [Event "Moskova"]
