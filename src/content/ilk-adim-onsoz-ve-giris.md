@@ -1,3 +1,24 @@
+### Kaynakça
+
+**Elektronik kaynaklar**
+
+- chessbase.com
+- chessgames.com
+- fide.com
+- yacpdb.org
+
+#### Kullanılan semboller
+
+| Sembol | Anlamı |
+| :---: | :--- |
+| ! | İyi hamle |
+| !! | Çok güçlü (veya parlak) hamle |
+| ? | Kötü hamle |
+| ?? | Ağır hata |
+| !? | İlginç hamle |
+| ?! | Şüpheli hamle |
+| = | Eşitlik |
+
 ### Önsöz
 
 Ülkemizde satranç yazını son on-on beş yıl içerisinde eskiye göre anlamlı ölçüde zenginleşmiş olmakla birlikte hala emekleme döneminde olduğumuzu söylemek yanlış olmaz. Oyunsonu kuramından açılış monograflarına, turnuva kitaplarından oyun derlemelerine kadar birçok konuda elimizdeki kaynaklar iki-üç kitapla sınırlıdır.
