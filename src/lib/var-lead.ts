@@ -110,6 +110,14 @@ function inlineContinuations(box: Element) {
     const first = block.querySelector(':scope > .variation-content > .variation-comment[data-for-mi="0"]');
     if (first && /^\p{Ll}/u.test(first.textContent?.trim() ?? '')) block.classList.add('cp-lead-inline');
   });
+  // Cümleyi hamlenin ötesinde sürdüren yorumlar satır içi akar: küçük harfle başlayan (hamlenin cümlesini sürdürür) ya da noktalama ile bitmeyen
+  // (`… ya da` 34. fxg5 Nxg5 `hamlelerinden sonra …`: cümle sonraki hamleyle sürer) varyant yorumları.
+  box.querySelectorAll('.variation-block .variation-comment').forEach((c) => {
+    const t = c.textContent?.trim() ?? '';
+    if (!t) return;
+    const inline = /^\p{Ll}/u.test(t) || !/[.!?…:;”"’)\]]$/.test(t);
+    if (c.classList.contains('cp-inline-c') !== inline) c.classList.toggle('cp-inline-c', inline);
+  });
 }
 
 // Üç sütunlu düzende (kutu position: static) sağ sütuna çok içerik düşerse varyant blokları (başlarındaki .cp-var-lead ile) iki sütuna paylaştırılır: ilk k blok

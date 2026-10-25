@@ -14,6 +14,8 @@ function lastTextTarget(container: Element): Element {
 function move(btn: Element) {
   const comment = btn.parentElement;
   if (!comment?.classList.contains('video-comment') || !comment.closest(GAME)) return;
+  // Sütunlu düzende oyun sonu tekrar düğmesi tahtanın yanına konur (site.css, left tanımlı): satıra taşınmaz.
+  if (btn.classList.contains('cp-replay') && getComputedStyle(btn).left !== 'auto') return;
   const blocks = comment.querySelectorAll(':scope > .variation-block');
   const bodies = comment.querySelectorAll('.comment-body');
   const lastBlock = blocks[blocks.length - 1];
