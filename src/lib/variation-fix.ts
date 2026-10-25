@@ -26,6 +26,9 @@ const savedLines = new WeakMap<Player, Element | null>();
 function ensurePlayButton(box: Element) {
   // Düğme satır içine taşınmış olabilir (inline-play.ts): kutunun herhangi bir yerinde aranır, ikincisi eklenmez.
   let button = box.querySelector('.comment-play-btn');
+  // Düğme varyant blokları geri konmadan önce yorum satırının içine taşınmış olabilir (satır gizliyse ya da varyanttan uzaktaysa görünmez):
+  // kutuya geri konur, inline-play.ts onu en son varyantın son metnine taşır.
+  if (button && !button.closest('.variation-block') && box.querySelector(':scope > .variation-block')) box.append(button);
   if (!button) {
     button = document.createElement('button');
     button.className = 'comment-play-btn';
