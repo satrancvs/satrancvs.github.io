@@ -118,11 +118,21 @@ const COMMENT_FEN = /^\[FEN\s+"([^"]+)"\](?:\s*\[([?!]{1,2})\s+([a-h][1-8])\])?$
 const COMMENT_FIG = /\s*@@FIG\d+@@[ \t]*\n*/g;
 // Yorumdaki her satır sonu (boş satır ya da tek \n) paragraf sonudur; yazar paragrafları tek satır sonuyla ayırmış olabilir. Figürün kendi \n'i (yukarıda) hariç.
 // <pgn-player> kaynağı textContent ile okur (etiketler düşer): vurgu `<ins>` kaçışlı yazılır, metin olarak ulaşıp oynatıcının yorum süzgecinden geçer.
-// Yorumda `> metin` ile başlayan satır alıntıdır (<blockquote>); aralarında yalnızca boşluk olan iki yorumdan ikincisi `>` ile başlıyorsa (`{ giriş: } { > "alıntı" }`) ChessPublica
-// yalnızca sonuncuyu çizerdi: ikisi tek yorumda birleştirilir. <pgn-player> kaynağı textContent ile okur: etiket orada kaçışlı yazılır (vurgudaki <ins> gibi).
+// ChessPublica yalnızca ardışık yorumların sonuncusunu çizer (`{ giriş } { devam }`: giriş kaybolur): görünür metni olan komşu yorumlar paragraf aralığıyla tek yoruma birleştirilir.
+// İşaretler (`[%cal …]`, `[D]`, `[P]`, `[FEN …]`) metin sayılmaz; yalnızca işaret taşıyan yorumlara dokunulmaz.
+const hasText = (c: string) => c.replace(/\[[^\]]*\]/g, '').trim().length > 0;
+function mergeComments(mt: string): string {
+  let prev: string;
+  do {
+    prev = mt;
+    mt = mt.replace(/\{([^}]*)\}\s*\{([^}]*)\}/g, (m, a: string, b: string) => (hasText(a) && hasText(b) ? `{${a.trimEnd()}\n\n${b.trimStart()}}` : m));
+  } while (mt !== prev);
+  return mt;
+}
+// Yorumda `> metin` ile başlayan satır alıntıdır (<blockquote>). <pgn-player> kaynağı textContent ile okur: etiket orada kaçışlı yazılır (vurgudaki <ins> gibi).
 const QUOTE_LINE = /(^|\n)[ \t]*>[ \t]*([^\n]+)/g;
 const commentMarkup = (movetext: string, player = false) =>
-  movetext.replace(/\}\s*\{(\s*>)/g, '\n\n$1').replace(/\{([^}]*)\}/g, (_, body: string) =>
+  mergeComments(movetext).replace(/\{([^}]*)\}/g, (_, body: string) =>
     `{${body.replace(COMMENT_FIG, '<span class="cp-fig"></span>\n').replace(COMMENT_HEADING, (_m, pre: string, title: string) => `${pre}<span class="cp-heading">${title.trim()}</span> `).replace(/==(?=\S)([^=]+?)(?<=\S)==/g, player ? '&lt;ins&gt;$1&lt;/ins&gt;' : '<ins>$1</ins>').replace(QUOTE_LINE, (_m, pre: string, text: string) => player ? `${pre}&lt;blockquote&gt;${text}&lt;/blockquote&gt;` : `${pre}<blockquote>${text}</blockquote>`).replace(/(?<!<span class="cp-fig"><\/span>)\n\s*/g, '<br><br>').replace(/(<br>)+(?=<blockquote>)/g, '').replace(/<\/blockquote>(<br>)+/g, '</blockquote>')}}`);
 
 // ChessPublica `<pgn>`/`<pgn-study>` varyantın ilk hamlesinden ÖNCEKİ yorumu `( { metin } 35... Re1 )` sessizce siler (ana hattaki ilk yorum gibi); ayrıca bir varyantın
