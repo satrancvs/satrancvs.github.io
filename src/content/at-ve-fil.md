@@ -87,7 +87,7 @@ Emanuel Lasker, İngiltere ve Amerika Birleşik Devletleri'ndeki üniversitelerd
 
 Üçüncü dünya şampiyonu **José Raúl Capablanca** satranç dünyasını yalnızca çocuk yaşta kendini belli eden dehasıyla değil, nezih karakteri, dış görünüşü ve satranç yazarlığıyla da büyülemişti.
 
-Capablanca henüz çocuk denecek yaşta, Küba'nın önde gelen oyuncularından Juan Corzo'nun atına karşı filiyle adım adım üstünlüğünü artırıyor. Analiz ve yorumlar Büyük Usta Israel Gelfer'e ait (_Positional Chess Handbook_ (Konumsal Satranç El Kitabı), Batsford, 1991).
+Capablanca henüz çocuk denecek yaşta, Küba'nın önde gelen oyuncularından Juan Corzo'nun atına karşı filiyle adım adım üstünlüğünü artırıyor. Analiz ve yorumlar FM Israel Gelfer'e ait (_Positional Chess Handbook_ (Konumsal Satranç El Kitabı), Batsford, 1991).
 
 [Event "Havana"]
 [Date "1901"]
