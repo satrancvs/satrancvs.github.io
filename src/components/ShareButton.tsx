@@ -62,7 +62,7 @@ export default function ShareButton({ title, url }: { title: string; url: string
         aria-label="Yazıyı paylaş"
         title="Paylaş"
         style={{ bottom: 'max(1.25rem, env(safe-area-inset-bottom))' }}
-        className="fixed right-5 z-50 w-12 h-12 rounded-full border border-[color:rgb(var(--fg-rgb)/0.4)] bg-[color:var(--bg)] text-[color:var(--fg)] grid place-items-center hover:border-[color:var(--accent)] hover:text-[color:var(--accent)] transition-colors"
+        className="fixed right-5 z-50 w-12 h-12 rounded-full bg-[color:var(--fg)] text-[color:var(--bg)] grid place-items-center hover:bg-[color:var(--accent)]"
       >
         <Share2 size={20} aria-hidden />
       </button>
