@@ -129,6 +129,8 @@ const groupOf = (block: Element) => {
   return lead?.classList.contains('cp-var-lead') ? [lead, block] : [block];
 };
 const weight = (els: Element[]) => els.reduce((n, e) => n + (e.textContent?.length ?? 0), 0);
+// Varyantın içinde ana hat yorum satırı gizlidir (cp-in-variation, cp-duplicate); uzunluğu sayılmaz, yoksa adım adım gezerken satır belirip kaybolur ve aynı metin sütunlar arasında yer değiştirir.
+const lineWeight = (box: Element) => weight(Array.from(box.querySelectorAll(':scope > .comment-line')).filter((l) => getComputedStyle(l).display !== 'none'));
 
 function balance(box: Element) {
   const el = box as HTMLElement;
@@ -148,7 +150,7 @@ function balance(box: Element) {
   const current = stack ? stack.querySelectorAll(':scope > .variation-block').length : 0;
   if (blocks.length < 2) return;
   const sizes = blocks.map((b) => weight(groupOf(b)));
-  const line = weight(Array.from(box.querySelectorAll(':scope > .comment-line')));
+  const line = lineWeight(box);
   const total = line + sizes.reduce((a, b) => a + b, 0);
   let want = 0;
   if (total > BALANCE_MIN) {
@@ -190,7 +192,7 @@ function split(box: Element) {
   if (!player || getComputedStyle(el).position !== 'static') return off();
   const blocks = topBlocks(box);
   const line = el.querySelector<HTMLElement>(':scope > .comment-line');
-  const lineChars = line ? weight([line]) : 0;
+  const lineChars = lineWeight(box);
   const chars = blocks.length === 1 ? weight([blocks[0]]) : 0;
   if (blocks.length !== 1 || blocks[0].parentElement !== box || box.querySelector(':scope > .cp-var-lead') || chars + lineChars <= BALANCE_MIN || chars + lineChars > SPLIT_MAX) return off();
   if (!el.classList.contains('cp-split')) el.classList.add('cp-split');
