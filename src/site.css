@@ -68,7 +68,9 @@
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .comment-line:first-child { margin-top: auto; }
   /* Duraklatılmış konumda (yorumsuz [D] işareti) tahtanın ortasındaki büyük oynat düğmesi sağ sütuna, sola yaslı ve tahtanın alt kenarına hizalı taşınır; varyantlar düğmenin üstünde kalır. */
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .board-wrap .play { top: auto; bottom: 0; left: calc(100% + 1.5rem); transform: none; }
-  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .player-wrapper:has(.board-wrap .play:not(.hidden)) .video-comment { padding-bottom: 3.5rem; box-sizing: border-box; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .player-wrapper:not(:has(.video-comment .comment-play-btn)):has(.board-wrap .play:not(.hidden)) .video-comment { padding-bottom: 3.5rem; box-sizing: border-box; }
+  /* Yorumun sonunda zaten bir oynat düğmesi varsa tahtanın yanındaki büyük düğme gösterilmez (tek düğme). */
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .player-wrapper:has(.video-comment .comment-play-btn) .board-wrap .play { display: none; }
 }
 /* Yeterince geniş ekranda (sağa taşan sütuna ekranda yer kalır) tahta yazı sütununun ortasında durur, yorum sütunu sağa, sütunun dışına taşar; genişlikler aynı, yalnızca konum kayar. */
 @media (min-width: 71.5em) {
