@@ -2571,7 +2571,9 @@ class VideoEngine {
        once more with isPaused now true so a host page's own "Continue"
        button (hidden in pgn-study, shown elsewhere) appears immediately,
        instead of only on the next manual step. */
-    if (wasPlaying && hasComment) {
+    /* Site patch: a bare [D]/[#] diagram marker in a variation does not stop its autoplay either. */
+    const onlyDiagramVar = !!diagrams?.[moveIdx] && !comments?.[moveIdx] && !children?.[moveIdx]?.length;
+    if (wasPlaying && hasComment && !onlyDiagramVar) {
       this._pauseVariationPlay();
       this.commentBox.update(
         moveIdx,
@@ -2736,7 +2738,9 @@ class VideoEngine {
           ctx.isBlack,
           gameOver
         );
-        if (hasComment) this.pause(); // pause() will re-render with isPaused=true
+        /* Site patch: a bare [D]/[#] diagram marker (no comment text, no variations) does not stop autoplay. */
+        const onlyDiagram = !!this.state.diagrams?.[moveIdx] && !this.state.comments?.[moveIdx] && !this.state.variations?.[moveIdx]?.length;
+        if (hasComment && !onlyDiagram) this.pause(); // pause() will re-render with isPaused=true
       } else {
         // While paused (keyboard nav etc.): render comment, hide play button if present
         const hasComment = this.commentBox.update(

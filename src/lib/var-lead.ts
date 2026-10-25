@@ -65,28 +65,11 @@ function process(box: Element) {
   if (!line.textContent?.replace(/\s+/g, '')) line.remove();
 }
 
-// Üç sütunlu düzende sol yorum satırı position: absolute olduğu için sayfa akışında yer kaplamaz; yorum tahtadan uzunsa altındaki içeriğin üstüne biner.
-// Kutunun (.video-comment) altına, sol yorumun tahtadan uzun kısmı kadar boşluk eklenir; sağ sütun içeriği (min-height + margin-top: auto) tahta hizasında kalır.
-const resizer = typeof ResizeObserver !== 'undefined'
-  ? new ResizeObserver((entries) => entries.forEach((e) => { const box = e.target.closest('.video-comment'); if (box) reserve(box); }))
-  : null;
-
+// Eskiden üç sütunlu düzende sol yorum tahtadan uzunsa kutuya dolgu/min-height eklenirdi; artık sol yorum kendi içinde kayıyor (site.css), bu yüzden eski satır içi değerler yalnızca temizlenir.
 function reserve(box: Element) {
-  const line = box.querySelector<HTMLElement>(':scope > .comment-line');
   const el = box as HTMLElement;
-  if (!line || getComputedStyle(line).position !== 'absolute' || getComputedStyle(line).display === 'none') {
-    if (el.style.paddingBottom) el.style.paddingBottom = '';
-    if (el.style.minHeight) el.style.minHeight = '';
-    return;
-  }
-  resizer?.observe(line);
-  const board = parseFloat(getComputedStyle(el).getPropertyValue('--board-size')) || 340;
-  const extra = Math.max(0, Math.ceil(line.offsetHeight - board));
-  // Kutu border-box: min-height dolguyu da kapsar, bu yüzden toplam yükseklik (tahta + fazlalık) ayrıca verilir.
-  const value = extra ? `${extra}px` : '';
-  const total = extra ? `${board + extra}px` : '';
-  if (el.style.paddingBottom !== value) el.style.paddingBottom = value;
-  if (el.style.minHeight !== total) el.style.minHeight = total;
+  if (el.style.paddingBottom) el.style.paddingBottom = '';
+  if (el.style.minHeight) el.style.minHeight = '';
 }
 
 // Sol sütundaki yorum satırında: tek satırlık yorum sağa yaslanır (.cp-one-line), oynat düğmesi metinden ayrı kendi satırına düştüyse sağa yaslanır
@@ -129,8 +112,96 @@ function inlineContinuations(box: Element) {
   });
 }
 
+// Üç sütunlu düzende (kutu position: static) sağ sütuna çok içerik düşerse varyant blokları (başlarındaki .cp-var-lead ile) iki sütuna paylaştırılır: ilk k blok
+// sol sütundaki `.cp-left-stack` kutusuna taşınır (ana yorum varsa solda zaten durur). Karar yazı uzunluğuna göre verilir (yerleşimden bağımsız, kararlı).
+const BALANCE_MIN = 280;
+const topBlocks = (box: Element) => Array.from(box.querySelectorAll('.variation-block')).filter((b) => !b.parentElement?.closest('.variation-block'));
+const groupOf = (block: Element) => {
+  const lead = block.previousElementSibling;
+  return lead?.classList.contains('cp-var-lead') ? [lead, block] : [block];
+};
+const weight = (els: Element[]) => els.reduce((n, e) => n + (e.textContent?.length ?? 0), 0);
+
+function balance(box: Element) {
+  const el = box as HTMLElement;
+  if (!el.closest('pgn-player') || getComputedStyle(el).position !== 'static') return;
+  let blocks = topBlocks(box);
+  // Tek bir üst düzey blok (içinde iç varyantlarıyla) bölünemez: iç varyantlar bloğun hemen ardına, kutuya alınır; ana varyant solda, iç varyantlar sağda kalabilir.
+  if (blocks.length === 1) {
+    const nested = Array.from(blocks[0].querySelectorAll('.variation-block')).filter((n) => n.parentElement?.closest('.variation-block') === blocks[0]);
+    if (nested.length && (blocks[0].textContent?.length ?? 0) > BALANCE_MIN) {
+      const host = blocks[0].parentElement as Element;
+      let ref = blocks[0].nextSibling;
+      nested.forEach((n) => host.insertBefore(n, ref));
+      blocks = topBlocks(box);
+    }
+  }
+  const stack = box.querySelector<HTMLElement>(':scope > .cp-left-stack');
+  const current = stack ? stack.querySelectorAll(':scope > .variation-block').length : 0;
+  if (blocks.length < 2) return;
+  const sizes = blocks.map((b) => weight(groupOf(b)));
+  const line = weight(Array.from(box.querySelectorAll(':scope > .comment-line')));
+  const total = line + sizes.reduce((a, b) => a + b, 0);
+  let want = 0;
+  if (total > BALANCE_MIN) {
+    let best = Infinity;
+    for (let k = 0; k < blocks.length; k++) {
+      const left = line + sizes.slice(0, k).reduce((a, b) => a + b, 0);
+      const diff = Math.abs(left - (total - left));
+      if (diff < best) { best = diff; want = k; }
+    }
+  }
+  if (want === current) return;
+  const groups = blocks.map(groupOf);
+  const anchor = box.querySelector(':scope > .comment-play-btn');
+  groups.forEach((g) => g.forEach((n) => (anchor ? box.insertBefore(n, anchor) : box.append(n))));
+  stack?.remove();
+  if (want > 0) {
+    const next = document.createElement('div');
+    next.className = 'cp-left-stack';
+    groups.slice(0, want).forEach((g) => g.forEach((n) => next.append(n)));
+    const line0 = box.querySelector(':scope > .comment-line');
+    if (line0) line0.after(next); else box.prepend(next);
+  }
+}
+
+// Bölünemeyen tek bir varyant bloğu (iç varyantı yok) sütunlara iki sütunlu metin olarak yayılır (.cp-split): blok tahtanın iki yanına uzanan iki sütunlu bir kutu olur,
+// tarayıcı sütunları dengeler; ana yorum varsa onun altında sol sütunun başında durur. Tahtanın bulunduğu orta boşluk sütun aralığıdır. Yerleşim ölçülür: yorum + blok tahtanın
+// ortasına dikeyde ortalanır (`--cp-ltop`, `--cp-btop`).
+const SPLIT_MAX = 900;
+function split(box: Element) {
+  const el = box as HTMLElement;
+  const off = () => {
+    if (el.classList.contains('cp-split')) {
+      el.classList.remove('cp-split');
+      el.style.removeProperty('--cp-ltop');
+      el.style.removeProperty('--cp-btop');
+    }
+  };
+  const player = el.closest('pgn-player');
+  if (!player || getComputedStyle(el).position !== 'static') return off();
+  const blocks = topBlocks(box);
+  const line = el.querySelector<HTMLElement>(':scope > .comment-line');
+  const lineChars = line ? weight([line]) : 0;
+  const chars = blocks.length === 1 ? weight([blocks[0]]) : 0;
+  if (blocks.length !== 1 || blocks[0].parentElement !== box || box.querySelector(':scope > .cp-var-lead') || chars + lineChars <= BALANCE_MIN || chars + lineChars > SPLIT_MAX) return off();
+  if (!el.classList.contains('cp-split')) el.classList.add('cp-split');
+  const wrap = player.querySelector<HTMLElement>('.board-wrap');
+  if (!wrap) return;
+  const visibleLine = line && getComputedStyle(line).display !== 'none' ? line : null;
+  const gap = 12;
+  const hl = visibleLine ? visibleLine.offsetHeight : 0;
+  const hb = (blocks[0] as HTMLElement).offsetHeight;
+  const total = (hl ? hl + gap : 0) + hb;
+  const start = Math.max(0, wrap.offsetHeight / 2 - total / 2);
+  el.style.setProperty('--cp-ltop', `${Math.round(start)}px`);
+  el.style.setProperty('--cp-btop', `${Math.round(start + (hl ? hl + gap : 0))}px`);
+}
+
 function refresh(box: Element) {
   process(box);
+  balance(box);
+  split(box);
   inlineContinuations(box);
   reserve(box);
   classify(box);
