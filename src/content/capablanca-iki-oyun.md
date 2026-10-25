@@ -3,6 +3,7 @@
 [White "José Raúl Capablanca"]
 [Black "Juan Corzo"]
 [Result "1-0"]
+[View "player"]
 [SetUp "1"]
 [FEN "8/pp3kpp/2pn4/3p1p2/3P4/4K1PP/PPP1B1P1/8 w - - 0 23"]
 
@@ -16,6 +17,7 @@
 [White "José Raúl Capablanca"]
 [Black "Viacheslav Ragozin"]
 [Result "1-0"]
+[View "player"]
 [SetUp "1"]
 [FEN "5k2/r1p2pp1/4b2p/8/8/P4N1P/1P3PP1/2R3K1 w - - 0 33"]
 
@@ -33,6 +35,7 @@ Oyunsonunda hamle tekrarının önemli bir rolü vardır. Hamle tekrarıyla kaza
 [White "Alexander Alekhine"]
 [Black "Max Euwe"]
 [Result "1-0"]
+[View "player"]
 [SetUp "1"]
 [FEN "8/ppk4p/2pr1pn1/8/P1B2P2/2P3P1/7P/4R1K1 w - - 0 29"]
 
