@@ -83,9 +83,9 @@ Emanuel Lasker, İngiltere ve Amerika Birleşik Devletleri'ndeki üniversitelerd
 >
 > — Emanuel Lasker, "Lasker's Manual of Chess" (Lasker'in Satranç Kılavuzu), 1927.
 
-![José Raúl Capablanca (siyah-beyaz fotoğraf)](images/Capablanca.jpg "<span lang="es">José Raúl Capablanca</span> · Fotoğraf: <span lang="en">Harris & Ewing</span> · Amerikan Kongre Kütüphanesi · Lisans: Kamu malı · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=67186745)")
+Lasker'i 1921 yılında 4 galibiyet, 10 beraberlikle ve hiç maç kaybetmeyerek mağlup eden Üçüncü dünya şampiyonu **José Raúl Capablanca** satranç dünyasını yalnızca çocuk yaşta kendini belli eden dehasıyla değil, nezih karakteri, dış görünüşü ve satranç yazarlığıyla da büyülemişti.
 
-Üçüncü dünya şampiyonu **José Raúl Capablanca** satranç dünyasını yalnızca çocuk yaşta kendini belli eden dehasıyla değil, nezih karakteri, dış görünüşü ve satranç yazarlığıyla da büyülemişti.
+![José Raúl Capablanca (siyah-beyaz fotoğraf)](images/Capablanca.jpg "<span lang="es">José Raúl Capablanca</span> · Fotoğraf: <span lang="en">Harris & Ewing</span> · Amerikan Kongre Kütüphanesi · Lisans: Kamu malı · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=67186745)")
 
 Capablanca henüz çocuk denecek yaşta, Küba'nın önde gelen oyuncularından Juan Corzo'nun atına karşı filiyle adım adım üstünlüğünü artırıyor. Analiz ve yorumlar FM Israel Gelfer'e ait.
 
