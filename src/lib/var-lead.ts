@@ -308,7 +308,32 @@ function seam(box: Element) {
   if (el.style.getPropertyValue('--cp-seam') !== next) el.style.setProperty('--cp-seam', next);
 }
 
+// Tek bir varyant bloğunun başı solda, devamı sağda: varyantın bir yorumuna `[>]` yazılırsa (yorumun sonuna) o yorumun ve ardından gelen iç varyantların sonuna kadar olan kısım
+// `.cp-vc-left` kutusuna sarılır; üç sütunlu düzende (site.css) bu kutu tahtanın soluna, kalanı sağ sütuna düşer. Düğümler aynı `.variation-content` içinde kalır
+// (oynatıcının hamle/vurgu işlemleri bozulmasın), dar ekranda kutu normal akışta bir blok olur. İşaret metinden silinir; oynatıcı kutuyu yeniden kurunca yeniden çalışır.
+const CUT = '[>]';
+function cutBlock(box: Element) {
+  box.querySelectorAll('.variation-comment').forEach((comment) => {
+    if (!comment.textContent?.includes(CUT)) return;
+    textNodes(comment).forEach((n) => { if (n.data.includes(CUT)) n.data = n.data.replace(CUT, '').replace(/\s+$/, ''); });
+    const content = comment.parentElement;
+    if (!content?.matches('.variation-content') || content.querySelector(':scope > .cp-vc-left')) return;
+    let end: Element = comment;
+    while (end.nextElementSibling?.matches('.variation-block--nested')) end = end.nextElementSibling;
+    const left = document.createElement('div');
+    left.className = 'cp-vc-left';
+    const inner = document.createElement('div');
+    inner.className = 'cp-vc-left-in';
+    const nodes: Node[] = [];
+    for (let n: Node | null = content.firstChild; n; n = n === end ? null : n.nextSibling) nodes.push(n);
+    inner.append(...nodes);
+    left.append(inner);
+    content.prepend(left);
+  });
+}
+
 function refresh(box: Element) {
+  cutBlock(box);
   process(box);
   moveQuotes(box);
   spreadComment(box);
