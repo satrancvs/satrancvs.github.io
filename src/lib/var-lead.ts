@@ -265,13 +265,13 @@ function spreadComment(box: Element) {
     line.after(host);
   }
   // Önce taşınacak paragraflar (araya giren <br>'lar atılır), sonra solda kalan paragrafın sonundaki <br>'lar temizlenir.
-  paras.slice(keep).forEach((g, i) => {
+  // spreadComment birden çok kez çalışır (her DOM değişiminde): sonraki turda taşınan paragraflar önceki turda taşınanların ÖNÜNE konur, yoksa sıra bozulur.
+  const moved = paras.slice(keep).map((g) => {
     const p = document.createElement('p');
     g.forEach((n) => p.append(n));
-    (host as Element).append(p);
-    if (!p.textContent?.trim() && !p.querySelector('button')) p.remove();
-    void i;
-  });
+    return p;
+  }).filter((p) => p.textContent?.trim() || p.querySelector('button'));
+  (host as Element).prepend(...moved);
   while (body.lastChild && (body.lastChild.nodeName === 'BR' || (body.lastChild.nodeType === 3 && !body.lastChild.textContent?.trim()))) body.lastChild.remove();
 }
 
