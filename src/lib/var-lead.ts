@@ -55,23 +55,56 @@ function process(box: Element) {
   if (!line.textContent?.replace(/\s+/g, '')) line.remove();
 }
 
+// Üç sütunlu düzende sol yorum satırı position: absolute olduğu için sayfa akışında yer kaplamaz; yorum tahtadan uzunsa altındaki içeriğin üstüne biner.
+// Kutunun (.video-comment) altına, sol yorumun tahtadan uzun kısmı kadar boşluk eklenir; sağ sütun içeriği (min-height + margin-top: auto) tahta hizasında kalır.
+const resizer = typeof ResizeObserver !== 'undefined'
+  ? new ResizeObserver((entries) => entries.forEach((e) => { const box = e.target.closest('.video-comment'); if (box) reserve(box); }))
+  : null;
+
+function reserve(box: Element) {
+  const line = box.querySelector<HTMLElement>(':scope > .comment-line');
+  const el = box as HTMLElement;
+  if (!line || getComputedStyle(line).position !== 'absolute' || getComputedStyle(line).display === 'none') {
+    if (el.style.paddingBottom) el.style.paddingBottom = '';
+    if (el.style.minHeight) el.style.minHeight = '';
+    return;
+  }
+  resizer?.observe(line);
+  const board = parseFloat(getComputedStyle(el).getPropertyValue('--board-size')) || 340;
+  const extra = Math.max(0, Math.ceil(line.offsetHeight - board));
+  // Kutu border-box: min-height dolguyu da kapsar, bu yüzden toplam yükseklik (tahta + fazlalık) ayrıca verilir.
+  const value = extra ? `${extra}px` : '';
+  const total = extra ? `${board + extra}px` : '';
+  if (el.style.paddingBottom !== value) el.style.paddingBottom = value;
+  if (el.style.minHeight !== total) el.style.minHeight = total;
+}
+
+function refresh(box: Element) {
+  process(box);
+  reserve(box);
+}
+
 export function watchVarLead(root: Element) {
   const scan = (el: Element) => {
-    if (el.matches('.video-comment')) process(el);
-    el.querySelectorAll('.video-comment').forEach(process);
+    if (el.matches('.video-comment')) refresh(el);
+    el.querySelectorAll('.video-comment').forEach(refresh);
     const parent = el.closest('.video-comment');
-    if (parent && parent.closest(GAME)) process(parent);
+    if (parent && parent.closest(GAME)) refresh(parent);
   };
   scan(root);
   const observer = new MutationObserver((records) => {
     for (const record of records) {
       record.addedNodes.forEach((n) => n.nodeType === Node.ELEMENT_NODE && scan(n as Element));
+      if (record.type === 'attributes') {
+        const box = (record.target as Element).closest('.video-comment');
+        if (box) refresh(box);
+      }
       if (record.type === 'characterData') {
         const parent = (record.target as Node).parentElement?.closest('.video-comment');
-        if (parent) process(parent);
+        if (parent) refresh(parent);
       }
     }
   });
-  observer.observe(root, { childList: true, subtree: true });
+  observer.observe(root, { childList: true, subtree: true, attributes: true, attributeFilter: ['class'] });
   return () => observer.disconnect();
 }
