@@ -294,6 +294,29 @@ function spreadComment(box: Element) {
   while (body.lastChild && (body.lastChild.nodeName === 'BR' || (body.lastChild.nodeType === 3 && !body.lastChild.textContent?.trim()))) body.lastChild.remove();
 }
 
+// Ana yorum (üst) ile sol yığın (alt) aynı sütunu paylaşır; ikisi de yarım sütuna sığmayabilir ama toplamları sığabilir. Ayrım çizgisi (--cp-seam) içerik
+// yüksekliklerine göre kaydırılır: ikisi birden sığıyorsa kaydırma çubuğu çıkmaz, sığmıyorsa sütun yüksekliği içerikle orantılı paylaşılır.
+function seam(box: Element) {
+  const el = box as HTMLElement;
+  const line = el.querySelector<HTMLElement>(':scope > .comment-line');
+  const stack = el.querySelector<HTMLElement>(':scope > .cp-left-stack');
+  const clear = () => el.style.getPropertyValue('--cp-seam') && el.style.removeProperty('--cp-seam');
+  if (!line || !stack || getComputedStyle(el).position !== 'static' || getComputedStyle(line).display === 'none') return clear();
+  const block = line.querySelector<HTMLElement>('.comment-text-block');
+  const height = (n: HTMLElement) => { const c = getComputedStyle(n); return n.offsetHeight + parseFloat(c.marginTop) + parseFloat(c.marginBottom); };
+  const pad = 8; // .5rem: yorumun alt, yığının üst dolgusu
+  const hl = (block ? block.offsetHeight : 0) + pad;
+  const hs = Array.from(stack.children).reduce((n, c) => n + height(c as HTMLElement), 0) + pad;
+  const H = el.offsetHeight - 46; // alttaki hamle listesi payı
+  if (H <= 0 || !hl || !hs) return clear();
+  let at = H / 2;
+  if (hl + hs > H) at = (H * hl) / (hl + hs);
+  else if (hl > at) at = hl;
+  else if (hs > H - at) at = H - hs;
+  const next = `${Math.round(at)}px`;
+  if (el.style.getPropertyValue('--cp-seam') !== next) el.style.setProperty('--cp-seam', next);
+}
+
 function refresh(box: Element) {
   process(box);
   moveQuotes(box);
@@ -302,6 +325,7 @@ function refresh(box: Element) {
   split(box);
   inlineContinuations(box);
   reserve(box);
+  seam(box);
   classify(box);
 }
 

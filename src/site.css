@@ -127,9 +127,9 @@
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .cp-left-stack::before { content: ''; margin-top: auto; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .cp-left-stack::after { content: ''; margin-bottom: auto; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment > .cp-left-stack > .variation-block { flex: 0 0 auto; }
-  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment:has(> .comment-line):has(> .cp-left-stack) > .comment-line { bottom: calc(50% + 23px); height: auto; min-height: 0; padding-bottom: .5rem; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment:has(> .comment-line):has(> .cp-left-stack) > .comment-line { bottom: calc(100% - var(--cp-seam, calc(50% - 23px))); height: auto; min-height: 0; padding-bottom: .5rem; }
   .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment:has(> .comment-line):has(> .cp-left-stack) > .comment-line .comment-text-block { margin-top: auto; margin-bottom: 0; }
-  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment:has(> .comment-line):has(> .cp-left-stack) > .cp-left-stack { top: calc(50% - 23px); padding-top: .5rem; }
+  .cp-game pgn-player:has(.puzzle-hint-row):not(.quote-game pgn-player, pgn-study pgn-player) .video-comment:has(> .comment-line):has(> .cp-left-stack) > .cp-left-stack { top: var(--cp-seam, calc(50% - 23px)); padding-top: .5rem; }
 }
 /* Palavan'ın alıntı kutusundaki oynatıcılar da geniş ekranda (≥ 73em) üç sütun: kutu yazı sütunundan taşar (70rem), sol yorum | tahta | sağ yorum ve varyantlar. Kuralların
    açıklamaları yukarıdaki Timman bloklarında; fark: tahta yazı sütununda değil, tahtanın solundaki yorum payı (280px + 3rem) .player-wrapper'ın sol dolgusuyla ayrılır. */
@@ -188,9 +188,9 @@
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .cp-left-stack::before { content: ''; margin-top: auto; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .cp-left-stack::after { content: ''; margin-bottom: auto; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment > .cp-left-stack > .variation-block { flex: 0 0 auto; }
-  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment:has(> .comment-line):has(> .cp-left-stack) > .comment-line { bottom: calc(50% + 23px); height: auto; min-height: 0; padding-bottom: .5rem; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment:has(> .comment-line):has(> .cp-left-stack) > .comment-line { bottom: calc(100% - var(--cp-seam, calc(50% - 23px))); height: auto; min-height: 0; padding-bottom: .5rem; }
   .quote-game pgn-player:not(pgn-study pgn-player) .video-comment:has(> .comment-line):has(> .cp-left-stack) > .comment-line .comment-text-block { margin-top: auto; margin-bottom: 0; }
-  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment:has(> .comment-line):has(> .cp-left-stack) > .cp-left-stack { top: calc(50% - 23px); padding-top: .5rem; }
+  .quote-game pgn-player:not(pgn-study pgn-player) .video-comment:has(> .comment-line):has(> .cp-left-stack) > .cp-left-stack { top: var(--cp-seam, calc(50% - 23px)); padding-top: .5rem; }
 }
 /* <pgn-player> yorumu yazı gövdesiyle aynı satır aralığında (paket 1.5 verir; gövde ve <pgn> metni 1.8) */
 .cp-game .video-comment { line-height: 1.8; }
