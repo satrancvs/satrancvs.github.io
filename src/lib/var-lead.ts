@@ -75,6 +75,9 @@ function reserve(box: Element) {
 // Sol sütundaki yorum satırında: tek satırlık yorum sağa yaslanır (.cp-one-line), oynat düğmesi metinden ayrı kendi satırına düştüyse sağa yaslanır
 // (.cp-btn-alone). Ölçüm sınıflar kaldırılmışken yapılır, sonuç aynıysa sınıflara dokunulmaz (boyut gözlemcisiyle döngü olmasın).
 function classify(box: Element) {
+  // Kutuda görünür başka içerik yoksa yalnızca oynat düğmesi vardır: tahtanın alt kenarına hizalanır (.cp-btn-only).
+  const only = !!box.querySelector(':scope > .comment-play-btn') && Array.from(box.children).every((c) => c.matches('.comment-play-btn') || getComputedStyle(c).display === 'none' || !c.getBoundingClientRect().height);
+  if (box.classList.contains('cp-btn-only') !== only) box.classList.toggle('cp-btn-only', only);
   const line = box.querySelector<HTMLElement>(':scope > .comment-line');
   if (!line) return;
   const classes = ['cp-one-line', 'cp-btn-alone'];
@@ -135,17 +138,8 @@ const lineWeight = (box: Element) => weight(Array.from(box.querySelectorAll(':sc
 function balance(box: Element) {
   const el = box as HTMLElement;
   if (!el.closest('pgn-player') || getComputedStyle(el).position !== 'static') return;
-  let blocks = topBlocks(box);
-  // Tek bir üst düzey blok (içinde iç varyantlarıyla) bölünemez: iç varyantlar bloğun hemen ardına, kutuya alınır; ana varyant solda, iç varyantlar sağda kalabilir.
-  if (blocks.length === 1) {
-    const nested = Array.from(blocks[0].querySelectorAll('.variation-block')).filter((n) => n.parentElement?.closest('.variation-block') === blocks[0]);
-    if (nested.length && (blocks[0].textContent?.length ?? 0) > BALANCE_MIN) {
-      const host = blocks[0].parentElement as Element;
-      let ref = blocks[0].nextSibling;
-      nested.forEach((n) => host.insertBefore(n, ref));
-      blocks = topBlocks(box);
-    }
-  }
+  // İç varyantlar bulundukları hamlenin hemen ardında, kendi bloklarının içinde kalır (dışarı alınmaz): ilgili hamlenin yanında görünür ve sıra değişmez.
+  const blocks = topBlocks(box);
   const stack = box.querySelector<HTMLElement>(':scope > .cp-left-stack');
   const current = stack ? stack.querySelectorAll(':scope > .variation-block').length : 0;
   if (blocks.length < 2) return;
@@ -194,7 +188,7 @@ function split(box: Element) {
   const line = el.querySelector<HTMLElement>(':scope > .comment-line');
   const lineChars = lineWeight(box);
   const chars = blocks.length === 1 ? weight([blocks[0]]) : 0;
-  if (blocks.length !== 1 || blocks[0].parentElement !== box || box.querySelector(':scope > .cp-var-lead') || chars + lineChars <= BALANCE_MIN || chars + lineChars > SPLIT_MAX) return off();
+  if (blocks.length !== 1 || blocks[0].parentElement !== box || blocks[0].querySelector('.variation-block') || box.querySelector(':scope > .cp-var-lead') || chars + lineChars <= BALANCE_MIN || chars + lineChars > SPLIT_MAX) return off();
   if (!el.classList.contains('cp-split')) el.classList.add('cp-split');
   const wrap = player.querySelector<HTMLElement>('.board-wrap');
   if (!wrap) return;
@@ -291,6 +285,29 @@ function spreadComment(box: Element) {
   while (body.lastChild && (body.lastChild.nodeName === 'BR' || (body.lastChild.nodeType === 3 && !body.lastChild.textContent?.trim()))) body.lastChild.remove();
 }
 
+// Ana yorum (üst) ile sol yığın (alt) aynı sütunu paylaşır; ikisi de yarım sütuna sığmayabilir ama toplamları sığabilir. Ayrım çizgisi (--cp-seam) içerik
+// yüksekliklerine göre kaydırılır: ikisi birden sığıyorsa kaydırma çubuğu çıkmaz, sığmıyorsa sütun yüksekliği içerikle orantılı paylaşılır.
+function seam(box: Element) {
+  const el = box as HTMLElement;
+  const line = el.querySelector<HTMLElement>(':scope > .comment-line');
+  const stack = el.querySelector<HTMLElement>(':scope > .cp-left-stack');
+  const clear = () => el.style.getPropertyValue('--cp-seam') && el.style.removeProperty('--cp-seam');
+  if (!line || !stack || getComputedStyle(el).position !== 'static' || getComputedStyle(line).display === 'none') return clear();
+  const block = line.querySelector<HTMLElement>('.comment-text-block');
+  const height = (n: HTMLElement) => { const c = getComputedStyle(n); return n.offsetHeight + parseFloat(c.marginTop) + parseFloat(c.marginBottom); };
+  const pad = 8; // .5rem: yorumun alt, yığının üst dolgusu
+  const hl = (block ? block.offsetHeight : 0) + pad;
+  const hs = Array.from(stack.children).reduce((n, c) => n + height(c as HTMLElement), 0) + pad;
+  const H = el.offsetHeight - 46; // alttaki hamle listesi payı
+  if (H <= 0 || !hl || !hs) return clear();
+  let at = H / 2;
+  if (hl + hs > H) at = (H * hl) / (hl + hs);
+  else if (hl > at) at = hl;
+  else if (hs > H - at) at = H - hs;
+  const next = `${Math.round(at)}px`;
+  if (el.style.getPropertyValue('--cp-seam') !== next) el.style.setProperty('--cp-seam', next);
+}
+
 function refresh(box: Element) {
   process(box);
   moveQuotes(box);
@@ -299,6 +316,7 @@ function refresh(box: Element) {
   split(box);
   inlineContinuations(box);
   reserve(box);
+  seam(box);
   classify(box);
 }
 
