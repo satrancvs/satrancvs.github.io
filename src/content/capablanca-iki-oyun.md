@@ -1,7 +1,7 @@
 [Event "L'Avana"]
 [Date "1901.??.??"]
 [White "José Raúl Capablanca"]
-[Black "Juan Corzo y Prinzipe"]
+[Black "Juan Corzo"]
 [Result "1-0"]
 [SetUp "1"]
 [FEN "8/pp3kpp/2pn4/3p1p2/3P4/4K1PP/PPP1B1P1/8 w - - 0 23"]
