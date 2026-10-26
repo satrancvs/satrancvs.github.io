@@ -4,8 +4,6 @@ import fs from 'node:fs';
 import path from 'path';
 import { viteSourceLocator } from '@metagptx/vite-plugin-source-locator';
 import { atoms } from '@metagptx/web-sdk/plugins';
-import { vitePrerenderPlugin } from 'vite-prerender-plugin';
-import { getBlogRoutes } from './prerender/blog-routes.js';
 import { reactHmrGuard } from './plugins/react-hmr-guard';
 import { toTypography } from './src/lib/curly.js';
 
@@ -98,9 +96,7 @@ function articlePages() {
 }
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command }) => {
-  const blogPrerenderRoutes = command === 'build' ? getBlogRoutes() : [];
-
+export default defineConfig(() => {
   return {
     base: '/',
     plugins: [
@@ -112,13 +108,6 @@ export default defineConfig(({ command }) => {
       atoms(),
       ensureBuildOutDir(),
       articlePages(),
-      ...(blogPrerenderRoutes.length > 0
-        ? vitePrerenderPlugin({
-            renderTarget: '#root',
-            prerenderScript: path.resolve(__dirname, 'prerender/blog.js'),
-            additionalPrerenderRoutes: blogPrerenderRoutes,
-          })
-        : []),
     ],
     resolve: {
       alias: {

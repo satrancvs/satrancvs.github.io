@@ -16,7 +16,7 @@
         var saved = null;
         try { saved = localStorage.getItem('theme'); } catch (e) {}
         var light = saved === 'light' || (saved !== 'dark' && window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches);
-        if (light && !/^\/(blog\/?)?$/.test(location.pathname)) {
+        if (light && !/^\/$/.test(location.pathname)) {
           var st = document.createElement('style');
           st.id = 'early-theme';
           st.textContent = 'html,html body{background:#F7F1E5}';

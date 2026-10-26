@@ -4,7 +4,6 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { initAnalytics, trackPageView } from './lib/analytics';
-import BlogRoutes from './blog-routes';
 import Index from './pages/Index';
 import Post from './pages/Post';
 import NotFound from './pages/NotFound';
@@ -30,7 +29,6 @@ const PageViewTracker = () => {
 const AppRoutes = () => (
   <Routes>
     <Route path="/" element={<Index />} />
-    {/* <Route path="/blog/*" element={<BlogRoutes />} /> */}
     <Route path="/auth/callback" element={<AuthCallback />} />
     <Route path="/auth/error" element={<AuthError />} />
     {/* MODULE_ROUTES_START */}
