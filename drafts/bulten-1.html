@@ -14,8 +14,8 @@
   Önizleme metni:     Jan Timman, Karlsruhe, Aronian, at mı fil mi… İlk sayı okumaya hazır.
   Gönderen:           Satranç vs. <editor@satrancvs.com>
 
-  Sender, abonelikten çıkma bağlantısını {{unsubscribe_link}} ile ekler; altbilgideki bağlantı onu kullanır.
-  Sender HTML editörünün kendi etiket adı farklıysa (örn. {$unsubscribe}) yalnızca o bağlantıyı değiştirin.
+  Abonelikten çıkma: altbilgideki bağlantı Sender'ın Liquid değişkenlerini kullanır: adres {{unsubscribe_link}}, bağlantı metni {{unsubscribe_text}}.
+  Eski {$unsubscribe} biçimi kullanılmaz (Sender "legacy" uyarısı verir).
   Yazı adresleri https://satrancvs.com/<slug>/ biçimindedir; görseller de aynı alan adından gelir.
 -->
 <style>
@@ -174,7 +174,7 @@
     <tr><td class="pad" style="padding:40px 32px 0;"><div style="height:1px;line-height:1px;background:#DDD2BF;font-size:1px;">&nbsp;</div></td></tr>
     <tr><td class="pad" style="padding:18px 32px 0;font-family:Georgia,'Times New Roman',serif;font-size:14px;line-height:22px;color:#6A5D4E;">
       Bu e-postayı <a href="https://satrancvs.com/" style="color:#6A5D4E;">satrancvs.com</a> üzerinden bültene abone olduğunuz için aldınız.
-      Artık almak istemiyorsanız <a href="{{unsubscribe_link}}" style="color:#6A5D4E;">abonelikten çıkabilirsiniz</a>.
+      Artık almak istemiyorsanız <a href="{{unsubscribe_link}}" style="color:#6A5D4E;">{{unsubscribe_text}}</a>.
     </td></tr>
 
   </table>
