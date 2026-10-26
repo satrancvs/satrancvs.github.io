@@ -11,6 +11,7 @@
 //    notes from the start position, known typos waiting for the author) go to `check-games.allow.json`;
 //  - a game header with no movetext (and no `[View "player"]`), `[#]` in a `<pgn>` game, `[Round "?"]`.
 // Warnings (printed with --warnings): single numbered moves in comments that are not in any line.
+// Always printed (never fail the build): a variation whose last move has no evaluation mark (`!`, `?`, a NAG such as `$18`, `+-`, `=`) and no comment after it.
 import { Chess } from 'chess.js';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -39,6 +40,8 @@ function walk(movetext, fen, where) {
   let before = start;
   let line = [];
   lines.push(line);
+  const unmarked = [];
+  let pending = null; // last move of the current line that has no mark or comment yet
   const stack = [];
   const re = /\{[^}]*\}|\{|\}|\(|\)|[^\s(){}]+/g;
   let m;
@@ -49,11 +52,13 @@ function walk(movetext, fen, where) {
       const body = t.slice(1, -1);
       if (body.includes('{')) errors.push(`${where}: nested "{" inside a comment: "${body.slice(0, 60).replace(/\s+/g, ' ')}…"`);
       comments.push({ text: body, depth: stack.length, fenAfter: cur.fen(), fenBefore: before, last: line[line.length - 1] });
+      pending = null;
       continue;
     }
     if (t === '(') {
       if (!line.length) errors.push(`${where}: variation with no preceding move`);
-      stack.push({ cur, before, line });
+      stack.push({ cur, before, line, pending });
+      pending = null;
       cur = new Chess(before);
       line = line.slice(0, -1); // a variation replaces the last move: keep the path from the start
       lines.push(line);
@@ -61,19 +66,22 @@ function walk(movetext, fen, where) {
     }
     if (t === ')') {
       if (!stack.length) { errors.push(`${where}: unbalanced ")"`); continue; }
-      ({ cur, before, line } = stack.pop());
+      if (pending) unmarked.push(`${where}: variation ends with "…${pending}" and no mark or comment after it`);
+      ({ cur, before, line, pending } = stack.pop());
       continue;
     }
-    if (/^\$\d+$/.test(t) || /^(1-0|0-1|1\/2-1\/2|\*)$/.test(t)) continue;
+    if (/^\$\d+$/.test(t) || /^(\+-|-\+|\+\/-|-\/\+|\+\/=|=\/\+|=|∞|⩲|⩱|±|∓|□)$/.test(t)) { pending = null; continue; }
+    if (/^(1-0|0-1|1\/2-1\/2|\*)$/.test(t)) continue;
     let san = t.replace(/^\d+(\.\.\.|\.)/, '');
     if (!san) continue;
     san = san.replace(/^0-0-0/, 'O-O-O').replace(/^0-0/, 'O-O').replace(/[!?]+$/, '');
     before = cur.fen();
+    pending = /[!?]$/.test(t) ? null : movetext.slice(Math.max(0, m.index - 36), m.index + t.length).replace(/\s+/g, ' ');
     try { cur.move(san, { strict: true }); line.push(strip(san)); }
     catch { errors.push(`${where}: illegal move "${t}" (position ${before})`); return { errors, lines, comments, broken: true }; }
   }
   if (stack.length) errors.push(`${where}: ${stack.length} unclosed "("`);
-  return { errors, lines, comments };
+  return { errors, lines, comments, unmarked };
 }
 
 const playFrom = (fen, sans) => { try { const g = new Chess(fen); for (const s of sans) g.move(s, { strict: true }); return true; } catch { return false; } };
@@ -115,6 +123,7 @@ const covered = (lines, sans) => lines.some((l) => { for (let i = 0; i + sans.le
 export function checkContent(dir = path.join(ROOT, 'src/content')) {
   const errors = [];
   const warnings = [];
+  const unmarked = [];
   for (const file of fs.readdirSync(dir).filter((f) => f.endsWith('.md')).sort()) {
     const chunks = splitChunks(fs.readFileSync(path.join(dir, file), 'utf8'));
     const gameMoves = []; // for "[View player]" copies
@@ -138,6 +147,7 @@ export function checkContent(dir = path.join(ROOT, 'src/content')) {
       if (!isPlayer && /\[#\]/.test(next)) errors.push(`${where}: [#] shows as text in a <pgn> game; use [D]`);
       const w = walk(next, fen, where);
       errors.push(...w.errors);
+      unmarked.push(...(w.unmarked ?? []));
       if (w.broken) continue;
       for (const c of w.comments) {
         // (a) move-number-led parentheses inside a comment: ChessPublica plays them (or drops them).
@@ -159,13 +169,14 @@ export function checkContent(dir = path.join(ROOT, 'src/content')) {
       }
     }
   }
-  return { errors, warnings };
+  return { errors, warnings, unmarked };
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  const { errors, warnings } = checkContent();
+  const { errors, warnings, unmarked } = checkContent();
+  unmarked.forEach((w) => console.warn('warn  ' + w));
   if (process.argv.includes('--warnings')) warnings.forEach((w) => console.warn('warn  ' + w));
   errors.forEach((e) => console.error('ERROR ' + e));
-  console.log(`${errors.length} error(s), ${warnings.length} warning(s)`);
+  console.log(`${errors.length} error(s), ${warnings.length} warning(s), ${unmarked.length} variation(s) end without a mark or comment`);
   process.exit(errors.length ? 1 : 0);
 }
