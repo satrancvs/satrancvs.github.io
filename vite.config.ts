@@ -72,9 +72,11 @@ function articlePages() {
           html = setMeta(html, 'property', 'og:type', 'article');
           html = setMeta(html, 'name', 'twitter:title', title);
           const extra = a.unlisted ? ['<meta name="robots" content="noindex, nofollow" />'] : [`<link rel="canonical" href="${url}" />`, `<meta property="og:url" content="${url}" />`];
-          // Paylaşım görseli: önce thumb, sonra kapak fotoğrafı (Timman), yoksa sitenin genel görseli.
-          const imgPath = a.thumb ? `/${String(a.thumb).replace(/^\//, '')}` : a.photo ? '/images/jan-timman-1973.jpg' : '/og-default.jpg';
-          const img = `${SITE_URL}${imgPath}`;
+          // Paylaşım görseli (kompakt kart): yazıdan kare fotoğraf (public/og/<id>.jpg, scripts/make-og.py), yoksa favicon.
+          const hasOg = fs.existsSync(path.resolve(__dirname, 'public/og', `${a.id}.jpg`));
+          const img = `${SITE_URL}${hasOg ? `/og/${a.id}.jpg` : '/icon-512.png'}`;
+          const side = hasOg ? 400 : 512;
+          extra.push(`<meta property="og:image:width" content="${side}" />`, `<meta property="og:image:height" content="${side}" />`);
           extra.push(`<meta property="og:image" content="${img}" />`, `<meta name="twitter:image" content="${img}" />`);
           // Ana sayfa şablonundaki adres/görsel etiketlerini yazıya özel olanlarla değiştir (çift etiket olmasın).
           html = html.replace(/\s*<(meta property="og:(url|image(:\w+)?)"|meta name="twitter:image"|link rel="canonical")[^>]*>/g, '');

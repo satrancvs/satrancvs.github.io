@@ -1,0 +1,10 @@
+{
+  "_": "Paylaşım önizlemesi (kompakt kart) görseli: yazı id -> [fotoğraf dosyası, x, y] (kare kırpmada tutulacak yer, 0-1). Listede olmayan yazı ve ana sayfa favicon'u (icon-512.png) kullanır. `python3 scripts/make-og.py` public/og/<id>.jpg dosyalarını üretir.",
+  "kapak": ["jan-timman-1973.jpg", 0.5, 0.22],
+  "zebra": ["three-zebras-drinking.jpg", 0.5, 0.5],
+  "palavan": ["selim-palavan.jpg", 0.5, 0.3],
+  "atfil": ["at-fil.jpg", 0.5, 0.5],
+  "aronian": ["levon-aronian-2023.jpg", 0.5, 0.4],
+  "karlsruhe": ["salon.jpg", 0.5, 0.5],
+  "giris": ["editor.jpg", 0.5, 0.4]
+}
