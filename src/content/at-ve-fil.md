@@ -177,6 +177,6 @@ Alekhine, 1937’deki dünya şampiyonluğu maçında **Max Euwe** karşısında
 [SetUp "1"]
 [FEN "8/ppk4p/2pr1pn1/8/P1B2P2/2P3P1/7P/4R1K1 w - - 0 29"]
 
-29. h4! { Şah kanadındaki piyon çoğunluğunu harekete geçirerek atı yerinden ediyor. } 29... Kd7 30. Kf2 Ne7 31. Kf3 Nd5 { Beyaza fili yeniden konumlandırma olanağı tanıyan bir hata. } ( 31... Ke8 { daha dirençli olurdu. } ) 32. Bd3 $1 h6 33. Bf5+ Kd8 34. Kg4 Ne7 35. Bb1 Ke8 36. Kh5 { Şahın etkin katılımı hayati önemde. } 36... Kf7 37. Ba2+ { Filin ==bir çapraz hattan diğerine== ne kadar rahatlıkla geçebildiğini gösteren bir örnek. } 37... Kf8 38. Kxh6 Rd7 39. Be6 Rd3 40. g4 Rxc3 41. g5 1-0
+29. h4! { Şah kanadındaki piyon çoğunluğunu harekete geçirerek atı yerinden ediyor. } 29... Kd7 30. Kf2 Ne7 31. Kf3 Nd5 { Beyaza fili yeniden konumlandırma olanağı tanıyan bir hata. } 32. Bd3 $1 h6 33. Bf5+ Kd8 34. Kg4 Ne7 35. Bb1 Ke8 36. Kh5 { Şahın etkin katılımı hayati önemde. } 36... Kf7 37. Ba2+ { Filin ==bir çapraz hattan diğerine== ne kadar rahatlıkla geçebildiğini gösteren bir örnek. } 37... Kf8 38. Kxh6 Rd7 39. Be6 Rd3 40. g4 Rxc3 41. g5 1-0
 
 Devamı gelecek. Kaçırmamak için [bültene abone ol](/#bulten).
