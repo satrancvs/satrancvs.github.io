@@ -22,7 +22,8 @@
 .btn-mono.ghost { font-weight:500; }
 .cp-game .pgn-mainline { font-weight:500; }
 .mono-field { font-family:'JetBrains Mono',monospace; font-size:16px; letter-spacing:.01em; }
-.mono-note { font-family:'JetBrains Mono',monospace; font-size:12.5px; line-height:1.85; letter-spacing:.01em; }
+.mono-field::placeholder { text-transform:uppercase; } /* yalnızca ipucu yazısı büyük harf; okurun yazdığı e-posta olduğu gibi kalır */
+.mono-note { font-family:'JetBrains Mono',monospace; font-size:12.5px; line-height:1.85; letter-spacing:.01em; text-transform:uppercase; }
 .f-mono { font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.2em; text-transform:uppercase; }
 .reveal { transition: transform .9s cubic-bezier(.2,.7,.1,1), opacity .9s cubic-bezier(.2,.7,.1,1); }
 .reveal.pre { opacity:0; transform:translateY(40px); }
