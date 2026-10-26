@@ -375,9 +375,9 @@ export default function Index() {
           {intro && (
             <Link to={articlePath(intro)} className="group mt-8 max-w-xl flex items-center justify-between gap-6 border border-[#2E2620] hover:border-[#C8893E] transition-colors px-6 py-5">
               <span className="block">
-                <span className="block f-mono text-[#C8893E] text-[11px]">Dergiyi neden çıkardık?</span>
+                <span className="block f-mono text-[#C8893E] text-[11px]">Yayın ekibinden</span>
                 <span className="block f-display text-3xl md:text-4xl mt-2 group-hover:italic transition-all">{intro.title}</span>
-                <span className="block text-base text-[#A89A88] mt-2 leading-snug">Satranç vs.’nin hikâyesi ve sizi masaya çağıran ilk sayı yazısı.</span>
+                <span className="block text-base text-[#A89A88] mt-2 leading-snug">Satranç vs. Yayın ekibinden ilk sayı yazısı.</span>
               </span>
               <ArrowUpRight className="shrink-0 group-hover:rotate-45 transition-transform" />
             </Link>
