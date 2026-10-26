@@ -104,6 +104,7 @@
   {
     "id": "giris",
     "slug": "ilk-sayi-ilk-hamle",
+    "listLabel": "Yayın ekibinden",
     "title": "İlk sayı, ilk hamle",
     "dek": "_Satranç vs._’nin ilk sayısına hoş geldiniz.",
     "author": "Yayın ekibi",
