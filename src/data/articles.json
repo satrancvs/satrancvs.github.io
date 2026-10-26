@@ -127,6 +127,17 @@
     "body": []
   },
   {
+    "id": "ilk-adim",
+    "slug": "satranca-ilk-adim",
+    "cat": "Satranç dersleri",
+    "title": "Satranca ilk adım",
+    "dek": "Derginin eki",
+    "author": "Görkem Sivri",
+    "date": "Ekim–Kasım–Aralık 2026",
+    "note": "Görkem Sivri'nin [Satranca İlk Adım](https://www.analizsatranc.com/files/satrancailkadim.pdf) kitabından, yazarın izniyle uyarlanmıştır. Kitabın tamamı [Analiz Satranç](https://www.analizsatranc.com/) sitesinde PDF olarak bulunabilir.",
+    "body": []
+  },
+  {
     "id": "ia-giris",
     "slug": "ilk-adim-grs52xep8g-onsoz-ve-giris",
     "unlisted": true,

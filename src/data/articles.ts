@@ -7,6 +7,7 @@ import gomoriMd from '@/content/eugen-gomori.md?raw';
 import atFilMd from '@/content/at-ve-fil.md?raw';
 import aronianMd from '@/content/aronian-caro-kann.md?raw';
 import palavanMd from '@/content/selim-palavan.md?raw';
+import ilkAdimMd from '@/content/ilk-adim.md?raw';
 import girisMd from '@/content/ilk-sayi-ilk-hamle.md?raw';
 import { toTypography } from '@/lib/curly';
 import data from './articles.json';
@@ -27,6 +28,7 @@ const CHUNKS: Record<string, string[]> = {
   aronian: splitArticle(aronianMd).chunks,
   palavan: splitArticle(palavanMd).chunks,
   giris: splitArticle(girisMd).chunks,
+  'ilk-adim': splitArticle(ilkAdimMd).chunks,
 };
 
 // Makale metinleri/üst bilgileri articles.json'da (build sırasında prerender de bunu okur);
@@ -58,7 +60,7 @@ const REACHABLE = ARTICLES.filter((a) => !a.draft);
 
 // "Bu Sayıdaki Tüm yazılar" listesinin sırası (a1, b2, …). Kapak ve "Öne çıkanlar" articles.json sırasını izler, liste bundan bağımsızdır.
 // Burada olmayan (yeni) yazılar listenin sonuna, articles.json sırasıyla eklenir.
-const LIST_ORDER = ['giris', 'kapak', 'karlsruhe', 'atfil', 'aronian', 'mugla', 'zebra', 'palavan'];
+const LIST_ORDER = ['giris', 'kapak', 'karlsruhe', 'atfil', 'aronian', 'mugla', 'zebra', 'palavan', 'ilk-adim'];
 const rank = (a: Article) => { const i = LIST_ORDER.indexOf(a.id); return i >= 0 ? i : LIST_ORDER.length + ARTICLES.indexOf(a); };
 export const LISTED = [...PUBLISHED].sort((x, y) => rank(x) - rank(y));
 
