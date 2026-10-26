@@ -72,10 +72,12 @@ function articlePages() {
           html = setMeta(html, 'property', 'og:type', 'article');
           html = setMeta(html, 'name', 'twitter:title', title);
           const extra = a.unlisted ? ['<meta name="robots" content="noindex, nofollow" />'] : [`<link rel="canonical" href="${url}" />`, `<meta property="og:url" content="${url}" />`];
-          if (a.photo) {
-            const img = `${SITE_URL}/images/jan-timman-1973.jpg`;
-            extra.push(`<meta property="og:image" content="${img}" />`, `<meta name="twitter:image" content="${img}" />`, '<meta name="twitter:card" content="summary_large_image" />');
-          }
+          // Paylaşım görseli: önce thumb, sonra kapak fotoğrafı (Timman), yoksa sitenin genel görseli.
+          const imgPath = a.thumb ? `/${String(a.thumb).replace(/^\//, '')}` : a.photo ? '/images/jan-timman-1973.jpg' : '/og-default.jpg';
+          const img = `${SITE_URL}${imgPath}`;
+          extra.push(`<meta property="og:image" content="${img}" />`, `<meta name="twitter:image" content="${img}" />`);
+          // Ana sayfa şablonundaki adres/görsel etiketlerini yazıya özel olanlarla değiştir (çift etiket olmasın).
+          html = html.replace(/\s*<(meta property="og:(url|image(:\w+)?)"|meta name="twitter:image"|link rel="canonical")[^>]*>/g, '');
           html = html.replace('</head>', `    ${extra.join('\n    ')}\n  </head>`);
           const dir = path.join(outDir, a.slug);
           fs.mkdirSync(dir, { recursive: true });
