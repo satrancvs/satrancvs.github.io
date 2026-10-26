@@ -1,4 +1,4 @@
-Satranç kurallarını yeni öğrenmiş ya da öğrenmek isteyen yetişkinler için yazılmış, 128 sayfalık bir ilk kitap: kurallar ve notasyonun yanı sıra temel mat motifleri, taktiğin basit elemanları, kombinezon temaları, birkaç oyunsonu, analizli oyunlar ve etütlerle satranç yazınından küçük bir tadımlık. Görkem Sivri'nin bu kitabını, yazarın izniyle, Satranç vs.'nin yeni köşesi **Satranç dersleri**'nin ilk konuğu olarak ve derginin eki biçiminde, bölüm bölüm yayımlıyoruz. Kitabı baştan sona sırayla okuyabilir ya da aşağıdaki içindekiler listesinden dilediğiniz bölüme geçebilirsiniz; her bölümün sonunda bir önceki ve bir sonraki bölüme giden bağlantılar bulunur.
+Görkem Sivri’nin satranca yeni başlayan yetişkinler için kaleme aldığı 128 sayfalık bu rehber; kurallar, temel taktikler, oyun sonları ve analizli oyunlardan oluşan zengin bir içerik sunuyor. Yazarın izniyle *Satranç vs.*’nin "Satranç dersleri" köşesinde bölüm bölüm yayınladığımız bu eseri baştan sona sırayla okuyabilir veya içindekiler listesinden dilediğiniz konuya doğrudan geçiş yapabilirsiniz.
 
 ### Kitabın bölümleri
 
