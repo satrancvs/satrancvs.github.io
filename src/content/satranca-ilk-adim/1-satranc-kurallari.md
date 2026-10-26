@@ -265,5 +265,5 @@ Oyuncular oyundan önce ve sonra el sıkışır. Rakibiyle el sıkışmayı redd
 
 Oyuncu oyun süresince üçüncü bir kişiden, bilgisayardan, basılı ve yazılı materyalden veya analiz tahtasından yardım alamaz. Üçüncü kişilerle oyun hakkında konuşamaz.
 
-Önceki bölüm: [Satranca ilk adım](/ilk-adim-grs52xep8g-onsoz-ve-giris/)<br>
-Sonraki bölüm: [Notasyon](/ilk-adim-grs52xep8g-2-notasyon/)
+Önceki bölüm: [Satranca ilk adım](/satranca-ilk-adim/onsoz-ve-giris/)<br>
+Sonraki bölüm: [Notasyon](/satranca-ilk-adim/2-notasyon/)

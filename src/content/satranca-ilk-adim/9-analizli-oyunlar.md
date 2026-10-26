@@ -72,5 +72,5 @@ Direnmek için son olanak 14... Qc5 biçimindeydi, 15 Bxc6 Bxc3 16 bxc3 Qxc6 17 
 
 Gelmiş geçmiş en güçlü kadın oyuncu unvanının tartışmasız sahibi olan Macar usta Judit Polgar'ın bu oyunu, 1988 Selanik Olimpiyatı'nın güzellik ödülünü kazanmıştır. } 1-0
 
-Önceki bölüm: [Oyunsonları](/ilk-adim-grs52xep8g-8-oyunsonlari/)<br>
-Sonraki bölüm: [Etütler ve problemler](/ilk-adim-grs52xep8g-10-etutler-ve-problemler/)
+Önceki bölüm: [Oyunsonları](/satranca-ilk-adim/8-oyunsonlari/)<br>
+Sonraki bölüm: [Etütler ve problemler](/satranca-ilk-adim/10-etutler-ve-problemler/)

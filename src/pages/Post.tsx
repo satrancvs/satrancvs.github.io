@@ -38,14 +38,16 @@ const readTheme = (): 'dark' | 'light' => savedTheme() ?? systemTheme();
 
 // Adresi değişen yazının eski adresi yeni adrese yönlendirilir (kanca kuralları için ayrı bileşen).
 export default function Post() {
-  const { slug } = useParams();
+  const { slug: s1, chapter } = useParams();
+  const slug = chapter ? `${s1}/${chapter}` : s1;
   const moved = !articleBySlug(slug) ? articleByOldSlug(slug) : undefined;
   if (moved) return <Navigate to={articlePath(moved)} replace />;
   return <PostPage />;
 }
 
 function PostPage() {
-  const { slug } = useParams();
+  const { slug: s1, chapter } = useParams();
+  const slug = chapter ? `${s1}/${chapter}` : s1;
   const a = articleBySlug(slug);
 
   const [theme, setTheme] = useState<'dark' | 'light'>(readTheme);

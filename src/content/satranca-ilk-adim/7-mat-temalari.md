@@ -170,5 +170,5 @@ Ayrıca bu mat uzun rok atmamış şahların başını da ağrıtabilir:
 
 1 axb4! ♕xa1+ 2 ♔d2 ♕xh1 3 ♕xc6+ bxc6 4 ♗a6#
 
-Önceki bölüm: [Birkaç taktik eleman](/ilk-adim-grs52xep8g-6-birkac-taktik-eleman/)<br>
-Sonraki bölüm: [Oyunsonları](/ilk-adim-grs52xep8g-8-oyunsonlari/)
+Önceki bölüm: [Birkaç taktik eleman](/satranca-ilk-adim/6-birkac-taktik-eleman/)<br>
+Sonraki bölüm: [Oyunsonları](/satranca-ilk-adim/8-oyunsonlari/)

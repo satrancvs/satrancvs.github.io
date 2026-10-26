@@ -303,5 +303,5 @@ Anlaşılan d6'da bulunan atımıza manevra yaptıracak zamanımız yok. Bir de 
 
 3 ♘b5-c7# Elindeki fazla er Siyaha destek değil ayak bağı oldu! Fazla materyelin yarar yerine zarar verdiği durumlara pek sık denk gelinmez, ama yine de dikkatli olunmalı. İş yalnızca taşları sayıp parmak hesabı yapmakla bitseydi, satranç hayli kuru ve neşesiz bir oyun olurdu.
 
-Önceki bölüm: [Notasyon](/ilk-adim-grs52xep8g-2-notasyon/)<br>
-Sonraki bölüm: [Oyuna başlarken](/ilk-adim-grs52xep8g-4-oyuna-baslarken/)
+Önceki bölüm: [Notasyon](/satranca-ilk-adim/2-notasyon/)<br>
+Sonraki bölüm: [Oyuna başlarken](/satranca-ilk-adim/4-oyuna-baslarken/)

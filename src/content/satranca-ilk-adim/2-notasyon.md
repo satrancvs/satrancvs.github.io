@@ -48,5 +48,5 @@ Satranç yazınını takip edebilmek için notasyonun *çok iyi bir biçimde* ö
 
 1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 { [D] } 6. Bg5 Nbd7 7. Bc4 Qa5 8. Qd2 h6 9. Bxf6 Nxf6 10. O-O-O e6 { [D] } 11. Rhe1 Be7 12. f4 O-O 13. Bb3 Re8 14. Kb1 Bf8 15. g4 Nxg4 { [D] } 16. Qg2 Nf6 17. Rg1 Bd7 18. f5 Kh8 19. Rdf1 Qd8 20. fxe6 fxe6 { [D] } 21. e5 dxe5 22. Ne4 Nh5 23. Qg6 exd4 24. Ng5 1-0
 
-Önceki bölüm: [Satranç kuralları](/ilk-adim-grs52xep8g-1-satranc-kurallari/)<br>
-Sonraki bölüm: [Basit matlar](/ilk-adim-grs52xep8g-3-basit-matlar/)
+Önceki bölüm: [Satranç kuralları](/satranca-ilk-adim/1-satranc-kurallari/)<br>
+Sonraki bölüm: [Basit matlar](/satranca-ilk-adim/3-basit-matlar/)

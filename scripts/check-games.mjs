@@ -1,4 +1,4 @@
-// Validates every chess game in src/content/*.md so that nothing in an article is lost silently
+// Validates every chess game in src/content/**/*.md so that nothing in an article is lost silently
 // (ChessPublica drops or mangles text it cannot parse). Run: `pnpm check:games` (also part of `pnpm test`).
 //
 // Errors (fail the build):
@@ -124,7 +124,7 @@ export function checkContent(dir = path.join(ROOT, 'src/content')) {
   const errors = [];
   const warnings = [];
   const unmarked = [];
-  for (const file of fs.readdirSync(dir).filter((f) => f.endsWith('.md')).sort()) {
+  for (const file of fs.readdirSync(dir, { recursive: true }).map((f) => String(f).replace(/\\/g, '/')).filter((f) => f.endsWith('.md')).sort()) {
     const chunks = splitChunks(fs.readFileSync(path.join(dir, file), 'utf8'));
     const gameMoves = []; // for "[View player]" copies
     for (let i = 0; i < chunks.length; i++) {

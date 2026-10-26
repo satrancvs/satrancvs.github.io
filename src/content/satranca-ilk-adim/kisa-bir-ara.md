@@ -66,5 +66,5 @@ Atın iki hamlede ulaşabileceği kareler (yeşil daireler) ile, üç hamlede ul
 
 ![Lucena'nın 1497 tarihli kitabından bir sayfa](images/lucena-1497.jpg "Modern kurallarla oynanan satranca dair günümüze gelebilmiş en eski eser olan, <span lang="es">Luis Ramirez de Lucena</span>'nın <span lang="es"><i>Repetición de Amores y Arte de Ajedrez con 101 Juegos de Partido</i></span> adlı kitabından (Salamanca, 1497) bir sayfa.")
 
-Önceki bölüm: [Taşlar hakkında](/ilk-adim-grs52xep8g-5-taslar-hakkinda/)<br>
-Sonraki bölüm: [Birkaç taktik eleman](/ilk-adim-grs52xep8g-6-birkac-taktik-eleman/)
+Önceki bölüm: [Taşlar hakkında](/satranca-ilk-adim/5-taslar-hakkinda/)<br>
+Sonraki bölüm: [Birkaç taktik eleman](/satranca-ilk-adim/6-birkac-taktik-eleman/)

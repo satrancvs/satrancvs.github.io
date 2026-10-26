@@ -45,12 +45,12 @@
     "reason": "Printed so in Kasparov's book (note to 47.Rd2): after 49.axb5 the white pawn stands on b5, so 52.b4 is a misprint. The variation stops at 51...Ke6."
   },
   {
-    "file": "ilk-adim-9-analizli-oyunlar.md",
+    "file": "satranca-ilk-adim/9-analizli-oyunlar.md",
     "run": "Nxf6 Rxf6 Qxh7",
     "reason": "Threat after 10.Qh5 (white would play it if Black passed); not a line."
   },
   {
-    "file": "ilk-adim-9-analizli-oyunlar.md",
+    "file": "satranca-ilk-adim/9-analizli-oyunlar.md",
     "run": "Nxe5 Bxe5 Bf4",
     "reason": "Threat after 13.Re1 (white would play it if Black passed); not a line."
   }

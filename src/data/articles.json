@@ -140,7 +140,7 @@
   },
   {
     "id": "ia-giris",
-    "slug": "ilk-adim-grs52xep8g-onsoz-ve-giris",
+    "slug": "satranca-ilk-adim/onsoz-ve-giris",
     "unlisted": true,
     "cat": "Satranca ilk adım · Önsöz ve giriş",
     "title": "Satranca ilk adım",
@@ -151,7 +151,7 @@
   },
   {
     "id": "ia-1",
-    "slug": "ilk-adim-grs52xep8g-1-satranc-kurallari",
+    "slug": "satranca-ilk-adim/1-satranc-kurallari",
     "unlisted": true,
     "cat": "Satranca ilk adım · Bölüm 1",
     "title": "Satranç kuralları",
@@ -162,7 +162,7 @@
   },
   {
     "id": "ia-2",
-    "slug": "ilk-adim-grs52xep8g-2-notasyon",
+    "slug": "satranca-ilk-adim/2-notasyon",
     "unlisted": true,
     "cat": "Satranca ilk adım · Bölüm 2",
     "title": "Notasyon",
@@ -173,7 +173,7 @@
   },
   {
     "id": "ia-3",
-    "slug": "ilk-adim-grs52xep8g-3-basit-matlar",
+    "slug": "satranca-ilk-adim/3-basit-matlar",
     "unlisted": true,
     "cat": "Satranca ilk adım · Bölüm 3",
     "title": "Basit matlar",
@@ -184,7 +184,7 @@
   },
   {
     "id": "ia-4",
-    "slug": "ilk-adim-grs52xep8g-4-oyuna-baslarken",
+    "slug": "satranca-ilk-adim/4-oyuna-baslarken",
     "unlisted": true,
     "cat": "Satranca ilk adım · Bölüm 4",
     "title": "Oyuna başlarken",
@@ -195,7 +195,7 @@
   },
   {
     "id": "ia-5",
-    "slug": "ilk-adim-grs52xep8g-5-taslar-hakkinda",
+    "slug": "satranca-ilk-adim/5-taslar-hakkinda",
     "unlisted": true,
     "cat": "Satranca ilk adım · Bölüm 5",
     "title": "Taşlar hakkında",
@@ -206,7 +206,7 @@
   },
   {
     "id": "ia-ara",
-    "slug": "ilk-adim-grs52xep8g-kisa-bir-ara",
+    "slug": "satranca-ilk-adim/kisa-bir-ara",
     "unlisted": true,
     "cat": "Satranca ilk adım · Ara bölüm",
     "title": "Kısa bir ara",
@@ -217,7 +217,7 @@
   },
   {
     "id": "ia-6",
-    "slug": "ilk-adim-grs52xep8g-6-birkac-taktik-eleman",
+    "slug": "satranca-ilk-adim/6-birkac-taktik-eleman",
     "unlisted": true,
     "cat": "Satranca ilk adım · Bölüm 6",
     "title": "Birkaç taktik eleman",
@@ -228,7 +228,7 @@
   },
   {
     "id": "ia-7",
-    "slug": "ilk-adim-grs52xep8g-7-mat-temalari",
+    "slug": "satranca-ilk-adim/7-mat-temalari",
     "unlisted": true,
     "cat": "Satranca ilk adım · Bölüm 7",
     "title": "Mat temaları",
@@ -239,7 +239,7 @@
   },
   {
     "id": "ia-8",
-    "slug": "ilk-adim-grs52xep8g-8-oyunsonlari",
+    "slug": "satranca-ilk-adim/8-oyunsonlari",
     "unlisted": true,
     "cat": "Satranca ilk adım · Bölüm 8",
     "title": "Oyunsonları",
@@ -250,7 +250,7 @@
   },
   {
     "id": "ia-9",
-    "slug": "ilk-adim-grs52xep8g-9-analizli-oyunlar",
+    "slug": "satranca-ilk-adim/9-analizli-oyunlar",
     "unlisted": true,
     "cat": "Satranca ilk adım · Bölüm 9",
     "title": "Analizli oyunlar",
@@ -261,7 +261,7 @@
   },
   {
     "id": "ia-10",
-    "slug": "ilk-adim-grs52xep8g-10-etutler-ve-problemler",
+    "slug": "satranca-ilk-adim/10-etutler-ve-problemler",
     "unlisted": true,
     "cat": "Satranca ilk adım · Bölüm 10",
     "title": "Etütler ve problemler",
@@ -272,7 +272,7 @@
   },
   {
     "id": "ia-sonsoz",
-    "slug": "ilk-adim-grs52xep8g-sonsoz",
+    "slug": "satranca-ilk-adim/sonsoz",
     "unlisted": true,
     "cat": "Satranca ilk adım · Sonsöz",
     "title": "Sonsöz",

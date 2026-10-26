@@ -243,5 +243,5 @@ Hamle sırasıyla Beyaz elbette kazanır, ancak hamle kendisinde ise Siyah 1...�
 
 **6)** Beyaz şah anahtar karelerden birini işgal etmiş olduğu için bu konum kazançtır; bununla birlikte aceleci 1 g6?? pata yol açarken 1 ♔f8 ♔h7 ise ilerleme sağlayamaz. Amaca ulaşmak için küçük bir yer değişikliği gereklidir: 1 ♔g6! ♔g8 2 ♔h6 ♔h8 3 g6 ♔g8 4 g7 ve kazanır.
 
-Önceki bölüm: [Mat temaları](/ilk-adim-grs52xep8g-7-mat-temalari/)<br>
-Sonraki bölüm: [Analizli oyunlar](/ilk-adim-grs52xep8g-9-analizli-oyunlar/)
+Önceki bölüm: [Mat temaları](/satranca-ilk-adim/7-mat-temalari/)<br>
+Sonraki bölüm: [Analizli oyunlar](/satranca-ilk-adim/9-analizli-oyunlar/)

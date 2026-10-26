@@ -12,4 +12,4 @@ Bu satranç kitabının sonu sizin için yeni bir satranç kitabının başlang�
 
 *Gens una sumus.*
 
-Önceki bölüm: [Etütler ve problemler](/ilk-adim-grs52xep8g-10-etutler-ve-problemler/)
+Önceki bölüm: [Etütler ve problemler](/satranca-ilk-adim/10-etutler-ve-problemler/)

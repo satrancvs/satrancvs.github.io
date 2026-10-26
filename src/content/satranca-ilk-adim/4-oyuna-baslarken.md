@@ -142,5 +142,5 @@ Hayatta kimi konular vardır ki neleri yaptığınızdan çok neleri yapmaktan s
 
 Şimdi bu öğrendiklerinizi bir an önce uygulamaya koymak için bir arkadaşınızla satranç tahtasının başına geçebilir ya da sonraki iki kısa bölüme bir göz atarak "sağduyulu satrancın" nasıl oynanacağına dair bir-iki ipucu daha almak isteyebilirsiniz.
 
-Önceki bölüm: [Basit matlar](/ilk-adim-grs52xep8g-3-basit-matlar/)<br>
-Sonraki bölüm: [Taşlar hakkında](/ilk-adim-grs52xep8g-5-taslar-hakkinda/)
+Önceki bölüm: [Basit matlar](/satranca-ilk-adim/3-basit-matlar/)<br>
+Sonraki bölüm: [Taşlar hakkında](/satranca-ilk-adim/5-taslar-hakkinda/)

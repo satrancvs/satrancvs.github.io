@@ -7,7 +7,7 @@ import gomoriMd from '@/content/eugen-gomori.md?raw';
 import atFilMd from '@/content/at-ve-fil.md?raw';
 import aronianMd from '@/content/aronian-caro-kann.md?raw';
 import palavanMd from '@/content/selim-palavan.md?raw';
-import ilkAdimMd from '@/content/ilk-adim.md?raw';
+import ilkAdimMd from '@/content/satranca-ilk-adim/index.md?raw';
 import girisMd from '@/content/ilk-sayi-ilk-hamle.md?raw';
 import { toTypography } from '@/lib/curly';
 import data from './articles.json';
@@ -42,11 +42,11 @@ const typo = (a: Article): Article => ({
   body: a.body.map(toTypography),
 });
 
-// "Satranca ilk adım" bölümleri (gizli önizleme): src/content/ilk-adim-<ad>.md, adres `ilk-adim-<jeton>-<ad>`.
-const BOOK_MD = import.meta.glob('@/content/ilk-adim-*.md', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+// "Satranca ilk adım" bölümleri: src/content/satranca-ilk-adim/<ad>.md, adres `satranca-ilk-adim/<ad>` (index.md kitabın sunuş sayfasıdır).
+const BOOK_MD = import.meta.glob('@/content/satranca-ilk-adim/*.md', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
 const bookChunks = (a: Article) => {
-  const name = a.slug.match(/^ilk-adim-[^-]+-(.+)$/)?.[1];
-  const md = name && BOOK_MD[`/src/content/ilk-adim-${name}.md`];
+  const name = a.slug.match(/^satranca-ilk-adim\/(.+)$/)?.[1];
+  const md = name && BOOK_MD[`/src/content/satranca-ilk-adim/${name}.md`];
   return md ? splitArticle(md).chunks : undefined;
 };
 

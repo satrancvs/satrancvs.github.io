@@ -36,6 +36,7 @@ const AppRoutes = () => (
     {/* MODULE_ROUTES_START */}
     {/* MODULE_ROUTES_END */}
     <Route path="/:slug" element={<Post />} />
+    <Route path="/:slug/:chapter" element={<Post />} />
     <Route path="*" element={<NotFound />} />
   </Routes>
 );

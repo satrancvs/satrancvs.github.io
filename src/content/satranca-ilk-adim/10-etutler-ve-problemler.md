@@ -190,5 +190,5 @@ Beyazın çeşitli mat denemeleri hep "ufak" bir engelle karşılaşır: 1 ♕b5
 
 **12)** Carpenter, 1873. 1 ♕a6! ve şimdi 1...♔xd5 2 ♕c6#, 1...♔xf5 2 ♕g6# ya da 1...♔f3 2 ♕e2#
 
-Önceki bölüm: [Analizli oyunlar](/ilk-adim-grs52xep8g-9-analizli-oyunlar/)<br>
-Sonraki bölüm: [Sonsöz](/ilk-adim-grs52xep8g-sonsoz/)
+Önceki bölüm: [Analizli oyunlar](/satranca-ilk-adim/9-analizli-oyunlar/)<br>
+Sonraki bölüm: [Sonsöz](/satranca-ilk-adim/sonsoz/)

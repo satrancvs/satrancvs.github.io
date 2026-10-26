@@ -96,5 +96,5 @@ Bir vezir kaç ere denktir? İki fil vererek rakibin kalesini ve iki erini almak
 
 Ancak unutmamak gerekir ki bu rakamlar yalnızca yaklaşıktır ve *genellemelerden* ibarettir - bir taş her zaman aynı değeri taşımaz. Rakip şahın yakınına sağlamca yerleşmiş bir at herhalde üç erden daha kıymetlidir, oysa tahtanın kenarında sıkışıp kalmış bir at o kadar bile etmeyebilir. O anda tahtada dizili olan konumda neyin daha değerli olduğunun kararını oyuncu kendi başına, konumun özgül dinamiklerini göz önüne alarak vermek zorundadır.
 
-Önceki bölüm: [Oyuna başlarken](/ilk-adim-grs52xep8g-4-oyuna-baslarken/)<br>
-Sonraki bölüm: [Kısa bir ara](/ilk-adim-grs52xep8g-kisa-bir-ara/)
+Önceki bölüm: [Oyuna başlarken](/satranca-ilk-adim/4-oyuna-baslarken/)<br>
+Sonraki bölüm: [Kısa bir ara](/satranca-ilk-adim/kisa-bir-ara/)
