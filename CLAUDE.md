@@ -19,7 +19,7 @@ ChessPublica drops or mangles text it cannot parse, so every game that is added 
    typos waiting for the author) go in `scripts/check-games.allow.json` with a reason; never allowlist something that can be a variation.
 2. **Every move that is playable from the position becomes a real variation** (`( 12. Ne2 f5 … )`, placed after the move it replaces and its
    comment; a continuation line goes after the *next* main-line move as an alternative to it). Keep the prose in the comment as well. Single
-   numbered moves are only warnings (`pnpm check:games --warnings`), but convert them too when they are alternatives. A variation whose last move has no evaluation mark (`!`, `?`, NAG, `+-`, `=` …) and no comment after it is always reported as a `warn` line (never fails the build): add a mark or a short comment.
+   numbered moves are only warnings (`pnpm check:games --warnings`), but convert them too when they are alternatives. A variation whose last move has no evaluation mark (`!`, `?`, `#`, NAG, `+-`, `=` …) and no comment after it is always reported as a `warn` line (never fails the build): add a mark or a short comment.
 3. **`pnpm build && pnpm preview` then `pnpm check:render`** (`scripts/check-render.mjs`, Playwright; set `CHROMIUM_PATH=/opt/pw-browsers/chromium`
    in this environment) renders every published article and fails on `Error parsing PGN`, invalid moves or the red ⚠ marker. Look at the page, too.
 4. ChessPublica itself must never delete content quietly: the patched bundle shows `⚠ Geçersiz hamle dizisi: …` (`<mark>`) for an unplayable

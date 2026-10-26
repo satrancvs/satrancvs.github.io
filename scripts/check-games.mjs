@@ -11,7 +11,7 @@
 //    notes from the start position, known typos waiting for the author) go to `check-games.allow.json`;
 //  - a game header with no movetext (and no `[View "player"]`), `[#]` in a `<pgn>` game, `[Round "?"]`.
 // Warnings (printed with --warnings): single numbered moves in comments that are not in any line.
-// Always printed (never fail the build): a variation whose last move has no evaluation mark (`!`, `?`, a NAG such as `$18`, `+-`, `=`) and no comment after it.
+// Always printed (never fail the build): a variation whose last move has no evaluation mark (`!`, `?`,  `#`, a NAG such as `$18`, `+-`, `=`) and no comment after it.
 import { Chess } from 'chess.js';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -76,7 +76,7 @@ function walk(movetext, fen, where) {
     if (!san) continue;
     san = san.replace(/^0-0-0/, 'O-O-O').replace(/^0-0/, 'O-O').replace(/[!?]+$/, '');
     before = cur.fen();
-    pending = /[!?]$/.test(t) ? null : movetext.slice(Math.max(0, m.index - 36), m.index + t.length).replace(/\s+/g, ' ');
+    pending = /[!?#]$/.test(t) ? null : movetext.slice(Math.max(0, m.index - 36), m.index + t.length).replace(/\s+/g, ' ');
     try { cur.move(san, { strict: true }); line.push(strip(san)); }
     catch { errors.push(`${where}: illegal move "${t}" (position ${before})`); return { errors, lines, comments, broken: true }; }
   }
