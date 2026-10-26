@@ -226,7 +226,13 @@ function moveQuotes(box: Element) {
     host.className = 'cp-quote-right';
     line.after(host);
   }
-  quotes.forEach((q) => (host as Element).append(q));
+  // Alıntının ardındaki oynat düğmesi (inline-play.ts yorumun son satırına koymuştu) alıntıyla birlikte sağa gider: okuyucu alıntıyı okuyup orada ilerler.
+  const buttons: Element[] = [];
+  quotes.forEach((q) => {
+    for (let n = q.nextSibling; n; n = n.nextSibling) if (n.nodeName === 'BUTTON') buttons.push(n as Element);
+    (host as Element).append(q);
+  });
+  buttons.forEach((b) => (host as Element).append(b));
   // Alıntıdan arta kalan satır sonları (<br>) temizlenir.
   line.querySelectorAll('.comment-body').forEach((body) => {
     while (body.lastChild && (body.lastChild.nodeName === 'BR' || (body.lastChild.nodeType === 3 && !body.lastChild.textContent?.trim()))) body.lastChild.remove();
