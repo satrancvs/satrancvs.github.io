@@ -383,7 +383,7 @@ export default function Index() {
               <span className="block">
                 <span className="block f-mono text-[#C8893E] text-[11px]">Yayın ekibinden</span>
                 <span className="block f-display text-3xl md:text-4xl mt-2 group-hover:italic transition-all">{intro.title}</span>
-                <span className="block text-base text-[#A89A88] mt-2 leading-snug">Satranç vs. Yayın ekibinden...</span>
+                <span className="block text-base text-[#A89A88] mt-2 leading-snug"><em>Satranç vs.</em>’ye hoş geldiniz.</span>
               </span>
               <ArrowUpRight className="shrink-0 group-hover:rotate-45 transition-transform" />
             </Link>
