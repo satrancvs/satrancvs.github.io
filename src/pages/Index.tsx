@@ -313,7 +313,7 @@ export default function Index() {
             <p className="f-mono text-[#0E0C0A]/60"><span className="text-[#9A5F1E]">02</span> — Bu Sayıdaki</p>
             <h2 className="f-display text-[clamp(36px,4.5vw,72px)] mt-8">Tüm<br /><em className="italic">yazılar</em></h2>
             <div role="tablist" aria-label="Tüm yazılar" className="mt-12">
-              <button role="tab" aria-selected={cat === 'Tümü'} onClick={() => setCat('Tümü')} className={tabCls(cat === 'Tümü')} aria-label="Tümü: Sayı 1, Ekim–Kasım–Aralık 2026">Sayı 1 · Ekim–Kasım–Aralık 2026</button>
+              <button role="tab" aria-selected={cat === 'Tümü'} onClick={() => setCat('Tümü')} className={tabCls(cat === 'Tümü')} aria-label="Tümü: Sayı 1">Sayı 1</button>
             </div>
             <h2 id="koseler" ref={koseHead} className="f-display text-[clamp(36px,4.5vw,72px)] mt-14 scroll-mt-28"><em className="italic">Köşeler</em></h2>
             <div role="tablist" aria-label="Köşeler" className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-8">
