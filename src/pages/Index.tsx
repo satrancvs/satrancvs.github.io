@@ -54,12 +54,18 @@ const CORNERS = [...CORNER_ORDER.filter((c) => USED.has(c)), ...[...USED].filter
 const tabCls = (on: boolean) => `f-mono h-11 border-b-2 transition-colors ${on ? 'border-[#C8893E] text-[#0E0C0A]' : 'border-transparent text-[#0E0C0A]/50 hover:text-[#0E0C0A]'}`;
 
 // bio (Markdown bağlantıları olabilir) isteğe bağlıdır; boşsa kartta gösterilmez.
+// Yazar biyografilerindeki bağlantılar: `/` ile başlayanlar sitenin kendi sayfası (aynı sekmede router Link), diğerleri yeni sekmede açılır.
+const BIO_LINK = 'underline decoration-[#C8893E]/50 underline-offset-4 hover:text-[#C8893E] hover:decoration-[#C8893E]';
+function BioLink({ href = '', children }: { href?: string; children?: React.ReactNode }) {
+  return href.startsWith('/') ? <Link to={href} className={BIO_LINK}>{children}</Link> : <a href={href} className={BIO_LINK} target="_blank" rel="noreferrer">{children}</a>;
+}
+
 const AUTHORS: { name: string; role: string; bio?: string }[] = [
   { name: 'Nazmi Can Doğan', role: 'Kurucu, Yayın Yönetmeni', bio: 'FIDE ustası (FM). [YouTube kanalında](https://www.youtube.com/satranchess) içerik üretiyor ve canlı yayınlar yapıyor.' },
   { name: 'Oğul Köseoğlu', role: 'Kurucu, Editör', bio: 'Amatör satranççı, profesyonel [çevirmen](https://ogulkoseoglu.com/). Satranç vs.’nin ve [ChessPublica](https://chesspublica.github.io/)’nın web geliştiricisi.' },
   { name: 'Tarık Selbes', role: 'Kurucu, Yazar', bio: 'FIDE ustası (FM). [Café Chigorin](https://cafechigorin.com/) kişisel blogunda satranç tarihi, teorisi ve kültürü üzerine yazıyor.' },
   { name: 'Ahmad Al-Khatib', role: 'Konuk yazar', bio: 'Ürdün’ün ilk büyük ustası (GM). [YouTube kanalında](https://www.youtube.com/@GMAhmadAlkhatib) satranç içerikleri üretiyor.' },
-  { name: 'Görkem Sivri', role: 'Konuk yazar', bio: 'Satrançsever, oyuncu, eğitmen, yazar.' },
+  { name: 'Görkem Sivri', role: 'Konuk yazar', bio: 'Satrançsever, oyuncu, eğitmen, yazar. Derginin ilk sayısına ek olarak sunduğumuz [*Satranca İlk Adım*](/satranca-ilk-adim/) kitabının yazarı.' },
 ];
 
 function useReveal() {
@@ -355,7 +361,7 @@ export default function Index() {
             <div key={au.name} className="group p-6 xl:p-8 border-b sm:border-r border-[#2E2620] hover:bg-[#1A1512] transition-colors">
               <h3 className="f-display text-3xl">{au.name}</h3>
               <p className="f-mono text-[#C8893E] mt-3">{au.role}</p>
-              {au.bio && <p className="text-[1.1875rem] leading-[1.5] text-[#F1E9DC]/70 mt-4"><Markdown options={{ forceInline: true, overrides: { a: { props: { className: 'underline decoration-[#C8893E]/50 underline-offset-4 hover:text-[#C8893E] hover:decoration-[#C8893E]', target: '_blank', rel: 'noreferrer' } } } }}>{au.bio}</Markdown></p>}
+              {au.bio && <p className="text-[1.1875rem] leading-[1.5] text-[#F1E9DC]/70 mt-4"><Markdown options={{ forceInline: true, overrides: { a: { component: BioLink } } }}>{au.bio}</Markdown></p>}
             </div>
           ))}
         </div>
