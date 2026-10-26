@@ -350,9 +350,9 @@ export default function Index() {
           <Label n="03">Yazarlar</Label>
           <h2 className="f-display text-[clamp(48px,7vw,120px)] mt-8">Katkıda <em className="italic text-[#C8893E]">bulunanlar</em></h2>
         </div>
-        <div className="max-w-[1440px] mx-auto px-6 md:px-10 mt-16 grid sm:grid-cols-2 lg:grid-cols-4 border-t border-[#2E2620]">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-10 mt-16 grid sm:grid-cols-2 xl:grid-cols-5 border-t border-[#2E2620]">
           {AUTHORS.map((au) => (
-            <div key={au.name} className="group p-8 border-b sm:border-r border-[#2E2620] hover:bg-[#1A1512] transition-colors">
+            <div key={au.name} className="group p-6 xl:p-8 border-b sm:border-r border-[#2E2620] hover:bg-[#1A1512] transition-colors">
               <h3 className="f-display text-3xl">{au.name}</h3>
               <p className="f-mono text-[#C8893E] mt-3">{au.role}</p>
               {au.bio && <p className="text-[1.1875rem] leading-[1.5] text-[#F1E9DC]/70 mt-4"><Markdown options={{ forceInline: true, overrides: { a: { props: { className: 'underline decoration-[#C8893E]/50 underline-offset-4 hover:text-[#C8893E] hover:decoration-[#C8893E]', target: '_blank', rel: 'noreferrer' } } } }}>{au.bio}</Markdown></p>}
