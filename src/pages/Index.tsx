@@ -119,6 +119,8 @@ function ChessGrid({ w, h }: { w: number; h: number }) {
 export default function Index() {
   const [open, setOpen] = useState(false);
   const [cat, setCat] = useState('Tümü');
+  // Mobil (md altı): ilk liste her zaman sayının tüm yazıları; "Köşeler" altındaki ikinci liste seçilen köşeyi gösterir.
+  const [mcat, setMcat] = useState(CORNERS[0]);
   const [scrolled, setScrolled] = useState(false);
   // Bir köşe seçilince liste "Köşeler" başlığıyla hizalanır (Tümü seçiliyken "Tüm yazılar" başlığıyla): sol sütunda başlığın
   // üst boşluğu ölçülür, liste o kadar aşağı itilir. Yalnızca iki sütunlu düzende (md ve üstü).
@@ -207,6 +209,20 @@ export default function Index() {
   const [cover, ...rest] = ARTICLES.filter((a) => !a.unlisted);
   const featured = rest.slice(0, 3);
   const list = LISTED.filter((a) => cat === 'Tümü' || catsOf(a).includes(cat));
+  const mlist = LISTED.filter((a) => catsOf(a).includes(mcat));
+  const renderRows = (items: typeof LISTED, keyPrefix: string) => items.map((a, i) => (
+    <li key={keyPrefix + a.id}>
+      <Link to={articlePath(a)} className="group w-full text-left grid grid-cols-[48px_1fr_auto] md:grid-cols-[48px_1fr_auto] items-center gap-4 md:gap-6 py-7 border-b border-[#0E0C0A]/15">
+        <span className="f-mono normal-case text-[#0E0C0A]/40">{a.listNo ?? <>{String.fromCharCode(97 + (i % 8))}{i + 1}</>}</span>
+        <div>
+          {(catLabel(a) || a.listLabel) && <p className="f-mono text-[#9A5F1E] text-[11px]">{catLabel(a) || a.listLabel}</p>}
+          <p className={`f-display text-2xl md:text-4xl ${catLabel(a) || a.listLabel ? 'mt-2' : ''} group-hover:italic group-hover:translate-x-2 transition-all duration-500`}>{a.title}</p>
+          <p className="text-base text-[#0E0C0A]/60 mt-2">{a.credit ? <CreditLink credit={a.credit} /> : a.author} · <span className="whitespace-nowrap">{a.date}</span></p>
+        </div>
+        <ArrowUpRight className="group-hover:rotate-45 transition-transform" />
+      </Link>
+    </li>
+  ));
 
   return (
     <div className="sk min-h-screen overflow-x-hidden">
@@ -319,11 +335,12 @@ export default function Index() {
           <div ref={leftCol} className="md:col-span-3 reveal relative">
             <p className="f-mono text-[#0E0C0A]/60"><span className="text-[#9A5F1E]">02</span> — Bu Sayıdaki</p>
             <h2 className="f-display text-[clamp(36px,4.5vw,72px)] mt-8">Tüm<br /><em className="italic">yazılar</em></h2>
-            <div role="tablist" aria-label="Tüm yazılar" className="mt-12">
+            <div role="tablist" aria-label="Tüm yazılar" className="hidden md:block mt-12">
               <button role="tab" aria-selected={cat === 'Tümü'} onClick={() => setCat('Tümü')} className={tabCls(cat === 'Tümü')} aria-label="Tümü: Sayı 1">Sayı 1</button>
             </div>
-            <h2 id="koseler" ref={koseHead} className="f-display text-[clamp(36px,4.5vw,72px)] mt-14 scroll-mt-28"><em className="italic">Köşeler</em></h2>
-            <div role="tablist" aria-label="Köşeler" className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-8">
+            <p className="md:hidden f-mono mt-12 text-[#0E0C0A]/50">Sayı 1</p>
+            <h2 id="koseler" ref={koseHead} className="hidden md:block f-display text-[clamp(36px,4.5vw,72px)] mt-14 scroll-mt-28"><em className="italic">Köşeler</em></h2>
+            <div role="tablist" aria-label="Köşeler" className="hidden md:flex flex-wrap items-center gap-x-3 gap-y-2 mt-8">
               {CORNERS.map((k, i) => (
                 <span key={k} className="inline-flex items-center gap-x-3 whitespace-nowrap">
                 <button role="tab" aria-selected={cat === k} onClick={() => setCat(k)} className={tabCls(cat === k)}>{k}</button>
@@ -332,21 +349,24 @@ export default function Index() {
               ))}
             </div>
           </div>
-          <ul className="md:col-span-9 transition-[margin] duration-300" style={{ marginTop: listShift }}>
-            {list.map((a, i) => (
-              <li key={cat + a.id}>
-                <Link to={articlePath(a)} className="group w-full text-left grid grid-cols-[48px_1fr_auto] md:grid-cols-[48px_1fr_auto] items-center gap-4 md:gap-6 py-7 border-b border-[#0E0C0A]/15">
-                  <span className="f-mono normal-case text-[#0E0C0A]/40">{a.listNo ?? <>{String.fromCharCode(97 + (i % 8))}{i + 1}</>}</span>
-                  <div>
-                    {(catLabel(a) || a.listLabel) && <p className="f-mono text-[#9A5F1E] text-[11px]">{catLabel(a) || a.listLabel}</p>}
-                    <p className={`f-display text-2xl md:text-4xl ${catLabel(a) || a.listLabel ? 'mt-2' : ''} group-hover:italic group-hover:translate-x-2 transition-all duration-500`}>{a.title}</p>
-                    <p className="text-base text-[#0E0C0A]/60 mt-2">{a.credit ? <CreditLink credit={a.credit} /> : a.author} · <span className="whitespace-nowrap">{a.date}</span></p>
-                  </div>
-                  <ArrowUpRight className="group-hover:rotate-45 transition-transform" />
-                </Link>
-              </li>
-            ))}
+          {/* Masaüstü: sol sütundaki sekmelere bağlı tek liste. */}
+          <ul className="hidden md:block md:col-span-9 transition-[margin] duration-300" style={{ marginTop: listShift }}>
+            {renderRows(list, cat)}
           </ul>
+          {/* Mobil: önce sayının tüm yazıları, ardından Köşeler ve seçilen köşenin yazıları. */}
+          <ul className="md:hidden -mt-4">{renderRows(LISTED, 'all')}</ul>
+          <div className="md:hidden mt-6">
+            <h2 id="koseler-m" className="f-display text-[clamp(36px,4.5vw,72px)] scroll-mt-28"><em className="italic">Köşeler</em></h2>
+            <div role="tablist" aria-label="Köşeler" className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-8">
+              {CORNERS.map((k, i) => (
+                <span key={k} className="inline-flex items-center gap-x-3 whitespace-nowrap">
+                <button role="tab" aria-selected={mcat === k} onClick={() => setMcat(k)} className={tabCls(mcat === k)}>{k}</button>
+                {i < CORNERS.length - 1 && <span aria-hidden className="f-mono text-[#0E0C0A]/35">·</span>}
+                </span>
+              ))}
+            </div>
+            <ul className="mt-6">{renderRows(mlist, 'm' + mcat)}</ul>
+          </div>
         </div>
       </section>
 
