@@ -63,9 +63,9 @@ function BioLink({ href = '', children }: { href?: string; children?: React.Reac
 const AUTHORS: { name: string; role: string; bio?: string }[] = [
   { name: 'Nazmi Can Doğan', role: 'Kurucu, Yayın Yönetmeni', bio: 'FIDE ustası (FM). [YouTube kanalında](https://www.youtube.com/satranchess) içerik üretiyor ve canlı yayınlar yapıyor.' },
   { name: 'Oğul Köseoğlu', role: 'Kurucu, Editör', bio: 'Amatör satranççı, profesyonel [çevirmen](https://ogulkoseoglu.com/). Satranç vs.’nin ve [ChessPublica](https://chesspublica.github.io/)’nın web geliştiricisi.' },
-  { name: 'Tarık Selbes', role: 'Kurucu, Yazar', bio: 'FIDE ustası (FM). [Café Chigorin](https://cafechigorin.com/) kişisel blogunda satranç tarihi, teorisi ve kültürü üzerine yazıyor.' },
-  { name: 'Ahmad Al-Khatib', role: 'Konuk yazar', bio: 'Ürdün’ün ilk büyük ustası (GM). [YouTube kanalında](https://www.youtube.com/@GMAhmadAlkhatib) satranç içerikleri üretiyor.' },
-  { name: 'Görkem Sivri', role: 'Konuk yazar', bio: 'Satrançsever, oyuncu, eğitmen, yazar. Derginin ilk sayısına ek olarak sunduğumuz [*Satranca İlk Adım*](/satranca-ilk-adim/) kitabının yazarı.' },
+  { name: 'Tarık Selbes', role: 'Yazar', bio: 'FIDE ustası (FM). [Café Chigorin](https://cafechigorin.com/) kişisel blogunda satranç tarihi, teorisi ve kültürü üzerine yazıyor.' },
+  { name: 'Ahmad Al-Khatib', role: 'Yazar', bio: 'Ürdün’ün ilk büyük ustası (GM). [YouTube kanalında](https://www.youtube.com/@GMAhmadAlkhatib) satranç içerikleri üretiyor.' },
+  { name: 'Görkem Sivri', role: 'Yazar', bio: 'Satrançsever, oyuncu, eğitmen, yazar. Derginin ilk sayısına ek olarak sunduğumuz [*Satranca İlk Adım*](/satranca-ilk-adim/) kitabının yazarı.' },
 ];
 
 function useReveal() {
