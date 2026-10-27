@@ -75,7 +75,7 @@ function articlePages() {
           // Paylaşım görseli (kompakt kart): yazıdan kare fotoğraf (public/og/<id>.jpg, scripts/make-og.py), yoksa ortalanmış logo (og-logo.png; Facebook kareyi geniş karta kırparsa logo kesilmesin).
           const hasOg = fs.existsSync(path.resolve(__dirname, 'public/og', `${a.id}.jpg`));
           const img = `${SITE_URL}${hasOg ? `/og/${a.id}.jpg` : '/og-logo.png'}`;
-          const side = hasOg ? 400 : 600;
+          const side = 200;
           extra.push(`<meta property="og:image:width" content="${side}" />`, `<meta property="og:image:height" content="${side}" />`);
           extra.push(`<meta property="og:image" content="${img}" />`, `<meta name="twitter:image" content="${img}" />`);
           // Ana sayfa şablonundaki adres/görsel etiketlerini yazıya özel olanlarla değiştir (çift etiket olmasın).
