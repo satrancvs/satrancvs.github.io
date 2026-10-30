@@ -12,6 +12,7 @@ body { background:#000; display:flex; flex-direction:column; gap:40px; align-ite
   font-family:'Newsreader',serif; font-weight:320; font-optical-sizing:auto; padding:96px 96px 0; display:flex; flex-direction:column; }
 .mono { font-family:'JetBrains Mono',monospace; font-size:22px; letter-spacing:.2em; text-transform:uppercase; font-weight:400; }
 .accent { color:var(--accent); }
+.x-only { display:none; } body.x .x-only { display:inline; } body.x .ig-only { display:none; }
 .mute { color:var(--mute); }
 .disp { font-family:'Fraunces',serif; font-weight:300; letter-spacing:-.04em; line-height:.92; font-variation-settings:'opsz' 72; }
 .disp em, .serif em { font-style:italic; color:var(--accent); }
@@ -50,6 +51,7 @@ body { background:#000; display:flex; flex-direction:column; gap:40px; align-ite
 </style>
 </head>
 <body>
+<script>if (new URLSearchParams(location.search).has("x")) document.body.classList.add("x");</script>
 
 <!-- 1 · Kapak -->
 <section class="slide cover" id="s1">
@@ -63,22 +65,22 @@ body { background:#000; display:flex; flex-direction:column; gap:40px; align-ite
     <h1 class="disp wm"><span>Satranç</span><span><em>vs.</em></span></h1>
     <p class="issue">İlk sayı yayında</p>
   </div>
-  <div class="foot"><span class="mono mute">Ekim–Kasım–Aralık 2026</span><span class="mono accent">Kaydır →</span></div>
+  <div class="foot"><span class="mono mute">Ekim–Kasım–Aralık 2026</span><span class="mono accent ig-only">Kaydır →</span><span class="mono accent x-only">satrancvs.com</span></div>
 </section>
 
 <!-- 2 · Neden -->
 <section class="slide" id="s2">
-  <div class="top"><span class="mono accent">01 · Neden?</span><span class="mono mute">Satranç vs.</span></div>
+  <div class="top"><span class="mono accent"><span class="ig-only">01 · </span>Neden?</span><span class="mono mute">Satranç vs.</span></div>
   <div class="body">
     <h2 class="disp" style="font-size:92px;line-height:1.02">Satranç hakkında Türkçe yazılı içerik, uzunca süredir <em>ayakta durmakta zorlanıyor.</em></h2>
     <p class="serif" style="margin-top:72px">Oysa satranç, alt alta yazılan hamlelerden ibaret değil. İnsanlık kültürünün önemli bir parçası; şiire, resme, sinemaya, geometriye ve matematiğe değiyor.</p>
   </div>
-  <div class="foot"><span class="mono mute">2 / 6</span><span class="mono accent">→</span></div>
+  <div class="foot"><span class="mono mute ig-only">2 / 6</span><span class="mono accent ig-only">→</span><span class="mono mute x-only">satrancvs.com</span></div>
 </section>
 
 <!-- 3 · Köşeler -->
 <section class="slide" id="s3">
-  <div class="top"><span class="mono accent">02 · Ne yayınlıyoruz?</span><span class="mono mute">Satranç vs.</span></div>
+  <div class="top"><span class="mono accent"><span class="ig-only">02 · </span>Ne yayınlıyoruz?</span><span class="mono mute">Satranç vs.</span></div>
   <div class="body" style="justify-content:flex-start;padding-top:72px">
     <h2 class="disp" style="font-size:96px;line-height:1">Yedi köşe, <em>tek masa.</em></h2>
     <ul class="list">
@@ -91,12 +93,12 @@ body { background:#000; display:flex; flex-direction:column; gap:40px; align-ite
       <li><span class="n">07</span>Söyleşi</li>
     </ul>
   </div>
-  <div class="foot"><span class="mono mute">3 / 6</span><span class="mono accent">→</span></div>
+  <div class="foot"><span class="mono mute ig-only">3 / 6</span><span class="mono accent ig-only">→</span><span class="mono mute x-only">satrancvs.com</span></div>
 </section>
 
 <!-- 4 · İçindekiler -->
 <section class="slide" id="s4">
-  <div class="top"><span class="mono accent">03 · İlk sayıda</span><span class="mono mute">İçindekiler</span></div>
+  <div class="top"><span class="mono accent"><span class="ig-only">03 · </span>İlk sayıda</span><span class="mono mute">İçindekiler</span></div>
   <div class="body" style="justify-content:flex-start;padding-top:20px;padding-bottom:150px">
     <ol class="toc">
       <li><span class="n">a1</span><span class="t">İlk sayı, ilk hamle<small>Yayın ekibi</small></span></li>
@@ -110,18 +112,18 @@ body { background:#000; display:flex; flex-direction:column; gap:40px; align-ite
       <li><span class="n">EK</span><span class="t">Satranca ilk adım<small>Görkem Sivri · Sayı eki</small></span></li>
     </ol>
   </div>
-  <div class="foot"><span class="mono mute">4 / 6</span><span class="mono accent">→</span></div>
+  <div class="foot"><span class="mono mute ig-only">4 / 6</span><span class="mono accent ig-only">→</span><span class="mono mute x-only">satrancvs.com</span></div>
 </section>
 
 <!-- 5 · Davet -->
 <section class="slide" id="s5">
-  <div class="top"><span class="mono accent">04 · Davet</span><span class="mono mute">Satranç vs.</span></div>
+  <div class="top"><span class="mono accent"><span class="ig-only">04 · </span>Davet</span><span class="mono mute">Satranç vs.</span></div>
   <div class="body">
     <h2 class="disp big">Hamle sırası <em>hepimizde.</em></h2>
     <p class="serif" style="margin-top:60px;font-size:42px">Yazmak, çevirmek, düzeltmek, yayına hazırlamak, fotoğraflamak, çizmek ya da yalnızca “şunu da okumak isterim” demek isteyen herkes bu masaya oturabilir. Usta olmanız gerekmiyor.</p>
     <p class="mono accent" style="margin-top:44px;letter-spacing:.06em;text-transform:none;font-size:28px">editor@satrancvs.com</p>
   </div>
-  <div class="foot"><span class="mono mute">5 / 6</span><span class="mono accent">→</span></div>
+  <div class="foot"><span class="mono mute ig-only">5 / 6</span><span class="mono accent ig-only">→</span><span class="mono mute x-only">satrancvs.com</span></div>
 </section>
 
 <!-- 6 · Çağrı -->
