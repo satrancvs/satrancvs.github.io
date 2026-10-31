@@ -10,9 +10,10 @@ type Engine = {
   _variation?: { playing: boolean; index: number; maxIndex: number } | null;
   variationGoTo: (index: number) => void;
   goTo: (index: number) => void;
-  board?: { fen: () => string };
+  board?: { fen: () => string; position: (fen?: string, animate?: boolean) => unknown };
   togglePlay?: () => void;
 };
+type Lined = HTMLElement & { cpFens?: string[] };
 type Player = HTMLElement & { _engine?: Engine };
 
 const STUDY = 'pgn-study';
@@ -74,9 +75,67 @@ function installKeyboard() {
   }, true);
 }
 
+
+// Bir hamle listesine (ana hat ya da dal) tıklamak tahtayı birkaç yarım hamle uzağa atlatır; chessboard.js bu farkı tek
+// seferde, bütün taşları aynı anda en yakın kareye kaydırarak canlandırır ve taşlar "karışır". Aynı hat üzerindeki
+// atlamalar bunun yerine aradaki konumlardan sırayla, tek hamlelik kaydırmalarla oynatılır. Aynı hatta olmayan (dal
+// değiştiren) ya da çok uzak atlamalar kısa bir solma ile gösterilir.
+const placement = (fen: string) => fen.split(' ')[0];
+const STEP_MS = 230;
+const MAX_STEPS = 8;
+function smoothJumps(study: HTMLElement, engine: Engine) {
+  const board = engine.board;
+  if (!board || (board as { __smooth?: boolean }).__smooth) return;
+  (board as { __smooth?: boolean }).__smooth = true;
+  const original = board.position.bind(board);
+  let timer = 0;
+  const lines = () => {
+    const out: string[][] = [];
+    const cache = (engine as unknown as { state?: { cache?: string[] } }).state?.cache;
+    if (cache) out.push(cache.map(placement));
+    study.querySelectorAll<Lined>('.pgn-variation').forEach((v) => { if (v.cpFens) out.push(v.cpFens.map(placement)); });
+    return out;
+  };
+  const fade = () => {
+    const el = study.querySelector<HTMLElement>('.board-wrap, .jc-board-wrapper, [class*="board-"]');
+    const target = (el ?? study.querySelector<HTMLElement>('.player-container'))?.querySelector<HTMLElement>('[class*="piece"]')?.parentElement;
+    target?.animate?.([{ opacity: 0.25 }, { opacity: 1 }], { duration: 260, easing: 'ease-out' });
+  };
+  board.position = (fen?: string, animate?: boolean) => {
+    // Okuma çağrıları ("fen", "start", argümansız) ve FEN olmayan değerler olduğu gibi geçer; board.fen() de position("fen") kullanır.
+    if (typeof fen !== 'string' || !fen.includes('/')) return (original as (...a: unknown[]) => unknown)(fen, animate);
+    window.clearTimeout(timer);
+    if (animate === false) return original(fen, animate);
+    const to = placement(fen);
+    const from = placement(board.fen() as string);
+    if (from === to) return original(fen, animate);
+    let best: string[] | null = null;
+    for (const line of lines()) {
+      const a = line.indexOf(from);
+      if (a < 0) continue;
+      // Aynı konuma birden çok kez rastlanabilir: hedefe en yakın olanı al.
+      let b = -1;
+      for (let i = 0; i < line.length; i++) if (line[i] === to && (b < 0 || Math.abs(i - a) < Math.abs(b - a))) b = i;
+      if (b < 0 || b === a) continue;
+      const path = a < b ? line.slice(a + 1, b + 1) : line.slice(b, a).reverse();
+      if (!best || path.length < best.length) best = path;
+    }
+    if (best && best.length === 1) return original(fen, true);
+    if (!best || best.length > MAX_STEPS) { const r = original(fen, false); fade(); return r; }
+    const path = best;
+    const run = (i: number) => {
+      if (i >= path.length) return;
+      original(i === path.length - 1 ? fen : path[i], true);
+      timer = window.setTimeout(() => run(i + 1), STEP_MS);
+    };
+    run(0);
+  };
+}
+
 function prepare(study: HTMLElement) {
   const engine = engineOf(study);
   if (engine) {
+    smoothJumps(study, engine);
     // Sürekli döngüler yerine tek adım: tahta tıklaması ve dal seçicisi play() çağırır; adımı korur, oynatmayı durdurur.
     engine._loopRAF = () => {};
     engine._variationPlayTick = (v) => {
