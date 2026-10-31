@@ -412,7 +412,7 @@
 @media (min-width: 56em) {
   /* Çerçeve yazı sütunundan taşar (62rem, ekrana sığdığı kadar) ve ortalanır; sağdaki liste yeterince geniş kalır. */
   .study-frame { --study-pad: 1.25rem; width: min(62rem, calc(100vw - 3rem)); max-width: none; margin-left: 50%; transform: translateX(-50%); }
-  .study-frame :is(pgn-study, .pgn-study-loading) { height: calc(min(90vh, 44rem) - 6rem); min-height: 26rem; }
+  .study-frame :is(pgn-study, .pgn-study-loading) { height: calc(min(80vh, 38rem) - 6rem); min-height: 28rem; }
   .study-frame pgn-study { display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 1fr); grid-template-rows: auto 1fr; column-gap: 1.5rem; }
   .study-frame pgn-study > pgn-player { grid-column: 1; grid-row: 1; }
   .study-frame pgn-study pgn-player .player-wrapper { --board-size: min(400px, 100cqw); }
