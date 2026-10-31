@@ -99,7 +99,7 @@ const LOADING_HTML = `
         <div class="pgn-study-loading-board"></div>
         <div class="pgn-study-loading-side">
             <div class="pgn-study-loading-spinner"></div>
-            <p>Loading game…</p>
+            <p>Oyun yükleniyor...</p>
         </div>
     </div>`;
 

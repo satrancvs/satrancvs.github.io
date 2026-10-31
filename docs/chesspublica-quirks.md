@@ -150,3 +150,6 @@ Upstream blocks every variation click/arrow/play while a puzzle is active (`puzz
 
 ### Black move number after an inline comment in a variation (site patch in `ChessPublica.all.min.js`)
 In a `<pgn>` variation, comments are written inline into the line. The bundle did not reset its "needs a move number" flag after such a comment, so `( 11. d5 { Böyle … } { Örneğin, } 11... exd5 )` drew `Örneğin, exd5` without `11...`. The text branch of `at()` now sets `s=!0` for variations (the mainline branch and `pgn.js`'s `needsMoveNumber = true` already did).
+
+### Study loading text (site patch in `pgn-study.js`)
+`LOADING_HTML` said “Loading game…”; it is now “Oyun yükleniyor...” like the other games' placeholder (`.cp-loading`).
