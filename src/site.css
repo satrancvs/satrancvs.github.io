@@ -521,3 +521,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 /* Oyun sonu: son hamleden sonra gelen kısa yorum ("Beyaz terk etti.") ve sonuç (0-1) hamle satırıyla aynı satırda akar. */
 .cp-game .pgn-moves > .pgn-mainline:not(.pgn-result) + .pgn-comment:nth-last-child(2) { display: inline; margin: 0; }
 .cp-game .pgn-moves > .pgn-comment:nth-last-child(2) + .pgn-result { display: inline; margin: 0 0 0 .3em; }
+
+/* Inceleme görünümü: yan yana iki varyant bloğu arasındaki boşluk (ardışık blokların 1rem'lik kenar boşlukları üst üste biner),
+   ana hat / yorum satırı ile varyant arasındaki boşlukla (satır yüksekliği dahil ~24 px) aynı olsun. */
+.cp-game pgn-study .pgn-variation + .pgn-variation { margin-top: 1.5rem; }
