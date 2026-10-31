@@ -303,6 +303,9 @@
 /* Oyun henüz kurulmadıysa ham PGN metni görünmesin; kutu o sırada boş bir yer tutucu olur (sayfa kaymasın) */
 .cp-game pgn,
 .cp-game pgn-player:not(:has(.player-wrapper)) { display: none; }
+/* <pgn-study> ham PGN metni de kurulana (ChessPublica .cp-ready ekleyene) kadar gizli: ChessPublica'nın kendi gizleme kuralı
+   (pgn-study:not(.cp-ready)) paket CSS'i inene kadar yoktur, aradaki sürede aşağıdaki .cp-game pgn-study { display: flex } ham metni gösterirdi. */
+.cp-game pgn-study:not(.cp-ready) { display: none; }
 /* Oyun kurulana kadar kutu ortalı bir "Oyun yükleniyor..." yazısı gösterir (yer tutucuda ::before, kurulmuş
    kutuda .cp-loading); oyun gelince yazı kalkar, min-height de biter. (:has içinde :has kullanılamaz.) */
 .cp-game:not(:has(.player-wrapper, .pgn-container, .jc-board-wrapper)) {
