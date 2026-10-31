@@ -78,11 +78,11 @@ function installKeyboard() {
 
 // Bir hamle listesine (ana hat ya da dal) tıklamak tahtayı birkaç yarım hamle uzağa atlatır; chessboard.js bu farkı tek
 // seferde, bütün taşları aynı anda en yakın kareye kaydırarak canlandırır ve taşlar "karışır". Aynı hat üzerindeki
-// atlamalar bunun yerine aradaki konumlardan sırayla, tek hamlelik kaydırmalarla oynatılır. Aynı hatta olmayan (dal
-// değiştiren) ya da çok uzak atlamalar kısa bir solma ile gösterilir.
+// atlamalar bunun yerine aradaki konumlardan sırayla, tek hamlelik kaydırmalarla oynatılır. Dal değiştiren atlamalar da
+// ortak konumdan geçen en kısa yolla oynatılır; yol bulunamazsa ya da çok uzunsa kısa bir solma kullanılır.
 const placement = (fen: string) => fen.split(' ')[0];
 const STEP_MS = 230;
-const MAX_STEPS = 8;
+const MAX_STEPS = 24;
 function smoothJumps(study: HTMLElement, engine: Engine) {
   const board = engine.board;
   if (!board || (board as { __smooth?: boolean }).__smooth) return;
@@ -109,16 +109,28 @@ function smoothJumps(study: HTMLElement, engine: Engine) {
     const to = placement(fen);
     const from = placement(board.fen() as string);
     if (from === to) return original(fen, animate);
+    // Ana hat ve bütün dallar tek bir konum grafiğine konur (kenar = bir hamle, iki yönlü); dallar çıktıkları konumda
+    // ana hatta bağlanır. Aradaki en kısa yol, dallar arası geçişte de tek hamlelik kaymalarla oynatılır.
+    const graph = new Map<string, Set<string>>();
+    const link = (x: string, y: string) => {
+      if (x === y) return;
+      if (!graph.has(x)) graph.set(x, new Set());
+      if (!graph.has(y)) graph.set(y, new Set());
+      graph.get(x)!.add(y);
+      graph.get(y)!.add(x);
+    };
+    for (const line of lines()) for (let i = 1; i < line.length; i++) link(line[i - 1], line[i]);
     let best: string[] | null = null;
-    for (const line of lines()) {
-      const a = line.indexOf(from);
-      if (a < 0) continue;
-      // Aynı konuma birden çok kez rastlanabilir: hedefe en yakın olanı al.
-      let b = -1;
-      for (let i = 0; i < line.length; i++) if (line[i] === to && (b < 0 || Math.abs(i - a) < Math.abs(b - a))) b = i;
-      if (b < 0 || b === a) continue;
-      const path = a < b ? line.slice(a + 1, b + 1) : line.slice(b, a).reverse();
-      if (!best || path.length < best.length) best = path;
+    if (graph.has(from) && graph.has(to)) {
+      const prev = new Map<string, string | null>([[from, null]]);
+      const queue = [from];
+      for (let q = 0; q < queue.length && !prev.has(to); q++) {
+        for (const n of graph.get(queue[q])!) if (!prev.has(n)) { prev.set(n, queue[q]); queue.push(n); }
+      }
+      if (prev.has(to)) {
+        best = [];
+        for (let n: string | null = to; n && n !== from; n = prev.get(n) ?? null) best.unshift(n);
+      }
     }
     if (best && best.length === 1) return original(fen, true);
     if (!best || best.length > MAX_STEPS) { const r = original(fen, false); fade(); return r; }
@@ -126,7 +138,7 @@ function smoothJumps(study: HTMLElement, engine: Engine) {
     const run = (i: number) => {
       if (i >= path.length) return;
       original(i === path.length - 1 ? fen : path[i], true);
-      timer = window.setTimeout(() => run(i + 1), STEP_MS);
+      timer = window.setTimeout(() => run(i + 1), path.length > 8 ? 150 : STEP_MS);
     };
     run(0);
   };
