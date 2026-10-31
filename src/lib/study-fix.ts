@@ -9,6 +9,7 @@ type Engine = {
   _variationPlayTick: (variation: { playing: boolean; index: number; maxIndex: number }) => void;
   _variation?: { playing: boolean; index: number; maxIndex: number } | null;
   variationGoTo: (index: number) => void;
+  pause: () => void;
   goTo: (index: number) => void;
   board?: { fen: () => string };
   togglePlay?: () => void;
@@ -86,7 +87,20 @@ function installVariationJump(study: HTMLElement) {
     const engine = engineOf(study);
     const list = move?.closest<VariationList>('.pgn-variation');
     const v = engine?._variation;
-    if (!move || !engine || !list || !v || !list.cpFens || (v as { fens?: string[] }).fens !== list.cpFens) return;
+    if (!move || !engine || !list || !v) return;
+    if (!list.cpFens || (v as { fens?: string[] }).fens !== list.cpFens) {
+      // Başka bir dala (ya da açık dalın alt dalına) tıklanıyor: ChessPublica'nın kendi işleyicisi çalışır, ama önce
+      // engine.pause() çağırır ve bu, tahtayı ana hattaki konuma çizer (oradaki taşlar kısa bir an görünür, sonra
+      // dal konumuna kayar). Bu tıklama süresince pause() tahtaya dokunmaz.
+      const pause = engine.pause;
+      engine.pause = function (this: Engine) {
+        const self = this as unknown as { state: { playing: boolean }; container?: HTMLElement };
+        self.state.playing = false;
+        self.container?.classList.add('paused');
+      };
+      setTimeout(() => { engine.pause = pause; }, 0);
+      return;
+    }
     const vIndex = parseInt(move.dataset.vindex ?? '', 10);
     if (Number.isNaN(vIndex)) return;
     e.stopImmediatePropagation();
