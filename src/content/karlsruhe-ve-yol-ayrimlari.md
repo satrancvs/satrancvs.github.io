@@ -13,14 +13,13 @@ Bir diğer bildiğim, düşük reytinge sahip de olsa, Hindistan'dan çıkan her
 [Event "GRENKE Açık"]
 [Site "Karlsruhe"]
 [Date "2026.04.02"]
-[Round "1"]
 [White "Yash Watarkar"]
 [Black "Tarık Selbes"]
 [Result "0-1"]
 [WhiteElo "2018"]
 [BlackElo "2246"]
 [Annotator "FM Tarık Selbes"]
-[EventLine "GRENKE Açık - A kategorisi, 02.04.2026"]
+[EventLine "GRENKE Açık - A kategorisi, 1. tur, 02.04.2026"]
 
 1. c4 e5 { Son zamanlarda İngiliz Açılışı’na karşı ...e5 oynamaya karar verdim. Bana göre bu en prensipli yaklaşım: Beyaz c4 oynayarak merkezi doğrudan işgal etmiyorsa Siyahın da ...e5 ile merkeze piyon sürmesi oldukça doğal. Bir bakıma Beyazdan daha fazla merkez kontrolü elde ettiğimizi iddia ediyoruz. } { Açılış için planım basitti: Beyaz Nc3 oynarsa hemen ...Bb4 oynayacaktım, devamında: } ( 1... e5 2. Nc3 Bb4 3. Nd5 Be7 4. d4 d6 { ve sevdiğim Şah-Hint piyon yapılarından birine ulaşmayı planlıyordum. }
 { Koyu kareli fil e7’de veya g7’de olabilir, Siyah d6-e5 piyon merkeziyle oynamak istiyor. Gözlemlerime göre Siyah, farklı hamle sıralarından Şah-Hint yapısına ulaştığında genellikle iyi bir konum elde edebiliyor. } ) 2. g3 { Ancak rakibim burada g3 oynadı. Böyle olunca ...Bb4 fikrinin artık bir anlamı kalmadı, çünkü Beyaz henüz Nc3 oynamadı. } 2... d6 ({ Açıkçası tahta başında hazırlığım yoktu ve ne yapacağımdan emin değildim. Burada elbette Nf6 oynanabilir: } 2... Nf6 3. Bg2 Nc6 4. Nc3 Bb4 5. Nd5 { Ancak bu hamlelerden sonra tahtada görmek istediğimden farklı bir konuma ulaşıyoruz. ...Nc6 oynamış olan siyahın artık ...c6 ile güçlü beyaz atı rahatsız etmesi çok daha zor. } ) { Daha ikinci hamleden hazırlıksız yakalanmak, IM olmak isteyen bir oyuncu için acıklı bir durum. } { Bir süre tahta başında düşündükten sonra …d6 oynamaya karar verdim. Bu hamlenin temel fikri seçeneklerimi elimde tutarak önce rakibimin planını göstermesini beklemekti: Gerekirse ...f5 ile devam edebilirim ya da ...g6 oynayabilirim. } 3. Bg2 Nc6 { Bu noktada ...f5 aklımdan geçti, ancak buna karşı d4 sürüşü biraz can sıkıcı görünüyordu. Ama bilgisayar burada ciddi bir sorun görmüyor: } ( 3... f5 4. d4 Nf6 5. dxe5 dxe5 6. Qxd8 Kxd8 { hamlelerinden sonra oluşan konum bilgisayara göre Siyah için rahatlıkla oynanabilir. } ) 4. Nc3 { Rakibim yaklaşık 2000 Elo seviyesinde bir oyuncuydu ve bu oyunu kazanmam gerekiyordu. Bu nedenle böyle erken vezir değişimine giden, teknik eşitlik pozisyonlarına girmek istemedim. Öte yandan 3... Nc6, ...f5 fikrine de engel olmuyor, bu fikir hâlâ elimizde ve dilediğimiz zaman hayata geçirebiliriz.
@@ -49,14 +48,13 @@ Lise eğitimimi tamamladığımda üniversiteyi Almanya'da mı yoksa Türkiye’
 [Event "GRENKE Açık"]
 [Site "Karlsruhe"]
 [Date "2026.04.02"]
-[Round "1"]
 [White "Yash Watarkar"]
 [Black "Tarık Selbes"]
 [Result "0-1"]
 [WhiteElo "2018"]
 [BlackElo "2246"]
 [Annotator "FM Tarık Selbes"]
-[EventLine "GRENKE Açık - A kategorisi, 02.04.2026"]
+[EventLine "GRENKE Açık - A kategorisi, 1. tur, 02.04.2026"]
 [View "study"]
 
 Devamı gelecek. Kaçırmamak için [bültene abone ol](/#bulten).
