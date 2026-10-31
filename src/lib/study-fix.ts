@@ -13,6 +13,7 @@ type Engine = {
   board?: { fen: () => string };
   togglePlay?: () => void;
 };
+type VariationList = HTMLElement & { cpFens?: string[] };
 type Player = HTMLElement & { _engine?: Engine };
 
 const STUDY = 'pgn-study';
@@ -74,10 +75,30 @@ function installKeyboard() {
   }, true);
 }
 
+// Açık dalın içindeki bir hamleye tıklamak ChessPublica'da dalı kapatıp (tahta önce ana hattaki konuma döner) yeniden açar:
+// tahta ana hat hamlesine kayıp oradan dal konumuna gider. Aynı dalın bir hamlesine tıklanınca ileri/geri düğmesi gibi
+// doğrudan o konuma geçilir (variationGoTo; engine.pause() çağrılmaz, çünkü dalı kapatıp tahtayı ana hatta döndürür); başka bir dala ya da ana hatta tıklamak ChessPublica'nın kendi yolunu izler.
+function installVariationJump(study: HTMLElement) {
+  if (study.dataset.cpJump) return;
+  study.dataset.cpJump = '1';
+  study.addEventListener('click', (e) => {
+    const move = (e.target as Element).closest<HTMLElement>('.pgn-move');
+    const engine = engineOf(study);
+    const list = move?.closest<VariationList>('.pgn-variation');
+    const v = engine?._variation;
+    if (!move || !engine || !list || !v || !list.cpFens || (v as { fens?: string[] }).fens !== list.cpFens) return;
+    const vIndex = parseInt(move.dataset.vindex ?? '', 10);
+    if (Number.isNaN(vIndex)) return;
+    e.stopImmediatePropagation();
+    engine.variationGoTo(vIndex + 1);
+  }, true);
+}
+
 function prepare(study: HTMLElement) {
   const engine = engineOf(study);
   if (engine) {
     // Sürekli döngüler yerine tek adım: tahta tıklaması ve dal seçicisi play() çağırır; adımı korur, oynatmayı durdurur.
+    installVariationJump(study);
     engine._loopRAF = () => {};
     engine._variationPlayTick = (v) => {
       if (engine._variation !== v || !v.playing) return;
