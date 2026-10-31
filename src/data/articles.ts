@@ -3,6 +3,7 @@ import timmanMd from '@/content/mar-del-plata-1982.md?raw';
 import muglaMd from '@/content/amman-mugla.md?raw';
 import zebraMd from '@/content/zebralar-icin-satranc.md?raw';
 import karlsruheMd from '@/content/karlsruhe-ve-yol-ayrimlari.md?raw';
+import karlsruhe2Md from '@/content/karlsruhe-2-taslak.md?raw';
 import gomoriMd from '@/content/eugen-gomori.md?raw';
 import atFilMd from '@/content/at-ve-fil.md?raw';
 import aronianMd from '@/content/aronian-caro-kann.md?raw';
@@ -23,6 +24,7 @@ const CHUNKS: Record<string, string[]> = {
   mugla: splitArticle(muglaMd).chunks,
   zebra: splitArticle(zebraMd).chunks,
   karlsruhe: splitArticle(karlsruheMd).chunks,
+  'karlsruhe-2-taslak': splitArticle(karlsruhe2Md).chunks,
   gomori: splitArticle(gomoriMd).chunks,
   atfil: splitArticle(atFilMd).chunks,
   aronian: splitArticle(aronianMd).chunks,

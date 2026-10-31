@@ -516,3 +516,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .cp-game .video-comment > .cp-more-right > p { margin: 0 0 .75rem; }
 .cp-game .video-comment > .cp-more-right > p:last-child { margin-bottom: .25rem; }
 .cp-game .video-comment.cp-in-variation > .cp-more-right { display: none; }
+
+/* Test taslağı: PGN ham metin olarak gösterilir */
+.art-prose pre { white-space: pre-wrap; overflow-wrap: anywhere; font-family: 'JetBrains Mono', monospace; font-size: .8rem; line-height: 1.6; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12); padding: 1rem; margin: 1.5rem 0; }
+.art-prose pre code { font: inherit; }
