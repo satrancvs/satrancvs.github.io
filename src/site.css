@@ -15,6 +15,7 @@
 .f-display { font-family:'Fraunces',serif; letter-spacing:-0.04em; line-height:.9; font-weight:300; font-variation-settings:'opsz' 72; }
 .art-prose, .quote > p { font-family:'Eval','EvalPM','Figurine','Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height:1.7; font-optical-sizing:auto; font-weight:320; color:rgb(var(--fg-rgb) / .95); }
 /* Oyun başlığındaki oyuncu adları (GameSection, alıntı kutusu): metinle aynı boyutta, kalın. */
+.game-names .elo { font-size:.82em; font-weight:500; white-space:nowrap; }
 .game-names { font-family:'Eval','EvalPM','Figurine','Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); font-weight:600; line-height:1.7; color:rgb(var(--fg-rgb) / .95); }
 .art-prose strong, .art-prose b, .quote strong, .cp-game :is(.pgn-comment, .pgn-comment-inline, .pgn-variation, .video-comment, .comment-body) :is(strong, b) { font-weight:500; }
 .cp-game .pgn-mainline, .cp-game .pgn-comment, .cp-game .pgn-comment-inline, .cp-game .pgn-variation, .cp-game .video-comment, .cp-game .comment-body { font-family:'Eval','EvalPM','Figurine','Newsreader',serif; font-size:clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height:1.7; font-optical-sizing:auto; font-weight:320; color:rgb(var(--fg-rgb) / .95); }
