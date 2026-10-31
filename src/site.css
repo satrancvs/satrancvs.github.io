@@ -517,3 +517,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .cp-game .video-comment > .cp-more-right > p { margin: 0 0 .75rem; }
 .cp-game .video-comment > .cp-more-right > p:last-child { margin-bottom: .25rem; }
 .cp-game .video-comment.cp-in-variation > .cp-more-right { display: none; }
+
+/* Oyun sonu: son hamleden sonra gelen kısa yorum ("Beyaz terk etti.") ve sonuç (0-1) hamle satırıyla aynı satırda akar. */
+.cp-game .pgn-moves > .pgn-mainline:not(.pgn-result) + .pgn-comment:nth-last-child(2) { display: inline; margin: 0; }
+.cp-game .pgn-moves > .pgn-comment:nth-last-child(2) + .pgn-result { display: inline; margin: 0 0 0 .3em; }
