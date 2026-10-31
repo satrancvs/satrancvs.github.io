@@ -156,3 +156,6 @@ In a `<pgn>` variation, comments are written inline into the line. The bundle di
 
 ### Scrolling a clicked move to the top of the study list (site patch in `pgn-study.js`)
 `scrollMoveToBoardTop()` aligned the move's own box (shorter than its line) with the top edge of `.pgn-container`, which cut off the top of the active-move highlight. It now leaves the line's own leading (at least 6 px) above the move.
+
+### Move-quality badge when entering a variation by click (site patch in `pgn-study.js`)
+The reading column's click handler ended with `showVariationPosition(fen, null, move, null)`: no glyph, so the `!`/`?`/`!?` badge of the clicked variation move was never drawn (stepping with the arrows or clicking inside the open variation used `variationGoTo()`, which does). It now calls `variationGoTo(engine._variation.index)` after entering the variation chain.

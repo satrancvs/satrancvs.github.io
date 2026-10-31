@@ -1426,7 +1426,11 @@ initPgnElements();
                     });
                 }
 
-                engine.showVariationPosition(fen, null, move, null);
+                // Site patch: showVariationPosition(fen, null, move, null) passes no glyph, so entering a variation by clicking
+                // one of its moves never drew the !/?/!?… badge of that move. variationGoTo() shows the same position and
+                // takes the glyph (and annotation) from the variation's own data, like arrow-key stepping does.
+                if (chain.length && engine._variation) engine.variationGoTo(engine._variation.index);
+                else engine.showVariationPosition(fen, null, move, null);
                 setActiveMove(moveEl);
             });
 
