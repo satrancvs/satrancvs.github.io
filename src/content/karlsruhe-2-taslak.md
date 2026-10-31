@@ -21,7 +21,7 @@ Saat dörtte başlayan akşam turunun eşlendirmesi de tur saatine oldukça yak�
 
 Turnuvanın devasa boyutları tur sonuçlarının ve dolayısıyla eşlendirmenin gecikmesine yol açıyor; hem sabah turlarının eşlendirmesi ancak gece yarısı belli oluyor hem de akşam turlarının eşlendirmesi ancak turdan çok kısa bir zaman önce öğrenilebiliyor. Benim gibi doğaçlama oynamayı seven ve hazırlık konusunda tembel oyuncular içinse belki de böyle yoğun bir program avantaj bile olabilir. En azından turnuva boyunca bu hipotezin kısmen doğrulandığını söyleyebilirim.
 
-Foto 3 · Karlsruhe Sarayı’nın arka cepheden görünümü.
+![Karlsruhe Sarayı’nın arka cepheden görünümü](images/karlsruhe-sarayi.jpg "Karlsruhe Sarayı’nın arka cepheden görünümü. · Fotoğraf: Tarık Selbes")
 
 Nihayet üstten bir rakip çektiğim üçüncü turda yirmi yaşındaki genç Alman Isaac Garner (2403) karşısında tahta başında orijinal bir fikir buldum ve rakibim biraz da gereksiz yere panikleyerek beraberlik teklif edince kabul ederek iyi başlangıcımı sürdürdüm:
 
