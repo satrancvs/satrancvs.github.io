@@ -1069,7 +1069,9 @@ class GoodMove {
   _show(glyph, toSquare) {
     if (!glyph || !toSquare) return;
 
-    const meta = GLYPH_META[glyph];
+    // Site patch: a variation move that carries a quality mark and an evaluation ("Nd3! $19") comes in as the joined string
+    // "!−+" (nagsToGlyph), which has no badge of its own: draw the move-quality part ("!") instead of nothing.
+    const meta = GLYPH_META[glyph] || GLYPH_META[(String(glyph).match(/^(!!|\?\?|!\?|\?!|!|\?)/) || [])[1]];
     if (!meta) return;
 
     // Locate the square DOM element inside the board

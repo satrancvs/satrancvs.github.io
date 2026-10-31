@@ -159,3 +159,7 @@ In a `<pgn>` variation, comments are written inline into the line. The bundle di
 
 ### Move-quality badge when entering a variation by click (site patch in `pgn-study.js`)
 The reading column's click handler ended with `showVariationPosition(fen, null, move, null)`: no glyph, so the `!`/`?`/`!?` badge of the clicked variation move was never drawn (stepping with the arrows or clicking inside the open variation used `variationGoTo()`, which does). It now calls `variationGoTo(engine._variation.index)` after entering the variation chain.
+
+### Badges: joined glyphs and clicking the next mainline move (site patches)
+- `GoodMove._show()` (`pgn-player.js`): a variation move with a quality mark *and* an evaluation (`Nd3! $19`) reaches it as the joined string `"!−+"` (`nagsToGlyph`), which has no entry in `GLYPH_META`, so no badge was drawn. It now falls back to the leading quality glyph (`!`, `?`, `!!`, `??`, `!?`, `?!`).
+- `pgn-study.js` reading-column click on a mainline move: the `goTo()` wrapper (branch pause) refused a step to the very next ply when that move has PGN alternatives, so clicking it did nothing (the board and the badge stayed on the previous move). The click now sets `allowNextAdvance` before `goTo()`.

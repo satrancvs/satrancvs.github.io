@@ -1333,6 +1333,9 @@ initPgnElements();
                 if (moveEl.dataset.ply !== undefined) {
                     const moveIndex = parseInt(moveEl.dataset.ply, 10);
                     if (Number.isNaN(moveIndex)) return;
+                    // Site patch: the goTo() wrapper (branch pause) refuses a step to the very next ply when that move has
+                    // PGN alternatives, waiting for the move picker. A click on the move itself is the reader's choice: let it through.
+                    allowNextAdvance = true;
                     engine.goTo(moveIndex + 1); // goTo() takes a position index (ply + 1), not a move index; fires "cp-move" above
                     return;
                 }
