@@ -57,6 +57,7 @@ function articlePages() {
         const template = fs.readFileSync(path.join(outDir, 'index.html'), 'utf8');
         const urls = [`${SITE_URL}/`];
         for (const a of articles) {
+          const hasOgImg = (id: string) => fs.existsSync(path.resolve(__dirname, 'public/og', `${id}.jpg`));
           const url = `${SITE_URL}/${a.slug}/`;
           const title = `${toTypography(a.title)} — Satranç vs.`;
           // Özeti (excerpt/dek) olmayan yazıda sitenin genel açıklaması kalır.
@@ -71,12 +72,14 @@ function articlePages() {
           html = setMeta(html, 'property', 'og:title', title);
           html = setMeta(html, 'property', 'og:type', 'article');
           html = setMeta(html, 'name', 'twitter:title', title);
+          // Kare fotoğraflı (200 px) yazılar küçük kartta kalır; varsayılan geniş görsel (1200 × 630) şablondaki summary_large_image'ı kullanır.
+          if (hasOgImg(a.id)) html = html.replace('content="summary_large_image"', 'content="summary"');
           const extra = a.unlisted ? ['<meta name="robots" content="noindex, nofollow" />'] : [`<link rel="canonical" href="${url}" />`, `<meta property="og:url" content="${url}" />`];
           // Paylaşım görseli (kompakt kart): yazıdan kare fotoğraf (public/og/<id>.jpg, scripts/make-og.py), yoksa ortalanmış logo (og-logo.png; Facebook kareyi geniş karta kırparsa logo kesilmesin).
-          const hasOg = fs.existsSync(path.resolve(__dirname, 'public/og', `${a.id}.jpg`));
-          const img = `${SITE_URL}${hasOg ? `/og/${a.id}.jpg` : '/og-logo.png'}`;
-          const side = 200;
-          extra.push(`<meta property="og:image:width" content="${side}" />`, `<meta property="og:image:height" content="${side}" />`);
+          const hasOg = hasOgImg(a.id);
+          const img = `${SITE_URL}${hasOg ? `/og/${a.id}.jpg` : '/og-default.png'}`;
+          const [iw, ih] = hasOg ? [200, 200] : [1200, 630];
+          extra.push(`<meta property="og:image:width" content="${iw}" />`, `<meta property="og:image:height" content="${ih}" />`);
           extra.push(`<meta property="og:image" content="${img}" />`, `<meta name="twitter:image" content="${img}" />`);
           // Ana sayfa şablonundaki adres/görsel etiketlerini yazıya özel olanlarla değiştir (çift etiket olmasın).
           html = html.replace(/\s*<(meta property="og:(url|image(:\w+)?)"|meta name="twitter:image"|link rel="canonical")[^>]*>/g, '');
