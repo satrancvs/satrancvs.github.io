@@ -526,7 +526,13 @@ initPgnElements();
             const scrollColumnEl = studyEl.querySelector('.pgn-container');
             function scrollMoveToBoardTop(el) {
                 if (!scrollColumnEl) return;
-                const delta = el.getBoundingClientRect().top - scrollColumnEl.getBoundingClientRect().top;
+                // Site patch: the move's own box is shorter than its line (line-height), and the active-move highlight
+                // (padding, rounded corners) reaches above the box, so aligning the box exactly with the column's top edge
+                // clipped the top of the highlight. Leave the line's own leading (at least 6 px) above the move.
+                const box = el.getBoundingClientRect();
+                const lineHeight = parseFloat(getComputedStyle(el).lineHeight);
+                const lead = Math.max(6, Number.isFinite(lineHeight) ? (lineHeight - box.height) / 2 : 0);
+                const delta = box.top - scrollColumnEl.getBoundingClientRect().top - lead;
                 scrollColumnEl.scrollBy({ top: delta, behavior: 'smooth' });
             }
 

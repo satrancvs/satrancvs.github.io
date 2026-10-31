@@ -153,3 +153,6 @@ In a `<pgn>` variation, comments are written inline into the line. The bundle di
 
 ### Study loading text (site patch in `pgn-study.js`)
 `LOADING_HTML` said “Loading game…”; it is now “Oyun yükleniyor...” like the other games' placeholder (`.cp-loading`).
+
+### Scrolling a clicked move to the top of the study list (site patch in `pgn-study.js`)
+`scrollMoveToBoardTop()` aligned the move's own box (shorter than its line) with the top edge of `.pgn-container`, which cut off the top of the active-move highlight. It now leaves the line's own leading (at least 6 px) above the move.
