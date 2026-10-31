@@ -90,6 +90,9 @@ function installVariationJump(study: HTMLElement) {
     const vIndex = parseInt(move.dataset.vindex ?? '', 10);
     if (Number.isNaN(vIndex)) return;
     e.stopImmediatePropagation();
+    // Bir sonraki hamle dal noktasındaysa (o hamlenin alternatifi varsa) ChessPublica düz "ileri" adımını reddeder (dal seçicisi
+    // açıktır): ileri düğmesiyle aynı yol, seçicideki ana hat satırını çözmektir.
+    if (vIndex + 1 === v.index + 1 && resolveBranch(study)) return;
     engine.variationGoTo(vIndex + 1);
   }, true);
 }
