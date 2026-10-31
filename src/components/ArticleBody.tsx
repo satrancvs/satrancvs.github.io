@@ -263,7 +263,7 @@ function gameToc(chunks: string[]): GameItem[] {
       players: `${fullName(t.White)}${t.WhiteElo ? ` (${t.WhiteElo})` : ''} – ${fullName(t.Black)}${t.BlackElo ? ` (${t.BlackElo})` : ''}`,
       round: t.Round || String(n),
       hasRound: !!t.Round,
-      label: `${surname(t.White)} – ${surname(t.Black)}`,
+      label: `${surname(t.White)}${t.WhiteElo ? ` (${t.WhiteElo})` : ''} – ${surname(t.Black)}${t.BlackElo ? ` (${t.BlackElo})` : ''}`,
       result: (t.Result ?? '').replace('1/2-1/2', '½–½').replace(/-/g, '–'),
     });
   });
