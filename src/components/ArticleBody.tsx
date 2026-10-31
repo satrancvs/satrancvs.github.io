@@ -345,7 +345,7 @@ function GameSection({ item, watchId, watchLabel, onWatch, children }: { item: G
           {item.place && <p className="mt-1 text-[color:var(--mute)]"><Markdown options={{ forceInline: true }}>{item.place}</Markdown></p>}
         </div>
       )}
-      {!info && <h4 className="flex items-baseline gap-4 py-4 mb-4 text-[color:rgb(var(--fg-rgb)/0.9)] md:grid md:grid-cols-[1fr_400px_1fr] md:gap-0">
+      {!info && <h4 className="flex items-baseline gap-4 py-4 mb-4 text-[color:rgb(var(--fg-rgb)/0.9)] md:grid md:grid-cols-[1fr_minmax(400px,auto)_1fr] md:gap-0">
         <span className="f-mono text-[color:var(--accent)] w-[5rem] shrink-0">{`${item.round}. tur`}</span>
         <span className="game-names flex-1 md:text-center"><WithElo text={item.label} /></span>
         <span className="f-mono text-[color:var(--mute)] md:justify-self-end">{item.result}</span>
