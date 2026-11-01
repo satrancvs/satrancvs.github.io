@@ -103,7 +103,7 @@ Nihayet üstten bir rakip çektiğim üçüncü turda yirmi yaşındaki genç Al
 
 Bu oyunla başlayan üstten çektiğim rakiplere karşı üstün, hatta kazanç konum elde edip ardından kaybetme paternini maalesef turnuva sonuna kadar sürdürdüm. İşin sevindirici tarafıysa benden düşük ratingli oyunculara karşı iyi performans göstermiş olmamdı.
 
-Nitekim beşinci turda 12 yaşındaki yetenekli satranççımız Poyraz Efe Aşıcı karşısında biraz da belki açılış bakımından şansımın yaver gitmesiyle kolayca kazanmayı başardım:
+Beşinci turda 12 yaşındaki yetenekli satranççımız Poyraz Efe Aşıcı karşısında biraz da belki açılış bakımından şansımın yaver gitmesiyle oyunu kazanmayı başardım:
 
 [Event "GRENKE Açık A Kategorisi"]
 [Site "Karlsruhe, Almanya"]
