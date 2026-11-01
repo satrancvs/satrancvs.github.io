@@ -14,18 +14,19 @@ body { background:#000; }
 .accent { color:var(--accent); }
 .mute { color:var(--mute); }
 .top { display:flex; justify-content:space-between; align-items:center; }
-.disp { font-family:'Fraunces',serif; font-weight:300; letter-spacing:-.04em; line-height:1; font-variation-settings:'opsz' 72; font-size:98px; margin-top:34px; white-space:nowrap; }
+.disp { font-family:'Fraunces',serif; font-weight:300; letter-spacing:-.04em; line-height:1; font-variation-settings:'opsz' 72; font-size:96px; margin-top:34px; white-space:nowrap; }
 .disp em { font-style:italic; color:var(--accent); }
-.board { margin-top:40px; width:768px; height:768px; align-self:center; display:grid; grid-template-columns:repeat(8,96px); grid-template-rows:repeat(8,96px); border:2px solid #3a3027; position:relative; }
-.sq { width:96px; height:96px; position:relative; }
+.board { margin-top:36px; width:704px; height:704px; align-self:center; display:grid; grid-template-columns:repeat(8,88px); grid-template-rows:repeat(8,88px); border:2px solid #3a3027; position:relative; }
+.sq { width:88px; height:88px; position:relative; }
 .sq.l { background:#EBD9B6; } .sq.d { background:#B58863; }
-.sq img { position:absolute; inset:0; width:96px; height:96px; }
+.sq img { position:absolute; inset:0; width:88px; height:88px; }
 .sq b { position:absolute; font-family:'JetBrains Mono',monospace; font-size:17px; font-weight:500; opacity:.75; }
 .sq.l b { color:#8a6a47; } .sq.d b { color:#F1E4C8; }
 .sq b.r { left:7px; top:5px; } .sq b.f { right:8px; bottom:4px; }
 .cap { margin-top:32px; display:flex; justify-content:space-between; align-items:baseline; gap:24px; }
-.cap .mono { font-size:19px; letter-spacing:.14em; }
-.q { font-family:'Fraunces',serif; font-weight:300; font-size:54px; letter-spacing:-.02em; line-height:1.1; }
+.cap .mono { font-size:17px; letter-spacing:.12em; }
+.q { font-family:'Fraunces',serif; font-weight:300; font-size:52px; letter-spacing:-.03em; line-height:1.1; font-variation-settings:'opsz' 72; white-space:nowrap; }
+.q em { font-style:italic; color:var(--accent); }
 .foot { position:absolute; left:96px; right:96px; bottom:64px; display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--line); padding-top:28px; }
 .logo { width:44px; height:44px; display:block; }
 .pill { display:inline-block; border:2px solid var(--accent); color:var(--accent); padding:14px 26px; font-family:'JetBrains Mono',monospace; font-size:21px; letter-spacing:.08em; text-transform:uppercase; font-weight:500; }
@@ -33,11 +34,11 @@ body { background:#000; }
 </head>
 <body>
 <section class="slide" id="s1">
-  <div class="top"><span class="mono accent">Karlsruhe günlüğünün devamı yayında</span><span class="mono mute">2. bölüm</span></div>
-  <div class="disp">Siyah oynar, <em>kazanır.</em></div>
+  <div class="top"><span class="mono accent">Turnuva günlüğü</span><span class="mono mute">2. bölüm</span></div>
+  <div class="disp">Karlsruhe günlüğünün<br><em>devamı yayında.</em></div>
   <div class="board" id="board" aria-label="Siyah oynar: konum"></div>
   <div class="cap">
-    <span class="q">Hamle ne?</span>
+    <span class="q">Siyah oynar, <em>kazanır.</em></span>
     <span class="mono mute" style="text-align:right">Aşıcı – Selbes · GRENKE Açık<br>Karlsruhe 2026 · 5. tur</span>
   </div>
   <div class="foot">
