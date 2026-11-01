@@ -120,6 +120,6 @@ Beşinci turda 12 yaşındaki yetenekli satranççımız Poyraz Efe Aşıcı kar
 
 Bursa'nın yetiştirdiği genç yeteneklerden **Poyraz Efe Aşıcı** daha önce Dünya Okullar Satranç Şampiyonası gibi uluslararası turnuvalarda dereceler elde etmişti. Aşıcı, bu turnuvadaki başarılı performansıyla 2220 Elo puanına ulaşarak Aday Usta (CM) ünvanına kavuştu. Bir sonraki karşılaşmamızın böyle olmayacağından eminim!
 
-Beş turda 3,5 puanla girdiğim altıncı turda rakibim yine yetenekli bir genç olan Sloven FM Brilej idi. Turnuvayı iyi bitirmeyi garantilemek adına bir galibiyet elbette çok hoş olacaktı. Tura oldukça moralli ve umutlu girdim. Oyun sırasında da umutlarım arttıysa da göreceğimiz gibi Caissa'nın planları başkaydı.
+Beş turda 3,5 puan aralak girdiğim altıncı turda rakibim yine yetenekli bir genç olan FM Nunez Gregoire'ydi. Turnuvayı iyi bitirmeyi garantilemek adına bir galibiyet elbette çok hoş olacaktı. Tura oldukça moralli ve umutlu girdim. Oyun sırasında da umutlarım arttıysa da göreceğimiz gibi Caissa'nın planları başkaydı.
 
 Devamı gelecek. Kaçırmamak için [bültene abone ol](/#bulten).
