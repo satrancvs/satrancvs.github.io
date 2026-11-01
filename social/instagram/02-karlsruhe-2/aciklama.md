@@ -1,10 +1,10 @@
 # Gönderi açıklaması (caption)
 
-Siyah oynar, kazanır. ♟️
+Karlsruhe günlüğünün devamı yayında! ♟️
 
-Karlsruhe’deki GRENKE Açık’tan bir konum: Poyraz Efe Aşıcı – FM Tarık Selbes oyununun 16. hamlesi, hamle sırası Siyah’ta. Hamleyi bulabildiniz mi? Yorumlara yazın.
+Hazırlık olarak bir bulmaca: Siyah oynar, kazanır. Konum, Karlsruhe’deki GRENKE Açık’ta Poyraz Efe Aşıcı – FM Tarık Selbes oyununun 16. hamlesi, hamle sırası Siyah’ta. Hamleyi bulabildiniz mi? Yorumlara yazın.
 
-Cevap Karlsruhe günlüğünün yeni bölümünde: “İlk turdan sonra”. Dört oyun, hepsi hamlelerine tıklayarak gezebileceğiniz inceleme tahtalarında.
+Cevap günlüğün ikinci bölümünde: “İlk turdan sonra”. Dört oyun, hepsi hamlelerine tıklayarak gezebileceğiniz inceleme tahtalarında.
 
 📖 Yazı biyografideki bağlantıda: satrancvs.com
 
