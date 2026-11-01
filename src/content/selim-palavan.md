@@ -59,7 +59,7 @@ Bütün İstanbul’un ve hatta memleketimizin her köşesindeki şatranç merak
 
 Kıymetli şatranççımızın; memleketimizde bir kafa sporu ve zeka oyunu olan şatranca karşı bilhassa gençlerimiz arasında bir alaka uyandırması için, düşüncelerini anlamanın yerinde olacağını tahmin ederek:
 
-**– Memleketimizde satranca karşı ilgiyi nasıl buluyorsunuz ve bunu daha fazla yaymak için ne yapılmalıdır ?** dedim. İstanbul Şatranç Klübü’nün 30 Ekim 1943 tarihinde tertip etmiş olduğu İstanbul turnuvasında, aralarında birçok kuvvetli oyuncular da bulunan 22 oyuncu içinden turnuvayı birincilikle kazanan bay Selim Palavan biraz düşündükten sonra şu cevabı verdi:
+**– Memleketimizde şatranca karşı ilgiyi nasıl buluyorsunuz ve bunu daha fazla yaymak için ne yapılmalıdır ?** dedim. İstanbul Şatranç Klübü’nün 30 Ekim 1943 tarihinde tertip etmiş olduğu İstanbul turnuvasında, aralarında birçok kuvvetli oyuncular da bulunan 22 oyuncu içinden turnuvayı birincilikle kazanan bay Selim Palavan biraz düşündükten sonra şu cevabı verdi:
 
 – Memleketimizde şatranca karşı alakanın son seneler zarfında memnuniyet verici bir şekilde artmakta devam edegeldiği kanaatindeyim. Bilhassa Ankara Şatranç Klübü’nün kuruluşundan sonra İstanbul’da da bir klüp kurulması çok iyi bir hareket olmuştur. Klübümüzde genç azaların bulunması, gençlerimizin bu oyuna karşı olan ilgilerinin günden güne artmasına delalet eder. Bilhassa gençlerimiz arasında Demir Sayman, Doğan Günsav gibi kuvvetli oyuncular bize istikbal için büyük ümitler vermektedir.
 
