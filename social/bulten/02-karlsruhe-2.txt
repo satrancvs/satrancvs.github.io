@@ -1,35 +1,42 @@
 KONU:        Karlsruhe günlüğü sürüyor: ikinci bölüm yayında
 ÖNİZLEME:    "İlk turdan sonra": beş turun hikâyesi, dört oyun, tıklayıp gezebileceğiniz inceleme tahtalarıyla.
 
+(Bu dosya HTML sürümünün düz metin karşılığıdır; gönderilen sürüm 02-karlsruhe-2.html'dir.)
+
 ---
+
+Karlsruhe günlüğü sürüyor
 
 Merhaba,
 
-Karlsruhe'deki GRENKE Açık'ın ilk turunu geride bırakmıştık. Söz verdiğimiz gibi, FM Tarık Selbes'in turnuva günlüğünün ikinci bölümü yayında: "İlk turdan sonra".
+Karlsruhe'deki GRENKE Açık'ın ilk turunu geride bırakmıştık. Söz verdiğimiz gibi, FM Tarık Selbes'in turnuva günlüğünün ikinci bölümü yayında.
 
-Dünyanın en büyük açık turnuvalarından birinde, 998 oyuncunun arasında, İsviçre sisteminin en önemli kuralı şu: tablonun üst tarafında kal, her düşüşte geri sıçra. Selbes bu bölümde o mücadeleyi tur tur anlatıyor.
+TURNUVA GÜNLÜĞÜ · İKİNCİ BÖLÜM
+İlk turdan sonra
 
-Bu bölümde:
+Dünyanın en büyük açık turnuvalarından birinde, 998 oyuncunun arasında, İsviçre sisteminin en önemli kuralı şu: tablonun üst tarafında kal, her düşüşte geri sıçra. FM Tarık Selbes bu bölümde o mücadeleyi tur tur anlatıyor.
 
-• 1944 Elo'lu, 2008 doğumlu genç bir rakibe karşı ikinci tur
-• Üstten çekilen ilk rakip: 2400'ün üzerinde, yirmi yaşındaki Alman Isaac Garner'a karşı orijinal bir fikir
-• Dördüncü turda Sloven FM Jaka Brilej karşısında üstün bir konumdan öğretici bir ders
-• Beşinci turda 12 yaşındaki yetenekli Poyraz Efe Aşıcı
-• Turnuvanın devasa boyutunun doğurduğu garip bir gerçek: rakibinizi tura çok az kala öğrenmek
+Oyunların hepsi "inceleme" görünümünde: Hamlelere tıklayın, yazarın yorumlarını ve varyantları tahtada kendiniz gezin.
 
-Bölümdeki dört oyunun hepsi "inceleme görünümünde": hamlelere tıklayın, yazarın yorumlarını ve alternatif varyantları tahtada kendiniz gezin.
+[ İKİNCİ BÖLÜMÜ OKU ]  https://satrancvs.com/karlsruhe-ve-yol-ayrimlari/#ilk-turdan-sonra
 
-[ İkinci bölümü oku → ]
-https://satrancvs.com/karlsruhe-ve-yol-ayrimlari/#ilk-turdan-sonra
+BU BÖLÜMDE
 
-Yazıya baştan başlamak isterseniz: https://satrancvs.com/karlsruhe-ve-yol-ayrimlari/
+2. TUR
+1944 Elo'lu, 2008 doğumlu genç bir rakip
+Sabah 10'da başlayan ikinci tur, İsviçre sisteminde tablonun üstünde kalmanın ilk sınavı.
 
-Günlüğün üçüncü bölümü bir iki hafta içinde geliyor. Bu bültene abone olduğunuz için haberi yine ilk siz alacaksınız.
+3. TUR
+Üstten çekilen ilk rakip: Isaac Garner (2403)
+Yirmi yaşındaki genç rakip karşısında tahta başında bulunan orijinal bir fikir.
 
-İyi okumalar,
-Satranç vs.
-Dijital satranç dergisi
-https://satrancvs.com
+4. VE 5. TUR
+FM Jaka Brilej ve genç yetenek Poyraz Efe Aşıcı
+Üstün konumları kazanmanın zorluğu ve genç bir yetenekle karşılaşma.
 
----
-(HTML sürümü ilk bültenle aynı düzendedir: logo, tur salonu fotoğrafı, "Bu bölümde" listesi; altbilgide Sender'ın {{unsubscribe_link}} / {{unsubscribe_text}} değişkenleri kullanılır.)
+[ YAZIYI BAŞTAN OKU ]  https://satrancvs.com/karlsruhe-ve-yol-ayrimlari/
+
+Günlüğün devamı gelecek.. Bu bültene abone olduğunuz için haberi yine ilk siz alacaksınız. Görüş, öneri veya yazı taslaklarınızı - editor@satrancvs.com adresi üzerinden bizlere iletebilirsiniz.
+
+Keyifli okumalar dileriz,
+Satranç vs. yayın ekibi
