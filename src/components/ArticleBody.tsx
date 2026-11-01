@@ -93,7 +93,7 @@ const WATCH_TAG = /^\[View\s+"(?:player|study)"\]\s*$/im;
 const STUDY_TAG = /^\[View\s+"study"\]\s*$/im;
 // [EventLine "..."]: oyun başlığındaki etkinlik satırını (Etkinlik, Yer, yıl yerine) kendi metniyle verir; satır içi Markdown/HTML (<i>) kullanılabilir.
 // ChessPublica'ya geçirilmez.
-// `[ResultInline "1"]`: sonucu (0-1) son hamlenin satırına alır; son hamlenin yorumu altında kalır (ChessPublica sonucu yorumdan sonra ayrı satıra yazar).
+// `[ResultInline "1"]`: sonucu (0-1) son hamlenin satırına alır (<pgn-study>'de varyantlardan sonra gelen sonuç da son ana hat hamlesine taşınır: Garner–Selbes ½-½); son hamlenin yorumu altında kalır (ChessPublica sonucu yorumdan sonra ayrı satıra yazar).
 const RESULT_INLINE_TAG = /^\[ResultInline\s+"[^"]*"\]\s*$/im;
 const EVENT_LINE_TAG = /^\[EventLine\s+"[^"]*"\]\s*$/im;
 // [Frame "quote"]: oyun, alıntı kutusunun (.quote) içinde çizilir (diyagram + <pgn>); oyuncu başlığı yerine EventLine kaynak satırı olur (Palavan'ın analizi).
@@ -203,6 +203,12 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
     const el = box.current;
     const fix = () => {
       const r = el.querySelector('.pgn-container .pgn-result');
+      if (study) { // <pgn-study>: sonuç varyantların ardından gelir; son ana hat hamlesinin satırına alınır
+        const ms = [...el.querySelectorAll('.pgn-container .pgn-mainline:not(.pgn-result)')];
+        const last = ms[ms.length - 1];
+        if (r && last) { last.append(`\u00a0${r.textContent}`); r.remove(); }
+        return;
+      }
       const c = r?.previousElementSibling;
       const m = c?.previousElementSibling;
       if (r && c?.classList.contains('pgn-comment') && m?.classList.contains('pgn-mainline')) { m.append(`\u00a0${r.textContent}`); r.remove(); }
