@@ -32,4 +32,4 @@ Dijital satranç dergisi
 https://satrancvs.com
 
 ---
-(Altbilgi: Sender'ın kendi "abonelikten çık" bağlantısı editörden eklenmeli.)
+(HTML sürümü ilk bültenle aynı düzendedir: logo, tur salonu fotoğrafı, "Bu bölümde" listesi; altbilgide Sender'ın {{unsubscribe_link}} / {{unsubscribe_text}} değişkenleri kullanılır.)
