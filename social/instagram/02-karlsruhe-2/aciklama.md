@@ -1,6 +1,6 @@
 # Gönderi açıklaması (caption)
 
-Karlsruhe günlüğünün devamı yayında! ♟️
+FM Tarık Selbes’in Karlsruhe günlüğünün devamı yayında! ♟️
 
 Hazırlık olarak bir bulmaca: Siyah oynar, kazanır. Konum, Karlsruhe’deki GRENKE Açık’ta Poyraz Efe Aşıcı – FM Tarık Selbes oyununun 16. hamlesi, hamle sırası Siyah’ta. Hamleyi bulabildiniz mi? Yorumlara yazın.
 
