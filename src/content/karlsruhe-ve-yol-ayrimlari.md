@@ -1,5 +1,7 @@
 ![Turnuva salonunun girişi](images/salon.jpg "Turnuva salonunun girişi: “Dünyanın en büyük satranç turnuvasına hoş geldiniz” · Fotoğraf: Tarık Selbes")
 
+### Giriş
+
 Turnuvadan bir gün önce, 1 Nisan günü vardığım Karlsruhe’de İstanbul’un aksine tam bir bahar havası vardı. İlk akşam kongre merkezinin dışına asılmış yazıyı gördüysem de gerçekten dünyanın en büyük satranç turnuvasına geldiğimi ancak ertesi gün ilk tur için salona girdiğimde tam olarak idrak edebilecektim.
 
 Devasa bir salon içerisinde yüzlerce masa ve insan, eşlendirmenin tur saatinde bile hâlâ belli olmaması ve dikey numaralandırma düzeni nedeniyle en azından bu duruma alışana dek masanızı bulmanın imkansızlığı…
