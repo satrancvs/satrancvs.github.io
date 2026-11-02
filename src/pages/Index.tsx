@@ -228,10 +228,10 @@ export default function Index() {
     <div className="sk min-h-screen overflow-x-hidden">
       <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled ? 'bg-[#0E0C0A]/90 backdrop-blur border-b border-[#2E2620]' : ''}`}>
         <div className="max-w-[1440px] mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
-          <a href="#kapak" className="flex items-center gap-3 whitespace-nowrap shrink-0">
+          <Link to="/" state={{ top: true }} className="flex items-center gap-3 whitespace-nowrap shrink-0">
             <span className="grid grid-cols-2 w-7 h-7 border border-[#F1E9DC]"><span className="bg-[#C8893E]" /><span /><span /><span className="bg-[#F1E9DC]" /></span>
             <span className="f-display text-2xl tracking-tight">Satranç <em className="italic text-[#C8893E]">vs.</em></span>
-          </a>
+          </Link>
           <nav className="hidden lg:flex gap-6 xl:gap-10 whitespace-nowrap">
             {NAV.map(([l, id], i) => (
               <a key={id} href={`#${id}`} className="f-mono text-[#A89A88] hover:text-[#F1E9DC] transition-colors"><span className="text-[#C8893E]">0{i + 1}</span> {l}</a>
