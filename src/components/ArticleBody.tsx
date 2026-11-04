@@ -4,6 +4,7 @@ import { createPortal } from 'react-dom';
 import FlipGame from '@/components/FlipGame';
 import { Link } from 'react-router-dom';
 import Markdown from 'markdown-to-jsx';
+import { Chess } from 'chess.js';
 import { useChessPublica } from '@/lib/chesspublica';
 import { curlyComments, curlyProse, watchComments } from '@/lib/curly-dom';
 import ProgressiveImage, { boxWidth, isSmallImage } from '@/components/ProgressiveImage';
@@ -166,6 +167,37 @@ function hoistVariationLeads(mt: string, markLeads = false): string {
   return out.join(' ');
 }
 
+// Yorumda tek başına `[Lichess]` yazılırsa, o yorumun konumunu Lichess analiz tahtasında (yeni sekmede) açan bir bağlantıya dönüşür. Konum, oyunun hamleleri chess.js ile
+// oynatılarak bulunur (başlangıç `[FEN]` varsa ondan). Bir varyantın başındaki yorumda (`( { … [Lichess] } 33... cxd4+ )`) konum varyantın önündeki hamlenin konumudur
+// (hoistVariationLeads yorumu da oraya taşır). Bağlantı `a[href^="https://lichess.org/analysis/"]` olarak düğme görünümündedir (site.css), tıklama PgnGame'de yeni sekmede açılır.
+const LICHESS_MARK = /\[Lichess\]/g;
+function lichessLinks(header: string, mt: string): string {
+  if (!mt.includes('[Lichess]')) return mt;
+  const start = header.match(/\[FEN\s+"([^"]+)"\]/i)?.[1];
+  let init: string;
+  try { init = new Chess(start).fen(); } catch { init = new Chess().fen(); }
+  const stack: { fen: string; before: string }[] = [{ fen: init, before: init }];
+  const link = (fen: string) => `[Lichess’te analiz et ↗](https://lichess.org/analysis/${fen.replace(/ /g, '%5F')})`;
+  const toks = mt.match(/\{[^}]*\}|\(|\)|[^\s(){}]+/g) ?? [];
+  let afterOpen = false;
+  return toks.map((t) => {
+    const wasOpen = afterOpen;
+    afterOpen = t === '(';
+    if (t === '(') { const par = stack[stack.length - 1]; stack.push({ fen: par.before, before: par.before }); }
+    else if (t === ')') { if (stack.length > 1) stack.pop(); }
+    else if (t.startsWith('{')) {
+      return t.replace(LICHESS_MARK, () => link(stack[wasOpen && stack.length > 1 ? stack.length - 2 : stack.length - 1].fen));
+    } else if (!t.startsWith('$')) {
+      const san = t.replace(/^\d+\.+/, '');
+      if (san && !/^(1-0|0-1|1\/2-1\/2|\*)$/.test(t)) {
+        const top = stack[stack.length - 1];
+        try { const c = new Chess(top.fen); c.move(san); top.before = top.fen; top.fen = c.fen(); } catch { /* geçersiz hamleyi check:games yakalar */ }
+      }
+    }
+    return t;
+  }).join(' ');
+}
+
 function PgnGame({ header, moves }: { header: string; moves: string }) {
   // [View "player"] etiketi oyunu (bulmaca işareti olmasa da) <pgn-player> ile çizdirir; ChessPublica'ya geçirilmez.
   const watch = WATCH_TAG.test(header) || FLIP_TAG.test(header);
@@ -178,7 +210,7 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
   const tag = study ? 'pgn-study' : side || watch || asPlayer ? 'pgn-player' : 'pgn';
   // ChessPublica <pgn> ilk hamleden önceki yorumu çizmez; oyun metninin başındaki `{ … }` yorumu bu yüzden ayrılıp oyunun üstünde bir paragraf olarak gösterilir.
   const lead = tag === 'pgn' ? moves.match(/^\s*\{([^}]*)\}\s*/) : null;
-  const movetext = hoistVariationLeads(lead ? moves.slice(lead[0].length) : moves, tag === 'pgn-player');
+  const movetext = hoistVariationLeads(lichessLinks(header, lead ? moves.slice(lead[0].length) : moves), tag === 'pgn-player');
   const intro = lead?.[1].replace(/\[D\]/g, '').trim();
   // <pgn-study>'de bulmaca olmaz: [P] işaretleri silinir.
   const figs: string[] = [];
@@ -230,8 +262,12 @@ function PgnGame({ header, moves }: { header: string; moves: string }) {
     mo.observe(el, { childList: true, subtree: true });
     return () => mo.disconnect();
   }, [near]); // eslint-disable-line react-hooks/exhaustive-deps
+  const openLichess = (e: { target: EventTarget; preventDefault(): void }) => {
+    const a = (e.target as Element).closest?.('a[href^="https://lichess.org/analysis/"]');
+    if (a) { e.preventDefault(); window.open(a.getAttribute('href')!, '_blank', 'noopener'); }
+  };
   const game = near
-    ? <div ref={box} className="cp-game pb-4" dangerouslySetInnerHTML={{ __html: `<div class="cp-loading">Oyun yükleniyor...</div><${tag}>\n${raw}\n</${tag}>` }} />
+    ? <div ref={box} className="cp-game pb-4" onClick={openLichess} dangerouslySetInnerHTML={{ __html: `<div class="cp-loading">Oyun yükleniyor...</div><${tag}>\n${raw}\n</${tag}>` }} />
     : <div ref={box} className="cp-game cp-placeholder pb-4" />;
   const figures = slots.map((el, k) => figs[k] && createPortal(COMMENT_FEN.test(figs[k]) ? <FenBlock fen={figs[k].match(COMMENT_FEN)![1]} ready analysis badge={(m => (m[2] ? { glyph: m[2], square: m[3] } : undefined))(figs[k].match(COMMENT_FEN)!)} /> : <Figure chunk={figs[k]} />, el, `fig${k}`));
   return intro ? <><p className="art-prose pb-4">{intro}</p>{game}{figures}</> : <>{game}{figures}</>;
