@@ -177,7 +177,7 @@ function lichessLinks(header: string, mt: string): string {
   let init: string;
   try { init = new Chess(start).fen(); } catch { init = new Chess().fen(); }
   const stack: { fen: string; before: string }[] = [{ fen: init, before: init }];
-  const link = (fen: string) => `[Lichess’te analiz et ↗](https://lichess.org/analysis/${fen.replace(/ /g, '%5F')})`;
+  const link = (fen: string) => `[LICHESS’TE ANALİZ ET ↗](https://lichess.org/analysis/${fen.replace(/ /g, '%5F')})`;
   const toks = mt.match(/\{[^}]*\}|\(|\)|[^\s(){}]+/g) ?? [];
   let afterOpen = false;
   return toks.map((t) => {

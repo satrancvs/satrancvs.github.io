@@ -48,10 +48,11 @@ function process(box: Element) {
     lead.dataset.k = String(k);
     const blocks = box.querySelectorAll(':scope > .variation-block');
     const before = blocks[k] ?? null;
+    // (`[Lichess]` düğmesi taşıyan ilk-hamle yorumu cümlenin devamı değildir: giriş ayrı kalır, düğme hamlenin yanında durur.)
     // Cümle varyantın ilk hamlesinin ardından sürüyorsa (`{ …görünen} 21... Ne7 { fikrini öneriyor.}`) giriş, hamle ve devamı tek satırda akar:
     // giriş varyant satırının başına satır içi eklenir, ilk hamlenin yorumu satır içi çizilir (.cp-lead-inline).
     const content = before?.querySelector('.variation-content');
-    if (before && content && content.querySelector(':scope > .variation-comment[data-for-mi="0"]')) {
+    if (before && content && content.querySelector(':scope > .variation-comment[data-for-mi="0"]') && !content.querySelector(':scope > .variation-comment[data-for-mi="0"] a[href^="https://lichess.org/analysis/"]')) {
       const span = document.createElement('span');
       span.className = 'cp-var-lead-inline';
       span.append(...Array.from(lead.childNodes), ' ');
