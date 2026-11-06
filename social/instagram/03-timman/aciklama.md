@@ -1,10 +1,10 @@
 # Gönderi açıklaması (caption)
 
-FM Nazmi Can Doğan’ın Mar del Plata 1982 yazısı yayında! ♟️
+Jan Timman’ın bulduğu hamleyi siz de bulabilir misiniz? ♟️
 
-Önce bir bulmaca: Siyah oynar, kazanır. Konum, Mar del Plata’da 7. turda Carlos Garcia Palermo – Jan Timman oyununun 11. hamlesi, hamle sırası Siyah’ta. Hamleyi bulabildiniz mi? Yorumlara yazın.
+Siyah oynar, kazanır. Konum, Mar del Plata’da 7. turda Carlos Garcia Palermo – Jan Timman oyununun 11. hamlesi, hamle sırası Siyah’ta. Hamleyi bulabildiniz mi? Yorumlara yazın.
 
-Cevap yazıda: ilk turda Larsen’e yenilen Jan Timman, Karpov’un da aralarında olduğu rakiplerini geride bırakarak turnuvayı nasıl kazandı? Oyunların hepsi hamlelerine tıklayarak gezebileceğiniz tahtalarda.
+Cevap FM Nazmi Can Doğan’ın Mar del Plata 1982 yazısında: ilk turda Larsen’e yenilen Jan Timman, Karpov’un da aralarında olduğu rakiplerini geride bırakarak turnuvayı nasıl kazandı? Oyunların hepsi hamlelerine tıklayarak gezebileceğiniz tahtalarda.
 
 📖 Yazı biyografideki bağlantıda: satrancvs.com
 
