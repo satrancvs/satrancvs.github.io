@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Satranç vs. – Instagram: Mar del Plata 1982 (Timman)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+:root { --bg:#0E0C0A; --fg:#F1E9DC; --mute:#A89A88; --line:#2E2620; --accent:#C8893E; }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { background:#000; }
+.slide { position:relative; width:1080px; height:1350px; background:var(--bg); color:var(--fg); overflow:hidden;
+  font-family:'Newsreader',serif; font-weight:320; font-optical-sizing:auto; padding:84px 96px 0; display:flex; flex-direction:column; }
+.mono { font-family:'JetBrains Mono',monospace; font-size:22px; letter-spacing:.2em; text-transform:uppercase; font-weight:400; }
+.accent { color:var(--accent); }
+.mute { color:var(--mute); }
+.top { display:flex; justify-content:space-between; align-items:center; }
+.disp { font-family:'Fraunces',serif; font-weight:300; letter-spacing:-.04em; line-height:1; font-variation-settings:'opsz' 72; font-size:72px; margin-top:28px; white-space:nowrap; }
+.disp em { font-style:italic; color:var(--accent); }
+.board { margin-top:34px; width:672px; height:672px; align-self:center; display:grid; grid-template-columns:repeat(8,84px); grid-template-rows:repeat(8,84px); border:2px solid #3a3027; position:relative; }
+.sq { width:84px; height:84px; position:relative; }
+.sq.l { background:#EBD9B6; } .sq.d { background:#B58863; }
+.sq img { position:absolute; inset:0; width:84px; height:84px; }
+.sq b { position:absolute; font-family:'JetBrains Mono',monospace; font-size:17px; font-weight:500; opacity:.75; }
+.sq.l b { color:#8a6a47; } .sq.d b { color:#F1E4C8; }
+.sq b.r { left:7px; top:5px; } .sq b.f { right:8px; bottom:4px; }
+.cap { margin-top:32px; display:flex; justify-content:space-between; align-items:baseline; gap:24px; }
+.cap .mono { font-size:17px; letter-spacing:.12em; }
+.q { font-family:'Fraunces',serif; font-weight:300; font-size:52px; letter-spacing:-.03em; line-height:1.1; font-variation-settings:'opsz' 72; white-space:nowrap; }
+.q em { font-style:italic; color:var(--accent); }
+.foot { position:absolute; left:96px; right:96px; bottom:64px; display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--line); padding-top:28px; }
+.logo { width:44px; height:44px; display:block; }
+.pill { display:inline-block; border:2px solid var(--accent); color:var(--accent); padding:14px 26px; font-family:'JetBrains Mono',monospace; font-size:21px; letter-spacing:.08em; text-transform:uppercase; font-weight:500; }
+</style>
+</head>
+<body>
+<section class="slide" id="s1">
+  <div class="top"><span class="mono accent">Satranç tarihi</span><span class="mono mute">Mar del Plata 1982</span></div>
+  <div class="disp">FM Nazmi Can Doğan’ın<br>Mar del Plata 1982<br><em>yazısı yayında.</em></div>
+  <div class="board" id="board" aria-label="Siyah oynar: konum"></div>
+  <div class="cap">
+    <span class="q">Siyah oynar, <em>kazanır.</em></span>
+    <span class="mono mute" style="text-align:right">Garcia Palermo – <span lang="nl">Timman</span><br>Mar del Plata 1982 · 7. tur</span>
+  </div>
+  <div class="foot">
+    <span style="display:flex;align-items:center;gap:20px"><img class="logo" alt="" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect x='.5' y='.5' width='27' height='27' fill='%230E0C0A' stroke='%23F1E9DC'/%3E%3Crect x='1' y='1' width='13' height='13' fill='%23C8893E'/%3E%3Crect x='14' y='14' width='13' height='13' fill='%23F1E9DC'/%3E%3C/svg%3E"><span class="mono">Satranç <span class="accent">vs.</span></span></span>
+    <span class="pill">Cevap yazıda · satrancvs.com</span>
+  </div>
+</section>
+<script>
+// Konum (11... Rxb2! oynanmadan önce, Siyah oynar). Tahta Siyah'ın tarafından çizilir.
+const FEN = '1rbqk2r/p2p1ppp/2n1p3/b1p5/2P1n3/P1N1BNP1/1PQ1PPBP/R3K2R b KQk - 4 11';
+const rows = FEN.split(' ')[0].split('/').map((r) => { const out = []; for (const c of r) { if (/\d/.test(c)) for (let i = 0; i < +c; i++) out.push(''); else out.push(c); } return out; });
+const el = document.getElementById('board');
+const files = 'abcdefgh';
+// Siyah'ın tarafı: 1. yatay üstte, h dikeyi solda (tahta 180° döndürülmüş)
+for (let ri = 0; ri <= 7; ri++) {
+  for (let fi = 7; fi >= 0; fi--) {
+    const p = rows[7 - ri][fi]; // rows[0] = 8. yatay
+    const sq = document.createElement('div');
+    sq.className = 'sq ' + ((ri + fi) % 2 === 0 ? 'd' : 'l');
+    if (p) { const img = document.createElement('img'); const col = p === p.toUpperCase() ? 'w' : 'b'; img.src = '../../../public/chesspublica/pieces/' + col + p.toUpperCase() + '.png'; img.alt = ''; sq.appendChild(img); }
+    if (fi === 7) { const b = document.createElement('b'); b.className = 'r'; b.textContent = ri + 1; sq.appendChild(b); }
+    if (ri === 7) { const b = document.createElement('b'); b.className = 'f'; b.textContent = files[fi]; sq.appendChild(b); }
+    el.appendChild(sq);
+  }
+}
+</script>
+</body>
+</html>
