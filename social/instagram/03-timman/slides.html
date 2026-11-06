@@ -13,7 +13,7 @@ body { background:#000; }
 .mono { font-family:'JetBrains Mono',monospace; font-size:22px; letter-spacing:.2em; text-transform:uppercase; font-weight:400; }
 .accent { color:var(--accent); }
 .mute { color:var(--mute); }
-.top { display:flex; justify-content:space-between; align-items:center; }
+.top { display:flex; justify-content:space-between; align-items:flex-start; height:27px; }
 .disp { font-family:'Fraunces',serif; font-weight:300; letter-spacing:-.04em; line-height:1; font-variation-settings:'opsz' 72; font-size:72px; margin-top:28px; white-space:nowrap; }
 .disp em { font-style:italic; color:var(--accent); }
 .board { margin-top:24px; width:792px; height:792px; align-self:center; display:grid; grid-template-columns:repeat(8,99px); grid-template-rows:repeat(8,99px); border:2px solid #3a3027; position:relative; }
@@ -34,7 +34,7 @@ body { background:#000; }
 </head>
 <body>
 <section class="slide" id="s1">
-  <div class="top"><span class="mono accent">Satranç tarihi</span><span class="mono mute">Mar del Plata 1982</span></div>
+  <div class="top"><span class="mono accent">Satranç tarihi</span><span class="mono mute" style="font-size:16px;letter-spacing:.1em;text-align:right">Mar del Plata, 1982: Jan Timman<br>ve bir zaferin anatomisi</span></div>
   <div class="disp">Timman’ın yaptığı hamleyi<br><em>siz de bulabilir misiniz?</em></div>
   <div class="board" id="board" aria-label="Siyah oynar: konum"></div>
   <div class="cap">
