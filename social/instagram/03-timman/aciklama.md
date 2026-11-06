@@ -1,6 +1,6 @@
 # Gönderi açıklaması (caption)
 
-Jan Timman’ın bulduğu hamleyi siz de bulabilir misiniz? ♟️
+Jan Timman’ın yaptığı hamleyi siz de bulabilir misiniz? ♟️
 
 Siyah oynar, kazanır. Konum, Mar del Plata’da 7. turda Carlos Garcia Palermo – Jan Timman oyununun 11. hamlesi, hamle sırası Siyah’ta. Hamleyi bulabildiniz mi? Yorumlara yazın.
 
