@@ -118,3 +118,17 @@ Uzunca bir bölümünü alıntıladığım yazımı kitabın en güzel tavsiyele
 > — <span lang="en">Rowson, a.g.e.</span>
 
 Şimdiye kadar sadece üç kitabı bulunan Büyük Usta Jonathan Rowson'ın sıradaki eserinin konusunu bilemiyorum, fakat düşünmeyi teşvik eden her cümlesi okunmaya değer görünüyor.
+
+### Oyunu inceleyin
+
+[Event "Monarch Assurance 13th"]
+[EventLine "13. <i>Monarch Assurance</i> Turnuvası"]
+[Site "Port Erin"]
+[Date "2004.09.29"]
+[White "Korchnoi, Viktor"]
+[Black "Rowson, Jonathan"]
+[Result "1-0"]
+[WhiteElo "2568"]
+[BlackElo "2558"]
+[Annotator "FM Nazmi Can Doğan"]
+[View "study"]
