@@ -31,9 +31,9 @@ Eser bir deftere benziyorsa da basıma hazır bir kitap gibi düzenlenmiş. Sayf
 Eser, kuramdan alıştırmaya giden düzenli bir sıra izliyor. Önce temel tanımlar, sonra piyon oyunsonlarının türleri, en sonda 160 soru ve çözümleri geliyor.
 
 1. **Mesafe nazâriyesi:** Tahtadaki iki kare arasındaki mesafe düz (amûdî), çapraz (katrî) ya da dikdörtgensel olabilir. Şahın bir kareden ötekine en kısa yolu bu dikdörtgenler üzerinden hesaplanıyor.
-2. **Tekâbül (opozisyon):** *Bi’l-fiil*, yani gerçek tekâbül ile *bi’l-kuvve*, yani potansiyel tekâbül; yakın, orta ve uzak tekâbül; çapraz ve eğik tekâbül. Temel kural: iki şahın oluşturduğu dikdörtgenin kenarları tek sayı olmalı.
+2. **Tekâbül ([opozisyon](/satranca-ilk-adim/8-oyunsonlari/#opozisyon)):** *Bi’l-fiil*, yani gerçek tekâbül ile *bi’l-kuvve*, yani potansiyel tekâbül; yakın, orta ve uzak tekâbül; çapraz ve eğik tekâbül. Temel kural: iki şahın oluşturduğu dikdörtgenin kenarları tek sayı olmalı.
 3. **Mühim Hâneler:** Şahın koruduğu piyonun önündeki kilit kareler.
-4. **Murabba Kâidesi:** Geçer piyonun karesi. Kale piyonu bu kuralın istisnası olarak ayrıca işleniyor.
+4. **Murabba Kâidesi:** [Geçer piyonun karesi](/satranca-ilk-adim/8-oyunsonlari/#tek-bir-er). Kale piyonu bu kuralın istisnası olarak ayrıca işleniyor.
 
 ![Murabba Kâidesi sayfası (el yazması, renkli fotoğraf)](images/muntehe-s9.jpg "4. bölüm, Murabba Kâidesi: geçer piyonun karesi diyagramda noktalarla gösterilmiş · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 9. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
 
