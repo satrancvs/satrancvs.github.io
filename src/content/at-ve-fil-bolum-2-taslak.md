@@ -1,3 +1,5 @@
+### At: güç bende artık
+
 Birinci bölümde Capablanca’nın kuralını okuduk: Rakibin fili varsa piyonlarınızı o filin rengindeki karelere koyun, kendi filiniz varsa piyonlarınızı filinizin rengindeki karelerden uzak tutun.
 
 Kural kâğıt üzerinde basit. Bedeli ise genellikle oyunun sonunda, birkaç hamle içinde ödeniyor: Fil, kendi piyonlarının ya da rakip piyonların kurduğu yapının gölgesinde kalıyor ve bir zamanlar tahtanın yarısına hükmeden taş, artık yalnızca seyirciye dönüşüyor. Aşağıdaki oyunlar bu temel teknik meselenin farklı yüzlerini gösteriyor.
