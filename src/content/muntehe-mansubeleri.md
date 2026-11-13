@@ -56,6 +56,14 @@ Eser, kuramdan alıştırmaya giden düzenli bir sıra izliyor. Önce temel tan�
 9. **160 mansube:** Her iki sayfada on ikişer diyagram, toplam 160 soru. Çoğu diyagramın üstünde çözümün bulunduğu sayfaya gönderme var.
 10. **Çözümler:** Her çözüm, önce *Takdîr-i Vaz’iyet* adı verilen bir konum değerlendirmesiyle açılıyor, sonra hamlelere geçiyor.
 
+![Murabba Kâidesi sayfası (el yazması, renkli fotoğraf)](images/muntehe-s9.jpg "4. bölüm, Murabba Kâidesi: geçer piyonun karesi diyagramda noktalarla gösterilmiş · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 9. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
+
+![Fâhe ve merbût piyâde sayfaları (el yazması, renkli fotoğraf)](images/muntehe-s39.jpg "5. bölüm, Hudûd Kâidesi: fâhe ve merbût piyâde diyagramları · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 39. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
+
+![Elle çizilmiş diyagram sayfaları (el yazması, renkli fotoğraf)](images/muntehe-s15.jpg "9. bölüm: her sayfada on iki, elle çizilmiş diyagram · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 15. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
+
+![Çözüm sayfası: Takdîr-i Vaz’iyet (el yazması, renkli fotoğraf)](images/muntehe-s75.jpg "10. bölüm: 75. mansubenin çözümü, <span lang="tr">Takdîr-i Vaz’iyet</span> ile açılıyor · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 75. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
+
 ### Açık sorular
 
 - Hangi bölümler hangi kaynaktan çevrildi? Ana kaynak Durand–Préti mi, Berger mi?
