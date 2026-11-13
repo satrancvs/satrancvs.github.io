@@ -177,37 +177,15 @@ Alekhine, 1937’deki dünya şampiyonluğu maçında **Max Euwe** karşısında
 
 29. h4! { Şah kanadındaki piyon çoğunluğunu harekete geçirerek atı yerinden ediyor. } 29... Kd7 30. Kf2 Ne7 31. Kf3 Nd5 { Beyaza fili yeniden konumlandırma olanağı tanıyan bir hata. } 32. Bd3 $1 h6 33. Bf5+ Kd8 34. Kg4 Ne7 35. Bb1 Ke8 36. Kh5 { Şahın etkin katılımı hayati önemde. } 36... Kf7 37. Ba2+ { Filin ==bir çapraz hattan diğerine== ne kadar rahatlıkla geçebildiğini gösteren bir örnek. } 37... Kf8 38. Kxh6 Rd7 39. Be6 Rd3 40. g4 Rxc3 41. g5 1-0
 
-Birinci bölümde Capablanca’nın kuralını okuduk: Rakibin fili varsa piyonlarınızı o filin rengindeki karelere koyun, kendi filiniz varsa piyonlarınızı filinizin rengindeki karelerden uzak tutun. Kural kâğıt üzerinde basit. Bedeli ise genellikle oyunun sonunda, birkaç hamle içinde ödeniyor: Fil, kendi piyonlarının ya da rakibin kurduğu yapının gölgesinde kalıyor ve bir zamanlar tahtanın yarısına hükmeden taş, artık yalnızca seyirciye dönüşüyor. Aşağıdaki oyunlar bu durumun farklı yüzlerini gösteriyor.
+### At: güç bende artık
+
+Birinci bölümde Capablanca’nın kuralını okuduk: Rakibin fili varsa piyonlarınızı o filin rengindeki karelere koyun, kendi filiniz varsa piyonlarınızı filinizin rengindeki karelerden uzak tutun.
+
+Kural kâğıt üzerinde basit. Bedeli ise genellikle oyunun sonunda, birkaç hamle içinde ödeniyor: Fil, kendi piyonlarının ya da rakip piyonların kurduğu yapının gölgesinde kalıyor ve bir zamanlar tahtanın yarısına hükmeden taş, artık yalnızca seyirciye dönüşüyor. Aşağıdaki oyunlar bu temel teknik meselenin farklı yüzlerini gösteriyor.
 
 Temel satranç tekniğini en iyi sergileyen oyunculardan biri de yedinci dünya şampiyonu **Vasily Smyslov** (1921–2010). Oyunsonlarındaki berraklığıyla bilinen Smyslov’un aşağıdaki oyunları da aynı soruya cevap veriyor: Filin tahtada yerine getirecek bir görevi, yapacak bir işi var mı?
 
 ![Vasily Smyslov (siyah-beyaz fotoğraf)](images/smyslov-1977.jpg "<span lang="ru">Vasily Smyslov</span> · Fotoğraf: <span lang="nl">Koen Suyk / Anefo</span> · Ulusal Arşiv, Hollanda · Tilburg, 1977 · Lisans: CC0 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=120563013)")
-
-Moskova doğumlu Smyslov (24 Mart 1921 – 27 Mart 2010) 1938’de, on yedi yaşında SSCB Gençler Şampiyonası’nı kazandı; 1940’taki SSCB Şampiyonası’nda ise dönemin şampiyonu Botvinnik’in önünde üçüncü oldu. 1953’te Zürih’teki Adaylar Turnuvası’nı, 1956’da da Amsterdam’daki Adaylar Turnuvası’nı kazandı ve 1957’de Botvinnik’i 12½–9½ yenerek yedinci dünya şampiyonu oldu.
-
-Botvinnik–Smyslov Dünya Şampiyonluğu Maçı’nın on yedinci oyununa gidiyoruz. Bu oyundaki kritik galibiyet, Smyslov’un dünya şampiyonluğu ünvanını neredeyse garantilemesini sağlamıştı. Bu oyunun ardından Botvinnik’in işi hayli zorlaşmış ve sonunda Smyslov zafere ulaşmıştı. Ata karşı fil dengesizliği, dünya şampiyonası düzeyinde kazananı belirleyebilecek kadar önemli bir faktör.
-
-Analiz ve yorumlar Vasily Smyslov ve Garry Kasparov’a ait.
-
-[Event "Dünya Şampiyonluğu Maçı"]
-[View "player"]
-[Site "Moskova"]
-[Date "1957.04.13"]
-[White "Mikhail Botvinnik"]
-[Black "Vasily Smyslov"]
-[Result "0-1"]
-[Annotator "Garry Kasparov"]
-[EventLine "Dünya Şampiyonluğu Maçı (17. oyun), Moskova, 1957"]
-[SetUp "1"]
-[FEN "8/6k1/4pbp1/p2p1p2/3P1P1P/1PpNP2K/P7/8 w - - 0 41"]
-
-
-
-41. Ne1?! {(Kasparov) Ajurneye gitmeden önce Beyaz fazla aceleci davranıyor. Halbuki sorunlarını hızlıca çözmesi mümkündü:} ( 41. b4 axb4 42. Nxb4 Kh6 43. a4 Bd8 44. Nc2 ) {Smyslov şöyle anlatıyor: “Oyun ajurneye girmişti ve ertesi sabah Botvinnik’in sekundantı Goldberg bana beraberlik teklifi gönderdi. b3 piyonu ve c2’deki at, siyah şahın geçemeyeceği bir savunma hattı oluşturuyor. Ama Siyahın planı birinci yataydan zugzwang motiflerini kullanarak şahıyla vezir kanadından içeri girmek. Oyun da böyle devam etti.”} 41... Kh6 {Zarftaki hamle.} 42. Nc2 Be7 43. Kg3? {Ölümcül bir hata. Konumun inceliği şuydu ki eğer Beyaz h4 piyonu düşmeden önce a piyonlarını değişmeyi başarabilirse beraberlik elde edebiliyor, aksi takdirde ise kaybedecek. Beyaz} (43. a3! Kh5 44. b4 { hamleleriyle a piyonlarının değişimini zorlayabilirdi. Çünkü Siyahın } 44... a4 { oynamaya vakti yok: } 45. b5 Bd8 46. Nb4 { ve beraberlik. }) { Botvinnik’in ajurne analizinde a piyonları tahtadan çıktığında konumun beraberlik olduğunu, bu piyonlar tahtada kaldığındaysa Beyazın zugzwang nedeniyle kaybedeceğini fark etmemiş olması şaşırtıcı. Ama Smyslov, rakibinin dikkatinden kaçan ayrıntıları fark ederek bu gizli zugzwang imkânını buluyor. } 43... Kh5 44. Kf3 Kxh4 45. Ne1 g5 46. fxg5 Kxg5 47. Nc2 Bd6 48. Ne1 Kh4 {Hayli derin ve son derece incelikli bir manevranın başlangıcı.} 49. Nc2 Kh3 50. Na1 Kh2 51. Kf2 Bg3+ 52. Kf3 Bh4 53. Nc2 Kg1 54. Ke2 Kg2 55. Na1 Be7 56. Nc2 Kg3 57. Ne1 Bd8 58. Nc2 Bf6 {… ve Beyazın zugzwang’a düştüğü ortaya çıkıyor.} 59. a3 {Beyaz, ...f5-f4 tehdidi nedeniyle atını oynayamaz. Eğer} ( 59. Kd3 {oynarsa,} 59... Kf2 60. Na1 ( {Burada ne} 60. a3 Be7 61. b4 a4! ) ( {ne de} 60. Kxc3 Ke2 61. a3 e5 62. b4 exd4+ 63. exd4 Bd8! {daha iyi bir sonuç verebilirdi.} ) 60... Ke1 61. Nc2+ Kd1 62. Na1 Be7 63. Nc2 Bd6 64. Na1 Kc1 65. Kxc3 Bb4+ 66. Kd3 Kb2 67. Nc2 Kxa2 {ve kazanır. — Smyslov}) 59... Be7 60. b4 {Beyaz,} (60. a4 Bd6 61. Ne1 e5 62. dxe5 Bxe5 63. Kd3 d4! 64. exd4 Bd6 65. Nc2 f4 66. Kxc3 f3 67. Ne3 f2 68. Kd3 Kf3 69. Nf1 Bf4! 70. d5 Kg2 71. Ke2 Kg1 {devamından sonra da oyunu kurtaramaz. Siyah kazanır. — Smyslov}) 60... a4 61. Ne1 Bg5 62. Nc2 Bf6 63. Kd3 {Beyaz tekrar zugzwang’da kaldı. Atını oynarsa 63... f4 gelir.} 63... Kf2 64. Na1 Bd8 65. Nc2 Bg5 66. b5 Bd8 67. Nb4 Bb6 68. Nc2 Ba5 69. Nb4 Ke1 {Kanat manevrasını tamamlıyor. Beyaz,} (69... Ke1 70. Nc2+ (70. Kxc3 Ke2) 70... Kd1 71. Na1 Kc1 72. Nc2 Kb2 {devamını gördüğünden oyunu terk etti.}) 0-1
-
-Kasparov oyun hakkında şöyle diyor: “Ders niteliğinde bir oyun sonu. Ev analizlerindeki ustalığıyla ünlü Botvinnik için bu ağır bir darbe olmuştu. Bilemiyorum ama belki de sekondantlarıyla bazı sorunlar mı yaşamıştı? Botvinnik insanlara pek güven duymazdı ve genellikle her şeyi tek başına yapmayı tercih ederdi. Bana kalırsa bu, pek de doğru bir yaklaşım değil.”
-
-Yine Garry Kasparov’un aktardığına göre bir söyleşide kendisine “Issız bir adaya düşseniz yanınızda Karpov mu yoksa Kasparov mu olsun isterdiniz?” sorusu yöneltilen Botvinnik’in yanıtı şöyle olmuştu: “Adada tek başıma kalmayı tercih ederim.”
 
 Capablanca Kuralı uygulanmadığında bazen filler kendi piyon zincirinin içerisinde, piyonlarının arkasında kalır. Smyslov’un gençlik yıllarında oynadığı aşağıdaki oyunsonunda siyah fili rakip piyonlar değil, kendi piyonları hapsetmiş: b5, d5, e4, f5 ve h5 piyonlarının hepsi, siyah fille aynı renkte, beyaz karelerde duruyor. Beyazın piyonlarının çoğu ise koyu karelerde, yani filin hedefi olamayacaklar. Analiz ve yorumlar Smyslov’a ve Büyük Usta Johan Hellsten’e ait.
 
@@ -234,9 +212,9 @@ Hellsten’in notları iki şeyin altını çiziyor:
 
 ### Fil hedefsiz kaldığında
 
-Sıradaki oyunda beyaz taşlarla oynayan oyuncu Boleslavsky, o dönemde dünyanın en iyi beş oyuncusundan biriydi. Bu oyundan birkaç yıl sonra ise Bronstein’a karşı bir Adaylar final maçı oynamıştı. Karşısında Smyslov var ve oyunsonundalar: Siyahın atı ve kalesi, Beyazın fil ve kalesine karşı.
+Sıradaki oyunda beyaz taşlarla oynayan oyuncu Boleslavsky, o dönemde dünyanın en iyi beş oyuncusundan biriydi. Bu oyundan birkaç yıl sonra ise Bronstein’a karşı bir Adaylar final maçı oynamıştı.
 
-Analiz ve yorumlar Vasily Smyslov ve Büyük Usta Adrian Mikhalchishin’e ait.
+Boleslavsky’nin karşısında bu defa Smyslov var ve oyunsonundalar: Siyahın atı ve kalesi, Beyazın fil ve kalesine karşı. Analiz ve yorumlar Vasily Smyslov ve Büyük Usta Adrian Mikhalchishin’e ait.
 
 [Event "Leningrad"]
 [View "player"]
@@ -254,15 +232,13 @@ Analiz ve yorumlar Vasily Smyslov ve Büyük Usta Adrian Mikhalchishin’e ait.
 
 22. Bg3 Rfc8 { Görünüşte basit bir oyunsonuna ulaşılmış. Tahtadaki taşların çoğu değişilmiş ve geriye yalnızca birkaç taş ve piyon kalmış. } 23. Rfd1 Rc5 24. Rd2 h6 ({ Siyah, yedinci yatayı zayıflatmamak için } 24... f6 { oynamaktan kaçınıyor. Rakibin iki kalesi olduğu sürece, kendi konumsal güvenliğini düşünmek zorunda. }) 25. Re1 Rac8 26. Bd6 { Beyaz, kaleleri değişmek istiyor. } ( 26. Kg2 { düşünülebilirdi. Her iki kaleyi de tahtada tutarak aktif karşıoyun elde etmek amacıyla. }) 26... Rc1 27. Rxc1 Rxc1+ 28. Kg2 Nb6 29. Bg3 Rc6 { Altıncı yatayı savunuyor. Birer kalenin değişilmesiyle oluşan kuvvet dengesi, bu durumda Siyah için daha iyi: kale ile ata karşı kale ile fil. Artık Siyah şahını oyuna sokarak aktif oynamaya başlayabilir, rakibinin piyon yapısındaki zayıflıklardan faydalanmayı hedefleyebilir. } { Şu anda filin gerçek bir hedefi olmadığına dikkat edin. Sorun tam olarak bu: Filin somut hedefleri yoksa fil boş bir taşa dönüşür. Bir ya da iki kareyi kontrol edebilir, şahın bir kareye ulaşmasını engelleyebilir, ama gerçek işlevi daha somut olmalı. Yoksa filin rolü çok zayıf hale gelir. -Mihalcisin } 30. Kf1 ({ Bu konumda Beyaz için doğru çözüm: } 30. Rd6 { olabilirdi. Beyaz, kalan kaleleri değişerek siyah taşların hücumdaki imkânlarını azaltmayı deneyebilirdi: } Rxd6 31. Bxd6 f5 32. f4 Kf7 33. Kf3 { hamlelerinden sonra Beyaz pasif ama muhtemelen yeterince sağlam bir konuma sahip, beraberlik şansları var. }) 30... f6 { Siyah artık f6'ya bir piyon yerleştirebiliyor, Capablanca kuralı: Rakibin fili varsa, fili kısıtlamak için piyonlarını o fille aynı renkteki karelere koy. Siyah bunu neredeyse otomatik olarak yapıyor. } 31. Ke2 Kf7 32. Kd3 Rc5 { Kaleyi, daha aktif yerleşmiş olacağı a5 karesine gelmek amacıyla. } 33. Rb2 Nd7 34. Kd4 Ra5 35. Rc2 Ke6 36. Rc6+ Kf5 37. Rc7 Ne5 38. Rc5 { Beyaz karşı şanslar bulmaya çalışıyor. Tehdidi 39. f4 ile taş kazanmak ve kalelerin değişilmesi durumunda şahını a6 piyonuna kadar ilerletmek. } ( 38. Rxg7 Nxf3+ 39. Ke3 Ra3+ 40. Ke2 Nd4+ 41. Kf1 Rxa2 { sonrasında Siyah bir piyon fazla kalırdı. }) 38... Ra3 $1 {Güçlü bir manevra. d3 karesinden mat tehdit ederek Beyazın planlarını bozuyor. Artık zor bir kale finaline girmekten başka çaresi yok. } 39. Bxe5 Ra4+ 40. Rc4 { Talihsiz bir yanıt. } ({ Mücadele etmeyi sürdürmenin tek yolu şuydu: } 40. Ke3 fxe5 41. Rc2 Ra3+ 42. Ke2 { Ne var ki bu durumda da } 42... a5 43. Rd2 g6 44. Rc2 h5 45. Rb2 Rc3 { hamlelerinden sonra Siyah 46... Kf4 tehdidiyle bir piyon kazanır ve neticede oyunu kazanmaya yetecek üstünlüğü elde ederdi. }) 40... fxe5+ 41. Kd5 Rxa2 42. Rg4 g5 0-1
 
-Oyunun tespiti şu: Filin somut bir hedefi yoksa fil boş bir taşa dönüşüyor. Beyazın fili koyu kareli, Siyah da ...f6 ile piyonunu koyu bir kareye yerleştirerek, yani ==Capablanca Kuralı’nın== “rakibin fili varsa” yarısını uygulayarak, filin alanını daraltıyor. Beyazın fili hedef bulamıyor. Bu sırada Siyah ise şahını ve kalesini oyuna sokarak rakibinin piyon yapısındaki zayıflıkları hedef alıyor. Kötü fil, her zaman kendi piyonlarının arkasında hapsolmuş bir fil olmak zorunda değil; ==işlevsiz kalan fil== de aynı işi görüyor.
+Oyunda görünen şu: Filin somut bir hedefi yoksa, fil gücünü ciddi oranda kaybediyor. Beyazın fili koyu kareli, Siyah da ...f6 ile piyonunu koyu bir kareye yerleştirerek, yani ==Capablanca Kuralı’nın== “rakibin fili varsa” yarısını uygulayarak filin alanını daraltıyor. Beyazın fili hedef bulamıyor. Bu sırada Siyah ise şahını ve kalesini oyuna sokarak rakibinin piyon yapısındaki zayıflıkları hedef alıyor. Kötü fil, her zaman kendi piyonlarının arkasında hapsolmuş bir fil olmak zorunda değil; ==işlevsiz kalan fil== de aynı işi görüyor.
 
 ### Tal ve Riga’nın atları
 
 ![Mikhail Tal ve Tigran Petrosian (siyah-beyaz fotoğraf)](images/tal-petrosian-1962.jpg "<span lang="ru">Mikhail Tal</span> ve <span lang="hy">Tigran Petrosian</span> · Hollanda–SSCB karşılaşması, 3 Temmuz 1962 · Fotoğraf: <span lang="nl">Harry Pot / Anefo</span> · Ulusal Arşiv, Hollanda · Lisans: CC0 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=67217642)")
 
-Sekizinci dünya şampiyonu **Mikhail Tal** (1936–1992), atak oyununun en büyük isimlerinden biri olarak bilinir. Ama at ve fil değişimlerine dair kararları her zaman isabetli olmadı: Smyslov’a karşı oynadığı bu oyunda duble piyonlu bir konumu ata karşı fille oynamaktan kaçınmayarak kaybediyor.
-
-Bu oyunda Smyslov, Tal’ın duble piyonlarını hedef alıyor. Analiz ve yorumlar Smyslov’a ait.
+Sekizinci dünya şampiyonu **Mikhail Tal** (1936–1992), atak oyununun en büyük isimlerinden biri olarak bilinir. Ama satranç tekniğine dair kararları her zaman isabetli olmadı: Smyslov’a karşı duble piyonlu bu konumu ata karşı fille oynuyor. Smyslov’un atı, Tal’in duble piyonlarını hedef alıyor. Analiz ve yorumlar Smyslov’a ve GM Mikhalchishin’e ait.
 
 [Event "SSCB Şampiyonası"]
 [View "player"]
@@ -280,19 +256,15 @@ Bu oyunda Smyslov, Tal’ın duble piyonlarını hedef alıyor. Analiz ve yoruml
 
 {Burada Siyah beraberlik teklif etti. Ancak Beyazın hafif bir inisiyatifi var ve oyun devam etti...} 13. Nh4 Be6 ({Eğer} 13... Rad8 {oynansaydı, Beyaz} 14. Nxf5 gxf5 15. f4 {ile daha elverişli bir konum elde edebilirdi.}) 14. Bxc6 $1 {Uzun menzilli filin atla değişilmesi, oyunsonuna ilişkin somut bir değerlendirmeye dayanıyor. Siyahın piyon zincirinin zayıflaması, Beyaza küçük ama kalıcı bir üstünlük sağlıyor.} bxc6 15. Nf3 f6 {Beyaz, atını e5'e getirerek ikilenmiş piyonlar üzerindeki baskıyı artırmakla tehdit ediyordu.} ({Eğer} 15... Bg4 {oynanırsa} 16. Ne5 Bxe2 17. Re1 Ba6 18. Nd7 Rfe8 19. Nxc5 Bc8 20. Rad1 {ile Beyaz konumsal üstünlük elde eder. Duble piyonların bulunduğu oyunsonlarında atın file üstünlük sağladığı konumlara sıkça rastlanır.}) 16. Nd2 Rfd8 ( {Stockfish'e göre:} 16... c4! 17. Nxc4 ( 17. bxc4 Rab8 18. Nb3 Bxc4 = ) 17... Bxc4 18. bxc4 = ) 17. Ne4 c4 {Bu piyon sürüşü zorunlu, ancak artık at c5'te hâkim bir konuma yerleşiyor.} 18. Nc5 Bf5 ( {Stockfish'e göre:} 18... Kf7 {ile filin korunması ve atla değişimin teklif edilmesi daha iyiydi. 19. Nxe6 ile atı fille değiştirmek Beyaz açısından hata olurdu.} ) 19. f3 Bc2 20. Rxd8+ Rxd8 {Siyah d dikeyini ele geçirmeyi başardı, ancak bunun bir önemi yok; çünkü Beyazın şahı oyuna katılarak Siyah kalenin girmeyi hedeflediği d2 karesinin denetimini altına alıyor.} 21. Kf2 Kf7 22. b4 Bf5 23. Ke1 e5 ({Fili} 23... Bc8 {ile geri çekmek daha temkinli olurdu. Bu durumda Beyaz,} 24. a4 {ile konumsal baskısını artırabilirdi.}) 24. Nb7 $1 Rd7 {Kalenin başka bir hamlesi yok.} ({Eğer} 24... Rd5 {oynanırsa,} 25. e4 {gelir;}) ( 24... Rb8 {oynanırsa ise} 25. Nd6+ {ile bir piyon kazanılır.}) 25. Na5 c5 26. bxc5 Rd5 27. Nb7 (27. e4 {hamlesi,} Rxc5 28. Nb7 Rc7 29. Nd6+ Ke7 30. Nxf5+ ({ya da} 30. Nb5 Rb7) 30... gxf5 31. exf5 Rb7 {devamından ötürü daha zayıf olurdu. Ortaya çıkan kale oyunsonunda Siyahın savunma yapması daha kolaydır.}) 27... Rd7 28. Nd6+ Ke7 29. g4 $1 {b1 karesini kale için güvence altına alan yararlı bir hamle.} Be6 ({Eğer} 29... Bc2 {oynanırsa,} 30. Nxc4 {gelir. Bu durumda} Rc7 {hamlesine} 31. Ne3 {ile karşılık verilir ve çifte tehdit oluşur.}) 30. Rb1 Rc7 31. Rb7 {Beyaz fazladan piyonunu koruyor.} Rxb7 ({Siyah,} 31... Kd7 {oynayamaz; çünkü} 32. Rxc7+ Kxc7 33. Ne8+ {gelir.}) 32. Nxb7 Kd7 33. Nd6 {Oyunun kritik anlarından biri.} ( 33. Na5 f5 34. gxf5 gxf5 {hamlelerinden sonra Beyaz şahını b4'e götürmeyi planlar, ancak belirli bir noktada Siyah şah kanadında hareket serbestliği kazanır. d6'daki at, a5'e kıyasla daha esnek bir konumda bulunuyor ve şah kanadındaki mücadeleye katılmaya hazır.}) 33... h6 34. Kf2 Kc6 35. Ke3 { Bu hamle oynanabilir; çünkü } 35... a5 ( 35... Kxc5 { oynanırsa } 36. Ne4+ { ile karşılık verilir. } ) ({ Eğer } 35... f5 { oynanırsa, } 36. gxf5 gxf5 37. f4 Kd5 38. Ne8 $1 exf4+ 39. Kxf4 Kxc5 40. Ng7 { gelir. }) 36. Ne8 f5 37. Ng7 Bd7 38. gxf5 gxf5 39. f4 { Tam zamanında! } 39... Kd5 ({ Şimdi } 39... Kxc5 { oynanırsa, } 40. fxe5 Kd5 41. Kf4 { gelir. }) 40. c6 $1 Bc8 41. c7 Kd6 42. h4 {Beyaz bu hamleyi zarfa koymak için yazdı. Ajurne başlamadan Siyah terk etti.} ({ Eğer } 42. h4 Bd7 { oynanırsa, } 43. Nh5 Bc8 44. fxe5+ Kxe5 45. Nf4 { ve ardından 46. Ng6+ Kf6 47. h5 ve 48. Kf4 gelir. c7’deki geçer piyonun siyah taşların hareket alanını kısıtladığını ve Beyazın materyal üstünlüğünü sonuca dönüştürdüğünü görmek zor değil.}) 1-0
 
-Oyundaki yanlış karar, esasen, Tal’in at ve fil değişimlerine dair uygun kararları alamamasıydı. Tal, ortaya çıkan duble piyonlu konumu ata karşı fille oynamaktan kaçınmayarak kaybediyor.
+Oyundaki yanlış karar, esasen, Tal’in at ve fil değişimlerine dair uygun kararları alamamasıydı. Tal, ortaya çıkan duble piyonlu konumu ata karşı fille oynamaktan kaçınmıyor ve kaybediyor.
 
 Mikhail Tal, Letonya'nın başkenti Riga'da doğup büyümüştü. Rivayet o ki Riga’da gayriresmi oyunlarda geçerli olan yerel satranç kuralları biraz farklıydı: Riga’da atlar yalnızca ileriye doğru hareket edebiliyordu, piyonlar gibi atlar da geriye gidemiyordu. Bu, çocukluğundan beri Tal’in zihnine öylesine yerleşmişti bir motifti ki atların yalnızca ileriye gittiği hamleler sık sık Tal’in en ünlü, en etkileyici hamleleri arasında olmuştur.
 
 Bu rivayeti [aktaran](https://en.chessbase.com/post/the-true-secret-of-intuition-in-che) Niels Lauritsen kaynak olarak “Seville’de birlikte bir fıçı şarap içtikleri” Alexei Shirov’u gösteriyor. Kendisi de Riga’lı olan Shirov, Tal ile geçirdiği zamanlardan bütün gece bahsetmiş. Kim bilir, belki de gerçek buydu ve Tal, bu yüzden atları olduğundan daha zayıf taşlar olarak görebiliyordu.
 
-### Petrosian ve siyah kareli fil
+### Petrosian file karşı
 
-Dokuzuncu dünya şampiyonu **Tigran Petrosian** (1929–1984), taş değişimleriyle konumu yavaş yavaş kendi lehine çeviren bir oyuncuydu.
-
-![Tigran Petrosian (siyah-beyaz fotoğraf)](images/petrosian-1962.jpg "<span lang="hy">Tigran Petrosian</span> · Fotoğraf: <span lang="nl">Harry Pot / Anefo</span> · Ulusal Arşiv, Hollanda · 1962 · Lisans: CC0 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=84493908)")
-
-Petrosian’ın satranç anlayışını Grivas şöyle özetliyor:
+Dokuzuncu dünya şampiyonu **Tigran Petrosian** (1929–1984), taş değişimleriyle konumu yavaş yavaş kendi lehine çeviren bir oyuncuydu. Petrosian’ın satranç anlayışını Grivas şöyle özetliyor:
 
 > Aron Nimzowitsch’in profilaksi anlayışından büyük ölçüde etkilenmiş olan Petrosian, temkinli ve savunma yönü son derece güçlü bir satranç oyuncusuydu. Kendi hücum olanaklarından yararlanmaktan çok, rakibinin hücum olanaklarını önlemeye çaba gösterirdi. Konumunun bütünüyle güvenli olduğuna kanaat getirmedikçe nadiren hücuma geçerdi.
 >
@@ -300,7 +272,7 @@ Petrosian’ın satranç anlayışını Grivas şöyle özetliyor:
 
 Rakibinin planlarını daha doğmadan boğan bu anlayış, “rakibin fili hareket edemiyorsa onun gücünü düşünmeye gerek kalmaz” fikriyle birebir örtüşüyor.
 
-Bu anlayışın en açık örneklerinden biri, Smyslov’un Tal’a karşı uyguladığı fikrin aynısı: Fili atla değişip rakibe duble piyon bırakmak. Petrosian, 1972’de Skopje’deki olimpiyatta Polonyalı Włodzimierz Schmidt’e karşı daha 8. hamlede Bxc6+ ile bunu yapıyor.
+Bu anlayışın en açık örneklerinden biri, Smyslov’un Tal’a karşı uyguladığı fikrin aynısı: Fili atla değişip rakibe duble piyon bırakmak. Petrosian, 1972’de Üsküp’teki olimpiyatta Polonyalı Włodzimierz Schmidt’e karşı daha 8. hamlede Bxc6+ ile bunu yapıyor. Analiz ve yorumlar GM Mikhalchishin’den.
 
 [Event "Satranç Olimpiyatı"]
 [View "player"]
@@ -309,7 +281,7 @@ Bu anlayışın en açık örneklerinden biri, Smyslov’un Tal’a karşı uygu
 [White "Tigran Petrosian"]
 [Black "Wlodzimierz Schmidt"]
 [Result "1-0"]
-[EventLine "Satranç Olimpiyatı, Skopje, 1972"]
+[EventLine "Satranç Olimpiyatı, Üsküp, 1972"]
 [SetUp "1"]
 [FEN "r1bqk2r/ppp1ppbp/1nn3p1/8/8/2NPB1P1/PP2PPBP/R2QK1NR w KQkq - 0 8"]
 
@@ -317,9 +289,7 @@ Bu anlayışın en açık örneklerinden biri, Smyslov’un Tal’a karşı uygu
 
 { Bu tür konumlarda Bxc6+ hayli tipik bir hamledir. Siyah için gerçek bir kâbus: Beyazın şah kanadı zayıflarken beyaz karelerde olası sorunları var. Siyah ise  sadece duble piyonla kalacak gibi görünüyor. Ama işin aslı öyle değil. } 8. Bxc6+ $1 $16 bxc6 9. Qc1 { Zekice bir hamle: koyu kareli filleri de değişmek çok faydalı hale geliyor, ardından Beyaz basitçe kaleyi c1'e, atı f3'e getirip oyunu kolayca kendi lehine çevirecek. } 9... h6 ( 9... O-O 10. Bh6 $16 ) 10. Nf3 Bh3 11. Rg1 { [%cal Gg3g4,Gg1g3]} { Fantastik bir hamle - Beyaz g4 ve ardından Rg3 ile fili düşürmeyi tehdit ediyor. } Bg4 12. Nd2 Nd5 13. Nxd5 cxd5 14. Nb3 ( { Stockfish: } 14. Qc6 Bd7 15. Qxd5 Bxb2 16. Rb1 Bg7 17. f3 ) 14... Qd6 { Şimdi Beyaz, siyah karelerdeki zayıflıkları kullanmaya başlıyor. } 15. f3 Bd7 {[%cal Ge7e5]} 16. d4 $1 { Beyaz elbette ...e5'i durdurmak zorunda, çünkü Siyah güçlü bir merkezi inisiyatif ele geçirmek istiyor. } Rb8 $2 17. Kf2 h5 18. Bf4 e5 19. dxe5 Bxe5 { (Bunun yerine piyonla geri almak g-dikeyinde ciddi sorunlar yaratırdı.) } 20. Qe3 $18 f6 21. Qxa7 { Beyaz bir piyon kazanıyor. } 21... O-O { Siyah sonunda rok yapmayı başarıyor. } 22. Rac1 Rfe8 ( { Stockfish: } 22... Rfc8 { ile piyonu korumak daha dirençli olurdu. } ) 23. Bxe5 Qxe5 (23... fxe5 24. Qxc7 $18) { Elbette c7 piyonu boşta; Siyah bunun yerine ...Rbc8 deneseydi, o zaman Qd4 fazla piyonu ve daha da iyi bir pozisyonu korurdu, bu yüzden Siyah bunun yerine ...Ra8 deniyor. } 24. Rge1 Ra8 (24... Rbc8 25. Qd4) 25. Qxc7 Qe3+ 26. Kg2 Ra7 27. Qd6 { Pozisyon basitçe Beyazın lehine açılıyor - Siyahta gerçek bir karşı şans kalmadı. } h4 28. gxh4 Be6 29. Rc3 Qh6 30. a3 Rd7 31. Qg3 { Şimdi Siyahın bütün piyonları saldırı altına giriyor. } d4 32. Rd3 Bxb3 33. Rxb3 Qd2 34. Kf1 $1 { Şah için koruyucu bir hamle. } Kh7 35. Rb8 Re5 36. Qg4 f5 37. Qg5 Re3 ( { Siyah } 37... Qxg5 { ile başına geleceklerden kaçınabilirdi. Beyaz yine de oyunsonunu rahatlıkla kazanırdı. } ) 38. Qf6 { Ve şimdi çok tatsız bir mat tehdidi var: Siyah terk eder. Çünkü 38... Rg7 39. Qf8 sonrasında Beyazın mat saldırısı basitçe kazanıyor. } 1-0
 
-Petrosian’ın bu kurallara bağlılığı, öğrettiği derslere de yansıyordu. Aşağıdaki hikâyeyi önce tahtadan uzakta dinlemek gerek: Anlatıcı, kuralı çiğnediği için kaybeden oyuncunun kendisi, Adrian Mikhalchishin. Ona kuralı hatırlatan kişi ise Petrosian.
-
-Şimdi Mikhalchishin’in oyununa gelelim. Beyaz Zaichik, reytingi 2200; Siyah Mikhalchishin, reytingi 2425, yani rakibinden 225 puan yukarıda. Siyah, 23...c5 ile c6’daki açık kareli piyonunu koyu kareli c5’e taşıyor: Koyu kareli g7 filiyle aynı renge. Capablanca Kuralı bozuluyor ve cezası geliyor.
+Petrosian’ın bu kurallara bağlılığı, analizlerde genç oyunculara verdiği öğütlere de yansıyordu. Aşağıdaki hikâye, analiz tahtasının etrafında tartışan birkaç büyük ustayı anlatıyor: Anlatan, kuralı çiğnediği için kaybeden oyuncunun kendisi, Adrian Mikhalchishin. Ona kuralı hatırlatan kişi ise Tigran Petrosian.
 
 [Event "SSCB Takım Şampiyonası"]
 [View "player"]
@@ -354,7 +324,9 @@ Petrosian’ın bu kurallara bağlılığı, öğrettiği derslere de yansıyord
 
 Herkesin cevabını merak ettiği soru şu: At ne zaman filden daha iyidir, fil ne zaman attan daha iyidir? Açık pozisyonlarda filin rolü doğal olarak önem kazanır. At ise kapalı pozisyonlarda genellikle rakip filin ulaşamadığı kareleri kontrol ettiğinde daha güçlüdür.
 
-Nimzowitsch’in kendi adını verdiği Nimzo-Hint Savunması’nın devrimci fikri tam da bu yüzden siyah taşlarla pasif durup beklemek değil, …Bb4 gelip gönüllü olarak c3’teki atı almaktı. Fil ile atı değişerek rakibin c piyonlarından duble piyon yaratma stratejisi, ister c3’te ister c6’da olsun, Değişmeli İspanyol, Nimzo Hint, İngiliz Açılışı ya da Sicilya Savunması Moskova ve Rossolimo varyantları gibi pek çok farklı açılışta günümüzde hayli yaygın hâle geldi.
+Nimzowitsch’in kendi adını verdiği Nimzo-Hint Savunması’nın 20. yüzyıl başlarındaki devrimci fikri tam da bu yüzden siyah taşlarla pasif durup beklemek değil, …Bb4 gelip gönüllü olarak c3’teki atı almaktı.
+
+Fil ile atı değişerek rakibin c piyonlarından duble piyon yaratma stratejisi, ister c3’te ister c6’da olsun, Değişmeli İspanyol, Nimzo Hint, İngiliz Açılışı ya da Sicilya Savunması Moskova ve Rossolimo varyantları gibi pek çok farklı açılışta günümüzde hayli yaygın hâle geldi.
 
 Çünkü bir konumda rakibinizin duble piyonları varsa atınız biraz daha iyi hâle gelir. Tahtada duble piyonlar olduğunda, atın fil karşısında gücü bir parça artar. Simetrik konumlarda atın gücü artar, ama rakibin pozisyonunda duble piyon yaratmayı başardığınızda bu güç daha da artar.
 
