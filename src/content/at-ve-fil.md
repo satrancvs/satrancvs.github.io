@@ -274,7 +274,7 @@ Dokuzuncu dünya şampiyonu **Tigran Petrosian** (1929–1984), taş değişimle
 >
 > — Grivas
 
-Rakibinin planlarını daha doğmadan boğan bu anlayış, rakibin filini etkisiz hâle getirmenin önemini de ortaya koyuyor. Bu anlayışın en açık örneklerinden biri, Smyslov’un Tal’a karşı uyguladığı fikrin bir benzeri: Fili atla değişip rakibe duble piyon bırakmak.
+Rakibinin planlarını daha doğmadan boğan bu anlayış, rakibin filini etkisiz hâle getirmenin önemini de ortaya koyuyor. Bu anlayışın en açık örneklerinden biri, Smyslov’un Tal’e karşı uyguladığı fikrin bir benzeri: Fili atla değişip rakibe duble piyon bırakmak.
 
 Petrosian, 1972’de Üsküp’teki olimpiyatta Polonyalı Włodzimierz Schmidt’e karşı daha 8. hamlede Bxc6+ ile bunu yapıyor. Analiz ve yorumlar GM Mikhalchishin’den.
 
