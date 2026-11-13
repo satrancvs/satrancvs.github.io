@@ -258,7 +258,7 @@ Sekizinci dünya şampiyonu **Mikhail Tal** (1936–1992), atak oyununun en büy
 
 Oyundaki yanlış karar, esasen, Tal’in at ve fil değişimlerine dair uygun kararları alamamasıydı. Tal, ortaya çıkan duble piyonlu konumu ata karşı fille oynamaktan kaçınmıyor ve kaybediyor.
 
-Mikhail Tal, Letonya'nın başkenti Riga'da doğup büyümüştü. Rivayet o ki Riga’da gayriresmi oyunlarda geçerli olan yerel satranç kuralları biraz farklıydı: Riga’da atlar yalnızca ileriye doğru hareket edebiliyordu, piyonlar gibi atlar da geriye gidemiyordu. Bu, çocukluğundan beri Tal’in zihnine öylesine yerleşmişti bir motifti ki atların yalnızca ileriye gittiği hamleler sık sık Tal’in en ünlü, en etkileyici hamleleri arasında olmuştur.
+Mikhail Tal, Letonya'nın başkenti Riga'da doğup büyümüştü. Rivayet o ki Riga’da gayriresmi oyunlarda geçerli olan yerel satranç kuralları biraz farklıydı: Riga’da atlar yalnızca ileriye doğru hareket edebiliyordu, piyonlar gibi atlar da geriye gidemiyordu. Bu motif Tal’in zihnine çocukluğundan beri öylesine yerleşmişti ki atların yalnızca ileriye doğru oynadığı hamleler, Tal’in en ünlü ve etkileyici hamleleri arasında yer alır.
 
 Bu rivayeti [aktaran](https://en.chessbase.com/post/the-true-secret-of-intuition-in-che) Niels Lauritsen kaynak olarak “Seville’de birlikte bir fıçı şarap içtikleri” Alexei Shirov’u gösteriyor. Kendisi de Riga’lı olan Shirov, Tal ile geçirdiği zamanlardan bütün gece bahsetmiş. Kim bilir, belki de gerçek buydu ve Tal, bu yüzden atları olduğundan daha zayıf taşlar olarak görebiliyordu.
 
