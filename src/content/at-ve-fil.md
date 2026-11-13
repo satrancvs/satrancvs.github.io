@@ -245,7 +245,7 @@ Beyaz taşlarla oynayan oyuncu Boleslavsky, o dönemde dünyanın en iyi beş ya
 
 Sekizinci dünya şampiyonu **Mikhail Tal** (1936–1992), hücum satrancının simgelerinden biri olarak bilinir. Ama at ve fil değişimlerine dair kararları her zaman isabetli olmadı: Smyslov’a karşı oynadığı bu oyunda duble piyonlu bir konumu ata karşı fille oynamaktan kaçınmayarak kaybediyor.
 
-![Mikhail Tal (siyah-beyaz fotoğraf)](images/tal-1982.jpg "<span lang="ru">Mikhail Tal</span> · Fotoğraf: <span lang="nl">Rob C. Croes / Anefo</span> · Ulusal Arşiv, Hollanda · Wijk aan Zee, 1982 · Lisans: [CC BY-SA 3.0 NL](https://creativecommons.org/licenses/by-sa/3.0/nl/) · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=29164554)")
+![Mikhail Tal ve Tigran Petrosian (siyah-beyaz fotoğraf)](images/tal-petrosian-1962.jpg "<span lang="ru">Mikhail Tal</span> ve <span lang="hy">Tigran Petrosian</span> · Hollanda–SSCB karşılaşması, 3 Temmuz 1962 · Fotoğraf: <span lang="nl">Harry Pot / Anefo</span> · Ulusal Arşiv, Hollanda · Lisans: CC0 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=67217642)")
 
 Aşağıdaki oyunda Smyslov, Tal’ın duble piyonlarını hedef alıyor. Analiz ve yorumlar Smyslov’a ait; bazı notlarda Stockfish’in önerileri de yer alıyor.
 
