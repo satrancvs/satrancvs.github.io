@@ -299,10 +299,16 @@
     "slug": "munteha-mansubeleri",
     "unlisted": true,
     "cat": "Satranç tarihi",
+    "cats": [
+      "Satranç tarihi",
+      "Literatür inceleme",
+      "Oyunsonu"
+    ],
     "title": "Müntehâ Mansûbeleri: Şâh ve Piyâde",
     "dek": "Milli Kütüphanede kayıtlı, 1922 tarihli nadir bir el yazması: H. Emrullah’ın Fransızca ve Almanca kaynaklardan çevirdiği piyon oyunsonu kitabının kapaklarını araladık.",
-    "author": "Yayın ekibi",
-    "date": "Ekim–Kasım–Aralık 2026",
+    "author": "Oğul Köseoğlu, Nazmi Can Doğan",
+    "authorLabel": "Yazarlar",
+    "date": "Ocak–Şubat–Mart 2027",
     "body": []
   }
 ]
