@@ -10,7 +10,7 @@ import { curlyPass } from '@/lib/curly-dom';
 
 type Variation = { moves: string[]; comments: string[]; glyphs: string[] };
 type PuzzleDetail = {
-  type: 'step' | 'reply' | 'wrong' | 'solved';
+  type: 'step' | 'reply' | 'wrong' | 'solved' | 'restart';
   index: number | null;
   san: string | null;
   glyph: string;
@@ -122,6 +122,7 @@ export default function FlipGame({ front, between, back }: { front: ReactNode; b
     // Hamlelerin yorumları oynatıcının kendi yorum kutusunda (tahtanın altında) görünür (pgn-player.js yaması, `_showComment`).
     // Burada yalnızca yan varyantlar (analizdeki alternatif hamleler) alta satır olarak eklenir, yalnızca analizdeki bir hamle denenince (hamle bulununca kendiliğinden açılmaz).
     const handle = (d: PuzzleDetail, fmt: Format) => {
+      if (d.type === 'restart') { notes.innerHTML = ''; shown.clear(); return; } // başa dön: bulmaca yeniden çözülür, önceki yan varyant satırları silinir
       if (d.type === 'solved') return;
       if (d.type === 'wrong') {
         // Çözüm değil ama analizde geçen bir hamle denendi: o hamleyle başlayan yan varyant açılır.

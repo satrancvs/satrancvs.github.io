@@ -1696,6 +1696,8 @@ class VideoComment {
              move, not the main line's), the main line otherwise. */
           if (this.engine._variation) {
             this.engine.variationGoTo(0);
+          } else if (this.engine.restartPuzzles()) {
+            /* Site patch: solved puzzles start over (restartPuzzles above did the work). */
           } else {
             this.engine.goTo(0);
             this.engine.showPlayBtn();
@@ -2797,10 +2799,44 @@ class VideoEngine {
 
 
 
+  /* Site patch: "Replay" after the game's puzzles were solved starts them over instead of replaying the revealed solution.
+     Every solved marker (main line, side variations, nested ones) is re-armed, the move list hides the solution again and the
+     player jumps to the first puzzle position (a marker before the first move: the start position). Returns false when no
+     puzzle of this game was solved, so the normal replay runs. */
+  restartPuzzles() {
+    if (!this.puzzle || this.puzzle.active || this._variation) return false;
+    let solvedAny = false;
+    const rearm = (puzzles) => {
+      if (!puzzles) return;
+      Object.values(puzzles).forEach((m) => { if (m && m.solved) { m.solved = false; solvedAny = true; } });
+    };
+    const rearmVar = (v) => {
+      if (!v) return;
+      rearm(v.puzzles);
+      (v.childrenByMove || []).forEach((list) => list && list.forEach(rearmVar));
+    };
+    rearm(this.state.puzzles);
+    (this.state.variations || []).forEach((list) => list && list.forEach(rearmVar));
+    if (!solvedAny) return false;
+
+    const keys = Object.keys(this.state.puzzles || {}).map(Number).filter((k) => this.state.puzzles[k]);
+    const target = keys.length ? Math.min(...keys) + 1 : 0; // marker at moveIndex m is solved from the position after move m
+    this.state.playing = false;
+    this.container.classList.add("paused");
+    if (this.moveList) this.moveList.build(this.state.moves, this.state.glyphs, this.state.headers);
+    this.container.dispatchEvent(new CustomEvent("cp-puzzle", { bubbles: true, detail: { type: "restart" } }));
+    this.goTo(target);
+    if (!this._puzzleActive) this.showPlayBtn();
+    return true;
+  }
+
   play() {
 
     /* Site patch: at the end of a side variation browsed during a puzzle, play returns to the puzzle. */
     if (this.puzzle && this.puzzle.browsing) { this.puzzle.endBrowse(); return; }
+
+    /* Site patch: at the end of the game the board's replay button re-arms solved puzzles (see restartPuzzles). */
+    if (this.state.index >= this.state.moves.length && this.restartPuzzles()) return;
 
     /* Same reasoning as the goTo() guard: don't let play() spin up the
        autoplay loop while an unsolved puzzle is active — otherwise
