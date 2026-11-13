@@ -534,12 +534,3 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 /* `[Lichess]` in a game comment (ArticleBody.tsx lichessLinks): the link (label already ALL CAPS in the source: text-transform would turn the i into Turkish İ) to the Lichess analysis board looks like an outlined mono button. */
 .cp-game a[href^="https://lichess.org/analysis/"] { display:inline-block; margin-top:.35em; padding:.45em .9em; border:1px solid currentColor; border-radius:999px; font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:500; letter-spacing:.08em; text-transform:none; text-decoration:none; line-height:1.3; }
 .cp-game a[href^="https://lichess.org/analysis/"]:hover { border-color:var(--accent, #f5a524); color:var(--accent, #f5a524); }
-
-/* Müntehâ Mansûbeleri (yalnızca bu yazı, `data-article="muntehe"`): bulmaca tahtası el yazması diyagramları gibi çizilir.
-   Açık kareler sararmış kâğıt, koyu kareler kurşun kalem taramasıdır; taşlar `multiply` ile kâğıda karışır, böylece beyaz taşlar
-   defterdeki gibi yalnızca konturdan ibaret görünür, siyah taşlar koyu mürekkep kalır. */
-[data-article="muntehe"] .cp-game .player-container .board-wrap .board-b72b1 { border: 1.5px solid #3b2a10; box-shadow: 0 0 0 3px #cfa958, 0 0 0 4.5px #3b2a10aa, 0 6px 18px #0006; }
-[data-article="muntehe"] .cp-game .chessboard-63f37 .white-1e1d7 { background-color: #cfa958 !important; background-image: none; }
-[data-article="muntehe"] .cp-game .chessboard-63f37 .black-3c85d { background-color: #cfa958 !important; background-image: repeating-linear-gradient(135deg, rgba(59, 42, 16, .5) 0 1px, transparent 1px 4px) !important; }
-[data-article="muntehe"] .cp-game .chessboard-63f37 .square-55d63 { box-shadow: inset 0 0 0 .5px rgba(59, 42, 16, .35); }
-[data-article="muntehe"] .cp-game .chessboard-63f37 .notation-322f9 { color: #4a3414; opacity: .8; }

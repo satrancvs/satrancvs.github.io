@@ -15,7 +15,7 @@ import data from './articles.json';
 
 export type Article = {
   id: string; slug: string; oldSlugs?: string[]; cat?: string; cats?: string[]; listLabel?: string; listNo?: string; title: string; dek?: string; author: string; authorLang?: string; authorLabel?: string; translator?: string; credit?: { text: string; href: string };
-  excerpt?: string; date?: string; chunks?: string[]; photo?: boolean; thumb?: string; thumbAlt?: string; thumbPosition?: string; diagram?: string; diagramAlt?: string; diagramCaption?: string; titleLines?: [string, string]; note?: string; diagramOrientation?: 'white' | 'black'; diagramBadge?: { square: string; glyph: string }; diagramArrow?: { from: string; to: string }; draft?: boolean; unlisted?: boolean; pieceSet?: string; body: string[];
+  excerpt?: string; date?: string; chunks?: string[]; photo?: boolean; thumb?: string; thumbAlt?: string; thumbPosition?: string; diagram?: string; diagramAlt?: string; diagramCaption?: string; titleLines?: [string, string]; note?: string; diagramOrientation?: 'white' | 'black'; diagramBadge?: { square: string; glyph: string }; diagramArrow?: { from: string; to: string }; draft?: boolean; unlisted?: boolean; body: string[];
 };
 
 // Gövdesi markdown dosyasından gelen yazılar (id -> dosya)
