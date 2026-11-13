@@ -5,6 +5,7 @@ import zebraMd from '@/content/zebralar-icin-satranc.md?raw';
 import karlsruheMd from '@/content/karlsruhe-ve-yol-ayrimlari.md?raw';
 import gomoriMd from '@/content/eugen-gomori.md?raw';
 import atFilMd from '@/content/at-ve-fil.md?raw';
+import atFil2Md from '@/content/at-ve-fil-bolum-2-taslak.md?raw';
 import aronianMd from '@/content/aronian-caro-kann.md?raw';
 import palavanMd from '@/content/selim-palavan.md?raw';
 import ilkAdimMd from '@/content/satranca-ilk-adim/index.md?raw';
@@ -25,6 +26,7 @@ const CHUNKS: Record<string, string[]> = {
   karlsruhe: splitArticle(karlsruheMd).chunks,
   gomori: splitArticle(gomoriMd).chunks,
   atfil: splitArticle(atFilMd).chunks,
+  'atfil-2': splitArticle(atFil2Md).chunks,
   aronian: splitArticle(aronianMd).chunks,
   palavan: splitArticle(palavanMd).chunks,
   giris: splitArticle(girisMd).chunks,

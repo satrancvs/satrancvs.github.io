@@ -53,5 +53,15 @@
     "file": "satranca-ilk-adim/9-analizli-oyunlar.md",
     "run": "Nxe5 Bxe5 Bf4",
     "reason": "Threat after 13.Re1 (white would play it if Black passed); not a line."
+  },
+  {
+    "file": "at-ve-fil-bolum-2-taslak.md",
+    "run": "Ng6 Kf6 h5",
+    "reason": "Smyslov–Tal, note to 42.h4: the source line is 45.Nf4 -- 46.Ng6+ Kf6 47.h5 (\"--\" = Black's unnamed move); not playable without it, waiting for the author."
+  },
+  {
+    "file": "at-ve-fil-bolum-2-taslak.md",
+    "run": "Rg7 Qf8",
+    "reason": "Petrosian–Schmidt, after the final move 38.Qf6 (Black resigned): the continuation that was avoided; nothing left to replace, so it cannot be a variation."
   }
 ]

@@ -58,11 +58,17 @@
     "id": "palavan",
     "slug": "1944-yilindan-selim-palavan-kimdir",
     "cat": "Satranç tarihi",
-    "cats": ["Satranç tarihi", "Söyleşi"],
+    "cats": [
+      "Satranç tarihi",
+      "Söyleşi"
+    ],
     "title": "1944 yılından: Selim Palavan kimdir?",
     "dek": "_Türkiye Şatranç Mecmuası_’nın ilk sayısında basılan bu söyleşiyi, dönemin özgün yazımına (_şatranç, dolayisile_ vb.) dokunmadan, Palavan’ın Euwe ile oyunundan bir diyagramla sunuyoruz.",
     "author": "Behiç Besler",
-    "credit": { "text": "©İSD", "href": "https://www.isd1943.org.tr/selim-palavan/" },
+    "credit": {
+      "text": "©İSD",
+      "href": "https://www.isd1943.org.tr/selim-palavan/"
+    },
     "note": "İlk yayın: Türkiye Şatranç Mecmuası, sayı 1, 1944<br>Kaynak: [İstanbul Satranç Derneği](https://www.isd1943.org.tr/selim-palavan/) · ©İSD",
     "date": "Ekim–Kasım–Aralık 2026",
     "body": []
@@ -70,7 +76,9 @@
   {
     "id": "mugla",
     "slug": "ammandan-muglaya-turkiyede-reytingler-aldatici-mi",
-    "oldSlugs": ["ammandan-mugladan-turkiyede-reytingler-aldatici-mi"],
+    "oldSlugs": [
+      "ammandan-mugladan-turkiyede-reytingler-aldatici-mi"
+    ],
     "cat": "Analizli oyun",
     "title": "Amman'dan Muğla'ya: Türkiye'de reytingler aldatıcı mı?",
     "dek": "Satranç tahtasında 1653 reytingli bir oyuncunun ünvanlı bir ustaya karşı şansı var mı? Ürdünlü Büyük Usta Al-Khatib’den Türkiye’ye kısa bir bakış.",
@@ -93,7 +101,10 @@
     "id": "aronian",
     "slug": "aronian-degismeli-caro-kann-dersi",
     "cat": "Açılış dosyası",
-    "cats": ["Açılış dosyası", "Analizli oyun"],
+    "cats": [
+      "Açılış dosyası",
+      "Analizli oyun"
+    ],
     "title": "Aronian’dan Değişmeli Caro-Kann dersi",
     "dek": "Değişmeli Caro-Kann yeniden diriliyor. Peki Aronian’ın yaklaşımını özel kılan ne?",
     "author": "FM Nazmi Can Doğan",
@@ -114,7 +125,9 @@
   {
     "id": "gomori",
     "slug": "1926-yilindan-nasil-usta-oldum",
-    "oldSlugs": ["eugen-gomoriden-alti-ustaya-tek-bir-soru"],
+    "oldSlugs": [
+      "eugen-gomoriden-alti-ustaya-tek-bir-soru"
+    ],
     "cat": "Satranç tarihi",
     "title": "1926 yılından: \"Nasıl usta oldum?\"",
     "author": "Eugen Gömöri",
@@ -279,6 +292,17 @@
     "author": "Görkem Sivri",
     "date": "Ekim–Kasım–Aralık 2026",
     "note": "Görkem Sivri’nin [*Satranca İlk Adım*](https://www.analizsatranc.com/files/satrancailkadim.pdf) kitabından, yazarın izniyle.",
+    "body": []
+  },
+  {
+    "id": "atfil-2",
+    "slug": "at-ve-fil-taslak-61bbbde46d",
+    "unlisted": true,
+    "cat": "Özel dosya",
+    "title": "At: güç bende artık",
+    "dek": "At ve fil yazısının ikinci bölümü (taslak).",
+    "author": "Oğul Köseoğlu",
+    "date": "Ekim–Kasım–Aralık 2026",
     "body": []
   }
 ]
