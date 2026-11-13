@@ -77,11 +77,13 @@ Sekizinci dünya şampiyonu **Mikhail Tal** (1936–1992), atak oyununun en büy
 
 Tal’in temel hatası, ortaya çıkan duble piyonlu konumda ata karşı fille oynamanın doğuracağı sonuçları uygun değerlendirememesiydi.
 
-Mikhail Tal, Letonya’nın başkenti Riga’da doğup büyümüştü. Rivayet o ki Riga’da gayriresmî oyunlarda geçerli olan yerel satranç kuralları biraz farklıydı: Riga’da atlar yalnızca ileriye doğru hareket edebiliyordu, piyonlar gibi atlar da geriye gidemiyordu. Bu motif Tal’in zihnine çocukluğundan beri öylesine yerleşmişti ki atların yalnızca ileriye doğru oynadığı hamleler, Tal’in en ünlü ve etkileyici hamleleri arasında yer alır.
+Mikhail Tal, Letonya’nın başkenti Riga’da doğup büyümüştü. Rivayet o ki Riga’da gayriresmî oyunlarda geçerli olan yerel satranç kuralları biraz farklıydı: Riga’da atlar yalnızca ileriye doğru hareket edebiliyordu, piyonlar gibi atlar da geriye gidemiyordu.
+
+Gerçekten, Tal’in en ünlü ve etkileyici hamleleri arasında sıklıkla atların ileri gittiği hamleler yer alır.
 
 Bu rivayeti [aktaran](https://en.chessbase.com/post/the-true-secret-of-intuition-in-che) Niels Lauritsen kaynak olarak “Seville’de birlikte bir fıçı şarap içtikleri” Alexei Shirov’u gösteriyor. Kendisi de Riga doğumlu olan Shirov, Tal ile geçirdiği zamanlardan bütün gece bahsetmiş.
 
-Kim bilir, belki de bu tuhaf kural Tal’in zihnine çocukluğundan beri öylesine yerleşmişti ki atlarını ileriye doğru sürmek, oyun anlayışının ayrılmaz bir parçası hâline gelmişti. Şüphesiz, sekiz yerine dört kareye gidebilen atlar, gerçekte olduğundan çok daha değersiz taşlar olacaktır.
+Şüphesiz, sekiz yerine dört kareye gidebilen bir at, gerçekte olduğundan çok daha değersiz bir taş olacaktır.
 
 ![Mikhail Tal ve Tigran Petrosian (siyah-beyaz fotoğraf)](images/tal-petrosian-1962.jpg "<span lang="ru">Mikhail Tal</span> ve <span lang="hy">Tigran Petrosian</span> · Hollanda–SSCB karşılaşması, 3 Temmuz 1962 · Fotoğraf: <span lang="nl">Harry Pot / Anefo</span> · Ulusal Arşiv, Hollanda · Lisans: CC0 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=67217642)")
 
@@ -145,7 +147,7 @@ Petrosian’ın bu kurallara bağlılığı, analizlerde genç oyunculara verdi�
 
 ### Hafif taşların gücü adına
 
-Herkesin cevabını merak ettiği soru şu: At ne zaman filden daha güçlüdür, fil ne zaman attan daha güçlüdür? Açık pozisyonlarda filin rolü doğal olarak önem kazanır. Açık pozisyonlarda filin uzun menzilli hareket kabiliyeti önem kazanırken at, kapalı pozisyonlarda rakip filin ulaşamadığı kareleri kontrol edebildiğinde genellikle daha güçlüdür.
+Herkesin cevabını merak ettiği soru şu: At ne zaman filden daha güçlüdür, fil ne zaman attan daha güçlüdür? Açık pozisyonlarda filin uzun menzilli hareket kabiliyeti önem kazanırken at, kapalı pozisyonlarda rakip filin ulaşamadığı kareleri kontrol edebildiğinde genellikle daha güçlüdür.
 
 Aron Nimzowitsch’in adını taşıyan Nimzo-Hint Savunması’nın 20. yüzyıl başlarındaki devrimci fikri, Siyahın pasif biçimde beklemek yerine ...Bb4 oynayarak c3’teki atı alması, böylece rakibin piyon yapısını bozup uzun vadeli zayıflıklar yaratmasıydı.
 
