@@ -9,6 +9,7 @@ import aronianMd from '@/content/aronian-caro-kann.md?raw';
 import palavanMd from '@/content/selim-palavan.md?raw';
 import ilkAdimMd from '@/content/satranca-ilk-adim/index.md?raw';
 import girisMd from '@/content/ilk-sayi-ilk-hamle.md?raw';
+import muntehe from '@/content/muntehe-mansubeleri.md?raw';
 import { toTypography } from '@/lib/curly';
 import data from './articles.json';
 
@@ -28,6 +29,7 @@ const CHUNKS: Record<string, string[]> = {
   aronian: splitArticle(aronianMd).chunks,
   palavan: splitArticle(palavanMd).chunks,
   giris: splitArticle(girisMd).chunks,
+  muntehe: splitArticle(muntehe).chunks,
   'ilk-adim': splitArticle(ilkAdimMd).chunks,
 };
 
