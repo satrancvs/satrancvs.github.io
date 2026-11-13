@@ -1,4 +1,4 @@
-Milli Kütüphanede YZ. A 1659 katalog numarasıyla kayıtlı, Türkiye Yazma Eserler Kurumu Başkanlığı veritabanı üzerinden ulaşılabilen bir el yazması, nadir bir eser var. Mütercim H. Emrullâh’ın 1922’de Fransızca ve Almanca kaynaklardan çevirdiği bir piyon oyunsonu kitabı. El yazmasının kapaklarını sizler için araladık.
+Milli Kütüphanede YZ. A 1659 katalog numarasıyla kayıtlı, Türkiye Yazma Eserler Kurumu Başkanlığı veritabanı üzerinden ulaşılabilen bir el yazması, nadir bir eser var. Mütercim H. Emrullâh’ın 1922’de Fransızca ve Almanca kaynaklardan çevirdiği bir piyon oyunsonu kitabı. El yazmasının kapaklarını 104 yıl sonra sizler için araladık.
 
 ![Müntehâ Mansûbeleri el yazmasının kapağı (renkli fotoğraf)](images/muntehe-kapak.jpg "<i>Müntehâ Mansûbeleri</i> el yazmasının kapağı · Milli Kütüphane, 06 Mil Yz A 1659 · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
 
