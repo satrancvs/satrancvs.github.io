@@ -49,20 +49,35 @@ Eser, kuramdan alıştırmaya giden düzenli bir sıra izliyor. Önce temel tan�
 2. **Tekâbül (opozisyon):** *Bi’l-fiil*, yani gerçek tekâbül ile *bi’l-kuvve*, yani potansiyel tekâbül; yakın, orta ve uzak tekâbül; çapraz ve eğik tekâbül. Temel kural: iki şahın oluşturduğu dikdörtgenin kenarları tek sayı olmalı.
 3. **Mühim Hâneler:** Şahın koruduğu piyonun önündeki kilit kareler.
 4. **Murabba Kâidesi:** Geçer piyonun karesi. Kale piyonu bu kuralın istisnası olarak ayrıca işleniyor.
+
+![Murabba Kâidesi sayfası (el yazması, renkli fotoğraf)](images/muntehe-s9.jpg "4. bölüm, Murabba Kâidesi: geçer piyonun karesi diyagramda noktalarla gösterilmiş · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 9. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
+
 5. **Hudûd Kâidesi:** Karşılıklı sabitlenmiş iki piyonla, rakip piyonun yatayındaki karelere ilk ulaşan şah piyonu kazanır. “Fâhe” (<i lang="fr">trébuchet</i>) gibi istisnalar da burada.
+
+![Fâhe ve merbût piyâde sayfaları (el yazması, renkli fotoğraf)](images/muntehe-s39.jpg "5. bölüm, Hudûd Kâidesi: fâhe ve merbût piyâde diyagramları · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 39. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
+
 6. **Piyâde Mücâdelâtı:** Şahlar olmadan piyonların kendi aralarındaki mücadelesi. Bir piyona karşı iki merbût piyade, iki merbût piyadeye karşı iki münferid piyade vb.
 7. **Şâh ile Piyâde Mücâdelesi:** Tek şahın rakip piyonlara karşı mücadelesi, piyonlar arasındaki mesafeye göre.
 8. **Şâhın üç piyâdeyle mücâdelesi:** *Müselles-i esâsî*, yani temel üçgen (<i lang="fr">triangle fondamental</i>) kavramı ve on üç konum.
 9. **160 mansube:** Her iki sayfada on ikişer diyagram, toplam 160 soru. Çoğu diyagramın üstünde çözümün bulunduğu sayfaya gönderme var.
-10. **Çözümler:** Her çözüm, önce *Takdîr-i Vaz’iyet* adı verilen bir konum değerlendirmesiyle açılıyor, sonra hamlelere geçiyor.
-
-![Murabba Kâidesi sayfası (el yazması, renkli fotoğraf)](images/muntehe-s9.jpg "4. bölüm, Murabba Kâidesi: geçer piyonun karesi diyagramda noktalarla gösterilmiş · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 9. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
-
-![Fâhe ve merbût piyâde sayfaları (el yazması, renkli fotoğraf)](images/muntehe-s39.jpg "5. bölüm, Hudûd Kâidesi: fâhe ve merbût piyâde diyagramları · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 39. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
 
 ![Elle çizilmiş diyagram sayfaları (el yazması, renkli fotoğraf)](images/muntehe-s15.jpg "9. bölüm: her sayfada on iki, elle çizilmiş diyagram · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 15. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
 
+Defterdeki 160 mansubeden birini siz de deneyin. Beyaz oynar ve iki hamlede mat eder; Beyaz şahın ilk hamlesini bulun.
+
+[Event "Müntehâ Mansûbeleri"]
+[White "Beyaz"]
+[Black "Siyah"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "8/8/p2K4/kpp5/p7/P7/8/8 w - - 0 1"]
+
+{[P3]} 1. Kxc5 b4 2. axb4# 1-0
+
+10. **Çözümler:** Her çözüm, önce *Takdîr-i Vaz’iyet* adı verilen bir konum değerlendirmesiyle açılıyor, sonra hamlelere geçiyor.
+
 ![Çözüm sayfası: Takdîr-i Vaz’iyet (el yazması, renkli fotoğraf)](images/muntehe-s75.jpg "10. bölüm: 75. mansubenin çözümü, <span lang="tr">Takdîr-i Vaz’iyet</span> ile açılıyor · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 75. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
+
 
 ### Açık sorular
 
