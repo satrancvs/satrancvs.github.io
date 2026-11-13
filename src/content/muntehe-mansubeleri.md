@@ -24,7 +24,7 @@ Hüseyin Emrullah (1877–1952), İzmir Mekteb-i İdâdî-i Mülkiyesi mezunu bi
 - **Amelî ve Nazarî Şatranc Rehberi (1927):** İstanbul’da Evkaf-ı İslâmiye Matbaası’nda basılan 128 sayfalık bu kitap, Sevda Kaman’ın 2025 tarihli [makalesinde](https://dergipark.org.tr/en/pub/hars/article/1832012) Cumhuriyet döneminin ilk satranç kitabı olarak tanıtılıyor.
 - **Ankara Satranç Kulübü (1935):** Barkan kulübün kurucusu ve ilk başkanı oldu. Kulüp, 1937’de Türkiye’nin ilk şampiyonluk maçına ev sahipliği yaptı.
 
-Eser bir deftere benziyorsa da basıma hazır bir kitap gibi düzenlenmiş. Sayfalar numaralı, başlıklar renkli mürekkeple çizilmiş, her kural bir diyagram ve hamle dizisiyle gösterilmiş. Fransızca terimler (<span lang="fr">opposition virtuelle, cases efficaces, triangle fondamental</span>) metnin arasına Latin harfleriyle yazılmış.
+Eser bir deftere benziyorsa da basıma hazır bir kitap gibi düzenlenmiş. Sayfalar numaralı, başlıklar renkli mürekkeple çizilmiş, her kural bir diyagram ve hamle dizisiyle gösterilmiş. Fransızca terimler (<i lang="fr">opposition virtuelle, cases efficaces, triangle fondamental</i>) metnin arasına Latin harfleriyle yazılmış.
 
 ### Avrupa’dan Ankara’ya: Kitabın kaynakları
 
@@ -39,7 +39,7 @@ Müntehâ Mansûbeleri bir telif eser değil, bir derleme ve tercüme. Defterin 
 - Jean Dufresne ve Jacques Mieses, <i lang="de">Lehrbuch des Schachspiels</i>: Dufresne’in 1881’de yazdığı ders kitabını Mieses 1901’de devraldı ve onlarca baskı boyunca genişletti; kitabın baskı sayısı bugün otuzu aşmış durumda. ([kaynak](https://www.mieses.info/en/book4.html))
 - Mieses’in cep kitabı (2. baskı): Kaynakçadaki bu eserin daha sonraları Türkçesi de yayınlanmıştı: *Satranç Oyunlarının Cep Kitabı*, çev. Selami Dinçer, 2. baskı, İstanbul: İnsel Kitabevi, [1943].
 
-Alıştırmaların bir kısmı da dönemin süreli yayınlarından alınmış. 160 numaralı diyagramın yanında <i lang="de">Der Welt-Spiegel, 1929</i> notu bulunuyor. Bu not, Barkan’ın 1922’de başladığı çalışmayı en az yedi yıl sürdürdüğünü gösteriyor. Aynı yıllarda *Amelî ve Nazarî Şatranc Rehberi*’ni de yayınlamıştı. Sevda Kaman [makalesinde](https://dergipark.org.tr/en/pub/hars/article/1832012), Barkan’ın bir tercümesi olarak Müntehâ Mansûbeleri’nden de söz ediyor, ancak içeriğine girmiyor. Bu yazı, o eserin sayfalarını açmaya yönelik bir ilk adım.
+Diyagramların bir kısmı da dönemin süreli yayınlarından alınmış. 160 numaralı diyagramın yanında _Der Welt-Spiegel, 1929_ notu bulunuyor. Barkan aynı yıllarda _Amelî ve Nazarî Şatranc Rehberi_’ni de yayınlamıştı. Sevda Kaman bu rehber hakkındaki [makalesinde](https://dergipark.org.tr/en/pub/hars/article/1832012), Barkan’ın bir tercümesi olarak Müntehâ Mansûbeleri’nden de söz ediyor, ancak içeriğine değinmiyor. Bu yazı, o eserin sayfalarını açmaya yönelik bir ilk adım.
 
 ### Kitabın bölümleri
 
@@ -82,7 +82,7 @@ Defterdeki 160 mansubeden birini siz de deneyin. Beyaz oynar ve iki hamlede mat 
 ### Açık sorular
 
 - Hangi bölümler hangi kaynaktan çevrildi? Ana kaynak Durand–Préti mi, Berger mi?
-- Eserdeki sayfalarca boş diyagramlar, ardından boş sayfalar ne anlama geliyor?
+- Eserdeki sayfalarca boş diyagramlar, ardından gelen boş sayfalar ne anlama geliyor?
 
 ### Kaynaklar
 
