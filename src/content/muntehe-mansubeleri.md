@@ -48,6 +48,10 @@ Eser, kuramdan alıştırmaya giden düzenli bir sıra izliyor. Önce temel tan�
 
 ![Elle çizilmiş diyagram sayfaları (el yazması, renkli fotoğraf)](images/muntehe-s15.jpg "9. bölüm: her sayfada on iki, elle çizilmiş diyagram · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 15. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
 
+10. **Çözümler:** Her çözüm, önce *Takdîr-i Vaz’iyet* adı verilen bir konum değerlendirmesiyle açılıyor, sonra hamlelere geçiyor.
+
+![Çözüm sayfası: Takdîr-i Vaz’iyet (el yazması, renkli fotoğraf)](images/muntehe-s75.jpg "10. bölüm: 75. mansubenin çözümü, <span lang="tr">Takdîr-i Vaz’iyet</span> ile açılıyor · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 75. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
+
 Defterdeki 160 mansubeden birini siz de deneyin. Beyaz oynar ve iki hamlede mat eder; Beyaz şahın ilk hamlesini bulun.
 
 [Event "Müntehâ Mansûbeleri"]
@@ -58,10 +62,6 @@ Defterdeki 160 mansubeden birini siz de deneyin. Beyaz oynar ve iki hamlede mat 
 [FEN "8/8/p2K4/kpp5/p7/P7/8/8 w - - 0 1"]
 
 {[P3]} 1. Kxc5 b4 2. axb4# 1-0
-
-10. **Çözümler:** Her çözüm, önce *Takdîr-i Vaz’iyet* adı verilen bir konum değerlendirmesiyle açılıyor, sonra hamlelere geçiyor.
-
-![Çözüm sayfası: Takdîr-i Vaz’iyet (el yazması, renkli fotoğraf)](images/muntehe-s75.jpg "10. bölüm: 75. mansubenin çözümü, <span lang="tr">Takdîr-i Vaz’iyet</span> ile açılıyor · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 75. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
 
 ### Avrupa’dan Ankara’ya: Kitabın kaynakları
 
