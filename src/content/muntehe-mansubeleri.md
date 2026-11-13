@@ -26,21 +26,6 @@ Hüseyin Emrullah (1877–1952), İzmir Mekteb-i İdâdî-i Mülkiyesi mezunu bi
 
 Eser bir deftere benziyorsa da basıma hazır bir kitap gibi düzenlenmiş. Sayfalar numaralı, başlıklar renkli mürekkeple çizilmiş, her kural bir diyagram ve hamle dizisiyle gösterilmiş. Fransızca terimler (<i lang="fr">opposition virtuelle, cases efficaces, triangle fondamental</i>) metnin arasına Latin harfleriyle yazılmış.
 
-### Avrupa’dan Ankara’ya: Kitabın kaynakları
-
-Müntehâ Mansûbeleri bir telif eser değil, bir derleme ve tercüme. Defterin başındaki kaynakça sayfası, Barkan’ın hangi kitaplardan beslendiğini gösteriyor. Okunabilen adlar dönemin oyun sonu literatürünün önde gelenleri:
-
-- Philippe Ambroise Durand ve Jean-Louis Preti, <i lang="fr">Stratégie raisonnée des fins de partie du jeu d’échecs</i> (Paris, 1871–1873): Tamamen pratik oyun sonlarına ayrılmış ilk kitaplardan biri. Birinci cildi yalnızca şah ve piyade sonlarını işliyor; Barkan’ın eseriyle konu ve başlık olarak en yakın kaynak bu. Durand (1799–1880) Lisieux’lü bir rahip ve felsefe öğretmeniydi. <i lang="fr">Trébuchet</i> terimini onun türettiği söyleniyor; defterdeki “fâhe” de bu terimin Osmanlıca karşılığı. ([kaynak](https://en.wikipedia.org/wiki/Philippe_Ambroise_Durand))
-- Johann Berger, <i lang="de">Theorie und Praxis der Endspiele</i> (Leipzig, 1890/91; gözden geçirilmiş baskı 1922): Pratik oyun sonları üzerine ilk modern ve kapsamlı eser sayılıyor. Yıllarca standart başvuru kitabı olma konumunu korudu. Kaynakçadaki 1922 tarihi bu yeni baskıya denk geliyor. Berger (1845–1933) Grazlı bir usta, kuramcı ve etütçüydü. ([kaynak](https://en.wikipedia.org/wiki/Johann_Berger))
-- Hans Fahrni, <i lang="de">Das Endspiel im Schach</i> (Leipzig, 1917): Prag doğumlu İsviçreli usta Fahrni’nin (1874–1939) oyunsonu kitabı. ([kaynak](https://en.wikipedia.org/wiki/Hans_Fahrni))
-- Henri Rinck, <i lang="fr">300 fins de partie</i> (1919): Fransız etütçü Rinck’in (1870–1952) derlemesinin üçüncü baskısı. Derleme 1909’da <i lang="fr">150 fins de partie</i> olarak başladı, 1927’de 700’e, 1950’lerde 1414 etüde ulaştı. ([kaynak](https://en.wikipedia.org/wiki/Henri_Rinck))
-- Henri Delaire, <i lang="fr">Les échecs modernes: histoire, théorie complète</i> (1914): Fransız Satranç Federasyonu’nun ilk başkanı ve <i lang="fr">La Stratégie</i> dergisinin editörü Delaire’in (1860–1941) tarih ve kuramı birleştiren kapsamlı el kitabı. ([kaynak](https://www.chessgames.com/perl/chessplayer?pid=28895))
-- Jacques Mieses, <i lang="de">Moderne Endspielstudien</i> (Leipzig, 1919): Alman-İngiliz usta Mieses’in pratik oyun için seçtiği oyun sonu etütleri. ([kaynak](https://www.mieses.info/en/book1.html))
-- Jean Dufresne ve Jacques Mieses, <i lang="de">Lehrbuch des Schachspiels</i>: Dufresne’in 1881’de yazdığı ders kitabını Mieses 1901’de devraldı ve onlarca baskı boyunca genişletti; kitabın baskı sayısı bugün otuzu aşmış durumda. ([kaynak](https://www.mieses.info/en/book4.html))
-- Mieses’in cep kitabı (2. baskı): Kaynakçadaki bu eserin daha sonraları Türkçesi de yayınlanmıştı: *Satranç Oyunlarının Cep Kitabı*, çev. Selami Dinçer, 2. baskı, İstanbul: İnsel Kitabevi, [1943].
-
-Diyagramların bir kısmı da dönemin süreli yayınlarından alınmış. 160 numaralı diyagramın yanında _Der Welt-Spiegel, 1929_ notu bulunuyor. Barkan aynı yıllarda _Amelî ve Nazarî Şatranc Rehberi_’ni de yayınlamıştı. Sevda Kaman bu rehber hakkındaki [makalesinde](https://dergipark.org.tr/en/pub/hars/article/1832012), Barkan’ın bir tercümesi olarak Müntehâ Mansûbeleri’nden de söz ediyor, ancak içeriğine değinmiyor. Bu yazı, o eserin sayfalarını açmaya yönelik bir ilk adım.
-
 ### Kitabın bölümleri
 
 Eser, kuramdan alıştırmaya giden düzenli bir sıra izliyor. Önce temel tanımlar, sonra piyon oyunsonlarının türleri, en sonda 160 soru ve çözümleri geliyor.
@@ -78,6 +63,20 @@ Defterdeki 160 mansubeden birini siz de deneyin. Beyaz oynar ve iki hamlede mat 
 
 ![Çözüm sayfası: Takdîr-i Vaz’iyet (el yazması, renkli fotoğraf)](images/muntehe-s75.jpg "10. bölüm: 75. mansubenin çözümü, <span lang="tr">Takdîr-i Vaz’iyet</span> ile açılıyor · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 75. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
 
+### Avrupa’dan Ankara’ya: Kitabın kaynakları
+
+Müntehâ Mansûbeleri bir telif eser değil, bir derleme ve tercüme. Defterin başındaki kaynakça sayfası, Barkan’ın hangi kitaplardan beslendiğini gösteriyor. Okunabilen adlar dönemin oyun sonu literatürünün önde gelenleri:
+
+- Philippe Ambroise Durand ve Jean-Louis Preti, <i lang="fr">Stratégie raisonnée des fins de partie du jeu d’échecs</i> (Paris, 1871–1873): Tamamen pratik oyun sonlarına ayrılmış ilk kitaplardan biri. Birinci cildi yalnızca şah ve piyade sonlarını işliyor; Barkan’ın eseriyle konu ve başlık olarak en yakın kaynak bu. Durand (1799–1880) Lisieux’lü bir rahip ve felsefe öğretmeniydi. <i lang="fr">Trébuchet</i> terimini onun türettiği söyleniyor; defterdeki “fâhe” de bu terimin Osmanlıca karşılığı. ([kaynak](https://en.wikipedia.org/wiki/Philippe_Ambroise_Durand))
+- Johann Berger, <i lang="de">Theorie und Praxis der Endspiele</i> (Leipzig, 1890/91; gözden geçirilmiş baskı 1922): Pratik oyun sonları üzerine ilk modern ve kapsamlı eser sayılıyor. Yıllarca standart başvuru kitabı olma konumunu korudu. Kaynakçadaki 1922 tarihi bu yeni baskıya denk geliyor. Berger (1845–1933) Grazlı bir usta, kuramcı ve etütçüydü. ([kaynak](https://en.wikipedia.org/wiki/Johann_Berger))
+- Hans Fahrni, <i lang="de">Das Endspiel im Schach</i> (Leipzig, 1917): Prag doğumlu İsviçreli usta Fahrni’nin (1874–1939) oyunsonu kitabı. ([kaynak](https://en.wikipedia.org/wiki/Hans_Fahrni))
+- Henri Rinck, <i lang="fr">300 fins de partie</i> (1919): Fransız etütçü Rinck’in (1870–1952) derlemesinin üçüncü baskısı. Derleme 1909’da <i lang="fr">150 fins de partie</i> olarak başladı, 1927’de 700’e, 1950’lerde 1414 etüde ulaştı. ([kaynak](https://en.wikipedia.org/wiki/Henri_Rinck))
+- Henri Delaire, <i lang="fr">Les échecs modernes: histoire, théorie complète</i> (1914): Fransız Satranç Federasyonu’nun ilk başkanı ve <i lang="fr">La Stratégie</i> dergisinin editörü Delaire’in (1860–1941) tarih ve kuramı birleştiren kapsamlı el kitabı. ([kaynak](https://www.chessgames.com/perl/chessplayer?pid=28895))
+- Jacques Mieses, <i lang="de">Moderne Endspielstudien</i> (Leipzig, 1919): Alman-İngiliz usta Mieses’in pratik oyun için seçtiği oyun sonu etütleri. ([kaynak](https://www.mieses.info/en/book1.html))
+- Jean Dufresne ve Jacques Mieses, <i lang="de">Lehrbuch des Schachspiels</i>: Dufresne’in 1881’de yazdığı ders kitabını Mieses 1901’de devraldı ve onlarca baskı boyunca genişletti; kitabın baskı sayısı bugün otuzu aşmış durumda. ([kaynak](https://www.mieses.info/en/book4.html))
+- Mieses’in cep kitabı (2. baskı): Kaynakçadaki bu eserin daha sonraları Türkçesi de yayınlanmıştı: *Satranç Oyunlarının Cep Kitabı*, çev. Selami Dinçer, 2. baskı, İstanbul: İnsel Kitabevi, [1943].
+
+Diyagramların bir kısmı da dönemin süreli yayınlarından alınmış. 160 numaralı diyagramın yanında _Der Welt-Spiegel, 1929_ notu bulunuyor. Barkan aynı yıllarda _Amelî ve Nazarî Şatranc Rehberi_’ni de yayınlamıştı. Sevda Kaman bu rehber hakkındaki [makalesinde](https://dergipark.org.tr/en/pub/hars/article/1832012), Barkan’ın bir tercümesi olarak Müntehâ Mansûbeleri’nden de söz ediyor, ancak içeriğine değinmiyor. Bu yazı, o eserin sayfalarını açmaya yönelik bir ilk adım.
 
 ### Açık sorular
 
