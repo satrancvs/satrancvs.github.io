@@ -1573,6 +1573,7 @@ class PuzzleMode {
     const ctx        = this._ctx;
 
     this.marker.solved = true;
+    if (!ctx.isVariation) engine._lastSolvedPuzzle = startIndex; // site patch: restartPuzzles() returns to the puzzle solved last
     this._notify("solved", null);
     this._deactivate();
 
@@ -2801,7 +2802,7 @@ class VideoEngine {
 
   /* Site patch: "Replay" after the game's puzzles were solved starts them over instead of replaying the revealed solution.
      Every solved marker (main line, side variations, nested ones) is re-armed, the move list hides the solution again and the
-     player jumps to the first puzzle position (a marker before the first move: the start position). Returns false when no
+     player jumps to the position of the puzzle solved last (else the first one; a marker before the first move: the start position). Returns false when no
      puzzle of this game was solved, so the normal replay runs. */
   restartPuzzles() {
     if (!this.puzzle || this.puzzle.active || this._variation) return false;
@@ -2820,7 +2821,10 @@ class VideoEngine {
     if (!solvedAny) return false;
 
     const keys = Object.keys(this.state.puzzles || {}).map(Number).filter((k) => this.state.puzzles[k]);
-    const target = keys.length ? Math.min(...keys) + 1 : 0; // marker at moveIndex m is solved from the position after move m
+    // marker at moveIndex m is solved from the position after move m; goes to the puzzle solved last (else the first one)
+    const last = this._lastSolvedPuzzle;
+    const first = keys.length ? Math.min(...keys) : -1;
+    const target = (last !== undefined && this.state.puzzles[last] ? last : first) + 1;
     this.state.playing = false;
     this.container.classList.add("paused");
     if (this.moveList) this.moveList.build(this.state.moves, this.state.glyphs, this.state.headers);
