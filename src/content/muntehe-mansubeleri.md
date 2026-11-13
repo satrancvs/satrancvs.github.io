@@ -16,16 +16,6 @@ Milli Kütüphanede YZ. A 1659 katalog numarasıyla kayıtlı, Türkiye Yazma Es
 
 Kitabın kendi başlığı ile katalog kaydı farklı. Kapakta ve ilk sayfada “Müntehâ Mansûbeleri” yazıyor, katalog ise eseri “Müntehâ Vaziyetleri” adıyla kaydetmiş. “Müntehâ” son, “mansûbe” ise kurgulanmış konum demek; başlık bugünkü dille “Oyunsonu Etüdleri: Şah ve Piyon”.
 
-### Mütercim: Hüseyin Emrullah Barkan
-
-Hüseyin Emrullah (1877–1952), İzmir Mekteb-i İdâdî-i Mülkiyesi mezunu bir bürokrattı. 1927’de Dâhiliye Vekâleti Hukuk Müşaviriydi. 1935–1946 yılları arasında Malatya milletvekilliği yaptı. Almanca, Fransızca ve Arapça biliyordu. Satranç tarihimizdeki yeri iki eser ve bir kulüple öne çıkıyor:
-
-- **Müntehâ Mansûbeleri – Şâh ve Piyâde (1922):** Milli Kütüphane YZ. A 1659 katalog numarasıyla kayıtlı el yazması eser. Çeviri eserin adı günümüz dilinde “Oyunsonu Etüdleri: Şah ve Piyon”.
-- **Amelî ve Nazarî Şatranc Rehberi (1927):** İstanbul’da Evkaf-ı İslâmiye Matbaası’nda basılan 128 sayfalık bu kitap, Sevda Kaman’ın 2025 tarihli [makalesinde](https://dergipark.org.tr/en/pub/hars/article/1832012) Cumhuriyet döneminin ilk satranç kitabı olarak tanıtılıyor.
-- **Ankara Satranç Kulübü (1935):** Barkan kulübün kurucusu ve ilk başkanı oldu. Kulüp, 1937’de Türkiye’nin ilk şampiyonluk maçına ev sahipliği yaptı.
-
-Eser bir deftere benziyorsa da basıma hazır bir kitap gibi düzenlenmiş. Sayfalar numaralı, başlıklar renkli mürekkeple çizilmiş, her kural bir diyagram ve hamle dizisiyle gösterilmiş. Fransızca terimler (<i lang="fr">opposition virtuelle, cases efficaces, triangle fondamental</i>) metnin arasına Latin harfleriyle yazılmış.
-
 ### Kitabın bölümleri
 
 Eser, kuramdan alıştırmaya giden düzenli bir sıra izliyor. Önce temel tanımlar, sonra piyon oyunsonlarının türleri, en sonda 160 soru ve çözümleri geliyor.
@@ -63,7 +53,7 @@ Defterdeki 160 mansubeden birini siz de deneyin. Beyaz oynar ve iki hamlede mat 
 
 {[P3]} 1. Kxc5 b4 2. axb4# 1-0
 
-### Avrupa’dan Ankara’ya: Kitabın kaynakları
+### Çağdaş kaynakça
 
 Müntehâ Mansûbeleri bir telif eser değil, bir derleme ve tercüme. Defterin başındaki kaynakça sayfası, Barkan’ın hangi kitaplardan beslendiğini gösteriyor. Okunabilen adlar dönemin oyun sonu literatürünün önde gelenleri:
 
@@ -77,6 +67,16 @@ Müntehâ Mansûbeleri bir telif eser değil, bir derleme ve tercüme. Defterin 
 - Mieses’in cep kitabı (2. baskı): Kaynakçadaki bu eserin daha sonraları Türkçesi de yayınlanmıştı: *Satranç Oyunlarının Cep Kitabı*, çev. Selami Dinçer, 2. baskı, İstanbul: İnsel Kitabevi, [1943].
 
 Diyagramların bir kısmı da dönemin süreli yayınlarından alınmış. 160 numaralı diyagramın yanında _Der Welt-Spiegel, 1929_ notu bulunuyor. Barkan aynı yıllarda _Amelî ve Nazarî Şatranc Rehberi_’ni de yayınlamıştı. Sevda Kaman bu rehber hakkındaki [makalesinde](https://dergipark.org.tr/en/pub/hars/article/1832012), Barkan’ın bir tercümesi olarak Müntehâ Mansûbeleri’nden de söz ediyor, ancak içeriğine değinmiyor. Bu yazı, o eserin sayfalarını açmaya yönelik bir ilk adım.
+
+### Mütercim: H. Emrullâh
+
+Hüseyin Emrullah (1877–1952), İzmir Mekteb-i İdâdî-i Mülkiyesi mezunu bir bürokrattı. 1927’de Dâhiliye Vekâleti Hukuk Müşaviriydi. 1935–1946 yılları arasında Malatya milletvekilliği yaptı. Almanca, Fransızca ve Arapça biliyordu. Satranç tarihimizdeki yeri iki eser ve bir kulüple öne çıkıyor:
+
+- **Müntehâ Mansûbeleri – Şâh ve Piyâde (1922):** Milli Kütüphane YZ. A 1659 katalog numarasıyla kayıtlı el yazması eser. Çeviri eserin adı günümüz dilinde “Oyunsonu Etüdleri: Şah ve Piyon”.
+- **Amelî ve Nazarî Şatranc Rehberi (1927):** İstanbul’da Evkaf-ı İslâmiye Matbaası’nda basılan 128 sayfalık bu kitap, Sevda Kaman’ın 2025 tarihli [makalesinde](https://dergipark.org.tr/en/pub/hars/article/1832012) Cumhuriyet döneminin ilk satranç kitabı olarak tanıtılıyor.
+- **Ankara Satranç Kulübü (1935):** Barkan kulübün kurucusu ve ilk başkanı oldu. Kulüp, 1937’de Türkiye’nin ilk şampiyonluk maçına ev sahipliği yaptı.
+
+Eser bir deftere benziyorsa da basıma hazır bir kitap gibi düzenlenmiş. Sayfalar numaralı, başlıklar renkli mürekkeple çizilmiş, her kural bir diyagram ve hamle dizisiyle gösterilmiş. Fransızca terimler (<i lang="fr">opposition virtuelle, cases efficaces, triangle fondamental</i>) metnin arasına Latin harfleriyle yazılmış.
 
 ### Açık sorular
 
