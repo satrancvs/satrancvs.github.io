@@ -256,49 +256,6 @@ Analiz ve yorumlar Vasily Smyslov ve Büyük Usta Adrian Mikhalchishin’e ait.
 
 Oyunun tespiti şu: Filin somut bir hedefi yoksa fil boş bir taşa dönüşüyor. Beyazın fili koyu kareli, Siyah da ...f6 ile piyonunu koyu bir kareye yerleştirerek, yani ==Capablanca Kuralı’nın== “rakibin fili varsa” yarısını uygulayarak, filin alanını daraltıyor. Beyazın fili hedef bulamıyor. Bu sırada Siyah ise şahını ve kalesini oyuna sokarak rakibinin piyon yapısındaki zayıflıkları hedef alıyor. Kötü fil, her zaman kendi piyonlarının arkasında hapsolmuş bir fil olmak zorunda değil; ==işlevsiz kalan fil== de aynı işi görüyor.
 
-Üçüncü örnekte hikâyeyi önce tahtadan uzakta dinlemek gerek. Anlatıcı, kuralı çiğnediği için kaybeden oyuncunun kendisi: Adrian Mikhalchishin. Ona kuralı hatırlatan kişi ise dokuzuncu dünya şampiyonu **Tigran Petrosian** (1929–1984).
-
-![Tigran Petrosian (siyah-beyaz fotoğraf)](images/petrosian-1962.jpg "<span lang="hy">Tigran Petrosian</span> · Fotoğraf: <span lang="nl">Harry Pot / Anefo</span> · Ulusal Arşiv, Hollanda · 1962 · Lisans: CC0 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=84493908)")
-
-Petrosian’ın satranç anlayışını Grivas şöyle özetliyor:
-
-> Aron Nimzowitsch’in profilaksi anlayışından büyük ölçüde etkilenmiş olan Petrosian, temkinli ve savunma yönü son derece güçlü bir satranç oyuncusuydu. Kendi hücum olanaklarından yararlanmaktan çok, rakibinin hücum olanaklarını önlemeye çaba gösterirdi. Konumunun bütünüyle güvenli olduğuna kanaat getirmedikçe nadiren hücuma geçerdi.
->
-> — Grivas
-
-Rakibinin planlarını daha doğmadan boğan bu anlayış, “rakibin fili hareket edemiyorsa onun gücünü düşünmeye gerek kalmaz” fikriyle birebir örtüşüyor.
-
-Şimdi Mikhalchishin’in oyununa gelelim. Beyaz Zaichik, reytingi 2200; Siyah Mikhalchishin, reytingi 2425, yani rakibinden 225 puan yukarıda. Siyah, 23...c5 ile c6’daki açık kareli piyonunu koyu kareli c5’e taşıyor: Koyu kareli g7 filiyle aynı renge. Capablanca Kuralı bozuluyor ve cezası geliyor.
-
-[Event "SSCB Takım Şampiyonası"]
-[View "player"]
-[Site "Riga"]
-[Date "1975"]
-[White "Gennadi Zaichik"]
-[Black "Adrian Mikhalchishin"]
-[Result "1-0"]
-[EventLine "SSCB Takım Şampiyonası, Riga, 1975"]
-[WhiteElo "2200"]
-[BlackElo "2425"]
-[SetUp "1"]
-[FEN "1r3r2/p4pbk/2p3pp/8/4N3/8/PPK2PPP/3R3R w - - 0 23"]
-
-
-
-23. b3 c5 24. Nd6 Bd4 25. f3 Rb6 26. Nc4 Re6 27. Rde1 Rfe8 28. Rxe6 Rxe6 29. Kd3 Bg7 30. Rc1 h5 31. Rc2 Re1 32. Na5 a6 33. Nb7 Re6 34. Kc4 f5 35. Nxc5 Rd6 36. b4 { Oyunsonunda piyon öne geçen Beyaz 62. hamlede oyunu kazandı. } 1-0
-
-> Oyun bittikten sonra, siyah kareli filin büyük bir hayranı olan, bu fili değişmeden önce öpüp “hizmetleri için” teşekkür etmesiyle ünlü Büyük Usta Eduard Gufeld, o gün kendisi de Şah-Hint oynayıp g7 filini değişen Garry Kasparov'a şöyle takıldı: “Garry, yaptığın şey bir suç!” Hemen ardından bizim tahtamıza geldi ve şöyle dedi: “Ah, gençler, fille nasıl oynanır hiç bilmiyorsunuz! Böyle bir konumu nasıl mahvedebilirsin?”
->
-> Yakınlarda duran Tigran Petrosian güldü ve “Eduard’ı dinlemeyin gençler, dedi. Gufeld, tahtanın yarısını kontrol eden filiyle siyahın iyi olması gerektiğini söylüyordu. Petrosian ise şöyle karşılık verdi: “Peki, siyah karelerde bu fil neye saldıracak?” Büyük Tigran haklıydı. Fil, göründüğünden çok daha etkisizdi ve Beyaz, açık renkli karelerde güçlü bir oyun bulabiliyordu.
->
-> Petrosian anlatmaya devam etti: “23...c5'ten sonra bu pozisyon teorik olarak kayıp. Kayıp, çünkü karşı oyunun yok ve fil kötü.” Nedenini anlayıp anlamadığımı sordu, ‘hayır’ dedim. Açıkladı: ==Capablanca kuralını== bozmuştum: Filin varsa, piyonlarını filinin zıt rengindeki karelerde tut. Bu bir kuraldır ve bozarsan cezasını çekersin.
->
-> Petrosian şunu da ekledi: “Vezirler hâlâ tahtada olsaydı (diyelim ki siyah vezir b6’da, beyaz vezir c4’te), o zaman 23… c5 aslında mantıklı olurdu, çünkü Beyazın şahına bir saldırı başlatırdı. Ancak bu durumda fil, attan daha güçlü olurdu.”
->
-> Çok öğretici bir hikâye: 23...c5 oynayarak Capablanca kuralını bozduğun için oyunu kaybettin. Kurala uyarsan kazanırsın, benim yaptığım gibi kuralı bozarsan da kaybedersin.
->
-> — Adrian Mikhalchishin
-
 ### Tal ve Riga’nın atları
 
 ![Mikhail Tal ve Tigran Petrosian (siyah-beyaz fotoğraf)](images/tal-petrosian-1962.jpg "<span lang="ru">Mikhail Tal</span> ve <span lang="hy">Tigran Petrosian</span> · Hollanda–SSCB karşılaşması, 3 Temmuz 1962 · Fotoğraf: <span lang="nl">Harry Pot / Anefo</span> · Ulusal Arşiv, Hollanda · Lisans: CC0 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=67217642)")
@@ -331,7 +288,19 @@ Bu rivayeti [aktaran](https://en.chessbase.com/post/the-true-secret-of-intuition
 
 ### Petrosian ve siyah kareli fil
 
-Petrosian’a bir kez daha dönelim: Taş değişimleriyle konumu yavaş yavaş kendi lehine çeviren bir oyuncuydu. Aşağıdaki oyunda Bxc6+ ile fili atla değişip rakibine duble piyon bırakıyor.
+Dokuzuncu dünya şampiyonu **Tigran Petrosian** (1929–1984), taş değişimleriyle konumu yavaş yavaş kendi lehine çeviren bir oyuncuydu.
+
+![Tigran Petrosian (siyah-beyaz fotoğraf)](images/petrosian-1962.jpg "<span lang="hy">Tigran Petrosian</span> · Fotoğraf: <span lang="nl">Harry Pot / Anefo</span> · Ulusal Arşiv, Hollanda · 1962 · Lisans: CC0 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/w/index.php?curid=84493908)")
+
+Petrosian’ın satranç anlayışını Grivas şöyle özetliyor:
+
+> Aron Nimzowitsch’in profilaksi anlayışından büyük ölçüde etkilenmiş olan Petrosian, temkinli ve savunma yönü son derece güçlü bir satranç oyuncusuydu. Kendi hücum olanaklarından yararlanmaktan çok, rakibinin hücum olanaklarını önlemeye çaba gösterirdi. Konumunun bütünüyle güvenli olduğuna kanaat getirmedikçe nadiren hücuma geçerdi.
+>
+> — Grivas
+
+Rakibinin planlarını daha doğmadan boğan bu anlayış, “rakibin fili hareket edemiyorsa onun gücünü düşünmeye gerek kalmaz” fikriyle birebir örtüşüyor.
+
+Bu anlayışın en açık örneklerinden biri, Smyslov’un Tal’a karşı uyguladığı fikrin aynısı: Fili atla değişip rakibe duble piyon bırakmak. Petrosian, 1972’de Skopje’deki olimpiyatta Polonyalı Włodzimierz Schmidt’e karşı daha 8. hamlede Bxc6+ ile bunu yapıyor.
 
 [Event "Satranç Olimpiyatı"]
 [View "player"]
@@ -347,6 +316,39 @@ Petrosian’a bir kez daha dönelim: Taş değişimleriyle konumu yavaş yavaş 
 
 
 { Bu tür konumlarda Bxc6+ hayli tipik bir hamledir. Siyah için gerçek bir kâbus: Beyazın şah kanadı zayıflarken beyaz karelerde olası sorunları var. Siyah ise  sadece duble piyonla kalacak gibi görünüyor. Ama işin aslı öyle değil. } 8. Bxc6+ $1 $16 bxc6 9. Qc1 { Zekice bir hamle: koyu kareli filleri de değişmek çok faydalı hale geliyor, ardından Beyaz basitçe kaleyi c1'e, atı f3'e getirip oyunu kolayca kendi lehine çevirecek. } 9... h6 ( 9... O-O 10. Bh6 $16 ) 10. Nf3 Bh3 11. Rg1 { [%cal Gg3g4,Gg1g3]} { Fantastik bir hamle - Beyaz g4 ve ardından Rg3 ile fili düşürmeyi tehdit ediyor. } Bg4 12. Nd2 Nd5 13. Nxd5 cxd5 14. Nb3 ( { Stockfish: } 14. Qc6 Bd7 15. Qxd5 Bxb2 16. Rb1 Bg7 17. f3 ) 14... Qd6 { Şimdi Beyaz, siyah karelerdeki zayıflıkları kullanmaya başlıyor. } 15. f3 Bd7 {[%cal Ge7e5]} 16. d4 $1 { Beyaz elbette ...e5'i durdurmak zorunda, çünkü Siyah güçlü bir merkezi inisiyatif ele geçirmek istiyor. } Rb8 $2 17. Kf2 h5 18. Bf4 e5 19. dxe5 Bxe5 { (Bunun yerine piyonla geri almak g-dikeyinde ciddi sorunlar yaratırdı.) } 20. Qe3 $18 f6 21. Qxa7 { Beyaz bir piyon kazanıyor. } 21... O-O { Siyah sonunda rok yapmayı başarıyor. } 22. Rac1 Rfe8 ( { Stockfish: } 22... Rfc8 { ile piyonu korumak daha dirençli olurdu. } ) 23. Bxe5 Qxe5 (23... fxe5 24. Qxc7 $18) { Elbette c7 piyonu boşta; Siyah bunun yerine ...Rbc8 deneseydi, o zaman Qd4 fazla piyonu ve daha da iyi bir pozisyonu korurdu, bu yüzden Siyah bunun yerine ...Ra8 deniyor. } 24. Rge1 Ra8 (24... Rbc8 25. Qd4) 25. Qxc7 Qe3+ 26. Kg2 Ra7 27. Qd6 { Pozisyon basitçe Beyazın lehine açılıyor - Siyahta gerçek bir karşı şans kalmadı. } h4 28. gxh4 Be6 29. Rc3 Qh6 30. a3 Rd7 31. Qg3 { Şimdi Siyahın bütün piyonları saldırı altına giriyor. } d4 32. Rd3 Bxb3 33. Rxb3 Qd2 34. Kf1 $1 { Şah için koruyucu bir hamle. } Kh7 35. Rb8 Re5 36. Qg4 f5 37. Qg5 Re3 ( { Siyah } 37... Qxg5 { ile başına geleceklerden kaçınabilirdi. Beyaz yine de oyunsonunu rahatlıkla kazanırdı. } ) 38. Qf6 { Ve şimdi çok tatsız bir mat tehdidi var: Siyah terk eder. Çünkü 38... Rg7 39. Qf8 sonrasında Beyazın mat saldırısı basitçe kazanıyor. } 1-0
+
+Petrosian’ın bu kurallara bağlılığı, öğrettiği derslere de yansıyordu. Aşağıdaki hikâyeyi önce tahtadan uzakta dinlemek gerek: Anlatıcı, kuralı çiğnediği için kaybeden oyuncunun kendisi, Adrian Mikhalchishin. Ona kuralı hatırlatan kişi ise Petrosian.
+
+Şimdi Mikhalchishin’in oyununa gelelim. Beyaz Zaichik, reytingi 2200; Siyah Mikhalchishin, reytingi 2425, yani rakibinden 225 puan yukarıda. Siyah, 23...c5 ile c6’daki açık kareli piyonunu koyu kareli c5’e taşıyor: Koyu kareli g7 filiyle aynı renge. Capablanca Kuralı bozuluyor ve cezası geliyor.
+
+[Event "SSCB Takım Şampiyonası"]
+[View "player"]
+[Site "Riga"]
+[Date "1975"]
+[White "Gennadi Zaichik"]
+[Black "Adrian Mikhalchishin"]
+[Result "1-0"]
+[EventLine "SSCB Takım Şampiyonası, Riga, 1975"]
+[WhiteElo "2200"]
+[BlackElo "2425"]
+[SetUp "1"]
+[FEN "1r3r2/p4pbk/2p3pp/8/4N3/8/PPK2PPP/3R3R w - - 0 23"]
+
+
+
+23. b3 c5 24. Nd6 Bd4 25. f3 Rb6 26. Nc4 Re6 27. Rde1 Rfe8 28. Rxe6 Rxe6 29. Kd3 Bg7 30. Rc1 h5 31. Rc2 Re1 32. Na5 a6 33. Nb7 Re6 34. Kc4 f5 35. Nxc5 Rd6 36. b4 { Oyunsonunda piyon öne geçen Beyaz 62. hamlede oyunu kazandı. } 1-0
+
+> Oyun bittikten sonra, siyah kareli filin büyük bir hayranı olan, bu fili değişmeden önce öpüp “hizmetleri için” teşekkür etmesiyle ünlü Büyük Usta Eduard Gufeld, o gün kendisi de Şah-Hint oynayıp g7 filini değişen Garry Kasparov'a şöyle takıldı: “Garry, yaptığın şey bir suç!” Hemen ardından bizim tahtamıza geldi ve şöyle dedi: “Ah, gençler, fille nasıl oynanır hiç bilmiyorsunuz! Böyle bir konumu nasıl mahvedebilirsin?”
+>
+> Yakınlarda duran Tigran Petrosian güldü ve “Eduard’ı dinlemeyin gençler, dedi. Gufeld, tahtanın yarısını kontrol eden filiyle siyahın iyi olması gerektiğini söylüyordu. Petrosian ise şöyle karşılık verdi: “Peki, siyah karelerde bu fil neye saldıracak?” Büyük Tigran haklıydı. Fil, göründüğünden çok daha etkisizdi ve Beyaz, açık renkli karelerde güçlü bir oyun bulabiliyordu.
+>
+> Petrosian anlatmaya devam etti: “23...c5'ten sonra bu pozisyon teorik olarak kayıp. Kayıp, çünkü karşı oyunun yok ve fil kötü.” Nedenini anlayıp anlamadığımı sordu, ‘hayır’ dedim. Açıkladı: ==Capablanca kuralını== bozmuştum: Filin varsa, piyonlarını filinin zıt rengindeki karelerde tut. Bu bir kuraldır ve bozarsan cezasını çekersin.
+>
+> Petrosian şunu da ekledi: “Vezirler hâlâ tahtada olsaydı (diyelim ki siyah vezir b6’da, beyaz vezir c4’te), o zaman 23… c5 aslında mantıklı olurdu, çünkü Beyazın şahına bir saldırı başlatırdı. Ancak bu durumda fil, attan daha güçlü olurdu.”
+>
+> Çok öğretici bir hikâye: 23...c5 oynayarak Capablanca kuralını bozduğun için oyunu kaybettin. Kurala uyarsan kazanırsın, benim yaptığım gibi kuralı bozarsan da kaybedersin.
+>
+> — Adrian Mikhalchishin
 
 ### Hafif taşların gücü adına
 
