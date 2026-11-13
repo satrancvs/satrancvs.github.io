@@ -14,7 +14,7 @@ Milli Kütüphanede YZ. A 1659 katalog numarasıyla kayıtlı, Türkiye Yazma Es
 | **Dijital kopya** | 151 poz (görüntüleyici numarasıyla) |
 | **Tarih** | Kapak notuna göre 1922 |
 
-Kitabın kendi başlığı ile katalog kaydı farklı. Kapakta ve ilk sayfada “Müntehâ Mansubeleri” yazıyor, katalog ise eseri “Müntehâ Vaziyetleri” adıyla kaydetmiş. “Müntehâ” son, “mansûbe” ise kurgulanmış konum demek; başlık bugünkü dille “Oyunsonu Etüdleri: Şah ve Piyon”.
+Kitabın kendi başlığı ile katalog kaydı farklı. Kapakta ve ilk sayfada “Müntehâ Mansûbeleri” yazıyor, katalog ise eseri “Müntehâ Vaziyetleri” adıyla kaydetmiş. “Müntehâ” son, “mansûbe” ise kurgulanmış konum demek; başlık bugünkü dille “Oyunsonu Etüdleri: Şah ve Piyon”.
 
 ### Mütercim: Hüseyin Emrullah Barkan
 
