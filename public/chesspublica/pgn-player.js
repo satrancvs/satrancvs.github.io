@@ -1969,7 +1969,11 @@ class VideoEngine {
 
     this.board = Chessboard(this.boardEl, {
       position:   "start",
-      pieceTheme: "/chesspublica/pieces/{piece}.png",
+      // Yazı kök öğesinde `data-piece-set` varsa (ör. "manuscript": Müntehâ yazısı) taşlar pieces/<set>/ altından gelir.
+      pieceTheme: (piece) => {
+        const set = this.boardEl.closest("[data-piece-set]")?.dataset.pieceSet;
+        return `/chesspublica/pieces/${set ? set + "/" : ""}${piece}.png`;
+      },
       moveSpeed:  200,
       draggable:  true,
       onDragStart: (source, piece) => this.puzzle.canDrag(piece),

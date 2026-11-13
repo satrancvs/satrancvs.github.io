@@ -542,5 +542,4 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 [data-article="muntehe"] .cp-game .chessboard-63f37 .white-1e1d7 { background-color: #cfa958 !important; background-image: none; }
 [data-article="muntehe"] .cp-game .chessboard-63f37 .black-3c85d { background-color: #cfa958 !important; background-image: repeating-linear-gradient(135deg, rgba(59, 42, 16, .5) 0 1px, transparent 1px 4px) !important; }
 [data-article="muntehe"] .cp-game .chessboard-63f37 .square-55d63 { box-shadow: inset 0 0 0 .5px rgba(59, 42, 16, .35); }
-[data-article="muntehe"] .cp-game .chessboard-63f37 img.piece-417db { mix-blend-mode: multiply; filter: sepia(.45) contrast(1.2) brightness(.92); }
 [data-article="muntehe"] .cp-game .chessboard-63f37 .notation-322f9 { color: #4a3414; opacity: .8; }

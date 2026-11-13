@@ -156,7 +156,7 @@ function PostPage() {
   const rest = a.chunks;
 
   return (
-    <div data-article={a.id} className={`sk min-h-screen bg-[color:var(--bg)]${light ? ' sk-light' : ''}`}>
+    <div data-article={a.id} data-piece-set={a.pieceSet} className={`sk min-h-screen bg-[color:var(--bg)]${light ? ' sk-light' : ''}`}>
       <OverlayScrollbar />
       <button type="button" onClick={toggleTheme} aria-pressed={light} aria-label={light ? 'Koyu temaya geç' : 'Açık temaya geç'} title={light ? 'Koyu tema' : 'Açık tema'} className="fixed top-5 left-5 z-50 w-12 h-12 rounded-full bg-[color:var(--fg)] text-[color:var(--bg)] grid place-items-center hover:bg-[color:var(--accent)]">
         {light ? <Moon size={20} aria-hidden /> : <Sun size={20} aria-hidden />}
