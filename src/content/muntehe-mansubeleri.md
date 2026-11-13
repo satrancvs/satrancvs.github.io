@@ -1,3 +1,5 @@
+![Murabba Kâidesi sayfası (el yazması, renkli fotoğraf)](images/muntehe-s9.jpg "4. bölüm, Murabba Kâidesi: geçer piyonun karesi diyagramda noktalarla gösterilmiş · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 9. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
+
 Milli Kütüphanede YZ. A 1659 katalog numarasıyla kayıtlı, Türkiye Yazma Eserler Kurumu Başkanlığı veritabanı üzerinden ulaşılabilen bir el yazması, nadir bir eser var. Mütercim H. Emrullâh’ın 1922’de Fransızca ve Almanca kaynaklardan çevirdiği bir piyon oyunsonu kitabı. El yazmasının kapaklarını 104 yıl sonra sizler için araladık.
 
 ![Müntehâ Mansûbeleri el yazmasının kapağı (renkli fotoğraf)](images/muntehe-kapak.jpg "<i>Müntehâ Mansûbeleri</i> el yazmasının kapağı · Milli Kütüphane, 06 Mil Yz A 1659 · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
@@ -20,27 +22,18 @@ Kitabın kendi başlığı ile katalog kaydı farklı. Kapakta ve ilk sayfada �
 
 Eser, kuramdan alıştırmaya giden düzenli bir sıra izliyor. Önce temel tanımlar, sonra piyon oyunsonlarının türleri, en sonda 160 soru ve çözümleri geliyor.
 
+![Fâhe ve merbût piyâde sayfaları (el yazması, renkli fotoğraf)](images/muntehe-s39.jpg "5. bölüm, Hudûd Kâidesi: fâhe ve merbût piyâde diyagramları · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 39. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
+
 1. **Mesafe nazâriyesi:** Tahtadaki iki kare arasındaki mesafe düz (amûdî), çapraz (katrî) ya da dikdörtgensel olabilir. Şahın bir kareden ötekine en kısa yolu bu dikdörtgenler üzerinden hesaplanıyor.
 2. **Tekâbül ([opozisyon](/satranca-ilk-adim/8-oyunsonlari/#opozisyon)):** *Bi’l-fiil*, yani gerçek tekâbül ile *bi’l-kuvve*, yani potansiyel tekâbül; yakın, orta ve uzak tekâbül; çapraz ve eğik tekâbül. Temel kural: iki şahın oluşturduğu dikdörtgenin kenarları tek sayı olmalı.
 3. **Mühim Hâneler:** Şahın koruduğu piyonun önündeki kilit kareler.
 4. **Murabba Kâidesi:** [Geçer piyonun karesi](/satranca-ilk-adim/8-oyunsonlari/#tek-bir-er). Kale piyonu bu kuralın istisnası olarak ayrıca işleniyor.
-
-![Murabba Kâidesi sayfası (el yazması, renkli fotoğraf)](images/muntehe-s9.jpg "4. bölüm, Murabba Kâidesi: geçer piyonun karesi diyagramda noktalarla gösterilmiş · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 9. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
-
 5. **Hudûd Kâidesi:** Karşılıklı sabitlenmiş iki piyonla, rakip piyonun yatayındaki karelere ilk ulaşan şah piyonu kazanır. “Fâhe” (<i lang="fr">trébuchet</i>) gibi istisnalar da burada.
-
-![Fâhe ve merbût piyâde sayfaları (el yazması, renkli fotoğraf)](images/muntehe-s39.jpg "5. bölüm, Hudûd Kâidesi: fâhe ve merbût piyâde diyagramları · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 39. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
-
 6. **Piyâde Mücâdelâtı:** Şahlar olmadan piyonların kendi aralarındaki mücadelesi. Bir piyona karşı iki merbût piyade, iki merbût piyadeye karşı iki münferid piyade vb.
 7. **Şâh ile Piyâde Mücâdelesi:** Tek şahın rakip piyonlara karşı mücadelesi, piyonlar arasındaki mesafeye göre.
 8. **Şâhın üç piyâdeyle mücâdelesi:** *Müselles-i esâsî*, yani temel üçgen (<i lang="fr">triangle fondamental</i>) kavramı ve on üç konum.
 9. **160 mansube:** Her iki sayfada on ikişer diyagram, toplam 160 soru. Çoğu diyagramın üstünde çözümün bulunduğu sayfaya gönderme var.
-
-![Elle çizilmiş diyagram sayfaları (el yazması, renkli fotoğraf)](images/muntehe-s15.jpg "9. bölüm: her sayfada on iki, elle çizilmiş diyagram · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 15. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
-
 10. **Çözümler:** Her çözüm, önce *Takdîr-i Vaz’iyet* adı verilen bir konum değerlendirmesiyle açılıyor, sonra hamlelere geçiyor.
-
-![Çözüm sayfası: Takdîr-i Vaz’iyet (el yazması, renkli fotoğraf)](images/muntehe-s75.jpg "10. bölüm: 75. mansubenin çözümü, <span lang="tr">Takdîr-i Vaz’iyet</span> ile açılıyor · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 75. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
 
 Defterdeki 160 mansubeden birini siz de deneyin. Beyaz oynar ve iki hamlede mat eder; Beyaz şahın ilk hamlesini bulun.
 
@@ -57,6 +50,8 @@ Defterdeki 160 mansubeden birini siz de deneyin. Beyaz oynar ve iki hamlede mat 
 
 Müntehâ Mansûbeleri bir telif eser değil, bir derleme ve tercüme. Defterin başındaki kaynakça sayfası, Barkan’ın hangi kitaplardan beslendiğini gösteriyor. Okunabilen adlar dönemin oyun sonu literatürünün önde gelenleri:
 
+![Elle çizilmiş diyagram sayfaları (el yazması, renkli fotoğraf)](images/muntehe-s15.jpg "9. bölüm: her sayfada on iki, elle çizilmiş diyagram · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 15. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
+
 - Philippe Ambroise Durand ve Jean-Louis Preti, <i lang="fr">Stratégie raisonnée des fins de partie du jeu d’échecs</i> (Paris, 1871–1873): Tamamen pratik oyun sonlarına ayrılmış ilk kitaplardan biri. Birinci cildi yalnızca şah ve piyade sonlarını işliyor; Barkan’ın eseriyle konu ve başlık olarak en yakın kaynak bu. Durand (1799–1880) Lisieux’lü bir rahip ve felsefe öğretmeniydi. <i lang="fr">Trébuchet</i> terimini onun türettiği söyleniyor; defterdeki “fâhe” de bu terimin Osmanlıca karşılığı. ([kaynak](https://en.wikipedia.org/wiki/Philippe_Ambroise_Durand))
 - Johann Berger, <i lang="de">Theorie und Praxis der Endspiele</i> (Leipzig, 1890/91; gözden geçirilmiş baskı 1922): Pratik oyun sonları üzerine ilk modern ve kapsamlı eser sayılıyor. Yıllarca standart başvuru kitabı olma konumunu korudu. Kaynakçadaki 1922 tarihi bu yeni baskıya denk geliyor. Berger (1845–1933) Grazlı bir usta, kuramcı ve etütçüydü. ([kaynak](https://en.wikipedia.org/wiki/Johann_Berger))
 - Hans Fahrni, <i lang="de">Das Endspiel im Schach</i> (Leipzig, 1917): Prag doğumlu İsviçreli usta Fahrni’nin (1874–1939) oyunsonu kitabı. ([kaynak](https://en.wikipedia.org/wiki/Hans_Fahrni))
@@ -71,6 +66,8 @@ Diyagramların bir kısmı da dönemin süreli yayınlarından alınmış. 160 n
 ### Mütercim: H. Emrullâh
 
 Hüseyin Emrullah (1877–1952), İzmir Mekteb-i İdâdî-i Mülkiyesi mezunu bir bürokrattı. 1927’de Dâhiliye Vekâleti Hukuk Müşaviriydi. 1935–1946 yılları arasında Malatya milletvekilliği yaptı. Almanca, Fransızca ve Arapça biliyordu. Satranç tarihimizdeki yeri iki eser ve bir kulüple öne çıkıyor:
+
+![Çözüm sayfası: Takdîr-i Vaz’iyet (el yazması, renkli fotoğraf)](images/muntehe-s75.jpg "10. bölüm: 75. mansubenin çözümü, <span lang="tr">Takdîr-i Vaz’iyet</span> ile açılıyor · <i>Müntehâ Mansûbeleri</i> · dijital kopya, 75. poz · Kaynak: [Milli Kütüphane Dijital Kütüphane](https://dijital-kutuphane.mkutup.gov.tr/tr/manuscripts/catalog/details/333556)")
 
 - **Müntehâ Mansûbeleri – Şâh ve Piyâde (1922):** Milli Kütüphane YZ. A 1659 katalog numarasıyla kayıtlı el yazması eser. Çeviri eserin adı günümüz dilinde “Oyunsonu Etüdleri: Şah ve Piyon”.
 - **Amelî ve Nazarî Şatranc Rehberi (1927):** İstanbul’da Evkaf-ı İslâmiye Matbaası’nda basılan 128 sayfalık bu kitap, Sevda Kaman’ın 2025 tarihli [makalesinde](https://dergipark.org.tr/en/pub/hars/article/1832012) Cumhuriyet döneminin ilk satranç kitabı olarak tanıtılıyor.
