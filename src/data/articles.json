@@ -315,6 +315,11 @@
     "slug": "eski-dergilerin-izinde",
     "unlisted": true,
     "cat": "Literatür inceleme",
+    "cats": [
+      "Literatür inceleme",
+      "Satranç tarihi",
+      "Analizli oyun"
+    ],
     "title": "Eski dergilerin izinde: Chess Review'dan Inside Chess'e",
     "dek": "Chess Review ile Chess Life'ın hikâyesinden, 1990 tarihli bir Inside Chess sayısında kalmış, veritabanlarında bulunmayan bir partiye.",
     "author": "FM Alper Efe Ataman",
