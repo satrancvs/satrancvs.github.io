@@ -1,3 +1,5 @@
+![Philidor'un 1783 tarihli terakota büstü (siyah-beyaz fotoğraf)](images/philidor-pajou-buste.jpg "Philidor'un terakota büstü, 1783 · Heykeltıraş: <span lang="fr">Augustin Pajou</span> · <span lang="fr">Musée Carnavalet</span> · Lisans: CC0 · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Portrait_de_Fran%C3%A7ois_Andr%C3%A9_Danican,_dit_Philidor_(1726-1795),_compositeur_et_joueur_d%27%C3%A9checs,_S3340_(1_of_7).jpg)")
+
 18\. yüzyılda yaşamış ünlü Fransız müzisyen **François-André Danican Philidor** (Filidor olarak okunur), aynı zamanda döneminin en güçlü satranç oyuncusu olarak kabul edilir. Henüz resmi dünya şampiyonalarının düzenlenmediği bu dönemde, Fransız ismin diğer oyunculardan çok daha kuvvetli olduğu bilinmektedir. Lakabı ile anarsak kendisine «Grand» (Büyük) Philidor diyebiliriz. Sayısız bestesiyle, özellikle opera sanat dalına büyük katkıda bulunmuş, meşhur oyunsonu incelemeleri, yazdığı *Analyze du jeu d'échecs* (Satranç Oyununun Tahlili) kitabı ile satranç dünyasına yeni bir bakış getirmeyi başarmıştır.
 
 Fransa'da küçük bir şehir olan Dreux'de 1726 yılında doğmuştur. Philidor'un dedesi, Fransa Kralı 13. Louis'nin kendi flüt oyununu kiralamasından sonra, İtalyan flütist Filidori'den esinlenerek *Philidor* ismini Danican ailesi soyadına eklemiştir. Müzik Danican ailesi için geleneksel bir uğraşıdır. Philidor bu geleneği devam ettirmiş, henüz 6 yaşındayken kraliyet korosunda şarkı söylemeye, 10 yaşında Versay kraliyet kilisesinde müzik dersleri almaya ve 11 yaşında ise beste yazmaya başlamıştır. Satrancı ise 10 yaşında, diğer koristlerle oynayarak öğrenmiştir. İlk bestesi 15. Louis tarafından, yine Versay'da, beğeniyle dinlenmiş ve ödüllendirilmiştir. 14 yaşında Paris'te ders vermeye başlamış bir müzik dehasına sahiptir.
@@ -46,7 +48,7 @@ Piyonların – özellikle de piyon zincirlerinin – öneminden bahsetmiştir. 
 
 Richard Réti'ye göre ise Philidor kendi çağında anlaşılamayacak kadar ileri bir satranç filozofudur.
 
-![Opéra Garnier cephesinde Philidor'un büstü ve adı (siyah-beyaz fotoğraf)](images/philidor-garnier-buste.jpg "<span lang="fr">Palais Garnier</span> cephesinde Philidor'un büstü · Fotoğraf: <span lang="fr">Chabe01</span> · Lisans: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.tr) · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Buste_Philidor_Palais_Garnier_Paris_1.jpg)")
+![Opéra Garnier cephesinde Philidor'un büstü ve adı (siyah-beyaz fotoğraf)](images/philidor-garnier-buste.jpg "<span lang="fr">Palais Garnier</span> cephesinde Philidor'un büstü · Fotoğraf: <span lang="fr">En passant</span> · Lisans: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.tr) · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Philidor_Opera_Paris_More_Bright.jpg)")
 
 ### Philidor Savunması
 
