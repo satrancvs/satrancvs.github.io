@@ -537,24 +537,34 @@ They were two of a kind and we shall never see the likes of them ever again.
 
 **Sources**
 
-- Alekhine-Capablanca games
-- Alekhine Info; Capablanca Info
-- 1913 Savorin Cup, Capablanca vs Alekhine
-- Letter to Capablanca from Alekhine, The Hague, 7th November 1921, in Edward Winter, <i>Capablanca</i>
-- The London Rules
-- José Raúl Capablanca, <i>My Chess Career</i>, 1920
-- <i>Alexander Alekhine's Best Games</i>, 1989
-- 1927 World Championship match info
-- Alekhine, <i>Eclaireur de Nice</i>, 24th November 1927; Capablanca, <i>Brooklyn Daily Eagle</i>, page C3, 12th February 1928
-- 1928-1931 match negotiations; <i>American Chess Bulletin</i> 1928 (p. 45-47, 86-87, 108, 174-175) and 1929 (p. 21, 43)
-- Alekhine on Carlsbad, 1929
-- 1930 Capablanca-Alekhine planned match; Alekhine's response, March 1931
-- Capablanca, interview with Adelardo Fernández Arias in <i>ABC</i>, 12th May 1932
-- Olga Capablanca, in Edward Winter, <i>Chess Article: The Genius and the Princess</i>
-- <i>The Chess Review</i> 1938 (p. 35, 155); <i>The Chess Review</i>, November 1939 (p. 240)
-- 1940 match info; Alekhine's response, 1941
-- Alekhine, Capablanca tribute, 1942; Alekhine, <i>České slovo</i>, 17th June 1923, p. 14
-- Capablanca after the 1927 World Championship, <i>New York Times</i>, 30th November 1927
+- [Alekhine-Capablanca Games](https://www.chessgames.com/perl/ezsearch.pl?search=capablanca+alekhine)
+- [Alekhine Info](https://en.wikipedia.org/wiki/Alexander_Alekhine)
+- [Capablanca Info](https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca)
+- [1913 Savorin Cup, Capablanca vs Alekhine](https://commons.wikimedia.org/wiki/File:Alekhin_Kapablanka.jpg)
+- [Letter to Capablanca from Alekhine, The Hague, 7th November 1921. In Edward Winter, Capablanca](https://www.thechesspedia.com/capablanca-alekhine-1927/)
+- [The London Rules](https://www.chesshistory.com/winter/extra/london.html)
+- [José Raúl Capablanca, My Chess Career, 1920](https://ia801506.us.archive.org/24/items/15748865AJoseRaulMyChessCareer/15748865-a-Jose-Raul-My-Chess-Career.pdf)
+- [Alexander Alekhine's Best Games, 1989](https://ia803206.us.archive.org/34/items/alexanderalekhinesbestgames_algebraicedition/Alexander%20Alekhines%20Best%20Games%20Algebraic%20Edition.pdf)
+- [1927 World Championship Match info](https://www.chessgames.com/perl/chess.pl?tid=54140)
+- [Alekhine, Eclaireur de Nice, 24th November, 1927](https://www.chesshistory.com/winter/extra/alekhine6.html) Item 3522 (Ctrl + F, then type 3522)
+- [Capablanca, Brooklyn Daily Eagle, page C3, 12th February, 1928](https://www.chesshistory.com/winter/extra/alekhine6.html) (match comments) Item 7134
+- [1928-1931 match negotiations](https://youtu.be/sym9V7YspNE?t=5989)
+- [American Chess Bulletin 1928](https://babel.hathitrust.org/cgi/pt?id=hvd.hxr7d3&seq=51) (p.45-47, p.86-87, p.108, p.174-175).
+- [American Chess Bulletin 1929](https://babel.hathitrust.org/cgi/pt?id=hvd.hxr7d2&seq=27) (p.21, p.43).
+- [Alekhine on Carlsbad, 1929](https://www.chesshistory.com/winter/extra/carlsbad.html)
+- [1930 Capablanca-Alekhine planned match.](https://www.chesshistory.com/winter/extra/london.html) Item 918
+- [1928-1931 match negotiations info](https://www.dailychess.com/forum/only-chess/alekhine-apparently-was-willing-to-play-capablanca.21996)
+- [1928-1931 match negotiation info 2](https://www.chessgames.com/perl/chess.pl?tid=54141)
+- [Alekhine response March 1931](https://www.chesshistory.com/winter/extra/tinsley.html) Item 9968
+- [Capablanca, interview with Adelardo Fernández Arias in the newpaper ABC on 12th May, 1932](https://www.chesshistory.com/winter/extra/alekhine6.html) Item 6171
+- [Olga Capablanca, In Edward Winter Chess Article: The Genius and the Princess](https://www.chesshistory.com/winter/extra/capablancaolga.html)
+- [The Chess Review 1938](https://uscf1-nyc1.aodhosting.com/CL-AND-CR-ALL/CR-ALL/CR1938/CR1938_All.pdf) (p.35, p.155).
+- [The Chess Review, November 1939](https://dn790005.ca.archive.org/0/items/ChessReview1939/Chess%20Review%201939.pdf) (p.240).
+- [1940 Match Info](https://chesshistory.com/winter/extra/capablanca1.html) Items (4696, 4742)
+- [Alekhine Response 1941](https://www.chesshistory.com/winter/extra/alekhine6.html) Item 10424
+- [Alekhine, Capablanca Tribute, 1942](https://www.chessgames.com/perl/chessgame?gid=1008348&kpage=1#kibitzing) (Comments, User: BLD9802)
+- [Alekhine, České slovo newpaper, 17th June, 1923, (p.14).](https://www.chesshistory.com/winter/extra/alekhine6.html) Item 2138
+- [Capablanca after the 1927 World Championship, New York Times, November 30th 1927](https://www.nytimes.com/1927/11/30/archives/capablanca-loses-world-chess-title-tells-how-he-lost-old-masters.html)
 - Alexander Alekhine, <i>Nottingham 1936</i>
 - Edward Winter, <i>Capablanca</i>
 - Garry Kasparov, <i>My Great Predecessors</i>, Part 1
