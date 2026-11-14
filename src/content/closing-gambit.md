@@ -102,12 +102,6 @@ ChessBase'in iki yazısındaki olaylar. Çoğunun filmde yer alıp almadığı y
 
 ![Karpov bir galibiyeti kutluyor (renkli)](images/closing-gambit-kare-sampanya.jpg "Karpov bir galibiyeti kutluyor · Kare: <span lang="en">Closing Gambit</span> · <span lang="en">Screenbound Pictures</span> (<span lang="en">ChessBase</span>’in yayımladığı tanıtım karesi)")
 
-![Altyazısız arşiv karesi: plajda bir kadın (renkli)](images/closing-gambit-kare-arsiv-1.jpg "Filmden bir arşiv karesi (<span lang="en">ChessBase</span> altyazı vermiyor) · Kare: <span lang="en">Closing Gambit</span> · <span lang="en">Screenbound Pictures</span> (<span lang="en">ChessBase</span>’in yayımladığı tanıtım karesi)")
-
-![Altyazısız arşiv karesi: havuz başında dinlenenler (renkli)](images/closing-gambit-kare-arsiv-2.jpg "Filmden bir arşiv karesi (<span lang="en">ChessBase</span> altyazı vermiyor) · Kare: <span lang="en">Closing Gambit</span> · <span lang="en">Screenbound Pictures</span> (<span lang="en">ChessBase</span>’in yayımladığı tanıtım karesi)")
-
-![Altyazısız arşiv karesi: havuz başında iki kişi (renkli)](images/closing-gambit-kare-arsiv-3.jpg "Filmden bir arşiv karesi (<span lang="en">ChessBase</span> altyazı vermiyor) · Kare: <span lang="en">Closing Gambit</span> · <span lang="en">Screenbound Pictures</span> (<span lang="en">ChessBase</span>’in yayımladığı tanıtım karesi)")
-
 Filmin sonunu ChessBase şöyle özetliyor: Anand, bugünkü satrancı “eğlence için oyun oynayan çocuklara” benzetiyor; Stean'e göre Korchnoi'un mirası, uyum ve itaat isteyen bir sisteme karşı savaşması; Kasparov'a göre Korchnoi “tek başına, canavarca bir sisteme karşı savaştı”; Sutovsky'ye göre Korchnoi “özgürlük savaşçısı bir melek değildi”, Karpov da “canavar bir KGB kötüsü” değildi. Kasparov ayrıca, Stalin'den beri satrancın komünist sistemin üstünlüğünü kanıtlama aracı olarak görüldüğünü söylüyor.
 
 ### Bahsi geçen oyunlar
