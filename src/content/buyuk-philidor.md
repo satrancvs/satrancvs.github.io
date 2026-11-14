@@ -18,6 +18,8 @@ Philidor, çok genç yaşlarından itibaren Paris'te ünlü satrançcıların ve
 >
 > — <span lang="fr">Denis Diderot, Le Neveu de Rameau</span>
 
+![Café de la Régence'te satranç oynayanlar, 1878 (siyah-beyaz gravür)](images/cafe-de-la-regence-1878.jpg "<span lang="fr">Café de la Régence</span>'te satranç oynayanlar (Paris–Viyana telgraf maçı, 1878) · Gravür: <span lang="fr">M. Motty</span> · Lisans: Kamu malı · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Cafe_de_la_regence_match_telegraphique_paris_vienne.jpg)")
+
 Philidor satrançta müthiş bir başarı gösterir. Özellikle körleme partileri tarihe geçmiştir. Oyunun teorik kısmında da çağının ötesindedir. Yine *Café de la Régence*'da kendi ustası Legal'i rahatça yenecektir. Matıyla ünlenen Legal, Philidor'un hocası olarak bilinir ve 1730'lu yıllarda dönemin en güçlü oyuncusu varsayılır (*Legal Matı*: 1 e4 e5 2 ♘f3 ♘c6 3 ♗c4 d6 4 ♘c3 ♗g4?! 5 h3 ♗h5? 6 ♘xe5! ♗xd1?? 7 ♗xf7+ ♔e7 8 ♘d5#). Philidor'un kendi çağındaki rakipleri ise Stamma ve Verdoni'dir. Londra'da Suriyeli Stamma'yla seri oyunlar oynamıştır, Paris'te ise Verdoni'yle...
 
 Londra'da ünlü *St. James Satranç Kulübü*'ne uğramaktadır. Kulüp, 1774 yılındaki kuruluşundan sonra, yılın belli dönemlerinde (Ocak-Mayıs) Philidor'u davet etmekteydi. Gazetelerde haberleri yayımlanır, bu seri karşılaşmalar seyircilere duyurulurdu. Philidor Londra'da hayatını yaptığı gösteri maçlarıyla kazanırdı.
@@ -43,6 +45,8 @@ Philidor'un "Analiz" kelimesini kullanması satranca bakış açısını ve kend
 Piyonların – özellikle de piyon zincirlerinin – öneminden bahsetmiştir. Meşhur "Piyonlar satranç oyununun ruhudur." sözü, belki de Philidor denince akla gelen ilk şeydir.
 
 Richard Réti'ye göre ise Philidor kendi çağında anlaşılamayacak kadar ileri bir satranç filozofudur.
+
+![Opéra Garnier cephesinde Philidor'un büstü ve adı (siyah-beyaz fotoğraf)](images/philidor-garnier-buste.jpg "<span lang="fr">Palais Garnier</span> cephesinde Philidor'un büstü · Fotoğraf: <span lang="fr">Chabe01</span> · Lisans: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.tr) · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Buste_Philidor_Palais_Garnier_Paris_1.jpg)")
 
 ### Philidor Savunması
 
@@ -90,6 +94,8 @@ Bilgisayarın önerisi olan ilk varyant şu şekilde: 1 ♖b2 ♖h3 2 ♗f2 ♖f
 
 Konumla ilgili ilginç bir de not düşelim. "Philidor Konumu" (*La Position de Philidor*), aynı zamanda René-Victor Pilhes'in kaleme aldığı polisiye romanın da adıdır.
 
+![René-Victor Pilhes, La position de Philidor kitabının kapağı (renkli)](images/la-position-de-philidor-kapak.jpg "René-Victor Pilhes, <span lang="fr">La position de Philidor</span> (<span lang="fr">Folio</span>)")
+
 Maalesef kariyeri boyunca oynadığı bütün önemli oyunlar kayda geçirilmemiş ve kendi seviyesinde bir rakiple de karşılaşmamıştır. 80'e yakın oyunu kayıt altına alınmış olup, bir kısmı körleme olarak oynanan oyunlardan ikisini aşağıda bulabilirsiniz. En güçlü oyunculara karşı piyon, hatta taş eksik başlayıp kazandığı handikaplı oyunlar da bulunur. Juraj Nikolac'ın yazdığı *L'Héritage de Philidor*'da (Philidor'un Mirası) analizleri de bulunan iki oyunu sizlerle paylaşmak istedim.
 
 [Event "Körleme oyun"]
@@ -117,6 +123,10 @@ Maalesef kariyeri boyunca oynadığı bütün önemli oyunlar kayda geçirilmemi
 ### Philidor'un mirası
 
 Philidor'un mirası ve etkisi birçok alanda devam etmektedir. Philidor'un ismi bugün büstüyle birlikte *Opéra Garnier*'de yer alır. Aynı zamanda Paris 20. bölgedeki bir sokak da ismini "Büyük" Philidor'dan alır. Roman kahramanı olarak (besteci ve satranç şampiyonu) Katherine Neville'in kurgu romanı *Le Huit*'te de yer almaktadır. Philidor ailesinden gelenler tarafından *La Société d'Études Philidoriennes* adlı araştırma kurumu Paris'te kurulmuştur. Kurumun öncelikli amacı ailenin bestelerini geniş kitlelere tanıtmaktır. Konservatuarların müzik öğrencilerinin karşısına Philidor'un eserleri sıklıkla çıkar. Paris'te komik-operaları da zaman zaman *Théâtre des Champs-Élysées*, *Théâtre National de l'Opéra Comique* gibi prestijli sahnelerde sahnelenmektedir. Ölümünden yaklaşık 100 yıl sonra Amédée Dutacq ve Abraham Dreyfus tarafından tek perdelik *Battez Philidor!* (Philidor'u Yenin!) komik-operası yazılmıştır. Hikâyede fakir bir müzisyenin sevgilisiyle evlenebilmesi için Philidor'u satrançta yenmesi şart koşulmuştur. Philidor yardımcı olmak için kaybetmeyi kabul etse de, dalgınlıkla oyunları kazanmaktadır. Yine de iki sevgili mutlu sona ulaşabilir.
+
+![Opéra Garnier cephesi (siyah-beyaz fotoğraf)](images/opera-garnier-cephe.jpg "<span lang="fr">Opéra Garnier</span> cephesi · Fotoğraf: <span lang="en">Pezi</span> · Lisans: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.tr) · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Opera_Garnier_facade_detail_DSC_0792w.jpg)")
+
+![Paris 20. bölgedeki Rue Philidor sokak tabelası (siyah-beyaz fotoğraf)](images/rue-philidor.jpg "Paris 20. bölgedeki <span lang="fr">Rue Philidor</span> sokak tabelası · Fotoğraf: <span lang="fr">Chabe01</span> · Lisans: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.tr) · Kaynak: [<span lang="en">Wikimedia Commons</span>](https://commons.wikimedia.org/wiki/File:Plaque_Rue_Philidor_-_Paris_XX_(FR75)_-_2021-05-27_-_1.jpg)")
 
 ### Son yılları
 
