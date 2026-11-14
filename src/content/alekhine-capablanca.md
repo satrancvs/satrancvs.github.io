@@ -323,6 +323,11 @@ In 1934, Capablanca met the Russian socialite Olga Chagodaef (née Choubaroff) a
 
 In 1935, Alekhine would play Euwe for the World Championship. Alekhine was defeated by Euwe 15.5-14.5. Euwe became the fifth world champion.
 
+<figure class="video-embed">
+<iframe src="https://www.youtube.com/embed/ck6lcXo7vMA" title="Han Hollander interviews Max Euwe and J.R. Capablanca (1935)" allowfullscreen loading="lazy"></iframe>
+<figcaption><span lang="en">Han Hollander interviews Max Euwe and J.R. Capablanca (1935). Capablanca gives his thoughts on the players · The Dutch Table</span></figcaption>
+</figure>
+
 In 1936, after nine years Capablanca and Alekhine finally played again at the Nottingham tournament. Alekhine's annotations are from his book <i>Nottingham 1936</i>.
 
 [Event "Nottingham"]
@@ -354,6 +359,11 @@ In November 1938, Alekhine and Capablanca played in the AVRO tournament. Their f
 [EventLine "AVRO, Holland, 1938"]
 
 1. e4 e6 2. d4 d5 3. Nd2 Nf6 4. e5 Nfd7 5. Bd3 c5 6. c3 Nc6 7. Ne2 Qb6 8. Nf3 cxd4 9. cxd4 Bb4+ { [D] } 10. Kf1 { To avoid trading pieces to keep Black cramped, the king will develop through g2. } (10. Bd2 { Is also fine. }) 10... Be7 11. a3 Nf8? (11... f6 { to get space. } 12. Nf4 Ndxe5 13. dxe5 fxe5 14. Nxe5 Nxe5 15. Qh5+ Nf7 16. Bxh7 Qb3 $13 { Equal but unclear. }) 12. b4 Bd7 13. Be3 Nd8 (13... Ng6 { Trying to castle leads to an attack. } 14. h4 O-O 15. h5 Nh8 16. Qc2 g6 17. Bh6 Rfe8 18. Qd2) 14. Nc3 a5 15. Na4 Qa7 16. b5 { Capablanca's pieces are stuck. Alekhine has a winning advantage } { [%csl Rc6,Rh5,Rf8,Rd8,Rd7,Re7][%cal Rh2h4,Rh4h5] } 16... b6 17. g3 { To get the h1 rook into the game. } { [%csl Rh1] } 17... f5 18. Kg2 (18. exf6 gxf6 { This would still be winning, but it's best to not to give some space for the pieces. }) 18... Nf7 19. Qd2 h6 20. h4! { Stopping g5 counterplay. } 20... Nh7 21. h5! { Opening an outpost for the knight. } { [%csl Gh4,Gg6][%cal Gf3h4,Gh4g6] } 21... Nfg5 22. Nh4 { Alekhine avoids the trade. Trades should be avoided when you have a space advantage. } 22... Ne4 23. Qb2 (23. Bxe4 fxe4 24. Ng6 Rg8 { Still winning, but Alekhine prefers to keep the bishop. Also the knight will be kicked out. }) 23... Kf7 (23... Bxh4 24. Rxh4 { The dark squares will be weak and subject to attack in the future. This was still the best option. } { [%csl Re7,Rd6,Rf6] }) 24. f3 { Kicking the knight. } { [%csl Ye4][%cal Yf3e4] } 24... Neg5 25. g4! { Opening the position against the king. The threat is to win the f5 pawn. } { [%csl Bf5][%cal Bg4f5] } 25... fxg4 26. Bg6+ Kg8 { The rook is stuck. } { [%csl Bh8] } 27. f4 Nf3 28. Bxh7+ Rxh7 29. Ng6 { [%csl Be7][%cal Bg6e7] } 29... Bd8 (29... Bf8 30. Kg3 Rc8 31. Kxg4 { The knight is lost. } { [%csl Bf3] }) 30. Rac1 Be8 31. Kg3 Qf7 32. Kxg4 Nh4 33. Nxh4 Qxh5+ 34. Kg3 Qf7 35. Nf3 { Capablanca resigned as he is down a knight. A fine demonstration of the space advantage by Alekhine. This is the last game they ever played. } 1-0
+
+<figure class="video-embed">
+<iframe src="https://www.youtube.com/embed/GRCvqr7XJAo" title="Alexander Alekhine Interview" allowfullscreen loading="lazy"></iframe>
+<figcaption><span lang="en">Alekhine interview, 1938 · Cabra Xadrez</span></figcaption>
+</figure>
 
 1. e4 e6 2. d4 d5 3. Nd2 Nf6 4. e5 Nfd7 5. Bd3 c5 6. c3 Nc6 7. Ne2 Qb6 8. Nf3 cxd4 9. cxd4 Bb4+ { [D] } 10. Kf1 Be7 11. a3 Nf8 12. b4 Bd7 13. Be3 Nd8 14. Nc3 a5 15. Na4 Qa7 16. b5 b6 17. g3 f5 18. Kg2 Nf7 19. Qd2 h6 20. h4 Nh7 21. h5 Nfg5 22. Nh4 Ne4 23. Qb2 Kf7 24. f3 Neg5 25. g4 fxg4 26. Bg6+ Kg8 27. f4 Nf3 28. Bxh7+ Rxh7 29. Ng6 Bd8 30. Rac1 Be8 31. Kg3 Qf7 32. Kxg4 Nh4 33. Nxh4 Qxh5+ 34. Kg3 Qf7 35. Nf3 { Capablanca resigned as he is down a knight. A fine demonstration of the space advantage by Alekhine. This is the last game they ever played. } 1-0
 
