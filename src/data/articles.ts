@@ -13,6 +13,7 @@ import dergilerMd from '@/content/eski-dergiler.md?raw';
 import muntehe from '@/content/muntehe-mansubeleri.md?raw';
 import psikolojiMd from '@/content/satranc-mucadelesinde-psikoloji.md?raw';
 import philidorMd from '@/content/buyuk-philidor.md?raw';
+import closingGambitMd from '@/content/closing-gambit.md?raw';
 import alekhineMd from '@/content/alekhine-capablanca.md?raw';
 import { toTypography } from '@/lib/curly';
 import data from './articles.json';
@@ -36,6 +37,7 @@ const CHUNKS: Record<string, string[]> = {
   muntehe: splitArticle(muntehe).chunks,
   dergiler: splitArticle(dergilerMd).chunks,
   philidor: splitArticle(philidorMd).chunks,
+  'closing-gambit': splitArticle(closingGambitMd).chunks,
   psikoloji: splitArticle(psikolojiMd).chunks,
   'alekhine-capablanca': splitArticle(alekhineMd).chunks,
   'ilk-adim': splitArticle(ilkAdimMd).chunks,
