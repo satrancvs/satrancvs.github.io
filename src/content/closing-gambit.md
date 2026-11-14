@@ -32,8 +32,6 @@ Müzik (besteci) bilgisine baktığımız hiçbir sayfada rastlamadık. Film iç
 - **Yönetmenin geçmişi.** ChessBase'in anlattığına göre Alan Byron, 1970'lerin sonunda “etkilenebilir bir İngiltere genç oyuncusu”ydu; Daniel King, Peter Wells ve Julian Hodgson'ın çağdaşı. Fischer–Spassky maçı sonrası satranca ilgi duyan kuşaktan. En yüksek reytingi yaklaşık 2300; yaklaşık 25 yıldır oynamıyor (2008'deki bir İsviçre turnuvası dışında) ve müzik ve film sektöründe çalışıyor. Önceki filmi <span lang="en">Bowie: The Man Who Changed the World</span>; sonraki projesi The Beatles'ı anlatan <span lang="en">Made on Merseyside</span>. ChessBase'in ikinci yazısına göre 1982'de bir simültanede Karpov'u yenmişti; partinin skoru elimizde yok.
 - **Byron'ın filmi anlatışı.** Byron, filmin “satranç hikâyesinden çok kişisel bir hikâye” olduğunu, “satrancın ötesinde, yaşamın ve toplumun çıplak hâlinin anlatıldığı” bir film olduğunu söylüyor.
 
-![Alan Byron ve Genna Sosonko, Cannes'da (renkli)](images/closing-gambit-byron-sosonko.jpg "Alan Byron (solda) ve Genna Sosonko, Cannes, 2018 · <span lang="en">ChessBase</span>")
-
 ### Konu
 
 Dağıtımcı metinlerine göre hikâye, Fischer'ın 1972'de Spassky'yi yenip Sovyetlerin elinden aldığı unvanı geri kazanmak için başlattıkları planla açılıyor. Sovyetler bu görev için sadık bir Komünist Parti üyesi olan Karpov'u hazırlıyor. TV Guide'daki özete göre Karpov, filmde “genç Sovyet ‘Yeni İnsan’ının özü” olarak, Leonid Brezhnev'in dostu olarak anlatılıyor; Korchnoi ise Leningrad kuşatmasından sağ çıkmış biri ve 1976'da Hollanda'ya sığınmış.
@@ -101,8 +99,6 @@ ChessBase'in iki yazısındaki olaylar. Çoğunun filmde yer alıp almadığı y
 ![Korchnoi ve gurular (renkli)](images/closing-gambit-kare-gurular.jpg "Korchnoi ve Hintli gurular · Kare: <span lang="en">Closing Gambit</span> · <span lang="en">Screenbound Pictures</span> (<span lang="en">ChessBase</span>’in yayımladığı tanıtım karesi)")
 
 ![Karpov bir galibiyeti kutluyor (renkli)](images/closing-gambit-kare-sampanya.jpg "Karpov bir galibiyeti kutluyor · Kare: <span lang="en">Closing Gambit</span> · <span lang="en">Screenbound Pictures</span> (<span lang="en">ChessBase</span>’in yayımladığı tanıtım karesi)")
-
-![Altyazısız arşiv karesi: plajda bir kadın (renkli)](images/closing-gambit-kare-arsiv-1.jpg "Filmden bir arşiv karesi (<span lang="en">ChessBase</span> altyazı vermiyor) · Kare: <span lang="en">Closing Gambit</span> · <span lang="en">Screenbound Pictures</span> (<span lang="en">ChessBase</span>’in yayımladığı tanıtım karesi)")
 
 ![Altyazısız arşiv karesi: havuz başında dinlenenler (renkli)](images/closing-gambit-kare-arsiv-2.jpg "Filmden bir arşiv karesi (<span lang="en">ChessBase</span> altyazı vermiyor) · Kare: <span lang="en">Closing Gambit</span> · <span lang="en">Screenbound Pictures</span> (<span lang="en">ChessBase</span>’in yayımladığı tanıtım karesi)")
 
