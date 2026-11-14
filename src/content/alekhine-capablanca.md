@@ -257,6 +257,18 @@ Firstly, FIDE had just been established in 1924 and now they were trying to brin
 
 Alekhine was piqued and annoyed at the fact that after the match, Capablanca wrote to FIDE recommending changes to the match format. Capablanca then sent a copy of the letter to Alekhine. Alekhine was upset as he had a verbal agreement with Capablanca that the rematch would have the same rules.
 
+> Paris, February 29th, 1928.
+>
+> Dear Mr. Capablanca:
+>
+> I am in receipt of the copy of your letter to Mr. Rueb dated February 10th, which you thought necessary to send me, and I feel induced to make to you and especially to the Chess World the following statement:
+>
+> Having lost your title you address yourself to the FIDE with the suggestion to modify those same rules which you had made on becoming Champion of the World, and which you imposed on your possible rivals in London in 1922. You do this although you know that, on principle, I should never agree to these modifications inasmuch as they are adapted to a possible return match between ourselves. This I made quite clear to you during our only interview after the match on December 12th, 1927.
+>
+> Although you assured me during that interview that you agreed with my views (that a return match between ourselves could not take place on other terms than those of the first one) and that you would make it known to the organizations concerned; although, notwithstanding that FIDE exists since 1924, I myself did not consider it fit to address myself to it with analogous suggestions, for I would have considered such an appeal equal to the disowning of my signature of the London Rules in 1922. Notwithstanding all this I should not have decided to give a public answer to your letter to Mr. Rueb had it not referred to the 'experience' of the Buenos Aires Match. On account of this assertion and the deductions which might wrongly be drawn from it, I am obliged to state the following:
+>
+> — Excerpt from Alekhine's letter to Capablanca, Paris, February 29th, 1928 · Given in the <span lang="en">American Chess Bulletin</span>, March 1928
+
 Capablanca said that he did not write to FIDE to change the rules for the rematch, but as a general guide for future matches under FIDE in general.
 
 Capablanca made an official challenge to Alekhine on October 8th 1928. Alekhine said they could play after his match with Bogoljubow, and he told Bogoljubow about Capablanca's challenge.
