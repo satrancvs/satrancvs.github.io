@@ -14,11 +14,11 @@ RATIO = {'h': 3 / 2, 'v': 2 / 3, 's': 2 / 3}
 DISPLAY = {'h': (600, 400), 'v': (400, 600), 's': (240, 360)}
 MAX_FILE = {'h': (1200, 800), 'v': (800, 1200), 's': (480, 720)}
 # Düz renkli (vektör) illüstrasyonlar düşük çözünürlükte de keskin kalır; yatay boyut sınırından muaf (yine de büyütülmez).
-LOW_RES_OK = {'editor.jpg'}
+LOW_RES_OK = {'editor.jpg', 'chess-review-ciltler.jpg', 'chess-review-kapaklar.jpg', 'chess-review-grup-1.jpg', 'fischer-reshevsky-1961.jpg', 'chess-review-grup-2.jpg', 'inside-chess-banner.jpg', 'gurevich-adams-dresden.jpg', 'fischer-kitaplari-world-chess-hall-of-fame.jpg', 'vezir-gambiti.jpg', 'chess-life-review-kitaplar.jpg', 'chess-life-review-arsiv.jpg'}  # Dergi yazısı (Analiz Satranç): kaynak görseller küçük; büyütülmez
 # Düşük çözünürlüklü ama yazıda diğer portrelerle aynı boyda (dikey) gösterilmesi istenen portreler; kaynak büyütülmez, ekranda ~1,3x yoğunlukla kalır.
 VERTICAL_OK = {'Lasker.jpg'}
 # Eski portreler, çözünürlüğü yetse bile Selim Palavan'ın portresi gibi küçük kutuda (s) gösterilir (At ve fil yazısı).
-SMALL_OK = {'Chigorin.jpg', 'Steinitz.jpg', 'Lasker.jpg'}
+SMALL_OK = {'vezir-gambiti.jpg', 'Chigorin.jpg', 'Steinitz.jpg', 'Lasker.jpg'}
 MIN_NATIVE = 1.5  # kırpılmış alan gösterim kutusunun en az bu katı olmalı (h ve v için)
 
 
