@@ -257,9 +257,103 @@ Firstly, FIDE had just been established in 1924 and now they were trying to brin
 
 Alekhine was piqued and annoyed at the fact that after the match, Capablanca wrote to FIDE recommending changes to the match format. Capablanca then sent a copy of the letter to Alekhine. Alekhine was upset as he had a verbal agreement with Capablanca that the rematch would have the same rules.
 
+> Paris, February 29th, 1928.
+>
+> Dear Mr. Capablanca:
+>
+> I am in receipt of the copy of your letter to Mr. Rueb dated February 10th, which you thought necessary to send me, and I feel induced to make to you and especially to the Chess World the following statement:
+>
+> Having lost your title you address yourself to the FIDE with the suggestion to modify those same rules which you had made on becoming Champion of the World, and which you imposed on your possible rivals in London in 1922. You do this although you know that, on principle, I should never agree to these modifications inasmuch as they are adapted to a possible return match between ourselves. This I made quite clear to you during our only interview after the match on December 12th, 1927.
+>
+> Although you assured me during that interview that you agreed with my views (that a return match between ourselves could not take place on other terms than those of the first one) and that you would make it known to the organizations concerned; although, notwithstanding that FIDE exists since 1924, I myself did not consider it fit to address myself to it with analogous suggestions, for I would have considered such an appeal equal to the disowning of my signature of the London Rules in 1922. Notwithstanding all this I should not have decided to give a public answer to your letter to Mr. Rueb had it not referred to the 'experience' of the Buenos Aires Match. On account of this assertion and the deductions which might wrongly be drawn from it, I am obliged to state the following:
+>
+> — Excerpt from Alekhine's letter to Capablanca, Paris, February 29th, 1928 · Given in the <span lang="en">American Chess Bulletin</span>, March 1928
+
 Capablanca said that he did not write to FIDE to change the rules for the rematch, but as a general guide for future matches under FIDE in general.
 
-Capablanca made an official challenge to Alekhine on October 8th 1928. Alekhine said they could play after his match with Bogoljubow, and he told Bogoljubow about Capablanca's challenge.
+> Asked concerning his return match with Dr. Alekhine, Capablanca said that he could not understand the new champion's act in publishing the letter which the Cuban had written to Dr. A. Rueb of The Hague, president of the International Chess Federation, and of which Capablanca, as a matter of courtesy, had sent Dr. Alekhine a copy. Capablanca had written that letter, he said, not for the purpose of suggesting any new conditions for the return match, as to which he and his rival had had a thorough understanding before parting in Buenos Aires, but in order to outline his general ideas on the subject for the guidance of Dr. Rueb and his associates during the discussion of the world championship at the annual business meeting of the International Federation at The Hague later this month. Capablanca added that he hoped to arrange the match with Dr. Alekhine under precisely the same conditions as those which obtained at Buenos Aires. The encounter will most likely take place in the United States. As to Dr. Alekhine's insistence that he would play under no other conditions, Capablanca said:
+>
+> "This is entirely superfluous so far as I am concerned because I never made any attempt to have the conditions changed for a return match here. My suggestion to President Rueb, intending to modify the rules, was with reference to other future matches and not to mine because, as a matter of personal satisfaction, if I am to regain my title, I would like to do it under exactly the same conditions under which I lost it. My contention, however, is for other future matches. Since conditions have changed, rules should be modified to meet these new conditions in the same way that I modified them five years before when I thought that the modifications were necessary to meet the new conditions existing then. Common sense will tell the merest tyro that championship rules, either in chess or anything else, cannot be maintained the same throughout an unlimited number of years, but that it is self-evident that, as conditions surrounding championship matches change, the rules should be altered along with them in order to properly meet the changed conditions."
+>
+> — Capablanca comments on Alekhine · Given in the <span lang="en">American Chess Bulletin</span>, July-August 1928
+
+Capablanca made an official challenge to Alekhine on October 8th 1928.
+
+> **Capablanca's Challenge.**
+>
+> Dr. A. Alekhine, Paris, France.
+>
+> Dear Sir:
+>
+> I hereby challenge you officially to a match for the Chess Championship of the world under the accepted London World's Championship rules of 1922.
+>
+> Yours faithfully, J. R. Capablanca.
+>
+> P.S.—The above challenge is written to confirm Dr. Lederer's letter of several weeks ago, as I gather from a cable of his that you require the above written challenge.
+>
+> My forfeit of five hundred dollars is in Dr. Lederer's hands, as I believe he has notified you already.
+>
+> J. R. Capablanca.
+>
+> Berlin, October 8, 1928.
+>
+> — Capablanca's official World Championship challenge to Alekhine, Berlin, October 8th, 1928 · Given in the <span lang="en">American Chess Bulletin</span>, December 1928
+
+Alekhine said they could play after his match with Bogoljubow.
+
+> **Dr. Alekhine's Reply.**
+>
+> Mr. J. R. Capablanca, Legation of Cuba, Berlin, Germany.
+>
+> Dear Sir:
+>
+> I beg leave to acknowledge the receipt of your letter of October 8th, inst.
+>
+> Having accepted, in principle, the challenge of E. D. Bogoljubow, under date of August 29, last, for a match to take place in 1929, I regret that I cannot now consider the proposition of another match for the championship.
+>
+> However, I shall from now on keep your letter in mind and at the same time write to Mr. Bogoljubow giving him three months' time, until January 15, 1929, so that he may arrange for and give me the guarantees provided for under the rules of London of 1922.
+>
+> In case these guarantees should not be forthcoming, I would hold myself ready, after the above mentioned date (Jan. 15, 1929) to accept your challenge on the exact basis of the regulations of London, 1922. In order to avoid a misunderstanding of any kind, I may add that a match between us should not take place before the second half of 1929.
+>
+> In case my match with Mr. Bogoljubow should take place and I should be fortunate enough to retain my title (to the championship) I would then be ready to accept your challenge, after the end of that encounter.
+>
+> Please accept my distinguished salutations,
+>
+> (Signed) A. Alekhine.
+>
+> P.S.—The letter from Dr. Lederer, which you mention, having no official character and which in no way speaks of a forfeit, I see myself obliged to take into consideration the fact of your challenge solely, from the date when forwarded and made, that is to say, from October 8, inst. In so doing, I take as a basis the precedents established by yourself during the time when you were Champion, and, moreover, which I always have found to be equitable.
+>
+> (Enclosure: Copy of letter to Bogoljubow.)
+>
+> October 12, 1928.
+>
+> — Alekhine's reply to Capablanca, Berlin, October 12th, 1928 · Given in the <span lang="en">American Chess Bulletin</span>, December 1928
+
+Alekhine told Bogoljubow about Capablanca's challenge.
+
+> **Dr. Alekhine to Bogoljubow.**
+>
+> Mr. E. D. Bogoljubow, Triberg, in Baden, Germany.
+>
+> Dear Mr. Bogoljubow:
+>
+> I have just received from J. R. Capablanca a formal challenge for a match, dated October 8, 1928.
+>
+> In consequence of this new development, I beg you herewith to please respond and deposit—as confirmation of your challenge of August 29 and conforming to Paragraph 11 of the Regulations of London of 1922—after a delay of three months, (that is to say, until January 15, 1929,) the sum of Five Hundred (500) Dollars.
+>
+> I propose, as Treasurer of the Match, the Jungherr Strick van Linschoten of Delft, with whom you are acquainted, and to whom I just have sent a letter, asking him to accept this duty.
+>
+> I would add, in case of non-compliance by you, and not putting up the sum mentioned with the Treasurer, I would consider myself under obligation, after January 15, 1929, to accept the challenge from Mr. Capablanca.
+>
+> Awaiting your further communications, I beg you, dear sir, to accept the expression of my best sentiments.
+>
+> (Signed) A. Alekhine.
+>
+> (Enclosure: Copy of the letter to Capablanca.)
+>
+> October 12, 1928.
+>
+> — Alekhine's reply to Bogoljubow, Berlin, October 12th, 1928 · Given in the <span lang="en">American Chess Bulletin</span>, December 1928
 
 > The match with Bogoljubow interests me far more than the battle with Capablanca... Bogoljubow is a much more serious opponent.
 >
@@ -268,6 +362,16 @@ Capablanca made an official challenge to Alekhine on October 8th 1928. Alekhine 
 > Alekhine contemplates a visit to this country [America] in March for the purpose of making a tour and also, it is understood, to pave the way for the preliminary negotiations for a return match with Jose R. Capablanca of Havana to be played in this country during 1930, provided of course, that he does not lose the match to Bogoljubow to be played in the fall of this year.
 >
 > — <span lang="en">American Chess Bulletin</span>, February 1929
+
+> **Capablanca Off to Ramsgate.**
+>
+> Jose R. Capablanca of Havana, who will be one of the fourteen competitors in the forthcoming international tournament at Ramsgate, England, arrived in New York, by way of Washington, on the evening of March 16. He was booked to sail on the steamship Leviathan on the 21st, the day after Dr. Alekhine was due to land in New York.
+>
+> Capablanca would not discuss his relations with Dr. Alekhine, who recently spoke very frankly in print concerning his views of the Cuban's strength and ability in general.
+>
+> "Arrangements for a return match between Dr. Alekhine and myself," said the former champion, "are in the hands of Dr. Norbert L. Lederer of this city, who will doubtless see Dr. Alekhine when he arrives. I hope that he may be successful in bringing about another contest."
+>
+> — <span lang="en">American Chess Bulletin</span>, 1929
 
 In August 1929, Capablanca played the Carlsbad tournament. Alekhine did not play as he was due to play the World Championship Match. However, he was a correspondent on this tournament for the New York Times.
 
@@ -433,24 +537,34 @@ They were two of a kind and we shall never see the likes of them ever again.
 
 **Sources**
 
-- Alekhine-Capablanca games
-- Alekhine Info; Capablanca Info
-- 1913 Savorin Cup, Capablanca vs Alekhine
-- Letter to Capablanca from Alekhine, The Hague, 7th November 1921, in Edward Winter, <i>Capablanca</i>
-- The London Rules
-- José Raúl Capablanca, <i>My Chess Career</i>, 1920
-- <i>Alexander Alekhine's Best Games</i>, 1989
-- 1927 World Championship match info
-- Alekhine, <i>Eclaireur de Nice</i>, 24th November 1927; Capablanca, <i>Brooklyn Daily Eagle</i>, page C3, 12th February 1928
-- 1928-1931 match negotiations; <i>American Chess Bulletin</i> 1928 (p. 45-47, 86-87, 108, 174-175) and 1929 (p. 21, 43)
-- Alekhine on Carlsbad, 1929
-- 1930 Capablanca-Alekhine planned match; Alekhine's response, March 1931
-- Capablanca, interview with Adelardo Fernández Arias in <i>ABC</i>, 12th May 1932
-- Olga Capablanca, in Edward Winter, <i>Chess Article: The Genius and the Princess</i>
-- <i>The Chess Review</i> 1938 (p. 35, 155); <i>The Chess Review</i>, November 1939 (p. 240)
-- 1940 match info; Alekhine's response, 1941
-- Alekhine, Capablanca tribute, 1942; Alekhine, <i>České slovo</i>, 17th June 1923, p. 14
-- Capablanca after the 1927 World Championship, <i>New York Times</i>, 30th November 1927
+- [Alekhine-Capablanca Games](https://www.chessgames.com/perl/ezsearch.pl?search=capablanca+alekhine)
+- [Alekhine Info](https://en.wikipedia.org/wiki/Alexander_Alekhine)
+- [Capablanca Info](https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca)
+- [1913 Savorin Cup, Capablanca vs Alekhine](https://commons.wikimedia.org/wiki/File:Alekhin_Kapablanka.jpg)
+- [Letter to Capablanca from Alekhine, The Hague, 7th November 1921. In Edward Winter, Capablanca](https://www.thechesspedia.com/capablanca-alekhine-1927/)
+- [The London Rules](https://www.chesshistory.com/winter/extra/london.html)
+- [José Raúl Capablanca, My Chess Career, 1920](https://ia801506.us.archive.org/24/items/15748865AJoseRaulMyChessCareer/15748865-a-Jose-Raul-My-Chess-Career.pdf)
+- [Alexander Alekhine's Best Games, 1989](https://ia803206.us.archive.org/34/items/alexanderalekhinesbestgames_algebraicedition/Alexander%20Alekhines%20Best%20Games%20Algebraic%20Edition.pdf)
+- [1927 World Championship Match info](https://www.chessgames.com/perl/chess.pl?tid=54140)
+- [Alekhine, Eclaireur de Nice, 24th November, 1927](https://www.chesshistory.com/winter/extra/alekhine6.html) Item 3522 (Ctrl + F, then type 3522)
+- [Capablanca, Brooklyn Daily Eagle, page C3, 12th February, 1928](https://www.chesshistory.com/winter/extra/alekhine6.html) (match comments) Item 7134
+- [1928-1931 match negotiations](https://youtu.be/sym9V7YspNE?t=5989)
+- [American Chess Bulletin 1928](https://babel.hathitrust.org/cgi/pt?id=hvd.hxr7d3&seq=51) (p.45-47, p.86-87, p.108, p.174-175).
+- [American Chess Bulletin 1929](https://babel.hathitrust.org/cgi/pt?id=hvd.hxr7d2&seq=27) (p.21, p.43).
+- [Alekhine on Carlsbad, 1929](https://www.chesshistory.com/winter/extra/carlsbad.html)
+- [1930 Capablanca-Alekhine planned match.](https://www.chesshistory.com/winter/extra/london.html) Item 918
+- [1928-1931 match negotiations info](https://www.dailychess.com/forum/only-chess/alekhine-apparently-was-willing-to-play-capablanca.21996)
+- [1928-1931 match negotiation info 2](https://www.chessgames.com/perl/chess.pl?tid=54141)
+- [Alekhine response March 1931](https://www.chesshistory.com/winter/extra/tinsley.html) Item 9968
+- [Capablanca, interview with Adelardo Fernández Arias in the newpaper ABC on 12th May, 1932](https://www.chesshistory.com/winter/extra/alekhine6.html) Item 6171
+- [Olga Capablanca, In Edward Winter Chess Article: The Genius and the Princess](https://www.chesshistory.com/winter/extra/capablancaolga.html)
+- [The Chess Review 1938](https://uscf1-nyc1.aodhosting.com/CL-AND-CR-ALL/CR-ALL/CR1938/CR1938_All.pdf) (p.35, p.155).
+- [The Chess Review, November 1939](https://dn790005.ca.archive.org/0/items/ChessReview1939/Chess%20Review%201939.pdf) (p.240).
+- [1940 Match Info](https://chesshistory.com/winter/extra/capablanca1.html) Items (4696, 4742)
+- [Alekhine Response 1941](https://www.chesshistory.com/winter/extra/alekhine6.html) Item 10424
+- [Alekhine, Capablanca Tribute, 1942](https://www.chessgames.com/perl/chessgame?gid=1008348&kpage=1#kibitzing) (Comments, User: BLD9802)
+- [Alekhine, České slovo newpaper, 17th June, 1923, (p.14).](https://www.chesshistory.com/winter/extra/alekhine6.html) Item 2138
+- [Capablanca after the 1927 World Championship, New York Times, November 30th 1927](https://www.nytimes.com/1927/11/30/archives/capablanca-loses-world-chess-title-tells-how-he-lost-old-masters.html)
 - Alexander Alekhine, <i>Nottingham 1936</i>
 - Edward Winter, <i>Capablanca</i>
 - Garry Kasparov, <i>My Great Predecessors</i>, Part 1
