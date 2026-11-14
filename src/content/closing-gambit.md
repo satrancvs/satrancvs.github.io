@@ -83,7 +83,7 @@ ChessBase'in iki yazısındaki olaylar. Çoğunun filmde yer alıp almadığı y
 
 - **Seyahat yasağı.** Tigran Petrosian'ın, Korchnoi'un 1974 Adaylar finali sonrasında Sovyet seyahat yasağı getirilmesini kışkırttığı belirtiliyor.
 - **Sığınma.** Sosonko, Korchnoi'un 1976 firarını arabanın arka koltuğunda yatarak anlatıyor. Bir fotoğraf altyazısına göre Korchnoi, 1976 Amsterdam IBM turnuvasında Tony Miles'a “asylum” kelimesinin nasıl yazıldığını sormuştu.
-- **Keene'in ilk ziyareti.** Raymond Keene, Korchnoi'u ilk kez 1974'te ziyaret ettiğini anlatıyor; Korchnoi'a Vezir Hindistan karşısında bir saldırı fikri gösterdiğini, Korchnoi'un bunu maç sırasında Karpov'a karşı çok hızlı bir galibiyet için kullandığını söylüyor.
+- **Keene'in ilk ziyareti.** Raymond Keene, Korchnoi'u ilk kez 1974'te ziyaret ettiğini anlatıyor; Korchnoi'a Vezir-Hint Savunması'na karşı bir saldırı fikri gösterdiğini, Korchnoi'un bunu maç sırasında Karpov'a karşı çok hızlı bir galibiyet için kullandığını söylüyor.
 - **Maçın başlangıcı.** 18 Temmuz 1978'de Korchnoi, c piyonunu iki kare ilerleterek maçı açtı.
 - **8. oyun ve el sıkışma.** İlk sekiz oyunun yedisi berabereydi. Karpov 8. oyunda Korchnoi'un uzattığı eli sıkmayı reddetti. Keene, Korchnoi'un buna çok öfkelendiğini ve “maçın muhtemelen en kötü oyununu” oynadığını söylüyor. ChessBase, el sıkışmama geleneğinin Topalov–Kramnik'le başladığını sananların 1978'e dönmesi gerektiğini yazıyor.
 - **Şampanya.** Karpov'un ilk galibiyetinden sonra, sözde “tarafsız” maç organizatörü Florencio Campomanes bir şampanya resepsiyonu verdi ve ChessBase'in “nadir bir video” dediği görüntüde kadeh kaldırıp “Ve beş galibiyete daha içiyorum” dedi.
