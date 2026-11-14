@@ -105,12 +105,8 @@ Sözü daha fazla uzatmadan, Büyükustalar Birliği (GMA) tarafından düzenlen
 
 Vahap Şanal, Cemil Can Ali Marandi ve Batuhan Daştan gibi ülkemizde son yıllarda yetişen birçok Büyükustamızın satranç anlayışlarına önemli katkılarda bulunmuş "Misha"nın kaybettiği oyunu paylaşırken gösterdiği tevazu ve bilgece sözler.
 
-![GM Mikhail Gurevich ve FM Yakup Bayram (renkli fotoğraf)](images/gurevich-yakup-bayram-burdur-2010.jpg "2010'da Burdur'daki 16 Yaş Altı Satranç Olimpiyatları'nda <span lang=\"en\">FM</span> Yakup Bayram ve <span lang=\"en\">GM</span> Mikhail Gurevich ile")
+![GM Mikhail Gurevich ve FM Yakup Bayram (renkli fotoğraf)](images/gurevich-yakup-bayram-burdur-2010.jpg "2010'da Burdur'daki 16 Yaş Altı Satranç Olimpiyatları'nda <span lang="en">FM</span> Yakup Bayram ve <span lang="en">GM</span> Mikhail Gurevich ile")
 
 11\. Dünya Şampiyonu Robert James Fischer'ın elinden düşürmediği satranç kitaplarının başında, 19. yüzyıldan eserler olduğuna boşuna şaşırmamalı ([World Chess Hall of Fame](https://worldchesshof.org/)'deki sayfayı inceleyebilirsiniz). Herhalde önemli olan neyi, ne zaman ve nerede arayacağını bilmek!
 
-![Robert James Fischer'ın kitapları, World Chess Hall of Fame (renkli fotoğraf)](images/fischer-kitaplari-world-chess-hall-of-fame.jpg "Robert James Fischer'ın kitapları <span lang=\"en\">World Chess Hall of Fame</span>'de · Dr. Jeanne ve Rex Sinquefield'in koleksiyonundan")
-
-Chess.com bir süredir Analiz Satranç olarak bizlere, hem yıldırım turnuvaları düzenlememizde hem de bu tür makalelerimizi satrançseverlerle ulaştırmamızda yardımcı olarak güzel bir ev sahipliği yapıyor. Eğer siz de bu tür etkinliklerimize katılmak isterseniz (bizler iştirak etmenizi çok isteriz!), kulübümüze üye olabilirsiniz!
-
-**Analiz Satranç Chess.com Kulübü:** [www.chess.com/club/analizsatranc](https://www.chess.com/club/analizsatranc)
+![Robert James Fischer'ın kitapları, World Chess Hall of Fame (renkli fotoğraf)](images/fischer-kitaplari-world-chess-hall-of-fame.jpg "Robert James Fischer'ın kitapları <span lang="en">World Chess Hall of Fame</span>'de · Dr. Jeanne ve Rex Sinquefield'in koleksiyonundan")
