@@ -271,7 +271,89 @@ Alekhine was piqued and annoyed at the fact that after the match, Capablanca wro
 
 Capablanca said that he did not write to FIDE to change the rules for the rematch, but as a general guide for future matches under FIDE in general.
 
-Capablanca made an official challenge to Alekhine on October 8th 1928. Alekhine said they could play after his match with Bogoljubow, and he told Bogoljubow about Capablanca's challenge.
+> Asked concerning his return match with Dr. Alekhine, Capablanca said that he could not understand the new champion's act in publishing the letter which the Cuban had written to Dr. A. Rueb of The Hague, president of the International Chess Federation, and of which Capablanca, as a matter of courtesy, had sent Dr. Alekhine a copy. Capablanca had written that letter, he said, not for the purpose of suggesting any new conditions for the return match, as to which he and his rival had had a thorough understanding before parting in Buenos Aires, but in order to outline his general ideas on the subject for the guidance of Dr. Rueb and his associates during the discussion of the world championship at the annual business meeting of the International Federation at The Hague later this month. Capablanca added that he hoped to arrange the match with Dr. Alekhine under precisely the same conditions as those which obtained at Buenos Aires. The encounter will most likely take place in the United States. As to Dr. Alekhine's insistence that he would play under no other conditions, Capablanca said:
+>
+> "This is entirely superfluous so far as I am concerned because I never made any attempt to have the conditions changed for a return match here. My suggestion to President Rueb, intending to modify the rules, was with reference to other future matches and not to mine because, as a matter of personal satisfaction, if I am to regain my title, I would like to do it under exactly the same conditions under which I lost it. My contention, however, is for other future matches. Since conditions have changed, rules should be modified to meet these new conditions in the same way that I modified them five years before when I thought that the modifications were necessary to meet the new conditions existing then. Common sense will tell the merest tyro that championship rules, either in chess or anything else, cannot be maintained the same throughout an unlimited number of years, but that it is self-evident that, as conditions surrounding championship matches change, the rules should be altered along with them in order to properly meet the changed conditions."
+>
+> — Capablanca comments on Alekhine · Given in the <span lang="en">American Chess Bulletin</span>, July-August 1928
+
+Capablanca made an official challenge to Alekhine on October 8th 1928.
+
+> **Capablanca's Challenge.**
+>
+> Dr. A. Alekhine, Paris, France.
+>
+> Dear Sir:
+>
+> I hereby challenge you officially to a match for the Chess Championship of the world under the accepted London World's Championship rules of 1922.
+>
+> Yours faithfully, J. R. Capablanca.
+>
+> P.S.—The above challenge is written to confirm Dr. Lederer's letter of several weeks ago, as I gather from a cable of his that you require the above written challenge.
+>
+> My forfeit of five hundred dollars is in Dr. Lederer's hands, as I believe he has notified you already.
+>
+> J. R. Capablanca.
+>
+> Berlin, October 8, 1928.
+>
+> — Capablanca's official World Championship challenge to Alekhine, Berlin, October 8th, 1928 · Given in the <span lang="en">American Chess Bulletin</span>, December 1928
+
+Alekhine said they could play after his match with Bogoljubow.
+
+> **Dr. Alekhine's Reply.**
+>
+> Mr. J. R. Capablanca, Legation of Cuba, Berlin, Germany.
+>
+> Dear Sir:
+>
+> I beg leave to acknowledge the receipt of your letter of October 8th, inst.
+>
+> Having accepted, in principle, the challenge of E. D. Bogoljubow, under date of August 29, last, for a match to take place in 1929, I regret that I cannot now consider the proposition of another match for the championship.
+>
+> However, I shall from now on keep your letter in mind and at the same time write to Mr. Bogoljubow giving him three months' time, until January 15, 1929, so that he may arrange for and give me the guarantees provided for under the rules of London of 1922.
+>
+> In case these guarantees should not be forthcoming, I would hold myself ready, after the above mentioned date (Jan. 15, 1929) to accept your challenge on the exact basis of the regulations of London, 1922. In order to avoid a misunderstanding of any kind, I may add that a match between us should not take place before the second half of 1929.
+>
+> In case my match with Mr. Bogoljubow should take place and I should be fortunate enough to retain my title (to the championship) I would then be ready to accept your challenge, after the end of that encounter.
+>
+> Please accept my distinguished salutations,
+>
+> (Signed) A. Alekhine.
+>
+> P.S.—The letter from Dr. Lederer, which you mention, having no official character and which in no way speaks of a forfeit, I see myself obliged to take into consideration the fact of your challenge solely, from the date when forwarded and made, that is to say, from October 8, inst. In so doing, I take as a basis the precedents established by yourself during the time when you were Champion, and, moreover, which I always have found to be equitable.
+>
+> (Enclosure: Copy of letter to Bogoljubow.)
+>
+> October 12, 1928.
+>
+> — Alekhine's reply to Capablanca, Berlin, October 12th, 1928 · Given in the <span lang="en">American Chess Bulletin</span>, December 1928
+
+Alekhine told Bogoljubow about Capablanca's challenge.
+
+> **Dr. Alekhine to Bogoljubow.**
+>
+> Mr. E. D. Bogoljubow, Triberg, in Baden, Germany.
+>
+> Dear Mr. Bogoljubow:
+>
+> I have just received from J. R. Capablanca a formal challenge for a match, dated October 8, 1928.
+>
+> In consequence of this new development, I beg you herewith to please respond and deposit—as confirmation of your challenge of August 29 and conforming to Paragraph 11 of the Regulations of London of 1922—after a delay of three months, (that is to say, until January 15, 1929,) the sum of Five Hundred (500) Dollars.
+>
+> I propose, as Treasurer of the Match, the Jungherr Strick van Linschoten of Delft, with whom you are acquainted, and to whom I just have sent a letter, asking him to accept this duty.
+>
+> I would add, in case of non-compliance by you, and not putting up the sum mentioned with the Treasurer, I would consider myself under obligation, after January 15, 1929, to accept the challenge from Mr. Capablanca.
+>
+> Awaiting your further communications, I beg you, dear sir, to accept the expression of my best sentiments.
+>
+> (Signed) A. Alekhine.
+>
+> (Enclosure: Copy of the letter to Capablanca.)
+>
+> October 12, 1928.
+>
+> — Alekhine's reply to Bogoljubow, Berlin, October 12th, 1928 · Given in the <span lang="en">American Chess Bulletin</span>, December 1928
 
 > The match with Bogoljubow interests me far more than the battle with Capablanca... Bogoljubow is a much more serious opponent.
 >
