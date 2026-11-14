@@ -363,6 +363,16 @@ Alekhine told Bogoljubow about Capablanca's challenge.
 >
 > — <span lang="en">American Chess Bulletin</span>, February 1929
 
+> **Capablanca Off to Ramsgate.**
+>
+> Jose R. Capablanca of Havana, who will be one of the fourteen competitors in the forthcoming international tournament at Ramsgate, England, arrived in New York, by way of Washington, on the evening of March 16. He was booked to sail on the steamship Leviathan on the 21st, the day after Dr. Alekhine was due to land in New York.
+>
+> Capablanca would not discuss his relations with Dr. Alekhine, who recently spoke very frankly in print concerning his views of the Cuban's strength and ability in general.
+>
+> "Arrangements for a return match between Dr. Alekhine and myself," said the former champion, "are in the hands of Dr. Norbert L. Lederer of this city, who will doubtless see Dr. Alekhine when he arrives. I hope that he may be successful in bringing about another contest."
+>
+> — <span lang="en">American Chess Bulletin</span>, 1929
+
 In August 1929, Capablanca played the Carlsbad tournament. Alekhine did not play as he was due to play the World Championship Match. However, he was a correspondent on this tournament for the New York Times.
 
 > Regarding the sporting point of view, however, Capablanca's defeat has a positive value in that it prevents a new legend of his inviolability, which this tournament would have more than justified, being built up because he twice before was clearly exposed to defeat and only had to thank the carelessness of his opponents for his rescue.
