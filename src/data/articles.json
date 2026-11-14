@@ -353,5 +353,17 @@
       "Satranç tarihi",
       "Özel dosya"
     ]
+  },
+  {
+    "id": "psikoloji",
+    "slug": "satranc-mucadelesinde-psikoloji",
+    "unlisted": true,
+    "cat": "Analizli oyun",
+    "title": "Satranç mücadelesinde psikoloji",
+    "dek": "Bizden güçlü rakipler karşısında nasıl bir tutum sergilemeliyiz? GM Burak Fırat, iki kariyerli oyuncuya, Konstantin Sakaev ve Alexey Dreev'e karşı oynadığı iki partiyle anlatıyor.",
+    "author": "GM Burak Fırat",
+    "date": "Ocak–Şubat–Mart 2027",
+    "note": "İlk yayın: [Satrançsever](https://www.analizsatranc.com/satranc-dergisi-satrancsever-pmk14), “Büyükustanın Penceresinden” köşesi, s. 38–42",
+    "body": []
   }
 ]
