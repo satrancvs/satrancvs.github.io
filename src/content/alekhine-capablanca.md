@@ -233,9 +233,7 @@ Capablanca'nın maç hakkındaki düşünceleri:
 
 ### 1928-1933
 
-Maçın ardından Alekhine ile Capablanca, aynı kurallarla bir rövanş maçı yapmak konusunda anlaştı.
-
-Alekhine ile Capablanca arasındaki ilişkinin bozulmaya başladığı yer, rövanş görüşmeleri oldu.
+Maçın ardından Alekhine ile Capablanca, aynı kurallarla bir rövanş maçı yapmak konusunda anlaştıysa da rövanş görüşmeleri sırasında Alekhine ile Capablanca arasındaki ilişki bozulmaya başladı.
 
 Öncelikle FIDE 1924'te yeni kurulmuştu ve şimdi dünya şampiyonasını kendi yetki ve denetimi altına almaya çalışıyordu.
 
