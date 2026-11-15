@@ -217,13 +217,13 @@ Alekhine'nin maç hakkındaki düşünceleri:
 >
 > — <span lang="fr">Alekhine, Eclaireur de Nice</span>, 24 Kasım 1927
 
-> ...[Capablanca] benden nasıl yenildi? Bu soruya bugün bile kesin bir yanıt veremediğimi itiraf etmeliyim; çünkü 1927'de ondan üstün olduğuma inanmıyordum. Belki de yenilgisinin başlıca nedeni, 1927 New York'taki ezici zaferinden doğan kendi gücünü fazla, benimkini ise az değerlendirmesiydi.
+> ...[Capablanca] bana nasıl yenildi? Bu soruya bugün bile kesin bir yanıt veremediğimi itiraf etmeliyim; çünkü 1927'de ondan üstün olduğuma inanmıyordum. Belki de yenilgisinin başlıca nedeni, 1927 New York'taki ezici zaferinden doğan kendi gücünü fazla, benimkini ise az değerlendirmesiydi.
 >
 > — Alekhine'nin Capablanca ile 1927 maçı hakkındaki sözleri, 1942
 
 Capablanca'nın maç hakkındaki düşünceleri:
 
-> İtiraf ediyorum, şaşırdım. Eski iyi formumun böyle uygunsuz bir anda beni yüz üstü bırakabileceğini hiç hayal etmemiştim. Ama Dr. Alekhine, herkesin karşısına çıkmaya değer bir rakip. İnanmıyorsanız deneyin.
+> İtiraf ediyorum, şaşırdım. Eski iyi formumun böyle uygunsuz bir anda beni yüz üstü bırakabileceğini hiç hayal etmemiştim. Ama Dr. Alekhine, herkesin karşısına çıkabilecek güçte bir rakip. İnanmıyorsanız deneyin.
 >
 > — Capablanca, Alekhine'nin kendisini yenmesine şaşırıp şaşırmadığı sorulduğunda
 
