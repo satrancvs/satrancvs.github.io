@@ -341,7 +341,7 @@ Alekhine, Bogoljubow'a Capablanca'nın meydan okumasını bildirdi.
 >
 > — <span lang="de">Alekhine, Deutsche Schachblätter</span>, 1 Şubat 1929, s. 35-37 · Kaynak: <span lang="en">Edward Winter, Capablanca</span>, s. 215
 
-> Alekhine'nin, bir tur yapmak ve ayrıca, anlaşıldığı kadarıyla, bu yılın sonbaharında oynanacak Bogoljubow maçını kaybetmemesi kaydıyla 1930'da bu ülkede (ABD) oynanacak olan, Havana'lı Jose R. Capablanca ile rövanş maçının ön görüşmelerine zemin hazırlamak amacıyla Mart'ta Amerika'yı ziyaret etmeyi düşündüğü belirtiliyor.
+> Alekhine'nin, bir tur yapmak ve ayrıca, anlaşıldığı kadarıyla, bu yılın sonbaharında oynanacak Bogoljubow maçını kaybetmemesi kaydıyla 1930'da Amerika'da oynanacak olan, Havana'lı Capablanca ile rövanş maçının ön görüşmelerine zemin hazırlamak amacıyla Mart'ta Amerika'yı ziyaret etmeyi düşündüğü belirtiliyor.
 >
 > — <span lang="en">American Chess Bulletin</span>, Şubat 1929
 
