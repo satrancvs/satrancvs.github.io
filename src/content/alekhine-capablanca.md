@@ -379,7 +379,7 @@ Maçı kazandıktan sonra Alekhine, Capablanca'nın maç meydan okumasını kabu
 
 Şubat 1931'de Capablanca, Alekhine'ye bir meydan okuma daha gönderdi; Alekhine kabul etmezse dünya şampiyonluğu unvanını hükmen kendisine ait sayacağını belirtti.
 
-Mart 1931'de Alekhine, Capablanca'ya yanıt vererek meydan okumasını belirli koşullarla kabul etti ve Capablanca'nın maç tarihine ilişkin ültimatomuna itiraz etti. Alekhine bunun, Londra Kuralları'nın Onuncu Maddesi'ne aykırı olduğunu söyledi: "Şampiyon, maçın başlangıç tarihini belirleme hakkına sahiptir...". Alekhine maçın başlangıcını 15 Ağustos - 15 Eylül 1931 arasına koydu. Alekhine'nin koyduğu koşullardan biri, önceki maç gerçekleşmediği için 500 dolarlık teminatın tahkime tabi olmasıydı.
+Mart 1931'de Alekhine, Capablanca'ya yanıt vererek meydan okumasını belirli koşullarla kabul etti ve Capablanca'nın maç tarihine ilişkin ültimatomuna itiraz etti. Alekhine bunun, Londra Kuralları'nın Onuncu Maddesi'ne aykırı olduğunu söyledi: "Şampiyon, maçın başlangıç tarihini belirleme hakkına sahiptir..." Alekhine maçın başlangıcını 15 Ağustos - 15 Eylül 1931 arasına koydu. Alekhine'nin koyduğu koşullardan biri, önceki maç gerçekleşmediği için 500 dolarlık teminatın tahkime tabi olmasıydı.
 
 Mayıs 1931'de Capablanca meydan okumasını geri çekti. 1931'in ortasından sonra Capablanca, Aralık 1934'e kadar hiçbir turnuvada oynamadı.
 
