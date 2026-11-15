@@ -297,7 +297,7 @@ Alekhine, Bogoljubow ile maçından sonra oynayabileceklerini söyledi.
 >
 > Bu teminatların verilmemesi durumunda, söz konusu tarihten (15 Ocak 1929) sonra, Londra 1922 kurallarının tam esasına dayanarak meydan okumanızı kabul etmeye hazır olacağım. Herhangi bir yanlış anlaşılmayı önlemek için, aramızdaki bir maçın 1929'un ikinci yarısından önce yapılmaması gerektiğini ekleyebilirim.
 >
-> Bay Bogoljubow ile maçımın yapılması ve unvanımı (şampiyonluğu) koruma talihine erişmem hâlinde, o karşılaşmanın sona ermesinden sonra meydan okumanızı kabul etmeye hazır olacağım.
+> Bay Bogoljubow ile maçımın yapılması ve ünvanımı (şampiyonluğu) koruma talihine erişmem hâlinde, o karşılaşmanın sona ermesinden sonra meydan okumanızı kabul etmeye hazır olacağım.
 >
 > Seçkin saygılarımı kabul buyurun,
 >
