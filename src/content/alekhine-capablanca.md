@@ -385,7 +385,7 @@ Mayıs 1931'de Capablanca meydan okumasını geri çekti. 1931'in ortasından so
 
 1934'te Alekhine, Bogoljubow'a karşı unvan rövanşını 15,5-10,5 kazandı.
 
-Alekhine'nin doruk dönemi, neredeyse girdiği her turnuvayı kazandığı 30'ların başıydı.
+Alekhine'nin satranç hayatının zirvesi, neredeyse girdiği her turnuvayı kazandığı 30'ların başıydı.
 
 > Ne olursa olsun, unvanını kaybedince Capablanca bir süre formunu da yitirdi ve gerçekten bir rövanş istiyorsa, en hafif deyişle bunu gerçekleştirmeye hiç yaramayacak bir politika izlemeye başladı. Nitekim yenilgisinden hemen sonra, benimle görüşmeden FIDE aracılığıyla bir unvan maçı için yeni koşullar sağlatmaya çalıştı. Bu, tahammül edemeyeceğim türden bir yöntemdi ve böylece aramızda bir soğukluk ve görüş ayrılığı doğdu.
 >
