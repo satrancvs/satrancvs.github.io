@@ -213,7 +213,7 @@ Capablanca, galip için kamuya açık bir tören düzenlenmesini yakışıksız 
 
 Alekhine'nin maç hakkındaki düşünceleri:
 
-> Satrançta en önemli etken psikolojidir. Başarım yalnızca psikoloji anlayışımdaki üstünlüğümden kaynaklanıyordu. Capablanca neredeyse tümüyle olağanüstü bir sezgi yeteneğiyle oynuyordu, ama psikolojik duygudan yoksundu.
+> Satrançta en önemli etken psikolojidir. Başarım yalnızca psikoloji anlayışımdaki üstünlüğümden kaynaklanıyordu. Capablanca neredeyse tümüyle olağanüstü bir sezgi yeteneğiyle oynuyordu, ama psikoloji anlayışından yoksundu.
 >
 > — <span lang="fr">Alekhine, Eclaireur de Nice</span>, 24 Kasım 1927
 
