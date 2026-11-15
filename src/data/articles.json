@@ -124,8 +124,9 @@
   },
   {
     "id": "gomori",
-    "slug": "1926-yilindan-nasil-usta-oldum",
+    "slug": "taslak/1926-yilindan-nasil-usta-oldum",
     "oldSlugs": [
+      "1926-yilindan-nasil-usta-oldum",
       "eugen-gomoriden-alti-ustaya-tek-bir-soru"
     ],
     "cat": "Satranç tarihi",
@@ -134,10 +135,10 @@
     "authorLang": "hu",
     "authorLabel": "Anket",
     "translator": "FM Tarık Selbes",
-    "date": "Ekim–Kasım–Aralık 2026",
-    "draft": true,
+    "date": "Ocak–Şubat–Mart 2027",
     "note": "İlk yayın: [Wiener Schachzeitung](https://en.wikipedia.org/wiki/Wiener_Schachzeitung \"lang:en\"), 1926 · Çeviri: [cafechigorin.com](https://cafechigorin.com \"lang:en\"), 2020",
-    "body": []
+    "body": [],
+    "unlisted": true
   },
   {
     "id": "ilk-adim",
@@ -296,7 +297,7 @@
   },
   {
     "id": "muntehe",
-    "slug": "munteha-mansubeleri",
+    "slug": "taslak/munteha-mansubeleri",
     "unlisted": true,
     "cat": "Satranç tarihi",
     "cats": [
@@ -308,11 +309,14 @@
     "dek": "Milli Kütüphanede kayıtlı, 1922 tarihli nadir bir el yazması: H. Emrullâh’ın Fransızca ve Almanca kaynaklardan çevirdiği piyon oyunsonu kitabının kapaklarını araladık.",
     "author": "Yayın ekibi",
     "date": "Ocak–Şubat–Mart 2027",
-    "body": []
+    "body": [],
+    "oldSlugs": [
+      "munteha-mansubeleri"
+    ]
   },
   {
     "id": "dergiler",
-    "slug": "eski-dergilerin-izinde",
+    "slug": "taslak/eski-dergilerin-izinde",
     "unlisted": true,
     "cat": "Literatür inceleme",
     "cats": [
@@ -323,11 +327,14 @@
     "dek": "Chess Review ile Chess Life'ın hikâyesinden, 1990 tarihli bir Inside Chess sayısında kalmış, veritabanlarında bulunmayan bir partiye.",
     "author": "FM Alper Efe Ataman",
     "date": "Ocak–Şubat–Mart 2027",
-    "body": []
+    "body": [],
+    "oldSlugs": [
+      "eski-dergilerin-izinde"
+    ]
   },
   {
     "id": "philidor",
-    "slug": "buyuk-philidor",
+    "slug": "taslak/buyuk-philidor",
     "unlisted": true,
     "cat": "Satranç tarihi",
     "title": "\"Büyük\" Philidor",
@@ -335,15 +342,18 @@
     "author": "Tolgay Pekin",
     "date": "Ocak–Şubat–Mart 2027",
     "body": [],
-    "note": "İlk yayın: [Satrançsever](https://www.analizsatranc.com/satranc-dergisi-satrancsever-pmk14)"
+    "note": "İlk yayın: [Satrançsever](https://www.analizsatranc.com/satranc-dergisi-satrancsever-pmk14)",
+    "oldSlugs": [
+      "buyuk-philidor"
+    ]
   },
   {
     "id": "alekhine-capablanca",
-    "slug": "alekhine-vs-capablanca-the-rivalry",
+    "slug": "taslak/alekhine-vs-capablanca-the-rivalry",
     "unlisted": true,
     "cat": "Satranç tarihi",
-    "title": "Alekhine vs Capablanca: The Rivalry",
-    "dek": "Explore one of the Greatest Rivalries in the History of Chess.",
+    "title": "Alekhine ve Capablanca: Bir rekabetin öyküsü",
+    "dek": "Satranç tarihinin en büyük rekabetlerinden birini yakından tanıyın.",
     "author": "Ruy Lopez",
     "authorLang": "en",
     "date": "Ocak–Şubat–Mart 2027",
@@ -352,11 +362,14 @@
     "cats": [
       "Satranç tarihi",
       "Özel dosya"
+    ],
+    "oldSlugs": [
+      "alekhine-vs-capablanca-the-rivalry"
     ]
   },
   {
     "id": "psikoloji",
-    "slug": "satranc-mucadelesinde-psikoloji",
+    "slug": "taslak/satranc-mucadelesinde-psikoloji",
     "unlisted": true,
     "cat": "Analizli oyun",
     "title": "Satranç mücadelesinde psikoloji",
@@ -364,11 +377,14 @@
     "author": "GM Burak Fırat",
     "date": "Ocak–Şubat–Mart 2027",
     "note": "İlk yayın: [Satrançsever](https://www.analizsatranc.com/satranc-dergisi-satrancsever-pmk14), “Büyükustanın Penceresinden” köşesi, s. 38–42",
-    "body": []
+    "body": [],
+    "oldSlugs": [
+      "satranc-mucadelesinde-psikoloji"
+    ]
   },
   {
     "id": "closing-gambit",
-    "slug": "closing-gambit-belgeseli",
+    "slug": "taslak/closing-gambit-belgeseli",
     "unlisted": true,
     "cat": "Satranç tarihi",
     "cats": [
@@ -379,6 +395,9 @@
     "dek": "Alan Byron'ın 2018 tarihli belgeseli Baguio'daki 1978 dünya şampiyonası maçını, KGB'yi, parapsikologları ve gurularıyla birlikte anlatıyor: filmin künyesi, görünenler ve anılan oyunlar.",
     "author": "Yayın ekibi",
     "date": "Ocak–Şubat–Mart 2027",
-    "body": []
+    "body": [],
+    "oldSlugs": [
+      "closing-gambit-belgeseli"
+    ]
   }
 ]
