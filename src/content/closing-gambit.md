@@ -34,7 +34,7 @@ Müzik (besteci) bilgisine baktığımız hiçbir sayfada rastlamadık. Film iç
 
 ### Konu
 
-Dağıtımcı metinlerine göre hikâye, Fischer'ın 1972'de Spassky'yi yenip Sovyetlerin elinden aldığı unvanı geri kazanmak için başlattıkları planla açılıyor. Sovyetler bu görev için sadık bir Komünist Parti üyesi olan Karpov'u hazırlıyor. TV Guide'daki özete göre Karpov, filmde “genç Sovyet ‘Yeni İnsan’ının özü” olarak, Leonid Brezhnev'in dostu olarak anlatılıyor; Korchnoi ise Leningrad kuşatmasından sağ çıkmış biri ve 1976'da Hollanda'ya sığınmış.
+Dağıtımcı metinlerine göre hikâye, Fischer'ın 1972'de Spassky'yi yenip Sovyetlerin elinden aldığı ünvanı geri kazanmak için başlattıkları planla açılıyor. Sovyetler bu görev için sadık bir Komünist Parti üyesi olan Karpov'u hazırlıyor. TV Guide'daki özete göre Karpov, filmde “genç Sovyet ‘Yeni İnsan’ının özü” olarak, Leonid Brezhnev'in dostu olarak anlatılıyor; Korchnoi ise Leningrad kuşatmasından sağ çıkmış biri ve 1976'da Hollanda'ya sığınmış.
 
 Tanıtım metinlerinde adı geçenler arasında parapsikologlar, düşünce dalgaları, bayrak kavgaları, aynalı güneş gözlükleri, kodlu yoğurtlar, KGB ajanları ve cinayete teşebbüsten aranan iki Doğulu mistik var. Özet olarak TV Guide, Karpov'un 5–2 öne geçtiğini, Korchnoi'un üst üste üç oyun kazanıp skoru 5–5'e getirdiğini yazıyor.
 
@@ -128,7 +128,7 @@ Kaynaklarda adı ve ayrıntısıyla geçen iki oyun, 8. ve 32. oyunlar. Aşağı
 [Result "1-0"]
 [EventLine "Dünya Şampiyonası maçı, 32. oyun, Baguio, 17 Ekim 1978"]
 
-1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. Nf3 Bg7 5. Be2 O-O 6. O-O c5 { ChessBase'e göre Korchnoi'un hazırladığı açılış sürprizi buydu; Karpov şaşırmadan hızlı oynadı. Maç 5–5 berabereydi ve bu oyunu kazanan dünya şampiyonu olacaktı. } 7. d5 Na6 8. Bf4 Nc7 9. a4 b6 10. Re1 Bb7 11. Bc4 Nh5 12. Bg5 Nf6 13. Qd3 a6 14. Rad1 Rb8 15. h3 Nd7 16. Qe3 Ba8 17. Bh6 b5 18. Bxg7 Kxg7 19. Bf1 Nf6 20. axb5 axb5 21. Ne2 Bb7 22. Ng3 Ra8 23. c3 Ra4 24. Bd3 Qa8 25. e5 dxe5 26. Qxe5 Nxd5 27. Bxb5 Ra7 28. Nh4 Bc8 29. Be2 Be6 30. c4 Nb4 31. Qxc5 Qb8 32. Bf1 Rc8 33. Qg5 Kh8 34. Rd2 Nc6 35. Qh6 Rg8 36. Nf3 Qf8 37. Qe3 Kg7 38. Ng5 Bd7 39. b4 Qa8 40. b5 Na5 41. b6 Rb7 { Siyah terk etti. Karpov maçı 6–5 kazanarak unvanını korudu. } 1-0
+1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. Nf3 Bg7 5. Be2 O-O 6. O-O c5 { ChessBase'e göre Korchnoi'un hazırladığı açılış sürprizi buydu; Karpov şaşırmadan hızlı oynadı. Maç 5–5 berabereydi ve bu oyunu kazanan dünya şampiyonu olacaktı. } 7. d5 Na6 8. Bf4 Nc7 9. a4 b6 10. Re1 Bb7 11. Bc4 Nh5 12. Bg5 Nf6 13. Qd3 a6 14. Rad1 Rb8 15. h3 Nd7 16. Qe3 Ba8 17. Bh6 b5 18. Bxg7 Kxg7 19. Bf1 Nf6 20. axb5 axb5 21. Ne2 Bb7 22. Ng3 Ra8 23. c3 Ra4 24. Bd3 Qa8 25. e5 dxe5 26. Qxe5 Nxd5 27. Bxb5 Ra7 28. Nh4 Bc8 29. Be2 Be6 30. c4 Nb4 31. Qxc5 Qb8 32. Bf1 Rc8 33. Qg5 Kh8 34. Rd2 Nc6 35. Qh6 Rg8 36. Nf3 Qf8 37. Qe3 Kg7 38. Ng5 Bd7 39. b4 Qa8 40. b5 Na5 41. b6 Rb7 { Siyah terk etti. Karpov maçı 6–5 kazanarak ünvanını korudu. } 1-0
 
 Maçın geri kalanı ise ChessBase ve film tanıtımlarında yalnızca sonuçlarıyla geçiyor. Oyun kayıtlarından doğruladığımız skor tablosu şöyle:
 
