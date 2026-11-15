@@ -387,7 +387,7 @@ Mayıs 1931'de Capablanca meydan okumasını geri çekti. 1931'in ortasından so
 
 Alekhine'nin satranç hayatının zirvesi, neredeyse girdiği her turnuvayı kazandığı 30'ların başıydı.
 
-> Ne olursa olsun, ünvanını kaybedince Capablanca bir süre formunu da yitirdi ve gerçekten bir rövanş istiyorsa, en hafif deyişle bunu gerçekleştirmeye hiç yaramayacak bir politika izlemeye başladı. Nitekim yenilgisinden hemen sonra, benimle görüşmeden FIDE aracılığıyla bir ünvan maçı için yeni koşullar sağlatmaya çalıştı. Bu, tahammül edemeyeceğim türden bir yöntemdi ve böylece aramızda bir soğukluk ve görüş ayrılığı doğdu.
+> Ne olursa olsun, ünvanını kaybedince Capablanca bir süre formunu da yitirdi ve gerçekten bir rövanş istiyorsa, en hafif deyişle bunu gerçekleştirmeye hiç yaramayacak bir politika izlemeye başladı. Nitekim yenilgisinden hemen sonra, benimle görüşmeden FIDE aracılığıyla bir ünvan maçı için yeni koşullar sağlatmaya çalıştı. Bu, tahammül edemeyeceğim türden bir yöntemdi ve böylece aramızda görüş ayrılığı ve bir soğukluk oluştu.
 >
 > — Alekhine'nin Capablanca ile ilişkisi hakkındaki sözleri, 1942
 
