@@ -491,7 +491,7 @@ Elbette maç hiçbir zaman gerçekleşmedi. Aralık 1939'da Alekhine, savaş sı
 
 Nisan 1941'de Portekiz'in Lizbon kentinden Küba Bakanı'na bir mektup göndererek Capablanca'nın maçla ilgili olarak New York basınına yaptığı açıklamalara itiraz etti. Alekhine, Capablanca'nın, vize talebinin gerekçelerinin Fransa'dan çıkış vizesi almak için bir bahane olduğu yönündeki iddiasının yanlış olduğunu belirtti; çünkü defalarca ordudan terhis edilmişti ve Amerikan ile Portekiz vizeleri vardı. Capablanca'nın Alekhine'nin Arjantin Satranç Federasyonu ile yazışmamasına şaşırmasına atıfla Alekhine, maçları organize etmenin meydan okuyanın sorumluluğu olduğunu ve Havana'ya gönderdiği iletinin de Capablanca ile oynamaya hazır olduğunu gösteren bir jest olduğunu belirtti. Capablanca'nın meydan okumasını 1939 Buenos Aires sözleşmesinin koşullarıyla kabul ettiğini söyleyerek sözlerini bitirdi ve iki genç büyükustadan gelen iki bekleyen meydan okuması olduğu için Capablanca'nın oynayıp oynamayacağını derhal kendisine bildirmesi gerektiğini ekledi.
 
-Capablanca 1942'de öldü. Alekhine dört yıl sonra, 1946'da öldü.
+Capablanca 1942'de öldü. Alekhine ise bundan dört yıl sonra, 1946'da öldü.
 
 ### Son düşünceler
 
