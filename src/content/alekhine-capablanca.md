@@ -361,7 +361,7 @@ Ağustos 1929'da Capablanca, Karlsbad turnuvasında oynadı. Alekhine, Dünya Ş
 >
 > — <span lang="en">Alekhine, New York Times</span>, 28 Ağustos 1929, s. 19-20 · Kaynak: <span lang="en">Edward Winter, Chess Archive: Alekhine on Carlsbad, 1929</span> (Capablanca'nın 20. turda Spielmann'a yenilmesi hakkında)
 
-> Capablanca, simetrik tarzı nedeniyle estetik etki bırakan bazı oyunlar sundu. Önceki oyunculara karşı tartışılmaz üstünlüğü söz konusu olsa bile, o yine de en önde gelenlerden biri ve uzun süre de öyle kalacak gibi.
+> Capablanca, simetrik oyun tarzı sayesinde estetik bir etki bırakan bazı oyunlara imza atmıştır. Kendinden önce gelmiş oyuncular karşısındaki tartışılmaz üstünlüğü sorgulanacak olsa bile, yine de Capablanca gelmiş geçmiş en büyük oyunculardan biridir ve uzun süre de öyle kalacak gibi görünmektedir.
 >
 > — <span lang="en">Alekhine, New York Times</span>, 30 Ağustos 1929, s. 13-14 · Kaynak: <span lang="en">Edward Winter, Chess Archive: Alekhine on Carlsbad, 1929</span>
 
