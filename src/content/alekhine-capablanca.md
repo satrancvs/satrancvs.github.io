@@ -223,7 +223,7 @@ Alekhine'nin maç hakkındaki düşünceleri:
 
 Capablanca'nın maç hakkındaki düşünceleri:
 
-> İtiraf etmeliyim ki şaşırdım. Eski iyi formumun böyle uygunsuz bir anda beni yüz üstü bırakabileceğini hiç hayal etmemiştim. Ama Dr. Alekhine, herkesin karşısına çıkabilecek güçte bir rakip. İnanmıyorsanız deneyin.
+> İtiraf etmeliyim ki şaşırdım. Eski iyi formumun böyle uygunsuz bir anda beni yüz üstü bırakabileceğini hiç hayal etmemiştim. Ama Dr. Alekhine, herkesin karşısına çıkabilecek güçte bir rakip. Bana inanmıyorsanız kendiniz deneyin.
 >
 > — Capablanca, Alekhine'nin kendisini yenmesine şaşırıp şaşırmadığı sorulduğunda
 
