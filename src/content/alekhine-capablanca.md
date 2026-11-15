@@ -391,7 +391,7 @@ Alekhine'nin satranç hayatının zirvesi, neredeyse girdiği her turnuvayı kaz
 >
 > — Alekhine'nin Capablanca ile ilişkisi hakkındaki sözleri, 1942
 
-> Şampiyonluğu kazandığından beri dört yıldır ona meydan okuyorum, ama bir türlü meydan okumamı kabul etmeye karar vermiyor. "Hayır" demiyor, ama şampiyonluk maçı da yapılmıyor. Kendini satranç kurallarının yorumlarına kilitliyor. Düşünün, o kurallar benim kendi koyduğum kurallar! Bazen bir bahaneyle bazen bir başkasıyla maçı "sürüncemede bırakıyor"; ben de onunla yüz yüze görüşemiyorum. Geçen yıl maçın 15 Ağustos ile [...] arasında, New York'ta ya da Havana'da yapılması konusunda "anlaştığını" söyledi. Ama bunun bir bahane olduğunu anlarsınız; çünkü yılın o zamanında New York'ta satrançla ilgilenecek kimse yoktur, Havana'da da bu nitelikte bir şampiyonluk maçını yapmanın zamanı değildir.
+> Şampiyonluğu kazandığından beri dört yıldır ona meydan okuyorum, ama bir türlü meydan okumamı kabul etmeye karar vermiyor. "Hayır" demiyor, ama şampiyonluk maçı da yapılmıyor. Kendini şampiyonluk kurallarının yorumlarına kilitliyor. Düşünün, o kurallar benim kendi koyduğum kurallar! Bazen bir bahaneyle bazen bir başkasıyla maçı "sürüncemede bırakıyor"; ben de onunla yüz yüze görüşemiyorum. Geçen yıl maçın 15 Ağustos ile [...] arasında, New York'ta ya da Havana'da yapılması konusunda "anlaştığını" söyledi. Ama bunun bir bahane olduğunu anlarsınız; çünkü yılın o zamanında New York'ta satrançla ilgilenecek kimse yoktur, Havana'da da bu nitelikte bir şampiyonluk maçını yapmanın zamanı değildir.
 >
 > — Capablanca'nın <span lang="es">ABC</span> gazetesinde Adelardo Fernández Arias ile yaptığı söyleşi, 12 Mayıs 1932 (İspanyolcadan çevrilmiştir)
 
