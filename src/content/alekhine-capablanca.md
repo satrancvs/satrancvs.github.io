@@ -399,7 +399,7 @@ Alekhine'nin satranç hayatının zirvesi, neredeyse girdiği her turnuvayı kaz
 
 1934'te Capablanca, New York'ta bir partide Rus sosyetesinden Olga Chagodaef'le (eski soyadı Choubaroff) tanıştı. Cesurca, ilk karşılaştıklarında ona gelecekteki eşi olacağını söyledi. Uzun bir aradan sonra aşık olması, onu ünvan mücadelesine geri döndürdü. Capablanca yeniden turnuvalarda oynamaya başladı ve yeniden yükselişe geçti.
 
-> Ben de zaten Capablanca'nın duygularını paylaşıyordum. New York'a döndüğünde ve beni öptüğünde ona bunu söyledim. "Bu bizim kaderimiz," dedi Capa. "Bunu en başından beri biliyordum. Ünvanımı senin için geri alacağım. Hayatın bana pek anlamsız geldiği yıllar oldu, ama şimdi kendi yoluma döneceğim. En iyi satranç oyuncusunun ben olduğumu yeniden kanıtlayacağım."
+> Ben de zaten Capablanca'nın duygularını paylaşıyordum. New York'a döndüğünde ve beni öptüğünde ona bunu söyledim. "Bu bizim kaderimiz," dedi Capa. "Bunu en başından beri biliyordum. Ünvanımı senin için geri alacağım. Hayatın bana pek anlamsız geldiği yıllar oldu, ama şimdi kendi yoluma döneceğim. Dünyanın en iyi satranç oyuncusu olduğumu yeniden kanıtlayacağım."
 >
 > — Olga Capablanca · Kaynak: <span lang="en">Edward Winter, Chess Article: The Genius and the Princess</span>
 
