@@ -428,7 +428,7 @@ Alekhine'nin satranç hayatının zirvesi, neredeyse girdiği her turnuvayı kaz
 
 Oyun sırasında Alekhine, erteleme için hamlesini kapalı zarfa koymayı unuttu ve onu tahtada oynadı. Bunun üzerine hakem kurulu, hamlesini Capablanca'nın kapalı zarfa koymasını istedi.
 
-1937'de Alekhine, rövanşta Euwe'yi 15,5-9,5 yendi. Alekhine yeniden dünya şampiyonu oldu.
+1937 yılında yaptıkları rövanş maçında Alekhine, Euwe'yi 15,5-9,5 yendi. Alekhine yeniden dünya şampiyonu oldu.
 
 Şubat 1938'de Alekhine, Uruguay'daki Montevideo turnuvasına katıldı. <i>The Chess Review</i> dergisi, bu ziyaretin bir başka amacının da Capablanca ile 1939'da oynanacak bir maçın düzenlemelerini tamamlamak olduğunu bildirdi. Haziran 1938'de <i>The Chess Review</i>, Alekhine'nin Capablanca'nın mali taleplerinin aşırı olduğunu söylediğini yazdı. Dergi ayrıca Capablanca'nın "bu açıklamayı genişletmek için bir şey söylemeye tenezzül etmediğini" de bildirdi. Yazı şu cümleyle bitiyordu: "kimin haklı, kimin haksız olduğu ve bütün bunların sonunda ne olacağı konusunda tamamen belirsizlik içinde kaldık".
 
