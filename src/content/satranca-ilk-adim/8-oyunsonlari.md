@@ -147,9 +147,7 @@ Bu gördüğümüz konum bir *etüt* örneğidir (bkz. Bölüm 10). Şimdilik, e
 
 İlginçtir ki Beyaz, anahtar kareleri ele geçirmek istiyorsa erin diğer tarafına doğru yola çıkmalıdır: 1 ♔c2! ♔e7 2 ♔b3 ♔d6 3 ♔b4! (*analiz d.*)
 
-Şahların aralarında çapraz olarak bir kare bulunduğu bu durum *çapraz opozisyon* olarak adlandırılır. Şimdi Beyaz çapraz opozisyonun sahibidir ve Siyah, rakibin girmeyi tehdit ettiği b5- ve c5-karelerini savunmak amacıyla 3...♔c6 oynamak zorundadır -
-
-ne var ki bu kez de 4 ♔c4! hamlesinden sonra normal opozisyonu, anahtar kareleri ve oyunu kaybeder. "Şaha karşı şah ve er" oyunsonunda bilinmesi gerekenlerin hemen hemen tümünü içeren bu etüt gerçekten de bir sanat eseridir...
+Şahların aralarında çapraz olarak bir kare bulunduğu bu durum *çapraz opozisyon* olarak adlandırılır. Şimdi Beyaz çapraz opozisyonun sahibidir ve Siyah, rakibin girmeyi tehdit ettiği b5- ve c5-karelerini savunmak amacıyla 3...♔c6 oynamak zorundadır - ne var ki bu kez de 4 ♔c4! hamlesinden sonra normal opozisyonu, anahtar kareleri ve oyunu kaybeder. "Şaha karşı şah ve er" oyunsonunda bilinmesi gerekenlerin hemen hemen tümünü içeren bu etüt gerçekten de bir sanat eseridir...
 
 **Drtina**, 1908 *(analiz d.)*
 
