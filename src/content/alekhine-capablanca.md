@@ -50,7 +50,7 @@ Londra Kuralları, Capablanca'nın hazırladığı ve Dünya Şampiyonası'nı d
 
 Alekhine, Bogoljubow, Maróczy, Réti, Rubinstein, Tartakower ve Vidmar'ın hepsi bu kuralları imzalayıp kabul etti. Kurallar arasında, Dünya Şampiyonası'nın oyunculardan biri altı galibiyete ulaşana kadar sürmesi de vardı.
 
-Ödül fonuna gelince: "Şampiyon, unvanını on bin doların ($10.000) altındaki bir ödül için savunmak zorunda bırakılamaz; bu meblağa ek olarak her iki oyuncunun gidiş-dönüş yol masrafları ile maç süresince geçim masrafları da karşılanmalıdır."
+Ödül fonuna gelince: "Şampiyon, ünvanını on bin doların ($10.000) altındaki bir ödül için savunmak zorunda bırakılamaz; bu meblağa ek olarak her iki oyuncunun gidiş-dönüş yol masrafları ile maç süresince geçim masrafları da karşılanmalıdır."
 
 Meydan okuyan ile Dünya Şampiyonu anlaşırsa bir maçın kuralları değiştirilebilirdi de.
 
@@ -245,7 +245,7 @@ Capablanca'nın maçtan sonra FIDE'ye maç biçiminde değişiklikler öneren bi
 >
 > Bay Rueb'e yazdığınız, 10 Şubat tarihli mektubun bana göndermeyi gerekli bulduğunuz kopyası elime geçti ve size, özellikle de satranç dünyasına şu açıklamayı yapmak zorunda hissediyorum:
 >
-> Unvanınızı kaybettikten sonra, Dünya Şampiyonu olurken kendinizin koyduğu ve 1922'de Londra'da olası rakiplerinize dayattığınız aynı kuralları değiştirme önerisiyle FIDE'ye başvuruyorsunuz. Bunu, kuralların ikimiz arasındaki olası bir rövanş maçına uyarlandığını gördüğüm için ilke olarak bu değişikliklere asla razı olmayacağımı bildiğiniz hâlde yapıyorsunuz. Bunu size, maçtan sonraki tek görüşmemiz olan 12 Aralık 1927'deki görüşmede açıkça belirtmiştim.
+> Ünvanınızı kaybettikten sonra, Dünya Şampiyonu olurken kendinizin koyduğu ve 1922'de Londra'da olası rakiplerinize dayattığınız aynı kuralları değiştirme önerisiyle FIDE'ye başvuruyorsunuz. Bunu, kuralların ikimiz arasındaki olası bir rövanş maçına uyarlandığını gördüğüm için ilke olarak bu değişikliklere asla razı olmayacağımı bildiğiniz hâlde yapıyorsunuz. Bunu size, maçtan sonraki tek görüşmemiz olan 12 Aralık 1927'deki görüşmede açıkça belirtmiştim.
 >
 > O görüşmede görüşlerime katıldığınızı (ikimiz arasındaki bir rövanşın ilk maçınkinden başka koşullarda yapılamayacağı konusunda) ve bunu ilgili kuruluşlara bildireceğinizi temin etmenize rağmen; FIDE 1924'ten beri var olduğu hâlde ben kendim ona benzer önerilerle başvurmayı uygun görmedim, çünkü böyle bir başvuruyu, 1922'de Londra Kuralları'nı imzalamamı inkâr etmek sayardım. Bütün bunlara rağmen, Bay Rueb'e yazdığınız mektubunuz Buenos Aires Maçı'nın 'tecrübesine' atıfta bulunmasaydı, mektubunuza kamuya açık bir yanıt vermeye karar vermezdim. Bu iddia yüzünden ve ondan yanlış biçimde çıkarılabilecek sonuçlar yüzünden şunları belirtmek zorundayım:
 >
@@ -255,7 +255,7 @@ Capablanca, rövanş kurallarını değiştirmek için FIDE'ye yazmadığını, 
 
 > Dr. Alekhine ile rövanş maçı sorulduğunda Capablanca, yeni şampiyonun, Kübalı'nın Uluslararası Satranç Federasyonu başkanı Lahey'li Dr. A. Rueb'e yazdığı ve nezaket gereği bir kopyasını Dr. Alekhine'ye gönderdiği mektubu yayımlama davranışını anlayamadığını söyledi. Capablanca'ya göre bu mektubu, rövanş maçı için yeni koşullar önermek amacıyla değil (bu konuda o ve rakibi Buenos Aires'ten ayrılmadan önce ayrıntılı biçimde anlaşmışlardı), Uluslararası Federasyon'un bu ay Lahey'de yapılacak yıllık toplantısında dünya şampiyonasının görüşülmesi sırasında Dr. Rueb ve arkadaşlarına yol göstermek üzere genel fikirlerini özetlemek için yazmıştı. Capablanca, Dr. Alekhine ile maçı, Buenos Aires'te geçerli olanlarla tam olarak aynı koşullarda ayarlamayı umduğunu da ekledi. Karşılaşmanın büyük olasılıkla Amerika Birleşik Devletleri'nde yapılacağı belirtildi. Dr. Alekhine'nin başka hiçbir koşulda oynamayacağında ısrar etmesi konusunda Capablanca şunları söyledi:
 >
-> "Bu, beni ilgilendirdiği ölçüde tamamen gereksiz; çünkü burada yapılacak bir rövanş için koşulların değiştirilmesine yönelik hiçbir girişimde bulunmadım. Başkan Rueb'e, kuralları değiştirmeye yönelik önerim benim maçımla değil, gelecekteki öteki maçlarla ilgiliydi; çünkü kişisel bir tatmin olarak, unvanımı geri kazanacaksam bunu, onu kaybettiğim koşulların aynısında yapmak isterim. Ancak benim savım, öteki gelecek maçlar için. Koşullar değiştiğine göre kurallar da bu yeni koşullara uyacak şekilde değiştirilmelidir; tıpkı beş yıl önce, o günkü yeni koşullara uymak için değişikliklerin gerekli olduğunu düşündüğümde onları değiştirdiğim gibi. Sağduyu, en acemiye bile, gerek satrançta gerek başka herhangi bir alanda şampiyonluk kurallarının sınırsız sayıda yıl boyunca aynı kalamayacağını, şampiyonluk maçlarını çevreleyen koşullar değiştikçe kuralların da değişen koşullara uygun düşecek biçimde değiştirilmesi gerektiğinin apaçık olduğunu söyler."
+> "Bu, beni ilgilendirdiği ölçüde tamamen gereksiz; çünkü burada yapılacak bir rövanş için koşulların değiştirilmesine yönelik hiçbir girişimde bulunmadım. Başkan Rueb'e, kuralları değiştirmeye yönelik önerim benim maçımla değil, gelecekteki öteki maçlarla ilgiliydi; çünkü kişisel bir tatmin olarak, ünvanımı geri kazanacaksam bunu, onu kaybettiğim koşulların aynısında yapmak isterim. Ancak benim savım, öteki gelecek maçlar için. Koşullar değiştiğine göre kurallar da bu yeni koşullara uyacak şekilde değiştirilmelidir; tıpkı beş yıl önce, o günkü yeni koşullara uymak için değişikliklerin gerekli olduğunu düşündüğümde onları değiştirdiğim gibi. Sağduyu, en acemiye bile, gerek satrançta gerek başka herhangi bir alanda şampiyonluk kurallarının sınırsız sayıda yıl boyunca aynı kalamayacağını, şampiyonluk maçlarını çevreleyen koşullar değiştikçe kuralların da değişen koşullara uygun düşecek biçimde değiştirilmesi gerektiğinin apaçık olduğunu söyler."
 >
 > — Capablanca'nın Alekhine hakkındaki yorumları · Kaynak: <span lang="en">American Chess Bulletin</span>, Temmuz-Ağustos 1928
 
@@ -365,7 +365,7 @@ Ağustos 1929'da Capablanca, Karlsbad turnuvasında oynadı. Alekhine, Dünya Ş
 >
 > — <span lang="en">Alekhine, New York Times</span>, 30 Ağustos 1929, s. 13-14 · Kaynak: <span lang="en">Edward Winter, Chess Archive: Alekhine on Carlsbad, 1929</span>
 
-Bogoljubow-Alekhine maçı, Eylül'den Kasım 1929'a kadar sürdü. Alekhine, unvanını 15,5-9,5 kazanarak savundu.
+Bogoljubow-Alekhine maçı, Eylül'den Kasım 1929'a kadar sürdü. Alekhine, ünvanını 15,5-9,5 kazanarak savundu.
 
 > ...B.'nin [Bogoljubow] benden ya da Dr. L.'den [Dr. Lasker] bu kadar erken iki oyun aldığını hayal edebiliyor musunuz?
 >
@@ -377,17 +377,17 @@ Maçı kazandıktan sonra Alekhine, Capablanca'nın maç meydan okumasını kabu
 
 1930 maçı, Capablanca maç için parayı bulamadığı için suya düştü (borsa Ekim 1929'un sonlarında çökmüştü). Bunun üzerine Haziran 1930'da Capablanca maçın 1931 başına ertelenmesini istedi. Sonraki bir mektubunda ise bunu 1931-1932 kışı olarak değiştirdi ve önceki tarihin mektupta bir yazım hatası olduğunu söyledi.
 
-Şubat 1931'de Capablanca, Alekhine'ye bir meydan okuma daha gönderdi; Alekhine kabul etmezse dünya şampiyonluğu unvanını hükmen kendisine ait sayacağını belirtti.
+Şubat 1931'de Capablanca, Alekhine'ye bir meydan okuma daha gönderdi; Alekhine kabul etmezse dünya şampiyonluğu ünvanını hükmen kendisine ait sayacağını belirtti.
 
 Mart 1931'de Alekhine, Capablanca'ya yanıt vererek meydan okumasını belirli koşullarla kabul etti ve Capablanca'nın maç tarihine ilişkin ültimatomuna itiraz etti. Alekhine bunun, Londra Kuralları'nın Onuncu Maddesi'ne aykırı olduğunu söyledi: "Şampiyon, maçın başlangıç tarihini belirleme hakkına sahiptir..." Alekhine maçın başlangıcını 15 Ağustos - 15 Eylül 1931 arasına koydu. Alekhine'nin koyduğu koşullardan biri, önceki maç gerçekleşmediği için 500 dolarlık teminatın tahkime tabi olmasıydı.
 
 Mayıs 1931'de Capablanca meydan okumasını geri çekti. 1931'in ortasından sonra Capablanca, Aralık 1934'e kadar hiçbir turnuvada oynamadı.
 
-1934'te Alekhine, Bogoljubow'a karşı unvan rövanşını 15,5-10,5 kazandı.
+1934'te Alekhine, Bogoljubow'a karşı ünvan rövanşını 15,5-10,5 kazandı.
 
 Alekhine'nin satranç hayatının zirvesi, neredeyse girdiği her turnuvayı kazandığı 30'ların başıydı.
 
-> Ne olursa olsun, unvanını kaybedince Capablanca bir süre formunu da yitirdi ve gerçekten bir rövanş istiyorsa, en hafif deyişle bunu gerçekleştirmeye hiç yaramayacak bir politika izlemeye başladı. Nitekim yenilgisinden hemen sonra, benimle görüşmeden FIDE aracılığıyla bir unvan maçı için yeni koşullar sağlatmaya çalıştı. Bu, tahammül edemeyeceğim türden bir yöntemdi ve böylece aramızda bir soğukluk ve görüş ayrılığı doğdu.
+> Ne olursa olsun, ünvanını kaybedince Capablanca bir süre formunu da yitirdi ve gerçekten bir rövanş istiyorsa, en hafif deyişle bunu gerçekleştirmeye hiç yaramayacak bir politika izlemeye başladı. Nitekim yenilgisinden hemen sonra, benimle görüşmeden FIDE aracılığıyla bir ünvan maçı için yeni koşullar sağlatmaya çalıştı. Bu, tahammül edemeyeceğim türden bir yöntemdi ve böylece aramızda bir soğukluk ve görüş ayrılığı doğdu.
 >
 > — Alekhine'nin Capablanca ile ilişkisi hakkındaki sözleri, 1942
 
@@ -397,13 +397,13 @@ Alekhine'nin satranç hayatının zirvesi, neredeyse girdiği her turnuvayı kaz
 
 ### 1934-1938
 
-1934'te Capablanca, New York'ta bir partide Rus sosyetesinden Olga Chagodaef'le (kızlık soyadı Choubaroff) tanıştı. Cesurca, ilk karşılaştıklarında ona gelecekteki eşi olacağını söyledi. Uzun bir aradan sonra aşık olması, onu unvan mücadelesine geri döndürdü. Capablanca yeniden turnuvalarda oynamaya başladı ve yeniden yükselişe geçti.
+1934'te Capablanca, New York'ta bir partide Rus sosyetesinden Olga Chagodaef'le (kızlık soyadı Choubaroff) tanıştı. Cesurca, ilk karşılaştıklarında ona gelecekteki eşi olacağını söyledi. Uzun bir aradan sonra aşık olması, onu ünvan mücadelesine geri döndürdü. Capablanca yeniden turnuvalarda oynamaya başladı ve yeniden yükselişe geçti.
 
-> Ben de zaten Capablanca'nın duygularını paylaşıyordum. New York'a döndüğünde ve beni öptüğünde ona bunu söyledim. "Bu bizim kaderimiz," dedi Capa. "Bunu en başından beri biliyordum. Unvanımı senin için geri alacağım. Hayatın bana pek anlamsız geldiği yıllar oldu, ama şimdi kendi yoluma döneceğim. En iyi satranç oyuncusunun ben olduğumu yeniden kanıtlayacağım."
+> Ben de zaten Capablanca'nın duygularını paylaşıyordum. New York'a döndüğünde ve beni öptüğünde ona bunu söyledim. "Bu bizim kaderimiz," dedi Capa. "Bunu en başından beri biliyordum. Ünvanımı senin için geri alacağım. Hayatın bana pek anlamsız geldiği yıllar oldu, ama şimdi kendi yoluma döneceğim. En iyi satranç oyuncusunun ben olduğumu yeniden kanıtlayacağım."
 >
 > — Olga Capablanca · Kaynak: <span lang="en">Edward Winter, Chess Article: The Genius and the Princess</span>
 
-> Geçmişteki satranç başarılarından çok nadiren söz ederdi. Kural olarak satrançtan hiç söz etmezdi. Çok gururlu bir adamdı. Kuşkusuz unvanını kaybetmek onun için büyük bir aşağılanma ve acı demekti. Bu konuya hiç değinmedik. Capa'nın Alekhine'den hiç hoşlanmadığı, en hafif deyişle doğrudur; ama onun satrancını hiç eleştirmedi. Capa'nın başka bir şampiyonluk maçı umudundan hiç vazgeçtiğini sanmıyorum.
+> Geçmişteki satranç başarılarından çok nadiren söz ederdi. Kural olarak satrançtan hiç söz etmezdi. Çok gururlu bir adamdı. Kuşkusuz ünvanını kaybetmek onun için büyük bir aşağılanma ve acı demekti. Bu konuya hiç değinmedik. Capa'nın Alekhine'den hiç hoşlanmadığı, en hafif deyişle doğrudur; ama onun satrancını hiç eleştirmedi. Capa'nın başka bir şampiyonluk maçı umudundan hiç vazgeçtiğini sanmıyorum.
 >
 > — Olga Capablanca · Kaynak: <span lang="en">Edward Winter, Chess Article: The Genius and the Princess</span>
 
