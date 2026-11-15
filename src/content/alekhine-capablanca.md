@@ -351,7 +351,7 @@ Alekhine, Bogoljubow'a Capablanca'nın meydan okumasını bildirdi.
 >
 > Capablanca, yakın zamanda basında Kübalı'nın gücü ve yetenekleri hakkındaki görüşlerini çok açık sözlü biçimde dile getiren Dr. Alekhine ile ilişkilerini konuşmak istemedi.
 >
-> "Dr. Alekhine ile benim aramdaki rövanş maçının düzenlenmesi," dedi eski şampiyon, "bu şehirdeki Dr. Norbert L. Lederer'in elinde; Dr. Alekhine geldiğinde onunla kuşkusuz görüşecektir. Başka bir mücadeleyi gerçekleştirmekte başarılı olmasını umuyorum."
+> Eski şampiyon şöyle konuştu: "Dr. Alekhine ile benim aramdaki rövanş maçının düzenlenmesi, bu şehirdeki Dr. Norbert L. Lederer'in elinde; Dr. Alekhine geldiğinde onunla kuşkusuz görüşecektir. Başka bir mücadeleyi gerçekleştirmekte başarılı olmasını umuyorum."
 >
 > — <span lang="en">American Chess Bulletin</span>, 1929
 
