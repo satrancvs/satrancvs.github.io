@@ -357,7 +357,7 @@ Alekhine, Bogoljubow'a Capablanca'nın meydan okumasını bildirdi.
 
 Ağustos 1929'da Capablanca, Karlsbad turnuvasında oynadı. Alekhine, Dünya Şampiyonası maçı oynayacağı için turnuvaya katılmadı. Ancak turnuvada <i>New York Times</i> için muhabirlik yaptı.
 
-> Ne var ki spor açısından bakıldığında, Capablanca'nın yenilgisinin olumlu bir değeri var: Bu turnuvanın fazlasıyla haklı çıkaracağı yeni bir yenilmezlik efsanesinin oluşmasını engelliyor; çünkü o, bundan önce de iki kez açıkça yenilgiye açık hâle gelmiş ve kurtuluşunu yalnızca rakiplerinin dikkatsizliğine borçlu olmuştu.
+> Ne var ki spor açısından bakıldığında, Capablanca'nın yenilgisinin olumlu bir değeri var: Bu turnuvanın fazlasıyla haklı çıkaracağı yeni bir yenilmezlik efsanesinin oluşmasını engelliyor. Capablanca daha önce iki kez açıkça yenilgiye açık hâle gelmiş ve kurtuluşunu yalnızca rakiplerinin dikkatsizliğine borçlu olmuştu.
 >
 > — <span lang="en">Alekhine, New York Times</span>, 28 Ağustos 1929, s. 19-20 · Kaynak: <span lang="en">Edward Winter, Chess Archive: Alekhine on Carlsbad, 1929</span> (Capablanca'nın 20. turda Spielmann'a yenilmesi hakkında)
 
