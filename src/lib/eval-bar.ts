@@ -111,6 +111,26 @@ function attach(player: PlayerEl) {
       if (label) label.textContent = '0.5x';
     }).catch(() => {});
   }
+  // Ilk hamle oncesi yorum karti tahtanin uzerinde ortalanir: tahtanin konumu/olcusu CSS degiskenleri olarak oynaticiya yazilir.
+  if (player.closest('.hub')) {
+    const place = () => {
+      const board = player.querySelector('.board') as HTMLElement | null;
+      const wrap = player.querySelector('.player-wrapper') as HTMLElement | null;
+      if (!board || !wrap) return;
+      const b = board.getBoundingClientRect();
+      const w = wrap.getBoundingClientRect();
+      if (!b.width) return;
+      const st = player.style;
+      st.setProperty('--bl', `${b.left - w.left}px`); st.setProperty('--bt', `${b.top - w.top}px`);
+      st.setProperty('--bw', `${b.width}px`); st.setProperty('--bh', `${b.height}px`);
+    };
+    player.ready.then(() => {
+      place();
+      const board = player.querySelector('.board');
+      if (board) new ResizeObserver(place).observe(board);
+      window.addEventListener('resize', place);
+    }).catch(() => {});
+  }
   if (player.closest('.live-idle')) {
     // maç başlamadan: renksiz, boş oynatıcı; çubuk görünür ama nötr (%50), analiz yok
     player.ready.then(() => {
