@@ -978,3 +978,8 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 }
 /* Maç başlamadan hamle listesi yer kaplamasın: üç sütun tahtanın alt kenarında biter */
 .live-idle .video-moves, .live-idle .video-comment { display: none !important; }
+/* Zaman çizelgesi (geniş ekran): dönem yılları omurganın solunda, şampiyon yıllarıyla aynı sütunda durur ("2007 – bugün" → "2024–" üstünde); dönem adı içerikte kalır */
+@media (min-width: 62em) {
+  .tl-era { min-height: 2.1rem; align-items: flex-end; }
+  .tl-era-years { position: absolute; left: 0; bottom: .55rem; width: calc(var(--gut) - .7rem); text-align: right; font-size: 1.4rem; line-height: 1.1; }
+}
