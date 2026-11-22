@@ -18,6 +18,7 @@ import { splitChunks } from '@/lib/split-chunks';
 import LiveMatch from '@/components/LiveMatch';
 import GameHub from '@/components/GameHub';
 import MatchPicker from '@/components/MatchPicker';
+import ChampionTimeline from '@/components/ChampionTimeline';
 import type { SectionTarget } from '@/components/SectionLink';
 import type { PickItem } from '@/components/MatchPicker';
 import { watchEvalBar } from '@/lib/eval-bar';
@@ -569,6 +570,7 @@ function Quote({ children }: { children?: ReactNode }) {
 const CONTINUED = /^Devamı gelecek\./;
 // `[CANLI MAÇ]` tek başına bir paragrafsa: Dünya Şampiyonası 2026 canlı bölümü (src/components/LiveMatch.tsx).
 const LIVE_MATCH = /^\[CANLI MAÇ\]$/;
+const CHAMPION_TIMELINE = /^\[ZAMAN ÇİZELGESİ\]$/;
 // `[MAÇ SEÇİCİ]`: kendisinden sonraki, bir sonraki `### ` başlığa kadar olan `#### Yıl · Oyuncular` blokları (yer, fotoğraflar, kısa metin, `[Event …]` oyunu)
 // oynatıcı + kart rafları görünümü olur (MatchPicker); oyunlar tek tek değil, seçilen oyun oynatıcıda oynatılır.
 const MATCH_PICKER = /^\[MAÇ SEÇİCİ(?::\s*([^\]]+))?\]$/;
@@ -888,6 +890,8 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       const inline = new Set(chunks.map((x) => x.trim().match(INLINE_PICKER)?.[1].trim()).filter(Boolean));
       chunks.forEach((x, k) => { const m = x.trim().match(MATCH_PICKER); if (m) { const label = (m[1] ?? 'Seçme oyunlar').trim(); if (!inline.has(label)) groups.push({ label, items: collectPicker(k).items, flat: /Gukesh/.test(label) }); } });
       out.push(<GameHub key={i} ready={cp === 'ready'} groups={groups} onLoaded={() => hubDone(0)} next={hubTarget(1)} />);
+    } else if (CHAMPION_TIMELINE.test(c)) {
+      out.push(<ChampionTimeline key={i} />);
     } else if (INLINE_PICKER.test(c)) {
       // Menüden ayrılmış tek seçici (Geçmişte nasıldı? bölümünün sonu): aynı tasarım, yalnızca o grubun oyunları.
       const want = c.match(INLINE_PICKER)![1].trim();
