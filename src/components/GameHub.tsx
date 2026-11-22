@@ -10,11 +10,11 @@ export default function GameHub({ ready, groups }: { ready: boolean; groups: { l
   const labels = ['2026 maçı · Canlı', ...groups.map((g) => g.label)];
   return (
     <section className="hub" aria-label="Oyunlar">
-      <div className="hub-tabs" role="tablist" aria-label="Oyun menüsü">
+      {groups.length > 0 && <div className="hub-tabs" role="tablist" aria-label="Oyun menüsü">
         {labels.map((l, i) => (
           <button key={l} type="button" role="tab" aria-selected={tab === i} className={`f-mono${tab === i ? ' on' : ''}`} onClick={() => setTab(i)}>{l}</button>
         ))}
-      </div>
+      </div>}
       {tab === 0 ? <LiveMatch ready={ready} /> : <MatchPicker key={tab} items={groups[tab - 1].items} flat={groups[tab - 1].flat} />}
     </section>
   );

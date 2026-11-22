@@ -13,6 +13,7 @@ export type PickItem = {
   title: string; // "Carlsen – Karjakin"
   site: string;
   blurb: string; // satır içi markdown
+  bio?: string; // oyuncu hakkında bilgi (satır içi markdown); o oyun izlenirken gösterilir
   thumb?: string; // kart görseli (public/ altındaki yol)
   figures: ReactNode;
   heading: ReactNode; // oyuncular (Elo ile) ve turnuva satırı
@@ -75,6 +76,12 @@ export default function MatchPicker({ items, flat = false }: { items: PickItem[]
         <p className="mpb-kicker f-mono">Şimdi oynatılıyor · {cur.site}</p>
         <h4 className="mpb-title f-display">{cur.label}</h4>
         <p className="mpb-blurb"><Markdown options={{ forceInline: true }}>{cur.blurb}</Markdown></p>
+        {cur.bio && (
+          <div className="mpb-bio" key={`bio-${cur.id}`}>
+            <p className="mpb-bio-title f-mono">Oyuncu hakkında</p>
+            <p className="mpb-bio-text"><Markdown options={{ forceInline: true }}>{cur.bio}</Markdown></p>
+          </div>
+        )}
         {items.length > 1 && (
           <button type="button" className="mpb-nextcard" onClick={() => go(nextIdx, true)} aria-label={`Sıradaki oyun: ${nx.label}`}>
             <span className="mpb-nextcard-thumb">
