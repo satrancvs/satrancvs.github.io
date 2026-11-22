@@ -35,7 +35,11 @@ Başka bir deyişle “dünyanın en iyisi” ile “dünya şampiyonu” aynı 
 - **Ödül fonu 2,5 milyon dolar**: kazanılan her oyun için 200.000 dolar, kalanı eşit paylaşılır. Skor 7½–6½ ise kazanan 1,3 milyon, kaybeden 1,2 milyon dolar alır.
 - Maç 24 Kasım–12 Aralık arasında; dinlenme günleri 27 Kasım, 1, 5 ve 9 Aralık; eşitlik halinde ek oyunlar 12 Aralık'ta.
 
-Kâğıt üzerinde Sindarov favori: reytingi 2782 (dünya 4.), Gukesh'in 2710'u (dünya 26.) karşısında. Gukesh'in 2025'ten beri formu düşük; Norveç Satranç 2026 ve Chennai Grand Masters 2026'yı sonuncu bitirdi ve Elo sisteminin 1971'de getirilmesinden beri en düşük reytingli şampiyon. Aralarındaki üç klasik oyunun ikisini Sindarov kazandı; sonuncusu (Tata Steel 2026) 78 hamlelik beraberlikle bitti. Ama bir ünvan maçı reytinglerle oynanmaz: 14 oyun boyunca sinir ve hazırlık da oynar.
+Kâğıt üzerinde Sindarov favori: reytingi 2782 (dünya 4.), Gukesh'in 2710'u (dünya 26.) karşısında. Gukesh'in 2025'ten beri formu düşük; Norveç Satranç 2026 ve Chennai Grand Masters 2026'yı sonuncu bitirdi ve Elo sisteminin 1971'de getirilmesinden beri en düşük reytingli şampiyon. Ama bir ünvan maçı reytinglerle oynanmaz: 14 oyun boyunca sinir ve hazırlık da oynar.
+
+İkisi bugüne kadar altı kez karşı karşıya geldi ve toplam skor **4½–1½ Sindarov lehine**. Klasik oyunlarda üç karşılaşmanın ikisini Sindarov kazandı (Moskova Açık 2018'de Siyahlarla, Şarjah Masters 2022'de Beyazlarla); sonuncusu, Ocak 2026'daki Tata Steel Masters'ta, 78 hamlelik beraberlikle bitti: **2½–½ Sindarov**. Hızlı oyunda tek karşılaşma var; Mayıs 2026'da Varşova'da Gukesh Siyahlarla kazandı: **1–0 Gukesh**. Yıldırım oyunlarda ise aynı turnuvanın iki karşılaşmasını da Sindarov kazandı: **2–0 Sindarov**. Altı oyunun hepsini aşağıdan oynatabilirsiniz.
+
+[MAÇ SEÇİCİ GÖSTER: Gukesh – Sindarov karşılaşmaları]
 
 ### Dünya Şampiyonu nasıl belirleniyor?
 

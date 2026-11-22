@@ -863,7 +863,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       const want = c.match(INLINE_PICKER)![1].trim();
       let items: PickItem[] = [];
       chunks.forEach((x, k) => { const m = x.trim().match(MATCH_PICKER); if (m && (m[1] ?? '').trim() === want) items = collectPicker(k).items; });
-      if (items.length) out.push(<section key={i} className="hub hub-solo" aria-label={want}><MatchPicker items={items} /></section>);
+      if (items.length) out.push(<section key={i} className="hub hub-solo" aria-label={want}><MatchPicker items={items} flat={/Gukesh/.test(want)} /></section>);
     } else if (CONTINUED.test(c)) {
       out.push(<Continued key={i} text={c} />);
     } else if (FEN_ROW.test(c)) {
