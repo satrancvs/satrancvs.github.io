@@ -1486,8 +1486,6 @@ Resmî sayılan ilk dünya şampiyonluğu maçı. İlk 10 galibiyete kadar oynan
 
 [MAÇ SEÇİCİ GÖSTER: Şampiyonları yenen efsaneler]
 
-Bu listeye başka isimler de eklenebilir: **Bent Larsen**, **Efim Geller**, **Samuel Reshevsky**, **Aron Nimzowitsch**. Zamanla dünya şampiyonları oldukça belli bir şey söylüyor: ünvanı kazanmak için yalnızca çok iyi oynamak yetmez; kurallara uyum, sinir dayanıklılığı, finansal ve siyasi şartlar ve bazen sadece şans da gerekiyor. Şimdi iki yirmi yaşındaki oyuncu bu zincire bir halka daha eklemek için Cenevre'de oturuyor.
-
 [MAÇ SEÇİCİ: Şampiyonları yenen efsaneler]
 
 #### 2002 · Polgár – Kasparov
