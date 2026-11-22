@@ -20,8 +20,6 @@ Adaylar’ın son sıralaması şöyle oldu (her kutuda iki rakibin iki oyunu, o
 
 <pre>
 FIDE ADAYLAR TURNUVASI 2026 ÇAPRAZ TABLOSU
-Pegeia, Kıbrıs · 28 Mart – 16 Nisan 2026
-──────────────────────────────────────────────────────
                           1  2  3  4  5  6  7  8   Puan
  1 GM Sindarov            * ½½ 1½ 1½ 1½ ½½ 11 1½   10
  2 GM Giri               ½½  * ½1 ½½ ½½ ½1 01 1½   8½
