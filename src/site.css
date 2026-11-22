@@ -720,3 +720,9 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .picker .mpa-title { font-size: 1.1rem; }
   .picker .mpb-info { padding-top: 1rem; }
 }
+@media (max-width: 55.99em) {
+  .picker .cp-game pgn-player .player-wrapper { min-height: 0 !important; }
+  .picker .mpa-screen { min-height: 0; }
+  .picker .mpa-content section { margin-bottom: 0; padding-bottom: 0; }
+  .picker .mpa-content .cp-game { padding-bottom: .25rem; }
+}
