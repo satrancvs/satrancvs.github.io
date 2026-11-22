@@ -229,7 +229,7 @@ export default function LiveMatch({ ready }: { ready: boolean }) {
           ) : <p className="live-sf-pv">—</p>}
           <div className="live-sf-opts f-mono">
             <label>Derinlik<select value={cfg.depth} onChange={(e) => { const c = { ...cfg, depth: Number(e.target.value) }; setCfg(c); setEngineSettings(c.depth, c.lines); }}>{DEPTHS.map((d) => <option key={d} value={d}>{d}</option>)}</select></label>
-            <label>Satır<select value={cfg.lines} onChange={(e) => { const c = { ...cfg, lines: Number(e.target.value) }; setCfg(c); setEngineSettings(c.depth, c.lines); }}>{LINE_COUNTS.map((d) => <option key={d} value={d}>{d}</option>)}</select></label>
+            <label>Aday<select value={cfg.lines} onChange={(e) => { const c = { ...cfg, lines: Number(e.target.value) }; setCfg(c); setEngineSettings(c.depth, c.lines); }}>{LINE_COUNTS.map((d) => <option key={d} value={d}>{d}</option>)}</select></label>
           </div>
         </aside>
         <div ref={board} className={`cp-game live-board${idle ? ' live-idle' : ''}`} aria-disabled={idle} {...(idle ? { inert: '' } : {})}>
