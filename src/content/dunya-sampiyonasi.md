@@ -1020,7 +1020,7 @@ Petrosian ünvanını 12½–11½ gibi dar farkla korudu. Seçtiğimiz oyun 22. 
 
 ![Mikhail Botvinnik](images/dunya-botvinnik.jpg "<span lang="en">Mikhail Botvinnik</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Harry Pot for Anefo ]]</span> · <span lang="en">CC BY-SA 3.0 nl</span>")
 
-Petrosian 22 oyunda 12½–9½ kazandı; bu maçtan sonra kaybeden şampiyonun otomatik rövanş hakkı kaldırıldı. Seçtiğimiz oyun 19. oyun. FIDE Müzesi: [Tigran Petrosian](https://museum.fide.com/champions/tigran-petrosian).
+Petrosian 22 oyunda 12½–9½ kazandı; bu maçtan sonra kaybeden şampiyonun doğrudan rövanş hakkı kaldırıldı. Seçtiğimiz oyun 19. oyun. FIDE Müzesi: [Tigran Petrosian](https://museum.fide.com/champions/tigran-petrosian).
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
