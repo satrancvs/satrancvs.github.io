@@ -3,15 +3,15 @@
 
 [CANLI MAÇ]
 
-24 Kasım 2026'da İsviçre'nin Cenevre yakınlarındaki Cologny'de, Fondation Martin Bodmer'de bir Dünya Satranç Şampiyonası maçı başlıyor: şampiyon Gukesh Dommaraju (Hindistan) ile meydan okuyucu Javokhir Sindarov (Özbekistan) karşı karşıya. İkisi de 20 yaşında; FIDE'nin deyişiyle tarihin en genç dünya şampiyonası karşılaşması.
+24 Kasım 2026'da İsviçre'nin Cenevre yakınlarındaki Cologny'de, Fondation Martin Bodmer'de bir Dünya Satranç Şampiyonası maçı başlıyor: şampiyon Gukesh Dommaraju (Hindistan) ile şampiyon adayı Javokhir Sindarov (Özbekistan) karşı karşıya. İkisi de 20 yaşında; FIDE'nin deyişiyle tarihin en genç dünya şampiyonası karşılaşması.
 
 FIDE'nin resmî maç sitesi: [worldchampionship.fide.com](https://worldchampionship.fide.com/).
 
 ### Neden Gukesh ve Sindarov?
 
-**Gukesh** şampiyon, çünkü ünvanı Aralık 2024'te Singapur'da, o zamanki şampiyon Ding Liren'i 7½–6½ yenerek aldı. 18 yaşında olan Gukesh, resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu oldu. Oraya da bir Adaylar Turnuvası'nı kazanarak gelmişti (Toronto 2024; 17 yaşında en genç meydan okuyucu). Yani Gukesh sistemin kapılarından geçip ünvanı aldı; şimdi savunuyor.
+**Gukesh** şampiyon, çünkü ünvanı Aralık 2024'te Singapur'da, o zamanki şampiyon Ding Liren'i 7½–6½ yenerek aldı. 18 yaşında olan Gukesh, resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu oldu. Oraya da bir Adaylar Turnuvası'nı kazanarak gelmişti (Toronto 2024; 17 yaşında en genç şampiyon adayı). Yani Gukesh sistemin kapılarından geçip ünvanı aldı; şimdi savunuyor.
 
-**Sindarov** meydan okuyucu, çünkü sistemin ikinci kapısından, yani on dört turluk Adaylar Turnuvası'ndan birinci çıktı. Yolu şöyle:
+**Sindarov** şampiyon adayı, çünkü sistemin ikinci kapısından, yani on dört turluk Adaylar Turnuvası'ndan birinci çıktı. Yolu şöyle:
 
 - Kasım 2025'te Goa'daki **FIDE Dünya Kupası**'nı (206 oyunculu eleme turnuvası) kazandı; 16. seri olarak başlamış, finalde Wei Yi'yi ancak ikinci hızlı oyun kararında yenmişti. 19 yaş 11 ayla en genç Dünya Kupası galibi ve ilk Özbek galip oldu. Bu zafer ona Adaylar'a giriş bileti verdi.
 - Mart–Nisan 2026'da Kıbrıs'ın Pegeia kasabasında, sekiz oyunculu çift devreli **Adaylar Turnuvası**'nı 14 turda **10 puanla** kazandı (altı galibiyet, hiç yenilgi yok); turnuvayı bir tur kala garantiledi. Bu, mevcut çift devreli biçimde alınmış en yüksek puan.
@@ -42,7 +42,7 @@ Kâğıt üzerinde Sindarov favori: reytingi 2782 (dünya 4.), Gukesh'in 2710'u 
 Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor; her döngü genelde iki yıl sürer.
 
 1. **Adaylar Turnuvası'na kimler girer?** Sekiz kişi. Bugünkü kurallarda yer şu yollarla kazanılıyor: Dünya Kupası'ndaki ilk üç, Grand Swiss'teki ilk iki (2025'te Giri ve Blübaum), önceki iki yılın FIDE Circuit (turnuva puanı) birincileri (Caruana, Praggnanandhaa) ve bir de reyting kuralı (Nakamura). 2026'nın Adaylar'ı bu dört yolun hepsinden oyuncu getirdi.
-2. **Adaylar Turnuvası**: sekiz oyuncu, çift devreli, 14 tur. Birinci, şampiyonun karşısına çıkacak meydan okuyucudur.
+2. **Adaylar Turnuvası**: sekiz oyuncu, çift devreli, 14 tur. Birinci, şampiyonun karşısına çıkacak şampiyon adayıdır.
 3. **Ünvan maçı**: 14 klasik oyunluk maç. Şampiyon, **kendi ünvanını savunarak** doğrudan maça gelir; Adaylar'a katılmaz.
 
 ### Eskiden nasıldı?
@@ -1438,7 +1438,7 @@ Chigorin’le ikinci maç, 23 oyunda 12½–10½. Seçtiğimiz oyun, maçı biti
 
 [KART images/dunya-steinitz.jpg]
 
-Steinitz, Rus meydan okuyucuyu 17 oyunda 10½–6½ yendi. Seçtiğimiz oyun 16. oyun. FIDE Müzesi: [Wilhelm Steinitz](https://museum.fide.com/champions/wilhelm-steinitz).
+Steinitz, Rus şampiyon adayını 17 oyunda 10½–6½ yendi. Seçtiğimiz oyun 16. oyun. FIDE Müzesi: [Wilhelm Steinitz](https://museum.fide.com/champions/wilhelm-steinitz).
 
 [Event "Dünya Şampiyonası"]
 [Site "Havana"]
