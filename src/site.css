@@ -923,3 +923,50 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .hub .player-wrapper .video-comment :is(.comment-line, .comment-text-block, .comment-body, span, p, div, strong, b, em, i) { font-size: inherit !important; line-height: inherit !important; color: inherit !important; font-family: inherit; }
 .hub .player-wrapper .video-comment a { color: var(--accent) !important; }
 .hub .player-wrapper .video-comment .comment-play-btn, .hub .player-wrapper .video-comment .comment-play-btn * { color: revert !important; }
+
+/* Dünya şampiyonları zaman çizelgesi (ChampionTimeline): sol kenarda omurga, her şampiyon bir kart, dönemler başlık, kural değişiklikleri işaret */
+.tl { position: relative; margin: 2.2rem 0 1rem; padding-left: 2.1rem; --tl-line: color-mix(in srgb, var(--accent) 38%, transparent); }
+.tl::before { content: ''; position: absolute; left: 5px; top: 1.2rem; bottom: 0; width: 2px; background: linear-gradient(to bottom, transparent, var(--tl-line) 3rem, var(--tl-line) calc(100% - 3rem), transparent); }
+.tl-era { position: relative; display: flex; flex-wrap: wrap; align-items: baseline; gap: .15rem 1.1rem; margin: 2.8rem 0 1.1rem -2.1rem; padding: 0 0 .6rem 2.1rem; border-bottom: 1px solid var(--accent); }
+.tl-era:first-child { margin-top: .4rem; }
+.tl-era::before { content: ''; position: absolute; left: 0; bottom: -7px; width: 12px; height: 12px; transform: rotate(45deg); background: var(--accent); border-radius: 2px; }
+.tl-era-years { font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.1rem); line-height: 1; font-weight: 300; letter-spacing: -.02em; color: var(--accent); white-space: nowrap; }
+.tl-era-name { font-size: 11.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--mute); }
+.tl-item { position: relative; margin: 0 0 1.1rem; padding: 1rem 1.1rem 1.05rem; background: color-mix(in srgb, var(--fg) 4%, transparent); border: 1px solid var(--line); border-radius: 12px; }
+.tl-item::before { content: ''; position: absolute; left: -1.6rem; top: 1.62rem; width: 1.25rem; height: 2px; background: var(--tl-line); }
+.tl-dot { position: absolute; left: calc(-2.1rem + 0px); top: 1.28rem; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--accent); box-sizing: border-box; }
+.tl-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .1rem 1rem; margin: 0 0 .75rem; }
+.tl-name { margin: 0; font-size: clamp(1.45rem, 1.2rem + 1vw, 1.85rem); line-height: 1.1; font-weight: 400; letter-spacing: -.015em; color: var(--fg); }
+.tl-years { font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-weight: 500; }
+.tl-body { display: grid; grid-template-columns: minmax(0, 1fr); gap: .85rem; }
+.tl-label { margin: 0 0 .25rem; font-size: 10.5px; letter-spacing: .2em; text-transform: uppercase; color: var(--mute); }
+.tl-text { margin: 0; font-size: 1.0625rem; line-height: 1.5; color: rgb(var(--fg-rgb) / .92); }
+.tl-text strong, .tl-list strong { font-weight: 600; color: var(--fg); }
+.tl-list { margin: 0; padding: 0; list-style: none; display: grid; gap: .3rem; }
+.tl-list li { position: relative; padding-left: 1rem; font-size: 1.0625rem; line-height: 1.45; color: rgb(var(--fg-rgb) / .92); }
+.tl-list li::before { content: ''; position: absolute; left: 0; top: .62em; width: .4rem; height: 2px; background: var(--accent); }
+.tl-note { position: relative; margin: .3rem 0 1.3rem; }
+.tl-note i { position: absolute; left: calc(-2.1rem + 1px); top: .38rem; width: 10px; height: 10px; transform: rotate(45deg); background: var(--accent); }
+.tl-note p { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .7rem; padding: .55rem .9rem; border: 1px dashed var(--accent); border-radius: 999px; width: fit-content; max-width: 100%; background: color-mix(in srgb, var(--accent) 8%, transparent); }
+.tl-note b { font-size: 12px; letter-spacing: .12em; color: var(--accent); font-weight: 600; }
+.tl-note span { font-size: 1.0625rem; line-height: 1.4; font-style: italic; color: rgb(var(--fg-rgb) / .92); }
+@media (min-width: 40em) {
+  .tl-body { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 1.4rem; }
+  .tl-body > .tl-col + .tl-col { padding-left: 1.4rem; border-left: 1px solid var(--line); }
+}
+@media (max-width: 30em) { .tl { padding-left: 1.7rem; } .tl-era { margin-left: -1.7rem; padding-left: 1.7rem; } .tl-dot { left: -1.7rem; } .tl-item::before { left: -1.25rem; width: .95rem; } .tl-note i { left: calc(-1.7rem + 1px); } .tl-note p { border-radius: 14px; } }
+/* Zaman çizelgesi: geniş ekranda sütundan taşar, yıllar omurganın solunda büyük yazılır */
+.tl-gutter { display: none; }
+@media (min-width: 62em) {
+  .tl { --gut: 8.2rem; width: min(64rem, calc(100vw - 6rem)); margin-left: calc(50% - min(32rem, 50vw - 3rem)); padding-left: calc(var(--gut) + 2.1rem); }
+  .tl::before { left: calc(var(--gut) + 5px); }
+  .tl-era { margin-left: calc(-1 * (var(--gut) + 2.1rem)); padding-left: calc(var(--gut) + 2.1rem); }
+  .tl-era::before { left: var(--gut); }
+  .tl-dot { left: -2.1rem; }
+  .tl-note i { left: calc(-2.1rem + 1px); }
+  .tl-years { display: none; }
+  .tl-gutter { display: block; position: absolute; right: calc(100% + 2.8rem); top: 1.02rem; width: calc(var(--gut) - .4rem); text-align: right; color: var(--accent); }
+  .tl-gutter.big { font-size: 1.5rem; line-height: 1.1; font-weight: 300; letter-spacing: -.01em; white-space: nowrap; }
+  .tl-gutter:not(.big) { top: 1.15rem; font-size: 11px; line-height: 1.5; letter-spacing: .1em; text-transform: uppercase; font-weight: 500; }
+  .tl-note p { margin-left: 0; }
+}

@@ -1,0 +1,164 @@
+[
+ {
+  "era": {
+   "years": "2007 – bugün",
+   "name": "FIDE Dünya Şampiyonu"
+  }
+ },
+ {
+  "name": "Gukesh",
+  "years": "2024–",
+  "won": "2024 Singapur: **Ding Liren**'e karşı 7½–6½",
+  "kept": "Savunması 2026 Cenevre'de, **Sindarov**'a karşı."
+ },
+ {
+  "name": "Ding Liren",
+  "years": "2023–24",
+  "won": "2023 Astana: **Nepomniachtchi**'ye karşı 7–7, hızlı oyunlarda 2½–1½",
+  "kept": "2024'te Singapur'da **Gukesh**'e 7½–6½ kaybetti."
+ },
+ {
+  "name": "Carlsen",
+  "years": "2013–23",
+  "won": "2013 Chennai: **Anand**'a karşı 6½–3½",
+  "kept": "2014 Soçi **Anand** 6½–4½; 2016 New York **Karjakin** 6–6, hızlı oyunlarda 3–1; 2018 Londra **Caruana** 6–6, 12 klasik oyunun hepsi berabere, hızlı oyunlarda 3–0; 2021 Dubai **Nepomniachtchi** 7½–3½. 2023'te ünvanı savunmadan bıraktı."
+ },
+ {
+  "name": "Anand",
+  "years": "2007–13",
+  "won": "2007 Meksika: sekiz kişilik turnuvayı 9/14 ile kazandı",
+  "kept": "2008 **Kramnik** 6½–4½; 2010 **Topalov** 6½–5½; 2012 **Gelfand** 6–6, hızlı oyunlarda 2½–1½. 2013'te **Carlsen**'e kaybetti."
+ },
+ {
+  "era": {
+   "years": "1993 – 2007",
+   "name": "Bölünme: İki şampiyon"
+  }
+ },
+ {
+  "name": "Kramnik",
+  "years": "2000–07",
+  "won": "2000 Londra: **Kasparov**'a karşı 8½–6½, hiç yenilmeden (+2 =13)",
+  "kept": "2004'te **Leko** 7–7 (ünvan şampiyonda kaldı); 2006'da **Topalov**'u 6–6 sonrası hızlı oyunlarda yenerek birleşik ünvanı aldı."
+ },
+ {
+  "name": "Topalov",
+  "years": "FIDE, 2005",
+  "won": "2005 San Luis, Arjantin: sekiz kişilik çift turlu döner turnuva",
+  "kept": "2006'da **Kramnik**'e kaybetti (birleşme maçı)."
+ },
+ {
+  "name": "Khalifman, Anand, Ponomariov, Kasimdzhanov",
+  "years": "FIDE, 1999–2005",
+  "won": "Tek elemeli turnuvalar",
+  "kept": "Bir kez kazandıktan sonra savunma yok; her şampiyon bir sonraki turnuvada yeniden oynadı."
+ },
+ {
+  "name": "Karpov",
+  "years": "FIDE, 1993–99",
+  "won": "1993: **Kasparov**'un ayrılmasıyla, **Timman**'ı 12½–8½ yenerek",
+  "kept": "1996'da **Kamsky**, 1998'de **Anand** karşısında ünvanı korudu; 1999'da savunmayı reddedince FIDE turnuva biçimine geçti."
+ },
+ {
+  "era": {
+   "years": "1948 – 1993",
+   "name": "FIDE'nin yönettiği dönem"
+  }
+ },
+ {
+  "name": "Kasparov",
+  "years": "1985–93, PCA 1993–2000",
+  "won": "1985 Moskova: **Karpov**'a 13–11",
+  "kept": "1986, 1987 (12–12, ünvan şampiyonda kaldı), 1990'da **Karpov**'u yendi; 1993'te **Short**'u, 1995'te **Anand**'ı yendi; 2000'de Londra'da **Kramnik**'e kaybetti."
+ },
+ {
+  "note": {
+   "year": "1985",
+   "text": "Sınırsız oyun sayısı (“ilk 6 galibiyet”) kaldırıldı; ünvan maçları sabit oyun sayısıyla oynanır"
+  }
+ },
+ {
+  "name": "Karpov",
+  "years": "1975–85",
+  "won": "1975: **Fischer**'in çekilmesiyle hükmen",
+  "kept": "1978 Baguio'da **Korchnoi**'u, 1981 Merano'da yine **Korchnoi**'u yendi. 1984–85'te **Kasparov**'a karşı maç yarıda kesildi (5–3 önde); 1985'te ünvanı kaybetti."
+ },
+ {
+  "name": "Fischer",
+  "years": "1972–75",
+  "won": "1972, Reykjavik: **Spassky**'e karşı 12½–8½ (+7 −3 =11)",
+  "kept": "1975'te şartları kabul edilmediği için çekildi; ünvanı oynamadan kaybetti."
+ },
+ {
+  "name": "Spassky",
+  "years": "1969–72",
+  "won": "1969, **Petrosian**'a karşı",
+  "kept": "1972'de Reykjavik'te **Fischer**'e 12½–8½ kaybetti."
+ },
+ {
+  "name": "Petrosian",
+  "years": "1963–69",
+  "won": "1963, **Botvinnik**'e karşı 12½–9½",
+  "kept": "1966'da **Spassky**'i 12½–11½ yendi; 1969'da **Spassky**'e 12½–10½ kaybetti."
+ },
+ {
+  "note": {
+   "year": "1963",
+   "text": "Kaybeden şampiyonun doğrudan rövanş hakkı kaldırıldı"
+  }
+ },
+ {
+  "name": "Tal",
+  "years": "1960–61",
+  "won": "1960, **Botvinnik**'e karşı 12½–8½",
+  "kept": "1961'de **Botvinnik** ile rövanşı 13–8 kaybetti."
+ },
+ {
+  "name": "Smyslov",
+  "years": "1957–58",
+  "won": "1957, **Botvinnik**'e karşı 12½–9½",
+  "kept": "1958'de **Botvinnik** ile rövanşı 12½–10½ kaybetti."
+ },
+ {
+  "name": "Botvinnik",
+  "years": "1948–57, 1958–60, 1961–63",
+  "won": "1948 Lahey–Moskova **beş kişilik maç turnuvası**",
+  "kept": "1951 **Bronstein** 12–12 (ünvan şampiyonda kaldı); 1954 **Smyslov** 12–12. 1957'de **Smyslov**'a, 1960'ta **Tal**'e yenildi; 1958'de **Smyslov** ile, 1961'de **Tal** ile rövanşları kazanıp ünvanı iki kez geri aldı."
+ },
+ {
+  "era": {
+   "years": "1886 – 1946",
+   "name": "Şampiyon kuralları koyar"
+  }
+ },
+ {
+  "name": "Euwe",
+  "years": "1935–37",
+  "won": "1935, Hollanda: **Alekhine**'e karşı 15½–14½",
+  "kept": "1937'de **Alekhine** ile rövanşı kaybetti."
+ },
+ {
+  "name": "Alekhine",
+  "years": "1927–35, 1937–46",
+  "won": "1927, **Capablanca**'ya karşı; “ilk 6 galibiyet”, 34 oyun",
+  "kept": "1929 ve 1934'te **Bogoljubov**'u yendi. 1935'te **Euwe**'ye 15½–14½ kaybetti, 1937'de **Euwe** ile rövanşı 15½–9½ kazandı. 1946'da şampiyonken öldü."
+ },
+ {
+  "name": "Capablanca",
+  "years": "1921–27",
+  "won": "1921, Havana: **Lasker**'in çekilmesiyle",
+  "kept": "1927 Buenos Aires'te **Alekhine**'e 18½–15½ yenildi (34 oyun, +6 −3 =25)."
+ },
+ {
+  "name": "Lasker",
+  "years": "1894–1921",
+  "won": "1894, **Steinitz**'e karşı 12–7 (New York, Philadelphia, Montreal)",
+  "kept": "1896–97'de **Steinitz** ile rövanşı 12½–4½ kazandı; 1907 **Marshall** (11½–3½), 1908 **Tarrasch** (10½–5½) ve diğerlerini yendi. 1921'de Havana'da **Capablanca**'ya karşı 14. oyundan sonra çekildi."
+ },
+ {
+  "name": "Steinitz",
+  "years": "1886–94",
+  "won": "1886, ABD (New York, St. Louis, New Orleans): **Zukertort**'a karşı 12½–7½, ilk “resmî” maç",
+  "kept": "1889 Havana, **Chigorin** 10½–6½; 1890–91 New York, **Gunsberg** 10½–8½; 1892 Havana, **Chigorin** 12½–10½. 1894'te **Lasker**'e kaybetti."
+ }
+]
