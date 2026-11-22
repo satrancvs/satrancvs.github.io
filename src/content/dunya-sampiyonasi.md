@@ -142,6 +142,8 @@ Tablodan iki şey okunuyor. Birincisi, **eşitlikte ünvan şampiyonda kalır**:
 
 *Varşova (Polonya)*
 
+[KART images/dunya-gukesh.jpg]
+
 Grand Chess Tour Polonya ayağında, yıldırım oyunlarda ikisinin ikinci karşılaşması: Sindarov Siyahlarla kazandı. Kayıt: [chessgames.com](https://www.chessgames.com/perl/chessgame?gid=3150962).
 
 [Event "GCT Süper Yıldırım Polonya"]
@@ -160,6 +162,8 @@ Grand Chess Tour Polonya ayağında, yıldırım oyunlarda ikisinin ikinci karş
 #### 2026 · Sindarov – Gukesh, yıldırım (8 Mayıs)
 
 *Varşova (Polonya)*
+
+[KART images/dunya-sindarov.jpg]
 
 Grand Chess Tour Polonya ayağında, yıldırım oyunlarda Sindarov Beyazlarla kazandı. Kayıt: [chessgames.com](https://www.chessgames.com/perl/chessgame?gid=3150319).
 
@@ -180,6 +184,10 @@ Grand Chess Tour Polonya ayağında, yıldırım oyunlarda Sindarov Beyazlarla k
 
 *Varşova (Polonya)*
 
+[KART images/dunya-x-sindarov-a.jpg]
+
+![Javokhir Sindarov](images/dunya-x-sindarov-a.jpg "<span lang="en">Javokhir Sindarov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">MiroJP</span> · <span lang="en">CC BY-SA 4.0</span>")
+
 Grand Chess Tour Polonya ayağının hızlı oyun bölümünde Gukesh Siyahlarla kazandı. Kayıt: [chessgames.com](https://www.chessgames.com/perl/chessgame?gid=3148591).
 
 [Event "GCT Süper Hızlı Polonya"]
@@ -198,6 +206,10 @@ Grand Chess Tour Polonya ayağının hızlı oyun bölümünde Gukesh Siyahlarla
 #### 2026 · Sindarov – Gukesh, klasik (17 Ocak)
 
 *Wijk aan Zee (Hollanda)*
+
+[KART images/dunya-x-sindarov-b.jpg]
+
+![Javokhir Sindarov](images/dunya-x-sindarov-b.jpg "<span lang="en">Javokhir Sindarov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
 
 İkisinin Tata Steel Masters’ın ilk turundaki klasik oyunu 155 yarım hamle sürdü ve berabere bitti; bu, aralarındaki üçüncü klasik oyundu.
 
@@ -218,6 +230,10 @@ Grand Chess Tour Polonya ayağının hızlı oyun bölümünde Gukesh Siyahlarla
 
 *Şarjah (BAE)*
 
+[KART images/dunya-x-sindarov-c.jpg]
+
+![Javokhir Sindarov](images/dunya-x-sindarov-c.jpg "<span lang="en">Javokhir Sindarov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Frans Peeters Photography</span> · <span lang="en">CC BY-SA 2.0</span>")
+
 Mayıs 2022’de Şarjah Masters’ta Sindarov, Beyazlarla Gukesh’i yendi.
 
 [Event "5. Şarjah Masters"]
@@ -237,6 +253,10 @@ Mayıs 2022’de Şarjah Masters’ta Sindarov, Beyazlarla Gukesh’i yendi.
 
 *Moskova (Rusya)*
 
+[KART images/dunya-x-gukesh-2024.jpg]
+
+![Gukesh Dommaraju](images/dunya-x-gukesh-2024.jpg "<span lang="en">Gukesh Dommaraju</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Frans Peeters</span> · <span lang="en">CC BY-SA 2.0</span>")
+
 İkisinin ilk klasik karşılaşması: 4 Şubat 2018’de, 11–12 yaşlarındayken, Moskova Açık’ta Sindarov Siyahlarla kazandı.
 
 [Event "14. Moskova Açık"]
@@ -252,11 +272,13 @@ Mayıs 2022’de Şarjah Masters’ta Sindarov, Beyazlarla Gukesh’i yendi.
 
 1. Nf3 g6 2. g3 Bg7 3. d4 c5 4. d5 Nf6 5. Bg2 d6 6. O-O b5 7. a4 b4 8. Re1 O-O 9. e4 Nbd7 10. Nbd2 a5 11. Nc4 Ba6 12. Nfd2 Qc7 13. f4 Rad8 14. e5 dxe5 15. fxe5 Nxd5 16. Bxd5 Nxe5 17. Ne3 c4 18. Qe2 e6 19. Bxc4 Nxc4 20. Ndxc4 Rc8 21. Qf2 Bxc4 22. Ng4 f5 23. Ne3 Ba6 24. Ng2 Qxc2 25. Qxc2 Rxc2 26. Rxe6 Bb7 27. Ne3 Bd4 28. Kf1 Rxh2 29. Rd6 Bc5 30. Rd7 Ba6+ 31. Ke1 Bxe3 0-1
 
-[MAÇ SEÇİCİ: Ünvan maçlarından seçmeler]
+[MAÇ SEÇİCİ: Tüm ünvan maçları]
 
 #### 2024 · Gukesh – Ding Liren
 
 *Singapur*
+
+[KART images/dunya-mac-2024.jpg]
 
 ![Ding Liren – Gukesh, Tata Steel Satranç 2023 (Wijk aan Zee); maçtan değil, iki oyuncunun daha önceki karşılaşması](images/dunya-mac-2024.jpg "<span lang="en">Ding Liren</span> – <span lang="en">Gukesh</span>, <span lang="en">Tata Steel</span> Satranç 2023 (Wijk aan Zee); maçtan değil, iki oyuncunun daha önceki karşılaşması · <span lang="en">Wikimedia Commons</span> · <span lang="en">Vysotsky</span> · <span lang="en">CC BY-SA 4.0</span>")
 
@@ -278,6 +300,8 @@ Gukesh 14. oyunda Ding’in hatasıyla maçı 7½–6½ kazandı. Seçtiğimiz o
 #### 2023 · Ding Liren – Nepomniachtchi
 
 *Astana (Kazakistan)*
+
+[KART images/dunya-afis-2023d.jpg]
 
 ![Astana 2023 (Ding Liren afişi) maç afişi](images/dunya-afis-2023d.jpg "Resmî maç afişi · Astana 2023 (Ding Liren afişi) · [<span lang="en">FIDE Museum</span>](https://museum.fide.com/exhibits/fide-world-championship-match-2023-poster-ding-liren) · © <span lang="en">FIDE</span>")
 ![Astana 2023 (Nepomniachtchi afişi) maç afişi](images/dunya-afis-2023n.jpg "Resmî maç afişi · Astana 2023 (Nepomniachtchi afişi) · [<span lang="en">FIDE Museum</span>](https://museum.fide.com/exhibits/fide-world-championship-match-2023-poster-ian-nepomniachtchi) · © <span lang="en">FIDE</span>")
@@ -301,6 +325,8 @@ Gukesh 14. oyunda Ding’in hatasıyla maçı 7½–6½ kazandı. Seçtiğimiz o
 
 *Dubai (BAE)*
 
+[KART images/dunya-afis-2021.jpg]
+
 ![Dubai 2021 maç afişi](images/dunya-afis-2021.jpg "Resmî maç afişi · Dubai 2021 · [<span lang="en">FIDE Museum</span>](https://museum.fide.com/exhibits/2021-world-championship-match-poster) · © <span lang="en">FIDE</span>")
 
 ![Carlsen ve Nepomniachtchi; ilk hamleyi Moskova Belediye Başkanı Sobyanin yapıyor (Dubai, 3 Aralık 2021)](images/dunya-mac-2021.jpg "<span lang="en">Carlsen</span> ve <span lang="en">Nepomniachtchi</span>; ilk hamleyi Moskova Belediye Başkanı <span lang="en">Sobyanin</span> yapıyor (Dubai, 3 Aralık 2021) · <span lang="en">Wikimedia Commons</span> · <span lang="en">mos.ru</span> · <span lang="en">CC BY 4.0</span>")
@@ -323,6 +349,8 @@ Carlsen 11 oyunda 7½–3½ kazandı. Seçtiğimiz oyun 11. oyun. FIDE Müzesi: 
 #### 2018 · Carlsen – Caruana
 
 *Londra (İngiltere)*
+
+[KART images/dunya-afis-2018.jpg]
 
 ![Londra 2018 maç afişi](images/dunya-afis-2018.jpg "Resmî maç afişi · Londra 2018 · [<span lang="en">FIDE Museum</span>](https://museum.fide.com/exhibits/fide-world-chess-championship-2018-poster) · © <span lang="en">FIDE</span>")
 
@@ -350,6 +378,8 @@ Carlsen 11 oyunda 7½–3½ kazandı. Seçtiğimiz oyun 11. oyun. FIDE Müzesi: 
 
 *New York (ABD)*
 
+[KART images/dunya-karjakin.jpg]
+
 ![Sergey Karjakin](images/dunya-karjakin.jpg "<span lang="en">Sergey Karjakin</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 4.0</span>")
 
 Maç, Manhattan'da South Street Seaport'taki Fulton Market Binası'nda oynandı; New York'ta 1995'ten beri ilk dünya şampiyonası maçıydı. Yedi beraberlikle başlayan maçta Karjakin 8. oyunda öne geçti, Carlsen 10. oyunda eşitledi; 12 klasik oyun 6–6 bitti. Carlsen hızlı oyunlarda 3–1 kazandı: 30 Kasım, 26. doğum gününde 3. oyunu kazandı, 4. oyunda vezir fedasıyla mat etti. Seçtiğimiz oyun, 4. hızlı oyun. Ayrıntılar: [World Chess'in New York 2016 sayfası](https://worldchess.com/nyc2016). FIDE Müzesi: [Magnus Carlsen](https://museum.fide.com/champions/magnus-carlsen). [FIDE haberi: kapanış töreni](https://old.fide.com/component/content/article/1-fide-news/9939-closing-ceremony-of-the-world-championship-match-2016.html).
@@ -370,6 +400,8 @@ Maç, Manhattan'da South Street Seaport'taki Fulton Market Binası'nda oynandı;
 #### 2014 · Carlsen – Anand
 
 *Soçi (Rusya)*
+
+[KART images/dunya-afis-2014.jpg]
 
 ![Soçi 2014 maç afişi](images/dunya-afis-2014.jpg "Resmî maç afişi · Soçi 2014 · [<span lang="en">FIDE Museum</span>](https://museum.fide.com/exhibits/poster-of-the-world-chess-championship-match-between-carlsen-and-anand) · © <span lang="en">FIDE</span>")
 
@@ -394,6 +426,8 @@ Carlsen 6½–4½ ile ünvanını korudu. Seçtiğimiz oyun, 11. oyun. FIDE Müz
 
 *Chennai (Hindistan)*
 
+[KART images/dunya-carlsen.jpg]
+
 Carlsen 10 oyunda 6½–3½ kazanıp şampiyon oldu. Seçtiğimiz oyun 9. oyun. FIDE Müzesi: [Magnus Carlsen](https://museum.fide.com/champions/magnus-carlsen).
 
 [Event "Dünya Şampiyonası"]
@@ -412,6 +446,8 @@ Carlsen 10 oyunda 6½–3½ kazanıp şampiyon oldu. Seçtiğimiz oyun 9. oyun. 
 #### 2012 · Anand – Gelfand
 
 *Moskova (Rusya)*
+
+[KART images/dunya-gelfand.jpg]
 
 ![Boris Gelfand](images/dunya-gelfand.jpg "<span lang="en">Boris Gelfand</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">TheBoburshokh</span> · <span lang="en">CC0</span>")
 
@@ -434,6 +470,8 @@ Carlsen 10 oyunda 6½–3½ kazanıp şampiyon oldu. Seçtiğimiz oyun 9. oyun. 
 
 *Sofya (Bulgaristan)*
 
+[KART images/dunya-anand.jpg]
+
 ![Veselin Topalov](images/dunya-topalov.jpg "<span lang="en">Veselin Topalov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">This photo was taken by Przemysław JahrAutor…</span> · <span lang="en">CC BY-SA 3.0</span>")
 
 Son oyunu Siyahlarla kazanan Anand, 6½–5½ ile ünvanını korudu. FIDE Müzesi: [Viswanathan Anand](https://museum.fide.com/champions/viswanathan-anand).
@@ -454,6 +492,8 @@ Son oyunu Siyahlarla kazanan Anand, 6½–5½ ile ünvanını korudu. FIDE Müze
 #### 2008 · Anand – Kramnik
 
 *Bonn (Almanya)*
+
+[KART images/dunya-mac-2008.jpg]
 
 ![Anand – Kramnik, Bonn 2008](images/dunya-mac-2008.jpg "<span lang="en">Anand</span> – <span lang="en">Kramnik</span>, Bonn 2008 · <span lang="en">Wikimedia Commons</span> · <span lang="en">Ygrek</span> · <span lang="en">CC BY 3.0</span>")
 
@@ -476,6 +516,8 @@ Anand ünvanını 6½–4½ ile korudu. Seçtiğimiz oyun 6. oyun. FIDE Müzesi:
 
 *Meksika*
 
+[KART images/dunya-morozevich.jpg]
+
 ![Alexander Morozevich](images/dunya-morozevich.jpg "<span lang="en">Alexander Morozevich</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
 
 Sekiz oyunculu çift devreli turnuvada Anand 14 oyundan 9 puan aldı. Seçtiğimiz oyun, Morozevich’e karşı galibiyeti. FIDE Müzesi: [Viswanathan Anand](https://museum.fide.com/champions/viswanathan-anand).
@@ -497,6 +539,8 @@ Sekiz oyunculu çift devreli turnuvada Anand 14 oyundan 9 puan aldı. Seçtiğim
 
 *Elista (Kalmukya)*
 
+[KART images/dunya-kramnik.jpg]
+
 Birleşme maçı 6–6 bitti; hızlı oyunlarda Kramnik 2½–1½ kazandı. Seçtiğimiz oyun, 4. hızlı oyun. FIDE Müzesi: [Vladimir Kramnik](https://museum.fide.com/champions/vladimir-kramnik).
 
 [Event "Dünya Şampiyonası"]
@@ -516,6 +560,8 @@ Birleşme maçı 6–6 bitti; hızlı oyunlarda Kramnik 2½–1½ kazandı. Seç
 
 *San Luis (Arjantin)*
 
+[KART images/dunya-topalov.jpg]
+
 Sekiz oyunculu çift devreli turnuvayı Topalov kazandı. Seçtiğimiz oyun, Kasimdzhanov’a karşı galibiyeti.
 
 [Event "Dünya Şampiyonası"]
@@ -534,6 +580,8 @@ Sekiz oyunculu çift devreli turnuvayı Topalov kazandı. Seçtiğimiz oyun, Kas
 #### 2004 · Kasimdzhanov – Adams (FIDE)
 
 *Trablus (Libya)*
+
+[KART images/dunya-kasimdzhanov.jpg]
 
 ![Rustam Kasimdzhanov](images/dunya-kasimdzhanov.jpg "<span lang="en">Rustam Kasimdzhanov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Ygrek</span> · <span lang="en">Public domain</span>")
 ![Michael Adams](images/dunya-adams.jpg "<span lang="en">Michael Adams</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Yunfan Zhao / lichess.org</span> · <span lang="en">CC BY-SA 4.0</span>")
@@ -557,6 +605,8 @@ Eleme turnuvası finali: Kasimdzhanov 4½–3½ kazandı. Seçtiğimiz oyun, bel
 
 *Brissago (İsviçre)*
 
+[KART images/dunya-leko.jpg]
+
 ![Péter Lékó](images/dunya-leko.jpg "<span lang="en">Péter Lékó</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Yunfan Zhao / lichess.org</span> · <span lang="en">CC BY-SA 4.0</span>")
 
 14 oyun sonunda 7–7: Leko son oyuna 7–6 önde girdi; Kramnik 14. oyunu kazanıp ünvanını korudu. FIDE Müzesi: [Vladimir Kramnik](https://museum.fide.com/champions/vladimir-kramnik).
@@ -577,6 +627,8 @@ Eleme turnuvası finali: Kasimdzhanov 4½–3½ kazandı. Seçtiğimiz oyun, bel
 #### 2002 · Ponomariov – Ivanchuk (FIDE)
 
 *Moskova (Rusya)*
+
+[KART images/dunya-ponomariov.jpg]
 
 ![Ruslan Ponomariov](images/dunya-ponomariov.jpg "<span lang="en">Ruslan Ponomariov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">JaVe.StAr</span> · <span lang="en">CC BY 4.0</span>")
 ![Vasyl Ivanchuk](images/dunya-ivanchuk.jpg "<span lang="en">Vasyl Ivanchuk</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
@@ -600,6 +652,10 @@ Finali Ponomariov 4½–2½ kazandı. Seçtiğimiz oyun 5. oyun.
 
 *Londra (İngiltere)*
 
+[KART images/dunya-x-kasparov-a.jpg]
+
+![Garry Kasparov](images/dunya-x-kasparov-a.jpg "<span lang="en">Garry Kasparov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Rob Croes / Anefo</span> · <span lang="en">CC0</span>")
+
 ![Garry Kasparov](images/dunya-kasparov.jpg "<span lang="en">Garry Kasparov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Fryta 73 from Strzegom</span> · <span lang="en">CC BY-SA 2.0</span>")
 
 Kramnik 15 oyunda 8½–6½ kazandı: iki galibiyet, yenilgi yok. Seçtiğimiz oyun, 10. oyun. FIDE Müzesi: [Vladimir Kramnik](https://museum.fide.com/champions/vladimir-kramnik).
@@ -621,6 +677,8 @@ Kramnik 15 oyunda 8½–6½ kazandı: iki galibiyet, yenilgi yok. Seçtiğimiz o
 
 *Tahran (İran)*
 
+[KART images/dunya-shirov.jpg]
+
 ![Alexei Shirov](images/dunya-shirov.jpg "<span lang="en">Alexei Shirov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Yunfan Zhao / lichess.org</span> · <span lang="en">CC BY-SA 4.0</span>")
 
 Anand finali 3½–½ kazandı. Seçtiğimiz oyun, maçı kazandıran 3. oyun. FIDE Müzesi: [Viswanathan Anand](https://museum.fide.com/champions/viswanathan-anand).
@@ -641,6 +699,8 @@ Anand finali 3½–½ kazandı. Seçtiğimiz oyun, maçı kazandıran 3. oyun. F
 #### 1999 · Khalifman – Akopian (FIDE)
 
 *Las Vegas (ABD)*
+
+[KART images/dunya-afis-1999.jpg]
 
 ![Las Vegas 1999 (eleme turnuvası) maç afişi](images/dunya-afis-1999.jpg "Resmî maç afişi · Las Vegas 1999 (eleme turnuvası) · [<span lang="en">FIDE Museum</span>](https://museum.fide.com/exhibits/knockout-world-chess-championship-poster) · © <span lang="en">FIDE</span>")
 
@@ -666,6 +726,8 @@ Tek elemeli turnuvanın finalini Khalifman 3½–2½ kazandı. Seçtiğimiz oyun
 
 *Lozan (İsviçre)*
 
+[KART images/dunya-karpov.jpg]
+
 ![Anatoly Karpov](images/dunya-karpov.jpg "<span lang="en">Anatoly Karpov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Veni Markovski | Вени Марковски</span> · <span lang="en">CC BY-SA 4.0</span>")
 
 Eleme turnuvasının finalinde klasik oyunlardan sonra hızlı oyunlar belirleyici oldu; Karpov’un hızlı oyun galibiyetini gösteriyoruz. FIDE Müzesi: [Anatoly Karpov](https://museum.fide.com/champions/anatoly-karpov).
@@ -686,6 +748,8 @@ Eleme turnuvasının finalinde klasik oyunlardan sonra hızlı oyunlar belirleyi
 #### 1996 · Karpov – Kamsky (FIDE)
 
 *Elista (Kalmukya)*
+
+[KART images/dunya-kamsky.jpg]
 
 ![Gata Kamsky](images/dunya-kamsky.jpg "<span lang="en">Gata Kamsky</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
 
@@ -708,6 +772,8 @@ Karpov ünvanını 10½–7½ ile korudu. Seçtiğimiz oyun 14. oyun. FIDE Müze
 
 *New York (ABD)*
 
+[KART images/dunya-kasparov.jpg]
+
 Dünya Ticaret Merkezi’nin tepesinde oynanan maç. Kasparov 10½–7½ kazandı. Seçtiğimiz oyun 14. oyun. FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
 
 [Event "Dünya Şampiyonası"]
@@ -726,6 +792,8 @@ Dünya Ticaret Merkezi’nin tepesinde oynanan maç. Kasparov 10½–7½ kazand�
 #### 1993 · Karpov – Timman (FIDE)
 
 *Hollanda ve Endonezya*
+
+[KART images/dunya-timman.jpg]
 
 ![Jan Timman](images/dunya-timman.jpg "<span lang="en">Jan Timman</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">GFHund</span> · <span lang="en">CC BY 3.0</span>")
 
@@ -748,6 +816,8 @@ FIDE’nin yeni şampiyonluk maçı: Karpov 12½–8½ kazandı. Seçtiğimiz oy
 
 *Londra (İngiltere)*
 
+[KART images/dunya-short.jpg]
+
 ![Nigel Short](images/dunya-short.jpg "<span lang="en">Nigel Short</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">GibChess</span> · <span lang="en">CC BY 3.0</span>")
 
 Kasparov ve Short, FIDE’den ayrılıp kendi şampiyonluk maçlarını oynadı; Kasparov 12½–7½ kazandı. Seçtiğimiz oyun 15. oyun. FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
@@ -769,6 +839,10 @@ Kasparov ve Short, FIDE’den ayrılıp kendi şampiyonluk maçlarını oynadı;
 
 *New York ve Lyon*
 
+[KART images/dunya-x-kasparov-b.jpg]
+
+![Garry Kasparov](images/dunya-x-kasparov-b.jpg "<span lang="en">Garry Kasparov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Rob Bogaerts / Anefo</span> · <span lang="en">CC0</span>")
+
 Beşinci ve son Karpov–Kasparov maçı: 12½–11½. Seçtiğimiz oyun 20. oyun. FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
 
 [Event "Dünya Şampiyonası"]
@@ -787,6 +861,10 @@ Beşinci ve son Karpov–Kasparov maçı: 12½–11½. Seçtiğimiz oyun 20. oyu
 #### 1987 · Kasparov – Karpov
 
 *Sevilla (İspanya)*
+
+[KART images/dunya-x-karpov-a.jpg]
+
+![Anatoly Karpov](images/dunya-x-karpov-a.jpg "<span lang="en">Anatoly Karpov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Sjakkelien Vollebregt</span> · <span lang="en">CC0</span>")
 
 Son oyuna Karpov 12–11 önde girdi; Kasparov 24. oyunu kazanıp 12–12 ile ünvanını korudu. FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
 
@@ -807,6 +885,10 @@ Son oyuna Karpov 12–11 önde girdi; Kasparov 24. oyunu kazanıp 12–12 ile ü
 
 *Londra ve Leningrad*
 
+[KART images/dunya-x-karpov-b.jpg]
+
+![Anatoly Karpov](images/dunya-x-karpov-b.jpg "<span lang="en">Anatoly Karpov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Rob Croes for Anefo</span> · <span lang="en">CC0</span>")
+
 Kasparov 12½–11½ ile ünvanını korudu. Seçtiğimiz oyun 22. oyun. FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
 
 [Event "Dünya Şampiyonası"]
@@ -826,6 +908,10 @@ Kasparov 12½–11½ ile ünvanını korudu. Seçtiğimiz oyun 22. oyun. FIDE M�
 
 *Moskova (SSCB)*
 
+[KART images/dunya-x-karpov-c.jpg]
+
+![Anatoly Karpov](images/dunya-x-karpov-c.jpg "<span lang="en">Anatoly Karpov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Koen Suyk / Anefo</span> · <span lang="en">CC0</span>")
+
 24 oyunluk yeniden maç: son oyuna Kasparov 12–11 önde girdi; Karpov’un galibiyete ihtiyacı vardı. Kasparov, 24. oyunu kazanıp 13–11’le 22 yaşında şampiyon oldu. FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
 
 [Event "Dünya Şampiyonası"]
@@ -844,6 +930,8 @@ Kasparov 12½–11½ ile ünvanını korudu. Seçtiğimiz oyun 22. oyun. FIDE M�
 #### 1984–85 · Karpov – Kasparov (iptal)
 
 *Moskova (SSCB)*
+
+[KART images/dunya-campomanes.jpg]
 
 ![Florencio Campomanes](images/dunya-campomanes.jpg "<span lang="en">Florencio Campomanes</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">karpidis from Piraeus, Greece This file is l…</span> · <span lang="en">CC BY 2.0</span>")
 
@@ -865,6 +953,8 @@ Kasparov 12½–11½ ile ünvanını korudu. Seçtiğimiz oyun 22. oyun. FIDE M�
 #### 1981 · Karpov – Korchnoi
 
 *Merano (İtalya)*
+
+[KART images/dunya-afis-1981.jpg]
 
 ![Merano 1981 maç afişi](images/dunya-afis-1981.jpg "Resmî maç afişi · Merano 1981 · [<span lang="en">FIDE Museum</span>](https://museum.fide.com/exhibits/1981-world-championship-match-poster) · © <span lang="en">FIDE</span>")
 
@@ -889,6 +979,8 @@ Karpov 6–2 galibiyetle (18 oyun) ünvanını korudu. Seçtiğimiz oyun 18. oyu
 
 *Baguio (Filipinler)*
 
+[KART images/dunya-mac-1978.jpg]
+
 ![Karpov, Korchnoi’ye karşı oynarken (Amsterdam; maçtan başka bir karşılaşma)](images/dunya-mac-1978.jpg "<span lang="en">Karpov</span>, <span lang="en">Korchnoi</span>’ye karşı oynarken (Amsterdam; maçtan başka bir karşılaşma) · <span lang="en">Wikimedia Commons</span> · <span lang="en">Roland Gerrits / Anefo</span> · <span lang="en">CC0</span>")
 
 6 galibiyete kadar oynanan 32 oyunluk maç. Karpov 5–2 öndeyken Korchnoi 5–5’e getirdi; 32. oyunu Karpov kazandı. FIDE Müzesi: [Anatoly Karpov](https://museum.fide.com/champions/anatoly-karpov).
@@ -909,6 +1001,8 @@ Karpov 6–2 galibiyetle (18 oyun) ünvanını korudu. Seçtiğimiz oyun 18. oyu
 #### 1972 · Fischer – Spassky
 
 *Reykjavik (İzlanda)*
+
+[KART images/dunya-fischer.jpg]
 
 ![Bobby Fischer](images/dunya-fischer.jpg "<span lang="en">Bobby Fischer</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Bert Verhoeff for Anefo</span> · <span lang="en">CC0</span>")
 ![Boris Spassky](images/dunya-spassky.jpg "<span lang="en">Boris Spassky</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Rob Bogaerts for Anefo</span> · <span lang="en">CC0</span>")
@@ -932,6 +1026,8 @@ Fischer, 12½–8½ ile Sovyet şampiyonluğuna son verdi. Seçtiğimiz oyun 21.
 
 *Moskova (SSCB)*
 
+[KART images/dunya-petrosian.jpg]
+
 ![Tigran Petrosian](images/dunya-petrosian.jpg "<span lang="en">Tigran Petrosian</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Harry Pot / Anefo</span> · <span lang="en">CC0</span>")
 
 Spassky 23 oyunda 12½–10½ kazandı. Seçtiğimiz oyun 21. oyun. FIDE Müzesi: [Boris Spassky](https://museum.fide.com/champions/boris-spassky).
@@ -951,6 +1047,8 @@ Spassky 23 oyunda 12½–10½ kazandı. Seçtiğimiz oyun 21. oyun. FIDE Müzesi
 
 *Moskova (SSCB)*
 
+[KART images/dunya-spassky.jpg]
+
 Petrosian ünvanını 12½–11½ gibi dar farkla korudu. Seçtiğimiz oyun 22. oyun. FIDE Müzesi: [Tigran Petrosian](https://museum.fide.com/champions/tigran-petrosian).
 
 [Event "Dünya Şampiyonası"]
@@ -967,6 +1065,8 @@ Petrosian ünvanını 12½–11½ gibi dar farkla korudu. Seçtiğimiz oyun 22. 
 #### 1963 · Petrosian – Botvinnik
 
 *Moskova (SSCB)*
+
+[KART images/dunya-botvinnik.jpg]
 
 ![Mikhail Botvinnik](images/dunya-botvinnik.jpg "<span lang="en">Mikhail Botvinnik</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Harry Pot for Anefo ]]</span> · <span lang="en">CC BY-SA 3.0 nl</span>")
 
@@ -987,6 +1087,8 @@ Petrosian 22 oyunda 12½–9½ kazandı; bu maçtan sonra kaybeden şampiyonun o
 
 *Moskova (SSCB)*
 
+[KART images/dunya-tal.jpg]
+
 ![Mikhail Tal](images/dunya-tal.jpg "<span lang="en">Mikhail Tal</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Harry Pot for Anefo ]]</span> · <span lang="en">CC BY-SA 3.0 nl</span>")
 
 Rövanş: Botvinnik 21 oyunda 13–8 kazandı. Seçtiğimiz oyun, 21. oyun. FIDE Müzesi: [Mikhail Botvinnik](https://museum.fide.com/champions/michael-botvinnik).
@@ -1005,6 +1107,8 @@ Rövanş: Botvinnik 21 oyunda 13–8 kazandı. Seçtiğimiz oyun, 21. oyun. FIDE
 #### 1960 · Tal – Botvinnik
 
 *Moskova (SSCB)*
+
+[KART images/dunya-mac-1960.jpg]
 
 ![Botvinnik ve Tal, 22 Mart 1960 (Moskova)](images/dunya-mac-1960.jpg "<span lang="en">Botvinnik</span> ve <span lang="en">Tal</span>, 22 Mart 1960 (Moskova) · <span lang="en">Wikimedia Commons</span> · <span lang="en">Главархив Москвы</span> · <span lang="en">CC BY 4.0</span>")
 
@@ -1025,6 +1129,8 @@ Rövanş: Botvinnik 21 oyunda 13–8 kazandı. Seçtiğimiz oyun, 21. oyun. FIDE
 
 *Moskova (SSCB)*
 
+[KART images/dunya-smyslov.jpg]
+
 ![Vasily Smyslov](images/dunya-smyslov.jpg "<span lang="en">Vasily Smyslov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Koen Suyk / Anefo</span> · <span lang="en">CC0</span>")
 
 Rövanş hakkıyla oynanan maçı Botvinnik 12½–10½ kazandı. Seçtiğimiz oyun 18. oyun. FIDE Müzesi: [Mikhail Botvinnik](https://museum.fide.com/champions/michael-botvinnik).
@@ -1043,6 +1149,8 @@ Rövanş hakkıyla oynanan maçı Botvinnik 12½–10½ kazandı. Seçtiğimiz o
 #### 1957 · Smyslov – Botvinnik
 
 *Moskova (SSCB)*
+
+[KART images/dunya-mac-1957.jpg]
 
 ![Botvinnik (solda) ve Smyslov (sağda), Moskova](images/dunya-mac-1957.jpg "<span lang="en">Botvinnik</span> (solda) ve <span lang="en">Smyslov</span> (sağda), Moskova · <span lang="en">Wikimedia Commons</span> · <span lang="en">Anefo</span> · <span lang="en">CC0</span>")
 
@@ -1063,6 +1171,10 @@ Smyslov 22 oyunda 12½–9½ kazanıp şampiyon oldu. Seçtiğimiz oyun 20. oyun
 
 *Moskova (SSCB)*
 
+[KART images/dunya-x-botvinnik-a.jpg]
+
+![Mikhail Botvinnik](images/dunya-x-botvinnik-a.jpg "<span lang="en">Mikhail Botvinnik</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
+
 Yine 12–12; Botvinnik ünvanı bu kuralla korudu. Seçtiğimiz oyun, Botvinnik’in 16. oyundaki galibiyeti. FIDE Müzesi: [Mikhail Botvinnik](https://museum.fide.com/champions/michael-botvinnik).
 
 [Event "Dünya Şampiyonası"]
@@ -1079,6 +1191,8 @@ Yine 12–12; Botvinnik ünvanı bu kuralla korudu. Seçtiğimiz oyun, Botvinnik
 #### 1951 · Botvinnik – Bronstein
 
 *Moskova (SSCB)*
+
+[KART images/dunya-bronstein.jpg]
 
 ![David Bronstein](images/dunya-bronstein.jpg "<span lang="en">David Bronstein</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Joop van Bilsen / Anefo</span> · <span lang="en">CC0</span>")
 
@@ -1099,6 +1213,8 @@ Yine 12–12; Botvinnik ünvanı bu kuralla korudu. Seçtiğimiz oyun, Botvinnik
 
 *Lahey ve Moskova*
 
+[KART images/dunya-mac-1948.jpg]
+
 ![Soldan sağa: Euwe, Smyslov, Keres, Botvinnik, Reshevsky (Lahey, 1948)](images/dunya-mac-1948.jpg "Soldan sağa: <span lang="en">Euwe</span>, <span lang="en">Smyslov</span>, <span lang="en">Keres</span>, <span lang="en">Botvinnik</span>, <span lang="en">Reshevsky</span> (Lahey, 1948) · <span lang="en">Wikimedia Commons</span> · <span lang="en">J.D. Noske (ANEFO)</span> · <span lang="en">CC0</span>")
 
 Alekhine’in ölümünden sonra FIDE, beş oyunculu bir maç turnuvası düzenledi; Botvinnik 20 oyundan 14 puan alarak kazandı. Seçtiğimiz oyun, Botvinnik’in Keres’e karşı son turdaki galibiyeti. FIDE Müzesi: [Mikhail Botvinnik](https://museum.fide.com/champions/michael-botvinnik).
@@ -1117,6 +1233,8 @@ Alekhine’in ölümünden sonra FIDE, beş oyunculu bir maç turnuvası düzenl
 #### 1937 · Alekhine – Euwe
 
 *Hollanda*
+
+[KART images/dunya-alekhine.jpg]
 
 ![Alexander Alekhine](images/dunya-alekhine.jpg "<span lang="en">Alexander Alekhine</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">George Grantham Bain Collection (Library of…</span> · <span lang="en">Public domain</span>")
 
@@ -1137,6 +1255,8 @@ Alekhine rövanşı 25 oyunda 15½–9½ kazanıp ünvanı geri aldı. Seçtiği
 
 *Hollanda*
 
+[KART images/dunya-euwe.jpg]
+
 Euwe 30 oyunluk maçı 15½–14½ kazanıp şampiyon oldu; Alekhine’in ünvanı bir puan farkla kaybı. Seçtiğimiz oyun 26. oyun. FIDE Müzesi: [Max Euwe](https://museum.fide.com/champions/max-euwe).
 
 [Event "Dünya Şampiyonası"]
@@ -1153,6 +1273,8 @@ Euwe 30 oyunluk maçı 15½–14½ kazanıp şampiyon oldu; Alekhine’in ünvan
 #### 1934 · Alekhine – Bogoljubov
 
 *Almanya*
+
+[KART images/dunya-bogoljubov.jpg]
 
 ![Efim Bogoljubov](images/dunya-bogoljubov.jpg "<span lang="en">Efim Bogoljubov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
@@ -1173,6 +1295,10 @@ Euwe 30 oyunluk maçı 15½–14½ kazanıp şampiyon oldu; Alekhine’in ünvan
 
 *Almanya ve Hollanda*
 
+[KART images/dunya-x-alekhine-a.jpg]
+
+![Alexander Alekhine](images/dunya-x-alekhine-a.jpg "<span lang="en">Alexander Alekhine</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">George Grantham Bain Collection (Library of…</span> · <span lang="en">Public domain</span>")
+
 Alekhine ilk savunmasında Bogoljubov’u 25 oyunda 15½–9½ yendi. Seçtiğimiz oyun 12. oyun. FIDE Müzesi: [Alexander Alekhine](https://museum.fide.com/champions/alexander-alekhin).
 
 [Event "Dünya Şampiyonası"]
@@ -1189,6 +1315,8 @@ Alekhine ilk savunmasında Bogoljubov’u 25 oyunda 15½–9½ yendi. Seçtiğim
 #### 1927 · Alekhine – Capablanca
 
 *Buenos Aires (Arjantin)*
+
+[KART images/dunya-capablanca.jpg]
 
 ![José Raúl Capablanca](images/dunya-capablanca.jpg "<span lang="en">José Raúl Capablanca</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">AnonymousUnknown author (Keystone-France)</span> · <span lang="en">Public domain</span>")
 
@@ -1209,6 +1337,8 @@ Alekhine ilk savunmasında Bogoljubov’u 25 oyunda 15½–9½ yendi. Seçtiğim
 
 *Havana (Küba)*
 
+[KART images/dunya-lasker.jpg]
+
 ![Emanuel Lasker](images/dunya-lasker.jpg "<span lang="en">Emanuel Lasker</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Trans-Ocean News Service</span> · <span lang="en">CC BY 3.0</span>")
 
 Capablanca 14 oyundan sonra 9–5 öndeydi (4 galibiyet, hiç yenilgi yok); Lasker maçı bırakınca şampiyon oldu. Seçtiğimiz oyun 11. oyun. FIDE Müzesi: [José Raúl Capablanca](https://museum.fide.com/champions/jose-raul-capablanca).
@@ -1227,6 +1357,8 @@ Capablanca 14 oyundan sonra 9–5 öndeydi (4 galibiyet, hiç yenilgi yok); Lask
 #### 1908 · Lasker – Tarrasch
 
 *Düsseldorf, Münih (Almanya)*
+
+[KART images/dunya-tarrasch.jpg]
 
 ![Siegbert Tarrasch](images/dunya-tarrasch.jpg "<span lang="en">Siegbert Tarrasch</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
@@ -1247,6 +1379,8 @@ Tarrasch’ı 16 oyunda 10½–5½ yenen Lasker, 8 galibiyete ulaşarak maçı b
 
 *ABD*
 
+[KART images/dunya-marshall.jpg]
+
 ![Frank Marshall](images/dunya-marshall.jpg "<span lang="en">Frank Marshall</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Oxford and Dilhoff</span> · <span lang="en">Public domain</span>")
 
 Lasker, ABD şampiyonu Marshall’ı 15 oyunda 11½–3½ yendi; Marshall tek oyun kazanamadı. Seçtiğimiz oyun 15. oyun. FIDE Müzesi: [Emanuel Lasker](https://museum.fide.com/champions/emanuel-lasker).
@@ -1265,6 +1399,10 @@ Lasker, ABD şampiyonu Marshall’ı 15 oyunda 11½–3½ yendi; Marshall tek oy
 #### 1896–97 · Lasker – Steinitz
 
 *Moskova (Rusya)*
+
+[KART images/dunya-x-lasker-a.jpg]
+
+![Emanuel Lasker](images/dunya-x-lasker-a.jpg "<span lang="en">Emanuel Lasker</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
 ![Wilhelm Steinitz](images/dunya-steinitz.jpg "<span lang="en">Wilhelm Steinitz</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Schumann, Fritz</span> · <span lang="en">Public domain</span>")
 
@@ -1285,6 +1423,10 @@ Rövanş: Lasker 17 oyunda 12½–4½ kazandı. Seçtiğimiz oyun 17. oyun. FIDE
 
 *New York, Philadelphia, Montreal (ABD/Kanada)*
 
+[KART images/dunya-x-lasker-b.jpg]
+
+![Emanuel Lasker](images/dunya-x-lasker-b.jpg "<span lang="en">Emanuel Lasker</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Frank Eugene</span> · <span lang="en">Public domain</span>")
+
 Lasker 19 oyunda 12–7 kazanıp 25 yaşında şampiyon oldu. Seçtiğimiz oyun, maçı bitiren 19. oyun. FIDE Müzesi: [Emanuel Lasker](https://museum.fide.com/champions/emanuel-lasker).
 
 [Event "Dünya Şampiyonası"]
@@ -1301,6 +1443,8 @@ Lasker 19 oyunda 12–7 kazanıp 25 yaşında şampiyon oldu. Seçtiğimiz oyun,
 #### 1892 · Steinitz – Chigorin
 
 *Havana (Küba)*
+
+[KART images/dunya-chigorin.jpg]
 
 ![Mikhail Chigorin](images/dunya-chigorin.jpg "<span lang="en">Mikhail Chigorin</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
@@ -1321,6 +1465,8 @@ Chigorin’le ikinci maç, 23 oyunda 12½–10½. Seçtiğimiz oyun, maçı biti
 
 *New York (ABD)*
 
+[KART images/dunya-gunsberg.jpg]
+
 ![Isidor Gunsberg](images/dunya-gunsberg.jpg "<span lang="en">Isidor Gunsberg</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
 19 oyunluk maçı Steinitz 10½–8½ kazandı; Gunsberg 9 oyunu beraberlikle kapatmıştı. Seçtiğimiz oyun 18. oyun. FIDE Müzesi: [Wilhelm Steinitz](https://museum.fide.com/champions/wilhelm-steinitz).
@@ -1340,6 +1486,8 @@ Chigorin’le ikinci maç, 23 oyunda 12½–10½. Seçtiğimiz oyun, maçı biti
 
 *Havana (Küba)*
 
+[KART images/dunya-steinitz.jpg]
+
 Steinitz, Rus meydan okuyucuyu 17 oyunda 10½–6½ yendi. Seçtiğimiz oyun 16. oyun. FIDE Müzesi: [Wilhelm Steinitz](https://museum.fide.com/champions/wilhelm-steinitz).
 
 [Event "Dünya Şampiyonası"]
@@ -1356,6 +1504,8 @@ Steinitz, Rus meydan okuyucuyu 17 oyunda 10½–6½ yendi. Seçtiğimiz oyun 16.
 #### 1886 · Steinitz – Zukertort
 
 *New York, St. Louis, New Orleans (ABD)*
+
+[KART images/dunya-zukertort.jpg]
 
 ![Johannes Zukertort](images/dunya-zukertort.jpg "<span lang="en">Johannes Zukertort</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
@@ -1402,6 +1552,8 @@ Bu listeye başka isimler de eklenebilir: **Bent Larsen**, **Efim Geller**, **Sa
 
 *Moskova (Rusya)*
 
+[KART images/dunya-polgar.jpg]
+
 Judit Polgár, Rusya–Dünya karması maçında (Moskova, 9 Eylül 2002) eski dünya şampiyonu Kasparov'u yendi.
 
 [Event "Rusya – Dünya karması"]
@@ -1418,6 +1570,8 @@ Judit Polgár, Rusya–Dünya karması maçında (Moskova, 9 Eylül 2002) eski d
 #### 1991 · Ivanchuk – Kasparov
 
 *Linares (İspanya)*
+
+[KART images/dunya-ivanchuk.jpg]
 
 Linares 1991'in ilk turunda Ivanchuk, o sırada dünya şampiyonu olan Kasparov'u yendi.
 
@@ -1436,6 +1590,8 @@ Linares 1991'in ilk turunda Ivanchuk, o sırada dünya şampiyonu olan Kasparov'
 
 *Baguio (Filipinler)*
 
+[KART images/dunya-korchnoi.jpg]
+
 Baguio maçının 31. oyununda Korchnoi, şampiyon Karpov'u yenip skoru 5–5'e getirdi; maçı bir oyun sonra kaybetti.
 
 [Event "Dünya Şampiyonası"]
@@ -1452,6 +1608,8 @@ Baguio maçının 31. oyununda Korchnoi, şampiyon Karpov'u yenip skoru 5–5'e 
 #### 1970 · Larsen – Spassky
 
 *Belgrad (Yugoslavya)*
+
+[KART images/dunya-larsen.jpg]
 
 SSCB–Dünya karması maçında (Belgrad, 1970) Larsen, dünya şampiyonu Spassky'yi yendi.
 
@@ -1470,6 +1628,8 @@ SSCB–Dünya karması maçında (Belgrad, 1970) Larsen, dünya şampiyonu Spass
 
 *Moskova (SSCB)*
 
+[KART images/dunya-botvinnik.jpg]
+
 Alekhine Anma Turnuvası'nda (Moskova, 1956) Keres, o sırada dünya şampiyonu olan Botvinnik'i yendi.
 
 [Event "Alekhine Anma Turnuvası"]
@@ -1486,6 +1646,8 @@ Alekhine Anma Turnuvası'nda (Moskova, 1956) Keres, o sırada dünya şampiyonu 
 #### 1955 · Geller – Botvinnik
 
 *Moskova (SSCB)*
+
+[KART images/dunya-geller.jpg]
 
 SSCB Şampiyonası'nda (Moskova, 1955) Geller, dünya şampiyonu Botvinnik'i yendi.
 
@@ -1504,6 +1666,10 @@ SSCB Şampiyonası'nda (Moskova, 1955) Geller, dünya şampiyonu Botvinnik'i yen
 
 *Moskova (SSCB)*
 
+[KART images/dunya-x-botvinnik-a.jpg]
+
+![Mikhail Botvinnik](images/dunya-x-botvinnik-a.jpg "<span lang="en">Mikhail Botvinnik</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
+
 1955'teki SSCB–ABD telex maçında Reshevsky, dünya şampiyonu Botvinnik'i yendi.
 
 [Event "SSCB – ABD telex maçı"]
@@ -1520,6 +1686,8 @@ SSCB Şampiyonası'nda (Moskova, 1955) Geller, dünya şampiyonu Botvinnik'i yen
 #### 1951 · Bronstein – Botvinnik
 
 *Moskova (SSCB)*
+
+[KART images/dunya-bronstein.jpg]
 
 1951 maçının 22. oyununda Bronstein, şampiyon Botvinnik'i yendi; maç 12–12 bitti ve ünvan Botvinnik'te kaldı.
 
@@ -1538,6 +1706,8 @@ SSCB Şampiyonası'nda (Moskova, 1955) Geller, dünya şampiyonu Botvinnik'i yen
 
 *New York (ABD)*
 
+[KART images/dunya-nimzowitsch.jpg]
+
 New York 1927'de Nimzowitsch, aynı yılın sonunda dünya şampiyonu olacak Alekhine'i yendi.
 
 [Event "New York"]
@@ -1554,6 +1724,8 @@ New York 1927'de Nimzowitsch, aynı yılın sonunda dünya şampiyonu olacak Ale
 #### 1909 · Rubinstein – Lasker
 
 *St. Petersburg (Rusya)*
+
+[KART images/dunya-rubinstein.jpg]
 
 St. Petersburg 1909 turnuvasında Rubinstein, dünya şampiyonu Lasker'i yendi.
 
@@ -1572,6 +1744,8 @@ St. Petersburg 1909 turnuvasında Rubinstein, dünya şampiyonu Lasker'i yendi.
 
 *Düsseldorf, Münih (Almanya)*
 
+[KART images/dunya-tarrasch.jpg]
+
 1908 maçının 12. oyununda Tarrasch, şampiyon Lasker'i yendi; maçı yine de 10½–5½ kaybetti.
 
 [Event "Dünya Şampiyonası"]
@@ -1588,6 +1762,8 @@ St. Petersburg 1909 turnuvasında Rubinstein, dünya şampiyonu Lasker'i yendi.
 #### 1889 · Chigorin – Steinitz
 
 *Havana (Küba)*
+
+[KART images/dunya-chigorin.jpg]
 
 1889 maçının 7. oyununda Chigorin, şampiyon Steinitz'i yendi; maçı 10½–6½ Steinitz kazandı.
 
