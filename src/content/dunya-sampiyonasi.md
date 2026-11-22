@@ -4,7 +4,7 @@
 
 *Yazının güncel kısmı (maçın biçimi, ödüller, Adaylar Turnuvası sonuçları) Kasım 2026 başında yayımlanmış kaynaklara dayanıyor; tarihî bölümler için bildiğimiz standart tarihçelere. Rakamlarda, özellikle eski maçların skorlarında, kaynaklar arasında küçük farklar olabilir.*
 
-[World Chess](https://worldchess.com/news/topics/2026-world-chess-championship), de şampiyonayı haber sayfasında sürekli izliyor; [maç rehberi](https://worldchess.com/news/gukesh-vs-sindarov-everything-you-need-to-know-about-the-2026-world-chess-championship) tarihleri, biçimi ve ödülleri toplu veriyor.
+[World Chess](https://worldchess.com/news/topics/2026-world-chess-championship) de şampiyonayı haber sayfasında sürekli izliyor; [maç rehberi](https://worldchess.com/news/gukesh-vs-sindarov-everything-you-need-to-know-about-the-2026-world-chess-championship) tarihleri, biçimi ve ödülleri toplu veriyor.
 
 ![Gukesh Dommaraju](images/dunya-gukesh.jpg "<span lang="en">Gukesh Dommaraju</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Yunfan Zhao / lichess.org</span> · <span lang="en">CC BY-SA 4.0</span>")
 ![Javokhir Sindarov](images/dunya-sindarov.jpg "<span lang="en">Javokhir Sindarov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">TheBoburshokh</span> · <span lang="en">CC BY 4.0</span>")
