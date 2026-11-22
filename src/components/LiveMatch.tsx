@@ -209,7 +209,7 @@ export default function LiveMatch({ ready }: { ready: boolean }) {
         <aside className={`live-sf${ev ? '' : ' is-wait'}`} aria-label="Stockfish canlı analizi" aria-live="off">
           <p className="live-sf-head f-mono"><i aria-hidden="true" />Stockfish 19 · canlı analiz</p>
           <p className="live-sf-num f-display">{ev ? ev.num : '—'}</p>
-          <p className="live-sf-label">{ev ? ev.label : idle ? 'Maç başlayınca her konum burada canlı çözümlenecek.' : 'Konum çözümleniyor…'}</p>
+          <p className="live-sf-label">{ev ? ev.label : idle ? 'Maç başlayınca canlı konum analizi buradan izlenebilecek.' : 'Konum çözümleniyor…'}</p>
           <div className="live-sf-meter" aria-hidden="true"><span style={{ width: `${ev ? ev.white : 50}%` }} /></div>
           <div className="live-sf-meta f-mono"><span>Beyaz</span><span>{sf && !idle ? `Derinlik ${sf.depth}` : ''}</span><span>Siyah</span></div>
           <p className="live-sf-pv-title f-mono">En iyi devam yolu</p>
