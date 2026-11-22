@@ -1736,11 +1736,3 @@ St. Petersburg 1909 turnuvasında Rubinstein, dünya şampiyonu Lasker'i yendi.
 [View "player"]
 
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. O-O Qf6 7. d4 Nge7 8. Bg5 Qd6 9. d5 Nd8 10. Qa4 Bb6 11. Na3 Qg6 12. Bxe7 Kxe7 13. Nxe5! Qf6 14. Nf3 Qxc3 15. e5 c6 16. d6+ Kf8 17. Bb3 h6 18. Qh4 g5 19. Qh5 Qd3 20. Rad1 Qh7 21. Nc2 Kg7 22. Ncd4 Qg6 23. Qg4 h5 24. Nf5+ Kf8! 25. Qxg5 Qxg5 26. Nxg5 h4 27. Kh1 Rh5 28. f4! Ne6 29. g4 hxg3 30. Nxg3 Rh6 31. Nxf7 Kxf7 32. f5! Ke8 33. fxe6! dxe6 34. Ne4 1-0
-
-### Kaynaklar
-
-Güncel bilgiler için: [World Chess: Gukesh vs Sindarov rehberi](https://worldchess.com/news/gukesh-vs-sindarov-everything-you-need-to-know-about-the-2026-world-chess-championship), [Wikipedia: World Chess Championship 2026](https://en.wikipedia.org/wiki/World_Chess_Championship_2026), [Wikipedia: Candidates Tournament 2026](https://en.wikipedia.org/wiki/Candidates_Tournament_2026), [Wikipedia: Chess World Cup 2025](https://en.wikipedia.org/wiki/Chess_World_Cup_2025), [ChessBase: Gukesh vs Sindarov](https://chessbase.in/news/all-that-you-wanted-to-know-about-gukesh-vs-sindarov-world-chess-championship-2026), [chess.com: Candidates 2026 sonuçları](https://www.chess.com/news/view/sindarov-vaishali-win-7-fide-candidates-2026-conclusions).
-
-New York 2016 için: [World Chess: New York 2016](https://worldchess.com/nyc2016). Afişler için: [FIDE Müzesi](https://museum.fide.com/thematic_collections/world-championship-posters).
-
-FIDE: [Açık Satranç Müzesi, şampiyonlar](https://museum.fide.com/champions), [2026 maç sitesi](https://worldchampionship.fide.com/), [2018 fotoğraf galerisi](https://www.fide.com/images/stories/gallery/WCCM2018/index.html).
