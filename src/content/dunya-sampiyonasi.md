@@ -20,11 +20,10 @@ Adaylar'ın son sıralaması: Sindarov 10, Giri 8½, Caruana 7½, Wei Yi 7, Naka
 
 #### Peki Carlsen, Nakamura, Caruana?
 
-Bu soru tam olarak üç ayrı yanıt istiyor:
+Bu soru iki ayrı yanıt istiyor:
 
 - **Caruana ve Nakamura oynadı, ama kazanamadı.** Caruana 2024 FIDE Circuit galibi olarak, Nakamura ise 2025 Ağustos–2026 Ocak arasındaki en yüksek ortalama reytingle (ortalama 2810,5) Adaylar'a girdi; ikisi de 14 turun hepsini oynadı. Caruana üçüncü, Nakamura beşinci oldu. Nakamura'nın bu yoldan girişi tartışma konusu olmuştu: gerekli oyun sayısını doldurmak için dört ayrı Kuzey Amerika turnuvasına katılmıştı.
 - **Carlsen oynamadı.** Carlsen, Temmuz 2022'de ünvanını savunmayacağını açıklamıştı; Adaylar'a da katılmadı. Reyting yoluyla girişin şartı, belirlenen dönemde en az 40 reytingli klasik oyun oynamaktı; Carlsen o pencerede yalnızca 16 oyun oynamıştı (ortalaması 2839,3 ile en yüksekti, ama oyun sayısı yetmiyordu). Üstelik Adaylar'a girmekle ilgilenmediğini açıkça söylemişti: yani girmedi, çünkü girmek istemedi ve girmek için gereken oyun sayısını da oynamadı. Eylül 2026'daki bir söyleşide de Sindarov için “oldukça belirgin bir favori” demişti.
-- **Gukesh'in kendisi** zaten sistem gereği Adaylar'a katılamaz: şampiyonun yeri hazırdır.
 
 ![Magnus Carlsen](images/dunya-carlsen.jpg "<span lang="en">Magnus Carlsen</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
 ![Hikaru Nakamura](images/dunya-nakamura.jpg "<span lang="en">Hikaru Nakamura</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">ChessKelly</span> · <span lang="en">CC BY 4.0</span>")
@@ -59,7 +58,7 @@ Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor; her döngü geneld
 
 ### Eskiden nasıldı?
 
-Hayır, sistem hep böyle değildi. Aslında “dünya şampiyonluğu” kavramı bile 19. yüzyılın sonunda ortaya çıktı ve defalarca yeniden tanımlandı.
+Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının kendisi bile 19. yüzyılın sonlarında ortaya çıktı ve günümüze kadar defalarca yeniden tanımlandı.
 
 **Zaman çizelgesi: oyun sayısının sınırsız olduğu maçlar** (“ilk N galibiyet”, oyun sınırı yok; beraberlikler sayılmaz)
 
@@ -124,6 +123,7 @@ Aşağıda her şampiyon için *ünvanı kime karşı, nasıl aldığı* ve *nas
 <tr><td><strong>Karpov</strong> (FIDE, 1993–99)</td><td>1993: <strong>Kasparov</strong>'un ayrılmasıyla, <strong>Timman</strong>'ı 12½–8½ yenerek</td><td>1996'da <strong>Kamsky</strong>, 1998'de <strong>Anand</strong> karşısında ünvanı korudu; 1999'da savunmayı reddedince FIDE turnuva biçimine geçti.</td></tr>
 <tr class="era"><td colspan="3"><span class="era-years">1948 – 1993</span><span class="era-name">FIDE’nin yönettiği döngü</span></td></tr>
 <tr><td><strong>Kasparov</strong> (1985–93, PCA 1993–2000)</td><td>1985 Moskova: <strong>Karpov</strong>'a 13–11</td><td>1986, 1987 (12–12, ünvan şampiyonda kaldı), 1990'da <strong>Karpov</strong>'u yendi; 1993'te <strong>Short</strong>'u, 1995'te <strong>Anand</strong>'ı yendi; 2000'de Londra'da <strong>Kramnik</strong>'e kaybetti.</td></tr>
+<tr class="era-note"><td colspan="3"><span>1985</span> Sınırsız oyun sayısı (“ilk 6 galibiyet”) kaldırıldı; ünvan maçları sabit oyun sayısıyla oynanır</td></tr>
 <tr><td><strong>Karpov</strong> (1975–85)</td><td>1975: <strong>Fischer</strong>'in çekilmesiyle hükmen</td><td>1978 Baguio'da <strong>Korchnoi</strong>'u, 1981 Merano'da yine <strong>Korchnoi</strong>'u yendi. 1984–85'te <strong>Kasparov</strong>'a karşı maç yarıda kesildi (5–3 önde); 1985'te ünvanı kaybetti.</td></tr>
 <tr><td><strong>Fischer</strong> (1972–75)</td><td>1972, Reykjavik: <strong>Spassky</strong>'e karşı 12½–8½ (+7 −3 =11)</td><td>1975'te şartları kabul edilmediği için çekildi; ünvanı oynamadan kaybetti.</td></tr>
 <tr><td><strong>Spassky</strong> (1969–72)</td><td>1969, <strong>Petrosian</strong>'a karşı</td><td>1972'de Reykjavik'te <strong>Fischer</strong>'e 12½–8½ kaybetti.</td></tr>

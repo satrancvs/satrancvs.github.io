@@ -403,7 +403,7 @@
   },
   {
     "id": "dunya-sampiyonasi",
-    "slug": "taslak/dunya-satranc-sampiyonasi-2026",
+    "slug": "taslak/dunya-satranc-sampiyonasi",
     "unlisted": true,
     "cat": "Satranç tarihi",
     "cats": [
@@ -415,6 +415,8 @@
     "author": "Yayın ekibi",
     "date": "Ocak–Şubat–Mart 2027",
     "body": [],
-    "oldSlugs": []
+    "oldSlugs": [
+      "taslak/dunya-satranc-sampiyonasi-2026"
+    ]
   }
 ]
