@@ -67,7 +67,6 @@ export default function SfPanel({ boardRef, idle = false, idleText = '' }: { boa
       </div>
       <p className="live-sf-num f-display">{ev ? ev.num : '—'}</p>
       <p className="live-sf-label">{ev ? ev.label : !engineOn ? 'Analiz durduruldu. Anahtarla yeniden başlatabilirsiniz.' : idle ? idleText : 'Analiz ediliyor...'}</p>
-      <p className="live-sf-meta f-mono">{sf && !idle && engineOn ? `Derinlik ${sf.depth} / ${cfg.depth}` : '\u00a0'}</p>
       <p className="live-sf-pv-title f-mono">{cfg.lines > 1 ? 'En iyi devam yolları' : 'En iyi devam yolu'}</p>
       {rows.length ? (
         <ol className="live-sf-lines">{rows.map((r, i) => <li key={i}>{cfg.lines > 1 && <b className="f-mono">{r.num}</b>}<span>{r.text}</span></li>)}</ol>
