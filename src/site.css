@@ -667,3 +667,14 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .hub { width: 100vw; margin-left: calc(50% - 50vw); }
   html.post-page, html.post-page body { overflow-x: clip; }
 }
+
+/* Oyun seçici, tam ekrana göre: oynatıcı ekran yüksekliğine sığar, kartlar tek şeritte altta (on yıllar dikey etiketle ayrılır). */
+.picker .mpb-track { align-items: stretch; padding: .5rem .5rem .9rem; }
+.picker .mpb-row-title { writing-mode: vertical-rl; transform: rotate(180deg); flex: none; align-self: stretch; display: flex; align-items: center; justify-content: center; margin: 0 .2rem 0 .4rem !important; padding: 0 .5rem; border-right: 1px solid var(--line); font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+@media (min-width: 56em) {
+  .picker { min-height: calc(100svh - 3rem); display: flex; flex-direction: column; padding-top: 20px; padding-bottom: .75rem; }
+  .picker .mpb-main { flex: 1 1 auto; grid-template-columns: minmax(0, 1fr) 28rem; }
+  .picker .mpb-rails { margin-top: auto; padding-top: .9rem; border-top: 1px solid var(--line); }
+  .picker .mpb-card { flex-basis: 11.5rem; }
+  .picker .cp-game pgn-player:not(pgn-study pgn-player) { --board-size: max(380px, min(860px, 100cqw - 2rem, 100svh - 29rem)) !important; }
+}

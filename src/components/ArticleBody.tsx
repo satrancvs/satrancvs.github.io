@@ -731,7 +731,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
 
   // `[MAÇ SEÇİCİ: Etiket]` işaretinden sonraki `#### …` blokları: oyun seçici öğeleri. Üstteki oynatıcının (GameHub) menüsünde bir sekme olur; işaretin kendi yerinde bir şey çizilmez.
   const collectPicker = (i: number): { items: PickItem[]; end: number } => {
-    type Draft = { label: string; site: string; blurb: string; figs: string[]; gi?: number; header?: string; moves?: string };
+    type Draft = { label: string; site: string; blurb: string; figs: string[]; gi?: number; header?: string; moves?: string; kart?: string };
     const drafts: Draft[] = [];
     let cur: Draft | null = null;
     let j = i + 1;
@@ -740,6 +740,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       if (t.startsWith('#### ')) { cur = { label: t.slice(5).trim(), site: '', blurb: '', figs: [] }; drafts.push(cur); }
       else if (!cur) continue;
       else if (/^\*[^*]+\*$/.test(t)) cur.site = t.slice(1, -1);
+      else if (/^\[KART images\/[^\]\s]+\]$/.test(t)) cur.kart = t.slice(6, -1);
       else if (t.startsWith('[Event ')) { const gm = gameMoves(chunks, j); cur.gi = j; cur.header = t; cur.moves = gm.moves; if (gm.own) j++; }
       else if (isFigRow(t) || IMG_CHUNK.test(t)) cur.figs.push(t);
       else cur.blurb += `${cur.blurb ? ' ' : ''}${t}`;
@@ -749,7 +750,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       const paths = d.figs.flatMap((f) => [...f.matchAll(/\]\(([^)\s]+)/g)].map((m) => m[1]));
       const names = d.label.replace(/^[^·]*·\s*/, '').split(/\s+[–,]\s+|,\s*/).map((n) => n.trim().split(' ').pop()!.toLowerCase().replace('ó', 'o').replace('á', 'a').replace('ı', 'i'));
       const portrait = names.map((n) => `images/dunya-${n}.jpg`).find(hasImage); // fotoğrafsız maçta oyunculardan birinin portresi
-      const thumb = paths.find((x) => /dunya-afis/.test(x)) ?? paths.find((x) => /dunya-mac-/.test(x)) ?? paths[0] ?? portrait;
+      const thumb = d.kart ?? paths.find((x) => /dunya-afis/.test(x)) ?? paths.find((x) => /dunya-mac-/.test(x)) ?? paths[0] ?? portrait; // `[KART …]`: scripts/dunya-photos/assign_thumbs.py her kart için farklı görsel atar
       return {
         id: item.id,
         year: Number(d.label.match(/^\d{4}/)?.[0] ?? 0),
@@ -843,8 +844,8 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       i = end - 1;
     } else if (LIVE_MATCH.test(c)) {
       // Üstteki oynatıcı: canlı maç + (yazının ilerisindeki) seçici gruplar; hepsine oynatıcının menüsünden ulaşılır.
-      const groups: { label: string; items: PickItem[] }[] = [];
-      chunks.forEach((x, k) => { const m = x.trim().match(MATCH_PICKER); if (m) groups.push({ label: (m[1] ?? 'Seçme oyunlar').trim(), items: collectPicker(k).items }); });
+      const groups: { label: string; items: PickItem[]; flat?: boolean }[] = [];
+      chunks.forEach((x, k) => { const m = x.trim().match(MATCH_PICKER); if (m) { const label = (m[1] ?? 'Seçme oyunlar').trim(); groups.push({ label, items: collectPicker(k).items, flat: /Gukesh/.test(label) }); } });
       out.push(<GameHub key={i} ready={cp === 'ready'} groups={groups} />);
     } else if (CONTINUED.test(c)) {
       out.push(<Continued key={i} text={c} />);

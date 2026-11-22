@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
 import Markdown from 'markdown-to-jsx';
 import ProgressiveImage from '@/components/ProgressiveImage';
@@ -21,7 +21,7 @@ const two = (n: number) => String(n).padStart(2, '0');
 // Türkçe ek, on yılın adının son ünlüsüne göre: 2010'lar (on), 1990'lar (doksan), 1960'lar (altmış), 1940'lar (kırk), 1930'lar (otuz); 2020'ler (yirmi), 2000'ler (bin), 1980'ler (seksen), 1970'ler (yetmiş), 1950'ler (elli).
 const decadeLabel = (y: number) => `${Math.floor(y / 10) * 10}'${[1, 3, 4, 6, 9].includes(Math.floor(y / 10) % 10) ? 'lar' : 'ler'}`;
 
-export default function MatchPicker({ items }: { items: PickItem[] }) {
+export default function MatchPicker({ items, flat = false }: { items: PickItem[]; flat?: boolean }) {
   const [idx, setIdx] = useState(0);
   const root = useRef<HTMLElement>(null);
   const cur = items[idx];
@@ -32,10 +32,18 @@ export default function MatchPicker({ items }: { items: PickItem[] }) {
   };
 
   const rows = useMemo(() => {
+    // flat: tüm oyunlar tek sırada, yıllara bölünmeden
+    if (flat) return [['', items.map((_, i) => i)]] as [string, number[]][];
     const m = new Map<string, number[]>();
     items.forEach((c, i) => { const k = decadeLabel(c.year); m.set(k, [...(m.get(k) ?? []), i]); });
     return [...m.entries()];
-  }, [items]);
+  }, [items, flat]);
+
+  // Seçilen kart raf şeridinde görünür kalsın
+  useEffect(() => {
+    const el = root.current?.querySelector('.mpb-card.on') as HTMLElement | null;
+    el?.scrollIntoView({ inline: 'nearest', block: 'nearest' });
+  }, [idx]);
 
   return (
     <section ref={root} className="picker scroll-mt-8" aria-label="Seçilmiş maçlar">
@@ -61,10 +69,10 @@ export default function MatchPicker({ items }: { items: PickItem[] }) {
       </div>
 
       <div className="mpb-rails">
-        {rows.map(([label, ids]) => (
-          <div key={label} className="mpb-row">
-            <h5 className="mpb-row-title f-mono">{label}</h5>
-            <div className="mpb-track" role="list">
+        <div className="mpb-track" role="list">
+          {rows.map(([label, ids]) => (
+            <Fragment key={label || 'tum'}>
+              {!flat && <h5 className="mpb-row-title f-mono">{label}</h5>}
               {ids.map((i) => {
                 const c = items[i];
                 return (
@@ -79,9 +87,9 @@ export default function MatchPicker({ items }: { items: PickItem[] }) {
                   </button>
                 );
               })}
-            </div>
-          </div>
-        ))}
+            </Fragment>
+          ))}
+        </div>
       </div>
     </section>
   );
