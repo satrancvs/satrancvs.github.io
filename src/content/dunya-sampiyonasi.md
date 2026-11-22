@@ -16,7 +16,19 @@ Gelelim karşısındaki isme. **Sindarov**, sistemin ikinci kapısından, yani o
 - Kasım 2025’te Goa’daki **FIDE Dünya Kupası**’nı (206 oyunculu eleme turnuvası) kazandı. 16. seri olarak başladığı turnuvada finalde Wei Yi’yi ancak ikinci hızlı oyun kararında yenebildi. 19 yaş 11 ayla en genç Dünya Kupası galibi ve ilk Özbek galip oldu; bu zafer ona Adaylar’a giriş bileti kazandırdı.
 - Mart–Nisan 2026’da Kıbrıs’ın Pegeia kasabasında oynanan, sekiz oyunculu, çift turlu döner **Adaylar Turnuvası**’nı 14 turda **10 puanla** kazandı: altı galibiyet, hiç yenilgi yok. Turnuvayı bir tur kala garantiledi ve mevcut çift turlu döner biçimde alınmış en yüksek puana ulaştı.
 
-Adaylar’ın son sıralaması şöyle oldu: Sindarov 10, Giri 8½, Caruana 7½, Wei Yi 7, Nakamura 6½, Blübaum 6, Praggnanandhaa 6, Esipenko 4½.
+Adaylar’ın son sıralaması şöyle oldu (her kutuda iki rakibin iki oyunu, oynanış sırasıyla):
+
+<pre>
+                          1  2  3  4  5  6  7  8   Puan
+ 1 GM Sindarov            * ½½ 1½ 1½ 1½ ½½ 11 1½   10
+ 2 GM Giri               ½½  * ½1 ½½ ½½ ½1 01 1½   8½
+ 3 GM Caruana            0½ ½0  * 1½ 10 1½ ½½ ½1   7½
+ 4 GM Wei Yi             0½ ½½ 0½  * ½½ ½½ ½½ 11   7
+ 5 GM Nakamura           0½ ½½ 01 ½½  * ½½ ½½ ½½   6½
+=6 GM Blübaum            ½½ ½0 0½ ½½ ½½  * ½½ ½½   6
+=6 GM Praggnanandhaa     00 10 ½½ ½½ ½½ ½½  * ½½   6
+ 8 GM Esipenko           0½ 0½ ½0 00 ½½ ½½ ½½  *   4½
+</pre>
 
 #### Peki Carlsen, Nakamura, Caruana?
 
