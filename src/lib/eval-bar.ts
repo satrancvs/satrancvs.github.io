@@ -5,7 +5,7 @@ const SF = `${import.meta.env.BASE_URL}stockfish/stockfish-19-lite-single.js`;
 const DEPTH = 16;
 const MOVETIME = 2500; // ms: derinliğe ulaşılmasa bile bu sürede durur
 
-type Listener = (cp: number | null, mate: number | null) => void;
+type Listener = (cp: number | null, mate: number | null, depth: number, pv: string[], fen: string) => void;
 
 // Tek bir motor işçisi tüm oynatıcıları sırayla çözer; yeni istek gelince eskisi durdurulur (yalnızca son istenen konum analiz edilir).
 let worker: Worker | null = null;
@@ -34,7 +34,9 @@ function start(): Worker | null {
       if (m && /\bdepth (\d+)/.test(line) && !/\b(lowerbound|upperbound)\b/.test(line)) {
         const white = current.fen.split(' ')[1] !== 'b' ? 1 : -1; // skor hamle sırası olanın gözünden; beyazınkine çevrilir
         const v = Number(m[2]) * white;
-        current.cb(m[1] === 'cp' ? v : null, m[1] === 'mate' ? v : null);
+        const depth = Number(line.match(/\bdepth (\d+)/)![1]);
+        const pv = (line.match(/ pv (.+)$/)?.[1] ?? '').trim().split(/\s+/).filter(Boolean);
+        current.cb(m[1] === 'cp' ? v : null, m[1] === 'mate' ? v : null, depth, pv, current.fen);
       }
     }
     if (line.startsWith('bestmove')) { busy = false; current = null; next(); }
@@ -74,8 +76,10 @@ function attach(player: PlayerEl) {
     if (!ev || !ev.bar) return;
     // engine.load() çubuğu "PGN'de eval yok" diye kapatmıştır; burada Stockfish'e bağlanıp açılır, oynatıcının hamle başına sıfırlaması susturulur.
     ev.live = true;
-    const show = (cp: number | null, mate: number | null) => {
+    const show: Listener = (cp, mate, depth, pv, fen) => {
       if (!player.isConnected) return;
+      // Canlı analiz paneli (LiveMatch) için: oynatıcıdan yukarı kabarcıklanan olay.
+      player.dispatchEvent(new CustomEvent('cp-sf', { bubbles: true, detail: { cp, mate, depth, pv, fen } }));
       ev.setScore(mate !== null ? (mate > 0 ? 8 : -8) : (cp ?? 0) / 100);
       const label = mate !== null ? `${mate > 0 ? '+' : '−'}M${Math.abs(mate)}` : `${(cp ?? 0) > 0 ? '+' : (cp ?? 0) < 0 ? '−' : ''}${Math.abs((cp ?? 0) / 100).toFixed(1)}`;
       ev.bar!.title = `Stockfish: ${label}`;
