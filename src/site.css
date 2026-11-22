@@ -897,3 +897,8 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 /* Oyuncu hakkında bilgi: oynatıcıdan sonra, yazı metni gibi; yalnızca ekrandaki oyunun oyuncusu için */
 .picker .mpb-bio-prose { max-width: 44.5rem; margin: 1.6rem auto 0; padding: 0 1rem; }
 .picker .mpb-bio-prose p { margin: 0; font-size: clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height: 1.7; color: rgb(var(--fg-rgb) / .95); }
+/* Soldaki Stockfish paneli tahta sütunuyla aynı yükseklikte biter (içeriği uzunsa panel içinde kayar) */
+@media (min-width: 56em) {
+  .live-match > .live-stage { align-items: stretch; }
+  .live-stage > .live-sf, .picker .mpb-main > .live-sf { contain: size; align-self: stretch; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--accent) transparent; }
+}
