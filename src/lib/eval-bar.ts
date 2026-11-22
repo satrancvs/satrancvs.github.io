@@ -100,6 +100,17 @@ const done = new WeakSet<Element>();
 function attach(player: PlayerEl) {
   if (done.has(player) || !player.ready) return;
   done.add(player);
+  // Canlı ekran / maç seçici (.hub): tüm oyunlar 0,5x hızda oynar (ayarlar düğmesi gizli olduğundan sabit).
+  if (player.closest('.hub')) {
+    player.ready.then(() => {
+      const e = player._engine as unknown as { _speedIdx: number; state: { speed: number } } | undefined;
+      if (!e) return;
+      e._speedIdx = 0;
+      e.state.speed = 0.5;
+      const label = player.querySelector('.speed-label');
+      if (label) label.textContent = '0.5x';
+    }).catch(() => {});
+  }
   if (player.closest('.live-idle')) {
     // maç başlamadan: renksiz, boş oynatıcı; çubuk görünür ama nötr (%50), analiz yok
     player.ready.then(() => {

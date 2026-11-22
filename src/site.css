@@ -868,3 +868,5 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .picker .mpb-nextcard { margin-top: auto; }
 }
 @media (max-width: 55.99em) { .picker .mpb-nextcard { margin-top: 1.4rem; } }
+/* Canlı ekran ve maç seçici: ayarlar düğmesi yok (oyunlar 0,5x hıza sabit) */
+.hub .board-toolbar { display: none !important; }
