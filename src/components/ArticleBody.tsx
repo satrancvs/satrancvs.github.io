@@ -7,7 +7,7 @@ import Markdown from 'markdown-to-jsx';
 import { Chess } from 'chess.js';
 import { useChessPublica } from '@/lib/chesspublica';
 import { curlyComments, curlyProse, watchComments } from '@/lib/curly-dom';
-import ProgressiveImage, { boxWidth, isSmallImage } from '@/components/ProgressiveImage';
+import ProgressiveImage, { boxWidth, hasImage, isSmallImage } from '@/components/ProgressiveImage';
 import { watchInlinePlay } from '@/lib/inline-play';
 import { watchVarLead } from '@/lib/var-lead';
 import { watchLocalization } from '@/lib/localize-dom';
@@ -16,6 +16,8 @@ import { watchVariationFix } from '@/lib/variation-fix';
 import { GLYPH_COLOR } from '@/components/FenDiagram';
 import { splitChunks } from '@/lib/split-chunks';
 import LiveMatch from '@/components/LiveMatch';
+import MatchPicker from '@/components/MatchPicker';
+import type { PickItem } from '@/components/MatchPicker';
 import { watchEvalBar } from '@/lib/eval-bar';
 
 // Makale gövdesi: markdown metni + PGN oyun blokları + çapraz tablo + video bağlantısı.
@@ -565,6 +567,9 @@ function Quote({ children }: { children?: ReactNode }) {
 const CONTINUED = /^Devamı gelecek\./;
 // `[CANLI MAÇ]` tek başına bir paragrafsa: Dünya Şampiyonası 2026 canlı bölümü (src/components/LiveMatch.tsx).
 const LIVE_MATCH = /^\[CANLI MAÇ\]$/;
+// `[MAÇ SEÇİCİ]`: kendisinden sonraki, bir sonraki `### ` başlığa kadar olan `#### Yıl · Oyuncular` blokları (yer, fotoğraflar, kısa metin, `[Event …]` oyunu)
+// oynatıcı + kart rafları görünümü olur (MatchPicker); oyunlar tek tek değil, seçilen oyun oynatıcıda oynatılır.
+const MATCH_PICKER = /^\[MAÇ SEÇİCİ\]$/;
 function Continued({ text }: { text: string }) {
   const rest = text.replace(CONTINUED, '').trim().replace(/\.$/, ''); // son nokta bağlantı hapından sonra tek başına kalmasın
   return (
@@ -792,6 +797,45 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
         </GameSection>,
       );
       if (own) i++;
+    } else if (MATCH_PICKER.test(c)) {
+      type Draft = { label: string; site: string; blurb: string; figs: string[]; gi?: number; header?: string; moves?: string };
+      const drafts: Draft[] = [];
+      let cur: Draft | null = null;
+      let j = i + 1;
+      for (; j < chunks.length && !chunks[j].trim().startsWith('### '); j++) {
+        const t = chunks[j].trim();
+        if (t.startsWith('#### ')) { cur = { label: t.slice(5).trim(), site: '', blurb: '', figs: [] }; drafts.push(cur); }
+        else if (!cur) continue;
+        else if (/^\*[^*]+\*$/.test(t)) cur.site = t.slice(1, -1);
+        else if (t.startsWith('[Event ')) { const gm = gameMoves(chunks, j); cur.gi = j; cur.header = t; cur.moves = gm.moves; if (gm.own) j++; }
+        else if (isFigRow(t) || IMG_CHUNK.test(t)) cur.figs.push(t);
+        else cur.blurb += `${cur.blurb ? ' ' : ''}${t}`;
+      }
+      const items: PickItem[] = drafts.filter((d) => d.header).map((d) => {
+        const item = games.find((g) => g.at === d.gi)!;
+        const paths = d.figs.flatMap((f) => [...f.matchAll(/\]\(([^)\s]+)/g)].map((m) => m[1]));
+        const names = d.label.replace(/^[^·]*·\s*/, '').split(/\s+[–,]\s+|,\s*/).map((n) => n.trim().split(' ').pop()!.toLowerCase().replace('ó', 'o').replace('á', 'a').replace('ı', 'i'));
+        const portrait = names.map((n) => `images/dunya-${n}.jpg`).find(hasImage); // fotoğrafsız maçta oyunculardan birinin portresi
+        const thumb = paths.find((x) => /dunya-afis/.test(x)) ?? paths.find((x) => /dunya-mac-/.test(x)) ?? paths[0] ?? portrait;
+        return {
+          id: item.id,
+          year: Number(d.label.match(/^\d{4}/)?.[0] ?? 0),
+          label: d.label,
+          title: d.label.replace(/^[^·]*·\s*/, ''),
+          site: d.site,
+          blurb: d.blurb,
+          thumb,
+          figures: d.figs.length ? d.figs.map((f, k) => (isFigRow(f) ? <FigureRow key={k} chunk={f} /> : <Figure key={k} chunk={f} />)) : null,
+          screen: (
+            <GameSection item={item}>
+              {useFallback ? <Game header={d.header!} moves={d.moves!} /> : <PgnGame header={d.header!} moves={d.moves!} />}
+            </GameSection>
+          ),
+        };
+      });
+      gameNo += items.length;
+      out.push(<MatchPicker key={i} items={items} />);
+      i = j - 1;
     } else if (LIVE_MATCH.test(c)) {
       out.push(<LiveMatch key={i} ready={cp === 'ready'} />);
     } else if (CONTINUED.test(c)) {

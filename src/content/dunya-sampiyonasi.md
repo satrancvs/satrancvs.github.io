@@ -1,6 +1,6 @@
 [CANLI MAÇ]
 
-24 Kasım 2026'da İsviçre'nin Cenevre yakınlarındaki Cologny'de, Fondation Martin Bodmer'de bir Dünya Satranç Şampiyonası maçı başlıyor: şampiyon Gukesh Dommaraju (Hindistan) ile meydan okuyucu Javokhir Sindarov (Özbekistan) karşı karşıya. İkisi de 20 yaşında; FIDE'nin deyişiyle tarihin en genç dünya şampiyonası karşılaşması. Bu yazıda dört soruya yanıt arıyoruz: neden bu iki oyuncu? Şampiyon nasıl belirleniyor? Geçmişte şampiyonlar unvanı nasıl aldı, nasıl korudu? Ve unvanı hiç alamamış ama alması gereken efsaneler kimler?
+24 Kasım 2026'da İsviçre'nin Cenevre yakınlarındaki Cologny'de, Fondation Martin Bodmer'de bir Dünya Satranç Şampiyonası maçı başlıyor: şampiyon Gukesh Dommaraju (Hindistan) ile meydan okuyucu Javokhir Sindarov (Özbekistan) karşı karşıya. İkisi de 20 yaşında; FIDE'nin deyişiyle tarihin en genç dünya şampiyonası karşılaşması. Bu yazıda dört soruya yanıt arıyoruz: neden bu iki oyuncu? Şampiyon nasıl belirleniyor? Geçmişte şampiyonlar ünvanı nasıl aldı, nasıl korudu? Ve ünvanı hiç alamamış ama alması gereken efsaneler kimler?
 
 *Yazının güncel kısmı (maçın biçimi, ödüller, Adaylar Turnuvası sonuçları) Kasım 2026 başında yayımlanmış kaynaklara dayanıyor; tarihî bölümler için bildiğimiz standart tarihçelere. Rakamlarda, özellikle eski maçların skorlarında, kaynaklar arasında küçük farklar olabilir.*
 
@@ -11,7 +11,7 @@
 
 ### Neden Gukesh ve Sindarov?
 
-**Gukesh** şampiyon, çünkü unvanı Aralık 2024'te Singapur'da, o zamanki şampiyon Ding Liren'i 7½–6½ yenerek aldı. 18 yaşında olan Gukesh, resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu oldu. Oraya da bir Adaylar Turnuvası'nı kazanarak gelmişti (Toronto 2024; 17 yaşında en genç meydan okuyucu). Yani Gukesh sistemin kapılarından geçip unvanı aldı; şimdi savunuyor.
+**Gukesh** şampiyon, çünkü ünvanı Aralık 2024'te Singapur'da, o zamanki şampiyon Ding Liren'i 7½–6½ yenerek aldı. 18 yaşında olan Gukesh, resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu oldu. Oraya da bir Adaylar Turnuvası'nı kazanarak gelmişti (Toronto 2024; 17 yaşında en genç meydan okuyucu). Yani Gukesh sistemin kapılarından geçip ünvanı aldı; şimdi savunuyor.
 
 **Sindarov** meydan okuyucu, çünkü sistemin ikinci kapısından, yani on dört turluk Adaylar Turnuvası'ndan birinci çıktı. Yolu şöyle:
 
@@ -25,7 +25,7 @@ Adaylar'ın son sıralaması: Sindarov 10, Giri 8½, Caruana 7½, Wei Yi 7, Naka
 Bu soru tam olarak üç ayrı yanıt istiyor:
 
 - **Caruana ve Nakamura oynadı, ama kazanamadı.** Caruana 2024 FIDE Circuit galibi olarak, Nakamura ise 2025 Ağustos–2026 Ocak arasındaki en yüksek ortalama reytingle (ortalama 2810,5) Adaylar'a girdi; ikisi de 14 turun hepsini oynadı. Caruana üçüncü, Nakamura beşinci oldu. Nakamura'nın bu yoldan girişi tartışma konusu olmuştu: gerekli oyun sayısını doldurmak için dört ayrı Kuzey Amerika turnuvasına katılmıştı.
-- **Carlsen oynamadı.** Carlsen, Temmuz 2022'de unvanını savunmayacağını açıklamıştı; Adaylar'a da katılmadı. Reyting yoluyla girişin şartı, belirlenen dönemde en az 40 reytingli klasik oyun oynamaktı; Carlsen o pencerede yalnızca 16 oyun oynamıştı (ortalaması 2839,3 ile en yüksekti, ama oyun sayısı yetmiyordu). Üstelik Adaylar'a girmekle ilgilenmediğini açıkça söylemişti: yani girmedi, çünkü girmek istemedi ve girmek için gereken oyun sayısını da oynamadı. Eylül 2026'daki bir söyleşide de Sindarov için “oldukça belirgin bir favori” demişti.
+- **Carlsen oynamadı.** Carlsen, Temmuz 2022'de ünvanını savunmayacağını açıklamıştı; Adaylar'a da katılmadı. Reyting yoluyla girişin şartı, belirlenen dönemde en az 40 reytingli klasik oyun oynamaktı; Carlsen o pencerede yalnızca 16 oyun oynamıştı (ortalaması 2839,3 ile en yüksekti, ama oyun sayısı yetmiyordu). Üstelik Adaylar'a girmekle ilgilenmediğini açıkça söylemişti: yani girmedi, çünkü girmek istemedi ve girmek için gereken oyun sayısını da oynamadı. Eylül 2026'daki bir söyleşide de Sindarov için “oldukça belirgin bir favori” demişti.
 - **Gukesh'in kendisi** zaten sistem gereği Adaylar'a katılamaz: şampiyonun yeri hazırdır.
 
 ![Magnus Carlsen](images/dunya-carlsen.jpg "<span lang="en">Magnus Carlsen</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
@@ -39,7 +39,7 @@ Bu soru tam olarak üç ayrı yanıt istiyor:
 ![R Praggnanandhaa](images/dunya-pragg.jpg "<span lang="en">R Praggnanandhaa</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Frans Peeters</span> · <span lang="en">CC BY-SA 2.0</span>")
 ![Andrey Esipenko](images/dunya-esipenko.jpg "<span lang="en">Andrey Esipenko</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
 
-Başka bir deyişle “dünyanın en iyisi” ile “dünya şampiyonu” aynı şey olmak zorunda değil. Unvan, kurallarla belirlenmiş bir döngüye girmeyi, o döngüyü kazanmayı ve unvan sahibini bir maçta yenmeyi gerektirir. Sistem böyle kurulduğundan, ünlü bir adın bu yarışa girmeyi seçmemesi mümkün; ve bir yıl içinde dünyanın en formda oyuncusu bile Adaylar'da kötü bir iki hafta geçirebilir. Bu yıl Sindarov'un tüm turnuvada yenilmemesi tesadüf değil, ama Nakamura ve Caruana'nın tablonun ortalarında kalması da sistemin doğal sonucu.
+Başka bir deyişle “dünyanın en iyisi” ile “dünya şampiyonu” aynı şey olmak zorunda değil. Ünvan, kurallarla belirlenmiş bir döngüye girmeyi, o döngüyü kazanmayı ve ünvan sahibini bir maçta yenmeyi gerektirir. Sistem böyle kurulduğundan, ünlü bir adın bu yarışa girmeyi seçmemesi mümkün; ve bir yıl içinde dünyanın en formda oyuncusu bile Adaylar'da kötü bir iki hafta geçirebilir. Bu yıl Sindarov'un tüm turnuvada yenilmemesi tesadüf değil, ama Nakamura ve Caruana'nın tablonun ortalarında kalması da sistemin doğal sonucu.
 
 #### Maç nasıl oynanıyor?
 
@@ -49,7 +49,7 @@ Başka bir deyişle “dünyanın en iyisi” ile “dünya şampiyonu” aynı 
 - **Ödül fonu 2,5 milyon dolar**: kazanılan her oyun için 200.000 dolar, kalanı eşit paylaşılır. Skor 7½–6½ ise kazanan 1,3 milyon, kaybeden 1,2 milyon dolar alır.
 - Maç 24 Kasım–12 Aralık arasında; dinlenme günleri 27 Kasım, 1, 5 ve 9 Aralık; eşitlik halinde ek oyunlar 12 Aralık'ta.
 
-Kâğıt üzerinde Sindarov favori: reytingi 2782 (dünya 4.), Gukesh'in 2710'u (dünya 26.) karşısında. Gukesh'in 2025'ten beri formu düşük; Norveç Satranç 2026 ve Chennai Grand Masters 2026'yı sonuncu bitirdi ve Elo sisteminin 1971'de getirilmesinden beri en düşük reytingli şampiyon. Aralarındaki üç klasik oyunun ikisini Sindarov kazandı; sonuncusu (Tata Steel 2026) 78 hamlelik beraberlikle bitti. Ama bir unvan maçı reytinglerle oynanmaz: 14 oyun boyunca sinir ve hazırlık da oynar.
+Kâğıt üzerinde Sindarov favori: reytingi 2782 (dünya 4.), Gukesh'in 2710'u (dünya 26.) karşısında. Gukesh'in 2025'ten beri formu düşük; Norveç Satranç 2026 ve Chennai Grand Masters 2026'yı sonuncu bitirdi ve Elo sisteminin 1971'de getirilmesinden beri en düşük reytingli şampiyon. Aralarındaki üç klasik oyunun ikisini Sindarov kazandı; sonuncusu (Tata Steel 2026) 78 hamlelik beraberlikle bitti. Ama bir ünvan maçı reytinglerle oynanmaz: 14 oyun boyunca sinir ve hazırlık da oynar.
 
 ### Dünya Şampiyonu nasıl belirleniyor?
 
@@ -57,7 +57,7 @@ Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor; her döngü geneld
 
 1. **Adaylar Turnuvası'na kimler girer?** Sekiz kişi. Bugünkü kurallarda yer şu yollarla kazanılıyor: Dünya Kupası'ndaki ilk üç, Grand Swiss'teki ilk iki (2025'te Giri ve Blübaum), önceki iki yılın FIDE Circuit (turnuva puanı) birincileri (Caruana, Praggnanandhaa) ve bir de reyting kuralı (Nakamura). 2026'nın Adaylar'ı bu dört yolun hepsinden oyuncu getirdi.
 2. **Adaylar Turnuvası**: sekiz oyuncu, çift devreli, 14 tur. Birinci, şampiyonun karşısına çıkacak meydan okuyucudur.
-3. **Unvan maçı**: 14 klasik oyunluk maç. Şampiyon, **kendi unvanını savunarak** doğrudan maça gelir; Adaylar'a katılmaz.
+3. **Ünvan maçı**: 14 klasik oyunluk maç. Şampiyon, **kendi ünvanını savunarak** doğrudan maça gelir; Adaylar'a katılmaz.
 
 ### Eskiden nasıldı?
 
@@ -65,31 +65,31 @@ Hayır, sistem hep böyle değildi. Aslında “dünya şampiyonluğu” kavram�
 
 #### 1) Birleşme ve bugünkü sistem (2006–)
 
-2006'da **Kramnik–Topalov** birleşme maçı Elista'da oynandı (6–6, ardından hızlı oyunlarda Kramnik kazandı; maç bir “tuvalet skandalı”yla da anılır) ve unvan tek sahibe döndü. 2007'de turnuva biçimi (Meksika), 2008'den itibaren yine maç biçimi kullanıldı. FIDE, 2013'ten itibaren Adaylar'ı **sekiz kişilik çift devreli turnuva** olarak yerleştirdi; şampiyona doğrudan meydan okunur. Son yıllarda yenilikler: Dünya Kupası ve Grand Swiss yolu, FIDE Circuit, ve eşitlik hâlinde dört hızlı, iki hızlı, iki yıldırım ve sonunda “ani ölüm” oyunu.
+2006'da **Kramnik–Topalov** birleşme maçı Elista'da oynandı (6–6, ardından hızlı oyunlarda Kramnik kazandı; maç bir “tuvalet skandalı”yla da anılır) ve ünvan tek sahibe döndü. 2007'de turnuva biçimi (Meksika), 2008'den itibaren yine maç biçimi kullanıldı. FIDE, 2013'ten itibaren Adaylar'ı **sekiz kişilik çift devreli turnuva** olarak yerleştirdi; şampiyona doğrudan meydan okunur. Son yıllarda yenilikler: Dünya Kupası ve Grand Swiss yolu, FIDE Circuit, ve eşitlik hâlinde dört hızlı, iki hızlı, iki yıldırım ve sonunda “ani ölüm” oyunu.
 
 #### 2) Bölünme: iki şampiyon (1993–2006)
 
-1993'te Kasparov ve Nigel Short, FIDE'nin organizasyonundan memnun olmayarak **Profesyonel Satranç Birliği**'ni (PCA) kurdu; kendi aralarında Londra'da unvan maçı oynadılar (Kasparov kazandı). FIDE ise Karpov'a şampiyonluk unvanı verdi (Jan Timman'ı yenmişti) ve 1990'larda “**iki dünya şampiyonu**” vardı. 1990'ların sonunda FIDE ayrıca şampiyonayı **tek elemeli bir turnuva** hâline getirdi: onlarca oyuncu, kısa maçlar, hızlı tiebreak'ler (Khalifman 1999, Anand 2000, Ponomariov 2002, Kasimdzhanov 2004). Böyle bir turnuva en güçlü oyuncuyu değil, o hafta en sağlam oyuncuyu bulur. Bu yüzden herkes “asıl” şampiyonu Kasparov'un kaybettiği 2000'deki Londra maçında arıyordu: **Kramnik**, Kasparov'u (+2 =13) yenerek “klasik” şampiyon oldu.
+1993'te Kasparov ve Nigel Short, FIDE'nin organizasyonundan memnun olmayarak **Profesyonel Satranç Birliği**'ni (PCA) kurdu; kendi aralarında Londra'da ünvan maçı oynadılar (Kasparov kazandı). FIDE ise Karpov'a şampiyonluk ünvanı verdi (Jan Timman'ı yenmişti) ve 1990'larda “**iki dünya şampiyonu**” vardı. 1990'ların sonunda FIDE ayrıca şampiyonayı **tek elemeli bir turnuva** hâline getirdi: onlarca oyuncu, kısa maçlar, hızlı tiebreak'ler (Khalifman 1999, Anand 2000, Ponomariov 2002, Kasimdzhanov 2004). Böyle bir turnuva en güçlü oyuncuyu değil, o hafta en sağlam oyuncuyu bulur. Bu yüzden herkes “asıl” şampiyonu Kasparov'un kaybettiği 2000'deki Londra maçında arıyordu: **Kramnik**, Kasparov'u (+2 =13) yenerek “klasik” şampiyon oldu.
 
 #### 3) FIDE'nin dönemi (1948–1993)
 
-Alekhine'in ölümü üzerine **FIDE** (Uluslararası Satranç Federasyonu) unvanı yönetmeye başladı. 1948'de Lahey ve Moskova'da beş büyük ustanın (Botvinnik, Smyslov, Keres, Reshevsky, Euwe) oynadığı bir **maç turnuvası** düzenlendi; kazanan Botvinnik oldu. Sonra düzen oturdu:
+Alekhine'in ölümü üzerine **FIDE** (Uluslararası Satranç Federasyonu) ünvanı yönetmeye başladı. 1948'de Lahey ve Moskova'da beş büyük ustanın (Botvinnik, Smyslov, Keres, Reshevsky, Euwe) oynadığı bir **maç turnuvası** düzenlendi; kazanan Botvinnik oldu. Sonra düzen oturdu:
 
-- **Bölgeler arası turnuva (Interzonal)** → **Adaylar** (önce turnuva, 1965'ten itibaren maç eleme) → **unvan maçı**.
-- **Şampiyon ayrıcalıkları**: 12–12 eşitlikte unvan şampiyonda kalırdı (Botvinnik 1951'de Bronstein'a, 1954'te Smyslov'a karşı unvanı bu kuralla korudu). 1963'e kadar kaybeden şampiyon otomatik **rövanş** hakkına sahipti; bu hak Botvinnik'e iki kez (1958, 1961) unvanı geri kazandırdı ve 1963'ten sonra kaldırıldı.
+- **Bölgeler arası turnuva (Interzonal)** → **Adaylar** (önce turnuva, 1965'ten itibaren maç eleme) → **ünvan maçı**.
+- **Şampiyon ayrıcalıkları**: 12–12 eşitlikte ünvan şampiyonda kalırdı (Botvinnik 1951'de Bronstein'a, 1954'te Smyslov'a karşı ünvanı bu kuralla korudu). 1963'e kadar kaybeden şampiyon otomatik **rövanş** hakkına sahipti; bu hak Botvinnik'e iki kez (1958, 1961) ünvanı geri kazandırdı ve 1963'ten sonra kaldırıldı.
 - **1962 Adaylar'ı** (Curaçao) Sovyet oyuncuların kendi aralarında beraberlik anlaşması yaptığı ve Fischer'in bunu açıkça suçladığı turnuvaydı; sonuçta Adaylar'ın **turnuva** biçimi bırakıldı ve eleme maçlarına geçildi.
-- **1975**: Fischer 1972'de Spassky'yi yendikten sonra unvan savunması için bir dizi şart koydu (ilk 10 galibiyet, sınırsız oyun sayısı, 9–9'da şampiyonun korunması); FIDE bir kısmını reddetti, Fischer çekildi ve **Karpov** hiç oynamadan, **walkover** ile dünya şampiyonu ilan edildi.
+- **1975**: Fischer 1972'de Spassky'yi yendikten sonra ünvan savunması için bir dizi şart koydu (ilk 10 galibiyet, sınırsız oyun sayısı, 9–9'da şampiyonun korunması); FIDE bir kısmını reddetti, Fischer çekildi ve **Karpov** hiç oynamadan, **walkover** ile dünya şampiyonu ilan edildi.
 - **1984–85**: Karpov–Kasparov maçı “ilk 6 galibiyet” ile ve oyun sınırı olmadan başladı, 48 oyun sürdü (Karpov önce 5–0 öne geçmişti, Kasparov oyunlar boyunca direndi; skor 5–3'tü) ve FIDE Başkanı Florencio Campomanes'in maçı **iptal etmesi** (“yorgunluk” gerekçesiyle) büyük tartışma yarattı. Maç, 24 oyunluk bir formatla yeniden oynandı; Kasparov kazandı.
 
 #### 4) Şampiyon, kurallar koyar (1886–1946)
 
 Resmî dünya şampiyonluğu, **1886'da Steinitz–Zukertort maçı** ile başlıyor kabul edilir. O dönemde şampiyon ve meydan okuyucu, maçın biçimini, yerini ve **ödülünü** kendi aralarında pazarlıkla belirlerdi. Kurallar yoktu: genellikle belli sayıda galibiyete kadar oynanırdı (ör. “ilk 10 galibiyet”). Bir oyuncunun şampiyona meydan okuması için, kendi adına para bulabilmesi gerekiyordu.
 
-1920'lerde bu serbestlik bir sorun hâline geldi. **Capablanca**'nın önerisiyle 1922'de “Londra Kuralları” kabul edildi: en az 10.000 dolarlık ödül fonu, ilk 6 galibiyetle kazanılan maç. Bu kurallar şampiyonu korudu ama paranın bulunamadığı durumlarda meydan okuyucuyu da dışarıda bıraktı: bu yüzden **Rubinstein** ve **Nimzowitsch** gibi güçlü oyuncular hiç şans bulamadı. **Alekhine** unvanı 1927'de aldıktan sonra Capablanca'ya rövanş vermedi ve rakibini kendi seçti (Bogoljubov, iki kez); 1935'te Euwe'ye bir sürpriz yenilgi aldı, 1937'de rövanşı kazandı. 1946'da şampiyon sıfatıyla öldü.
+1920'lerde bu serbestlik bir sorun hâline geldi. **Capablanca**'nın önerisiyle 1922'de “Londra Kuralları” kabul edildi: en az 10.000 dolarlık ödül fonu, ilk 6 galibiyetle kazanılan maç. Bu kurallar şampiyonu korudu ama paranın bulunamadığı durumlarda meydan okuyucuyu da dışarıda bıraktı: bu yüzden **Rubinstein** ve **Nimzowitsch** gibi güçlü oyuncular hiç şans bulamadı. **Alekhine** ünvanı 1927'de aldıktan sonra Capablanca'ya rövanş vermedi ve rakibini kendi seçti (Bogoljubov, iki kez); 1935'te Euwe'ye bir sürpriz yenilgi aldı, 1937'de rövanşı kazandı. 1946'da şampiyon sıfatıyla öldü.
 
 #### 5) Gayriresmî dönem: şampiyon “en iyi” sayılandır (18. yüzyıl–1886)
 
-Resmî bir unvan yoktu; en iyi sayılan oyuncu, bir şampiyon gibi anıldı, sonradan tarihçiler sıraladı: **Philidor** (18. yüzyıl, Fransa), **La Bourdonnais** (1830'lar), **Staunton** (1840'lar), **Anderssen** (1851 Londra turnuvasını kazanarak) ve onu 1858'de Paris'te yenen **Paul Morphy** (+7 −2 =2). Morphy “dünyanın en iyisi” sayıldı ama kısa süre sonra yarışmayı bıraktı; ona unvan vermek için ortada bir kural da yoktu. **Steinitz** 1866'da Anderssen'i yenerek kendini dünya şampiyonu sayma hakkını elde etti; ama maç adlandırması ve “resmî” sayılması hep tartışmalıdır.
+Resmî bir ünvan yoktu; en iyi sayılan oyuncu, bir şampiyon gibi anıldı, sonradan tarihçiler sıraladı: **Philidor** (18. yüzyıl, Fransa), **La Bourdonnais** (1830'lar), **Staunton** (1840'lar), **Anderssen** (1851 Londra turnuvasını kazanarak) ve onu 1858'de Paris'te yenen **Paul Morphy** (+7 −2 =2). Morphy “dünyanın en iyisi” sayıldı ama kısa süre sonra yarışmayı bıraktı; ona ünvan vermek için ortada bir kural da yoktu. **Steinitz** 1866'da Anderssen'i yenerek kendini dünya şampiyonu sayma hakkını elde etti; ama maç adlandırması ve “resmî” sayılması hep tartışmalıdır.
 
 ![François-André Danican Philidor](images/dunya-philidor.jpg "<span lang="en">François-André Danican Philidor</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Augustin de Saint-Aubin, Charles-Nicolas Coc…</span> · <span lang="en">Public domain</span>")
 ![Louis-Charles Mahé de La Bourdonnais](images/dunya-labourdonnais.jpg "<span lang="en">Louis-Charles Mahé de La Bourdonnais</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">The original uploader was Jaapvanderkooij at…</span> · <span lang="en">Public domain</span>")
@@ -98,41 +98,39 @@ Resmî bir unvan yoktu; en iyi sayılan oyuncu, bir şampiyon gibi anıldı, son
 ![Adolf Anderssen](images/dunya-anderssen.jpg "<span lang="en">Adolf Anderssen</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 ![Paul Morphy](images/dunya-morphy.jpg "<span lang="en">Paul Morphy</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
-### Şampiyonlar unvanı nasıl aldı, nasıl korudu?
+### Şampiyonlar ünvanı nasıl aldı, nasıl korudu?
 
-Aşağıda her şampiyon için *unvanı kime karşı, nasıl aldığı* ve *nasıl koruduğu* özetleniyor. Skorlar “şampiyon puanı–rakip puanı” biçiminde.
+Aşağıda her şampiyon için *ünvanı kime karşı, nasıl aldığı* ve *nasıl koruduğu* özetleniyor. Skorlar “şampiyon puanı–rakip puanı” biçiminde.
 
-| Şampiyon | Unvanı aldığı yer ve rakip | Unvanı koruması / kaybı |
+| Şampiyon | Ünvanı aldığı yer ve rakip | Ünvanı koruması / kaybı |
 |---|---|---|
 | **Gukesh** (2024–) | 2024 Singapur: **Ding Liren**'e karşı 7½–6½ | Savunması 2026 Cenevre'de, **Sindarov**'a karşı. |
 | **Ding Liren** (2023–24) | 2023 Astana: **Nepomniachtchi**'ye karşı 7–7, hızlı oyunlarda 2½–1½ | 2024'te Singapur'da **Gukesh**'e 7½–6½ kaybetti. |
-| **Carlsen** (2013–23) | 2013 Chennai: **Anand**'a karşı 6½–3½ | 2014 Soçi **Anand** 6½–4½; 2016 New York **Karjakin** 6–6, hızlı oyunlarda 3–1; 2018 Londra **Caruana** 6–6, 12 klasik oyunun hepsi berabere, hızlı oyunlarda 3–0; 2021 Dubai **Nepomniachtchi** 7½–3½. 2023'te unvanı savunmadan bıraktı. |
+| **Carlsen** (2013–23) | 2013 Chennai: **Anand**'a karşı 6½–3½ | 2014 Soçi **Anand** 6½–4½; 2016 New York **Karjakin** 6–6, hızlı oyunlarda 3–1; 2018 Londra **Caruana** 6–6, 12 klasik oyunun hepsi berabere, hızlı oyunlarda 3–0; 2021 Dubai **Nepomniachtchi** 7½–3½. 2023'te ünvanı savunmadan bıraktı. |
 | **Anand** (2007–13) | 2007 Meksika: sekiz kişilik turnuvayı 9/14 ile kazandı | 2008 **Kramnik** 6½–4½; 2010 **Topalov** 6½–5½; 2012 **Gelfand** 6–6, hızlı oyunlarda 2½–1½. 2013'te Carlsen'e kaybetti. |
-| **Kramnik** (2000–07) | 2000 Londra: **Kasparov**'a karşı 8½–6½, hiç yenilmeden (+2 =13) | 2004'te **Leko** 7–7 (unvan şampiyonda kaldı); 2006'da **Topalov**'u 6–6 sonrası hızlı oyunlarda yenerek birleşik unvanı aldı. |
+| **Kramnik** (2000–07) | 2000 Londra: **Kasparov**'a karşı 8½–6½, hiç yenilmeden (+2 =13) | 2004'te **Leko** 7–7 (ünvan şampiyonda kaldı); 2006'da **Topalov**'u 6–6 sonrası hızlı oyunlarda yenerek birleşik ünvanı aldı. |
 | **Topalov** (FIDE, 2005) | 2005 San Luis, Arjantin: sekiz kişilik çift devreli turnuva | 2006'da Kramnik'e kaybetti (birleşme maçı). |
 | **Khalifman, Anand, Ponomariov, Kasimdzhanov** (FIDE, 1999–2005) | Tek elemeli turnuvalar | Bir kez kazandıktan sonra savunma yok; her şampiyon bir sonraki turnuvada yeniden oynadı. |
-| **Karpov** (FIDE, 1993–99) | 1993: Kasparov'un ayrılmasıyla, **Timman**'ı 12½–8½ yenerek | 1996'da Kamsky, 1998'de Anand karşısında unvanı korudu; 1999'da savunmayı reddedince FIDE turnuva biçimine geçti. |
-| **Kasparov** (1985–93, PCA 1993–2000) | 1985 Moskova: **Karpov**'a 13–11 | 1986, 1987 (12–12, unvan şampiyonda kaldı), 1990'da **Karpov**'u yendi; 1993'te Short'u, 1995'te Anand'ı yendi; 2000'de Londra'da **Kramnik**'e kaybetti. |
-| **Karpov** (1975–85) | 1975: Fischer'in çekilmesiyle hükmen | 1978 Baguio'da **Korchnoi**'yi, 1981 Merano'da yine Korchnoi'yi yendi. 1984–85'te Kasparov'a karşı maç yarıda kesildi (5–3 önde); 1985'te unvanı kaybetti. |
-| **Fischer** (1972–75) | 1972, Reykjavik: **Spassky**'ye karşı 12½–8½ (+7 −3 =11; Fischer ikinci oyuna çıkmadığı için o oyun hükmen kaybedildi) | 1975'te şartları kabul edilmediği için çekildi; unvanı oynamadan kaybetti. |
+| **Karpov** (FIDE, 1993–99) | 1993: Kasparov'un ayrılmasıyla, **Timman**'ı 12½–8½ yenerek | 1996'da Kamsky, 1998'de Anand karşısında ünvanı korudu; 1999'da savunmayı reddedince FIDE turnuva biçimine geçti. |
+| **Kasparov** (1985–93, PCA 1993–2000) | 1985 Moskova: **Karpov**'a 13–11 | 1986, 1987 (12–12, ünvan şampiyonda kaldı), 1990'da **Karpov**'u yendi; 1993'te Short'u, 1995'te Anand'ı yendi; 2000'de Londra'da **Kramnik**'e kaybetti. |
+| **Karpov** (1975–85) | 1975: Fischer'in çekilmesiyle hükmen | 1978 Baguio'da **Korchnoi**'yi, 1981 Merano'da yine Korchnoi'yi yendi. 1984–85'te Kasparov'a karşı maç yarıda kesildi (5–3 önde); 1985'te ünvanı kaybetti. |
+| **Fischer** (1972–75) | 1972, Reykjavik: **Spassky**'ye karşı 12½–8½ (+7 −3 =11) | 1975'te şartları kabul edilmediği için çekildi; ünvanı oynamadan kaybetti. |
 | **Spassky** (1969–72) | 1969, **Petrosian**'a karşı | 1972'de Reykjavik'te **Fischer**'e 12½–8½ kaybetti. |
 | **Petrosian** (1963–69) | 1963, **Botvinnik**'e karşı 12½–9½ (rövanş hakkı kaldırıldı) | 1966'da **Spassky**'yi 12½–11½ yendi; 1969'da Spassky'ye 12½–10½ kaybetti. |
-| **Tal** (1960–61) | 1960, **Botvinnik**'e karşı 12½–8½ | 1961 rövanşta 13–8 kaybetti. |
-| **Smyslov** (1957–58) | 1957, **Botvinnik**'e karşı 12½–9½ | 1958 rövanşta 12½–10½ kaybetti. |
-| **Botvinnik** (1948–57, 1958–60, 1961–63) | 1948 Lahey–Moskova **beş kişilik maç turnuvası** | 1951 **Bronstein** 12–12 (unvan şampiyonda kaldı); 1954 **Smyslov** 12–12. 1957'de Smyslov, 1960'ta Tal'a yenildi, rövanşlarla iki kez unvanı geri aldı. |
-| **Euwe** (1935–37) | 1935, Hollanda: **Alekhine**'e karşı 15½–14½ | 1937'de rövanşı kaybetti. |
-| **Alekhine** (1927–35, 1937–46) | 1927, **Capablanca**'ya karşı; “ilk 6 galibiyet”, 34 oyun | 1929 ve 1934'te **Bogoljubov**'u yendi. 1935'te **Euwe**'ye 15½–14½ kaybetti, 1937'de rövanşta Euwe'yi 15½–9½ yendi. 1946'da şampiyonken öldü. |
+| **Tal** (1960–61) | 1960, **Botvinnik**'e karşı 12½–8½ | 1961'de Botvinnik ile rövanşı 13–8 kaybetti. |
+| **Smyslov** (1957–58) | 1957, **Botvinnik**'e karşı 12½–9½ | 1958'de Botvinnik ile rövanşı 12½–10½ kaybetti. |
+| **Botvinnik** (1948–57, 1958–60, 1961–63) | 1948 Lahey–Moskova **beş kişilik maç turnuvası** | 1951 **Bronstein** 12–12 (ünvan şampiyonda kaldı); 1954 **Smyslov** 12–12. 1957'de Smyslov'a, 1960'ta Tal'a yenildi; 1958'de Smyslov ile, 1961'de Tal ile rövanşları kazanıp ünvanı iki kez geri aldı. |
+| **Euwe** (1935–37) | 1935, Hollanda: **Alekhine**'e karşı 15½–14½ | 1937'de Alekhine ile rövanşı kaybetti. |
+| **Alekhine** (1927–35, 1937–46) | 1927, **Capablanca**'ya karşı; “ilk 6 galibiyet”, 34 oyun | 1929 ve 1934'te **Bogoljubov**'u yendi. 1935'te **Euwe**'ye 15½–14½ kaybetti, 1937'de Euwe ile rövanşı 15½–9½ kazandı. 1946'da şampiyonken öldü. |
 | **Capablanca** (1921–27) | 1921, Havana: Lasker'in çekilmesiyle | 1927 Buenos Aires'te **Alekhine**'e 18½–15½ yenildi (34 oyun, +6 −3 =25). |
-| **Lasker** (1894–1921) | 1894, **Steinitz**'e karşı 12–7 (New York, Philadelphia, Montreal) | 1896–97 rövanşta Steinitz'i 12½–4½ yendi; 1907 **Marshall** (11½–3½), 1908 **Tarrasch** (10½–5½) ve diğerlerini yendi. 1921'de Havana'da **Capablanca**'ya karşı 14. oyundan sonra çekildi. |
+| **Lasker** (1894–1921) | 1894, **Steinitz**'e karşı 12–7 (New York, Philadelphia, Montreal) | 1896–97'de Steinitz ile rövanşı 12½–4½ kazandı; 1907 **Marshall** (11½–3½), 1908 **Tarrasch** (10½–5½) ve diğerlerini yendi. 1921'de Havana'da **Capablanca**'ya karşı 14. oyundan sonra çekildi. |
 | **Steinitz** (1886–94) | 1886, ABD (New York, St. Louis, New Orleans): **Zukertort**'a karşı 12½–7½, ilk “resmî” maç | 1889 Havana, **Chigorin** 10½–6½; 1890–91 New York, **Gunsberg** 10½–8½; 1892 Havana, **Chigorin** 12½–10½. 1894'te **Lasker**'e kaybetti. |
 
-Tablodan iki şey okunuyor. Birincisi, **eşitlikte unvan şampiyonda kalır**: 1951, 1954 ve 1987'de bu kural işledi. İkincisi, **rövanş hakkı** (1948–63) şampiyonlara ikinci bir şans verdi: Smyslov ve Tal'ın birer yıllık unvanlarının ve Botvinnik'in üç ayrı saltanatının arkasında bu kural var.
+Tablodan iki şey okunuyor. Birincisi, **eşitlikte ünvan şampiyonda kalır**: 1951, 1954 ve 1987'de bu kural işledi. İkincisi, **rövanş hakkı** (1948–63) şampiyonlara ikinci bir şans verdi: Smyslov ve Tal'ın birer yıllık ünvanlarının ve Botvinnik'in üç ayrı saltanatının arkasında bu kural var.
 
-### Unvanı belirleyen oyunlar
+### Seçme: Her bir ünvan maçından bir oyun
 
-Aşağıda yukarıdaki tablodaki her maçtan, sonucu belirleyen bir oyunu oynatıcıda izleyebilirsiniz. Seçim kuralımız şu: kazananın, maçı fiilen bitiren (ya da eşitlik bozulan) **son galibiyeti**; hızlı oyunla biten maçlarda hızlı oyunun kazandıran oyunu. Böyle bir oyun her zaman maçın en güzel oyunu değildir, ama sonucu getirendir. Hamle dizilerini [pgnmentor.com](https://www.pgnmentor.com/files.html) arşivinden aldık; 2023'ün hızlı oyunu için [Wikipedia](https://en.wikipedia.org/wiki/World_Chess_Championship_2023) kaydını kullandık.
-
-Hamlelerin yanındaki **!**, **?**, **!!** ve **??** işaretleri insan yorumu değil, bizim Stockfish 16 (derinlik 15, iki varyantlı) çözümlememizdir: **?** ve **??**, hamlenin kazanma ihtimalini sırasıyla en az %20 ve %30 düşürdüğü anlamına gelir; **!**, tek iyi hamlenin bulunduğu (alternatifler kazanma ihtimalini en az %15 düşürürken) bir hamledir; **!!**, bunun bir fedakârlık içerdiği durumdur. Oynatıcıda tahtada rozet olarak görünürler. Her oynatıcının yanındaki değerlendirme çubuğu da tarayıcınızda çalışan Stockfish'ten anlık beslenir.
+[MAÇ SEÇİCİ]
 
 #### 2024 · Gukesh – Ding Liren
 
@@ -252,7 +250,7 @@ Maç, Manhattan'da South Street Seaport'taki Fulton Market Binası'nda oynandı;
 
 ![Viswanathan Anand](images/dunya-anand.jpg "<span lang="en">Viswanathan Anand</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Wolfgang Jekel</span> · <span lang="en">CC BY 2.0</span>")
 
-Carlsen 6½–4½ ile unvanını korudu. Seçtiğimiz oyun, 11. oyun.
+Carlsen 6½–4½ ile ünvanını korudu. Seçtiğimiz oyun, 11. oyun.
 
 [Event "Dünya Şampiyonası"]
 [Site "Soçi"]
@@ -313,7 +311,7 @@ Carlsen 10 oyunda 6½–3½ kazanıp şampiyon oldu. Seçtiğimiz oyun 9. oyun.
 
 ![Veselin Topalov](images/dunya-topalov.jpg "<span lang="en">Veselin Topalov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">This photo was taken by Przemysław JahrAutor…</span> · <span lang="en">CC BY-SA 3.0</span>")
 
-Son oyunu Siyahlarla kazanan Anand, 6½–5½ ile unvanını korudu.
+Son oyunu Siyahlarla kazanan Anand, 6½–5½ ile ünvanını korudu.
 
 [Event "Dünya Şampiyonası"]
 [Site "Sofya"]
@@ -334,7 +332,7 @@ Son oyunu Siyahlarla kazanan Anand, 6½–5½ ile unvanını korudu.
 
 ![Anand – Kramnik, Bonn 2008](images/dunya-mac-2008.jpg "<span lang="en">Anand</span> – <span lang="en">Kramnik</span>, Bonn 2008 · <span lang="en">Wikimedia Commons</span> · <span lang="en">Ygrek</span> · <span lang="en">CC BY 3.0</span>")
 
-Anand unvanını 6½–4½ ile korudu. Seçtiğimiz oyun 6. oyun.
+Anand ünvanını 6½–4½ ile korudu. Seçtiğimiz oyun 6. oyun.
 
 [Event "Dünya Şampiyonası"]
 [Site "Bonn"]
@@ -436,7 +434,7 @@ Eleme turnuvası finali: Kasimdzhanov 4½–3½ kazandı. Seçtiğimiz oyun, bel
 
 ![Péter Lékó](images/dunya-leko.jpg "<span lang="en">Péter Lékó</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Yunfan Zhao / lichess.org</span> · <span lang="en">CC BY-SA 4.0</span>")
 
-14 oyun sonunda 7–7: Leko son oyuna 7–6 önde girdi; Kramnik 14. oyunu kazanıp unvanını korudu.
+14 oyun sonunda 7–7: Leko son oyuna 7–6 önde girdi; Kramnik 14. oyunu kazanıp ünvanını korudu.
 
 [Event "Dünya Şampiyonası"]
 [Site "Brissago"]
@@ -566,7 +564,7 @@ Eleme turnuvasının finalinde klasik oyunlardan sonra hızlı oyunlar belirleyi
 
 ![Gata Kamsky](images/dunya-kamsky.jpg "<span lang="en">Gata Kamsky</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
 
-Karpov unvanını 10½–7½ ile korudu. Seçtiğimiz oyun 14. oyun.
+Karpov ünvanını 10½–7½ ile korudu. Seçtiğimiz oyun 14. oyun.
 
 [Event "Dünya Şampiyonası"]
 [Site "Elista"]
@@ -665,7 +663,7 @@ Beşinci ve son Karpov–Kasparov maçı: 12½–11½. Seçtiğimiz oyun 20. oyu
 
 *Sevilla (İspanya)*
 
-Son oyuna Karpov 12–11 önde girdi; Kasparov 24. oyunu kazanıp 12–12 ile unvanını korudu.
+Son oyuna Karpov 12–11 önde girdi; Kasparov 24. oyunu kazanıp 12–12 ile ünvanını korudu.
 
 [Event "Dünya Şampiyonası"]
 [Site "Sevilla"]
@@ -684,7 +682,7 @@ Son oyuna Karpov 12–11 önde girdi; Kasparov 24. oyunu kazanıp 12–12 ile un
 
 *Londra ve Leningrad*
 
-Kasparov 12½–11½ ile unvanını korudu. Seçtiğimiz oyun 22. oyun.
+Kasparov 12½–11½ ile ünvanını korudu. Seçtiğimiz oyun 22. oyun.
 
 [Event "Dünya Şampiyonası"]
 [Site "Londra ve Leningrad"]
@@ -747,7 +745,7 @@ Kasparov 12½–11½ ile unvanını korudu. Seçtiğimiz oyun 22. oyun.
 
 ![Viktor Korchnoi](images/dunya-korchnoi.jpg "<span lang="en">Viktor Korchnoi</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Hans Peters for Anefo</span> · <span lang="en">CC0</span>")
 
-Karpov 6–2 galibiyetle (18 oyun) unvanını korudu. Seçtiğimiz oyun 18. oyun.
+Karpov 6–2 galibiyetle (18 oyun) ünvanını korudu. Seçtiğimiz oyun 18. oyun.
 
 [Event "Dünya Şampiyonası"]
 [Site "Merano"]
@@ -790,7 +788,7 @@ Karpov 6–2 galibiyetle (18 oyun) unvanını korudu. Seçtiğimiz oyun 18. oyun
 ![Bobby Fischer](images/dunya-fischer.jpg "<span lang="en">Bobby Fischer</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Bert Verhoeff for Anefo</span> · <span lang="en">CC0</span>")
 ![Boris Spassky](images/dunya-spassky.jpg "<span lang="en">Boris Spassky</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Rob Bogaerts for Anefo</span> · <span lang="en">CC0</span>")
 
-Fischer, 12½–8½ ile Sovyet şampiyonluğuna son verdi (2. oyun Fischer çıkmadığı için hükmen kaybedildi). Seçtiğimiz oyun 21. oyun: Spassky, ertelenmiş konumu telefonla teslim etti.
+Fischer, 12½–8½ ile Sovyet şampiyonluğuna son verdi. Seçtiğimiz oyun 21. oyun: Spassky, ertelenmiş konumu telefonla teslim etti.
 
 [Event "Dünya Şampiyonası"]
 [Site "Reykjavik"]
@@ -828,7 +826,7 @@ Spassky 23 oyunda 12½–10½ kazandı. Seçtiğimiz oyun 21. oyun.
 
 *Moskova (SSCB)*
 
-Petrosian unvanını 12½–11½ gibi dar farkla korudu. Seçtiğimiz oyun 22. oyun.
+Petrosian ünvanını 12½–11½ gibi dar farkla korudu. Seçtiğimiz oyun 22. oyun.
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -940,7 +938,7 @@ Smyslov 22 oyunda 12½–9½ kazanıp şampiyon oldu. Seçtiğimiz oyun 20. oyun
 
 *Moskova (SSCB)*
 
-Yine 12–12; Botvinnik unvanı bu kuralla korudu. Seçtiğimiz oyun, Botvinnik’in 16. oyundaki galibiyeti.
+Yine 12–12; Botvinnik ünvanı bu kuralla korudu. Seçtiğimiz oyun, Botvinnik’in 16. oyundaki galibiyeti.
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -959,7 +957,7 @@ Yine 12–12; Botvinnik unvanı bu kuralla korudu. Seçtiğimiz oyun, Botvinnik�
 
 ![David Bronstein](images/dunya-bronstein.jpg "<span lang="en">David Bronstein</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Joop van Bilsen / Anefo</span> · <span lang="en">CC0</span>")
 
-24 oyun sonunda 12–12: unvan şampiyonda kaldı. Seçtiğimiz oyun, Botvinnik’in 23. oyundaki galibiyeti.
+24 oyun sonunda 12–12: ünvan şampiyonda kaldı. Seçtiğimiz oyun, Botvinnik’in 23. oyundaki galibiyeti.
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -997,7 +995,7 @@ Alekhine’in ölümünden sonra FIDE, beş oyunculu bir maç turnuvası düzenl
 
 ![Alexander Alekhine](images/dunya-alekhine.jpg "<span lang="en">Alexander Alekhine</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">George Grantham Bain Collection (Library of…</span> · <span lang="en">Public domain</span>")
 
-Alekhine rövanşı 25 oyunda 15½–9½ kazanıp unvanı geri aldı. Seçtiğimiz oyun 22. oyun.
+Alekhine rövanşı 25 oyunda 15½–9½ kazanıp ünvanı geri aldı. Seçtiğimiz oyun 22. oyun.
 
 [Event "Dünya Şampiyonası"]
 [Site "Hollanda"]
@@ -1014,7 +1012,7 @@ Alekhine rövanşı 25 oyunda 15½–9½ kazanıp unvanı geri aldı. Seçtiğim
 
 *Hollanda*
 
-Euwe 30 oyunluk maçı 15½–14½ kazanıp şampiyon oldu; Alekhine’in unvanı bir puan farkla kaybı. Seçtiğimiz oyun 26. oyun.
+Euwe 30 oyunluk maçı 15½–14½ kazanıp şampiyon oldu; Alekhine’in ünvanı bir puan farkla kaybı. Seçtiğimiz oyun 26. oyun.
 
 [Event "Dünya Şampiyonası"]
 [Site "Hollanda"]
@@ -1249,7 +1247,7 @@ Resmî sayılan ilk dünya şampiyonluğu maçı. İlk 10 galibiyete kadar oynan
 
 1. e4 e5 2. Nc3 Nc6 3. f4 exf4 4. d4 d5 5. exd5 Qh4+ 6. Ke2! Qe7+ 7. Kf2! Qh4+ 8. g3 fxg3+ 9. Kg2 Nxd4 10. hxg3! Qg4 11. Qe1+ Be7 12. Bd3 Nf5 13. Nf3 Bd7 14. Bf4 f6 15. Ne4 Ngh6 16. Bxh6 Nxh6 17. Rxh6 gxh6 18. Nxf6+! Kf7 19. Nxg4 1-0
 
-### Unvanı alamamış ama hak etmiş efsaneler
+### Ünvanı alamamış ama hak etmiş efsaneler
 
 “Hak etmek” tartışmalı bir kavram; ama bu isimlerin her birinin zirvede olduğu dönemler, o dönemin şampiyonuyla boy ölçüşebilecek kadar belirgindi. İşte eksik kalan şampiyonlar:
 
@@ -1257,9 +1255,9 @@ Resmî sayılan ilk dünya şampiyonluğu maçı. İlk 10 galibiyete kadar oynan
 - **Siegbert Tarrasch** (1862–1934) — 1890'larda ve 1900'lerde Lasker'in dışında en güçlü oyuncu. 1908'de Lasker'e meydan okudu ve 10½–5½ yenildi. Lasker'le maça ancak 46 yaşında ulaşabildi; en iyi yıllarını bu fırsat gelmeden geçirdi. “Praeceptor Germaniae” (Almanya'nın hocası) olarak yazdığı kitaplar ise yıllarca modern satranç anlayışını şekillendirdi.
 - **Akiba Rubinstein** (1880–1961) — 1912'de beş büyük turnuvayı birden kazandı (San Sebastian, Pistyan, Breslau, Varşova, Vilnius) ve Lasker'le 1914'te maça davet edildi. Neden alamadı? Birinci Dünya Savaşı maçı engelledi. Savaştan sonra Capablanca'nın şampiyon olduğu dönemde, Londra Kuralları'nın öngördüğü ödül fonunu bulamadı; ruh sağlığı bozuldu ve zirvesinden hızla indi. Neden hak ediyordu? Kale oyunlarının en büyük ustası, Lasker ve Capablanca'dan başka kimse onunla aynı ligde değildi.
 - **Paul Keres** (1916–75) — “Kronprinz” (veliaht). 1938 AVRO turnuvasını Fine ile eşit puanla (8½) bitirdi ve Alekhine'le maç konuşulmaya başlandı; Dünya Savaşı, Estonya'nın işgali ve ardından Sovyet dönemi kariyerinin gidişatını değiştirdi. 1953, 1956, 1959 ve 1962'de Adaylar Turnuvası'nı **dört kez ikinci** bitirdi. 1948 maç turnuvasında Botvinnik'e kaybettiği oyunlarda Sovyet yönetiminin baskısı olduğuna dair iddialar var, ama kanıtlanmış değil. Neden hak ediyordu? Dört kez “bir adım”ın gerisinde kalan başka bir oyuncu yok.
-- **David Bronstein** (1924–2006) — 1951'de Botvinnik'le 12–12 berabere kaldı; kurala göre unvan şampiyonda kaldı. Bir oyun daha kazansa şampiyon olacaktı. Sonradan maç sırasında baskı altında kaldığını söyledi; yaratıcı oyun tarzı ise onu tarihte özel bir yere koyuyor.
+- **David Bronstein** (1924–2006) — 1951'de Botvinnik'le 12–12 berabere kaldı; kurala göre ünvan şampiyonda kaldı. Bir oyun daha kazansa şampiyon olacaktı. Sonradan maç sırasında baskı altında kaldığını söyledi; yaratıcı oyun tarzı ise onu tarihte özel bir yere koyuyor.
 - **Viktor Korchnoi** (1931–2016) — 1976'da SSCB'den kaçıp Hollanda'ya sığındı, bu yüzden Sovyet satranç yönetiminden tam bir tecrit yaşadı. 1978'de Baguio'da Karpov'a karşı oynadığı maç (ilk 6 galibiyet; 32 oyun; 6–5 yenildi) tarihin en gergin maçlarından biri: sırasıyla 5–2 geriye düştü, 5–5'e geldi ve son oyunu kaybetti. 1981'de Merano'da 6–2 yenildi. Neden hak ediyordu? 40'larında ve 50'lerinde dünyanın en güçlü iki üç oyuncusu arasındaydı, 1980'lerde hâlâ Adaylar'dı.
-- **Vasyl Ivanchuk** (d. 1969) — 1990'ların başında dünyanın ilk üç oyuncusu arasındaydı; yaratıcılığı ve hazırlığı ile ünlüydü. Ama sinirlerine yenik düştü: kritik maçlarda yaptığı hatalarla unvanı kaçırdı. 2002'de FIDE şampiyonası finalinde Ponomariov'a 4½–2½ yenildi. Neden hak ediyordu? Çağdaşlarının neredeyse tamamı onu satranç dehası olarak tanımlıyor.
+- **Vasyl Ivanchuk** (d. 1969) — 1990'ların başında dünyanın ilk üç oyuncusu arasındaydı; yaratıcılığı ve hazırlığı ile ünlüydü. Ama sinirlerine yenik düştü: kritik maçlarda yaptığı hatalarla ünvanı kaçırdı. 2002'de FIDE şampiyonası finalinde Ponomariov'a 4½–2½ yenildi. Neden hak ediyordu? Çağdaşlarının neredeyse tamamı onu satranç dehası olarak tanımlıyor.
 - **Judit Polgár** (d. 1976) — Tarihin en güçlü kadın oyuncusu; 2005'te dünya sıralamasında 8. oldu; Kasparov, Karpov ve Spassky dahil birçok dünya şampiyonunu yendi. Dünya şampiyonluğu döngüsünde yer aldı (2005 San Luis'te oynadı), ama kazanamadı. Neden hak ediyordu? Kadınlar şampiyonasında hiç oynamadı; bunun yerine açık sıralamada ilk onu seçti ve orada ayrı bir iz bıraktı.
 
 ![Akiba Rubinstein](images/dunya-rubinstein.jpg "<span lang="en">Akiba Rubinstein</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
@@ -1267,11 +1265,221 @@ Resmî sayılan ilk dünya şampiyonluğu maçı. İlk 10 galibiyete kadar oynan
 
 ![Judit Polgár](images/dunya-polgar.jpg "<span lang="en">Judit Polgár</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">This photo was taken by Przemysław JahrAutor…</span> · <span lang="en">CC BY-SA 3.0</span>")
 
-Bu listeye başka isimler de eklenebilir: **Bent Larsen**, **Efim Geller**, **Samuel Reshevsky**, **Aron Nimzowitsch**. Zamanla dünya şampiyonları oldukça belli bir şey söylüyor: unvanı kazanmak için yalnızca çok iyi oynamak yetmez; kurallara uyum, sinir dayanıklılığı, finansal ve siyasi şartlar ve bazen sadece şans da gerekiyor. Şimdi iki yirmi yaşındaki oyuncu bu zincire bir halka daha eklemek için Cenevre'de oturuyor.
+Bu listeye başka isimler de eklenebilir: **Bent Larsen**, **Efim Geller**, **Samuel Reshevsky**, **Aron Nimzowitsch**. Zamanla dünya şampiyonları oldukça belli bir şey söylüyor: ünvanı kazanmak için yalnızca çok iyi oynamak yetmez; kurallara uyum, sinir dayanıklılığı, finansal ve siyasi şartlar ve bazen sadece şans da gerekiyor. Şimdi iki yirmi yaşındaki oyuncu bu zincire bir halka daha eklemek için Cenevre'de oturuyor.
 
 ![Bent Larsen](images/dunya-larsen.jpg "<span lang="en">Bent Larsen</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Hans Peters for Anefo</span> · <span lang="en">CC0</span>")
 ![Efim Geller](images/dunya-geller.jpg "<span lang="en">Efim Geller</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Suyk, Koen / Anefo</span> · <span lang="en">CC0</span>")
 ![Aron Nimzowitsch](images/dunya-nimzowitsch.jpg "<span lang="en">Aron Nimzowitsch</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Not mentioned</span> · <span lang="en">Public domain</span>")
+
+### Şampiyonları yenen efsaneler
+
+Bu isimlerin her biri, döneminin dünya şampiyonlarından birini yendi. Her biri için o oyunlardan birini aşağıdan izleyebilirsiniz.
+
+[MAÇ SEÇİCİ]
+
+#### 2002 · Polgár – Kasparov
+
+*Moskova (Rusya)*
+
+Judit Polgár, Rusya–Dünya karması maçında (Moskova, 9 Eylül 2002) eski dünya şampiyonu Kasparov'u yendi.
+
+[Event "Rusya – Dünya karması"]
+[Site "Moskova"]
+[Date "2002.09.09"]
+[White "Judit Polgár"]
+[Black "Garry Kasparov"]
+[Result "1-0"]
+[EventLine "Rusya – Dünya karması, Moskova, 2002"]
+[View "player"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. Bxc6 dxc6 7. dxe5 Nf5 8. Qxd8+ Kxd8 9. Nc3 h6 10. Rd1+ Ke8! 11. h3 Be7 12. Ne2 Nh4 13. Nxh4 Bxh4 14. Be3 Bf5 15. Nd4 Bh7 16. g4 Be7 17. Kg2 h5 18. Nf5 Bf8 19. Kf3 Bg6 20. Rd2 hxg4+ 21. hxg4 Rh3+ 22. Kg2 Rh7 23. Kg3 f6 24. Bf4 Bxf5 25. gxf5 fxe5 26. Re1 Bd6 27. Bxe5 Kd7 28. c4 c5 29. Bxd6 cxd6 30. Re6 Rah8 31. Rexd6+ Kc8 32. R2d5 Rh3+ 33. Kg2 Rh2+ 34. Kf3 R2h3+ 35. Ke4 b6 36. Rc6+ Kb8 37. Rd7 Rh2 38. Ke3 Rf8 39. Rcc7 Rxf5 40. Rb7+! Kc8 41. Rdc7+ Kd8 42. Rxg7 Kc8 1-0
+
+#### 1991 · Ivanchuk – Kasparov
+
+*Linares (İspanya)*
+
+Linares 1991'in ilk turunda Ivanchuk, o sırada dünya şampiyonu olan Kasparov'u yendi.
+
+[Event "Linares"]
+[Site "Linares"]
+[Date "1991.??.??"]
+[White "Vasyl Ivanchuk"]
+[Black "Garry Kasparov"]
+[Result "1-0"]
+[EventLine "Linares, 1991"]
+[View "player"]
+
+1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. d4 Nf6 5. O-O cxd4 6. Qxd4 a6 7. Bxd7+ Bxd7 8. Bg5 h6 9. Bxf6 gxf6 10. c4 e6 11. Nc3 Rc8 12. Kh1 h5 13. a4 h4 14. h3 Be7 15. b4 a5 16. b5 Qc7 17. Nd2 Qc5 18. Qd3 Rg8 19. Rae1 Qg5 20. Rg1! Qf4 21. Ref1 b6 22. Ne2 Qh6 23. c5 Rxc5 24. Nc4 Kf8 25. Nxb6 Be8 26. f4 f5 27. exf5 Rxf5 28. Rc1 Kg7 29. g4 Rc5 30. Rxc5 dxc5 31. Nc8 Bf8 32. Qd8 Qg6 33. f5 Qh6 34. g5 Qh5 35. Rg4 exf5 36. Nf4 Qh8 37. Qf6+ Kh7 38. Rxh4+ 1-0
+
+#### 1978 · Korchnoi – Karpov
+
+*Baguio (Filipinler)*
+
+Baguio maçının 31. oyununda Korchnoi, şampiyon Karpov'u yenip skoru 5–5'e getirdi; maçı bir oyun sonra kaybetti.
+
+[Event "Dünya Şampiyonası"]
+[Site "Baguio"]
+[Date "1978.??.??"]
+[White "Viktor Korchnoi"]
+[Black "Anatoly Karpov"]
+[Result "1-0"]
+[EventLine "Dünya Şampiyonası, 31. oyun, Baguio, 1978"]
+[View "player"]
+
+1. c4 e6 2. Nc3 d5 3. d4 Nf6 4. cxd5 exd5 5. Bg5 Be7 6. e3 O-O 7. Bd3 Nbd7 8. Nf3 Re8 9. Qc2 c6 10. O-O Nf8 11. Bxf6 Bxf6 12. b4 Bg4 13. Nd2 Rc8 14. Bf5 Bxf5 15. Qxf5 Qd7 16. Qxd7 Nxd7 17. a4 Be7 18. Rfb1 Nf6 19. a5 a6 20. Na4 Bf8 21. Nc5 Re7 22. Kf1 Ne8 23. Ke2 Nd6 24. Kd3 Rce8 25. Re1 g6 26. Re2 f6 27. Rae1 Bh6 28. Ndb3 Bf8 29. Nd2 Bh6 30. h3 Kf7 31. g4 Bf8 32. f3 Rd8 33. Ndb3 Nb5 34. Rf1 Bh6 35. f4 Bf8 36. Nd2 Nd6 37. Rfe1 h6 38. Rf1 Rb8 39. Ra1 Rbe8 40. Rae1 Rb8 41. e4 dxe4+ 42. Ndxe4 Nb5 43. Nc3 Rxe2 44. Rxe2 Bxc5 45. bxc5 Rd8 46. Nxb5 axb5 47. f5 gxf5 48. gxf5 Rg8 49. Kc3 Re8 50. Rd2 Re4 51. Kb4 Ke8 52. a6 bxa6 53. Ka5 Kd7 54. Kb6 b4 55. d5 cxd5 56. Rxd5+ Kc8 57. Rd3 a5 58. Rg3 b3 59. Kc6 Kb8 60. Rxb3+! Ka7 61. Rb7+ Ka6 62. Rb6+ Ka7 63. Kb5 a4 64. Rxf6 Rf4 65. Rxh6 a3 66. Ra6+! Kb8 67. Rxa3 Rxf5 68. Rg3 Rf6 69. Rg8+ Kc7 70. Rg7+ Kc8 71. Rh7 1-0
+
+#### 1970 · Larsen – Spassky
+
+*Belgrad (Yugoslavya)*
+
+SSCB–Dünya karması maçında (Belgrad, 1970) Larsen, dünya şampiyonu Spassky'yi yendi.
+
+[Event "SSCB – Dünya karması"]
+[Site "Belgrad"]
+[Date "1970.??.??"]
+[White "Boris Spassky"]
+[Black "Bent Larsen"]
+[Result "0-1"]
+[EventLine "SSCB – Dünya karması, Belgrad, 1970"]
+[View "player"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Nc3 Bb7 5. Bg5 Be7 6. e3 O-O 7. Bd3 c5 8. O-O Nc6 9. d5 Nb4 10. d6 Bxd6 11. Bxh7+ Kxh7 12. Qxd6! Bxf3 13. gxf3 Ne8 14. Qe7 Qxe7 15. Bxe7 Rg8 16. Rfd1 Nc6 17. Rxd7 Ne5 18. Rb7 Nxc4 19. Ne4 Na5 20. Rd7 Nc6 21. f4 Rc8 22. Rc1 a5 23. a3 Kg6 24. Kg2 Rh8 25. Kf3 Rxh2 26. Ng5 e5 27. Rg1 exf4 28. Bd6 Nxd6 29. Rxd6+ f6! 30. Ne6+ Kf5 31. Nxf4 Ne5+! 32. Ke2 Re8 33. Rxb6 Nc4 34. Rb3! g5 35. Nd5 Re5 36. Rd1 g4 37. Kf1?? Rh1+ 38. Ke2 Rxd1! 0-1
+
+#### 1956 · Keres – Botvinnik
+
+*Moskova (SSCB)*
+
+Alekhine Anma Turnuvası'nda (Moskova, 1956) Keres, o sırada dünya şampiyonu olan Botvinnik'i yendi.
+
+[Event "Alekhine Anma Turnuvası"]
+[Site "Moskova"]
+[Date "1956.??.??"]
+[White "Paul Keres"]
+[Black "Mikhail Botvinnik"]
+[Result "1-0"]
+[EventLine "Alekhine Anma Turnuvası, Moskova, 1956"]
+[View "player"]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bg5 e6 7. Qd2 h6 8. Bxf6 gxf6 9. O-O-O a6 10. f4 h5 11. Kb1 Bd7 12. Be2 Qb6 13. Nb3 O-O-O 14. Rhf1 Na5 15. Rf3 Nxb3 16. axb3 Kb8 17. Na4 Qa7 18. f5 Be7 19. fxe6 fxe6 20. Rxf6 Rh7 21. Rg6 b5 22. Nc3 Qc5 23. Na2 Ka7 24. Nb4 Rf8 25. Bf3 h4 26. h3 Bc8 27. Nd3 Qc7 28. Nf4 Rf6 29. Bg4 Rxg6 30. Nxg6 Bb7 31. Bxe6 Bd8 32. Bd5 Bxd5 33. Qxd5 Rf7 34. e5 1-0
+
+#### 1955 · Geller – Botvinnik
+
+*Moskova (SSCB)*
+
+SSCB Şampiyonası'nda (Moskova, 1955) Geller, dünya şampiyonu Botvinnik'i yendi.
+
+[Event "SSCB Şampiyonası"]
+[Site "Moskova"]
+[Date "1955.??.??"]
+[White "Mikhail Botvinnik"]
+[Black "Efim Geller"]
+[Result "0-1"]
+[EventLine "SSCB Şampiyonası, Moskova, 1955"]
+[View "player"]
+
+1. c4 Nf6 2. d4 e6 3. Nc3 d5 4. cxd5 exd5 5. Bg5 c6 6. e3 h6 7. Bh4 Bf5 8. Bd3 Bxd3 9. Qxd3 Be7 10. Nge2 Nbd7 11. O-O O-O 12. f3 Re8 13. Bf2 c5 14. dxc5 Bxc5 15. Rad1 Ne5 16. Qb5 Qb6 17. Qxb6 axb6 18. b3 Nc6 19. Nf4 Nb4 20. Nd3 Nxa2 21. Nxa2 Rxa2 22. Rfe1 Bd6 23. h3 Rc2 24. Kf1 Rc3 25. b4 b5 26. Re2 Rb3 27. Be1 Nh5 28. g4 Ng3+ 29. Bxg3 Bxg3 30. Kg2 Bd6 31. Kf2 Rc8 32. Red2 Rc4 33. Nc1 Rbxb4 34. Rxd5 Rb2+ 35. Ne2 Bb4 36. Kf1 Bc5 37. Nd4 b4 38. Rd8+ Kh7 39. Rc8 Rc3 40. Ne2 Rxe3 0-1
+
+#### 1955 · Reshevsky – Botvinnik
+
+*Moskova (SSCB)*
+
+1955'teki SSCB–ABD telex maçında Reshevsky, dünya şampiyonu Botvinnik'i yendi.
+
+[Event "SSCB – ABD telex maçı"]
+[Site "Moskova"]
+[Date "1955.??.??"]
+[White "Samuel Reshevsky"]
+[Black "Mikhail Botvinnik"]
+[Result "1-0"]
+[EventLine "SSCB – ABD telex maçı, 1955"]
+[View "player"]
+
+1. d4 d5 2. c4 e6 3. Nc3 c6 4. Nf3 Nf6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 a6 9. e4 c5 10. e5 cxd4 11. Nxb5 Nxe5 12. Nxe5 axb5 13. Qf3 Qa5+ 14. Ke2 Bd6 15. Qc6+ Ke7! 16. Bd2 b4 17. Qxd6+ Kxd6 18. Nc4+! Kd7 19. Nxa5! Rxa5 20. Rhc1 Ba6 21. Bxa6 Rxa6 22. Rc4 Nd5 23. Rxd4 Rb8 24. Kd3 h5 25. Kc4 b3 26. a4 Rc6+ 27. Kd3 Rc2 28. Rb1 Rbc8 29. a5 R8c6 30. Ke2 Rd6 31. Ke1 Nc7 32. Rxd6+ Kxd6 33. Bc3 f6 34. Ra1 Na6 35. Ra3! Kc7 36. Rxb3 Nc5 37. Rb5 Na4 38. Bd4 e5 39. Kd1 Rc4 40. Be3 Kc6 41. Rb8 Kc7 1-0
+
+#### 1951 · Bronstein – Botvinnik
+
+*Moskova (SSCB)*
+
+1951 maçının 22. oyununda Bronstein, şampiyon Botvinnik'i yendi; maç 12–12 bitti ve ünvan Botvinnik'te kaldı.
+
+[Event "Dünya Şampiyonası"]
+[Site "Moskova"]
+[Date "1951.??.??"]
+[White "David Bronstein"]
+[Black "Mikhail Botvinnik"]
+[Result "1-0"]
+[EventLine "Dünya Şampiyonası, 22. oyun, Moskova, 1951"]
+[View "player"]
+
+1. d4 e6 2. c4 f5 3. g3 Nf6 4. Bg2 Be7 5. Nc3 O-O 6. e3 d5 7. Nge2 c6 8. b3 Ne4 9. O-O Nd7 10. Bb2 Ndf6 11. Qd3 g5 12. cxd5 exd5 13. f3 Nxc3 14. Bxc3 g4 15. fxg4 Nxg4 16. Bh3 Nh6 17. Nf4 Bd6 18. b4 a6 19. a4 Qe7 20. Rab1 b5 21. Bg2 Ng4 22. Bd2 Nf6 23. Rb2 Bd7 24. Ra1 Ne4 25. Be1 Rfe8 26. Qb3 Kh8 27. Rba2 Qf8 28. Nd3 Rab8 29. axb5 axb5 30. Ra7 Re7 31. Ne5 Be8 32. g4 fxg4 33. Bxe4 dxe4 34. Bh4 Rxe5 35. dxe5 Bxe5 36. Rf1 Qg8 37. Bg3 Bg7 38. Qxg8+ 1-0
+
+#### 1927 · Nimzowitsch – Alekhine
+
+*New York (ABD)*
+
+New York 1927'de Nimzowitsch, aynı yılın sonunda dünya şampiyonu olacak Alekhine'i yendi.
+
+[Event "New York"]
+[Site "New York"]
+[Date "1927.??.??"]
+[White "Aron Nimzowitsch"]
+[Black "Alexander Alekhine"]
+[Result "1-0"]
+[EventLine "New York, 1927"]
+[View "player"]
+
+1. Nf3 Nf6 2. b3 d6 3. g3 e5 4. c4 e4 5. Nh4 d5 6. cxd5 Qxd5 7. Nc3 Qc6 8. e3 a6 9. Bb2 Bg4 10. Be2 Bxe2 11. Nxe2 Nbd7 12. Rc1 Qb6 13. O-O Bd6 14. f3 Be5 15. Bxe5 Nxe5 16. fxe4 Nd3 17. Rc3 O-O-O 18. Qb1 Nxe4 19. Rxd3! Nxd2! 20. Rxd8+ Rxd8 21. Qf5+! Kb8 22. Re1 Qxe3+ 23. Qf2 Qd3 24. Nf4 Qc3 25. Re3 Qc1+ 26. Kg2 Qc6+ 27. Nf3! g5 28. Nd3 Nxf3 29. Qxf3 Qc2+ 30. Nf2 f5 31. Re2 Qc5 32. Nd3 Qd4 33. Ne5 f4 34. Nc4 fxg3 35. Rd2 Qh8 36. Rxd8+ Qxd8 37. hxg3 Qd4 38. Qf8+ Ka7! 39. Qf2 Qxf2+ 40. Kxf2 h5 41. Ke3 c5 42. a4 b5 43. axb5 axb5 44. Nd2 Kb6 45. Ne4 h4 46. g4! h3 47. Kf3 b4 48. Nxg5 c4 49. Ne4 cxb3 50. g5 b2 51. Nd2! Kc5 52. g6 h2 53. Kg2! Kd4 54. g7 Kd3 55. g8=Q Kxd2 56. Qa2 Kc2 57. Qc4+ 1-0
+
+#### 1909 · Rubinstein – Lasker
+
+*St. Petersburg (Rusya)*
+
+St. Petersburg 1909 turnuvasında Rubinstein, dünya şampiyonu Lasker'i yendi.
+
+[Event "St. Petersburg"]
+[Site "St. Petersburg"]
+[Date "1909.??.??"]
+[White "Akiba Rubinstein"]
+[Black "Emanuel Lasker"]
+[Result "1-0"]
+[EventLine "St. Petersburg, 1909"]
+[View "player"]
+
+1. d4 d5 2. Nf3 Nf6 3. c4 e6 4. Bg5 c5 5. cxd5 exd5 6. Nc3 cxd4 7. Nxd4 Nc6 8. e3 Be7 9. Bb5 Bd7 10. Bxf6 Bxf6 11. Nxd5 Bxd4 12. exd4 Qg5 13. Bxc6 Bxc6 14. Ne3 O-O-O 15. O-O Rhe8 16. Rc1 Rxe3 17. Rxc6+!! bxc6 18. Qc1 Rxd4 19. fxe3 Rd7 20. Qxc6+ Kd8! 21. Rf4 f5 22. Qc5 Qe7 23. Qxe7+ Kxe7 24. Rxf5 Rd1+ 25. Kf2 Rd2+ 26. Kf3 Rxb2 27. Ra5 Rb7 28. Ra6 Kf8 29. e4 Rc7 30. h4 Kf7 31. g4 Kf8 32. Kf4 Ke7 33. h5 h6 34. Kf5 Kf7 35. e5 Rb7 36. Rd6 Ke7 37. Ra6 Kf7 38. Rd6 Kf8 39. Rc6 Kf7 40. a3 1-0
+
+#### 1908 · Tarrasch – Lasker
+
+*Düsseldorf, Münih (Almanya)*
+
+1908 maçının 12. oyununda Tarrasch, şampiyon Lasker'i yendi; maçı yine de 10½–5½ kaybetti.
+
+[Event "Dünya Şampiyonası"]
+[Site "Düsseldorf, Münih"]
+[Date "1908.??.??"]
+[White "Siegbert Tarrasch"]
+[Black "Emanuel Lasker"]
+[Result "1-0"]
+[EventLine "Dünya Şampiyonası, 12. oyun, Almanya, 1908"]
+[View "player"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. Nc3 Bb4 5. O-O d6 6. Nd5 Bc5 7. d4 exd4 8. Nxd4 Bxd4 9. Qxd4 O-O 10. Nxf6+ Qxf6 11. Qxf6 gxf6 12. Bh6 Re8 13. Rfe1 a6 14. Bf1 Kh8 15. Bd2 Ne7 16. Bc3 Ng8 17. f4 Kg7 18. Re3 Kf8 19. Bd3 Bd7 20. Rae1 Bb5 21. e5 Bxd3 22. Rxd3 fxe5 23. fxe5 dxe5 24. Rxe5 b6 25. Rh5 h6 26. Bd2 Re6 27. Rd7 Rc8 28. Rf5 Re7 29. Rxe7 Kxe7 30. Re5+ Kf6 31. Bc3 Kg6! 32. Re3 Rd8 33. Rg3+ Kf5! 34. Rg7 Ke6 35. Rh7 c5 36. Kf2 b5 37. Ke2 b4 38. Bd2 Rd4 39. g3 Rg4 40. Bxh6 Nf6 41. Rh8! Rc4 42. Kd1 Ng4 43. Bf4 Kf5 44. b3 Rc3 45. Bd2 Rf3 46. Rh5+ Ke4 47. Rh4 Kf5 48. h3 Nf6 49. Rf4+ Rxf4 50. Bxf4 Ke4 51. Ke2 c4 52. Bg5 Nd5 53. bxc4 Nc3+ 54. Kd2 Kf5 55. Bf4 Nxa2 56. c5 Ke6 57. c6 Nc3 58. Kd3 Nd5 59. Kc4 Ne7 60. Kc5 a5 61. c7 Kd7 62. Kb6 Nf5 63. Kxa5 Nd4 64. Kxb4 Nxc2+ 65. Kc4 1-0
+
+#### 1889 · Chigorin – Steinitz
+
+*Havana (Küba)*
+
+1889 maçının 7. oyununda Chigorin, şampiyon Steinitz'i yendi; maçı 10½–6½ Steinitz kazandı.
+
+[Event "Dünya Şampiyonası"]
+[Site "Havana"]
+[Date "1889.??.??"]
+[White "Mikhail Chigorin"]
+[Black "Wilhelm Steinitz"]
+[Result "1-0"]
+[EventLine "Dünya Şampiyonası, 7. oyun, Havana, 1889"]
+[View "player"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. O-O Qf6 7. d4 Nge7 8. Bg5 Qd6 9. d5 Nd8 10. Qa4 Bb6 11. Na3 Qg6 12. Bxe7 Kxe7 13. Nxe5! Qf6 14. Nf3 Qxc3 15. e5 c6 16. d6+ Kf8 17. Bb3 h6 18. Qh4 g5 19. Qh5 Qd3 20. Rad1 Qh7 21. Nc2 Kg7 22. Ncd4 Qg6 23. Qg4 h5 24. Nf5+ Kf8! 25. Qxg5 Qxg5 26. Nxg5 h4 27. Kh1 Rh5 28. f4! Ne6 29. g4 hxg3 30. Nxg3 Rh6 31. Nxf7 Kxf7 32. f5! Ke8 33. fxe6! dxe6 34. Ne4 1-0
 
 ### Kaynaklar
 
