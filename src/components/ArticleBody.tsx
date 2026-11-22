@@ -15,6 +15,8 @@ import { watchStudy } from '@/lib/study-fix';
 import { watchVariationFix } from '@/lib/variation-fix';
 import { GLYPH_COLOR } from '@/components/FenDiagram';
 import { splitChunks } from '@/lib/split-chunks';
+import LiveMatch from '@/components/LiveMatch';
+import { watchEvalBar } from '@/lib/eval-bar';
 
 // Makale gövdesi: markdown metni + PGN oyun blokları + çapraz tablo + video bağlantısı.
 
@@ -555,6 +557,8 @@ function Quote({ children }: { children?: ReactNode }) {
 
 // "Devamı gelecek. Kaçırmamak için [bültene abone ol](/#bulten)." paragrafı yazının bir parçası değildir; ayrı, sakin bir kapanış bloğu olarak çizilir.
 const CONTINUED = /^Devamı gelecek\./;
+// `[CANLI MAÇ]` tek başına bir paragrafsa: Dünya Şampiyonası 2026 canlı bölümü (src/components/LiveMatch.tsx).
+const LIVE_MATCH = /^\[CANLI MAÇ\]$/;
 function Continued({ text }: { text: string }) {
   const rest = text.replace(CONTINUED, '').trim().replace(/\.$/, ''); // son nokta bağlantı hapından sonra tek başına kalmasın
   return (
@@ -646,7 +650,7 @@ function gameMoves(chunks: string[], i: number): { moves: string; own: boolean }
 }
 
 export default function ArticleBody({ chunks }: { chunks: string[] }) {
-  const hasGames = chunks.some((c) => c.trim().startsWith('[Event ') || FEN_BLOCK.test(c.trim()) || (c.startsWith('>') && /^>\s*\[FEN\s/m.test(c)));
+  const hasGames = chunks.some((c) => LIVE_MATCH.test(c.trim()) || c.trim().startsWith('[Event ') || FEN_BLOCK.test(c.trim()) || (c.startsWith('>') && /^>\s*\[FEN\s/m.test(c)));
   const hasStudy = chunks.some((c) => STUDY_TAG.test(c));
   const cp = useChessPublica(hasGames, { study: hasStudy });
   // ChessPublica yüklenemezse eski düz metin görünümüne düşülür.
@@ -689,12 +693,14 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     const stopVarLead = watchVarLead(el);
     const stopVariationFix = watchVariationFix(el);
     const stopStudy = watchStudy(el);
+    // Dünya Şampiyonası 2026 yazısı (canlı bölümü olan yazı): her oynatıcıda Stockfish değerlendirme çubuğu.
+    const stopEval = chunks.some((c) => LIVE_MATCH.test(c.trim())) ? watchEvalBar(el) : () => {};
     // Oyun yorumlarındaki başlıklara (.cp-heading) İçindekiler'deki kimlik verilir (sectionToc ile aynı slugify).
     const idHeadings = () => el.querySelectorAll('.cp-heading').forEach((h) => { const id = slugify(h.textContent ?? ''); if (id && h.id !== id) h.id = id; });
     idHeadings();
     const headingObserver = new MutationObserver(idHeadings);
     headingObserver.observe(el, { childList: true, subtree: true });
-    return () => { stopCurly(); stopLocalize(); stopInlinePlay(); stopVarLead(); stopVariationFix(); stopStudy(); headingObserver.disconnect(); };
+    return () => { stopCurly(); stopLocalize(); stopInlinePlay(); stopVarLead(); stopVariationFix(); stopStudy(); stopEval(); headingObserver.disconnect(); };
   }, [chunks]);
   useEffect(() => {
     const el = rootRef.current;
@@ -780,6 +786,8 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
         </GameSection>,
       );
       if (own) i++;
+    } else if (LIVE_MATCH.test(c)) {
+      out.push(<LiveMatch key={i} ready={cp === 'ready'} />);
     } else if (CONTINUED.test(c)) {
       out.push(<Continued key={i} text={c} />);
     } else if (FEN_ROW.test(c)) {
