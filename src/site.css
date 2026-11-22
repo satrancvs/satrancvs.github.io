@@ -1005,3 +1005,6 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .tl-anim::after { z-index: 0; }
 .tl-anim .tl-dot, .tl-anim .tl-era::before, .tl-anim .tl-note i { z-index: 1; }
 .tl-anim::after { left: calc(var(--gut, 0rem) + 5px); }
+@media (max-width: 55.99em) {
+  .live-match .live-kicker { font-size: 10.5px; letter-spacing: .14em; white-space: nowrap; gap: .4rem; }
+}
