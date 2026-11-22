@@ -63,6 +63,8 @@ Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor ve her döngü gene
 
 ### Geçmişte nasıldı?
 
+Bugün gördüğümüz düzen, ünvanın yaklaşık 140 yıllık yolculuğunun son durağı. İlk yıllarda şartları şampiyonun kendisi koyuyordu; 1948’den sonra ünvanı FIDE yönetti, 1993’te satranç dünyası iki şampiyonlu bir bölünme yaşadı ve ünvan 2006’da yeniden tek çatı altında toplandı. Aşağıdaki çizelge bu hikâyeyi, en yeniden en eskiye doğru dönem dönem anlatıyor.
+
 [ZAMAN ÇİZELGESİ]
 
 Çizelgede adı geçen ünvan maçlarının her birinden bir oyun seçtik: 1886’dan bugüne toplam 56 oyun. Değerlendirme işaretleri Stockfish’e ait.
