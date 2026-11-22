@@ -45,7 +45,7 @@ function start(): Worker | null {
     const line = String(ev.data);
     if (line === 'uciok') { worker!.postMessage('isready'); return; }
     if (line === 'readyok') { ready = true; next(); return; }
-    if (line.startsWith('info') && current && enabled) {
+    if (line.startsWith('info') && current) {
       const m = line.match(/\bscore (cp|mate) (-?\d+)/);
       if (m && /\bdepth (\d+)/.test(line) && !/\b(lowerbound|upperbound)\b/.test(line)) {
         const white = current.fen.split(' ')[1] !== 'b' ? 1 : -1; // skor hamle sırası olanın gözünden; beyazınkine çevrilir
@@ -72,7 +72,7 @@ function next() {
   worker.postMessage(`go depth ${depthSetting} movetime ${Math.round((MOVETIME[depthSetting] ?? 2500) * (1 + (current.multi - 1) * 0.5))}`);
 }
 
-// Analiz açma/kapama (sağdaki anahtar): kapalıyken motor çalıştırılmaz, çalışan analiz durdurulur. Tercih tarayıcıda saklanır.
+// Analiz açma/kapama (panelin anahtarı): yalnızca panelin skor/devam yolu gösterimini ve çok satırlı analizi kapatır; değerlendirme çubuğu motordan beslenmeye devam eder (tek satır). Tercih tarayıcıda saklanır.
 const KEY = 'sf-analysis';
 let enabled = (() => { try { return localStorage.getItem(KEY) !== 'off'; } catch { return true; } })();
 export const engineEnabled = () => enabled;
@@ -80,12 +80,11 @@ export function setEngineEnabled(on: boolean) {
   if (on === enabled) return;
   enabled = on;
   try { localStorage.setItem(KEY, on ? 'on' : 'off'); } catch { /* saklanamazsa oturum boyunca bellekte kalır */ }
-  if (!on) { pending = null; if (busy && worker) worker.postMessage('stop'); }
   window.dispatchEvent(new CustomEvent('cp-sf-toggle', { detail: on }));
 }
 
 function analyze(fen: string, cb: Listener, multi: number) {
-  if (!enabled || !start()) return;
+  if (!start()) return;
   pending = { fen, cb, multi, lines: [] };
   if (busy) worker!.postMessage('stop'); else next();
 }
@@ -149,7 +148,7 @@ function attach(player: PlayerEl) {
     if (!ev || !ev.bar) return;
     // engine.load() çubuğu "PGN'de eval yok" diye kapatmıştır; burada Stockfish'e bağlanıp açılır, oynatıcının hamle başına sıfırlaması susturulur.
     ev.live = true;
-    const live = !!player.closest('.live-match, .picker'); // çoklu satır yalnızca canlı ekrandaki panel için; diğer oynatıcılar tek satır çözer
+    const live = !!player.closest('.live-match, .picker'); // çoklu satır yalnızca canlı ekrandaki panel açıkken; diğer oynatıcılar ve kapalı panel tek satır çözer
     const show: Listener = (r) => {
       const { cp, mate } = r;
       if (!player.isConnected) return;
@@ -161,20 +160,16 @@ function attach(player: PlayerEl) {
       ev.bar!.setAttribute('aria-label', `Stockfish değerlendirmesi: ${label}`);
     };
     const run = (fen: string | undefined) => {
-      if (!enabled || !fen || fen === last || !player.isConnected) return;
+      if (!fen || fen === last || !player.isConnected) return;
       last = fen;
       window.clearTimeout(timer);
-      timer = window.setTimeout(() => analyze(fen, show, live ? linesSetting : 1), 120);
+      timer = window.setTimeout(() => analyze(fen, show, live && enabled ? linesSetting : 1), 120);
     };
     const here = () => { const s = player._engine?.state; return s ? s.cache[s.index] : undefined; };
     ev.setScore(0);
     ev.setDisabled(false);
-    const sync = () => ev.bar!.classList.toggle('sf-off', !enabled);
-    sync();
     const rerun = () => {
       if (!player.isConnected) return;
-      sync();
-      if (!enabled) { ev.setScore(0); ev.bar!.title = 'Stockfish analizi kapalı'; return; }
       last = '';
       const r = player.getBoundingClientRect();
       if (r.bottom > 0 && r.top < window.innerHeight) run(here());
