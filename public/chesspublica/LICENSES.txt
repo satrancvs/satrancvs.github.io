@@ -46,3 +46,5 @@ Stockfish.js 19 (public/stockfish/stockfish-19-lite-single.js + .wasm; "lite, si
   Stockfish.js (c) Chess.com, LLC / Nathan Rugg, https://github.com/nmrugg/stockfish.js, based on Stockfish (c) T. Romstad, M. Costalba, J. Kiiski,
   G. Linscott and other contributors, https://github.com/official-stockfish/Stockfish. Licensed GPL-3.0 (full text: public/stockfish/Copying.txt).
   The files are the unmodified binaries of the npm package "stockfish" 19.0.1; the corresponding source is at the repositories above.
+
+Stockfish logo (public/stockfish/logo.png): the official Stockfish project icon from https://stockfishchess.org/ (resized to 64 px), shown next to the engine analysis panel to name the engine.
