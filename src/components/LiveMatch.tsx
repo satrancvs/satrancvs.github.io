@@ -171,7 +171,6 @@ export default function LiveMatch({ ready }: { ready: boolean }) {
             ))}
           </div>
           <p className="live-when f-mono">24 Kasım 2026 · 17.00 (Türkiye saati) · Cenevre</p>
-          <p className="live-note">Şampiyona başladığında oyunlar bu sayfada canlı olarak izlenebilecek; sayfayı yenilemenize gerek yok.</p>
         </div>
       )}
     </section>

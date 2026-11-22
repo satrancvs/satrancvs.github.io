@@ -565,7 +565,6 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .live-cell:last-child .live-num { color: var(--accent); }
 .live-unit { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--mute); }
 .live-when { margin: 1.2rem 0 .5rem; font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--fg); }
-.live-note { margin: 0 auto; max-width: 28rem; font-size: 1.0625rem; line-height: 1.5; font-style: italic; color: var(--mute); }
 .live-idle .video-moves, .live-idle .board-toolbar, .live-idle .play, .live-idle .video-comment { visibility: hidden; }
 .live-idle .player-container { margin-left: auto; margin-right: auto; }
 .live-board pgn-player { display: block; width: 340px; max-width: 100%; margin-inline: auto; }
@@ -575,3 +574,97 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 /* Fotoğraf sırası (art arda `![…](…)` satırları): yan yana, dar ekranda alta sarar */
 .fig-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 1.5rem 1.25rem; margin: 2.5rem 0; }
 .fig-row-item { flex: 1 1 150px; margin: 0; max-width: 300px !important; }
+
+/* Stockfish analizi aç/kapa düğmesi (src/lib/eval-bar.ts): tahtanın sol üst köşesinde, tahtanın hemen üstünde */
+.cp-game .board-wrap > .sf-toggle { position: absolute; left: 0; bottom: calc(100% + 4px); z-index: 4; min-width: 30px; height: 24px; padding: 0 7px; border: 1px solid var(--line); border-radius: 999px; background: var(--box); color: var(--mute); font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; font-weight: 600; letter-spacing: .06em; cursor: pointer; line-height: 1; }
+.cp-game .board-wrap > .sf-toggle.on { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.cp-game .board-wrap > .sf-toggle:hover { border-color: var(--accent); }
+
+/* ---- "Seçme: Her bir ünvan maçından bir oyun" (src/components/MatchPicker.tsx): oynatıcı + kart rafları. Açık temada da koyu kalır. ---- */
+.picker { --bg:#0E0C0A; --fg:#F1E9DC; --fg-rgb:241 233 220; --mute:#A89A88; --line:#2E2620; --accent:#C8893E; --box:#17130F; --box2:#14110E; --hover-bg:#1A1512; color-scheme: dark;
+  margin: 2.5rem 0 3rem; padding: 14px 14px 1.25rem; background: var(--bg); color: var(--fg); border-radius: 22px; box-shadow: 0 0 0 1px #2E2620, 0 30px 70px -35px #000; }
+.picker :where(h4, h5) { margin: 0; }
+.mpa-bar { display: flex; align-items: center; gap: .75rem 1rem; flex-wrap: wrap; padding: .35rem .5rem .8rem; }
+.mpa-led { width: .55rem; height: .55rem; border-radius: 50%; background: #d8402f; box-shadow: 0 0 .6rem #d8402f; flex: none; }
+.mpa-ch { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); white-space: nowrap; }
+.mpa-ch span { color: var(--mute); }
+.mpa-title { flex: 1 1 12rem; min-width: 0; font-size: 1.25rem; line-height: 1.2; color: var(--fg); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mpa-btns { display: flex; gap: .4rem; margin-left: auto; }
+.mpa-btns button { height: 2rem; padding: 0 .85rem; border: 1px solid #3a3029; border-radius: 999px; background: transparent; color: var(--fg); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; cursor: pointer; transition: background .15s, border-color .15s; }
+.mpa-btns button:hover { border-color: var(--accent); background: var(--hover-bg); }
+.mpa-btns .mpa-rand { color: var(--accent); }
+.mpa-screen { position: relative; min-height: 28rem; padding: 1rem .5rem .5rem; background: var(--box2); border-radius: 14px; overflow: hidden; box-shadow: inset 0 0 0 1px #2E2620, inset 0 0 60px #000; }
+.mpa-screen::after { content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 4; background: repeating-linear-gradient(to bottom, rgb(255 255 255 / .022) 0 1px, transparent 1px 3px); border-radius: inherit; }
+.mpa-content { animation: mpa-on .5s ease-out both; }
+.mpa-content.off { opacity: 0; }
+.mpa-content .cp-game, .mpa-content section { margin-top: 0; margin-bottom: 0; border-bottom: 0; }
+@keyframes mpa-on { 0% { opacity: 0; transform: scaleY(.02); filter: brightness(2.2); } 55% { opacity: 1; transform: scaleY(1.03); filter: brightness(1.4); } 100% { opacity: 1; transform: none; filter: none; } }
+.mpa-noise { position: absolute; inset: 0; z-index: 5; display: grid; place-items: start end; padding: 1rem; background-color: #1b1815;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  animation: mpa-noise .52s steps(5) forwards; }
+@keyframes mpa-noise { 0% { opacity: 1; background-position: 0 0; } 30% { background-position: 40px -70px; } 60% { background-position: -60px 30px; opacity: .85; } 100% { opacity: 0; background-position: 20px 50px; } }
+.mpa-osd { font-size: 22px; letter-spacing: .15em; font-weight: 600; color: #7CFF8A; text-shadow: 0 0 .6rem #2cdc4a; }
+@media (prefers-reduced-motion: reduce) { .mpa-content, .mpa-noise { animation: none; } .mpa-noise { display: none; } .mpa-content.off { opacity: 1; } }
+
+.mpb-info { padding: 1.4rem .75rem .6rem; }
+.mpb-kicker { margin: 0 0 .4rem; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
+.mpb-title { margin: 0 0 .7rem !important; font-size: clamp(1.7rem, 1.2rem + 2vw, 2.4rem); line-height: 1.1; font-weight: 400; color: var(--fg); }
+.mpb-blurb { margin: 0 0 .5rem; max-width: 46rem; font-size: 1.1875rem; line-height: 1.6; color: rgb(var(--fg-rgb) / .9); }
+.mpb-blurb a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.mpb-figs { margin-top: 1.2rem; }
+.mpb-figs figure { margin-top: 0; margin-bottom: 0; }
+.mpb-figs .fig-row { margin: 0; justify-content: flex-start; }
+
+.mpb-rails { margin-top: 1.4rem; padding: 0 .25rem; }
+.mpb-row { margin-top: 1.1rem; }
+.mpb-row-title { margin: 0 0 .5rem .5rem !important; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--mute); font-weight: 500; }
+.mpb-track { display: flex; gap: .65rem; padding: .6rem .5rem 1rem; overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: thin; scrollbar-color: var(--accent) transparent; }
+.mpb-card { flex: 0 0 11.5rem; padding: 0; border: 0; background: none; text-align: left; color: var(--fg); cursor: pointer; scroll-snap-align: start; transition: transform .18s ease; }
+.mpb-card:hover, .mpb-card:focus-visible { transform: scale(1.06); position: relative; z-index: 2; outline: none; }
+.mpb-thumb { position: relative; display: block; aspect-ratio: 3 / 2; overflow: hidden; border-radius: 6px; background: #1b1815; box-shadow: 0 0 0 1px #2E2620; }
+.mpb-card:hover .mpb-thumb, .mpb-card:focus-visible .mpb-thumb { box-shadow: 0 0 0 2px var(--fg), 0 14px 26px -10px #000; }
+.mpb-card.on .mpb-thumb { box-shadow: 0 0 0 2px var(--accent); }
+.mpb-thumb img { filter: grayscale(1) brightness(.8); transition: filter .2s; }
+.mpb-card:hover .mpb-thumb img, .mpb-card.on .mpb-thumb img, .mpb-card:focus-visible .mpb-thumb img { filter: none !important; }
+.mpb-thumb::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgb(0 0 0 / .65), transparent 55%); pointer-events: none; }
+.mpb-noimg { position: absolute; inset: 0; display: grid; place-items: center; font-size: 2.2rem; color: var(--mute); }
+.mpb-num { position: absolute; left: .45rem; top: .35rem; z-index: 1; font-size: 11px; letter-spacing: .1em; color: var(--fg); text-shadow: 0 1px 4px #000; }
+.mpb-now { position: absolute; left: .45rem; bottom: .4rem; z-index: 1; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+.mpb-name { display: block; margin-top: .45rem; font-size: 14px; line-height: 1.3; color: rgb(var(--fg-rgb) / .85); }
+.mpb-name b { display: block; font-size: 1.15rem; font-weight: 400; color: var(--fg); }
+@media (min-width: 56em) { .picker { width: min(62rem, calc(100vw - 3rem)); margin-left: 50%; transform: translateX(-50%); padding: 18px 18px 1.5rem; } }
+@media (max-width: 40em) { .mpa-btns { width: 100%; margin-left: 0; } .mpa-btns button { flex: 1; padding: 0 .4rem; } .mpa-title { flex-basis: 100%; order: 3; white-space: normal; } .mpb-card { flex-basis: 9.5rem; } }
+
+/* Oyunlarda yorum yok: oynatıcı tek sütunda kalmasın. Geniş ekranda iki sütun ve daha büyük tahta. */
+.picker .mpa-screen { container-type: inline-size; }
+.picker .cp-game pgn-player:not(pgn-study pgn-player) { --board-size: min(400px, calc(100cqw - 1rem)); }
+@media (min-width: 56em) {
+  .picker .mpb-main { display: grid; grid-template-columns: minmax(0, 1fr) 19rem; gap: 0 1.75rem; align-items: start; }
+  .picker .mpb-info { padding: .2rem .25rem 0 0; position: sticky; top: 1.5rem; }
+  .picker .mpb-title { font-size: clamp(1.6rem, 1.1rem + 1.2vw, 2rem); }
+  .picker .mpb-blurb { font-size: 1.0625rem; }
+  .picker .mpb-figs figure { max-width: 100% !important; }
+  .picker .mpb-figs .fig-row { flex-direction: column; align-items: stretch; }
+  .picker .cp-game pgn-player:not(pgn-study pgn-player) { --board-size: min(560px, calc(100cqw - 2rem)) !important; transform: none !important; width: 100% !important; max-width: 100% !important; margin: 0 !important; }
+  .picker .cp-game pgn-player .player-container, .live-match .cp-game pgn-player .player-container { margin-inline: auto; }
+  .picker .mpa-content .cp-game .game-names { font-size: 1.25rem; }
+  .live-match { width: min(62rem, calc(100vw - 3rem)); margin-left: 50%; transform: translateX(-50%); display: grid; grid-template-columns: minmax(0, 580px) minmax(0, 1fr); column-gap: 2.25rem; align-items: start; text-align: left; }
+  .live-match > .live-board { grid-column: 1; grid-row: 1 / span 8; container-type: inline-size; }
+  .live-match > :not(.live-board) { grid-column: 2; }
+  .live-match .live-board pgn-player:not(pgn-study pgn-player) { --board-size: min(560px, calc(100cqw - 2rem)) !important; transform: none !important; width: 100% !important; max-width: 100% !important; margin: 0 !important; }
+  .picker .cp-game pgn-player .player-container, .live-match .cp-game pgn-player .player-container { margin-inline: auto; }
+  .live-match .live-rounds { justify-content: flex-start; }
+  .live-match .live-kicker { margin-top: .4rem; }
+  .live-match .live-title { font-size: clamp(2rem, 1.2rem + 2vw, 3rem); }
+  .live-match .live-count { margin: .4rem 0 0; max-width: none; padding: 1.2rem 0 1rem; }
+  .live-match .live-num { font-size: clamp(2.2rem, 1.2rem + 2.4vw, 3.4rem); }
+}
+
+/* Şampiyonlar tablosu: dönem başlıkları (yatay bölücü satırlar) ve zaman çizgisi */
+.art-table tr.era td { padding: 2.4rem 1.1rem .7rem; border-bottom: 1px solid var(--accent); }
+.art-table tr.era:first-child td, .art-table tbody tr.era:first-child td { padding-top: 1.2rem; }
+.art-table .era-years { font-family: 'Fraunces', serif; font-size: 1.75rem; line-height: 1; font-weight: 400; color: var(--accent); margin-right: 1.1rem; white-space: nowrap; }
+.art-table .era-name { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--mute); }
+.art-table tr.era-note td { padding: .5rem 1.1rem; font-style: italic; color: var(--mute); font-size: 1.0625rem; border-bottom: 1px dashed var(--line); background: color-mix(in srgb, var(--accent) 7%, transparent); }
+.art-table tr.era-note td span { font-family: 'JetBrains Mono', ui-monospace, monospace; font-style: normal; font-size: 12px; letter-spacing: .12em; color: var(--accent); margin-right: .6rem; }
+.art-table tbody tr:not(.era):not(.era-note) td:first-child { border-left: 2px solid var(--accent); }

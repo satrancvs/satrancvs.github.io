@@ -8,3 +8,5 @@ Yazıdaki kişi ve maç fotoğrafları Wikimedia Commons'tan (yalnızca serbest 
 
 Hangi kişi/maç için hangi Commons dosyasının seçildiği `photos.py`'dedir; `persons.json`, `matchimgs.json`, `extra_info.json` Commons API yanıtlarının (boyut, lisans, yazar) önbelleğidir.
 Resmî maç afişleri serbest lisanslı değildir; Commons'ta bulunamadı, bu yüzden yazıda afiş yoktur.
+
+FIDE'den elle eklenenler: `dunya-afis-*.jpg` (FIDE Müzesi afişleri, `posters.py`) ve `dunya-fide-2018-*.jpg` ([FIDE 2018 galerisi](https://www.fide.com/images/stories/gallery/WCCM2018/index.html), `Tie-Breaks/slides/`); ikisinde de altyazı FIDE'ye etkin bağlantı verir.

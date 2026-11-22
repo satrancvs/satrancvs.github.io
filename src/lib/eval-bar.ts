@@ -56,6 +56,18 @@ function analyze(fen: string, cb: Listener) {
   if (busy) worker!.postMessage('stop'); else next();
 }
 
+// Analiz açık/kapalı (tahtanın sol üst köşesindeki düğme): tüm oynatıcılar için ortak, okurun tarayıcısında hatırlanır.
+const KEY = 'sf-analysis';
+let enabled = true;
+try { enabled = window.localStorage.getItem(KEY) !== 'off'; } catch { /* depolama kapalı: açık başlar */ }
+const subs = new Set<() => void>();
+function setEnabled(v: boolean) {
+  enabled = v;
+  try { window.localStorage.setItem(KEY, v ? 'on' : 'off'); } catch { /* yok say */ }
+  if (!v) { pending = null; if (busy && worker) worker.postMessage('stop'); }
+  subs.forEach((f) => f());
+}
+
 type PlayerEl = HTMLElement & {
   ready?: Promise<unknown>;
   _engine?: { state: { index: number; cache: string[] }; evalBar?: { live: boolean; bar: HTMLElement | null; setDisabled(f: boolean): void; setScore(pawns: number): void } };
@@ -74,22 +86,39 @@ function attach(player: PlayerEl) {
     if (!ev || !ev.bar) return;
     // engine.load() çubuğu "PGN'de eval yok" diye kapatmıştır; burada Stockfish'e bağlanıp açılır, oynatıcının hamle başına sıfırlaması susturulur.
     ev.live = true;
-    ev.setDisabled(false);
+    const wrap = player.querySelector('.board-wrap') as HTMLElement | null;
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'sf-toggle';
+    btn.textContent = 'SF';
+    wrap?.appendChild(btn);
+    btn.addEventListener('click', (e) => { e.stopPropagation(); setEnabled(!enabled); });
     const show = (cp: number | null, mate: number | null) => {
-      if (!player.isConnected) return;
+      if (!player.isConnected || !enabled) return;
       ev.setScore(mate !== null ? (mate > 0 ? 8 : -8) : (cp ?? 0) / 100);
       const label = mate !== null ? `${mate > 0 ? '+' : '−'}M${Math.abs(mate)}` : `${(cp ?? 0) > 0 ? '+' : (cp ?? 0) < 0 ? '−' : ''}${Math.abs((cp ?? 0) / 100).toFixed(1)}`;
       ev.bar!.title = `Stockfish: ${label}`;
       ev.bar!.setAttribute('aria-label', `Stockfish değerlendirmesi: ${label}`);
     };
     const run = (fen: string | undefined) => {
-      if (!fen || fen === last || !player.isConnected) return;
+      if (!enabled || !fen || fen === last || !player.isConnected) return;
       last = fen;
       window.clearTimeout(timer);
       timer = window.setTimeout(() => analyze(fen, show), 120);
     };
     const here = () => { const s = player._engine?.state; return s ? s.cache[s.index] : undefined; };
     ev.setScore(0);
+    const sync = () => {
+      if (!player.isConnected) { subs.delete(sync); return; }
+      ev.setDisabled(!enabled);
+      btn.classList.toggle('on', enabled);
+      btn.setAttribute('aria-pressed', String(enabled));
+      btn.title = enabled ? 'Stockfish analizi açık (kapatmak için tıklayın)' : 'Stockfish analizi kapalı (açmak için tıklayın)';
+      btn.setAttribute('aria-label', btn.title);
+      if (enabled) { last = ''; run(here()); }
+    };
+    subs.add(sync);
+    sync();
     player.addEventListener('cp-move', (e) => { const i = (e as CustomEvent).detail?.moveIndex as number; run(player._engine?.state.cache[i + 1]); });
     player.addEventListener('cp-variation-move', (e) => run((e as CustomEvent).detail?.fen));
     // Görünürken ilk konum (başlangıç ya da canlı yayında son hamle) çözülür; canlıda atlama sonradan yapıldığı için biraz sonra yine okunur.

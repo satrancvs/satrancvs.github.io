@@ -55,5 +55,6 @@ export default function ProgressiveImage({ path, alt, lazy = true, cover = false
 
 // Figure için: küçük (s) sınıfında altyazı fotoğraftan geniş olsun diye sarmalayıcı 480 px'e kadar açılır; diğerlerinde sarmalayıcı
 // fotoğrafın kutusu kadar (yatay 600, dikey 400 px) olur ve altyazı fotoğrafın genişliğini geçmez.
+export const hasImage = (path: string) => !!META[path.replace(/^\//, '')];
 export const isSmallImage = (path: string) => META[path.replace(/^\//, '')]?.kind === 's';
 export const boxWidth = (path: string) => BOX[META[path.replace(/^\//, '')]?.kind ?? 'h'].w;
