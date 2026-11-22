@@ -1010,7 +1010,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 }
 
 /* Zaman çizelgesi kendi kutusunda kayar (sayfadan bağımsız): .tl-scroll sabit yükseklikli kaydırma kutusu, içindeki .tl tam içerik */
-.tl-scroll { position: relative; margin: 2rem 0 1rem; height: min(46rem, 78svh); overflow-y: auto; overflow-x: hidden; overscroll-behavior-y: contain; scrollbar-width: none; -ms-overflow-style: none; border-radius: 14px; -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 22px, #000 calc(100% - 26px), transparent 100%); mask-image: linear-gradient(to bottom, transparent 0, #000 22px, #000 calc(100% - 26px), transparent 100%); }
+.tl-scroll { position: relative; margin: 2rem 0 1rem; height: min(46rem, 78svh); overflow-y: auto; overflow-x: hidden; overscroll-behavior-y: auto; scrollbar-width: none; -ms-overflow-style: none; border-radius: 14px; -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 22px, #000 calc(100% - 26px), transparent 100%); mask-image: linear-gradient(to bottom, transparent 0, #000 22px, #000 calc(100% - 26px), transparent 100%); }
 .tl-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .tl-scroll::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .tl-scroll .tl { margin: 0; padding-top: 1.4rem; padding-bottom: 2rem; }
@@ -1052,7 +1052,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 @media (max-width: 55.99em) { .picker .mpb-info > .sec-link { margin-top: 1.4rem; } }
 
 /* Stockfish analizi durdurulunca panel tek satıra iner (yalnızca başlık + anahtar); kaydırma/uzatma kutusu kalkar */
-.live-sf.is-off { contain: none !important; align-self: flex-start !important; overflow: visible !important; padding: .6rem .8rem !important; }
+.live-sf.is-off { min-width: 0 !important; contain: none !important; overflow: visible !important; padding: .6rem 1.1rem !important; }
 .live-sf.is-off > :not(.live-sf-head) { display: none !important; }
 .live-sf.is-off .live-sf-head { margin: 0; gap: .45rem; font-size: 10px; letter-spacing: .08em; white-space: nowrap; }
 .live-sf.is-off .live-sf-head span { overflow: hidden; text-overflow: ellipsis; }
@@ -1068,3 +1068,6 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .live-sf-head { gap: .4rem; }
 .live-sf-head { letter-spacing: .1em; }
 .live-sf-head img { width: 20px; height: 20px; }
+@media (min-width: 56em) { .live-sf.is-off { align-self: flex-start !important; } }
+/* "Şimdi oynatılıyor" sağ sütunun en üstünde, kartın üzerinde */
+.picker .mpb-info > .mpb-kicker { margin: 0 0 .6rem; }

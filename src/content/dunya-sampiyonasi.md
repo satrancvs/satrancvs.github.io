@@ -16,7 +16,19 @@ Gelelim karşısındaki isme. **Sindarov**, sistemin ikinci kapısından, yani o
 - Kasım 2025’te Goa’daki **FIDE Dünya Kupası**’nı (206 oyunculu eleme turnuvası) kazandı. 16. seri olarak başladığı turnuvada finalde Wei Yi’yi ancak ikinci hızlı oyun kararında yenebildi. 19 yaş 11 ayla en genç Dünya Kupası galibi ve ilk Özbek galip oldu; bu zafer ona Adaylar’a giriş bileti kazandırdı.
 - Mart–Nisan 2026’da Kıbrıs’ın Pegeia kasabasında oynanan, sekiz oyunculu, çift turlu döner **Adaylar Turnuvası**’nı 14 turda **10 puanla** kazandı: altı galibiyet, hiç yenilgi yok. Turnuvayı bir tur kala garantiledi ve mevcut çift turlu döner biçimde alınmış en yüksek puana ulaştı.
 
-Adaylar’ın son sıralaması şöyle oldu: Sindarov 10, Giri 8½, Caruana 7½, Wei Yi 7, Nakamura 6½, Blübaum 6, Praggnanandhaa 6, Esipenko 4½.
+Adaylar’ın son sıralaması şöyle oldu (her kutuda iki rakibin iki oyunu, oynanış sırasıyla):
+
+<pre>
+                          1  2  3  4  5  6  7  8   Puan
+ 1 GM Sindarov            * ½½ 1½ 1½ 1½ ½½ 11 1½   10
+ 2 GM Giri               ½½  * ½1 ½½ ½½ ½1 01 1½   8½
+ 3 GM Caruana            0½ ½0  * 1½ 10 1½ ½½ ½1   7½
+ 4 GM Wei Yi             0½ ½½ 0½  * ½½ ½½ ½½ 11   7
+ 5 GM Nakamura           0½ ½½ 01 ½½  * ½½ ½½ ½½   6½
+=6 GM Blübaum            ½½ ½0 0½ ½½ ½½  * ½½ ½½   6
+=6 GM Praggnanandhaa     00 10 ½½ ½½ ½½ ½½  * ½½   6
+ 8 GM Esipenko           0½ 0½ ½0 00 ½½ ½½ ½½  *   4½
+</pre>
 
 #### Peki Carlsen, Nakamura, Caruana?
 
@@ -49,9 +61,9 @@ Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor ve her döngü gene
 
 ### Geçmişte nasıldı?
 
-Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının kendisi bile 19. yüzyılın sonlarında ortaya çıktı ve günümüze kadar defalarca yeniden tanımlandı.
-
 [ZAMAN ÇİZELGESİ]
+
+Çizelgede adı geçen ünvan maçlarının her birinden bir oyun seçtik: 1886’dan bugüne toplam 56 oyun. Aşağıdan istediğinizi seçip izleyebilirsiniz.
 
 ### Tüm ünvan maçları
 
@@ -144,7 +156,7 @@ Carlsen maçı 11 oyunda 7½–3½ kazandı. İzleyeceğiniz oyun, 11. oyun.
 ![Carlsen ve Caruana el sıkışıyor](images/dunya-fide-2018-a.jpg "Carlsen ve Caruana, hızlı oyunlar öncesi · © <span lang="en">FIDE</span> · [<span lang="en">FIDE</span> fotoğraf galerisi](https://www.fide.com/images/stories/gallery/WCCM2018/index.html)")
 ![Carlsen hızlı oyunda](images/dunya-fide-2018-b.jpg "Carlsen, hızlı oyunlar sırasında · © <span lang="en">FIDE</span> · [<span lang="en">FIDE</span> fotoğraf galerisi](https://www.fide.com/images/stories/gallery/WCCM2018/index.html)")
 
-12 klasik oyunun hepsi berabere bitti; Carlsen hızlı oyunlarda 3–0 kazandı. İzleyeceğiniz oyun, 2. hızlı oyun. [FIDE fotoğraf galerisi](https://www.fide.com/images/stories/gallery/WCCM2018/index.html).
+12 klasik oyunun hepsi berabere bitti; Carlsen hızlı oyunlarda 3–0 kazandı. İzleyeceğiniz oyun, 2. hızlı oyun.
 
 [Event "Dünya Şampiyonası"]
 [Site "Londra"]
@@ -167,7 +179,7 @@ Carlsen maçı 11 oyunda 7½–3½ kazandı. İzleyeceğiniz oyun, 11. oyun.
 
 ![Sergey Karjakin](images/dunya-karjakin.jpg "<span lang="en">Sergey Karjakin</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 4.0</span>")
 
-Maç, Manhattan’da South Street Seaport’taki Fulton Market Binası’nda oynandı ve New York’ta 1995’ten beri oynanan ilk dünya şampiyonası maçıydı. Yedi beraberlikle başladı; Karjakin 8. oyunda öne geçti, Carlsen 10. oyunda eşitledi ve 12 klasik oyun 6–6 bitti. Carlsen hızlı oyunlarda 3–1 kazandı: 30 Kasım’da, 26. doğum gününde 3. oyunu aldı, 4. oyunda ise vezir fedasıyla mat etti. İzleyeceğiniz oyun, 4. hızlı oyun. Ayrıntılar: [World Chess'in New York 2016 sayfası](https://worldchess.com/nyc2016).
+Maç, Manhattan’da South Street Seaport’taki Fulton Market Binası’nda oynandı ve New York’ta 1995’ten beri oynanan ilk dünya şampiyonası maçıydı. Yedi beraberlikle başladı; Karjakin 8. oyunda öne geçti, Carlsen 10. oyunda eşitledi ve 12 klasik oyun 6–6 bitti. Carlsen hızlı oyunlarda 3–1 kazandı: 30 Kasım’da, 26. doğum gününde 3. oyunu aldı, 4. oyunda ise vezir fedasıyla mat etti. İzleyeceğiniz oyun, 4. hızlı oyun.
 
 [Event "Dünya Şampiyonası"]
 [Site "New York"]
