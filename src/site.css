@@ -727,27 +727,35 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .picker .mpa-content .cp-game { padding-bottom: .25rem; }
 }
 
-/* Seçici: "Sıradaki oyunlar" sağ panelde dikey liste (alt alta); tek görsel üstteki kahraman görsel. */
-.picker .mpb-info { display: flex; flex-direction: column; }
-.picker .mpb-next { margin: 1.2rem 0 .5rem; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--mute); }
-.picker .mpb-rails { display: flex; flex-direction: column; flex: 1 1 auto; min-height: 0; margin: 0; padding: 0; border: 0; }
-.picker .mpb-track { flex-direction: column; flex-wrap: nowrap; gap: .4rem; padding: 0 .35rem .5rem 0; overflow-x: hidden; overflow-y: auto; scroll-snap-type: none; max-height: 26rem; }
-.picker .mpb-row-title { writing-mode: horizontal-tb; transform: none; flex: none; align-self: stretch; display: block; margin: .6rem 0 .1rem !important; padding: 0; border: 0; text-align: left; }
-.picker .mpb-card { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: .8rem; align-items: center; flex: none; width: 100%; padding: .3rem; border-radius: 8px; scroll-snap-align: none; }
-.picker .mpb-card:hover, .picker .mpb-card:focus-visible { transform: none; background: var(--hover-bg); }
-.picker .mpb-card.on { background: var(--hover-bg); box-shadow: inset 0 0 0 1px var(--accent); }
-.picker .mpb-card .mpb-thumb { box-shadow: 0 0 0 1px var(--line); }
-.picker .mpb-card.on .mpb-thumb { box-shadow: none; }
-.picker .mpb-name { margin-top: 0; }
-.picker .mpb-now { display: none; }
+/* Canlı maç ekranı yeniden tasarım: solda Stockfish analiz paneli, ortada tahta, sağda maç kartı. */
+.live-stage { display: flex; flex-direction: column; gap: 1rem; }
+.live-stage > .live-board { order: -1; min-width: 0; }
+.live-sf { padding: 1rem 1.1rem 1.1rem; text-align: left; border: 1px solid var(--line); border-radius: 12px; background: color-mix(in srgb, var(--fg) 4%, transparent); }
+.live-sf-head { display: flex; align-items: center; gap: .5rem; margin: 0 0 .9rem; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--mute); }
+.live-sf-head i { width: .5rem; height: .5rem; border-radius: 50%; background: var(--accent); flex: none; }
+.live-sf:not(.is-wait) .live-sf-head i { animation: live-pulse 1.8s ease-out infinite; }
+.live-sf-num { margin: 0; font-size: clamp(2.8rem, 2rem + 2vw, 3.8rem); line-height: 1; font-weight: 300; font-variant-numeric: tabular-nums lining-nums; color: var(--fg); }
+.live-sf.is-wait .live-sf-num { color: var(--mute); }
+.live-sf-label { margin: .45rem 0 1rem; min-height: 2.9em; font-size: 1.0625rem; line-height: 1.4; color: var(--fg); }
+.live-sf.is-wait .live-sf-label { color: var(--mute); font-size: 1rem; }
+.live-sf-meter { height: .7rem; border-radius: 999px; overflow: hidden; background: #26211c; box-shadow: 0 0 0 1px var(--line); }
+.live-sf-meter span { display: block; height: 100%; background: #f1e9dc; transition: width .5s ease; }
+.live-sf-meta { display: flex; justify-content: space-between; margin: .4rem 0 1.1rem; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); }
+.live-sf-pv-title { margin: 0 0 .35rem; padding-top: .9rem; border-top: 1px solid var(--line); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--mute); }
+.live-sf-pv { margin: 0; min-height: 5.2em; font-size: 1.125rem; line-height: 1.55; color: var(--fg); font-weight: 500; }
+.live-sf-note { margin: .9rem 0 0; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--mute); opacity: .8; }
+.live-vs { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; margin: 0 0 1.1rem; }
+.live-vs > div { display: flex; align-items: center; gap: .7rem; text-align: left; }
+.live-vs img { width: 3.2rem; height: 3.2rem; border-radius: 50%; object-fit: cover; object-position: 50% 20%; box-shadow: 0 0 0 2px var(--accent); }
+.live-vs p { margin: 0; display: flex; flex-direction: column; gap: .1rem; }
+.live-vs b { font-family: 'Fraunces', serif; font-weight: 400; font-size: 1.15rem; line-height: 1.15; color: var(--fg); }
+.live-vs span { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); }
+.live-match .live-count-grid { gap: .5rem; }
+.live-match .live-cell { padding: .7rem 0 .6rem; border: 1px solid var(--line); border-radius: 10px; background: color-mix(in srgb, var(--fg) 4%, transparent); }
+.live-match .live-cell + .live-cell { border-left: 1px solid var(--line); }
+.live-match .live-count { border: 0; padding-top: .6rem; }
 @media (min-width: 56em) {
-  .picker .mpb-info { max-height: calc(100svh - 3rem); }
-  .picker .mpb-track { max-height: none; flex: 1 1 auto; min-height: 0; }
-  .picker { min-height: 0; display: block; }
-  .picker .mpb-main { min-height: calc(100svh - 3rem); }
-}
-@media (min-width: 56em) {
-  .picker .mpb-hero { flex: none; }
-  .picker .mpb-kicker, .picker .mpb-blurb, .picker .mpb-next { flex: none; }
-  .picker .cp-game pgn-player:not(pgn-study pgn-player) { --board-size: max(380px, min(860px, 100cqw - 2rem, 100svh - 13rem)) !important; }
+  .live-match > .live-stage { grid-column: 1; grid-row: 1 / span 8; flex-direction: row; align-items: flex-start; gap: 1.75rem; }
+  .live-stage > .live-sf { flex: 0 0 15.5rem; order: -1; }
+  .live-stage > .live-board { flex: 1 1 0; order: 0; container-type: inline-size; }
 }

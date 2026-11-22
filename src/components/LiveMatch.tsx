@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { Chess } from 'chess.js';
 
 // Dünya Şampiyonası 2026 (Gukesh – Sindarov) canlı bölümü. Yazıda yalnızca `[CANLI MAÇ]` yazan bir paragraf bu bileşeni çizer.
 //  - Maç başlamadan: renksiz, tıklanamaz, boş bir <pgn-player> ve altında 1. oyuna geri sayım.
@@ -34,6 +35,40 @@ const demoRound = () => {
   const id = new URLSearchParams(window.location.search).get('canli-deneme');
   return id && /^[A-Za-z0-9]{8}$/.test(id) ? id : null;
 };
+
+
+// Stockfish analizi (eval-bar.ts her konum için `cp-sf` olayı yollar): sol paneldeki skor, derinlik ve en iyi varyant.
+type Sf = { cp: number | null; mate: number | null; depth: number; pv: string[]; fen: string };
+const FIG: Record<string, string> = { K: '♔', Q: '♕', R: '♖', B: '♗', N: '♘' };
+const figurine = (san: string) => san.replace(/^[KQRBN]/, (c) => FIG[c]);
+function pvText(fen: string, pv: string[]): string {
+  try {
+    const g = new Chess(fen);
+    const parts: string[] = [];
+    let n = g.moveNumber();
+    let first = true;
+    for (const u of pv.slice(0, 8)) {
+      const white = g.turn() === 'w';
+      const mv = g.move({ from: u.slice(0, 2), to: u.slice(2, 4), promotion: u[4] });
+      if (white) parts.push(`${n}. ${figurine(mv.san)}`);
+      else parts.push(first ? `${n}… ${figurine(mv.san)}` : figurine(mv.san));
+      if (!white) n++;
+      first = false;
+    }
+    return parts.join(' ');
+  } catch { return ''; }
+}
+function evalText(sf: Sf): { num: string; label: string; white: number } {
+  if (sf.mate !== null) {
+    const m = sf.mate;
+    return { num: `${m > 0 ? '+' : '−'}M${Math.abs(m)}`, label: `${m > 0 ? 'Beyaz' : 'Siyah'} ${Math.abs(m)} hamlede mat yapıyor`, white: m > 0 ? 100 : 0 };
+  }
+  const cp = sf.cp ?? 0;
+  const a = Math.abs(cp);
+  const side = cp > 0 ? 'Beyaz' : 'Siyah';
+  const label = a < 30 ? 'Eşit' : a < 100 ? `${side} hafif üstün` : a < 300 ? `${side} üstün` : a < 600 ? `${side} açık üstün` : `${side} kazanıyor`;
+  return { num: `${cp > 0 ? '+' : cp < 0 ? '−' : ''}${(a / 100).toFixed(1)}`, label, white: 100 / (1 + Math.exp(-cp / 400)) };
+}
 
 export default function LiveMatch({ ready }: { ready: boolean }) {
   const demo = useMemo(demoRound, []);
@@ -107,6 +142,19 @@ export default function LiveMatch({ ready }: { ready: boolean }) {
   }, [pgns, started.length]); // eslint-disable-line react-hooks/exhaustive-deps
   const fmt = (n: number) => (Number.isInteger(n) ? String(n) : `${Math.floor(n) || ''}½`);
 
+  const [sf, setSf] = useState<Sf | null>(null);
+  const board = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = board.current;
+    if (!el) return;
+    const on = (e: Event) => setSf((e as CustomEvent<Sf>).detail);
+    el.addEventListener('cp-sf', on);
+    return () => el.removeEventListener('cp-sf', on);
+  }, []);
+  useEffect(() => { if (idle) setSf(null); }, [idle]);
+  const ev = sf && !idle ? evalText(sf) : null;
+  const line = sf && !idle ? pvText(sf.fen, sf.pv) : '';
+
   const host = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = host.current;
@@ -140,6 +188,10 @@ export default function LiveMatch({ ready }: { ready: boolean }) {
         {live ? <><i className="live-dot" aria-hidden="true" />Canlı</> : 'Çok yakında'}<span aria-hidden="true"> · </span>Dünya Şampiyonası 2026
       </p>
       <h2 className="live-title f-display">Gukesh <span>–</span> Sindarov</h2>
+      <div className="live-vs">
+        <div><img src={`${import.meta.env.BASE_URL}images/dunya-gukesh.jpg`} alt="" loading="lazy" /><p><b>Gukesh Dommaraju</b><span className="f-mono">Hindistan · 2710</span></p></div>
+        <div><img src={`${import.meta.env.BASE_URL}images/dunya-sindarov.jpg`} alt="" loading="lazy" /><p><b>Javokhir Sindarov</b><span className="f-mono">Özbekistan · 2782</span></p></div>
+      </div>
       {live && !demo && (
         <p className="live-score f-mono" aria-label="Maç skoru">
           <b>Gukesh {fmt(score.g)}</b><span> – </span><b>{fmt(score.s)} Sindarov</b>
@@ -153,8 +205,20 @@ export default function LiveMatch({ ready }: { ready: boolean }) {
           })}
         </div>
       )}
-      <div className={`cp-game live-board${idle ? ' live-idle' : ''}`} aria-disabled={idle} {...(idle ? { inert: '' } : {})}>
-        <div ref={host} />
+      <div className="live-stage">
+        <aside className={`live-sf${ev ? '' : ' is-wait'}`} aria-label="Stockfish canlı analizi" aria-live="off">
+          <p className="live-sf-head f-mono"><i aria-hidden="true" />Stockfish 19 · canlı analiz</p>
+          <p className="live-sf-num f-display">{ev ? ev.num : '—'}</p>
+          <p className="live-sf-label">{ev ? ev.label : idle ? 'Maç başlayınca her konum burada canlı çözümlenecek.' : 'Konum çözümleniyor…'}</p>
+          <div className="live-sf-meter" aria-hidden="true"><span style={{ width: `${ev ? ev.white : 50}%` }} /></div>
+          <div className="live-sf-meta f-mono"><span>Beyaz</span><span>{sf && !idle ? `Derinlik ${sf.depth}` : ''}</span><span>Siyah</span></div>
+          <p className="live-sf-pv-title f-mono">En iyi devam</p>
+          <p className="live-sf-pv">{line || '—'}</p>
+          <p className="live-sf-note f-mono">Tarayıcınızda çalışan motor · 2,5 sn</p>
+        </aside>
+        <div ref={board} className={`cp-game live-board${idle ? ' live-idle' : ''}`} aria-disabled={idle} {...(idle ? { inert: '' } : {})}>
+          <div ref={host} />
+        </div>
       </div>
       {live && hasMoves && (
         <p className="live-status f-mono">

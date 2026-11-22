@@ -1,5 +1,5 @@
-![Gukesh Dommaraju](images/dunya-gukesh.jpg "<span lang="en">Gukesh Dommaraju</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Yunfan Zhao / lichess.org</span> · <span lang="en">CC BY-SA 4.0</span>")
-![Javokhir Sindarov](images/dunya-sindarov.jpg "<span lang="en">Javokhir Sindarov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">TheBoburshokh</span> · <span lang="en">CC BY 4.0</span>")
+![Gukesh Dommaraju](images/dunya-fide-gukesh.jpg "Gukesh Dommaraju · Resmî maç sitesi · [<span lang="en">worldchampionship.fide.com</span>](https://worldchampionship.fide.com/) · © <span lang="en">FIDE</span>")
+![Javokhir Sindarov](images/dunya-fide-sindarov.jpg "Javokhir Sindarov · Resmî maç sitesi · [<span lang="en">worldchampionship.fide.com</span>](https://worldchampionship.fide.com/) · © <span lang="en">FIDE</span>")
 
 [CANLI MAÇ]
 
