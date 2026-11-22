@@ -759,12 +759,12 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     }
     const items: PickItem[] = drafts.filter((d) => d.header).map((d) => {
       const item = games.find((g) => g.at === d.gi)!;
-      // Açıklama oyunun ilk hamlesinin yorumu olarak da yazılır (hamle listesinin altında, ilk hamle oynanınca görünür). Açıklamanın sonundaki özel
+      // Açıklama oyunun ilk hamlesinin yorumu olarak da yazılır (hamle listesinin altında). Açıklamanın sonundaki özel
       // kaynak bağlantıları ("Ayrıntılar: …", FIDE fotoğraf galerisi) yalnızca yorumda gösterilir, sağ sütunda durmaz.
       const cut = d.blurb.search(/(Ayrıntılar:|\[FIDE fotoğraf galerisi\])/);
       const blurb = (cut >= 0 ? d.blurb.slice(0, cut) : d.blurb).trim();
       const note = [d.blurb.trim(), d.bioNote].filter(Boolean).join('\n\n');
-      const moves = note && d.moves ? d.moves.replace(/^(\s*\d+\.\s*\S+)/, `$1 { ${note} }`) : d.moves;
+      const moves = note && d.moves ? `{ ${note} } ${d.moves.trimStart()}` : d.moves; // birinci hamleden ÖNCE yorum: başlangıç konumunda görünür
       const paths = d.figs.flatMap((f) => [...f.matchAll(/\]\(([^)\s]+)/g)].map((m) => m[1]));
       const names = d.label.replace(/^[^·]*·\s*/, '').replace(/\s*\([^)]*\)/g, '').split(/\s+[–,]\s+|,\s*/).map((n) => n.trim().split(' ').pop()!.toLowerCase().replace('ó', 'o').replace('á', 'a').replace('ı', 'i'));
       const portrait = names.map((n) => `images/dunya-${n}.jpg`).find(hasImage); // fotoğrafsız maçta oyunculardan birinin portresi
