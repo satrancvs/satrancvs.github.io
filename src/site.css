@@ -731,9 +731,16 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .live-stage { display: flex; flex-direction: column; gap: 1rem; }
 .live-stage > .live-board { order: -1; min-width: 0; }
 .live-sf { padding: 1rem 1.1rem 1.1rem; text-align: left; border: 1px solid var(--line); border-radius: 12px; background: color-mix(in srgb, var(--fg) 4%, transparent); }
-.live-sf-head { display: flex; align-items: center; gap: .5rem; margin: 0 0 .9rem; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--mute); }
-.live-sf-head i { width: .5rem; height: .5rem; border-radius: 50%; background: var(--accent); flex: none; }
-.live-sf:not(.is-wait) .live-sf-head i { animation: live-pulse 1.8s ease-out infinite; }
+.live-sf-head { display: flex; align-items: center; gap: .55rem; margin: 0 0 .9rem; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--mute); }
+.live-sf-head img { width: 22px; height: 22px; border-radius: 5px; flex: none; }
+.live-sf-head span { flex: 1 1 auto; min-width: 0; }
+.live-sf-switch { flex: none; position: relative; width: 2.2rem; height: 1.25rem; padding: 0; border: 0; border-radius: 999px; background: var(--accent); cursor: pointer; transition: background .2s; }
+.live-sf-switch i { position: absolute; top: .15rem; left: 1.1rem; width: .95rem; height: .95rem; border-radius: 50%; background: #fff; transition: left .2s; }
+.live-sf-switch[aria-checked="false"] { background: color-mix(in srgb, var(--fg) 25%, transparent); }
+.live-sf-switch[aria-checked="false"] i { left: .15rem; }
+.live-sf-switch:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+.live-sf.is-off .live-sf-pv, .live-sf.is-off .live-sf-meter { opacity: .35; }
+
 .live-sf-num { margin: 0; font-size: clamp(2.8rem, 2rem + 2vw, 3.8rem); line-height: 1; font-weight: 300; font-variant-numeric: tabular-nums lining-nums; color: var(--fg); }
 .live-sf.is-wait .live-sf-num { color: var(--mute); }
 .live-sf-label { margin: .45rem 0 1rem; min-height: 2.9em; font-size: 1.0625rem; line-height: 1.4; color: var(--fg); }
@@ -758,3 +765,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .live-stage > .live-sf { flex: 0 0 15.5rem; order: -1; }
   .live-stage > .live-board { flex: 1 1 0; order: 0; container-type: inline-size; }
 }
+/* Değerlendirme çubuğu: dikey, tahtanın hemen solunda; analiz kapalıyken soluk. */
+.live-match .player-container .eval-bar, .picker .player-container .eval-bar { order: -1; margin-right: 6px; }
+.eval-bar.sf-off { opacity: .3; }
+.eval-bar.sf-off .eval-fill { height: 50% !important; }

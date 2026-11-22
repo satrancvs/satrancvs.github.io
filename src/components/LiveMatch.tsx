@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Chess } from 'chess.js';
+import { engineEnabled, setEngineEnabled } from '@/lib/eval-bar';
 
 // Dünya Şampiyonası 2026 (Gukesh – Sindarov) canlı bölümü. Yazıda yalnızca `[CANLI MAÇ]` yazan bir paragraf bu bileşeni çizer.
 //  - Maç başlamadan: renksiz, tıklanamaz, boş bir <pgn-player> ve altında 1. oyuna geri sayım.
@@ -143,6 +144,12 @@ export default function LiveMatch({ ready }: { ready: boolean }) {
   const fmt = (n: number) => (Number.isInteger(n) ? String(n) : `${Math.floor(n) || ''}½`);
 
   const [sf, setSf] = useState<Sf | null>(null);
+  const [engineOn, setEngineOn] = useState(engineEnabled);
+  useEffect(() => {
+    const on = () => { setEngineOn(engineEnabled()); if (!engineEnabled()) setSf(null); };
+    window.addEventListener('cp-sf-toggle', on);
+    return () => window.removeEventListener('cp-sf-toggle', on);
+  }, []);
   const board = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = board.current;
@@ -152,8 +159,8 @@ export default function LiveMatch({ ready }: { ready: boolean }) {
     return () => el.removeEventListener('cp-sf', on);
   }, []);
   useEffect(() => { if (idle) setSf(null); }, [idle]);
-  const ev = sf && !idle ? evalText(sf) : null;
-  const line = sf && !idle ? pvText(sf.fen, sf.pv) : '';
+  const ev = sf && !idle && engineOn ? evalText(sf) : null;
+  const line = sf && !idle && engineOn ? pvText(sf.fen, sf.pv) : '';
 
   const host = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -206,10 +213,14 @@ export default function LiveMatch({ ready }: { ready: boolean }) {
         </div>
       )}
       <div className="live-stage">
-        <aside className={`live-sf${ev ? '' : ' is-wait'}`} aria-label="Stockfish canlı analizi" aria-live="off">
-          <p className="live-sf-head f-mono"><i aria-hidden="true" />Stockfish 19 · canlı analiz</p>
+        <aside className={`live-sf${ev ? '' : ' is-wait'}${engineOn ? '' : ' is-off'}`} aria-label="Stockfish canlı analizi" aria-live="off">
+          <div className="live-sf-head f-mono">
+            <img src={`${import.meta.env.BASE_URL}stockfish/logo.png`} alt="" width="22" height="22" />
+            <span>Stockfish 19 · canlı analiz</span>
+            <button type="button" role="switch" aria-checked={engineOn} aria-label="Stockfish analizi" title={engineOn ? 'Analizi durdur' : 'Analizi başlat'} className="live-sf-switch" onClick={() => setEngineEnabled(!engineOn)}><i /></button>
+          </div>
           <p className="live-sf-num f-display">{ev ? ev.num : '—'}</p>
-          <p className="live-sf-label">{ev ? ev.label : idle ? 'Maç başlayınca canlı konum analizi buradan izlenebilecek.' : 'Konum çözümleniyor…'}</p>
+          <p className="live-sf-label">{ev ? ev.label : !engineOn ? 'Analiz durduruldu. Anahtarla yeniden başlatabilirsiniz.' : idle ? 'Maç başlayınca canlı konum analizi buradan izlenebilecek.' : 'Konum çözümleniyor…'}</p>
           <div className="live-sf-meter" aria-hidden="true"><span style={{ width: `${ev ? ev.white : 50}%` }} /></div>
           <div className="live-sf-meta f-mono"><span>Beyaz</span><span>{sf && !idle ? `Derinlik ${sf.depth}` : ''}</span><span>Siyah</span></div>
           <p className="live-sf-pv-title f-mono">En iyi devam yolu</p>

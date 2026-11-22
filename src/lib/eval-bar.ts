@@ -29,7 +29,7 @@ function start(): Worker | null {
     const line = String(ev.data);
     if (line === 'uciok') { worker!.postMessage('isready'); return; }
     if (line === 'readyok') { ready = true; next(); return; }
-    if (line.startsWith('info') && current) {
+    if (line.startsWith('info') && current && enabled) {
       const m = line.match(/\bscore (cp|mate) (-?\d+)/);
       if (m && /\bdepth (\d+)/.test(line) && !/\b(lowerbound|upperbound)\b/.test(line)) {
         const white = current.fen.split(' ')[1] !== 'b' ? 1 : -1; // skor hamle sırası olanın gözünden; beyazınkine çevrilir
@@ -52,8 +52,20 @@ function next() {
   worker.postMessage(`go depth ${DEPTH} movetime ${MOVETIME}`);
 }
 
+// Analiz açma/kapama (sağdaki anahtar): kapalıyken motor çalıştırılmaz, çalışan analiz durdurulur. Tercih tarayıcıda saklanır.
+const KEY = 'sf-analysis';
+let enabled = (() => { try { return localStorage.getItem(KEY) !== 'off'; } catch { return true; } })();
+export const engineEnabled = () => enabled;
+export function setEngineEnabled(on: boolean) {
+  if (on === enabled) return;
+  enabled = on;
+  try { localStorage.setItem(KEY, on ? 'on' : 'off'); } catch { /* saklanamazsa oturum boyunca bellekte kalır */ }
+  if (!on) { pending = null; if (busy && worker) worker.postMessage('stop'); }
+  window.dispatchEvent(new CustomEvent('cp-sf-toggle', { detail: on }));
+}
+
 function analyze(fen: string, cb: Listener) {
-  if (!start()) return;
+  if (!enabled || !start()) return;
   pending = { fen, cb };
   if (busy) worker!.postMessage('stop'); else next();
 }
@@ -86,7 +98,7 @@ function attach(player: PlayerEl) {
       ev.bar!.setAttribute('aria-label', `Stockfish değerlendirmesi: ${label}`);
     };
     const run = (fen: string | undefined) => {
-      if (!fen || fen === last || !player.isConnected) return;
+      if (!enabled || !fen || fen === last || !player.isConnected) return;
       last = fen;
       window.clearTimeout(timer);
       timer = window.setTimeout(() => analyze(fen, show), 120);
@@ -94,6 +106,16 @@ function attach(player: PlayerEl) {
     const here = () => { const s = player._engine?.state; return s ? s.cache[s.index] : undefined; };
     ev.setScore(0);
     ev.setDisabled(false);
+    const sync = () => ev.bar!.classList.toggle('sf-off', !enabled);
+    sync();
+    window.addEventListener('cp-sf-toggle', () => {
+      if (!player.isConnected) return;
+      sync();
+      if (!enabled) { ev.setScore(0); ev.bar!.title = 'Stockfish analizi kapalı'; return; }
+      last = '';
+      const r = player.getBoundingClientRect();
+      if (r.bottom > 0 && r.top < window.innerHeight) run(here());
+    });
     player.addEventListener('cp-move', (e) => { const i = (e as CustomEvent).detail?.moveIndex as number; run(player._engine?.state.cache[i + 1]); });
     player.addEventListener('cp-variation-move', (e) => run((e as CustomEvent).detail?.fen));
     // Görünürken ilk konum (başlangıç ya da canlı yayında son hamle) çözülür; canlıda atlama sonradan yapıldığı için biraz sonra yine okunur.
