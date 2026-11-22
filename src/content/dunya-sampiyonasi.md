@@ -4,6 +4,8 @@
 
 *Yazının güncel kısmı (maçın biçimi, ödüller, Adaylar Turnuvası sonuçları) Kasım 2026 başında yayımlanmış kaynaklara dayanıyor; tarihî bölümler için bildiğimiz standart tarihçelere. Rakamlarda, özellikle eski maçların skorlarında, kaynaklar arasında küçük farklar olabilir.*
 
+[World Chess](https://worldchess.com/news/topics/2026-world-chess-championship), de şampiyonayı haber sayfasında sürekli izliyor; [maç rehberi](https://worldchess.com/news/gukesh-vs-sindarov-everything-you-need-to-know-about-the-2026-world-chess-championship) tarihleri, biçimi ve ödülleri toplu veriyor.
+
 ![Gukesh Dommaraju](images/dunya-gukesh.jpg "<span lang="en">Gukesh Dommaraju</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Yunfan Zhao / lichess.org</span> · <span lang="en">CC BY-SA 4.0</span>")
 ![Javokhir Sindarov](images/dunya-sindarov.jpg "<span lang="en">Javokhir Sindarov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">TheBoburshokh</span> · <span lang="en">CC BY 4.0</span>")
 
@@ -227,7 +229,7 @@ Carlsen 11 oyunda 7½–3½ kazandı. Seçtiğimiz oyun 11. oyun.
 
 ![Sergey Karjakin](images/dunya-karjakin.jpg "<span lang="en">Sergey Karjakin</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 4.0</span>")
 
-12 klasik oyun 6–6; Carlsen hızlı oyunlarda 3–1 kazandı. Seçtiğimiz oyun, 4. hızlı oyun.
+Maç, Manhattan'da South Street Seaport'taki Fulton Market Binası'nda oynandı; New York'ta 1995'ten beri ilk dünya şampiyonası maçıydı. Yedi beraberlikle başlayan maçta Karjakin 8. oyunda öne geçti, Carlsen 10. oyunda eşitledi; 12 klasik oyun 6–6 bitti. Carlsen hızlı oyunlarda 3–1 kazandı: 30 Kasım, 26. doğum gününde 3. oyunu kazandı, 4. oyunda vezir fedasıyla mat etti. Seçtiğimiz oyun, 4. hızlı oyun. Ayrıntılar: [World Chess'in New York 2016 sayfası](https://worldchess.com/nyc2016).
 
 [Event "Dünya Şampiyonası"]
 [Site "New York"]
@@ -1273,4 +1275,6 @@ Bu listeye başka isimler de eklenebilir: **Bent Larsen**, **Efim Geller**, **Sa
 
 ### Kaynaklar
 
-Güncel bilgiler için: [Wikipedia: World Chess Championship 2026](https://en.wikipedia.org/wiki/World_Chess_Championship_2026), [Wikipedia: Candidates Tournament 2026](https://en.wikipedia.org/wiki/Candidates_Tournament_2026), [Wikipedia: Chess World Cup 2025](https://en.wikipedia.org/wiki/Chess_World_Cup_2025), [ChessBase: Gukesh vs Sindarov](https://chessbase.in/news/all-that-you-wanted-to-know-about-gukesh-vs-sindarov-world-chess-championship-2026), [chess.com: Candidates 2026 sonuçları](https://www.chess.com/news/view/sindarov-vaishali-win-7-fide-candidates-2026-conclusions).
+Güncel bilgiler için: [World Chess: Gukesh vs Sindarov rehberi](https://worldchess.com/news/gukesh-vs-sindarov-everything-you-need-to-know-about-the-2026-world-chess-championship), [Wikipedia: World Chess Championship 2026](https://en.wikipedia.org/wiki/World_Chess_Championship_2026), [Wikipedia: Candidates Tournament 2026](https://en.wikipedia.org/wiki/Candidates_Tournament_2026), [Wikipedia: Chess World Cup 2025](https://en.wikipedia.org/wiki/Chess_World_Cup_2025), [ChessBase: Gukesh vs Sindarov](https://chessbase.in/news/all-that-you-wanted-to-know-about-gukesh-vs-sindarov-world-chess-championship-2026), [chess.com: Candidates 2026 sonuçları](https://www.chess.com/news/view/sindarov-vaishali-win-7-fide-candidates-2026-conclusions).
+
+New York 2016 için: [World Chess: New York 2016](https://worldchess.com/nyc2016). Afişler için: [FIDE Müzesi](https://museum.fide.com/thematic_collections/world-championship-posters).
