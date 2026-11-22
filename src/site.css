@@ -712,3 +712,11 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .picker .cp-game pgn-player:not(pgn-study pgn-player) { width: calc(var(--board-size) + 2.5rem) !important; max-width: 100% !important; margin-inline: auto !important; }
   .picker .mpa-content .game-names, .picker .mpa-content section > div:first-child { text-align: center; }
 }
+@media (max-width: 55.99em) {
+  .picker .mpb-title { display: none; }
+  .picker .mpa-content .game-names { font-size: 1.5rem; line-height: 1.12; }
+  .picker .mpa-content section > div:first-child { margin-bottom: 1.4rem; }
+  .picker .mpa-content section > div:first-child > p { margin-top: .45rem; font-size: 10.5px; letter-spacing: .14em; }
+  .picker .mpa-title { font-size: 1.1rem; }
+  .picker .mpb-info { padding-top: 1rem; }
+}
