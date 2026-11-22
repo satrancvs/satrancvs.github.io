@@ -2,18 +2,34 @@
 // verisi tarayıcıda çalışan Stockfish 19 (lite, tek iş parçacıklı WASM: public/stockfish/, GPLv3, public/stockfish/Copying.txt) analizinden gelir.
 // Konum, oynatıcının `cp-move` (ana hat) ve `cp-variation-move` (varyant) olaylarından alınır; analiz ekranda görünen konum için anlık güncellenir.
 const SF = `${import.meta.env.BASE_URL}stockfish/stockfish-19-lite-single.js`;
-const DEPTH = 16;
-const MOVETIME = 2500; // ms: derinliğe ulaşılmasa bile bu sürede durur
+// Analiz ayarları (canlı ekrandaki panelden seçilir, tarayıcıda saklanır): derinlik ve gösterilecek varyant (satır) sayısı.
+export const DEPTHS = [10, 12, 16, 20, 24];
+export const LINE_COUNTS = [1, 2, 3, 4, 5];
+const MOVETIME: Record<number, number> = { 10: 1000, 12: 1500, 16: 2500, 20: 5000, 24: 10000 }; // ms: derinliğe ulaşılmasa bile bu sürede durur (satır başına +%50)
+const num = (k: string, ok: number[], d: number) => { try { const v = Number(localStorage.getItem(k)); return ok.includes(v) ? v : d; } catch { return d; } };
+let depthSetting = num('sf-depth', DEPTHS, 16);
+let linesSetting = num('sf-lines', LINE_COUNTS, 1);
+export const engineSettings = () => ({ depth: depthSetting, lines: linesSetting });
+export function setEngineSettings(depth: number, lines: number) {
+  if (depth === depthSetting && lines === linesSetting) return;
+  depthSetting = depth; linesSetting = lines;
+  try { localStorage.setItem('sf-depth', String(depth)); localStorage.setItem('sf-lines', String(lines)); } catch { /* bellekte kalır */ }
+  if (busy && worker) worker.postMessage('stop');
+  window.dispatchEvent(new CustomEvent('cp-sf-config'));
+}
 
-type Listener = (cp: number | null, mate: number | null, depth: number, pv: string[], fen: string) => void;
+export type SfLine = { cp: number | null; mate: number | null; pv: string[] };
+export type SfResult = { cp: number | null; mate: number | null; depth: number; pv: string[]; fen: string; lines: SfLine[] };
+type Listener = (r: SfResult) => void;
 
 // Tek bir motor işçisi tüm oynatıcıları sırayla çözer; yeni istek gelince eskisi durdurulur (yalnızca son istenen konum analiz edilir).
 let worker: Worker | null = null;
 let failed = false;
 let ready = false;
 let busy = false;
-let current: { fen: string; cb: Listener } | null = null;
-let pending: { fen: string; cb: Listener } | null = null;
+type Job = { fen: string; cb: Listener; multi: number; lines: SfLine[] };
+let current: Job | null = null;
+let pending: Job | null = null;
 
 function start(): Worker | null {
   if (failed) return null;
@@ -35,8 +51,11 @@ function start(): Worker | null {
         const white = current.fen.split(' ')[1] !== 'b' ? 1 : -1; // skor hamle sırası olanın gözünden; beyazınkine çevrilir
         const v = Number(m[2]) * white;
         const depth = Number(line.match(/\bdepth (\d+)/)![1]);
+        const k = Number(line.match(/\bmultipv (\d+)/)?.[1] ?? 1);
         const pv = (line.match(/ pv (.+)$/)?.[1] ?? '').trim().split(/\s+/).filter(Boolean);
-        current.cb(m[1] === 'cp' ? v : null, m[1] === 'mate' ? v : null, depth, pv, current.fen);
+        current.lines[k - 1] = { cp: m[1] === 'cp' ? v : null, mate: m[1] === 'mate' ? v : null, pv };
+        const top = current.lines[0];
+        if (top) current.cb({ cp: top.cp, mate: top.mate, depth, pv: top.pv, fen: current.fen, lines: current.lines.filter(Boolean) });
       }
     }
     if (line.startsWith('bestmove')) { busy = false; current = null; next(); }
@@ -48,8 +67,9 @@ function start(): Worker | null {
 function next() {
   if (!ready || busy || !pending || !worker) return;
   current = pending; pending = null; busy = true;
+  worker.postMessage(`setoption name MultiPV value ${current.multi}`);
   worker.postMessage(`position fen ${current.fen}`);
-  worker.postMessage(`go depth ${DEPTH} movetime ${MOVETIME}`);
+  worker.postMessage(`go depth ${depthSetting} movetime ${Math.round((MOVETIME[depthSetting] ?? 2500) * (1 + (current.multi - 1) * 0.5))}`);
 }
 
 // Analiz açma/kapama (sağdaki anahtar): kapalıyken motor çalıştırılmaz, çalışan analiz durdurulur. Tercih tarayıcıda saklanır.
@@ -64,9 +84,9 @@ export function setEngineEnabled(on: boolean) {
   window.dispatchEvent(new CustomEvent('cp-sf-toggle', { detail: on }));
 }
 
-function analyze(fen: string, cb: Listener) {
+function analyze(fen: string, cb: Listener, multi: number) {
   if (!enabled || !start()) return;
-  pending = { fen, cb };
+  pending = { fen, cb, multi, lines: [] };
   if (busy) worker!.postMessage('stop'); else next();
 }
 
@@ -98,10 +118,12 @@ function attach(player: PlayerEl) {
     if (!ev || !ev.bar) return;
     // engine.load() çubuğu "PGN'de eval yok" diye kapatmıştır; burada Stockfish'e bağlanıp açılır, oynatıcının hamle başına sıfırlaması susturulur.
     ev.live = true;
-    const show: Listener = (cp, mate, depth, pv, fen) => {
+    const live = !!player.closest('.live-match'); // çoklu satır yalnızca canlı ekrandaki panel için; diğer oynatıcılar tek satır çözer
+    const show: Listener = (r) => {
+      const { cp, mate } = r;
       if (!player.isConnected) return;
       // Canlı analiz paneli (LiveMatch) için: oynatıcıdan yukarı kabarcıklanan olay.
-      player.dispatchEvent(new CustomEvent('cp-sf', { bubbles: true, detail: { cp, mate, depth, pv, fen } }));
+      player.dispatchEvent(new CustomEvent('cp-sf', { bubbles: true, detail: r }));
       ev.setScore(mate !== null ? (mate > 0 ? 8 : -8) : (cp ?? 0) / 100);
       const label = mate !== null ? `${mate > 0 ? '+' : '−'}M${Math.abs(mate)}` : `${(cp ?? 0) > 0 ? '+' : (cp ?? 0) < 0 ? '−' : ''}${Math.abs((cp ?? 0) / 100).toFixed(1)}`;
       ev.bar!.title = `Stockfish: ${label}`;
@@ -111,21 +133,23 @@ function attach(player: PlayerEl) {
       if (!enabled || !fen || fen === last || !player.isConnected) return;
       last = fen;
       window.clearTimeout(timer);
-      timer = window.setTimeout(() => analyze(fen, show), 120);
+      timer = window.setTimeout(() => analyze(fen, show, live ? linesSetting : 1), 120);
     };
     const here = () => { const s = player._engine?.state; return s ? s.cache[s.index] : undefined; };
     ev.setScore(0);
     ev.setDisabled(false);
     const sync = () => ev.bar!.classList.toggle('sf-off', !enabled);
     sync();
-    window.addEventListener('cp-sf-toggle', () => {
+    const rerun = () => {
       if (!player.isConnected) return;
       sync();
       if (!enabled) { ev.setScore(0); ev.bar!.title = 'Stockfish analizi kapalı'; return; }
       last = '';
       const r = player.getBoundingClientRect();
       if (r.bottom > 0 && r.top < window.innerHeight) run(here());
-    });
+    };
+    window.addEventListener('cp-sf-toggle', rerun);
+    window.addEventListener('cp-sf-config', rerun);
     player.addEventListener('cp-move', (e) => { const i = (e as CustomEvent).detail?.moveIndex as number; run(player._engine?.state.cache[i + 1]); });
     player.addEventListener('cp-variation-move', (e) => run((e as CustomEvent).detail?.fen));
     // Görünürken ilk konum (başlangıç ya da canlı yayında son hamle) çözülür; canlıda atlama sonradan yapıldığı için biraz sonra yine okunur.

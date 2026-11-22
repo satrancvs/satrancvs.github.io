@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Chess } from 'chess.js';
-import { engineEnabled, setEngineEnabled } from '@/lib/eval-bar';
+import { engineEnabled, setEngineEnabled, engineSettings, setEngineSettings, DEPTHS, LINE_COUNTS } from '@/lib/eval-bar';
+import type { SfResult as Sf } from '@/lib/eval-bar';
 
 // Dünya Şampiyonası 2026 (Gukesh – Sindarov) canlı bölümü. Yazıda yalnızca `[CANLI MAÇ]` yazan bir paragraf bu bileşeni çizer.
 //  - Maç başlamadan: renksiz, tıklanamaz, boş bir <pgn-player> ve altında 1. oyuna geri sayım.
@@ -39,16 +40,15 @@ const demoRound = () => {
 
 
 // Stockfish analizi (eval-bar.ts her konum için `cp-sf` olayı yollar): sol paneldeki skor, derinlik ve en iyi varyant.
-type Sf = { cp: number | null; mate: number | null; depth: number; pv: string[]; fen: string };
 const FIG: Record<string, string> = { K: '♔', Q: '♕', R: '♖', B: '♗', N: '♘' };
 const figurine = (san: string) => san.replace(/^[KQRBN]/, (c) => FIG[c]);
-function pvText(fen: string, pv: string[]): string {
+function pvText(fen: string, pv: string[], max = 8): string {
   try {
     const g = new Chess(fen);
     const parts: string[] = [];
     let n = g.moveNumber();
     let first = true;
-    for (const u of pv.slice(0, 8)) {
+    for (const u of pv.slice(0, max)) {
       const white = g.turn() === 'w';
       const mv = g.move({ from: u.slice(0, 2), to: u.slice(2, 4), promotion: u[4] });
       if (white) parts.push(`${n}. ${figurine(mv.san)}`);
@@ -59,7 +59,7 @@ function pvText(fen: string, pv: string[]): string {
     return parts.join(' ');
   } catch { return ''; }
 }
-function evalText(sf: Sf): { num: string; label: string; white: number } {
+function evalText(sf: { cp: number | null; mate: number | null }): { num: string; label: string; white: number } {
   if (sf.mate !== null) {
     const m = sf.mate;
     return { num: `${m > 0 ? '+' : '−'}M${Math.abs(m)}`, label: `${m > 0 ? 'Beyaz' : 'Siyah'} ${Math.abs(m)} hamlede mat yapıyor`, white: m > 0 ? 100 : 0 };
@@ -160,7 +160,8 @@ export default function LiveMatch({ ready }: { ready: boolean }) {
   }, []);
   useEffect(() => { if (idle) setSf(null); }, [idle]);
   const ev = sf && !idle && engineOn ? evalText(sf) : null;
-  const line = sf && !idle && engineOn ? pvText(sf.fen, sf.pv) : '';
+  const [cfg, setCfg] = useState(engineSettings);
+  const rows = sf && !idle && engineOn ? sf.lines.map((l) => ({ num: evalText(l).num, text: pvText(sf.fen, l.pv, cfg.lines > 1 ? 6 : 8) })) : [];
 
   const host = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -221,9 +222,15 @@ export default function LiveMatch({ ready }: { ready: boolean }) {
           </div>
           <p className="live-sf-num f-display">{ev ? ev.num : '—'}</p>
           <p className="live-sf-label">{ev ? ev.label : !engineOn ? 'Analiz durduruldu. Anahtarla yeniden başlatabilirsiniz.' : idle ? 'Maç başlayınca canlı konum analizi buradan izlenebilecek.' : 'Konum çözümleniyor…'}</p>
-          <p className="live-sf-meta f-mono">{sf && !idle && engineOn ? `Derinlik ${sf.depth}` : '\u00a0'}</p>
-          <p className="live-sf-pv-title f-mono">En iyi devam yolu</p>
-          <p className="live-sf-pv">{line || '—'}</p>
+          <p className="live-sf-meta f-mono">{sf && !idle && engineOn ? `Derinlik ${sf.depth} / ${cfg.depth}` : '\u00a0'}</p>
+          <p className="live-sf-pv-title f-mono">{cfg.lines > 1 ? 'En iyi devam yolları' : 'En iyi devam yolu'}</p>
+          {rows.length ? (
+            <ol className="live-sf-lines">{rows.map((r, i) => <li key={i}>{cfg.lines > 1 && <b className="f-mono">{r.num}</b>}<span>{r.text}</span></li>)}</ol>
+          ) : <p className="live-sf-pv">—</p>}
+          <div className="live-sf-opts f-mono">
+            <label>Derinlik<select value={cfg.depth} onChange={(e) => { const c = { ...cfg, depth: Number(e.target.value) }; setCfg(c); setEngineSettings(c.depth, c.lines); }}>{DEPTHS.map((d) => <option key={d} value={d}>{d}</option>)}</select></label>
+            <label>Aday<select value={cfg.lines} onChange={(e) => { const c = { ...cfg, lines: Number(e.target.value) }; setCfg(c); setEngineSettings(c.depth, c.lines); }}>{LINE_COUNTS.map((d) => <option key={d} value={d}>{d}</option>)}</select></label>
+          </div>
         </aside>
         <div ref={board} className={`cp-game live-board${idle ? ' live-idle' : ''}`} aria-disabled={idle} {...(idle ? { inert: '' } : {})}>
           <div ref={host} />
