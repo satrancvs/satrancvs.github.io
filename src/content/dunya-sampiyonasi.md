@@ -16,8 +16,6 @@ Gelelim karşısındaki isme. **Sindarov**, sistemin ikinci kapısından, yani o
 - Kasım 2025’te Goa’daki **FIDE Dünya Kupası**’nı (206 oyunculu eleme turnuvası) kazandı. 16. seri olarak başladığı turnuvada finalde Wei Yi’yi ancak ikinci hızlı oyun kararında yenebildi. 19 yaş 11 ayla en genç Dünya Kupası galibi ve ilk Özbek galip oldu; bu zafer ona Adaylar’a giriş bileti kazandırdı.
 - Mart–Nisan 2026’da Kıbrıs’ın Pegeia kasabasında oynanan, sekiz oyunculu, çift turlu döner **Adaylar Turnuvası**’nı 14 turda **10 puanla** kazandı: altı galibiyet, hiç yenilgi yok. Turnuvayı bir tur kala garantiledi ve mevcut çift turlu döner biçimde alınmış en yüksek puana ulaştı.
 
-Adaylar’ın son sıralaması şöyle oldu (her kutuda iki rakibin iki oyunu, oynanış sırasıyla):
-
 <pre>
 FIDE ADAYLAR TURNUVASI 2026 ÇAPRAZ TABLOSU
                           1  2  3  4  5  6  7  8   Puan
