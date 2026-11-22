@@ -1,14 +1,15 @@
 import ProgressiveImage from '@/components/ProgressiveImage';
 
 // Dünya Şampiyonası yazısındaki oynatıcı bölümleri arasında kartlı bağlantı: tıklayınca sıradaki bölüme yumuşak kaydırır.
-export type SectionTarget = { id: string; title: string; sub?: string; thumb?: string; headingText?: string };
+export type SectionTarget = { id: string; title: string; sub?: string; thumb?: string; headingText?: string; kicker?: string };
 
 const find = (t: SectionTarget): Element | null => {
   const h = t.headingText ? [...document.querySelectorAll('h3, h4')].find((x) => x.textContent?.trim() === t.headingText) : null;
   return h ?? document.getElementById(t.id);
 };
 
-export default function SectionLink({ target, kicker = 'Sıradaki bölüm' }: { target: SectionTarget; kicker?: string }) {
+export default function SectionLink({ target, kicker: kick = 'Sıradaki bölüm' }: { target: SectionTarget; kicker?: string }) {
+  const kicker = target.kicker ?? kick;
   const go = () => {
     const to = (behavior: ScrollBehavior) => {
       const el = find(target);
