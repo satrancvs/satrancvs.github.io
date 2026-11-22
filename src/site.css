@@ -778,3 +778,10 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .live-match .live-board pgn-player .player-wrapper { min-height: 0 !important; }
   .live-match .live-board .cp-game, .live-match .live-board { padding-bottom: 0; margin-bottom: 0; }
 }
+/* Canlı ekran: üç sütun içeriğe göre daralır ve ortalanır (aralarında geniş boşluk kalmaz). */
+@media (min-width: 56em) {
+  .live-match { --live-bs: max(380px, min(720px, 100svh - 15rem, 100vw - 3rem - 26rem - 15.5rem - 4.5rem - 26px)); grid-template-columns: max-content 26rem; justify-content: center; column-gap: 2.25rem; }
+  .live-match > .live-stage { gap: 1.5rem; }
+  .live-stage > .live-board { flex: 0 0 auto; width: calc(var(--live-bs) + 26px); container-type: normal; }
+  .live-match .live-board pgn-player:not(pgn-study pgn-player) { --board-size: var(--live-bs) !important; }
+}
