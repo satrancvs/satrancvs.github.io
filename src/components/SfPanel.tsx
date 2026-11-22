@@ -66,7 +66,7 @@ export default function SfPanel({ boardRef, idle = false, idleText = '' }: { boa
         <button type="button" role="switch" aria-checked={engineOn} aria-label="Stockfish analizi" title={engineOn ? 'Analizi durdur' : 'Analizi başlat'} className="live-sf-switch" onClick={() => setEngineEnabled(!engineOn)}><i /></button>
       </div>
       <p className="live-sf-num f-display">{ev ? ev.num : '—'}</p>
-      <p className="live-sf-label">{ev ? ev.label : !engineOn ? 'Analiz durduruldu. Anahtarla yeniden başlatabilirsiniz.' : idle ? idleText : 'Konum çözümleniyor…'}</p>
+      <p className="live-sf-label">{ev ? ev.label : !engineOn ? 'Analiz durduruldu. Anahtarla yeniden başlatabilirsiniz.' : idle ? idleText : 'Analiz ediliyor...'}</p>
       <p className="live-sf-meta f-mono">{sf && !idle && engineOn ? `Derinlik ${sf.depth} / ${cfg.depth}` : '\u00a0'}</p>
       <p className="live-sf-pv-title f-mono">{cfg.lines > 1 ? 'En iyi devam yolları' : 'En iyi devam yolu'}</p>
       {rows.length ? (
