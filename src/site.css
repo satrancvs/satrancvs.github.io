@@ -837,3 +837,6 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .picker .mpb-head .game-names .elo { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: .3em; font-weight: 500; letter-spacing: .1em; color: var(--accent); vertical-align: .85em; margin-left: .35em; }
 .picker .mpb-head > p { margin: .6rem 0 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--mute); }
 @media (max-width: 55.99em) { .picker .mpb-head { margin-top: .4rem; } }
+/* Hamle listesi tahtanın (ve çubuğun) genişliğinde */
+.hub .player-wrapper .video-moves { width: 100% !important; max-width: 100% !important; box-sizing: border-box; }
+.hub .player-wrapper { grid-template-columns: minmax(0, 1fr) !important; column-gap: 0 !important; }
