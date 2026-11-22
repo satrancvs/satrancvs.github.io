@@ -756,6 +756,12 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     }
     const items: PickItem[] = drafts.filter((d) => d.header).map((d) => {
       const item = games.find((g) => g.at === d.gi)!;
+      // Açıklamanın kaynak bağlantıları ("Merak edenler için FIDE Müzesi: …", "Ayrıntılar: …") sağ sütunda durmaz: oyunun ilk hamlesinin yorumu olur
+      // ve oynatıcıda hamle listesinin altında, ilk hamle oynanınca görünür.
+      const cut = d.blurb.search(/(Ayrıntılar:|Merak edenler için)/);
+      const blurb = (cut >= 0 ? d.blurb.slice(0, cut) : d.blurb).trim();
+      const refs = cut >= 0 ? d.blurb.slice(cut).trim() : '';
+      const moves = refs && d.moves ? d.moves.replace(/^(\s*\d+\.\s*\S+)/, `$1 { ${refs} }`) : d.moves;
       const paths = d.figs.flatMap((f) => [...f.matchAll(/\]\(([^)\s]+)/g)].map((m) => m[1]));
       const names = d.label.replace(/^[^·]*·\s*/, '').replace(/\s*\([^)]*\)/g, '').split(/\s+[–,]\s+|,\s*/).map((n) => n.trim().split(' ').pop()!.toLowerCase().replace('ó', 'o').replace('á', 'a').replace('ı', 'i'));
       const portrait = names.map((n) => `images/dunya-${n}.jpg`).find(hasImage); // fotoğrafsız maçta oyunculardan birinin portresi
@@ -766,7 +772,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
         label: d.label,
         title: d.label.replace(/^[^·]*·\s*/, ''),
         site: d.site,
-        blurb: d.blurb,
+        blurb,
         bio: d.bio,
         thumb,
         figures: d.figs.length ? d.figs.map((f, k) => (isFigRow(f) ? <FigureRow key={k} chunk={f} /> : <Figure key={k} chunk={f} />)) : null,
@@ -779,7 +785,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
         ),
         screen: (
           <GameSection item={item} noHead>
-            {useFallback ? <Game header={d.header!} moves={d.moves!} /> : <PgnGame header={d.header!} moves={d.moves!} />}
+            {useFallback ? <Game header={d.header!} moves={moves!} /> : <PgnGame header={d.header!} moves={moves!} />}
           </GameSection>
         ),
       };

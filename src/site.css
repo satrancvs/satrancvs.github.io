@@ -909,3 +909,13 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 @media (max-width: 22em) { .live-match .live-when { white-space: normal; } }
 .live-sf-opts { flex-wrap: wrap; gap: .55rem .9rem; justify-content: space-between; }
 .sf-step > span { min-width: 4.6rem; }
+/* Canlı ekran ve maç seçici: oyunun yorumu (ilk hamlenin kaynak bağlantıları vb.) hamle listesinin altında, tahtanın genişliğinde, normal akışta görünür;
+   Timman tarzı yan sütun / sol yorum yerleşimi bu bölümlerde kullanılmaz. */
+.hub .player-wrapper .video-comment { position: static !important; contain: none !important; display: block !important; align-self: auto !important; grid-column: 1 !important; grid-row: auto !important; width: 100% !important; max-width: 100% !important; height: auto !important; max-height: none !important; margin: .6rem 0 0 !important; padding: 0 !important; left: auto !important; right: auto !important; top: auto !important; bottom: auto !important; transform: none !important; overflow: visible !important; box-sizing: border-box; text-align: left; }
+.hub .player-wrapper .video-comment::before, .hub .player-wrapper .video-comment::after { display: none !important; }
+.hub .player-wrapper .video-comment .comment-text-block, .hub .player-wrapper .video-comment .comment-body { margin: 0 !important; position: static !important; font-size: 1.0625rem !important; line-height: 1.55 !important; color: rgb(var(--fg-rgb) / .9); }
+.hub .player-wrapper .video-comment a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.hub .player-wrapper .video-comment:empty, .hub .player-wrapper .video-comment:not(:has(*)) { margin: 0 !important; }
+.hub .player-wrapper .video-comment .comment-line { position: static !important; display: block !important; left: auto !important; right: auto !important; top: auto !important; bottom: auto !important; width: 100% !important; max-width: 100% !important; height: auto !important; margin: 0 !important; padding: 0 !important; transform: none !important; }
+.hub .player-wrapper .video-comment .comment-text-block { display: block !important; }
+.hub .player-wrapper .video-comment .comment-play-btn.cp-inline { vertical-align: middle; margin-left: .35rem; }
