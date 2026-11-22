@@ -85,7 +85,7 @@ Alekhine'in ölümü üzerine **FIDE** (Uluslararası Satranç Federasyonu) ünv
 - **Bölgeler arası turnuva (Interzonal)** → **Adaylar** (önce turnuva, 1965'ten itibaren maç eleme) → **ünvan maçı**.
 - **Şampiyon ayrıcalıkları**: 12–12 eşitlikte ünvan şampiyonda kalırdı (Botvinnik 1951'de Bronstein'a, 1954'te Smyslov'a karşı ünvanı bu kuralla korudu). 1963'e kadar kaybeden şampiyon otomatik **rövanş** hakkına sahipti; bu hak Botvinnik'e iki kez (1958, 1961) ünvanı geri kazandırdı ve 1963'ten sonra kaldırıldı.
 - **1962 Adaylar'ı** (Curaçao) Sovyet oyuncuların kendi aralarında beraberlik anlaşması yaptığı ve Fischer'in bunu açıkça suçladığı turnuvaydı; sonuçta Adaylar'ın **turnuva** biçimi bırakıldı ve eleme maçlarına geçildi.
-- **1975**: Fischer 1972'de Spassky'yi yendikten sonra ünvan savunması için bir dizi şart koydu (ilk 10 galibiyet, sınırsız oyun sayısı, 9–9'da şampiyonun korunması); FIDE bir kısmını reddetti, Fischer çekildi ve **Karpov** hiç oynamadan, **walkover** ile dünya şampiyonu ilan edildi.
+- **1975**: Fischer 1972'de Spassky'i yendikten sonra ünvan savunması için bir dizi şart koydu (ilk 10 galibiyet, sınırsız oyun sayısı, 9–9'da şampiyonun korunması); FIDE bir kısmını reddetti, Fischer çekildi ve **Karpov** hiç oynamadan, **walkover** ile dünya şampiyonu ilan edildi.
 - **1984–85**: Karpov–Kasparov maçı “ilk 6 galibiyet” ile ve oyun sınırı olmadan başladı, 48 oyun sürdü (Karpov önce 5–0 öne geçmişti, Kasparov oyunlar boyunca direndi; skor 5–3'tü) ve FIDE Başkanı Florencio Campomanes'in maçı **iptal etmesi** (“yorgunluk” gerekçesiyle) büyük tartışma yarattı. Maç, 24 oyunluk bir formatla yeniden oynandı; Kasparov kazandı.
 
 #### 4) Şampiyon, kurallar koyar (1886–1946)
@@ -124,10 +124,10 @@ Aşağıda her şampiyon için *ünvanı kime karşı, nasıl aldığı* ve *nas
 <tr><td><strong>Karpov</strong> (FIDE, 1993–99)</td><td>1993: <strong>Kasparov</strong>'un ayrılmasıyla, <strong>Timman</strong>'ı 12½–8½ yenerek</td><td>1996'da <strong>Kamsky</strong>, 1998'de <strong>Anand</strong> karşısında ünvanı korudu; 1999'da savunmayı reddedince FIDE turnuva biçimine geçti.</td></tr>
 <tr class="era"><td colspan="3"><span class="era-years">1948 – 1993</span><span class="era-name">FIDE’nin yönettiği döngü</span></td></tr>
 <tr><td><strong>Kasparov</strong> (1985–93, PCA 1993–2000)</td><td>1985 Moskova: <strong>Karpov</strong>'a 13–11</td><td>1986, 1987 (12–12, ünvan şampiyonda kaldı), 1990'da <strong>Karpov</strong>'u yendi; 1993'te <strong>Short</strong>'u, 1995'te <strong>Anand</strong>'ı yendi; 2000'de Londra'da <strong>Kramnik</strong>'e kaybetti.</td></tr>
-<tr><td><strong>Karpov</strong> (1975–85)</td><td>1975: <strong>Fischer</strong>'in çekilmesiyle hükmen</td><td>1978 Baguio'da <strong>Korchnoi</strong>'yi, 1981 Merano'da yine <strong>Korchnoi</strong>'yi yendi. 1984–85'te <strong>Kasparov</strong>'a karşı maç yarıda kesildi (5–3 önde); 1985'te ünvanı kaybetti.</td></tr>
-<tr><td><strong>Fischer</strong> (1972–75)</td><td>1972, Reykjavik: <strong>Spassky</strong>'ye karşı 12½–8½ (+7 −3 =11)</td><td>1975'te şartları kabul edilmediği için çekildi; ünvanı oynamadan kaybetti.</td></tr>
+<tr><td><strong>Karpov</strong> (1975–85)</td><td>1975: <strong>Fischer</strong>'in çekilmesiyle hükmen</td><td>1978 Baguio'da <strong>Korchnoi</strong>'u, 1981 Merano'da yine <strong>Korchnoi</strong>'u yendi. 1984–85'te <strong>Kasparov</strong>'a karşı maç yarıda kesildi (5–3 önde); 1985'te ünvanı kaybetti.</td></tr>
+<tr><td><strong>Fischer</strong> (1972–75)</td><td>1972, Reykjavik: <strong>Spassky</strong>'e karşı 12½–8½ (+7 −3 =11)</td><td>1975'te şartları kabul edilmediği için çekildi; ünvanı oynamadan kaybetti.</td></tr>
 <tr><td><strong>Spassky</strong> (1969–72)</td><td>1969, <strong>Petrosian</strong>'a karşı</td><td>1972'de Reykjavik'te <strong>Fischer</strong>'e 12½–8½ kaybetti.</td></tr>
-<tr><td><strong>Petrosian</strong> (1963–69)</td><td>1963, <strong>Botvinnik</strong>'e karşı 12½–9½</td><td>1966'da <strong>Spassky</strong>'yi 12½–11½ yendi; 1969'da <strong>Spassky</strong>'ye 12½–10½ kaybetti.</td></tr>
+<tr><td><strong>Petrosian</strong> (1963–69)</td><td>1963, <strong>Botvinnik</strong>'e karşı 12½–9½</td><td>1966'da <strong>Spassky</strong>'i 12½–11½ yendi; 1969'da <strong>Spassky</strong>'e 12½–10½ kaybetti.</td></tr>
 <tr class="era-note"><td colspan="3"><span>1963</span> Kaybeden şampiyonun otomatik rövanş hakkı kaldırıldı</td></tr>
 <tr><td><strong>Tal</strong> (1960–61)</td><td>1960, <strong>Botvinnik</strong>'e karşı 12½–8½</td><td>1961'de <strong>Botvinnik</strong> ile rövanşı 13–8 kaybetti.</td></tr>
 <tr><td><strong>Smyslov</strong> (1957–58)</td><td>1957, <strong>Botvinnik</strong>'e karşı 12½–9½</td><td>1958'de <strong>Botvinnik</strong> ile rövanşı 12½–10½ kaybetti.</td></tr>
@@ -1618,7 +1618,7 @@ Baguio maçının 31. oyununda Korchnoi, şampiyon Karpov'u yenip skoru 5–5'e 
 
 [KART images/dunya-larsen.jpg]
 
-SSCB–Dünya karması maçında (Belgrad, 1970) Larsen, dünya şampiyonu Spassky'yi yendi.
+SSCB–Dünya karması maçında (Belgrad, 1970) Larsen, dünya şampiyonu Spassky'i yendi.
 
 [Event "SSCB – Dünya karması"]
 [Site "Belgrad"]
