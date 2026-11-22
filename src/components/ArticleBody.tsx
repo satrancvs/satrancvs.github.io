@@ -734,7 +734,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
 
   // `[MAÇ SEÇİCİ: Etiket]` işaretinden sonraki `#### …` blokları: oyun seçici öğeleri. Üstteki oynatıcının (GameHub) menüsünde bir sekme olur; işaretin kendi yerinde bir şey çizilmez.
   const collectPicker = (i: number): { items: PickItem[]; end: number } => {
-    type Draft = { label: string; site: string; blurb: string; figs: string[]; gi?: number; header?: string; moves?: string; kart?: string };
+    type Draft = { label: string; site: string; blurb: string; bio?: string; figs: string[]; gi?: number; header?: string; moves?: string; kart?: string };
     const drafts: Draft[] = [];
     let cur: Draft | null = null;
     let j = i + 1;
@@ -744,6 +744,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       else if (!cur) continue;
       else if (/^\*[^*]+\*$/.test(t)) cur.site = t.slice(1, -1);
       else if (/^\[KART images\/[^\]\s]+\]$/.test(t)) cur.kart = t.slice(6, -1);
+      else if (t.startsWith('[BİLGİ] ')) cur.bio = t.slice(8).trim(); // oyuncu hakkında bilgi: maç seçicide o oyun izlenirken sağ sütunda gösterilir
       else if (t.startsWith('[Event ')) { const gm = gameMoves(chunks, j); cur.gi = j; cur.header = t; cur.moves = gm.moves; if (gm.own) j++; }
       else if (isFigRow(t) || IMG_CHUNK.test(t)) cur.figs.push(t);
       else cur.blurb += `${cur.blurb ? ' ' : ''}${t}`;
@@ -761,6 +762,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
         title: d.label.replace(/^[^·]*·\s*/, ''),
         site: d.site,
         blurb: d.blurb,
+        bio: d.bio,
         thumb,
         figures: d.figs.length ? d.figs.map((f, k) => (isFigRow(f) ? <FigureRow key={k} chunk={f} /> : <Figure key={k} chunk={f} />)) : null,
         // Oyun başlığı (oyuncular + turnuva satırı) maç seçicide sağ sütunda gösterilir; oynatıcı bölümünde yinelenmez.

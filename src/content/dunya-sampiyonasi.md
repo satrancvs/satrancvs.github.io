@@ -1478,25 +1478,9 @@ Resmî sayılan ilk dünya şampiyonluğu maçı. İlk 10 galibiyete kadar oynan
 
 “Hak etmek” tartışmalı bir kavram; ama bu isimlerin her birinin zirvede olduğu dönemler, o dönemin şampiyonuyla boy ölçüşebilecek kadar belirgindi. İşte eksik kalan şampiyonlar:
 
-- **Mikhail Chigorin** (1850–1908) — Rusya'nın ilk büyük ustası. Steinitz'e iki kez meydan okudu (1889, 1892, ikisi de Havana). 1892'de maç son oyunlara kadar çekişmeliydi; Chigorin kritik anlarda yaptığı hatalarla 12½–10½ yenildi. Neden alamadı? Şampiyonun deneyimi ve kendi kritik hataları. Neden hak ediyordu? Steinitz'in en tehlikeli rakibiydi ve Rus satranç okulunun babası sayılır.
-- **Siegbert Tarrasch** (1862–1934) — 1890'larda ve 1900'lerde Lasker'in dışında en güçlü oyuncu. 1908'de Lasker'e meydan okudu ve 10½–5½ yenildi. Lasker'le maça ancak 46 yaşında ulaşabildi; en iyi yıllarını bu fırsat gelmeden geçirdi. “Praeceptor Germaniae” (Almanya'nın hocası) olarak yazdığı kitaplar ise yıllarca modern satranç anlayışını şekillendirdi.
-- **Akiba Rubinstein** (1880–1961) — 1912'de beş büyük turnuvayı birden kazandı (San Sebastian, Pistyan, Breslau, Varşova, Vilnius) ve Lasker'le 1914'te maça davet edildi. Neden alamadı? Birinci Dünya Savaşı maçı engelledi. Savaştan sonra Capablanca'nın şampiyon olduğu dönemde, Londra Kuralları'nın öngördüğü ödül fonunu bulamadı; ruh sağlığı bozuldu ve zirvesinden hızla indi. Neden hak ediyordu? Kale oyunlarının en büyük ustası, Lasker ve Capablanca'dan başka kimse onunla aynı ligde değildi.
-- **Paul Keres** (1916–75) — “Kronprinz” (veliaht). 1938 AVRO turnuvasını Fine ile eşit puanla (8½) bitirdi ve Alekhine'le maç konuşulmaya başlandı; Dünya Savaşı, Estonya'nın işgali ve ardından Sovyet dönemi kariyerinin gidişatını değiştirdi. 1953, 1956, 1959 ve 1962'de Adaylar Turnuvası'nı **dört kez ikinci** bitirdi. 1948 maç turnuvasında Botvinnik'e kaybettiği oyunlarda Sovyet yönetiminin baskısı olduğuna dair iddialar var, ama kanıtlanmış değil. Neden hak ediyordu? Dört kez “bir adım”ın gerisinde kalan başka bir oyuncu yok.
-- **David Bronstein** (1924–2006) — 1951'de Botvinnik'le 12–12 berabere kaldı; kurala göre ünvan şampiyonda kaldı. Bir oyun daha kazansa şampiyon olacaktı. Sonradan maç sırasında baskı altında kaldığını söyledi; yaratıcı oyun tarzı ise onu tarihte özel bir yere koyuyor.
-- **Viktor Korchnoi** (1931–2016) — 1976'da SSCB'den kaçıp Hollanda'ya sığındı, bu yüzden Sovyet satranç yönetiminden tam bir tecrit yaşadı. 1978'de Baguio'da Karpov'a karşı oynadığı maç (ilk 6 galibiyet; 32 oyun; 6–5 yenildi) tarihin en gergin maçlarından biri: sırasıyla 5–2 geriye düştü, 5–5'e geldi ve son oyunu kaybetti. 1981'de Merano'da 6–2 yenildi. Neden hak ediyordu? 40'larında ve 50'lerinde dünyanın en güçlü iki üç oyuncusu arasındaydı, 1980'lerde hâlâ Adaylar'dı.
-- **Vasyl Ivanchuk** (d. 1969) — 1990'ların başında dünyanın ilk üç oyuncusu arasındaydı; yaratıcılığı ve hazırlığı ile ünlüydü. Ama sinirlerine yenik düştü: kritik maçlarda yaptığı hatalarla ünvanı kaçırdı. 2002'de FIDE şampiyonası finalinde Ponomariov'a 4½–2½ yenildi. Neden hak ediyordu? Çağdaşlarının neredeyse tamamı onu satranç dehası olarak tanımlıyor.
-- **Judit Polgár** (d. 1976) — Tarihin en güçlü kadın oyuncusu; 2005'te dünya sıralamasında 8. oldu; Kasparov, Karpov ve Spassky dahil birçok dünya şampiyonunu yendi. Dünya şampiyonluğu döngüsünde yer aldı (2005 San Luis'te oynadı), ama kazanamadı. Neden hak ediyordu? Kadınlar şampiyonasında hiç oynamadı; bunun yerine açık sıralamada ilk onu seçti ve orada ayrı bir iz bıraktı.
-
-![Akiba Rubinstein](images/dunya-rubinstein.jpg "<span lang="en">Akiba Rubinstein</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
-![Reuben Fine](images/dunya-fine.jpg "<span lang="en">Reuben Fine</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Harry Pot for Anefo ]]</span> · <span lang="en">CC BY-SA 3.0 nl</span>")
-
-![Judit Polgár](images/dunya-polgar.jpg "<span lang="en">Judit Polgár</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">This photo was taken by Przemysław JahrAutor…</span> · <span lang="en">CC BY-SA 3.0</span>")
+[MAÇ SEÇİCİ GÖSTER: Şampiyonları yenen efsaneler]
 
 Bu listeye başka isimler de eklenebilir: **Bent Larsen**, **Efim Geller**, **Samuel Reshevsky**, **Aron Nimzowitsch**. Zamanla dünya şampiyonları oldukça belli bir şey söylüyor: ünvanı kazanmak için yalnızca çok iyi oynamak yetmez; kurallara uyum, sinir dayanıklılığı, finansal ve siyasi şartlar ve bazen sadece şans da gerekiyor. Şimdi iki yirmi yaşındaki oyuncu bu zincire bir halka daha eklemek için Cenevre'de oturuyor.
-
-![Bent Larsen](images/dunya-larsen.jpg "<span lang="en">Bent Larsen</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Hans Peters for Anefo</span> · <span lang="en">CC0</span>")
-![Efim Geller](images/dunya-geller.jpg "<span lang="en">Efim Geller</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Suyk, Koen / Anefo</span> · <span lang="en">CC0</span>")
-![Aron Nimzowitsch](images/dunya-nimzowitsch.jpg "<span lang="en">Aron Nimzowitsch</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Not mentioned</span> · <span lang="en">Public domain</span>")
 
 [MAÇ SEÇİCİ: Şampiyonları yenen efsaneler]
 
@@ -1505,6 +1489,8 @@ Bu listeye başka isimler de eklenebilir: **Bent Larsen**, **Efim Geller**, **Sa
 *Moskova (Rusya)*
 
 [KART images/dunya-polgar.jpg]
+
+[BİLGİ] **Judit Polgár** (d. 1976) — Tarihin en güçlü kadın oyuncusu; 2005'te dünya sıralamasında 8. oldu; Kasparov, Karpov ve Spassky dahil birçok dünya şampiyonunu yendi. Dünya şampiyonluğu döngüsünde yer aldı (2005 San Luis'te oynadı), ama kazanamadı. Neden hak ediyordu? Kadınlar şampiyonasında hiç oynamadı; bunun yerine açık sıralamada ilk onu seçti ve orada ayrı bir iz bıraktı.
 
 Judit Polgár, Rusya–Dünya karması maçında (Moskova, 9 Eylül 2002) eski dünya şampiyonu Kasparov'u yendi.
 
@@ -1525,6 +1511,8 @@ Judit Polgár, Rusya–Dünya karması maçında (Moskova, 9 Eylül 2002) eski d
 
 [KART images/dunya-ivanchuk.jpg]
 
+[BİLGİ] **Vasyl Ivanchuk** (d. 1969) — 1990'ların başında dünyanın ilk üç oyuncusu arasındaydı; yaratıcılığı ve hazırlığı ile ünlüydü. Ama sinirlerine yenik düştü: kritik maçlarda yaptığı hatalarla ünvanı kaçırdı. 2002'de FIDE şampiyonası finalinde Ponomariov'a 4½–2½ yenildi. Neden hak ediyordu? Çağdaşlarının neredeyse tamamı onu satranç dehası olarak tanımlıyor.
+
 Linares 1991'in ilk turunda Ivanchuk, o sırada dünya şampiyonu olan Kasparov'u yendi.
 
 [Event "Linares"]
@@ -1543,6 +1531,8 @@ Linares 1991'in ilk turunda Ivanchuk, o sırada dünya şampiyonu olan Kasparov'
 *Baguio (Filipinler)*
 
 [KART images/dunya-korchnoi.jpg]
+
+[BİLGİ] **Viktor Korchnoi** (1931–2016) — 1976'da SSCB'den kaçıp Hollanda'ya sığındı, bu yüzden Sovyet satranç yönetiminden tam bir tecrit yaşadı. 1978'de Baguio'da Karpov'a karşı oynadığı maç (ilk 6 galibiyet; 32 oyun; 6–5 yenildi) tarihin en gergin maçlarından biri: sırasıyla 5–2 geriye düştü, 5–5'e geldi ve son oyunu kaybetti. 1981'de Merano'da 6–2 yenildi. Neden hak ediyordu? 40'larında ve 50'lerinde dünyanın en güçlü iki üç oyuncusu arasındaydı, 1980'lerde hâlâ Adaylar'dı.
 
 Baguio maçının 31. oyununda Korchnoi, şampiyon Karpov'u yenip skoru 5–5'e getirdi; maçı bir oyun sonra kaybetti.
 
@@ -1581,6 +1571,8 @@ SSCB–Dünya karması maçında (Belgrad, 1970) Larsen, dünya şampiyonu Spass
 *Moskova (SSCB)*
 
 [KART images/dunya-botvinnik.jpg]
+
+[BİLGİ] **Paul Keres** (1916–75) — “Kronprinz” (veliaht). 1938 AVRO turnuvasını Fine ile eşit puanla (8½) bitirdi ve Alekhine'le maç konuşulmaya başlandı; Dünya Savaşı, Estonya'nın işgali ve ardından Sovyet dönemi kariyerinin gidişatını değiştirdi. 1953, 1956, 1959 ve 1962'de Adaylar Turnuvası'nı **dört kez ikinci** bitirdi. 1948 maç turnuvasında Botvinnik'e kaybettiği oyunlarda Sovyet yönetiminin baskısı olduğuna dair iddialar var, ama kanıtlanmış değil. Neden hak ediyordu? Dört kez “bir adım”ın gerisinde kalan başka bir oyuncu yok.
 
 Alekhine Anma Turnuvası'nda (Moskova, 1956) Keres, o sırada dünya şampiyonu olan Botvinnik'i yendi.
 
@@ -1641,6 +1633,8 @@ SSCB Şampiyonası'nda (Moskova, 1955) Geller, dünya şampiyonu Botvinnik'i yen
 
 [KART images/dunya-bronstein.jpg]
 
+[BİLGİ] **David Bronstein** (1924–2006) — 1951'de Botvinnik'le 12–12 berabere kaldı; kurala göre ünvan şampiyonda kaldı. Bir oyun daha kazansa şampiyon olacaktı. Sonradan maç sırasında baskı altında kaldığını söyledi; yaratıcı oyun tarzı ise onu tarihte özel bir yere koyuyor.
+
 1951 maçının 22. oyununda Bronstein, şampiyon Botvinnik'i yendi; maç 12–12 bitti ve ünvan Botvinnik'te kaldı.
 
 [Event "Dünya Şampiyonası"]
@@ -1679,6 +1673,8 @@ New York 1927'de Nimzowitsch, aynı yılın sonunda dünya şampiyonu olacak Ale
 
 [KART images/dunya-rubinstein.jpg]
 
+[BİLGİ] **Akiba Rubinstein** (1880–1961) — 1912'de beş büyük turnuvayı birden kazandı (San Sebastian, Pistyan, Breslau, Varşova, Vilnius) ve Lasker'le 1914'te maça davet edildi. Neden alamadı? Birinci Dünya Savaşı maçı engelledi. Savaştan sonra Capablanca'nın şampiyon olduğu dönemde, Londra Kuralları'nın öngördüğü ödül fonunu bulamadı; ruh sağlığı bozuldu ve zirvesinden hızla indi. Neden hak ediyordu? Kale oyunlarının en büyük ustası, Lasker ve Capablanca'dan başka kimse onunla aynı ligde değildi.
+
 St. Petersburg 1909 turnuvasında Rubinstein, dünya şampiyonu Lasker'i yendi.
 
 [Event "St. Petersburg"]
@@ -1698,6 +1694,8 @@ St. Petersburg 1909 turnuvasında Rubinstein, dünya şampiyonu Lasker'i yendi.
 
 [KART images/dunya-tarrasch.jpg]
 
+[BİLGİ] **Siegbert Tarrasch** (1862–1934) — 1890'larda ve 1900'lerde Lasker'in dışında en güçlü oyuncu. 1908'de Lasker'e meydan okudu ve 10½–5½ yenildi. Lasker'le maça ancak 46 yaşında ulaşabildi; en iyi yıllarını bu fırsat gelmeden geçirdi. “Praeceptor Germaniae” (Almanya'nın hocası) olarak yazdığı kitaplar ise yıllarca modern satranç anlayışını şekillendirdi.
+
 1908 maçının 12. oyununda Tarrasch, şampiyon Lasker'i yendi; maçı yine de 10½–5½ kaybetti.
 
 [Event "Dünya Şampiyonası"]
@@ -1716,6 +1714,8 @@ St. Petersburg 1909 turnuvasında Rubinstein, dünya şampiyonu Lasker'i yendi.
 *Havana (Küba)*
 
 [KART images/dunya-chigorin.jpg]
+
+[BİLGİ] **Mikhail Chigorin** (1850–1908) — Rusya'nın ilk büyük ustası. Steinitz'e iki kez meydan okudu (1889, 1892, ikisi de Havana). 1892'de maç son oyunlara kadar çekişmeliydi; Chigorin kritik anlarda yaptığı hatalarla 12½–10½ yenildi. Neden alamadı? Şampiyonun deneyimi ve kendi kritik hataları. Neden hak ediyordu? Steinitz'in en tehlikeli rakibiydi ve Rus satranç okulunun babası sayılır.
 
 1889 maçının 7. oyununda Chigorin, şampiyon Steinitz'i yendi; maçı 10½–6½ Steinitz kazandı.
 
