@@ -7,7 +7,7 @@
 
 Maçı resmî sitesinden de takip edebilirsiniz: [worldchampionship.fide.com](https://worldchampionship.fide.com/).
 
-### Neden Gukesh ve Sindarov?
+### Neden Gukesh ile Sindarov?
 
 Önce şampiyondan başlayalım. **Gukesh**, ünvanı Aralık 2024’te Singapur’da, o günün şampiyonu Ding Liren’i 7½–6½ yenerek aldı. O sırada 18 yaşındaydı ve resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu oldu. Oraya da bir Adaylar Turnuvası’nı kazanarak gelmişti (Toronto 2024); 17 yaşında en genç şampiyon adayı olmuştu. Kısacası Gukesh sistemin kapılarından geçerek ünvanı aldı ve şimdi onu savunuyor.
 
