@@ -83,7 +83,7 @@ export default function MatchPicker({ items, flat = false, gate = true, onLoaded
         <h4 className="mpb-title f-display">{cur.label}</h4>
         {cur.blurb && <p className="mpb-blurb"><Markdown options={{ forceInline: true }}>{cur.blurb}</Markdown></p>}
         {idx === items.length - 1 ? (next ? <SectionLink target={next} /> : null) : items.length > 1 && (
-          <button type="button" className="mpb-nextcard" onClick={() => go(nextIdx, true)} aria-label={`Sıradaki oyun: ${nx.label}`}>
+          <button type="button" className="mpb-nextcard" onClick={() => go(nextIdx)} aria-label={`Sıradaki oyun: ${nx.label}`}>
             <span className="mpb-nextcard-thumb">
               {nx.thumb ? <ProgressiveImage path={nx.thumb} alt="" thumb position="50% 25%" /> : <span className="mpb-noimg f-display">{nx.year}</span>}
             </span>
