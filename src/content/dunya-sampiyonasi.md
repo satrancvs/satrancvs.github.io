@@ -60,68 +60,20 @@ Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor; her döngü geneld
 
 Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının kendisi bile 19. yüzyılın sonlarında ortaya çıktı ve günümüze kadar defalarca yeniden tanımlandı.
 
-**Zaman çizelgesi: oyun sayısının sınırsız olduğu maçlar** (“ilk N galibiyet”, oyun sınırı yok; beraberlikler sayılmaz)
-
-- **1886**: İlk resmî ünvan maçı Steinitz–Zukertort “ilk 10 galibiyet” ile oynandı. 1890'lara kadar maçların çoğu bu biçimdeydi (Steinitz–Chigorin, Lasker–Steinitz); 1900'lerin başında bazı maçlar “ilk 8 galibiyet” oldu (Lasker–Marshall, Lasker–Tarrasch).
-- **1922**: Londra Kuralları “ilk 6 galibiyet” biçimini standart yaptı; 1927'de **Capablanca–Alekhine** maçı bu kuralla 34 oyun sürdü (o güne dek en uzun maç). Sonraki maçlarda (Bogoljubov, Euwe) oyun sayısına üst sınır kondu.
-- **1948–1972**: FIDE döneminde ünvan maçları sabit **24 oyun** üzerinden oynandı; sınırsız biçim bu dönemde uygulanmadı.
-- **1975**: Fischer “ilk 10 galibiyet, sınırsız oyun” şartını istedi, FIDE reddetti, maç oynanmadı.
-- **1978 ve 1981**: Karpov–Korchnoi maçları “ilk 6 galibiyet”, oyun sınırı olmadan oynandı (Baguio 1978: 32 oyun; Merano 1981: 18 oyun). Sınırsız biçim böylece geri döndü.
-- **1984–85**: Karpov–Kasparov maçı 48 oyun sürdü ve Şubat 1985'te FIDE Başkanı Campomanes'in kararıyla **iptal edildi**. Sınırsız oyun sayısı **burada kaldırıldı**: Eylül 1985'teki yeniden maç **24 oyunla sınırlıydı** ve o günden bugüne ünvan maçları sabit oyun sayısıyla oynanıyor (önce 24, sonra 12–14; bugün 14 klasik oyun).
-
-#### 1) Birleşme ve bugünkü sistem (2006–)
-
-2006'da **Kramnik–Topalov** birleşme maçı Elista'da oynandı (6–6, ardından hızlı oyunlarda Kramnik kazandı; maç bir “tuvalet skandalı”yla da anılır) ve ünvan tek sahibe döndü. 2007'de turnuva biçimi (Meksika), 2008'den itibaren yine maç biçimi kullanıldı. FIDE, 2013'ten itibaren Adaylar'ı **sekiz kişilik çift devreli turnuva** olarak yerleştirdi; şampiyona doğrudan meydan okunur. Son yıllarda yenilikler: Dünya Kupası ve Grand Swiss yolu, FIDE Circuit, ve eşitlik hâlinde dört hızlı, iki hızlı, iki yıldırım ve sonunda “ani ölüm” oyunu.
-
-#### 2) Bölünme: iki şampiyon (1993–2006)
-
-1993'te Kasparov ve Nigel Short, FIDE'nin organizasyonundan memnun olmayarak **Profesyonel Satranç Birliği**'ni (PCA) kurdu; kendi aralarında Londra'da ünvan maçı oynadılar (Kasparov kazandı). FIDE ise Karpov'a şampiyonluk ünvanı verdi (Jan Timman'ı yenmişti) ve 1990'larda “**iki dünya şampiyonu**” vardı. 1990'ların sonunda FIDE ayrıca şampiyonayı **tek elemeli bir turnuva** hâline getirdi: onlarca oyuncu, kısa maçlar, hızlı tiebreak'ler (Khalifman 1999, Anand 2000, Ponomariov 2002, Kasimdzhanov 2004). Böyle bir turnuva en güçlü oyuncuyu değil, o hafta en sağlam oyuncuyu bulur. Bu yüzden herkes “asıl” şampiyonu Kasparov'un kaybettiği 2000'deki Londra maçında arıyordu: **Kramnik**, Kasparov'u (+2 =13) yenerek “klasik” şampiyon oldu.
-
-#### 3) FIDE'nin dönemi (1948–1993)
-
-Alekhine'in ölümü üzerine **FIDE** (Uluslararası Satranç Federasyonu) ünvanı yönetmeye başladı. 1948'de Lahey ve Moskova'da beş büyük ustanın (Botvinnik, Smyslov, Keres, Reshevsky, Euwe) oynadığı bir **maç turnuvası** düzenlendi; kazanan Botvinnik oldu. Sonra düzen oturdu:
-
-- **Bölgeler arası turnuva (Interzonal)** → **Adaylar** (önce turnuva, 1965'ten itibaren maç eleme) → **ünvan maçı**.
-- **Şampiyon ayrıcalıkları**: 12–12 eşitlikte ünvan şampiyonda kalırdı (Botvinnik 1951'de Bronstein'a, 1954'te Smyslov'a karşı ünvanı bu kuralla korudu). 1963'e kadar kaybeden şampiyon otomatik **rövanş** hakkına sahipti; bu hak Botvinnik'e iki kez (1958, 1961) ünvanı geri kazandırdı ve 1963'ten sonra kaldırıldı.
-- **1962 Adaylar'ı** (Curaçao) Sovyet oyuncuların kendi aralarında beraberlik anlaşması yaptığı ve Fischer'in bunu açıkça suçladığı turnuvaydı; sonuçta Adaylar'ın **turnuva** biçimi bırakıldı ve eleme maçlarına geçildi.
-- **1975**: Fischer 1972'de Spassky'i yendikten sonra ünvan savunması için bir dizi şart koydu (ilk 10 galibiyet, sınırsız oyun sayısı, 9–9'da şampiyonun korunması); FIDE bir kısmını reddetti, Fischer çekildi ve **Karpov** hiç oynamadan, **walkover** ile dünya şampiyonu ilan edildi.
-- **1984–85**: Karpov–Kasparov maçı “ilk 6 galibiyet” ile ve oyun sınırı olmadan başladı, 48 oyun sürdü (Karpov önce 5–0 öne geçmişti, Kasparov oyunlar boyunca direndi; skor 5–3'tü) ve FIDE Başkanı Florencio Campomanes'in maçı **iptal etmesi** (“yorgunluk” gerekçesiyle) büyük tartışma yarattı. Maç, 24 oyunluk bir formatla yeniden oynandı; Kasparov kazandı.
-
-#### 4) Şampiyon, kurallar koyar (1886–1946)
-
-Resmî dünya şampiyonluğu, **1886'da Steinitz–Zukertort maçı** ile başlıyor kabul edilir. O dönemde şampiyon ve meydan okuyucu, maçın biçimini, yerini ve **ödülünü** kendi aralarında pazarlıkla belirlerdi. Kurallar yoktu: genellikle belli sayıda galibiyete kadar oynanırdı (ör. “ilk 10 galibiyet”). Bir oyuncunun şampiyona meydan okuması için, kendi adına para bulabilmesi gerekiyordu.
-
-1920'lerde bu serbestlik bir sorun hâline geldi. **Capablanca**'nın önerisiyle 1922'de “Londra Kuralları” kabul edildi: en az 10.000 dolarlık ödül fonu, ilk 6 galibiyetle kazanılan maç. Bu kurallar şampiyonu korudu ama paranın bulunamadığı durumlarda meydan okuyucuyu da dışarıda bıraktı: bu yüzden **Rubinstein** ve **Nimzowitsch** gibi güçlü oyuncular hiç şans bulamadı. **Alekhine** ünvanı 1927'de aldıktan sonra Capablanca'ya rövanş vermedi ve rakibini kendi seçti (Bogoljubov, iki kez); 1935'te Euwe'ye bir sürpriz yenilgi aldı, 1937'de rövanşı kazandı. 1946'da şampiyon sıfatıyla öldü.
-
-#### 5) Gayriresmî dönem: şampiyon “en iyi” sayılandır (18. yüzyıl–1886)
-
-Resmî bir ünvan yoktu; en iyi sayılan oyuncu, bir şampiyon gibi anıldı, sonradan tarihçiler sıraladı: **Philidor** (18. yüzyıl, Fransa), **La Bourdonnais** (1830'lar), **Staunton** (1840'lar), **Anderssen** (1851 Londra turnuvasını kazanarak) ve onu 1858'de Paris'te yenen **Paul Morphy** (+7 −2 =2). Morphy “dünyanın en iyisi” sayıldı ama kısa süre sonra yarışmayı bıraktı; ona ünvan vermek için ortada bir kural da yoktu. **Steinitz** 1866'da Anderssen'i yenerek kendini dünya şampiyonu sayma hakkını elde etti; ama maç adlandırması ve “resmî” sayılması hep tartışmalıdır.
-
-![François-André Danican Philidor](images/dunya-philidor.jpg "<span lang="en">François-André Danican Philidor</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Augustin de Saint-Aubin, Charles-Nicolas Coc…</span> · <span lang="en">Public domain</span>")
-![Louis-Charles Mahé de La Bourdonnais](images/dunya-labourdonnais.jpg "<span lang="en">Louis-Charles Mahé de La Bourdonnais</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">The original uploader was Jaapvanderkooij at…</span> · <span lang="en">Public domain</span>")
-![Howard Staunton](images/dunya-staunton.jpg "<span lang="en">Howard Staunton</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">R. &amp;amp; E. Taylor (Firm) / After Thomas Dew…</span> · <span lang="en">Public domain</span>")
-
-![Adolf Anderssen](images/dunya-anderssen.jpg "<span lang="en">Adolf Anderssen</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
-![Paul Morphy](images/dunya-morphy.jpg "<span lang="en">Paul Morphy</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
-
-### Şampiyonlar ünvanı nasıl aldı, nasıl korudu?
-
-Aşağıda her şampiyon için *ünvanı kime karşı, nasıl aldığı* ve *nasıl koruduğu* özetleniyor. Skorlar “şampiyon puanı–rakip puanı” biçiminde.
-
 <table>
 <thead><tr><th>Şampiyon</th><th>Ünvanı aldığı yer ve rakip</th><th>Ünvanı koruması / kaybı</th></tr></thead>
 <tbody>
-<tr class="era"><td colspan="3"><span class="era-years">2007 – bugün</span><span class="era-name">Birleşik dünya şampiyonu</span></td></tr>
+<tr class="era"><td colspan="3"><span class="era-years">2007 – bugün</span><span class="era-name">FIDE Dünya Şampiyonu</span></td></tr>
 <tr><td><strong>Gukesh</strong> (2024–)</td><td>2024 Singapur: <strong>Ding Liren</strong>'e karşı 7½–6½</td><td>Savunması 2026 Cenevre'de, <strong>Sindarov</strong>'a karşı.</td></tr>
 <tr><td><strong>Ding Liren</strong> (2023–24)</td><td>2023 Astana: <strong>Nepomniachtchi</strong>'ye karşı 7–7, hızlı oyunlarda 2½–1½</td><td>2024'te Singapur'da <strong>Gukesh</strong>'e 7½–6½ kaybetti.</td></tr>
 <tr><td><strong>Carlsen</strong> (2013–23)</td><td>2013 Chennai: <strong>Anand</strong>'a karşı 6½–3½</td><td>2014 Soçi <strong>Anand</strong> 6½–4½; 2016 New York <strong>Karjakin</strong> 6–6, hızlı oyunlarda 3–1; 2018 Londra <strong>Caruana</strong> 6–6, 12 klasik oyunun hepsi berabere, hızlı oyunlarda 3–0; 2021 Dubai <strong>Nepomniachtchi</strong> 7½–3½. 2023'te ünvanı savunmadan bıraktı.</td></tr>
 <tr><td><strong>Anand</strong> (2007–13)</td><td>2007 Meksika: sekiz kişilik turnuvayı 9/14 ile kazandı</td><td>2008 <strong>Kramnik</strong> 6½–4½; 2010 <strong>Topalov</strong> 6½–5½; 2012 <strong>Gelfand</strong> 6–6, hızlı oyunlarda 2½–1½. 2013'te <strong>Carlsen</strong>'e kaybetti.</td></tr>
-<tr class="era"><td colspan="3"><span class="era-years">1993 – 2007</span><span class="era-name">İki şampiyon, eleme turnuvaları</span></td></tr>
+<tr class="era"><td colspan="3"><span class="era-years">1993 – 2007</span><span class="era-name">Bölünme: İki şampiyon</span></td></tr>
 <tr><td><strong>Kramnik</strong> (2000–07)</td><td>2000 Londra: <strong>Kasparov</strong>'a karşı 8½–6½, hiç yenilmeden (+2 =13)</td><td>2004'te <strong>Leko</strong> 7–7 (ünvan şampiyonda kaldı); 2006'da <strong>Topalov</strong>'u 6–6 sonrası hızlı oyunlarda yenerek birleşik ünvanı aldı.</td></tr>
 <tr><td><strong>Topalov</strong> (FIDE, 2005)</td><td>2005 San Luis, Arjantin: sekiz kişilik çift devreli turnuva</td><td>2006'da <strong>Kramnik</strong>'e kaybetti (birleşme maçı).</td></tr>
 <tr><td><strong>Khalifman, Anand, Ponomariov, Kasimdzhanov</strong> (FIDE, 1999–2005)</td><td>Tek elemeli turnuvalar</td><td>Bir kez kazandıktan sonra savunma yok; her şampiyon bir sonraki turnuvada yeniden oynadı.</td></tr>
 <tr><td><strong>Karpov</strong> (FIDE, 1993–99)</td><td>1993: <strong>Kasparov</strong>'un ayrılmasıyla, <strong>Timman</strong>'ı 12½–8½ yenerek</td><td>1996'da <strong>Kamsky</strong>, 1998'de <strong>Anand</strong> karşısında ünvanı korudu; 1999'da savunmayı reddedince FIDE turnuva biçimine geçti.</td></tr>
-<tr class="era"><td colspan="3"><span class="era-years">1948 – 1993</span><span class="era-name">FIDE’nin yönettiği döngü</span></td></tr>
+<tr class="era"><td colspan="3"><span class="era-years">1948 – 1993</span><span class="era-name">FIDE'nin yönettiği dönem</span></td></tr>
 <tr><td><strong>Kasparov</strong> (1985–93, PCA 1993–2000)</td><td>1985 Moskova: <strong>Karpov</strong>'a 13–11</td><td>1986, 1987 (12–12, ünvan şampiyonda kaldı), 1990'da <strong>Karpov</strong>'u yendi; 1993'te <strong>Short</strong>'u, 1995'te <strong>Anand</strong>'ı yendi; 2000'de Londra'da <strong>Kramnik</strong>'e kaybetti.</td></tr>
 <tr class="era-note"><td colspan="3"><span>1985</span> Sınırsız oyun sayısı (“ilk 6 galibiyet”) kaldırıldı; ünvan maçları sabit oyun sayısıyla oynanır</td></tr>
 <tr><td><strong>Karpov</strong> (1975–85)</td><td>1975: <strong>Fischer</strong>'in çekilmesiyle hükmen</td><td>1978 Baguio'da <strong>Korchnoi</strong>'u, 1981 Merano'da yine <strong>Korchnoi</strong>'u yendi. 1984–85'te <strong>Kasparov</strong>'a karşı maç yarıda kesildi (5–3 önde); 1985'te ünvanı kaybetti.</td></tr>
@@ -132,7 +84,7 @@ Aşağıda her şampiyon için *ünvanı kime karşı, nasıl aldığı* ve *nas
 <tr><td><strong>Tal</strong> (1960–61)</td><td>1960, <strong>Botvinnik</strong>'e karşı 12½–8½</td><td>1961'de <strong>Botvinnik</strong> ile rövanşı 13–8 kaybetti.</td></tr>
 <tr><td><strong>Smyslov</strong> (1957–58)</td><td>1957, <strong>Botvinnik</strong>'e karşı 12½–9½</td><td>1958'de <strong>Botvinnik</strong> ile rövanşı 12½–10½ kaybetti.</td></tr>
 <tr><td><strong>Botvinnik</strong> (1948–57, 1958–60, 1961–63)</td><td>1948 Lahey–Moskova <strong>beş kişilik maç turnuvası</strong></td><td>1951 <strong>Bronstein</strong> 12–12 (ünvan şampiyonda kaldı); 1954 <strong>Smyslov</strong> 12–12. 1957'de <strong>Smyslov</strong>'a, 1960'ta <strong>Tal</strong>'e yenildi; 1958'de <strong>Smyslov</strong> ile, 1961'de <strong>Tal</strong> ile rövanşları kazanıp ünvanı iki kez geri aldı.</td></tr>
-<tr class="era"><td colspan="3"><span class="era-years">1886 – 1946</span><span class="era-name">Şampiyonun pazarlık ettiği dönem</span></td></tr>
+<tr class="era"><td colspan="3"><span class="era-years">1886 – 1946</span><span class="era-name">Şampiyon kuralları koyar</span></td></tr>
 <tr><td><strong>Euwe</strong> (1935–37)</td><td>1935, Hollanda: <strong>Alekhine</strong>'e karşı 15½–14½</td><td>1937'de <strong>Alekhine</strong> ile rövanşı kaybetti.</td></tr>
 <tr><td><strong>Alekhine</strong> (1927–35, 1937–46)</td><td>1927, <strong>Capablanca</strong>'ya karşı; “ilk 6 galibiyet”, 34 oyun</td><td>1929 ve 1934'te <strong>Bogoljubov</strong>'u yendi. 1935'te <strong>Euwe</strong>'ye 15½–14½ kaybetti, 1937'de <strong>Euwe</strong> ile rövanşı 15½–9½ kazandı. 1946'da şampiyonken öldü.</td></tr>
 <tr><td><strong>Capablanca</strong> (1921–27)</td><td>1921, Havana: <strong>Lasker</strong>'in çekilmesiyle</td><td>1927 Buenos Aires'te <strong>Alekhine</strong>'e 18½–15½ yenildi (34 oyun, +6 −3 =25).</td></tr>
@@ -151,7 +103,7 @@ Tablodan iki şey okunuyor. Birincisi, **eşitlikte ünvan şampiyonda kalır**:
 
 [KART images/dunya-gukesh.jpg]
 
-Grand Chess Tour Polonya ayağında, yıldırım oyunlarda ikisinin ikinci karşılaşması: Sindarov Siyahlarla kazandı. Kayıt: [chessgames.com](https://www.chessgames.com/perl/chessgame?gid=3150962).
+Grand Chess Tour Polonya ayağında, yıldırım oyunlarda ikisinin ikinci karşılaşması: Sindarov Siyahlarla kazandı.
 
 [Event "GCT Süper Yıldırım Polonya"]
 [Site "Varşova"]
@@ -172,7 +124,7 @@ Grand Chess Tour Polonya ayağında, yıldırım oyunlarda ikisinin ikinci karş
 
 [KART images/dunya-sindarov.jpg]
 
-Grand Chess Tour Polonya ayağında, yıldırım oyunlarda Sindarov Beyazlarla kazandı. Kayıt: [chessgames.com](https://www.chessgames.com/perl/chessgame?gid=3150319).
+Grand Chess Tour Polonya ayağında, yıldırım oyunlarda Sindarov Beyazlarla kazandı.
 
 [Event "GCT Süper Yıldırım Polonya"]
 [Site "Varşova"]
@@ -195,7 +147,7 @@ Grand Chess Tour Polonya ayağında, yıldırım oyunlarda Sindarov Beyazlarla k
 
 ![Javokhir Sindarov](images/dunya-x-sindarov-a.jpg "<span lang="en">Javokhir Sindarov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">MiroJP</span> · <span lang="en">CC BY-SA 4.0</span>")
 
-Grand Chess Tour Polonya ayağının hızlı oyun bölümünde Gukesh Siyahlarla kazandı. Kayıt: [chessgames.com](https://www.chessgames.com/perl/chessgame?gid=3148591).
+Grand Chess Tour Polonya ayağının hızlı oyun bölümünde Gukesh Siyahlarla kazandı.
 
 [Event "GCT Süper Hızlı Polonya"]
 [Site "Varşova"]
@@ -1784,11 +1736,3 @@ St. Petersburg 1909 turnuvasında Rubinstein, dünya şampiyonu Lasker'i yendi.
 [View "player"]
 
 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. O-O Qf6 7. d4 Nge7 8. Bg5 Qd6 9. d5 Nd8 10. Qa4 Bb6 11. Na3 Qg6 12. Bxe7 Kxe7 13. Nxe5! Qf6 14. Nf3 Qxc3 15. e5 c6 16. d6+ Kf8 17. Bb3 h6 18. Qh4 g5 19. Qh5 Qd3 20. Rad1 Qh7 21. Nc2 Kg7 22. Ncd4 Qg6 23. Qg4 h5 24. Nf5+ Kf8! 25. Qxg5 Qxg5 26. Nxg5 h4 27. Kh1 Rh5 28. f4! Ne6 29. g4 hxg3 30. Nxg3 Rh6 31. Nxf7 Kxf7 32. f5! Ke8 33. fxe6! dxe6 34. Ne4 1-0
-
-### Kaynaklar
-
-Güncel bilgiler için: [World Chess: Gukesh vs Sindarov rehberi](https://worldchess.com/news/gukesh-vs-sindarov-everything-you-need-to-know-about-the-2026-world-chess-championship), [Wikipedia: World Chess Championship 2026](https://en.wikipedia.org/wiki/World_Chess_Championship_2026), [Wikipedia: Candidates Tournament 2026](https://en.wikipedia.org/wiki/Candidates_Tournament_2026), [Wikipedia: Chess World Cup 2025](https://en.wikipedia.org/wiki/Chess_World_Cup_2025), [ChessBase: Gukesh vs Sindarov](https://chessbase.in/news/all-that-you-wanted-to-know-about-gukesh-vs-sindarov-world-chess-championship-2026), [chess.com: Candidates 2026 sonuçları](https://www.chess.com/news/view/sindarov-vaishali-win-7-fide-candidates-2026-conclusions).
-
-New York 2016 için: [World Chess: New York 2016](https://worldchess.com/nyc2016). Afişler için: [FIDE Müzesi](https://museum.fide.com/thematic_collections/world-championship-posters).
-
-FIDE: [Açık Satranç Müzesi, şampiyonlar](https://museum.fide.com/champions), [2026 maç sitesi](https://worldchampionship.fide.com/), [2018 fotoğraf galerisi](https://www.fide.com/images/stories/gallery/WCCM2018/index.html).
