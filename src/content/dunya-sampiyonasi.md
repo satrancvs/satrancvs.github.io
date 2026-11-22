@@ -51,7 +51,7 @@ Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor; her döngü geneld
 2. **Adaylar Turnuvası**: sekiz oyuncu, çift devreli, 14 tur. Birinci, şampiyonun karşısına çıkacak şampiyon adayıdır.
 3. **Ünvan maçı**: 14 klasik oyunluk maç. Şampiyon, **kendi ünvanını savunarak** doğrudan maça gelir; Adaylar'a katılmaz.
 
-### Eskiden nasıldı?
+### Geçmişte nasıldı?
 
 Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının kendisi bile 19. yüzyılın sonlarında ortaya çıktı ve günümüze kadar defalarca yeniden tanımlandı.
 

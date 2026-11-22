@@ -2,10 +2,11 @@ import { useState } from 'react';
 import LiveMatch from '@/components/LiveMatch';
 import MatchPicker from '@/components/MatchPicker';
 import type { PickItem } from '@/components/MatchPicker';
+import type { SectionTarget } from '@/components/SectionLink';
 
 // Dünya Şampiyonası 2026 yazısının üstündeki tek oynatıcı: menüdeki sekmelerle 2026 maçının canlı bölümü (geri sayım dahil) ve
 // yazıdaki seçme oyun grupları (ünvan maçlarından seçmeler, şampiyonları yenen efsaneler) arasında geçilir.
-export default function GameHub({ ready, groups, onLoaded }: { ready: boolean; groups: { label: string; items: PickItem[]; flat?: boolean }[]; onLoaded?: () => void }) {
+export default function GameHub({ ready, groups, onLoaded, next }: { ready: boolean; groups: { label: string; items: PickItem[]; flat?: boolean }[]; onLoaded?: () => void; next?: SectionTarget }) {
   const [tab, setTab] = useState(0);
   const labels = ['2026 maçı · Canlı', ...groups.map((g) => g.label)];
   return (
@@ -15,7 +16,7 @@ export default function GameHub({ ready, groups, onLoaded }: { ready: boolean; g
           <button key={l} type="button" role="tab" aria-selected={tab === i} className={`f-mono${tab === i ? ' on' : ''}`} onClick={() => setTab(i)}>{l}</button>
         ))}
       </div>}
-      {tab === 0 ? <LiveMatch ready={ready} onLoaded={onLoaded} /> : <MatchPicker key={tab} items={groups[tab - 1].items} flat={groups[tab - 1].flat} />}
+      {tab === 0 ? <LiveMatch ready={ready} onLoaded={onLoaded} next={next} /> : <MatchPicker key={tab} items={groups[tab - 1].items} flat={groups[tab - 1].flat} />}
     </section>
   );
 }

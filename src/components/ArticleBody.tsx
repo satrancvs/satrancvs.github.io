@@ -18,6 +18,7 @@ import { splitChunks } from '@/lib/split-chunks';
 import LiveMatch from '@/components/LiveMatch';
 import GameHub from '@/components/GameHub';
 import MatchPicker from '@/components/MatchPicker';
+import type { SectionTarget } from '@/components/SectionLink';
 import type { PickItem } from '@/components/MatchPicker';
 import { watchEvalBar } from '@/lib/eval-bar';
 
@@ -786,6 +787,22 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     return { items, end: j };
   };
 
+  // Oynatıcı bölümleri arasında kartlı bağlantı: canlı yayın → "Aralarındaki oyunlar" → "Tüm ünvan maçları" → "Ünvanı alamamış ama hak etmiş efsaneler".
+  const inlineLabels = chunks.map((x) => x.trim().match(INLINE_PICKER)?.[1].trim()).filter((x): x is string => !!x);
+  const TARGET_META: Record<string, (n: number) => { title: string; sub: string; headingText?: string }> = {
+    'Gukesh – Sindarov karşılaşmaları': (n) => ({ title: 'Aralarındaki oyunlar', sub: `Gukesh – Sindarov · ${n} karşılaşma`, headingText: 'Aralarındaki oyunlar' }),
+    'Tüm ünvan maçları': (n) => ({ title: 'Tüm ünvan maçları', sub: `1886'dan bugüne ${n} maç` }),
+    'Şampiyonları yenen efsaneler': (n) => ({ title: 'Ünvanı alamamış ama hak etmiş efsaneler', sub: `Şampiyonları yenen ${n} oyun`, headingText: 'Ünvanı alamamış ama hak etmiş efsaneler' }),
+  };
+  const hubTarget = (no: number): SectionTarget | undefined => {
+    const label = inlineLabels[no - 1];
+    if (!label) return undefined;
+    let items: PickItem[] = [];
+    chunks.forEach((x, k) => { const m = x.trim().match(MATCH_PICKER); if (m && (m[1] ?? '').trim() === label) items = collectPicker(k).items; });
+    const meta = (TARGET_META[label] ?? ((n: number) => ({ title: label, sub: `${n} oyun` })))(items.length);
+    return { id: `oyun-bolumu-${no}`, thumb: items[0]?.thumb, ...meta };
+  };
+
   for (let i = 0; i < chunks.length; i++) {
     const c = chunks[i].trim();
     if (toc.length > 1 && !tocPlaced && i === toc[0].at) {
@@ -863,14 +880,14 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       const groups: { label: string; items: PickItem[]; flat?: boolean }[] = [];
       const inline = new Set(chunks.map((x) => x.trim().match(INLINE_PICKER)?.[1].trim()).filter(Boolean));
       chunks.forEach((x, k) => { const m = x.trim().match(MATCH_PICKER); if (m) { const label = (m[1] ?? 'Seçme oyunlar').trim(); if (!inline.has(label)) groups.push({ label, items: collectPicker(k).items, flat: /Gukesh/.test(label) }); } });
-      out.push(<GameHub key={i} ready={cp === 'ready'} groups={groups} onLoaded={() => hubDone(0)} />);
+      out.push(<GameHub key={i} ready={cp === 'ready'} groups={groups} onLoaded={() => hubDone(0)} next={hubTarget(1)} />);
     } else if (INLINE_PICKER.test(c)) {
-      // Menüden ayrılmış tek seçici (Eskiden nasıldı? bölümünün sonu): aynı tasarım, yalnızca o grubun oyunları.
+      // Menüden ayrılmış tek seçici (Geçmişte nasıldı? bölümünün sonu): aynı tasarım, yalnızca o grubun oyunları.
       const want = c.match(INLINE_PICKER)![1].trim();
       let items: PickItem[] = [];
       chunks.forEach((x, k) => { const m = x.trim().match(MATCH_PICKER); if (m && (m[1] ?? '').trim() === want) items = collectPicker(k).items; });
       const no = ++hubNo;
-      if (items.length) out.push(<section key={i} className="hub hub-solo" aria-label={want}><MatchPicker items={items} flat={/Gukesh/.test(want)} gate={hubStage >= no} onLoaded={() => hubDone(no)} /></section>);
+      if (items.length) out.push(<section key={i} id={`oyun-bolumu-${no}`} className="hub hub-solo" aria-label={want}><MatchPicker items={items} flat={/Gukesh/.test(want)} gate={hubStage >= no} onLoaded={() => hubDone(no)} next={hubTarget(no + 1)} /></section>);
     } else if (CONTINUED.test(c)) {
       out.push(<Continued key={i} text={c} />);
     } else if (FEN_ROW.test(c)) {
