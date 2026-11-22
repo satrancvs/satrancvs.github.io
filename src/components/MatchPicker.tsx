@@ -73,13 +73,13 @@ export default function MatchPicker({ items, flat = false, gate = true, onLoaded
       </div>
 
       <div className="mpb-info">
+        <p className="mpb-kicker f-mono">Şimdi oynatılıyor</p>
         <div className="mpb-hero" key={cur.id}>
           {cur.thumb ? <ProgressiveImage path={cur.thumb} alt="" thumb position="50% 25%" /> : <span className="mpb-noimg f-display">{cur.year}</span>}
           <span className="mpb-hero-num f-mono"><i className="mpa-led" />OYUN {two(idx + 1)}<span>/{two(items.length)}</span></span>
           <span className="mpb-hero-year f-display">{cur.year}</span>
           {cur.heading}
         </div>
-        <p className="mpb-kicker f-mono">Şimdi oynatılıyor · {cur.site}</p>
         <h4 className="mpb-title f-display">{cur.label}</h4>
         {cur.blurb && <p className="mpb-blurb"><Markdown options={{ forceInline: true }}>{cur.blurb}</Markdown></p>}
         {idx === items.length - 1 ? (next ? <SectionLink target={next} /> : null) : items.length > 1 && (

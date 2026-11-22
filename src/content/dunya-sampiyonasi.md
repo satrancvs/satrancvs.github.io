@@ -156,7 +156,7 @@ Carlsen maçı 11 oyunda 7½–3½ kazandı. İzleyeceğiniz oyun, 11. oyun.
 ![Carlsen ve Caruana el sıkışıyor](images/dunya-fide-2018-a.jpg "Carlsen ve Caruana, hızlı oyunlar öncesi · © <span lang="en">FIDE</span> · [<span lang="en">FIDE</span> fotoğraf galerisi](https://www.fide.com/images/stories/gallery/WCCM2018/index.html)")
 ![Carlsen hızlı oyunda](images/dunya-fide-2018-b.jpg "Carlsen, hızlı oyunlar sırasında · © <span lang="en">FIDE</span> · [<span lang="en">FIDE</span> fotoğraf galerisi](https://www.fide.com/images/stories/gallery/WCCM2018/index.html)")
 
-12 klasik oyunun hepsi berabere bitti; Carlsen hızlı oyunlarda 3–0 kazandı. İzleyeceğiniz oyun, 2. hızlı oyun. [FIDE fotoğraf galerisi](https://www.fide.com/images/stories/gallery/WCCM2018/index.html).
+12 klasik oyunun hepsi berabere bitti; Carlsen hızlı oyunlarda 3–0 kazandı. İzleyeceğiniz oyun, 2. hızlı oyun.
 
 [Event "Dünya Şampiyonası"]
 [Site "Londra"]
@@ -179,7 +179,7 @@ Carlsen maçı 11 oyunda 7½–3½ kazandı. İzleyeceğiniz oyun, 11. oyun.
 
 ![Sergey Karjakin](images/dunya-karjakin.jpg "<span lang="en">Sergey Karjakin</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 4.0</span>")
 
-Maç, Manhattan’da South Street Seaport’taki Fulton Market Binası’nda oynandı ve New York’ta 1995’ten beri oynanan ilk dünya şampiyonası maçıydı. Yedi beraberlikle başladı; Karjakin 8. oyunda öne geçti, Carlsen 10. oyunda eşitledi ve 12 klasik oyun 6–6 bitti. Carlsen hızlı oyunlarda 3–1 kazandı: 30 Kasım’da, 26. doğum gününde 3. oyunu aldı, 4. oyunda ise vezir fedasıyla mat etti. İzleyeceğiniz oyun, 4. hızlı oyun. Ayrıntılar: [World Chess'in New York 2016 sayfası](https://worldchess.com/nyc2016).
+Maç, Manhattan’da South Street Seaport’taki Fulton Market Binası’nda oynandı ve New York’ta 1995’ten beri oynanan ilk dünya şampiyonası maçıydı. Yedi beraberlikle başladı; Karjakin 8. oyunda öne geçti, Carlsen 10. oyunda eşitledi ve 12 klasik oyun 6–6 bitti. Carlsen hızlı oyunlarda 3–1 kazandı: 30 Kasım’da, 26. doğum gününde 3. oyunu aldı, 4. oyunda ise vezir fedasıyla mat etti. İzleyeceğiniz oyun, 4. hızlı oyun.
 
 [Event "Dünya Şampiyonası"]
 [Site "New York"]
