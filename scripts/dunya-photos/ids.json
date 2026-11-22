@@ -1,0 +1,226 @@
+{
+ "1886": {
+  "heading": "1886 · Steinitz – Zukertort",
+  "site": "New York, St. Louis, New Orleans (ABD)"
+ },
+ "1889": {
+  "heading": "1889 · Steinitz – Chigorin",
+  "site": "Havana (Küba)"
+ },
+ "1890": {
+  "heading": "1890–91 · Steinitz – Gunsberg",
+  "site": "New York (ABD)"
+ },
+ "1892": {
+  "heading": "1892 · Steinitz – Chigorin",
+  "site": "Havana (Küba)"
+ },
+ "1894": {
+  "heading": "1894 · Lasker – Steinitz",
+  "site": "New York, Philadelphia, Montreal (ABD/Kanada)"
+ },
+ "1896": {
+  "heading": "1896–97 · Lasker – Steinitz",
+  "site": "Moskova (Rusya)"
+ },
+ "1907": {
+  "heading": "1907 · Lasker – Marshall",
+  "site": "ABD"
+ },
+ "1908": {
+  "heading": "1908 · Lasker – Tarrasch",
+  "site": "Düsseldorf, Münih (Almanya)"
+ },
+ "1921": {
+  "heading": "1921 · Capablanca – Lasker",
+  "site": "Havana (Küba)"
+ },
+ "1927": {
+  "heading": "1927 · Alekhine – Capablanca",
+  "site": "Buenos Aires (Arjantin)"
+ },
+ "1929": {
+  "heading": "1929 · Alekhine – Bogoljubov",
+  "site": "Almanya ve Hollanda"
+ },
+ "1934": {
+  "heading": "1934 · Alekhine – Bogoljubov",
+  "site": "Almanya"
+ },
+ "1935": {
+  "heading": "1935 · Euwe – Alekhine",
+  "site": "Hollanda"
+ },
+ "1937": {
+  "heading": "1937 · Alekhine – Euwe",
+  "site": "Hollanda"
+ },
+ "1948": {
+  "heading": "1948 · Botvinnik – Smyslov, Keres, Reshevsky, Euwe",
+  "site": "Lahey ve Moskova"
+ },
+ "1951": {
+  "heading": "1951 · Botvinnik – Bronstein",
+  "site": "Moskova (SSCB)"
+ },
+ "1954": {
+  "heading": "1954 · Botvinnik – Smyslov",
+  "site": "Moskova (SSCB)"
+ },
+ "1957": {
+  "heading": "1957 · Smyslov – Botvinnik",
+  "site": "Moskova (SSCB)"
+ },
+ "1958": {
+  "heading": "1958 · Botvinnik – Smyslov",
+  "site": "Moskova (SSCB)"
+ },
+ "1960": {
+  "heading": "1960 · Tal – Botvinnik",
+  "site": "Moskova (SSCB)"
+ },
+ "1961": {
+  "heading": "1961 · Botvinnik – Tal",
+  "site": "Moskova (SSCB)"
+ },
+ "1963": {
+  "heading": "1963 · Petrosian – Botvinnik",
+  "site": "Moskova (SSCB)"
+ },
+ "1966": {
+  "heading": "1966 · Petrosian – Spassky",
+  "site": "Moskova (SSCB)"
+ },
+ "1969": {
+  "heading": "1969 · Spassky – Petrosian",
+  "site": "Moskova (SSCB)"
+ },
+ "1972": {
+  "heading": "1972 · Fischer – Spassky",
+  "site": "Reykjavik (İzlanda)"
+ },
+ "1978": {
+  "heading": "1978 · Karpov – Korchnoi",
+  "site": "Baguio (Filipinler)"
+ },
+ "1981": {
+  "heading": "1981 · Karpov – Korchnoi",
+  "site": "Merano (İtalya)"
+ },
+ "1984": {
+  "heading": "1984–85 · Karpov – Kasparov (iptal)",
+  "site": "Moskova (SSCB)"
+ },
+ "1985": {
+  "heading": "1985 · Kasparov – Karpov",
+  "site": "Moskova (SSCB)"
+ },
+ "1986": {
+  "heading": "1986 · Kasparov – Karpov",
+  "site": "Londra ve Leningrad"
+ },
+ "1987": {
+  "heading": "1987 · Kasparov – Karpov",
+  "site": "Sevilla (İspanya)"
+ },
+ "1990": {
+  "heading": "1990 · Kasparov – Karpov",
+  "site": "New York ve Lyon"
+ },
+ "1993a": {
+  "heading": "1993 · Kasparov – Short (PCA)",
+  "site": "Londra (İngiltere)"
+ },
+ "1993b": {
+  "heading": "1993 · Karpov – Timman (FIDE)",
+  "site": "Hollanda ve Endonezya"
+ },
+ "1995": {
+  "heading": "1995 · Kasparov – Anand (PCA)",
+  "site": "New York (ABD)"
+ },
+ "1996": {
+  "heading": "1996 · Karpov – Kamsky (FIDE)",
+  "site": "Elista (Kalmukya)"
+ },
+ "1998": {
+  "heading": "1998 · Karpov – Anand (FIDE)",
+  "site": "Lozan (İsviçre)"
+ },
+ "1999": {
+  "heading": "1999 · Khalifman – Akopian (FIDE)",
+  "site": "Las Vegas (ABD)"
+ },
+ "2000a": {
+  "heading": "2000 · Anand – Shirov (FIDE)",
+  "site": "Tahran (İran)"
+ },
+ "2000": {
+  "heading": "2000 · Kramnik – Kasparov",
+  "site": "Londra (İngiltere)"
+ },
+ "2002": {
+  "heading": "2002 · Ponomariov – Ivanchuk (FIDE)",
+  "site": "Moskova (Rusya)"
+ },
+ "2004": {
+  "heading": "2004 · Kramnik – Leko",
+  "site": "Brissago (İsviçre)"
+ },
+ "2004b": {
+  "heading": "2004 · Kasimdzhanov – Adams (FIDE)",
+  "site": "Trablus (Libya)"
+ },
+ "2005": {
+  "heading": "2005 · Topalov",
+  "site": "San Luis (Arjantin)"
+ },
+ "2006": {
+  "heading": "2006 · Kramnik – Topalov",
+  "site": "Elista (Kalmukya)"
+ },
+ "2007": {
+  "heading": "2007 · Anand",
+  "site": "Meksika"
+ },
+ "2008": {
+  "heading": "2008 · Anand – Kramnik",
+  "site": "Bonn (Almanya)"
+ },
+ "2010": {
+  "heading": "2010 · Anand – Topalov",
+  "site": "Sofya (Bulgaristan)"
+ },
+ "2012": {
+  "heading": "2012 · Anand – Gelfand",
+  "site": "Moskova (Rusya)"
+ },
+ "2013": {
+  "heading": "2013 · Carlsen – Anand",
+  "site": "Chennai (Hindistan)"
+ },
+ "2014": {
+  "heading": "2014 · Carlsen – Anand",
+  "site": "Soçi (Rusya)"
+ },
+ "2016": {
+  "heading": "2016 · Carlsen – Karjakin",
+  "site": "New York (ABD)"
+ },
+ "2018": {
+  "heading": "2018 · Carlsen – Caruana",
+  "site": "Londra (İngiltere)"
+ },
+ "2021": {
+  "heading": "2021 · Carlsen – Nepomniachtchi",
+  "site": "Dubai (BAE)"
+ },
+ "2023": {
+  "heading": "2023 · Ding Liren – Nepomniachtchi",
+  "site": "Astana (Kazakistan)"
+ },
+ "2024": {
+  "heading": "2024 · Gukesh – Ding Liren",
+  "site": "Singapur"
+ }
+}

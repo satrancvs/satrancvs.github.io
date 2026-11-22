@@ -574,4 +574,4 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 
 /* Fotoğraf sırası (art arda `![…](…)` satırları): yan yana, dar ekranda alta sarar */
 .fig-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 1.5rem 1.25rem; margin: 2.5rem 0; }
-.fig-row-item { flex: 1 1 150px; margin: 0; }
+.fig-row-item { flex: 1 1 150px; margin: 0; max-width: 300px !important; }

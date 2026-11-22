@@ -115,6 +115,9 @@ Hamlelerin yanındaki **!**, **?**, **!!** ve **??** işaretleri insan yorumu de
 
 *New York, St. Louis, New Orleans (ABD)*
 
+![Wilhelm Steinitz](images/dunya-steinitz.jpg "<span lang="en">Wilhelm Steinitz</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Schumann, Fritz</span> · <span lang="en">Public domain</span>")
+![Johannes Zukertort](images/dunya-zukertort.jpg "<span lang="en">Johannes Zukertort</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
+
 Resmî sayılan ilk dünya şampiyonluğu maçı. İlk 10 galibiyete kadar oynandı; Steinitz 12½–7½ kazandı (10 galibiyet, 5 yenilgi, 5 beraberlik). Seçtiğimiz oyun maçın 20. ve son oyunu.
 
 [Event "Dünya Şampiyonası"]
@@ -131,6 +134,8 @@ Resmî sayılan ilk dünya şampiyonluğu maçı. İlk 10 galibiyete kadar oynan
 #### 1889 · Steinitz – Chigorin
 
 *Havana (Küba)*
+
+![Mikhail Chigorin](images/dunya-chigorin.jpg "<span lang="en">Mikhail Chigorin</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
 Steinitz, Rus meydan okuyucuyu 17 oyunda 10½–6½ yendi. Seçtiğimiz oyun 16. oyun.
 
@@ -182,6 +187,8 @@ Chigorin’le ikinci maç, 23 oyunda 12½–10½. Seçtiğimiz oyun, maçı biti
 #### 1894 · Lasker – Steinitz
 
 *New York, Philadelphia, Montreal (ABD/Kanada)*
+
+![Emanuel Lasker](images/dunya-lasker.jpg "<span lang="en">Emanuel Lasker</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Trans-Ocean News Service</span> · <span lang="en">CC BY 3.0</span>")
 
 Lasker 19 oyunda 12–7 kazanıp 25 yaşında şampiyon oldu. Seçtiğimiz oyun, maçı bitiren 19. oyun.
 
