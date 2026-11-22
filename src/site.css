@@ -575,10 +575,6 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .fig-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 1.5rem 1.25rem; margin: 2.5rem 0; }
 .fig-row-item { flex: 1 1 150px; margin: 0; max-width: 300px !important; }
 
-/* Stockfish analizi aç/kapa düğmesi (src/lib/eval-bar.ts): tahtanın sol üst köşesinde, tahtanın hemen üstünde */
-.cp-game .board-wrap > .sf-toggle { position: absolute; left: 0; bottom: calc(100% + 4px); z-index: 4; min-width: 30px; height: 24px; padding: 0 7px; border: 1px solid var(--line); border-radius: 999px; background: var(--box); color: var(--mute); font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; font-weight: 600; letter-spacing: .06em; cursor: pointer; line-height: 1; }
-.cp-game .board-wrap > .sf-toggle.on { background: var(--accent); border-color: var(--accent); color: var(--bg); }
-.cp-game .board-wrap > .sf-toggle:hover { border-color: var(--accent); }
 
 /* ---- "Seçme: Her bir ünvan maçından bir oyun" (src/components/MatchPicker.tsx): oynatıcı + kart rafları. Açık temada da koyu kalır. ---- */
 .picker { --bg:#0E0C0A; --fg:#F1E9DC; --fg-rgb:241 233 220; --mute:#A89A88; --line:#2E2620; --accent:#C8893E; --box:#17130F; --box2:#14110E; --hover-bg:#1A1512; color-scheme: dark;
@@ -662,3 +658,6 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .hub-tabs button.on { background: var(--accent); border-color: var(--accent); color: var(--bg); }
 .hub .live-match { margin-bottom: 0; }
 .hub .picker { margin-top: 0; }
+
+/* Dünya Şampiyonası yazısı: tahtanın sağındaki oynat/yeniden oynat düğmesi gösterilmez */
+.hub .board-wrap > .play { display: none !important; }
