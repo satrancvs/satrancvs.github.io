@@ -27,7 +27,7 @@ Haklı olarak şunu merak edebilirsiniz: Carlsen, Nakamura ve Caruana nerede? İ
 
 Buradan çıkan genel sonuç şu: “dünyanın en iyisi” ile “dünya şampiyonu” her zaman aynı kişi olmak zorunda değil. Ünvan; kurallarla belirlenmiş bir döngüye girmeyi, o döngüyü kazanmayı ve ünvan sahibini bir maçta yenmeyi gerektiriyor. Bu yüzden ünlü bir ismin yarışa girmemeyi seçmesi mümkün. Dünyanın o yıldaki en formda oyuncusu bile Adaylar’da zor bir iki hafta geçirebilir. Sindarov’un turnuvada hiç yenilmemesi tesadüf değil; Nakamura ile Caruana’nın tablonun ortalarında kalması da bu sistemin doğal bir sonucu.
 
-#### Maç nasıl oynanıyor?
+### Maç nasıl oynanıyor?
 
 - **14 klasik oyun** oynanacak; süre 40 hamle için 120 dakika, sonra 30 dakika, 41. hamleden itibaren de her hamle için 30 saniye ekleme.
 - **7½ puana** ilk ulaşan, 14 oyun dolmadan da maçı kazanır.
