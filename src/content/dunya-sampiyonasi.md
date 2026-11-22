@@ -38,9 +38,13 @@ Pegeia, Kıbrıs · 28 Mart – 16 Nisan 2026
 Haklı olarak şunu merak edebilirsiniz: Carlsen, Nakamura ve Caruana nerede? İki ayrı yanıt var:
 
 - **Caruana ve Nakamura oynadı, ama kazanamadı.** Caruana 2024 FIDE Circuit galibi olarak, Nakamura ise 2025 Ağustos–2026 Ocak arasındaki en yüksek ortalama reytingle (ortalama 2810,5) Adaylar’a girdi. İkisi de 14 turun hepsini oynadı; Caruana üçüncü, Nakamura beşinci oldu. Nakamura’nın bu yoldan girişi bir ara tartışma konusu olmuştu, çünkü gerekli oyun sayısını doldurmak için dört ayrı Kuzey Amerika turnuvasına katılmıştı.
-- **Carlsen oynamadı.** Carlsen, Temmuz 2022’de ünvanını savunmayacağını açıklamıştı ve Adaylar’a da katılmadı. Reyting yoluyla girişin şartı, belirlenen dönemde en az 40 reytingli klasik oyun oynamaktı; Carlsen o pencerede yalnızca 16 oyun oynamıştı. Ortalaması 2839,3 ile en yüksek olsa da oyun sayısı yetmiyordu. Üstelik Adaylar’a girmekle ilgilenmediğini de açıkça söylemişti; yani hem istemedi hem de gereken oyun sayısını oynamadı. Eylül 2026’daki bir söyleşide Sindarov için “oldukça belirgin bir favori” demişti.
+- **Carlsen oynamadı.** Carlsen, Temmuz 2022’de ünvanını savunmayacağını açıklamıştı ve bu tarihten sonra bir daha Adaylar’a da katılmadı.
 
-Buradan çıkan genel sonuç şu: “dünyanın en iyisi” ile “dünya şampiyonu” her zaman aynı kişi olmak zorunda değil. Ünvan; kurallarla belirlenmiş bir döngüye girmeyi, o döngüyü kazanmayı ve ünvan sahibini bir maçta yenmeyi gerektiriyor. Bu yüzden ünlü bir ismin yarışa girmemeyi seçmesi mümkün. Dünyanın o yıldaki en formda oyuncusu bile Adaylar’da zor bir iki hafta geçirebilir. Sindarov’un turnuvada hiç yenilmemesi tesadüf değil; Nakamura ile Caruana’nın tablonun ortalarında kalması da bu sistemin doğal bir sonucu.
+Reyting yoluyla girişin şartı, belirlenen dönemde en az 40 reytingli klasik oyun oynamaktı; Carlsen o pencerede yalnızca 16 oyun oynamıştı. Üstelik Adaylar’a girmekle ilgilenmediğini de açıkça söylemişti; yani hem istemedi hem de gereken oyun sayısını oynamadı.
+
+Carlsen, Eylül 2026’da Bengaluru’daki Global Chess League sırasında Sindarov için “favori olduğu konusunda hiç şüphe yok” [demişti](https://worldchess.com/news/carlsen-sindarov-favouritebut-gukesh-can-turn-world-championship-around-fast).
+
+“Dünyanın en iyisi” ile “dünya şampiyonu” her zaman aynı kişi olmak zorunda değil. Ünvan; kurallarla belirlenmiş bir döngüye girmeyi, o döngüyü kazanmayı ve ünvan sahibini bir maçta yenmeyi gerektiriyor. Herhangi bir oyuncunun bu yarışa girmemeyi seçmesi de mümkün.
 
 ### Maç nasıl oynanıyor?
 
