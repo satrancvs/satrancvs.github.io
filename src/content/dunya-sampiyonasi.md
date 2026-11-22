@@ -84,6 +84,8 @@ Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının ke
 
 Tablodan iki şey okunuyor. Birincisi, **eşitlikte ünvan şampiyonda kalır**: 1951, 1954 ve 1987'de bu kural işledi. İkincisi, **rövanş hakkı** (1948–63) şampiyonlara ikinci bir şans verdi: Smyslov ve Tal'in birer yıllık ünvanlarının ve Botvinnik'in üç ayrı saltanatının arkasında bu kural var.
 
+[MAÇ SEÇİCİ GÖSTER: Tüm ünvan maçları]
+
 [MAÇ SEÇİCİ: Gukesh – Sindarov karşılaşmaları]
 
 #### 2026 · Gukesh – Sindarov, yıldırım (9 Mayıs)
