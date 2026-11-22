@@ -669,6 +669,9 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
   const cp = useChessPublica(hasGames, { study: hasStudy });
   // ChessPublica yüklenemezse eski düz metin görünümüne düşülür.
   const useFallback = cp === 'error';
+  // Oynatıcı bölümleri sırayla yüklenir: önce üstteki canlı yayın, o kurulunca yazının içindeki seçiciler (sırayla). #bağlantı varsa hepsi hemen açılır.
+  const [hubStage, setHubStage] = useState(() => (typeof window !== 'undefined' && window.location.hash ? 99 : 0));
+  const hubDone = (n: number) => setHubStage((s) => Math.max(s, n + 1));
   const games = gameToc(chunks);
   const toc = sectionToc(chunks, games);
   // Tembel yüklenen fotoğraflar kaydırma sırasında sayfa yüksekliğini değiştirir; bu yüzden kaydırma
@@ -690,6 +693,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     window.history.replaceState(null, '', `#${id}`);
   };
   let gameNo = 0;
+  let hubNo = 0;
   let tocPlaced = false;
   const out: JSX.Element[] = [];
 
@@ -859,13 +863,14 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       const groups: { label: string; items: PickItem[]; flat?: boolean }[] = [];
       const inline = new Set(chunks.map((x) => x.trim().match(INLINE_PICKER)?.[1].trim()).filter(Boolean));
       chunks.forEach((x, k) => { const m = x.trim().match(MATCH_PICKER); if (m) { const label = (m[1] ?? 'Seçme oyunlar').trim(); if (!inline.has(label)) groups.push({ label, items: collectPicker(k).items, flat: /Gukesh/.test(label) }); } });
-      out.push(<GameHub key={i} ready={cp === 'ready'} groups={groups} />);
+      out.push(<GameHub key={i} ready={cp === 'ready'} groups={groups} onLoaded={() => hubDone(0)} />);
     } else if (INLINE_PICKER.test(c)) {
       // Menüden ayrılmış tek seçici (Eskiden nasıldı? bölümünün sonu): aynı tasarım, yalnızca o grubun oyunları.
       const want = c.match(INLINE_PICKER)![1].trim();
       let items: PickItem[] = [];
       chunks.forEach((x, k) => { const m = x.trim().match(MATCH_PICKER); if (m && (m[1] ?? '').trim() === want) items = collectPicker(k).items; });
-      if (items.length) out.push(<section key={i} className="hub hub-solo" aria-label={want}><MatchPicker items={items} flat={/Gukesh/.test(want)} /></section>);
+      const no = ++hubNo;
+      if (items.length) out.push(<section key={i} className="hub hub-solo" aria-label={want}><MatchPicker items={items} flat={/Gukesh/.test(want)} gate={hubStage >= no} onLoaded={() => hubDone(no)} /></section>);
     } else if (CONTINUED.test(c)) {
       out.push(<Continued key={i} text={c} />);
     } else if (FEN_ROW.test(c)) {
