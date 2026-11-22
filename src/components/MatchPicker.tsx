@@ -4,6 +4,8 @@ import Markdown from 'markdown-to-jsx';
 import ProgressiveImage from '@/components/ProgressiveImage';
 import SfPanel from '@/components/SfPanel';
 import { usePlayerLoaded } from '@/lib/use-player-loaded';
+import SectionLink from '@/components/SectionLink';
+import type { SectionTarget } from '@/components/SectionLink';
 
 // "Seçme: Her bir ünvan maçından bir oyun" bölümü (Dünya Şampiyonası 2026 yazısı): tek oynatıcı, ◀ ▶ ile oyun değiştirme, değişirken parazit,
 // altında seçilen maçın özeti ve fotoğrafları, en altta on yıllara göre dizili kart rafları. Tek bir oyun ekranda bulunur: seçim değişince oynatıcı yeniden kurulur.
@@ -25,7 +27,7 @@ const two = (n: number) => String(n).padStart(2, '0');
 // Türkçe ek, on yılın adının son ünlüsüne göre: 2010'lar (on), 1990'lar (doksan), 1960'lar (altmış), 1940'lar (kırk), 1930'lar (otuz); 2020'ler (yirmi), 2000'ler (bin), 1980'ler (seksen), 1970'ler (yetmiş), 1950'ler (elli).
 const decadeLabel = (y: number) => `${Math.floor(y / 10) * 10}'${[1, 3, 4, 6, 9].includes(Math.floor(y / 10) % 10) ? 'lar' : 'ler'}`;
 
-export default function MatchPicker({ items, flat = false, gate = true, onLoaded }: { items: PickItem[]; flat?: boolean; gate?: boolean; onLoaded?: () => void }) {
+export default function MatchPicker({ items, flat = false, gate = true, onLoaded, next }: { items: PickItem[]; flat?: boolean; gate?: boolean; onLoaded?: () => void; next?: SectionTarget }) {
   const [idx, setIdx] = useState(0);
   const root = useRef<HTMLElement>(null);
   const screen = useRef<HTMLDivElement>(null);
@@ -80,12 +82,6 @@ export default function MatchPicker({ items, flat = false, gate = true, onLoaded
         <p className="mpb-kicker f-mono">Şimdi oynatılıyor · {cur.site}</p>
         <h4 className="mpb-title f-display">{cur.label}</h4>
         <p className="mpb-blurb"><Markdown options={{ forceInline: true }}>{cur.blurb}</Markdown></p>
-        {cur.bio && (
-          <div className="mpb-bio" key={`bio-${cur.id}`}>
-            <p className="mpb-bio-title f-mono">Oyuncu hakkında</p>
-            <p className="mpb-bio-text"><Markdown options={{ forceInline: true }}>{cur.bio}</Markdown></p>
-          </div>
-        )}
         {items.length > 1 && (
           <button type="button" className="mpb-nextcard" onClick={() => go(nextIdx, true)} aria-label={`Sıradaki oyun: ${nx.label}`}>
             <span className="mpb-nextcard-thumb">
@@ -125,6 +121,8 @@ export default function MatchPicker({ items, flat = false, gate = true, onLoaded
           ))}
         </div>
       </div>
+      {cur.bio && <div className="mpb-bio-prose" key={`bio-${cur.id}`}><p><Markdown options={{ forceInline: true }}>{cur.bio}</Markdown></p></div>}
+      {next && <div className="sec-link-wrap"><SectionLink target={next} /></div>}
     </section>
   );
 }

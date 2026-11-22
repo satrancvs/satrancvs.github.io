@@ -51,7 +51,7 @@ Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor; her döngü geneld
 2. **Adaylar Turnuvası**: sekiz oyuncu, çift devreli, 14 tur. Birinci, şampiyonun karşısına çıkacak şampiyon adayıdır.
 3. **Ünvan maçı**: 14 klasik oyunluk maç. Şampiyon, **kendi ünvanını savunarak** doğrudan maça gelir; Adaylar'a katılmaz.
 
-### Eskiden nasıldı?
+### Geçmişte nasıldı?
 
 Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının kendisi bile 19. yüzyılın sonlarında ortaya çıktı ve günümüze kadar defalarca yeniden tanımlandı.
 
@@ -87,6 +87,8 @@ Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının ke
 <tr><td><strong>Steinitz</strong> (1886–94)</td><td>1886, ABD (New York, St. Louis, New Orleans): <strong>Zukertort</strong>'a karşı 12½–7½, ilk “resmî” maç</td><td>1889 Havana, <strong>Chigorin</strong> 10½–6½; 1890–91 New York, <strong>Gunsberg</strong> 10½–8½; 1892 Havana, <strong>Chigorin</strong> 12½–10½. 1894'te <strong>Lasker</strong>'e kaybetti.</td></tr>
 </tbody>
 </table>
+
+#### Tüm ünvan maçları
 
 Tablo ünvanın kimden kime geçtiğini gösteriyor; şimdi bu geçişleri oyun oyun izleyelim. Aşağıda 1886'dan bugüne oynanmış 56 ünvan maçının her biri için belirleyici bir oyun var, en yeniden en eskiye doğru sıralı. İlk durak, ünvanın en son el değiştirdiği maç: Aralık 2024'te Singapur'da Ding Liren – Gukesh maçının 14. ve son oyunu. Gukesh bu oyunda Ding'in hatasından yararlanıp maçı 7½–6½ kazandı. Aşağıdaki şeritten dilediğiniz maçı seçebilirsiniz.
 
@@ -1484,8 +1486,6 @@ Resmî sayılan ilk dünya şampiyonluğu maçı. İlk 10 galibiyete kadar oynan
 
 [MAÇ SEÇİCİ GÖSTER: Şampiyonları yenen efsaneler]
 
-Bu listeye başka isimler de eklenebilir: **Bent Larsen**, **Efim Geller**, **Samuel Reshevsky**, **Aron Nimzowitsch**. Zamanla dünya şampiyonları oldukça belli bir şey söylüyor: ünvanı kazanmak için yalnızca çok iyi oynamak yetmez; kurallara uyum, sinir dayanıklılığı, finansal ve siyasi şartlar ve bazen sadece şans da gerekiyor. Şimdi iki yirmi yaşındaki oyuncu bu zincire bir halka daha eklemek için Cenevre'de oturuyor.
-
 [MAÇ SEÇİCİ: Şampiyonları yenen efsaneler]
 
 #### 2002 · Polgár – Kasparov
@@ -1494,7 +1494,7 @@ Bu listeye başka isimler de eklenebilir: **Bent Larsen**, **Efim Geller**, **Sa
 
 [KART images/dunya-polgar.jpg]
 
-[BİLGİ] **Judit Polgár** (d. 1976) — Tarihin en güçlü kadın oyuncusu; 2005'te dünya sıralamasında 8. oldu; Kasparov, Karpov ve Spassky dahil birçok dünya şampiyonunu yendi. Dünya şampiyonluğu döngüsünde yer aldı (2005 San Luis'te oynadı), ama kazanamadı. Neden hak ediyordu? Kadınlar şampiyonasında hiç oynamadı; bunun yerine açık sıralamada ilk onu seçti ve orada ayrı bir iz bıraktı.
+[BİLGİ] **Judit Polgár** (d. 1976) — Tarihin en güçlü kadın oyuncusu; 2005'te dünya sıralamasında 8. oldu; Kasparov, Karpov ve Spassky dahil birçok dünya şampiyonunu yendi. **Dünya şampiyonası döngüsünde oynadı mı?** Evet, ama ünvana hiç yaklaşamadı: 1993'te Interzonal'e katılmaya hak kazanan ilk kadın oldu; 2005'te San Luis'teki sekiz kişilik Dünya Şampiyonası turnuvasında (reytingle girdi) oynayan ilk kadın oldu ve sonuncu bitirdi; 2007'de Adaylar maçlarında ilk turda Bareev'e 3½–2½ yenildi. Dünya Kupası'nda 2009'da üçüncü, 2011'de son sekiz tura kadar geldi. **Kadınlar Dünya Şampiyonası?** Hiç oynamadı; yıllarca dünyanın en yüksek reytingli kadını olduğu hâlde kadınlara ayrılmış turnuvalara nadiren katıldı. Kadınlar Dünya Şampiyonası 1927'den beri düzenleniyor ve ünvanı bugüne kadar 17 farklı kadın taşıdı (Vera Menchik'ten bugünkü şampiyon Ju Wenjun'a; Elisaveta Bykova, Xie Jun ve Hou Yifan birden fazla kez); ablası Susan Polgár da 1996–99 arasında bu ünvanı taşıdı. Neden hak ediyordu? Kadınlar yarışına girmek yerine doğrudan açık sıralamayı seçti ve orada ayrı bir iz bıraktı.
 
 Judit Polgár, Rusya–Dünya karması maçında (Moskova, 9 Eylül 2002) eski dünya şampiyonu Kasparov'u yendi.
 

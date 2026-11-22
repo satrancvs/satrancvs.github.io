@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import SfPanel from '@/components/SfPanel';
 import { usePlayerLoaded } from '@/lib/use-player-loaded';
+import SectionLink from '@/components/SectionLink';
+import type { SectionTarget } from '@/components/SectionLink';
 
 // Dünya Şampiyonası 2026 (Gukesh – Sindarov) canlı bölümü. Yazıda yalnızca `[CANLI MAÇ]` yazan bir paragraf bu bileşeni çizer.
 //  - Maç başlamadan: renksiz, tıklanamaz, boş bir <pgn-player> ve altında 1. oyuna geri sayım.
@@ -38,7 +40,7 @@ const demoRound = () => {
 };
 
 
-export default function LiveMatch({ ready, onLoaded }: { ready: boolean; onLoaded?: () => void }) {
+export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; onLoaded?: () => void; next?: SectionTarget }) {
   const demo = useMemo(demoRound, []);
   const [mounted, setMounted] = useState(false);
   const [now, setNow] = useState(0);
@@ -186,6 +188,7 @@ export default function LiveMatch({ ready, onLoaded }: { ready: boolean; onLoade
           <p className="live-when f-mono">24 Kasım 2026 · 17.00 (Türkiye saati) · Cenevre</p>
         </div>
       )}
+      {next && <SectionLink target={next} />}
     </section>
   );
 }
