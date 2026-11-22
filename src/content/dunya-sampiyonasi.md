@@ -102,29 +102,37 @@ Resmî bir ünvan yoktu; en iyi sayılan oyuncu, bir şampiyon gibi anıldı, so
 
 Aşağıda her şampiyon için *ünvanı kime karşı, nasıl aldığı* ve *nasıl koruduğu* özetleniyor. Skorlar “şampiyon puanı–rakip puanı” biçiminde.
 
-| Şampiyon | Ünvanı aldığı yer ve rakip | Ünvanı koruması / kaybı |
-|---|---|---|
-| **Gukesh** (2024–) | 2024 Singapur: **Ding Liren**'e karşı 7½–6½ | Savunması 2026 Cenevre'de, **Sindarov**'a karşı. |
-| **Ding Liren** (2023–24) | 2023 Astana: **Nepomniachtchi**'ye karşı 7–7, hızlı oyunlarda 2½–1½ | 2024'te Singapur'da **Gukesh**'e 7½–6½ kaybetti. |
-| **Carlsen** (2013–23) | 2013 Chennai: **Anand**'a karşı 6½–3½ | 2014 Soçi **Anand** 6½–4½; 2016 New York **Karjakin** 6–6, hızlı oyunlarda 3–1; 2018 Londra **Caruana** 6–6, 12 klasik oyunun hepsi berabere, hızlı oyunlarda 3–0; 2021 Dubai **Nepomniachtchi** 7½–3½. 2023'te ünvanı savunmadan bıraktı. |
-| **Anand** (2007–13) | 2007 Meksika: sekiz kişilik turnuvayı 9/14 ile kazandı | 2008 **Kramnik** 6½–4½; 2010 **Topalov** 6½–5½; 2012 **Gelfand** 6–6, hızlı oyunlarda 2½–1½. 2013'te Carlsen'e kaybetti. |
-| **Kramnik** (2000–07) | 2000 Londra: **Kasparov**'a karşı 8½–6½, hiç yenilmeden (+2 =13) | 2004'te **Leko** 7–7 (ünvan şampiyonda kaldı); 2006'da **Topalov**'u 6–6 sonrası hızlı oyunlarda yenerek birleşik ünvanı aldı. |
-| **Topalov** (FIDE, 2005) | 2005 San Luis, Arjantin: sekiz kişilik çift devreli turnuva | 2006'da Kramnik'e kaybetti (birleşme maçı). |
-| **Khalifman, Anand, Ponomariov, Kasimdzhanov** (FIDE, 1999–2005) | Tek elemeli turnuvalar | Bir kez kazandıktan sonra savunma yok; her şampiyon bir sonraki turnuvada yeniden oynadı. |
-| **Karpov** (FIDE, 1993–99) | 1993: Kasparov'un ayrılmasıyla, **Timman**'ı 12½–8½ yenerek | 1996'da Kamsky, 1998'de Anand karşısında ünvanı korudu; 1999'da savunmayı reddedince FIDE turnuva biçimine geçti. |
-| **Kasparov** (1985–93, PCA 1993–2000) | 1985 Moskova: **Karpov**'a 13–11 | 1986, 1987 (12–12, ünvan şampiyonda kaldı), 1990'da **Karpov**'u yendi; 1993'te Short'u, 1995'te Anand'ı yendi; 2000'de Londra'da **Kramnik**'e kaybetti. |
-| **Karpov** (1975–85) | 1975: Fischer'in çekilmesiyle hükmen | 1978 Baguio'da **Korchnoi**'yi, 1981 Merano'da yine Korchnoi'yi yendi. 1984–85'te Kasparov'a karşı maç yarıda kesildi (5–3 önde); 1985'te ünvanı kaybetti. |
-| **Fischer** (1972–75) | 1972, Reykjavik: **Spassky**'ye karşı 12½–8½ (+7 −3 =11) | 1975'te şartları kabul edilmediği için çekildi; ünvanı oynamadan kaybetti. |
-| **Spassky** (1969–72) | 1969, **Petrosian**'a karşı | 1972'de Reykjavik'te **Fischer**'e 12½–8½ kaybetti. |
-| **Petrosian** (1963–69) | 1963, **Botvinnik**'e karşı 12½–9½ (rövanş hakkı kaldırıldı) | 1966'da **Spassky**'yi 12½–11½ yendi; 1969'da Spassky'ye 12½–10½ kaybetti. |
-| **Tal** (1960–61) | 1960, **Botvinnik**'e karşı 12½–8½ | 1961'de Botvinnik ile rövanşı 13–8 kaybetti. |
-| **Smyslov** (1957–58) | 1957, **Botvinnik**'e karşı 12½–9½ | 1958'de Botvinnik ile rövanşı 12½–10½ kaybetti. |
-| **Botvinnik** (1948–57, 1958–60, 1961–63) | 1948 Lahey–Moskova **beş kişilik maç turnuvası** | 1951 **Bronstein** 12–12 (ünvan şampiyonda kaldı); 1954 **Smyslov** 12–12. 1957'de Smyslov'a, 1960'ta Tal'a yenildi; 1958'de Smyslov ile, 1961'de Tal ile rövanşları kazanıp ünvanı iki kez geri aldı. |
-| **Euwe** (1935–37) | 1935, Hollanda: **Alekhine**'e karşı 15½–14½ | 1937'de Alekhine ile rövanşı kaybetti. |
-| **Alekhine** (1927–35, 1937–46) | 1927, **Capablanca**'ya karşı; “ilk 6 galibiyet”, 34 oyun | 1929 ve 1934'te **Bogoljubov**'u yendi. 1935'te **Euwe**'ye 15½–14½ kaybetti, 1937'de Euwe ile rövanşı 15½–9½ kazandı. 1946'da şampiyonken öldü. |
-| **Capablanca** (1921–27) | 1921, Havana: Lasker'in çekilmesiyle | 1927 Buenos Aires'te **Alekhine**'e 18½–15½ yenildi (34 oyun, +6 −3 =25). |
-| **Lasker** (1894–1921) | 1894, **Steinitz**'e karşı 12–7 (New York, Philadelphia, Montreal) | 1896–97'de Steinitz ile rövanşı 12½–4½ kazandı; 1907 **Marshall** (11½–3½), 1908 **Tarrasch** (10½–5½) ve diğerlerini yendi. 1921'de Havana'da **Capablanca**'ya karşı 14. oyundan sonra çekildi. |
-| **Steinitz** (1886–94) | 1886, ABD (New York, St. Louis, New Orleans): **Zukertort**'a karşı 12½–7½, ilk “resmî” maç | 1889 Havana, **Chigorin** 10½–6½; 1890–91 New York, **Gunsberg** 10½–8½; 1892 Havana, **Chigorin** 12½–10½. 1894'te **Lasker**'e kaybetti. |
+<table>
+<thead><tr><th>Şampiyon</th><th>Ünvanı aldığı yer ve rakip</th><th>Ünvanı koruması / kaybı</th></tr></thead>
+<tbody>
+<tr class="era"><td colspan="3"><span class="era-years">2007 – bugün</span><span class="era-name">Birleşik dünya şampiyonu</span></td></tr>
+<tr><td><strong>Gukesh</strong> (2024–)</td><td>2024 Singapur: <strong>Ding Liren</strong>'e karşı 7½–6½</td><td>Savunması 2026 Cenevre'de, <strong>Sindarov</strong>'a karşı.</td></tr>
+<tr><td><strong>Ding Liren</strong> (2023–24)</td><td>2023 Astana: <strong>Nepomniachtchi</strong>'ye karşı 7–7, hızlı oyunlarda 2½–1½</td><td>2024'te Singapur'da <strong>Gukesh</strong>'e 7½–6½ kaybetti.</td></tr>
+<tr><td><strong>Carlsen</strong> (2013–23)</td><td>2013 Chennai: <strong>Anand</strong>'a karşı 6½–3½</td><td>2014 Soçi <strong>Anand</strong> 6½–4½; 2016 New York <strong>Karjakin</strong> 6–6, hızlı oyunlarda 3–1; 2018 Londra <strong>Caruana</strong> 6–6, 12 klasik oyunun hepsi berabere, hızlı oyunlarda 3–0; 2021 Dubai <strong>Nepomniachtchi</strong> 7½–3½. 2023'te ünvanı savunmadan bıraktı.</td></tr>
+<tr><td><strong>Anand</strong> (2007–13)</td><td>2007 Meksika: sekiz kişilik turnuvayı 9/14 ile kazandı</td><td>2008 <strong>Kramnik</strong> 6½–4½; 2010 <strong>Topalov</strong> 6½–5½; 2012 <strong>Gelfand</strong> 6–6, hızlı oyunlarda 2½–1½. 2013'te <strong>Carlsen</strong>'e kaybetti.</td></tr>
+<tr class="era"><td colspan="3"><span class="era-years">1993 – 2007</span><span class="era-name">İki şampiyon, eleme turnuvaları</span></td></tr>
+<tr><td><strong>Kramnik</strong> (2000–07)</td><td>2000 Londra: <strong>Kasparov</strong>'a karşı 8½–6½, hiç yenilmeden (+2 =13)</td><td>2004'te <strong>Leko</strong> 7–7 (ünvan şampiyonda kaldı); 2006'da <strong>Topalov</strong>'u 6–6 sonrası hızlı oyunlarda yenerek birleşik ünvanı aldı.</td></tr>
+<tr><td><strong>Topalov</strong> (FIDE, 2005)</td><td>2005 San Luis, Arjantin: sekiz kişilik çift devreli turnuva</td><td>2006'da <strong>Kramnik</strong>'e kaybetti (birleşme maçı).</td></tr>
+<tr><td><strong>Khalifman, Anand, Ponomariov, Kasimdzhanov</strong> (FIDE, 1999–2005)</td><td>Tek elemeli turnuvalar</td><td>Bir kez kazandıktan sonra savunma yok; her şampiyon bir sonraki turnuvada yeniden oynadı.</td></tr>
+<tr><td><strong>Karpov</strong> (FIDE, 1993–99)</td><td>1993: <strong>Kasparov</strong>'un ayrılmasıyla, <strong>Timman</strong>'ı 12½–8½ yenerek</td><td>1996'da <strong>Kamsky</strong>, 1998'de <strong>Anand</strong> karşısında ünvanı korudu; 1999'da savunmayı reddedince FIDE turnuva biçimine geçti.</td></tr>
+<tr class="era"><td colspan="3"><span class="era-years">1948 – 1993</span><span class="era-name">FIDE’nin yönettiği döngü</span></td></tr>
+<tr><td><strong>Kasparov</strong> (1985–93, PCA 1993–2000)</td><td>1985 Moskova: <strong>Karpov</strong>'a 13–11</td><td>1986, 1987 (12–12, ünvan şampiyonda kaldı), 1990'da <strong>Karpov</strong>'u yendi; 1993'te <strong>Short</strong>'u, 1995'te <strong>Anand</strong>'ı yendi; 2000'de Londra'da <strong>Kramnik</strong>'e kaybetti.</td></tr>
+<tr><td><strong>Karpov</strong> (1975–85)</td><td>1975: <strong>Fischer</strong>'in çekilmesiyle hükmen</td><td>1978 Baguio'da <strong>Korchnoi</strong>'yi, 1981 Merano'da yine <strong>Korchnoi</strong>'yi yendi. 1984–85'te <strong>Kasparov</strong>'a karşı maç yarıda kesildi (5–3 önde); 1985'te ünvanı kaybetti.</td></tr>
+<tr><td><strong>Fischer</strong> (1972–75)</td><td>1972, Reykjavik: <strong>Spassky</strong>'ye karşı 12½–8½ (+7 −3 =11)</td><td>1975'te şartları kabul edilmediği için çekildi; ünvanı oynamadan kaybetti.</td></tr>
+<tr><td><strong>Spassky</strong> (1969–72)</td><td>1969, <strong>Petrosian</strong>'a karşı</td><td>1972'de Reykjavik'te <strong>Fischer</strong>'e 12½–8½ kaybetti.</td></tr>
+<tr><td><strong>Petrosian</strong> (1963–69)</td><td>1963, <strong>Botvinnik</strong>'e karşı 12½–9½</td><td>1966'da <strong>Spassky</strong>'yi 12½–11½ yendi; 1969'da <strong>Spassky</strong>'ye 12½–10½ kaybetti.</td></tr>
+<tr class="era-note"><td colspan="3"><span>1963</span> Kaybeden şampiyonun otomatik rövanş hakkı kaldırıldı</td></tr>
+<tr><td><strong>Tal</strong> (1960–61)</td><td>1960, <strong>Botvinnik</strong>'e karşı 12½–8½</td><td>1961'de <strong>Botvinnik</strong> ile rövanşı 13–8 kaybetti.</td></tr>
+<tr><td><strong>Smyslov</strong> (1957–58)</td><td>1957, <strong>Botvinnik</strong>'e karşı 12½–9½</td><td>1958'de <strong>Botvinnik</strong> ile rövanşı 12½–10½ kaybetti.</td></tr>
+<tr><td><strong>Botvinnik</strong> (1948–57, 1958–60, 1961–63)</td><td>1948 Lahey–Moskova <strong>beş kişilik maç turnuvası</strong></td><td>1951 <strong>Bronstein</strong> 12–12 (ünvan şampiyonda kaldı); 1954 <strong>Smyslov</strong> 12–12. 1957'de <strong>Smyslov</strong>'a, 1960'ta <strong>Tal</strong>'a yenildi; 1958'de <strong>Smyslov</strong> ile, 1961'de <strong>Tal</strong> ile rövanşları kazanıp ünvanı iki kez geri aldı.</td></tr>
+<tr class="era"><td colspan="3"><span class="era-years">1886 – 1946</span><span class="era-name">Şampiyonun pazarlık ettiği dönem</span></td></tr>
+<tr><td><strong>Euwe</strong> (1935–37)</td><td>1935, Hollanda: <strong>Alekhine</strong>'e karşı 15½–14½</td><td>1937'de <strong>Alekhine</strong> ile rövanşı kaybetti.</td></tr>
+<tr><td><strong>Alekhine</strong> (1927–35, 1937–46)</td><td>1927, <strong>Capablanca</strong>'ya karşı; “ilk 6 galibiyet”, 34 oyun</td><td>1929 ve 1934'te <strong>Bogoljubov</strong>'u yendi. 1935'te <strong>Euwe</strong>'ye 15½–14½ kaybetti, 1937'de <strong>Euwe</strong> ile rövanşı 15½–9½ kazandı. 1946'da şampiyonken öldü.</td></tr>
+<tr><td><strong>Capablanca</strong> (1921–27)</td><td>1921, Havana: <strong>Lasker</strong>'in çekilmesiyle</td><td>1927 Buenos Aires'te <strong>Alekhine</strong>'e 18½–15½ yenildi (34 oyun, +6 −3 =25).</td></tr>
+<tr><td><strong>Lasker</strong> (1894–1921)</td><td>1894, <strong>Steinitz</strong>'e karşı 12–7 (New York, Philadelphia, Montreal)</td><td>1896–97'de <strong>Steinitz</strong> ile rövanşı 12½–4½ kazandı; 1907 <strong>Marshall</strong> (11½–3½), 1908 <strong>Tarrasch</strong> (10½–5½) ve diğerlerini yendi. 1921'de Havana'da <strong>Capablanca</strong>'ya karşı 14. oyundan sonra çekildi.</td></tr>
+<tr><td><strong>Steinitz</strong> (1886–94)</td><td>1886, ABD (New York, St. Louis, New Orleans): <strong>Zukertort</strong>'a karşı 12½–7½, ilk “resmî” maç</td><td>1889 Havana, <strong>Chigorin</strong> 10½–6½; 1890–91 New York, <strong>Gunsberg</strong> 10½–8½; 1892 Havana, <strong>Chigorin</strong> 12½–10½. 1894'te <strong>Lasker</strong>'e kaybetti.</td></tr>
+</tbody>
+</table>
 
 Tablodan iki şey okunuyor. Birincisi, **eşitlikte ünvan şampiyonda kalır**: 1951, 1954 ve 1987'de bu kural işledi. İkincisi, **rövanş hakkı** (1948–63) şampiyonlara ikinci bir şans verdi: Smyslov ve Tal'ın birer yıllık ünvanlarının ve Botvinnik'in üç ayrı saltanatının arkasında bu kural var.
 

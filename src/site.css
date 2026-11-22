@@ -659,3 +659,12 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .live-match .live-count { margin: .4rem 0 0; max-width: none; padding: 1.2rem 0 1rem; }
   .live-match .live-num { font-size: clamp(2.2rem, 1.2rem + 2.4vw, 3.4rem); }
 }
+
+/* Şampiyonlar tablosu: dönem başlıkları (yatay bölücü satırlar) ve zaman çizgisi */
+.art-table tr.era td { padding: 2.4rem 1.1rem .7rem; border-bottom: 1px solid var(--accent); }
+.art-table tr.era:first-child td, .art-table tbody tr.era:first-child td { padding-top: 1.2rem; }
+.art-table .era-years { font-family: 'Fraunces', serif; font-size: 1.75rem; line-height: 1; font-weight: 400; color: var(--accent); margin-right: 1.1rem; white-space: nowrap; }
+.art-table .era-name { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--mute); }
+.art-table tr.era-note td { padding: .5rem 1.1rem; font-style: italic; color: var(--mute); font-size: 1.0625rem; border-bottom: 1px dashed var(--line); background: color-mix(in srgb, var(--accent) 7%, transparent); }
+.art-table tr.era-note td span { font-family: 'JetBrains Mono', ui-monospace, monospace; font-style: normal; font-size: 12px; letter-spacing: .12em; color: var(--accent); margin-right: .6rem; }
+.art-table tbody tr:not(.era):not(.era-note) td:first-child { border-left: 2px solid var(--accent); }
