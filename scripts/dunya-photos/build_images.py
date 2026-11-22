@@ -84,7 +84,7 @@ for mid,chunks in IM.items():
 def insert_after(prefix,extra):
     global text
     if not extra or have(extra): return
-    ps=text.split('\n\n'); k=[i for i,x in enumerate(ps) if x.startswith(prefix)]
+    ps=text.split('\n\n'); k=[i for i,x in enumerate(ps) if prefix in x]
     if not k: print('YOK (paragraf bulunamadı):',prefix); return
     ps.insert(k[-1]+1,extra.rstrip('\n')); text='\n\n'.join(ps)
 insert_after('*Yazının güncel kısmı',EXTRA.get('top'))

@@ -3,7 +3,7 @@ Wikimedia aynı IP'den sık isteği 429 + Retry-After ile keser; betik bekler ve
 import json,os,sys,time,requests
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 import photos
-T0=os.path.dirname(os.path.abspath(__file__))
+T=os.path.dirname(os.path.abspath(__file__))
 photos.ALL.update(json.load(open(T+'/extra_info.json')))
 photos.PEOPLE['morozevich']=('Alexander Morozevich','File:Alexander Morozevic.jpg')
 H={'User-Agent':'satrancvs-editorial/1.0 (static site; image credit kept)'}
@@ -22,9 +22,12 @@ for key,title in items.items():
     if not i: print('NOINFO',key,title);continue
     if os.path.exists(out) and os.path.getsize(out)>2000: res[key]=title;continue
     ok=False
-    for url in (i['orig'],i['url']):
+    import urllib.parse
+    wd=min(1600,i['w'])
+    nm=urllib.parse.quote(title[5:].replace(' ','_'),safe='()_,.-')
+    for url in (f'https://commons.wikimedia.org/w/thumb.php?f={nm}&w={wd}',i['orig']):
         for t in range(40):
-            time.sleep(2.5)
+            time.sleep(1.5)
             r=requests.get(url,headers=H,timeout=90)
             if r.status_code==429:
                 w=min(700,int(r.headers.get('retry-after','60')))+60; print('429 wait',w,key,flush=True); time.sleep(w);continue

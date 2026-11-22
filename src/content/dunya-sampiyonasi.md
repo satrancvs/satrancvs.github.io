@@ -4,6 +4,9 @@
 
 *Yazının güncel kısmı (maçın biçimi, ödüller, Adaylar Turnuvası sonuçları) Kasım 2026 başında yayımlanmış kaynaklara dayanıyor; tarihî bölümler için bildiğimiz standart tarihçelere. Rakamlarda, özellikle eski maçların skorlarında, kaynaklar arasında küçük farklar olabilir.*
 
+![Gukesh Dommaraju](images/dunya-gukesh.jpg "<span lang="en">Gukesh Dommaraju</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Yunfan Zhao / lichess.org</span> · <span lang="en">CC BY-SA 4.0</span>")
+![Javokhir Sindarov](images/dunya-sindarov.jpg "<span lang="en">Javokhir Sindarov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">TheBoburshokh</span> · <span lang="en">CC BY 4.0</span>")
+
 ### Neden Gukesh ve Sindarov?
 
 **Gukesh** şampiyon, çünkü unvanı Aralık 2024'te Singapur'da, o zamanki şampiyon Ding Liren'i 7½–6½ yenerek aldı. 18 yaşında olan Gukesh, resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu oldu. Oraya da bir Adaylar Turnuvası'nı kazanarak gelmişti (Toronto 2024; 17 yaşında en genç meydan okuyucu). Yani Gukesh sistemin kapılarından geçip unvanı aldı; şimdi savunuyor.
@@ -22,6 +25,17 @@ Bu soru tam olarak üç ayrı yanıt istiyor:
 - **Caruana ve Nakamura oynadı, ama kazanamadı.** Caruana 2024 FIDE Circuit galibi olarak, Nakamura ise 2025 Ağustos–2026 Ocak arasındaki en yüksek ortalama reytingle (ortalama 2810,5) Adaylar'a girdi; ikisi de 14 turun hepsini oynadı. Caruana üçüncü, Nakamura beşinci oldu. Nakamura'nın bu yoldan girişi tartışma konusu olmuştu: gerekli oyun sayısını doldurmak için dört ayrı Kuzey Amerika turnuvasına katılmıştı.
 - **Carlsen oynamadı.** Carlsen, Temmuz 2022'de unvanını savunmayacağını açıklamıştı; Adaylar'a da katılmadı. Reyting yoluyla girişin şartı, belirlenen dönemde en az 40 reytingli klasik oyun oynamaktı; Carlsen o pencerede yalnızca 16 oyun oynamıştı (ortalaması 2839,3 ile en yüksekti, ama oyun sayısı yetmiyordu). Üstelik Adaylar'a girmekle ilgilenmediğini açıkça söylemişti: yani girmedi, çünkü girmek istemedi ve girmek için gereken oyun sayısını da oynamadı. Eylül 2026'daki bir söyleşide de Sindarov için “oldukça belirgin bir favori” demişti.
 - **Gukesh'in kendisi** zaten sistem gereği Adaylar'a katılamaz: şampiyonun yeri hazırdır.
+
+![Magnus Carlsen](images/dunya-carlsen.jpg "<span lang="en">Magnus Carlsen</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
+![Hikaru Nakamura](images/dunya-nakamura.jpg "<span lang="en">Hikaru Nakamura</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">ChessKelly</span> · <span lang="en">CC BY 4.0</span>")
+![Fabiano Caruana](images/dunya-caruana.jpg "<span lang="en">Fabiano Caruana</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Frans Peeters</span> · <span lang="en">CC BY-SA 2.0</span>")
+
+![Anish Giri](images/dunya-giri.jpg "<span lang="en">Anish Giri</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">TheBoburshokh</span> · <span lang="en">CC BY 4.0</span>")
+![Wei Yi](images/dunya-weiyi.jpg "<span lang="en">Wei Yi</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Frans Peeters</span> · <span lang="en">CC BY-SA 2.0</span>")
+![Matthias Blübaum](images/dunya-blubaum.jpg "<span lang="en">Matthias Blübaum</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
+
+![R Praggnanandhaa](images/dunya-pragg.jpg "<span lang="en">R Praggnanandhaa</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Frans Peeters</span> · <span lang="en">CC BY-SA 2.0</span>")
+![Andrey Esipenko](images/dunya-esipenko.jpg "<span lang="en">Andrey Esipenko</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
 
 Başka bir deyişle “dünyanın en iyisi” ile “dünya şampiyonu” aynı şey olmak zorunda değil. Unvan, kurallarla belirlenmiş bir döngüye girmeyi, o döngüyü kazanmayı ve unvan sahibini bir maçta yenmeyi gerektirir. Sistem böyle kurulduğundan, ünlü bir adın bu yarışa girmeyi seçmemesi mümkün; ve bir yıl içinde dünyanın en formda oyuncusu bile Adaylar'da kötü bir iki hafta geçirebilir. Bu yıl Sindarov'un tüm turnuvada yenilmemesi tesadüf değil, ama Nakamura ve Caruana'nın tablonun ortalarında kalması da sistemin doğal sonucu.
 
@@ -50,6 +64,13 @@ Hayır, sistem hep böyle değildi. Aslında “dünya şampiyonluğu” kavram�
 #### 1) Gayriresmî dönem: şampiyon “en iyi” sayılandır (18. yüzyıl–1886)
 
 Resmî bir unvan yoktu; en iyi sayılan oyuncu, bir şampiyon gibi anıldı, sonradan tarihçiler sıraladı: **Philidor** (18. yüzyıl, Fransa), **La Bourdonnais** (1830'lar), **Staunton** (1840'lar), **Anderssen** (1851 Londra turnuvasını kazanarak) ve onu 1858'de Paris'te yenen **Paul Morphy** (+7 −2 =2). Morphy “dünyanın en iyisi” sayıldı ama kısa süre sonra yarışmayı bıraktı; ona unvan vermek için ortada bir kural da yoktu. **Steinitz** 1866'da Anderssen'i yenerek kendini dünya şampiyonu sayma hakkını elde etti; ama maç adlandırması ve “resmî” sayılması hep tartışmalıdır.
+
+![François-André Danican Philidor](images/dunya-philidor.jpg "<span lang="en">François-André Danican Philidor</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Augustin de Saint-Aubin, Charles-Nicolas Coc…</span> · <span lang="en">Public domain</span>")
+![Louis-Charles Mahé de La Bourdonnais](images/dunya-labourdonnais.jpg "<span lang="en">Louis-Charles Mahé de La Bourdonnais</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">The original uploader was Jaapvanderkooij at…</span> · <span lang="en">Public domain</span>")
+![Howard Staunton](images/dunya-staunton.jpg "<span lang="en">Howard Staunton</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">R. &amp;amp; E. Taylor (Firm) / After Thomas Dew…</span> · <span lang="en">Public domain</span>")
+
+![Adolf Anderssen](images/dunya-anderssen.jpg "<span lang="en">Adolf Anderssen</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
+![Paul Morphy](images/dunya-morphy.jpg "<span lang="en">Paul Morphy</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
 #### 2) Şampiyon, kurallar koyar (1886–1946)
 
@@ -154,6 +175,8 @@ Steinitz, Rus meydan okuyucuyu 17 oyunda 10½–6½ yendi. Seçtiğimiz oyun 16.
 
 *New York (ABD)*
 
+![Isidor Gunsberg](images/dunya-gunsberg.jpg "<span lang="en">Isidor Gunsberg</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
+
 19 oyunluk maçı Steinitz 10½–8½ kazandı; Gunsberg 9 oyunu beraberlikle kapatmıştı. Seçtiğimiz oyun 18. oyun.
 
 [Event "Dünya Şampiyonası"]
@@ -224,6 +247,8 @@ Rövanş: Lasker 17 oyunda 12½–4½ kazandı. Seçtiğimiz oyun 17. oyun.
 
 *ABD*
 
+![Frank Marshall](images/dunya-marshall.jpg "<span lang="en">Frank Marshall</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Oxford and Dilhoff</span> · <span lang="en">Public domain</span>")
+
 Lasker, ABD şampiyonu Marshall’ı 15 oyunda 11½–3½ yendi; Marshall tek oyun kazanamadı. Seçtiğimiz oyun 15. oyun.
 
 [Event "Dünya Şampiyonası"]
@@ -240,6 +265,8 @@ Lasker, ABD şampiyonu Marshall’ı 15 oyunda 11½–3½ yendi; Marshall tek oy
 #### 1908 · Lasker – Tarrasch
 
 *Düsseldorf, Münih (Almanya)*
+
+![Siegbert Tarrasch](images/dunya-tarrasch.jpg "<span lang="en">Siegbert Tarrasch</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
 Tarrasch’ı 16 oyunda 10½–5½ yenen Lasker, 8 galibiyete ulaşarak maçı bitirdi. Seçtiğimiz oyun, 16. oyun.
 
@@ -258,6 +285,8 @@ Tarrasch’ı 16 oyunda 10½–5½ yenen Lasker, 8 galibiyete ulaşarak maçı b
 
 *Havana (Küba)*
 
+![José Raúl Capablanca](images/dunya-capablanca.jpg "<span lang="en">José Raúl Capablanca</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">AnonymousUnknown author (Keystone-France)</span> · <span lang="en">Public domain</span>")
+
 Capablanca 14 oyundan sonra 9–5 öndeydi (4 galibiyet, hiç yenilgi yok); Lasker maçı bırakınca şampiyon oldu. Seçtiğimiz oyun 11. oyun.
 
 [Event "Dünya Şampiyonası"]
@@ -275,6 +304,8 @@ Capablanca 14 oyundan sonra 9–5 öndeydi (4 galibiyet, hiç yenilgi yok); Lask
 
 *Buenos Aires (Arjantin)*
 
+![Alexander Alekhine](images/dunya-alekhine.jpg "<span lang="en">Alexander Alekhine</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">George Grantham Bain Collection (Library of…</span> · <span lang="en">Public domain</span>")
+
 6 galibiyete kadar oynanan, o güne dek en uzun maç: 34 oyun. Alekhine 6, Capablanca 3 oyun kazandı, 25 oyun berabere bitti; skor 18½–15½. Seçtiğimiz oyun, 34. ve son oyun.
 
 [Event "Dünya Şampiyonası"]
@@ -291,6 +322,8 @@ Capablanca 14 oyundan sonra 9–5 öndeydi (4 galibiyet, hiç yenilgi yok); Lask
 #### 1929 · Alekhine – Bogoljubov
 
 *Almanya ve Hollanda*
+
+![Efim Bogoljubov](images/dunya-bogoljubov.jpg "<span lang="en">Efim Bogoljubov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
 Alekhine ilk savunmasında Bogoljubov’u 25 oyunda 15½–9½ yendi. Seçtiğimiz oyun 12. oyun.
 
@@ -326,6 +359,8 @@ Alekhine ilk savunmasında Bogoljubov’u 25 oyunda 15½–9½ yendi. Seçtiğim
 
 *Hollanda*
 
+![Max Euwe](images/dunya-euwe.jpg "<span lang="en">Max Euwe</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Harry Pot for Anefo ]]</span> · <span lang="en">CC BY-SA 3.0 nl</span>")
+
 Euwe 30 oyunluk maçı 15½–14½ kazanıp şampiyon oldu; Alekhine’in unvanı bir puan farkla kaybı. Seçtiğimiz oyun 26. oyun.
 
 [Event "Dünya Şampiyonası"]
@@ -360,6 +395,8 @@ Alekhine rövanşı 25 oyunda 15½–9½ kazanıp unvanı geri aldı. Seçtiğim
 
 *Lahey ve Moskova*
 
+![Soldan sağa: Euwe, Smyslov, Keres, Botvinnik, Reshevsky (Lahey, 1948)](images/dunya-mac-1948.jpg "Soldan sağa: <span lang="en">Euwe</span>, <span lang="en">Smyslov</span>, <span lang="en">Keres</span>, <span lang="en">Botvinnik</span>, <span lang="en">Reshevsky</span> (Lahey, 1948) · <span lang="en">Wikimedia Commons</span> · <span lang="en">J.D. Noske (ANEFO)</span> · <span lang="en">CC0</span>")
+
 Alekhine’in ölümünden sonra FIDE, beş oyunculu bir maç turnuvası düzenledi; Botvinnik 20 oyundan 14 puan alarak kazandı. Seçtiğimiz oyun, Botvinnik’in Keres’e karşı son turdaki galibiyeti.
 
 [Event "Dünya Şampiyonası"]
@@ -376,6 +413,8 @@ Alekhine’in ölümünden sonra FIDE, beş oyunculu bir maç turnuvası düzenl
 #### 1951 · Botvinnik – Bronstein
 
 *Moskova (SSCB)*
+
+![David Bronstein](images/dunya-bronstein.jpg "<span lang="en">David Bronstein</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Joop van Bilsen / Anefo</span> · <span lang="en">CC0</span>")
 
 24 oyun sonunda 12–12: unvan şampiyonda kaldı. Seçtiğimiz oyun, Botvinnik’in 23. oyundaki galibiyeti.
 
@@ -411,6 +450,8 @@ Yine 12–12; Botvinnik unvanı bu kuralla korudu. Seçtiğimiz oyun, Botvinnik�
 
 *Moskova (SSCB)*
 
+![Botvinnik (solda) ve Smyslov (sağda), Moskova](images/dunya-mac-1957.jpg "<span lang="en">Botvinnik</span> (solda) ve <span lang="en">Smyslov</span> (sağda), Moskova · <span lang="en">Wikimedia Commons</span> · <span lang="en">Anefo</span> · <span lang="en">CC0</span>")
+
 Smyslov 22 oyunda 12½–9½ kazanıp şampiyon oldu. Seçtiğimiz oyun 20. oyun.
 
 [Event "Dünya Şampiyonası"]
@@ -444,6 +485,8 @@ Rövanş hakkıyla oynanan maçı Botvinnik 12½–10½ kazandı. Seçtiğimiz o
 #### 1960 · Tal – Botvinnik
 
 *Moskova (SSCB)*
+
+![Botvinnik ve Tal, 22 Mart 1960 (Moskova)](images/dunya-mac-1960.jpg "<span lang="en">Botvinnik</span> ve <span lang="en">Tal</span>, 22 Mart 1960 (Moskova) · <span lang="en">Wikimedia Commons</span> · <span lang="en">Главархив Москвы</span> · <span lang="en">CC BY 4.0</span>")
 
 23 yaşındaki Tal, 12½–8½ ile en genç şampiyon oldu (21 oyun). Seçtiğimiz oyun 19. oyun.
 
@@ -479,6 +522,8 @@ Rövanş: Botvinnik 21 oyunda 13–8 kazandı. Seçtiğimiz oyun, 21. oyun.
 
 *Moskova (SSCB)*
 
+![Tigran Petrosian](images/dunya-petrosian.jpg "<span lang="en">Tigran Petrosian</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Harry Pot / Anefo</span> · <span lang="en">CC0</span>")
+
 Petrosian 22 oyunda 12½–9½ kazandı; bu maçtan sonra kaybeden şampiyonun otomatik rövanş hakkı kaldırıldı. Seçtiğimiz oyun 19. oyun.
 
 [Event "Dünya Şampiyonası"]
@@ -495,6 +540,8 @@ Petrosian 22 oyunda 12½–9½ kazandı; bu maçtan sonra kaybeden şampiyonun o
 #### 1966 · Petrosian – Spassky
 
 *Moskova (SSCB)*
+
+![Boris Spassky](images/dunya-spassky.jpg "<span lang="en">Boris Spassky</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Rob Bogaerts for Anefo</span> · <span lang="en">CC0</span>")
 
 Petrosian unvanını 12½–11½ gibi dar farkla korudu. Seçtiğimiz oyun 22. oyun.
 
@@ -530,6 +577,8 @@ Spassky 23 oyunda 12½–10½ kazandı. Seçtiğimiz oyun 21. oyun.
 
 *Reykjavik (İzlanda)*
 
+![Bobby Fischer](images/dunya-fischer.jpg "<span lang="en">Bobby Fischer</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Bert Verhoeff for Anefo</span> · <span lang="en">CC0</span>")
+
 Fischer, 12½–8½ ile Sovyet şampiyonluğuna son verdi (2. oyun Fischer çıkmadığı için hükmen kaybedildi). Seçtiğimiz oyun 21. oyun: Spassky, ertelenmiş konumu telefonla teslim etti.
 
 [Event "Dünya Şampiyonası"]
@@ -548,6 +597,8 @@ Fischer, 12½–8½ ile Sovyet şampiyonluğuna son verdi (2. oyun Fischer çık
 #### 1978 · Karpov – Korchnoi
 
 *Baguio (Filipinler)*
+
+![Karpov, Korchnoi’ye karşı oynarken (Amsterdam; maçtan başka bir karşılaşma)](images/dunya-mac-1978.jpg "<span lang="en">Karpov</span>, <span lang="en">Korchnoi</span>’ye karşı oynarken (Amsterdam; maçtan başka bir karşılaşma) · <span lang="en">Wikimedia Commons</span> · <span lang="en">Roland Gerrits / Anefo</span> · <span lang="en">CC0</span>")
 
 6 galibiyete kadar oynanan 32 oyunluk maç. Karpov 5–2 öndeyken Korchnoi 5–5’e getirdi; 32. oyunu Karpov kazandı.
 
@@ -586,6 +637,9 @@ Karpov 6–2 galibiyetle (18 oyun) unvanını korudu. Seçtiğimiz oyun 18. oyun
 #### 1984–85 · Karpov – Kasparov (iptal)
 
 *Moskova (SSCB)*
+
+![Garry Kasparov](images/dunya-kasparov.jpg "<span lang="en">Garry Kasparov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Fryta 73 from Strzegom</span> · <span lang="en">CC BY-SA 2.0</span>")
+![Florencio Campomanes](images/dunya-campomanes.jpg "<span lang="en">Florencio Campomanes</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">karpidis from Piraeus, Greece This file is l…</span> · <span lang="en">CC BY 2.0</span>")
 
 6 galibiyete kadar oynanması gereken maç, 48 oyundan sonra FIDE Başkanı tarafından iptal edildi; skor Karpov’un 5–3 üstünlüğüyle kaldı. Seçtiğimiz oyun, Karpov’un maçtaki son (5.) galibiyeti.
 
@@ -682,6 +736,8 @@ Beşinci ve son Karpov–Kasparov maçı: 12½–11½. Seçtiğimiz oyun 20. oyu
 
 *Londra (İngiltere)*
 
+![Nigel Short](images/dunya-short.jpg "<span lang="en">Nigel Short</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">GibChess</span> · <span lang="en">CC BY 3.0</span>")
+
 Kasparov ve Short, FIDE’den ayrılıp kendi şampiyonluk maçlarını oynadı; Kasparov 12½–7½ kazandı. Seçtiğimiz oyun 15. oyun.
 
 [Event "Dünya Şampiyonası"]
@@ -700,6 +756,8 @@ Kasparov ve Short, FIDE’den ayrılıp kendi şampiyonluk maçlarını oynadı;
 #### 1993 · Karpov – Timman (FIDE)
 
 *Hollanda ve Endonezya*
+
+![Jan Timman](images/dunya-timman.jpg "<span lang="en">Jan Timman</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">GFHund</span> · <span lang="en">CC BY 3.0</span>")
 
 FIDE’nin yeni şampiyonluk maçı: Karpov 12½–8½ kazandı. Seçtiğimiz oyun 16. oyun.
 
@@ -720,6 +778,8 @@ FIDE’nin yeni şampiyonluk maçı: Karpov 12½–8½ kazandı. Seçtiğimiz oy
 
 *New York (ABD)*
 
+![Viswanathan Anand](images/dunya-anand.jpg "<span lang="en">Viswanathan Anand</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Wolfgang Jekel</span> · <span lang="en">CC BY 2.0</span>")
+
 Dünya Ticaret Merkezi’nin tepesinde oynanan maç. Kasparov 10½–7½ kazandı. Seçtiğimiz oyun 14. oyun.
 
 [Event "Dünya Şampiyonası"]
@@ -738,6 +798,8 @@ Dünya Ticaret Merkezi’nin tepesinde oynanan maç. Kasparov 10½–7½ kazand�
 #### 1996 · Karpov – Kamsky (FIDE)
 
 *Elista (Kalmukya)*
+
+![Gata Kamsky](images/dunya-kamsky.jpg "<span lang="en">Gata Kamsky</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
 
 Karpov unvanını 10½–7½ ile korudu. Seçtiğimiz oyun 14. oyun.
 
@@ -777,6 +839,9 @@ Eleme turnuvasının finalinde klasik oyunlardan sonra hızlı oyunlar belirleyi
 
 *Las Vegas (ABD)*
 
+![Alexander Khalifman](images/dunya-khalifman.jpg "<span lang="en">Alexander Khalifman</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64 (selbst fotografiert 1994, GNU-FDL)</span> · <span lang="en">CC BY-SA 3.0</span>")
+![Vladimir Akopian](images/dunya-akopian.jpg "<span lang="en">Vladimir Akopian</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">rorkhete</span> · <span lang="en">CC BY-SA 3.0</span>")
+
 Tek elemeli turnuvanın finalini Khalifman 3½–2½ kazandı. Seçtiğimiz oyun, galibiyetini getiren oyunlardan biri.
 
 [Event "Dünya Şampiyonası"]
@@ -795,6 +860,8 @@ Tek elemeli turnuvanın finalini Khalifman 3½–2½ kazandı. Seçtiğimiz oyun
 #### 2000 · Anand – Shirov (FIDE)
 
 *Tahran (İran)*
+
+![Alexei Shirov](images/dunya-shirov.jpg "<span lang="en">Alexei Shirov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Yunfan Zhao / lichess.org</span> · <span lang="en">CC BY-SA 4.0</span>")
 
 Anand finali 3½–½ kazandı. Seçtiğimiz oyun, maçı kazandıran 3. oyun.
 
@@ -815,6 +882,8 @@ Anand finali 3½–½ kazandı. Seçtiğimiz oyun, maçı kazandıran 3. oyun.
 
 *Londra (İngiltere)*
 
+![Vladimir Kramnik](images/dunya-kramnik.jpg "<span lang="en">Vladimir Kramnik</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Paweł Grochowalski</span> · <span lang="en">CC BY-SA 3.0</span>")
+
 Kramnik 15 oyunda 8½–6½ kazandı: iki galibiyet, yenilgi yok. Seçtiğimiz oyun, 10. oyun.
 
 [Event "Dünya Şampiyonası"]
@@ -833,6 +902,9 @@ Kramnik 15 oyunda 8½–6½ kazandı: iki galibiyet, yenilgi yok. Seçtiğimiz o
 #### 2002 · Ponomariov – Ivanchuk (FIDE)
 
 *Moskova (Rusya)*
+
+![Ruslan Ponomariov](images/dunya-ponomariov.jpg "<span lang="en">Ruslan Ponomariov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">JaVe.StAr</span> · <span lang="en">CC BY 4.0</span>")
+![Vasyl Ivanchuk](images/dunya-ivanchuk.jpg "<span lang="en">Vasyl Ivanchuk</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
 
 Finali Ponomariov 4½–2½ kazandı. Seçtiğimiz oyun 5. oyun.
 
@@ -853,6 +925,8 @@ Finali Ponomariov 4½–2½ kazandı. Seçtiğimiz oyun 5. oyun.
 
 *Brissago (İsviçre)*
 
+![Péter Lékó](images/dunya-leko.jpg "<span lang="en">Péter Lékó</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Yunfan Zhao / lichess.org</span> · <span lang="en">CC BY-SA 4.0</span>")
+
 14 oyun sonunda 7–7: Leko son oyuna 7–6 önde girdi; Kramnik 14. oyunu kazanıp unvanını korudu.
 
 [Event "Dünya Şampiyonası"]
@@ -872,6 +946,9 @@ Finali Ponomariov 4½–2½ kazandı. Seçtiğimiz oyun 5. oyun.
 
 *Trablus (Libya)*
 
+![Rustam Kasimdzhanov](images/dunya-kasimdzhanov.jpg "<span lang="en">Rustam Kasimdzhanov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Ygrek</span> · <span lang="en">Public domain</span>")
+![Michael Adams](images/dunya-adams.jpg "<span lang="en">Michael Adams</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Yunfan Zhao / lichess.org</span> · <span lang="en">CC BY-SA 4.0</span>")
+
 Eleme turnuvası finali: Kasimdzhanov 4½–3½ kazandı. Seçtiğimiz oyun, belirleyici ek oyun.
 
 [Event "Dünya Şampiyonası"]
@@ -890,6 +967,8 @@ Eleme turnuvası finali: Kasimdzhanov 4½–3½ kazandı. Seçtiğimiz oyun, bel
 #### 2005 · Topalov
 
 *San Luis (Arjantin)*
+
+![Veselin Topalov](images/dunya-topalov.jpg "<span lang="en">Veselin Topalov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">This photo was taken by Przemysław JahrAutor…</span> · <span lang="en">CC BY-SA 3.0</span>")
 
 Sekiz oyunculu çift devreli turnuvayı Topalov kazandı. Seçtiğimiz oyun, Kasimdzhanov’a karşı galibiyeti.
 
@@ -929,6 +1008,8 @@ Birleşme maçı 6–6 bitti; hızlı oyunlarda Kramnik 2½–1½ kazandı. Seç
 
 *Meksika*
 
+![Alexander Morozevich](images/dunya-morozevich.jpg "<span lang="en">Alexander Morozevich</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
+
 Sekiz oyunculu çift devreli turnuvada Anand 14 oyundan 9 puan aldı. Seçtiğimiz oyun, Morozevich’e karşı galibiyeti.
 
 [Event "Dünya Şampiyonası"]
@@ -947,6 +1028,8 @@ Sekiz oyunculu çift devreli turnuvada Anand 14 oyundan 9 puan aldı. Seçtiğim
 #### 2008 · Anand – Kramnik
 
 *Bonn (Almanya)*
+
+![Anand – Kramnik, Bonn 2008](images/dunya-mac-2008.jpg "<span lang="en">Anand</span> – <span lang="en">Kramnik</span>, Bonn 2008 · <span lang="en">Wikimedia Commons</span> · <span lang="en">Ygrek</span> · <span lang="en">CC BY 3.0</span>")
 
 Anand unvanını 6½–4½ ile korudu. Seçtiğimiz oyun 6. oyun.
 
@@ -985,6 +1068,8 @@ Son oyunu Siyahlarla kazanan Anand, 6½–5½ ile unvanını korudu.
 #### 2012 · Anand – Gelfand
 
 *Moskova (Rusya)*
+
+![Boris Gelfand](images/dunya-gelfand.jpg "<span lang="en">Boris Gelfand</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">TheBoburshokh</span> · <span lang="en">CC0</span>")
 
 12 klasik oyun 6–6 bitti; hızlı oyunlarda Anand 2½–1½ kazandı. Seçtiğimiz oyun, 2. hızlı oyun.
 
@@ -1043,6 +1128,8 @@ Carlsen 6½–4½ ile unvanını korudu. Seçtiğimiz oyun, 11. oyun.
 
 *New York (ABD)*
 
+![Sergey Karjakin](images/dunya-karjakin.jpg "<span lang="en">Sergey Karjakin</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 4.0</span>")
+
 12 klasik oyun 6–6; Carlsen hızlı oyunlarda 3–1 kazandı. Seçtiğimiz oyun, 4. hızlı oyun.
 
 [Event "Dünya Şampiyonası"]
@@ -1061,6 +1148,8 @@ Carlsen 6½–4½ ile unvanını korudu. Seçtiğimiz oyun, 11. oyun.
 #### 2018 · Carlsen – Caruana
 
 *Londra (İngiltere)*
+
+![Carlsen – Caruana, Londra 2018](images/dunya-mac-2018.jpg "<span lang="en">Carlsen</span> – <span lang="en">Caruana</span>, Londra 2018 · <span lang="en">Wikimedia Commons</span> · <span lang="en">Pablo Martínez Rodríguez</span> · <span lang="en">CC BY-SA 4.0</span>")
 
 12 oyunun hepsi berabere bitti; Carlsen hızlı oyunlarda 3–0 kazandı. Seçtiğimiz oyun, 2. hızlı oyun.
 
@@ -1081,6 +1170,8 @@ Carlsen 6½–4½ ile unvanını korudu. Seçtiğimiz oyun, 11. oyun.
 
 *Dubai (BAE)*
 
+![Carlsen ve Nepomniachtchi; ilk hamleyi Moskova Belediye Başkanı Sobyanin yapıyor (Dubai, 3 Aralık 2021)](images/dunya-mac-2021.jpg "<span lang="en">Carlsen</span> ve <span lang="en">Nepomniachtchi</span>; ilk hamleyi Moskova Belediye Başkanı <span lang="en">Sobyanin</span> yapıyor (Dubai, 3 Aralık 2021) · <span lang="en">Wikimedia Commons</span> · <span lang="en">mos.ru</span> · <span lang="en">CC BY 4.0</span>")
+
 Carlsen 11 oyunda 7½–3½ kazandı. Seçtiğimiz oyun 11. oyun.
 
 [Event "Dünya Şampiyonası"]
@@ -1100,6 +1191,8 @@ Carlsen 11 oyunda 7½–3½ kazandı. Seçtiğimiz oyun 11. oyun.
 
 *Astana (Kazakistan)*
 
+![Astana 2023, 1. oyunun başı](images/dunya-mac-2023.jpg "Astana 2023, 1. oyunun başı · <span lang="en">Wikimedia Commons</span> · <span lang="en">Vladimir Barsky (Владимир Барский), ruchess.ru</span> · <span lang="en">CC BY-SA 3.0</span>")
+
 14 klasik oyun 7–7 bitti; Ding, hızlı oyunların 4.’sünde Siyahlarla kazanıp şampiyon oldu.
 
 [Event "Dünya Şampiyonası"]
@@ -1116,6 +1209,8 @@ Carlsen 11 oyunda 7½–3½ kazandı. Seçtiğimiz oyun 11. oyun.
 #### 2024 · Gukesh – Ding Liren
 
 *Singapur*
+
+![Ding Liren – Gukesh, Tata Steel Satranç 2023 (Wijk aan Zee); maçtan değil, iki oyuncunun daha önceki karşılaşması](images/dunya-mac-2024.jpg "<span lang="en">Ding Liren</span> – <span lang="en">Gukesh</span>, <span lang="en">Tata Steel</span> Satranç 2023 (Wijk aan Zee); maçtan değil, iki oyuncunun daha önceki karşılaşması · <span lang="en">Wikimedia Commons</span> · <span lang="en">Vysotsky</span> · <span lang="en">CC BY-SA 4.0</span>")
 
 Gukesh 14. oyunda Ding’in hatasıyla maçı 7½–6½ kazandı. Seçtiğimiz oyun, 14. oyun.
 
@@ -1145,7 +1240,16 @@ Gukesh 14. oyunda Ding’in hatasıyla maçı 7½–6½ kazandı. Seçtiğimiz o
 - **Vasyl Ivanchuk** (d. 1969) — 1990'ların başında dünyanın ilk üç oyuncusu arasındaydı; yaratıcılığı ve hazırlığı ile ünlüydü. Ama sinirlerine yenik düştü: kritik maçlarda yaptığı hatalarla unvanı kaçırdı. 2002'de FIDE şampiyonası finalinde Ponomariov'a 4½–2½ yenildi. Neden hak ediyordu? Çağdaşlarının neredeyse tamamı onu satranç dehası olarak tanımlıyor.
 - **Judit Polgár** (d. 1976) — Tarihin en güçlü kadın oyuncusu; 2005'te dünya sıralamasında 8. oldu; Kasparov, Karpov ve Spassky dahil birçok dünya şampiyonunu yendi. Dünya şampiyonluğu döngüsünde yer aldı (2005 San Luis'te oynadı), ama kazanamadı. Neden hak ediyordu? Kadınlar şampiyonasında hiç oynamadı; bunun yerine açık sıralamada ilk onu seçti ve orada ayrı bir iz bıraktı.
 
+![Akiba Rubinstein](images/dunya-rubinstein.jpg "<span lang="en">Akiba Rubinstein</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
+![Reuben Fine](images/dunya-fine.jpg "<span lang="en">Reuben Fine</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Harry Pot for Anefo ]]</span> · <span lang="en">CC BY-SA 3.0 nl</span>")
+
+![Judit Polgár](images/dunya-polgar.jpg "<span lang="en">Judit Polgár</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">This photo was taken by Przemysław JahrAutor…</span> · <span lang="en">CC BY-SA 3.0</span>")
+
 Bu listeye başka isimler de eklenebilir: **Bent Larsen**, **Efim Geller**, **Samuel Reshevsky**, **Aron Nimzowitsch**. Zamanla dünya şampiyonları oldukça belli bir şey söylüyor: unvanı kazanmak için yalnızca çok iyi oynamak yetmez; kurallara uyum, sinir dayanıklılığı, finansal ve siyasi şartlar ve bazen sadece şans da gerekiyor. Şimdi iki yirmi yaşındaki oyuncu bu zincire bir halka daha eklemek için Cenevre'de oturuyor.
+
+![Bent Larsen](images/dunya-larsen.jpg "<span lang="en">Bent Larsen</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Hans Peters for Anefo</span> · <span lang="en">CC0</span>")
+![Efim Geller](images/dunya-geller.jpg "<span lang="en">Efim Geller</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Suyk, Koen / Anefo</span> · <span lang="en">CC0</span>")
+![Aron Nimzowitsch](images/dunya-nimzowitsch.jpg "<span lang="en">Aron Nimzowitsch</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Not mentioned</span> · <span lang="en">Public domain</span>")
 
 ### Kaynaklar
 
