@@ -163,3 +163,10 @@ The reading column's click handler ended with `showVariationPosition(fen, null, 
 ### Badges: joined glyphs and clicking the next mainline move (site patches)
 - `GoodMove._show()` (`pgn-player.js`): a variation move with a quality mark *and* an evaluation (`Nd3! $19`) reaches it as the joined string `"!−+"` (`nagsToGlyph`), which has no entry in `GLYPH_META`, so no badge was drawn. It now falls back to the leading quality glyph (`!`, `?`, `!!`, `??`, `!?`, `?!`).
 - `pgn-study.js` reading-column click on a mainline move: the `goTo()` wrapper (branch pause) refused a step to the very next ply when that move has PGN alternatives, so clicking it did nothing (the board and the badge stayed on the previous move). The click now sets `allowNextAdvance` before `goTo()`.
+
+### Evaluation bar fed by Stockfish (site patch in `pgn-player.js`, `src/lib/eval-bar.ts`)
+`<pgn-player>` has its own `.eval-bar` (inside `.player-container`, beside the board; it flips with the board) but `engine.load()` hides it
+(`EvalBar.setDisabled(!hasEvals)`) when the PGN has no `[%eval]` comments, and every move resets it to the PGN's own value (0). Patch: `EvalBar.update()` is
+ignored when `evalBar.live` is true, and `EvalBar.setScore(pawns)` sets it directly. `watchEvalBar` (only in the article with a `[CANLI MAÇ]` block) waits for
+`player.ready`, sets `live = true`, shows the bar and drives it from a Stockfish worker (`public/stockfish/`, depth 16 / 2.5 s max) on `cp-move` and
+`cp-variation-move` events (FEN = `engine.state.cache[moveIndex + 1]` / the event's `fen`). Mate scores clamp to ±8 pawns (a full bar).
