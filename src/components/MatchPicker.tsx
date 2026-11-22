@@ -82,12 +82,6 @@ export default function MatchPicker({ items, flat = false, gate = true, onLoaded
         <p className="mpb-kicker f-mono">Şimdi oynatılıyor · {cur.site}</p>
         <h4 className="mpb-title f-display">{cur.label}</h4>
         <p className="mpb-blurb"><Markdown options={{ forceInline: true }}>{cur.blurb}</Markdown></p>
-        {cur.bio && (
-          <div className="mpb-bio" key={`bio-${cur.id}`}>
-            <p className="mpb-bio-title f-mono">Oyuncu hakkında</p>
-            <p className="mpb-bio-text"><Markdown options={{ forceInline: true }}>{cur.bio}</Markdown></p>
-          </div>
-        )}
         {items.length > 1 && (
           <button type="button" className="mpb-nextcard" onClick={() => go(nextIdx, true)} aria-label={`Sıradaki oyun: ${nx.label}`}>
             <span className="mpb-nextcard-thumb">
@@ -127,6 +121,7 @@ export default function MatchPicker({ items, flat = false, gate = true, onLoaded
           ))}
         </div>
       </div>
+      {cur.bio && <div className="mpb-bio-prose" key={`bio-${cur.id}`}><p><Markdown options={{ forceInline: true }}>{cur.bio}</Markdown></p></div>}
       {next && <div className="sec-link-wrap"><SectionLink target={next} /></div>}
     </section>
   );
