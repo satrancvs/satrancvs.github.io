@@ -7,7 +7,7 @@
 
 Maçı resmî sitesinden de takip edebilirsiniz: [worldchampionship.fide.com](https://worldchampionship.fide.com/).
 
-### Neden Gukesh ile Sindarov?
+### Gukesh ile Sindarov
 
 Önce şampiyondan başlayalım. **Gukesh**, ünvanı Aralık 2024’te Singapur’da, o günün şampiyonu Ding Liren’i 7½–6½ yenerek aldı. O sırada 18 yaşındaydı ve resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu oldu. Oraya da bir Adaylar Turnuvası’nı kazanarak gelmişti (Toronto 2024); 17 yaşında en genç şampiyon adayı olmuştu. Kısacası Gukesh sistemin kapılarından geçerek ünvanı aldı ve şimdi onu savunuyor.
 
@@ -19,6 +19,9 @@ Gelelim karşısındaki isme. **Sindarov**, sistemin ikinci kapısından, yani o
 Adaylar’ın son sıralaması şöyle oldu (her kutuda iki rakibin iki oyunu, oynanış sırasıyla):
 
 <pre>
+FIDE ADAYLAR TURNUVASI 2026 ÇAPRAZ TABLOSU
+Pegeia, Kıbrıs · 28 Mart – 16 Nisan 2026
+──────────────────────────────────────────────────────
                           1  2  3  4  5  6  7  8   Puan
  1 GM Sindarov            * ½½ 1½ 1½ 1½ ½½ 11 1½   10
  2 GM Giri               ½½  * ½1 ½½ ½½ ½1 01 1½   8½
