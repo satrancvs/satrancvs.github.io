@@ -14,7 +14,7 @@ Maçı resmî sitesinden de takip edebilirsiniz: [worldchampionship.fide.com](ht
 Gelelim karşısındaki isme. **Sindarov**, sistemin ikinci kapısından, yani on dört turluk Adaylar Turnuvası’ndan birinci çıkarak şampiyon adayı oldu. Bu yolculuğun iki önemli durağı var:
 
 - Kasım 2025’te Goa’daki **FIDE Dünya Kupası**’nı (206 oyunculu eleme turnuvası) kazandı. 16. seri olarak başladığı turnuvada finalde Wei Yi’yi ancak ikinci hızlı oyun kararında yenebildi. 19 yaş 11 ayla en genç Dünya Kupası galibi ve ilk Özbek galip oldu; bu zafer ona Adaylar’a giriş bileti kazandırdı.
-- Mart–Nisan 2026’da Kıbrıs’ın Pegeia kasabasında oynanan, sekiz oyunculu çift devreli **Adaylar Turnuvası**’nı 14 turda **10 puanla** kazandı: altı galibiyet, hiç yenilgi yok. Turnuvayı bir tur kala garantiledi ve mevcut çift devreli biçimde alınmış en yüksek puana ulaştı.
+- Mart–Nisan 2026’da Kıbrıs’ın Pegeia kasabasında oynanan, sekiz oyunculu, çift turlu döner **Adaylar Turnuvası**’nı 14 turda **10 puanla** kazandı: altı galibiyet, hiç yenilgi yok. Turnuvayı bir tur kala garantiledi ve mevcut çift turlu döner biçimde alınmış en yüksek puana ulaştı.
 
 Adaylar’ın son sıralaması şöyle oldu: Sindarov 10, Giri 8½, Caruana 7½, Wei Yi 7, Nakamura 6½, Blübaum 6, Praggnanandhaa 6, Esipenko 4½.
 
@@ -48,7 +48,7 @@ Kâğıt üzerinde Sindarov favori görünüyor: reytingi 2782 (dünya 4.), Guke
 Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor ve her döngü genelde iki yıl sürüyor. Adım adım bakalım:
 
 1. **Adaylar Turnuvası’na kimler giriyor?** Sekiz kişi. Bugünkü kurallarda bu koltuklar şu yollarla kazanılıyor: Dünya Kupası’ndaki ilk üç, Grand Swiss’teki ilk iki (2025’te Giri ve Blübaum), önceki iki yılın FIDE Circuit (turnuva puanı) birincileri (Caruana, Praggnanandhaa) ve bir de reyting kuralı (Nakamura). 2026’nın Adaylar’ı bu dört yolun hepsinden oyuncu getirdi.
-2. **Adaylar Turnuvası**: sekiz oyuncu, çift devreli, 14 tur. Birinci olan, şampiyonun karşısına çıkacak şampiyon adayı oluyor.
+2. **Adaylar Turnuvası**: sekiz oyuncu, çift turlu döner turnuva, 14 tur. Birinci olan, şampiyonun karşısına çıkacak şampiyon adayı oluyor.
 3. **Ünvan maçı**: 14 klasik oyunluk bir maç. Şampiyon **kendi ünvanını savunarak** doğrudan maça geliyor; Adaylar’a katılmıyor.
 
 ### Geçmişte nasıldı?
@@ -65,7 +65,7 @@ Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının ke
 <tr><td><strong>Anand</strong> (2007–13)</td><td>2007 Meksika: sekiz kişilik turnuvayı 9/14 ile kazandı</td><td>2008 <strong>Kramnik</strong> 6½–4½; 2010 <strong>Topalov</strong> 6½–5½; 2012 <strong>Gelfand</strong> 6–6, hızlı oyunlarda 2½–1½. 2013'te <strong>Carlsen</strong>'e kaybetti.</td></tr>
 <tr class="era"><td colspan="3"><span class="era-years">1993 – 2007</span><span class="era-name">Bölünme: İki şampiyon</span></td></tr>
 <tr><td><strong>Kramnik</strong> (2000–07)</td><td>2000 Londra: <strong>Kasparov</strong>'a karşı 8½–6½, hiç yenilmeden (+2 =13)</td><td>2004'te <strong>Leko</strong> 7–7 (ünvan şampiyonda kaldı); 2006'da <strong>Topalov</strong>'u 6–6 sonrası hızlı oyunlarda yenerek birleşik ünvanı aldı.</td></tr>
-<tr><td><strong>Topalov</strong> (FIDE, 2005)</td><td>2005 San Luis, Arjantin: sekiz kişilik çift devreli turnuva</td><td>2006'da <strong>Kramnik</strong>'e kaybetti (birleşme maçı).</td></tr>
+<tr><td><strong>Topalov</strong> (FIDE, 2005)</td><td>2005 San Luis, Arjantin: sekiz kişilik çift turlu döner turnuva</td><td>2006'da <strong>Kramnik</strong>'e kaybetti (birleşme maçı).</td></tr>
 <tr><td><strong>Khalifman, Anand, Ponomariov, Kasimdzhanov</strong> (FIDE, 1999–2005)</td><td>Tek elemeli turnuvalar</td><td>Bir kez kazandıktan sonra savunma yok; her şampiyon bir sonraki turnuvada yeniden oynadı.</td></tr>
 <tr><td><strong>Karpov</strong> (FIDE, 1993–99)</td><td>1993: <strong>Kasparov</strong>'un ayrılmasıyla, <strong>Timman</strong>'ı 12½–8½ yenerek</td><td>1996'da <strong>Kamsky</strong>, 1998'de <strong>Anand</strong> karşısında ünvanı korudu; 1999'da savunmayı reddedince FIDE turnuva biçimine geçti.</td></tr>
 <tr class="era"><td colspan="3"><span class="era-years">1948 – 1993</span><span class="era-name">FIDE'nin yönettiği dönem</span></td></tr>
@@ -476,7 +476,7 @@ Anand ünvanını 6½–4½ ile korudu. İzleyeceğiniz oyun, 6. oyun.
 
 ![Alexander Morozevich](images/dunya-morozevich.jpg "<span lang="en">Alexander Morozevich</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
 
-Sekiz oyunculu çift devreli turnuvada Anand 14 oyundan 9 puan aldı. İzleyeceğiniz oyun, Morozevich’e karşı kazandığı oyun.
+Sekiz oyunculu çift turlu döner turnuvada Anand 14 oyundan 9 puan aldı. İzleyeceğiniz oyun, Morozevich’e karşı kazandığı oyun.
 
 [Event "Dünya Şampiyonası"]
 [Site "Meksika"]
@@ -518,7 +518,7 @@ Birleşme maçı 6–6 bitti; hızlı oyunlarda Kramnik 2½–1½ kazandı. İzl
 
 [KART images/dunya-topalov.jpg]
 
-Sekiz oyunculu çift devreli turnuvayı Topalov kazandı. İzleyeceğiniz oyun, Kasimdzhanov’a karşı kazandığı oyun.
+Sekiz oyunculu çift turlu döner turnuvayı Topalov kazandı. İzleyeceğiniz oyun, Kasimdzhanov’a karşı kazandığı oyun.
 
 [Event "Dünya Şampiyonası"]
 [Site "San Luis"]
