@@ -68,11 +68,7 @@ export default function MatchPicker({ items, flat = false }: { items: PickItem[]
         <p className="mpb-kicker f-mono">Şimdi oynatılıyor · {cur.site}</p>
         <h4 className="mpb-title f-display">{cur.label}</h4>
         <p className="mpb-blurb"><Markdown options={{ forceInline: true }}>{cur.blurb}</Markdown></p>
-        {cur.figures && <div className="mpb-figs">{cur.figures}</div>}
-      </div>
-
-      </div>
-
+        <p className="mpb-next f-mono">Sıradaki oyunlar</p>
       <div className="mpb-rails">
         <div className="mpb-track" role="list">
           {rows.map(([label, ids]) => (
@@ -96,6 +92,10 @@ export default function MatchPicker({ items, flat = false }: { items: PickItem[]
           ))}
         </div>
       </div>
+      </div>
+
+      </div>
+
     </section>
   );
 }

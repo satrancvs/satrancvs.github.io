@@ -726,3 +726,28 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .picker .mpa-content section { margin-bottom: 0; padding-bottom: 0; }
   .picker .mpa-content .cp-game { padding-bottom: .25rem; }
 }
+
+/* Seçici: "Sıradaki oyunlar" sağ panelde dikey liste (alt alta); tek görsel üstteki kahraman görsel. */
+.picker .mpb-info { display: flex; flex-direction: column; }
+.picker .mpb-next { margin: 1.2rem 0 .5rem; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--mute); }
+.picker .mpb-rails { display: flex; flex-direction: column; flex: 1 1 auto; min-height: 0; margin: 0; padding: 0; border: 0; }
+.picker .mpb-track { flex-direction: column; flex-wrap: nowrap; gap: .4rem; padding: 0 .35rem .5rem 0; overflow-x: hidden; overflow-y: auto; scroll-snap-type: none; max-height: 26rem; }
+.picker .mpb-row-title { writing-mode: horizontal-tb; transform: none; flex: none; align-self: stretch; display: block; margin: .6rem 0 .1rem !important; padding: 0; border: 0; text-align: left; }
+.picker .mpb-card { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: .8rem; align-items: center; flex: none; width: 100%; padding: .3rem; border-radius: 8px; scroll-snap-align: none; }
+.picker .mpb-card:hover, .picker .mpb-card:focus-visible { transform: none; background: var(--hover-bg); }
+.picker .mpb-card.on { background: var(--hover-bg); box-shadow: inset 0 0 0 1px var(--accent); }
+.picker .mpb-card .mpb-thumb { box-shadow: 0 0 0 1px var(--line); }
+.picker .mpb-card.on .mpb-thumb { box-shadow: none; }
+.picker .mpb-name { margin-top: 0; }
+.picker .mpb-now { display: none; }
+@media (min-width: 56em) {
+  .picker .mpb-info { max-height: calc(100svh - 3rem); }
+  .picker .mpb-track { max-height: none; flex: 1 1 auto; min-height: 0; }
+  .picker { min-height: 0; display: block; }
+  .picker .mpb-main { min-height: calc(100svh - 3rem); }
+}
+@media (min-width: 56em) {
+  .picker .mpb-hero { flex: none; }
+  .picker .mpb-kicker, .picker .mpb-blurb, .picker .mpb-next { flex: none; }
+  .picker .cp-game pgn-player:not(pgn-study pgn-player) { --board-size: max(380px, min(860px, 100cqw - 2rem, 100svh - 13rem)) !important; }
+}
