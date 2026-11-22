@@ -25,17 +25,6 @@ Bu soru iki ayrı yanıt istiyor:
 - **Caruana ve Nakamura oynadı, ama kazanamadı.** Caruana 2024 FIDE Circuit galibi olarak, Nakamura ise 2025 Ağustos–2026 Ocak arasındaki en yüksek ortalama reytingle (ortalama 2810,5) Adaylar'a girdi; ikisi de 14 turun hepsini oynadı. Caruana üçüncü, Nakamura beşinci oldu. Nakamura'nın bu yoldan girişi tartışma konusu olmuştu: gerekli oyun sayısını doldurmak için dört ayrı Kuzey Amerika turnuvasına katılmıştı.
 - **Carlsen oynamadı.** Carlsen, Temmuz 2022'de ünvanını savunmayacağını açıklamıştı; Adaylar'a da katılmadı. Reyting yoluyla girişin şartı, belirlenen dönemde en az 40 reytingli klasik oyun oynamaktı; Carlsen o pencerede yalnızca 16 oyun oynamıştı (ortalaması 2839,3 ile en yüksekti, ama oyun sayısı yetmiyordu). Üstelik Adaylar'a girmekle ilgilenmediğini açıkça söylemişti: yani girmedi, çünkü girmek istemedi ve girmek için gereken oyun sayısını da oynamadı. Eylül 2026'daki bir söyleşide de Sindarov için “oldukça belirgin bir favori” demişti.
 
-![Magnus Carlsen](images/dunya-carlsen.jpg "<span lang="en">Magnus Carlsen</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
-![Hikaru Nakamura](images/dunya-nakamura.jpg "<span lang="en">Hikaru Nakamura</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">ChessKelly</span> · <span lang="en">CC BY 4.0</span>")
-![Fabiano Caruana](images/dunya-caruana.jpg "<span lang="en">Fabiano Caruana</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Frans Peeters</span> · <span lang="en">CC BY-SA 2.0</span>")
-
-![Anish Giri](images/dunya-giri.jpg "<span lang="en">Anish Giri</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">TheBoburshokh</span> · <span lang="en">CC BY 4.0</span>")
-![Wei Yi](images/dunya-weiyi.jpg "<span lang="en">Wei Yi</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Frans Peeters</span> · <span lang="en">CC BY-SA 2.0</span>")
-![Matthias Blübaum](images/dunya-blubaum.jpg "<span lang="en">Matthias Blübaum</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
-
-![R Praggnanandhaa](images/dunya-pragg.jpg "<span lang="en">R Praggnanandhaa</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Frans Peeters</span> · <span lang="en">CC BY-SA 2.0</span>")
-![Andrey Esipenko](images/dunya-esipenko.jpg "<span lang="en">Andrey Esipenko</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
-
 Başka bir deyişle “dünyanın en iyisi” ile “dünya şampiyonu” aynı şey olmak zorunda değil. Ünvan, kurallarla belirlenmiş bir döngüye girmeyi, o döngüyü kazanmayı ve ünvan sahibini bir maçta yenmeyi gerektirir. Sistem böyle kurulduğundan, ünlü bir adın bu yarışa girmeyi seçmemesi mümkün; ve bir yıl içinde dünyanın en formda oyuncusu bile Adaylar'da kötü bir iki hafta geçirebilir. Bu yıl Sindarov'un tüm turnuvada yenilmemesi tesadüf değil, ama Nakamura ve Caruana'nın tablonun ortalarında kalması da sistemin doğal sonucu.
 
 #### Maç nasıl oynanıyor?

@@ -870,3 +870,10 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 @media (max-width: 55.99em) { .picker .mpb-nextcard { margin-top: 1.4rem; } }
 /* Canlı ekran ve maç seçici: ayarlar düğmesi yok (oyunlar 0,5x hıza sabit) */
 .hub .board-toolbar { display: none !important; }
+@media (max-width: 55.99em) {
+  .picker .mpa-content .cp-game, .live-match .live-board .cp-game { margin-bottom: 0; }
+  .picker .mpb-main { gap: .6rem; }
+  .live-sf-label, .live-sf-lines, .live-sf-pv { min-height: 0; }
+  .live-sf { padding-bottom: .9rem; }
+  .live-sf-meta { margin-bottom: .7rem; }
+}
