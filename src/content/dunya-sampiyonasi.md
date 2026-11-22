@@ -3,11 +3,9 @@
 
 [CANLI MAÇ]
 
-24 Kasım 2026'da İsviçre'nin Cenevre yakınlarındaki Cologny'de, Fondation Martin Bodmer'de bir Dünya Satranç Şampiyonası maçı başlıyor: şampiyon Gukesh Dommaraju (Hindistan) ile meydan okuyucu Javokhir Sindarov (Özbekistan) karşı karşıya. İkisi de 20 yaşında; FIDE'nin deyişiyle tarihin en genç dünya şampiyonası karşılaşması. Bu yazıda dört soruya yanıt arıyoruz: neden bu iki oyuncu? Şampiyon nasıl belirleniyor? Geçmişte şampiyonlar ünvanı nasıl aldı, nasıl korudu? Ve ünvanı hiç alamamış ama alması gereken efsaneler kimler?
+24 Kasım 2026'da İsviçre'nin Cenevre yakınlarındaki Cologny'de, Fondation Martin Bodmer'de bir Dünya Satranç Şampiyonası maçı başlıyor: şampiyon Gukesh Dommaraju (Hindistan) ile meydan okuyucu Javokhir Sindarov (Özbekistan) karşı karşıya. İkisi de 20 yaşında; FIDE'nin deyişiyle tarihin en genç dünya şampiyonası karşılaşması.
 
-*Yazının güncel kısmı (maçın biçimi, ödüller, Adaylar Turnuvası sonuçları) Kasım 2026 başında yayımlanmış kaynaklara dayanıyor; tarihî bölümler için bildiğimiz standart tarihçelere. Rakamlarda, özellikle eski maçların skorlarında, kaynaklar arasında küçük farklar olabilir.*
-
-[World Chess](https://worldchess.com/news/topics/2026-world-chess-championship) de şampiyonayı haber sayfasında sürekli izliyor; [maç rehberi](https://worldchess.com/news/gukesh-vs-sindarov-everything-you-need-to-know-about-the-2026-world-chess-championship) tarihleri, biçimi ve ödülleri toplu veriyor. FIDE'nin resmî maç sitesi: [worldchampionship.fide.com](https://worldchampionship.fide.com/).
+FIDE'nin resmî maç sitesi: [worldchampionship.fide.com](https://worldchampionship.fide.com/).
 
 ### Neden Gukesh ve Sindarov?
 
