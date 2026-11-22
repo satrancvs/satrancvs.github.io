@@ -22,24 +22,13 @@ const decadeLabel = (y: number) => `${Math.floor(y / 10) * 10}'ler`;
 
 export default function MatchPicker({ items }: { items: PickItem[] }) {
   const [idx, setIdx] = useState(0);
-  const [switching, setSwitching] = useState(false);
   const root = useRef<HTMLElement>(null);
-  const first = useRef(true);
   const cur = items[idx];
-
-  // Oyun değişince kısa parazit: ekran içeriği ikinci karede gelir.
-  useEffect(() => {
-    if (first.current) { first.current = false; return; }
-    setSwitching(true);
-    const t = window.setTimeout(() => setSwitching(false), 520);
-    return () => window.clearTimeout(t);
-  }, [idx]);
 
   const go = (n: number, scrollTv = false) => {
     setIdx(((n % items.length) + items.length) % items.length);
     if (scrollTv) root.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
-  const shuffle = () => { let n = idx; while (items.length > 1 && n === idx) n = Math.floor(Math.random() * items.length); go(n); };
 
   const rows = useMemo(() => {
     const m = new Map<string, number[]>();
@@ -55,17 +44,9 @@ export default function MatchPicker({ items }: { items: PickItem[] }) {
           <span className="mpa-led" aria-hidden="true" />
           <span className="mpa-ch f-mono">OYUN {two(idx + 1)}<span aria-hidden="true">/{two(items.length)}</span></span>
           <span className="mpa-title f-display">{cur.label}</span>
-          <span className="mpa-btns">
-            <button type="button" className="f-mono" onClick={() => go(idx - 1)} aria-label="Önceki oyun">◀ Önceki</button>
-            <button type="button" className="f-mono" onClick={() => go(idx + 1)} aria-label="Sonraki oyun">Sonraki ▶</button>
-            <button type="button" className="f-mono mpa-rand" onClick={shuffle} aria-label="Rastgele oyun">Rastgele</button>
-          </span>
         </div>
         <div className="mpa-screen">
-          <div className={`mpa-content${switching ? ' off' : ''}`} key={cur.id}>{cur.screen}</div>
-          {switching && (
-            <div className="mpa-noise" aria-hidden="true"><span className="mpa-osd f-mono">OYUN {two(idx + 1)}</span></div>
-          )}
+          <div className="mpa-content" key={cur.id}>{cur.screen}</div>
         </div>
       </div>
 
