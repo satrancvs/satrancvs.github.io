@@ -575,10 +575,6 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .fig-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 1.5rem 1.25rem; margin: 2.5rem 0; }
 .fig-row-item { flex: 1 1 150px; margin: 0; max-width: 300px !important; }
 
-/* Stockfish analizi aç/kapa düğmesi (src/lib/eval-bar.ts): tahtanın sol üst köşesinde, tahtanın hemen üstünde */
-.cp-game .board-wrap > .sf-toggle { position: absolute; left: 0; bottom: calc(100% + 4px); z-index: 4; min-width: 30px; height: 24px; padding: 0 7px; border: 1px solid var(--line); border-radius: 999px; background: var(--box); color: var(--mute); font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; font-weight: 600; letter-spacing: .06em; cursor: pointer; line-height: 1; }
-.cp-game .board-wrap > .sf-toggle.on { background: var(--accent); border-color: var(--accent); color: var(--bg); }
-.cp-game .board-wrap > .sf-toggle:hover { border-color: var(--accent); }
 
 /* ---- "Seçme: Her bir ünvan maçından bir oyun" (src/components/MatchPicker.tsx): oynatıcı + kart rafları. Açık temada da koyu kalır. ---- */
 .picker { --bg:#0E0C0A; --fg:#F1E9DC; --fg-rgb:241 233 220; --mute:#A89A88; --line:#2E2620; --accent:#C8893E; --box:#17130F; --box2:#14110E; --hover-bg:#1A1512; color-scheme: dark;
@@ -589,23 +585,9 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .mpa-ch { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); white-space: nowrap; }
 .mpa-ch span { color: var(--mute); }
 .mpa-title { flex: 1 1 12rem; min-width: 0; font-size: 1.25rem; line-height: 1.2; color: var(--fg); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.mpa-btns { display: flex; gap: .4rem; margin-left: auto; }
-.mpa-btns button { height: 2rem; padding: 0 .85rem; border: 1px solid #3a3029; border-radius: 999px; background: transparent; color: var(--fg); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; cursor: pointer; transition: background .15s, border-color .15s; }
-.mpa-btns button:hover { border-color: var(--accent); background: var(--hover-bg); }
-.mpa-btns .mpa-rand { color: var(--accent); }
 .mpa-screen { position: relative; min-height: 28rem; padding: 1rem .5rem .5rem; background: var(--box2); border-radius: 14px; overflow: hidden; box-shadow: inset 0 0 0 1px #2E2620, inset 0 0 60px #000; }
 .mpa-screen::after { content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 4; background: repeating-linear-gradient(to bottom, rgb(255 255 255 / .022) 0 1px, transparent 1px 3px); border-radius: inherit; }
-.mpa-content { animation: mpa-on .5s ease-out both; }
-.mpa-content.off { opacity: 0; }
 .mpa-content .cp-game, .mpa-content section { margin-top: 0; margin-bottom: 0; border-bottom: 0; }
-@keyframes mpa-on { 0% { opacity: 0; transform: scaleY(.02); filter: brightness(2.2); } 55% { opacity: 1; transform: scaleY(1.03); filter: brightness(1.4); } 100% { opacity: 1; transform: none; filter: none; } }
-.mpa-noise { position: absolute; inset: 0; z-index: 5; display: grid; place-items: start end; padding: 1rem; background-color: #1b1815;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
-  animation: mpa-noise .52s steps(5) forwards; }
-@keyframes mpa-noise { 0% { opacity: 1; background-position: 0 0; } 30% { background-position: 40px -70px; } 60% { background-position: -60px 30px; opacity: .85; } 100% { opacity: 0; background-position: 20px 50px; } }
-.mpa-osd { font-size: 22px; letter-spacing: .15em; font-weight: 600; color: #7CFF8A; text-shadow: 0 0 .6rem #2cdc4a; }
-@media (prefers-reduced-motion: reduce) { .mpa-content, .mpa-noise { animation: none; } .mpa-noise { display: none; } .mpa-content.off { opacity: 1; } }
-
 .mpb-info { padding: 1.4rem .75rem .6rem; }
 .mpb-kicker { margin: 0 0 .4rem; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
 .mpb-title { margin: 0 0 .7rem !important; font-size: clamp(1.7rem, 1.2rem + 2vw, 2.4rem); line-height: 1.1; font-weight: 400; color: var(--fg); }
@@ -633,8 +615,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .mpb-name { display: block; margin-top: .45rem; font-size: 14px; line-height: 1.3; color: rgb(var(--fg-rgb) / .85); }
 .mpb-name b { display: block; font-size: 1.15rem; font-weight: 400; color: var(--fg); }
 @media (min-width: 56em) { .picker { width: min(62rem, calc(100vw - 3rem)); margin-left: 50%; transform: translateX(-50%); padding: 18px 18px 1.5rem; } }
-@media (max-width: 40em) { .mpa-btns { width: 100%; margin-left: 0; } .mpa-btns button { flex: 1; padding: 0 .4rem; } .mpa-title { flex-basis: 100%; order: 3; white-space: normal; } .mpb-card { flex-basis: 9.5rem; } }
-
+@media (max-width: 40em) { .mpa-title { flex-basis: 100%; order: 3; white-space: normal; } .mpb-card { flex-basis: 9.5rem; } }
 /* Oyunlarda yorum yok: oynatıcı tek sütunda kalmasın. Geniş ekranda iki sütun ve daha büyük tahta. */
 .picker .mpa-screen { container-type: inline-size; }
 .picker .cp-game pgn-player:not(pgn-study pgn-player) { --board-size: min(400px, calc(100cqw - 1rem)); }
@@ -677,3 +658,6 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .hub-tabs button.on { background: var(--accent); border-color: var(--accent); color: var(--bg); }
 .hub .live-match { margin-bottom: 0; }
 .hub .picker { margin-top: 0; }
+
+/* Dünya Şampiyonası yazısı: tahtanın sağındaki oynat/yeniden oynat düğmesi gösterilmez */
+.hub .board-wrap > .play { display: none !important; }
