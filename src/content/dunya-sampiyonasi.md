@@ -1,13 +1,11 @@
-[CANLI MAÇ]
-
-24 Kasım 2026'da İsviçre'nin Cenevre yakınlarındaki Cologny'de, Fondation Martin Bodmer'de bir Dünya Satranç Şampiyonası maçı başlıyor: şampiyon Gukesh Dommaraju (Hindistan) ile meydan okuyucu Javokhir Sindarov (Özbekistan) karşı karşıya. İkisi de 20 yaşında; FIDE'nin deyişiyle tarihin en genç dünya şampiyonası karşılaşması. Bu yazıda dört soruya yanıt arıyoruz: neden bu iki oyuncu? Şampiyon nasıl belirleniyor? Geçmişte şampiyonlar ünvanı nasıl aldı, nasıl korudu? Ve ünvanı hiç alamamış ama alması gereken efsaneler kimler?
-
-*Yazının güncel kısmı (maçın biçimi, ödüller, Adaylar Turnuvası sonuçları) Kasım 2026 başında yayımlanmış kaynaklara dayanıyor; tarihî bölümler için bildiğimiz standart tarihçelere. Rakamlarda, özellikle eski maçların skorlarında, kaynaklar arasında küçük farklar olabilir.*
-
-[World Chess](https://worldchess.com/news/topics/2026-world-chess-championship) de şampiyonayı haber sayfasında sürekli izliyor; [maç rehberi](https://worldchess.com/news/gukesh-vs-sindarov-everything-you-need-to-know-about-the-2026-world-chess-championship) tarihleri, biçimi ve ödülleri toplu veriyor. FIDE'nin resmî maç sitesi: [worldchampionship.fide.com](https://worldchampionship.fide.com/).
-
 ![Gukesh Dommaraju](images/dunya-gukesh.jpg "<span lang="en">Gukesh Dommaraju</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Yunfan Zhao / lichess.org</span> · <span lang="en">CC BY-SA 4.0</span>")
 ![Javokhir Sindarov](images/dunya-sindarov.jpg "<span lang="en">Javokhir Sindarov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">TheBoburshokh</span> · <span lang="en">CC BY 4.0</span>")
+
+[CANLI MAÇ]
+
+24 Kasım 2026'da İsviçre'nin Cenevre yakınlarındaki Cologny'de, Fondation Martin Bodmer'de bir Dünya Satranç Şampiyonası maçı başlıyor: şampiyon Gukesh Dommaraju (Hindistan) ile meydan okuyucu Javokhir Sindarov (Özbekistan) karşı karşıya. İkisi de 20 yaşında; FIDE'nin deyişiyle tarihin en genç dünya şampiyonası karşılaşması.
+
+FIDE'nin resmî maç sitesi: [worldchampionship.fide.com](https://worldchampionship.fide.com/).
 
 ### Neden Gukesh ve Sindarov?
 
@@ -63,6 +61,15 @@ Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor; her döngü geneld
 
 Hayır, sistem hep böyle değildi. Aslında “dünya şampiyonluğu” kavramı bile 19. yüzyılın sonunda ortaya çıktı ve defalarca yeniden tanımlandı.
 
+**Zaman çizelgesi: oyun sayısının sınırsız olduğu maçlar** (“ilk N galibiyet”, oyun sınırı yok; beraberlikler sayılmaz)
+
+- **1886**: İlk resmî ünvan maçı Steinitz–Zukertort “ilk 10 galibiyet” ile oynandı. 1890'lara kadar maçların çoğu bu biçimdeydi (Steinitz–Chigorin, Lasker–Steinitz); 1900'lerin başında bazı maçlar “ilk 8 galibiyet” oldu (Lasker–Marshall, Lasker–Tarrasch).
+- **1922**: Londra Kuralları “ilk 6 galibiyet” biçimini standart yaptı; 1927'de **Capablanca–Alekhine** maçı bu kuralla 34 oyun sürdü (o güne dek en uzun maç). Sonraki maçlarda (Bogoljubov, Euwe) oyun sayısına üst sınır kondu.
+- **1948–1972**: FIDE döneminde ünvan maçları sabit **24 oyun** üzerinden oynandı; sınırsız biçim bu dönemde uygulanmadı.
+- **1975**: Fischer “ilk 10 galibiyet, sınırsız oyun” şartını istedi, FIDE reddetti, maç oynanmadı.
+- **1978 ve 1981**: Karpov–Korchnoi maçları “ilk 6 galibiyet”, oyun sınırı olmadan oynandı (Baguio 1978: 32 oyun; Merano 1981: 18 oyun). Sınırsız biçim böylece geri döndü.
+- **1984–85**: Karpov–Kasparov maçı 48 oyun sürdü ve Şubat 1985'te FIDE Başkanı Campomanes'in kararıyla **iptal edildi**. Sınırsız oyun sayısı **burada kaldırıldı**: Eylül 1985'teki yeniden maç **24 oyunla sınırlıydı** ve o günden bugüne ünvan maçları sabit oyun sayısıyla oynanıyor (önce 24, sonra 12–14; bugün 14 klasik oyun).
+
 #### 1) Birleşme ve bugünkü sistem (2006–)
 
 2006'da **Kramnik–Topalov** birleşme maçı Elista'da oynandı (6–6, ardından hızlı oyunlarda Kramnik kazandı; maç bir “tuvalet skandalı”yla da anılır) ve ünvan tek sahibe döndü. 2007'de turnuva biçimi (Meksika), 2008'den itibaren yine maç biçimi kullanıldı. FIDE, 2013'ten itibaren Adaylar'ı **sekiz kişilik çift devreli turnuva** olarak yerleştirdi; şampiyona doğrudan meydan okunur. Son yıllarda yenilikler: Dünya Kupası ve Grand Swiss yolu, FIDE Circuit, ve eşitlik hâlinde dört hızlı, iki hızlı, iki yıldırım ve sonunda “ani ölüm” oyunu.
@@ -78,7 +85,7 @@ Alekhine'in ölümü üzerine **FIDE** (Uluslararası Satranç Federasyonu) ünv
 - **Bölgeler arası turnuva (Interzonal)** → **Adaylar** (önce turnuva, 1965'ten itibaren maç eleme) → **ünvan maçı**.
 - **Şampiyon ayrıcalıkları**: 12–12 eşitlikte ünvan şampiyonda kalırdı (Botvinnik 1951'de Bronstein'a, 1954'te Smyslov'a karşı ünvanı bu kuralla korudu). 1963'e kadar kaybeden şampiyon otomatik **rövanş** hakkına sahipti; bu hak Botvinnik'e iki kez (1958, 1961) ünvanı geri kazandırdı ve 1963'ten sonra kaldırıldı.
 - **1962 Adaylar'ı** (Curaçao) Sovyet oyuncuların kendi aralarında beraberlik anlaşması yaptığı ve Fischer'in bunu açıkça suçladığı turnuvaydı; sonuçta Adaylar'ın **turnuva** biçimi bırakıldı ve eleme maçlarına geçildi.
-- **1975**: Fischer 1972'de Spassky'yi yendikten sonra ünvan savunması için bir dizi şart koydu (ilk 10 galibiyet, sınırsız oyun sayısı, 9–9'da şampiyonun korunması); FIDE bir kısmını reddetti, Fischer çekildi ve **Karpov** hiç oynamadan, **walkover** ile dünya şampiyonu ilan edildi.
+- **1975**: Fischer 1972'de Spassky'i yendikten sonra ünvan savunması için bir dizi şart koydu (ilk 10 galibiyet, sınırsız oyun sayısı, 9–9'da şampiyonun korunması); FIDE bir kısmını reddetti, Fischer çekildi ve **Karpov** hiç oynamadan, **walkover** ile dünya şampiyonu ilan edildi.
 - **1984–85**: Karpov–Kasparov maçı “ilk 6 galibiyet” ile ve oyun sınırı olmadan başladı, 48 oyun sürdü (Karpov önce 5–0 öne geçmişti, Kasparov oyunlar boyunca direndi; skor 5–3'tü) ve FIDE Başkanı Florencio Campomanes'in maçı **iptal etmesi** (“yorgunluk” gerekçesiyle) büyük tartışma yarattı. Maç, 24 oyunluk bir formatla yeniden oynandı; Kasparov kazandı.
 
 #### 4) Şampiyon, kurallar koyar (1886–1946)
@@ -117,14 +124,14 @@ Aşağıda her şampiyon için *ünvanı kime karşı, nasıl aldığı* ve *nas
 <tr><td><strong>Karpov</strong> (FIDE, 1993–99)</td><td>1993: <strong>Kasparov</strong>'un ayrılmasıyla, <strong>Timman</strong>'ı 12½–8½ yenerek</td><td>1996'da <strong>Kamsky</strong>, 1998'de <strong>Anand</strong> karşısında ünvanı korudu; 1999'da savunmayı reddedince FIDE turnuva biçimine geçti.</td></tr>
 <tr class="era"><td colspan="3"><span class="era-years">1948 – 1993</span><span class="era-name">FIDE’nin yönettiği döngü</span></td></tr>
 <tr><td><strong>Kasparov</strong> (1985–93, PCA 1993–2000)</td><td>1985 Moskova: <strong>Karpov</strong>'a 13–11</td><td>1986, 1987 (12–12, ünvan şampiyonda kaldı), 1990'da <strong>Karpov</strong>'u yendi; 1993'te <strong>Short</strong>'u, 1995'te <strong>Anand</strong>'ı yendi; 2000'de Londra'da <strong>Kramnik</strong>'e kaybetti.</td></tr>
-<tr><td><strong>Karpov</strong> (1975–85)</td><td>1975: <strong>Fischer</strong>'in çekilmesiyle hükmen</td><td>1978 Baguio'da <strong>Korchnoi</strong>'yi, 1981 Merano'da yine <strong>Korchnoi</strong>'yi yendi. 1984–85'te <strong>Kasparov</strong>'a karşı maç yarıda kesildi (5–3 önde); 1985'te ünvanı kaybetti.</td></tr>
-<tr><td><strong>Fischer</strong> (1972–75)</td><td>1972, Reykjavik: <strong>Spassky</strong>'ye karşı 12½–8½ (+7 −3 =11)</td><td>1975'te şartları kabul edilmediği için çekildi; ünvanı oynamadan kaybetti.</td></tr>
+<tr><td><strong>Karpov</strong> (1975–85)</td><td>1975: <strong>Fischer</strong>'in çekilmesiyle hükmen</td><td>1978 Baguio'da <strong>Korchnoi</strong>'u, 1981 Merano'da yine <strong>Korchnoi</strong>'u yendi. 1984–85'te <strong>Kasparov</strong>'a karşı maç yarıda kesildi (5–3 önde); 1985'te ünvanı kaybetti.</td></tr>
+<tr><td><strong>Fischer</strong> (1972–75)</td><td>1972, Reykjavik: <strong>Spassky</strong>'e karşı 12½–8½ (+7 −3 =11)</td><td>1975'te şartları kabul edilmediği için çekildi; ünvanı oynamadan kaybetti.</td></tr>
 <tr><td><strong>Spassky</strong> (1969–72)</td><td>1969, <strong>Petrosian</strong>'a karşı</td><td>1972'de Reykjavik'te <strong>Fischer</strong>'e 12½–8½ kaybetti.</td></tr>
-<tr><td><strong>Petrosian</strong> (1963–69)</td><td>1963, <strong>Botvinnik</strong>'e karşı 12½–9½</td><td>1966'da <strong>Spassky</strong>'yi 12½–11½ yendi; 1969'da <strong>Spassky</strong>'ye 12½–10½ kaybetti.</td></tr>
+<tr><td><strong>Petrosian</strong> (1963–69)</td><td>1963, <strong>Botvinnik</strong>'e karşı 12½–9½</td><td>1966'da <strong>Spassky</strong>'i 12½–11½ yendi; 1969'da <strong>Spassky</strong>'e 12½–10½ kaybetti.</td></tr>
 <tr class="era-note"><td colspan="3"><span>1963</span> Kaybeden şampiyonun otomatik rövanş hakkı kaldırıldı</td></tr>
 <tr><td><strong>Tal</strong> (1960–61)</td><td>1960, <strong>Botvinnik</strong>'e karşı 12½–8½</td><td>1961'de <strong>Botvinnik</strong> ile rövanşı 13–8 kaybetti.</td></tr>
 <tr><td><strong>Smyslov</strong> (1957–58)</td><td>1957, <strong>Botvinnik</strong>'e karşı 12½–9½</td><td>1958'de <strong>Botvinnik</strong> ile rövanşı 12½–10½ kaybetti.</td></tr>
-<tr><td><strong>Botvinnik</strong> (1948–57, 1958–60, 1961–63)</td><td>1948 Lahey–Moskova <strong>beş kişilik maç turnuvası</strong></td><td>1951 <strong>Bronstein</strong> 12–12 (ünvan şampiyonda kaldı); 1954 <strong>Smyslov</strong> 12–12. 1957'de <strong>Smyslov</strong>'a, 1960'ta <strong>Tal</strong>'a yenildi; 1958'de <strong>Smyslov</strong> ile, 1961'de <strong>Tal</strong> ile rövanşları kazanıp ünvanı iki kez geri aldı.</td></tr>
+<tr><td><strong>Botvinnik</strong> (1948–57, 1958–60, 1961–63)</td><td>1948 Lahey–Moskova <strong>beş kişilik maç turnuvası</strong></td><td>1951 <strong>Bronstein</strong> 12–12 (ünvan şampiyonda kaldı); 1954 <strong>Smyslov</strong> 12–12. 1957'de <strong>Smyslov</strong>'a, 1960'ta <strong>Tal</strong>'e yenildi; 1958'de <strong>Smyslov</strong> ile, 1961'de <strong>Tal</strong> ile rövanşları kazanıp ünvanı iki kez geri aldı.</td></tr>
 <tr class="era"><td colspan="3"><span class="era-years">1886 – 1946</span><span class="era-name">Şampiyonun pazarlık ettiği dönem</span></td></tr>
 <tr><td><strong>Euwe</strong> (1935–37)</td><td>1935, Hollanda: <strong>Alekhine</strong>'e karşı 15½–14½</td><td>1937'de <strong>Alekhine</strong> ile rövanşı kaybetti.</td></tr>
 <tr><td><strong>Alekhine</strong> (1927–35, 1937–46)</td><td>1927, <strong>Capablanca</strong>'ya karşı; “ilk 6 galibiyet”, 34 oyun</td><td>1929 ve 1934'te <strong>Bogoljubov</strong>'u yendi. 1935'te <strong>Euwe</strong>'ye 15½–14½ kaybetti, 1937'de <strong>Euwe</strong> ile rövanşı 15½–9½ kazandı. 1946'da şampiyonken öldü.</td></tr>
@@ -134,7 +141,7 @@ Aşağıda her şampiyon için *ünvanı kime karşı, nasıl aldığı* ve *nas
 </tbody>
 </table>
 
-Tablodan iki şey okunuyor. Birincisi, **eşitlikte ünvan şampiyonda kalır**: 1951, 1954 ve 1987'de bu kural işledi. İkincisi, **rövanş hakkı** (1948–63) şampiyonlara ikinci bir şans verdi: Smyslov ve Tal'ın birer yıllık ünvanlarının ve Botvinnik'in üç ayrı saltanatının arkasında bu kural var.
+Tablodan iki şey okunuyor. Birincisi, **eşitlikte ünvan şampiyonda kalır**: 1951, 1954 ve 1987'de bu kural işledi. İkincisi, **rövanş hakkı** (1948–63) şampiyonlara ikinci bir şans verdi: Smyslov ve Tal'in birer yıllık ünvanlarının ve Botvinnik'in üç ayrı saltanatının arkasında bu kural var.
 
 [MAÇ SEÇİCİ: Gukesh – Sindarov karşılaşmaları]
 
@@ -512,7 +519,7 @@ Anand ünvanını 6½–4½ ile korudu. Seçtiğimiz oyun 6. oyun. FIDE Müzesi:
 
 1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Qc2 d5 5. cxd5 Qxd5 6. Nf3 Qf5 7. Qb3 Nc6 8. Bd2 O-O 9. h3 b6 10. g4 Qa5 11. Rc1 Bb7 12. a3 Bxc3 13. Bxc3 Qd5 14. Qxd5 Nxd5 15. Bd2 Nf6 16. Rg1 Rac8 17. Bg2 Ne7 18. Bb4 c5 19. dxc5 Rfd8 20. Ne5 Bxg2 21. Rxg2 bxc5 22. Rxc5 Ne4 23. Rxc8 Rxc8 24. Nd3 Nd5 25. Bd2 Rc2 26. Bc1 f5 27. Kd1 Rc8 28. f3 Nd6 29. Ke1 a5 30. e3 e5 31. gxf5 e4 32. fxe4 Nxe4 33. Bd2 a4 34. Nf2 Nd6 35. Rg4 Nc4 36. e4 Nf6 37. Rg3 Nxb2 38. e5 Nd5 39. f6 Kf7 40. Ne4 Nc4 41. fxg7 Kg8 42. Rd3 Ndb6 43. Bh6 Nxe5 44. Nf6+! Kf7 45. Rc3 Rxc3 46. g8=Q+! Kxf6 47. Bg7+ 1-0
 
-#### 2007 · Anand
+#### 2007 · Anand – Morozevich (Turnuva)
 
 *Meksika*
 
@@ -556,7 +563,7 @@ Birleşme maçı 6–6 bitti; hızlı oyunlarda Kramnik 2½–1½ kazandı. Seç
 
 1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Be2 Bb7 9. O-O Be7 10. e4 b4 11. e5 bxc3 12. exf6! Bxf6 13. bxc3 c5 14. dxc5 Nxc5 15. Bb5+ Kf8 16. Qxd8+ Rxd8 17. Ba3 Rc8 18. Nd4 Be7 19. Rfd1 a6 20. Bf1 Na4 21. Rab1 Be4 22. Rb3 Bxa3 23. Rxa3 Nc5 24. Nb3 Ke7 25. Rd4 Bg6 26. c4 Rc6 27. Nxc5 Rxc5 28. Rxa6 Rb8 29. Rd1 Rb2 30. Ra7+ Kf6 31. Ra1 Rf5 32. f3 Re5 33. Ra3 Rc2 34. Rb3 Ra5 35. a4 Ke7 36. Rb5 Ra7 37. a5 Kd6 38. a6 Kc7 39. c5 Rc3 40. Raa5 Rc1 41. Rb3! Kc6 42. Rb6+ Kc7 43. Kf2 Rc2+ 44. Ke3 Rxc5 45. Rb7+! 1-0
 
-#### 2005 · Topalov
+#### 2005 · Topalov – Kasimdzhanov (Turnuva)
 
 *San Luis (Arjantin)*
 
@@ -1209,7 +1216,7 @@ Yine 12–12; Botvinnik ünvanı bu kuralla korudu. Seçtiğimiz oyun, Botvinnik
 
 1. d4 Nf6 2. c4 g6 3. g3 c6 4. Bg2 d5 5. cxd5 cxd5 6. Nc3 Bg7 7. Nh3 Bxh3 8. Bxh3 Nc6 9. Bg2 e6 10. e3 O-O 11. Bd2 Rc8 12. O-O Nd7 13. Ne2 Qb6 14. Bc3 Rfd8 15. Nf4 Nf6 16. Qb3 Ne4 17. Qxb6 axb6 18. Be1 Na5 19. Nd3 Bf8 20. f3 Nd6 21. Bf2 Bh6 22. Rac1 Nac4 23. Rfe1 Na5 24. Kf1 Bg7 25. g4 Nc6 26. b3 Nb5 27. Ke2 Bf8 28. a4 Nc7 29. Bg3 Na6 30. Bf1 f6 31. Red1 Na5 32. Rxc8 Rxc8 33. Rc1 Rxc1 34. Nxc1 Ba3 35. Kd1 Bxc1 36. Kxc1 Nxb3+ 37. Kc2 Na5! 38. Kc3 Kf7 39. e4 f5 40. gxf5 gxf5 41. Bd3 Kg6 42. Bd6 Nc6 43. Bb1 Kf6 44. Bg3 fxe4 45. fxe4 h6 46. Bf4 h5 47. exd5 exd5 48. h4 Nab8 49. Bg5+ Kf7 50. Bf5 Na7 51. Bf4 Nbc6 52. Bd3 Nc8 53. Be2 Kg6 54. Bd3+ Kf6 55. Be2 Kg6 56. Bf3 N6e7 57. Bg5 1-0
 
-#### 1948 · Botvinnik – Smyslov, Keres, Reshevsky, Euwe
+#### 1948 · Botvinnik – Keres (Turnuva)
 
 *Lahey ve Moskova*
 
@@ -1611,7 +1618,7 @@ Baguio maçının 31. oyununda Korchnoi, şampiyon Karpov'u yenip skoru 5–5'e 
 
 [KART images/dunya-larsen.jpg]
 
-SSCB–Dünya karması maçında (Belgrad, 1970) Larsen, dünya şampiyonu Spassky'yi yendi.
+SSCB–Dünya karması maçında (Belgrad, 1970) Larsen, dünya şampiyonu Spassky'i yendi.
 
 [Event "SSCB – Dünya karması"]
 [Site "Belgrad"]

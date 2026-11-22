@@ -18,7 +18,7 @@ def caption(k):
     if a.lower().startswith('unknown'): a=''
     parts=[NAMES[d['who']],'Wikimedia Commons']+([a] if a else [])+[d.get('lic','')]
     return ' · '.join(en(p) for p in parts if p)
-def surn(t): return [w.split(' ')[-1].lower().replace('ó','o').replace('á','a').replace('ı','i') for w in re.split(r'\s+[–,]\s+|,\s*',t)]
+def surn(t): t=re.sub(r'\s*\([^)]*\)','',t); return [w.split(' ')[-1].lower().replace('ó','o').replace('á','a').replace('ı','i') for w in re.split(r'\s+[–,]\s+|,\s*',t)]
 s=open(MD,encoding='utf-8').read()
 s=re.sub(r'(?m)^\[KART [^\]]*\]\n\n','',s)
 parts=re.split(r'(?m)^(\[MAÇ SEÇİCİ: [^\]]+\]\n)',s)

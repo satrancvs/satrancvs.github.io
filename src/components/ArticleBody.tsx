@@ -748,7 +748,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     const items: PickItem[] = drafts.filter((d) => d.header).map((d) => {
       const item = games.find((g) => g.at === d.gi)!;
       const paths = d.figs.flatMap((f) => [...f.matchAll(/\]\(([^)\s]+)/g)].map((m) => m[1]));
-      const names = d.label.replace(/^[^·]*·\s*/, '').split(/\s+[–,]\s+|,\s*/).map((n) => n.trim().split(' ').pop()!.toLowerCase().replace('ó', 'o').replace('á', 'a').replace('ı', 'i'));
+      const names = d.label.replace(/^[^·]*·\s*/, '').replace(/\s*\([^)]*\)/g, '').split(/\s+[–,]\s+|,\s*/).map((n) => n.trim().split(' ').pop()!.toLowerCase().replace('ó', 'o').replace('á', 'a').replace('ı', 'i'));
       const portrait = names.map((n) => `images/dunya-${n}.jpg`).find(hasImage); // fotoğrafsız maçta oyunculardan birinin portresi
       const thumb = d.kart ?? paths.find((x) => /dunya-afis/.test(x)) ?? paths.find((x) => /dunya-mac-/.test(x)) ?? paths[0] ?? portrait; // `[KART …]`: scripts/dunya-photos/assign_thumbs.py her kart için farklı görsel atar
       return {
