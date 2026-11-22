@@ -1022,3 +1022,23 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 }
 @media print { .tl-scroll { height: auto; overflow: visible; -webkit-mask-image: none; mask-image: none; } }
 @media (max-width: 61.99em) { .tl-scroll { padding-left: 8px; margin-left: -8px; box-sizing: border-box; } }
+
+/* Maç seçici / canlı ekran: ilk hamleden ÖNCEKİ yorum (oyun henüz başlamadı) tahtanın ÜZERİNDE, tahtayı kısmen örten bir kart olarak durur; ilk hamleden sonra olağan yerine döner. */
+.hub .player-wrapper { position: relative; }
+.hub .player-wrapper:not(:has(.video-moves .active)) .video-comment:has(.comment-text-block:not(:empty)) {
+  /* şeffaf, tahtayla aynı boyda katman (konum/ölçü --bl --bt --bw --bh: eval-bar.ts); kart ortada */
+  position: absolute !important; z-index: 6; left: var(--bl, 1.8rem) !important; top: var(--bt, 0) !important; right: auto !important; bottom: auto !important;
+  width: var(--bw, 90%) !important; height: var(--bh, 90%) !important; margin: 0 !important; padding: 0 !important;
+  display: flex !important; align-items: center; justify-content: center; pointer-events: none; background: none; border: 0;
+}
+.hub .player-wrapper:not(:has(.video-moves .active)) .video-comment:has(.comment-text-block:not(:empty)) .comment-line {
+  pointer-events: auto; width: auto !important; max-width: min(88%, 30rem) !important; padding: .85rem 1.05rem !important;
+  border: 1px solid rgb(var(--fg-rgb) / .2); border-left: 3px solid var(--accent); border-radius: .6rem; background: var(--bg); box-shadow: 0 .6rem 1.6rem rgb(0 0 0 / .28);
+}
+/* "Oyunu başlat" düğmesi: yorumun sonunda küçük, vurgu renkli, metinle aynı hizada */
+.hub .player-wrapper .video-comment .comment-play-btn.cp-inline {
+  display: inline-flex !important; align-items: center; justify-content: center; width: 1.7rem !important; height: 1.7rem !important; min-width: 0 !important; padding: 0 !important;
+  margin: 0 0 0 .5rem !important; vertical-align: -.35rem; border-radius: 50%; border: 1.5px solid var(--accent) !important; background: transparent !important; color: var(--accent) !important; box-shadow: none !important;
+}
+.hub .player-wrapper .video-comment .comment-play-btn.cp-inline:hover { background: var(--accent) !important; color: var(--bg) !important; }
+.hub .player-wrapper .video-comment .comment-play-btn.cp-inline svg { width: .85rem !important; height: .85rem !important; color: inherit !important; stroke: currentColor; }
