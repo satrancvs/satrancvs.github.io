@@ -66,15 +66,24 @@ export default function SfPanel({ boardRef, idle = false, idleText = '' }: { boa
         <button type="button" role="switch" aria-checked={engineOn} aria-label="Stockfish analizi" title={engineOn ? 'Analizi durdur' : 'Analizi başlat'} className="live-sf-switch" onClick={() => setEngineEnabled(!engineOn)}><i /></button>
       </div>
       <p className="live-sf-num f-display">{ev ? ev.num : '—'}</p>
-      <p className="live-sf-label">{ev ? ev.label : !engineOn ? 'Analiz durduruldu. Anahtarla yeniden başlatabilirsiniz.' : idle ? idleText : 'Konum çözümleniyor…'}</p>
-      <p className="live-sf-meta f-mono">{sf && !idle && engineOn ? `Derinlik ${sf.depth} / ${cfg.depth}` : '\u00a0'}</p>
+      <p className="live-sf-label">{ev ? ev.label : !engineOn ? 'Analiz durduruldu. Anahtarla yeniden başlatabilirsiniz.' : idle ? idleText : 'Analiz ediliyor...'}</p>
       <p className="live-sf-pv-title f-mono">{cfg.lines > 1 ? 'En iyi devam yolları' : 'En iyi devam yolu'}</p>
       {rows.length ? (
         <ol className="live-sf-lines">{rows.map((r, i) => <li key={i}>{cfg.lines > 1 && <b className="f-mono">{r.num}</b>}<span>{r.text}</span></li>)}</ol>
       ) : <p className="live-sf-pv">—</p>}
       <div className="live-sf-opts f-mono">
-        <label>Derinlik<select value={cfg.depth} onChange={(e) => set(Number(e.target.value), cfg.lines)}>{DEPTHS.map((d) => <option key={d} value={d}>{d}</option>)}</select></label>
-        <label>Aday<select value={cfg.lines} onChange={(e) => set(cfg.depth, Number(e.target.value))}>{LINE_COUNTS.map((d) => <option key={d} value={d}>{d}</option>)}</select></label>
+        <div className="sf-step" role="group" aria-label="Derinlik">
+          <span>Derinlik</span>
+          <button type="button" aria-label="Derinliği azalt" disabled={DEPTHS.indexOf(cfg.depth) <= 0} onClick={() => set(DEPTHS[Math.max(0, DEPTHS.indexOf(cfg.depth) - 1)], cfg.lines)}>−</button>
+          <output aria-live="polite">{cfg.depth}</output>
+          <button type="button" aria-label="Derinliği artır" disabled={DEPTHS.indexOf(cfg.depth) >= DEPTHS.length - 1} onClick={() => set(DEPTHS[Math.min(DEPTHS.length - 1, DEPTHS.indexOf(cfg.depth) + 1)], cfg.lines)}>+</button>
+        </div>
+        <div className="sf-step" role="group" aria-label="Aday">
+          <span>Aday</span>
+          <button type="button" aria-label="Aday sayısını azalt" disabled={cfg.lines <= LINE_COUNTS[0]} onClick={() => set(cfg.depth, cfg.lines - 1)}>−</button>
+          <output aria-live="polite">{cfg.lines}</output>
+          <button type="button" aria-label="Aday sayısını artır" disabled={cfg.lines >= LINE_COUNTS[LINE_COUNTS.length - 1]} onClick={() => set(cfg.depth, cfg.lines + 1)}>+</button>
+        </div>
       </div>
     </aside>
   );

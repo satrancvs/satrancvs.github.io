@@ -60,7 +60,7 @@ export default function MatchPicker({ items, flat = false, gate = true, onLoaded
   return (
     <section ref={root} className="picker scroll-mt-8" aria-label="Seçilmiş maçlar">
       <div className="mpb-main">
-      <SfPanel boardRef={screen} idleText="Konum çözümleniyor…" />
+      <SfPanel boardRef={screen} idleText="Analiz ediliyor..." />
       <div className="mpa-frame" role="group" aria-label="Oyun oynatıcı">
         <div className="mpa-bar">
           <span className="mpa-led" aria-hidden="true" />
