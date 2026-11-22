@@ -147,7 +147,6 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
       <p className="live-kicker f-mono">
         {live ? <><i className="live-dot" aria-hidden="true" />Canlı</> : 'Çok yakında'}<span aria-hidden="true"> · </span>Dünya Şampiyonası 2026
       </p>
-      <h2 className="live-title f-display">Gukesh <span>–</span> Sindarov</h2>
       <div className="live-vs">
         <div><img src={`${import.meta.env.BASE_URL}images/dunya-gukesh.jpg`} alt="" loading="lazy" /><p><b>Gukesh Dommaraju</b><span className="f-mono">Hindistan · 2710</span></p></div>
         <div><img src={`${import.meta.env.BASE_URL}images/dunya-sindarov.jpg`} alt="" loading="lazy" /><p><b>Javokhir Sindarov</b><span className="f-mono">Özbekistan · 2782</span></p></div>
@@ -185,7 +184,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
               <div key={l as string} className="live-cell"><span className="live-num f-display">{two(v as number)}</span><span className="live-unit f-mono">{l}</span></div>
             ))}
           </div>
-          <p className="live-when f-mono">24 Kasım 2026 · 17.00 (Türkiye saati) · Cenevre</p>
+          <p className="live-when f-mono">24 Kasım 2026 · 17.00 (TR saati) · Cenevre</p>
         </div>
       )}
       {next && <SectionLink target={next} />}

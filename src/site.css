@@ -902,3 +902,6 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .live-match > .live-stage { align-items: stretch; }
   .live-stage > .live-sf, .picker .mpb-main > .live-sf { contain: size; align-self: stretch; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--accent) transparent; }
 }
+.live-match .live-when { white-space: nowrap; font-size: 11.5px; letter-spacing: .05em; }
+@media (max-width: 40em) { .live-match .live-when { font-size: 10px; letter-spacing: .03em; } }
+@media (max-width: 22em) { .live-match .live-when { white-space: normal; } }
