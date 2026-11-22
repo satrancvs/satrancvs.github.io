@@ -118,7 +118,7 @@ function attach(player: PlayerEl) {
     if (!ev || !ev.bar) return;
     // engine.load() çubuğu "PGN'de eval yok" diye kapatmıştır; burada Stockfish'e bağlanıp açılır, oynatıcının hamle başına sıfırlaması susturulur.
     ev.live = true;
-    const live = !!player.closest('.live-match'); // çoklu satır yalnızca canlı ekrandaki panel için; diğer oynatıcılar tek satır çözer
+    const live = !!player.closest('.live-match, .picker'); // çoklu satır yalnızca canlı ekrandaki panel için; diğer oynatıcılar tek satır çözer
     const show: Listener = (r) => {
       const { cp, mate } = r;
       if (!player.isConnected) return;

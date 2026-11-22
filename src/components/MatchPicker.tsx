@@ -2,6 +2,7 @@ import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
 import Markdown from 'markdown-to-jsx';
 import ProgressiveImage from '@/components/ProgressiveImage';
+import SfPanel from '@/components/SfPanel';
 
 // "Seçme: Her bir ünvan maçından bir oyun" bölümü (Dünya Şampiyonası 2026 yazısı): tek oynatıcı, ◀ ▶ ile oyun değiştirme, değişirken parazit,
 // altında seçilen maçın özeti ve fotoğrafları, en altta on yıllara göre dizili kart rafları. Tek bir oyun ekranda bulunur: seçim değişince oynatıcı yeniden kurulur.
@@ -24,6 +25,7 @@ const decadeLabel = (y: number) => `${Math.floor(y / 10) * 10}'${[1, 3, 4, 6, 9]
 export default function MatchPicker({ items, flat = false }: { items: PickItem[]; flat?: boolean }) {
   const [idx, setIdx] = useState(0);
   const root = useRef<HTMLElement>(null);
+  const screen = useRef<HTMLDivElement>(null);
   const cur = items[idx];
 
   const go = (n: number, scrollTv = false) => {
@@ -48,13 +50,14 @@ export default function MatchPicker({ items, flat = false }: { items: PickItem[]
   return (
     <section ref={root} className="picker scroll-mt-8" aria-label="Seçilmiş maçlar">
       <div className="mpb-main">
+      <SfPanel boardRef={screen} idleText="Konum çözümleniyor…" />
       <div className="mpa-frame" role="group" aria-label="Oyun oynatıcı">
         <div className="mpa-bar">
           <span className="mpa-led" aria-hidden="true" />
           <span className="mpa-ch f-mono">OYUN {two(idx + 1)}<span aria-hidden="true">/{two(items.length)}</span></span>
           <span className="mpa-title f-display">{cur.label}</span>
         </div>
-        <div className="mpa-screen">
+        <div className="mpa-screen" ref={screen}>
           <div className="mpa-content" key={cur.id}>{cur.screen}</div>
         </div>
       </div>
