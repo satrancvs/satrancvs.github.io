@@ -36,8 +36,14 @@ made={}
 def fig(key,name,alt,cap):
     if key not in DL: return None
     path=save(key,name); return f'![{alt}]({path} "{cap}")'
-PL={'1886':['steinitz','zukertort'],'1889':['chigorin'],'1890':['gunsberg'],'1894':['lasker'],'1907':['marshall'],'1908':['tarrasch'],'1921':['capablanca'],'1927':['alekhine'],'1929':['bogoljubov'],'1935':['euwe'],'1948':['botvinnik','smyslov','keres','reshevsky'],'1951':['bronstein'],'1957':['botvinnik','smyslov'],'1960':['tal'],'1963':['petrosian'],'1966':['spassky'],'1972':['fischer'],'1978':['karpov','korchnoi'],'1984':['kasparov','campomanes'],'1993a':['short'],'1993b':['timman'],'1995':['anand'],'1996':['kamsky'],'1999':['khalifman','akopian'],'2000a':['shirov'],'2000':['kramnik'],'2002':['ponomariov','ivanchuk'],'2004':['leko'],'2004b':['kasimdzhanov','adams'],'2005':['topalov'],'2007':['morozevich'],'2008':['anand','kramnik'],'2012':['gelfand'],'2013':['carlsen'],'2016':['karjakin'],'2018':['carlsen','caruana'],'2021':['carlsen','nepomniachtchi'],'2023':['nepomniachtchi','ding'],'2024':['ding','gukesh']}
-order=list(MT)
+order=list(reversed(list(MT)))  # yazı 2024'ten geçmişe doğru sıralıdır; kişi fotoğrafı ilk göründüğü (en yeni) maçta
+SL={'Steinitz':'steinitz','Zukertort':'zukertort','Chigorin':'chigorin','Gunsberg':'gunsberg','Lasker':'lasker','Marshall':'marshall','Tarrasch':'tarrasch','Capablanca':'capablanca','Alekhine':'alekhine','Bogoljubov':'bogoljubov','Euwe':'euwe','Botvinnik':'botvinnik','Smyslov':'smyslov','Keres':'keres','Reshevsky':'reshevsky','Bronstein':'bronstein','Tal':'tal','Petrosian':'petrosian','Spassky':'spassky','Fischer':'fischer','Karpov':'karpov','Korchnoi':'korchnoi','Kasparov':'kasparov','Short':'short','Timman':'timman','Anand':'anand','Kamsky':'kamsky','Khalifman':'khalifman','Akopian':'akopian','Shirov':'shirov','Kramnik':'kramnik','Leko':'leko','Ponomariov':'ponomariov','Ivanchuk':'ivanchuk','Kasimdzhanov':'kasimdzhanov','Adams':'adams','Topalov':'topalov','Gelfand':'gelfand','Carlsen':'carlsen','Karjakin':'karjakin','Caruana':'caruana','Nepomniachtchi':'nepomniachtchi','Ding':'ding','Gukesh':'gukesh','Morozevich':'morozevich'}
+PL={}
+for mid,v in MT.items():
+    nm=re.sub(r'^\d{4}(–\d+)? · ','',v[0]); sl=[SL[w] for w in re.findall(r'[A-Za-zİıö]+',nm) if w in SL]
+    if mid=='1984': sl+=['campomanes']
+    if mid=='2007': sl+=['morozevich']
+    PL[mid]=list(dict.fromkeys(sl))
 shown=set();IM={};missing=[]
 EXTRA={}
 def portrait(s):
