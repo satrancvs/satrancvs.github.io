@@ -464,7 +464,13 @@ function QuoteWithFigure({ chunk, ready }: { chunk: string; ready: boolean }) {
   );
 }
 
-function Figure({ chunk }: { chunk: string }) {
+// Aralarında boş satır olmayan art arda `![…](…)` satırları yan yana bir fotoğraf sırası olur (Dünya Şampiyonası yazısında maçın iki oyuncusu); dar ekranda alta sarar.
+const isFigRow = (c: string) => { const ls = c.split('\n').map((l) => l.trim()); return ls.length > 1 && ls.every((l) => IMG_CHUNK.test(l)); };
+function FigureRow({ chunk }: { chunk: string }) {
+  return <div className="fig-row">{chunk.split('\n').map((l, k) => <Figure key={k} chunk={l.trim()} row />)}</div>;
+}
+
+function Figure({ chunk, row }: { chunk: string; row?: boolean }) {
   const m = chunk.match(IMG_CHUNK);
   if (!m) return null;
   const [, alt, path, caption] = m;
@@ -472,7 +478,7 @@ function Figure({ chunk }: { chunk: string }) {
   const cover = /^images\/[^/]*(adventurous-way|chess-for-zebras)/.test(path);
   const small = cover || isSmallImage(path);
   return (
-    <figure className={`my-10 mx-auto w-full ${small ? 'md:max-w-[480px] text-center' : ''}`} style={small ? undefined : { maxWidth: boxWidth(path) }}>
+    <figure className={row ? 'fig-row-item text-center' : `my-10 mx-auto w-full ${small ? 'md:max-w-[480px] text-center' : ''}`} style={row ? { maxWidth: boxWidth(path) } : small ? undefined : { maxWidth: boxWidth(path) }}>
       <ProgressiveImage path={path} alt={alt} cover={cover} />
       {caption && (
         <figcaption className="credit mt-3 text-[color:var(--mute)]">
@@ -818,6 +824,8 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       );
     } else if (c.startsWith('>') && /^>\s*(!\[|\[FEN\s)/m.test(c)) {
       out.push(<QuoteWithFigure key={i} chunk={c} ready={cp === 'ready'} />);
+    } else if (isFigRow(c)) {
+      out.push(<FigureRow key={i} chunk={c} />);
     } else if (IMG_CHUNK.test(c)) {
       out.push(<Figure key={i} chunk={c} />);
     } else if (c.startsWith('<figure')) {
