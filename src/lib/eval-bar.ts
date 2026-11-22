@@ -80,7 +80,17 @@ const done = new WeakSet<Element>();
 function attach(player: PlayerEl) {
   if (done.has(player) || !player.ready) return;
   done.add(player);
-  if (player.closest('.live-idle')) return; // maç başlamadan: renksiz, boş oynatıcı; çubuk da yok
+  if (player.closest('.live-idle')) {
+    // maç başlamadan: renksiz, boş oynatıcı; çubuk görünür ama nötr (%50), analiz yok
+    player.ready.then(() => {
+      const ev = player._engine?.evalBar;
+      if (!ev || !ev.bar) return;
+      ev.live = true;
+      ev.setScore(0);
+      ev.setDisabled(false);
+    }).catch(() => {});
+    return;
+  }
   let timer = 0;
   let last = '';
   player.ready.then(() => {
