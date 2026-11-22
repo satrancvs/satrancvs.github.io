@@ -16,7 +16,7 @@ import { watchVariationFix } from '@/lib/variation-fix';
 import { GLYPH_COLOR } from '@/components/FenDiagram';
 import { splitChunks } from '@/lib/split-chunks';
 import LiveMatch from '@/components/LiveMatch';
-import MatchPicker from '@/components/MatchPicker';
+import GameHub from '@/components/GameHub';
 import type { PickItem } from '@/components/MatchPicker';
 import { watchEvalBar } from '@/lib/eval-bar';
 
@@ -569,7 +569,7 @@ const CONTINUED = /^Devamı gelecek\./;
 const LIVE_MATCH = /^\[CANLI MAÇ\]$/;
 // `[MAÇ SEÇİCİ]`: kendisinden sonraki, bir sonraki `### ` başlığa kadar olan `#### Yıl · Oyuncular` blokları (yer, fotoğraflar, kısa metin, `[Event …]` oyunu)
 // oynatıcı + kart rafları görünümü olur (MatchPicker); oyunlar tek tek değil, seçilen oyun oynatıcıda oynatılır.
-const MATCH_PICKER = /^\[MAÇ SEÇİCİ\]$/;
+const MATCH_PICKER = /^\[MAÇ SEÇİCİ(?::\s*([^\]]+))?\]$/;
 function Continued({ text }: { text: string }) {
   const rest = text.replace(CONTINUED, '').trim().replace(/\.$/, ''); // son nokta bağlantı hapından sonra tek başına kalmasın
   return (
@@ -729,6 +729,46 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     window.setTimeout(() => scrollToGame(id, false, toc.find((t) => t.id === id)?.game), 80);
   }, [cp]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  // `[MAÇ SEÇİCİ: Etiket]` işaretinden sonraki `#### …` blokları: oyun seçici öğeleri. Üstteki oynatıcının (GameHub) menüsünde bir sekme olur; işaretin kendi yerinde bir şey çizilmez.
+  const collectPicker = (i: number): { items: PickItem[]; end: number } => {
+    type Draft = { label: string; site: string; blurb: string; figs: string[]; gi?: number; header?: string; moves?: string };
+    const drafts: Draft[] = [];
+    let cur: Draft | null = null;
+    let j = i + 1;
+    for (; j < chunks.length && !chunks[j].trim().startsWith('### '); j++) {
+      const t = chunks[j].trim();
+      if (t.startsWith('#### ')) { cur = { label: t.slice(5).trim(), site: '', blurb: '', figs: [] }; drafts.push(cur); }
+      else if (!cur) continue;
+      else if (/^\*[^*]+\*$/.test(t)) cur.site = t.slice(1, -1);
+      else if (t.startsWith('[Event ')) { const gm = gameMoves(chunks, j); cur.gi = j; cur.header = t; cur.moves = gm.moves; if (gm.own) j++; }
+      else if (isFigRow(t) || IMG_CHUNK.test(t)) cur.figs.push(t);
+      else cur.blurb += `${cur.blurb ? ' ' : ''}${t}`;
+    }
+    const items: PickItem[] = drafts.filter((d) => d.header).map((d) => {
+      const item = games.find((g) => g.at === d.gi)!;
+      const paths = d.figs.flatMap((f) => [...f.matchAll(/\]\(([^)\s]+)/g)].map((m) => m[1]));
+      const names = d.label.replace(/^[^·]*·\s*/, '').split(/\s+[–,]\s+|,\s*/).map((n) => n.trim().split(' ').pop()!.toLowerCase().replace('ó', 'o').replace('á', 'a').replace('ı', 'i'));
+      const portrait = names.map((n) => `images/dunya-${n}.jpg`).find(hasImage); // fotoğrafsız maçta oyunculardan birinin portresi
+      const thumb = paths.find((x) => /dunya-afis/.test(x)) ?? paths.find((x) => /dunya-mac-/.test(x)) ?? paths[0] ?? portrait;
+      return {
+        id: item.id,
+        year: Number(d.label.match(/^\d{4}/)?.[0] ?? 0),
+        label: d.label,
+        title: d.label.replace(/^[^·]*·\s*/, ''),
+        site: d.site,
+        blurb: d.blurb,
+        thumb,
+        figures: d.figs.length ? d.figs.map((f, k) => (isFigRow(f) ? <FigureRow key={k} chunk={f} /> : <Figure key={k} chunk={f} />)) : null,
+        screen: (
+          <GameSection item={item}>
+            {useFallback ? <Game header={d.header!} moves={d.moves!} /> : <PgnGame header={d.header!} moves={d.moves!} />}
+          </GameSection>
+        ),
+      };
+    });
+    return { items, end: j };
+  };
+
   for (let i = 0; i < chunks.length; i++) {
     const c = chunks[i].trim();
     if (toc.length > 1 && !tocPlaced && i === toc[0].at) {
@@ -798,46 +838,14 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       );
       if (own) i++;
     } else if (MATCH_PICKER.test(c)) {
-      type Draft = { label: string; site: string; blurb: string; figs: string[]; gi?: number; header?: string; moves?: string };
-      const drafts: Draft[] = [];
-      let cur: Draft | null = null;
-      let j = i + 1;
-      for (; j < chunks.length && !chunks[j].trim().startsWith('### '); j++) {
-        const t = chunks[j].trim();
-        if (t.startsWith('#### ')) { cur = { label: t.slice(5).trim(), site: '', blurb: '', figs: [] }; drafts.push(cur); }
-        else if (!cur) continue;
-        else if (/^\*[^*]+\*$/.test(t)) cur.site = t.slice(1, -1);
-        else if (t.startsWith('[Event ')) { const gm = gameMoves(chunks, j); cur.gi = j; cur.header = t; cur.moves = gm.moves; if (gm.own) j++; }
-        else if (isFigRow(t) || IMG_CHUNK.test(t)) cur.figs.push(t);
-        else cur.blurb += `${cur.blurb ? ' ' : ''}${t}`;
-      }
-      const items: PickItem[] = drafts.filter((d) => d.header).map((d) => {
-        const item = games.find((g) => g.at === d.gi)!;
-        const paths = d.figs.flatMap((f) => [...f.matchAll(/\]\(([^)\s]+)/g)].map((m) => m[1]));
-        const names = d.label.replace(/^[^·]*·\s*/, '').split(/\s+[–,]\s+|,\s*/).map((n) => n.trim().split(' ').pop()!.toLowerCase().replace('ó', 'o').replace('á', 'a').replace('ı', 'i'));
-        const portrait = names.map((n) => `images/dunya-${n}.jpg`).find(hasImage); // fotoğrafsız maçta oyunculardan birinin portresi
-        const thumb = paths.find((x) => /dunya-afis/.test(x)) ?? paths.find((x) => /dunya-mac-/.test(x)) ?? paths[0] ?? portrait;
-        return {
-          id: item.id,
-          year: Number(d.label.match(/^\d{4}/)?.[0] ?? 0),
-          label: d.label,
-          title: d.label.replace(/^[^·]*·\s*/, ''),
-          site: d.site,
-          blurb: d.blurb,
-          thumb,
-          figures: d.figs.length ? d.figs.map((f, k) => (isFigRow(f) ? <FigureRow key={k} chunk={f} /> : <Figure key={k} chunk={f} />)) : null,
-          screen: (
-            <GameSection item={item}>
-              {useFallback ? <Game header={d.header!} moves={d.moves!} /> : <PgnGame header={d.header!} moves={d.moves!} />}
-            </GameSection>
-          ),
-        };
-      });
+      const { items, end } = collectPicker(i);
       gameNo += items.length;
-      out.push(<MatchPicker key={i} items={items} />);
-      i = j - 1;
+      i = end - 1;
     } else if (LIVE_MATCH.test(c)) {
-      out.push(<LiveMatch key={i} ready={cp === 'ready'} />);
+      // Üstteki oynatıcı: canlı maç + (yazının ilerisindeki) seçici gruplar; hepsine oynatıcının menüsünden ulaşılır.
+      const groups: { label: string; items: PickItem[] }[] = [];
+      chunks.forEach((x, k) => { const m = x.trim().match(MATCH_PICKER); if (m) groups.push({ label: (m[1] ?? 'Seçme oyunlar').trim(), items: collectPicker(k).items }); });
+      out.push(<GameHub key={i} ready={cp === 'ready'} groups={groups} />);
     } else if (CONTINUED.test(c)) {
       out.push(<Continued key={i} text={c} />);
     } else if (FEN_ROW.test(c)) {

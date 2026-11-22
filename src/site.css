@@ -668,3 +668,12 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .art-table tr.era-note td { padding: .5rem 1.1rem; font-style: italic; color: var(--mute); font-size: 1.0625rem; border-bottom: 1px dashed var(--line); background: color-mix(in srgb, var(--accent) 7%, transparent); }
 .art-table tr.era-note td span { font-family: 'JetBrains Mono', ui-monospace, monospace; font-style: normal; font-size: 12px; letter-spacing: .12em; color: var(--accent); margin-right: .6rem; }
 .art-table tbody tr:not(.era):not(.era-note) td:first-child { border-left: 2px solid var(--accent); }
+
+/* Üstteki oynatıcının menüsü (src/components/GameHub.tsx) */
+.hub { margin: 0 0 3.5rem; }
+.hub-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; margin: 0 0 1.5rem; }
+.hub-tabs button { height: 2.25rem; padding: 0 1rem; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--fg); font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; cursor: pointer; transition: background .15s, border-color .15s; }
+.hub-tabs button:hover { border-color: var(--accent); }
+.hub-tabs button.on { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.hub .live-match { margin-bottom: 0; }
+.hub .picker { margin-top: 0; }
