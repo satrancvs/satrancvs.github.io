@@ -86,6 +86,8 @@ Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının ke
 </tbody>
 </table>
 
+Tablo ünvanın kimden kime geçtiğini gösteriyor; şimdi bu geçişleri oyun oyun izleyelim. Aşağıda 1886'dan bugüne oynanmış 56 ünvan maçının her biri için belirleyici bir oyun var, en yeniden en eskiye doğru sıralı. İlk durak, ünvanın en son el değiştirdiği maç: Aralık 2024'te Singapur'da Ding Liren – Gukesh maçının 14. ve son oyunu. Gukesh bu oyunda Ding'in hatasından yararlanıp maçı 7½–6½ kazandı. Aşağıdaki şeritten dilediğiniz maçı seçebilirsiniz.
+
 [MAÇ SEÇİCİ GÖSTER: Tüm ünvan maçları]
 
 [MAÇ SEÇİCİ: Gukesh – Sindarov karşılaşmaları]
