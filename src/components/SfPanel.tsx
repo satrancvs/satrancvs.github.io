@@ -65,12 +65,6 @@ export default function SfPanel({ boardRef, idle = false, idleText = '' }: { boa
         <span>{engineOn ? 'Stockfish 19 · canlı analiz' : 'Stockfish 19 · durduruldu'}</span>
         <button type="button" role="switch" aria-checked={engineOn} aria-label="Stockfish analizi" title={engineOn ? 'Analizi durdur' : 'Analizi başlat'} className="live-sf-switch" onClick={() => setEngineEnabled(!engineOn)}><i /></button>
       </div>
-      <p className="live-sf-num f-display">{ev ? ev.num : '—'}</p>
-      <p className="live-sf-label">{ev ? ev.label : !engineOn ? 'Analiz durduruldu. Anahtarla yeniden başlatabilirsiniz.' : idle ? idleText : 'Analiz ediliyor...'}</p>
-      <p className="live-sf-pv-title f-mono">{cfg.lines > 1 ? 'En iyi devam yolları' : 'En iyi devam yolu'}</p>
-      {rows.length ? (
-        <ol className="live-sf-lines">{rows.map((r, i) => <li key={i}>{cfg.lines > 1 && <b className="f-mono">{r.num}</b>}<span>{r.text}</span></li>)}</ol>
-      ) : <p className="live-sf-pv">—</p>}
       <div className="live-sf-opts f-mono">
         <div className="sf-step" role="group" aria-label="Derinlik">
           <span>Derinlik</span>
@@ -85,6 +79,12 @@ export default function SfPanel({ boardRef, idle = false, idleText = '' }: { boa
           <button type="button" aria-label="Aday sayısını artır" disabled={cfg.lines >= LINE_COUNTS[LINE_COUNTS.length - 1]} onClick={() => set(cfg.depth, cfg.lines + 1)}>+</button>
         </div>
       </div>
+      <p className="live-sf-num f-display">{ev ? ev.num : '—'}</p>
+      <p className="live-sf-label">{ev ? ev.label : !engineOn ? 'Analiz durduruldu. Anahtarla yeniden başlatabilirsiniz.' : idle ? idleText : 'Analiz ediliyor...'}</p>
+      <p className="live-sf-pv-title f-mono">{cfg.lines > 1 ? 'En iyi devam yolları' : 'En iyi devam yolu'}</p>
+      {rows.length ? (
+        <ol className="live-sf-lines">{rows.map((r, i) => <li key={i}>{cfg.lines > 1 && <b className="f-mono">{r.num}</b>}<span>{r.text}</span></li>)}</ol>
+      ) : <p className="live-sf-pv">—</p>}
     </aside>
   );
 }
