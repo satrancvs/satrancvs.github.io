@@ -970,3 +970,11 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .tl-gutter:not(.big) { top: 1.15rem; font-size: 11px; line-height: 1.5; letter-spacing: .1em; text-transform: uppercase; font-weight: 500; }
   .tl-note p { margin-left: 0; }
 }
+/* Canlı ekran: tahta daha büyük (sağ ve sol sütun daralır), üç sütun aynı hizada biter ("Sıradaki bölüm" kartı sağ sütunun altına yaslanır) */
+@media (min-width: 56em) {
+  .live-match { --live-bs: max(300px, min(780px, 100svh - 10rem, 100vw - 3rem - 22rem - 14.5rem - 4.5rem - 26px)); grid-template-columns: max-content 22rem; grid-template-rows: repeat(7, auto) 1fr; }
+  .live-stage > .live-sf { flex-basis: 14.5rem; }
+  .live-match > .sec-link { grid-row: 8; align-self: end; margin-top: 1rem; }
+}
+/* Maç başlamadan hamle listesi yer kaplamasın: üç sütun tahtanın alt kenarında biter */
+.live-idle .video-moves, .live-idle .video-comment { display: none !important; }
