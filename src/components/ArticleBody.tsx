@@ -17,6 +17,7 @@ import { GLYPH_COLOR } from '@/components/FenDiagram';
 import { splitChunks } from '@/lib/split-chunks';
 import LiveMatch from '@/components/LiveMatch';
 import GameHub from '@/components/GameHub';
+import MatchPicker from '@/components/MatchPicker';
 import type { PickItem } from '@/components/MatchPicker';
 import { watchEvalBar } from '@/lib/eval-bar';
 
@@ -570,6 +571,8 @@ const LIVE_MATCH = /^\[CANLI MAÇ\]$/;
 // `[MAÇ SEÇİCİ]`: kendisinden sonraki, bir sonraki `### ` başlığa kadar olan `#### Yıl · Oyuncular` blokları (yer, fotoğraflar, kısa metin, `[Event …]` oyunu)
 // oynatıcı + kart rafları görünümü olur (MatchPicker); oyunlar tek tek değil, seçilen oyun oynatıcıda oynatılır.
 const MATCH_PICKER = /^\[MAÇ SEÇİCİ(?::\s*([^\]]+))?\]$/;
+// `[MAÇ SEÇİCİ GÖSTER: Etiket]`: o etiketli seçici grubu üstteki menüden çıkar, işaretin yerinde tek başına bir oynatıcı olarak çizilir.
+const INLINE_PICKER = /^\[MAÇ SEÇİCİ GÖSTER:\s*([^\]]+)\]$/;
 function Continued({ text }: { text: string }) {
   const rest = text.replace(CONTINUED, '').trim().replace(/\.$/, ''); // son nokta bağlantı hapından sonra tek başına kalmasın
   return (
@@ -852,8 +855,15 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     } else if (LIVE_MATCH.test(c)) {
       // Üstteki oynatıcı: canlı maç + (yazının ilerisindeki) seçici gruplar; hepsine oynatıcının menüsünden ulaşılır.
       const groups: { label: string; items: PickItem[]; flat?: boolean }[] = [];
-      chunks.forEach((x, k) => { const m = x.trim().match(MATCH_PICKER); if (m) { const label = (m[1] ?? 'Seçme oyunlar').trim(); groups.push({ label, items: collectPicker(k).items, flat: /Gukesh/.test(label) }); } });
+      const inline = new Set(chunks.map((x) => x.trim().match(INLINE_PICKER)?.[1].trim()).filter(Boolean));
+      chunks.forEach((x, k) => { const m = x.trim().match(MATCH_PICKER); if (m) { const label = (m[1] ?? 'Seçme oyunlar').trim(); if (!inline.has(label)) groups.push({ label, items: collectPicker(k).items, flat: /Gukesh/.test(label) }); } });
       out.push(<GameHub key={i} ready={cp === 'ready'} groups={groups} />);
+    } else if (INLINE_PICKER.test(c)) {
+      // Menüden ayrılmış tek seçici (Eskiden nasıldı? bölümünün sonu): aynı tasarım, yalnızca o grubun oyunları.
+      const want = c.match(INLINE_PICKER)![1].trim();
+      let items: PickItem[] = [];
+      chunks.forEach((x, k) => { const m = x.trim().match(MATCH_PICKER); if (m && (m[1] ?? '').trim() === want) items = collectPicker(k).items; });
+      if (items.length) out.push(<section key={i} className="hub hub-solo" aria-label={want}><MatchPicker items={items} flat={/Gukesh/.test(want)} /></section>);
     } else if (CONTINUED.test(c)) {
       out.push(<Continued key={i} text={c} />);
     } else if (FEN_ROW.test(c)) {

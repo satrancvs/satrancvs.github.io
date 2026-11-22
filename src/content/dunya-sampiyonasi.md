@@ -3,15 +3,15 @@
 
 [CANLI MAÇ]
 
-24 Kasım 2026'da İsviçre'nin Cenevre yakınlarındaki Cologny'de, Fondation Martin Bodmer'de bir Dünya Satranç Şampiyonası maçı başlıyor: şampiyon Gukesh Dommaraju (Hindistan) ile meydan okuyucu Javokhir Sindarov (Özbekistan) karşı karşıya. İkisi de 20 yaşında; FIDE'nin deyişiyle tarihin en genç dünya şampiyonası karşılaşması.
+24 Kasım 2026'da İsviçre'nin Cenevre yakınlarındaki Cologny'de, Fondation Martin Bodmer'de bir Dünya Satranç Şampiyonası maçı başlıyor: şampiyon Gukesh Dommaraju (Hindistan) ile şampiyon adayı Javokhir Sindarov (Özbekistan) karşı karşıya. İkisi de 20 yaşında; FIDE'nin deyişiyle tarihin en genç dünya şampiyonası karşılaşması.
 
 FIDE'nin resmî maç sitesi: [worldchampionship.fide.com](https://worldchampionship.fide.com/).
 
 ### Neden Gukesh ve Sindarov?
 
-**Gukesh** şampiyon, çünkü ünvanı Aralık 2024'te Singapur'da, o zamanki şampiyon Ding Liren'i 7½–6½ yenerek aldı. 18 yaşında olan Gukesh, resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu oldu. Oraya da bir Adaylar Turnuvası'nı kazanarak gelmişti (Toronto 2024; 17 yaşında en genç meydan okuyucu). Yani Gukesh sistemin kapılarından geçip ünvanı aldı; şimdi savunuyor.
+**Gukesh** şampiyon, çünkü ünvanı Aralık 2024'te Singapur'da, o zamanki şampiyon Ding Liren'i 7½–6½ yenerek aldı. 18 yaşında olan Gukesh, resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu oldu. Oraya da bir Adaylar Turnuvası'nı kazanarak gelmişti (Toronto 2024; 17 yaşında en genç şampiyon adayı). Yani Gukesh sistemin kapılarından geçip ünvanı aldı; şimdi savunuyor.
 
-**Sindarov** meydan okuyucu, çünkü sistemin ikinci kapısından, yani on dört turluk Adaylar Turnuvası'ndan birinci çıktı. Yolu şöyle:
+**Sindarov** şampiyon adayı, çünkü sistemin ikinci kapısından, yani on dört turluk Adaylar Turnuvası'ndan birinci çıktı. Yolu şöyle:
 
 - Kasım 2025'te Goa'daki **FIDE Dünya Kupası**'nı (206 oyunculu eleme turnuvası) kazandı; 16. seri olarak başlamış, finalde Wei Yi'yi ancak ikinci hızlı oyun kararında yenmişti. 19 yaş 11 ayla en genç Dünya Kupası galibi ve ilk Özbek galip oldu. Bu zafer ona Adaylar'a giriş bileti verdi.
 - Mart–Nisan 2026'da Kıbrıs'ın Pegeia kasabasında, sekiz oyunculu çift devreli **Adaylar Turnuvası**'nı 14 turda **10 puanla** kazandı (altı galibiyet, hiç yenilgi yok); turnuvayı bir tur kala garantiledi. Bu, mevcut çift devreli biçimde alınmış en yüksek puan.
@@ -25,17 +25,6 @@ Bu soru iki ayrı yanıt istiyor:
 - **Caruana ve Nakamura oynadı, ama kazanamadı.** Caruana 2024 FIDE Circuit galibi olarak, Nakamura ise 2025 Ağustos–2026 Ocak arasındaki en yüksek ortalama reytingle (ortalama 2810,5) Adaylar'a girdi; ikisi de 14 turun hepsini oynadı. Caruana üçüncü, Nakamura beşinci oldu. Nakamura'nın bu yoldan girişi tartışma konusu olmuştu: gerekli oyun sayısını doldurmak için dört ayrı Kuzey Amerika turnuvasına katılmıştı.
 - **Carlsen oynamadı.** Carlsen, Temmuz 2022'de ünvanını savunmayacağını açıklamıştı; Adaylar'a da katılmadı. Reyting yoluyla girişin şartı, belirlenen dönemde en az 40 reytingli klasik oyun oynamaktı; Carlsen o pencerede yalnızca 16 oyun oynamıştı (ortalaması 2839,3 ile en yüksekti, ama oyun sayısı yetmiyordu). Üstelik Adaylar'a girmekle ilgilenmediğini açıkça söylemişti: yani girmedi, çünkü girmek istemedi ve girmek için gereken oyun sayısını da oynamadı. Eylül 2026'daki bir söyleşide de Sindarov için “oldukça belirgin bir favori” demişti.
 
-![Magnus Carlsen](images/dunya-carlsen.jpg "<span lang="en">Magnus Carlsen</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
-![Hikaru Nakamura](images/dunya-nakamura.jpg "<span lang="en">Hikaru Nakamura</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">ChessKelly</span> · <span lang="en">CC BY 4.0</span>")
-![Fabiano Caruana](images/dunya-caruana.jpg "<span lang="en">Fabiano Caruana</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Frans Peeters</span> · <span lang="en">CC BY-SA 2.0</span>")
-
-![Anish Giri](images/dunya-giri.jpg "<span lang="en">Anish Giri</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">TheBoburshokh</span> · <span lang="en">CC BY 4.0</span>")
-![Wei Yi](images/dunya-weiyi.jpg "<span lang="en">Wei Yi</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Frans Peeters</span> · <span lang="en">CC BY-SA 2.0</span>")
-![Matthias Blübaum](images/dunya-blubaum.jpg "<span lang="en">Matthias Blübaum</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
-
-![R Praggnanandhaa](images/dunya-pragg.jpg "<span lang="en">R Praggnanandhaa</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Frans Peeters</span> · <span lang="en">CC BY-SA 2.0</span>")
-![Andrey Esipenko](images/dunya-esipenko.jpg "<span lang="en">Andrey Esipenko</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
-
 Başka bir deyişle “dünyanın en iyisi” ile “dünya şampiyonu” aynı şey olmak zorunda değil. Ünvan, kurallarla belirlenmiş bir döngüye girmeyi, o döngüyü kazanmayı ve ünvan sahibini bir maçta yenmeyi gerektirir. Sistem böyle kurulduğundan, ünlü bir adın bu yarışa girmeyi seçmemesi mümkün; ve bir yıl içinde dünyanın en formda oyuncusu bile Adaylar'da kötü bir iki hafta geçirebilir. Bu yıl Sindarov'un tüm turnuvada yenilmemesi tesadüf değil, ama Nakamura ve Caruana'nın tablonun ortalarında kalması da sistemin doğal sonucu.
 
 #### Maç nasıl oynanıyor?
@@ -46,14 +35,18 @@ Başka bir deyişle “dünyanın en iyisi” ile “dünya şampiyonu” aynı 
 - **Ödül fonu 2,5 milyon dolar**: kazanılan her oyun için 200.000 dolar, kalanı eşit paylaşılır. Skor 7½–6½ ise kazanan 1,3 milyon, kaybeden 1,2 milyon dolar alır.
 - Maç 24 Kasım–12 Aralık arasında; dinlenme günleri 27 Kasım, 1, 5 ve 9 Aralık; eşitlik halinde ek oyunlar 12 Aralık'ta.
 
-Kâğıt üzerinde Sindarov favori: reytingi 2782 (dünya 4.), Gukesh'in 2710'u (dünya 26.) karşısında. Gukesh'in 2025'ten beri formu düşük; Norveç Satranç 2026 ve Chennai Grand Masters 2026'yı sonuncu bitirdi ve Elo sisteminin 1971'de getirilmesinden beri en düşük reytingli şampiyon. Aralarındaki üç klasik oyunun ikisini Sindarov kazandı; sonuncusu (Tata Steel 2026) 78 hamlelik beraberlikle bitti. Ama bir ünvan maçı reytinglerle oynanmaz: 14 oyun boyunca sinir ve hazırlık da oynar.
+Kâğıt üzerinde Sindarov favori: reytingi 2782 (dünya 4.), Gukesh'in 2710'u (dünya 26.) karşısında. Gukesh'in 2025'ten beri formu düşük; Norveç Satranç 2026 ve Chennai Grand Masters 2026'yı sonuncu bitirdi ve Elo sisteminin 1971'de getirilmesinden beri en düşük reytingli şampiyon. Ama bir ünvan maçı reytinglerle oynanmaz: 14 oyun boyunca sinir ve hazırlık da oynar.
+
+İkisi bugüne kadar altı kez karşı karşıya geldi ve toplam skor **4½–1½ Sindarov lehine**. Klasik oyunlarda üç karşılaşmanın ikisini Sindarov kazandı (Moskova Açık 2018'de Siyahlarla, Şarjah Masters 2022'de Beyazlarla); sonuncusu, Ocak 2026'daki Tata Steel Masters'ta, 78 hamlelik beraberlikle bitti: **2½–½ Sindarov**. Hızlı oyunda tek karşılaşma var; Mayıs 2026'da Varşova'da Gukesh Siyahlarla kazandı: **1–0 Gukesh**. Yıldırım oyunlarda ise aynı turnuvanın iki karşılaşmasını da Sindarov kazandı: **2–0 Sindarov**. Altı oyunun hepsini aşağıdan oynatabilirsiniz.
+
+[MAÇ SEÇİCİ GÖSTER: Gukesh – Sindarov karşılaşmaları]
 
 ### Dünya Şampiyonu nasıl belirleniyor?
 
 Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor; her döngü genelde iki yıl sürer.
 
 1. **Adaylar Turnuvası'na kimler girer?** Sekiz kişi. Bugünkü kurallarda yer şu yollarla kazanılıyor: Dünya Kupası'ndaki ilk üç, Grand Swiss'teki ilk iki (2025'te Giri ve Blübaum), önceki iki yılın FIDE Circuit (turnuva puanı) birincileri (Caruana, Praggnanandhaa) ve bir de reyting kuralı (Nakamura). 2026'nın Adaylar'ı bu dört yolun hepsinden oyuncu getirdi.
-2. **Adaylar Turnuvası**: sekiz oyuncu, çift devreli, 14 tur. Birinci, şampiyonun karşısına çıkacak meydan okuyucudur.
+2. **Adaylar Turnuvası**: sekiz oyuncu, çift devreli, 14 tur. Birinci, şampiyonun karşısına çıkacak şampiyon adayıdır.
 3. **Ünvan maçı**: 14 klasik oyunluk maç. Şampiyon, **kendi ünvanını savunarak** doğrudan maça gelir; Adaylar'a katılmaz.
 
 ### Eskiden nasıldı?
@@ -80,7 +73,7 @@ Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının ke
 <tr><td><strong>Fischer</strong> (1972–75)</td><td>1972, Reykjavik: <strong>Spassky</strong>'e karşı 12½–8½ (+7 −3 =11)</td><td>1975'te şartları kabul edilmediği için çekildi; ünvanı oynamadan kaybetti.</td></tr>
 <tr><td><strong>Spassky</strong> (1969–72)</td><td>1969, <strong>Petrosian</strong>'a karşı</td><td>1972'de Reykjavik'te <strong>Fischer</strong>'e 12½–8½ kaybetti.</td></tr>
 <tr><td><strong>Petrosian</strong> (1963–69)</td><td>1963, <strong>Botvinnik</strong>'e karşı 12½–9½</td><td>1966'da <strong>Spassky</strong>'i 12½–11½ yendi; 1969'da <strong>Spassky</strong>'e 12½–10½ kaybetti.</td></tr>
-<tr class="era-note"><td colspan="3"><span>1963</span> Kaybeden şampiyonun otomatik rövanş hakkı kaldırıldı</td></tr>
+<tr class="era-note"><td colspan="3"><span>1963</span> Kaybeden şampiyonun doğrudan rövanş hakkı kaldırıldı</td></tr>
 <tr><td><strong>Tal</strong> (1960–61)</td><td>1960, <strong>Botvinnik</strong>'e karşı 12½–8½</td><td>1961'de <strong>Botvinnik</strong> ile rövanşı 13–8 kaybetti.</td></tr>
 <tr><td><strong>Smyslov</strong> (1957–58)</td><td>1957, <strong>Botvinnik</strong>'e karşı 12½–9½</td><td>1958'de <strong>Botvinnik</strong> ile rövanşı 12½–10½ kaybetti.</td></tr>
 <tr><td><strong>Botvinnik</strong> (1948–57, 1958–60, 1961–63)</td><td>1948 Lahey–Moskova <strong>beş kişilik maç turnuvası</strong></td><td>1951 <strong>Bronstein</strong> 12–12 (ünvan şampiyonda kaldı); 1954 <strong>Smyslov</strong> 12–12. 1957'de <strong>Smyslov</strong>'a, 1960'ta <strong>Tal</strong>'e yenildi; 1958'de <strong>Smyslov</strong> ile, 1961'de <strong>Tal</strong> ile rövanşları kazanıp ünvanı iki kez geri aldı.</td></tr>
@@ -93,7 +86,7 @@ Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının ke
 </tbody>
 </table>
 
-Tablodan iki şey okunuyor. Birincisi, **eşitlikte ünvan şampiyonda kalır**: 1951, 1954 ve 1987'de bu kural işledi. İkincisi, **rövanş hakkı** (1948–63) şampiyonlara ikinci bir şans verdi: Smyslov ve Tal'in birer yıllık ünvanlarının ve Botvinnik'in üç ayrı saltanatının arkasında bu kural var.
+[MAÇ SEÇİCİ GÖSTER: Tüm ünvan maçları]
 
 [MAÇ SEÇİCİ: Gukesh – Sindarov karşılaşmaları]
 
@@ -1029,7 +1022,7 @@ Petrosian ünvanını 12½–11½ gibi dar farkla korudu. Seçtiğimiz oyun 22. 
 
 ![Mikhail Botvinnik](images/dunya-botvinnik.jpg "<span lang="en">Mikhail Botvinnik</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Harry Pot for Anefo ]]</span> · <span lang="en">CC BY-SA 3.0 nl</span>")
 
-Petrosian 22 oyunda 12½–9½ kazandı; bu maçtan sonra kaybeden şampiyonun otomatik rövanş hakkı kaldırıldı. Seçtiğimiz oyun 19. oyun. FIDE Müzesi: [Tigran Petrosian](https://museum.fide.com/champions/tigran-petrosian).
+Petrosian 22 oyunda 12½–9½ kazandı; bu maçtan sonra kaybeden şampiyonun doğrudan rövanş hakkı kaldırıldı. Seçtiğimiz oyun 19. oyun. FIDE Müzesi: [Tigran Petrosian](https://museum.fide.com/champions/tigran-petrosian).
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -1447,7 +1440,7 @@ Chigorin’le ikinci maç, 23 oyunda 12½–10½. Seçtiğimiz oyun, maçı biti
 
 [KART images/dunya-steinitz.jpg]
 
-Steinitz, Rus meydan okuyucuyu 17 oyunda 10½–6½ yendi. Seçtiğimiz oyun 16. oyun. FIDE Müzesi: [Wilhelm Steinitz](https://museum.fide.com/champions/wilhelm-steinitz).
+Steinitz, Rus şampiyon adayını 17 oyunda 10½–6½ yendi. Seçtiğimiz oyun 16. oyun. FIDE Müzesi: [Wilhelm Steinitz](https://museum.fide.com/champions/wilhelm-steinitz).
 
 [Event "Dünya Şampiyonası"]
 [Site "Havana"]
