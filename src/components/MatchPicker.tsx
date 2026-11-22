@@ -60,6 +60,11 @@ export default function MatchPicker({ items, flat = false }: { items: PickItem[]
       </div>
 
       <div className="mpb-info">
+        <div className="mpb-hero" key={cur.id} aria-hidden="true">
+          {cur.thumb ? <ProgressiveImage path={cur.thumb} alt="" thumb position="50% 25%" /> : <span className="mpb-noimg f-display">{cur.year}</span>}
+          <span className="mpb-hero-num f-mono"><i className="mpa-led" />OYUN {two(idx + 1)}<span>/{two(items.length)}</span></span>
+          <span className="mpb-hero-year f-display">{cur.year}</span>
+        </div>
         <p className="mpb-kicker f-mono">Şimdi oynatılıyor · {cur.site}</p>
         <h4 className="mpb-title f-display">{cur.label}</h4>
         <p className="mpb-blurb"><Markdown options={{ forceInline: true }}>{cur.blurb}</Markdown></p>
