@@ -103,7 +103,7 @@ Tablodan iki şey okunuyor. Birincisi, **eşitlikte ünvan şampiyonda kalır**:
 
 [KART images/dunya-gukesh.jpg]
 
-Grand Chess Tour Polonya ayağında, yıldırım oyunlarda ikisinin ikinci karşılaşması: Sindarov Siyahlarla kazandı. Kayıt: [chessgames.com](https://www.chessgames.com/perl/chessgame?gid=3150962).
+Grand Chess Tour Polonya ayağında, yıldırım oyunlarda ikisinin ikinci karşılaşması: Sindarov Siyahlarla kazandı.
 
 [Event "GCT Süper Yıldırım Polonya"]
 [Site "Varşova"]
@@ -124,7 +124,7 @@ Grand Chess Tour Polonya ayağında, yıldırım oyunlarda ikisinin ikinci karş
 
 [KART images/dunya-sindarov.jpg]
 
-Grand Chess Tour Polonya ayağında, yıldırım oyunlarda Sindarov Beyazlarla kazandı. Kayıt: [chessgames.com](https://www.chessgames.com/perl/chessgame?gid=3150319).
+Grand Chess Tour Polonya ayağında, yıldırım oyunlarda Sindarov Beyazlarla kazandı.
 
 [Event "GCT Süper Yıldırım Polonya"]
 [Site "Varşova"]
@@ -147,7 +147,7 @@ Grand Chess Tour Polonya ayağında, yıldırım oyunlarda Sindarov Beyazlarla k
 
 ![Javokhir Sindarov](images/dunya-x-sindarov-a.jpg "<span lang="en">Javokhir Sindarov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">MiroJP</span> · <span lang="en">CC BY-SA 4.0</span>")
 
-Grand Chess Tour Polonya ayağının hızlı oyun bölümünde Gukesh Siyahlarla kazandı. Kayıt: [chessgames.com](https://www.chessgames.com/perl/chessgame?gid=3148591).
+Grand Chess Tour Polonya ayağının hızlı oyun bölümünde Gukesh Siyahlarla kazandı.
 
 [Event "GCT Süper Hızlı Polonya"]
 [Site "Varşova"]
