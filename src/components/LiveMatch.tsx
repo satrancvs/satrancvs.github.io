@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import SfPanel from '@/components/SfPanel';
+import { usePlayerLoaded } from '@/lib/use-player-loaded';
 
 // Dünya Şampiyonası 2026 (Gukesh – Sindarov) canlı bölümü. Yazıda yalnızca `[CANLI MAÇ]` yazan bir paragraf bu bileşeni çizer.
 //  - Maç başlamadan: renksiz, tıklanamaz, boş bir <pgn-player> ve altında 1. oyuna geri sayım.
@@ -37,7 +38,7 @@ const demoRound = () => {
 };
 
 
-export default function LiveMatch({ ready }: { ready: boolean }) {
+export default function LiveMatch({ ready, onLoaded }: { ready: boolean; onLoaded?: () => void }) {
   const demo = useMemo(demoRound, []);
   const [mounted, setMounted] = useState(false);
   const [now, setNow] = useState(0);
@@ -110,6 +111,7 @@ export default function LiveMatch({ ready }: { ready: boolean }) {
   const fmt = (n: number) => (Number.isInteger(n) ? String(n) : `${Math.floor(n) || ''}½`);
 
   const board = useRef<HTMLDivElement>(null);
+  usePlayerLoaded(board, !!onLoaded, onLoaded);
 
   const host = useRef<HTMLDivElement>(null);
   useEffect(() => {

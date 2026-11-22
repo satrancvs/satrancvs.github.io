@@ -881,3 +881,8 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .picker .mpb-bio { margin-top: 1rem; padding-top: .9rem; border-top: 1px solid var(--line); min-height: 0; }
 .picker .mpb-bio-title { margin: 0 0 .4rem; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--mute); }
 .picker .mpb-bio-text { margin: 0; font-size: 1.0625rem; line-height: 1.5; color: rgb(var(--fg-rgb) / .9); }
+.hub-solo { margin-bottom: 2rem; }
+/* Sırası gelmemiş seçici: yer ayrılır, "Yükleniyor…" yazar */
+.picker-wait { min-height: 105rem; display: grid; place-items: start center; padding-top: 4rem; color: var(--mute); }
+.picker-wait p { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; }
+@media (min-width: 56em) { .picker-wait { min-height: 60rem; } }

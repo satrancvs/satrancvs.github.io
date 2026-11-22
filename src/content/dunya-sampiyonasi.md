@@ -39,6 +39,8 @@ Kâğıt üzerinde Sindarov favori: reytingi 2782 (dünya 4.), Gukesh'in 2710'u 
 
 İkisi bugüne kadar altı kez karşı karşıya geldi ve toplam skor **4½–1½ Sindarov lehine**. Klasik oyunlarda üç karşılaşmanın ikisini Sindarov kazandı (Moskova Açık 2018'de Siyahlarla, Şarjah Masters 2022'de Beyazlarla); sonuncusu, Ocak 2026'daki Tata Steel Masters'ta, 78 hamlelik beraberlikle bitti: **2½–½ Sindarov**. Hızlı oyunda tek karşılaşma var; Mayıs 2026'da Varşova'da Gukesh Siyahlarla kazandı: **1–0 Gukesh**. Yıldırım oyunlarda ise aynı turnuvanın iki karşılaşmasını da Sindarov kazandı: **2–0 Sindarov**. Altı oyunun hepsini aşağıdan oynatabilirsiniz.
 
+#### Aralarındaki oyunlar
+
 [MAÇ SEÇİCİ GÖSTER: Gukesh – Sindarov karşılaşmaları]
 
 ### Dünya Şampiyonu nasıl belirleniyor?
@@ -85,6 +87,8 @@ Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının ke
 <tr><td><strong>Steinitz</strong> (1886–94)</td><td>1886, ABD (New York, St. Louis, New Orleans): <strong>Zukertort</strong>'a karşı 12½–7½, ilk “resmî” maç</td><td>1889 Havana, <strong>Chigorin</strong> 10½–6½; 1890–91 New York, <strong>Gunsberg</strong> 10½–8½; 1892 Havana, <strong>Chigorin</strong> 12½–10½. 1894'te <strong>Lasker</strong>'e kaybetti.</td></tr>
 </tbody>
 </table>
+
+Tablo ünvanın kimden kime geçtiğini gösteriyor; şimdi bu geçişleri oyun oyun izleyelim. Aşağıda 1886'dan bugüne oynanmış 56 ünvan maçının her biri için belirleyici bir oyun var, en yeniden en eskiye doğru sıralı. İlk durak, ünvanın en son el değiştirdiği maç: Aralık 2024'te Singapur'da Ding Liren – Gukesh maçının 14. ve son oyunu. Gukesh bu oyunda Ding'in hatasından yararlanıp maçı 7½–6½ kazandı. Aşağıdaki şeritten dilediğiniz maçı seçebilirsiniz.
 
 [MAÇ SEÇİCİ GÖSTER: Tüm ünvan maçları]
 

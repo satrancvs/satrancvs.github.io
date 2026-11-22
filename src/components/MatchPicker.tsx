@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import Markdown from 'markdown-to-jsx';
 import ProgressiveImage from '@/components/ProgressiveImage';
 import SfPanel from '@/components/SfPanel';
+import { usePlayerLoaded } from '@/lib/use-player-loaded';
 
 // "Seçme: Her bir ünvan maçından bir oyun" bölümü (Dünya Şampiyonası 2026 yazısı): tek oynatıcı, ◀ ▶ ile oyun değiştirme, değişirken parazit,
 // altında seçilen maçın özeti ve fotoğrafları, en altta on yıllara göre dizili kart rafları. Tek bir oyun ekranda bulunur: seçim değişince oynatıcı yeniden kurulur.
@@ -24,7 +25,7 @@ const two = (n: number) => String(n).padStart(2, '0');
 // Türkçe ek, on yılın adının son ünlüsüne göre: 2010'lar (on), 1990'lar (doksan), 1960'lar (altmış), 1940'lar (kırk), 1930'lar (otuz); 2020'ler (yirmi), 2000'ler (bin), 1980'ler (seksen), 1970'ler (yetmiş), 1950'ler (elli).
 const decadeLabel = (y: number) => `${Math.floor(y / 10) * 10}'${[1, 3, 4, 6, 9].includes(Math.floor(y / 10) % 10) ? 'lar' : 'ler'}`;
 
-export default function MatchPicker({ items, flat = false }: { items: PickItem[]; flat?: boolean }) {
+export default function MatchPicker({ items, flat = false, gate = true, onLoaded }: { items: PickItem[]; flat?: boolean; gate?: boolean; onLoaded?: () => void }) {
   const [idx, setIdx] = useState(0);
   const root = useRef<HTMLElement>(null);
   const screen = useRef<HTMLDivElement>(null);
@@ -51,6 +52,9 @@ export default function MatchPicker({ items, flat = false }: { items: PickItem[]
     el?.scrollIntoView({ inline: 'nearest', block: 'nearest' });
   }, [idx]);
 
+  usePlayerLoaded(screen, gate, onLoaded);
+  // Sırası gelmemiş seçici (üstteki canlı yayın yüklenene kadar): yer ayrılır, içerik çizilmez, sayfa daha hızlı açılır.
+  if (!gate) return <section className="picker picker-wait" aria-busy="true" aria-label="Seçilmiş maçlar"><p className="f-mono">Yükleniyor…</p></section>;
   return (
     <section ref={root} className="picker scroll-mt-8" aria-label="Seçilmiş maçlar">
       <div className="mpb-main">
