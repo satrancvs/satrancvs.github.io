@@ -62,7 +62,7 @@ export default function SfPanel({ boardRef, idle = false, idleText = '' }: { boa
     <aside className={`live-sf${ev ? '' : ' is-wait'}${engineOn ? '' : ' is-off'}`} aria-label="Stockfish canlı analizi" aria-live="off">
       <div className="live-sf-head f-mono">
         <img src={`${import.meta.env.BASE_URL}stockfish/logo.png`} alt="" width="22" height="22" />
-        <span>Stockfish 19 · canlı analiz</span>
+        <span>{engineOn ? 'Stockfish 19 · canlı analiz' : 'Stockfish 19 · durduruldu'}</span>
         <button type="button" role="switch" aria-checked={engineOn} aria-label="Stockfish analizi" title={engineOn ? 'Analizi durdur' : 'Analizi başlat'} className="live-sf-switch" onClick={() => setEngineEnabled(!engineOn)}><i /></button>
       </div>
       <p className="live-sf-num f-display">{ev ? ev.num : '—'}</p>

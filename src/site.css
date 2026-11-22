@@ -1050,3 +1050,9 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 /* Maç seçici: son oyunda sağ alttaki "Sıradaki oyun" kartı yerine "Sıradaki bölüm" kartı */
 @media (min-width: 56em) { .picker .mpb-info > .sec-link { margin-top: auto; } }
 @media (max-width: 55.99em) { .picker .mpb-info > .sec-link { margin-top: 1.4rem; } }
+
+/* Stockfish analizi durdurulunca panel tek satıra iner (yalnızca başlık + anahtar); kaydırma/uzatma kutusu kalkar */
+.live-sf.is-off { contain: none !important; align-self: flex-start !important; overflow: visible !important; padding: .6rem .8rem !important; }
+.live-sf.is-off > :not(.live-sf-head) { display: none !important; }
+.live-sf.is-off .live-sf-head { margin: 0; gap: .45rem; font-size: 10px; letter-spacing: .08em; white-space: nowrap; }
+.live-sf.is-off .live-sf-head span { overflow: hidden; text-overflow: ellipsis; }
