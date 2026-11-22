@@ -70,7 +70,7 @@ Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor ve her döngü gene
 
 [ZAMAN ÇİZELGESİ]
 
-Çizelgede adı geçen ünvan maçlarının her birinden bir oyun seçtik: 1886’dan bugüne toplam 56 oyun. Aşağıdan istediğinizi seçip izleyebilirsiniz.
+Çizelgede adı geçen ünvan maçlarının her birinden bir oyun seçtik: 1886’dan bugüne toplam 56 oyun. Değerlendirme işaretleri Stockfish’e ait.
 
 ### Tüm ünvan maçları
 
