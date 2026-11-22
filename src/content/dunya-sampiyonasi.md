@@ -69,7 +69,7 @@ Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının ke
 <tr><td><strong>Fischer</strong> (1972–75)</td><td>1972, Reykjavik: <strong>Spassky</strong>'e karşı 12½–8½ (+7 −3 =11)</td><td>1975'te şartları kabul edilmediği için çekildi; ünvanı oynamadan kaybetti.</td></tr>
 <tr><td><strong>Spassky</strong> (1969–72)</td><td>1969, <strong>Petrosian</strong>'a karşı</td><td>1972'de Reykjavik'te <strong>Fischer</strong>'e 12½–8½ kaybetti.</td></tr>
 <tr><td><strong>Petrosian</strong> (1963–69)</td><td>1963, <strong>Botvinnik</strong>'e karşı 12½–9½</td><td>1966'da <strong>Spassky</strong>'i 12½–11½ yendi; 1969'da <strong>Spassky</strong>'e 12½–10½ kaybetti.</td></tr>
-<tr class="era-note"><td colspan="3"><span>1963</span> Kaybeden şampiyonun otomatik rövanş hakkı kaldırıldı</td></tr>
+<tr class="era-note"><td colspan="3"><span>1963</span> Kaybeden şampiyonun doğrudan rövanş hakkı kaldırıldı</td></tr>
 <tr><td><strong>Tal</strong> (1960–61)</td><td>1960, <strong>Botvinnik</strong>'e karşı 12½–8½</td><td>1961'de <strong>Botvinnik</strong> ile rövanşı 13–8 kaybetti.</td></tr>
 <tr><td><strong>Smyslov</strong> (1957–58)</td><td>1957, <strong>Botvinnik</strong>'e karşı 12½–9½</td><td>1958'de <strong>Botvinnik</strong> ile rövanşı 12½–10½ kaybetti.</td></tr>
 <tr><td><strong>Botvinnik</strong> (1948–57, 1958–60, 1961–63)</td><td>1948 Lahey–Moskova <strong>beş kişilik maç turnuvası</strong></td><td>1951 <strong>Bronstein</strong> 12–12 (ünvan şampiyonda kaldı); 1954 <strong>Smyslov</strong> 12–12. 1957'de <strong>Smyslov</strong>'a, 1960'ta <strong>Tal</strong>'e yenildi; 1958'de <strong>Smyslov</strong> ile, 1961'de <strong>Tal</strong> ile rövanşları kazanıp ünvanı iki kez geri aldı.</td></tr>
