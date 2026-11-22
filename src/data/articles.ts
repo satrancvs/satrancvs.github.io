@@ -15,6 +15,7 @@ import psikolojiMd from '@/content/satranc-mucadelesinde-psikoloji.md?raw';
 import philidorMd from '@/content/buyuk-philidor.md?raw';
 import closingGambitMd from '@/content/closing-gambit.md?raw';
 import alekhineMd from '@/content/alekhine-capablanca.md?raw';
+import dunyaMd from '@/content/dunya-sampiyonasi.md?raw';
 import { toTypography } from '@/lib/curly';
 import data from './articles.json';
 
@@ -40,6 +41,7 @@ const CHUNKS: Record<string, string[]> = {
   'closing-gambit': splitArticle(closingGambitMd).chunks,
   psikoloji: splitArticle(psikolojiMd).chunks,
   'alekhine-capablanca': splitArticle(alekhineMd).chunks,
+  'dunya-sampiyonasi': splitArticle(dunyaMd).chunks,
   'ilk-adim': splitArticle(ilkAdimMd).chunks,
 };
 
