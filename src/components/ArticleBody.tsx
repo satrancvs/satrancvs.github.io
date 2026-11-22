@@ -735,7 +735,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     const drafts: Draft[] = [];
     let cur: Draft | null = null;
     let j = i + 1;
-    for (; j < chunks.length && !chunks[j].trim().startsWith('### '); j++) {
+    for (; j < chunks.length && !chunks[j].trim().startsWith('### ') && !MATCH_PICKER.test(chunks[j].trim()); j++) {
       const t = chunks[j].trim();
       if (t.startsWith('#### ')) { cur = { label: t.slice(5).trim(), site: '', blurb: '', figs: [] }; drafts.push(cur); }
       else if (!cur) continue;
