@@ -614,25 +614,25 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .mpb-now { position: absolute; left: .45rem; bottom: .4rem; z-index: 1; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
 .mpb-name { display: block; margin-top: .45rem; font-size: 14px; line-height: 1.3; color: rgb(var(--fg-rgb) / .85); }
 .mpb-name b { display: block; font-size: 1.15rem; font-weight: 400; color: var(--fg); }
-@media (min-width: 56em) { .picker { width: min(62rem, calc(100vw - 3rem)); margin-left: 50%; transform: translateX(-50%); padding: 18px 18px 1.5rem; } }
+@media (min-width: 56em) { .picker { width: auto; margin: 0; transform: none; border-radius: 0; box-shadow: none; padding: 24px max(1.5rem, calc((100% - 92rem) / 2)) 2rem; } }
 @media (max-width: 40em) { .mpa-title { flex-basis: 100%; order: 3; white-space: normal; } .mpb-card { flex-basis: 9.5rem; } }
 /* Oyunlarda yorum yok: oynatıcı tek sütunda kalmasın. Geniş ekranda iki sütun ve daha büyük tahta. */
 .picker .mpa-screen { container-type: inline-size; }
 .picker .cp-game pgn-player:not(pgn-study pgn-player) { --board-size: min(400px, calc(100cqw - 1rem)); }
 @media (min-width: 56em) {
-  .picker .mpb-main { display: grid; grid-template-columns: minmax(0, 1fr) 19rem; gap: 0 1.75rem; align-items: start; }
+  .picker .mpb-main { display: grid; grid-template-columns: minmax(0, 1fr) 26rem; gap: 0 2.25rem; align-items: start; }
   .picker .mpb-info { padding: .2rem .25rem 0 0; position: sticky; top: 1.5rem; }
   .picker .mpb-title { font-size: clamp(1.6rem, 1.1rem + 1.2vw, 2rem); }
   .picker .mpb-blurb { font-size: 1.0625rem; }
   .picker .mpb-figs figure { max-width: 100% !important; }
   .picker .mpb-figs .fig-row { flex-direction: column; align-items: stretch; }
-  .picker .cp-game pgn-player:not(pgn-study pgn-player) { --board-size: min(560px, calc(100cqw - 2rem)) !important; transform: none !important; width: 100% !important; max-width: 100% !important; margin: 0 !important; }
+  .picker .cp-game pgn-player:not(pgn-study pgn-player) { --board-size: max(380px, min(760px, 100cqw - 2rem, 100svh - 15rem)) !important; transform: none !important; width: 100% !important; max-width: 100% !important; margin: 0 !important; }
   .picker .cp-game pgn-player .player-container, .live-match .cp-game pgn-player .player-container { margin-inline: auto; }
   .picker .mpa-content .cp-game .game-names { font-size: 1.25rem; }
-  .live-match { width: min(62rem, calc(100vw - 3rem)); margin-left: 50%; transform: translateX(-50%); display: grid; grid-template-columns: minmax(0, 580px) minmax(0, 1fr); column-gap: 2.25rem; align-items: start; text-align: left; }
+  .live-match { width: min(92rem, calc(100% - 3rem)); margin-inline: auto; transform: none; display: grid; grid-template-columns: minmax(0, 1fr) 26rem; column-gap: 2.25rem; align-items: start; text-align: left; }
   .live-match > .live-board { grid-column: 1; grid-row: 1 / span 8; container-type: inline-size; }
   .live-match > :not(.live-board) { grid-column: 2; }
-  .live-match .live-board pgn-player:not(pgn-study pgn-player) { --board-size: min(560px, calc(100cqw - 2rem)) !important; transform: none !important; width: 100% !important; max-width: 100% !important; margin: 0 !important; }
+  .live-match .live-board pgn-player:not(pgn-study pgn-player) { --board-size: max(380px, min(760px, 100cqw - 2rem, 100svh - 15rem)) !important; transform: none !important; width: 100% !important; max-width: 100% !important; margin: 0 !important; }
   .picker .cp-game pgn-player .player-container, .live-match .cp-game pgn-player .player-container { margin-inline: auto; }
   .live-match .live-rounds { justify-content: flex-start; }
   .live-match .live-kicker { margin-top: .4rem; }
@@ -661,3 +661,9 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 
 /* Dünya Şampiyonası yazısı: tahtanın sağındaki oynat/yeniden oynat düğmesi gösterilmez */
 .hub .board-wrap > .play { display: none !important; }
+
+/* Üstteki oynatıcı geniş ekranda tam genişlik (full bleed): makale sütunundan taşar. */
+@media (min-width: 56em) {
+  .hub { width: 100vw; margin-left: calc(50% - 50vw); }
+  html.post-page, html.post-page body { overflow-x: clip; }
+}
