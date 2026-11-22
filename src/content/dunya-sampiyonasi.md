@@ -39,6 +39,8 @@ Kâğıt üzerinde Sindarov favori: reytingi 2782 (dünya 4.), Gukesh'in 2710'u 
 
 İkisi bugüne kadar altı kez karşı karşıya geldi ve toplam skor **4½–1½ Sindarov lehine**. Klasik oyunlarda üç karşılaşmanın ikisini Sindarov kazandı (Moskova Açık 2018'de Siyahlarla, Şarjah Masters 2022'de Beyazlarla); sonuncusu, Ocak 2026'daki Tata Steel Masters'ta, 78 hamlelik beraberlikle bitti: **2½–½ Sindarov**. Hızlı oyunda tek karşılaşma var; Mayıs 2026'da Varşova'da Gukesh Siyahlarla kazandı: **1–0 Gukesh**. Yıldırım oyunlarda ise aynı turnuvanın iki karşılaşmasını da Sindarov kazandı: **2–0 Sindarov**. Altı oyunun hepsini aşağıdan oynatabilirsiniz.
 
+#### Aralarındaki oyunlar
+
 [MAÇ SEÇİCİ GÖSTER: Gukesh – Sindarov karşılaşmaları]
 
 ### Dünya Şampiyonu nasıl belirleniyor?
