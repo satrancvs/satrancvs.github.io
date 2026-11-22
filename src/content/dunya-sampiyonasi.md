@@ -31,12 +31,9 @@ FIDE ADAYLAR TURNUVASI 2026 ÇAPRAZ TABLOSU
  8 GM Esipenko           0½ 0½ ½0 00 ½½ ½½ ½½  *   4½
 </pre>
 
-#### Peki Carlsen, Nakamura, Caruana?
+#### Peki Carlsen nerede?
 
-Haklı olarak şunu merak edebilirsiniz: Carlsen, Nakamura ve Caruana nerede? İki ayrı yanıt var:
-
-- **Caruana ve Nakamura oynadı, ama kazanamadı.** Caruana 2024 FIDE Circuit galibi olarak, Nakamura ise 2025 Ağustos–2026 Ocak arasındaki en yüksek ortalama reytingle (ortalama 2810,5) Adaylar’a girdi. İkisi de 14 turun hepsini oynadı; Caruana üçüncü, Nakamura beşinci oldu. Nakamura’nın bu yoldan girişi bir ara tartışma konusu olmuştu, çünkü gerekli oyun sayısını doldurmak için dört ayrı Kuzey Amerika turnuvasına katılmıştı.
-- **Carlsen oynamadı.** Carlsen, Temmuz 2022’de ünvanını savunmayacağını açıklamıştı ve bu tarihten sonra bir daha Adaylar’a da katılmadı.
+Carlsen, Temmuz 2022’de ünvanını savunmayacağını açıklamıştı ve bu tarihten sonra bir daha Adaylar’a da katılmadı.
 
 Reyting yoluyla girişin şartı, belirlenen dönemde en az 40 reytingli klasik oyun oynamaktı; Carlsen o pencerede yalnızca 16 oyun oynamıştı. Üstelik Adaylar’a girmekle ilgilenmediğini de açıkça söylemişti; yani hem istemedi hem de gereken oyun sayısını oynamadı.
 
