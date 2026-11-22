@@ -919,3 +919,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .hub .player-wrapper .video-comment .comment-line { position: static !important; display: block !important; left: auto !important; right: auto !important; top: auto !important; bottom: auto !important; width: 100% !important; max-width: 100% !important; height: auto !important; margin: 0 !important; padding: 0 !important; transform: none !important; }
 .hub .player-wrapper .video-comment .comment-text-block { display: block !important; }
 .hub .player-wrapper .video-comment .comment-play-btn.cp-inline { vertical-align: middle; margin-left: .35rem; }
+.hub .player-wrapper .video-comment { font-size: 1.0625rem; line-height: 1.55; color: rgb(var(--fg-rgb) / .9); }
+.hub .player-wrapper .video-comment :is(.comment-line, .comment-text-block, .comment-body, span, p, div, strong, b, em, i) { font-size: inherit !important; line-height: inherit !important; color: inherit !important; font-family: inherit; }
+.hub .player-wrapper .video-comment a { color: var(--accent) !important; }
+.hub .player-wrapper .video-comment .comment-play-btn, .hub .player-wrapper .video-comment .comment-play-btn * { color: revert !important; }

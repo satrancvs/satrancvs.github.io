@@ -739,7 +739,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
 
   // `[MAÇ SEÇİCİ: Etiket]` işaretinden sonraki `#### …` blokları: oyun seçici öğeleri. Üstteki oynatıcının (GameHub) menüsünde bir sekme olur; işaretin kendi yerinde bir şey çizilmez.
   const collectPicker = (i: number): { items: PickItem[]; end: number } => {
-    type Draft = { label: string; site: string; blurb: string; bio?: string; figs: string[]; gi?: number; header?: string; moves?: string; kart?: string };
+    type Draft = { label: string; site: string; blurb: string; bio?: string; bioNote?: string; figs: string[]; gi?: number; header?: string; moves?: string; kart?: string };
     const drafts: Draft[] = [];
     let cur: Draft | null = null;
     let j = i + 1;
@@ -749,6 +749,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       else if (!cur) continue;
       else if (/^\*[^*]+\*$/.test(t)) cur.site = t.slice(1, -1);
       else if (/^\[KART images\/[^\]\s]+\]$/.test(t)) cur.kart = t.slice(6, -1);
+      else if (t.startsWith('[BİLGİ-YORUM] ')) cur.bioNote = t.slice(14).trim(); // oyuncu bilgisi ilk hamlenin yorumu olur (altta ayrıca metin olarak gösterilmez)
       else if (t.startsWith('[BİLGİ] ')) cur.bio = t.slice(8).trim(); // oyuncu hakkında bilgi: maç seçicide o oyun izlenirken sağ sütunda gösterilir
       else if (t.startsWith('[Event ')) { const gm = gameMoves(chunks, j); cur.gi = j; cur.header = t; cur.moves = gm.moves; if (gm.own) j++; }
       else if (isFigRow(t) || IMG_CHUNK.test(t)) cur.figs.push(t);
@@ -756,12 +757,12 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     }
     const items: PickItem[] = drafts.filter((d) => d.header).map((d) => {
       const item = games.find((g) => g.at === d.gi)!;
-      // Açıklamanın kaynak bağlantıları ("Merak edenler için FIDE Müzesi: …", "Ayrıntılar: …") sağ sütunda durmaz: oyunun ilk hamlesinin yorumu olur
-      // ve oynatıcıda hamle listesinin altında, ilk hamle oynanınca görünür.
-      const cut = d.blurb.search(/(Ayrıntılar:|Merak edenler için)/);
+      // Açıklama oyunun ilk hamlesinin yorumu olarak da yazılır (hamle listesinin altında, ilk hamle oynanınca görünür). Açıklamanın sonundaki özel
+      // kaynak bağlantıları ("Ayrıntılar: …", FIDE fotoğraf galerisi) yalnızca yorumda gösterilir, sağ sütunda durmaz.
+      const cut = d.blurb.search(/(Ayrıntılar:|\[FIDE fotoğraf galerisi\])/);
       const blurb = (cut >= 0 ? d.blurb.slice(0, cut) : d.blurb).trim();
-      const refs = cut >= 0 ? d.blurb.slice(cut).trim() : '';
-      const moves = refs && d.moves ? d.moves.replace(/^(\s*\d+\.\s*\S+)/, `$1 { ${refs} }`) : d.moves;
+      const note = [d.blurb.trim(), d.bioNote].filter(Boolean).join('\n\n');
+      const moves = note && d.moves ? d.moves.replace(/^(\s*\d+\.\s*\S+)/, `$1 { ${note} }`) : d.moves;
       const paths = d.figs.flatMap((f) => [...f.matchAll(/\]\(([^)\s]+)/g)].map((m) => m[1]));
       const names = d.label.replace(/^[^·]*·\s*/, '').replace(/\s*\([^)]*\)/g, '').split(/\s+[–,]\s+|,\s*/).map((n) => n.trim().split(' ').pop()!.toLowerCase().replace('ó', 'o').replace('á', 'a').replace('ı', 'i'));
       const portrait = names.map((n) => `images/dunya-${n}.jpg`).find(hasImage); // fotoğrafsız maçta oyunculardan birinin portresi
