@@ -1046,3 +1046,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 /* Maç seçici: üç sütun aynı hizada biter (oynatıcının altındaki makale boşlukları sıfırlanır; hamle listesi sütunun dibine oturur) */
 .picker .mpa-content .cp-game { margin-bottom: 0 !important; padding-bottom: 0 !important; }
 .picker .mpa-content section { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+
+/* Maç seçici: son oyunda sağ alttaki "Sıradaki oyun" kartı yerine "Sıradaki bölüm" kartı */
+@media (min-width: 56em) { .picker .mpb-info > .sec-link { margin-top: auto; } }
+@media (max-width: 55.99em) { .picker .mpb-info > .sec-link { margin-top: 1.4rem; } }
