@@ -58,7 +58,7 @@ Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor; her döngü geneld
 
 ### Eskiden nasıldı?
 
-Hayır, sistem hep böyle değildi. Aslında “dünya şampiyonluğu” kavramı bile 19. yüzyılın sonunda ortaya çıktı ve defalarca yeniden tanımlandı.
+Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının kendisi bile 19. yüzyılın sonlarında ortaya çıktı ve günümüze kadar defalarca yeniden tanımlandı.
 
 **Zaman çizelgesi: oyun sayısının sınırsız olduğu maçlar** (“ilk N galibiyet”, oyun sınırı yok; beraberlikler sayılmaz)
 
