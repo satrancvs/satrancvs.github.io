@@ -908,3 +908,4 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 @media (max-width: 40em) { .live-match .live-when { font-size: 10px; letter-spacing: .03em; } }
 @media (max-width: 22em) { .live-match .live-when { white-space: normal; } }
 .live-sf-opts { flex-wrap: wrap; gap: .55rem .9rem; justify-content: space-between; }
+.sf-step > span { min-width: 4.6rem; }
