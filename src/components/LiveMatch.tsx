@@ -212,7 +212,7 @@ export default function LiveMatch({ ready }: { ready: boolean }) {
           <p className="live-sf-label">{ev ? ev.label : idle ? 'Maç başlayınca her konum burada canlı çözümlenecek.' : 'Konum çözümleniyor…'}</p>
           <div className="live-sf-meter" aria-hidden="true"><span style={{ width: `${ev ? ev.white : 50}%` }} /></div>
           <div className="live-sf-meta f-mono"><span>Beyaz</span><span>{sf && !idle ? `Derinlik ${sf.depth}` : ''}</span><span>Siyah</span></div>
-          <p className="live-sf-pv-title f-mono">En iyi devam</p>
+          <p className="live-sf-pv-title f-mono">En iyi devam yolu</p>
           <p className="live-sf-pv">{line || '—'}</p>
         </aside>
         <div ref={board} className={`cp-game live-board${idle ? ' live-idle' : ''}`} aria-disabled={idle} {...(idle ? { inert: '' } : {})}>
