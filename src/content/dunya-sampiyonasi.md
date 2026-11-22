@@ -53,7 +53,7 @@ Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor ve her döngü gene
 
 ### Geçmişte nasıldı?
 
-Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının kendisi bile 19. yüzyılın sonlarında ortaya çıktı ve günümüze kadar defalarca yeniden tanımlandı. Aşağıdaki tablo, ünvanın el değiştirme hikâyesini dönem dönem anlatıyor.
+Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının kendisi bile 19. yüzyılın sonlarında ortaya çıktı ve günümüze kadar defalarca yeniden tanımlandı.
 
 [ZAMAN ÇİZELGESİ]
 
