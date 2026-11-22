@@ -628,7 +628,6 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .picker .mpb-figs .fig-row { flex-direction: column; align-items: stretch; }
   .picker .cp-game pgn-player:not(pgn-study pgn-player) { --board-size: max(380px, min(760px, 100cqw - 2rem, 100svh - 15rem)) !important; transform: none !important; width: 100% !important; max-width: 100% !important; margin: 0 !important; }
   .picker .cp-game pgn-player .player-container, .live-match .cp-game pgn-player .player-container { margin-inline: auto; }
-  .picker .mpa-content .cp-game .game-names { font-size: 1.25rem; }
   .live-match { width: min(92rem, calc(100% - 3rem)); margin-inline: auto; transform: none; display: grid; grid-template-columns: minmax(0, 1fr) 26rem; column-gap: 2.25rem; align-items: start; text-align: left; }
   .live-match > .live-board { grid-column: 1; grid-row: 1 / span 8; container-type: inline-size; }
   .live-match > :not(.live-board) { grid-column: 2; }
@@ -678,3 +677,9 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .picker .mpb-card { flex-basis: 11.5rem; }
   .picker .cp-game pgn-player:not(pgn-study pgn-player) { --board-size: max(380px, min(860px, 100cqw - 2rem, 100svh - 29rem)) !important; }
 }
+
+/* Oyun başlığı (oyuncular + Elo, yarışma satırı) seçicide sinematik: büyük Fraunces başlık, mono yarışma satırı, sola yaslı. */
+.picker .mpa-content section > div:first-child { max-width: none; margin: 0 0 1.1rem; padding: .35rem .25rem 0; text-align: left; }
+.picker .mpa-content .game-names { font-family: 'Fraunces', serif; font-weight: 300; font-variation-settings: 'opsz' 72; font-size: clamp(1.9rem, 1.1rem + 2vw, 3.1rem); line-height: 1.06; letter-spacing: -.03em; color: var(--fg); }
+.picker .mpa-content .game-names .elo { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: .3em; font-weight: 500; letter-spacing: .1em; color: var(--accent); vertical-align: .85em; margin-left: .35em; }
+.picker .mpa-content section > div:first-child > p { margin: .7rem 0 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--mute); }

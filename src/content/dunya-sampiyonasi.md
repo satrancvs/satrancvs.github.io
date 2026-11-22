@@ -512,7 +512,7 @@ Anand ünvanını 6½–4½ ile korudu. Seçtiğimiz oyun 6. oyun. FIDE Müzesi:
 
 1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Qc2 d5 5. cxd5 Qxd5 6. Nf3 Qf5 7. Qb3 Nc6 8. Bd2 O-O 9. h3 b6 10. g4 Qa5 11. Rc1 Bb7 12. a3 Bxc3 13. Bxc3 Qd5 14. Qxd5 Nxd5 15. Bd2 Nf6 16. Rg1 Rac8 17. Bg2 Ne7 18. Bb4 c5 19. dxc5 Rfd8 20. Ne5 Bxg2 21. Rxg2 bxc5 22. Rxc5 Ne4 23. Rxc8 Rxc8 24. Nd3 Nd5 25. Bd2 Rc2 26. Bc1 f5 27. Kd1 Rc8 28. f3 Nd6 29. Ke1 a5 30. e3 e5 31. gxf5 e4 32. fxe4 Nxe4 33. Bd2 a4 34. Nf2 Nd6 35. Rg4 Nc4 36. e4 Nf6 37. Rg3 Nxb2 38. e5 Nd5 39. f6 Kf7 40. Ne4 Nc4 41. fxg7 Kg8 42. Rd3 Ndb6 43. Bh6 Nxe5 44. Nf6+! Kf7 45. Rc3 Rxc3 46. g8=Q+! Kxf6 47. Bg7+ 1-0
 
-#### 2007 · Anand
+#### 2007 · Anand – Morozevich (Turnuva)
 
 *Meksika*
 
@@ -556,7 +556,7 @@ Birleşme maçı 6–6 bitti; hızlı oyunlarda Kramnik 2½–1½ kazandı. Seç
 
 1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Be2 Bb7 9. O-O Be7 10. e4 b4 11. e5 bxc3 12. exf6! Bxf6 13. bxc3 c5 14. dxc5 Nxc5 15. Bb5+ Kf8 16. Qxd8+ Rxd8 17. Ba3 Rc8 18. Nd4 Be7 19. Rfd1 a6 20. Bf1 Na4 21. Rab1 Be4 22. Rb3 Bxa3 23. Rxa3 Nc5 24. Nb3 Ke7 25. Rd4 Bg6 26. c4 Rc6 27. Nxc5 Rxc5 28. Rxa6 Rb8 29. Rd1 Rb2 30. Ra7+ Kf6 31. Ra1 Rf5 32. f3 Re5 33. Ra3 Rc2 34. Rb3 Ra5 35. a4 Ke7 36. Rb5 Ra7 37. a5 Kd6 38. a6 Kc7 39. c5 Rc3 40. Raa5 Rc1 41. Rb3! Kc6 42. Rb6+ Kc7 43. Kf2 Rc2+ 44. Ke3 Rxc5 45. Rb7+! 1-0
 
-#### 2005 · Topalov
+#### 2005 · Topalov – Kasimdzhanov (Turnuva)
 
 *San Luis (Arjantin)*
 
@@ -1209,7 +1209,7 @@ Yine 12–12; Botvinnik ünvanı bu kuralla korudu. Seçtiğimiz oyun, Botvinnik
 
 1. d4 Nf6 2. c4 g6 3. g3 c6 4. Bg2 d5 5. cxd5 cxd5 6. Nc3 Bg7 7. Nh3 Bxh3 8. Bxh3 Nc6 9. Bg2 e6 10. e3 O-O 11. Bd2 Rc8 12. O-O Nd7 13. Ne2 Qb6 14. Bc3 Rfd8 15. Nf4 Nf6 16. Qb3 Ne4 17. Qxb6 axb6 18. Be1 Na5 19. Nd3 Bf8 20. f3 Nd6 21. Bf2 Bh6 22. Rac1 Nac4 23. Rfe1 Na5 24. Kf1 Bg7 25. g4 Nc6 26. b3 Nb5 27. Ke2 Bf8 28. a4 Nc7 29. Bg3 Na6 30. Bf1 f6 31. Red1 Na5 32. Rxc8 Rxc8 33. Rc1 Rxc1 34. Nxc1 Ba3 35. Kd1 Bxc1 36. Kxc1 Nxb3+ 37. Kc2 Na5! 38. Kc3 Kf7 39. e4 f5 40. gxf5 gxf5 41. Bd3 Kg6 42. Bd6 Nc6 43. Bb1 Kf6 44. Bg3 fxe4 45. fxe4 h6 46. Bf4 h5 47. exd5 exd5 48. h4 Nab8 49. Bg5+ Kf7 50. Bf5 Na7 51. Bf4 Nbc6 52. Bd3 Nc8 53. Be2 Kg6 54. Bd3+ Kf6 55. Be2 Kg6 56. Bf3 N6e7 57. Bg5 1-0
 
-#### 1948 · Botvinnik – Smyslov, Keres, Reshevsky, Euwe
+#### 1948 · Botvinnik – Keres (Turnuva)
 
 *Lahey ve Moskova*
 
