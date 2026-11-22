@@ -20,11 +20,10 @@ Adaylar'ın son sıralaması: Sindarov 10, Giri 8½, Caruana 7½, Wei Yi 7, Naka
 
 #### Peki Carlsen, Nakamura, Caruana?
 
-Bu soru tam olarak üç ayrı yanıt istiyor:
+Bu soru iki ayrı yanıt istiyor:
 
 - **Caruana ve Nakamura oynadı, ama kazanamadı.** Caruana 2024 FIDE Circuit galibi olarak, Nakamura ise 2025 Ağustos–2026 Ocak arasındaki en yüksek ortalama reytingle (ortalama 2810,5) Adaylar'a girdi; ikisi de 14 turun hepsini oynadı. Caruana üçüncü, Nakamura beşinci oldu. Nakamura'nın bu yoldan girişi tartışma konusu olmuştu: gerekli oyun sayısını doldurmak için dört ayrı Kuzey Amerika turnuvasına katılmıştı.
 - **Carlsen oynamadı.** Carlsen, Temmuz 2022'de ünvanını savunmayacağını açıklamıştı; Adaylar'a da katılmadı. Reyting yoluyla girişin şartı, belirlenen dönemde en az 40 reytingli klasik oyun oynamaktı; Carlsen o pencerede yalnızca 16 oyun oynamıştı (ortalaması 2839,3 ile en yüksekti, ama oyun sayısı yetmiyordu). Üstelik Adaylar'a girmekle ilgilenmediğini açıkça söylemişti: yani girmedi, çünkü girmek istemedi ve girmek için gereken oyun sayısını da oynamadı. Eylül 2026'daki bir söyleşide de Sindarov için “oldukça belirgin bir favori” demişti.
-- **Gukesh'in kendisi** zaten sistem gereği Adaylar'a katılamaz: şampiyonun yeri hazırdır.
 
 ![Magnus Carlsen](images/dunya-carlsen.jpg "<span lang="en">Magnus Carlsen</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
 ![Hikaru Nakamura](images/dunya-nakamura.jpg "<span lang="en">Hikaru Nakamura</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">ChessKelly</span> · <span lang="en">CC BY 4.0</span>")
