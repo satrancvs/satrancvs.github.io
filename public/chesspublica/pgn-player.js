@@ -760,9 +760,20 @@ function loadPGN(pgn) {
     }
   }
 
+  /* Site patch: `live` (src/lib/eval-bar.ts) — the page feeds the bar from a Stockfish worker through setScore(), so the
+     per-move update() (which would reset it to the PGN's own [%eval], i.e. 0) is ignored. */
+  setScore(score) {
+    if (this._disabled) return;
+    this._apply(score);
+  }
+
   update(score) {
 
-    if (this._disabled) return;
+    if (this._disabled || this.live) return;
+    this._apply(score);
+  }
+
+  _apply(score) {
 
     // Guard against null / undefined / NaN / Infinity
     if (score === undefined || score === null || typeof score !== "number" || !isFinite(score)) {

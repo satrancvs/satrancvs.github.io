@@ -15,6 +15,8 @@ import { watchStudy } from '@/lib/study-fix';
 import { watchVariationFix } from '@/lib/variation-fix';
 import { GLYPH_COLOR } from '@/components/FenDiagram';
 import { splitChunks } from '@/lib/split-chunks';
+import LiveMatch from '@/components/LiveMatch';
+import { watchEvalBar } from '@/lib/eval-bar';
 
 // Makale gövdesi: markdown metni + PGN oyun blokları + çapraz tablo + video bağlantısı.
 
@@ -462,7 +464,13 @@ function QuoteWithFigure({ chunk, ready }: { chunk: string; ready: boolean }) {
   );
 }
 
-function Figure({ chunk }: { chunk: string }) {
+// Aralarında boş satır olmayan art arda `![…](…)` satırları yan yana bir fotoğraf sırası olur (Dünya Şampiyonası yazısında maçın iki oyuncusu); dar ekranda alta sarar.
+const isFigRow = (c: string) => { const ls = c.split('\n').map((l) => l.trim()); return ls.length > 1 && ls.every((l) => IMG_CHUNK.test(l)); };
+function FigureRow({ chunk }: { chunk: string }) {
+  return <div className="fig-row">{chunk.split('\n').map((l, k) => <Figure key={k} chunk={l.trim()} row />)}</div>;
+}
+
+function Figure({ chunk, row }: { chunk: string; row?: boolean }) {
   const m = chunk.match(IMG_CHUNK);
   if (!m) return null;
   const [, alt, path, caption] = m;
@@ -470,7 +478,7 @@ function Figure({ chunk }: { chunk: string }) {
   const cover = /^images\/[^/]*(adventurous-way|chess-for-zebras)/.test(path);
   const small = cover || isSmallImage(path);
   return (
-    <figure className={`my-10 mx-auto w-full ${small ? 'md:max-w-[480px] text-center' : ''}`} style={small ? undefined : { maxWidth: boxWidth(path) }}>
+    <figure className={row ? 'fig-row-item text-center' : `my-10 mx-auto w-full ${small ? 'md:max-w-[480px] text-center' : ''}`} style={row ? { maxWidth: boxWidth(path) } : small ? undefined : { maxWidth: boxWidth(path) }}>
       <ProgressiveImage path={path} alt={alt} cover={cover} />
       {caption && (
         <figcaption className="credit mt-3 text-[color:var(--mute)]">
@@ -555,6 +563,8 @@ function Quote({ children }: { children?: ReactNode }) {
 
 // "Devamı gelecek. Kaçırmamak için [bültene abone ol](/#bulten)." paragrafı yazının bir parçası değildir; ayrı, sakin bir kapanış bloğu olarak çizilir.
 const CONTINUED = /^Devamı gelecek\./;
+// `[CANLI MAÇ]` tek başına bir paragrafsa: Dünya Şampiyonası 2026 canlı bölümü (src/components/LiveMatch.tsx).
+const LIVE_MATCH = /^\[CANLI MAÇ\]$/;
 function Continued({ text }: { text: string }) {
   const rest = text.replace(CONTINUED, '').trim().replace(/\.$/, ''); // son nokta bağlantı hapından sonra tek başına kalmasın
   return (
@@ -646,7 +656,7 @@ function gameMoves(chunks: string[], i: number): { moves: string; own: boolean }
 }
 
 export default function ArticleBody({ chunks }: { chunks: string[] }) {
-  const hasGames = chunks.some((c) => c.trim().startsWith('[Event ') || FEN_BLOCK.test(c.trim()) || (c.startsWith('>') && /^>\s*\[FEN\s/m.test(c)));
+  const hasGames = chunks.some((c) => LIVE_MATCH.test(c.trim()) || c.trim().startsWith('[Event ') || FEN_BLOCK.test(c.trim()) || (c.startsWith('>') && /^>\s*\[FEN\s/m.test(c)));
   const hasStudy = chunks.some((c) => STUDY_TAG.test(c));
   const cp = useChessPublica(hasGames, { study: hasStudy });
   // ChessPublica yüklenemezse eski düz metin görünümüne düşülür.
@@ -689,12 +699,14 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     const stopVarLead = watchVarLead(el);
     const stopVariationFix = watchVariationFix(el);
     const stopStudy = watchStudy(el);
+    // Dünya Şampiyonası 2026 yazısı (canlı bölümü olan yazı): her oynatıcıda Stockfish değerlendirme çubuğu.
+    const stopEval = chunks.some((c) => LIVE_MATCH.test(c.trim())) ? watchEvalBar(el) : () => {};
     // Oyun yorumlarındaki başlıklara (.cp-heading) İçindekiler'deki kimlik verilir (sectionToc ile aynı slugify).
     const idHeadings = () => el.querySelectorAll('.cp-heading').forEach((h) => { const id = slugify(h.textContent ?? ''); if (id && h.id !== id) h.id = id; });
     idHeadings();
     const headingObserver = new MutationObserver(idHeadings);
     headingObserver.observe(el, { childList: true, subtree: true });
-    return () => { stopCurly(); stopLocalize(); stopInlinePlay(); stopVarLead(); stopVariationFix(); stopStudy(); headingObserver.disconnect(); };
+    return () => { stopCurly(); stopLocalize(); stopInlinePlay(); stopVarLead(); stopVariationFix(); stopStudy(); stopEval(); headingObserver.disconnect(); };
   }, [chunks]);
   useEffect(() => {
     const el = rootRef.current;
@@ -780,6 +792,8 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
         </GameSection>,
       );
       if (own) i++;
+    } else if (LIVE_MATCH.test(c)) {
+      out.push(<LiveMatch key={i} ready={cp === 'ready'} />);
     } else if (CONTINUED.test(c)) {
       out.push(<Continued key={i} text={c} />);
     } else if (FEN_ROW.test(c)) {
@@ -810,6 +824,8 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       );
     } else if (c.startsWith('>') && /^>\s*(!\[|\[FEN\s)/m.test(c)) {
       out.push(<QuoteWithFigure key={i} chunk={c} ready={cp === 'ready'} />);
+    } else if (isFigRow(c)) {
+      out.push(<FigureRow key={i} chunk={c} />);
     } else if (IMG_CHUNK.test(c)) {
       out.push(<Figure key={i} chunk={c} />);
     } else if (c.startsWith('<figure')) {

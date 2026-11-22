@@ -534,3 +534,44 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 /* `[Lichess]` in a game comment (ArticleBody.tsx lichessLinks): the link (label already ALL CAPS in the source: text-transform would turn the i into Turkish İ) to the Lichess analysis board looks like an outlined mono button. */
 .cp-game a[href^="https://lichess.org/analysis/"] { display:inline-block; margin-top:.35em; padding:.45em .9em; border:1px solid currentColor; border-radius:999px; font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:500; letter-spacing:.08em; text-transform:none; text-decoration:none; line-height:1.3; }
 .cp-game a[href^="https://lichess.org/analysis/"]:hover { border-color:var(--accent, #f5a524); color:var(--accent, #f5a524); }
+
+/* Dünya Şampiyonası 2026 canlı bölümü (src/components/LiveMatch.tsx) */
+.live-match { margin: 0 0 3.5rem; text-align: center; }
+.live-kicker { display: inline-flex; align-items: center; gap: .55rem; margin: 0 0 .6rem; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); }
+.live-dot { width: .6rem; height: .6rem; border-radius: 50%; background: #d8402f; box-shadow: 0 0 0 0 rgb(216 64 47 / .6); animation: live-pulse 1.8s ease-out infinite; }
+@keyframes live-pulse { 70% { box-shadow: 0 0 0 .7rem rgb(216 64 47 / 0); } 100% { box-shadow: 0 0 0 0 rgb(216 64 47 / 0); } }
+@media (prefers-reduced-motion: reduce) { .live-dot { animation: none; } }
+.live-title { margin: 0 0 1rem; font-size: clamp(2.1rem, 1.4rem + 3vw, 3.4rem); line-height: 1.05; font-weight: 400; color: var(--fg); }
+.live-title span { color: var(--accent); }
+.live-score { margin: 0 0 1rem; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; color: var(--fg); }
+.live-score b { font-weight: 600; }
+.live-score span { color: var(--mute); }
+.live-rounds { display: flex; flex-wrap: wrap; justify-content: center; gap: .35rem; margin: 0 0 1rem; }
+.live-rounds button { min-width: 2.1rem; padding: .3rem .55rem; border: 1px solid var(--line); background: transparent; color: var(--fg); font-size: 12.5px; cursor: pointer; }
+.live-rounds button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.live-rounds button.on { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.live-rounds button:disabled { opacity: .35; cursor: default; }
+.live-board { text-align: left; }
+/* Maç başlamadan: renksiz, soluk ve tıklanamaz */
+.live-idle { filter: grayscale(1); opacity: .5; pointer-events: none; user-select: none; }
+.live-status { margin: .2rem 0 0; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--mute); }
+.live-status a { color: var(--accent); }
+.live-count { margin: .6rem auto 0; max-width: 34rem; padding: 1.6rem 1rem 1.4rem; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.live-count-label { margin: 0 0 1rem; font-size: 12px; letter-spacing: .24em; text-transform: uppercase; color: var(--mute); }
+.live-count-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+.live-cell { display: flex; flex-direction: column; align-items: center; gap: .15rem; padding: .2rem 0; }
+.live-cell + .live-cell { border-left: 1px solid var(--line); }
+.live-num { font-size: clamp(2.4rem, 1.4rem + 5vw, 4.2rem); line-height: 1; font-weight: 300; font-variant-numeric: tabular-nums lining-nums; color: var(--fg); }
+.live-cell:last-child .live-num { color: var(--accent); }
+.live-unit { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--mute); }
+.live-when { margin: 1.2rem 0 .5rem; font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--fg); }
+.live-note { margin: 0 auto; max-width: 28rem; font-size: 1.0625rem; line-height: 1.5; font-style: italic; color: var(--mute); }
+.live-idle .video-moves, .live-idle .board-toolbar, .live-idle .play, .live-idle .video-comment { visibility: hidden; }
+.live-idle .player-container { margin-left: auto; margin-right: auto; }
+.live-board pgn-player { display: block; width: 340px; max-width: 100%; margin-inline: auto; }
+.live-board > div { display: flex; justify-content: center; }
+
+
+/* Fotoğraf sırası (art arda `![…](…)` satırları): yan yana, dar ekranda alta sarar */
+.fig-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 1.5rem 1.25rem; margin: 2.5rem 0; }
+.fig-row-item { flex: 1 1 150px; margin: 0; max-width: 300px !important; }
