@@ -61,6 +61,15 @@ Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor; her döngü geneld
 
 Hayır, sistem hep böyle değildi. Aslında “dünya şampiyonluğu” kavramı bile 19. yüzyılın sonunda ortaya çıktı ve defalarca yeniden tanımlandı.
 
+**Zaman çizelgesi: oyun sayısının sınırsız olduğu maçlar** (“ilk N galibiyet”, oyun sınırı yok; beraberlikler sayılmaz)
+
+- **1886**: İlk resmî ünvan maçı Steinitz–Zukertort “ilk 10 galibiyet” ile oynandı. 1890'lara kadar maçların çoğu bu biçimdeydi (Steinitz–Chigorin, Lasker–Steinitz); 1900'lerin başında bazı maçlar “ilk 8 galibiyet” oldu (Lasker–Marshall, Lasker–Tarrasch).
+- **1922**: Londra Kuralları “ilk 6 galibiyet” biçimini standart yaptı; 1927'de **Capablanca–Alekhine** maçı bu kuralla 34 oyun sürdü (o güne dek en uzun maç). Sonraki maçlarda (Bogoljubov, Euwe) oyun sayısına üst sınır kondu.
+- **1948–1972**: FIDE döneminde ünvan maçları sabit **24 oyun** üzerinden oynandı; sınırsız biçim bu dönemde uygulanmadı.
+- **1975**: Fischer “ilk 10 galibiyet, sınırsız oyun” şartını istedi, FIDE reddetti, maç oynanmadı.
+- **1978 ve 1981**: Karpov–Korchnoi maçları “ilk 6 galibiyet”, oyun sınırı olmadan oynandı (Baguio 1978: 32 oyun; Merano 1981: 18 oyun). Sınırsız biçim böylece geri döndü.
+- **1984–85**: Karpov–Kasparov maçı 48 oyun sürdü ve Şubat 1985'te FIDE Başkanı Campomanes'in kararıyla **iptal edildi**. Sınırsız oyun sayısı **burada kaldırıldı**: Eylül 1985'teki yeniden maç **24 oyunla sınırlıydı** ve o günden bugüne ünvan maçları sabit oyun sayısıyla oynanıyor (önce 24, sonra 12–14; bugün 14 klasik oyun).
+
 #### 1) Birleşme ve bugünkü sistem (2006–)
 
 2006'da **Kramnik–Topalov** birleşme maçı Elista'da oynandı (6–6, ardından hızlı oyunlarda Kramnik kazandı; maç bir “tuvalet skandalı”yla da anılır) ve ünvan tek sahibe döndü. 2007'de turnuva biçimi (Meksika), 2008'den itibaren yine maç biçimi kullanıldı. FIDE, 2013'ten itibaren Adaylar'ı **sekiz kişilik çift devreli turnuva** olarak yerleştirdi; şampiyona doğrudan meydan okunur. Son yıllarda yenilikler: Dünya Kupası ve Grand Swiss yolu, FIDE Circuit, ve eşitlik hâlinde dört hızlı, iki hızlı, iki yıldırım ve sonunda “ani ölüm” oyunu.
