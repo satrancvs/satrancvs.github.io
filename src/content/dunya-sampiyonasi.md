@@ -136,6 +136,122 @@ Aşağıda her şampiyon için *ünvanı kime karşı, nasıl aldığı* ve *nas
 
 Tablodan iki şey okunuyor. Birincisi, **eşitlikte ünvan şampiyonda kalır**: 1951, 1954 ve 1987'de bu kural işledi. İkincisi, **rövanş hakkı** (1948–63) şampiyonlara ikinci bir şans verdi: Smyslov ve Tal'ın birer yıllık ünvanlarının ve Botvinnik'in üç ayrı saltanatının arkasında bu kural var.
 
+[MAÇ SEÇİCİ: Gukesh – Sindarov karşılaşmaları]
+
+#### 2026 · Gukesh – Sindarov, yıldırım (9 Mayıs)
+
+*Varşova (Polonya)*
+
+Grand Chess Tour Polonya ayağında, yıldırım oyunlarda ikisinin ikinci karşılaşması: Sindarov Siyahlarla kazandı. Kayıt: [chessgames.com](https://www.chessgames.com/perl/chessgame?gid=3150962).
+
+[Event "GCT Süper Yıldırım Polonya"]
+[Site "Varşova"]
+[Date "2026.05.09"]
+[White "Gukesh Dommaraju"]
+[Black "Javokhir Sindarov"]
+[Result "0-1"]
+[WhiteElo "2732"]
+[BlackElo "2776"]
+[EventLine "GCT Süper Yıldırım Polonya, Varşova, 2026"]
+[View "player"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. O-O Bd7 6. c3 g6 7. d4 Bg7 8. Re1 Nf6 9. Nbd2 O-O 10. Nf1 exd4 11. cxd4 b5 12. Bc2 Bg4 13. Be3 Nd7 14. Rc1 Bxf3 15. gxf3 Qf6 16. d5 Nce5 17. f4 Nc4! 18. b3 Nxe3! 19. fxe3 Rfe8 20. Ng3 Rac8 21. Qg4 Qe7 22. Qf3 c5 23. dxc6 Rxc6 24. Bb1 Rc5 25. b4 Rc4 26. Rxc4 bxc4 27. Bc2 d5 28. a3 a5 29. Rb1 axb4 30. axb4 Nb6 31. exd5 Qxe3+ 32. Qxe3 Rxe3 33. d6 Rc3 34. Be4 f5 35. Bc6 Rd3 36. Bb5 Rxd6 37. Rc1 Rd4 38. Ne2 Re4 39. Kf2 c3 40. Kf3 Rxb4 41. Bd3 Nd5 42. Rb1 Rxb1 43. Bxb1 Nb4 0-1
+
+#### 2026 · Sindarov – Gukesh, yıldırım (8 Mayıs)
+
+*Varşova (Polonya)*
+
+Grand Chess Tour Polonya ayağında, yıldırım oyunlarda Sindarov Beyazlarla kazandı. Kayıt: [chessgames.com](https://www.chessgames.com/perl/chessgame?gid=3150319).
+
+[Event "GCT Süper Yıldırım Polonya"]
+[Site "Varşova"]
+[Date "2026.05.08"]
+[White "Javokhir Sindarov"]
+[Black "Gukesh Dommaraju"]
+[Result "1-0"]
+[WhiteElo "2776"]
+[BlackElo "2732"]
+[EventLine "GCT Süper Yıldırım Polonya, Varşova, 2026"]
+[View "player"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. Nc3 Nf6 5. d3 d6 6. a3 h6 7. h3 a5 8. Be3 Ba7 9. O-O O-O 10. d4 exd4 11. Nxd4 Ne5 12. Ba2 Re8 13. Re1 c6 14. Qe2 Ng6 15. Rad1 Qe7 16. Nf5 Bxf5 17. exf5 Nf8 18. Bxa7 Qxe2! 19. Rxe2 Rxe2 20. Nxe2 Rxa7! 21. Rxd6 N8d7 22. f3 Kf8 23. Kf2 Ra8 24. g4 Nb6 25. Rd4 Nfd5 26. Ng3 Nf6 27. h4 Re8 28. Ne2 Nfd5 29. c4 Nf6 30. c5 Nbd5 31. g5 hxg5 32. hxg5 Nd7 33. Bxd5 cxd5 34. Rxd5 Ke7 35. Nd4 Rh8 36. c6 bxc6 37. Nxc6+ Ke8 38. Rxa5 1-0
+
+#### 2026 · Sindarov – Gukesh, hızlı (6 Mayıs)
+
+*Varşova (Polonya)*
+
+Grand Chess Tour Polonya ayağının hızlı oyun bölümünde Gukesh Siyahlarla kazandı. Kayıt: [chessgames.com](https://www.chessgames.com/perl/chessgame?gid=3148591).
+
+[Event "GCT Süper Hızlı Polonya"]
+[Site "Varşova"]
+[Date "2026.05.06"]
+[White "Javokhir Sindarov"]
+[Black "Gukesh Dommaraju"]
+[Result "0-1"]
+[WhiteElo "2776"]
+[BlackElo "2732"]
+[EventLine "GCT Süper Hızlı Polonya, Varşova, 2026"]
+[View "player"]
+
+1. e4 c6 2. Nf3 d5 3. d3 Qc7 4. exd5 cxd5 5. c4 Nf6 6. Nc3 e6 7. g3 Bb4 8. Bg2 dxc4 9. Bf4 Qa5 10. dxc4 Bxc3+ 11. bxc3 Qxc3+ 12. Nd2 e5 13. Rc1 Qa5 14. Bg5 Bg4 15. Qc2 Nc6 16. O-O O-O 17. h3 Be6 18. Bxf6 gxf6 19. Ne4 Kg7 20. f4 f5 21. Ng5 e4 22. Qb2+ Kg8 23. Kh2 Qb6 24. Qe2 Qd4 25. Nxe4 fxe4 26. f5 Bc8 27. Rcd1 Qf6 28. Qxe4 Rd8 29. Rxd8+ Nxd8 30. Qe8+ Kg7 31. Rf4 h5 32. Qe2 Bd7 33. Qxh5 Nc6 34. Rh4 Re8 35. Qg4+ Kf8! 36. Qf4 Re2 37. Qf3 Rxa2 38. Qe3 Qb2 39. Qh6+ Ke8 40. Qh8+ Qxh8 41. Rxh8+ Ke7 42. g4 a5 43. Kg3 a4 44. Ra8 a3 45. h4 Ne5 46. Bd5 Bc6 47. h5 Bxd5 48. cxd5 Ra1 49. h6 Rg1+ 50. Kf4 f6 51. h7 Rxg4+! 52. Ke3 Nf7 0-1
+
+#### 2026 · Sindarov – Gukesh, klasik (17 Ocak)
+
+*Wijk aan Zee (Hollanda)*
+
+İkisinin Tata Steel Masters’ın ilk turundaki klasik oyunu 155 yarım hamle sürdü ve berabere bitti; bu, aralarındaki üçüncü klasik oyundu.
+
+[Event "88. Tata Steel Masters"]
+[Site "Wijk aan Zee"]
+[Date "2026.01.17"]
+[White "Javokhir Sindarov"]
+[Black "Gukesh Dommaraju"]
+[Result "1/2-1/2"]
+[WhiteElo "2726"]
+[BlackElo "2754"]
+[EventLine "88. Tata Steel Masters, Wijk aan Zee, 2026"]
+[View "player"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Nbd7 5. Qc2 Bb4 6. cxd5 exd5 7. Bg5 h6 8. Bxf6 Bxc3+ 9. Qxc3 Nxf6 10. e3 Ne4 11. Qa3 Nd6 12. Bd3 O-O 13. O-O c6 14. Ne5 Bf5 15. Bxf5 Nxf5 16. Qc3 a5 17. a4 Qe7 18. Rab1 Nd6 19. b4 axb4 20. Qxb4 Ra7 21. Nd3 Qc7 22. Rfc1 Rfa8 23. Nc5 Nc4 24. Nd3 h5 25. h3 g6 26. Re1 h4 27. Rec1 Kg7 28. Re1 Kg8 29. Rec1 Qd8 30. Ne5 Nd6 31. Ra1 Ne4 32. Ra2 Qd6 33. Qb6 Qe7 34. Qb3 Ra5 35. Nd3 b5 36. Rca1 Qa7 37. Qc2 bxa4 38. Nb4 Qb7 39. Rxa4 Qxb4 40. Rxb4 Rxa1+! 41. Kh2 Kg7 42. Rb7 Rf1 43. Qxc6 Raa1 44. Rxf7+!! Kxf7 45. Qxd5+! Kg7! 46. Qe5+! Nf6 47. Qe7+! Kh6 48. Qf8+! Kh7 49. Qf7+ Kh6! 50. Qf8+! Kh5 51. Qh8+! Kg5! 52. f4+! Kf5! 53. Qxh4 Rh1+! 54. Kg3 Ne4+! 55. Kf3 Rhf1+ 56. Ke2! Rf2+! 57. Kd3 Rd2+ 58. Kc4 Rc1+! 59. Kb3 Rc3+ 60. Kb4 Rb2+ 61. Ka4 Ra2+ 62. Kb4 Rb2+! 63. Ka4! Rxe3 64. Qg4+ Kf6 65. Qh4+ Ke6 66. Qd8 Ra2+ 67. Kb4! Rb2+! 68. Ka4! Rxg2 69. Qg8+ Kf5 70. Qf8+ Nf6 71. Qc5+! Kxf4 72. Qd6+! Kf5 73. Qc5+! Kf4 74. Qd6+! Kg5 75. h4+! Kf5 76. Qc5+! Kf4 77. Qd6+! Kf5 78. Qc5+! 1/2-1/2
+
+#### 2022 · Sindarov – Gukesh
+
+*Şarjah (BAE)*
+
+Mayıs 2022’de Şarjah Masters’ta Sindarov, Beyazlarla Gukesh’i yendi.
+
+[Event "5. Şarjah Masters"]
+[Site "Şarjah"]
+[Date "2022.05.22"]
+[White "Javokhir Sindarov"]
+[Black "Gukesh Dommaraju"]
+[Result "1-0"]
+[WhiteElo "2609"]
+[BlackElo "2659"]
+[EventLine "5. Şarjah Masters, Şarjah, 2022"]
+[View "player"]
+
+1. e4 c5 2. Nf3 Nc6 3. Bb5 g6 4. Bxc6 dxc6 5. d3 Qc7 6. O-O e5 7. a4 a5 8. Na3 f6 9. c3 Be6 10. d4 Rd8 11. Be3 Bg4 12. d5 f5 13. h3 Bxf3 14. Qxf3 fxe4 15. Qg3 Rxd5 16. f3 Bh6 17. Bxh6 Nxh6 18. fxe4 Rd7 19. Nc4 Nf7 20. h4 O-O 21. h5 Kg7 22. Ne3 Qd8 23. Nf5+ Kh8! 24. hxg6 hxg6 25. Qxg6 Qg5 26. Ne7! Qxe7 27. Rf5! Ng5 28. Rxg5 Qg7 29. Rh5+! Kg8 30. Qe6+! Rff7 31. Rf1 Kf8 32. Rhf5 1-0
+
+#### 2018 · Gukesh – Sindarov
+
+*Moskova (Rusya)*
+
+İkisinin ilk klasik karşılaşması: 4 Şubat 2018’de, 11–12 yaşlarındayken, Moskova Açık’ta Sindarov Siyahlarla kazandı.
+
+[Event "14. Moskova Açık"]
+[Site "Moskova"]
+[Date "2018.02.04"]
+[White "Gukesh Dommaraju"]
+[Black "Javokhir Sindarov"]
+[Result "0-1"]
+[WhiteElo "2354"]
+[BlackElo "2429"]
+[EventLine "14. Moskova Açık, Moskova, 2018"]
+[View "player"]
+
+1. Nf3 g6 2. g3 Bg7 3. d4 c5 4. d5 Nf6 5. Bg2 d6 6. O-O b5 7. a4 b4 8. Re1 O-O 9. e4 Nbd7 10. Nbd2 a5 11. Nc4 Ba6 12. Nfd2 Qc7 13. f4 Rad8 14. e5 dxe5 15. fxe5 Nxd5 16. Bxd5 Nxe5 17. Ne3 c4 18. Qe2 e6 19. Bxc4 Nxc4 20. Ndxc4 Rc8 21. Qf2 Bxc4 22. Ng4 f5 23. Ne3 Ba6 24. Ng2 Qxc2 25. Qxc2 Rxc2 26. Rxe6 Bb7 27. Ne3 Bd4 28. Kf1 Rxh2 29. Rd6 Bc5 30. Rd7 Ba6+ 31. Ke1 Bxe3 0-1
+
 [MAÇ SEÇİCİ: Ünvan maçlarından seçmeler]
 
 #### 2024 · Gukesh – Ding Liren
