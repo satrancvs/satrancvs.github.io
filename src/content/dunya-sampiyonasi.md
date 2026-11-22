@@ -60,54 +60,6 @@ Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor; her döngü geneld
 
 Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının kendisi bile 19. yüzyılın sonlarında ortaya çıktı ve günümüze kadar defalarca yeniden tanımlandı.
 
-**Zaman çizelgesi: oyun sayısının sınırsız olduğu maçlar** (“ilk N galibiyet”, oyun sınırı yok; beraberlikler sayılmaz)
-
-- **1886**: İlk resmî ünvan maçı Steinitz–Zukertort “ilk 10 galibiyet” ile oynandı. 1890'lara kadar maçların çoğu bu biçimdeydi (Steinitz–Chigorin, Lasker–Steinitz); 1900'lerin başında bazı maçlar “ilk 8 galibiyet” oldu (Lasker–Marshall, Lasker–Tarrasch).
-- **1922**: Londra Kuralları “ilk 6 galibiyet” biçimini standart yaptı; 1927'de **Capablanca–Alekhine** maçı bu kuralla 34 oyun sürdü (o güne dek en uzun maç). Sonraki maçlarda (Bogoljubov, Euwe) oyun sayısına üst sınır kondu.
-- **1948–1972**: FIDE döneminde ünvan maçları sabit **24 oyun** üzerinden oynandı; sınırsız biçim bu dönemde uygulanmadı.
-- **1975**: Fischer “ilk 10 galibiyet, sınırsız oyun” şartını istedi, FIDE reddetti, maç oynanmadı.
-- **1978 ve 1981**: Karpov–Korchnoi maçları “ilk 6 galibiyet”, oyun sınırı olmadan oynandı (Baguio 1978: 32 oyun; Merano 1981: 18 oyun). Sınırsız biçim böylece geri döndü.
-- **1984–85**: Karpov–Kasparov maçı 48 oyun sürdü ve Şubat 1985'te FIDE Başkanı Campomanes'in kararıyla **iptal edildi**. Sınırsız oyun sayısı **burada kaldırıldı**: Eylül 1985'teki yeniden maç **24 oyunla sınırlıydı** ve o günden bugüne ünvan maçları sabit oyun sayısıyla oynanıyor (önce 24, sonra 12–14; bugün 14 klasik oyun).
-
-#### 1) Birleşme ve bugünkü sistem (2006–)
-
-2006'da **Kramnik–Topalov** birleşme maçı Elista'da oynandı (6–6, ardından hızlı oyunlarda Kramnik kazandı; maç bir “tuvalet skandalı”yla da anılır) ve ünvan tek sahibe döndü. 2007'de turnuva biçimi (Meksika), 2008'den itibaren yine maç biçimi kullanıldı. FIDE, 2013'ten itibaren Adaylar'ı **sekiz kişilik çift devreli turnuva** olarak yerleştirdi; şampiyona doğrudan meydan okunur. Son yıllarda yenilikler: Dünya Kupası ve Grand Swiss yolu, FIDE Circuit, ve eşitlik hâlinde dört hızlı, iki hızlı, iki yıldırım ve sonunda “ani ölüm” oyunu.
-
-#### 2) Bölünme: iki şampiyon (1993–2006)
-
-1993'te Kasparov ve Nigel Short, FIDE'nin organizasyonundan memnun olmayarak **Profesyonel Satranç Birliği**'ni (PCA) kurdu; kendi aralarında Londra'da ünvan maçı oynadılar (Kasparov kazandı). FIDE ise Karpov'a şampiyonluk ünvanı verdi (Jan Timman'ı yenmişti) ve 1990'larda “**iki dünya şampiyonu**” vardı. 1990'ların sonunda FIDE ayrıca şampiyonayı **tek elemeli bir turnuva** hâline getirdi: onlarca oyuncu, kısa maçlar, hızlı tiebreak'ler (Khalifman 1999, Anand 2000, Ponomariov 2002, Kasimdzhanov 2004). Böyle bir turnuva en güçlü oyuncuyu değil, o hafta en sağlam oyuncuyu bulur. Bu yüzden herkes “asıl” şampiyonu Kasparov'un kaybettiği 2000'deki Londra maçında arıyordu: **Kramnik**, Kasparov'u (+2 =13) yenerek “klasik” şampiyon oldu.
-
-#### 3) FIDE'nin dönemi (1948–1993)
-
-Alekhine'in ölümü üzerine **FIDE** (Uluslararası Satranç Federasyonu) ünvanı yönetmeye başladı. 1948'de Lahey ve Moskova'da beş büyük ustanın (Botvinnik, Smyslov, Keres, Reshevsky, Euwe) oynadığı bir **maç turnuvası** düzenlendi; kazanan Botvinnik oldu. Sonra düzen oturdu:
-
-- **Bölgeler arası turnuva (Interzonal)** → **Adaylar** (önce turnuva, 1965'ten itibaren maç eleme) → **ünvan maçı**.
-- **Şampiyon ayrıcalıkları**: 12–12 eşitlikte ünvan şampiyonda kalırdı (Botvinnik 1951'de Bronstein'a, 1954'te Smyslov'a karşı ünvanı bu kuralla korudu). 1963'e kadar kaybeden şampiyon otomatik **rövanş** hakkına sahipti; bu hak Botvinnik'e iki kez (1958, 1961) ünvanı geri kazandırdı ve 1963'ten sonra kaldırıldı.
-- **1962 Adaylar'ı** (Curaçao) Sovyet oyuncuların kendi aralarında beraberlik anlaşması yaptığı ve Fischer'in bunu açıkça suçladığı turnuvaydı; sonuçta Adaylar'ın **turnuva** biçimi bırakıldı ve eleme maçlarına geçildi.
-- **1975**: Fischer 1972'de Spassky'i yendikten sonra ünvan savunması için bir dizi şart koydu (ilk 10 galibiyet, sınırsız oyun sayısı, 9–9'da şampiyonun korunması); FIDE bir kısmını reddetti, Fischer çekildi ve **Karpov** hiç oynamadan, **walkover** ile dünya şampiyonu ilan edildi.
-- **1984–85**: Karpov–Kasparov maçı “ilk 6 galibiyet” ile ve oyun sınırı olmadan başladı, 48 oyun sürdü (Karpov önce 5–0 öne geçmişti, Kasparov oyunlar boyunca direndi; skor 5–3'tü) ve FIDE Başkanı Florencio Campomanes'in maçı **iptal etmesi** (“yorgunluk” gerekçesiyle) büyük tartışma yarattı. Maç, 24 oyunluk bir formatla yeniden oynandı; Kasparov kazandı.
-
-#### 4) Şampiyon, kurallar koyar (1886–1946)
-
-Resmî dünya şampiyonluğu, **1886'da Steinitz–Zukertort maçı** ile başlıyor kabul edilir. O dönemde şampiyon ve meydan okuyucu, maçın biçimini, yerini ve **ödülünü** kendi aralarında pazarlıkla belirlerdi. Kurallar yoktu: genellikle belli sayıda galibiyete kadar oynanırdı (ör. “ilk 10 galibiyet”). Bir oyuncunun şampiyona meydan okuması için, kendi adına para bulabilmesi gerekiyordu.
-
-1920'lerde bu serbestlik bir sorun hâline geldi. **Capablanca**'nın önerisiyle 1922'de “Londra Kuralları” kabul edildi: en az 10.000 dolarlık ödül fonu, ilk 6 galibiyetle kazanılan maç. Bu kurallar şampiyonu korudu ama paranın bulunamadığı durumlarda meydan okuyucuyu da dışarıda bıraktı: bu yüzden **Rubinstein** ve **Nimzowitsch** gibi güçlü oyuncular hiç şans bulamadı. **Alekhine** ünvanı 1927'de aldıktan sonra Capablanca'ya rövanş vermedi ve rakibini kendi seçti (Bogoljubov, iki kez); 1935'te Euwe'ye bir sürpriz yenilgi aldı, 1937'de rövanşı kazandı. 1946'da şampiyon sıfatıyla öldü.
-
-#### 5) Gayriresmî dönem: şampiyon “en iyi” sayılandır (18. yüzyıl–1886)
-
-Resmî bir ünvan yoktu; en iyi sayılan oyuncu, bir şampiyon gibi anıldı, sonradan tarihçiler sıraladı: **Philidor** (18. yüzyıl, Fransa), **La Bourdonnais** (1830'lar), **Staunton** (1840'lar), **Anderssen** (1851 Londra turnuvasını kazanarak) ve onu 1858'de Paris'te yenen **Paul Morphy** (+7 −2 =2). Morphy “dünyanın en iyisi” sayıldı ama kısa süre sonra yarışmayı bıraktı; ona ünvan vermek için ortada bir kural da yoktu. **Steinitz** 1866'da Anderssen'i yenerek kendini dünya şampiyonu sayma hakkını elde etti; ama maç adlandırması ve “resmî” sayılması hep tartışmalıdır.
-
-![François-André Danican Philidor](images/dunya-philidor.jpg "<span lang="en">François-André Danican Philidor</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Augustin de Saint-Aubin, Charles-Nicolas Coc…</span> · <span lang="en">Public domain</span>")
-![Louis-Charles Mahé de La Bourdonnais](images/dunya-labourdonnais.jpg "<span lang="en">Louis-Charles Mahé de La Bourdonnais</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">The original uploader was Jaapvanderkooij at…</span> · <span lang="en">Public domain</span>")
-![Howard Staunton](images/dunya-staunton.jpg "<span lang="en">Howard Staunton</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">R. &amp;amp; E. Taylor (Firm) / After Thomas Dew…</span> · <span lang="en">Public domain</span>")
-
-![Adolf Anderssen](images/dunya-anderssen.jpg "<span lang="en">Adolf Anderssen</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
-![Paul Morphy](images/dunya-morphy.jpg "<span lang="en">Paul Morphy</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
-
-### Şampiyonlar ünvanı nasıl aldı, nasıl korudu?
-
-Aşağıda her şampiyon için *ünvanı kime karşı, nasıl aldığı* ve *nasıl koruduğu* özetleniyor. Skorlar “şampiyon puanı–rakip puanı” biçiminde.
-
 <table>
 <thead><tr><th>Şampiyon</th><th>Ünvanı aldığı yer ve rakip</th><th>Ünvanı koruması / kaybı</th></tr></thead>
 <tbody>
