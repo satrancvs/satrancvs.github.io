@@ -16,12 +16,8 @@ Gelelim karşısındaki isme. **Sindarov**, sistemin ikinci kapısından, yani o
 - Kasım 2025’te Goa’daki **FIDE Dünya Kupası**’nı (206 oyunculu eleme turnuvası) kazandı. 16. seri olarak başladığı turnuvada finalde Wei Yi’yi ancak ikinci hızlı oyun kararında yenebildi. 19 yaş 11 ayla en genç Dünya Kupası galibi ve ilk Özbek galip oldu; bu zafer ona Adaylar’a giriş bileti kazandırdı.
 - Mart–Nisan 2026’da Kıbrıs’ın Pegeia kasabasında oynanan, sekiz oyunculu, çift turlu döner **Adaylar Turnuvası**’nı 14 turda **10 puanla** kazandı: altı galibiyet, hiç yenilgi yok. Turnuvayı bir tur kala garantiledi ve mevcut çift turlu döner biçimde alınmış en yüksek puana ulaştı.
 
-Adaylar’ın son sıralaması şöyle oldu (her kutuda iki rakibin iki oyunu, oynanış sırasıyla):
-
 <pre>
 FIDE ADAYLAR TURNUVASI 2026 ÇAPRAZ TABLOSU
-Pegeia, Kıbrıs · 28 Mart – 16 Nisan 2026
-──────────────────────────────────────────────────────
                           1  2  3  4  5  6  7  8   Puan
  1 GM Sindarov            * ½½ 1½ 1½ 1½ ½½ 11 1½   10
  2 GM Giri               ½½  * ½1 ½½ ½½ ½1 01 1½   8½
@@ -33,12 +29,9 @@ Pegeia, Kıbrıs · 28 Mart – 16 Nisan 2026
  8 GM Esipenko           0½ 0½ ½0 00 ½½ ½½ ½½  *   4½
 </pre>
 
-#### Peki Carlsen, Nakamura, Caruana?
+#### Peki Carlsen nerede?
 
-Haklı olarak şunu merak edebilirsiniz: Carlsen, Nakamura ve Caruana nerede? İki ayrı yanıt var:
-
-- **Caruana ve Nakamura oynadı, ama kazanamadı.** Caruana 2024 FIDE Circuit galibi olarak, Nakamura ise 2025 Ağustos–2026 Ocak arasındaki en yüksek ortalama reytingle (ortalama 2810,5) Adaylar’a girdi. İkisi de 14 turun hepsini oynadı; Caruana üçüncü, Nakamura beşinci oldu. Nakamura’nın bu yoldan girişi bir ara tartışma konusu olmuştu, çünkü gerekli oyun sayısını doldurmak için dört ayrı Kuzey Amerika turnuvasına katılmıştı.
-- **Carlsen oynamadı.** Carlsen, Temmuz 2022’de ünvanını savunmayacağını açıklamıştı ve bu tarihten sonra bir daha Adaylar’a da katılmadı.
+Carlsen, Temmuz 2022’de ünvanını savunmayacağını açıklamıştı ve bu tarihten sonra bir daha Adaylar’a da katılmadı.
 
 Reyting yoluyla girişin şartı, belirlenen dönemde en az 40 reytingli klasik oyun oynamaktı; Carlsen o pencerede yalnızca 16 oyun oynamıştı. Üstelik Adaylar’a girmekle ilgilenmediğini de açıkça söylemişti; yani hem istemedi hem de gereken oyun sayısını oynamadı.
 
@@ -68,9 +61,11 @@ Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor ve her döngü gene
 
 ### Geçmişte nasıldı?
 
+Bugün gördüğümüz düzen, ünvanın yaklaşık 140 yıllık yolculuğunun son durağı. İlk yıllarda şartları şampiyonun kendisi koyuyordu; 1948’den sonra ünvanı FIDE yönetti, 1993’te satranç dünyası iki şampiyonlu bir bölünme yaşadı ve ünvan 2006’da yeniden tek çatı altında toplandı. Aşağıdaki çizelge bu hikâyeyi, en yeniden en eskiye doğru dönem dönem anlatıyor.
+
 [ZAMAN ÇİZELGESİ]
 
-Çizelgede adı geçen ünvan maçlarının her birinden bir oyun seçtik: 1886’dan bugüne toplam 56 oyun. Aşağıdan istediğinizi seçip izleyebilirsiniz.
+Çizelgede adı geçen ünvan maçlarının her birinden bir oyun seçtik: 1886’dan bugüne toplam 56 oyun. Değerlendirme işaretleri Stockfish’e ait.
 
 ### Tüm ünvan maçları
 
