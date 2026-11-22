@@ -1449,8 +1449,6 @@ Resmî sayılan ilk dünya şampiyonluğu maçı bu. İlk 10 galibiyete kadar oy
 
 ### Ünvanı alamamış ama hak etmiş efsaneler
 
-“Hak etmek” tartışmalı bir kavram; ama bu isimlerin her biri, zirvede oldukları dönemlerde o günün şampiyonuyla boy ölçüşebilecek kadar güçlüydü. Aşağıda, ünvana ulaşamamış ama şampiyonları yenmeyi başarmış bu efsanelerin birer oyununu izleyebilir, oyuncunun hikâyesini de oyunun altında okuyabilirsiniz.
-
 [MAÇ SEÇİCİ GÖSTER: Şampiyonları yenen efsaneler]
 
 [MAÇ SEÇİCİ: Şampiyonları yenen efsaneler]
