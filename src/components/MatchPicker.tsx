@@ -18,7 +18,8 @@ export type PickItem = {
 };
 
 const two = (n: number) => String(n).padStart(2, '0');
-const decadeLabel = (y: number) => `${Math.floor(y / 10) * 10}'ler`;
+// Türkçe ek, on yılın adının son ünlüsüne göre: 2010'lar (on), 1990'lar (doksan), 1960'lar (altmış), 1940'lar (kırk), 1930'lar (otuz); 2020'ler (yirmi), 2000'ler (bin), 1980'ler (seksen), 1970'ler (yetmiş), 1950'ler (elli).
+const decadeLabel = (y: number) => `${Math.floor(y / 10) * 10}'${[1, 3, 4, 6, 9].includes(Math.floor(y / 10) % 10) ? 'lar' : 'ler'}`;
 
 export default function MatchPicker({ items }: { items: PickItem[] }) {
   const [idx, setIdx] = useState(0);
