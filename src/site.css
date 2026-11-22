@@ -983,3 +983,25 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .tl-era { min-height: 2.1rem; align-items: flex-end; }
   .tl-era-years { position: absolute; left: 0; bottom: .55rem; width: calc(var(--gut) - .7rem); text-align: right; font-size: 1.4rem; line-height: 1.1; }
 }
+
+/* Zaman çizelgesi kaydırma animasyonu (ChampionTimeline: .tl-anim yalnızca JS çalışır ve hareket azaltılmamışsa eklenir) */
+.tl-anim::after { content: ''; position: absolute; left: 5px; top: 1.2rem; width: 2px; height: calc((100% - 1.2rem) * var(--tl-p, 0)); background: var(--accent); border-radius: 2px; pointer-events: none; }
+.tl-anim .tl-item, .tl-anim .tl-note { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .7s cubic-bezier(.2, .7, .2, 1), border-color .5s ease; }
+.tl-anim .tl-item.is-in, .tl-anim .tl-note.is-in { opacity: 1; transform: none; }
+.tl-anim .tl-dot { transition: background .35s ease, box-shadow .35s ease, transform .35s ease; }
+.tl-anim .tl-item.is-reached .tl-dot { background: var(--accent); box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 18%, transparent); transform: scale(1.08); }
+.tl-anim .tl-item.is-reached { border-color: color-mix(in srgb, var(--accent) 38%, var(--line)); }
+.tl-anim .tl-gutter { transition: color .35s ease, opacity .5s ease; opacity: .55; }
+.tl-anim .tl-item.is-reached .tl-gutter { opacity: 1; }
+.tl-anim .tl-era { border-bottom-color: transparent; background: linear-gradient(var(--accent), var(--accent)) left bottom / 0% 1px no-repeat; transition: background-size 1s cubic-bezier(.2, .7, .2, 1); }
+.tl-anim .tl-era.is-in { background-size: 100% 1px; }
+.tl-anim .tl-era::before { transform: rotate(45deg) scale(0); transition: transform .5s cubic-bezier(.3, 1.4, .5, 1) .25s; }
+.tl-anim .tl-era.is-in::before { transform: rotate(45deg) scale(1); }
+.tl-anim .tl-era-years, .tl-anim .tl-era-name { opacity: 0; transform: translateY(8px); transition: opacity .6s ease .1s, transform .6s ease .1s; }
+.tl-anim .tl-era.is-in .tl-era-years, .tl-anim .tl-era.is-in .tl-era-name { opacity: 1; transform: none; }
+.tl-anim .tl-note i { transform: rotate(45deg) scale(0); transition: transform .5s cubic-bezier(.3, 1.4, .5, 1) .2s; }
+.tl-anim .tl-note.is-in i { transform: rotate(45deg) scale(1); }
+@media print { .tl-anim .tl-item, .tl-anim .tl-note, .tl-anim .tl-era-years, .tl-anim .tl-era-name { opacity: 1 !important; transform: none !important; } .tl-anim::after { display: none; } }
+.tl-anim::after { z-index: 0; }
+.tl-anim .tl-dot, .tl-anim .tl-era::before, .tl-anim .tl-note i { z-index: 1; }
+.tl-anim::after { left: calc(var(--gut, 0rem) + 5px); }
