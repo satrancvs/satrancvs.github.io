@@ -61,8 +61,6 @@ Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor ve her döngü gene
 
 ### Geçmişte nasıldı?
 
-Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının kendisi bile 19. yüzyılın sonlarında ortaya çıktı ve günümüze kadar defalarca yeniden tanımlandı.
-
 [ZAMAN ÇİZELGESİ]
 
 Çizelgede adı geçen ünvan maçlarının her birinden bir oyun seçtik: 1886’dan bugüne toplam 56 oyun. Aşağıdan istediğinizi seçip izleyebilirsiniz.
