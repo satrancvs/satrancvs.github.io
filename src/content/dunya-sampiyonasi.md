@@ -3,57 +3,57 @@
 
 [CANLI MAÇ]
 
-24 Kasım 2026'da İsviçre'nin Cenevre yakınlarındaki Cologny'de, Fondation Martin Bodmer'de bir Dünya Satranç Şampiyonası maçı başlıyor: şampiyon Gukesh Dommaraju (Hindistan) ile şampiyon adayı Javokhir Sindarov (Özbekistan) karşı karşıya. İkisi de 20 yaşında; FIDE'nin deyişiyle tarihin en genç dünya şampiyonası karşılaşması.
+24 Kasım 2026’da İsviçre’de, Cenevre yakınlarındaki Cologny’de, Fondation Martin Bodmer’de bir Dünya Satranç Şampiyonası maçı başlıyor. Karşı karşıya gelenler şampiyon Gukesh Dommaraju (Hindistan) ve şampiyon adayı Javokhir Sindarov (Özbekistan). İkisi de 20 yaşında; FIDE’nin ifadesiyle bu, tarihin en genç dünya şampiyonası karşılaşması.
 
-FIDE'nin resmî maç sitesi: [worldchampionship.fide.com](https://worldchampionship.fide.com/).
+Maçı resmî sitesinden de takip edebilirsiniz: [worldchampionship.fide.com](https://worldchampionship.fide.com/).
 
 ### Neden Gukesh ve Sindarov?
 
-**Gukesh** şampiyon, çünkü ünvanı Aralık 2024'te Singapur'da, o zamanki şampiyon Ding Liren'i 7½–6½ yenerek aldı. 18 yaşında olan Gukesh, resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu oldu. Oraya da bir Adaylar Turnuvası'nı kazanarak gelmişti (Toronto 2024; 17 yaşında en genç şampiyon adayı). Yani Gukesh sistemin kapılarından geçip ünvanı aldı; şimdi savunuyor.
+Önce şampiyondan başlayalım. **Gukesh**, ünvanı Aralık 2024’te Singapur’da, o günün şampiyonu Ding Liren’i 7½–6½ yenerek aldı. O sırada 18 yaşındaydı ve resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu oldu. Oraya da bir Adaylar Turnuvası’nı kazanarak gelmişti (Toronto 2024); 17 yaşında en genç şampiyon adayı olmuştu. Kısacası Gukesh sistemin kapılarından geçerek ünvanı aldı ve şimdi onu savunuyor.
 
-**Sindarov** şampiyon adayı, çünkü sistemin ikinci kapısından, yani on dört turluk Adaylar Turnuvası'ndan birinci çıktı. Yolu şöyle:
+Gelelim karşısındaki isme. **Sindarov**, sistemin ikinci kapısından, yani on dört turluk Adaylar Turnuvası’ndan birinci çıkarak şampiyon adayı oldu. Bu yolculuğun iki önemli durağı var:
 
-- Kasım 2025'te Goa'daki **FIDE Dünya Kupası**'nı (206 oyunculu eleme turnuvası) kazandı; 16. seri olarak başlamış, finalde Wei Yi'yi ancak ikinci hızlı oyun kararında yenmişti. 19 yaş 11 ayla en genç Dünya Kupası galibi ve ilk Özbek galip oldu. Bu zafer ona Adaylar'a giriş bileti verdi.
-- Mart–Nisan 2026'da Kıbrıs'ın Pegeia kasabasında, sekiz oyunculu çift devreli **Adaylar Turnuvası**'nı 14 turda **10 puanla** kazandı (altı galibiyet, hiç yenilgi yok); turnuvayı bir tur kala garantiledi. Bu, mevcut çift devreli biçimde alınmış en yüksek puan.
+- Kasım 2025’te Goa’daki **FIDE Dünya Kupası**’nı (206 oyunculu eleme turnuvası) kazandı. 16. seri olarak başladığı turnuvada finalde Wei Yi’yi ancak ikinci hızlı oyun kararında yenebildi. 19 yaş 11 ayla en genç Dünya Kupası galibi ve ilk Özbek galip oldu; bu zafer ona Adaylar’a giriş bileti kazandırdı.
+- Mart–Nisan 2026’da Kıbrıs’ın Pegeia kasabasında oynanan, sekiz oyunculu çift devreli **Adaylar Turnuvası**’nı 14 turda **10 puanla** kazandı: altı galibiyet, hiç yenilgi yok. Turnuvayı bir tur kala garantiledi ve mevcut çift devreli biçimde alınmış en yüksek puana ulaştı.
 
-Adaylar'ın son sıralaması: Sindarov 10, Giri 8½, Caruana 7½, Wei Yi 7, Nakamura 6½, Blübaum 6, Praggnanandhaa 6, Esipenko 4½.
+Adaylar’ın son sıralaması şöyle oldu: Sindarov 10, Giri 8½, Caruana 7½, Wei Yi 7, Nakamura 6½, Blübaum 6, Praggnanandhaa 6, Esipenko 4½.
 
 #### Peki Carlsen, Nakamura, Caruana?
 
-Bu soru iki ayrı yanıt istiyor:
+Haklı olarak şunu merak edebilirsiniz: Carlsen, Nakamura ve Caruana nerede? İki ayrı yanıt var:
 
-- **Caruana ve Nakamura oynadı, ama kazanamadı.** Caruana 2024 FIDE Circuit galibi olarak, Nakamura ise 2025 Ağustos–2026 Ocak arasındaki en yüksek ortalama reytingle (ortalama 2810,5) Adaylar'a girdi; ikisi de 14 turun hepsini oynadı. Caruana üçüncü, Nakamura beşinci oldu. Nakamura'nın bu yoldan girişi tartışma konusu olmuştu: gerekli oyun sayısını doldurmak için dört ayrı Kuzey Amerika turnuvasına katılmıştı.
-- **Carlsen oynamadı.** Carlsen, Temmuz 2022'de ünvanını savunmayacağını açıklamıştı; Adaylar'a da katılmadı. Reyting yoluyla girişin şartı, belirlenen dönemde en az 40 reytingli klasik oyun oynamaktı; Carlsen o pencerede yalnızca 16 oyun oynamıştı (ortalaması 2839,3 ile en yüksekti, ama oyun sayısı yetmiyordu). Üstelik Adaylar'a girmekle ilgilenmediğini açıkça söylemişti: yani girmedi, çünkü girmek istemedi ve girmek için gereken oyun sayısını da oynamadı. Eylül 2026'daki bir söyleşide de Sindarov için “oldukça belirgin bir favori” demişti.
+- **Caruana ve Nakamura oynadı, ama kazanamadı.** Caruana 2024 FIDE Circuit galibi olarak, Nakamura ise 2025 Ağustos–2026 Ocak arasındaki en yüksek ortalama reytingle (ortalama 2810,5) Adaylar’a girdi. İkisi de 14 turun hepsini oynadı; Caruana üçüncü, Nakamura beşinci oldu. Nakamura’nın bu yoldan girişi bir ara tartışma konusu olmuştu, çünkü gerekli oyun sayısını doldurmak için dört ayrı Kuzey Amerika turnuvasına katılmıştı.
+- **Carlsen oynamadı.** Carlsen, Temmuz 2022’de ünvanını savunmayacağını açıklamıştı ve Adaylar’a da katılmadı. Reyting yoluyla girişin şartı, belirlenen dönemde en az 40 reytingli klasik oyun oynamaktı; Carlsen o pencerede yalnızca 16 oyun oynamıştı. Ortalaması 2839,3 ile en yüksek olsa da oyun sayısı yetmiyordu. Üstelik Adaylar’a girmekle ilgilenmediğini de açıkça söylemişti; yani hem istemedi hem de gereken oyun sayısını oynamadı. Eylül 2026’daki bir söyleşide Sindarov için “oldukça belirgin bir favori” demişti.
 
-Başka bir deyişle “dünyanın en iyisi” ile “dünya şampiyonu” aynı şey olmak zorunda değil. Ünvan, kurallarla belirlenmiş bir döngüye girmeyi, o döngüyü kazanmayı ve ünvan sahibini bir maçta yenmeyi gerektirir. Sistem böyle kurulduğundan, ünlü bir adın bu yarışa girmeyi seçmemesi mümkün; ve bir yıl içinde dünyanın en formda oyuncusu bile Adaylar'da kötü bir iki hafta geçirebilir. Bu yıl Sindarov'un tüm turnuvada yenilmemesi tesadüf değil, ama Nakamura ve Caruana'nın tablonun ortalarında kalması da sistemin doğal sonucu.
+Buradan çıkan genel sonuç şu: “dünyanın en iyisi” ile “dünya şampiyonu” her zaman aynı kişi olmak zorunda değil. Ünvan; kurallarla belirlenmiş bir döngüye girmeyi, o döngüyü kazanmayı ve ünvan sahibini bir maçta yenmeyi gerektiriyor. Bu yüzden ünlü bir ismin yarışa girmemeyi seçmesi mümkün. Dünyanın o yıldaki en formda oyuncusu bile Adaylar’da zor bir iki hafta geçirebilir. Sindarov’un turnuvada hiç yenilmemesi tesadüf değil; Nakamura ile Caruana’nın tablonun ortalarında kalması da bu sistemin doğal bir sonucu.
 
 #### Maç nasıl oynanıyor?
 
-- **14 klasik oyun**; süre 40 hamle için 120 dakika, sonra 30 dakika ve 41. hamleden itibaren hamle başına 30 saniye ekleme.
-- **7½ puana** ulaşan, 14 oyun dolmadan da maçı kazanır.
-- 7–7 olursa **ek oyunlar**: önce 15+10 tempolu dört hızlı oyun, sonra 10+5'lik iki hızlı, sonra 3+2'lik iki yıldırım; hâlâ eşitlik varsa renkler değişerek tek oyunluk yıldırım eleme.
-- **Ödül fonu 2,5 milyon dolar**: kazanılan her oyun için 200.000 dolar, kalanı eşit paylaşılır. Skor 7½–6½ ise kazanan 1,3 milyon, kaybeden 1,2 milyon dolar alır.
-- Maç 24 Kasım–12 Aralık arasında; dinlenme günleri 27 Kasım, 1, 5 ve 9 Aralık; eşitlik halinde ek oyunlar 12 Aralık'ta.
+- **14 klasik oyun** oynanacak; süre 40 hamle için 120 dakika, sonra 30 dakika, 41. hamleden itibaren de her hamle için 30 saniye ekleme.
+- **7½ puana** ilk ulaşan, 14 oyun dolmadan da maçı kazanır.
+- Skor 7–7 olursa **ek oyunlar** devreye girer: önce 15+10 tempolu dört hızlı oyun, sonra 10+5’lik iki hızlı, sonra 3+2’lik iki yıldırım oyunu. Hâlâ eşitlik varsa renkler değişerek tek oyunluk bir yıldırım eleme oynanır.
+- **Ödül fonu 2,5 milyon dolar**: kazanılan her oyun için 200.000 dolar verilir, kalan tutar iki oyuncu arasında eşit paylaşılır. Örneğin skor 7½–6½ olursa kazanan 1,3 milyon, kaybeden 1,2 milyon dolar alır.
+- Maç 24 Kasım–12 Aralık arasında oynanacak. Dinlenme günleri 27 Kasım, 1, 5 ve 9 Aralık; eşitlik hâlinde ek oyunlar 12 Aralık’ta.
 
-Kâğıt üzerinde Sindarov favori: reytingi 2782 (dünya 4.), Gukesh'in 2710'u (dünya 26.) karşısında. Gukesh'in 2025'ten beri formu düşük; Norveç Satranç 2026 ve Chennai Grand Masters 2026'yı sonuncu bitirdi ve Elo sisteminin 1971'de getirilmesinden beri en düşük reytingli şampiyon. Ama bir ünvan maçı reytinglerle oynanmaz: 14 oyun boyunca sinir ve hazırlık da oynar.
+Kâğıt üzerinde Sindarov favori görünüyor: reytingi 2782 (dünya 4.), Gukesh’in ise 2710 (dünya 26.). Gukesh’in 2025’ten beri formu düşük; Norveç Satranç 2026 ve Chennai Grand Masters 2026’yı sonuncu bitirdi, ayrıca Elo sisteminin 1971’de getirilmesinden bu yana en düşük reytingli şampiyon. Yine de ünvan maçları reytinglerle değil, 14 oyunluk bir mücadeleyle belirleniyor; bu süre boyunca sinirler ve hazırlık da en az reyting kadar belirleyici olabilir.
 
-İkisi bugüne kadar altı kez karşı karşıya geldi ve toplam skor **4½–1½ Sindarov lehine**. Klasik oyunlarda üç karşılaşmanın ikisini Sindarov kazandı (Moskova Açık 2018'de Siyahlarla, Şarjah Masters 2022'de Beyazlarla); sonuncusu, Ocak 2026'daki Tata Steel Masters'ta, 78 hamlelik beraberlikle bitti: **2½–½ Sindarov**. Hızlı oyunda tek karşılaşma var; Mayıs 2026'da Varşova'da Gukesh Siyahlarla kazandı: **1–0 Gukesh**. Yıldırım oyunlarda ise aynı turnuvanın iki karşılaşmasını da Sindarov kazandı: **2–0 Sindarov**. Altı oyunun hepsini aşağıdan oynatabilirsiniz.
+İkisi daha önce de karşılaşmış. Bugüne kadar altı kez karşı karşıya geldiler ve toplam skor **4½–1½ Sindarov lehine**. Klasik oyunlarda üç karşılaşmanın ikisini Sindarov kazandı (Moskova Açık 2018’de Siyahlarla, Şarjah Masters 2022’de Beyazlarla); sonuncusu Ocak 2026’daki Tata Steel Masters’ta 78 hamlelik bir beraberlikle bitti. Klasik skor: **2½–½ Sindarov**. Hızlı oyunda tek karşılaşma var: Mayıs 2026’da Varşova’da Gukesh Siyahlarla kazandı, **1–0 Gukesh**. Yıldırım oyunlarda ise aynı turnuvanın iki karşılaşmasını da Sindarov kazandı: **2–0 Sindarov**. Altı oyunun hepsini aşağıdan oynatabilirsiniz.
 
-#### Aralarındaki oyunlar
+### Aralarındaki oyunlar
 
 [MAÇ SEÇİCİ GÖSTER: Gukesh – Sindarov karşılaşmaları]
 
 ### Dünya Şampiyonu nasıl belirleniyor?
 
-Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor; her döngü genelde iki yıl sürer.
+Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor ve her döngü genelde iki yıl sürüyor. Adım adım bakalım:
 
-1. **Adaylar Turnuvası'na kimler girer?** Sekiz kişi. Bugünkü kurallarda yer şu yollarla kazanılıyor: Dünya Kupası'ndaki ilk üç, Grand Swiss'teki ilk iki (2025'te Giri ve Blübaum), önceki iki yılın FIDE Circuit (turnuva puanı) birincileri (Caruana, Praggnanandhaa) ve bir de reyting kuralı (Nakamura). 2026'nın Adaylar'ı bu dört yolun hepsinden oyuncu getirdi.
-2. **Adaylar Turnuvası**: sekiz oyuncu, çift devreli, 14 tur. Birinci, şampiyonun karşısına çıkacak şampiyon adayıdır.
-3. **Ünvan maçı**: 14 klasik oyunluk maç. Şampiyon, **kendi ünvanını savunarak** doğrudan maça gelir; Adaylar'a katılmaz.
+1. **Adaylar Turnuvası’na kimler giriyor?** Sekiz kişi. Bugünkü kurallarda bu koltuklar şu yollarla kazanılıyor: Dünya Kupası’ndaki ilk üç, Grand Swiss’teki ilk iki (2025’te Giri ve Blübaum), önceki iki yılın FIDE Circuit (turnuva puanı) birincileri (Caruana, Praggnanandhaa) ve bir de reyting kuralı (Nakamura). 2026’nın Adaylar’ı bu dört yolun hepsinden oyuncu getirdi.
+2. **Adaylar Turnuvası**: sekiz oyuncu, çift devreli, 14 tur. Birinci olan, şampiyonun karşısına çıkacak şampiyon adayı oluyor.
+3. **Ünvan maçı**: 14 klasik oyunluk bir maç. Şampiyon **kendi ünvanını savunarak** doğrudan maça geliyor; Adaylar’a katılmıyor.
 
 ### Geçmişte nasıldı?
 
-Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının kendisi bile 19. yüzyılın sonlarında ortaya çıktı ve günümüze kadar defalarca yeniden tanımlandı.
+Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının kendisi bile 19. yüzyılın sonlarında ortaya çıktı ve günümüze kadar defalarca yeniden tanımlandı. Aşağıdaki tablo, ünvanın el değiştirme hikâyesini dönem dönem anlatıyor.
 
 <table>
 <thead><tr><th>Şampiyon</th><th>Ünvanı aldığı yer ve rakip</th><th>Ünvanı koruması / kaybı</th></tr></thead>
@@ -88,9 +88,9 @@ Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının ke
 </tbody>
 </table>
 
-#### Tüm ünvan maçları
+### Tüm ünvan maçları
 
-Tablo ünvanın kimden kime geçtiğini gösteriyor; şimdi bu geçişleri oyun oyun izleyelim. Aşağıda 1886'dan bugüne oynanmış 56 ünvan maçının her biri için belirleyici bir oyun var, en yeniden en eskiye doğru sıralı. İlk durak, ünvanın en son el değiştirdiği maç: Aralık 2024'te Singapur'da Ding Liren – Gukesh maçının 14. ve son oyunu. Gukesh bu oyunda Ding'in hatasından yararlanıp maçı 7½–6½ kazandı. Aşağıdaki şeritten dilediğiniz maçı seçebilirsiniz.
+Tablo ünvanın kimden kime geçtiğini gösteriyor; şimdi de bu geçişleri oyun oyun izleyelim. Aşağıda 1886’dan bugüne oynanmış 56 ünvan maçının her biri için belirleyici bir oyun var, en yeniden en eskiye doğru sıralı. İlk durak, ünvanın en son el değiştirdiği maç: Aralık 2024’te Singapur’da oynanan Ding Liren – Gukesh maçının 14. ve son oyunu. Gukesh bu oyunda Ding’in hatasından yararlanıp maçı 7½–6½ kazandı. Aşağıdaki şeritten dilediğiniz maçı seçip izleyebilirsiniz.
 
 [MAÇ SEÇİCİ GÖSTER: Tüm ünvan maçları]
 
@@ -102,7 +102,7 @@ Tablo ünvanın kimden kime geçtiğini gösteriyor; şimdi bu geçişleri oyun 
 
 [KART images/dunya-gukesh.jpg]
 
-Grand Chess Tour Polonya ayağında, yıldırım oyunlarda ikisinin ikinci karşılaşması: Sindarov Siyahlarla kazandı.
+Grand Chess Tour Polonya ayağında yıldırım oyunlarda ikisinin ikinci karşılaşması; Sindarov Siyahlarla kazandı.
 
 [Event "GCT Süper Yıldırım Polonya"]
 [Site "Varşova"]
@@ -123,7 +123,7 @@ Grand Chess Tour Polonya ayağında, yıldırım oyunlarda ikisinin ikinci karş
 
 [KART images/dunya-sindarov.jpg]
 
-Grand Chess Tour Polonya ayağında, yıldırım oyunlarda Sindarov Beyazlarla kazandı.
+Grand Chess Tour Polonya ayağında, yıldırım oyunlarda bu kez Sindarov Beyazlarla kazandı.
 
 [Event "GCT Süper Yıldırım Polonya"]
 [Site "Varşova"]
@@ -146,7 +146,7 @@ Grand Chess Tour Polonya ayağında, yıldırım oyunlarda Sindarov Beyazlarla k
 
 ![Javokhir Sindarov](images/dunya-x-sindarov-a.jpg "<span lang="en">Javokhir Sindarov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">MiroJP</span> · <span lang="en">CC BY-SA 4.0</span>")
 
-Grand Chess Tour Polonya ayağının hızlı oyun bölümünde Gukesh Siyahlarla kazandı.
+Grand Chess Tour Polonya ayağının hızlı oyun bölümünde Gukesh Siyahlarla kazandı; ikisi arasındaki tek hızlı oyun bu.
 
 [Event "GCT Süper Hızlı Polonya"]
 [Site "Varşova"]
@@ -169,7 +169,7 @@ Grand Chess Tour Polonya ayağının hızlı oyun bölümünde Gukesh Siyahlarla
 
 ![Javokhir Sindarov](images/dunya-x-sindarov-b.jpg "<span lang="en">Javokhir Sindarov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
 
-İkisinin Tata Steel Masters’ın ilk turundaki klasik oyunu 155 yarım hamle sürdü ve berabere bitti; bu, aralarındaki üçüncü klasik oyundu.
+Tata Steel Masters’ın ilk turunda karşılaştılar; klasik oyun 155 yarım hamle sürdü ve berabere bitti. Bu, aralarındaki üçüncü klasik oyundu.
 
 [Event "88. Tata Steel Masters"]
 [Site "Wijk aan Zee"]
@@ -192,7 +192,7 @@ Grand Chess Tour Polonya ayağının hızlı oyun bölümünde Gukesh Siyahlarla
 
 ![Javokhir Sindarov](images/dunya-x-sindarov-c.jpg "<span lang="en">Javokhir Sindarov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Frans Peeters Photography</span> · <span lang="en">CC BY-SA 2.0</span>")
 
-Mayıs 2022’de Şarjah Masters’ta Sindarov, Beyazlarla Gukesh’i yendi.
+Mayıs 2022’de Şarjah Masters’ta Sindarov, Beyazlarla oynayıp Gukesh’i yendi.
 
 [Event "5. Şarjah Masters"]
 [Site "Şarjah"]
@@ -215,7 +215,7 @@ Mayıs 2022’de Şarjah Masters’ta Sindarov, Beyazlarla Gukesh’i yendi.
 
 ![Gukesh Dommaraju](images/dunya-x-gukesh-2024.jpg "<span lang="en">Gukesh Dommaraju</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Frans Peeters</span> · <span lang="en">CC BY-SA 2.0</span>")
 
-İkisinin ilk klasik karşılaşması: 4 Şubat 2018’de, 11–12 yaşlarındayken, Moskova Açık’ta Sindarov Siyahlarla kazandı.
+İkisinin ilk klasik karşılaşması bu: 4 Şubat 2018’de, henüz 11–12 yaşlarındayken Moskova Açık’ta karşılaştılar ve Sindarov Siyahlarla kazandı.
 
 [Event "14. Moskova Açık"]
 [Site "Moskova"]
@@ -240,7 +240,7 @@ Mayıs 2022’de Şarjah Masters’ta Sindarov, Beyazlarla Gukesh’i yendi.
 
 ![Ding Liren – Gukesh, Tata Steel Satranç 2023 (Wijk aan Zee); maçtan değil, iki oyuncunun daha önceki karşılaşması](images/dunya-mac-2024.jpg "<span lang="en">Ding Liren</span> – <span lang="en">Gukesh</span>, <span lang="en">Tata Steel</span> Satranç 2023 (Wijk aan Zee); maçtan değil, iki oyuncunun daha önceki karşılaşması · <span lang="en">Wikimedia Commons</span> · <span lang="en">Vysotsky</span> · <span lang="en">CC BY-SA 4.0</span>")
 
-Gukesh 14. oyunda Ding’in hatasıyla maçı 7½–6½ kazandı. Seçtiğimiz oyun, 14. oyun. FIDE Müzesi: [Gukesh Dommaraju](https://museum.fide.com/champions/gukesh-dommaraju). [FIDE haberi](https://www.fide.com/fide-world-championship-game-14-gukesh-d-claims-title/).
+Gukesh, 14. oyunda Ding’in hatasından yararlanarak maçı 7½–6½ kazandı. İzleyeceğiniz oyun, bu 14. oyun. Merak edenler için FIDE Müzesi: [Gukesh Dommaraju](https://museum.fide.com/champions/gukesh-dommaraju). [FIDE haberi](https://www.fide.com/fide-world-championship-game-14-gukesh-d-claims-title/).
 
 [Event "Dünya Şampiyonası"]
 [Site "Singapur"]
@@ -266,7 +266,7 @@ Gukesh 14. oyunda Ding’in hatasıyla maçı 7½–6½ kazandı. Seçtiğimiz o
 
 ![Astana 2023, 1. oyunun başı](images/dunya-mac-2023.jpg "Astana 2023, 1. oyunun başı · <span lang="en">Wikimedia Commons</span> · <span lang="en">Vladimir Barsky (Владимир Барский), ruchess.ru</span> · <span lang="en">CC BY-SA 3.0</span>")
 
-14 klasik oyun 7–7 bitti; Ding, hızlı oyunların 4.’sünde Siyahlarla kazanıp şampiyon oldu. FIDE Müzesi: [Ding Liren](https://museum.fide.com/champions/ding-liren). [FIDE haberi](https://www.fide.com/ding-liren-makes-history-becoming-world-champion/).
+14 klasik oyun 7–7 bitti ve maç hızlı oyunlara kaldı. Ding, 4. hızlı oyunu Siyahlarla kazanarak şampiyon oldu. Merak edenler için FIDE Müzesi: [Ding Liren](https://museum.fide.com/champions/ding-liren). [FIDE haberi](https://www.fide.com/ding-liren-makes-history-becoming-world-champion/).
 
 [Event "Dünya Şampiyonası"]
 [Site "Astana"]
@@ -289,7 +289,7 @@ Gukesh 14. oyunda Ding’in hatasıyla maçı 7½–6½ kazandı. Seçtiğimiz o
 
 ![Carlsen ve Nepomniachtchi; ilk hamleyi Moskova Belediye Başkanı Sobyanin yapıyor (Dubai, 3 Aralık 2021)](images/dunya-mac-2021.jpg "<span lang="en">Carlsen</span> ve <span lang="en">Nepomniachtchi</span>; ilk hamleyi Moskova Belediye Başkanı <span lang="en">Sobyanin</span> yapıyor (Dubai, 3 Aralık 2021) · <span lang="en">Wikimedia Commons</span> · <span lang="en">mos.ru</span> · <span lang="en">CC BY 4.0</span>")
 
-Carlsen 11 oyunda 7½–3½ kazandı. Seçtiğimiz oyun 11. oyun. FIDE Müzesi: [Magnus Carlsen](https://museum.fide.com/champions/magnus-carlsen). [FIDE haberi](https://fide.com/news/1474).
+Carlsen maçı 11 oyunda 7½–3½ kazandı. İzleyeceğiniz oyun, 11. oyun. Merak edenler için FIDE Müzesi: [Magnus Carlsen](https://museum.fide.com/champions/magnus-carlsen). [FIDE haberi](https://fide.com/news/1474).
 
 [Event "Dünya Şampiyonası"]
 [Site "Dubai"]
@@ -317,7 +317,7 @@ Carlsen 11 oyunda 7½–3½ kazandı. Seçtiğimiz oyun 11. oyun. FIDE Müzesi: 
 ![Carlsen ve Caruana el sıkışıyor](images/dunya-fide-2018-a.jpg "Carlsen ve Caruana, hızlı oyunlar öncesi · © <span lang="en">FIDE</span> · [<span lang="en">FIDE</span> fotoğraf galerisi](https://www.fide.com/images/stories/gallery/WCCM2018/index.html)")
 ![Carlsen hızlı oyunda](images/dunya-fide-2018-b.jpg "Carlsen, hızlı oyunlar sırasında · © <span lang="en">FIDE</span> · [<span lang="en">FIDE</span> fotoğraf galerisi](https://www.fide.com/images/stories/gallery/WCCM2018/index.html)")
 
-12 oyunun hepsi berabere bitti; Carlsen hızlı oyunlarda 3–0 kazandı. Seçtiğimiz oyun, 2. hızlı oyun. FIDE Müzesi: [Magnus Carlsen](https://museum.fide.com/champions/magnus-carlsen). [FIDE fotoğraf galerisi](https://www.fide.com/images/stories/gallery/WCCM2018/index.html).
+12 klasik oyunun hepsi berabere bitti; Carlsen hızlı oyunlarda 3–0 kazandı. İzleyeceğiniz oyun, 2. hızlı oyun. Merak edenler için FIDE Müzesi: [Magnus Carlsen](https://museum.fide.com/champions/magnus-carlsen). [FIDE fotoğraf galerisi](https://www.fide.com/images/stories/gallery/WCCM2018/index.html).
 
 [Event "Dünya Şampiyonası"]
 [Site "Londra"]
@@ -340,7 +340,7 @@ Carlsen 11 oyunda 7½–3½ kazandı. Seçtiğimiz oyun 11. oyun. FIDE Müzesi: 
 
 ![Sergey Karjakin](images/dunya-karjakin.jpg "<span lang="en">Sergey Karjakin</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 4.0</span>")
 
-Maç, Manhattan'da South Street Seaport'taki Fulton Market Binası'nda oynandı; New York'ta 1995'ten beri ilk dünya şampiyonası maçıydı. Yedi beraberlikle başlayan maçta Karjakin 8. oyunda öne geçti, Carlsen 10. oyunda eşitledi; 12 klasik oyun 6–6 bitti. Carlsen hızlı oyunlarda 3–1 kazandı: 30 Kasım, 26. doğum gününde 3. oyunu kazandı, 4. oyunda vezir fedasıyla mat etti. Seçtiğimiz oyun, 4. hızlı oyun. Ayrıntılar: [World Chess'in New York 2016 sayfası](https://worldchess.com/nyc2016). FIDE Müzesi: [Magnus Carlsen](https://museum.fide.com/champions/magnus-carlsen). [FIDE haberi: kapanış töreni](https://old.fide.com/component/content/article/1-fide-news/9939-closing-ceremony-of-the-world-championship-match-2016.html).
+Maç, Manhattan’da South Street Seaport’taki Fulton Market Binası’nda oynandı ve New York’ta 1995’ten beri oynanan ilk dünya şampiyonası maçıydı. Yedi beraberlikle başladı; Karjakin 8. oyunda öne geçti, Carlsen 10. oyunda eşitledi ve 12 klasik oyun 6–6 bitti. Carlsen hızlı oyunlarda 3–1 kazandı: 30 Kasım’da, 26. doğum gününde 3. oyunu aldı, 4. oyunda ise vezir fedasıyla mat etti. İzleyeceğiniz oyun, 4. hızlı oyun. Ayrıntılar: [World Chess'in New York 2016 sayfası](https://worldchess.com/nyc2016). FIDE Müzesi: [Magnus Carlsen](https://museum.fide.com/champions/magnus-carlsen). [FIDE haberi: kapanış töreni](https://old.fide.com/component/content/article/1-fide-news/9939-closing-ceremony-of-the-world-championship-match-2016.html).
 
 [Event "Dünya Şampiyonası"]
 [Site "New York"]
@@ -365,7 +365,7 @@ Maç, Manhattan'da South Street Seaport'taki Fulton Market Binası'nda oynandı;
 
 ![Viswanathan Anand](images/dunya-anand.jpg "<span lang="en">Viswanathan Anand</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Wolfgang Jekel</span> · <span lang="en">CC BY 2.0</span>")
 
-Carlsen 6½–4½ ile ünvanını korudu. Seçtiğimiz oyun, 11. oyun. FIDE Müzesi: [Magnus Carlsen](https://museum.fide.com/champions/magnus-carlsen).
+Carlsen ünvanını 6½–4½ ile korudu. İzleyeceğiniz oyun, 11. oyun. Merak edenler için FIDE Müzesi: [Magnus Carlsen](https://museum.fide.com/champions/magnus-carlsen).
 
 [Event "Dünya Şampiyonası"]
 [Site "Soçi"]
@@ -386,7 +386,7 @@ Carlsen 6½–4½ ile ünvanını korudu. Seçtiğimiz oyun, 11. oyun. FIDE Müz
 
 [KART images/dunya-carlsen.jpg]
 
-Carlsen 10 oyunda 6½–3½ kazanıp şampiyon oldu. Seçtiğimiz oyun 9. oyun. FIDE Müzesi: [Magnus Carlsen](https://museum.fide.com/champions/magnus-carlsen).
+Carlsen 10 oyunda 6½–3½ kazanıp şampiyon oldu. İzleyeceğiniz oyun, 9. oyun. Merak edenler için FIDE Müzesi: [Magnus Carlsen](https://museum.fide.com/champions/magnus-carlsen).
 
 [Event "Dünya Şampiyonası"]
 [Site "Chennai"]
@@ -409,7 +409,7 @@ Carlsen 10 oyunda 6½–3½ kazanıp şampiyon oldu. Seçtiğimiz oyun 9. oyun. 
 
 ![Boris Gelfand](images/dunya-gelfand.jpg "<span lang="en">Boris Gelfand</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">TheBoburshokh</span> · <span lang="en">CC0</span>")
 
-12 klasik oyun 6–6 bitti; hızlı oyunlarda Anand 2½–1½ kazandı. Seçtiğimiz oyun, 2. hızlı oyun. FIDE Müzesi: [Viswanathan Anand](https://museum.fide.com/champions/viswanathan-anand).
+12 klasik oyun 6–6 bitti; hızlı oyunlarda Anand 2½–1½ kazandı. İzleyeceğiniz oyun, 2. hızlı oyun. Merak edenler için FIDE Müzesi: [Viswanathan Anand](https://museum.fide.com/champions/viswanathan-anand).
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -432,7 +432,7 @@ Carlsen 10 oyunda 6½–3½ kazanıp şampiyon oldu. Seçtiğimiz oyun 9. oyun. 
 
 ![Veselin Topalov](images/dunya-topalov.jpg "<span lang="en">Veselin Topalov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">This photo was taken by Przemysław JahrAutor…</span> · <span lang="en">CC BY-SA 3.0</span>")
 
-Son oyunu Siyahlarla kazanan Anand, 6½–5½ ile ünvanını korudu. FIDE Müzesi: [Viswanathan Anand](https://museum.fide.com/champions/viswanathan-anand).
+Son oyunu Siyahlarla kazanan Anand, maçı 6½–5½ alıp ünvanını korudu. Merak edenler için FIDE Müzesi: [Viswanathan Anand](https://museum.fide.com/champions/viswanathan-anand).
 
 [Event "Dünya Şampiyonası"]
 [Site "Sofya"]
@@ -455,7 +455,7 @@ Son oyunu Siyahlarla kazanan Anand, 6½–5½ ile ünvanını korudu. FIDE Müze
 
 ![Anand – Kramnik, Bonn 2008](images/dunya-mac-2008.jpg "<span lang="en">Anand</span> – <span lang="en">Kramnik</span>, Bonn 2008 · <span lang="en">Wikimedia Commons</span> · <span lang="en">Ygrek</span> · <span lang="en">CC BY 3.0</span>")
 
-Anand ünvanını 6½–4½ ile korudu. Seçtiğimiz oyun 6. oyun. FIDE Müzesi: [Viswanathan Anand](https://museum.fide.com/champions/viswanathan-anand).
+Anand ünvanını 6½–4½ ile korudu. İzleyeceğiniz oyun, 6. oyun. Merak edenler için FIDE Müzesi: [Viswanathan Anand](https://museum.fide.com/champions/viswanathan-anand).
 
 [Event "Dünya Şampiyonası"]
 [Site "Bonn"]
@@ -478,7 +478,7 @@ Anand ünvanını 6½–4½ ile korudu. Seçtiğimiz oyun 6. oyun. FIDE Müzesi:
 
 ![Alexander Morozevich](images/dunya-morozevich.jpg "<span lang="en">Alexander Morozevich</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
 
-Sekiz oyunculu çift devreli turnuvada Anand 14 oyundan 9 puan aldı. Seçtiğimiz oyun, Morozevich’e karşı galibiyeti. FIDE Müzesi: [Viswanathan Anand](https://museum.fide.com/champions/viswanathan-anand).
+Sekiz oyunculu çift devreli turnuvada Anand 14 oyundan 9 puan aldı. İzleyeceğiniz oyun, Morozevich’e karşı kazandığı oyun. Merak edenler için FIDE Müzesi: [Viswanathan Anand](https://museum.fide.com/champions/viswanathan-anand).
 
 [Event "Dünya Şampiyonası"]
 [Site "Meksika"]
@@ -499,7 +499,7 @@ Sekiz oyunculu çift devreli turnuvada Anand 14 oyundan 9 puan aldı. Seçtiğim
 
 [KART images/dunya-kramnik.jpg]
 
-Birleşme maçı 6–6 bitti; hızlı oyunlarda Kramnik 2½–1½ kazandı. Seçtiğimiz oyun, 4. hızlı oyun. FIDE Müzesi: [Vladimir Kramnik](https://museum.fide.com/champions/vladimir-kramnik).
+Birleşme maçı 6–6 bitti; hızlı oyunlarda Kramnik 2½–1½ kazandı. İzleyeceğiniz oyun, 4. hızlı oyun. Merak edenler için FIDE Müzesi: [Vladimir Kramnik](https://museum.fide.com/champions/vladimir-kramnik).
 
 [Event "Dünya Şampiyonası"]
 [Site "Elista"]
@@ -520,7 +520,7 @@ Birleşme maçı 6–6 bitti; hızlı oyunlarda Kramnik 2½–1½ kazandı. Seç
 
 [KART images/dunya-topalov.jpg]
 
-Sekiz oyunculu çift devreli turnuvayı Topalov kazandı. Seçtiğimiz oyun, Kasimdzhanov’a karşı galibiyeti.
+Sekiz oyunculu çift devreli turnuvayı Topalov kazandı. İzleyeceğiniz oyun, Kasimdzhanov’a karşı kazandığı oyun.
 
 [Event "Dünya Şampiyonası"]
 [Site "San Luis"]
@@ -544,7 +544,7 @@ Sekiz oyunculu çift devreli turnuvayı Topalov kazandı. Seçtiğimiz oyun, Kas
 ![Rustam Kasimdzhanov](images/dunya-kasimdzhanov.jpg "<span lang="en">Rustam Kasimdzhanov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Ygrek</span> · <span lang="en">Public domain</span>")
 ![Michael Adams](images/dunya-adams.jpg "<span lang="en">Michael Adams</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Yunfan Zhao / lichess.org</span> · <span lang="en">CC BY-SA 4.0</span>")
 
-Eleme turnuvası finali: Kasimdzhanov 4½–3½ kazandı. Seçtiğimiz oyun, belirleyici ek oyun.
+Eleme turnuvasının finalinde Kasimdzhanov 4½–3½ kazandı. İzleyeceğiniz oyun, belirleyici ek oyun.
 
 [Event "Dünya Şampiyonası"]
 [Site "Trablus"]
@@ -567,7 +567,7 @@ Eleme turnuvası finali: Kasimdzhanov 4½–3½ kazandı. Seçtiğimiz oyun, bel
 
 ![Péter Lékó](images/dunya-leko.jpg "<span lang="en">Péter Lékó</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Yunfan Zhao / lichess.org</span> · <span lang="en">CC BY-SA 4.0</span>")
 
-14 oyun sonunda 7–7: Leko son oyuna 7–6 önde girdi; Kramnik 14. oyunu kazanıp ünvanını korudu. FIDE Müzesi: [Vladimir Kramnik](https://museum.fide.com/champions/vladimir-kramnik).
+14 oyun sonunda skor 7–7 oldu: Leko son oyuna 7–6 önde girmişti, ama Kramnik 14. oyunu kazanıp ünvanını korudu. Merak edenler için FIDE Müzesi: [Vladimir Kramnik](https://museum.fide.com/champions/vladimir-kramnik).
 
 [Event "Dünya Şampiyonası"]
 [Site "Brissago"]
@@ -591,7 +591,7 @@ Eleme turnuvası finali: Kasimdzhanov 4½–3½ kazandı. Seçtiğimiz oyun, bel
 ![Ruslan Ponomariov](images/dunya-ponomariov.jpg "<span lang="en">Ruslan Ponomariov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">JaVe.StAr</span> · <span lang="en">CC BY 4.0</span>")
 ![Vasyl Ivanchuk](images/dunya-ivanchuk.jpg "<span lang="en">Vasyl Ivanchuk</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
 
-Finali Ponomariov 4½–2½ kazandı. Seçtiğimiz oyun 5. oyun.
+Finali Ponomariov 4½–2½ kazandı. İzleyeceğiniz oyun, 5. oyun.
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -616,7 +616,7 @@ Finali Ponomariov 4½–2½ kazandı. Seçtiğimiz oyun 5. oyun.
 
 ![Garry Kasparov](images/dunya-kasparov.jpg "<span lang="en">Garry Kasparov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Fryta 73 from Strzegom</span> · <span lang="en">CC BY-SA 2.0</span>")
 
-Kramnik 15 oyunda 8½–6½ kazandı: iki galibiyet, yenilgi yok. Seçtiğimiz oyun, 10. oyun. FIDE Müzesi: [Vladimir Kramnik](https://museum.fide.com/champions/vladimir-kramnik).
+Kramnik, 15 oyunda 8½–6½ kazandı: iki galibiyet aldı, hiç yenilmedi. İzleyeceğiniz oyun, 10. oyun. Merak edenler için FIDE Müzesi: [Vladimir Kramnik](https://museum.fide.com/champions/vladimir-kramnik).
 
 [Event "Dünya Şampiyonası"]
 [Site "Londra"]
@@ -639,7 +639,7 @@ Kramnik 15 oyunda 8½–6½ kazandı: iki galibiyet, yenilgi yok. Seçtiğimiz o
 
 ![Alexei Shirov](images/dunya-shirov.jpg "<span lang="en">Alexei Shirov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Yunfan Zhao / lichess.org</span> · <span lang="en">CC BY-SA 4.0</span>")
 
-Anand finali 3½–½ kazandı. Seçtiğimiz oyun, maçı kazandıran 3. oyun. FIDE Müzesi: [Viswanathan Anand](https://museum.fide.com/champions/viswanathan-anand).
+Anand finali 3½–½ kazandı. İzleyeceğiniz oyun, maçı kazandıran 3. oyun. Merak edenler için FIDE Müzesi: [Viswanathan Anand](https://museum.fide.com/champions/viswanathan-anand).
 
 [Event "Dünya Şampiyonası"]
 [Site "Tahran"]
@@ -665,7 +665,7 @@ Anand finali 3½–½ kazandı. Seçtiğimiz oyun, maçı kazandıran 3. oyun. F
 ![Alexander Khalifman](images/dunya-khalifman.jpg "<span lang="en">Alexander Khalifman</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64 (selbst fotografiert 1994, GNU-FDL)</span> · <span lang="en">CC BY-SA 3.0</span>")
 ![Vladimir Akopian](images/dunya-akopian.jpg "<span lang="en">Vladimir Akopian</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">rorkhete</span> · <span lang="en">CC BY-SA 3.0</span>")
 
-Tek elemeli turnuvanın finalini Khalifman 3½–2½ kazandı. Seçtiğimiz oyun, galibiyetini getiren oyunlardan biri.
+Tek elemeli turnuvanın finalini Khalifman 3½–2½ kazandı. İzleyeceğiniz oyun, galibiyetini getiren oyunlardan biri.
 
 [Event "Dünya Şampiyonası"]
 [Site "Las Vegas"]
@@ -688,7 +688,7 @@ Tek elemeli turnuvanın finalini Khalifman 3½–2½ kazandı. Seçtiğimiz oyun
 
 ![Anatoly Karpov](images/dunya-karpov.jpg "<span lang="en">Anatoly Karpov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Veni Markovski | Вени Марковски</span> · <span lang="en">CC BY-SA 4.0</span>")
 
-Eleme turnuvasının finalinde klasik oyunlardan sonra hızlı oyunlar belirleyici oldu; Karpov’un hızlı oyun galibiyetini gösteriyoruz. FIDE Müzesi: [Anatoly Karpov](https://museum.fide.com/champions/anatoly-karpov).
+Eleme turnuvasının finalinde klasik oyunlardan sonra hızlı oyunlar belirleyici oldu; burada Karpov’un hızlı oyun galibiyetini izleyeceksiniz. Merak edenler için FIDE Müzesi: [Anatoly Karpov](https://museum.fide.com/champions/anatoly-karpov).
 
 [Event "Dünya Şampiyonası"]
 [Site "Lozan"]
@@ -711,7 +711,7 @@ Eleme turnuvasının finalinde klasik oyunlardan sonra hızlı oyunlar belirleyi
 
 ![Gata Kamsky](images/dunya-kamsky.jpg "<span lang="en">Gata Kamsky</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Stefan64</span> · <span lang="en">CC BY-SA 3.0</span>")
 
-Karpov ünvanını 10½–7½ ile korudu. Seçtiğimiz oyun 14. oyun. FIDE Müzesi: [Anatoly Karpov](https://museum.fide.com/champions/anatoly-karpov).
+Karpov ünvanını 10½–7½ ile korudu. İzleyeceğiniz oyun, 14. oyun. Merak edenler için FIDE Müzesi: [Anatoly Karpov](https://museum.fide.com/champions/anatoly-karpov).
 
 [Event "Dünya Şampiyonası"]
 [Site "Elista"]
@@ -732,7 +732,7 @@ Karpov ünvanını 10½–7½ ile korudu. Seçtiğimiz oyun 14. oyun. FIDE Müze
 
 [KART images/dunya-kasparov.jpg]
 
-Dünya Ticaret Merkezi’nin tepesinde oynanan maç. Kasparov 10½–7½ kazandı. Seçtiğimiz oyun 14. oyun. FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
+Maç, Dünya Ticaret Merkezi’nin tepesinde oynandı. Kasparov 10½–7½ kazandı. İzleyeceğiniz oyun, 14. oyun. Merak edenler için FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
 
 [Event "Dünya Şampiyonası"]
 [Site "New York"]
@@ -755,7 +755,7 @@ Dünya Ticaret Merkezi’nin tepesinde oynanan maç. Kasparov 10½–7½ kazand�
 
 ![Jan Timman](images/dunya-timman.jpg "<span lang="en">Jan Timman</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">GFHund</span> · <span lang="en">CC BY 3.0</span>")
 
-FIDE’nin yeni şampiyonluk maçı: Karpov 12½–8½ kazandı. Seçtiğimiz oyun 16. oyun. FIDE Müzesi: [Anatoly Karpov](https://museum.fide.com/champions/anatoly-karpov).
+FIDE’nin düzenlediği yeni şampiyonluk maçında Karpov 12½–8½ kazandı. İzleyeceğiniz oyun, 16. oyun. Merak edenler için FIDE Müzesi: [Anatoly Karpov](https://museum.fide.com/champions/anatoly-karpov).
 
 [Event "Dünya Şampiyonası"]
 [Site "Hollanda ve Endonezya"]
@@ -778,7 +778,7 @@ FIDE’nin yeni şampiyonluk maçı: Karpov 12½–8½ kazandı. Seçtiğimiz oy
 
 ![Nigel Short](images/dunya-short.jpg "<span lang="en">Nigel Short</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">GibChess</span> · <span lang="en">CC BY 3.0</span>")
 
-Kasparov ve Short, FIDE’den ayrılıp kendi şampiyonluk maçlarını oynadı; Kasparov 12½–7½ kazandı. Seçtiğimiz oyun 15. oyun. FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
+Kasparov ve Short, FIDE’den ayrılıp kendi şampiyonluk maçlarını oynadı; Kasparov 12½–7½ kazandı. İzleyeceğiniz oyun, 15. oyun. Merak edenler için FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
 
 [Event "Dünya Şampiyonası"]
 [Site "Londra"]
@@ -801,7 +801,7 @@ Kasparov ve Short, FIDE’den ayrılıp kendi şampiyonluk maçlarını oynadı;
 
 ![Garry Kasparov](images/dunya-x-kasparov-b.jpg "<span lang="en">Garry Kasparov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Rob Bogaerts / Anefo</span> · <span lang="en">CC0</span>")
 
-Beşinci ve son Karpov–Kasparov maçı: 12½–11½. Seçtiğimiz oyun 20. oyun. FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
+Karpov ile Kasparov’un beşinci ve son maçı 12½–11½ bitti. İzleyeceğiniz oyun, 20. oyun. Merak edenler için FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
 
 [Event "Dünya Şampiyonası"]
 [Site "New York ve Lyon"]
@@ -824,7 +824,7 @@ Beşinci ve son Karpov–Kasparov maçı: 12½–11½. Seçtiğimiz oyun 20. oyu
 
 ![Anatoly Karpov](images/dunya-x-karpov-a.jpg "<span lang="en">Anatoly Karpov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Sjakkelien Vollebregt</span> · <span lang="en">CC0</span>")
 
-Son oyuna Karpov 12–11 önde girdi; Kasparov 24. oyunu kazanıp 12–12 ile ünvanını korudu. FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
+Karpov son oyuna 12–11 önde girdi, ama Kasparov 24. oyunu kazanıp maçı 12–12 bitirdi ve ünvanını korudu. Merak edenler için FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
 
 [Event "Dünya Şampiyonası"]
 [Site "Sevilla"]
@@ -847,7 +847,7 @@ Son oyuna Karpov 12–11 önde girdi; Kasparov 24. oyunu kazanıp 12–12 ile ü
 
 ![Anatoly Karpov](images/dunya-x-karpov-b.jpg "<span lang="en">Anatoly Karpov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Rob Croes for Anefo</span> · <span lang="en">CC0</span>")
 
-Kasparov 12½–11½ ile ünvanını korudu. Seçtiğimiz oyun 22. oyun. FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
+Kasparov ünvanını 12½–11½ ile korudu. İzleyeceğiniz oyun, 22. oyun. Merak edenler için FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
 
 [Event "Dünya Şampiyonası"]
 [Site "Londra ve Leningrad"]
@@ -870,7 +870,7 @@ Kasparov 12½–11½ ile ünvanını korudu. Seçtiğimiz oyun 22. oyun. FIDE M�
 
 ![Anatoly Karpov](images/dunya-x-karpov-c.jpg "<span lang="en">Anatoly Karpov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Koen Suyk / Anefo</span> · <span lang="en">CC0</span>")
 
-24 oyunluk yeniden maç: son oyuna Kasparov 12–11 önde girdi; Karpov’un galibiyete ihtiyacı vardı. Kasparov, 24. oyunu kazanıp 13–11’le 22 yaşında şampiyon oldu. FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
+24 oyunluk yeniden maçta Kasparov son oyuna 12–11 önde girdi; Karpov’un kazanması gerekiyordu. Kasparov 24. oyunu kazanıp 13–11’le, 22 yaşında şampiyon oldu. Merak edenler için FIDE Müzesi: [Garry Kasparov](https://museum.fide.com/champions/garry-kasparov).
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -893,7 +893,7 @@ Kasparov 12½–11½ ile ünvanını korudu. Seçtiğimiz oyun 22. oyun. FIDE M�
 
 ![Florencio Campomanes](images/dunya-campomanes.jpg "<span lang="en">Florencio Campomanes</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">karpidis from Piraeus, Greece This file is l…</span> · <span lang="en">CC BY 2.0</span>")
 
-6 galibiyete kadar oynanması gereken maç, 48 oyundan sonra FIDE Başkanı tarafından iptal edildi; skor Karpov’un 5–3 üstünlüğüyle kaldı. Seçtiğimiz oyun, Karpov’un maçtaki son (5.) galibiyeti. FIDE Müzesi: [Anatoly Karpov](https://museum.fide.com/champions/anatoly-karpov).
+6 galibiyete kadar oynanması gereken maç, 48 oyundan sonra FIDE Başkanı tarafından iptal edildi; skor Karpov’un 5–3 üstünlüğüyle kaldı. İzleyeceğiniz oyun, Karpov’un maçtaki son (5.) galibiyeti. Merak edenler için FIDE Müzesi: [Anatoly Karpov](https://museum.fide.com/champions/anatoly-karpov).
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -918,7 +918,7 @@ Kasparov 12½–11½ ile ünvanını korudu. Seçtiğimiz oyun 22. oyun. FIDE M�
 
 ![Viktor Korchnoi](images/dunya-korchnoi.jpg "<span lang="en">Viktor Korchnoi</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Hans Peters for Anefo</span> · <span lang="en">CC0</span>")
 
-Karpov 6–2 galibiyetle (18 oyun) ünvanını korudu. Seçtiğimiz oyun 18. oyun. FIDE Müzesi: [Anatoly Karpov](https://museum.fide.com/champions/anatoly-karpov).
+Karpov 6–2’lik bir galibiyetle (18 oyun) ünvanını korudu. İzleyeceğiniz oyun, 18. oyun. Merak edenler için FIDE Müzesi: [Anatoly Karpov](https://museum.fide.com/champions/anatoly-karpov).
 
 [Event "Dünya Şampiyonası"]
 [Site "Merano"]
@@ -941,7 +941,7 @@ Karpov 6–2 galibiyetle (18 oyun) ünvanını korudu. Seçtiğimiz oyun 18. oyu
 
 ![Karpov, Korchnoi’ye karşı oynarken (Amsterdam; maçtan başka bir karşılaşma)](images/dunya-mac-1978.jpg "<span lang="en">Karpov</span>, <span lang="en">Korchnoi</span>’ye karşı oynarken (Amsterdam; maçtan başka bir karşılaşma) · <span lang="en">Wikimedia Commons</span> · <span lang="en">Roland Gerrits / Anefo</span> · <span lang="en">CC0</span>")
 
-6 galibiyete kadar oynanan 32 oyunluk maç. Karpov 5–2 öndeyken Korchnoi 5–5’e getirdi; 32. oyunu Karpov kazandı. FIDE Müzesi: [Anatoly Karpov](https://museum.fide.com/champions/anatoly-karpov).
+Maç, 6 galibiyete kadar oynanan 32 oyunluk bir mücadeleydi. Karpov 5–2 öndeyken Korchnoi skoru 5–5’e getirdi; 32. oyunu Karpov kazandı. Merak edenler için FIDE Müzesi: [Anatoly Karpov](https://museum.fide.com/champions/anatoly-karpov).
 
 [Event "Dünya Şampiyonası"]
 [Site "Baguio"]
@@ -965,7 +965,7 @@ Karpov 6–2 galibiyetle (18 oyun) ünvanını korudu. Seçtiğimiz oyun 18. oyu
 ![Bobby Fischer](images/dunya-fischer.jpg "<span lang="en">Bobby Fischer</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Bert Verhoeff for Anefo</span> · <span lang="en">CC0</span>")
 ![Boris Spassky](images/dunya-spassky.jpg "<span lang="en">Boris Spassky</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Rob Bogaerts for Anefo</span> · <span lang="en">CC0</span>")
 
-Fischer, 12½–8½ ile Sovyet şampiyonluğuna son verdi. Seçtiğimiz oyun 21. oyun: Spassky, ertelenmiş konumu telefonla teslim etti. FIDE Müzesi: [Bobby Fischer](https://museum.fide.com/champions/robert-bobby-fischer).
+Fischer 12½–8½’lik skorla Sovyet şampiyonluğuna son verdi. İzleyeceğiniz oyun, 21. oyun: Spassky, ertelenmiş konumu telefonla teslim etti. Merak edenler için FIDE Müzesi: [Bobby Fischer](https://museum.fide.com/champions/robert-bobby-fischer).
 
 [Event "Dünya Şampiyonası"]
 [Site "Reykjavik"]
@@ -988,7 +988,7 @@ Fischer, 12½–8½ ile Sovyet şampiyonluğuna son verdi. Seçtiğimiz oyun 21.
 
 ![Tigran Petrosian](images/dunya-petrosian.jpg "<span lang="en">Tigran Petrosian</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Harry Pot / Anefo</span> · <span lang="en">CC0</span>")
 
-Spassky 23 oyunda 12½–10½ kazandı. Seçtiğimiz oyun 21. oyun. FIDE Müzesi: [Boris Spassky](https://museum.fide.com/champions/boris-spassky).
+Spassky maçı 23 oyunda 12½–10½ kazandı. İzleyeceğiniz oyun, 21. oyun. Merak edenler için FIDE Müzesi: [Boris Spassky](https://museum.fide.com/champions/boris-spassky).
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -1007,7 +1007,7 @@ Spassky 23 oyunda 12½–10½ kazandı. Seçtiğimiz oyun 21. oyun. FIDE Müzesi
 
 [KART images/dunya-spassky.jpg]
 
-Petrosian ünvanını 12½–11½ gibi dar farkla korudu. Seçtiğimiz oyun 22. oyun. FIDE Müzesi: [Tigran Petrosian](https://museum.fide.com/champions/tigran-petrosian).
+Petrosian ünvanını 12½–11½ gibi dar bir farkla korudu. İzleyeceğiniz oyun, 22. oyun. Merak edenler için FIDE Müzesi: [Tigran Petrosian](https://museum.fide.com/champions/tigran-petrosian).
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -1028,7 +1028,7 @@ Petrosian ünvanını 12½–11½ gibi dar farkla korudu. Seçtiğimiz oyun 22. 
 
 ![Mikhail Botvinnik](images/dunya-botvinnik.jpg "<span lang="en">Mikhail Botvinnik</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Harry Pot for Anefo ]]</span> · <span lang="en">CC BY-SA 3.0 nl</span>")
 
-Petrosian 22 oyunda 12½–9½ kazandı; bu maçtan sonra kaybeden şampiyonun doğrudan rövanş hakkı kaldırıldı. Seçtiğimiz oyun 19. oyun. FIDE Müzesi: [Tigran Petrosian](https://museum.fide.com/champions/tigran-petrosian).
+Petrosian maçı 22 oyunda 12½–9½ kazandı; bu maçtan sonra kaybeden şampiyonun doğrudan rövanş hakkı kaldırıldı. İzleyeceğiniz oyun, 19. oyun. Merak edenler için FIDE Müzesi: [Tigran Petrosian](https://museum.fide.com/champions/tigran-petrosian).
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -1049,7 +1049,7 @@ Petrosian 22 oyunda 12½–9½ kazandı; bu maçtan sonra kaybeden şampiyonun d
 
 ![Mikhail Tal](images/dunya-tal.jpg "<span lang="en">Mikhail Tal</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Harry Pot for Anefo ]]</span> · <span lang="en">CC BY-SA 3.0 nl</span>")
 
-Rövanş: Botvinnik 21 oyunda 13–8 kazandı. Seçtiğimiz oyun, 21. oyun. FIDE Müzesi: [Mikhail Botvinnik](https://museum.fide.com/champions/michael-botvinnik).
+Rövanşta Botvinnik 21 oyunda 13–8 kazandı. İzleyeceğiniz oyun, 21. oyun. Merak edenler için FIDE Müzesi: [Mikhail Botvinnik](https://museum.fide.com/champions/michael-botvinnik).
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -1070,7 +1070,7 @@ Rövanş: Botvinnik 21 oyunda 13–8 kazandı. Seçtiğimiz oyun, 21. oyun. FIDE
 
 ![Botvinnik ve Tal, 22 Mart 1960 (Moskova)](images/dunya-mac-1960.jpg "<span lang="en">Botvinnik</span> ve <span lang="en">Tal</span>, 22 Mart 1960 (Moskova) · <span lang="en">Wikimedia Commons</span> · <span lang="en">Главархив Москвы</span> · <span lang="en">CC BY 4.0</span>")
 
-23 yaşındaki Tal, 12½–8½ ile en genç şampiyon oldu (21 oyun). Seçtiğimiz oyun 19. oyun. FIDE Müzesi: [Mikhail Tal](https://museum.fide.com/champions/mikhail-tal).
+23 yaşındaki Tal, 12½–8½’lik skorla (21 oyun) en genç şampiyon oldu. İzleyeceğiniz oyun, 19. oyun. Merak edenler için FIDE Müzesi: [Mikhail Tal](https://museum.fide.com/champions/mikhail-tal).
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -1091,7 +1091,7 @@ Rövanş: Botvinnik 21 oyunda 13–8 kazandı. Seçtiğimiz oyun, 21. oyun. FIDE
 
 ![Vasily Smyslov](images/dunya-smyslov.jpg "<span lang="en">Vasily Smyslov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Koen Suyk / Anefo</span> · <span lang="en">CC0</span>")
 
-Rövanş hakkıyla oynanan maçı Botvinnik 12½–10½ kazandı. Seçtiğimiz oyun 18. oyun. FIDE Müzesi: [Mikhail Botvinnik](https://museum.fide.com/champions/michael-botvinnik).
+Rövanş hakkıyla oynanan maçı Botvinnik 12½–10½ kazandı. İzleyeceğiniz oyun, 18. oyun. Merak edenler için FIDE Müzesi: [Mikhail Botvinnik](https://museum.fide.com/champions/michael-botvinnik).
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -1112,7 +1112,7 @@ Rövanş hakkıyla oynanan maçı Botvinnik 12½–10½ kazandı. Seçtiğimiz o
 
 ![Botvinnik (solda) ve Smyslov (sağda), Moskova](images/dunya-mac-1957.jpg "<span lang="en">Botvinnik</span> (solda) ve <span lang="en">Smyslov</span> (sağda), Moskova · <span lang="en">Wikimedia Commons</span> · <span lang="en">Anefo</span> · <span lang="en">CC0</span>")
 
-Smyslov 22 oyunda 12½–9½ kazanıp şampiyon oldu. Seçtiğimiz oyun 20. oyun. FIDE Müzesi: [Vasily Smyslov](https://museum.fide.com/champions/vasily-smyslov).
+Smyslov maçı 22 oyunda 12½–9½ kazanıp şampiyon oldu. İzleyeceğiniz oyun, 20. oyun. Merak edenler için FIDE Müzesi: [Vasily Smyslov](https://museum.fide.com/champions/vasily-smyslov).
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -1133,7 +1133,7 @@ Smyslov 22 oyunda 12½–9½ kazanıp şampiyon oldu. Seçtiğimiz oyun 20. oyun
 
 ![Mikhail Botvinnik](images/dunya-x-botvinnik-a.jpg "<span lang="en">Mikhail Botvinnik</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
-Yine 12–12; Botvinnik ünvanı bu kuralla korudu. Seçtiğimiz oyun, Botvinnik’in 16. oyundaki galibiyeti. FIDE Müzesi: [Mikhail Botvinnik](https://museum.fide.com/champions/michael-botvinnik).
+Skor yine 12–12 oldu ve Botvinnik ünvanı bu kuralla korudu. İzleyeceğiniz oyun, Botvinnik’in 16. oyundaki galibiyeti. Merak edenler için FIDE Müzesi: [Mikhail Botvinnik](https://museum.fide.com/champions/michael-botvinnik).
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -1154,7 +1154,7 @@ Yine 12–12; Botvinnik ünvanı bu kuralla korudu. Seçtiğimiz oyun, Botvinnik
 
 ![David Bronstein](images/dunya-bronstein.jpg "<span lang="en">David Bronstein</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Joop van Bilsen / Anefo</span> · <span lang="en">CC0</span>")
 
-24 oyun sonunda 12–12: ünvan şampiyonda kaldı. Seçtiğimiz oyun, Botvinnik’in 23. oyundaki galibiyeti. FIDE Müzesi: [Mikhail Botvinnik](https://museum.fide.com/champions/michael-botvinnik).
+24 oyun sonunda skor 12–12’ydi; ünvan şampiyonda kaldı. İzleyeceğiniz oyun, Botvinnik’in 23. oyundaki galibiyeti. Merak edenler için FIDE Müzesi: [Mikhail Botvinnik](https://museum.fide.com/champions/michael-botvinnik).
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -1175,7 +1175,7 @@ Yine 12–12; Botvinnik ünvanı bu kuralla korudu. Seçtiğimiz oyun, Botvinnik
 
 ![Soldan sağa: Euwe, Smyslov, Keres, Botvinnik, Reshevsky (Lahey, 1948)](images/dunya-mac-1948.jpg "Soldan sağa: <span lang="en">Euwe</span>, <span lang="en">Smyslov</span>, <span lang="en">Keres</span>, <span lang="en">Botvinnik</span>, <span lang="en">Reshevsky</span> (Lahey, 1948) · <span lang="en">Wikimedia Commons</span> · <span lang="en">J.D. Noske (ANEFO)</span> · <span lang="en">CC0</span>")
 
-Alekhine’in ölümünden sonra FIDE, beş oyunculu bir maç turnuvası düzenledi; Botvinnik 20 oyundan 14 puan alarak kazandı. Seçtiğimiz oyun, Botvinnik’in Keres’e karşı son turdaki galibiyeti. FIDE Müzesi: [Mikhail Botvinnik](https://museum.fide.com/champions/michael-botvinnik).
+Alekhine’in ölümünden sonra FIDE, beş oyunculu bir maç turnuvası düzenledi; Botvinnik 20 oyundan 14 puan alarak kazandı. İzleyeceğiniz oyun, Botvinnik’in Keres’e karşı son turdaki galibiyeti. Merak edenler için FIDE Müzesi: [Mikhail Botvinnik](https://museum.fide.com/champions/michael-botvinnik).
 
 [Event "Dünya Şampiyonası"]
 [Site "Lahey ve Moskova"]
@@ -1196,7 +1196,7 @@ Alekhine’in ölümünden sonra FIDE, beş oyunculu bir maç turnuvası düzenl
 
 ![Alexander Alekhine](images/dunya-alekhine.jpg "<span lang="en">Alexander Alekhine</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">George Grantham Bain Collection (Library of…</span> · <span lang="en">Public domain</span>")
 
-Alekhine rövanşı 25 oyunda 15½–9½ kazanıp ünvanı geri aldı. Seçtiğimiz oyun 22. oyun. FIDE Müzesi: [Alexander Alekhine](https://museum.fide.com/champions/alexander-alekhin).
+Alekhine, rövanşı 25 oyunda 15½–9½ kazanıp ünvanı geri aldı. İzleyeceğiniz oyun, 22. oyun. Merak edenler için FIDE Müzesi: [Alexander Alekhine](https://museum.fide.com/champions/alexander-alekhin).
 
 [Event "Dünya Şampiyonası"]
 [Site "Hollanda"]
@@ -1215,7 +1215,7 @@ Alekhine rövanşı 25 oyunda 15½–9½ kazanıp ünvanı geri aldı. Seçtiği
 
 [KART images/dunya-euwe.jpg]
 
-Euwe 30 oyunluk maçı 15½–14½ kazanıp şampiyon oldu; Alekhine’in ünvanı bir puan farkla kaybı. Seçtiğimiz oyun 26. oyun. FIDE Müzesi: [Max Euwe](https://museum.fide.com/champions/max-euwe).
+Euwe 30 oyunluk maçı 15½–14½ kazanıp şampiyon oldu; Alekhine ünvanı yalnızca bir puan farkla kaybetti. İzleyeceğiniz oyun, 26. oyun. Merak edenler için FIDE Müzesi: [Max Euwe](https://museum.fide.com/champions/max-euwe).
 
 [Event "Dünya Şampiyonası"]
 [Site "Hollanda"]
@@ -1236,7 +1236,7 @@ Euwe 30 oyunluk maçı 15½–14½ kazanıp şampiyon oldu; Alekhine’in ünvan
 
 ![Efim Bogoljubov](images/dunya-bogoljubov.jpg "<span lang="en">Efim Bogoljubov</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
-İkinci Bogoljubov maçı: 15½–10½, 26 oyun. Seçtiğimiz oyun 17. oyun. FIDE Müzesi: [Alexander Alekhine](https://museum.fide.com/champions/alexander-alekhin).
+İkinci Bogoljubov maçı 26 oyunda 15½–10½ bitti. İzleyeceğiniz oyun, 17. oyun. Merak edenler için FIDE Müzesi: [Alexander Alekhine](https://museum.fide.com/champions/alexander-alekhin).
 
 [Event "Dünya Şampiyonası"]
 [Site "Almanya"]
@@ -1257,7 +1257,7 @@ Euwe 30 oyunluk maçı 15½–14½ kazanıp şampiyon oldu; Alekhine’in ünvan
 
 ![Alexander Alekhine](images/dunya-x-alekhine-a.jpg "<span lang="en">Alexander Alekhine</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">George Grantham Bain Collection (Library of…</span> · <span lang="en">Public domain</span>")
 
-Alekhine ilk savunmasında Bogoljubov’u 25 oyunda 15½–9½ yendi. Seçtiğimiz oyun 12. oyun. FIDE Müzesi: [Alexander Alekhine](https://museum.fide.com/champions/alexander-alekhin).
+Alekhine ilk savunmasında Bogoljubov’u 25 oyunda 15½–9½ yendi. İzleyeceğiniz oyun, 12. oyun. Merak edenler için FIDE Müzesi: [Alexander Alekhine](https://museum.fide.com/champions/alexander-alekhin).
 
 [Event "Dünya Şampiyonası"]
 [Site "Almanya ve Hollanda"]
@@ -1278,7 +1278,7 @@ Alekhine ilk savunmasında Bogoljubov’u 25 oyunda 15½–9½ yendi. Seçtiğim
 
 ![José Raúl Capablanca](images/dunya-capablanca.jpg "<span lang="en">José Raúl Capablanca</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">AnonymousUnknown author (Keystone-France)</span> · <span lang="en">Public domain</span>")
 
-6 galibiyete kadar oynanan, o güne dek en uzun maç: 34 oyun. Alekhine 6, Capablanca 3 oyun kazandı, 25 oyun berabere bitti; skor 18½–15½. Seçtiğimiz oyun, 34. ve son oyun. FIDE Müzesi: [Alexander Alekhine](https://museum.fide.com/champions/alexander-alekhin).
+6 galibiyete kadar oynanan bu maç, o güne dek oynanmış en uzun maçtı: 34 oyun. Alekhine 6, Capablanca 3 oyun kazandı, 25 oyun berabere bitti; skor 18½–15½. İzleyeceğiniz oyun, 34. ve son oyun. Merak edenler için FIDE Müzesi: [Alexander Alekhine](https://museum.fide.com/champions/alexander-alekhin).
 
 [Event "Dünya Şampiyonası"]
 [Site "Buenos Aires"]
@@ -1299,7 +1299,7 @@ Alekhine ilk savunmasında Bogoljubov’u 25 oyunda 15½–9½ yendi. Seçtiğim
 
 ![Emanuel Lasker](images/dunya-lasker.jpg "<span lang="en">Emanuel Lasker</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Trans-Ocean News Service</span> · <span lang="en">CC BY 3.0</span>")
 
-Capablanca 14 oyundan sonra 9–5 öndeydi (4 galibiyet, hiç yenilgi yok); Lasker maçı bırakınca şampiyon oldu. Seçtiğimiz oyun 11. oyun. FIDE Müzesi: [José Raúl Capablanca](https://museum.fide.com/champions/jose-raul-capablanca).
+Capablanca, 14 oyundan sonra 9–5 öndeydi (4 galibiyet, hiç yenilgi yok); Lasker maçı bırakınca şampiyon oldu. İzleyeceğiniz oyun, 11. oyun. Merak edenler için FIDE Müzesi: [José Raúl Capablanca](https://museum.fide.com/champions/jose-raul-capablanca).
 
 [Event "Dünya Şampiyonası"]
 [Site "Havana"]
@@ -1320,7 +1320,7 @@ Capablanca 14 oyundan sonra 9–5 öndeydi (4 galibiyet, hiç yenilgi yok); Lask
 
 ![Siegbert Tarrasch](images/dunya-tarrasch.jpg "<span lang="en">Siegbert Tarrasch</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
-Tarrasch’ı 16 oyunda 10½–5½ yenen Lasker, 8 galibiyete ulaşarak maçı bitirdi. Seçtiğimiz oyun, 16. oyun. FIDE Müzesi: [Emanuel Lasker](https://museum.fide.com/champions/emanuel-lasker).
+Tarrasch’ı 16 oyunda 10½–5½ yenen Lasker, 8 galibiyete ulaşarak maçı bitirdi. İzleyeceğiniz oyun, 16. oyun. Merak edenler için FIDE Müzesi: [Emanuel Lasker](https://museum.fide.com/champions/emanuel-lasker).
 
 [Event "Dünya Şampiyonası"]
 [Site "Düsseldorf, Münih"]
@@ -1341,7 +1341,7 @@ Tarrasch’ı 16 oyunda 10½–5½ yenen Lasker, 8 galibiyete ulaşarak maçı b
 
 ![Frank Marshall](images/dunya-marshall.jpg "<span lang="en">Frank Marshall</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Oxford and Dilhoff</span> · <span lang="en">Public domain</span>")
 
-Lasker, ABD şampiyonu Marshall’ı 15 oyunda 11½–3½ yendi; Marshall tek oyun kazanamadı. Seçtiğimiz oyun 15. oyun. FIDE Müzesi: [Emanuel Lasker](https://museum.fide.com/champions/emanuel-lasker).
+Lasker, ABD şampiyonu Marshall’ı 15 oyunda 11½–3½ yendi; Marshall tek oyun bile kazanamadı. İzleyeceğiniz oyun, 15. oyun. Merak edenler için FIDE Müzesi: [Emanuel Lasker](https://museum.fide.com/champions/emanuel-lasker).
 
 [Event "Dünya Şampiyonası"]
 [Site "ABD"]
@@ -1364,7 +1364,7 @@ Lasker, ABD şampiyonu Marshall’ı 15 oyunda 11½–3½ yendi; Marshall tek oy
 
 ![Wilhelm Steinitz](images/dunya-steinitz.jpg "<span lang="en">Wilhelm Steinitz</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Schumann, Fritz</span> · <span lang="en">Public domain</span>")
 
-Rövanş: Lasker 17 oyunda 12½–4½ kazandı. Seçtiğimiz oyun 17. oyun. FIDE Müzesi: [Emanuel Lasker](https://museum.fide.com/champions/emanuel-lasker).
+Rövanşta Lasker 17 oyunda 12½–4½ kazandı. İzleyeceğiniz oyun, 17. oyun. Merak edenler için FIDE Müzesi: [Emanuel Lasker](https://museum.fide.com/champions/emanuel-lasker).
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -1385,7 +1385,7 @@ Rövanş: Lasker 17 oyunda 12½–4½ kazandı. Seçtiğimiz oyun 17. oyun. FIDE
 
 ![Emanuel Lasker](images/dunya-x-lasker-b.jpg "<span lang="en">Emanuel Lasker</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Frank Eugene</span> · <span lang="en">Public domain</span>")
 
-Lasker 19 oyunda 12–7 kazanıp 25 yaşında şampiyon oldu. Seçtiğimiz oyun, maçı bitiren 19. oyun. FIDE Müzesi: [Emanuel Lasker](https://museum.fide.com/champions/emanuel-lasker).
+Lasker 19 oyunda 12–7 kazanıp 25 yaşında şampiyon oldu. İzleyeceğiniz oyun, maçı bitiren 19. oyun. Merak edenler için FIDE Müzesi: [Emanuel Lasker](https://museum.fide.com/champions/emanuel-lasker).
 
 [Event "Dünya Şampiyonası"]
 [Site "New York, Philadelphia, Montreal"]
@@ -1406,7 +1406,7 @@ Lasker 19 oyunda 12–7 kazanıp 25 yaşında şampiyon oldu. Seçtiğimiz oyun,
 
 ![Mikhail Chigorin](images/dunya-chigorin.jpg "<span lang="en">Mikhail Chigorin</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
-Chigorin’le ikinci maç, 23 oyunda 12½–10½. Seçtiğimiz oyun, maçı bitiren 23. oyun. FIDE Müzesi: [Wilhelm Steinitz](https://museum.fide.com/champions/wilhelm-steinitz).
+Chigorin’le oynanan ikinci maç 23 oyunda 12½–10½ bitti. İzleyeceğiniz oyun, maçı bitiren 23. oyun. Merak edenler için FIDE Müzesi: [Wilhelm Steinitz](https://museum.fide.com/champions/wilhelm-steinitz).
 
 [Event "Dünya Şampiyonası"]
 [Site "Havana"]
@@ -1427,7 +1427,7 @@ Chigorin’le ikinci maç, 23 oyunda 12½–10½. Seçtiğimiz oyun, maçı biti
 
 ![Isidor Gunsberg](images/dunya-gunsberg.jpg "<span lang="en">Isidor Gunsberg</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
-19 oyunluk maçı Steinitz 10½–8½ kazandı; Gunsberg 9 oyunu beraberlikle kapatmıştı. Seçtiğimiz oyun 18. oyun. FIDE Müzesi: [Wilhelm Steinitz](https://museum.fide.com/champions/wilhelm-steinitz).
+19 oyunluk maçı Steinitz 10½–8½ kazandı; Gunsberg 9 oyunu beraberlikle kapatmıştı. İzleyeceğiniz oyun, 18. oyun. Merak edenler için FIDE Müzesi: [Wilhelm Steinitz](https://museum.fide.com/champions/wilhelm-steinitz).
 
 [Event "Dünya Şampiyonası"]
 [Site "New York"]
@@ -1446,7 +1446,7 @@ Chigorin’le ikinci maç, 23 oyunda 12½–10½. Seçtiğimiz oyun, maçı biti
 
 [KART images/dunya-steinitz.jpg]
 
-Steinitz, Rus şampiyon adayını 17 oyunda 10½–6½ yendi. Seçtiğimiz oyun 16. oyun. FIDE Müzesi: [Wilhelm Steinitz](https://museum.fide.com/champions/wilhelm-steinitz).
+Steinitz, Rus şampiyon adayını 17 oyunda 10½–6½ yendi. İzleyeceğiniz oyun, 16. oyun. Merak edenler için FIDE Müzesi: [Wilhelm Steinitz](https://museum.fide.com/champions/wilhelm-steinitz).
 
 [Event "Dünya Şampiyonası"]
 [Site "Havana"]
@@ -1467,7 +1467,7 @@ Steinitz, Rus şampiyon adayını 17 oyunda 10½–6½ yendi. Seçtiğimiz oyun 
 
 ![Johannes Zukertort](images/dunya-zukertort.jpg "<span lang="en">Johannes Zukertort</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
-Resmî sayılan ilk dünya şampiyonluğu maçı. İlk 10 galibiyete kadar oynandı; Steinitz 12½–7½ kazandı (10 galibiyet, 5 yenilgi, 5 beraberlik). Seçtiğimiz oyun maçın 20. ve son oyunu. FIDE Müzesi: [Wilhelm Steinitz](https://museum.fide.com/champions/wilhelm-steinitz).
+Resmî sayılan ilk dünya şampiyonluğu maçı bu. İlk 10 galibiyete kadar oynandı ve Steinitz 12½–7½ kazandı (10 galibiyet, 5 yenilgi, 5 beraberlik). İzleyeceğiniz oyun, maçın 20. ve son oyunu. Merak edenler için FIDE Müzesi: [Wilhelm Steinitz](https://museum.fide.com/champions/wilhelm-steinitz).
 
 [Event "Dünya Şampiyonası"]
 [Site "New York, St. Louis, New Orleans"]
@@ -1482,7 +1482,7 @@ Resmî sayılan ilk dünya şampiyonluğu maçı. İlk 10 galibiyete kadar oynan
 
 ### Ünvanı alamamış ama hak etmiş efsaneler
 
-“Hak etmek” tartışmalı bir kavram; ama bu isimlerin her birinin zirvede olduğu dönemler, o dönemin şampiyonuyla boy ölçüşebilecek kadar belirgindi. İşte eksik kalan şampiyonlar:
+“Hak etmek” tartışmalı bir kavram; ama bu isimlerin her biri, zirvede oldukları dönemlerde o günün şampiyonuyla boy ölçüşebilecek kadar güçlüydü. Aşağıda, ünvana ulaşamamış ama şampiyonları yenmeyi başarmış bu efsanelerin birer oyununu izleyebilir, oyuncunun hikâyesini de oyunun altında okuyabilirsiniz.
 
 [MAÇ SEÇİCİ GÖSTER: Şampiyonları yenen efsaneler]
 
@@ -1494,9 +1494,9 @@ Resmî sayılan ilk dünya şampiyonluğu maçı. İlk 10 galibiyete kadar oynan
 
 [KART images/dunya-polgar.jpg]
 
-[BİLGİ] **Judit Polgár** (d. 1976) — Tarihin en güçlü kadın oyuncusu; 2005'te dünya sıralamasında 8. oldu; Kasparov, Karpov ve Spassky dahil birçok dünya şampiyonunu yendi. **Dünya şampiyonası döngüsünde oynadı mı?** Evet, ama ünvana hiç yaklaşamadı: 1993'te Interzonal'e katılmaya hak kazanan ilk kadın oldu; 2005'te San Luis'teki sekiz kişilik Dünya Şampiyonası turnuvasında (reytingle girdi) oynayan ilk kadın oldu ve sonuncu bitirdi; 2007'de Adaylar maçlarında ilk turda Bareev'e 3½–2½ yenildi. Dünya Kupası'nda 2009'da üçüncü, 2011'de son sekiz tura kadar geldi. **Kadınlar Dünya Şampiyonası?** Hiç oynamadı; yıllarca dünyanın en yüksek reytingli kadını olduğu hâlde kadınlara ayrılmış turnuvalara nadiren katıldı. Kadınlar Dünya Şampiyonası 1927'den beri düzenleniyor ve ünvanı bugüne kadar 17 farklı kadın taşıdı (Vera Menchik'ten bugünkü şampiyon Ju Wenjun'a; Elisaveta Bykova, Xie Jun ve Hou Yifan birden fazla kez); ablası Susan Polgár da 1996–99 arasında bu ünvanı taşıdı. Neden hak ediyordu? Kadınlar yarışına girmek yerine doğrudan açık sıralamayı seçti ve orada ayrı bir iz bıraktı.
+[BİLGİ] **Judit Polgár** (d. 1976) — Tarihin en güçlü kadın oyuncusu olarak kabul ediliyor. 2005’te dünya sıralamasında 8. sıraya kadar yükseldi ve Kasparov, Karpov ve Spassky dahil birçok dünya şampiyonunu yendi. **Dünya şampiyonası döngüsünde oynadı mı?** Evet, ama ünvana yaklaşamadı. 1993’te Interzonal’e katılmaya hak kazanan ilk kadın oldu; 2005’te San Luis’teki sekiz kişilik Dünya Şampiyonası turnuvasında (reytingle girmişti) oynayan ilk kadın oldu ve sonuncu bitirdi; 2007’deki Adaylar maçlarında da ilk turda Bareev’e 3½–2½ yenildi. Dünya Kupası’nda ise 2009’da üçüncü tura, 2011’de son sekiz tura kadar geldi. **Kadınlar Dünya Şampiyonası’nda oynadı mı?** Hiç oynamadı: yıllarca dünyanın en yüksek reytingli kadını olduğu hâlde kadınlara ayrılmış turnuvalara pek katılmadı. Bu şampiyona 1927’den beri düzenleniyor ve ünvanı bugüne kadar 17 farklı kadın taşıdı (Vera Menchik’ten bugünkü şampiyon Ju Wenjun’a; Elisaveta Bykova, Xie Jun ve Hou Yifan birden fazla kez). Ablası Susan Polgár da 1996–99 arasında bu ünvanı taşıdı. Peki neden hak ediyordu? Kadınlar yarışına girmek yerine doğrudan açık sıralamayı seçti ve orada ayrı bir iz bıraktı.
 
-Judit Polgár, Rusya–Dünya karması maçında (Moskova, 9 Eylül 2002) eski dünya şampiyonu Kasparov'u yendi.
+Rusya–Dünya karması maçında (Moskova, 9 Eylül 2002) Judit Polgár, eski dünya şampiyonu Kasparov’u yendi.
 
 [Event "Rusya – Dünya karması"]
 [Site "Moskova"]
@@ -1515,9 +1515,9 @@ Judit Polgár, Rusya–Dünya karması maçında (Moskova, 9 Eylül 2002) eski d
 
 [KART images/dunya-ivanchuk.jpg]
 
-[BİLGİ] **Vasyl Ivanchuk** (d. 1969) — 1990'ların başında dünyanın ilk üç oyuncusu arasındaydı; yaratıcılığı ve hazırlığı ile ünlüydü. Ama sinirlerine yenik düştü: kritik maçlarda yaptığı hatalarla ünvanı kaçırdı. 2002'de FIDE şampiyonası finalinde Ponomariov'a 4½–2½ yenildi. Neden hak ediyordu? Çağdaşlarının neredeyse tamamı onu satranç dehası olarak tanımlıyor.
+[BİLGİ] **Vasyl Ivanchuk** (d. 1969) — 1990’ların başında dünyanın ilk üç oyuncusu arasındaydı ve yaratıcılığı ile hazırlığıyla tanınırdı. Ne yazık ki sinirlerine yenik düştü: kritik maçlarda yaptığı hatalar ünvanı kaçırmasına yol açtı. 2002’de FIDE şampiyonası finalinde Ponomariov’a 4½–2½ yenildi. Peki neden hak ediyordu? Çağdaşlarının neredeyse tamamı onu bir satranç dehası olarak tanımlıyor.
 
-Linares 1991'in ilk turunda Ivanchuk, o sırada dünya şampiyonu olan Kasparov'u yendi.
+Linares 1991’in ilk turunda Ivanchuk, o sırada dünya şampiyonu olan Kasparov’u yendi.
 
 [Event "Linares"]
 [Site "Linares"]
@@ -1536,9 +1536,9 @@ Linares 1991'in ilk turunda Ivanchuk, o sırada dünya şampiyonu olan Kasparov'
 
 [KART images/dunya-korchnoi.jpg]
 
-[BİLGİ] **Viktor Korchnoi** (1931–2016) — 1976'da SSCB'den kaçıp Hollanda'ya sığındı, bu yüzden Sovyet satranç yönetiminden tam bir tecrit yaşadı. 1978'de Baguio'da Karpov'a karşı oynadığı maç (ilk 6 galibiyet; 32 oyun; 6–5 yenildi) tarihin en gergin maçlarından biri: sırasıyla 5–2 geriye düştü, 5–5'e geldi ve son oyunu kaybetti. 1981'de Merano'da 6–2 yenildi. Neden hak ediyordu? 40'larında ve 50'lerinde dünyanın en güçlü iki üç oyuncusu arasındaydı, 1980'lerde hâlâ Adaylar'dı.
+[BİLGİ] **Viktor Korchnoi** (1931–2016) — 1976’da SSCB’den kaçıp Hollanda’ya sığındı ve bu yüzden Sovyet satranç yönetiminden tam bir tecrit yaşadı. 1978’de Baguio’da Karpov’a karşı oynadığı maç (ilk 6 galibiyet, 32 oyun; 6–5 yenildi) tarihin en gergin maçlarından biri sayılır: Korchnoi 5–2 geriye düştü, 5–5’e getirdi ve son oyunu kaybetti. 1981’de Merano’da 6–2 yenildi. Peki neden hak ediyordu? 40’lı ve 50’li yaşlarında dünyanın en güçlü iki üç oyuncusu arasındaydı ve 1980’lerde hâlâ Adaylar’daydı.
 
-Baguio maçının 31. oyununda Korchnoi, şampiyon Karpov'u yenip skoru 5–5'e getirdi; maçı bir oyun sonra kaybetti.
+Baguio maçının 31. oyununda Korchnoi, şampiyon Karpov’u yenip skoru 5–5’e getirdi; maçı ise bir oyun sonra kaybetti.
 
 [Event "Dünya Şampiyonası"]
 [Site "Baguio"]
@@ -1557,7 +1557,7 @@ Baguio maçının 31. oyununda Korchnoi, şampiyon Karpov'u yenip skoru 5–5'e 
 
 [KART images/dunya-larsen.jpg]
 
-SSCB–Dünya karması maçında (Belgrad, 1970) Larsen, dünya şampiyonu Spassky'i yendi.
+Belgrad’da oynanan SSCB–Dünya karması maçında (1970) Larsen, dünya şampiyonu Spassky’i yendi.
 
 [Event "SSCB – Dünya karması"]
 [Site "Belgrad"]
@@ -1576,9 +1576,9 @@ SSCB–Dünya karması maçında (Belgrad, 1970) Larsen, dünya şampiyonu Spass
 
 [KART images/dunya-botvinnik.jpg]
 
-[BİLGİ] **Paul Keres** (1916–75) — “Kronprinz” (veliaht). 1938 AVRO turnuvasını Fine ile eşit puanla (8½) bitirdi ve Alekhine'le maç konuşulmaya başlandı; Dünya Savaşı, Estonya'nın işgali ve ardından Sovyet dönemi kariyerinin gidişatını değiştirdi. 1953, 1956, 1959 ve 1962'de Adaylar Turnuvası'nı **dört kez ikinci** bitirdi. 1948 maç turnuvasında Botvinnik'e kaybettiği oyunlarda Sovyet yönetiminin baskısı olduğuna dair iddialar var, ama kanıtlanmış değil. Neden hak ediyordu? Dört kez “bir adım”ın gerisinde kalan başka bir oyuncu yok.
+[BİLGİ] **Paul Keres** (1916–75) — “Kronprinz” (veliaht) diye anılırdı. 1938 AVRO turnuvasını Fine ile eşit puanla (8½) bitirdi ve Alekhine’le oynayacağı maç konuşulmaya başlandı; ancak Dünya Savaşı, Estonya’nın işgali ve ardından gelen Sovyet dönemi kariyerinin gidişatını değiştirdi. 1953, 1956, 1959 ve 1962’de Adaylar Turnuvası’nı **dört kez ikinci** bitirdi. 1948 maç turnuvasında Botvinnik’e karşı kaybettiği oyunlarda Sovyet yönetiminin baskısı olduğuna dair iddialar var, ama bunlar kanıtlanmış değil. Peki neden hak ediyordu? Dört kez “bir adım”ın gerisinde kalan başka bir oyuncu yok.
 
-Alekhine Anma Turnuvası'nda (Moskova, 1956) Keres, o sırada dünya şampiyonu olan Botvinnik'i yendi.
+Moskova’daki Alekhine Anma Turnuvası’nda (1956) Keres, o sırada dünya şampiyonu olan Botvinnik’i yendi.
 
 [Event "Alekhine Anma Turnuvası"]
 [Site "Moskova"]
@@ -1597,7 +1597,7 @@ Alekhine Anma Turnuvası'nda (Moskova, 1956) Keres, o sırada dünya şampiyonu 
 
 [KART images/dunya-geller.jpg]
 
-SSCB Şampiyonası'nda (Moskova, 1955) Geller, dünya şampiyonu Botvinnik'i yendi.
+1955’te Moskova’da oynanan SSCB Şampiyonası’nda Geller, dünya şampiyonu Botvinnik’i yendi.
 
 [Event "SSCB Şampiyonası"]
 [Site "Moskova"]
@@ -1618,7 +1618,7 @@ SSCB Şampiyonası'nda (Moskova, 1955) Geller, dünya şampiyonu Botvinnik'i yen
 
 ![Mikhail Botvinnik](images/dunya-x-botvinnik-a.jpg "<span lang="en">Mikhail Botvinnik</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Public domain</span>")
 
-1955'teki SSCB–ABD telex maçında Reshevsky, dünya şampiyonu Botvinnik'i yendi.
+1955’teki SSCB–ABD telex maçında Reshevsky, dünya şampiyonu Botvinnik’i yendi.
 
 [Event "SSCB – ABD telex maçı"]
 [Site "Moskova"]
@@ -1637,9 +1637,9 @@ SSCB Şampiyonası'nda (Moskova, 1955) Geller, dünya şampiyonu Botvinnik'i yen
 
 [KART images/dunya-bronstein.jpg]
 
-[BİLGİ] **David Bronstein** (1924–2006) — 1951'de Botvinnik'le 12–12 berabere kaldı; kurala göre ünvan şampiyonda kaldı. Bir oyun daha kazansa şampiyon olacaktı. Sonradan maç sırasında baskı altında kaldığını söyledi; yaratıcı oyun tarzı ise onu tarihte özel bir yere koyuyor.
+[BİLGİ] **David Bronstein** (1924–2006) — 1951’de Botvinnik’le 12–12 berabere kaldı ve kurala göre ünvan şampiyonda kaldı; bir oyun daha kazansa şampiyon olacaktı. Sonradan maç sırasında baskı altında kaldığını söyledi. Yaratıcı oyun tarzı ise onu tarihte özel bir yere koyuyor.
 
-1951 maçının 22. oyununda Bronstein, şampiyon Botvinnik'i yendi; maç 12–12 bitti ve ünvan Botvinnik'te kaldı.
+1951 maçının 22. oyununda Bronstein, şampiyon Botvinnik’i yendi; maç 12–12 bitti ve ünvan Botvinnik’te kaldı.
 
 [Event "Dünya Şampiyonası"]
 [Site "Moskova"]
@@ -1658,7 +1658,7 @@ SSCB Şampiyonası'nda (Moskova, 1955) Geller, dünya şampiyonu Botvinnik'i yen
 
 [KART images/dunya-nimzowitsch.jpg]
 
-New York 1927'de Nimzowitsch, aynı yılın sonunda dünya şampiyonu olacak Alekhine'i yendi.
+New York 1927’de Nimzowitsch, aynı yılın sonunda dünya şampiyonu olacak Alekhine’i yendi.
 
 [Event "New York"]
 [Site "New York"]
@@ -1677,9 +1677,9 @@ New York 1927'de Nimzowitsch, aynı yılın sonunda dünya şampiyonu olacak Ale
 
 [KART images/dunya-rubinstein.jpg]
 
-[BİLGİ] **Akiba Rubinstein** (1880–1961) — 1912'de beş büyük turnuvayı birden kazandı (San Sebastian, Pistyan, Breslau, Varşova, Vilnius) ve Lasker'le 1914'te maça davet edildi. Neden alamadı? Birinci Dünya Savaşı maçı engelledi. Savaştan sonra Capablanca'nın şampiyon olduğu dönemde, Londra Kuralları'nın öngördüğü ödül fonunu bulamadı; ruh sağlığı bozuldu ve zirvesinden hızla indi. Neden hak ediyordu? Kale oyunlarının en büyük ustası, Lasker ve Capablanca'dan başka kimse onunla aynı ligde değildi.
+[BİLGİ] **Akiba Rubinstein** (1880–1961) — 1912’de beş büyük turnuvayı birden kazandı (San Sebastian, Pistyan, Breslau, Varşova, Vilnius) ve 1914’te Lasker’le maça davet edildi. Ama Birinci Dünya Savaşı maçı engelledi. Savaştan sonra, Capablanca’nın şampiyon olduğu dönemde Londra Kuralları’nın öngördüğü ödül fonunu bulamadı; ruh sağlığı bozuldu ve zirvesinden hızla indi. Peki neden hak ediyordu? Kale oyunlarının en büyük ustasıydı ve Lasker ile Capablanca’dan başka kimse onunla aynı ligde değildi.
 
-St. Petersburg 1909 turnuvasında Rubinstein, dünya şampiyonu Lasker'i yendi.
+St. Petersburg 1909 turnuvasında Rubinstein, dünya şampiyonu Lasker’i yendi.
 
 [Event "St. Petersburg"]
 [Site "St. Petersburg"]
@@ -1698,9 +1698,9 @@ St. Petersburg 1909 turnuvasında Rubinstein, dünya şampiyonu Lasker'i yendi.
 
 [KART images/dunya-tarrasch.jpg]
 
-[BİLGİ] **Siegbert Tarrasch** (1862–1934) — 1890'larda ve 1900'lerde Lasker'in dışında en güçlü oyuncu. 1908'de Lasker'e meydan okudu ve 10½–5½ yenildi. Lasker'le maça ancak 46 yaşında ulaşabildi; en iyi yıllarını bu fırsat gelmeden geçirdi. “Praeceptor Germaniae” (Almanya'nın hocası) olarak yazdığı kitaplar ise yıllarca modern satranç anlayışını şekillendirdi.
+[BİLGİ] **Siegbert Tarrasch** (1862–1934) — 1890’larda ve 1900’lerde Lasker’in dışında en güçlü oyuncuydu. 1908’de Lasker’e meydan okudu ve 10½–5½ yenildi. Lasker’le maça ancak 46 yaşında ulaşabildi; en iyi yıllarını bu fırsat gelmeden geçirmişti. “Praeceptor Germaniae” (Almanya’nın hocası) olarak yazdığı kitaplar ise yıllarca modern satranç anlayışını şekillendirdi.
 
-1908 maçının 12. oyununda Tarrasch, şampiyon Lasker'i yendi; maçı yine de 10½–5½ kaybetti.
+1908 maçının 12. oyununda Tarrasch, şampiyon Lasker’i yendi; yine de maçı 10½–5½ kaybetti.
 
 [Event "Dünya Şampiyonası"]
 [Site "Düsseldorf, Münih"]
@@ -1719,9 +1719,9 @@ St. Petersburg 1909 turnuvasında Rubinstein, dünya şampiyonu Lasker'i yendi.
 
 [KART images/dunya-chigorin.jpg]
 
-[BİLGİ] **Mikhail Chigorin** (1850–1908) — Rusya'nın ilk büyük ustası. Steinitz'e iki kez meydan okudu (1889, 1892, ikisi de Havana). 1892'de maç son oyunlara kadar çekişmeliydi; Chigorin kritik anlarda yaptığı hatalarla 12½–10½ yenildi. Neden alamadı? Şampiyonun deneyimi ve kendi kritik hataları. Neden hak ediyordu? Steinitz'in en tehlikeli rakibiydi ve Rus satranç okulunun babası sayılır.
+[BİLGİ] **Mikhail Chigorin** (1850–1908) — Rusya’nın ilk büyük ustasıydı. Steinitz’e iki kez meydan okudu (1889 ve 1892, ikisi de Havana’da). 1892’de maç son oyunlara kadar çekişmeliydi; Chigorin kritik anlarda yaptığı hatalarla 12½–10½ yenildi. Peki neden alamadı? Şampiyonun deneyimi ve kendi kritik hataları yüzünden. Neden hak ediyordu? Steinitz’in en tehlikeli rakibiydi ve Rus satranç okulunun babası sayılıyor.
 
-1889 maçının 7. oyununda Chigorin, şampiyon Steinitz'i yendi; maçı 10½–6½ Steinitz kazandı.
+1889 maçının 7. oyununda Chigorin, şampiyon Steinitz’i yendi; maçı ise 10½–6½ Steinitz kazandı.
 
 [Event "Dünya Şampiyonası"]
 [Site "Havana"]
