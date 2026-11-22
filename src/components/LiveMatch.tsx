@@ -214,7 +214,6 @@ export default function LiveMatch({ ready }: { ready: boolean }) {
           <div className="live-sf-meta f-mono"><span>Beyaz</span><span>{sf && !idle ? `Derinlik ${sf.depth}` : ''}</span><span>Siyah</span></div>
           <p className="live-sf-pv-title f-mono">En iyi devam</p>
           <p className="live-sf-pv">{line || '—'}</p>
-          <p className="live-sf-note f-mono">Tarayıcınızda çalışan motor · 2,5 sn</p>
         </aside>
         <div ref={board} className={`cp-game live-board${idle ? ' live-idle' : ''}`} aria-disabled={idle} {...(idle ? { inert: '' } : {})}>
           <div ref={host} />
