@@ -65,6 +65,8 @@ Sistem hep böyle değildi. Aslında “Dünya Şampiyonluğu” ünvanının ke
 
 [ZAMAN ÇİZELGESİ]
 
+Çizelgede adı geçen ünvan maçlarının her birinden bir oyun seçtik: 1886’dan bugüne toplam 56 oyun. Aşağıdan istediğinizi seçip izleyebilirsiniz.
+
 ### Tüm ünvan maçları
 
 [MAÇ SEÇİCİ GÖSTER: Tüm ünvan maçları]
