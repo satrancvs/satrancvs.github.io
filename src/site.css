@@ -1059,3 +1059,12 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 
 /* Derinlik / Aday ayarları başlığın (Stockfish anahtarı) hemen altında */
 .live-sf-opts { margin: -.2rem 0 .9rem; padding: 0 0 .8rem; border-top: 0; border-bottom: 1px solid var(--line); }
+
+/* Analiz ayarları (Derinlik/Aday) dişli simgesinin arkasında */
+.live-sf-gear { flex: none; display: grid; place-items: center; width: 1.6rem; height: 1.6rem; padding: 0; color: var(--mute); background: transparent; border: 0; border-radius: 6px; cursor: pointer; transition: color .15s, background .15s; }
+.live-sf-gear:hover, .live-sf-gear[aria-expanded="true"] { color: var(--accent); background: var(--hover-bg); }
+.live-sf-gear:focus-visible { outline: 2px solid var(--accent); }
+.live-sf.is-off .live-sf-gear { display: none; }
+.live-sf-head { gap: .4rem; }
+.live-sf-head { letter-spacing: .1em; }
+.live-sf-head img { width: 20px; height: 20px; }
