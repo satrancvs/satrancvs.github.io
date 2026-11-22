@@ -136,9 +136,7 @@ Aşağıda her şampiyon için *ünvanı kime karşı, nasıl aldığı* ve *nas
 
 Tablodan iki şey okunuyor. Birincisi, **eşitlikte ünvan şampiyonda kalır**: 1951, 1954 ve 1987'de bu kural işledi. İkincisi, **rövanş hakkı** (1948–63) şampiyonlara ikinci bir şans verdi: Smyslov ve Tal'ın birer yıllık ünvanlarının ve Botvinnik'in üç ayrı saltanatının arkasında bu kural var.
 
-### Seçme: Her bir ünvan maçından bir oyun
-
-[MAÇ SEÇİCİ]
+[MAÇ SEÇİCİ: Ünvan maçlarından seçmeler]
 
 #### 2024 · Gukesh – Ding Liren
 
@@ -1282,11 +1280,7 @@ Bu listeye başka isimler de eklenebilir: **Bent Larsen**, **Efim Geller**, **Sa
 ![Efim Geller](images/dunya-geller.jpg "<span lang="en">Efim Geller</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Suyk, Koen / Anefo</span> · <span lang="en">CC0</span>")
 ![Aron Nimzowitsch](images/dunya-nimzowitsch.jpg "<span lang="en">Aron Nimzowitsch</span> · <span lang="en">Wikimedia Commons</span> · <span lang="en">Not mentioned</span> · <span lang="en">Public domain</span>")
 
-### Şampiyonları yenen efsaneler
-
-Bu isimlerin her biri, döneminin dünya şampiyonlarından birini yendi. Her biri için o oyunlardan birini aşağıdan izleyebilirsiniz.
-
-[MAÇ SEÇİCİ]
+[MAÇ SEÇİCİ: Şampiyonları yenen efsaneler]
 
 #### 2002 · Polgár – Kasparov
 
