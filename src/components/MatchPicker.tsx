@@ -15,6 +15,7 @@ export type PickItem = {
   blurb: string; // satır içi markdown
   thumb?: string; // kart görseli (public/ altındaki yol)
   figures: ReactNode;
+  heading: ReactNode; // oyuncular (Elo ile) ve turnuva satırı
   screen: ReactNode;
 };
 
@@ -63,6 +64,7 @@ export default function MatchPicker({ items, flat = false }: { items: PickItem[]
       </div>
 
       <div className="mpb-info">
+        {cur.heading}
         <div className="mpb-hero" key={cur.id} aria-hidden="true">
           {cur.thumb ? <ProgressiveImage path={cur.thumb} alt="" thumb position="50% 25%" /> : <span className="mpb-noimg f-display">{cur.year}</span>}
           <span className="mpb-hero-num f-mono"><i className="mpa-led" />OYUN {two(idx + 1)}<span>/{two(items.length)}</span></span>

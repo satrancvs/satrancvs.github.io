@@ -379,10 +379,10 @@ function WithElo({ text }: { text: string }) {
 }
 
 // Oyun bölümü: tur başlığı ve altında oyun (her zaman açık).
-function GameSection({ item, watchId, watchLabel, onWatch, children }: { item: GameItem; watchId?: string; watchLabel?: string; onWatch?: (id: string) => void; children: React.ReactNode }) {
+function GameSection({ item, watchId, watchLabel, onWatch, noHead = false, children }: { item: GameItem; watchId?: string; watchLabel?: string; onWatch?: (id: string) => void; noHead?: boolean; children: React.ReactNode }) {
   // [Round] etiketi olan oyunlar turnuva listesi biçiminde (N. tur, oyuncular, sonuç) başlar; etiketi olmayan oyunlar ve izleme
   // bölümü oyuncuları (Elo ile) ve altında "Turnuva, Yer, Yıl" satırını gösterir.
-  const info = item.watch || !item.hasRound;
+  const info = !noHead && (item.watch || !item.hasRound);
   return (
     <section id={item.id} className={`scroll-mt-8 ${item.study ? 'study-frame' : 'mt-4 mb-10 pb-2 border-b border-[color:var(--line)]'}`}>
       {info && (
@@ -391,7 +391,7 @@ function GameSection({ item, watchId, watchLabel, onWatch, children }: { item: G
           {item.place && <p className="mt-1 text-[color:var(--mute)]"><Markdown options={{ forceInline: true }}>{item.place}</Markdown></p>}
         </div>
       )}
-      {!info && <h4 className="flex items-baseline gap-4 py-4 mb-4 text-[color:rgb(var(--fg-rgb)/0.9)] md:grid md:grid-cols-[1fr_minmax(400px,auto)_1fr] md:gap-0">
+      {!info && !noHead && <h4 className="flex items-baseline gap-4 py-4 mb-4 text-[color:rgb(var(--fg-rgb)/0.9)] md:grid md:grid-cols-[1fr_minmax(400px,auto)_1fr] md:gap-0">
         <span className="f-mono text-[color:var(--accent)] w-[5rem] shrink-0">{`${item.round}. tur`}</span>
         <span className="game-names flex-1 md:text-center"><WithElo text={item.label} /></span>
         <span className="f-mono text-[color:var(--mute)] md:justify-self-end">{item.result}</span>
@@ -760,8 +760,15 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
         blurb: d.blurb,
         thumb,
         figures: d.figs.length ? d.figs.map((f, k) => (isFigRow(f) ? <FigureRow key={k} chunk={f} /> : <Figure key={k} chunk={f} />)) : null,
+        // Oyun başlığı (oyuncular + turnuva satırı) maç seçicide sağ sütunda gösterilir; oynatıcı bölümünde yinelenmez.
+        heading: (
+          <div className="mpb-head">
+            <h4 className="game-names"><WithElo text={item.players} /></h4>
+            {item.place && <p><Markdown options={{ forceInline: true }}>{item.place}</Markdown></p>}
+          </div>
+        ),
         screen: (
-          <GameSection item={item}>
+          <GameSection item={item} noHead>
             {useFallback ? <Game header={d.header!} moves={d.moves!} /> : <PgnGame header={d.header!} moves={d.moves!} />}
           </GameSection>
         ),
