@@ -761,8 +761,6 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       const item = games.find((g) => g.at === d.gi)!;
       // Açıklama oyunun ilk hamlesinin yorumu olarak da yazılır (hamle listesinin altında). Açıklamanın sonundaki özel
       // kaynak bağlantıları ("Ayrıntılar: …", FIDE fotoğraf galerisi) yalnızca yorumda gösterilir, sağ sütunda durmaz.
-      const cut = d.blurb.search(/(Ayrıntılar:|\[FIDE fotoğraf galerisi\])/);
-      const blurb = (cut >= 0 ? d.blurb.slice(0, cut) : d.blurb).trim();
       const note = [d.blurb.trim(), d.bioNote].filter(Boolean).join('\n\n');
       const moves = note && d.moves ? `{ ${note} } ${d.moves.trimStart()}` : d.moves; // birinci hamleden ÖNCE yorum: başlangıç konumunda görünür
       const paths = d.figs.flatMap((f) => [...f.matchAll(/\]\(([^)\s]+)/g)].map((m) => m[1]));
@@ -775,7 +773,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
         label: d.label,
         title: d.label.replace(/^[^·]*·\s*/, ''),
         site: d.site,
-        blurb,
+        blurb: '', // açıklama yalnızca oyunun ilk yorumunda (hamle listesinin altında) görünür; sağ sütunda tekrarlanmaz
         bio: d.bio,
         thumb,
         figures: d.figs.length ? d.figs.map((f, k) => (isFigRow(f) ? <FigureRow key={k} chunk={f} /> : <Figure key={k} chunk={f} />)) : null,
