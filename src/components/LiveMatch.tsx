@@ -35,16 +35,7 @@ const clean = (pgn: string) => firstGame(pgn).replace(/\{[^}]*\}/g, ' ').replace
 const two = (n: number) => String(n).padStart(2, '0');
 const nm = (s: string) => (s.includes(',') ? s.split(',').map((x) => x.trim()).reverse().join(' ') : s);
 
-// Dene: adrese `?canli-deneme=<tur kimliği>` eklenirse, o Lichess turu (bitmiş bir yayın olabilir) maç başlamış gibi gösterilir.
-const demoRound = () => {
-  if (typeof window === 'undefined') return null;
-  const id = new URLSearchParams(window.location.search).get('canli-deneme');
-  return id && /^[A-Za-z0-9]{8}$/.test(id) ? id : null;
-};
-
-
 export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; onLoaded?: () => void; next?: SectionTarget | SectionTarget[] }) {
-  const demo = useMemo(demoRound, []);
   const [mounted, setMounted] = useState(false);
   const [now, setNow] = useState(0);
   const [rounds, setRounds] = useState<Round[]>(FALLBACK);
@@ -58,13 +49,12 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
     const t = window.setInterval(() => setNow(Date.now()), 1000);
     return () => window.clearInterval(t);
   }, []);
-  const list = demo ? [{ id: demo, name: 'Game 1', startsAt: 0 }] : rounds;
+  const list = rounds;
   const start = list[0].startsAt;
   const live = mounted && now >= start;
 
   // Tur listesi (başlangıç saatleri değişirse, kaydırılan oyun günleri için): maçtan önce dakikada bir, sonra da seyrek.
   useEffect(() => {
-    if (demo) return;
     let off = false;
     const go = () => fetch(`${API}/api/broadcast/${TOUR}`).then((r) => r.json()).then((d) => {
       const rs = (d?.rounds ?? []).filter((r: Round) => r.startsAt).map((r: Round) => ({ id: r.id, name: r.name, startsAt: r.startsAt, finished: r.finished }));
@@ -73,7 +63,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
     go();
     const t = window.setInterval(go, 60_000);
     return () => { off = true; window.clearInterval(t); };
-  }, [demo]);
+  }, []);
 
   // Gösterilen tur: okurun seçtiği, yoksa başlamış olanların sonuncusu.
   const started = list.filter((r) => r.startsAt <= now);
@@ -93,7 +83,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   }, [live, shown?.id, finishedShown]); // eslint-disable-line react-hooks/exhaustive-deps
   // Skor için daha önce biten turların sonuçları bir kez alınır.
   useEffect(() => {
-    if (!live || demo) return;
+    if (!live) return;
     started.filter((r) => r.id !== shown?.id && !pgns[r.id]).forEach((r) => { fetchPgn(r.id); });
   }, [live, started.length]); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -199,12 +189,12 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
         <div><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/dunya-fide-gukesh.jpg`} alt="" style={{ left: '-53%' }} loading="lazy" /></span><p><b>Gukesh Dommaraju</b><span className="f-mono">Hindistan · 2710</span></p></div>
         <div><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/dunya-fide-sindarov.jpg`} alt="" style={{ left: '-56%' }} loading="lazy" /></span><p><b>Javokhir Sindarov</b><span className="f-mono">Özbekistan · 2782</span></p></div>
       </div>
-      {live && !demo && (
+      {live && (
         <p className="live-score f-mono" aria-label="Maç skoru">
           <b>Gukesh {fmt(score.g)}</b><span> – </span><b>{fmt(score.s)} Sindarov</b>
         </p>
       )}
-      {live && !demo && (
+      {live && (
         <div className="live-rounds" role="tablist" aria-label="Oyunlar">
           {list.map((r, i) => {
             const ok = r.startsAt <= now;
