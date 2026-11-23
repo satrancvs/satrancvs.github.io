@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import SfPanel from '@/components/SfPanel';
 import { usePlayerLoaded } from '@/lib/use-player-loaded';
 import SectionLink from '@/components/SectionLink';
@@ -120,6 +121,23 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const base = useRef(0);
   const total = hasMoves ? plies(pgn) : 0;
   useEffect(() => { if (analysing) base.current = total; }, [analysing]); // eslint-disable-line react-hooks/exhaustive-deps
+  // Okur sayfada başka yerdeyken canlı oyuna yeni hamle gelirse sayfa kaymaz: "Canlı" noktası yanıp söner ve ekranda küçük bir uyarı çıkar; tıklayınca diyagrama kaydırılır.
+  const [inView, setInView] = useState(true);
+  const [alert, setAlert] = useState(false);
+  const seenTotal = useRef(-1);
+  useEffect(() => {
+    const el = board.current;
+    if (!el || typeof IntersectionObserver === 'undefined') return;
+    const io = new IntersectionObserver(([e]) => setInView(e.isIntersecting), { threshold: 0.3 });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+  useEffect(() => {
+    if (seenTotal.current >= 0 && total > seenTotal.current && !inView) setAlert(true);
+    seenTotal.current = total;
+  }, [total]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => { if (inView) setAlert(false); }, [inView]);
+  const toBoard = () => { setAlert(false); board.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }); };
   const fresh = analysing ? Math.max(0, total - base.current) : 0;
   usePlayerLoaded(board, !!onLoaded, onLoaded);
 
@@ -160,7 +178,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   return (
     <section className={`live-match${live ? ' is-live' : ''}`} aria-label="Dünya Şampiyonası 2026 canlı yayını">
       <p className="live-kicker f-mono">
-        {live ? <><i className="live-dot" aria-hidden="true" />Canlı</> : 'Çok yakında'}<span aria-hidden="true"> · </span>Dünya Şampiyonası 2026
+        {live ? <><i className={`live-dot${alert ? ' live-dot-alert' : ''}`} aria-hidden="true" />Canlı</> : 'Çok yakında'}<span aria-hidden="true"> · </span>Dünya Şampiyonası 2026
       </p>
       <div className="live-vs">
         <div><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/dunya-fide-gukesh.jpg`} alt="" style={{ left: '-53%' }} loading="lazy" /></span><p><b>Gukesh Dommaraju</b><span className="f-mono">Hindistan · 2710</span></p></div>
@@ -179,6 +197,10 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           })}
         </div>
       )}
+      {alert && !inView && createPortal(
+        <button type="button" className="live-alert f-mono" onClick={toBoard} aria-label="Canlı oyunda yeni hamle oynandı; diyagrama git">
+          <i className="live-dot live-dot-alert" aria-hidden="true" />Canlı · yeni hamle<span aria-hidden="true"> ↓</span>
+        </button>, document.body)}
       <div className="live-stage">
         <SfPanel boardRef={board} idle={idle} intro={analysing ? (
           <div className="live-sf-intro">

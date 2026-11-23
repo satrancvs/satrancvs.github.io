@@ -1010,11 +1010,14 @@ class VideoMoveList {
       const span = this._halfSpans[moveIndex];
       span.classList.add("active");
 
-      span.scrollIntoView({
-        behavior: "smooth",
-        inline:   "center",
-        block:    "nearest"
-      });
+      // Yalnızca hamle listesini yatay kaydırır (scrollIntoView sayfayı da dikey kaydırıyordu: canlı oyunda yeni hamle gelince
+      // okur sayfada başka yerdeyken movelist'e kadar iniyordu).
+      let box = span.parentElement;
+      while (box && box !== this.el && box.scrollWidth <= box.clientWidth + 1) box = box.parentElement;
+      if (box && box.scrollWidth > box.clientWidth + 1) {
+        const a = span.getBoundingClientRect(), b = box.getBoundingClientRect();
+        box.scrollTo({ left: box.scrollLeft + (a.left + a.width / 2) - (b.left + b.width / 2), behavior: "smooth" });
+      }
     }
 
   }

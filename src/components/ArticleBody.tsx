@@ -814,6 +814,11 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     return { id: `oyun-bolumu-${no}`, thumb: items[0]?.thumb, ...meta };
   };
 
+  // Canlı yayından sonraki kart: "Maçtan videolar" bölümü (### başlığı) — onun sonunda da "Tüm ünvan maçları" kartı var.
+  const videoTarget: SectionTarget | undefined = chunks.some((x) => VIDEO_PLAYLIST.test(x.trim()))
+    ? { id: 'maçtan-videolar', title: 'Maçtan videolar', sub: 'FIDE kanalının son videoları', headingText: 'Maçtan videolar', kicker: 'Beklerken göz at', thumb: 'images/dunya-fide-sindarov.jpg' }
+    : undefined;
+
   for (let i = 0; i < chunks.length; i++) {
     const c = chunks[i].trim();
     if (toc.length > 1 && !tocPlaced && i === toc[0].at) {
@@ -891,9 +896,9 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       const groups: { label: string; items: PickItem[]; flat?: boolean }[] = [];
       const inline = new Set(chunks.map((x) => x.trim().match(INLINE_PICKER)?.[1].trim()).filter(Boolean));
       chunks.forEach((x, k) => { const m = x.trim().match(MATCH_PICKER); if (m) { const label = (m[1] ?? 'Seçme oyunlar').trim(); if (!inline.has(label)) groups.push({ label, items: collectPicker(k).items, flat: /Gukesh/.test(label) }); } });
-      out.push(<GameHub key={i} ready={cp === 'ready'} groups={groups} onLoaded={() => hubDone(0)} next={hubTarget(1)} />);
+      out.push(<GameHub key={i} ready={cp === 'ready'} groups={groups} onLoaded={() => hubDone(0)} next={videoTarget} />);
     } else if (VIDEO_PLAYLIST.test(c)) {
-      out.push(<section key={i} className="hub hub-solo" aria-label="FIDE videoları"><VideoPlaylist /></section>);
+      out.push(<section key={i} className="hub hub-solo" aria-label="FIDE videoları"><VideoPlaylist next={hubTarget(1)} /></section>);
     } else if (CHAMPION_TIMELINE.test(c)) {
       out.push(<ChampionTimeline key={i} />);
     } else if (INLINE_PICKER.test(c)) {
