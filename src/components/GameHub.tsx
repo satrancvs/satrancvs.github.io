@@ -6,7 +6,7 @@ import type { SectionTarget } from '@/components/SectionLink';
 
 // Dünya Şampiyonası 2026 yazısının üstündeki tek oynatıcı: menüdeki sekmelerle 2026 maçının canlı bölümü (geri sayım dahil) ve
 // yazıdaki seçme oyun grupları (ünvan maçlarından seçmeler, şampiyonları yenen efsaneler) arasında geçilir.
-export default function GameHub({ ready, groups, onLoaded, next }: { ready: boolean; groups: { label: string; items: PickItem[]; flat?: boolean }[]; onLoaded?: () => void; next?: SectionTarget }) {
+export default function GameHub({ ready, groups, onLoaded, next }: { ready: boolean; groups: { label: string; items: PickItem[]; flat?: boolean }[]; onLoaded?: () => void; next?: SectionTarget | SectionTarget[] }) {
   const [tab, setTab] = useState(0);
   const labels = ['2026 maçı · Canlı', ...groups.map((g) => g.label)];
   return (

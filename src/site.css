@@ -896,7 +896,9 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .sec-link-arrow { font-size: 1.5rem; color: var(--accent); transition: transform .15s; }
 .sec-link:hover .sec-link-arrow { transform: translateY(3px); }
 .sec-link-wrap { max-width: 34rem; margin: 1rem auto 0; padding: 0 .5rem; }
-.live-match > .sec-link { max-width: 34rem; }
+.live-match > .sec-link, .live-match > .live-nexts { max-width: 34rem; }
+.live-nexts { display: flex; flex-direction: column; gap: .6rem; margin-top: 1.1rem; }
+.live-nexts .sec-link { margin-top: 0; }
 /* Oyuncu hakkında bilgi: oynatıcıdan sonra, yazı metni gibi; yalnızca ekrandaki oyunun oyuncusu için */
 .picker .mpb-bio-prose { max-width: 44.5rem; margin: 1.6rem auto 0; padding: 0 1rem; }
 .picker .mpb-bio-prose p { margin: 0; font-size: clamp(1.3125rem, 1.1rem + .6vw, 1.4375rem); line-height: 1.7; color: rgb(var(--fg-rgb) / .95); }
@@ -975,7 +977,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 @media (min-width: 56em) {
   .live-match { --live-bs: max(300px, min(780px, 100svh - 10rem, 100vw - 3rem - 22rem - 14.5rem - 4.5rem - 26px)); grid-template-columns: max-content 22rem; grid-template-rows: repeat(7, auto) 1fr; }
   .live-stage > .live-sf { flex-basis: 14.5rem; }
-  .live-match > .sec-link { grid-row: 8; align-self: end; margin-top: 1rem; }
+  .live-match > .sec-link, .live-match > .live-nexts { grid-row: 8; align-self: end; margin-top: 1rem; }
 }
 /* Maç başlamadan hamle listesi yer kaplamasın: üç sütun tahtanın alt kenarında biter */
 .live-idle .video-moves, .live-idle .video-comment { display: none !important; }
