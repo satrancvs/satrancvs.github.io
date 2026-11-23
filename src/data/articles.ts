@@ -21,7 +21,7 @@ import data from './articles.json';
 
 export type Article = {
   id: string; slug: string; oldSlugs?: string[]; cat?: string; cats?: string[]; listLabel?: string; listNo?: string; title: string; dek?: string; author: string; authorLang?: string; authorLabel?: string; translator?: string; credit?: { text: string; href: string };
-  excerpt?: string; date?: string; chunks?: string[]; photo?: boolean; thumb?: string; thumbAlt?: string; thumbPosition?: string; diagram?: string; diagramAlt?: string; diagramCaption?: string; titleLines?: [string, string]; note?: string; diagramOrientation?: 'white' | 'black'; diagramBadge?: { square: string; glyph: string }; diagramArrow?: { from: string; to: string }; draft?: boolean; unlisted?: boolean; body: string[];
+  excerpt?: string; date?: string; chunks?: string[]; photo?: boolean; thumb?: string; thumbAlt?: string; thumbPosition?: string; diagram?: string; diagramAlt?: string; diagramCaption?: string; titleLines?: [string, string]; note?: string; diagramOrientation?: 'white' | 'black'; diagramBadge?: { square: string; glyph: string }; diagramArrow?: { from: string; to: string }; draft?: boolean; unlisted?: boolean; issue?: number; body: string[];
 };
 
 // Gövdesi markdown dosyasından gelen yazılar (id -> dosya)
@@ -77,6 +77,8 @@ const REACHABLE = ARTICLES.filter((a) => !a.draft);
 const LIST_ORDER = ['giris', 'dunya-sampiyonasi', 'kapak', 'karlsruhe', 'atfil', 'aronian', 'mugla', 'zebra', 'palavan', 'ilk-adim'];
 const rank = (a: Article) => { const i = LIST_ORDER.indexOf(a.id); return i >= 0 ? i : LIST_ORDER.length + ARTICLES.indexOf(a); };
 export const LISTED = [...PUBLISHED].sort((x, y) => rank(x) - rank(y));
+// `issue` (articles.json): yazının hangi sayıda göründüğü; yoksa Sayı 1. "Tüm yazılar" listesindeki Sayı 1 / Sayı 2 sekmeleri buna göre süzer.
+export const issueOf = (a: Article): number => a.issue ?? 1;
 
 export const articleBySlug = (slug?: string) => REACHABLE.find((a) => a.slug === slug);
 // Adresi değişen yazının eski adresi (articles.json `oldSlugs`): ziyaretçi yeni adrese yönlendirilir (Post.tsx), vite.config.ts de dist/<eski>/index.html yönlendirme sayfası yazar.

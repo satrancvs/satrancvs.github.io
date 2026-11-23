@@ -9,7 +9,7 @@ import ProgressiveImage from '@/components/ProgressiveImage';
 import FenDiagram from '@/components/FenDiagram';
 import NewsletterForm from '@/components/NewsletterForm';
 import { preloadChessPublica } from '@/lib/chesspublica';
-import { ARTICLES, LISTED, PUBLISHED, articlePath, catLabel, catsOf } from '@/data/articles';
+import { ARTICLES, LISTED, PUBLISHED, articlePath, catLabel, catsOf, issueOf } from '@/data/articles';
 import '../site.css';
 
 // Ana sayfadan en son ayrılırken kaydırma konumu (yazı sayfasındaki çarpı buraya döner).
@@ -130,7 +130,7 @@ export default function Index() {
   useLayoutEffect(() => {
     const measure = () => {
       const wide = window.matchMedia('(min-width: 768px)').matches;
-      setListShift(wide && cat !== 'Tümü' && koseHead.current ? koseHead.current.offsetTop : 0);
+      setListShift(wide && cat !== 'Tümü' && cat !== 'Sayı 2' && koseHead.current ? koseHead.current.offsetTop : 0);
     };
     measure();
     window.addEventListener('resize', measure);
@@ -208,7 +208,9 @@ export default function Index() {
 
   const [cover, ...rest] = ARTICLES.filter((a) => !a.unlisted);
   const featured = rest.slice(0, 3);
-  const list = LISTED.filter((a) => cat === 'Tümü' || catsOf(a).includes(cat));
+  const issue1 = LISTED.filter((a) => issueOf(a) === 1);
+  const issue2 = LISTED.filter((a) => issueOf(a) === 2);
+  const list = cat === 'Tümü' ? issue1 : cat === 'Sayı 2' ? issue2 : LISTED.filter((a) => catsOf(a).includes(cat));
   const mlist = LISTED.filter((a) => catsOf(a).includes(mcat));
   const renderRows = (items: typeof LISTED, keyPrefix: string) => items.map((a, i) => (
     <li key={keyPrefix + a.id}>
@@ -336,11 +338,11 @@ export default function Index() {
             <p className="f-mono text-[#0E0C0A]/60"><span className="text-[#9A5F1E]">02</span> — Bu Sayıdaki</p>
             <h2 className="f-display text-[clamp(36px,4.5vw,72px)] mt-8">Tüm<br /><em className="italic">yazılar</em></h2>
             <div role="tablist" aria-label="Tüm yazılar" className="hidden md:block mt-12">
-              <button role="tab" aria-selected={cat === 'Tümü'} onClick={() => setCat('Tümü')} className={tabCls(cat === 'Tümü')} aria-label="Tümü: Sayı 1">Sayı 1</button>
+              <button role="tab" aria-selected={cat === 'Tümü'} onClick={() => setCat('Tümü')} className={tabCls(cat === 'Tümü')} >Sayı 1</button>
               <span aria-hidden className="f-mono text-[#0E0C0A]/35 mx-3">·</span>
-              <span title="Yakında..." aria-disabled="true" role="tab" className={`${tabCls(false)} inline-flex items-center opacity-50 cursor-not-allowed select-none hover:text-[#0E0C0A]/50`}>Sayı 2</span>
+              <button role="tab" aria-selected={cat === 'Sayı 2'} onClick={() => setCat('Sayı 2')} className={tabCls(cat === 'Sayı 2')}>Sayı 2</button>
             </div>
-            <p className="md:hidden f-mono mt-12 text-[#0E0C0A]/50">Sayı 1 <span aria-hidden className="mx-2 text-[#0E0C0A]/35">·</span><span title="Yakında..." aria-disabled="true" className="opacity-60">Sayı 2</span></p>
+            <p className="md:hidden f-mono mt-12 text-[#0E0C0A]/50">Sayı 1</p>
             <h2 id="koseler" ref={koseHead} className="hidden md:block f-display text-[clamp(36px,4.5vw,72px)] mt-14 scroll-mt-28"><em className="italic">Köşeler</em></h2>
             <div role="tablist" aria-label="Köşeler" className="hidden md:flex flex-wrap items-center gap-x-3 gap-y-2 mt-8">
               {CORNERS.map((k, i) => (
@@ -356,7 +358,13 @@ export default function Index() {
             {renderRows(list, cat)}
           </ul>
           {/* Mobil: önce sayının tüm yazıları, ardından Köşeler ve seçilen köşenin yazıları. */}
-          <ul className="md:hidden -mt-4">{renderRows(LISTED, 'all')}</ul>
+          <ul className="md:hidden -mt-4">{renderRows(issue1, 'all')}</ul>
+          {issue2.length > 0 && (
+            <div className="md:hidden">
+              <p className="f-mono text-[#0E0C0A]/50">Sayı 2</p>
+              <ul>{renderRows(issue2, 'i2')}</ul>
+            </div>
+          )}
           <div className="md:hidden mt-6">
             <h2 id="koseler-m" className="f-display text-[clamp(36px,4.5vw,72px)] scroll-mt-28"><em className="italic">Köşeler</em></h2>
             <div role="tablist" aria-label="Köşeler" className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-8">
