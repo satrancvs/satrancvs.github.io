@@ -783,11 +783,14 @@ function loadPGN(pgn) {
     // Hard clamp so downstream math never sees extreme values
     score = Math.max(-8, Math.min(8, score));
 
-    // tanh mapping gives more visual resolution in the 0-4 pawn range
-    // tanh(0) = 0 → 50%, tanh(1) ≈ 0.76 → ~88%, tanh(2) ≈ 0.96 → ~98%
-    // We scale the input so ±3 pawns fills most of the bar while mates hit the edge
-    const prob    = (Math.tanh(score * 0.4) + 1) / 2;
-    const percent = prob * 100;
+    // Site patch: the original tanh(0.4·x) mapping made +1.0 look like 69 % (and +2 like 87 %), far more lopsided than the
+    // engines' own scales. Use Lichess's win-probability curve (same as its eval gauge and accuracy maths):
+    //   winning chances = 2 / (1 + e^(−0.00368208·centipawns)) − 1  →  +1.0 ≈ 59 %, +2 ≈ 68 %, +3 ≈ 76 %, +5 ≈ 86 %.
+    // A forced mate (fed as ±8 by src/lib/eval-bar.ts) fills the bar completely.
+    const cp = score * 100;
+    const percent = Math.abs(score) >= 8
+      ? (score > 0 ? 100 : 0)
+      : 50 + 50 * (2 / (1 + Math.exp(-0.00368208 * cp)) - 1);
 
     if (this.fill) {
       this.fill.style.height = percent + "%";
