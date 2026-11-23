@@ -122,7 +122,8 @@ function attach(player: PlayerEl) {
     }).catch(() => {});
   }
   // Maç seçici ve canlı yayın: taşlar oynatılabilir (serbest analiz), sağ tıkla ok/kare, Stockfish yeni konumu çözer.
-  if (player.closest('.picker, .live-match')) player.ready.then(() => attachAnalysis(player as never)).catch(() => {});
+  // Yalnızca fare/dokunmatik yüzey olan cihazlarda (laptop, masaüstü): dokunmatik ekranlarda (telefon, tablet) taşlar oynatılamaz, ok/kare çizilemez.
+  if (player.closest('.picker, .live-match') && window.matchMedia('(hover: hover) and (pointer: fine)').matches) player.ready.then(() => attachAnalysis(player as never)).catch(() => {});
   // Ilk hamle oncesi yorum karti tahtanin uzerinde ortalanir: tahtanin konumu/olcusu CSS degiskenleri olarak oynaticiya yazilir.
   if (player.closest('.hub')) {
     // Tahtaya (diyagrama) tıklamak oynat/duraklat yapmaz: bunun için sabit oynat/duraklat düğmesi var. Yakalama aşamasında durdurulur, oynatıcının kendi tıklama işleyicisi çalışmaz.
