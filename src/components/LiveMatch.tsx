@@ -28,7 +28,9 @@ const plies = (pgn: string) => {
   return body.split(/\s+/).filter(Boolean).length;
 };
 // Yorumlar (saat/değerlendirme) oynatıcıda gürültü yapar; hamleler ve künye kalır.
-const clean = (pgn: string) => pgn.replace(/\{[^}]*\}/g, ' ').replace(/[ \t]+/g, ' ').trim();
+// Bir turun PGN'i birden çok oyun içerebilir (test için seçilen çok tahtalı turlar): tek tahta gösterildiği için yalnızca ilk oyun alınır (durum satırı da ilk oyundan okunur).
+const firstGame = (pgn: string) => pgn.trim().split(/\n\s*\n(?=\[Event )/)[0];
+const clean = (pgn: string) => firstGame(pgn).replace(/\{[^}]*\}/g, ' ').replace(/[ \t]+/g, ' ').trim();
 const two = (n: number) => String(n).padStart(2, '0');
 const nm = (s: string) => (s.includes(',') ? s.split(',').map((x) => x.trim()).reverse().join(' ') : s);
 
