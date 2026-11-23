@@ -15,11 +15,10 @@ const parts = (s: string) => s.split(/;\s+(?=\d)/).map((x) => x.trim()).filter(B
 
 // Kaydırma animasyonu (sade): omurga okurun konumuna göre dolar (--tl-p), kartlar/dönem başlıkları ilk görününce yumuşakça belirir (bir kez),
 // omurga düğümü geçilen kartta dolar. Yalnızca opacity/transform kullanılır; `prefers-reduced-motion` ve JS yokken hepsi sabit görünür.
-function useTimelineMotion(root: React.RefObject<HTMLDivElement>, scroller: React.RefObject<HTMLDivElement>) {
+function useTimelineMotion(root: React.RefObject<HTMLDivElement>) {
   useEffect(() => {
     const el = root.current;
-    const box = scroller.current;
-    if (!el || !box || typeof IntersectionObserver === 'undefined') return;
+    if (!el || typeof IntersectionObserver === 'undefined') return;
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     el.classList.add('tl-anim');
     const targets = el.querySelectorAll('.tl-item, .tl-era, .tl-note');
@@ -32,28 +31,25 @@ function useTimelineMotion(root: React.RefObject<HTMLDivElement>, scroller: Reac
     const update = () => {
       raf = 0;
       const r = el.getBoundingClientRect();
-      const sr = box.getBoundingClientRect(); // çizelge kendi kutusunda kayar: okuma hizası kutunun %55'i
-      const trigger = sr.top + sr.height * 0.55;
+      const trigger = window.innerHeight * 0.55; // okuma hizası: ekranın %55'i
       const p = Math.min(1, Math.max(0, (trigger - r.top) / r.height));
       el.style.setProperty('--tl-p', p.toFixed(4));
       items.forEach((it) => it.classList.toggle('is-reached', it.getBoundingClientRect().top + 26 < trigger));
     };
     const onScroll = () => { if (!raf) raf = window.requestAnimationFrame(update); };
     update();
-    box.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll);
-    return () => { io.disconnect(); box.removeEventListener('scroll', onScroll); window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); if (raf) window.cancelAnimationFrame(raf); el.classList.remove('tl-anim'); };
-  }, [root, scroller]);
+    return () => { io.disconnect(); window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); if (raf) window.cancelAnimationFrame(raf); el.classList.remove('tl-anim'); };
+  }, [root]);
 }
 
 export default function ChampionTimeline() {
   const entries = data as Entry[];
   const root = useRef<HTMLDivElement>(null);
-  const scroller = useRef<HTMLDivElement>(null);
-  useTimelineMotion(root, scroller);
+  useTimelineMotion(root);
   return (
-    <div ref={scroller} className="tl-scroll" role="region" tabIndex={0} aria-label="Dünya şampiyonları zaman çizelgesi (kendi içinde kaydırılır)">
+    <div className="tl-scroll">
     <div ref={root} className="tl">
       {entries.map((e, i) => {
         if (e.era) {
