@@ -1218,7 +1218,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .vp .mpb-name b { font-size: 1rem; }
 @media (min-width: 56em) {
   .vp .mpb-main { justify-content: center; }
-  .vp .mpa-frame { flex: 1 1 0; width: auto; max-width: 62rem; margin-inline: 0; }
+  .vp .mpa-frame { flex: 1 1 0; width: auto; max-width: 40rem; margin-inline: 0; }
   .vp .mpb-info { flex: 0 0 24rem; }
 }
 

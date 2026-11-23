@@ -95,9 +95,9 @@ Bugünkü sistem, uzun bir tarihsel değişimin sonucu. Dünya şampiyonluğu il
 
 *Singapur*
 
-[KART images/dunya-mac-2024.jpg]
+[KART images/dunya-fide-gukesh.jpg]
 
-![Ding Liren – Gukesh, Tata Steel Satranç 2023 (Wijk aan Zee); maçtan değil, iki oyuncunun daha önceki karşılaşması](images/dunya-mac-2024.jpg "<span lang="en">Ding Liren</span> – <span lang="en">Gukesh</span>, <span lang="en">Tata Steel</span> Satranç 2023 (Wijk aan Zee); maçtan değil, iki oyuncunun daha önceki karşılaşması · <span lang="en">Wikimedia Commons</span> · <span lang="en">Vysotsky</span> · <span lang="en">CC BY-SA 4.0</span>")
+![Gukesh Dommaraju](images/dunya-fide-gukesh.jpg "Gukesh Dommaraju · Resmî maç sitesi · [<span lang="en">worldchampionship.fide.com</span>](https://worldchampionship.fide.com/) · © <span lang="en">FIDE</span>")
 
 Gukesh, 14. oyunda Ding’in hatasından yararlanarak maçı 7½–6½ kazandı. İzleyeceğiniz oyun, bu 14. oyun.
 
