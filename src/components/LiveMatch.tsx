@@ -163,8 +163,8 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
         {live ? <><i className="live-dot" aria-hidden="true" />Canlı</> : 'Çok yakında'}<span aria-hidden="true"> · </span>Dünya Şampiyonası 2026
       </p>
       <div className="live-vs">
-        <div><img src={`${import.meta.env.BASE_URL}images/dunya-gukesh.jpg`} alt="" loading="lazy" /><p><b>Gukesh Dommaraju</b><span className="f-mono">Hindistan · 2710</span></p></div>
-        <div><img src={`${import.meta.env.BASE_URL}images/dunya-sindarov.jpg`} alt="" loading="lazy" /><p><b>Javokhir Sindarov</b><span className="f-mono">Özbekistan · 2782</span></p></div>
+        <div><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/dunya-fide-gukesh.jpg`} alt="" style={{ left: '-53%' }} loading="lazy" /></span><p><b>Gukesh Dommaraju</b><span className="f-mono">Hindistan · 2710</span></p></div>
+        <div><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/dunya-fide-sindarov.jpg`} alt="" style={{ left: '-56%' }} loading="lazy" /></span><p><b>Javokhir Sindarov</b><span className="f-mono">Özbekistan · 2782</span></p></div>
       </div>
       {live && !demo && (
         <p className="live-score f-mono" aria-label="Maç skoru">

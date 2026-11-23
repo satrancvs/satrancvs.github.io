@@ -751,7 +751,8 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .live-sf-pv { margin: 0; min-height: 5.2em; font-size: 1.125rem; line-height: 1.55; color: var(--fg); font-weight: 500; }
 .live-vs { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; margin: 0 0 1.1rem; }
 .live-vs > div { display: flex; align-items: center; gap: .7rem; text-align: left; }
-.live-vs img { width: 3.2rem; height: 3.2rem; border-radius: 50%; object-fit: cover; object-position: 50% 20%; box-shadow: 0 0 0 2px var(--accent); }
+.live-vs .vs-photo { flex: none; width: 3.2rem; height: 3.2rem; border-radius: 50%; overflow: hidden; position: relative; box-shadow: 0 0 0 2px var(--accent); }
+.live-vs img { position: absolute; top: 0; width: 220%; height: auto; max-width: none; }
 .live-vs p { margin: 0; display: flex; flex-direction: column; gap: .1rem; }
 .live-vs b { font-family: 'Fraunces', serif; font-weight: 400; font-size: 1.15rem; line-height: 1.15; color: var(--fg); }
 .live-vs span { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); }
