@@ -123,6 +123,24 @@
     "body": []
   },
   {
+    "id": "dunya-sampiyonasi",
+    "slug": "dunya-satranc-sampiyonasi",
+    "cat": "Satranç tarihi",
+    "cats": [
+      "Satranç tarihi",
+      "Özel dosya"
+    ],
+    "title": "Dünya Satranç Şampiyonası",
+    "dek": "24 Kasım 2026’da İsviçre’de bir Dünya Satranç Şampiyonası maçı başlıyor: Gukesh Dommaraju (Hindistan) ile Javokhir Sindarov (Özbekistan) karşı karşıya.",
+    "author": "Yayın ekibi",
+    "date": "Ekim–Kasım–Aralık 2026",
+    "body": [],
+    "oldSlugs": [
+      "taslak/dunya-satranc-sampiyonasi",
+      "taslak/dunya-satranc-sampiyonasi-2026"
+    ]
+  },
+  {
     "id": "gomori",
     "slug": "taslak/1926-yilindan-nasil-usta-oldum",
     "oldSlugs": [
@@ -399,24 +417,6 @@
     "body": [],
     "oldSlugs": [
       "closing-gambit-belgeseli"
-    ]
-  },
-  {
-    "id": "dunya-sampiyonasi",
-    "slug": "taslak/dunya-satranc-sampiyonasi",
-    "unlisted": true,
-    "cat": "Satranç tarihi",
-    "cats": [
-      "Satranç tarihi",
-      "Özel dosya"
-    ],
-    "title": "Dünya Satranç Şampiyonası",
-    "dek": "24 Kasım 2026’da İsviçre’de bir Dünya Satranç Şampiyonası maçı başlıyor: Gukesh Dommaraju (Hindistan) ile Javokhir Sindarov (Özbekistan) karşı karşıya.",
-    "author": "Yayın ekibi",
-    "date": "Ocak–Şubat–Mart 2027",
-    "body": [],
-    "oldSlugs": [
-      "taslak/dunya-satranc-sampiyonasi-2026"
     ]
   }
 ]
