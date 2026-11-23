@@ -176,6 +176,21 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const result = tag(pgn, 'Result');
   const roundNo = shown ? list.indexOf(shown) + 1 : 0;
 
+  // Geri sayım, canlı yayın başlayana kadar sol sütunun altında (Stockfish kartının altında) durur.
+  const count = !live && mounted ? (
+    <div className="live-sf-intro live-sf-count">
+      <div className="live-count" role="timer" aria-label="Birinci oyuna kalan süre">
+        <p className="live-count-label f-mono">1. oyuna kalan süre</p>
+        <div className="live-count-grid">
+          {[[d, 'gün'], [h, 'saat'], [m, 'dakika'], [s, 'saniye']].map(([v, l]) => (
+            <div key={l as string} className="live-cell"><span className="live-num f-display">{two(v as number)}</span><span className="live-unit f-mono">{l}</span></div>
+          ))}
+        </div>
+        <p className="live-when f-mono">24 Kasım 2026 · 17.00 (TR saati) · Cenevre</p>
+      </div>
+    </div>
+  ) : undefined;
+
   return (
     <section className={`live-match${live ? ' is-live' : ''}`} aria-label="Dünya Şampiyonası 2026 canlı yayını">
       <p className="live-kicker f-mono">
@@ -211,7 +226,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
             Canlı konuma dön
           </button>
           </div>
-        ) : undefined} idleText="Maç başlayınca canlı konum analizi buradan izlenebilecek." />
+        ) : count} idleText="Maç başlayınca canlı konum analizi buradan izlenebilecek." />
         <div ref={board} className={`cp-game live-board${idle ? ' live-idle' : ''}`} aria-disabled={idle} {...(idle ? { inert: '' } : {})}>
           <div ref={host} />
         </div>
@@ -222,17 +237,6 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
         </p>
       )}
       {live && !hasMoves && <p className="live-status f-mono">{failed ? 'Canlı veriye ulaşılamadı' : 'İlk hamle bekleniyor…'}{shown && <> · <a href={`https://lichess.org/broadcast/-/-/${shown.id}`} target="_blank" rel="noopener noreferrer">Lichess’te izle</a></>}</p>}
-      {!live && mounted && (
-        <div className="live-count" role="timer" aria-label="Birinci oyuna kalan süre">
-          <p className="live-count-label f-mono">1. oyuna kalan süre</p>
-          <div className="live-count-grid">
-            {[[d, 'gün'], [h, 'saat'], [m, 'dakika'], [s, 'saniye']].map(([v, l]) => (
-              <div key={l as string} className="live-cell"><span className="live-num f-display">{two(v as number)}</span><span className="live-unit f-mono">{l}</span></div>
-            ))}
-          </div>
-          <p className="live-when f-mono">24 Kasım 2026 · 17.00 (TR saati) · Cenevre</p>
-        </div>
-      )}
       {next && <div className="live-nexts">{(Array.isArray(next) ? next : [next]).map((t) => <SectionLink key={t.id} target={t} />)}</div>}
     </section>
   );
