@@ -55,7 +55,11 @@ Kâğıt üzerinde Sindarov favori görünüyor: reytingi 2782 (dünya 4.), Guke
 
 Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor ve her döngü genelde iki yıl sürüyor. Adım adım bakalım:
 
-1. **Adaylar Turnuvası’na kimler giriyor?** Sekiz kişi. Bugünkü kurallarda bu koltuklar şu yollarla kazanılıyor: Dünya Kupası’ndaki ilk üç, Grand Swiss’teki ilk iki (2025’te Giri ve Blübaum), önceki iki yılın FIDE Circuit (turnuva puanı) birincileri (Caruana, Praggnanandhaa) ve bir de reyting kuralı (Nakamura). 2026’nın Adaylar’ı bu dört yolun hepsinden oyuncu getirdi.
+1. **Adaylar Turnuvası’na kimler giriyor?** Sekiz kişi. Bugünkü kurallarda bu koltuklar şu yollarla kazanılıyor:
+   - Dünya Kupası’ndaki ilk üç,
+   - Grand Swiss’teki ilk iki,
+   - önceki iki yılın FIDE Circuit (turnuva puanı) birincileri,
+   - reyting kuralı.
 2. **Adaylar Turnuvası**: sekiz oyuncu, çift turlu döner turnuva, 14 tur. Birinci olan, şampiyonun karşısına çıkacak şampiyon adayı oluyor.
 3. **Ünvan maçı**: 14 klasik oyunluk bir maç. Şampiyon **kendi ünvanını savunarak** doğrudan maça geliyor; Adaylar’a katılmıyor.
 
