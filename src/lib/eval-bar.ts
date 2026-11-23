@@ -166,16 +166,18 @@ function attach(player: PlayerEl) {
     ev.live = true;
     let lastPawns = 0;
     const bar = ev.bar;
-    const x = document.createElement('button');
-    x.type = 'button'; x.className = 'ev-close'; x.textContent = '×'; x.setAttribute('aria-label', 'Değerlendirme çubuğunu kapat'); x.title = 'Çubuğu kapat';
-    bar.appendChild(x);
-    const applyBar = () => { bar.classList.toggle('ev-off', !barOn); if (!barOn) bar.classList.remove('ev-open'); ev.setScore(barOn ? lastPawns : 0); };
-    bar.addEventListener('click', (e) => {
-      if (!barOn) { setBarOn(true); return; }
-      if ((e.target as HTMLElement).closest('.ev-close')) { setBarOn(false); return; }
-      bar.classList.toggle('ev-open');
-    });
-    document.addEventListener('click', (e) => { if (!bar.contains(e.target as Node)) bar.classList.remove('ev-open'); });
+    bar.setAttribute('role', 'switch');
+    bar.tabIndex = 0;
+    bar.title = 'Değerlendirme çubuğu: kapatmak için tıklayın';
+    const applyBar = () => {
+      bar.classList.toggle('ev-off', !barOn);
+      bar.setAttribute('aria-checked', String(barOn));
+      bar.title = barOn ? 'Değerlendirme çubuğu: kapatmak için tıklayın' : 'Değerlendirme çubuğu kapalı: açmak için tıklayın';
+      ev.setScore(barOn ? lastPawns : 0);
+    };
+    // Çubuğun kendisine tıklamak aç/kapat anahtarıdır (tercih tüm oynatıcılarda ortak).
+    bar.addEventListener('click', (e) => { e.stopPropagation(); setBarOn(!barOn); });
+    bar.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); e.stopPropagation(); setBarOn(!barOn); } });
     window.addEventListener('cp-evbar', applyBar);
     const live = !!player.closest('.live-match, .picker'); // çoklu satır yalnızca canlı ekrandaki panel açıkken; diğer oynatıcılar ve kapalı panel tek satır çözer
     const show: Listener = (r) => {
