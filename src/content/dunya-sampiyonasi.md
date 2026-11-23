@@ -3,20 +3,18 @@
 
 [CANLI MAÇ]
 
-24 Kasım 2026’da İsviçre’de, Cenevre yakınlarındaki Cologny’de, Fondation Martin Bodmer’de bir Dünya Satranç Şampiyonası maçı başlıyor. Karşı karşıya gelenler şampiyon Gukesh Dommaraju (Hindistan) ve şampiyon adayı Javokhir Sindarov (Özbekistan). İkisi de 20 yaşında; FIDE’nin ifadesiyle bu, tarihin en genç dünya şampiyonası karşılaşması.
-
-Maçı resmî sitesinden de takip edebilirsiniz: [worldchampionship.fide.com](https://worldchampionship.fide.com/).
+24 Kasım 2026’da İsviçre’de, Cenevre yakınlarındaki Cologny’de, Fondation Martin Bodmer’de bir [Dünya Satranç Şampiyonası](https://worldchampionship.fide.com/) maçı başlıyor. Karşı karşıya gelenler şampiyon Gukesh Dommaraju (Hindistan) ve şampiyon adayı Javokhir Sindarov (Özbekistan). İkisi de 20 yaşında; FIDE’nin ifadesiyle bu, tarihin en genç dünya şampiyonası karşılaşması.
 
 ### Şampiyon Gukesh ve aday Sindarov
 
-Önce şampiyondan başlayalım. **Gukesh**, ünvanı Aralık 2024’te Singapur’da, o günün şampiyonu Ding Liren’i 7½–6½ yenerek aldı. O sırada 18 yaşındaydı ve resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu oldu. Oraya da bir Adaylar Turnuvası’nı kazanarak gelmişti (Toronto 2024); 17 yaşında en genç şampiyon adayı olmuştu. Kısacası Gukesh, Adaylar Turnuvası’nı kazanarak şampiyonluk maçına çıkma hakkını elde etti ve Ding Liren’i yenerek ünvanı aldı. Şimdi ise ünvanını korumaya çalışıyor.
+Önce şampiyondan başlayalım. **Gukesh**, ünvanı Aralık 2024’te Singapur’da, o günün şampiyonu Ding Liren’i 7½–6½ yenerek aldı. O sırada 18 yaşındaydı ve resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu [oldu](https://t24.com.tr/dunya/hindistanli-18-yasindaki-oyuncu-dommaraju-en-genc-dunya-satranc-sampiyonu-oldu,1202720?_t=1795425290483). Oraya da bir Adaylar Turnuvası’nı kazanarak gelmişti (Toronto 2024); 17 yaşında en genç şampiyon adayı olmuştu. Kısacası Gukesh, [Adaylar Turnuvası](https://candidates2024.fide.com/)’nı kazanarak şampiyonluk maçına çıkma hakkını elde etti ve Ding Liren’i yenerek ünvanı aldı. Şimdi ise ünvanını korumaya çalışıyor.
 
 Gukesh ünvanı kazandıktan sonra iki yıl boyunca onu korumak için hazırlandı. Şimdi karşısında, şampiyonluk maçına ulaşmak için kendisi de oldukça zorlu bir eleme sürecinden geçen bir rakip var.
 
 **Sindarov**, sistemin ikinci kapısından, yani on dört turluk Adaylar Turnuvası’ndan birinci çıkarak şampiyon adayı oldu. Bu yolculuğun iki önemli durağı var:
 
 - Kasım 2025’te Goa’daki **FIDE Dünya Kupası**’nı (206 oyunculu eleme turnuvası) kazandı. 16. seri olarak başladığı turnuvada finalde Wei Yi’yi ikinci hızlı oyun sonunda yenebildi. 19 yaş 11 ayla en genç Dünya Kupası galibi ve ilk Özbek galip oldu; bu zafer ona Adaylar’a giriş bileti kazandırdı.
-- Mart–Nisan 2026’da Kıbrıs’ın Pegeia kasabasında oynanan, sekiz oyuncunun katıldığı çift turlu döner **Adaylar Turnuvası**’nı 14 turda **10 puanla** kazandı: altı galibiyet, hiç yenilgi yok. Turnuvayı bir tur kala garantiledi ve çift turlu döner sistemde oynanan Adaylar Turnuvaları tarihinin en yüksek puanına ulaştı.
+- Mart–Nisan 2026’da Kıbrıs’ın Pegeia kasabasında oynanan, sekiz oyuncunun katıldığı çift turlu döner **[Adaylar Turnuvası](https://candidates2026.fide.com/)**’nı 14 turda **10 puanla** kazandı: altı galibiyet, hiç yenilgi yok. Turnuvayı bir tur kala garantiledi ve çift turlu döner sistemde oynanan Adaylar Turnuvaları tarihinin en yüksek puanına ulaştı.
 
 <pre>
 FIDE ADAYLAR TURNUVASI 2026 ÇAPRAZ TABLOSU
