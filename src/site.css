@@ -1183,3 +1183,6 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 /* Stockfish paneli: değerlendirme etiketi ("Eşit") ile "En iyi devam yolu" arası sıkı (etiket çoğunlukla tek satır) */
 .live-sf-label { min-height: 1.5em; margin: .35rem 0 .7rem; }
 .live-sf-pv-title { padding-top: .65rem; }
+
+/* Oynatıcı ayarları (hız, çevir, indir) kartın sağına yaslı */
+.sf-player-settings { justify-content: flex-end; }
