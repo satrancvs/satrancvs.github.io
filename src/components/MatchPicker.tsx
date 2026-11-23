@@ -2,7 +2,7 @@ import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import type { ReactNode, RefObject } from 'react';
 import Markdown from 'markdown-to-jsx';
 import ProgressiveImage from '@/components/ProgressiveImage';
-import SfPanel, { SfSettings } from '@/components/SfPanel';
+import SfPanel from '@/components/SfPanel';
 import { usePlayerLoaded } from '@/lib/use-player-loaded';
 import SectionLink from '@/components/SectionLink';
 import type { SectionTarget } from '@/components/SectionLink';
@@ -28,6 +28,17 @@ const two = (n: number) => String(n).padStart(2, '0');
 // Türkçe ek, on yılın adının son ünlüsüne göre: 2010'lar (on), 1990'lar (doksan), 1960'lar (altmış), 1940'lar (kırk), 1930'lar (otuz); 2020'ler (yirmi), 2000'ler (bin), 1980'ler (seksen), 1970'ler (yetmiş), 1950'ler (elli).
 const decadeLabel = (y: number) => `${Math.floor(y / 10) * 10}'${[1, 3, 4, 6, 9].includes(Math.floor(y / 10) % 10) ? 'lar' : 'ler'}`;
 
+// Oynatıcının (pgn-player) ayarları: oynatıcının gizli araç çubuğundaki düğmeleri sürer (PGN indir, tahtayı çevir). Hız bu ekranda 0,5x'e sabit.
+function PlayerSettings({ screen }: { screen: RefObject<HTMLDivElement> }) {
+  const press = (action: string) => (screen.current?.querySelector(`.settings-btn[data-action="${action}"]`) as HTMLButtonElement | null)?.click();
+  return (
+    <div className="sf-player-settings f-mono">
+      <button type="button" onClick={() => press('flip')}>Tahtayı çevir</button>
+      <button type="button" onClick={() => press('download')}>PGN indir</button>
+    </div>
+  );
+}
+
 // Oyunu başlatan/duraklatan düğme: ilk hamleden önceki yorum kartı oyun başlayınca kaybolur, düğme kalır (oynat ↔ duraklat). Durum oynatıcının motorundan okunur.
 function PlayToggle({ screen, settingsOpen, onSettings }: { screen: RefObject<HTMLDivElement>; settingsOpen: boolean; onSettings: () => void }) {
   const [playing, setPlaying] = useState(false);
@@ -43,7 +54,7 @@ function PlayToggle({ screen, settingsOpen, onSettings }: { screen: RefObject<HT
   const toggle = () => { const e = engine(); if (!e) return; if (e.state.playing) e.pause(); else e.play(); setPlaying(!!e.state.playing); };
   return (
     <div className="sf-intro-btns">
-      <button type="button" className="sf-intro-gear" aria-expanded={settingsOpen} aria-label="Analiz ayarları" title="Analiz ayarları" onClick={onSettings}>
+      <button type="button" className="sf-intro-gear" aria-expanded={settingsOpen} aria-label="Oynatıcı ayarları" title="Oynatıcı ayarları" onClick={onSettings}>
         <svg viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z" /></svg>
       </button>
       {analysis ? (
@@ -97,7 +108,7 @@ export default function MatchPicker({ items, flat = false, gate = true, onLoaded
       <div className="mpb-main">
       <SfPanel boardRef={screen} idleText="Analiz ediliyor..." intro={cur.note ? (
         <div className="live-sf-intro" key={`intro-${cur.id}`}>
-          {showSettings ? <div className="sf-intro-card sf-intro-settings"><SfSettings /></div> : <div className="sf-intro-card">{cur.note.split(/\n\n+/).map((t, i) => <p key={i}><Markdown options={{ forceInline: true }}>{t}</Markdown></p>)}</div>}
+          {showSettings ? <div className="sf-intro-card sf-intro-settings"><PlayerSettings screen={screen} /></div> : <div className="sf-intro-card">{cur.note.split(/\n\n+/).map((t, i) => <p key={i}><Markdown options={{ forceInline: true }}>{t}</Markdown></p>)}</div>}
           <PlayToggle screen={screen} settingsOpen={showSettings} onSettings={() => setShowSettings((v) => !v)} />
         </div>
       ) : undefined} />

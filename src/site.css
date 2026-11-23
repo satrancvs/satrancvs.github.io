@@ -1161,3 +1161,9 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .sf-intro-back { display: inline-flex; align-items: center; gap: .4rem; flex: none; height: 1.9rem; padding: 0 .85rem; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); background: transparent; border: 1.5px solid var(--accent); border-radius: 999px; cursor: pointer; transition: color .15s, background .15s; }
 .sf-intro-back:hover { color: var(--bg); background: var(--accent); }
 .sf-intro-back:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+
+/* Oynatıcı ayarları (tahtayı çevir, PGN indir) yorum kartının yerinde */
+.sf-player-settings { display: flex; flex-wrap: wrap; gap: .5rem; }
+.sf-player-settings button { padding: .4rem .6rem; font-size: 9.5px; font-weight: 600; letter-spacing: .05em; white-space: nowrap; text-transform: uppercase; color: var(--fg); background: transparent; border: 1px solid var(--line); border-radius: 999px; cursor: pointer; transition: border-color .15s, color .15s; }
+.sf-player-settings button:hover { border-color: var(--accent); color: var(--accent); }
+.sf-intro-settings .sf-player-settings { padding: 0; }
