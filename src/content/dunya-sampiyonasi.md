@@ -7,11 +7,13 @@
 
 Maçı resmî sitesinden de takip edebilirsiniz: [worldchampionship.fide.com](https://worldchampionship.fide.com/).
 
-### Gukesh ile Sindarov
+### Şampiyon Gukesh ve aday Sindarov
 
 Önce şampiyondan başlayalım. **Gukesh**, ünvanı Aralık 2024’te Singapur’da, o günün şampiyonu Ding Liren’i 7½–6½ yenerek aldı. O sırada 18 yaşındaydı ve resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu oldu. Oraya da bir Adaylar Turnuvası’nı kazanarak gelmişti (Toronto 2024); 17 yaşında en genç şampiyon adayı olmuştu. Kısacası Gukesh, Adaylar Turnuvası’nı kazanarak şampiyonluk maçına çıkma hakkını elde etti ve Ding Liren’i yenerek ünvanı aldı. Şimdi ise ünvanını korumaya çalışıyor.
 
-Gelelim karşısındaki isme. **Sindarov**, sistemin ikinci kapısından, yani on dört turluk Adaylar Turnuvası’ndan birinci çıkarak şampiyon adayı oldu. Bu yolculuğun iki önemli durağı var:
+Gukesh ünvanı kazandıktan sonra iki yıl boyunca onu korumak için hazırlandı. Şimdi karşısında, şampiyonluk maçına ulaşmak için kendisi de oldukça zorlu bir eleme sürecinden geçen bir rakip var.
+
+**Sindarov**, sistemin ikinci kapısından, yani on dört turluk Adaylar Turnuvası’ndan birinci çıkarak şampiyon adayı oldu. Bu yolculuğun iki önemli durağı var:
 
 - Kasım 2025’te Goa’daki **FIDE Dünya Kupası**’nı (206 oyunculu eleme turnuvası) kazandı. 16. seri olarak başladığı turnuvada finalde Wei Yi’yi ikinci hızlı oyun sonunda yenebildi. 19 yaş 11 ayla en genç Dünya Kupası galibi ve ilk Özbek galip oldu; bu zafer ona Adaylar’a giriş bileti kazandırdı.
 - Mart–Nisan 2026’da Kıbrıs’ın Pegeia kasabasında oynanan, sekiz oyuncunun katıldığı çift turlu döner **Adaylar Turnuvası**’nı 14 turda **10 puanla** kazandı: altı galibiyet, hiç yenilgi yok. Turnuvayı bir tur kala garantiledi ve çift turlu döner sistemde oynanan Adaylar Turnuvaları tarihinin en yüksek puanına ulaştı.
@@ -29,6 +31,8 @@ FIDE ADAYLAR TURNUVASI 2026 ÇAPRAZ TABLOSU
  8 GM Esipenko           0½ 0½ ½0 00 ½½ ½½ ½½  *   4½
 </pre>
 
+Ancak dünya şampiyonluğu yarışında bulunmayan, bu iki oyuncudan çok daha yüksek bir satranç kariyerine sahip bir isim var: Magnus Carlsen.
+
 #### Peki Carlsen nerede?
 
 Carlsen, Temmuz 2022’de ünvanını savunmayacağını açıklamıştı ve bu tarihten sonra bir daha Adaylar’a da katılmadı.
@@ -39,6 +43,8 @@ Carlsen, Eylül 2026’da Bengaluru’daki Global Chess League sırasında Sinda
 
 “Dünyanın en iyisi” ile “dünya şampiyonu” her zaman aynı kişi olmak zorunda değil. Ünvan; kurallarla belirlenmiş bir döngüye girmeyi, o döngüyü kazanmayı ve ünvan sahibini bir maçta yenmeyi gerektiriyor. Herhangi bir oyuncunun bu yarışa girmemeyi seçmesi de mümkün.
 
+Bu kez dünya şampiyonluğu için mücadele edecek iki oyuncuyu tanıdık. Peki bu mücadele hangi koşullarda oynanacak ve ünvanı kazanmak için neler gerekecek?
+
 ### Maç nasıl oynanıyor?
 
 - **14 klasik oyun** oynanacak. Oyuncuların ilk 40 hamle için 120 dakikası olacak. Ardından 30 dakika eklenecek; 41. hamleden itibaren her hamle için 30 saniye ek süre verilecek.
@@ -47,9 +53,13 @@ Carlsen, Eylül 2026’da Bengaluru’daki Global Chess League sırasında Sinda
 - **Ödül fonu 2,5 milyon dolar**: kazanılan her oyun için 200.000 dolar verilir, kalan tutar iki oyuncu arasında eşit paylaşılır. Örneğin skor 7½–6½ olursa kazanan 1,3 milyon, kaybeden 1,2 milyon dolar alır.
 - Maç 24 Kasım–12 Aralık arasında oynanacak. Dinlenme günleri 27 Kasım, 1, 5 ve 9 Aralık; eşitlik hâlinde ek oyunlar 12 Aralık’ta.
 
+Maçın koşulları belli. Şimdi de iki oyuncunun mevcut durumuna ve karşılaşmanın olası dengesine bakalım.
+
 Kâğıt üzerinde Sindarov favori görünüyor: reytingi 2782 (dünya 4.), Gukesh’in ise 2710 (dünya 26.). Gukesh’in 2025’ten bu yana formu pek parlak değil. Norveç Satranç 2026 ve Chennai Grand Masters 2026 turnuvalarını sonuncu bitirdi. Üstelik Elo sisteminin 1971’de uygulanmaya başlamasından bu yana en düşük reytingli dünya şampiyonu. Yine de ünvan maçları reytinglerle değil, 14 oyunluk bir mücadeleyle belirleniyor; bu süre boyunca sinirler ve hazırlık da en az reyting kadar belirleyici olabilir.
 
 İki oyuncu daha önce de karşılaşmış. Bugüne kadar altı kez karşı karşıya geldiler ve toplam skor **4½–1½ Sindarov lehine**. Klasik oyunlarda üç karşılaşmanın ikisini Sindarov kazandı (Moskova Açık 2018’de Siyahlarla, Şarjah Masters 2022’de Beyazlarla); sonuncusu Ocak 2026’daki Tata Steel Masters’ta 78 hamlelik bir beraberlikle bitti. Klasik skor: **2½–½ Sindarov**. Hızlı oyunda tek karşılaşma var: Mayıs 2026’da Varşova’da Gukesh Siyahlarla kazandı, **1–0 Gukesh**. Yıldırım oyunlarda ise aynı turnuvanın iki karşılaşmasını da Sindarov kazandı: **2–0 Sindarov**.
+
+Ancak bu maçın önemi, yalnızca iki oyuncunun reytingleri veya birbirlerine karşı geçmiş sonuçlarıyla sınırlı değil. Asıl mesele, dünya şampiyonluğu ünvanının nasıl kazanıldığı ve bu yarışın hangi kurallara dayandığı.
 
 ### Dünya Şampiyonu nasıl belirleniyor?
 
@@ -65,13 +75,13 @@ Bugünkü sistem, eleme turnuvalarıyla başlayan ve dünya şampiyonluğu maç�
 
 ### Geçmişte nasıldı?
 
-Bugün gördüğümüz düzen, ünvanın yaklaşık 140 yıllık yolculuğunun son durağı. İlk yıllarda şartları şampiyonun kendisi koyuyordu; 1948’den sonra ünvanı FIDE yönetti, 1993’te satranç dünyası iki şampiyonlu bir bölünme yaşadı ve ünvan 2006’da yeniden tek çatı altında toplandı. Aşağıdaki çizelge bu hikâyeyi, en yeniden en eskiye doğru dönem dönem anlatıyor.
+Bugünkü sistem, uzun bir tarihsel değişimin sonucu. Dünya şampiyonluğu ilk ortaya çıktığında böyle düzenli bir eleme döngüsü yoktu. Zaman içinde ünvanın nasıl kazanılacağı, nasıl savunulacağı ve bu süreci kimin yöneteceği defalarca değişti. Bugünkü yapının nasıl ortaya çıktığını görmek için biraz geriye gidelim.
 
 [ZAMAN ÇİZELGESİ]
 
-Çizelgede adı geçen ünvan maçlarının her birinden bir oyun seçtik: 1886’dan bugüne toplam 56 oyun. Değerlendirme işaretleri Stockfish’e ait.
+Dünya şampiyonluğu tarihini yalnızca kazananların ve kaybedenlerin hikâyesi olarak değil, oynanan satranç üzerinden de inceleyebiliriz. Çizelgede yer alan ünvan maçlarının her birinden bir oyun seçtik. 1886’dan bugüne uzanan bu seçkide toplam 56 oyun var. Hamleleri takip edebilir, oyunları inceleyebilir ve Stockfish değerlendirmelerine (değerlendirme çubuğu ve hamle işaretleri) göz atabilirsiniz.
 
-### Tüm ünvan maçları
+### 1886’dan bugüne 56 oyun
 
 [MAÇ SEÇİCİ GÖSTER: Tüm ünvan maçları]
 
