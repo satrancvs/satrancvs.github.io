@@ -2,7 +2,7 @@ import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import type { ReactNode, RefObject } from 'react';
 import Markdown from 'markdown-to-jsx';
 import ProgressiveImage from '@/components/ProgressiveImage';
-import SfPanel from '@/components/SfPanel';
+import SfPanel, { SfSettings } from '@/components/SfPanel';
 import { usePlayerLoaded } from '@/lib/use-player-loaded';
 import SectionLink from '@/components/SectionLink';
 import type { SectionTarget } from '@/components/SectionLink';
@@ -29,26 +29,41 @@ const two = (n: number) => String(n).padStart(2, '0');
 const decadeLabel = (y: number) => `${Math.floor(y / 10) * 10}'${[1, 3, 4, 6, 9].includes(Math.floor(y / 10) % 10) ? 'lar' : 'ler'}`;
 
 // Oyunu başlatan/duraklatan düğme: ilk hamleden önceki yorum kartı oyun başlayınca kaybolur, düğme kalır (oynat ↔ duraklat). Durum oynatıcının motorundan okunur.
-function PlayToggle({ screen }: { screen: RefObject<HTMLDivElement> }) {
+function PlayToggle({ screen, settingsOpen, onSettings }: { screen: RefObject<HTMLDivElement>; settingsOpen: boolean; onSettings: () => void }) {
   const [playing, setPlaying] = useState(false);
+  const [analysis, setAnalysis] = useState(false);
   const engine = () => (screen.current?.querySelector('pgn-player') as (HTMLElement & { _engine?: { state: { playing: boolean }; play(): void; pause(): void } }) | null)?._engine;
   useEffect(() => {
     const t = window.setInterval(() => { const e = engine(); if (e) setPlaying(!!e.state.playing); }, 250);
-    return () => window.clearInterval(t);
+    const host = screen.current;
+    const on = (e: Event) => setAnalysis(!!(e as CustomEvent<{ on: boolean }>).detail?.on);
+    host?.addEventListener('cp-analysis', on);
+    return () => { window.clearInterval(t); host?.removeEventListener('cp-analysis', on); };
   }, []);
   const toggle = () => { const e = engine(); if (!e) return; if (e.state.playing) e.pause(); else e.play(); setPlaying(!!e.state.playing); };
   return (
-    <button type="button" className="sf-intro-play" aria-label={playing ? 'Duraklat' : 'Oynat'} title={playing ? 'Duraklat' : 'Oynat'} onClick={toggle}>
-      <svg viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <circle cx="12" cy="12" r="10" />
-        {playing ? <><path d="M10 9v6" /><path d="M14 9v6" /></> : <path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z" />}
-      </svg>
-    </button>
+    <div className="sf-intro-btns">
+      <button type="button" className="sf-intro-gear" aria-expanded={settingsOpen} aria-label="Analiz ayarları" title="Analiz ayarları" onClick={onSettings}>
+        <svg viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z" /></svg>
+      </button>
+      {analysis ? (
+        <button type="button" className="sf-intro-back" aria-label="Oyuna dön" title="Oyunun konumuna dön" onClick={() => screen.current?.querySelector('pgn-player')?.dispatchEvent(new CustomEvent('cp-analysis-exit'))}>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 14 4 9l5-5" /><path d="M20 20v-7a4 4 0 0 0-4-4H4" /></svg>
+          Oyuna dön
+        </button>
+      ) : <button type="button" className="sf-intro-play" aria-label={playing ? 'Duraklat' : 'Oynat'} title={playing ? 'Duraklat' : 'Oynat'} onClick={toggle}>
+        <svg viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" />
+          {playing ? <><path d="M10 9v6" /><path d="M14 9v6" /></> : <path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z" />}
+        </svg>
+      </button>}
+    </div>
   );
 }
 
 export default function MatchPicker({ items, flat = false, gate = true, onLoaded, next }: { items: PickItem[]; flat?: boolean; gate?: boolean; onLoaded?: () => void; next?: SectionTarget }) {
   const [idx, setIdx] = useState(0);
+  const [showSettings, setShowSettings] = useState(false);
   const root = useRef<HTMLElement>(null);
   const screen = useRef<HTMLDivElement>(null);
   const cur = items[idx];
@@ -82,8 +97,8 @@ export default function MatchPicker({ items, flat = false, gate = true, onLoaded
       <div className="mpb-main">
       <SfPanel boardRef={screen} idleText="Analiz ediliyor..." intro={cur.note ? (
         <div className="live-sf-intro" key={`intro-${cur.id}`}>
-          <div className="sf-intro-card">{cur.note.split(/\n\n+/).map((t, i) => <p key={i}><Markdown options={{ forceInline: true }}>{t}</Markdown></p>)}</div>
-          <PlayToggle screen={screen} />
+          {showSettings ? <div className="sf-intro-card sf-intro-settings"><SfSettings /></div> : <div className="sf-intro-card">{cur.note.split(/\n\n+/).map((t, i) => <p key={i}><Markdown options={{ forceInline: true }}>{t}</Markdown></p>)}</div>}
+          <PlayToggle screen={screen} settingsOpen={showSettings} onSettings={() => setShowSettings((v) => !v)} />
         </div>
       ) : undefined} />
       <div className="mpa-frame" role="group" aria-label="Oyun oynatıcı">

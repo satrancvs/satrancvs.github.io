@@ -37,6 +37,29 @@ function evalText(sf: { cp: number | null; mate: number | null }): { num: string
 }
 
 
+// Analiz ayarları (derinlik, aday sayısı): panelin dişlisi ya da maç seçicideki yorum kartı kullanır.
+export function SfSettings() {
+  const [cfg, setCfg] = useState(engineSettings);
+  useEffect(() => { const on = () => setCfg(engineSettings()); window.addEventListener('cp-sf-config', on); return () => window.removeEventListener('cp-sf-config', on); }, []);
+  const set = (depth: number, lines: number) => { setCfg({ depth, lines }); setEngineSettings(depth, lines); };
+  return (
+    <div className="live-sf-opts f-mono">
+        <div className="sf-step" role="group" aria-label="Derinlik">
+          <span>Derinlik</span>
+          <button type="button" aria-label="Derinliği azalt" disabled={DEPTHS.indexOf(cfg.depth) <= 0} onClick={() => set(DEPTHS[Math.max(0, DEPTHS.indexOf(cfg.depth) - 1)], cfg.lines)}>−</button>
+          <output aria-live="polite">{cfg.depth}</output>
+          <button type="button" aria-label="Derinliği artır" disabled={DEPTHS.indexOf(cfg.depth) >= DEPTHS.length - 1} onClick={() => set(DEPTHS[Math.min(DEPTHS.length - 1, DEPTHS.indexOf(cfg.depth) + 1)], cfg.lines)}>+</button>
+        </div>
+        <div className="sf-step" role="group" aria-label="Aday">
+          <span>Aday</span>
+          <button type="button" aria-label="Aday sayısını azalt" disabled={cfg.lines <= LINE_COUNTS[0]} onClick={() => set(cfg.depth, cfg.lines - 1)}>−</button>
+          <output aria-live="polite">{cfg.lines}</output>
+          <button type="button" aria-label="Aday sayısını artır" disabled={cfg.lines >= LINE_COUNTS[LINE_COUNTS.length - 1]} onClick={() => set(cfg.depth, cfg.lines + 1)}>+</button>
+        </div>
+    </div>
+  );
+}
+
 // Stockfish canlı analiz paneli (canlı ekran ve maç seçici): `boardRef` içindeki oynatıcıların `cp-sf` olaylarını (eval-bar.ts) dinler.
 export default function SfPanel({ boardRef, idle = false, idleText = '', intro }: { boardRef: RefObject<HTMLElement>; idle?: boolean; idleText?: string; intro?: ReactNode }) {
   const [sf, setSf] = useState<Sf | null>(null);
@@ -55,37 +78,28 @@ export default function SfPanel({ boardRef, idle = false, idleText = '', intro }
     el.addEventListener('cp-sf', on);
     return () => el.removeEventListener('cp-sf', on);
   }, [boardRef]);
+  useEffect(() => { const on = () => setCfg(engineSettings()); window.addEventListener('cp-sf-config', on); return () => window.removeEventListener('cp-sf-config', on); }, []);
   useEffect(() => { if (idle) setSf(null); }, [idle]);
   const ev = sf && !idle && engineOn ? evalText(sf) : null;
   const rows = sf && !idle && engineOn ? sf.lines.map((l) => ({ num: evalText(l).num, text: pvText(sf.fen, l.pv, cfg.lines > 1 ? 6 : 8) })) : [];
-  const set = (depth: number, lines: number) => { setCfg({ depth, lines }); setEngineSettings(depth, lines); };
   return (
     <aside className={`live-sf${ev ? '' : ' is-wait'}${engineOn ? '' : ' is-off'}`} aria-label="Stockfish canlı analizi" aria-live="off">
       <div className="live-sf-body">
       <div className="live-sf-head f-mono">
         <img src={`${import.meta.env.BASE_URL}stockfish/logo.png`} alt="" width="22" height="22" />
         <span>{engineOn ? 'Stockfish 19 · canlı analiz' : 'Stockfish · durduruldu'}</span>
-        <button type="button" className="live-sf-gear" aria-expanded={showOpts} aria-controls="sf-opts" aria-label="Analiz ayarları" title="Analiz ayarları" onClick={() => setShowOpts((v) => !v)}>
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z" /></svg>
-        </button>
+        {!intro && (
+          <button type="button" className="live-sf-gear" aria-expanded={showOpts} aria-controls="sf-opts" aria-label="Analiz ayarları" title="Analiz ayarları" onClick={() => setShowOpts((v) => !v)}>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z" /></svg>
+          </button>
+        )}
         <button type="button" role="switch" aria-checked={engineOn} aria-label="Stockfish analizi" title={engineOn ? 'Analizi durdur' : 'Analizi başlat'} className="live-sf-switch" onClick={() => setEngineEnabled(!engineOn)}><i /></button>
       </div>
-      {showOpts && <div id="sf-opts" className="live-sf-opts f-mono">
-        <div className="sf-step" role="group" aria-label="Derinlik">
-          <span>Derinlik</span>
-          <button type="button" aria-label="Derinliği azalt" disabled={DEPTHS.indexOf(cfg.depth) <= 0} onClick={() => set(DEPTHS[Math.max(0, DEPTHS.indexOf(cfg.depth) - 1)], cfg.lines)}>−</button>
-          <output aria-live="polite">{cfg.depth}</output>
-          <button type="button" aria-label="Derinliği artır" disabled={DEPTHS.indexOf(cfg.depth) >= DEPTHS.length - 1} onClick={() => set(DEPTHS[Math.min(DEPTHS.length - 1, DEPTHS.indexOf(cfg.depth) + 1)], cfg.lines)}>+</button>
-        </div>
-        <div className="sf-step" role="group" aria-label="Aday">
-          <span>Aday</span>
-          <button type="button" aria-label="Aday sayısını azalt" disabled={cfg.lines <= LINE_COUNTS[0]} onClick={() => set(cfg.depth, cfg.lines - 1)}>−</button>
-          <output aria-live="polite">{cfg.lines}</output>
-          <button type="button" aria-label="Aday sayısını artır" disabled={cfg.lines >= LINE_COUNTS[LINE_COUNTS.length - 1]} onClick={() => set(cfg.depth, cfg.lines + 1)}>+</button>
-        </div>
-      </div>}
-      <p className="live-sf-num f-display">{ev ? ev.num : '—'}</p>
-      <p className="live-sf-label">{ev ? ev.label : !engineOn ? 'Analiz durduruldu. Anahtarla yeniden başlatabilirsiniz.' : idle ? idleText : 'Analiz ediliyor...'}</p>
+      {showOpts && !intro && <SfSettings />}
+      <div className="live-sf-score">
+        <p className="live-sf-num f-display">{ev ? ev.num : '—'}</p>
+        <p className="live-sf-label">{ev ? ev.label : !engineOn ? 'Analiz durduruldu. Anahtarla yeniden başlatabilirsiniz.' : idle ? idleText : 'Analiz ediliyor...'}</p>
+      </div>
       <p className="live-sf-pv-title f-mono">{cfg.lines > 1 ? 'En iyi devam yolları' : 'En iyi devam yolu'}</p>
       {rows.length ? (
         <ol className="live-sf-lines">{rows.map((r, i) => <li key={i}>{cfg.lines > 1 && <b className="f-mono">{r.num}</b>}<span>{r.text}</span></li>)}</ol>

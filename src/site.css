@@ -1102,7 +1102,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .sf-intro-card p + p { margin-top: .6rem; }
 .sf-intro-play { display: block; flex: none; width: 1.9rem; height: 1.9rem; margin: .5rem 0 0 auto; padding: 0; color: var(--accent); background: transparent; border: 0; cursor: pointer; transition: color .15s, transform .15s; }
 .sf-intro-play:hover { color: var(--fg); transform: scale(1.08); }
-.picker:has(.video-moves .active) .sf-intro-card { display: none; }
+.picker:has(.video-moves .active) .sf-intro-card:not(.sf-intro-settings) { display: none; }
 
 /* Stockfish durdurulunca (geniş ekran): panel tek satırlık kart olarak daralır ama sütun yüksekliğini korur; ilk hamle yorumu ve play tuşu yine sütunun en altına hizalı kalır */
 @media (min-width: 56em) {
@@ -1124,3 +1124,40 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .picker .live-sf .live-sf-body { border: 1px solid var(--line); border-radius: 12px; background: color-mix(in srgb, var(--fg) 4%, transparent); padding: 1rem 1.1rem 1.1rem; box-sizing: border-box; }
 .picker .live-sf.is-off .live-sf-body { padding: .6rem 1.1rem; flex: 0 0 auto; }
 .picker .live-sf.is-off .live-sf-head { padding: 0; border: 0; background: none; }
+
+/* Mobil Stockfish paneli: başlık tek satır; skor etiketi ile "En iyi devam yolu" arası sıkı */
+@media (max-width: 55.99em) {
+  .live-sf-head { white-space: nowrap; font-size: 9.5px; letter-spacing: .04em; gap: .4rem; }
+  .live-sf-head .live-sf-gear { margin-left: -.1rem; }
+  .live-sf-head span { overflow: hidden; text-overflow: ellipsis; }
+  .live-sf-label { margin: .3rem 0 .6rem; min-height: 0; }
+  .live-sf-pv-title { padding-top: .6rem; }
+}
+@media (max-width: 23.75em) { .live-sf-head { font-size: 9px; letter-spacing: .02em; } .live-sf-head img { display: none; } }
+
+/* Oynat/duraklat düğmesinin solunda daha küçük bir ayarlar düğmesi: tıklayınca Derinlik/Aday ayarları yorum kartında görünür (toggle) */
+.sf-intro-btns { display: flex; align-items: center; justify-content: flex-end; gap: .6rem; margin: .5rem 0 0; }
+.sf-intro-btns .sf-intro-play { margin: 0; }
+.sf-intro-gear { display: block; flex: none; width: 1.35rem; height: 1.35rem; padding: 0; color: var(--mute); background: transparent; border: 0; cursor: pointer; transition: color .15s, transform .15s; }
+.sf-intro-gear:hover, .sf-intro-gear[aria-expanded="true"] { color: var(--accent); }
+.sf-intro-gear:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 50%; }
+.sf-intro-settings { padding: .7rem .9rem; }
+.sf-intro-settings .live-sf-opts { margin: 0; padding: 0; border: 0; justify-content: flex-start; gap: .55rem 1.1rem; }
+
+/* Mobil: skor ve değerlendirme etiketi yan yana ("+0.3 Eşit") */
+@media (max-width: 55.99em) {
+  .live-sf-score { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: .7rem; }
+  .live-sf-score .live-sf-num { font-size: clamp(2.2rem, 1.8rem + 1.5vw, 2.8rem); }
+  .live-sf-score .live-sf-label { margin: 0 0 .6rem; }
+  .live-sf-score .live-sf-num { margin-bottom: .6rem; }
+}
+
+/* Serbest analiz tahtası (maç seçici): taş sürükleme/tıklama, sağ tıkla ok ve kare boyama (analysis-board.ts) */
+.cp-an-svg { position: absolute; z-index: 12; pointer-events: none; overflow: visible; }
+.picker .board { touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+.picker .board img { -webkit-user-drag: none; user-select: none; }
+.cp-an-ghost { position: fixed; z-index: 9999; transform: translate(-50%, -50%); pointer-events: none; opacity: .95; filter: drop-shadow(0 4px 6px rgb(0 0 0 / .35)); }
+/* "Oyuna dön" düğmesi (analiz modunda oynat/duraklat yerine) */
+.sf-intro-back { display: inline-flex; align-items: center; gap: .4rem; flex: none; height: 1.9rem; padding: 0 .85rem; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); background: transparent; border: 1.5px solid var(--accent); border-radius: 999px; cursor: pointer; transition: color .15s, background .15s; }
+.sf-intro-back:hover { color: var(--bg); background: var(--accent); }
+.sf-intro-back:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
