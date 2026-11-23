@@ -94,6 +94,17 @@ type PlayerEl = HTMLElement & {
   _engine?: { state: { index: number; cache: string[] }; evalBar?: { live: boolean; bar: HTMLElement | null; setDisabled(f: boolean): void; setScore(pawns: number): void } };
 };
 
+// Değerlendirme çubuğunu açma/kapama: çubuğa tıklayınca bir × çıkar, × çubuğu kapatır (soluk, nötr), kapalı çubuğa tıklayınca yeniden açılır.
+// Tercih tarayıcıda saklanır ve sayfadaki tüm oynatıcılarda ortaktır.
+const BAR_KEY = 'ev-bar';
+let barOn = (() => { try { return localStorage.getItem(BAR_KEY) !== 'off'; } catch { return true; } })();
+function setBarOn(on: boolean) {
+  if (on === barOn) return;
+  barOn = on;
+  try { localStorage.setItem(BAR_KEY, on ? 'on' : 'off'); } catch { /* bellekte kalır */ }
+  window.dispatchEvent(new CustomEvent('cp-evbar'));
+}
+
 const done = new WeakSet<Element>();
 
 function attach(player: PlayerEl) {
@@ -148,13 +159,27 @@ function attach(player: PlayerEl) {
     if (!ev || !ev.bar) return;
     // engine.load() çubuğu "PGN'de eval yok" diye kapatmıştır; burada Stockfish'e bağlanıp açılır, oynatıcının hamle başına sıfırlaması susturulur.
     ev.live = true;
+    let lastPawns = 0;
+    const bar = ev.bar;
+    const x = document.createElement('button');
+    x.type = 'button'; x.className = 'ev-close'; x.textContent = '×'; x.setAttribute('aria-label', 'Değerlendirme çubuğunu kapat'); x.title = 'Çubuğu kapat';
+    bar.appendChild(x);
+    const applyBar = () => { bar.classList.toggle('ev-off', !barOn); if (!barOn) bar.classList.remove('ev-open'); ev.setScore(barOn ? lastPawns : 0); };
+    bar.addEventListener('click', (e) => {
+      if (!barOn) { setBarOn(true); return; }
+      if ((e.target as HTMLElement).closest('.ev-close')) { setBarOn(false); return; }
+      bar.classList.toggle('ev-open');
+    });
+    document.addEventListener('click', (e) => { if (!bar.contains(e.target as Node)) bar.classList.remove('ev-open'); });
+    window.addEventListener('cp-evbar', applyBar);
     const live = !!player.closest('.live-match, .picker'); // çoklu satır yalnızca canlı ekrandaki panel açıkken; diğer oynatıcılar ve kapalı panel tek satır çözer
     const show: Listener = (r) => {
       const { cp, mate } = r;
       if (!player.isConnected) return;
       // Canlı analiz paneli (LiveMatch) için: oynatıcıdan yukarı kabarcıklanan olay.
       player.dispatchEvent(new CustomEvent('cp-sf', { bubbles: true, detail: r }));
-      ev.setScore(mate !== null ? (mate > 0 ? 8 : -8) : (cp ?? 0) / 100);
+      lastPawns = mate !== null ? (mate > 0 ? 8 : -8) : (cp ?? 0) / 100;
+      if (barOn) ev.setScore(lastPawns);
       const label = mate !== null ? `${mate > 0 ? '+' : '−'}M${Math.abs(mate)}` : `${(cp ?? 0) > 0 ? '+' : (cp ?? 0) < 0 ? '−' : ''}${Math.abs((cp ?? 0) / 100).toFixed(1)}`;
       ev.bar!.title = `Stockfish: ${label}`;
       ev.bar!.setAttribute('aria-label', `Stockfish değerlendirmesi: ${label}`);
@@ -166,7 +191,7 @@ function attach(player: PlayerEl) {
       timer = window.setTimeout(() => analyze(fen, show, live && enabled ? linesSetting : 1), 120);
     };
     const here = () => { const s = player._engine?.state; return s ? s.cache[s.index] : undefined; };
-    ev.setScore(0);
+    applyBar();
     ev.setDisabled(false);
     const rerun = () => {
       if (!player.isConnected) return;

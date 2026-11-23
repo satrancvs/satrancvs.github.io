@@ -798,7 +798,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
   const inlineLabels = chunks.map((x) => x.trim().match(INLINE_PICKER)?.[1].trim()).filter((x): x is string => !!x);
   const TARGET_META: Record<string, (n: number) => { title: string; sub: string; headingText?: string; kicker?: string }> = {
     'Gukesh – Sindarov karşılaşmaları': (n) => ({ title: 'Aralarındaki oyunlar', sub: `Gukesh – Sindarov · ${n} karşılaşma`, headingText: 'Aralarındaki oyunlar' }),
-    'Tüm ünvan maçları': (n) => ({ kicker: 'Beklerken göz at', title: 'Tüm ünvan maçları', sub: `1886'dan bugüne ${n} maçtan birer oyun`, headingText: 'Tüm ünvan maçları' }),
+    'Tüm ünvan maçları': (n) => ({ kicker: 'Beklerken göz at', title: 'Tüm ünvan maçları', sub: `1886'dan bugüne ${n}\u00A0maçtan birer oyun`, headingText: 'Tüm ünvan maçları' }),
     'Şampiyonları yenen efsaneler': (n) => ({ title: 'Ünvanı alamamış ama hak etmiş efsaneler', sub: `Şampiyonları yenen ${n} oyun`, headingText: 'Ünvanı alamamış ama hak etmiş efsaneler' }),
   };
   const hubTarget = (no: number): SectionTarget | undefined => {

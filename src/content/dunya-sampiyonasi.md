@@ -9,12 +9,12 @@ Maçı resmî sitesinden de takip edebilirsiniz: [worldchampionship.fide.com](ht
 
 ### Gukesh ile Sindarov
 
-Önce şampiyondan başlayalım. **Gukesh**, ünvanı Aralık 2024’te Singapur’da, o günün şampiyonu Ding Liren’i 7½–6½ yenerek aldı. O sırada 18 yaşındaydı ve resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu oldu. Oraya da bir Adaylar Turnuvası’nı kazanarak gelmişti (Toronto 2024); 17 yaşında en genç şampiyon adayı olmuştu. Kısacası Gukesh sistemin kapılarından geçerek ünvanı aldı ve şimdi onu savunuyor.
+Önce şampiyondan başlayalım. **Gukesh**, ünvanı Aralık 2024’te Singapur’da, o günün şampiyonu Ding Liren’i 7½–6½ yenerek aldı. O sırada 18 yaşındaydı ve resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu oldu. Oraya da bir Adaylar Turnuvası’nı kazanarak gelmişti (Toronto 2024); 17 yaşında en genç şampiyon adayı olmuştu. Kısacası Gukesh, Adaylar Turnuvası’nı kazanarak şampiyonluk maçına çıkma hakkını elde etti ve Ding Liren’i yenerek ünvanı aldı. Şimdi ise ünvanını korumaya çalışıyor.
 
 Gelelim karşısındaki isme. **Sindarov**, sistemin ikinci kapısından, yani on dört turluk Adaylar Turnuvası’ndan birinci çıkarak şampiyon adayı oldu. Bu yolculuğun iki önemli durağı var:
 
-- Kasım 2025’te Goa’daki **FIDE Dünya Kupası**’nı (206 oyunculu eleme turnuvası) kazandı. 16. seri olarak başladığı turnuvada finalde Wei Yi’yi ancak ikinci hızlı oyun kararında yenebildi. 19 yaş 11 ayla en genç Dünya Kupası galibi ve ilk Özbek galip oldu; bu zafer ona Adaylar’a giriş bileti kazandırdı.
-- Mart–Nisan 2026’da Kıbrıs’ın Pegeia kasabasında oynanan, sekiz oyunculu, çift turlu döner **Adaylar Turnuvası**’nı 14 turda **10 puanla** kazandı: altı galibiyet, hiç yenilgi yok. Turnuvayı bir tur kala garantiledi ve mevcut çift turlu döner biçimde alınmış en yüksek puana ulaştı.
+- Kasım 2025’te Goa’daki **FIDE Dünya Kupası**’nı (206 oyunculu eleme turnuvası) kazandı. 16. seri olarak başladığı turnuvada finalde Wei Yi’yi ikinci hızlı oyun sonunda yenebildi. 19 yaş 11 ayla en genç Dünya Kupası galibi ve ilk Özbek galip oldu; bu zafer ona Adaylar’a giriş bileti kazandırdı.
+- Mart–Nisan 2026’da Kıbrıs’ın Pegeia kasabasında oynanan, sekiz oyuncunun katıldığı çift turlu döner **Adaylar Turnuvası**’nı 14 turda **10 puanla** kazandı: altı galibiyet, hiç yenilgi yok. Turnuvayı bir tur kala garantiledi ve çift turlu döner sistemde oynanan Adaylar Turnuvaları tarihinin en yüksek puanına ulaştı.
 
 <pre>
 FIDE ADAYLAR TURNUVASI 2026 ÇAPRAZ TABLOSU
@@ -33,7 +33,7 @@ FIDE ADAYLAR TURNUVASI 2026 ÇAPRAZ TABLOSU
 
 Carlsen, Temmuz 2022’de ünvanını savunmayacağını açıklamıştı ve bu tarihten sonra bir daha Adaylar’a da katılmadı.
 
-Reyting yoluyla girişin şartı, belirlenen dönemde en az 40 reytingli klasik oyun oynamaktı; Carlsen o pencerede yalnızca 16 oyun oynamıştı. Üstelik Adaylar’a girmekle ilgilenmediğini de açıkça söylemişti; yani hem istemedi hem de gereken oyun sayısını oynamadı.
+Reyting yoluyla girişin şartı, belirlenen dönemde reyting hesaplamasına dâhil edilen en az 40 klasik oyun oynamaktı; Carlsen o pencerede yalnızca 16 oyun oynamıştı. Üstelik Adaylar’a girmekle ilgilenmediğini de açıkça söylemişti; yani hem istemedi hem de gereken oyun sayısını oynamadı.
 
 Carlsen, Eylül 2026’da Bengaluru’daki Global Chess League sırasında Sindarov için “favori olduğu konusunda hiç şüphe yok” [demişti](https://worldchess.com/news/carlsen-sindarov-favouritebut-gukesh-can-turn-world-championship-around-fast).
 
@@ -41,26 +41,26 @@ Carlsen, Eylül 2026’da Bengaluru’daki Global Chess League sırasında Sinda
 
 ### Maç nasıl oynanıyor?
 
-- **14 klasik oyun** oynanacak; süre 40 hamle için 120 dakika, sonra 30 dakika, 41. hamleden itibaren de her hamle için 30 saniye ekleme.
-- **7½ puana** ilk ulaşan, 14 oyun dolmadan da maçı kazanır.
+- **14 klasik oyun** oynanacak. Oyuncuların ilk 40 hamle için 120 dakikası olacak. Ardından 30 dakika eklenecek; 41. hamleden itibaren her hamle için 30 saniye ek süre verilecek.
+- **7½ puana** ulaşan ilk oyuncu, 14 oyun tamamlanmadan da maçı kazanır.
 - Skor 7–7 olursa **ek oyunlar** devreye girer: önce 15+10 tempolu dört hızlı oyun, sonra 10+5’lik iki hızlı, sonra 3+2’lik iki yıldırım oyunu. Hâlâ eşitlik varsa renkler değişerek tek oyunluk bir yıldırım eleme oynanır.
 - **Ödül fonu 2,5 milyon dolar**: kazanılan her oyun için 200.000 dolar verilir, kalan tutar iki oyuncu arasında eşit paylaşılır. Örneğin skor 7½–6½ olursa kazanan 1,3 milyon, kaybeden 1,2 milyon dolar alır.
 - Maç 24 Kasım–12 Aralık arasında oynanacak. Dinlenme günleri 27 Kasım, 1, 5 ve 9 Aralık; eşitlik hâlinde ek oyunlar 12 Aralık’ta.
 
-Kâğıt üzerinde Sindarov favori görünüyor: reytingi 2782 (dünya 4.), Gukesh’in ise 2710 (dünya 26.). Gukesh’in 2025’ten beri formu düşük; Norveç Satranç 2026 ve Chennai Grand Masters 2026’yı sonuncu bitirdi, ayrıca Elo sisteminin 1971’de getirilmesinden bu yana en düşük reytingli şampiyon. Yine de ünvan maçları reytinglerle değil, 14 oyunluk bir mücadeleyle belirleniyor; bu süre boyunca sinirler ve hazırlık da en az reyting kadar belirleyici olabilir.
+Kâğıt üzerinde Sindarov favori görünüyor: reytingi 2782 (dünya 4.), Gukesh’in ise 2710 (dünya 26.). Gukesh’in 2025’ten bu yana formu pek parlak değil. Norveç Satranç 2026 ve Chennai Grand Masters 2026 turnuvalarını sonuncu bitirdi. Üstelik Elo sisteminin 1971’de uygulanmaya başlamasından bu yana en düşük reytingli dünya şampiyonu. Yine de ünvan maçları reytinglerle değil, 14 oyunluk bir mücadeleyle belirleniyor; bu süre boyunca sinirler ve hazırlık da en az reyting kadar belirleyici olabilir.
 
-İkisi daha önce de karşılaşmış. Bugüne kadar altı kez karşı karşıya geldiler ve toplam skor **4½–1½ Sindarov lehine**. Klasik oyunlarda üç karşılaşmanın ikisini Sindarov kazandı (Moskova Açık 2018’de Siyahlarla, Şarjah Masters 2022’de Beyazlarla); sonuncusu Ocak 2026’daki Tata Steel Masters’ta 78 hamlelik bir beraberlikle bitti. Klasik skor: **2½–½ Sindarov**. Hızlı oyunda tek karşılaşma var: Mayıs 2026’da Varşova’da Gukesh Siyahlarla kazandı, **1–0 Gukesh**. Yıldırım oyunlarda ise aynı turnuvanın iki karşılaşmasını da Sindarov kazandı: **2–0 Sindarov**.
+İki oyuncu daha önce de karşılaşmış. Bugüne kadar altı kez karşı karşıya geldiler ve toplam skor **4½–1½ Sindarov lehine**. Klasik oyunlarda üç karşılaşmanın ikisini Sindarov kazandı (Moskova Açık 2018’de Siyahlarla, Şarjah Masters 2022’de Beyazlarla); sonuncusu Ocak 2026’daki Tata Steel Masters’ta 78 hamlelik bir beraberlikle bitti. Klasik skor: **2½–½ Sindarov**. Hızlı oyunda tek karşılaşma var: Mayıs 2026’da Varşova’da Gukesh Siyahlarla kazandı, **1–0 Gukesh**. Yıldırım oyunlarda ise aynı turnuvanın iki karşılaşmasını da Sindarov kazandı: **2–0 Sindarov**.
 
 ### Dünya Şampiyonu nasıl belirleniyor?
 
-Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor ve her döngü genelde iki yıl sürüyor. Adım adım bakalım:
+Bugünkü sistem, eleme turnuvalarıyla başlayan ve dünya şampiyonluğu maçıyla sona eren, genellikle iki yıllık bir **döngü**ye dayanıyor. Adım adım bakalım:
 
 1. **Adaylar Turnuvası’na kimler giriyor?** Sekiz kişi. Bugünkü kurallarda bu koltuklar şu yollarla kazanılıyor:
    - Dünya Kupası’ndaki ilk üç,
    - Grand Swiss’teki ilk iki,
    - önceki iki yılın FIDE Circuit (turnuva puanı) birincileri,
    - reyting kuralı.
-2. **Adaylar Turnuvası**: sekiz oyuncu, çift turlu döner turnuva, 14 tur. Birinci olan, şampiyonun karşısına çıkacak şampiyon adayı oluyor.
+2. **Adaylar Turnuvası**: Sekiz oyuncu, çift turlu döner turnuva, 14 tur. Birinci olan, şampiyonun karşısına çıkacak şampiyon adayı oluyor.
 3. **Ünvan maçı**: 14 klasik oyunluk bir maç. Şampiyon Adaylar’a katılmıyor, **ünvanını savunmak üzere** doğrudan maça çıkıyor.
 
 ### Geçmişte nasıldı?
