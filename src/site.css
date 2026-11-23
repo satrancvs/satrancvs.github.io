@@ -1050,7 +1050,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 
 /* Stockfish analizi durdurulunca panel tek satıra iner (yalnızca başlık + anahtar); kaydırma/uzatma kutusu kalkar */
 .live-sf.is-off { min-width: 0 !important; contain: none !important; overflow: visible !important; padding: .6rem 1.1rem !important; }
-.live-sf.is-off > :not(.live-sf-head):not(.live-sf-intro) { display: none !important; }
+.live-sf.is-off .live-sf-body > :not(.live-sf-head) { display: none !important; }
 .live-sf.is-off .live-sf-head { margin: 0; gap: .45rem; font-size: 10px; letter-spacing: .08em; white-space: nowrap; }
 .live-sf.is-off .live-sf-head span { overflow: hidden; text-overflow: ellipsis; }
 
@@ -1094,7 +1094,8 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .hub .picker.picker .player-wrapper:not(:has(.video-moves .active)) .video-comment:has(.comment-text-block:not(:empty)), .picker .player-wrapper:not(:has(.video-moves .active)) .video-comment { display: none !important; }
 .picker .live-sf { display: flex; flex-direction: column; }
 .picker .live-sf > * { flex-shrink: 0; }
-.live-sf-intro { margin-top: auto; display: flex; flex-direction: column; }
+.picker .live-sf > .live-sf-body { flex: 1 1 auto; min-height: 0; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--accent) transparent; }
+.live-sf-intro { margin-top: .75rem; display: flex; flex-direction: column; flex: none; }
 .sf-intro-card { padding: .8rem .9rem; border: 1px solid rgb(var(--fg-rgb) / .2); border-left: 3px solid var(--accent); border-radius: .6rem; background: var(--bg); box-shadow: 0 .4rem 1.2rem rgb(0 0 0 / .18); }
 .live-sf.is-off .live-sf-intro { margin-top: .75rem; }
 .sf-intro-card p { margin: 0; font-size: 1rem; line-height: 1.5; color: rgb(var(--fg-rgb) / .92); }
@@ -1109,3 +1110,17 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .picker .live-sf.is-off .live-sf-head { padding: .6rem 1.1rem; border: 1px solid var(--line); border-radius: 12px; background: color-mix(in srgb, var(--fg) 4%, transparent); }
   .picker .live-sf.is-off .live-sf-intro { margin-top: auto; }
 }
+
+/* Stockfish analizi (skor, devam yolları, ayarlar) kendi alanında kayar; yorum kartı/oynat düğmesi sütunun altında sabit kalır, analiz uzayınca aşağı itilmez */
+@media (min-width: 56em) { .picker .mpb-main > .live-sf { overflow: hidden; } }
+
+/* Oynat/duraklat düğmesi: ortası tahtanın altındaki hamle listesinin (movelist) yazı satırıyla aynı hizada (geniş ekran) */
+@media (min-width: 56em) {
+  .picker .live-sf .live-sf-intro, .picker .live-sf.is-off .live-sf-intro { margin-bottom: 5px; }
+}
+
+/* Seçici: Stockfish analiz kartı (çerçeve/zemin) yalnızca analiz içeriğinde; ilk yorum kartı ve oynat/duraklat düğmesi analiz kartının dışında, altında durur ve analiz kartı onlara kadar uzanır */
+.picker .live-sf { padding: 0 !important; border: 0 !important; background: none !important; box-shadow: none !important; }
+.picker .live-sf .live-sf-body { border: 1px solid var(--line); border-radius: 12px; background: color-mix(in srgb, var(--fg) 4%, transparent); padding: 1rem 1.1rem 1.1rem; box-sizing: border-box; }
+.picker .live-sf.is-off .live-sf-body { padding: .6rem 1.1rem; flex: 0 0 auto; }
+.picker .live-sf.is-off .live-sf-head { padding: 0; border: 0; background: none; }
