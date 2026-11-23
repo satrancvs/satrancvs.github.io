@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
-import type { ReactNode } from 'react';
+import type { ReactNode, RefObject } from 'react';
 import Markdown from 'markdown-to-jsx';
 import ProgressiveImage from '@/components/ProgressiveImage';
 import SfPanel from '@/components/SfPanel';
@@ -27,6 +27,25 @@ export type PickItem = {
 const two = (n: number) => String(n).padStart(2, '0');
 // Türkçe ek, on yılın adının son ünlüsüne göre: 2010'lar (on), 1990'lar (doksan), 1960'lar (altmış), 1940'lar (kırk), 1930'lar (otuz); 2020'ler (yirmi), 2000'ler (bin), 1980'ler (seksen), 1970'ler (yetmiş), 1950'ler (elli).
 const decadeLabel = (y: number) => `${Math.floor(y / 10) * 10}'${[1, 3, 4, 6, 9].includes(Math.floor(y / 10) % 10) ? 'lar' : 'ler'}`;
+
+// Oyunu başlatan/duraklatan düğme: ilk hamleden önceki yorum kartı oyun başlayınca kaybolur, düğme kalır (oynat ↔ duraklat). Durum oynatıcının motorundan okunur.
+function PlayToggle({ screen }: { screen: RefObject<HTMLDivElement> }) {
+  const [playing, setPlaying] = useState(false);
+  const engine = () => (screen.current?.querySelector('pgn-player') as (HTMLElement & { _engine?: { state: { playing: boolean }; play(): void; pause(): void } }) | null)?._engine;
+  useEffect(() => {
+    const t = window.setInterval(() => { const e = engine(); if (e) setPlaying(!!e.state.playing); }, 250);
+    return () => window.clearInterval(t);
+  }, []);
+  const toggle = () => { const e = engine(); if (!e) return; if (e.state.playing) e.pause(); else e.play(); setPlaying(!!e.state.playing); };
+  return (
+    <button type="button" className="sf-intro-play" aria-label={playing ? 'Duraklat' : 'Oynat'} title={playing ? 'Duraklat' : 'Oynat'} onClick={toggle}>
+      <svg viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" />
+        {playing ? <><path d="M10 9v6" /><path d="M14 9v6" /></> : <path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z" />}
+      </svg>
+    </button>
+  );
+}
 
 export default function MatchPicker({ items, flat = false, gate = true, onLoaded, next }: { items: PickItem[]; flat?: boolean; gate?: boolean; onLoaded?: () => void; next?: SectionTarget }) {
   const [idx, setIdx] = useState(0);
@@ -63,10 +82,8 @@ export default function MatchPicker({ items, flat = false, gate = true, onLoaded
       <div className="mpb-main">
       <SfPanel boardRef={screen} idleText="Analiz ediliyor..." intro={cur.note ? (
         <div className="live-sf-intro" key={`intro-${cur.id}`}>
-          <div className="sf-intro-text">{cur.note.split(/\n\n+/).map((t, i) => <p key={i}><Markdown options={{ forceInline: true }}>{t}</Markdown></p>)}</div>
-          <button type="button" className="sf-intro-play" aria-label="Oyunu başlat" onClick={() => (screen.current?.querySelector('.comment-play-btn') as HTMLButtonElement | null)?.click()}>
-            <svg viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /><path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z" /></svg>
-          </button>
+          <div className="sf-intro-card">{cur.note.split(/\n\n+/).map((t, i) => <p key={i}><Markdown options={{ forceInline: true }}>{t}</Markdown></p>)}</div>
+          <PlayToggle screen={screen} />
         </div>
       ) : undefined} />
       <div className="mpa-frame" role="group" aria-label="Oyun oynatıcı">
