@@ -1065,7 +1065,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .live-sf-head { gap: .4rem; }
 .live-sf-head { letter-spacing: .1em; }
 .live-sf-head img { width: 20px; height: 20px; }
-@media (min-width: 56em) { .live-sf.is-off { align-self: flex-start !important; } }
+
 /* "Şimdi oynatılıyor" sağ sütunun en üstünde, kartın üzerinde */
 .picker .mpb-info > .mpb-kicker { margin: 0 0 .6rem; }
 
@@ -1101,3 +1101,10 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .sf-intro-play { display: block; width: 1.9rem; height: 1.9rem; margin: .5rem 0 0; padding: 0; color: var(--accent); background: transparent; border: 0; cursor: pointer; transition: color .15s, transform .15s; }
 .sf-intro-play:hover { color: var(--fg); transform: scale(1.08); }
 .picker:has(.video-moves .active) .live-sf-intro { display: none; }
+
+/* Stockfish durdurulunca (geniş ekran): panel tek satırlık kart olarak daralır ama sütun yüksekliğini korur; ilk hamle yorumu ve play tuşu yine sütunun en altına hizalı kalır */
+@media (min-width: 56em) {
+  .picker .live-sf.is-off { align-self: stretch !important; contain: size !important; padding: 0 !important; border: 0 !important; background: none !important; box-shadow: none !important; overflow: visible !important; }
+  .picker .live-sf.is-off .live-sf-head { padding: .6rem 1.1rem; border: 1px solid var(--line); border-radius: 12px; background: color-mix(in srgb, var(--fg) 4%, transparent); }
+  .picker .live-sf.is-off .live-sf-intro { margin-top: auto; }
+}
