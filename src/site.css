@@ -1237,12 +1237,10 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 
 /* Geri sayım sol sütunun altında (Stockfish kartının altında): dar sütuna göre sıkı */
 .live-sf-count .live-count { margin: 0; max-width: none; padding: 0; }
-.live-sf-count .live-count-label { margin: 0 0 .5rem; font-size: 10.5px; letter-spacing: .18em; }
 .live-sf-count .live-count-grid { gap: .25rem; }
 .live-sf-count .live-cell { padding: .4rem 0 .35rem; }
 .live-sf-count .live-num { font-size: 1.5rem; }
 .live-sf-count .live-unit { font-size: 8.5px; letter-spacing: .06em; }
-.live-sf-count .live-when { margin: .6rem 0 0; font-size: 10px; letter-spacing: .1em; line-height: 1.5; }
 
 /* Mobil (< 56em): canlı yayında da Stockfish kartı diyagramın üstünde (listedeki oynatıcı gibi); geri sayım / uyarı / "Canlı konuma dön" diyagramın altında */
 @media (max-width: 55.99em) {
@@ -1251,3 +1249,5 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .live-stage > .live-board { order: 1; }
   .live-stage .live-sf-intro > * { order: 2; }
 }
+.live-kicker + .live-when { margin: -.5rem 0 1rem; color: var(--mute); }
+@media (max-width: 40em) { .live-match .live-kicker + .live-when { white-space: normal; font-size: 10.5px; letter-spacing: .06em; } }

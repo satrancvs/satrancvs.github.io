@@ -180,13 +180,11 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const count = !live && mounted ? (
     <div className="live-sf-intro live-sf-count">
       <div className="live-count" role="timer" aria-label="Birinci oyuna kalan süre">
-        <p className="live-count-label f-mono">1. oyuna kalan süre</p>
         <div className="live-count-grid">
           {[[d, 'gün'], [h, 'saat'], [m, 'dakika'], [s, 'saniye']].map(([v, l]) => (
             <div key={l as string} className="live-cell"><span className="live-num f-display">{two(v as number)}</span><span className="live-unit f-mono">{l}</span></div>
           ))}
         </div>
-        <p className="live-when f-mono">24 Kasım 2026 · 17.00 (TR saati) · Cenevre</p>
       </div>
     </div>
   ) : undefined;
@@ -196,6 +194,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
       <p className="live-kicker f-mono">
         {live ? <><i className={`live-dot${alert ? ' live-dot-alert' : ''}`} aria-hidden="true" />Canlı</> : 'Çok yakında'}<span aria-hidden="true"> · </span>Dünya Şampiyonası 2026
       </p>
+      {!live && <p className="live-when f-mono">24 Kasım 2026 · 17.00 (TR saati) · Cenevre</p>}
       <div className="live-vs">
         <div><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/dunya-fide-gukesh.jpg`} alt="" style={{ left: '-53%' }} loading="lazy" /></span><p><b>Gukesh Dommaraju</b><span className="f-mono">Hindistan · 2710</span></p></div>
         <div><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/dunya-fide-sindarov.jpg`} alt="" style={{ left: '-56%' }} loading="lazy" /></span><p><b>Javokhir Sindarov</b><span className="f-mono">Özbekistan · 2782</span></p></div>
