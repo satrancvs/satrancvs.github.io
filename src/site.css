@@ -1200,3 +1200,26 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 /* Analiz sürerken canlı oyuna yeni hamle gelince uyarı */
 .live-back-row { flex-direction: column; align-items: center; gap: .6rem; }
 .live-newmove { margin: 0; max-width: 34rem; padding: .6rem .9rem; text-align: center; font-size: 1rem; line-height: 1.45; color: var(--fg); background: color-mix(in srgb, var(--accent) 16%, transparent); border: 1.5px solid var(--accent); border-radius: .6rem; }
+
+/* Video oynatıcı (VideoPlaylist.tsx): maç seçiciyle aynı kabuk (.picker), ekran yerine 16:9 video */
+.vp .mpa-screen { min-height: 0; padding: 0; overflow: hidden; border-radius: 14px; background: #000; }
+.vp .mpa-screen::after { display: none; }
+.vp-embed { position: relative; aspect-ratio: 16 / 9; width: 100%; background: #000; }
+.vp-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.vp-poster { position: absolute; inset: 0; width: 100%; padding: 0; border: 0; background: #000; cursor: pointer; }
+.vp img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.vp .mpb-nextcard-thumb, .vp .mpb-thumb { position: relative; }
+.vp .mpb-thumb img { filter: none; }
+.vp-play { position: absolute; left: 50%; top: 50%; width: 4.5rem; height: 4.5rem; margin: -2.25rem 0 0 -2.25rem; display: grid; place-items: center; border-radius: 50%; color: #0E0C0A; background: var(--accent, #C8893E); box-shadow: 0 8px 30px -6px #000; transition: transform .15s; }
+.vp-poster:hover .vp-play, .vp-poster:focus-visible .vp-play { transform: scale(1.08); }
+.vp-clamp { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.vp .mpb-title { font-size: clamp(1.4rem, 1.1rem + 1vw, 1.8rem); }
+@media (min-width: 56em) { .vp .mpb-main { align-items: center; } .vp .mpb-info { position: static; } }
+.vp .mpb-title { display: block; }
+.vp .mpb-card { align-self: flex-start; }
+.vp .mpb-name b { font-size: 1rem; }
+@media (min-width: 56em) {
+  .vp .mpb-main { justify-content: center; }
+  .vp .mpa-frame { flex: 1 1 0; width: auto; max-width: 62rem; margin-inline: 0; }
+  .vp .mpb-info { flex: 0 0 24rem; }
+}
