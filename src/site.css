@@ -1102,7 +1102,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .sf-intro-card p + p { margin-top: .6rem; }
 .sf-intro-play { display: block; flex: none; width: 1.9rem; height: 1.9rem; margin: .5rem 0 0 auto; padding: 0; color: var(--accent); background: transparent; border: 0; cursor: pointer; transition: color .15s, transform .15s; }
 .sf-intro-play:hover { color: var(--fg); transform: scale(1.08); }
-.picker:has(.video-moves .active) .sf-intro-card { display: none; }
+.picker:has(.video-moves .active) .sf-intro-card:not(.sf-intro-settings) { display: none; }
 
 /* Stockfish durdurulunca (geniş ekran): panel tek satırlık kart olarak daralır ama sütun yüksekliğini korur; ilk hamle yorumu ve play tuşu yine sütunun en altına hizalı kalır */
 @media (min-width: 56em) {
@@ -1134,3 +1134,20 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .live-sf-pv-title { padding-top: .6rem; }
 }
 @media (max-width: 23.75em) { .live-sf-head { font-size: 9px; letter-spacing: .02em; } .live-sf-head img { display: none; } }
+
+/* Oynat/duraklat düğmesinin solunda daha küçük bir ayarlar düğmesi: tıklayınca Derinlik/Aday ayarları yorum kartında görünür (toggle) */
+.sf-intro-btns { display: flex; align-items: center; justify-content: flex-end; gap: .6rem; margin: .5rem 0 0; }
+.sf-intro-btns .sf-intro-play { margin: 0; }
+.sf-intro-gear { display: block; flex: none; width: 1.35rem; height: 1.35rem; padding: 0; color: var(--mute); background: transparent; border: 0; cursor: pointer; transition: color .15s, transform .15s; }
+.sf-intro-gear:hover, .sf-intro-gear[aria-expanded="true"] { color: var(--accent); }
+.sf-intro-gear:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 50%; }
+.sf-intro-settings { padding: .7rem .9rem; }
+.sf-intro-settings .live-sf-opts { margin: 0; padding: 0; border: 0; justify-content: flex-start; gap: .55rem 1.1rem; }
+
+/* Mobil: skor ve değerlendirme etiketi yan yana ("+0.3 Eşit") */
+@media (max-width: 55.99em) {
+  .live-sf-score { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: .7rem; }
+  .live-sf-score .live-sf-num { font-size: clamp(2.2rem, 1.8rem + 1.5vw, 2.8rem); }
+  .live-sf-score .live-sf-label { margin: 0 0 .6rem; }
+  .live-sf-score .live-sf-num { margin-bottom: .6rem; }
+}
