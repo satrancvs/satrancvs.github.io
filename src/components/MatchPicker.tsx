@@ -16,6 +16,7 @@ export type PickItem = {
   title: string; // "Carlsen – Karjakin"
   site: string;
   blurb: string; // satır içi markdown
+  note?: string; // ilk hamleden önceki yorum (paragraflar boş satırla ayrılır): başlangıç konumunda sol sütunda gösterilir
   bio?: string; // oyuncu hakkında bilgi (satır içi markdown); o oyun izlenirken gösterilir
   thumb?: string; // kart görseli (public/ altındaki yol)
   figures: ReactNode;
@@ -60,7 +61,14 @@ export default function MatchPicker({ items, flat = false, gate = true, onLoaded
   return (
     <section ref={root} className="picker scroll-mt-8" aria-label="Seçilmiş maçlar">
       <div className="mpb-main">
-      <SfPanel boardRef={screen} idleText="Analiz ediliyor..." />
+      <SfPanel boardRef={screen} idleText="Analiz ediliyor..." intro={cur.note ? (
+        <div className="live-sf-intro" key={`intro-${cur.id}`}>
+          <div className="sf-intro-text">{cur.note.split(/\n\n+/).map((t, i) => <p key={i}><Markdown options={{ forceInline: true }}>{t}</Markdown></p>)}</div>
+          <button type="button" className="sf-intro-play" aria-label="Oyunu başlat" onClick={() => (screen.current?.querySelector('.comment-play-btn') as HTMLButtonElement | null)?.click()}>
+            <svg viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /><path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z" /></svg>
+          </button>
+        </div>
+      ) : undefined} />
       <div className="mpa-frame" role="group" aria-label="Oyun oynatıcı">
         <div className="mpa-bar">
           <span className="mpa-led" aria-hidden="true" />

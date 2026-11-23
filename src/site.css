@@ -1032,13 +1032,13 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   pointer-events: auto; width: auto !important; max-width: min(88%, 30rem) !important; padding: .85rem 1.05rem !important;
   border: 1px solid rgb(var(--fg-rgb) / .2); border-left: 3px solid var(--accent); border-radius: .6rem; background: var(--bg); box-shadow: 0 .6rem 1.6rem rgb(0 0 0 / .28);
 }
-/* "Oyunu başlat" düğmesi: yorumun sonunda küçük, vurgu renkli, metinle aynı hizada */
+/* "Oyunu başlat" düğmesi: yorumun sonunda, metinle aynı hizada. Daire simgenin kendisinde (circle-play); düğmenin ayrıca çerçevesi/zemini yok, tek daire görünür. */
 .hub .player-wrapper .video-comment .comment-play-btn.cp-inline {
-  display: inline-flex !important; align-items: center; justify-content: center; width: 1.7rem !important; height: 1.7rem !important; min-width: 0 !important; padding: 0 !important;
-  margin: 0 0 0 .5rem !important; vertical-align: -.35rem; border-radius: 50%; border: 1.5px solid var(--accent) !important; background: transparent !important; color: var(--accent) !important; box-shadow: none !important;
+  display: inline-flex !important; align-items: center; justify-content: center; width: 1.9rem !important; height: 1.9rem !important; min-width: 0 !important; padding: 0 !important;
+  margin: -.2rem 0 -.2rem .45rem !important; vertical-align: -.5rem; border: 0 !important; border-radius: 50%; background: transparent !important; color: var(--accent) !important; box-shadow: none !important; transition: color .15s, transform .15s;
 }
-.hub .player-wrapper .video-comment .comment-play-btn.cp-inline:hover { background: var(--accent) !important; color: var(--bg) !important; }
-.hub .player-wrapper .video-comment .comment-play-btn.cp-inline svg { width: .85rem !important; height: .85rem !important; color: inherit !important; stroke: currentColor; }
+.hub .player-wrapper .video-comment .comment-play-btn.cp-inline:hover { color: var(--fg) !important; transform: scale(1.08); background: transparent !important; }
+.hub .player-wrapper .video-comment .comment-play-btn.cp-inline .lucide-icon { width: 100% !important; height: 100% !important; color: inherit !important; }
 
 /* Maç seçici: üç sütun aynı hizada biter (oynatıcının altındaki makale boşlukları sıfırlanır; hamle listesi sütunun dibine oturur) */
 .picker .mpa-content .cp-game { margin-bottom: 0 !important; padding-bottom: 0 !important; }
@@ -1050,7 +1050,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 
 /* Stockfish analizi durdurulunca panel tek satıra iner (yalnızca başlık + anahtar); kaydırma/uzatma kutusu kalkar */
 .live-sf.is-off { min-width: 0 !important; contain: none !important; overflow: visible !important; padding: .6rem 1.1rem !important; }
-.live-sf.is-off > :not(.live-sf-head) { display: none !important; }
+.live-sf.is-off > :not(.live-sf-head):not(.live-sf-intro) { display: none !important; }
 .live-sf.is-off .live-sf-head { margin: 0; gap: .45rem; font-size: 10px; letter-spacing: .08em; white-space: nowrap; }
 .live-sf.is-off .live-sf-head span { overflow: hidden; text-overflow: ellipsis; }
 
@@ -1088,3 +1088,16 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 @media (min-width: 56em) {
   .picker .mpb-rails { width: calc(15.5rem + 3rem + var(--live-bs) + 28px + 24rem); max-width: 100%; margin-inline: auto; padding-inline: 0; box-sizing: border-box; }
 }
+
+/* İlk hamleden önceki yorum: tahtanın üstünde değil, sol sütunda (Stockfish panelinin en altında) kart olarak durur; ilk hamleden sonra kaybolur.
+   Oynatıcıdaki kendi yorum kutusu gizlenir (düğmesi hâlâ çalışır, kart düğmesi ona tıklar). */
+.hub .picker.picker .player-wrapper:not(:has(.video-moves .active)) .video-comment:has(.comment-text-block:not(:empty)), .picker .player-wrapper:not(:has(.video-moves .active)) .video-comment { display: none !important; }
+.picker .live-sf { display: flex; flex-direction: column; }
+.picker .live-sf > * { flex-shrink: 0; }
+.live-sf-intro { margin-top: auto; padding: .8rem .9rem; border: 1px solid rgb(var(--fg-rgb) / .2); border-left: 3px solid var(--accent); border-radius: .6rem; background: var(--bg); box-shadow: 0 .4rem 1.2rem rgb(0 0 0 / .18); }
+.live-sf.is-off .live-sf-intro { margin-top: .75rem; }
+.sf-intro-text p { margin: 0; font-size: 1rem; line-height: 1.5; color: rgb(var(--fg-rgb) / .92); }
+.sf-intro-text p + p { margin-top: .6rem; }
+.sf-intro-play { display: block; width: 1.9rem; height: 1.9rem; margin: .5rem 0 0; padding: 0; color: var(--accent); background: transparent; border: 0; cursor: pointer; transition: color .15s, transform .15s; }
+.sf-intro-play:hover { color: var(--fg); transform: scale(1.08); }
+.picker:has(.video-moves .active) .live-sf-intro { display: none; }

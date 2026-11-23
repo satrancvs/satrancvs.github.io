@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { RefObject } from 'react';
+import type { ReactNode, RefObject } from 'react';
 import { Chess } from 'chess.js';
 import { engineEnabled, setEngineEnabled, engineSettings, setEngineSettings, DEPTHS, LINE_COUNTS } from '@/lib/eval-bar';
 import type { SfResult as Sf } from '@/lib/eval-bar';
@@ -38,7 +38,7 @@ function evalText(sf: { cp: number | null; mate: number | null }): { num: string
 
 
 // Stockfish canlı analiz paneli (canlı ekran ve maç seçici): `boardRef` içindeki oynatıcıların `cp-sf` olaylarını (eval-bar.ts) dinler.
-export default function SfPanel({ boardRef, idle = false, idleText = '' }: { boardRef: RefObject<HTMLElement>; idle?: boolean; idleText?: string }) {
+export default function SfPanel({ boardRef, idle = false, idleText = '', intro }: { boardRef: RefObject<HTMLElement>; idle?: boolean; idleText?: string; intro?: ReactNode }) {
   const [sf, setSf] = useState<Sf | null>(null);
   const [engineOn, setEngineOn] = useState(engineEnabled);
   const [cfg, setCfg] = useState(engineSettings);
@@ -89,6 +89,7 @@ export default function SfPanel({ boardRef, idle = false, idleText = '' }: { boa
       {rows.length ? (
         <ol className="live-sf-lines">{rows.map((r, i) => <li key={i}>{cfg.lines > 1 && <b className="f-mono">{r.num}</b>}<span>{r.text}</span></li>)}</ol>
       ) : <p className="live-sf-pv">—</p>}
+      {intro}
     </aside>
   );
 }

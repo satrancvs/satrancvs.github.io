@@ -773,6 +773,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
         label: d.label,
         title: d.label.replace(/^[^·]*·\s*/, ''),
         site: d.site,
+        note, // ilk hamleden önceki yorum: sol sütunda (Stockfish panelinin altında) gösterilir
         blurb: '', // açıklama yalnızca oyunun ilk yorumunda (hamle listesinin altında) görünür; sağ sütunda tekrarlanmaz
         bio: d.bio,
         thumb,
