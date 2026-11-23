@@ -197,7 +197,9 @@ function attach(player: PlayerEl) {
       window.clearTimeout(timer);
       timer = window.setTimeout(() => analyze(fen, show, live && enabled ? linesSetting : 1), 120);
     };
-    const here = () => { const s = player._engine?.state; return s ? s.cache[s.index] : undefined; };
+    // Serbest analiz konumu (elle oynanan hamleler) varsa Stockfish onu çözer; yoksa oyundaki konumu.
+    let analysisFen: string | null = null;
+    const here = () => { if (analysisFen) return analysisFen; const s = player._engine?.state; return s ? s.cache[s.index] : undefined; };
     applyBar();
     ev.setDisabled(false);
     const rerun = () => {
@@ -210,7 +212,8 @@ function attach(player: PlayerEl) {
     window.addEventListener('cp-sf-config', rerun);
     player.addEventListener('cp-move', (e) => { const i = (e as CustomEvent).detail?.moveIndex as number; run(player._engine?.state.cache[i + 1]); });
     player.addEventListener('cp-variation-move', (e) => run((e as CustomEvent).detail?.fen));
-    player.addEventListener('cp-analyze', (e) => { last = ''; run((e as CustomEvent).detail?.fen); }); // serbest analiz konumu
+    player.addEventListener('cp-analyze', (e) => { analysisFen = (e as CustomEvent).detail?.fen ?? null; last = ''; run(analysisFen ?? undefined); }); // serbest analiz konumu
+    player.addEventListener('cp-analysis', (e) => { if (!(e as CustomEvent).detail?.on) analysisFen = null; });
     // Görünürken ilk konum (başlangıç ya da canlı yayında son hamle) çözülür; canlıda atlama sonradan yapıldığı için biraz sonra yine okunur.
     const io = new IntersectionObserver((entries) => { if (entries.some((en) => en.isIntersecting)) run(here()); }, { rootMargin: '200px' });
     io.observe(player);
