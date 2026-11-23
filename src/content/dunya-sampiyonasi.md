@@ -7,7 +7,7 @@
 
 ### Şampiyon Gukesh ve aday Sindarov
 
-Önce şampiyondan başlayalım. **Gukesh**, ünvanı Aralık 2024’te Singapur’da, o günün şampiyonu Ding Liren’i 7½–6½ yenerek aldı. O sırada 18 yaşındaydı ve resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu [oldu](https://t24.com.tr/dunya/hindistanli-18-yasindaki-oyuncu-dommaraju-en-genc-dunya-satranc-sampiyonu-oldu,1202720?_t=1795425290483). Oraya da bir Adaylar Turnuvası’nı kazanarak gelmişti (Toronto 2024); 17 yaşında en genç şampiyon adayı olmuştu. Kısacası Gukesh, Adaylar Turnuvası’nı kazanarak şampiyonluk maçına çıkma hakkını elde etti ve Ding Liren’i yenerek ünvanı aldı. Şimdi ise ünvanını korumaya çalışıyor.
+Önce şampiyondan başlayalım. **Gukesh**, ünvanı Aralık 2024’te Singapur’da, o günün şampiyonu Ding Liren’i 7½–6½ yenerek aldı. O sırada 18 yaşındaydı ve resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu [oldu](https://t24.com.tr/dunya/hindistanli-18-yasindaki-oyuncu-dommaraju-en-genc-dunya-satranc-sampiyonu-oldu,1202720?_t=1795425290483). Oraya da bir Adaylar Turnuvası’nı kazanarak gelmişti (Toronto 2024); 17 yaşında en genç şampiyon adayı olmuştu. Kısacası Gukesh, [Adaylar Turnuvası](https://candidates2024.fide.com/)’nı kazanarak şampiyonluk maçına çıkma hakkını elde etti ve Ding Liren’i yenerek ünvanı aldı. Şimdi ise ünvanını korumaya çalışıyor.
 
 Gukesh ünvanı kazandıktan sonra iki yıl boyunca onu korumak için hazırlandı. Şimdi karşısında, şampiyonluk maçına ulaşmak için kendisi de oldukça zorlu bir eleme sürecinden geçen bir rakip var.
 
