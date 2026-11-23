@@ -1225,3 +1225,10 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 /* Canlı yayın: analiz sırasındaki uyarı ve "Canlı konuma dön" düğmesi, listedeki oynatıcı gibi sol sütunun altında */
 .live-sf-intro .live-newmove { margin: 0 0 .6rem; }
 .live-sf-intro .sf-intro-back { align-self: flex-end; }
+
+/* Canlı yayın: okur sayfada başka yerdeyken yeni hamle gelince kırmızı nokta yanıp söner; tıklayınca diyagrama kaydırılır (sayfa kendiliğinden kaymaz) */
+.live-dot-alert { animation: live-blink .9s steps(2, jump-none) infinite; }
+@keyframes live-blink { 0% { opacity: 1; } 100% { opacity: .15; } }
+.live-alert { position: fixed; z-index: 70; top: 4.5rem; left: 50%; transform: translateX(-50%); display: inline-flex; align-items: center; gap: .6rem; height: 2.4rem; padding: 0 1.1rem; font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; color: #F1E9DC; background: #17130F; border: 1.5px solid #d8402f; border-radius: 999px; box-shadow: 0 10px 30px -8px #000; cursor: pointer; }
+.live-alert:hover { background: #d8402f; }
+@media (prefers-reduced-motion: reduce) { .live-dot-alert { animation: none; } }
