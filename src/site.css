@@ -1193,3 +1193,10 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 /* Canlı yayın: serbest analiz sırasında "Canlı konuma dön" düğmesi (tahtanın altında, ortalı) */
 .live-back-row { display: flex; justify-content: center; margin: .6rem 0 0; }
 .live-match .cp-an-svg { z-index: 12; }
+
+/* Stockfish başlığı yalnızca "·" işaretinden kırılır ("Stockfish 19 ·" / "canlı analiz"): her parça kendi içinde bölünmez */
+.live-sf-title > span { white-space: nowrap; }
+
+/* Analiz sürerken canlı oyuna yeni hamle gelince uyarı */
+.live-back-row { flex-direction: column; align-items: center; gap: .6rem; }
+.live-newmove { margin: 0; max-width: 34rem; padding: .6rem .9rem; text-align: center; font-size: 1rem; line-height: 1.45; color: var(--fg); background: color-mix(in srgb, var(--accent) 16%, transparent); border: 1.5px solid var(--accent); border-radius: .6rem; }

@@ -116,6 +116,11 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const fmt = (n: number) => (Number.isInteger(n) ? String(n) : `${Math.floor(n) || ''}½`);
 
   const board = useRef<HTMLDivElement>(null);
+  // Analiz başladığındaki hamle sayısı: analiz sürerken gelen yeni hamleler uyarı olarak gösterilir.
+  const base = useRef(0);
+  const total = hasMoves ? plies(pgn) : 0;
+  useEffect(() => { if (analysing) base.current = total; }, [analysing]); // eslint-disable-line react-hooks/exhaustive-deps
+  const fresh = analysing ? Math.max(0, total - base.current) : 0;
   usePlayerLoaded(board, !!onLoaded, onLoaded);
 
   const host = useRef<HTMLDivElement>(null);
@@ -182,6 +187,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
       </div>
       {analysing && (
         <div className="live-back-row">
+          {fresh > 0 && <p className="live-newmove" role="status">Canlı oyunda {fresh === 1 ? 'yeni bir hamle' : `${fresh} yeni hamle`} oynandı ({Math.ceil(total / 2)}{total % 2 ? '.' : '…'} hamle). Analiziniz korunuyor; canlı konuma dönebilirsiniz.</p>}
           <button type="button" className="sf-intro-back" aria-label="Canlı konuma dön" title="Canlı konuma dön" onClick={() => board.current?.querySelector('pgn-player')?.dispatchEvent(new CustomEvent('cp-analysis-exit'))}>
             <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 14 4 9l5-5" /><path d="M20 20v-7a4 4 0 0 0-4-4H4" /></svg>
             Canlı konuma dön
