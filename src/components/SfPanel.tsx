@@ -66,6 +66,15 @@ export default function SfPanel({ boardRef, idle = false, idleText = '', intro }
   const [engineOn, setEngineOn] = useState(engineEnabled);
   const [cfg, setCfg] = useState(engineSettings);
   const [showOpts, setShowOpts] = useState(false);
+  // Stockfish ayarları açıkken ayarların ve dişlinin dışına tıklanınca (ya da Esc) kapanır.
+  useEffect(() => {
+    if (!showOpts) return;
+    const out = (e: Event) => { const t = e.target as Element | null; if (!t?.closest('.live-sf-opts, .live-sf-gear')) setShowOpts(false); };
+    const esc = (e: KeyboardEvent) => { if (e.key === 'Escape') setShowOpts(false); };
+    document.addEventListener('pointerdown', out, true);
+    document.addEventListener('keydown', esc);
+    return () => { document.removeEventListener('pointerdown', out, true); document.removeEventListener('keydown', esc); };
+  }, [showOpts]);
   useEffect(() => {
     const on = () => { setEngineOn(engineEnabled()); if (!engineEnabled()) setSf(null); };
     window.addEventListener('cp-sf-toggle', on);

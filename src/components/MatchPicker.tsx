@@ -36,7 +36,8 @@ function PlayerSettings({ screen }: { screen: RefObject<HTMLDivElement> }) {
   // Simge, oynatıcının kendi araç çubuğundaki düğmeden alınır (orijinaliyle aynı: indir, çevir, hız).
   const icon = (action: string) => (btn(action)?.querySelector('.lucide-icon') as HTMLElement | null)?.style.getPropertyValue('--icon') ?? '';
   const press = (action: string) => { btn(action)?.click(); if (action === 'speed') setSpeed(engine()?.state.speed ?? 0.5); };
-  const items: [string, string][] = [['speed', `Oynatma hızı: ${String(speed).replace('.', ',')}x (tıklayınca 0,5x → 1x → 2x)`], ['flip', 'Tahtayı çevir'], ['download', 'PGN indir']];
+  // Soldan sağa: indir, çevir, hız (hız en sağda).
+  const items: [string, string][] = [['download', 'PGN indir'], ['flip', 'Tahtayı çevir'], ['speed', `Oynatma hızı: ${String(speed).replace('.', ',')}x (tıklayınca 0,5x → 1x → 2x)`]];
   return (
     <div className="sf-player-settings">
       {items.map(([a, label]) => (
