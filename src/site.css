@@ -1065,7 +1065,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .live-sf-head { gap: .4rem; }
 .live-sf-head { letter-spacing: .1em; }
 .live-sf-head img { width: 20px; height: 20px; }
-@media (min-width: 56em) { .live-sf.is-off { align-self: flex-start !important; } }
+
 /* "Şimdi oynatılıyor" sağ sütunun en üstünde, kartın üzerinde */
 .picker .mpb-info > .mpb-kicker { margin: 0 0 .6rem; }
 
@@ -1094,10 +1094,18 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .hub .picker.picker .player-wrapper:not(:has(.video-moves .active)) .video-comment:has(.comment-text-block:not(:empty)), .picker .player-wrapper:not(:has(.video-moves .active)) .video-comment { display: none !important; }
 .picker .live-sf { display: flex; flex-direction: column; }
 .picker .live-sf > * { flex-shrink: 0; }
-.live-sf-intro { margin-top: auto; padding: .8rem .9rem; border: 1px solid rgb(var(--fg-rgb) / .2); border-left: 3px solid var(--accent); border-radius: .6rem; background: var(--bg); box-shadow: 0 .4rem 1.2rem rgb(0 0 0 / .18); }
+.live-sf-intro { margin-top: auto; display: flex; flex-direction: column; }
+.sf-intro-card { padding: .8rem .9rem; border: 1px solid rgb(var(--fg-rgb) / .2); border-left: 3px solid var(--accent); border-radius: .6rem; background: var(--bg); box-shadow: 0 .4rem 1.2rem rgb(0 0 0 / .18); }
 .live-sf.is-off .live-sf-intro { margin-top: .75rem; }
-.sf-intro-text p { margin: 0; font-size: 1rem; line-height: 1.5; color: rgb(var(--fg-rgb) / .92); }
-.sf-intro-text p + p { margin-top: .6rem; }
-.sf-intro-play { display: block; width: 1.9rem; height: 1.9rem; margin: .5rem 0 0; padding: 0; color: var(--accent); background: transparent; border: 0; cursor: pointer; transition: color .15s, transform .15s; }
+.sf-intro-card p { margin: 0; font-size: 1rem; line-height: 1.5; color: rgb(var(--fg-rgb) / .92); }
+.sf-intro-card p + p { margin-top: .6rem; }
+.sf-intro-play { display: block; flex: none; width: 1.9rem; height: 1.9rem; margin: .5rem 0 0 auto; padding: 0; color: var(--accent); background: transparent; border: 0; cursor: pointer; transition: color .15s, transform .15s; }
 .sf-intro-play:hover { color: var(--fg); transform: scale(1.08); }
-.picker:has(.video-moves .active) .live-sf-intro { display: none; }
+.picker:has(.video-moves .active) .sf-intro-card { display: none; }
+
+/* Stockfish durdurulunca (geniş ekran): panel tek satırlık kart olarak daralır ama sütun yüksekliğini korur; ilk hamle yorumu ve play tuşu yine sütunun en altına hizalı kalır */
+@media (min-width: 56em) {
+  .picker .live-sf.is-off { align-self: stretch !important; contain: size !important; padding: 0 !important; border: 0 !important; background: none !important; box-shadow: none !important; overflow: visible !important; }
+  .picker .live-sf.is-off .live-sf-head { padding: .6rem 1.1rem; border: 1px solid var(--line); border-radius: 12px; background: color-mix(in srgb, var(--fg) 4%, transparent); }
+  .picker .live-sf.is-off .live-sf-intro { margin-top: auto; }
+}
