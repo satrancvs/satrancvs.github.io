@@ -26,6 +26,8 @@ export function attachAnalysis(player: PlayerEl) {
   if (!eng) return;
   const boardEl = eng.boardEl;
   let chess: Chess | null = null;
+  let fens: string[] = []; // analiz hattı: [başlangıç konumu, 1. hamleden sonra, ...]
+  let pos = 0;             // hattaki gösterilen konum
   let active = false;
   let sel: string | null = null;
   const marks = new Map<string, string>();
@@ -106,8 +108,13 @@ export function attachAnalysis(player: PlayerEl) {
       if (eng._variation || eng.puzzle?.active) return;
       if (eng.state.playing) eng.pause(); // pause(), oyundaki konumu yeniden çizer; analiz ondan sonra başlar
       chess = new Chess(eng.state.cache[eng.state.index]);
+      fens = [chess.fen()];
+      pos = 0;
     }
     try { chess!.move({ from, to, promotion: 'q' }); } catch { return; }
+    fens = fens.slice(0, pos + 1);
+    fens.push(chess!.fen());
+    pos = fens.length - 1;
     active = true;
     clearShapes();
     clearGameOverlays();
@@ -119,7 +126,7 @@ export function attachAnalysis(player: PlayerEl) {
   // Analizi bitir: oynatıcının kendi konumu zaten çizildiyse (silent) yalnızca durumu sıfırlar, değilse oyundaki konumu geri yükler.
   const finish = (restore: boolean) => {
     const was = active;
-    chess = null; active = false;
+    chess = null; active = false; fens = []; pos = 0;
     clearShapes();
     render();
     if (was) dispatch('cp-analysis', { on: false });
@@ -131,6 +138,26 @@ export function attachAnalysis(player: PlayerEl) {
   player.addEventListener('cp-variation-move', engineMoved);
   window.addEventListener('resize', render);
   new ResizeObserver(render).observe(boardEl);
+
+  // ---- Klavye: analiz hattında ileri/geri (sol/sağ ok). Analizdeyken oklar oyunun hamlelerine değil analiz hattına uygulanır. ----
+  const step = (to: number) => {
+    if (!active || to < 0 || to > fens.length - 1 || to === pos) return;
+    pos = to;
+    chess = new Chess(fens[pos]);
+    clearShapes();
+    clearGameOverlays();
+    eng.board.position(fens[pos], true);
+    render();
+    dispatch('cp-analyze', { fen: fens[pos] });
+  };
+  window.addEventListener('keydown', (e) => {
+    if (!active || (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight')) return;
+    const t = e.target as HTMLElement | null;
+    if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    step(pos + (e.key === 'ArrowRight' ? 1 : -1));
+  }, true);
 
   // ---- Fare / dokunma ----
   boardEl.addEventListener('contextmenu', (e) => e.preventDefault());
