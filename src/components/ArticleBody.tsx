@@ -891,7 +891,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
     } else if (CHAMPION_TIMELINE.test(c)) {
       out.push(<ChampionTimeline key={i} />);
     } else if (INLINE_PICKER.test(c)) {
-      // Menüden ayrılmış tek seçici (Geçmişte nasıldı? bölümünün sonu): aynı tasarım, yalnızca o grubun oyunları.
+      // Menüden ayrılmış tek seçici (Dünya şampiyonluğunun tarihi bölümünün sonu): aynı tasarım, yalnızca o grubun oyunları.
       const want = c.match(INLINE_PICKER)![1].trim();
       let items: PickItem[] = [];
       chunks.forEach((x, k) => { const m = x.trim().match(MATCH_PICKER); if (m && (m[1] ?? '').trim() === want) items = collectPicker(k).items; });

@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import Markdown from 'markdown-to-jsx';
 import data from '@/data/champions-timeline.json';
 
-// Dünya şampiyonlarının görsel zaman çizelgesi (Dünya Şampiyonası yazısı, "Geçmişte nasıldı?"): yazıda `[ZAMAN ÇİZELGESİ]` yazan paragraf bu bileşeni çizer.
+// Dünya şampiyonlarının görsel zaman çizelgesi (Dünya Şampiyonası yazısı, "Dünya şampiyonluğunun tarihi"): yazıda `[ZAMAN ÇİZELGESİ]` yazan paragraf bu bileşeni çizer.
 // Veri src/data/champions-timeline.json'dadır: dönem başlıkları (era), şampiyonlar (name/years/won/kept) ve kural değişikliği notları (note).
 // Yeniden eskiye doğru sıralıdır. Hücre metinleri satır içi markdown'dır (**kalın** = rakip adları).
 type Entry = { era?: { years: string; name: string }; note?: { year: string; text: string }; name?: string; years?: string; won?: string; kept?: string };

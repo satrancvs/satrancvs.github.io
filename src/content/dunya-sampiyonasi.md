@@ -73,7 +73,7 @@ Bugünkü sistem, eleme turnuvalarıyla başlayan ve dünya şampiyonluğu maç�
 2. **Adaylar Turnuvası**: Sekiz oyuncu, çift turlu döner turnuva, 14 tur. Birinci olan, şampiyonun karşısına çıkacak şampiyon adayı oluyor.
 3. **Ünvan maçı**: 14 klasik oyunluk bir maç. Şampiyon Adaylar’a katılmıyor, **ünvanını savunmak üzere** doğrudan maça çıkıyor.
 
-### Geçmişte nasıldı?
+### Dünya şampiyonluğunun tarihi
 
 Bugünkü sistem, uzun bir tarihsel değişimin sonucu. Dünya şampiyonluğu ilk ortaya çıktığında böyle düzenli bir eleme döngüsü yoktu. Zaman içinde ünvanın nasıl kazanılacağı, nasıl savunulacağı ve bu süreci kimin yöneteceği defalarca değişti. Bugünkü yapının nasıl ortaya çıktığını görmek için biraz geriye gidelim.
 
