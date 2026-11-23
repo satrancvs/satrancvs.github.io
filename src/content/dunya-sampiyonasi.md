@@ -1,20 +1,20 @@
 [CANLI MAÇ]
 
-24 Kasım 2026’da İsviçre’de, Cenevre yakınlarındaki Cologny’de, Fondation Martin Bodmer’de bir [Dünya Satranç Şampiyonası](https://worldchampionship.fide.com/) maçı başlıyor. Karşı karşıya gelenler şampiyon Gukesh Dommaraju (Hindistan) ve şampiyon adayı Javokhir Sindarov (Özbekistan). İkisi de 20 yaşında; FIDE’nin ifadesiyle bu, tarihin en genç dünya şampiyonası karşılaşması.
+24 Kasım 2026 Salı günü İsviçre’nin Cenevre kantonundaki Cologny’de bir [Dünya Satranç Şampiyonası](https://worldchampionship.fide.com/) maçı başlıyor. Unesco Dünya Belleği Programı’na kayıtlı bir kütüphane ve müze olan Martin Bodmer Vakfı’nın (Fondation Martin Bodmer) binasında karşı karşıya gelenler ise şampiyon Gukesh Dommaraju (Hindistan) ve şampiyon adayı Javokhir Sindarov (Özbekistan). İkisi de 20 yaşında; FIDE’nin ifadesiyle bu, tarihin en genç dünya şampiyonası karşılaşması.
 
 ![Gukesh Dommaraju](images/dunya-fide-gukesh.jpg "Gukesh Dommaraju · Resmî maç sitesi · [<span lang="en">worldchampionship.fide.com</span>](https://worldchampionship.fide.com/) · © <span lang="en">FIDE</span>")
 ![Javokhir Sindarov](images/dunya-fide-sindarov.jpg "Javokhir Sindarov · Resmî maç sitesi · [<span lang="en">worldchampionship.fide.com</span>](https://worldchampionship.fide.com/) · © <span lang="en">FIDE</span>")
 
 ### Şampiyon Gukesh ve aday Sindarov
 
-Önce şampiyondan başlayalım. **Gukesh**, ünvanı Aralık 2024’te Singapur’da, o günün şampiyonu Ding Liren’i 7½–6½ yenerek aldı. O sırada 18 yaşındaydı ve resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu [oldu](https://t24.com.tr/dunya/hindistanli-18-yasindaki-oyuncu-dommaraju-en-genc-dunya-satranc-sampiyonu-oldu,1202720?_t=1795425290483). Oraya da bir Adaylar Turnuvası’nı kazanarak gelmişti (Toronto 2024); 17 yaşında en genç şampiyon adayı olmuştu. Kısacası Gukesh, [Adaylar Turnuvası](https://candidates2024.fide.com/)’nı kazanarak şampiyonluk maçına çıkma hakkını elde etti ve Ding Liren’i yenerek ünvanı aldı. Şimdi ise ünvanını korumaya çalışıyor.
+Önce şampiyondan başlayalım. **Gukesh**, ünvanı Aralık 2024’te Singapur’da, o günün şampiyonu Ding Liren’i 7½–6½ yenerek aldı. O sırada 18 yaşındaydı ve resmî (yani “tartışmasız”) dünya şampiyonluğunu kazanan en genç oyuncu [oldu](https://t24.com.tr/dunya/hindistanli-18-yasindaki-oyuncu-dommaraju-en-genc-dunya-satranc-sampiyonu-oldu,1202720?_t=1795425290483). Singapur’a, Toronto’daki 2024 [Adaylar Turnuvası](https://candidates2024.fide.com/)’nı kazanarak 17 yaşında en genç şampiyon adayı olarak gelmişti.
 
-Gukesh ünvanı kazandıktan sonra iki yıl boyunca onu korumak için hazırlandı. Şimdi karşısında, şampiyonluk maçına ulaşmak için kendisi de oldukça zorlu bir eleme sürecinden geçen bir rakip var.
+Gukesh ünvanı kazandıktan sonra iki yıl boyunca onu korumak için hazırlandı. Bugün karşısında, tıpkı onun gibi şampiyonluk maçına ulaşmak için çok zorlu bir eleme sürecinden geçen bir rakip var: Sindarov.
 
-**Sindarov**, sistemin ikinci kapısından, yani on dört turluk Adaylar Turnuvası’ndan birinci çıkarak şampiyon adayı oldu. Bu yolculuğun iki önemli durağı var:
+**Sindarov**, sistemin ikinci kapısından, yani on dört turluk 2026 Adaylar Turnuvası’ndan birinci çıkarak şampiyon adayı oldu. Bu yolculuğun iki önemli durağı var:
 
-- Kasım 2025’te Goa’daki **FIDE Dünya Kupası**’nı (206 oyunculu eleme turnuvası) kazandı. 16. seri olarak başladığı turnuvada finalde Wei Yi’yi ikinci hızlı oyun sonunda yenebildi. 19 yaş 11 ayla en genç Dünya Kupası galibi ve ilk Özbek galip oldu; bu zafer ona Adaylar’a giriş bileti kazandırdı.
-- Mart–Nisan 2026’da Kıbrıs’ın Pegeia kasabasında oynanan, sekiz oyuncunun katıldığı çift turlu döner **[Adaylar Turnuvası](https://candidates2026.fide.com/)**’nı 14 turda **10 puanla** kazandı: altı galibiyet, hiç yenilgi yok. Turnuvayı bir tur kala garantiledi ve çift turlu döner sistemde oynanan Adaylar Turnuvaları tarihinin en yüksek puanına ulaştı.
+- Kasım 2025’te Goa’daki **FIDE Dünya Kupası**’nı (206 oyunculu eleme turnuvası) kazandı. 16. seri olarak başladığı turnuvada finalde Wei Yi’yi ikinci hızlı oyun sonunda yenebildi. 19 yaş 11 ayla en genç Dünya Kupası galibi ve ilk Özbek galip oldu; bu zafer ona Adaylar Turnuvası’na giriş bileti kazandırdı.
+- Mart–Nisan 2026’da Kıbrıs’ın Pegeia kasabasında oynanan, sekiz oyuncunun katıldığı çift turlu döner **[Adaylar Turnuvası](https://candidates2026.fide.com/)**’nı 14 turda **10 puanla** kazandı: sıfır yenilgi, altı galibiyet. Turnuvayı bir tur kala garantiledi ve çift turlu döner sistemde oynanan Adaylar Turnuvaları tarihinin en yüksek puanına ulaştı.
 
 <pre>
 FIDE ADAYLAR TURNUVASI 2026 ÇAPRAZ TABLOSU
@@ -29,13 +29,13 @@ FIDE ADAYLAR TURNUVASI 2026 ÇAPRAZ TABLOSU
  8 GM Esipenko           0½ 0½ ½0 00 ½½ ½½ ½½  *   4½
 </pre>
 
-Ancak dünya şampiyonluğu yarışında bulunmayan, bu iki oyuncudan çok daha yüksek bir satranç kariyerine sahip bir isim var: Magnus Carlsen.
+Bu iki oyuncunun dışında dünya şampiyonluğu yarışında bulunmayan, ancak onlardan çok daha başarılı bir satranç kariyerine sahip bir isim daha var: Magnus Carlsen.
 
 #### Peki Carlsen nerede?
 
-Carlsen, Temmuz 2022’de ünvanını savunmayacağını açıklamıştı ve bu tarihten sonra bir daha Adaylar’a da katılmadı.
+Carlsen, Temmuz 2022’de ünvanını savunmayacağını açıkladı ve bu tarihten sonra bir daha Adaylar’a da katılmadı.
 
-Reyting yoluyla girişin şartı, belirlenen dönemde reyting hesaplamasına dâhil edilen en az 40 klasik oyun oynamaktı; Carlsen o pencerede yalnızca 16 oyun oynamıştı. Üstelik Adaylar’a girmekle ilgilenmediğini de açıkça söylemişti; yani hem istemedi hem de gereken oyun sayısını oynamadı.
+Adaylar Turnuvası’na reyting yoluyla girişin şartı, belirlenen dönemde reyting hesaplamasına dâhil edilen en az 40 klasik oyun oynamaktır; Carlsen o zaman diliminde yalnızca 16 oyun oynamıştı. Üstelik Adaylar’a girmekle ilgilenmediğini de açıkça söylemişti; yani hem istemedi hem de gereken oyun sayısını oynamadı.
 
 Carlsen, Eylül 2026’da Bengaluru’daki Global Chess League sırasında Sindarov için “favori olduğu konusunda hiç şüphe yok” [demişti](https://worldchess.com/news/carlsen-sindarov-favouritebut-gukesh-can-turn-world-championship-around-fast).
 
@@ -45,7 +45,7 @@ Bu yıl dünya şampiyonluğu için mücadele edecek iki oyuncuyu tanıdık. Pek
 
 ### Maç nasıl oynanıyor?
 
-- **14 klasik oyun** oynanacak. Oyuncuların ilk 40 hamle için 120 dakikası olacak. Ardından 30 dakika eklenecek; 41. hamleden itibaren her hamle için 30 saniye ek süre verilecek.
+- **14 klasik oyun** oynanır. Oyuncuların ilk 40 hamle için 120 dakikası bulunur. Ardından 30 dakika eklenir; 41. hamleden itibaren her hamle için 30 saniye ek süre verilir.
 - **7½ puana** ulaşan ilk oyuncu, 14 oyun tamamlanmadan da maçı kazanır.
 - Skor 7–7 olursa **ek oyunlar** devreye girer: önce 15+10 tempolu dört hızlı oyun, sonra 10+5’lik iki hızlı, sonra 3+2’lik iki yıldırım oyunu. Hâlâ eşitlik varsa renkler değişerek tek oyunluk bir yıldırım eleme oynanır.
 - **Ödül fonu 2,5 milyon dolar**: kazanılan her oyun için 200.000 dolar verilir, kalan tutar iki oyuncu arasında eşit paylaşılır. Örneğin skor 7½–6½ olursa kazanan 1,3 milyon, kaybeden 1,2 milyon dolar alır.
@@ -53,7 +53,7 @@ Bu yıl dünya şampiyonluğu için mücadele edecek iki oyuncuyu tanıdık. Pek
 
 Maçın koşulları böyle. Şimdi de iki oyuncunun mevcut durumuna ve karşılaşmanın olası dengesine bakalım.
 
-Kâğıt üzerinde Sindarov favori görünüyor: reytingi 2782 (dünya 4.), Gukesh’in ise 2710 (dünya 26.). Gukesh’in 2025’ten bu yana formu pek parlak değil. Norveç Satranç 2026 ve Chennai Grand Masters 2026 turnuvalarını sonuncu bitirdi. Üstelik Elo sisteminin 1971’de uygulanmaya başlamasından bu yana en düşük reytingli dünya şampiyonu. Yine de ünvan maçları reytinglerle değil, 14 oyunluk bir mücadeleyle belirleniyor; bu süre boyunca sinirler ve hazırlık da en az reyting kadar belirleyici olabilir.
+Kâğıt üzerinde Sindarov favori görünüyor: reytingi 2782 (dünya dördüncüsü), Gukesh’in ise 2710 (dünya yirmi altıncısı). Gukesh’in 2025’ten bu yana formu pek parlak değil. Norveç Satranç 2026 ve Chennai Grand Masters 2026 turnuvalarını sonuncu bitirdi. Üstelik Elo sisteminin 1971’de uygulanmaya başlamasından bu yana en düşük reytingli dünya şampiyonu. Yine de ünvan maçları reytinglerle değil, 14 oyunluk bir mücadeleyle belirleniyor; bu süre boyunca sinir dayanıklılığı ve hazırlık da en az reyting kadar belirleyici olabilir.
 
 İki oyuncu daha önce de karşılaşmış. Bugüne kadar altı kez karşı karşıya geldiler ve toplam skor **4½–1½ Sindarov lehine**. Klasik oyunlarda üç karşılaşmanın ikisini Sindarov kazandı (Moskova Açık 2018’de Siyahlarla, Şarjah Masters 2022’de Beyazlarla); sonuncusu Ocak 2026’daki Tata Steel Masters’ta 78 hamlelik bir beraberlikle bitti. Klasik skor: **2½–½ Sindarov**. Hızlı oyunda tek karşılaşma var: Mayıs 2026’da Varşova’da Gukesh Siyahlarla kazandı, **1–0 Gukesh**. Yıldırım oyunlarda ise aynı turnuvanın iki karşılaşmasını da Sindarov kazandı: **2–0 Sindarov**.
 
