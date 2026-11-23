@@ -50,6 +50,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const [pick, setPick] = useState<string | null>(null);
   const [pgns, setPgns] = useState<Record<string, string>>({});
   const [failed, setFailed] = useState(false);
+  const [analysing, setAnalysing] = useState(false); // okur tahtada serbest analiz yapıyor: canlı güncelleme oynatıcıyı yeniden kurmaz
   useEffect(() => {
     setMounted(true);
     setNow(Date.now());
@@ -120,7 +121,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const host = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = host.current;
-    if (!el || !ready) return;
+    if (!el || !ready || analysing) return;
     const old = el.querySelector('pgn-player') as (HTMLElement & { _engine?: { state: { moves: unknown[]; index: number } } }) | null;
     const eng = old?._engine;
     const prevLen = eng?.state.moves.length ?? 0;
@@ -136,7 +137,14 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
       e.goTo(follow ? n : Math.min(prevIdx, n));
     }).catch(() => {});
     return () => { dead = true; };
-  }, [src, ready, idle]);
+  }, [src, ready, idle, analysing]);
+  useEffect(() => {
+    const el = board.current;
+    if (!el) return;
+    const on = (e: Event) => setAnalysing(!!(e as CustomEvent<{ on: boolean }>).detail?.on);
+    el.addEventListener('cp-analysis', on);
+    return () => el.removeEventListener('cp-analysis', on);
+  }, []);
 
   const left = Math.max(0, start - now);
   const d = Math.floor(left / 864e5), h = Math.floor(left / 36e5) % 24, m = Math.floor(left / 6e4) % 60, s = Math.floor(left / 1e3) % 60;
@@ -172,6 +180,14 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           <div ref={host} />
         </div>
       </div>
+      {analysing && (
+        <div className="live-back-row">
+          <button type="button" className="sf-intro-back" aria-label="Canlı konuma dön" title="Canlı konuma dön" onClick={() => board.current?.querySelector('pgn-player')?.dispatchEvent(new CustomEvent('cp-analysis-exit'))}>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 14 4 9l5-5" /><path d="M20 20v-7a4 4 0 0 0-4-4H4" /></svg>
+            Canlı konuma dön
+          </button>
+        </div>
+      )}
       {live && hasMoves && (
         <p className="live-status f-mono">
           {roundNo}. oyun · Beyaz: {white} · Siyah: {black} · {result && result !== '*' ? `Sonuç ${result.replace('1/2-1/2', '½–½')}` : 'Oyun sürüyor'}
