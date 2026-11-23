@@ -819,7 +819,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .picker { --live-bs: max(380px, min(720px, 100svh - 21rem, 100vw - 3rem - 24rem - 15.5rem - 4.5rem - 28px)); min-height: 0; display: block; padding-top: 0; }
   .picker .mpb-main { flex-direction: row; justify-content: center; align-items: flex-start; gap: 1.5rem; min-height: 0; }
   .picker .mpb-main > .live-sf { order: 0; flex: 0 0 15.5rem; }
-  .picker .mpa-frame { flex: 0 0 auto; width: max(calc(var(--live-bs) + 28px), 28rem); }
+  .picker .mpa-frame { flex: 0 0 auto; width: calc(var(--live-bs) + 28px); margin-inline: -7px 7px; }
   .picker .mpb-info { order: 0; flex: 0 0 24rem; position: static; max-height: none; padding: 0; }
   .picker .cp-game pgn-player:not(pgn-study pgn-player) { --board-size: var(--live-bs) !important; width: calc(var(--live-bs) + 26px) !important; max-width: 100% !important; margin-inline: auto !important; }
   .picker .mpa-content .game-names { font-size: clamp(1.4rem, 1rem + .9vw, 1.9rem); }

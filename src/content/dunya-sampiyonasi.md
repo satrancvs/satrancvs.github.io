@@ -55,9 +55,13 @@ Kâğıt üzerinde Sindarov favori görünüyor: reytingi 2782 (dünya 4.), Guke
 
 Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor ve her döngü genelde iki yıl sürüyor. Adım adım bakalım:
 
-1. **Adaylar Turnuvası’na kimler giriyor?** Sekiz kişi. Bugünkü kurallarda bu koltuklar şu yollarla kazanılıyor: Dünya Kupası’ndaki ilk üç, Grand Swiss’teki ilk iki (2025’te Giri ve Blübaum), önceki iki yılın FIDE Circuit (turnuva puanı) birincileri (Caruana, Praggnanandhaa) ve bir de reyting kuralı (Nakamura). 2026’nın Adaylar’ı bu dört yolun hepsinden oyuncu getirdi.
+1. **Adaylar Turnuvası’na kimler giriyor?** Sekiz kişi. Bugünkü kurallarda bu koltuklar şu yollarla kazanılıyor:
+   - Dünya Kupası’ndaki ilk üç,
+   - Grand Swiss’teki ilk iki,
+   - önceki iki yılın FIDE Circuit (turnuva puanı) birincileri,
+   - reyting kuralı.
 2. **Adaylar Turnuvası**: sekiz oyuncu, çift turlu döner turnuva, 14 tur. Birinci olan, şampiyonun karşısına çıkacak şampiyon adayı oluyor.
-3. **Ünvan maçı**: 14 klasik oyunluk bir maç. Şampiyon **kendi ünvanını savunarak** doğrudan maça geliyor; Adaylar’a katılmıyor.
+3. **Ünvan maçı**: 14 klasik oyunluk bir maç. Şampiyon Adaylar’a katılmıyor, **ünvanını savunmak üzere** doğrudan maça çıkıyor.
 
 ### Geçmişte nasıldı?
 
@@ -219,7 +223,7 @@ Carlsen ünvanını 6½–4½ ile korudu. İzleyeceğiniz oyun, 11. oyun.
 [EventLine "Dünya Şampiyonası, 11. oyun, Soçi, 2014"]
 [View "player"]
 
-1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. Bxc6 dxc6 7. dxe5 Nf5 8. Qxd8+ Kxd8 9. h3 Bd7 10. Nc3 h6 11. b3 Kc8 12. Bb2 c5 13. Rad1 b6 14. Rfe1 Be6 15. Nd5 g5 16. c4 Kb7 17. Kh2 a5 18. a4 Ne7 19. g4 Ng6 20. Kg3 Be7 21. Nd2 Rhd8 22. Ne4 Bf8 23. Nef6 b5 24. Bc3 bxa4 25. bxa4 Kc6 26. Kf3 Rdb8 27. Ke4 Rb4 28. Bxb4 cxb4 29. Nh5 Kb7 30. f4 gxf4 31. Nhxf4 Nxf4 32. Nxf4 Bxc4 33. Rd7 Ra6?! 34. Nd5! Rc6! 35. Rxf7 Bc5 36. Rxc7+ Rxc7 37. Nxc7 Kc6 38. Nb5 Bxb5 39. axb5+ Kxb5 40. e6 b3 41. Kd3 Be7 42. h4 a4 43. g5! hxg5 44. hxg5 a3 45. Kc3 1-0
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. Bxc6 dxc6 7. dxe5 Nf5 8. Qxd8+ Kxd8 9. h3 Bd7 10. Nc3 h6 11. b3 Kc8 12. Bb2 c5 13. Rad1 b6 14. Rfe1 Be6 15. Nd5 g5 16. c4 Kb7 17. Kh2 a5 18. a4 Ne7 19. g4 Ng6 20. Kg3 Be7 21. Nd2 Rhd8 22. Ne4 Bf8 23. Nef6 b5 24. Bc3 bxa4 25. bxa4 Kc6 26. Kf3 Rdb8 27. Ke4 Rb4 28. Bxb4 cxb4?! 29. Nh5 Kb7 30. f4 gxf4 31. Nhxf4 Nxf4 32. Nxf4 Bxc4 33. Rd7 Ra6?! 34. Nd5! Rc6! 35. Rxf7 Bc5 36. Rxc7+ Rxc7 37. Nxc7 Kc6 38. Nb5 Bxb5 39. axb5+ Kxb5 40. e6 b3 41. Kd3 Be7 42. h4 a4 43. g5! hxg5 44. hxg5 a3 45. Kc3 1-0
 
 #### 2013 · Carlsen – Anand
 
