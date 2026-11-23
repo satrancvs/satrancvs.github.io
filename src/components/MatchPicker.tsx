@@ -32,13 +32,19 @@ const decadeLabel = (y: number) => `${Math.floor(y / 10) * 10}'${[1, 3, 4, 6, 9]
 function PlayerSettings({ screen }: { screen: RefObject<HTMLDivElement> }) {
   const engine = () => (screen.current?.querySelector('pgn-player') as (HTMLElement & { _engine?: { state: { speed: number } } }) | null)?._engine;
   const [speed, setSpeed] = useState(() => engine()?.state.speed ?? 0.5);
-  const press = (action: string) => (screen.current?.querySelector(`.settings-btn[data-action="${action}"]`) as HTMLButtonElement | null)?.click();
-  const cycle = () => { press('speed'); setSpeed(engine()?.state.speed ?? 0.5); };
+  const btn = (action: string) => screen.current?.querySelector(`.settings-btn[data-action="${action}"]`) as HTMLButtonElement | null;
+  // Simge, oynatıcının kendi araç çubuğundaki düğmeden alınır (orijinaliyle aynı: indir, çevir, hız).
+  const icon = (action: string) => (btn(action)?.querySelector('.lucide-icon') as HTMLElement | null)?.style.getPropertyValue('--icon') ?? '';
+  const press = (action: string) => { btn(action)?.click(); if (action === 'speed') setSpeed(engine()?.state.speed ?? 0.5); };
+  const items: [string, string][] = [['speed', `Oynatma hızı: ${String(speed).replace('.', ',')}x (tıklayınca 0,5x → 1x → 2x)`], ['flip', 'Tahtayı çevir'], ['download', 'PGN indir']];
   return (
-    <div className="sf-player-settings f-mono">
-      <button type="button" onClick={cycle} title="Oynatma hızı (0,5x → 1x → 2x)">Hız {String(speed).replace('.', ',')}x</button>
-      <button type="button" onClick={() => press('flip')}>Tahtayı çevir</button>
-      <button type="button" onClick={() => press('download')}>PGN indir</button>
+    <div className="sf-player-settings">
+      {items.map(([a, label]) => (
+        <button key={a} type="button" className="sf-ps-btn" aria-label={label} title={label} onClick={() => press(a)}>
+          <span className="lucide-icon" style={{ ['--icon' as string]: icon(a) }} aria-hidden="true" />
+          {a === 'speed' && <span className="sf-ps-speed">{String(speed).replace('.', ',')}x</span>}
+        </button>
+      ))}
     </div>
   );
 }

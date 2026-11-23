@@ -1160,6 +1160,22 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 
 /* Oynatıcı ayarları (tahtayı çevir, PGN indir) yorum kartının yerinde */
 .sf-player-settings { display: flex; flex-wrap: wrap; gap: .5rem; }
-.sf-player-settings button { padding: .4rem .6rem; font-size: 9.5px; font-weight: 600; letter-spacing: .05em; white-space: nowrap; text-transform: uppercase; color: var(--fg); background: transparent; border: 1px solid var(--line); border-radius: 999px; cursor: pointer; transition: border-color .15s, color .15s; }
-.sf-player-settings button:hover { border-color: var(--accent); color: var(--accent); }
 .sf-intro-settings .sf-player-settings { padding: 0; }
+
+/* Oynatıcı ayarları: orijinal araç çubuğundaki gibi simge düğmeleri (hız, çevir, indir) */
+.sf-player-settings { display: flex; align-items: center; gap: .55rem; }
+.sf-ps-btn { position: relative; display: grid; place-items: center; width: 2.1rem; height: 2.1rem; padding: 0; color: var(--fg); background: transparent; border: 1px solid var(--line); border-radius: 50%; cursor: pointer; transition: border-color .15s, color .15s; }
+.sf-ps-btn:hover { border-color: var(--accent); color: var(--accent); }
+.sf-ps-btn .lucide-icon { width: 1.1rem; height: 1.1rem; }
+.sf-ps-speed { position: absolute; top: -.4rem; right: -.5rem; padding: 0 .3rem; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 9px; font-weight: 700; line-height: 1.5; color: var(--bg); background: var(--accent); border-radius: 4px; pointer-events: none; }
+
+/* Mobil (< 56em) maç seçici düzeni: Stockfish kartı diyagramın hemen üstünde; diyagramın hemen altında sağa yaslı oynat/duraklat + ayarlar düğmeleri; onların altında ilk yorum (ya da oynatıcı ayarları); en altta oyun bilgisi */
+@media (max-width: 55.99em) {
+  .picker .mpb-main > .live-sf, .picker .mpb-main > .live-sf .live-sf-intro { display: contents; }
+  .picker .mpb-main > .live-sf > .live-sf-body { order: 0; margin: 0; }
+  .picker .mpb-main > .mpa-frame { order: 1; }
+  .picker .mpb-main > .mpa-frame .mpa-bar { display: none; } /* oyun adı zaten altta (Şimdi oynatılıyor): Stockfish kartı doğrudan diyagramın üstünde */
+  .picker .mpb-main .sf-intro-btns { order: 2; margin: 0; }
+  .picker .mpb-main .sf-intro-card { order: 3; }
+  .picker .mpb-main > .mpb-info { order: 4; }
+}
