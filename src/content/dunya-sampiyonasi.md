@@ -43,7 +43,7 @@ Carlsen, Eylül 2026’da Bengaluru’daki Global Chess League sırasında Sinda
 
 “Dünyanın en iyisi” ile “dünya şampiyonu” her zaman aynı kişi olmak zorunda değil. Ünvan; kurallarla belirlenmiş bir döngüye girmeyi, o döngüyü kazanmayı ve ünvan sahibini bir maçta yenmeyi gerektiriyor. Herhangi bir oyuncunun bu yarışa girmemeyi seçmesi de mümkün.
 
-Bu kez dünya şampiyonluğu için mücadele edecek iki oyuncuyu tanıdık. Peki bu mücadele hangi koşullarda oynanacak ve ünvanı kazanmak için neler gerekecek?
+Bu yıl dünya şampiyonluğu için mücadele edecek iki oyuncuyu tanıdık. Peki maç hangi koşullarla oynanacak ve ünvanı kazanmak için neler gerekecek?
 
 ### Maç nasıl oynanıyor?
 
@@ -53,7 +53,7 @@ Bu kez dünya şampiyonluğu için mücadele edecek iki oyuncuyu tanıdık. Peki
 - **Ödül fonu 2,5 milyon dolar**: kazanılan her oyun için 200.000 dolar verilir, kalan tutar iki oyuncu arasında eşit paylaşılır. Örneğin skor 7½–6½ olursa kazanan 1,3 milyon, kaybeden 1,2 milyon dolar alır.
 - Maç 24 Kasım–12 Aralık arasında oynanacak. Dinlenme günleri 27 Kasım, 1, 5 ve 9 Aralık; eşitlik hâlinde ek oyunlar 12 Aralık’ta.
 
-Maçın koşulları belli. Şimdi de iki oyuncunun mevcut durumuna ve karşılaşmanın olası dengesine bakalım.
+Maçın koşulları böyle. Şimdi de iki oyuncunun mevcut durumuna ve karşılaşmanın olası dengesine bakalım.
 
 Kâğıt üzerinde Sindarov favori görünüyor: reytingi 2782 (dünya 4.), Gukesh’in ise 2710 (dünya 26.). Gukesh’in 2025’ten bu yana formu pek parlak değil. Norveç Satranç 2026 ve Chennai Grand Masters 2026 turnuvalarını sonuncu bitirdi. Üstelik Elo sisteminin 1971’de uygulanmaya başlamasından bu yana en düşük reytingli dünya şampiyonu. Yine de ünvan maçları reytinglerle değil, 14 oyunluk bir mücadeleyle belirleniyor; bu süre boyunca sinirler ve hazırlık da en az reyting kadar belirleyici olabilir.
 
