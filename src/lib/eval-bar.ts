@@ -123,6 +123,8 @@ function attach(player: PlayerEl) {
   }
   // Ilk hamle oncesi yorum karti tahtanin uzerinde ortalanir: tahtanin konumu/olcusu CSS degiskenleri olarak oynaticiya yazilir.
   if (player.closest('.hub')) {
+    // Tahtaya (diyagrama) tıklamak oynat/duraklat yapmaz: bunun için sabit oynat/duraklat düğmesi var. Yakalama aşamasında durdurulur, oynatıcının kendi tıklama işleyicisi çalışmaz.
+    player.addEventListener('click', (e) => { if ((e.target as Element).closest('.board')) e.stopPropagation(); }, true);
     const place = () => {
       const board = player.querySelector('.board') as HTMLElement | null;
       const wrap = player.querySelector('.player-wrapper') as HTMLElement | null;
