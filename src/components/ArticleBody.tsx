@@ -896,7 +896,7 @@ export default function ArticleBody({ chunks }: { chunks: string[] }) {
       const groups: { label: string; items: PickItem[]; flat?: boolean }[] = [];
       const inline = new Set(chunks.map((x) => x.trim().match(INLINE_PICKER)?.[1].trim()).filter(Boolean));
       chunks.forEach((x, k) => { const m = x.trim().match(MATCH_PICKER); if (m) { const label = (m[1] ?? 'Seçme oyunlar').trim(); if (!inline.has(label)) groups.push({ label, items: collectPicker(k).items, flat: /Gukesh/.test(label) }); } });
-      out.push(<GameHub key={i} ready={cp === 'ready'} groups={groups} onLoaded={() => hubDone(0)} next={videoTarget} />);
+      out.push(<GameHub key={i} ready={cp === 'ready'} groups={groups} onLoaded={() => hubDone(0)} next={[videoTarget, hubTarget(1)].filter((x): x is SectionTarget => !!x)} />);
     } else if (VIDEO_PLAYLIST.test(c)) {
       out.push(<section key={i} className="hub hub-solo" aria-label="FIDE videoları"><VideoPlaylist next={hubTarget(1)} /></section>);
     } else if (CHAMPION_TIMELINE.test(c)) {

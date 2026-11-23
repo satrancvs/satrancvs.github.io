@@ -43,7 +43,7 @@ const demoRound = () => {
 };
 
 
-export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; onLoaded?: () => void; next?: SectionTarget }) {
+export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; onLoaded?: () => void; next?: SectionTarget | SectionTarget[] }) {
   const demo = useMemo(demoRound, []);
   const [mounted, setMounted] = useState(false);
   const [now, setNow] = useState(0);
@@ -233,7 +233,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           <p className="live-when f-mono">24 Kasım 2026 · 17.00 (TR saati) · Cenevre</p>
         </div>
       )}
-      {next && <SectionLink target={next} />}
+      {next && <div className="live-nexts">{(Array.isArray(next) ? next : [next]).map((t) => <SectionLink key={t.id} target={t} />)}</div>}
     </section>
   );
 }
