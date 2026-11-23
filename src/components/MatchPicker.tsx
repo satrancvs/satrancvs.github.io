@@ -85,6 +85,15 @@ function PlayToggle({ screen, settingsOpen, onSettings }: { screen: RefObject<HT
 export default function MatchPicker({ items, flat = false, gate = true, onLoaded, next }: { items: PickItem[]; flat?: boolean; gate?: boolean; onLoaded?: () => void; next?: SectionTarget }) {
   const [idx, setIdx] = useState(0);
   const [showSettings, setShowSettings] = useState(false);
+  // Oynatıcı ayarları açıkken kartın ve dişlinin dışında herhangi bir yere tıklanınca (ya da Esc) ayarlar kapanır.
+  useEffect(() => {
+    if (!showSettings) return;
+    const out = (e: Event) => { const t = e.target as Element | null; if (!t?.closest('.sf-intro-settings, .sf-intro-gear')) setShowSettings(false); };
+    const esc = (e: KeyboardEvent) => { if (e.key === 'Escape') setShowSettings(false); };
+    document.addEventListener('pointerdown', out, true);
+    document.addEventListener('keydown', esc);
+    return () => { document.removeEventListener('pointerdown', out, true); document.removeEventListener('keydown', esc); };
+  }, [showSettings]);
   const root = useRef<HTMLElement>(null);
   const screen = useRef<HTMLDivElement>(null);
   const cur = items[idx];
