@@ -1,4 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import SectionLink from '@/components/SectionLink';
+import type { SectionTarget } from '@/components/SectionLink';
 
 // "Maçtan görüntüler" bölümü (Dünya Şampiyonası 2026 yazısı): maç seçiciyle aynı görünümde bir video oynatıcı.
 // İlk video sabittir (açılış töreni özeti); ardından FIDE chess kanalının (@FIDE_chess) son videoları gelir (public/fide-videos.json,
@@ -13,7 +15,7 @@ const day = (iso?: string, month: 'long' | 'short' = 'long') => {
   return d && !Number.isNaN(+d) ? d.toLocaleDateString('tr-TR', { day: 'numeric', month, ...(month === 'long' ? { year: 'numeric' } : {}) }) : '';
 };
 
-export default function VideoPlaylist({ ready = true }: { ready?: boolean }) {
+export default function VideoPlaylist({ ready = true, next }: { ready?: boolean; next?: SectionTarget }) {
   const [feed, setFeed] = useState<Vid[]>([]);
   const [idx, setIdx] = useState(0);
   const [started, setStarted] = useState(false); // YouTube iframe'i yalnızca okur oynatınca yüklenir
@@ -93,6 +95,7 @@ export default function VideoPlaylist({ ready = true }: { ready?: boolean }) {
           ))}
         </div>
       </div>
+      {next && <div className="sec-link-wrap"><SectionLink target={next} /></div>}
     </section>
   );
 }

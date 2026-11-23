@@ -71,9 +71,7 @@ Bugünkü sistem, eleme turnuvalarıyla başlayan ve dünya şampiyonluğu maç�
 2. **Adaylar Turnuvası**: Sekiz oyuncu, çift turlu döner turnuva, 14 tur. Birinci olan, şampiyonun karşısına çıkacak şampiyon adayı oluyor.
 3. **Ünvan maçı**: 14 klasik oyunluk bir maç. Şampiyon Adaylar’a katılmıyor, **ünvanını savunmak üzere** doğrudan maça çıkıyor.
 
-### Maçtan görüntüler
-
-Açılış töreninin özetini aşağıdan izleyebilirsiniz. Yanındaki listede FIDE’nin resmî YouTube kanalına yüklenen her yeni video, çıktığı anda sıraya girer.
+### Maçtan videolar
 
 [VİDEO OYNATICI]
 
