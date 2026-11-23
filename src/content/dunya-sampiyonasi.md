@@ -61,7 +61,7 @@ Bugünkü sistem iki basamaklı bir **döngü**ye dayanıyor ve her döngü gene
    - önceki iki yılın FIDE Circuit (turnuva puanı) birincileri,
    - reyting kuralı.
 2. **Adaylar Turnuvası**: sekiz oyuncu, çift turlu döner turnuva, 14 tur. Birinci olan, şampiyonun karşısına çıkacak şampiyon adayı oluyor.
-3. **Ünvan maçı**: 14 klasik oyunluk bir maç. Şampiyon **kendi ünvanını savunarak** doğrudan maça geliyor; Adaylar’a katılmıyor.
+3. **Ünvan maçı**: 14 klasik oyunluk bir maç. Şampiyon Adaylar’a katılmıyor, **ünvanını savunmak üzere** doğrudan maça çıkıyor.
 
 ### Geçmişte nasıldı?
 
