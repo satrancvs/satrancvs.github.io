@@ -61,6 +61,7 @@ export default function SfPanel({ boardRef, idle = false, idleText = '', intro }
   const set = (depth: number, lines: number) => { setCfg({ depth, lines }); setEngineSettings(depth, lines); };
   return (
     <aside className={`live-sf${ev ? '' : ' is-wait'}${engineOn ? '' : ' is-off'}`} aria-label="Stockfish canlı analizi" aria-live="off">
+      <div className="live-sf-body">
       <div className="live-sf-head f-mono">
         <img src={`${import.meta.env.BASE_URL}stockfish/logo.png`} alt="" width="22" height="22" />
         <span>{engineOn ? 'Stockfish 19 · canlı analiz' : 'Stockfish · durduruldu'}</span>
@@ -89,6 +90,7 @@ export default function SfPanel({ boardRef, idle = false, idleText = '', intro }
       {rows.length ? (
         <ol className="live-sf-lines">{rows.map((r, i) => <li key={i}>{cfg.lines > 1 && <b className="f-mono">{r.num}</b>}<span>{r.text}</span></li>)}</ol>
       ) : <p className="live-sf-pv">—</p>}
+      </div>
       {intro}
     </aside>
   );
