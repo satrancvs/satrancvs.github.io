@@ -1083,3 +1083,8 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .eval-bar[style*="rotate(180deg)"] .ev-close { top: auto; bottom: 4px; }
 .eval-bar.ev-off { opacity: .3; }
 .eval-bar.ev-off .eval-fill { height: 50% !important; }
+
+/* Kart şeridi (yatay slider) üç sütunun toplam eniyle aynı genişlikte: Stockfish paneli 15,5rem + 2 × 1,5rem boşluk + oynatıcı (tahta + 28px) + sağ sütun 24rem */
+@media (min-width: 56em) {
+  .picker .mpb-rails { width: calc(15.5rem + 3rem + var(--live-bs) + 28px + 24rem); max-width: 100%; margin-inline: auto; padding-inline: 0; box-sizing: border-box; }
+}
