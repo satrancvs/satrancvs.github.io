@@ -1186,3 +1186,6 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 
 /* Oynatıcı ayarları (hız, çevir, indir) kartın sağına yaslı */
 .sf-player-settings { justify-content: flex-end; }
+
+/* Oynatıcı ayarları kartı: içeriği kadar dar, sağa yaslı */
+.sf-intro-card.sf-intro-settings { width: fit-content; max-width: 100%; align-self: flex-end; }
