@@ -337,8 +337,10 @@ export default function Index() {
             <h2 className="f-display text-[clamp(36px,4.5vw,72px)] mt-8">Tüm<br /><em className="italic">yazılar</em></h2>
             <div role="tablist" aria-label="Tüm yazılar" className="hidden md:block mt-12">
               <button role="tab" aria-selected={cat === 'Tümü'} onClick={() => setCat('Tümü')} className={tabCls(cat === 'Tümü')} aria-label="Tümü: Sayı 1">Sayı 1</button>
+              <span aria-hidden className="f-mono text-[#0E0C0A]/35 mx-3">·</span>
+              <span title="Yakında..." aria-disabled="true" role="tab" className={`${tabCls(false)} inline-flex items-center opacity-50 cursor-not-allowed select-none hover:text-[#0E0C0A]/50`}>Sayı 2</span>
             </div>
-            <p className="md:hidden f-mono mt-12 text-[#0E0C0A]/50">Sayı 1</p>
+            <p className="md:hidden f-mono mt-12 text-[#0E0C0A]/50">Sayı 1 <span aria-hidden className="mx-2 text-[#0E0C0A]/35">·</span><span title="Yakında..." aria-disabled="true" className="opacity-60">Sayı 2</span></p>
             <h2 id="koseler" ref={koseHead} className="hidden md:block f-display text-[clamp(36px,4.5vw,72px)] mt-14 scroll-mt-28"><em className="italic">Köşeler</em></h2>
             <div role="tablist" aria-label="Köşeler" className="hidden md:flex flex-wrap items-center gap-x-3 gap-y-2 mt-8">
               {CORNERS.map((k, i) => (
