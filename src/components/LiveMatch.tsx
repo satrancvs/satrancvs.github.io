@@ -124,11 +124,12 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   // Okur sayfada başka yerdeyken canlı oyuna yeni hamle gelirse sayfa kaymaz: "Canlı" noktası yanıp söner ve ekranda küçük bir uyarı çıkar; tıklayınca diyagrama kaydırılır.
   const [inView, setInView] = useState(true);
   const [alert, setAlert] = useState(false);
+  const [above, setAbove] = useState(false); // tahta ekranın üstünde kaldıysa uyarıdaki ok yukarı bakar
   const seenTotal = useRef(-1);
   useEffect(() => {
     const el = board.current;
     if (!el || typeof IntersectionObserver === 'undefined') return;
-    const io = new IntersectionObserver(([e]) => setInView(e.isIntersecting), { threshold: 0.3 });
+    const io = new IntersectionObserver(([e]) => { setInView(e.isIntersecting); setAbove(e.boundingClientRect.top < 0); }, { threshold: 0.3 });
     io.observe(el);
     return () => io.disconnect();
   }, []);
@@ -199,7 +200,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
       )}
       {alert && !inView && createPortal(
         <button type="button" className="live-alert f-mono" onClick={toBoard} aria-label="Canlı oyunda yeni hamle oynandı; diyagrama git">
-          <i className="live-dot live-dot-alert" aria-hidden="true" />Canlı · yeni hamle<span aria-hidden="true"> ↓</span>
+          <i className="live-dot live-dot-alert" aria-hidden="true" />Canlı · yeni hamle<span aria-hidden="true">{above ? ' ↑' : ' ↓'}</span>
         </button>, document.body)}
       <div className="live-stage">
         <SfPanel boardRef={board} idle={idle} intro={analysing ? (
