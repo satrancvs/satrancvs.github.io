@@ -108,7 +108,7 @@ Gukesh, 14. oyunda Ding’in hatasından yararlanarak maçı 7½–6½ kazandı.
 [EventLine "Dünya Şampiyonası, 14. oyun, Singapur, 2024"]
 [View "player"]
 
-1. Nf3 d5 2. g3 c5 3. Bg2 Nc6 4. d4 e6 5. O-O cxd4 6. Nxd4 Nge7 7. c4 Nxd4 8. Qxd4 Nc6 9. Qd1 d4 10. e3 Bc5 11. exd4 Bxd4 12. Nc3 O-O 13. Nb5 Bb6 14. b3 a6 15. Nc3 Bd4 16. Bb2 e5 17. Qd2 Be6 18. Nd5 b5 19. cxb5 axb5 20. Nf4 exf4 21. Bxc6! Bxb2 22. Qxb2 Rb8 23. Rfd1 Qb6 24. Bf3 fxg3 25. hxg3 b4 26. a4 bxa3 27. Rxa3 g6 28. Qd4 Qb5 29. b4 Qxb4 30. Qxb4 Rxb4 31. Ra8 Rxa8 32. Bxa8 g5 33. Bd5 Bf5 34. Rc1 Kg7 35. Rc7 Bg6 36. Rc4 Rb1+ 37. Kg2 Re1 38. Rb4 h5 39. Ra4 Re5 40. Bf3 Kh6 41. Kg1 Re6 42. Rc4 g4 43. Bd5 Rd6 44. Bb7 Kg5 45. f3 f5 46. fxg4 hxg4 47. Rb4 Bf7 48. Kf2 Rd2+ 49. Kg1 Kf6 50. Rb6+ Kg5 51. Rb4 Be6 52. Ra4 Rb2 53. Ba8 Kf6 54. Rf4 Ke5 55. Rf2? Rxf2 56. Kxf2 Bd5!! 57. Bxd5 Kxd5 58. Ke3 Ke5! 0-1
+1. Nf3 d5 2. g3 c5 3. Bg2 Nc6 4. d4 e6 5. O-O cxd4 6. Nxd4 Nge7 7. c4 Nxd4 8. Qxd4 Nc6 9. Qd1 d4 10. e3 Bc5 11. exd4 Bxd4 12. Nc3 O-O 13. Nb5 Bb6 14. b3 a6 15. Nc3 Bd4 16. Bb2 e5 17. Qd2 Be6 18. Nd5 b5 19. cxb5 axb5 20. Nf4 exf4 21. Bxc6! Bxb2 22. Qxb2 Rb8 23. Rfd1 Qb6 24. Bf3 fxg3 25. hxg3 b4 26. a4 bxa3 27. Rxa3 g6 28. Qd4 Qb5 29. b4 Qxb4 30. Qxb4 Rxb4 31. Ra8 Rxa8 32. Bxa8 g5 33. Bd5 Bf5 34. Rc1 Kg7 35. Rc7 Bg6 36. Rc4 Rb1+ 37. Kg2 Re1 38. Rb4 h5 39. Ra4 Re5 40. Bf3 Kh6 41. Kg1 Re6 42. Rc4 g4 43. Bd5 Rd6 44. Bb7 Kg5 45. f3 f5 46. fxg4 hxg4 47. Rb4 Bf7 48. Kf2 Rd2+ 49. Kg1 Kf6 50. Rb6+ Kg5 51. Rb4 Be6 52. Ra4 Rb2 53. Ba8 Kf6 54. Rf4 Ke5 55. Rf2?? Rxf2 56. Kxf2 Bd5!! 57. Bxd5 Kxd5 58. Ke3 Ke5! 0-1
 
 #### 2023 · Ding Liren – Nepomniachtchi
 
@@ -132,7 +132,7 @@ Gukesh, 14. oyunda Ding’in hatasından yararlanarak maçı 7½–6½ kazandı.
 [EventLine "Dünya Şampiyonası, 4. hızlı oyun, Astana, 2023"]
 [View "player"]
 
-1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. d3 b5 7. Bb3! d6 8. a4 Bd7 9. h3 O-O 10. Be3 Na5 11. Ba2 bxa4 12. Nc3 Rb8 13. Bb1 Qe8 14. b3 c5 15. Nxa4 Nc6 16. Nc3 a5 17. Nd2 Be6 18. Nc4 d5 19. exd5 Nxd5 20. Bd2?! Nxc3 21. Bxc3 Bxc4 22. bxc4 Bd8 23. Bd2 Bc7 24. c3 f5 25. Re1 Rd8 26. Ra2 Qg6 27. Qe2 Qd6 28. g3 Rde8 29. Qf3 e4 30. dxe4 Ne5 31. Qg2 Nd3 32. Bxd3 Qxd3 33. exf5 Rxe1+ 34. Bxe1 Qxc4 35. Ra1 Rxf5 36. Bd2 h6 37. Qc6 Rf7 38. Re1 Kh7 39. Be3 Be5 40. Qe8 Bxc3 41. Rc1 Rf6 42. Qd7 Qe2 43. Qd5 Bb4 44. Qe4+ Kg8 45. Qd5+ Kh7 46. Qe4+ Rg6 47. Qf5 c4 48. h4? Qd3! 49. Qf3 Rf6 50. Qg4 c3 51. Rd1 Qg6 52. Qc8 Rc6 53. Qa8 Rd6?! 54. Rxd6 Qxd6 55. Qe4+ Qg6 56. Qc4 Qb1+ 57. Kh2 a4 58. Bd4 a3 59. Qc7?! Qg6 60. Qc4 c2 61. Be3! Bd6 62. Kg2 h5 63. Kf1?! Be5 64. g4 hxg4 65. h5 Qf5 66. Qd5 g3 67. f4 a2 68. Qxa2 Bxf4 0-1
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. d3 b5 7. Bb3! d6 8. a4 Bd7 9. h3 O-O 10. Be3 Na5 11. Ba2 bxa4 12. Nc3 Rb8 13. Bb1 Qe8 14. b3 c5 15. Nxa4 Nc6 16. Nc3 a5 17. Nd2 Be6 18. Nc4 d5 19. exd5 Nxd5 20. Bd2?! Nxc3 21. Bxc3 Bxc4 22. bxc4 Bd8 23. Bd2 Bc7 24. c3 f5 25. Re1 Rd8 26. Ra2 Qg6 27. Qe2 Qd6 28. g3 Rde8 29. Qf3 e4 30. dxe4 Ne5 31. Qg2 Nd3 32. Bxd3 Qxd3 33. exf5 Rxe1+ 34. Bxe1 Qxc4 35. Ra1 Rxf5 36. Bd2 h6 37. Qc6 Rf7 38. Re1 Kh7 39. Be3 Be5 40. Qe8 Bxc3 41. Rc1 Rf6 42. Qd7 Qe2 43. Qd5 Bb4 44. Qe4+ Kg8 45. Qd5+ Kh7 46. Qe4+ Rg6 47. Qf5 c4 48. h4? Qd3! 49. Qf3 Rf6?! 50. Qg4 c3 51. Rd1 Qg6 52. Qc8 Rc6 53. Qa8 Rd6? 54. Rxd6 Qxd6 55. Qe4+ Qg6 56. Qc4 Qb1+ 57. Kh2 a4 58. Bd4 a3 59. Qc7? Qg6 60. Qc4 c2 61. Be3! Bd6 62. Kg2?! h5 63. Kf1 Be5 64. g4?! hxg4 65. h5 Qf5 66. Qd5 g3 67. f4 a2 68. Qxa2 Bxf4 0-1
 
 #### 2021 · Carlsen – Nepomniachtchi
 
@@ -185,7 +185,7 @@ Carlsen maçı 11 oyunda 7½–3½ kazandı. İzleyeceğiniz oyun, 11. oyun.
 [EventLine "Dünya Şampiyonası, 2. hızlı oyun, Londra, 2018"]
 [View "player"]
 
-1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Nd5 Nxd5 8. exd5 Ne7 9. c4 Ng6 10. Qa4 Bd7! 11. Qb4 Qb8 12. h4 h5 13. Be3 a6 14. Nc3 a5 15. Qb3 a4 16. Qd1 Be7 17. g3 Qc8 18. Be2 Bg4 19. Rc1 Bxe2 20. Qxe2 Qf5 21. c5 O-O 22. c6 bxc6 23. dxc6 Rfc8 24. Qc4 Bd8 25. Nd5 e4 26. c7 Bxc7 27. Nxc7 Ne5! 28. Nd5? Kh7 0-1
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Nd5 Nxd5 8. exd5 Ne7 9. c4 Ng6 10. Qa4 Bd7! 11. Qb4 Qb8 12. h4 h5 13. Be3 a6 14. Nc3 a5 15. Qb3 a4 16. Qd1 Be7 17. g3 Qc8 18. Be2 Bg4 19. Rc1 Bxe2 20. Qxe2 Qf5 21. c5 O-O 22. c6 bxc6 23. dxc6 Rfc8 24. Qc4 Bd8 25. Nd5 e4 26. c7? Bxc7 27. Nxc7 Ne5! 28. Nd5?! Kh7 0-1
 
 #### 2016 · Carlsen – Karjakin
 
@@ -208,7 +208,7 @@ Maç, Manhattan’da South Street Seaport’taki Fulton Market Binası’nda oyn
 [EventLine "Dünya Şampiyonası, 4. hızlı oyun, New York, 2016"]
 [View "player"]
 
-1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. f3 e5 6. Nb3 Be7 7. c4 a5 8. Be3 a4 9. Nc1 O-O 10. Nc3 Qa5 11. Qd2 Na6 12. Be2 Nc5 13. O-O Bd7 14. Rb1 Rfc8 15. b4 axb3! 16. axb3 Qd8 17. Nd3 Ne6 18. Nb4 Bc6 19. Rfd1 h5 20. Bf1 h4 21. Qf2 Nd7 22. g3 Ra3 23. Bh3 Rca8 24. Nc2 R3a6 25. Nb4 Ra5 26. Nc2 b6 27. Rd2 Qc7 28. Rbd1 Bf8 29. gxh4 Nf4 30. Bxf4 exf4 31. Bxd7 Qxd7 32. Nb4 Ra3 33. Nxc6 Qxc6 34. Nb5 Rxb3 35. Nd4! Qxc4 36. Nxb3! Qxb3 37. Qe2 Be7 38. Kg2 Qe6 39. h5 Ra3 40. Rd3 Ra2 41. R3d2 Ra3 42. Rd3 Ra7 43. Rd5 Rc7 44. Qd2 Qf6 45. Rf5 Qh4 46. Rc1 Ra7 47. Qxf4 Ra2+ 48. Kh1!! Qf2 49. Rc8+ Kh7 50. Qh6+ 1-0
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. f3 e5 6. Nb3 Be7 7. c4 a5 8. Be3 a4 9. Nc1 O-O 10. Nc3 Qa5 11. Qd2 Na6 12. Be2 Nc5 13. O-O Bd7 14. Rb1 Rfc8 15. b4 axb3! 16. axb3 Qd8 17. Nd3 Ne6 18. Nb4 Bc6 19. Rfd1 h5 20. Bf1 h4 21. Qf2 Nd7 22. g3 Ra3 23. Bh3 Rca8 24. Nc2 R3a6 25. Nb4 Ra5 26. Nc2 b6 27. Rd2 Qc7 28. Rbd1 Bf8 29. gxh4 Nf4 30. Bxf4 exf4 31. Bxd7 Qxd7 32. Nb4 Ra3 33. Nxc6 Qxc6 34. Nb5 Rxb3 35. Nd4! Qxc4 36. Nxb3! Qxb3 37. Qe2 Be7 38. Kg2 Qe6 39. h5 Ra3 40. Rd3 Ra2 41. R3d2 Ra3 42. Rd3 Ra7 43. Rd5 Rc7 44. Qd2 Qf6 45. Rf5 Qh4 46. Rc1 Ra7 47. Qxf4 Ra2+ 48. Kh1!! Qf2? 49. Rc8+ Kh7 50. Qh6+ 1-0
 
 #### 2014 · Carlsen – Anand
 
@@ -233,7 +233,7 @@ Carlsen ünvanını 6½–4½ ile korudu. İzleyeceğiniz oyun, 11. oyun.
 [EventLine "Dünya Şampiyonası, 11. oyun, Soçi, 2014"]
 [View "player"]
 
-1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. Bxc6 dxc6 7. dxe5 Nf5 8. Qxd8+ Kxd8 9. h3 Bd7 10. Nc3 h6 11. b3 Kc8 12. Bb2 c5 13. Rad1 b6 14. Rfe1 Be6 15. Nd5 g5 16. c4 Kb7 17. Kh2 a5 18. a4 Ne7 19. g4 Ng6 20. Kg3 Be7 21. Nd2 Rhd8 22. Ne4 Bf8 23. Nef6 b5 24. Bc3 bxa4 25. bxa4 Kc6 26. Kf3 Rdb8 27. Ke4 Rb4 28. Bxb4 cxb4?! 29. Nh5 Kb7 30. f4 gxf4 31. Nhxf4 Nxf4 32. Nxf4 Bxc4 33. Rd7 Ra6?! 34. Nd5! Rc6! 35. Rxf7 Bc5 36. Rxc7+ Rxc7 37. Nxc7 Kc6 38. Nb5 Bxb5 39. axb5+ Kxb5 40. e6 b3 41. Kd3 Be7 42. h4 a4 43. g5! hxg5 44. hxg5 a3 45. Kc3 1-0
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. Bxc6 dxc6 7. dxe5 Nf5 8. Qxd8+ Kxd8 9. h3 Bd7 10. Nc3 h6 11. b3 Kc8 12. Bb2 c5 13. Rad1 b6 14. Rfe1 Be6 15. Nd5 g5 16. c4 Kb7 17. Kh2 a5 18. a4 Ne7 19. g4 Ng6 20. Kg3 Be7 21. Nd2 Rhd8 22. Ne4 Bf8 23. Nef6 b5 24. Bc3 bxa4 25. bxa4 Kc6 26. Kf3 Rdb8 27. Ke4 Rb4 28. Bxb4 cxb4?! 29. Nh5?! Kb7 30. f4 gxf4 31. Nhxf4 Nxf4 32. Nxf4 Bxc4 33. Rd7 Ra6 34. Nd5! Rc6! 35. Rxf7 Bc5 36. Rxc7+ Rxc7 37. Nxc7 Kc6 38. Nb5 Bxb5 39. axb5+ Kxb5 40. e6 b3 41. Kd3 Be7 42. h4 a4 43. g5! hxg5 44. hxg5 a3 45. Kc3 1-0
 
 #### 2013 · Carlsen – Anand
 
@@ -254,7 +254,7 @@ Carlsen 10 oyunda 6½–3½ kazanıp şampiyon oldu. İzleyeceğiniz oyun, 9. oy
 [EventLine "Dünya Şampiyonası, 9. oyun, Chennai, 2013"]
 [View "player"]
 
-1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. f3 d5 5. a3 Bxc3+ 6. bxc3 c5 7. cxd5 exd5 8. e3 c4 9. Ne2 Nc6 10. g4 O-O 11. Bg2 Na5 12. O-O Nb3 13. Ra2 b5 14. Ng3 a5 15. g5 Ne8 16. e4 Nxc1 17. Qxc1 Ra6 18. e5 Nc7 19. f4 b4 20. axb4 axb4 21. Rxa6 Nxa6 22. f5 b3 23. Qf4 Nc7 24. f6?! g6 25. Qh4 Ne8? 26. Qh6 b2 27. Rf4?? b1=Q+! 28. Nf1?? Qe1! 0-1
+1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. f3 d5 5. a3 Bxc3+ 6. bxc3 c5 7. cxd5 exd5 8. e3 c4 9. Ne2 Nc6 10. g4 O-O 11. Bg2 Na5 12. O-O Nb3 13. Ra2 b5 14. Ng3 a5 15. g5 Ne8 16. e4 Nxc1 17. Qxc1 Ra6 18. e5 Nc7 19. f4 b4 20. axb4 axb4 21. Rxa6 Nxa6 22. f5 b3 23. Qf4 Nc7 24. f6 g6 25. Qh4 Ne8 26. Qh6 b2 27. Rf4 b1=Q+! 28. Nf1?? Qe1! 0-1
 
 #### 2012 · Anand – Gelfand
 
@@ -277,7 +277,7 @@ Carlsen 10 oyunda 6½–3½ kazanıp şampiyon oldu. İzleyeceğiniz oyun, 9. oy
 [EventLine "Dünya Şampiyonası, 2. hızlı oyun, Moskova, 2012"]
 [View "player"]
 
-1. e4 c5 2. Nf3 Nc6 3. Bb5 e6 4. Bxc6 bxc6 5. b3 e5 6. Nxe5 Qe7 7. d4 d6 8. Nxc6 Qxe4+! 9. Qe2!! Qxe2+ 10. Kxe2 Bb7 11. Na5 Bxg2 12. Rg1 Bh3 13. dxc5 dxc5 14. Nc3 O-O-O 15. Bf4 Bd6 16. Bxd6 Rxd6 17. Rg5 Nf6 18. Rxc5+ Kb8 19. Nc4 Re8+ 20. Ne3 Ng4 21. Nd5 Nxe3 22. Nxe3 Bg4+ 23. f3 Bc8 24. Re1 Rh6 25. Rh1 Rhe6 26. Rc3! f5 27. Kd2 f4 28. Nd5 g5 29. Rd3 Re2+ 30. Kc1 Rf2 31. h4 Ree2 32. Rc3 Bb7 33. Rd1 gxh4 34. Nxf4 Re8! 35. Rh1 Rc8 36. Rxc8+ Bxc8 37. Rxh4 Bf5 38. Rh5 Bxc2 39. Rb5+ Ka8! 40. Nd5 a6! 41. Ra5 Kb7 42. Nb4 Bg6 43. Nxa6 Rxf3 44. Nc5+ Kb6 45. b4! Rf4 46. a3 Rg4 47. Kd2 h5 48. Nd7+ Kb7 49. Ne5 Rg2+! 50. Kc3 Be8 51. Nd3 h4 52. Re5 Bg6 53. Nf4 Rg3+ 54. Kd4 Bc2 55. Rh5 Rxa3 56. Rxh4 Rg3 57. Nd5 Rg5 58. b5 Bf5 59. Rh6 Bg4 60. Rf6 Rf5 61. Rb6+ Ka7 62. Rg6 Bf3 63. Rg7+ Kb8 64. Nc3 Bb7 65. Kc4 Bf3 66. Kb4 Bd5 67. Na4 Rf7 68. Rg5 Bf3 69. Nc5 Kc7 70. Rg6 Kd8 71. Ka5 Rf5? 72. Ne6+! Kc8 73. Nd4! Rf8 74. Nxf3! Rxf3 75. Kb6 Rb3 76. Rg8+ Kd7 77. Rb8 1-0
+1. e4 c5 2. Nf3 Nc6 3. Bb5 e6 4. Bxc6 bxc6 5. b3 e5 6. Nxe5 Qe7 7. d4 d6 8. Nxc6 Qxe4+! 9. Qe2!! Qxe2+ 10. Kxe2 Bb7 11. Na5 Bxg2 12. Rg1 Bh3 13. dxc5 dxc5 14. Nc3 O-O-O 15. Bf4 Bd6 16. Bxd6 Rxd6 17. Rg5 Nf6 18. Rxc5+ Kb8 19. Nc4 Re8+ 20. Ne3 Ng4 21. Nd5 Nxe3 22. Nxe3 Bg4+ 23. f3 Bc8 24. Re1 Rh6 25. Rh1 Rhe6 26. Rc3! f5 27. Kd2 f4 28. Nd5 g5 29. Rd3 Re2+ 30. Kc1 Rf2 31. h4 Ree2 32. Rc3 Bb7 33. Rd1 gxh4 34. Nxf4 Re8! 35. Rh1 Rc8 36. Rxc8+ Bxc8 37. Rxh4 Bf5 38. Rh5 Bxc2 39. Rb5+ Ka8! 40. Nd5 a6! 41. Ra5 Kb7 42. Nb4 Bg6 43. Nxa6 Rxf3 44. Nc5+ Kb6 45. b4! Rf4 46. a3 Rg4 47. Kd2 h5 48. Nd7+ Kb7 49. Ne5 Rg2+! 50. Kc3 Be8 51. Nd3 h4 52. Re5 Bg6 53. Nf4 Rg3+ 54. Kd4 Bc2 55. Rh5 Rxa3 56. Rxh4 Rg3 57. Nd5 Rg5 58. b5 Bf5 59. Rh6 Bg4 60. Rf6 Rf5 61. Rb6+ Ka7 62. Rg6 Bf3 63. Rg7+ Kb8 64. Nc3 Bb7 65. Kc4 Bf3 66. Kb4 Bd5 67. Na4 Rf7 68. Rg5 Bf3 69. Nc5 Kc7 70. Rg6 Kd8 71. Ka5 Rf5? 72. Ne6+! Kc8?! 73. Nd4! Rf8 74. Nxf3! Rxf3 75. Kb6 Rb3 76. Rg8+ Kd7 77. Rb8 1-0
 
 #### 2010 · Anand – Topalov
 
@@ -300,7 +300,7 @@ Son oyunu Siyahlarla kazanan Anand, maçı 6½–5½ alıp ünvanını korudu.
 [EventLine "Dünya Şampiyonası, 12. oyun, Sofya, 2010"]
 [View "player"]
 
-1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. Nc3 Be7 5. Bg5 h6 6. Bh4 O-O 7. e3 Ne4 8. Bxe7 Qxe7 9. Rc1 c6 10. Be2 Nxc3 11. Rxc3 dxc4 12. Bxc4 Nd7 13. O-O b6 14. Bd3 c5 15. Be4 Rb8 16. Qc2 Nf6 17. dxc5 Nxe4 18. Qxe4 bxc5 19. Qc2 Bb7 20. Nd2 Rfd8 21. f3 Ba6 22. Rf2 Rd7 23. g3 Rbd8 24. Kg2 Bd3 25. Qc1 Ba6 26. Ra3 Bb7 27. Nb3 Rc7 28. Na5 Ba8 29. Nc4 e5 30. e4 f5 31. exf5 e4 32. fxe4?! Qxe4+ 33. Kh3 Rd4! 34. Ne3! Qe8 35. g4! h5 36. Kh4 g5+?! 37. fxg6! Qxg6 38. Qf1 Rxg4+! 39. Kh3! Re7?! 40. Rf8+ Kg7 41. Nf5+ Kh7! 42. Rg3! Rxg3+ 43. hxg3 Qg4+! 44. Kh2 Re2+! 45. Kg1! Rg2+! 46. Qxg2 Bxg2 47. Kxg2 Qe2+ 48. Kh3 c4 49. a4 a5 50. Rf6 Kg8 51. Nh6+ Kg7 52. Rb6 Qe4 53. Kh2 Kh7 54. Rd6 Qe5 55. Nf7 Qxb2+ 56. Kh3 Qg7 0-1
+1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. Nc3 Be7 5. Bg5 h6 6. Bh4 O-O 7. e3 Ne4 8. Bxe7 Qxe7 9. Rc1 c6 10. Be2 Nxc3 11. Rxc3 dxc4 12. Bxc4 Nd7 13. O-O b6 14. Bd3 c5 15. Be4 Rb8 16. Qc2 Nf6 17. dxc5 Nxe4 18. Qxe4 bxc5 19. Qc2 Bb7 20. Nd2 Rfd8 21. f3 Ba6 22. Rf2 Rd7 23. g3 Rbd8 24. Kg2 Bd3 25. Qc1 Ba6 26. Ra3 Bb7 27. Nb3 Rc7 28. Na5 Ba8 29. Nc4 e5 30. e4 f5 31. exf5 e4 32. fxe4? Qxe4+ 33. Kh3 Rd4! 34. Ne3! Qe8 35. g4! h5 36. Kh4 g5+ 37. fxg6! Qxg6 38. Qf1 Rxg4+! 39. Kh3! Re7 40. Rf8+ Kg7 41. Nf5+ Kh7! 42. Rg3! Rxg3+ 43. hxg3 Qg4+! 44. Kh2 Re2+! 45. Kg1! Rg2+! 46. Qxg2 Bxg2 47. Kxg2 Qe2+ 48. Kh3 c4 49. a4 a5 50. Rf6 Kg8 51. Nh6+ Kg7 52. Rb6 Qe4 53. Kh2 Kh7 54. Rd6 Qe5 55. Nf7 Qxb2+ 56. Kh3 Qg7 0-1
 
 #### 2008 · Anand – Kramnik
 
@@ -367,7 +367,7 @@ Birleşme maçı 6–6 bitti; hızlı oyunlarda Kramnik 2½–1½ kazandı. İzl
 [EventLine "Dünya Şampiyonası, 4. hızlı oyun, Elista, 2006"]
 [View "player"]
 
-1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Be2 Bb7 9. O-O Be7 10. e4 b4 11. e5 bxc3 12. exf6! Bxf6 13. bxc3 c5 14. dxc5 Nxc5 15. Bb5+ Kf8 16. Qxd8+ Rxd8 17. Ba3 Rc8 18. Nd4 Be7 19. Rfd1 a6 20. Bf1 Na4 21. Rab1 Be4 22. Rb3 Bxa3 23. Rxa3 Nc5 24. Nb3 Ke7 25. Rd4 Bg6 26. c4 Rc6 27. Nxc5 Rxc5 28. Rxa6 Rb8 29. Rd1 Rb2 30. Ra7+ Kf6 31. Ra1 Rf5 32. f3 Re5 33. Ra3 Rc2 34. Rb3 Ra5 35. a4 Ke7 36. Rb5 Ra7 37. a5 Kd6 38. a6 Kc7 39. c5 Rc3 40. Raa5 Rc1 41. Rb3! Kc6 42. Rb6+ Kc7 43. Kf2 Rc2+ 44. Ke3 Rxc5?! 45. Rb7+! 1-0
+1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Be2 Bb7 9. O-O Be7 10. e4 b4 11. e5 bxc3 12. exf6! Bxf6 13. bxc3 c5 14. dxc5 Nxc5 15. Bb5+ Kf8 16. Qxd8+ Rxd8 17. Ba3 Rc8 18. Nd4 Be7 19. Rfd1 a6 20. Bf1 Na4 21. Rab1 Be4 22. Rb3 Bxa3 23. Rxa3 Nc5 24. Nb3 Ke7 25. Rd4 Bg6 26. c4 Rc6 27. Nxc5 Rxc5 28. Rxa6 Rb8 29. Rd1 Rb2 30. Ra7+ Kf6 31. Ra1 Rf5 32. f3 Re5 33. Ra3 Rc2 34. Rb3 Ra5 35. a4 Ke7 36. Rb5 Ra7 37. a5 Kd6 38. a6 Kc7 39. c5 Rc3 40. Raa5 Rc1 41. Rb3! Kc6 42. Rb6+ Kc7 43. Kf2 Rc2+ 44. Ke3 Rxc5 45. Rb7+! 1-0
 
 #### 2005 · Topalov – Kasimdzhanov (Turnuva)
 
@@ -388,7 +388,7 @@ Sekiz oyunculu çift turlu döner turnuvayı Topalov kazandı. İzleyeceğiniz o
 [EventLine "Dünya Şampiyonası, 7. tur, San Luis, 2005"]
 [View "player"]
 
-1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3! O-O 8. h3 Bb7 9. d3 d6 10. a3 Na5 11. Ba2 c5 12. Nbd2 Nc6 13. Nf1 Bc8 14. c3 Be6 15. Bxe6 fxe6 16. b4 Qd7 17. Qb3 Rfb8 18. N1h2 a5 19. Bd2 h6 20. Ng4 Nxg4 21. hxg4 axb4 22. axb4 cxb4 23. cxb4 Bf6 24. Rec1 Kf7 25. g3 Qb7 26. Kg2 Rxa1 27. Rxa1 Ra8 28. Rh1 Nd4 29. Nxd4 exd4 30. Bf4 d5 31. e5 Be7 32. Qd1 Bg5 33. Bxg5 hxg5 34. Rh5 Qe7 35. Qh1 Rf8 36. Rh7 Ke8 37. Qa1 Kf7 38. Qc1 Ke8 39. Qa1 Kf7 40. Qxd4? Kg8 41. Rh1 Qf7 42. Qe3 d4 43. Qe2 Qb7+ 44. Qe4 Qxe4+ 45. dxe4 Rc8 46. Rb1 Rc3 47. Rb2 Kf7 48. Kf1 Rc1+ 49. Ke2 Rc3 50. Ra2 Rb3 51. Ra7+ Kf8 52. Rb7 Rxb4 53. Kd3 Rb2 54. f4 Rb3+ 55. Kxd4 Rxg3 56. f5 Rxg4 57. f6 Rg1 58. Rxg7 b4 59. Kc5 b3 60. Rb7! Ra1! 61. Rxb3 Ra5+ 62. Kd4 Ra4+! 63. Ke3 Ra5 64. Rb8+ Kf7 65. Rb7+ Kf8 66. Kd4 Ra4+ 67. Kc5 Ra5+ 68. Kd4 Ra4+ 69. Ke3 Ra3+ 70. Kf2 Ra5 71. Kg3 Rxe5 72. Kg4 Rxe4+ 73. Kh5! 1-0
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3! O-O 8. h3 Bb7 9. d3 d6 10. a3 Na5 11. Ba2 c5 12. Nbd2 Nc6 13. Nf1 Bc8 14. c3 Be6 15. Bxe6 fxe6 16. b4 Qd7 17. Qb3 Rfb8 18. N1h2 a5 19. Bd2 h6 20. Ng4 Nxg4 21. hxg4 axb4 22. axb4 cxb4 23. cxb4 Bf6 24. Rec1 Kf7 25. g3 Qb7 26. Kg2 Rxa1 27. Rxa1 Ra8 28. Rh1 Nd4 29. Nxd4 exd4 30. Bf4 d5 31. e5 Be7 32. Qd1 Bg5 33. Bxg5 hxg5 34. Rh5 Qe7 35. Qh1 Rf8 36. Rh7 Ke8 37. Qa1 Kf7 38. Qc1 Ke8 39. Qa1 Kf7 40. Qxd4? Kg8 41. Rh1 Qf7 42. Qe3 d4 43. Qe2 Qb7+ 44. Qe4 Qxe4+ 45. dxe4 Rc8 46. Rb1 Rc3 47. Rb2 Kf7 48. Kf1 Rc1+ 49. Ke2 Rc3 50. Ra2 Rb3 51. Ra7+ Kf8 52. Rb7 Rxb4 53. Kd3 Rb2 54. f4 Rb3+ 55. Kxd4 Rxg3 56. f5 Rxg4 57. f6 Rg1 58. Rxg7 b4? 59. Kc5 b3 60. Rb7! Ra1! 61. Rxb3 Ra5+ 62. Kd4 Ra4+! 63. Ke3 Ra5 64. Rb8+ Kf7 65. Rb7+ Kf8 66. Kd4 Ra4+ 67. Kc5 Ra5+ 68. Kd4 Ra4+ 69. Ke3 Ra3+ 70. Kf2 Ra5 71. Kg3 Rxe5 72. Kg4 Rxe4+ 73. Kh5! 1-0
 
 #### 2004 · Kasimdzhanov – Adams (FIDE)
 
@@ -412,7 +412,7 @@ Eleme turnuvasının finalinde Kasimdzhanov 4½–3½ kazandı. İzleyeceğiniz 
 [EventLine "Dünya Şampiyonası, 7. oyun, Trablus, 2004"]
 [View "player"]
 
-1. e4 c5 2. Nf3 Nc6 3. Bb5 d6 4. O-O Bd7 5. Re1 Nf6 6. c3 a6 7. Ba4 b5 8. Bc2 Rc8 9. a4 g6 10. axb5 axb5 11. d4 cxd4 12. cxd4 Bg4 13. Nc3 b4 14. Ne2 Bg7 15. d5 Bxf3 16. gxf3 Ne5 17. Ba4+ Nfd7 18. Nd4 O-O 19. f4 Nc4 20. Nc6 Rxc6 21. dxc6 Nc5 22. Qe2 Nb6 23. Bb5 Nb3 24. Ra6 Nd4 25. Qd3 Na8 26. Ra4 Nc7 27. Rxb4 Qb8 28. Rxd4 Bxd4 29. Qxd4 Qxb5 30. f5 Rc8 31. Bh6 Ne8 32. e5 Rxc6 33. exd6 Rxd6 34. Qe5 Qxe5 35. Rxe5 Rd7 36. Rc5 f6 37. fxg6 hxg6 38. Be3 Rb7 39. Bd4 Kf7 40. Kg2 Nd6 41. Bc3 e5 42. Ra5 Nc4 43. Ra1 Rb6 44. b4 Nd6 45. Rb1 Ke6 46. Bd2 f5 47. Be3 Rb7 48. Bc5 Ne4 49. Rd1 Rc7 50. Bb6 Rc6 51. Ba7 Ra6 52. Be3 f4 53. Bc1? Ra4 54. Re1 Kf5 55. Bb2 Rxb4 56. Bxe5 f3+! 57. Kxf3 Kxe5! 58. Kg4 Kf6! 59. f4 Nf2+ 60. Kg3 Nd3 0-1
+1. e4 c5 2. Nf3 Nc6 3. Bb5 d6 4. O-O Bd7 5. Re1 Nf6 6. c3 a6 7. Ba4 b5 8. Bc2 Rc8 9. a4 g6 10. axb5 axb5 11. d4 cxd4 12. cxd4 Bg4 13. Nc3 b4 14. Ne2 Bg7 15. d5 Bxf3 16. gxf3 Ne5 17. Ba4+ Nfd7 18. Nd4 O-O 19. f4 Nc4 20. Nc6 Rxc6 21. dxc6 Nc5 22. Qe2 Nb6 23. Bb5 Nb3 24. Ra6 Nd4 25. Qd3 Na8 26. Ra4 Nc7 27. Rxb4 Qb8 28. Rxd4 Bxd4 29. Qxd4 Qxb5 30. f5 Rc8 31. Bh6 Ne8 32. e5 Rxc6 33. exd6 Rxd6 34. Qe5 Qxe5 35. Rxe5 Rd7 36. Rc5 f6 37. fxg6 hxg6 38. Be3 Rb7 39. Bd4 Kf7 40. Kg2 Nd6 41. Bc3 e5 42. Ra5 Nc4 43. Ra1 Rb6 44. b4 Nd6 45. Rb1 Ke6 46. Bd2 f5 47. Be3 Rb7 48. Bc5 Ne4 49. Rd1 Rc7 50. Bb6 Rc6 51. Ba7 Ra6 52. Be3 f4 53. Bc1?! Ra4 54. Re1 Kf5 55. Bb2 Rxb4 56. Bxe5 f3+! 57. Kxf3 Kxe5! 58. Kg4 Kf6! 59. f4 Nf2+ 60. Kg3 Nd3 0-1
 
 #### 2004 · Kramnik – Leko
 
@@ -459,7 +459,7 @@ Finali Ponomariov 4½–2½ kazandı. İzleyeceğiniz oyun, 5. oyun.
 [EventLine "Dünya Şampiyonası, 5. oyun, Moskova, 2002"]
 [View "player"]
 
-1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3! O-O 8. h3 Bb7 9. d3 d6 10. a3 Nb8 11. Nbd2 Nbd7 12. Nf1 Re8 13. Ng3 c6 14. Nh2 d5 15. Qf3 g6 16. Ba2 Bf8 17. Bg5 h6 18. Bd2 Bg7 19. Ng4 Nxg4 20. hxg4 Nc5 21. Rad1 Rc8 22. Nf1 Ne6 23. Qg3 Kh7 24. Nh2 f6 25. Nf3 c5 26. Qh2 Nd4 27. Nxd4 cxd4 28. c3 dxc3 29. bxc3 dxe4 30. dxe4 Qe7 31. a4 bxa4 32. Qh3 Red8 33. Qf3 Rc7 34. Bc1 Rcd7 35. Bb1?! Qe6 36. Rxd7 Rxd7 37. Bc2 Bc6 38. Rd1 Qa2 39. Rxd7 Bxd7 40. Qd1 Bb5 41. Be3 Qc4 42. Kh2 Bc6 43. Qa1 Bf8 44. Bb1 a3 45. f3 Qb3 46. Qa2 Ba4 47. Kg3 Kg7? 48. Qd2! g5 49. Ba2! Qb7 50. Qd3 Be8 51. Qd5 Qxd5 52. exd5 a5 53. c4 Bb4 54. c5 Kf8 55. Kf2 Bb5 56. c6 Ke7 57. Ba7 Kd8 58. Bb6+ Kc8?! 59. Ke3 a4?! 60. Ke4 Be2? 61. Kf5! e4 62. Ke6 exf3? 63. d6 Bxd6 64. Kxd6 1-0
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3! O-O 8. h3 Bb7 9. d3 d6 10. a3 Nb8 11. Nbd2 Nbd7 12. Nf1 Re8 13. Ng3 c6 14. Nh2 d5 15. Qf3 g6 16. Ba2 Bf8 17. Bg5 h6 18. Bd2 Bg7 19. Ng4 Nxg4 20. hxg4 Nc5 21. Rad1 Rc8 22. Nf1 Ne6 23. Qg3 Kh7 24. Nh2 f6 25. Nf3 c5 26. Qh2 Nd4 27. Nxd4 cxd4 28. c3 dxc3 29. bxc3 dxe4 30. dxe4 Qe7 31. a4 bxa4 32. Qh3 Red8 33. Qf3 Rc7 34. Bc1 Rcd7 35. Bb1 Qe6 36. Rxd7 Rxd7 37. Bc2?! Bc6 38. Rd1 Qa2 39. Rxd7 Bxd7 40. Qd1 Bb5 41. Be3 Qc4 42. Kh2 Bc6 43. Qa1 Bf8 44. Bb1 a3 45. f3 Qb3 46. Qa2 Ba4 47. Kg3 Kg7? 48. Qd2! g5 49. Ba2! Qb7 50. Qd3 Be8 51. Qd5 Qxd5 52. exd5 a5 53. c4 Bb4 54. c5 Kf8 55. Kf2 Bb5 56. c6 Ke7 57. Ba7 Kd8 58. Bb6+ Kc8? 59. Ke3 a4? 60. Ke4 Be2 61. Kf5! e4 62. Ke6 exf3?! 63. d6 Bxd6 64. Kxd6 1-0
 
 #### 2000 · Kramnik – Kasparov
 
@@ -484,7 +484,7 @@ Kramnik, 15 oyunda 8½–6½ kazandı: iki galibiyet aldı, hiç yenilmedi. İzl
 [EventLine "Dünya Şampiyonası, 10. oyun, Londra, 2000"]
 [View "player"]
 
-1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 d5 6. Nf3 c5 7. O-O cxd4 8. exd4 dxc4 9. Bxc4 b6 10. Bg5 Bb7 11. Re1 Nbd7 12. Rc1 Rc8 13. Qb3 Be7 14. Bxf6 Nxf6 15. Bxe6 fxe6 16. Qxe6+ Kh8!! 17. Qxe7! Bxf3 18. gxf3 Qxd4 19. Nb5 Qxb2 20. Rxc8 Rxc8 21. Nd6 Rb8 22. Nf7+ Kg8 23. Qe6 Rf8? 24. Nd8+ Kh8! 25. Qe7 1-0
+1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 d5 6. Nf3 c5 7. O-O cxd4 8. exd4 dxc4 9. Bxc4 b6 10. Bg5 Bb7 11. Re1 Nbd7 12. Rc1 Rc8 13. Qb3 Be7 14. Bxf6 Nxf6 15. Bxe6 fxe6 16. Qxe6+ Kh8!! 17. Qxe7! Bxf3 18. gxf3 Qxd4 19. Nb5 Qxb2? 20. Rxc8 Rxc8 21. Nd6 Rb8 22. Nf7+ Kg8 23. Qe6 Rf8 24. Nd8+ Kh8! 25. Qe7 1-0
 
 #### 2000 · Anand – Shirov (FIDE)
 
@@ -533,7 +533,7 @@ Tek elemeli turnuvanın finalini Khalifman 3½–2½ kazandı. İzleyeceğiniz o
 [EventLine "Dünya Şampiyonası, 4. oyun, Las Vegas, 1999"]
 [View "player"]
 
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2 O-O 6. Nf3 e5 7. Be3 exd4 8. Nxd4 Re8 9. f3 c6 10. Bf2 d5 11. exd5 cxd5 12. O-O Nc6 13. c5 Nh5 14. Qd2 Be5 15. g3 Ng7 16. Rfd1 Be6 17. Nxe6 fxe6 18. f4 Bf6 19. Nb5 Be7 20. Rac1 a6 21. Nd4 Bf6 22. Nf3 Qa5 23. Qxa5 Nxa5 24. b4 Nc6 25. Rb1 h6 26. a4 g5 27. fxg5 hxg5 28. g4 Ne5 29. Nxe5 Bxe5 30. Be3 Rf8 31. Rf1 Bf4 32. Bxf4 gxf4 33. Bf3 Rf7 34. a5 Rd8 35. Rbe1 d4 36. Re4 d3 37. Bd1 d2 38. Rfxf4 Rxf4 39. Rxf4 Ne8 40. Kf2 Nc7 41. h4 e5 42. Rc4 Nd5 43. Kf3 Rf8+ 44. Ke2 Rd8 45. Kf3 Rf8+ 46. Ke2 Rd8 47. Rc2 Nf4+ 48. Ke3 Nd5+ 49. Ke2 Nf4+ 50. Kf3 Kf7 51. c6 bxc6 52. Rxc6 Rd3+ 53. Ke4! Ke7 54. h5 Rd4+ 55. Kxe5 Rxb4 56. Rc7+! Kf8 57. Rd7 Ng2 58. h6 Kg8 59. g5 Ne3 60. g6 Rb5+ 61. Ke4 1-0
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2 O-O 6. Nf3 e5 7. Be3 exd4 8. Nxd4 Re8 9. f3 c6 10. Bf2 d5 11. exd5 cxd5 12. O-O Nc6 13. c5 Nh5 14. Qd2 Be5 15. g3 Ng7 16. Rfd1 Be6 17. Nxe6 fxe6 18. f4 Bf6 19. Nb5 Be7 20. Rac1 a6 21. Nd4 Bf6 22. Nf3 Qa5 23. Qxa5 Nxa5 24. b4 Nc6 25. Rb1 h6 26. a4 g5 27. fxg5 hxg5 28. g4 Ne5 29. Nxe5 Bxe5 30. Be3 Rf8 31. Rf1 Bf4 32. Bxf4 gxf4 33. Bf3 Rf7 34. a5 Rd8 35. Rbe1 d4 36. Re4 d3 37. Bd1 d2 38. Rfxf4 Rxf4 39. Rxf4 Ne8 40. Kf2 Nc7 41. h4 e5 42. Rc4 Nd5 43. Kf3 Rf8+ 44. Ke2 Rd8 45. Kf3 Rf8+ 46. Ke2 Rd8 47. Rc2 Nf4+ 48. Ke3 Nd5+ 49. Ke2 Nf4+ 50. Kf3 Kf7 51. c6 bxc6 52. Rxc6 Rd3+ 53. Ke4! Ke7 54. h5 Rd4+ 55. Kxe5 Rxb4 56. Rc7+! Kf8 57. Rd7 Ng2 58. h6 Kg8 59. g5 Ne3?! 60. g6 Rb5+ 61. Ke4 1-0
 
 #### 1998 · Karpov – Anand (FIDE)
 
@@ -556,7 +556,7 @@ Eleme turnuvasının finalinde klasik oyunlardan sonra hızlı oyunlar belirleyi
 [EventLine "Dünya Şampiyonası, hızlı oyun, Lozan, 1998"]
 [View "player"]
 
-1. Nf3 d5 2. g3 Nf6 3. Bg2 c6 4. O-O Bg4 5. d3 Nbd7 6. Nbd2 e6 7. e4 Be7 8. Qe2 O-O 9. h3 Bh5 10. Re1 dxe4 11. dxe4 e5 12. b3 Qc7 13. Bb2 Rfe8 14. Qf1 Rad8 15. a3 b5 16. Bc3 Bf8 17. Nh4 Nc5 18. Bf3 Bg6 19. Nxg6 hxg6 20. Bg2 a6 21. Qe2 Ne6 22. Nf3 Nd7 23. a4 b4 24. Bb2 a5 25. c3 bxc3 26. Bxc3 Rb8 27. Rab1 Bb4 28. Rec1 Bxc3 29. Rxc3 c5 30. Qe3 Qd6 31. h4 Nd4 32. Bh3 Nb6 33. Rbc1 c4 34. bxc4 Nxa4 35. c5 Qe7 36. Ra3 Nxc5 37. Rac3 Ncb3 38. Rc7 Qf6 39. R1c3 Nxf3+?! 40. Qxf3 a4 41. Qxf6 gxf6 42. Bd7 Nd4 43. Bxe8 Ne2+ 44. Kg2 Nxc3! 45. Bxf7+ Kf8! 46. Bxg6 Nb5! 47. Rf7+ Kg8! 48. Rxf6 Ra8 49. h5 a3 50. h6 a2 51. Bf7+ Kh7 52. Bxa2!! Rxa2 53. g4 Nc3 54. g5 Nxe4 55. Rf7+ Kg6? 56. Rg7+! Kf5 57. h7! Rxf2+ 58. Kg1 Kg4 59. h8=Q Kg3 60. Re7 Rg2+ 61. Kf1! Nd2+ 62. Ke1 1-0
+1. Nf3 d5 2. g3 Nf6 3. Bg2 c6 4. O-O Bg4 5. d3 Nbd7 6. Nbd2 e6 7. e4 Be7 8. Qe2 O-O 9. h3 Bh5 10. Re1 dxe4 11. dxe4 e5 12. b3 Qc7 13. Bb2 Rfe8 14. Qf1 Rad8 15. a3 b5 16. Bc3 Bf8 17. Nh4 Nc5 18. Bf3 Bg6 19. Nxg6 hxg6 20. Bg2 a6 21. Qe2 Ne6 22. Nf3 Nd7 23. a4 b4 24. Bb2 a5 25. c3 bxc3 26. Bxc3 Rb8 27. Rab1 Bb4 28. Rec1 Bxc3 29. Rxc3 c5 30. Qe3 Qd6 31. h4 Nd4 32. Bh3 Nb6 33. Rbc1 c4 34. bxc4 Nxa4 35. c5 Qe7 36. Ra3 Nxc5 37. Rac3 Ncb3 38. Rc7 Qf6 39. R1c3 Nxf3+?! 40. Qxf3 a4 41. Qxf6 gxf6 42. Bd7 Nd4 43. Bxe8 Ne2+ 44. Kg2 Nxc3! 45. Bxf7+ Kf8! 46. Bxg6 Nb5! 47. Rf7+ Kg8! 48. Rxf6 Ra8 49. h5 a3 50. h6 a2 51. Bf7+ Kh7 52. Bxa2!! Rxa2 53. g4 Nc3 54. g5 Nxe4 55. Rf7+ Kg6?? 56. Rg7+! Kf5 57. h7! Rxf2+ 58. Kg1 Kg4 59. h8=Q Kg3 60. Re7 Rg2+ 61. Kf1! Nd2+ 62. Ke1 1-0
 
 #### 1996 · Karpov – Kamsky (FIDE)
 
@@ -579,7 +579,7 @@ Karpov ünvanını 10½–7½ ile korudu. İzleyeceğiniz oyun, 14. oyun.
 [EventLine "Dünya Şampiyonası, 14. oyun, Elista, 1996"]
 [View "player"]
 
-1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 c5 5. Bd3 Nc6 6. Ne2 cxd4 7. exd4 d5 8. cxd5 Nxd5 9. O-O Bd6 10. Ne4 Be7 11. a3 O-O 12. Bc2 Qc7 13. Qd3 Rd8 14. Ng5 g6 15. Bb3 Nf6 16. Rd1 Bf8 17. Bf4 Qe7 18. Qe3 Nd5 19. Bxd5 exd5 20. Nf3 Qxe3 21. fxe3 f6 22. Rac1 Bf5 23. h3 h5 24. Nc3 g5 25. Bh2 h4 26. Nd2 Kf7 27. Nb3 Rac8 28. Nb5 a6 29. Nc3 b5 30. Ne2 b4 31. a4 Re8 32. Kf2 Kg6 33. Ng1 Na7 34. Nc5 Rc6 35. Nf3 Rec8 36. b3 a5 37. Ke2 Be4 38. Kd2 Bxc5 39. dxc5 Rxc5 40. Rxc5 Rxc5 41. Rc1 Rxc1 42. Kxc1 Nc6 43. Bc7 f5 44. Kd2 d4 45. exd4 f4 46. Ke2 Bd5 47. Kf2 Bxb3! 48. Ne5+ Nxe5 49. dxe5 Bxa4! 50. Bxa5 b3! 51. Bc3 Kf5 52. Bb2 Bc6 53. Kf1 Bd5 54. Kf2 Ke4 55. Ke2 Bc4+ 56. Kd2 f3 57. gxf3+ Kxf3 58. e6 Bxe6 59. Bf6 g4 60. hxg4 h3 61. Be5 Bxg4 0-1
+1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 c5 5. Bd3 Nc6 6. Ne2 cxd4 7. exd4 d5 8. cxd5 Nxd5 9. O-O Bd6 10. Ne4 Be7 11. a3 O-O 12. Bc2 Qc7 13. Qd3 Rd8 14. Ng5 g6 15. Bb3 Nf6 16. Rd1 Bf8 17. Bf4 Qe7 18. Qe3 Nd5 19. Bxd5 exd5 20. Nf3 Qxe3 21. fxe3 f6 22. Rac1 Bf5 23. h3 h5 24. Nc3 g5 25. Bh2 h4 26. Nd2 Kf7 27. Nb3 Rac8 28. Nb5 a6 29. Nc3 b5 30. Ne2?! b4 31. a4 Re8 32. Kf2 Kg6 33. Ng1 Na7 34. Nc5 Rc6 35. Nf3 Rec8 36. b3?! a5 37. Ke2 Be4 38. Kd2 Bxc5 39. dxc5 Rxc5 40. Rxc5 Rxc5 41. Rc1 Rxc1 42. Kxc1 Nc6 43. Bc7 f5 44. Kd2 d4 45. exd4 f4 46. Ke2 Bd5 47. Kf2 Bxb3! 48. Ne5+ Nxe5 49. dxe5 Bxa4! 50. Bxa5 b3! 51. Bc3 Kf5 52. Bb2 Bc6 53. Kf1 Bd5 54. Kf2 Ke4 55. Ke2 Bc4+ 56. Kd2 f3 57. gxf3+ Kxf3 58. e6 Bxe6 59. Bf6 g4 60. hxg4 h3 61. Be5 Bxg4 0-1
 
 #### 1995 · Kasparov – Anand (PCA)
 
@@ -600,7 +600,7 @@ Maç, Dünya Ticaret Merkezi’nin tepesinde oynandı. Kasparov 10½–7½ kazan
 [EventLine "Dünya Şampiyonası, 14. oyun, New York, 1995"]
 [View "player"]
 
-1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. d4 Nf6 5. Nf3 c6 6. Ne5 Be6 7. Bd3 Nbd7 8. f4 g6 9. O-O Bg7 10. Kh1 Bf5 11. Bc4 e6 12. Be2 h5 13. Be3 Rd8 14. Bg1 O-O 15. Bf3 Nd5 16. Nxd5 exd5 17. Bf2 Qc7 18. Rc1 f6 19. Nd3 Rfe8 20. b3 Nb6 21. a4 Nc8 22. c4 Qf7 23. a5 Bf8 24. cxd5 cxd5 25. Bh4 Nd6 26. a6 b6 27. Ne5 Qe6 28. g4 hxg4 29. Nxg4 Bg7 30. Rc7 Ne4 31. Ne3 Bh3 32. Rg1 g5 33. Bg4 Bxg4 34. Qxg4 Qxg4 35. Rxg4 Nd6 36. Bf2 Nb5 37. Rb7 Re4?! 38. f5 Rxg4 39. Nxg4 Rc8 40. Rd7 Rc2? 41. Rxd5 1-0
+1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. d4 Nf6 5. Nf3 c6 6. Ne5 Be6 7. Bd3 Nbd7 8. f4 g6 9. O-O Bg7 10. Kh1 Bf5 11. Bc4 e6 12. Be2 h5 13. Be3 Rd8 14. Bg1 O-O 15. Bf3 Nd5 16. Nxd5 exd5 17. Bf2 Qc7 18. Rc1 f6 19. Nd3 Rfe8 20. b3 Nb6 21. a4 Nc8 22. c4 Qf7 23. a5 Bf8 24. cxd5 cxd5 25. Bh4 Nd6 26. a6 b6 27. Ne5 Qe6 28. g4 hxg4 29. Nxg4 Bg7 30. Rc7 Ne4 31. Ne3 Bh3 32. Rg1 g5 33. Bg4 Bxg4 34. Qxg4 Qxg4 35. Rxg4 Nd6 36. Bf2 Nb5 37. Rb7 Re4? 38. f5 Rxg4 39. Nxg4 Rc8 40. Rd7 Rc2?! 41. Rxd5 1-0
 
 #### 1993 · Karpov – Timman (FIDE)
 
@@ -646,7 +646,7 @@ Kasparov ve Short, FIDE’den ayrılıp kendi şampiyonluk maçlarını oynadı;
 [EventLine "Dünya Şampiyonası, 15. oyun, Londra, 1993"]
 [View "player"]
 
-1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 exd5 5. Bg5 Be7 6. e3 O-O 7. Bd3 Nbd7 8. Nge2 Re8 9. O-O Nf8 10. b4 a6 11. a3 c6 12. Qc2 g6 13. f3 Ne6 14. Bh4 Nh5 15. Bxe7 Rxe7 16. Qd2 b6 17. Rad1 Bb7 18. Bb1 Nhg7 19. e4 Rc8 20. Ba2 Rd7 21. Nf4 Nxf4 22. Qxf4 Ne6 23. Qe5 Re7 24. Qg3 Qc7 25. Qh4 Ng7 26. Rc1 Qd8 27. Rfd1 Rcc7 28. Na4 dxe4 29. fxe4 Qe8?! 30. Nc3 Rcd7 31. Qf2 Ne6 32. e5 c5 33. bxc5 bxc5 34. d5 Nd4?! 35. Ne4 Qd8 36. Nf6+ Kg7 37. Nxd7 Rxd7 38. Rxc5 Ne6 39. Rcc1 1-0
+1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 exd5 5. Bg5 Be7 6. e3 O-O 7. Bd3 Nbd7 8. Nge2 Re8 9. O-O Nf8 10. b4 a6 11. a3 c6 12. Qc2 g6 13. f3 Ne6 14. Bh4 Nh5 15. Bxe7 Rxe7 16. Qd2 b6 17. Rad1 Bb7 18. Bb1 Nhg7 19. e4 Rc8 20. Ba2 Rd7 21. Nf4 Nxf4 22. Qxf4 Ne6 23. Qe5 Re7 24. Qg3 Qc7 25. Qh4 Ng7 26. Rc1 Qd8 27. Rfd1 Rcc7 28. Na4 dxe4 29. fxe4 Qe8 30. Nc3 Rcd7 31. Qf2 Ne6 32. e5 c5?! 33. bxc5 bxc5 34. d5 Nd4?! 35. Ne4 Qd8 36. Nf6+ Kg7 37. Nxd7 Rxd7 38. Rxc5 Ne6 39. Rcc1 1-0
 
 #### 1990 · Kasparov – Karpov
 
@@ -692,7 +692,7 @@ Karpov son oyuna 12–11 önde girdi, ama Kasparov 24. oyunu kazanıp maçı 12�
 [EventLine "Dünya Şampiyonası, 24. oyun, Sevilla, 1987"]
 [View "player"]
 
-1. c4 e6 2. Nf3 Nf6 3. g3 d5 4. b3 Be7 5. Bg2 O-O 6. O-O b6 7. Bb2 Bb7 8. e3 Nbd7 9. Nc3 Ne4 10. Ne2 a5 11. d3 Bf6 12. Qc2 Bxb2 13. Qxb2 Nd6 14. cxd5 Bxd5 15. d4 c5 16. Rfd1 Rc8 17. Nf4 Bxf3 18. Bxf3 Qe7 19. Rac1 Rfd8 20. dxc5 Nxc5 21. b4 axb4 22. Qxb4 Qa7 23. a3 Nf5 24. Rb1 Rxd1+ 25. Rxd1 Qc7 26. Nd3 h6 27. Rc1 Ne7 28. Qb5 Nf5 29. a4 Nd6 30. Qb1! Qa7 31. Ne5 Nxa4? 32. Rxc8+! Nxc8 33. Qd1? Ne7?! 34. Qd8+ Kh7 35. Nxf7 Ng6! 36. Qe8 Qe7 37. Qxa4 Qxf7 38. Be4 Kg8 39. Qb5 Nf8 40. Qxb6 Qf6 41. Qb5 Qe7 42. Kg2 g6 43. Qa5 Qg7 44. Qc5 Qf7 45. h4 h5 46. Qc6 Qe7 47. Bd3 Qf7 48. Qd6 Kg7 49. e4 Kg8 50. Bc4 Kg7 51. Qe5+ Kg8 52. Qd6 Kg7 53. Bb5 Kg8 54. Bc6 Qa7 55. Qb4 Qc7 56. Qb7 Qd8 57. e5 Qa5 58. Be8! Qc5 59. Qf7+ Kh8 60. Ba4 Qd5+ 61. Kh2 Qc5 62. Bb3 Qc8 63. Bd1 Qc5 64. Kg2 1-0
+1. c4 e6 2. Nf3 Nf6 3. g3 d5 4. b3 Be7 5. Bg2 O-O 6. O-O b6 7. Bb2 Bb7 8. e3 Nbd7 9. Nc3 Ne4 10. Ne2 a5 11. d3 Bf6 12. Qc2 Bxb2 13. Qxb2 Nd6 14. cxd5 Bxd5 15. d4 c5 16. Rfd1 Rc8 17. Nf4 Bxf3 18. Bxf3 Qe7 19. Rac1 Rfd8 20. dxc5 Nxc5 21. b4 axb4 22. Qxb4 Qa7 23. a3 Nf5 24. Rb1 Rxd1+ 25. Rxd1 Qc7 26. Nd3 h6 27. Rc1 Ne7 28. Qb5 Nf5 29. a4 Nd6 30. Qb1! Qa7 31. Ne5 Nxa4? 32. Rxc8+! Nxc8 33. Qd1?? Ne7?! 34. Qd8+ Kh7 35. Nxf7 Ng6! 36. Qe8 Qe7 37. Qxa4 Qxf7 38. Be4 Kg8 39. Qb5 Nf8 40. Qxb6 Qf6 41. Qb5 Qe7 42. Kg2 g6 43. Qa5 Qg7 44. Qc5 Qf7 45. h4 h5 46. Qc6 Qe7 47. Bd3 Qf7 48. Qd6 Kg7 49. e4 Kg8 50. Bc4 Kg7 51. Qe5+ Kg8 52. Qd6 Kg7 53. Bb5 Kg8 54. Bc6 Qa7 55. Qb4 Qc7 56. Qb7 Qd8?! 57. e5 Qa5 58. Be8! Qc5 59. Qf7+ Kh8 60. Ba4 Qd5+ 61. Kh2 Qc5 62. Bb3 Qc8 63. Bd1 Qc5 64. Kg2 1-0
 
 #### 1986 · Kasparov – Karpov
 
@@ -715,7 +715,7 @@ Kasparov ünvanını 12½–11½ ile korudu. İzleyeceğiniz oyun, 22. oyun.
 [EventLine "Dünya Şampiyonası, 22. oyun, Londra ve Leningrad, 1986"]
 [View "player"]
 
-1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 h6 6. Bxf6 Bxf6 7. e3 O-O 8. Rc1 c6 9. Bd3 Nd7 10. O-O dxc4 11. Bxc4 e5 12. h3 exd4 13. exd4 Nb6 14. Bb3 Bf5 15. Re1 a5 16. a3 Re8 17. Rxe8+ Qxe8 18. Qd2 Nd7 19. Qf4 Bg6 20. h4 Qd8 21. Na4 h5 22. Re1 b5 23. Nc3 Qb8 24. Qe3 b4 25. Ne4 bxa3 26. Nxf6+! Nxf6 27. bxa3! Nd5 28. Bxd5 cxd5 29. Ne5 Qd8 30. Qf3 Ra6 31. Rc1 Kh7 32. Qh3 Rb6 33. Rc8 Qd6 34. Qg3 a4 35. Ra8 Qe6 36. Rxa4 Qf5 37. Ra7 Rb1+ 38. Kh2 Rc1 39. Rb7 Rc2 40. f3 Rd2 41. Nd7 Rxd4! 42. Nf8+ Kh6! 43. Rb4! Rc4! 44. Rxc4 dxc4 45. Qd6! c3 46. Qd4! 1-0
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 h6 6. Bxf6 Bxf6 7. e3 O-O 8. Rc1 c6 9. Bd3 Nd7 10. O-O dxc4 11. Bxc4 e5 12. h3 exd4 13. exd4 Nb6 14. Bb3 Bf5 15. Re1 a5 16. a3 Re8 17. Rxe8+ Qxe8 18. Qd2 Nd7 19. Qf4 Bg6 20. h4 Qd8 21. Na4 h5 22. Re1 b5 23. Nc3 Qb8 24. Qe3 b4 25. Ne4 bxa3 26. Nxf6+! Nxf6 27. bxa3! Nd5 28. Bxd5 cxd5 29. Ne5 Qd8 30. Qf3 Ra6 31. Rc1 Kh7 32. Qh3 Rb6 33. Rc8 Qd6 34. Qg3 a4 35. Ra8 Qe6 36. Rxa4 Qf5 37. Ra7 Rb1+ 38. Kh2 Rc1?! 39. Rb7 Rc2 40. f3 Rd2 41. Nd7 Rxd4! 42. Nf8+ Kh6! 43. Rb4! Rc4! 44. Rxc4 dxc4 45. Qd6! c3 46. Qd4! 1-0
 
 #### 1985 · Kasparov – Karpov
 
@@ -786,7 +786,7 @@ Karpov 6–2’lik bir galibiyetle (18 oyun) ünvanını korudu. İzleyeceğiniz
 [EventLine "Dünya Şampiyonası, 18. oyun, Merano, 1981"]
 [View "player"]
 
-1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. Nbd2 Nc5 10. c3 d4 11. Bxe6 Nxe6 12. cxd4 Ncxd4 13. a4 Be7 14. Nxd4 Nxd4 15. Ne4 Ne6 16. Be3 O-O 17. f4 Qxd1 18. Rfxd1 Rfb8 19. Rd7 Bf8 20. f5 Nd8! 21. a5 Nc6 22. e6 fxe6 23. f6 Ne5 24. Rxc7 Rc8 25. Rac1 Rxc7 26. Rxc7 Rd8 27. h3 h6 28. Ra7 Nc4 29. Bb6 Rb8 30. Bc5 Bxc5+ 31. Nxc5 gxf6 32. b4 Rd8 33. Rxa6 Kf7 34. Ra7+ Kg6 35. Rd7 Re8 36. a6 Ra8 37. Rb7 Kf5 38. Rxb5 Ke5 39. Rb7 Kd5 40. Rf7 f5 41. Rf6 1-0
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. Nbd2 Nc5 10. c3 d4 11. Bxe6 Nxe6 12. cxd4 Ncxd4 13. a4 Be7 14. Nxd4 Nxd4 15. Ne4 Ne6 16. Be3 O-O 17. f4 Qxd1 18. Rfxd1 Rfb8 19. Rd7 Bf8 20. f5 Nd8! 21. a5 Nc6 22. e6 fxe6 23. f6 Ne5 24. Rxc7 Rc8 25. Rac1 Rxc7 26. Rxc7 Rd8 27. h3 h6 28. Ra7 Nc4 29. Bb6 Rb8?! 30. Bc5 Bxc5+ 31. Nxc5 gxf6 32. b4 Rd8 33. Rxa6 Kf7 34. Ra7+ Kg6 35. Rd7 Re8 36. a6 Ra8 37. Rb7 Kf5 38. Rxb5 Ke5 39. Rb7 Kd5 40. Rf7 f5 41. Rf6 1-0
 
 #### 1978 · Karpov – Korchnoi
 
@@ -809,7 +809,7 @@ Maç, 6 galibiyete kadar oynanan 32 oyunluk bir mücadeleydi. Karpov 5–2 önde
 [EventLine "Dünya Şampiyonası, 32. oyun, Baguio, 1978"]
 [View "player"]
 
-1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. Nf3 Bg7 5. Be2 O-O 6. O-O c5 7. d5 Na6 8. Bf4 Nc7 9. a4 b6 10. Re1 Bb7 11. Bc4 Nh5 12. Bg5 Nf6 13. Qd3 a6 14. Rad1 Rb8 15. h3 Nd7 16. Qe3 Ba8 17. Bh6 b5 18. Bxg7 Kxg7 19. Bf1 Nf6 20. axb5 axb5 21. Ne2 Bb7 22. Ng3 Ra8 23. c3 Ra4 24. Bd3 Qa8 25. e5 dxe5 26. Qxe5 Nxd5 27. Bxb5 Ra7 28. Nh4 Bc8?! 29. Be2 Be6 30. c4 Nb4 31. Qxc5 Qb8 32. Bf1 Rc8 33. Qg5 Kh8 34. Rd2 Nc6 35. Qh6 Rg8 36. Nf3 Qf8 37. Qe3 Kg7 38. Ng5 Bd7 39. b4 Qa8 40. b5 Na5 41. b6 Rb7 1-0
+1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. Nf3 Bg7 5. Be2 O-O 6. O-O c5 7. d5 Na6 8. Bf4 Nc7 9. a4 b6 10. Re1 Bb7 11. Bc4 Nh5 12. Bg5 Nf6 13. Qd3 a6 14. Rad1 Rb8 15. h3 Nd7 16. Qe3 Ba8 17. Bh6 b5 18. Bxg7 Kxg7 19. Bf1 Nf6 20. axb5 axb5 21. Ne2 Bb7 22. Ng3 Ra8 23. c3 Ra4 24. Bd3 Qa8 25. e5 dxe5 26. Qxe5 Nxd5 27. Bxb5 Ra7 28. Nh4?! Bc8?! 29. Be2 Be6 30. c4 Nb4 31. Qxc5 Qb8 32. Bf1 Rc8?! 33. Qg5 Kh8 34. Rd2 Nc6 35. Qh6 Rg8 36. Nf3 Qf8 37. Qe3 Kg7 38. Ng5 Bd7 39. b4 Qa8 40. b5 Na5 41. b6 Rb7 1-0
 
 #### 1972 · Fischer – Spassky
 
@@ -833,7 +833,7 @@ Fischer 12½–8½’lik skorla Sovyet şampiyonluğuna son verdi. İzleyeceğin
 [EventLine "Dünya Şampiyonası, 21. oyun, Reykjavik, 1972"]
 [View "player"]
 
-1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Nc3 Nc6 6. Be3 Nf6 7. Bd3 d5 8. exd5 exd5 9. O-O Bd6 10. Nxc6 bxc6 11. Bd4 O-O 12. Qf3 Be6 13. Rfe1 c5 14. Bxf6 Qxf6 15. Qxf6 gxf6 16. Rad1 Rfd8 17. Be2 Rab8 18. b3 c4 19. Nxd5 Bxd5 20. Rxd5 Bxh2+ 21. Kxh2 Rxd5! 22. Bxc4 Rd2 23. Bxa6 Rxc2 24. Re2 Rxe2 25. Bxe2 Rd8 26. a4 Rd2 27. Bc4 Ra2 28. Kg3 Kf8 29. Kf3 Ke7 30. g4 f5 31. gxf5 f6 32. Bg8 h6 33. Kg3 Kd6 34. Kf3 Ra1 35. Kg2 Ke5 36. Be6 Kf4 37. Bd7 Rb1 38. Be6 Rb2 39. Bc4 Ra2 40. Be6 h5 41. Bd7 0-1
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Nc3 Nc6 6. Be3 Nf6 7. Bd3 d5 8. exd5 exd5 9. O-O Bd6 10. Nxc6 bxc6 11. Bd4 O-O 12. Qf3 Be6 13. Rfe1 c5 14. Bxf6 Qxf6 15. Qxf6 gxf6 16. Rad1 Rfd8 17. Be2 Rab8 18. b3 c4 19. Nxd5 Bxd5 20. Rxd5 Bxh2+ 21. Kxh2 Rxd5! 22. Bxc4 Rd2 23. Bxa6 Rxc2 24. Re2 Rxe2 25. Bxe2 Rd8 26. a4 Rd2 27. Bc4 Ra2 28. Kg3 Kf8 29. Kf3 Ke7 30. g4 f5 31. gxf5 f6 32. Bg8 h6 33. Kg3 Kd6 34. Kf3?! Ra1 35. Kg2 Ke5 36. Be6 Kf4 37. Bd7 Rb1 38. Be6 Rb2 39. Bc4 Ra2 40. Be6 h5 41. Bd7?! 0-1
 
 #### 1969 · Spassky – Petrosian
 
@@ -854,7 +854,7 @@ Spassky maçı 23 oyunda 12½–10½ kazandı. İzleyeceğiniz oyun, 21. oyun.
 [EventLine "Dünya Şampiyonası, 21. oyun, Moskova, 1969"]
 [View "player"]
 
-1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3! O-O 8. c3 d6 9. h3 Nd7 10. d4 Bf6 11. Be3 Na5 12. Bc2 Nc4 13. Bc1 Bb7 14. b3 Ncb6 15. Be3 Re8 16. d5 Rc8 17. Nbd2 c6 18. c4 cxd5 19. cxd5 Qc7 20. Rc1 Qb8 21. a4 Nc5 22. axb5 axb5 23. Ra1 b4 24. Qe2 Nbd7 25. Bd3?! Nxd3?! 26. Qxd3 Ba8 27. Nc4 Nc5 28. Bxc5 Rxc5 29. Ra4 h6 30. Qd2 Be7 31. Rea1 Bb7 32. Qxb4 f5 33. Ra7 Rc7 34. exf5 Qc8 35. Ne3 e4 36. Nd4 Bf6 37. Rf1?! Ba6 38. Rxc7 Qxc7 39. Qa4 Ra8 40. Rd1 Qb8 41. Nc6 Qb7 42. Qxe4 Qxb3 43. Re1 Bc3 44. Rb1 Qa2 45. Nb4 Qa4 46. Qe6+ Kh8 47. Qxd6 Be2 48. Nc6 Qa2 49. Rb8+ Rxb8 50. Qxb8+ Kh7 51. Qg3 Bh5 52. Kh2 Be1? 53. f6 1-0
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3! O-O 8. c3 d6 9. h3 Nd7 10. d4 Bf6 11. Be3 Na5 12. Bc2 Nc4 13. Bc1 Bb7 14. b3 Ncb6 15. Be3 Re8 16. d5 Rc8 17. Nbd2 c6 18. c4 cxd5 19. cxd5 Qc7 20. Rc1 Qb8 21. a4 Nc5 22. axb5 axb5 23. Ra1 b4 24. Qe2 Nbd7 25. Bd3 Nxd3?! 26. Qxd3 Ba8 27. Nc4 Nc5 28. Bxc5 Rxc5 29. Ra4 h6 30. Qd2 Be7 31. Rea1 Bb7 32. Qxb4 f5 33. Ra7 Rc7 34. exf5 Qc8 35. Ne3 e4 36. Nd4 Bf6 37. Rf1 Ba6 38. Rxc7 Qxc7 39. Qa4 Ra8 40. Rd1 Qb8 41. Nc6 Qb7 42. Qxe4 Qxb3 43. Re1 Bc3 44. Rb1 Qa2 45. Nb4 Qa4 46. Qe6+ Kh8 47. Qxd6 Be2 48. Nc6 Qa2 49. Rb8+ Rxb8 50. Qxb8+ Kh7 51. Qg3 Bh5 52. Kh2 Be1? 53. f6 1-0
 
 #### 1966 · Petrosian – Spassky
 
@@ -873,7 +873,7 @@ Petrosian ünvanını 12½–11½ gibi dar bir farkla korudu. İzleyeceğiniz oy
 [EventLine "Dünya Şampiyonası, 22. oyun, Moskova, 1966"]
 [View "player"]
 
-1. d4 b5 2. e4 Bb7 3. f3 a6 4. Be3 e6 5. Nd2 Nf6 6. c3 Be7 7. Bd3 d6 8. a4 c6 9. Ne2 Nbd7 10. O-O O-O 11. Ng3 Re8 12. axb5 axb5 13. Rxa8 Qxa8 14. Qc2 Bf8 15. b4 Qb8 16. Nb3 g6 17. Ra1 e5 18. Qf2 d5 19. dxe5 Nxe5 20. Bc2 Bg7 21. Ba7 Qc7 22. Bb6 Qb8 23. Ba7 Qc7 24. Bb6 Qb8 25. Ba7 Qc8 26. Bd4 h5 27. h3 h4 28. Nf1 dxe4 29. fxe4 Ned7 30. Nfd2 c5 31. Nxc5 Nxc5 32. bxc5 Bxe4 33. Bb3 Bf5 34. Ra7 Nd7 35. Nf3 Qb8 1-0
+1. d4 b5 2. e4 Bb7 3. f3 a6 4. Be3 e6 5. Nd2 Nf6 6. c3 Be7 7. Bd3 d6 8. a4 c6 9. Ne2 Nbd7 10. O-O O-O 11. Ng3 Re8 12. axb5 axb5 13. Rxa8 Qxa8 14. Qc2 Bf8 15. b4 Qb8 16. Nb3 g6 17. Ra1 e5 18. Qf2 d5 19. dxe5 Nxe5 20. Bc2 Bg7 21. Ba7 Qc7 22. Bb6 Qb8 23. Ba7 Qc7 24. Bb6 Qb8 25. Ba7 Qc8 26. Bd4 h5 27. h3 h4 28. Nf1 dxe4 29. fxe4 Ned7 30. Nfd2 c5 31. Nxc5 Nxc5 32. bxc5 Bxe4 33. Bb3 Bf5 34. Ra7 Nd7 35. Nf3 Qb8?! 1-0
 
 #### 1963 · Petrosian – Botvinnik
 
@@ -894,7 +894,7 @@ Petrosian maçı 22 oyunda 12½–9½ kazandı; bu maçtan sonra kaybeden şampi
 [EventLine "Dünya Şampiyonası, 19. oyun, Moskova, 1963"]
 [View "player"]
 
-1. c4 Nf6 2. Nc3 e6 3. Nf3 b6 4. g3 Bb7 5. Bg2 Be7 6. O-O O-O 7. d4 Ne4 8. Qc2 Nxc3 9. Qxc3 f5 10. b3 Bf6 11. Bb2 d6 12. Rad1 Nd7 13. Ne1 Bxg2 14. Nxg2 Bg5 15. Qc2 Bh6 16. e4 f4 17. Ne1 Qe7 18. e5 dxe5 19. dxe5 Rad8 20. Qe2 Qg5 21. Kg2 a5 22. Nf3 Qh5 23. Ba3 Rfe8 24. Rd4 Nb8 25. Rfd1 Rxd4 26. Rxd4 fxg3 27. hxg3 Qf7 28. Qe4 g6 29. Qb7 Bg7 30. c5 bxc5 31. Bxc5 Nd7 32. Qxc7 Nxe5 33. Qxf7+! Nxf7 34. Ra4 Bc3 35. Rc4 Bf6 36. Bb6 Ra8 37. Ra4 Bc3 38. Bd4 Bb4 39. a3 Bd6 40. b4 Bc7 41. Bc3 Kf8 42. b5 Ke8 43. Rc4 Kd7 44. a4 Rc8 45. Nd2 Nd6 46. Rd4 Ke7 47. Rd3 Nb7 48. Ne4 e5 49. Bb2 Bb6 50. Ba3+ Ke6 51. Ng5+! Kf5 52. Nxh7?! e4?! 53. g4+? Kf4 54. Rd7 Rc7 55. Rxc7 Bxc7 56. Nf6 Bd8 57. Nd7 Kxg4 58. b6 Bg5 59. Nc5 Nxc5 60. Bxc5 Bf4 61. b7?! Bb8 62. Be3?! g5 63. Bd2 Kf5! 64. Kh3 Bd6?! 65. Bxa5! g4+ 66. Kg2 1-0
+1. c4 Nf6 2. Nc3 e6 3. Nf3 b6 4. g3 Bb7 5. Bg2 Be7 6. O-O O-O 7. d4 Ne4 8. Qc2 Nxc3 9. Qxc3 f5 10. b3 Bf6 11. Bb2 d6 12. Rad1 Nd7 13. Ne1 Bxg2 14. Nxg2 Bg5 15. Qc2 Bh6 16. e4 f4 17. Ne1 Qe7 18. e5 dxe5 19. dxe5 Rad8 20. Qe2 Qg5 21. Kg2 a5 22. Nf3 Qh5 23. Ba3 Rfe8 24. Rd4 Nb8 25. Rfd1 Rxd4 26. Rxd4 fxg3 27. hxg3 Qf7 28. Qe4 g6 29. Qb7 Bg7 30. c5 bxc5 31. Bxc5 Nd7 32. Qxc7 Nxe5 33. Qxf7+! Nxf7 34. Ra4 Bc3 35. Rc4 Bf6 36. Bb6 Ra8 37. Ra4 Bc3 38. Bd4 Bb4 39. a3 Bd6 40. b4 Bc7 41. Bc3 Kf8 42. b5 Ke8 43. Rc4 Kd7 44. a4 Rc8 45. Nd2 Nd6 46. Rd4 Ke7 47. Rd3 Nb7 48. Ne4 e5 49. Bb2 Bb6 50. Ba3+ Ke6?! 51. Ng5+! Kf5 52. Nxh7? e4? 53. g4+? Kf4 54. Rd7 Rc7 55. Rxc7 Bxc7 56. Nf6 Bd8 57. Nd7 Kxg4 58. b6 Bg5 59. Nc5 Nxc5?! 60. Bxc5 Bf4 61. b7 Bb8 62. Be3 g5 63. Bd2 Kf5! 64. Kh3 Bd6? 65. Bxa5! g4+ 66. Kg2 1-0
 
 #### 1961 · Botvinnik – Tal
 
@@ -915,7 +915,7 @@ Rövanşta Botvinnik 21 oyunda 13–8 kazandı. İzleyeceğiniz oyun, 21. oyun.
 [EventLine "Dünya Şampiyonası, 21. oyun, Moskova, 1961"]
 [View "player"]
 
-1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 Nbd7 6. Be3 e5 7. Nge2 O-O 8. d5 Nh5 9. Qd2 f5 10. O-O-O a6 11. Kb1 Ndf6 12. exf5 gxf5 13. Ng3 Qe8 14. Bd3 Nxg3?! 15. hxg3 c5 16. Bh6 Qg6 17. g4 b5 18. Bxg7 Kxg7 19. Rh4 bxc4 20. Bc2 h6 21. Rdh1 Qg5 22. Qxg5+ hxg5 23. Rh6 fxg4 24. fxg4 Bxg4 25. Rg6+! Kf7 26. Rf1! Ke7 27. Rg7+! Ke8 28. Ne4 Nd7 29. Nxd6+ Kd8 30. Rxf8+ Nxf8 31. Nxc4 Bd7 32. Rf7 Kc7 33. d6+ 1-0
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 Nbd7 6. Be3 e5 7. Nge2 O-O 8. d5 Nh5 9. Qd2 f5 10. O-O-O a6 11. Kb1 Ndf6 12. exf5 gxf5 13. Ng3 Qe8 14. Bd3 Nxg3?! 15. hxg3 c5 16. Bh6 Qg6 17. g4 b5 18. Bxg7 Kxg7 19. Rh4?! bxc4 20. Bc2 h6 21. Rdh1 Qg5 22. Qxg5+ hxg5 23. Rh6 fxg4 24. fxg4 Bxg4 25. Rg6+! Kf7 26. Rf1! Ke7 27. Rg7+! Ke8 28. Ne4 Nd7 29. Nxd6+ Kd8 30. Rxf8+ Nxf8 31. Nxc4 Bd7 32. Rf7 Kc7 33. d6+ 1-0
 
 #### 1960 · Tal – Botvinnik
 
@@ -936,7 +936,7 @@ Rövanşta Botvinnik 21 oyunda 13–8 kazandı. İzleyeceğiniz oyun, 21. oyun.
 [EventLine "Dünya Şampiyonası, 19. oyun, Moskova, 1960"]
 [View "player"]
 
-1. c4 f5 2. Nf3 Nf6 3. g3 g6 4. Bg2 Bg7 5. d4 d6 6. Nc3 e6 7. O-O O-O 8. Qc2 Nc6 9. Rd1 Qe7 10. Rb1 a5 11. a3 Nd8 12. e4 fxe4 13. Nxe4 Nxe4 14. Qxe4 Nf7 15. Bh3 Qf6 16. Bd2 d5 17. Qe2 dxc4 18. Bf4 Nd6?! 19. Ng5 Re8 20. Bg2 Ra6 21. Ne4 Nxe4 22. Bxe4 b5 23. b3 cxb3 24. Qxb5 Rf8 25. Qxb3 Rb6 26. Qe3 Rxb1 27. Bxb1 Bb7 28. Ba2 Bd5 29. Bxd5 exd5 30. Bxc7 a4 31. Rd3 Qf5 32. Be5 Bh6 33. Qe2 Rc8 34. Rf3 Qh3?! 35. Bc7 Bf8 36. Qb5 Qe6 37. Be5 Qc6 38. Qa5 Ra8 39. Qd2 Rc8 40. Kg2 Qd7 41. h4 Qg4 1-0
+1. c4 f5 2. Nf3 Nf6 3. g3 g6 4. Bg2 Bg7 5. d4 d6 6. Nc3 e6 7. O-O O-O 8. Qc2 Nc6 9. Rd1 Qe7 10. Rb1 a5 11. a3 Nd8 12. e4 fxe4 13. Nxe4 Nxe4 14. Qxe4 Nf7 15. Bh3 Qf6 16. Bd2 d5 17. Qe2 dxc4 18. Bf4 Nd6?! 19. Ng5 Re8 20. Bg2 Ra6 21. Ne4 Nxe4 22. Bxe4 b5 23. b3 cxb3 24. Qxb5 Rf8 25. Qxb3 Rb6 26. Qe3 Rxb1 27. Bxb1 Bb7 28. Ba2 Bd5 29. Bxd5 exd5 30. Bxc7 a4 31. Rd3 Qf5 32. Be5 Bh6 33. Qe2 Rc8 34. Rf3 Qh3 35. Bc7 Bf8 36. Qb5 Qe6 37. Be5 Qc6 38. Qa5 Ra8 39. Qd2 Rc8 40. Kg2 Qd7 41. h4 Qg4 1-0
 
 #### 1958 · Botvinnik – Smyslov
 
@@ -957,7 +957,7 @@ Rövanş hakkıyla oynanan maçı Botvinnik 12½–10½ kazandı. İzleyeceğini
 [EventLine "Dünya Şampiyonası, 18. oyun, Moskova, 1958"]
 [View "player"]
 
-1. c4 Nf6 2. Nc3 d5 3. cxd5 Nxd5 4. g3 g6 5. Bg2 Nxc3 6. bxc3 Bg7 7. Qb3 Nc6 8. Nf3 O-O 9. O-O Na5 10. Qc2 c5 11. d3 Bf5 12. e4 Bd7 13. Bg5 Rc8 14. Qd2 Bb5 15. Rfd1 Ba4 16. Re1 f6 17. Bh6 Bxh6 18. Qxh6 Qxd3 19. e5 Nc6 20. Re3 Qc2 21. exf6 exf6 22. Rae1 Rcd8 23. Bh3 Ne5 24. Nxe5 fxe5 25. f4?! Bc6 26. Qg5? Rde8? 27. Rxe5 Qxc3 28. Rxe8 Bxe8 29. Qe5 Qxe5 30. Rxe5 b6 31. Re7 a5 32. Rb7 Rf6 33. Rb8 Kf7 34. Kf2 Rd6 35. Ke3 Ba4?! 36. Rb7+ Kg8 37. Rb8+ Kg7 38. Rb7+ Kg8 39. Rb8+ Kf7 40. Rb7+ Kf8 41. Rxh7 c4 42. Rc7 b5 43. Ke4 b4 44. Rxc4 Rd2 45. Ke5 Rxa2 46. Rc8+ Be8?! 47. Bd7 Re2+ 48. Kf6! g5?! 49. fxg5 Rf2+ 50. Ke5 Re2+ 51. Kf4?! b3 52. Rb8! b2 53. Bxe8! Rxe8 54. Rxb2! a4 55. Ra2 Ra8! 56. Ra3 Kf7 57. h4 Kg6 58. Ke4 Kh5 59. Kd4 Rd8+ 60. Kc4 Re8 61. Kd5 Rd8+ 62. Ke5 Ra8 63. Kd5 Rd8+ 64. Kc5 Rb8 65. Rxa4 Rb3 66. Kd6 Rxg3 67. Ke7 Rb3 68. Ra6 Rb7+ 69. Kf6 Rb4 70. Rd6 Ra4 71. Re6 Rb4 72. Kf7 Rb7+ 73. Re7 Rb5 74. Kg7 1-0
+1. c4 Nf6 2. Nc3 d5 3. cxd5 Nxd5 4. g3 g6 5. Bg2 Nxc3 6. bxc3 Bg7 7. Qb3 Nc6 8. Nf3 O-O 9. O-O Na5 10. Qc2 c5 11. d3 Bf5 12. e4 Bd7 13. Bg5 Rc8 14. Qd2 Bb5 15. Rfd1 Ba4 16. Re1 f6 17. Bh6 Bxh6 18. Qxh6 Qxd3 19. e5 Nc6 20. Re3 Qc2 21. exf6 exf6 22. Rae1 Rcd8 23. Bh3 Ne5 24. Nxe5 fxe5 25. f4 Bc6 26. Qg5?? Rde8? 27. Rxe5 Qxc3 28. Rxe8 Bxe8 29. Qe5 Qxe5 30. Rxe5 b6 31. Re7 a5 32. Rb7 Rf6 33. Rb8 Kf7 34. Kf2 Rd6 35. Ke3 Ba4 36. Rb7+ Kg8 37. Rb8+ Kg7 38. Rb7+ Kg8 39. Rb8+ Kf7 40. Rb7+ Kf8 41. Rxh7 c4 42. Rc7 b5 43. Ke4 b4 44. Rxc4 Rd2 45. Ke5 Rxa2 46. Rc8+ Be8? 47. Bd7 Re2+?! 48. Kf6! g5 49. fxg5 Rf2+ 50. Ke5 Re2+ 51. Kf4?! b3 52. Rb8! b2 53. Bxe8! Rxe8 54. Rxb2! a4 55. Ra2 Ra8! 56. Ra3 Kf7 57. h4 Kg6 58. Ke4 Kh5 59. Kd4 Rd8+ 60. Kc4 Re8 61. Kd5 Rd8+ 62. Ke5 Ra8 63. Kd5 Rd8+ 64. Kc5 Rb8 65. Rxa4 Rb3 66. Kd6 Rxg3 67. Ke7 Rb3 68. Ra6 Rb7+ 69. Kf6 Rb4 70. Rd6 Ra4 71. Re6 Rb4 72. Kf7 Rb7+ 73. Re7 Rb5 74. Kg7 1-0
 
 #### 1957 · Smyslov – Botvinnik
 
@@ -1020,7 +1020,7 @@ Skor yine 12–12 oldu ve Botvinnik ünvanı bu kuralla korudu. İzleyeceğiniz 
 [EventLine "Dünya Şampiyonası, 23. oyun, Moskova, 1951"]
 [View "player"]
 
-1. d4 Nf6 2. c4 g6 3. g3 c6 4. Bg2 d5 5. cxd5 cxd5 6. Nc3 Bg7 7. Nh3 Bxh3 8. Bxh3 Nc6 9. Bg2 e6 10. e3 O-O 11. Bd2 Rc8 12. O-O Nd7 13. Ne2 Qb6 14. Bc3 Rfd8 15. Nf4 Nf6 16. Qb3 Ne4 17. Qxb6 axb6 18. Be1 Na5 19. Nd3 Bf8 20. f3 Nd6 21. Bf2 Bh6 22. Rac1 Nac4 23. Rfe1 Na5 24. Kf1 Bg7 25. g4 Nc6 26. b3 Nb5 27. Ke2 Bf8 28. a4 Nc7 29. Bg3 Na6 30. Bf1 f6 31. Red1 Na5 32. Rxc8 Rxc8 33. Rc1 Rxc1 34. Nxc1 Ba3 35. Kd1 Bxc1 36. Kxc1 Nxb3+ 37. Kc2 Na5! 38. Kc3 Kf7 39. e4 f5 40. gxf5 gxf5 41. Bd3 Kg6 42. Bd6 Nc6 43. Bb1 Kf6 44. Bg3 fxe4 45. fxe4 h6 46. Bf4 h5 47. exd5 exd5 48. h4 Nab8 49. Bg5+ Kf7 50. Bf5 Na7 51. Bf4 Nbc6 52. Bd3 Nc8 53. Be2 Kg6 54. Bd3+ Kf6 55. Be2 Kg6 56. Bf3 N6e7 57. Bg5 1-0
+1. d4 Nf6 2. c4 g6 3. g3 c6 4. Bg2 d5 5. cxd5 cxd5 6. Nc3 Bg7 7. Nh3 Bxh3 8. Bxh3 Nc6 9. Bg2 e6 10. e3 O-O 11. Bd2 Rc8 12. O-O Nd7 13. Ne2 Qb6 14. Bc3 Rfd8 15. Nf4 Nf6 16. Qb3 Ne4 17. Qxb6 axb6 18. Be1 Na5 19. Nd3 Bf8 20. f3 Nd6 21. Bf2 Bh6 22. Rac1 Nac4 23. Rfe1 Na5 24. Kf1 Bg7 25. g4 Nc6 26. b3 Nb5 27. Ke2 Bf8 28. a4 Nc7 29. Bg3 Na6 30. Bf1 f6 31. Red1 Na5 32. Rxc8 Rxc8 33. Rc1 Rxc1 34. Nxc1 Ba3 35. Kd1 Bxc1 36. Kxc1 Nxb3+ 37. Kc2 Na5! 38. Kc3 Kf7 39. e4 f5?! 40. gxf5 gxf5 41. Bd3 Kg6 42. Bd6?! Nc6 43. Bb1 Kf6 44. Bg3 fxe4 45. fxe4 h6 46. Bf4 h5 47. exd5 exd5 48. h4 Nab8?! 49. Bg5+ Kf7 50. Bf5 Na7 51. Bf4 Nbc6 52. Bd3 Nc8 53. Be2 Kg6 54. Bd3+ Kf6 55. Be2 Kg6 56. Bf3 N6e7 57. Bg5 1-0
 
 #### 1948 · Botvinnik – Keres (Turnuva)
 
@@ -1041,7 +1041,7 @@ Alekhine’in ölümünden sonra FIDE, beş oyunculu bir maç turnuvası düzenl
 [EventLine "Dünya Şampiyonası, 20. tur, Lahey ve Moskova, 1948"]
 [View "player"]
 
-1. d4 d5 2. Nf3 Bf5 3. c4 e6 4. cxd5 exd5 5. Qb3 Nc6 6. Bg5 Be7 7. Bxe7 Ngxe7 8. e3 Qd6 9. Nbd2 O-O 10. Rc1 a5 11. a3 Rfc8 12. Bd3 a4 13. Qc2 Bxd3 14. Qxd3 Nd8 15. O-O Ne6 16. Rc3 b5 17. Qc2 Rcb8 18. Ne1 Nc8 19. Rc6 Qe7 20. Nd3 Nb6 21. Nb4 Rd8 22. Qf5 Rd6 23. Rfc1 Rxc6 24. Rxc6 Rd8 25. Rxb6 cxb6 26. Nc6! Qc7 27. Nxd8! Qxd8 28. Qc2 Qc7 29. Qxc7 Nxc7 30. Nb1 Kf8 31. Kf1 Ke7 32. Ke2 Kd6 33. Kd3 Kc6 34. Nc3 Ne8 35. Na2 f6 36. f3 Nc7 37. Nb4+ Kd6 38. e4 dxe4+ 39. fxe4 Ne6 40. Ke3 Nc7 41. Kd3 Ne6 42. Nd5 Kc6 43. h4 Nd8 44. Nf4 Kd6 45. Nh5 Ne6 46. Ke3 Ke7 47. d5 Nc5 48. Nxg7 Kd6 49. Ne6 Nd7?! 50. Kd4 Ne5 51. Ng7 Nc4 52. Nf5+ Kc7 53. Kc3 Kd7 54. g4 Ne5 55. g5 fxg5 56. hxg5 Nf3 57. Kb4 Nxg5 58. e5 h5 59. e6+ Kd8 60. Kxb5 1-0
+1. d4 d5 2. Nf3 Bf5 3. c4 e6 4. cxd5 exd5 5. Qb3 Nc6 6. Bg5 Be7 7. Bxe7 Ngxe7 8. e3 Qd6 9. Nbd2 O-O 10. Rc1 a5 11. a3 Rfc8 12. Bd3 a4 13. Qc2 Bxd3 14. Qxd3 Nd8 15. O-O Ne6 16. Rc3 b5 17. Qc2 Rcb8 18. Ne1 Nc8 19. Rc6 Qe7 20. Nd3 Nb6 21. Nb4 Rd8 22. Qf5 Rd6 23. Rfc1 Rxc6 24. Rxc6 Rd8 25. Rxb6 cxb6 26. Nc6! Qc7 27. Nxd8! Qxd8 28. Qc2 Qc7 29. Qxc7 Nxc7 30. Nb1 Kf8 31. Kf1 Ke7 32. Ke2 Kd6 33. Kd3 Kc6 34. Nc3 Ne8 35. Na2 f6 36. f3 Nc7 37. Nb4+ Kd6 38. e4 dxe4+ 39. fxe4 Ne6 40. Ke3 Nc7 41. Kd3 Ne6 42. Nd5 Kc6 43. h4 Nd8 44. Nf4 Kd6 45. Nh5 Ne6 46. Ke3 Ke7 47. d5 Nc5 48. Nxg7 Kd6 49. Ne6 Nd7 50. Kd4 Ne5 51. Ng7 Nc4 52. Nf5+ Kc7 53. Kc3 Kd7 54. g4 Ne5 55. g5 fxg5 56. hxg5 Nf3 57. Kb4 Nxg5 58. e5 h5 59. e6+ Kd8 60. Kxb5 1-0
 
 #### 1937 · Alekhine – Euwe
 
@@ -1062,7 +1062,7 @@ Alekhine, rövanşı 25 oyunda 15½–9½ kazanıp ünvanı geri aldı. İzleyec
 [EventLine "Dünya Şampiyonası, 22. oyun, Hollanda, 1937"]
 [View "player"]
 
-1. Nf3 d5 2. c4 d4 3. e3 Nc6 4. exd4 Nxd4 5. Nxd4 Qxd4 6. Nc3 Nf6 7. d3 c6 8. Be3 Qd7 9. d4 g6 10. Be2 Bg7 11. h3 O-O 12. O-O b6 13. Bf3 Bb7 14. a4 Rad8 15. a5 Qc7 16. Qb3 Nd7 17. axb6 axb6 18. Ra7 Ra8 19. Rfa1 e6 20. Rxa8 Bxa8 21. d5 cxd5 22. cxd5 Nc5 23. Qc4 exd5 24. Bxd5 Bxd5 25. Nxd5 Qe5 26. Rb1 Na4 27. b3 Nb2 28. Qc6 b5 29. Bf4 Qe6 30. Qxb5 Qe4 31. Rc1 Nd3 32. Qc4 Qe2 33. Rf1 Nxf4 34. Qxf4 Qb5 35. Qf3 Rb8 36. Rb1 Qa6 37. Rd1 Qa3 38. Rb1 Qa2 39. Qd3 Bd4 40. Rf1 Qb2 41. Ne7+ Kf8 42. Nc6 Bxf2+! 43. Kh2 Re8 44. Qf3 Re2! 45. Nd4 Rd2! 46. Ne6+ Ke7 47. Nf4 Qd4 48. Kh1 Ra2? 49. Ne2? Ra1 50. Qb7+! Kf6 51. Nxd4! Rxf1+ 52. Kh2 Bg1+ 53. Kg3! Bf2+ 54. Kf3 Bxd4+ 55. Ke4! Rd1 56. Qd5 Ke7 57. g4 h5 58. gxh5 f5+ 59. Kf3! Rd3+ 60. Ke2 Re3+ 61. Kd2 Re4 62. hxg6 1-0
+1. Nf3 d5 2. c4 d4 3. e3 Nc6 4. exd4 Nxd4 5. Nxd4 Qxd4 6. Nc3 Nf6 7. d3 c6 8. Be3 Qd7 9. d4 g6 10. Be2 Bg7 11. h3 O-O 12. O-O b6 13. Bf3 Bb7 14. a4 Rad8 15. a5 Qc7 16. Qb3 Nd7 17. axb6 axb6 18. Ra7 Ra8 19. Rfa1 e6 20. Rxa8 Bxa8 21. d5?! cxd5 22. cxd5 Nc5 23. Qc4 exd5 24. Bxd5 Bxd5 25. Nxd5 Qe5 26. Rb1 Na4 27. b3 Nb2 28. Qc6 b5 29. Bf4 Qe6 30. Qxb5 Qe4 31. Rc1 Nd3 32. Qc4 Qe2 33. Rf1 Nxf4 34. Qxf4 Qb5 35. Qf3 Rb8 36. Rb1 Qa6 37. Rd1 Qa3 38. Rb1 Qa2 39. Qd3 Bd4 40. Rf1 Qb2 41. Ne7+ Kf8 42. Nc6 Bxf2+! 43. Kh2 Re8 44. Qf3 Re2! 45. Nd4 Rd2! 46. Ne6+ Ke7 47. Nf4 Qd4 48. Kh1 Ra2? 49. Ne2 Ra1 50. Qb7+! Kf6 51. Nxd4! Rxf1+ 52. Kh2 Bg1+ 53. Kg3! Bf2+ 54. Kf3 Bxd4+ 55. Ke4! Rd1 56. Qd5 Ke7 57. g4 h5 58. gxh5 f5+ 59. Kf3! Rd3+ 60. Ke2 Re3+ 61. Kd2 Re4 62. hxg6 1-0
 
 #### 1935 · Euwe – Alekhine
 
@@ -1081,7 +1081,7 @@ Euwe 30 oyunluk maçı 15½–14½ kazanıp şampiyon oldu; Alekhine ünvanı ya
 [EventLine "Dünya Şampiyonası, 26. oyun, Hollanda, 1935"]
 [View "player"]
 
-1. d4 e6 2. c4 f5 3. g3 Bb4+ 4. Bd2 Be7 5. Bg2 Nf6 6. Nc3 O-O 7. Nf3 Ne4 8. O-O b6 9. Qc2 Bb7 10. Ne5 Nxc3 11. Bxc3 Bxg2 12. Kxg2 Qc8 13. d5 d6 14. Nd3 e5 15. Kh1 c6 16. Qb3 Kh8 17. f4 e4 18. Nb4 c5 19. Nc2 Nd7 20. Ne3 Bf6 21. Nxf5 Bxc3! 22. Nxd6! Qb8! 23. Nxe4! Bf6 24. Nd2 g5 25. e4 gxf4 26. gxf4 Bd4 27. e5 Qe8 28. e6 Rg8 29. Nf3 Qg6 30. Rg1 Bxg1 31. Rxg1 Qf6 32. Ng5 Rg7 33. exd7 Rxd7 34. Qe3 Re7 35. Ne6 Rf8 36. Qe5 Qxe5 37. fxe5 Rf5 38. Re1 h6?! 39. Nd8 Rf2 40. e6 Rd2 41. Nc6 Re8 42. e7 b5 43. Nd8 Kg7 44. Nb7 Kf6 45. Re6+ Kg5 46. Nd6 Rxe7 47. Ne4+ 1-0
+1. d4 e6 2. c4 f5 3. g3 Bb4+ 4. Bd2 Be7 5. Bg2 Nf6 6. Nc3 O-O 7. Nf3 Ne4 8. O-O b6 9. Qc2 Bb7 10. Ne5 Nxc3 11. Bxc3 Bxg2 12. Kxg2 Qc8 13. d5 d6 14. Nd3 e5 15. Kh1 c6 16. Qb3 Kh8 17. f4 e4 18. Nb4 c5 19. Nc2 Nd7 20. Ne3 Bf6 21. Nxf5 Bxc3! 22. Nxd6! Qb8! 23. Nxe4! Bf6 24. Nd2 g5 25. e4 gxf4 26. gxf4 Bd4 27. e5 Qe8 28. e6 Rg8 29. Nf3 Qg6 30. Rg1 Bxg1 31. Rxg1 Qf6 32. Ng5 Rg7 33. exd7 Rxd7 34. Qe3 Re7 35. Ne6 Rf8 36. Qe5 Qxe5 37. fxe5 Rf5?! 38. Re1?! h6? 39. Nd8 Rf2 40. e6 Rd2 41. Nc6 Re8 42. e7 b5 43. Nd8 Kg7 44. Nb7 Kf6 45. Re6+ Kg5 46. Nd6 Rxe7 47. Ne4+ 1-0
 
 #### 1934 · Alekhine – Bogoljubov
 
@@ -1102,7 +1102,7 @@ Euwe 30 oyunluk maçı 15½–14½ kazanıp şampiyon oldu; Alekhine ünvanı ya
 [EventLine "Dünya Şampiyonası, 17. oyun, Almanya, 1934"]
 [View "player"]
 
-1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. Nc3 a6 5. e4 b5 6. e5 Nd5 7. Ng5 e6 8. Qf3 Qd7 9. Nxd5 exd5 10. a3 Nc6 11. Be3 Nd8 12. Be2 Qf5 13. Qg3 h6 14. Nh3 c6 15. f4 Qc2 16. Qf2 Bxa3 17. O-O Bxb2 18. Rae1 Bf5 19. g4 Be4 20. f5 Nb7 21. Nf4 O-O-O 22. Qg3 g5 23. fxg6 fxg6 24. Bd1 Qc3 25. Ne6 Rde8 26. Rf6 Re7 27. Ref1 Rhe8 28. Nf4 Nd8 29. Qf2 Qa3 30. Bf3 Bxf3 31. Qxf3 g5 32. Ne2 Re6 33. Rf5 Qd3 34. h4 Rg6 35. h5 Rge6 36. Qf2 c5 37. Rf3 Qc2 38. Qe1 Nc6 39. R1f2 Qe4 40. Ng3 Qxg4 41. Kg2 Bxd4 0-1
+1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. Nc3 a6 5. e4 b5 6. e5 Nd5 7. Ng5 e6 8. Qf3 Qd7 9. Nxd5 exd5 10. a3 Nc6 11. Be3 Nd8 12. Be2 Qf5 13. Qg3 h6 14. Nh3 c6 15. f4 Qc2 16. Qf2 Bxa3 17. O-O Bxb2 18. Rae1 Bf5 19. g4 Be4 20. f5 Nb7 21. Nf4 O-O-O 22. Qg3 g5 23. fxg6 fxg6 24. Bd1 Qc3 25. Ne6 Rde8 26. Rf6 Re7 27. Ref1?! Rhe8 28. Nf4 Nd8 29. Qf2 Qa3 30. Bf3 Bxf3 31. Qxf3 g5 32. Ne2 Re6 33. Rf5 Qd3 34. h4 Rg6 35. h5 Rge6 36. Qf2 c5 37. Rf3 Qc2 38. Qe1 Nc6 39. R1f2 Qe4 40. Ng3 Qxg4 41. Kg2 Bxd4 0-1
 
 #### 1929 · Alekhine – Bogoljubov
 
@@ -1123,7 +1123,7 @@ Alekhine ilk savunmasında Bogoljubov’u 25 oyunda 15½–9½ yendi. İzleyece�
 [EventLine "Dünya Şampiyonası, 12. oyun, Almanya ve Hollanda, 1929"]
 [View "player"]
 
-1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 Nbd7 6. e3 Qa5 7. cxd5 Nxd5 8. Qd2 Bb4 9. Rc1 h6 10. Bh4 O-O 11. Bd3 e5 12. a3 Bxc3 13. bxc3 Qxa3 14. Nxe5 Nxe5 15. dxe5 Re8?! 16. Bg3? Be6 17. O-O Rad8 18. Qc2 Nxc3 19. Bh7+ Kh8! 20. Ra1 Qb4 21. Rfc1 g6 22. Bxg6 fxg6 23. Qxg6 Ne2+! 24. Kf1 Nxg3+ 25. hxg3 Qf8 26. Rxa7 Rd7 27. e4 Rf7 28. Kg1 Qg7 29. Qxg7+ Kxg7 30. f3 Rc8 31. f4 b5 32. Ra6 Bc4 33. f5 Rfc7 34. Kf2 Re8 35. e6 Kf6 36. Rh1 Ke5 37. Rxh6 b4 38. Rb6 Bb5 39. Rh1 Kxe4 40. g4 Kd5?! 41. g5 Ra7 42. Re1 b3 43. g4 Ra2+ 44. Kg3 b2 45. Rb1 Ra3+ 46. Kf4 Be2 47. g6! Ra4+! 48. Kg5 Rxg4+! 49. Kf6! Rf8+ 50. Ke7 Rxf5! 51. R6xb2 Re5 52. Rd2+ Kc5! 53. g7 Bc4! 54. Rd7 Rxe6+ 55. Kd8! Rd6 56. Rxd6 Kxd6 0-1
+1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 Nbd7 6. e3 Qa5 7. cxd5 Nxd5 8. Qd2 Bb4 9. Rc1 h6 10. Bh4 O-O 11. Bd3 e5 12. a3 Bxc3 13. bxc3 Qxa3 14. Nxe5 Nxe5 15. dxe5 Re8?! 16. Bg3? Be6 17. O-O Rad8 18. Qc2 Nxc3 19. Bh7+ Kh8! 20. Ra1 Qb4 21. Rfc1 g6 22. Bxg6 fxg6 23. Qxg6 Ne2+! 24. Kf1 Nxg3+ 25. hxg3 Qf8 26. Rxa7 Rd7 27. e4 Rf7 28. Kg1 Qg7 29. Qxg7+ Kxg7 30. f3 Rc8 31. f4 b5 32. Ra6 Bc4?! 33. f5 Rfc7 34. Kf2 Re8 35. e6 Kf6 36. Rh1 Ke5 37. Rxh6 b4 38. Rb6 Bb5 39. Rh1 Kxe4 40. g4 Kd5 41. g5 Ra7?! 42. Re1 b3 43. g4 Ra2+ 44. Kg3 b2 45. Rb1 Ra3+ 46. Kf4 Be2 47. g6! Ra4+! 48. Kg5 Rxg4+! 49. Kf6! Rf8+ 50. Ke7 Rxf5! 51. R6xb2 Re5 52. Rd2+ Kc5! 53. g7 Bc4! 54. Rd7 Rxe6+ 55. Kd8! Rd6 56. Rxd6 Kxd6 0-1
 
 #### 1927 · Alekhine – Capablanca
 
@@ -1165,7 +1165,7 @@ Capablanca, 14 oyundan sonra 9–5 öndeydi (4 galibiyet, hiç yenilgi yok); Las
 [EventLine "Dünya Şampiyonası, 11. oyun, Havana, 1921"]
 [View "player"]
 
-1. d4 d5 2. Nf3 e6 3. c4 Nf6 4. Bg5 Nbd7 5. e3 Be7 6. Nc3 O-O 7. Rc1 Re8 8. Qc2 c6 9. Bd3 dxc4 10. Bxc4 Nd5 11. Bxe7 Rxe7 12. O-O Nf8 13. Rfd1 Bd7 14. e4 Nb6 15. Bf1 Rc8 16. b4 Be8 17. Qb3 Rec7 18. a4 Ng6 19. a5 Nd7 20. e5 b6 21. Ne4 Rb8 22. Qc3 Nf4 23. Nd6 Nd5 24. Qa3 f6 25. Nxe8 Qxe8 26. exf6 gxf6 27. b5 Rbc8 28. bxc6 Rxc6 29. Rxc6 Rxc6 30. axb6 axb6 31. Re1 Qc8 32. Nd2 Nf8 33. Ne4 Qd8 34. h4 Rc7 35. Qb3 Rg7 36. g3 Ra7 37. Bc4 Ra5 38. Nc3 Nxc3 39. Qxc3 Kf7 40. Qe3 Qd6 41. Qe4 Ra4 42. Qb7+ Kg6?! 43. Qc8? Qb4 44. Rc1 Qe7? 45. Bd3+ Kh6 46. Rc7 Ra1+ 47. Kg2 Qd6?! 48. Qxf8+ 1-0
+1. d4 d5 2. Nf3 e6 3. c4 Nf6 4. Bg5 Nbd7 5. e3 Be7 6. Nc3 O-O 7. Rc1 Re8 8. Qc2 c6 9. Bd3 dxc4 10. Bxc4 Nd5 11. Bxe7 Rxe7 12. O-O Nf8 13. Rfd1 Bd7 14. e4 Nb6 15. Bf1 Rc8 16. b4 Be8 17. Qb3 Rec7 18. a4 Ng6 19. a5 Nd7 20. e5 b6 21. Ne4 Rb8 22. Qc3 Nf4 23. Nd6 Nd5 24. Qa3 f6 25. Nxe8 Qxe8 26. exf6 gxf6 27. b5 Rbc8 28. bxc6 Rxc6 29. Rxc6 Rxc6 30. axb6 axb6 31. Re1 Qc8 32. Nd2 Nf8 33. Ne4 Qd8 34. h4 Rc7 35. Qb3 Rg7 36. g3 Ra7 37. Bc4 Ra5 38. Nc3 Nxc3 39. Qxc3 Kf7 40. Qe3 Qd6 41. Qe4 Ra4 42. Qb7+ Kg6?! 43. Qc8? Qb4 44. Rc1 Qe7? 45. Bd3+ Kh6 46. Rc7 Ra1+ 47. Kg2 Qd6 48. Qxf8+ 1-0
 
 #### 1908 · Lasker – Tarrasch
 
@@ -1186,7 +1186,7 @@ Tarrasch’ı 16 oyunda 10½–5½ yenen Lasker, 8 galibiyete ulaşarak maçı b
 [EventLine "Dünya Şampiyonası, 16. oyun, Düsseldorf, Münih, 1908"]
 [View "player"]
 
-1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. Nc3 Bb4 5. O-O O-O 6. d3 d6 7. Bg5 Be6 8. d4 exd4 9. Nxd4 h6 10. Bh4 Ne5?! 11. f4 Bc5 12. Bxf6? Qxf6 13. fxe5 Qxe5 14. Ne2! Bg4 15. Rf3 Bxf3 16. gxf3 f5 17. Qd3 c6 18. Bc4+ Kh8 19. Kh1? b5? 20. Bb3 fxe4 21. Qxe4 Qxe4 22. fxe4 Rae8 23. Nxc6 Rxe4 24. Ng3 Ree8 25. Rd1 Rf2 26. Nd4?? Bxd4 0-1
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. Nc3 Bb4 5. O-O O-O 6. d3 d6 7. Bg5 Be6 8. d4 exd4 9. Nxd4 h6 10. Bh4 Ne5?! 11. f4 Bc5 12. Bxf6? Qxf6 13. fxe5 Qxe5 14. Ne2! Bg4 15. Rf3 Bxf3 16. gxf3 f5 17. Qd3 c6 18. Bc4+ Kh8 19. Kh1?! b5? 20. Bb3 fxe4 21. Qxe4 Qxe4 22. fxe4 Rae8 23. Nxc6 Rxe4 24. Ng3 Ree8 25. Rd1 Rf2 26. Nd4?? Bxd4 0-1
 
 #### 1907 · Lasker – Marshall
 
@@ -1207,7 +1207,7 @@ Lasker, ABD şampiyonu Marshall’ı 15 oyunda 11½–3½ yendi; Marshall tek oy
 [EventLine "Dünya Şampiyonası, 15. oyun, ABD, 1907"]
 [View "player"]
 
-1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 Ne4 6. Bxe7 Qxe7 7. cxd5 Nxc3 8. bxc3 exd5 9. Qb3 c6 10. c4 O-O 11. Nf3 Qc7 12. Rc1 Qa5+ 13. Rc3 Nd7 14. Nd2 c5 15. cxd5 cxd4 16. exd4 Re8+ 17. Re3 Rxe3+ 18. fxe3 Nf6 19. Be2 Ne4 20. Qd3 Bf5 21. O-O Ng3 22. Rxf5 Nxf5 23. e4 Ne7 24. a3 Rc8 25. d6 Ng6 26. Nc4 Qg5?! 27. Bf1 b5 28. Na5 Nf4 29. Qg3? Qf6! 30. Qe3 Qxd6! 31. Bxb5 Qb6 32. Bc4 Ne6 33. Bxe6 fxe6 34. Nb3 e5 35. Kf1 Rb8 36. Nc5 exd4 37. Qxd4 Rc8 0-1
+1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 Ne4 6. Bxe7 Qxe7 7. cxd5 Nxc3 8. bxc3 exd5 9. Qb3 c6 10. c4 O-O 11. Nf3 Qc7 12. Rc1 Qa5+ 13. Rc3 Nd7 14. Nd2 c5 15. cxd5 cxd4 16. exd4 Re8+ 17. Re3 Rxe3+ 18. fxe3 Nf6 19. Be2 Ne4 20. Qd3 Bf5 21. O-O Ng3 22. Rxf5 Nxf5 23. e4 Ne7 24. a3 Rc8 25. d6 Ng6 26. Nc4 Qg5? 27. Bf1 b5 28. Na5 Nf4 29. Qg3? Qf6! 30. Qe3 Qxd6! 31. Bxb5 Qb6 32. Bc4 Ne6 33. Bxe6 fxe6 34. Nb3 e5 35. Kf1 Rb8 36. Nc5 exd4 37. Qxd4 Rc8 0-1
 
 #### 1896–97 · Lasker – Steinitz
 
@@ -1230,7 +1230,7 @@ Rövanşta Lasker 17 oyunda 12½–4½ kazandı. İzleyeceğiniz oyun, 17. oyun.
 [EventLine "Dünya Şampiyonası, 17. oyun, Moskova, 1896"]
 [View "player"]
 
-1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Qb3 Nbd7 7. Nf3 c6 8. Bd3 dxc4 9. Bxc4 b5 10. Be2 a6 11. a4 b4 12. Nb1 c5 13. Nbd2 Bb7 14. a5 cxd4 15. exd4 Nd5 16. Be3 Bd6 17. Nc4 Bc7 18. Bg5 f6 19. Bd2 Qe7 20. Ne3 Rab8 21. Bc4 Rfd8 22. O-O Nf8 23. Rfe1 Qf7 24. Nf1 Kh8 25. Ng3 Bxg3 26. hxg3 Ng6 27. Qd3 Rd6 28. Re2 Bc8 29. Ne1 Qd7 30. Nc2 e5 31. Rae1 Bb7 32. Qb3 Bc6 33. Nxb4 Nxb4 34. Bxb4 Rxd4! 35. Qc3? Bxg2! 36. Kxg2 Qc6+! 37. Re4 Rxe4 38. Rxe4 Qxe4+ 39. Kg1 Qb7 40. Bc5 Rd8 41. Be2 e4 42. b4 Ne5 43. Be3 Nd3 44. Bb6 Rc8 45. Qd4 h6 46. Kh2 Ne5 47. Qd1 Rc3 48. Qd6 Nf3+ 49. Kg2 Qf7 50. g4 Qa2 51. Bf1 Nh4+ 52. Kg1 Rc1 53. Be3 Nf3+ 54. Kg2 Rxf1 55. Qxa6 Rg1+ 56. Kh3 Qd5 57. Qc8+ Kh7 58. a6?! Rh1+ 59. Kg2 Nh4+ 0-1
+1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Qb3 Nbd7 7. Nf3 c6 8. Bd3 dxc4 9. Bxc4 b5 10. Be2 a6 11. a4 b4 12. Nb1 c5 13. Nbd2 Bb7 14. a5 cxd4 15. exd4 Nd5 16. Be3 Bd6 17. Nc4 Bc7 18. Bg5 f6 19. Bd2 Qe7 20. Ne3 Rab8 21. Bc4 Rfd8 22. O-O Nf8 23. Rfe1 Qf7 24. Nf1 Kh8 25. Ng3 Bxg3 26. hxg3 Ng6 27. Qd3 Rd6 28. Re2 Bc8 29. Ne1 Qd7 30. Nc2 e5 31. Rae1 Bb7 32. Qb3 Bc6 33. Nxb4 Nxb4 34. Bxb4 Rxd4! 35. Qc3? Bxg2! 36. Kxg2 Qc6+! 37. Re4 Rxe4 38. Rxe4 Qxe4+ 39. Kg1 Qb7 40. Bc5 Rd8 41. Be2 e4 42. b4 Ne5 43. Be3 Nd3 44. Bb6 Rc8 45. Qd4 h6 46. Kh2 Ne5 47. Qd1 Rc3 48. Qd6 Nf3+ 49. Kg2 Qf7 50. g4 Qa2 51. Bf1 Nh4+ 52. Kg1 Rc1 53. Be3 Nf3+ 54. Kg2 Rxf1 55. Qxa6 Rg1+ 56. Kh3 Qd5?! 57. Qc8+ Kh7 58. a6?! Rh1+ 59. Kg2 Nh4+?! 0-1
 
 #### 1894 · Lasker – Steinitz
 
@@ -1251,7 +1251,7 @@ Lasker 19 oyunda 12–7 kazanıp 25 yaşında şampiyon oldu. İzleyeceğiniz oy
 [EventLine "Dünya Şampiyonası, 19. oyun, New York, Philadelphia, Montreal, 1894"]
 [View "player"]
 
-1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. e3 O-O 6. Bd3 c5 7. dxc5 dxc4 8. Bxc4 Qxd1+ 9. Kxd1 Nc6 10. a3 Bxc5 11. b4 Rd8+ 12. Ke2 Bf8 13. Bb2 Bd7 14. Rhd1 Rac8 15. Bb3 Ne7 16. Nd4 Ng6 17. Rd2 e5 18. Nf3 Bg4 19. Rxd8 Rxd8 20. h3 Bxf3+ 21. gxf3 Be7 22. Rc1 Kf8 23. Na4 b6 24. Nc3 Bd6 25. Rd1 Ne8 26. Nb5 Rd7 27. Bc2 Ke7?! 28. Bf5 a6 29. Bxd7 Kxd7 30. Nc3 f5 31. b5 axb5 32. Nxb5 Ke6 33. Bc3 Ne7 34. Nxd6 Nxd6 35. Bb4 Nd5 36. Rc1 Nf7 37. Bd2 Nd6 38. Kd3 Kd7 39. e4 Nf6 40. Be3 fxe4+ 41. fxe4 b5 42. f3 Nc4 43. Rc3 Ne8 44. Bc1 Ncd6 45. Rc5 Nc7 46. Rxe5 Ne6 47. Rh5 h6 48. Re5 g5 49. h4 gxh4 50. Rh5 Kc6 51. Rxh6 Nc5+ 52. Kc2 1-0
+1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. e3 O-O 6. Bd3 c5 7. dxc5 dxc4 8. Bxc4 Qxd1+ 9. Kxd1 Nc6 10. a3 Bxc5 11. b4 Rd8+ 12. Ke2 Bf8 13. Bb2 Bd7 14. Rhd1 Rac8 15. Bb3 Ne7 16. Nd4 Ng6 17. Rd2 e5 18. Nf3 Bg4 19. Rxd8 Rxd8 20. h3 Bxf3+ 21. gxf3 Be7 22. Rc1 Kf8 23. Na4 b6 24. Nc3 Bd6 25. Rd1 Ne8 26. Nb5 Rd7 27. Bc2 Ke7? 28. Bf5 a6 29. Bxd7 Kxd7 30. Nc3 f5 31. b5 axb5 32. Nxb5 Ke6 33. Bc3 Ne7 34. Nxd6 Nxd6 35. Bb4 Nd5 36. Rc1 Nf7 37. Bd2 Nd6 38. Kd3 Kd7 39. e4 Nf6 40. Be3 fxe4+ 41. fxe4 b5 42. f3 Nc4 43. Rc3 Ne8 44. Bc1 Ncd6 45. Rc5 Nc7 46. Rxe5 Ne6 47. Rh5 h6 48. Re5 g5 49. h4 gxh4 50. Rh5 Kc6 51. Rxh6 Nc5+ 52. Kc2 1-0
 
 #### 1892 · Steinitz – Chigorin
 
@@ -1293,7 +1293,7 @@ Chigorin’le oynanan ikinci maç 23 oyunda 12½–10½ bitti. İzleyeceğiniz o
 [EventLine "Dünya Şampiyonası, 18. oyun, New York, 1890"]
 [View "player"]
 
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. O-O Qf6 7. d4 Nge7 8. Qa4 Bb6 9. Bg5 Qd6 10. Na3 exd4 11. Nb5 Qg6!! 12. cxd4 a6 13. d5?! Ne5 14. Nxe5 Qxg5! 15. Nf3 Qh6 16. Bb3 O-O 17. Rac1 c6 18. Nbd4 c5 19. Ne2 d6 20. Ng3 Bd8 21. e5 b5 22. Qa3 c4 23. exd6 Nxd5 24. Bc2 b4 25. Qa4 Qxd6 26. Be4 Nb6 27. Qc2 Rb8 28. Bxh7+ Kh8 29. Rcd1 Qh6 30. Bf5 g6?! 31. Bxc8 Rxc8 32. Qb2+ Qg7 33. Qxb4 Bc7 34. Rd4 Rfd8 35. Rh4+?! Kg8! 36. Ng5 Rd7 37. Re4 c3 38. Rfe1 Rdd8 39. Ne2 Nd5 40. Qa4 Qf6 41. Nf3 Bb6 42. Rc1 c2 43. h3 Qb2! 44. Qb3 Qxb3 45. axb3 a5 46. Rc4 Rxc4 47. bxc4 Nb4! 48. g3 Bxf2+ 49. Kxf2 Nd3+! 50. Ke3 Nxc1! 51. Nxc1 Rd1! 52. Ne2 a4 53. Nfd4 c1=Q+ 54. Nxc1 Rxc1 0-1
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. O-O Qf6 7. d4 Nge7 8. Qa4 Bb6 9. Bg5 Qd6 10. Na3 exd4 11. Nb5 Qg6!! 12. cxd4 a6?! 13. d5?! Ne5 14. Nxe5 Qxg5! 15. Nf3 Qh6 16. Bb3 O-O 17. Rac1 c6 18. Nbd4 c5 19. Ne2 d6 20. Ng3 Bd8 21. e5 b5 22. Qa3 c4 23. exd6 Nxd5 24. Bc2 b4 25. Qa4 Qxd6 26. Be4 Nb6 27. Qc2 Rb8 28. Bxh7+ Kh8 29. Rcd1 Qh6 30. Bf5 g6 31. Bxc8 Rxc8 32. Qb2+ Qg7 33. Qxb4 Bc7 34. Rd4 Rfd8 35. Rh4+? Kg8! 36. Ng5 Rd7 37. Re4 c3 38. Rfe1 Rdd8 39. Ne2 Nd5 40. Qa4 Qf6 41. Nf3 Bb6 42. Rc1 c2 43. h3 Qb2! 44. Qb3 Qxb3 45. axb3 a5 46. Rc4 Rxc4 47. bxc4 Nb4! 48. g3 Bxf2+ 49. Kxf2 Nd3+! 50. Ke3 Nxc1! 51. Nxc1 Rd1! 52. Ne2 a4 53. Nfd4 c1=Q+ 54. Nxc1 Rxc1 0-1
 
 #### 1889 · Steinitz – Chigorin
 
@@ -1312,7 +1312,7 @@ Steinitz, Rus şampiyon adayını 17 oyunda 10½–6½ yendi. İzleyeceğiniz oy
 [EventLine "Dünya Şampiyonası, 16. oyun, Havana, 1889"]
 [View "player"]
 
-1. Nf3 f5 2. d4 e6 3. c4 Nf6 4. e3 Be7 5. Nc3 O-O 6. Bd3 d5 7. Bd2 c6 8. c5 Nbd7 9. Ng5 Nb8 10. f3 Qc7 11. Qc2 Nh5 12. Nh3 Bh4+ 13. Nf2 e5 14. dxe5 Qxe5 15. O-O Be7 16. Ne2 b6 17. cxb6 axb6 18. Nd4 c5 19. Nb5 Nc6 20. Bc3 Qb8 21. Rfd1 Ne5 22. Be2 Nf6 23. Nh3 Rd8 24. Bf1 Nf7 25. Nf4 d4 26. Bd2 dxe3 27. Bxe3 Rxd1 28. Rxd1 Qe5?! 29. Re1 Kf8 30. Bd2 Qb8! 31. Qb3 Nd8 32. Qe3 Qb7 33. Bc4 Qd7 34. Bc3 Ra4 35. Bb3 Ra8 36. Nd5 Nxd5 37. Bxd5 Ra4 38. Bxg7+ Kxg7 39. Qxe7+! Qxe7 40. Rxe7+ Kf6 41. Rxh7 Rb4 42. Nd6 Be6 43. Bxe6 Kxe6 44. Rh6+ Ke5 45. b3 b5! 46. f4+ Kd4?! 47. Nxb5+ Rxb5 48. Rd6+! Kc3?! 49. Rxd8! Ra5 50. Rd5 Kb4 51. Rd2 Kc3 52. Re2 1-0
+1. Nf3 f5 2. d4 e6 3. c4 Nf6 4. e3 Be7 5. Nc3 O-O 6. Bd3 d5 7. Bd2 c6 8. c5 Nbd7 9. Ng5 Nb8 10. f3 Qc7 11. Qc2 Nh5 12. Nh3 Bh4+ 13. Nf2 e5 14. dxe5 Qxe5 15. O-O Be7 16. Ne2 b6 17. cxb6 axb6 18. Nd4 c5 19. Nb5 Nc6 20. Bc3 Qb8 21. Rfd1 Ne5 22. Be2 Nf6 23. Nh3 Rd8 24. Bf1 Nf7 25. Nf4 d4 26. Bd2 dxe3 27. Bxe3 Rxd1 28. Rxd1 Qe5?! 29. Re1 Kf8 30. Bd2 Qb8! 31. Qb3 Nd8?! 32. Qe3 Qb7 33. Bc4 Qd7 34. Bc3 Ra4 35. Bb3 Ra8 36. Nd5 Nxd5 37. Bxd5 Ra4 38. Bxg7+ Kxg7 39. Qxe7+! Qxe7 40. Rxe7+ Kf6 41. Rxh7 Rb4 42. Nd6 Be6 43. Bxe6 Kxe6 44. Rh6+ Ke5 45. b3 b5! 46. f4+ Kd4? 47. Nxb5+ Rxb5 48. Rd6+! Kc3 49. Rxd8! Ra5 50. Rd5 Kb4 51. Rd2 Kc3 52. Re2 1-0
 
 #### 1886 · Steinitz – Zukertort
 
@@ -1333,5 +1333,5 @@ Resmî sayılan ilk dünya şampiyonluğu maçı bu. İlk 10 galibiyete kadar oy
 [EventLine "Dünya Şampiyonası, 20. oyun, New York, St. Louis, New Orleans, 1886"]
 [View "player"]
 
-1. e4 e5 2. Nc3 Nc6 3. f4 exf4 4. d4 d5 5. exd5 Qh4+ 6. Ke2! Qe7+ 7. Kf2! Qh4+ 8. g3 fxg3+ 9. Kg2 Nxd4 10. hxg3! Qg4 11. Qe1+ Be7 12. Bd3 Nf5?! 13. Nf3 Bd7 14. Bf4 f6 15. Ne4 Ngh6?! 16. Bxh6 Nxh6 17. Rxh6 gxh6 18. Nxf6+! Kf7 19. Nxg4 1-0
+1. e4 e5 2. Nc3 Nc6 3. f4 exf4 4. d4 d5 5. exd5 Qh4+ 6. Ke2! Qe7+ 7. Kf2! Qh4+ 8. g3 fxg3+ 9. Kg2 Nxd4 10. hxg3! Qg4 11. Qe1+ Be7 12. Bd3 Nf5?! 13. Nf3 Bd7 14. Bf4 f6 15. Ne4 Ngh6 16. Bxh6 Nxh6 17. Rxh6 gxh6 18. Nxf6+! Kf7 19. Nxg4 1-0
 
