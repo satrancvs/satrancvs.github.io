@@ -14,7 +14,7 @@ Gukesh ünvanı kazandıktan sonra iki yıl boyunca onu korumak için hazırland
 **Sindarov**, sistemin ikinci kapısından, yani on dört turluk Adaylar Turnuvası’ndan birinci çıkarak şampiyon adayı oldu. Bu yolculuğun iki önemli durağı var:
 
 - Kasım 2025’te Goa’daki **FIDE Dünya Kupası**’nı (206 oyunculu eleme turnuvası) kazandı. 16. seri olarak başladığı turnuvada finalde Wei Yi’yi ikinci hızlı oyun sonunda yenebildi. 19 yaş 11 ayla en genç Dünya Kupası galibi ve ilk Özbek galip oldu; bu zafer ona Adaylar’a giriş bileti kazandırdı.
-- Mart–Nisan 2026’da Kıbrıs’ın Pegeia kasabasında oynanan, sekiz oyuncunun katıldığı çift turlu döner **Adaylar Turnuvası**’nı 14 turda **10 puanla** kazandı: altı galibiyet, hiç yenilgi yok. Turnuvayı bir tur kala garantiledi ve çift turlu döner sistemde oynanan Adaylar Turnuvaları tarihinin en yüksek puanına ulaştı.
+- Mart–Nisan 2026’da Kıbrıs’ın Pegeia kasabasında oynanan, sekiz oyuncunun katıldığı çift turlu döner **[Adaylar Turnuvası](https://candidates2026.fide.com/)**’nı 14 turda **10 puanla** kazandı: altı galibiyet, hiç yenilgi yok. Turnuvayı bir tur kala garantiledi ve çift turlu döner sistemde oynanan Adaylar Turnuvaları tarihinin en yüksek puanına ulaştı.
 
 <pre>
 FIDE ADAYLAR TURNUVASI 2026 ÇAPRAZ TABLOSU
