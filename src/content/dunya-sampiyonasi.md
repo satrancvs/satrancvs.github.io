@@ -79,7 +79,7 @@ Bugünkü sistem, uzun bir tarihsel değişimin sonucu. Dünya şampiyonluğu il
 
 [ZAMAN ÇİZELGESİ]
 
-Dünya şampiyonluğu tarihini yalnızca kazananların ve kaybedenlerin hikâyesi olarak değil, oynanan satranç üzerinden de inceleyebiliriz. Çizelgede yer alan ünvan maçlarının her birinden bir oyun seçtik. 1886’dan bugüne uzanan bu seçkide toplam 56 oyun var. Hamleleri takip edebilir, oyunları inceleyebilir ve Stockfish değerlendirmelerine (değerlendirme çubuğu ve hamle işaretleri) göz atabilirsiniz.
+Çizelgede yer alan ünvan maçlarının her birinden bir oyun seçtik. 1886’dan bugüne uzanan bu seçkide toplam 56 oyun var. Hamleleri takip edebilir, oyunları inceleyebilir ve Stockfish değerlendirmelerine (değerlendirme çubuğu ve hamle işaretleri) göz atabilirsiniz.
 
 ### 1886’dan bugüne 56 oyun
 
