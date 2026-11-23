@@ -180,20 +180,19 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
         </div>
       )}
       <div className="live-stage">
-        <SfPanel boardRef={board} idle={idle} idleText="Maç başlayınca canlı konum analizi buradan izlenebilecek." />
-        <div ref={board} className={`cp-game live-board${idle ? ' live-idle' : ''}`} aria-disabled={idle} {...(idle ? { inert: '' } : {})}>
-          <div ref={host} />
-        </div>
-      </div>
-      {analysing && (
-        <div className="live-back-row">
-          {fresh > 0 && <p className="live-newmove" role="status">Canlı oyunda {fresh === 1 ? 'yeni bir hamle' : `${fresh} yeni hamle`} oynandı ({Math.ceil(total / 2)}{total % 2 ? '.' : '…'} hamle). Analiziniz korunuyor; canlı konuma dönebilirsiniz.</p>}
+        <SfPanel boardRef={board} idle={idle} intro={analysing ? (
+          <div className="live-sf-intro">
+            {fresh > 0 && <div className="sf-intro-card live-newmove" role="status"><p>Canlı oyunda {fresh} yeni hamle oynandı.</p></div>}
           <button type="button" className="sf-intro-back" aria-label="Canlı konuma dön" title="Canlı konuma dön" onClick={() => board.current?.querySelector('pgn-player')?.dispatchEvent(new CustomEvent('cp-analysis-exit'))}>
             <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 14 4 9l5-5" /><path d="M20 20v-7a4 4 0 0 0-4-4H4" /></svg>
             Canlı konuma dön
           </button>
+          </div>
+        ) : undefined} idleText="Maç başlayınca canlı konum analizi buradan izlenebilecek." />
+        <div ref={board} className={`cp-game live-board${idle ? ' live-idle' : ''}`} aria-disabled={idle} {...(idle ? { inert: '' } : {})}>
+          <div ref={host} />
         </div>
-      )}
+      </div>
       {live && hasMoves && (
         <p className="live-status f-mono">
           {roundNo}. oyun · Beyaz: {white} · Siyah: {black} · {result && result !== '*' ? `Sonuç ${result.replace('1/2-1/2', '½–½')}` : 'Oyun sürüyor'}
