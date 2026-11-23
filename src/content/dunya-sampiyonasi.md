@@ -1,9 +1,9 @@
-![Gukesh Dommaraju](images/dunya-fide-gukesh.jpg "Gukesh Dommaraju · Resmî maç sitesi · [<span lang="en">worldchampionship.fide.com</span>](https://worldchampionship.fide.com/) · © <span lang="en">FIDE</span>")
-![Javokhir Sindarov](images/dunya-fide-sindarov.jpg "Javokhir Sindarov · Resmî maç sitesi · [<span lang="en">worldchampionship.fide.com</span>](https://worldchampionship.fide.com/) · © <span lang="en">FIDE</span>")
-
 [CANLI MAÇ]
 
 24 Kasım 2026’da İsviçre’de, Cenevre yakınlarındaki Cologny’de, Fondation Martin Bodmer’de bir [Dünya Satranç Şampiyonası](https://worldchampionship.fide.com/) maçı başlıyor. Karşı karşıya gelenler şampiyon Gukesh Dommaraju (Hindistan) ve şampiyon adayı Javokhir Sindarov (Özbekistan). İkisi de 20 yaşında; FIDE’nin ifadesiyle bu, tarihin en genç dünya şampiyonası karşılaşması.
+
+![Gukesh Dommaraju](images/dunya-fide-gukesh.jpg "Gukesh Dommaraju · Resmî maç sitesi · [<span lang="en">worldchampionship.fide.com</span>](https://worldchampionship.fide.com/) · © <span lang="en">FIDE</span>")
+![Javokhir Sindarov](images/dunya-fide-sindarov.jpg "Javokhir Sindarov · Resmî maç sitesi · [<span lang="en">worldchampionship.fide.com</span>](https://worldchampionship.fide.com/) · © <span lang="en">FIDE</span>")
 
 ### Şampiyon Gukesh ve aday Sindarov
 
