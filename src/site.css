@@ -1243,3 +1243,11 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .live-sf-count .live-num { font-size: 1.5rem; }
 .live-sf-count .live-unit { font-size: 8.5px; letter-spacing: .06em; }
 .live-sf-count .live-when { margin: .6rem 0 0; font-size: 10px; letter-spacing: .1em; line-height: 1.5; }
+
+/* Mobil (< 56em): canlı yayında da Stockfish kartı diyagramın üstünde (listedeki oynatıcı gibi); geri sayım / uyarı / "Canlı konuma dön" diyagramın altında */
+@media (max-width: 55.99em) {
+  .live-stage > .live-sf, .live-stage > .live-sf .live-sf-intro { display: contents; }
+  .live-stage > .live-sf > .live-sf-body { order: 0; margin: 0; }
+  .live-stage > .live-board { order: 1; }
+  .live-stage .live-sf-intro > * { order: 2; }
+}
