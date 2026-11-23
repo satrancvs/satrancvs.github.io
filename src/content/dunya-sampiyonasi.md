@@ -43,7 +43,7 @@ Carlsen, Eylül 2026’da Bengaluru’daki Global Chess League sırasında Sinda
 
 “Dünyanın en iyisi” ile “dünya şampiyonu” her zaman aynı kişi olmak zorunda değil. Ünvan; kurallarla belirlenmiş bir döngüye girmeyi, o döngüyü kazanmayı ve ünvan sahibini bir maçta yenmeyi gerektiriyor. Herhangi bir oyuncunun bu yarışa girmemeyi seçmesi de mümkün.
 
-Bu kez dünya şampiyonluğu için mücadele edecek iki oyuncuyu tanıdık. Peki bu mücadele hangi koşullarda oynanacak ve ünvanı kazanmak için neler gerekecek?
+Bu yıl dünya şampiyonluğu için mücadele edecek iki oyuncuyu tanıdık. Peki bu mücadele hangi koşullarda oynanacak ve ünvanı kazanmak için neler gerekecek?
 
 ### Maç nasıl oynanıyor?
 
