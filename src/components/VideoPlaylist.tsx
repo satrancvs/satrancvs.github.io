@@ -64,10 +64,7 @@ export default function VideoPlaylist({ ready = true }: { ready?: boolean }) {
         <div className="mpb-info">
           <p className="mpb-kicker f-mono">Şimdi oynatılıyor</p>
           <h4 className="mpb-title f-display" key={cur.id}>{cur.title}</h4>
-          <p className="mpb-blurb">
-            {day(cur.published)}{day(cur.published) && ' · '}
-            <a href={`https://www.youtube.com/watch?v=${cur.id}`} target="_blank" rel="noopener noreferrer">YouTube’da aç</a>
-          </p>
+          {day(cur.published) && <p className="mpb-blurb">{day(cur.published)}</p>}
           {items.length > 1 && (
             <button type="button" className="mpb-nextcard" onClick={() => go(nextIdx)} aria-label={`Sıradaki video: ${nx.title}`}>
               <span className="mpb-nextcard-thumb"><img src={thumb(nx.id)} alt="" loading="lazy" /></span>
