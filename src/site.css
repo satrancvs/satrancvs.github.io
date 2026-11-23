@@ -1077,10 +1077,6 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 
 /* Değerlendirme çubuğu açma/kapama: çubuğa tıkla → × çıkar; × çubuğu kapatır (soluk), kapalı çubuğa tıklayınca açılır */
 .eval-bar { cursor: pointer; position: relative; }
-.eval-bar .ev-close { display: none; position: absolute; left: 50%; top: 4px; z-index: 3; width: 18px; height: 18px; padding: 0; transform: translateX(-50%); place-items: center; font-size: 17px; font-weight: 600; line-height: 1; box-shadow: 0 0 0 1.5px #1d1812; color: #1d1812; background: #fff; border: 0; border-radius: 50%; cursor: pointer; }
-.eval-bar.ev-open .ev-close { display: grid; }
-.eval-bar .ev-close:hover { background: var(--accent); color: #fff; }
-.eval-bar[style*="rotate(180deg)"] .ev-close { top: auto; bottom: 4px; }
 .eval-bar.ev-off { opacity: .3; }
 .eval-bar.ev-off .eval-fill { height: 50% !important; }
 

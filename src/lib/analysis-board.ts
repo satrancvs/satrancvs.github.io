@@ -94,6 +94,10 @@ export function attachAnalysis(player: PlayerEl) {
       svg.appendChild(el('polygon', { points: `${x2},${y2} ${bx + px},${by + py} ${bx - px},${by - py}`, fill: a.color, opacity: 0.82 }));
     });
   };
+  // Elle yapılan hamlede gerçek hamlenin gri oku, oyunun ok/kare notları ve hamle rozeti tahtada kalmaz (oyuna dönünce goTo hepsini yeniden çizer).
+  const clearGameOverlays = () => {
+    boardEl.querySelectorAll('.board-overlay, .gm-badge').forEach((n) => n.remove());
+  };
   const clearShapes = () => { marks.clear(); arrows = []; sel = null; };
   const dispatch = (name: string, detail: unknown) => player.dispatchEvent(new CustomEvent(name, { bubbles: true, detail }));
 
@@ -106,6 +110,7 @@ export function attachAnalysis(player: PlayerEl) {
     try { chess!.move({ from, to, promotion: 'q' }); } catch { return; }
     active = true;
     clearShapes();
+    clearGameOverlays();
     eng.board.position(chess!.fen(), animate);
     render();
     dispatch('cp-analysis', { on: true });

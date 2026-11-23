@@ -28,11 +28,15 @@ const two = (n: number) => String(n).padStart(2, '0');
 // Türkçe ek, on yılın adının son ünlüsüne göre: 2010'lar (on), 1990'lar (doksan), 1960'lar (altmış), 1940'lar (kırk), 1930'lar (otuz); 2020'ler (yirmi), 2000'ler (bin), 1980'ler (seksen), 1970'ler (yetmiş), 1950'ler (elli).
 const decadeLabel = (y: number) => `${Math.floor(y / 10) * 10}'${[1, 3, 4, 6, 9].includes(Math.floor(y / 10) % 10) ? 'lar' : 'ler'}`;
 
-// Oynatıcının (pgn-player) ayarları: oynatıcının gizli araç çubuğundaki düğmeleri sürer (PGN indir, tahtayı çevir). Hız bu ekranda 0,5x'e sabit.
+// Oynatıcının (pgn-player) ayarları: oynatıcının gizli araç çubuğundaki düğmeleri sürer (oynatma hızı, tahtayı çevir, PGN indir). Varsayılan hız 0,5x.
 function PlayerSettings({ screen }: { screen: RefObject<HTMLDivElement> }) {
+  const engine = () => (screen.current?.querySelector('pgn-player') as (HTMLElement & { _engine?: { state: { speed: number } } }) | null)?._engine;
+  const [speed, setSpeed] = useState(() => engine()?.state.speed ?? 0.5);
   const press = (action: string) => (screen.current?.querySelector(`.settings-btn[data-action="${action}"]`) as HTMLButtonElement | null)?.click();
+  const cycle = () => { press('speed'); setSpeed(engine()?.state.speed ?? 0.5); };
   return (
     <div className="sf-player-settings f-mono">
+      <button type="button" onClick={cycle} title="Oynatma hızı (0,5x → 1x → 2x)">Hız {String(speed).replace('.', ',')}x</button>
       <button type="button" onClick={() => press('flip')}>Tahtayı çevir</button>
       <button type="button" onClick={() => press('download')}>PGN indir</button>
     </div>
