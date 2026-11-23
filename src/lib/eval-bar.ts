@@ -95,14 +95,13 @@ type PlayerEl = HTMLElement & {
   _engine?: { state: { index: number; cache: string[] }; evalBar?: { live: boolean; bar: HTMLElement | null; setDisabled(f: boolean): void; setScore(pawns: number): void } };
 };
 
-// Değerlendirme çubuğunu açma/kapama: çubuğa tıklayınca bir × çıkar, × çubuğu kapatır (soluk, nötr), kapalı çubuğa tıklayınca yeniden açılır.
-// Tercih tarayıcıda saklanır ve sayfadaki tüm oynatıcılarda ortaktır.
-const BAR_KEY = 'ev-bar';
-let barOn = (() => { try { return localStorage.getItem(BAR_KEY) !== 'off'; } catch { return true; } })();
+// Değerlendirme çubuğunu açma/kapama: çubuğun kendisine tıklamak anahtardır (kapalıyken soluk, nötr).
+// Durum sayfadaki tüm oynatıcılarda ortaktır.
+// Çubuk her sayfa yüklenişinde AÇIK başlar (tercih saklanmaz); kapatma yalnızca o sayfa oturumu içinde geçerlidir.
+let barOn = true;
 function setBarOn(on: boolean) {
   if (on === barOn) return;
   barOn = on;
-  try { localStorage.setItem(BAR_KEY, on ? 'on' : 'off'); } catch { /* bellekte kalır */ }
   window.dispatchEvent(new CustomEvent('cp-evbar'));
 }
 
@@ -122,8 +121,8 @@ function attach(player: PlayerEl) {
       if (label) label.textContent = '0.5x';
     }).catch(() => {});
   }
-  // Maç seçici: taşlar oynatılabilir (serbest analiz), sağ tıkla ok/kare, Stockfish yeni konumu çözer.
-  if (player.closest('.picker')) player.ready.then(() => attachAnalysis(player as never)).catch(() => {});
+  // Maç seçici ve canlı yayın: taşlar oynatılabilir (serbest analiz), sağ tıkla ok/kare, Stockfish yeni konumu çözer.
+  if (player.closest('.picker, .live-match')) player.ready.then(() => attachAnalysis(player as never)).catch(() => {});
   // Ilk hamle oncesi yorum karti tahtanin uzerinde ortalanir: tahtanin konumu/olcusu CSS degiskenleri olarak oynaticiya yazilir.
   if (player.closest('.hub')) {
     // Tahtaya (diyagrama) tıklamak oynat/duraklat yapmaz: bunun için sabit oynat/duraklat düğmesi var. Yakalama aşamasında durdurulur, oynatıcının kendi tıklama işleyicisi çalışmaz.
