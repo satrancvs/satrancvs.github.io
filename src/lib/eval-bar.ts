@@ -1,6 +1,7 @@
 // Değerlendirme çubuğu (yalnızca Dünya Şampiyonası 2026 yazısı): <pgn-player>'ın kendi çubuğu (yalnızca PGN'de [%eval] varsa açılır) her oynatıcıda açılır,
 // verisi tarayıcıda çalışan Stockfish 19 (lite, tek iş parçacıklı WASM: public/stockfish/, GPLv3, public/stockfish/Copying.txt) analizinden gelir.
 // Konum, oynatıcının `cp-move` (ana hat) ve `cp-variation-move` (varyant) olaylarından alınır; analiz ekranda görünen konum için anlık güncellenir.
+import { attachAnalysis } from '@/lib/analysis-board';
 const SF = `${import.meta.env.BASE_URL}stockfish/stockfish-19-lite-single.js`;
 // Analiz ayarları (canlı ekrandaki panelden seçilir, tarayıcıda saklanır): derinlik ve gösterilecek varyant (satır) sayısı.
 export const DEPTHS = [10, 12, 16, 20, 24];
@@ -121,6 +122,8 @@ function attach(player: PlayerEl) {
       if (label) label.textContent = '0.5x';
     }).catch(() => {});
   }
+  // Maç seçici: taşlar oynatılabilir (serbest analiz), sağ tıkla ok/kare, Stockfish yeni konumu çözer.
+  if (player.closest('.picker')) player.ready.then(() => attachAnalysis(player as never)).catch(() => {});
   // Ilk hamle oncesi yorum karti tahtanin uzerinde ortalanir: tahtanin konumu/olcusu CSS degiskenleri olarak oynaticiya yazilir.
   if (player.closest('.hub')) {
     // Tahtaya (diyagrama) tıklamak oynat/duraklat yapmaz: bunun için sabit oynat/duraklat düğmesi var. Yakalama aşamasında durdurulur, oynatıcının kendi tıklama işleyicisi çalışmaz.
@@ -205,6 +208,7 @@ function attach(player: PlayerEl) {
     window.addEventListener('cp-sf-config', rerun);
     player.addEventListener('cp-move', (e) => { const i = (e as CustomEvent).detail?.moveIndex as number; run(player._engine?.state.cache[i + 1]); });
     player.addEventListener('cp-variation-move', (e) => run((e as CustomEvent).detail?.fen));
+    player.addEventListener('cp-analyze', (e) => { last = ''; run((e as CustomEvent).detail?.fen); }); // serbest analiz konumu
     // Görünürken ilk konum (başlangıç ya da canlı yayında son hamle) çözülür; canlıda atlama sonradan yapıldığı için biraz sonra yine okunur.
     const io = new IntersectionObserver((entries) => { if (entries.some((en) => en.isIntersecting)) run(here()); }, { rootMargin: '200px' });
     io.observe(player);
