@@ -3,6 +3,7 @@ import type { ReactNode, RefObject } from 'react';
 import Markdown from 'markdown-to-jsx';
 import ProgressiveImage from '@/components/ProgressiveImage';
 import SfPanel from '@/components/SfPanel';
+import { centerCard } from '@/lib/center-card';
 import { usePlayerLoaded } from '@/lib/use-player-loaded';
 import SectionLink from '@/components/SectionLink';
 import type { SectionTarget } from '@/components/SectionLink';
@@ -124,11 +125,9 @@ export default function MatchPicker({ items, flat = false, gate = true, onLoaded
     return [...m.entries()];
   }, [items, flat]);
 
-  // Seçilen kart raf şeridinde görünür kalsın
-  useEffect(() => {
-    const el = root.current?.querySelector('.mpb-card.on') as HTMLElement | null;
-    el?.scrollIntoView({ inline: 'nearest', block: 'nearest' });
-  }, [idx]);
+  // Seçilen kart ("Şimdi oynatılıyor") raf şeridinde yumuşak kaydırmayla en ortaya gelir
+  const firstCenter = useRef(true);
+  useEffect(() => { centerCard(root.current, !firstCenter.current); firstCenter.current = false; }, [idx, gate]); // eslint-disable-line react-hooks/exhaustive-deps
 
   usePlayerLoaded(screen, gate, onLoaded);
   // Sırası gelmemiş seçici (üstteki canlı yayın yüklenene kadar): yer ayrılır, içerik çizilmez, sayfa daha hızlı açılır.

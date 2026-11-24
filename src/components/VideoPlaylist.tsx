@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import SectionLink from '@/components/SectionLink';
+import { centerCard } from '@/lib/center-card';
 import type { SectionTarget } from '@/components/SectionLink';
 
 // "Maçtan görüntüler" bölümü (Dünya Şampiyonası 2026 yazısı): maç seçiciyle aynı görünümde bir video oynatıcı.
@@ -40,9 +41,8 @@ export default function VideoPlaylist({ ready = true, next }: { ready?: boolean;
     setIdx(n); setStarted(true);
     if (scrollTop) root.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
-  useEffect(() => {
-    (root.current?.querySelector('.mpb-card.on') as HTMLElement | null)?.scrollIntoView({ inline: 'nearest', block: 'nearest' });
-  }, [idx]);
+  const firstCenter = useRef(true);
+  useEffect(() => { centerCard(root.current, !firstCenter.current); firstCenter.current = false; }, [idx]);
 
   return (
     <section ref={root} className="picker vp scroll-mt-8" aria-label="FIDE videoları">
