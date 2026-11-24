@@ -61,7 +61,7 @@ export function SfSettings() {
 }
 
 // Stockfish canlı analiz paneli (canlı ekran ve maç seçici): `boardRef` içindeki oynatıcıların `cp-sf` olaylarını (eval-bar.ts) dinler.
-export default function SfPanel({ boardRef, idle = false, idleText = '', intro }: { boardRef: RefObject<HTMLElement>; idle?: boolean; idleText?: string; intro?: ReactNode }) {
+export default function SfPanel({ boardRef, idle = false, idleText = '', intro, brand = false }: { boardRef: RefObject<HTMLElement>; idle?: boolean; idleText?: string; intro?: ReactNode; brand?: boolean }) {
   const [sf, setSf] = useState<Sf | null>(null);
   const [engineOn, setEngineOn] = useState(engineEnabled);
   const [cfg, setCfg] = useState(engineSettings);
@@ -93,6 +93,9 @@ export default function SfPanel({ boardRef, idle = false, idleText = '', intro }
   const rows = sf && !idle && engineOn ? sf.lines.map((l) => ({ num: evalText(l).num, text: pvText(sf.fen, l.pv, cfg.lines > 1 ? 6 : 8) })) : [];
   return (
     <aside className={`live-sf${ev ? '' : ' is-wait'}${engineOn ? '' : ' is-off'}`} aria-label="Stockfish canlı analizi" aria-live="off">
+      {brand && (
+        <p className="live-sf-brand f-display"><img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" aria-hidden="true" width={28} height={28} />Satranç <em>vs.</em></p>
+      )}
       <div className="live-sf-body" data-n={cfg.lines}>
       <div className="live-sf-head f-mono">
         <img src={`${import.meta.env.BASE_URL}stockfish/logo.png`} alt="" width="22" height="22" />
