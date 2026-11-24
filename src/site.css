@@ -1335,3 +1335,16 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 /* Tahtanın üstündeki kaynak etiketi ("Lichess canlı yayını"), sağdaki "FIDE canlı yayını" ile aynı görünüm */
 .live-board-label { margin: 0 0 .5rem; }
 @media (min-width: 56em) { .live-board-label { margin: .4rem 0 .5rem; } }
+
+/* Canlı görünüm: oyunlar (1–14) tahtanın altında yatay şeritte kartlar; seçili oyun ortada */
+.live-rail { margin-top: 1.1rem; padding: 0; }
+.rd-thumb { display: grid; place-items: center; background: color-mix(in srgb, var(--fg) 6%, transparent); }
+.rd-thumb::after { display: none; }
+.rd-num { font-size: 3rem; line-height: 1; font-weight: 300; color: var(--fg); }
+.rd-live { color: #ff6b57; }
+.rd-off { opacity: .45; cursor: default; }
+.rd-off:hover, .rd-off:focus-visible { transform: none; }
+@media (min-width: 56em) {
+  .live-match > .live-rail { grid-column: 1 / -1; grid-row: 9; margin-top: 1.4rem; min-width: 0; contain: inline-size; } /* contain: kartların genişliği ilk sütunu (max-content) şişirmesin */
+  .live-match > .live-nexts { grid-row: 10; }
+}
