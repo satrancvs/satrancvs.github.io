@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import SfPanel from '@/components/SfPanel';
 import { usePlayerLoaded } from '@/lib/use-player-loaded';
 import SectionLink from '@/components/SectionLink';
+import LiveVideo from '@/components/LiveVideo';
 import { API, FALLBACK, TOUR, tag } from '@/lib/championship';
 import type { Round } from '@/lib/championship';
 import type { SectionTarget } from '@/components/SectionLink';
@@ -162,8 +163,8 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const count = !live && mounted ? (
     <div className="live-sf-intro live-sf-count">
       <div className="live-count" role="timer" aria-label="Birinci oyuna kalan süre">
-        <div className="live-count-grid">
-          {[[h, 'saat'], [m, 'dakika'], [s, 'saniye']].map(([v, l]) => (
+        <div className="live-count-grid" style={{ gridTemplateColumns: `repeat(${h > 0 ? 3 : 2}, 1fr)` }}>
+          {[...(h > 0 ? [[h, 'saat']] : []), [m, 'dakika'], [s, 'saniye']].map(([v, l]) => (
             <div key={l as string} className="live-cell"><span className="live-num f-display">{two(v as number)}</span><span className="live-unit f-mono">{l}</span></div>
           ))}
         </div>
@@ -199,7 +200,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           <i className="live-dot live-dot-alert" aria-hidden="true" />Canlı · yeni hamle<span aria-hidden="true">{above ? ' ↑' : ' ↓'}</span>
         </button>, document.body)}
       <div className="live-stage">
-        <SfPanel boardRef={board} idle={idle} intro={analysing ? (
+        <SfPanel boardRef={board} idle={false} intro={analysing ? (
           <div className="live-sf-intro">
             {fresh > 0 && <div className="sf-intro-card live-newmove" role="status"><p>Canlı oyunda {fresh} yeni hamle oynandı.</p></div>}
           <button type="button" className="sf-intro-back" aria-label="Canlı konuma dön" title="Canlı konuma dön" onClick={() => board.current?.querySelector('pgn-player')?.dispatchEvent(new CustomEvent('cp-analysis-exit'))}>
@@ -208,7 +209,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           </button>
           </div>
         ) : count} idleText="Maç başlayınca canlı konum analizi buradan izlenebilecek." />
-        <div ref={board} className={`cp-game live-board${idle ? ' live-idle' : ''}`} aria-disabled={idle} {...(idle ? { inert: '' } : {})}>
+        <div ref={board} className={`cp-game live-board${idle ? ' live-wait' : ''}`}>
           <div ref={host} />
         </div>
       </div>
@@ -218,6 +219,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
         </p>
       )}
       {live && !hasMoves && <p className="live-status f-mono">{failed ? 'Canlı veriye ulaşılamadı' : 'İlk hamle bekleniyor…'}{shown && <> · <a href={`https://lichess.org/broadcast/-/-/${shown.id}`} target="_blank" rel="noopener noreferrer">Lichess’te izle</a></>}</p>}
+      <LiveVideo />
       {next && <div className="live-nexts">{(Array.isArray(next) ? next : [next]).map((t) => <SectionLink key={t.id} target={t} />)}</div>}
     </section>
   );

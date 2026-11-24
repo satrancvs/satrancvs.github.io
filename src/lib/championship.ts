@@ -76,3 +76,11 @@ export function useChampionship(): { phase: Phase; now: number } {
   const next = rounds.findIndex((r) => r.startsAt > now && !r.finished);
   return { phase: { kind: 'between', n: next >= 0 ? next + 1 : rounds.length, at: next >= 0 ? rounds[next].startsAt : undefined, g, s }, now };
 }
+
+// FIDE kanalının oyun yayını videoları (başlığı "World Championship" + "Game N" ya da "No Commentary"): VideoPlaylist başa alır, canlı görünümdeki video (LiveVideo) bunlardan birini gömer.
+export type FideVideo = { id: string; title: string; published?: string };
+export const isGameStream = (v: FideVideo) => /world championship/i.test(v.title) && (/\bgame\s*\d+/i.test(v.title) || /no commentary/i.test(v.title));
+export const gameRank = (v: FideVideo) => (/\bgame\s*\d+/i.test(v.title) ? 0 : /no commentary/i.test(v.title) ? 1 : 2);
+/** Gösterilecek oyun yayını: yorumlu "Game N" yayını önce, aynı sınıfta en yenisi. */
+export const pickGameStream = (videos: FideVideo[]): FideVideo | undefined =>
+  videos.filter(isGameStream).sort((a, b) => gameRank(a) - gameRank(b) || +new Date(b.published ?? 0) - +new Date(a.published ?? 0))[0];
