@@ -3,6 +3,8 @@ import { createPortal } from 'react-dom';
 import SfPanel from '@/components/SfPanel';
 import { usePlayerLoaded } from '@/lib/use-player-loaded';
 import SectionLink from '@/components/SectionLink';
+import { API, FALLBACK, TOUR, tag } from '@/lib/championship';
+import type { Round } from '@/lib/championship';
 import type { SectionTarget } from '@/components/SectionLink';
 
 // Dünya Şampiyonası 2026 (Gukesh – Sindarov) canlı bölümü. Yazıda yalnızca `[CANLI MAÇ]` yazan bir paragraf bu bileşeni çizer.
@@ -10,20 +12,10 @@ import type { SectionTarget } from '@/components/SectionLink';
 //  - Maç başlayınca: Lichess'in resmî FIDE yayınından (herkese açık, CORS açık PGN uç noktası) 10 saniyede bir çekilen oyun canlı oynatılır;
 //    okuyucu geride bir hamledeyse konumu korunur, sondaysa yeni hamleyle birlikte sona gider.
 // Yayın kimliği ve tur kimlikleri Lichess'in `/api/broadcast/<TOUR>` yanıtından gelir (alttaki liste, ağ yanıt vermezse yedektir).
-const TOUR = 'qfkdt8mn';
-const API = 'https://lichess.org';
 const POLL_MS = 10_000;
-type Round = { id: string; name: string; startsAt: number; finished?: boolean };
-const FALLBACK: Round[] = [
-  ['xLgOJ6cb', 1795528800000], ['L3j03TZq', 1795615200000], ['fnmEB1kH', 1795701600000], ['wIwJtPqz', 1795874400000],
-  ['ueVpeXxW', 1795960800000], ['b0ACq4LF', 1796047200000], ['OZYNuhhF', 1796220000000], ['K9grUNXr', 1796306400000],
-  ['gBI5kKDi', 1796392800000], ['NhfhTSep', 1796565600000], ['bAU22Apj', 1796652000000], ['vRbnvNEi', 1796738400000],
-  ['S4C6oJ1k', 1796911200000], ['MDkKXuQD', 1796997600000],
-].map(([id, startsAt], i) => ({ id: id as string, name: `Game ${i + 1}`, startsAt: startsAt as number }));
 
 const IDLE_PGN = '[Event "Dünya Şampiyonası 2026"]\n[White "Gukesh Dommaraju"]\n[Black "Javokhir Sindarov"]\n[Result "*"]\n\n1. e4 *';
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
-const tag = (pgn: string, name: string) => pgn.match(new RegExp(`\\[${name}\\s+"([^"]*)"\\]`))?.[1] ?? '';
 const plies = (pgn: string) => {
   const body = pgn.replace(/\[[^\]]*\]/g, ' ').replace(/\{[^}]*\}/g, ' ').replace(/\$\d+/g, ' ').replace(/\d+\.(\.\.)?/g, ' ').replace(/\b(1-0|0-1|1\/2-1\/2|\*)\b/g, ' ');
   return body.split(/\s+/).filter(Boolean).length;

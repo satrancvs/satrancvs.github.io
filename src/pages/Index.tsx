@@ -9,6 +9,7 @@ import ProgressiveImage from '@/components/ProgressiveImage';
 import FenDiagram from '@/components/FenDiagram';
 import NewsletterForm from '@/components/NewsletterForm';
 import { preloadChessPublica } from '@/lib/chesspublica';
+import MatchBanner from '@/components/MatchBanner';
 import { ARTICLES, LISTED, PUBLISHED, articlePath, catLabel, catsOf, issueOf } from '@/data/articles';
 import '../site.css';
 
@@ -448,6 +449,7 @@ export default function Index() {
 
       <SiteFooter />
 
+      <MatchBanner />
     </div>
   );
 }
