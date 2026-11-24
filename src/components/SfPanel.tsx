@@ -93,7 +93,7 @@ export default function SfPanel({ boardRef, idle = false, idleText = '', intro }
   const rows = sf && !idle && engineOn ? sf.lines.map((l) => ({ num: evalText(l).num, text: pvText(sf.fen, l.pv, cfg.lines > 1 ? 6 : 8) })) : [];
   return (
     <aside className={`live-sf${ev ? '' : ' is-wait'}${engineOn ? '' : ' is-off'}`} aria-label="Stockfish canlı analizi" aria-live="off">
-      <div className="live-sf-body">
+      <div className="live-sf-body" data-n={cfg.lines}>
       <div className="live-sf-head f-mono">
         <img src={`${import.meta.env.BASE_URL}stockfish/logo.png`} alt="" width="22" height="22" />
         <span className="live-sf-title">{engineOn ? <><span>Stockfish 19 ·</span> <span>canlı analiz</span></> : <span>Stockfish · durdu</span>}</span>

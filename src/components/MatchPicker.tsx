@@ -101,10 +101,20 @@ export default function MatchPicker({ items, flat = false, gate = true, onLoaded
   const nextIdx = (idx + 1) % items.length;
   const nx = items[nextIdx];
 
+  // Karta tıklayınca oynatıcının başına kaydırılır. Oyun değişince içerik (yorum, bilgi, kart görselleri) yüksekliği değiştirir ve sayfa kaydırma sırasında oturur;
+  // bu yüzden hedef yeni içerik çizildikten sonra ölçülür ve kaydırma bitince birkaç kez düzeltilir (aksi hâlde bazen 30–40 px kayık kalıyordu).
+  const [scrollTick, setScrollTick] = useState(0);
   const go = (n: number, scrollTv = false) => {
     setIdx(((n % items.length) + items.length) % items.length);
-    if (scrollTv) root.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (scrollTv) setScrollTick((t) => t + 1);
   };
+  useEffect(() => {
+    if (!scrollTick) return;
+    const top = () => (root.current?.getBoundingClientRect().top ?? 0) - 32;
+    window.scrollTo({ top: window.scrollY + top(), behavior: 'smooth' });
+    const fix = [500, 1100, 1900].map((ms) => window.setTimeout(() => { if (Math.abs(top()) > 4) window.scrollTo({ top: window.scrollY + top(), behavior: 'auto' }); }, ms));
+    return () => fix.forEach(window.clearTimeout);
+  }, [scrollTick]);
 
   const rows = useMemo(() => {
     // flat: tüm oyunlar tek sırada, yıllara bölünmeden
