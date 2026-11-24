@@ -210,6 +210,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           </div>
         ) : count} idleText="Maç başlayınca canlı konum analizi buradan izlenebilecek." />
         <div ref={board} className={`cp-game live-board${idle ? ' live-wait' : ''}`}>
+          <p className="live-video-label live-board-label f-mono"><i className="live-dot" aria-hidden="true" />Lichess canlı yayını</p>
           <div ref={host} />
         </div>
       </div>
