@@ -1320,3 +1320,18 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .live-match > .live-nexts { grid-column: 1 / -1; grid-row: 9; flex-direction: row; max-width: none; gap: 1rem; margin-top: 1.6rem; }
   .live-match > .live-nexts .sec-link { flex: 1 1 0; min-width: 0; }
 }
+
+/* Canlı görünüm, geniş ekran: sağ sütunda FIDE canlı yayın videosu üstte, yarışmacı/skor/durum bilgisi altta (tahtanın alt kenarına hizalı) */
+@media (min-width: 56em) {
+  .live-match { grid-template-rows: auto 1fr repeat(6, auto); }
+  .live-match > .live-video { grid-row: 1; align-self: start; margin-top: .4rem; }
+  .live-match > .live-kicker { grid-row: 3; }
+  .live-match > .live-when { grid-row: 4; }
+  .live-match > .live-vs { grid-row: 5; }
+  .live-match > .live-score { grid-row: 6; }
+  .live-match > .live-rounds { grid-row: 7; }
+  .live-match > .live-status { grid-row: 8; align-self: end; }
+}
+/* Tahtanın üstündeki kaynak etiketi ("Lichess canlı yayını"), sağdaki "FIDE canlı yayını" ile aynı görünüm */
+.live-board-label { margin: 0 0 .5rem; }
+@media (min-width: 56em) { .live-board-label { margin: .4rem 0 .5rem; } }
