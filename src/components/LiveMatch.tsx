@@ -26,6 +26,9 @@ const plies = (pgn: string) => {
 // Bir turun PGN'i birden çok oyun içerebilir (test için seçilen çok tahtalı turlar): tek tahta gösterildiği için yalnızca ilk oyun alınır (durum satırı da ilk oyundan okunur).
 const firstGame = (pgn: string) => pgn.trim().split(/\n\s*\n(?=\[Event )/)[0];
 const clean = (pgn: string) => firstGame(pgn).replace(/\{[^}]*\}/g, ' ').replace(/[ \t]+/g, ' ').trim();
+// Lichess PGN'inde her hamlenin ardından { [%clk h:mm:ss] } vardır: oyuncuların kalan süreleri hamle sırasına göre okunur.
+const clocks = (pgn: string) => [...firstGame(pgn).matchAll(/\[%clk (\d+:\d{2}:\d{2})(?:\.\d+)?\]/g)].map((m) => m[1]);
+const clk = (t: string) => t.replace(/^0:/, '');
 const two = (n: number) => String(n).padStart(2, '0');
 const nm = (s: string) => (s.includes(',') ? s.split(',').map((x) => x.trim()).reverse().join(' ') : s);
 
@@ -157,6 +160,31 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
     return () => el.removeEventListener('cp-analysis', on);
   }, []);
 
+  // Okurun gördüğü konum (oynatıcının hamle sırası): kalan süreler o konumdaki saatlerdir.
+  const [ply, setPly] = useState(0);
+  useEffect(() => {
+    if (idle) { setPly(0); return; }
+    const t = window.setInterval(() => {
+      const e = (host.current?.querySelector('pgn-player') as (HTMLElement & { _engine?: { state: { index: number } } }) | null)?._engine;
+      if (e) setPly((v) => (v === e.state.index ? v : e.state.index));
+    }, 250);
+    return () => window.clearInterval(t);
+  }, [idle, src]);
+  const raw = shown ? pgns[shown.id] ?? '' : '';
+  const clks = useMemo(() => clocks(raw), [raw]);
+  const startClk = (() => { const m = /^(\d+)'/.exec(tag(raw, 'TimeControl')); return m ? `${Math.floor(+m[1] / 60)}:${two(+m[1] % 60)}:00` : ''; })();
+  const clockOf = (name: string) => {
+    if (idle || !clks.length) return '';
+    const isWhite = nm(tag(raw, 'White')).toLowerCase().includes(name);
+    const isBlack = nm(tag(raw, 'Black')).toLowerCase().includes(name);
+    if (!isWhite && !isBlack) return '';
+    const k = Math.min(ply, clks.length);
+    let last = '';
+    for (let i = k - 1; i >= 0; i--) if ((i % 2 === 0) === isWhite) { last = clks[i]; break; }
+    return clk(last || startClk);
+  };
+  const gClock = clockOf('gukesh'), sClock = clockOf('sindarov');
+
   const left = Math.max(0, start - now);
   const h = Math.floor(left / 36e5), m = Math.floor(left / 6e4) % 60, s = Math.floor(left / 1e3) % 60;
   const white = nm(tag(pgn, 'White')), black = nm(tag(pgn, 'Black'));
@@ -181,8 +209,8 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
       {!live && <p className="live-kicker f-mono">Çok yakında<span aria-hidden="true"> · </span>Dünya Şampiyonası 2026</p>}
       {!live && <p className="live-when f-mono">24 Kasım 2026 · 17.00 (TR saati) · Cenevre</p>}
       <div className="live-vs">
-        <div><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/dunya-fide-gukesh.jpg`} alt="" style={{ left: '-53%' }} loading="lazy" /></span><p><b>Gukesh Dommaraju</b><span className="f-mono">Hindistan · 2710</span></p></div>
-        <div><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/dunya-fide-sindarov.jpg`} alt="" style={{ left: '-56%' }} loading="lazy" /></span><p><b>Javokhir Sindarov</b><span className="f-mono">Özbekistan · 2782</span></p></div>
+        <div><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/dunya-fide-gukesh.jpg`} alt="" style={{ left: '-53%' }} loading="lazy" /></span><p><b>Gukesh Dommaraju</b><span className="f-mono">Hindistan · 2710</span></p>{gClock && <i className="vs-clock f-mono" title="Kalan süre" aria-label={`Gukesh kalan süre ${gClock}`}>{gClock}</i>}</div>
+        <div><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/dunya-fide-sindarov.jpg`} alt="" style={{ left: '-56%' }} loading="lazy" /></span><p><b>Javokhir Sindarov</b><span className="f-mono">Özbekistan · 2782</span></p>{sClock && <i className="vs-clock f-mono" title="Kalan süre" aria-label={`Sindarov kalan süre ${sClock}`}>{sClock}</i>}</div>
       </div>
       {live && (
         <p className="live-score f-mono" aria-label="Maç skoru">
