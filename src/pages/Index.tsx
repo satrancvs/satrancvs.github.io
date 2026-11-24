@@ -121,7 +121,6 @@ export default function Index() {
   const [cat, setCat] = useState('Tümü');
   // Mobil (md altı): ilk liste her zaman sayının tüm yazıları; "Köşeler" altındaki ikinci liste seçilen köşeyi gösterir.
   const [mcat, setMcat] = useState(CORNERS[0]);
-  const [missue, setMissue] = useState<1 | 2>(1); // mobil: Sayı 1 / Sayı 2 sekmesi
   const [scrolled, setScrolled] = useState(false);
   // Bir köşe seçilince liste "Köşeler" başlığıyla hizalanır (Tümü seçiliyken "Tüm yazılar" başlığıyla): sol sütunda başlığın
   // üst boşluğu ölçülür, liste o kadar aşağı itilir. Yalnızca iki sütunlu düzende (md ve üstü).
@@ -343,11 +342,7 @@ export default function Index() {
               <span aria-hidden className="f-mono text-[#0E0C0A]/35 mx-3">·</span>
               <button role="tab" aria-selected={cat === 'Sayı 2'} onClick={() => setCat('Sayı 2')} className={tabCls(cat === 'Sayı 2')}>Sayı 2</button>
             </div>
-            <div role="tablist" aria-label="Sayılar" className="md:hidden mt-12">
-              <button role="tab" aria-selected={missue === 1} onClick={() => setMissue(1)} className={tabCls(missue === 1)}>Sayı 1</button>
-              <span aria-hidden className="f-mono text-[#0E0C0A]/35 mx-3">·</span>
-              <button role="tab" aria-selected={missue === 2} onClick={() => setMissue(2)} className={tabCls(missue === 2)}>Sayı 2</button>
-            </div>
+            <p className="md:hidden f-mono mt-12 text-[#0E0C0A]/50">Sayı 1</p>
             <h2 id="koseler" ref={koseHead} className="hidden md:block f-display text-[clamp(36px,4.5vw,72px)] mt-14 scroll-mt-28"><em className="italic">Köşeler</em></h2>
             <div role="tablist" aria-label="Köşeler" className="hidden md:flex flex-wrap items-center gap-x-3 gap-y-2 mt-8">
               {CORNERS.map((k, i) => (
@@ -362,8 +357,14 @@ export default function Index() {
           <ul className="hidden md:block md:col-span-9 transition-[margin] duration-300" style={{ marginTop: listShift }}>
             {renderRows(list, cat)}
           </ul>
-          {/* Mobil: Sayı 1 / Sayı 2 sekmesine bağlı liste, ardından Köşeler ve seçilen köşenin yazıları. */}
-          <ul className="md:hidden -mt-4">{missue === 1 ? renderRows(issue1, 'all') : renderRows(issue2, 'i2')}</ul>
+          {/* Mobil: önce sayının tüm yazıları, ardından Köşeler ve seçilen köşenin yazıları. */}
+          <ul className="md:hidden -mt-4">{renderRows(issue1, 'all')}</ul>
+          {issue2.length > 0 && (
+            <div className="md:hidden">
+              <p className="f-mono text-[#0E0C0A]/50">Sayı 2</p>
+              <ul>{renderRows(issue2, 'i2')}</ul>
+            </div>
+          )}
           <div className="md:hidden mt-6">
             <h2 id="koseler-m" className="f-display text-[clamp(36px,4.5vw,72px)] scroll-mt-28"><em className="italic">Köşeler</em></h2>
             <div role="tablist" aria-label="Köşeler" className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-8">
