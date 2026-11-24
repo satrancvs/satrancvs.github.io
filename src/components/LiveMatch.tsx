@@ -178,9 +178,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
 
   return (
     <section className={`live-match${live ? ' is-live' : ''}`} aria-label="Dünya Şampiyonası 2026 canlı yayını">
-      <p className="live-kicker f-mono">
-        {live ? <><i className={`live-dot${alert ? ' live-dot-alert' : ''}`} aria-hidden="true" />Canlı</> : 'Çok yakında'}<span aria-hidden="true"> · </span>Dünya Şampiyonası 2026
-      </p>
+      {!live && <p className="live-kicker f-mono">Çok yakında<span aria-hidden="true"> · </span>Dünya Şampiyonası 2026</p>}
       {!live && <p className="live-when f-mono">24 Kasım 2026 · 17.00 (TR saati) · Cenevre</p>}
       <div className="live-vs">
         <div><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/dunya-fide-gukesh.jpg`} alt="" style={{ left: '-53%' }} loading="lazy" /></span><p><b>Gukesh Dommaraju</b><span className="f-mono">Hindistan · 2710</span></p></div>
@@ -206,7 +204,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           </div>
         ) : count} idleText="Maç başlayınca canlı konum analizi buradan izlenebilecek." />
         <div ref={board} className={`cp-game live-board${idle ? ' live-wait' : ''}`}>
-          <p className="live-video-label live-board-label f-mono"><i className="live-dot" aria-hidden="true" />Lichess canlı yayını</p>
+          <p className="live-video-label live-board-label f-mono"><i className={`live-dot${alert ? ' live-dot-alert' : ''}`} aria-hidden="true" />Lichess canlı yayını</p>
           <div ref={host} />
         </div>
       </div>
