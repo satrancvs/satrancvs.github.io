@@ -1303,3 +1303,10 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .match-banner-gap { height: 6.5rem; }
 @media (min-width: 48em) { .match-banner-gap { height: 6rem; } }
 @media (max-width: 30em) { .mb-kicker { letter-spacing: .08em; font-size: 10.5px; } .mb-sub { letter-spacing: .06em; font-size: 10px; } }
+
+/* Canlı yayın kartı (video oynatıcı): kırmızı etiket */
+.vp .mpb-num.is-live { color: #ff6b57; font-weight: 600; }
+
+/* Canlı tahta, oyun başlamadan da etkindir (renkli, tıklanabilir, Stockfish ve serbest analiz çalışır); yalnızca boş hamle listesi/yorum/oynat düğmesi gizlenir */
+.live-wait .video-moves, .live-wait .board-toolbar, .live-wait .play, .live-wait .video-comment { display: none !important; }
+.live-wait .player-container { margin-left: auto; margin-right: auto; }

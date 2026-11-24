@@ -199,7 +199,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           <i className="live-dot live-dot-alert" aria-hidden="true" />Canlı · yeni hamle<span aria-hidden="true">{above ? ' ↑' : ' ↓'}</span>
         </button>, document.body)}
       <div className="live-stage">
-        <SfPanel boardRef={board} idle={idle} intro={analysing ? (
+        <SfPanel boardRef={board} idle={false} intro={analysing ? (
           <div className="live-sf-intro">
             {fresh > 0 && <div className="sf-intro-card live-newmove" role="status"><p>Canlı oyunda {fresh} yeni hamle oynandı.</p></div>}
           <button type="button" className="sf-intro-back" aria-label="Canlı konuma dön" title="Canlı konuma dön" onClick={() => board.current?.querySelector('pgn-player')?.dispatchEvent(new CustomEvent('cp-analysis-exit'))}>
@@ -208,7 +208,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           </button>
           </div>
         ) : count} idleText="Maç başlayınca canlı konum analizi buradan izlenebilecek." />
-        <div ref={board} className={`cp-game live-board${idle ? ' live-idle' : ''}`} aria-disabled={idle} {...(idle ? { inert: '' } : {})}>
+        <div ref={board} className={`cp-game live-board${idle ? ' live-wait' : ''}`}>
           <div ref={host} />
         </div>
       </div>

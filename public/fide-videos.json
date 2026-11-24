@@ -1,11 +1,21 @@
 {
  "channel": "@FIDE_chess",
- "updated": "2026-11-24T08:16:25.847Z",
+ "updated": "2026-11-24T13:39:45.738Z",
  "videos": [
+  {
+   "id": "7dyXiy2kWsw",
+   "title": "♟ Chess | Salesforce FIDE World Championship 2026 | Game 1 | 🇮🇳 Gukesh D 🆚 Javokhir Sindarov 🇺🇿",
+   "published": "2026-11-13T11:37:07+00:00"
+  },
+  {
+   "id": "TDx2DGiBGhc",
+   "title": "🇮🇳 Gukesh D 🆚 Javokhir Sindarov 🇺🇿 | Salesforce FIDE World Championship 2026 | No Commentary",
+   "published": "2026-11-24T09:47:38+00:00"
+  },
   {
    "id": "tF8WpoLwnIc",
    "title": "FIDE Council meeting: President's report. November 24, 2026.",
-   "published": "2026-11-23T13:50:11+00:00"
+   "published": "2026-11-24T09:09:25+00:00"
   },
   {
    "id": "ua6miaYlwSA",
@@ -66,16 +76,6 @@
    "id": "1c-XtAdrFT0",
    "title": "How much sleep are Javokhir and Gukesh getting during their prep? 😴",
    "published": "2026-11-23T16:42:59+00:00"
-  },
-  {
-   "id": "Ns7L7CSu15I",
-   "title": "What were you doing at 20?",
-   "published": "2026-11-23T16:42:51+00:00"
-  },
-  {
-   "id": "xKBZJK-5MdE",
-   "title": "Gukesh D: Lessons, Support and Expectations | Salesforce FIDE World Championship",
-   "published": "2026-11-23T14:27:14+00:00"
   }
  ]
 }
