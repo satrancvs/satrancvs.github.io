@@ -1265,12 +1265,11 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
    skor etiketi tek satır (analiz sürerken), bekleme/duruş metni serbest. */
 @media (max-width: 55.99em) {
   .live-sf-body { --sf-h: calc(var(--sf-n, 2) * 2.72rem + (var(--sf-n, 2) - 1) * .55rem); }
-  .live-sf-body[data-n="1"] { --sf-h: 4.65rem; }
+  .live-sf-body[data-n="1"] { --sf-h: 3.1rem; }
   .live-sf-body[data-n="2"] { --sf-n: 2; } .live-sf-body[data-n="3"] { --sf-n: 3; } .live-sf-body[data-n="4"] { --sf-n: 4; }
   .live-sf-pv, .live-sf-lines { height: var(--sf-h); min-height: 0; overflow: hidden; }
-  .live-sf-pv { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
+  .live-sf-pv { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
   .live-sf-lines li span { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
-  .live-sf-lines li:only-child span { -webkit-line-clamp: 3; }
   .live-sf-lines li { line-height: 1.45; }
   .live-sf:not(.is-wait) .live-sf-score { flex-wrap: nowrap; }
   .live-sf:not(.is-wait) .live-sf-label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
