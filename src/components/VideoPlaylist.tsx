@@ -3,8 +3,9 @@ import SectionLink from '@/components/SectionLink';
 import type { SectionTarget } from '@/components/SectionLink';
 
 // "Maçtan görüntüler" bölümü (Dünya Şampiyonası 2026 yazısı): maç seçiciyle aynı görünümde bir video oynatıcı.
-// İlk video sabittir (açılış töreni özeti); ardından FIDE chess kanalının (@FIDE_chess) son videoları gelir (public/fide-videos.json,
-// scripts/fetch-fide-videos.mjs derleme sırasında yazar). Video, oynat düğmesine basılınca yüklenir (YouTube sayfa açılırken yüklenmez).
+// Önce kanalın en yeni videosu oynar, sıra yeniden eskiye gider; akış alınamazsa açılış töreni özeti gösterilir.
+// Liste FIDE kanalının (@FIDE_chess) son videolarıdır (public/fide-videos.json, scripts/fetch-fide-videos.mjs derleme sırasında yazar).
+// Video, oynat düğmesine basılınca yüklenir (YouTube sayfa açılırken yüklenmez).
 type Vid = { id: string; title: string; published?: string };
 
 const PINNED: Vid = { id: 'tm9HPyYL50g', title: 'Highlights | Opening Ceremony | Salesforce FIDE World Championship 2026', published: '2026-11-23T00:17:01+00:00' };
@@ -26,7 +27,11 @@ export default function VideoPlaylist({ ready = true, next }: { ready?: boolean;
     fetch(`${import.meta.env.BASE_URL}fide-videos.json`).then((r) => r.json()).then((d) => { if (!off && Array.isArray(d?.videos)) setFeed(d.videos); }).catch(() => {});
     return () => { off = true; };
   }, [ready]);
-  const items = useMemo(() => [PINNED, ...feed.filter((v) => v.id !== PINNED.id)], [feed]);
+  // En yeni video başta ("Şimdi oynatılıyor"), ardından eskiye doğru; açılış töreni özeti akışta yoksa (akış yalnızca son videoları taşır) listenin sonuna eklenir.
+  const items = useMemo(() => {
+    const byDate = [...feed].sort((a, b) => +new Date(b.published ?? 0) - +new Date(a.published ?? 0));
+    return byDate.some((v) => v.id === PINNED.id) ? byDate : [...byDate, PINNED];
+  }, [feed]);
   const cur = items[Math.min(idx, items.length - 1)];
   const nextIdx = (idx + 1) % items.length;
   const nx = items[nextIdx];
