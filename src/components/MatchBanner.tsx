@@ -9,7 +9,9 @@ import { useChampionship } from '@/lib/championship';
 const pad = (n: number) => String(n).padStart(2, '0');
 const clock = (ms: number) => {
   const t = Math.max(0, Math.floor(ms / 1000));
-  return `${pad(Math.floor(t / 3600))}:${pad(Math.floor(t / 60) % 60)}:${pad(t % 60)}`;
+  const h = Math.floor(t / 3600);
+  // Saat 0 ise gösterilmez ("00:" yazılmaz): 45:12 ; 1 saat ve üstünde 01:45:12
+  return `${h > 0 ? `${pad(h)}:` : ''}${pad(Math.floor(t / 60) % 60)}:${pad(t % 60)}`;
 };
 const fmt = (n: number) => (Number.isInteger(n) ? String(n) : `${Math.floor(n) || ''}½`);
 

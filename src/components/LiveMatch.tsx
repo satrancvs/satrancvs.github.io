@@ -162,8 +162,8 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const count = !live && mounted ? (
     <div className="live-sf-intro live-sf-count">
       <div className="live-count" role="timer" aria-label="Birinci oyuna kalan süre">
-        <div className="live-count-grid">
-          {[[h, 'saat'], [m, 'dakika'], [s, 'saniye']].map(([v, l]) => (
+        <div className="live-count-grid" style={{ gridTemplateColumns: `repeat(${h > 0 ? 3 : 2}, 1fr)` }}>
+          {[...(h > 0 ? [[h, 'saat']] : []), [m, 'dakika'], [s, 'saniye']].map(([v, l]) => (
             <div key={l as string} className="live-cell"><span className="live-num f-display">{two(v as number)}</span><span className="live-unit f-mono">{l}</span></div>
           ))}
         </div>
