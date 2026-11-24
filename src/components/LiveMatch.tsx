@@ -185,16 +185,25 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   };
   const gClock = clockOf('gukesh'), sClock = clockOf('sindarov');
 
-  const left = Math.max(0, start - now);
+  // Oyunlar arası: son başlayan tur bittiyse ve sonraki tur varsa, sol sütunda sonraki oyuna geri sayım gösterilir (bitmiş oyun şeritte kalır).
+  const upcoming = list.find((r) => r.startsAt > now);
+  const curDone = !!current && (current.finished || /^(1-0|0-1|1\/2-1\/2)$/.test(tag(pgns[current.id] ?? '', 'Result')));
+  const between = live && !!upcoming && curDone;
+  const target = between && upcoming ? upcoming.startsAt : start;
+  const nextNo = upcoming ? list.indexOf(upcoming) + 1 : 1;
+  const left = Math.max(0, target - now);
   const h = Math.floor(left / 36e5), m = Math.floor(left / 6e4) % 60, s = Math.floor(left / 1e3) % 60;
   const white = nm(tag(pgn, 'White')), black = nm(tag(pgn, 'Black'));
   const result = tag(pgn, 'Result');
   const roundNo = shown ? list.indexOf(shown) + 1 : 0;
 
   // Geri sayım, canlı yayın başlayana kadar sol sütunun altında (Stockfish kartının altında) durur.
-  const count = !live && mounted ? (
+  const count = (!live || between) && mounted ? (
     <div className="live-sf-intro live-sf-count">
-      <div className="live-count" role="timer" aria-label="Birinci oyuna kalan süre">
+      <div className="live-count" role="timer" aria-label={`${nextNo}. oyuna kalan süre`}>
+        {between && upcoming && (
+          <p className="live-count-label f-mono">{nextNo}. oyuna kalan süre<span className="live-count-when">{new Date(upcoming.startsAt).toLocaleString('tr-TR', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' })}</span></p>
+        )}
         <div className="live-count-grid" style={{ gridTemplateColumns: `repeat(${h > 0 ? 3 : 2}, 1fr)` }}>
           {[...(h > 0 ? [[h, 'saat']] : []), [m, 'dakika'], [s, 'saniye']].map(([v, l]) => (
             <div key={l as string} className="live-cell"><span className="live-num f-display">{two(v as number)}</span><span className="live-unit f-mono">{l}</span></div>
