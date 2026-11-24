@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import SectionLink from '@/components/SectionLink';
 import { centerCard } from '@/lib/center-card';
-import { useChampionship } from '@/lib/championship';
+import { gameRank, isGameStream, useChampionship } from '@/lib/championship';
 import type { SectionTarget } from '@/components/SectionLink';
 
 // "Maçtan görüntüler" bölümü (Dünya Şampiyonası 2026 yazısı): maç seçiciyle aynı görünümde bir video oynatıcı.
@@ -12,7 +12,6 @@ type Vid = { id: string; title: string; published?: string; live?: boolean };
 
 // Oyun yayınları: FIDE'nin her oyun için açtığı canlı yayın videoları ("… | Game N | …" ve "… | No Commentary"). Canlı yayın sırasında en önce bunlar gelir
 // (YouTube'un `embed/live_stream?channel=` adresi bu kanalda çalışmıyor: "video kullanılamıyor"; kimlikle gömülen yayın videosu canlıyken de oynar).
-const isGameStream = (v: Vid) => /world championship/i.test(v.title) && (/\bgame\s*\d+/i.test(v.title) || /no commentary/i.test(v.title));
 const BASE = import.meta.env.BASE_URL;
 const PINNED: Vid = { id: 'tm9HPyYL50g', title: 'Highlights | Opening Ceremony | Salesforce FIDE World Championship 2026', published: '2026-11-23T00:17:01+00:00' };
 const two = (n: number) => String(n).padStart(2, '0');
@@ -42,8 +41,7 @@ export default function VideoPlaylist({ ready = true, next }: { ready?: boolean;
     const rest = byDate.some((v) => v.id === PINNED.id) ? byDate : [...byDate, PINNED];
     // Oyun yayınları başa ("Game N" yorumlu yayın, ardından yorumsuz), kalanlar yeniden eskiye. Yayın zamanı yaklaşmadıysa sıra yalnızca tarihe göredir.
     if (!soon) return rest.map((v) => ({ ...v, live: false }));
-    const rank = (v: Vid) => (/\bgame\s*\d+/i.test(v.title) ? 0 : /no commentary/i.test(v.title) ? 1 : 2);
-    return [...rest].sort((a, b) => (a.live === b.live ? 0 : a.live ? -1 : 1) || (a.live && b.live ? rank(a) - rank(b) || +new Date(b.published ?? 0) - +new Date(a.published ?? 0) : 0));
+    return [...rest].sort((a, b) => (a.live === b.live ? 0 : a.live ? -1 : 1) || (a.live && b.live ? gameRank(a) - gameRank(b) || +new Date(b.published ?? 0) - +new Date(a.published ?? 0) : 0));
   }, [feed, soon]);
   const idx = Math.max(0, items.findIndex((v) => v.id === selId));
   const cur = items[idx];
