@@ -232,7 +232,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           </div>
         ) : count} idleText="Maç başlayınca canlı konum analizi buradan izlenebilecek." />
         <div ref={board} className={`cp-game live-board${idle ? ' live-wait' : ''}`}>
-          <p className="live-video-label live-board-label f-mono"><i className={`live-dot${alert ? ' live-dot-alert' : ''}`} aria-hidden="true" />Lichess canlı yayını</p>
+          <p className="live-video-label live-board-label f-mono"><i className={`live-dot${alert ? ' live-dot-alert' : ''}`} aria-hidden="true" /><span lang="en">Lichess</span> canlı yayını</p>
           <div ref={host} />
         </div>
       </div>
@@ -265,7 +265,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           {roundNo}. oyun · Beyaz: {white} · Siyah: {black} · {result && result !== '*' ? `Sonuç ${result.replace('1/2-1/2', '½–½')}` : 'Oyun sürüyor'}
         </p>
       )}
-      {live && !hasMoves && <p className="live-status f-mono">{failed ? 'Canlı veriye ulaşılamadı' : 'İlk hamle bekleniyor…'}{shown && <> · <a href={`https://lichess.org/broadcast/-/-/${shown.id}`} target="_blank" rel="noopener noreferrer">Lichess’te izle</a></>}</p>}
+      {live && !hasMoves && <p className="live-status f-mono">{failed ? 'Canlı veriye ulaşılamadı' : 'İlk hamle bekleniyor…'}{shown && <> · <a href={`https://lichess.org/broadcast/-/-/${shown.id}`} target="_blank" rel="noopener noreferrer"><span lang="en">Lichess</span>’te izle</a></>}</p>}
       <LiveVideo />
       {next && <div className="live-nexts">{(Array.isArray(next) ? next : [next]).map((t) => <SectionLink key={t.id} target={t} />)}</div>}
     </section>
