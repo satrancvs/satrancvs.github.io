@@ -1348,3 +1348,8 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
   .live-match > .live-rail { grid-column: 1 / -1; grid-row: 9; margin-top: 1.4rem; min-width: 0; contain: inline-size; } /* contain: kartların genişliği ilk sütunu (max-content) şişirmesin */
   .live-match > .live-nexts { grid-row: 10; }
 }
+
+/* Canlı yayın şeridi: 1. oyun kartında FIDE fotoğrafı (Michal Walusza / FIDE) */
+.rd-thumb { position: relative; overflow: hidden; }
+.rd-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+.rd-num-photo { position: absolute; left: .5rem; top: .3rem; font-size: 2rem; color: #fff; text-shadow: 0 1px 6px rgba(0,0,0,.7); z-index: 1; }
