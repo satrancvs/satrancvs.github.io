@@ -83,6 +83,6 @@ export type FideVideo = { id: string; title: string; published?: string };
 const COMMENTARY = /\|\s*game\s*\d+\s*\|/i, SILENT = /\|\s*no commentary\s*$/i;
 export const isGameStream = (v: FideVideo) => /world championship/i.test(v.title) && (COMMENTARY.test(v.title) || SILENT.test(v.title.trim()));
 export const gameRank = (v: FideVideo) => (COMMENTARY.test(v.title) ? 0 : SILENT.test(v.title.trim()) ? 1 : 2);
-/** Gösterilecek oyun yayını: yorumlu "Game N" yayını önce, aynı sınıfta en yenisi. */
+/** Canlı görünümde gömülen oyun yayını: yorumsuz ("No Commentary") yayın önce, yoksa yorumlu "Game N"; aynı sınıfta en yenisi. */
 export const pickGameStream = (videos: FideVideo[]): FideVideo | undefined =>
-  videos.filter(isGameStream).sort((a, b) => gameRank(a) - gameRank(b) || +new Date(b.published ?? 0) - +new Date(a.published ?? 0))[0];
+  videos.filter(isGameStream).sort((a, b) => (SILENT.test(a.title.trim()) ? 0 : 1) - (SILENT.test(b.title.trim()) ? 0 : 1) || +new Date(b.published ?? 0) - +new Date(a.published ?? 0))[0];
