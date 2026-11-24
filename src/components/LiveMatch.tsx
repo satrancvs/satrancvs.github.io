@@ -275,7 +275,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
         </p>
       )}
       {live && !hasMoves && <p className="live-status f-mono">{failed ? 'Canlı veriye ulaşılamadı' : 'İlk hamle bekleniyor…'}{shown && <> · <a href={`https://lichess.org/broadcast/-/-/${shown.id}`} target="_blank" rel="noopener noreferrer"><span lang="en">Lichess</span>’te izle</a></>}</p>}
-      <LiveVideo />
+      <LiveVideo poster={roundNo === 1 ? `${import.meta.env.BASE_URL}images/dunya-fide-oyun1.jpg` : undefined} />
       {next && <div className="live-nexts">{(Array.isArray(next) ? next : [next]).map((t) => <SectionLink key={t.id} target={t} />)}</div>}
     </section>
   );
