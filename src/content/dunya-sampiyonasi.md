@@ -1,6 +1,6 @@
 [CANLI MAÇ]
 
-24 Kasım 2026 Salı günü İsviçre’nin Cenevre kantonundaki Cologny’de bir [Dünya Satranç Şampiyonası](https://worldchampionship.fide.com/) maçı başlıyor. Unesco Dünya Belleği Programı’na kayıtlı bir kütüphane ve müze olan Martin Bodmer Vakfı’nın (Fondation Martin Bodmer) binasında karşı karşıya gelenler ise şampiyon Gukesh Dommaraju (Hindistan) ve şampiyon adayı Javokhir Sindarov (Özbekistan). İkisi de 20 yaşında; FIDE’nin ifadesiyle bu, tarihin en genç dünya şampiyonası karşılaşması.
+24 Kasım 2026 Salı günü İsviçre’nin Cenevre kantonundaki Cologny’de bir [Dünya Satranç Şampiyonası](https://worldchampionship.fide.com/) maçı başlıyor. Unesco Dünya Belleği Programı’na kayıtlı bir kütüphane ve müze olan Martin Bodmer Vakfı’nın (Fondation Martin Bodmer) binasında karşı karşıya gelenler ise şampiyon Gukesh Dommaraju (Hindistan, güncel Elo 2710, dünya sıralamasında 28. sırada) ve şampiyon adayı Javokhir Sindarov (Özbekistan, güncel Elo 2782, dünya sıralamasında 4. sırada). İkisi de 20 yaşında; FIDE’nin ifadesiyle bu, tarihin en genç dünya şampiyonası karşılaşması.
 
 ![Gukesh Dommaraju](images/dunya-fide-gukesh.jpg "Gukesh Dommaraju · Resmî maç sitesi · [<span lang="en">worldchampionship.fide.com</span>](https://worldchampionship.fide.com/) · © <span lang="en">FIDE</span>")
 ![Javokhir Sindarov](images/dunya-fide-sindarov.jpg "Javokhir Sindarov · Resmî maç sitesi · [<span lang="en">worldchampionship.fide.com</span>](https://worldchampionship.fide.com/) · © <span lang="en">FIDE</span>")
