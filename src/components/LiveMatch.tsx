@@ -221,7 +221,8 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
                 <button key={r.id} type="button" role="listitem" disabled={!ok} aria-current={on ? 'true' : undefined} title={`${i + 1}. oyun`}
                   className={`mpb-card rd-card${on ? ' on' : ''}${ok ? '' : ' rd-off'}`} onClick={() => setPick(r.id === current?.id ? null : r.id)}>
                   <span className="mpb-thumb rd-thumb">
-                    <span className="rd-num f-display">{i + 1}</span>
+                    {i === 0 ? <img className="rd-photo" src={`${import.meta.env.BASE_URL}images/dunya-fide-oyun1.jpg`} alt="" loading="lazy" /> : null}
+                    <span className={`rd-num f-display${i === 0 ? ' rd-num-photo' : ''}`}>{i + 1}</span>
                     {on ? <span className="mpb-now f-mono">▶ İzleniyor</span> : ok && !done ? <span className="mpb-now f-mono rd-live">● Canlı</span> : null}
                   </span>
                   <span className="mpb-name"><b className="f-display">{i + 1}. oyun</b><span>{when}</span></span>
