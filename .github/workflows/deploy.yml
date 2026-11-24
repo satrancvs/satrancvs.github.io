@@ -4,7 +4,9 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *' # FIDE kanalının yeni videoları (public/fide-videos.json) için yeniden derleme
+    # FIDE kanalının yeni videoları (public/fide-videos.json) için yeniden derleme. GitHub, zamanlanmış çalışmaları yoğun dakikalarda (:00, :30) sık sık atlar;
+    # bu yüzden sık ve yoğun olmayan dakikalar seçildi.
+    - cron: '4,19,34,49 * * * *'
 permissions:
   contents: read
   pages: write
