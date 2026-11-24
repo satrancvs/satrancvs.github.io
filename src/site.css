@@ -558,7 +558,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .live-status a { color: var(--accent); }
 .live-count { margin: .6rem auto 0; max-width: 34rem; padding: 1.6rem 1rem 1.4rem; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .live-count-label { margin: 0 0 1rem; font-size: 12px; letter-spacing: .24em; text-transform: uppercase; color: var(--mute); }
-.live-count-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+.live-count-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
 .live-cell { display: flex; flex-direction: column; align-items: center; gap: .15rem; padding: .2rem 0; }
 .live-cell + .live-cell { border-left: 1px solid var(--line); }
 .live-num { font-size: clamp(2.4rem, 1.4rem + 5vw, 4.2rem); line-height: 1; font-weight: 300; font-variant-numeric: tabular-nums lining-nums; color: var(--fg); }
@@ -1238,9 +1238,9 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 /* Geri sayım sol sütunun altında (Stockfish kartının altında): dar sütuna göre sıkı */
 .live-sf-count .live-count { margin: 0; max-width: none; padding: 0; }
 .live-sf-count .live-count-grid { gap: .25rem; }
-.live-sf-count .live-cell { padding: .4rem 0 .35rem; }
-.live-sf-count .live-num { font-size: 1.5rem; }
-.live-sf-count .live-unit { font-size: 8.5px; letter-spacing: .06em; }
+.live-sf-count .live-cell { padding: .55rem 0 .5rem; }
+.live-sf-count .live-num { font-size: 2.1rem; }
+.live-sf-count .live-unit { font-size: 10px; letter-spacing: .1em; }
 
 /* Mobil (< 56em): canlı yayında da Stockfish kartı diyagramın üstünde (listedeki oynatıcı gibi); geri sayım / uyarı / "Canlı konuma dön" diyagramın altında */
 @media (max-width: 55.99em) {

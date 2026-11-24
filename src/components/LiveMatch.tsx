@@ -161,7 +161,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   }, []);
 
   const left = Math.max(0, start - now);
-  const d = Math.floor(left / 864e5), h = Math.floor(left / 36e5) % 24, m = Math.floor(left / 6e4) % 60, s = Math.floor(left / 1e3) % 60;
+  const h = Math.floor(left / 36e5), m = Math.floor(left / 6e4) % 60, s = Math.floor(left / 1e3) % 60;
   const white = nm(tag(pgn, 'White')), black = nm(tag(pgn, 'Black'));
   const result = tag(pgn, 'Result');
   const roundNo = shown ? list.indexOf(shown) + 1 : 0;
@@ -171,7 +171,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
     <div className="live-sf-intro live-sf-count">
       <div className="live-count" role="timer" aria-label="Birinci oyuna kalan süre">
         <div className="live-count-grid">
-          {[[d, 'gün'], [h, 'saat'], [m, 'dakika'], [s, 'saniye']].map(([v, l]) => (
+          {[[h, 'saat'], [m, 'dakika'], [s, 'saniye']].map(([v, l]) => (
             <div key={l as string} className="live-cell"><span className="live-num f-display">{two(v as number)}</span><span className="live-unit f-mono">{l}</span></div>
           ))}
         </div>
