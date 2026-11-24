@@ -4,6 +4,7 @@ import SfPanel from '@/components/SfPanel';
 import { usePlayerLoaded } from '@/lib/use-player-loaded';
 import SectionLink from '@/components/SectionLink';
 import LiveVideo from '@/components/LiveVideo';
+import { centerCard } from '@/lib/center-card';
 import { API, FALLBACK, TOUR, tag } from '@/lib/championship';
 import type { Round } from '@/lib/championship';
 import type { SectionTarget } from '@/components/SectionLink';
@@ -100,6 +101,9 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const fmt = (n: number) => (Number.isInteger(n) ? String(n) : `${Math.floor(n) || ''}½`);
 
   const board = useRef<HTMLDivElement>(null);
+  const rail = useRef<HTMLDivElement>(null);
+  const firstRail = useRef(true);
+  useEffect(() => { if (!live) return; centerCard(rail.current, !firstRail.current); firstRail.current = false; }, [shown?.id, live]); // seçili oyun kartı şeritte ortaya gelir
   // Analiz başladığındaki hamle sayısı: analiz sürerken gelen yeni hamleler uyarı olarak gösterilir.
   const base = useRef(0);
   const total = hasMoves ? plies(pgn) : 0;
@@ -187,14 +191,6 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           <b>Gukesh {fmt(score.g)}</b><span> – </span><b>{fmt(score.s)} Sindarov</b>
         </p>
       )}
-      {live && (
-        <div className="live-rounds" role="tablist" aria-label="Oyunlar">
-          {list.map((r, i) => {
-            const ok = r.startsAt <= now;
-            return <button key={r.id} role="tab" aria-selected={shown?.id === r.id} disabled={!ok} className={`f-mono${shown?.id === r.id ? ' on' : ''}`} onClick={() => setPick(r.id === current?.id ? null : r.id)}>{i + 1}</button>;
-          })}
-        </div>
-      )}
       {alert && !inView && createPortal(
         <button type="button" className="live-alert f-mono" onClick={toBoard} aria-label="Canlı oyunda yeni hamle oynandı; diyagrama git">
           <i className="live-dot live-dot-alert" aria-hidden="true" />Canlı · yeni hamle<span aria-hidden="true">{above ? ' ↑' : ' ↓'}</span>
@@ -214,6 +210,29 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           <div ref={host} />
         </div>
       </div>
+      {live && (
+        <div className="live-rail mpb-rails" ref={rail}>
+          <div className="mpb-track" role="list" aria-label="Oyunlar">
+            {list.map((r, i) => {
+              const ok = r.startsAt <= now;
+              const on = shown?.id === r.id;
+              const res = tag(pgns[r.id] ?? '', 'Result');
+              const done = /^(1-0|0-1|1\/2-1\/2)$/.test(res);
+              const when = done ? `Sonuç: ${res.replace('1/2-1/2', '½–½').replace('-', '–')}` : ok ? 'Oyun sürüyor' : new Date(r.startsAt).toLocaleString('tr-TR', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' });
+              return (
+                <button key={r.id} type="button" role="listitem" disabled={!ok} aria-current={on ? 'true' : undefined} title={`${i + 1}. oyun`}
+                  className={`mpb-card rd-card${on ? ' on' : ''}${ok ? '' : ' rd-off'}`} onClick={() => setPick(r.id === current?.id ? null : r.id)}>
+                  <span className="mpb-thumb rd-thumb">
+                    <span className="rd-num f-display">{i + 1}</span>
+                    {on ? <span className="mpb-now f-mono">▶ İzleniyor</span> : ok && !done ? <span className="mpb-now f-mono rd-live">● Canlı</span> : null}
+                  </span>
+                  <span className="mpb-name"><b className="f-display">{i + 1}. oyun</b><span>{when}</span></span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
       {live && hasMoves && (
         <p className="live-status f-mono">
           {roundNo}. oyun · Beyaz: {white} · Siyah: {black} · {result && result !== '*' ? `Sonuç ${result.replace('1/2-1/2', '½–½')}` : 'Oyun sürüyor'}
