@@ -206,6 +206,12 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   // Oyunların kart kapakları: o oyunun kendi yayın videosunun kapak resmi (yayın yoksa numara).
   // Beyaz taşları kimin oynadığı: PGN künyesi; PGN yoksa (oyun başlamadı) renkler her turda değişir (1. oyunda Beyaz Sindarov, 2. oyunda Gukesh).
   const whiteTag = tag(raw, 'White');
+  // Bir oyunu tahtaya getirir: sıradaki (başlamamış) oyun "hazır" konumdur, şu an oynanan oyun canlıyı izler (seçim kalkar), diğerleri seçilir.
+  const choose = (r: Round) => setPick(between ? (r.id === upcoming?.id ? null : r.id) : r.id === current?.id ? null : r.id);
+  // Gösterilen oyun bittiyse ve ondan sonra bir tur varsa sağ altta "Sıradaki oyun" kartı çıkar.
+  const shownIdx = shown ? list.indexOf(shown) : -1;
+  const shownDone = !!shown && (shown.finished || /^(1-0|0-1|1\/2-1\/2)$/.test(tag(pgns[shown.id] ?? '', 'Result')));
+  const nextRound = shownDone && shownIdx >= 0 ? list[shownIdx + 1] : undefined;
   const cardStream = (i: number) => gameStreamOf(videos, i + 1);
   const gukeshWhite = whiteTag ? /gukesh/i.test(whiteTag) : roundNo % 2 === 0;
 
@@ -272,7 +278,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
               const when = done ? `Sonuç: ${res.replace('1/2-1/2', '½–½').replace('-', '–')}` : ok ? 'Oyun sürüyor' : new Date(r.startsAt).toLocaleString('tr-TR', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' });
               return (
                 <button key={r.id} type="button" role="listitem" disabled={!ok && !(between && r.id === upcoming?.id)} aria-current={on ? 'true' : undefined} title={`${i + 1}. oyun`}
-                  className={`mpb-card rd-card${on ? ' on' : ''}${ok ? '' : ' rd-off'}`} onClick={() => setPick(between ? (r.id === upcoming?.id ? null : r.id) : r.id === current?.id ? null : r.id)}>
+                  className={`mpb-card rd-card${on ? ' on' : ''}${ok ? '' : ' rd-off'}`} onClick={() => choose(r)}>
                   <span className="mpb-thumb rd-thumb">
                     {cardStream(i) ? <img className="rd-photo" src={streamThumb(cardStream(i)!.id)} alt="" loading="lazy" /> : null}
                     <span className={`rd-num f-display${cardStream(i) ? ' rd-num-photo' : ''}`}>{i + 1}</span>
@@ -284,6 +290,18 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
             })}
           </div>
         </div>
+      )}
+      {live && nextRound && (
+        <button type="button" className="live-nextgame" onClick={() => choose(nextRound)} aria-label={`Sıradaki oyun: ${shownIdx + 2}. oyun`}>
+          <span className="live-nextgame-thumb">
+            {cardStream(shownIdx + 1) ? <img src={streamThumb(cardStream(shownIdx + 1)!.id)} alt="" loading="lazy" /> : <span className="f-display">{shownIdx + 2}</span>}
+          </span>
+          <span className="live-nextgame-text">
+            <span className="f-mono">Sıradaki oyun · {shownIdx + 2}. oyun</span>
+            <b className="f-display">{new Date(nextRound.startsAt).toLocaleString('tr-TR', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' })}</b>
+          </span>
+          <span className="live-nextgame-arrow" aria-hidden="true">→</span>
+        </button>
       )}
       {live && !hasMoves && !nextReady && <p className="live-status f-mono">{failed ? 'Canlı veriye ulaşılamadı' : 'İlk hamle bekleniyor…'}</p>}
       <LiveVideo key={stream?.id} video={stream} />
