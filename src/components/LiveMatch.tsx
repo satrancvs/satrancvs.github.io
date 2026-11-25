@@ -219,6 +219,8 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   // Beyaz taşları kimin oynadığı: PGN künyesi; PGN yoksa (oyun başlamadı) renkler her turda değişir (1. oyunda Beyaz Sindarov, 2. oyunda Gukesh).
   const whiteTag = tag(raw, 'White');
   // Bir oyunu tahtaya getirir: sıradaki (başlamamış) oyun "hazır" konumdur, şu an oynanan oyun canlıyı izler (seçim kalkar), diğerleri seçilir.
+  const [showPress, setShowPress] = useState(false); // basın toplantısı videosu sağ üstteki video alanında oynatılıyor
+  useEffect(() => { setShowPress(false); }, [shown?.id]);
   const choose = (r: Round) => setPick(between ? (r.id === upcoming?.id ? null : r.id) : r.id === current?.id ? null : r.id);
   // Gösterilen oyun bittiyse ve ondan sonra bir tur varsa sağ altta "Sıradaki oyun" kartı çıkar.
   const shownIdx = shown ? list.indexOf(shown) : -1;
@@ -311,14 +313,14 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
       {live && (press || nextRound) && (
         <div className="live-after">
           {press && (
-            <a className="live-nextgame live-press" href={`https://www.youtube.com/watch?v=${press.id}`} target="_blank" rel="noopener noreferrer" aria-label={`Basın toplantısı: ${shownIdx + 1}. oyun`}>
+            <button type="button" className={`live-nextgame live-press${showPress ? ' on' : ''}`} aria-pressed={showPress} onClick={() => { setShowPress((v) => !v); window.setTimeout(() => document.querySelector('.live-video')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 60); }} aria-label={`Basın toplantısı: ${shownIdx + 1}. oyun`}>
               <span className="live-nextgame-thumb"><img src={streamThumb(press.id)} alt="" loading="lazy" /></span>
               <span className="live-nextgame-text">
                 <span className="f-mono">Basın toplantısı · {shownIdx + 1}. oyun</span>
-                <b className="f-display">Oyun sonrası açıklamalar</b>
+                <b className="f-display">{showPress ? 'Oynatılıyor' : 'Oyun sonrası açıklamalar'}</b>
               </span>
-              <span className="live-nextgame-arrow" aria-hidden="true">↗</span>
-            </a>
+              <span className="live-nextgame-arrow" aria-hidden="true">{showPress ? '■' : '▶'}</span>
+            </button>
           )}
           {nextRound && (
           <button type="button" className="live-nextgame" onClick={() => choose(nextRound)} aria-label={`Sıradaki oyun: ${shownIdx + 2}. oyun`}>
@@ -336,7 +338,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
         </div>
       )}
       {live && !hasMoves && !nextReady && <p className="live-status f-mono">{failed ? 'Canlı veriye ulaşılamadı' : 'İlk hamle bekleniyor…'}</p>}
-      <LiveVideo key={stream?.id} video={stream} />
+      <LiveVideo key={showPress && press ? press.id : stream?.id} video={showPress && press ? press : stream} autoplay={showPress && !!press} label={showPress && press ? 'Basın toplantısı' : 'FIDE canlı yayını'} live={!(showPress && press)} />
       {next && <div className="live-nexts">{(Array.isArray(next) ? next : [next]).map((t) => <SectionLink key={t.id} target={t} />)}</div>}
     </section>
   );

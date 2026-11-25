@@ -1427,3 +1427,5 @@ a.live-nextgame { text-decoration: none; }
 .live-sf .live-vs p .f-mono { grid-column: 2; grid-row: 2; white-space: nowrap; letter-spacing: .06em; }
 .live-sf .live-vs p .f-mono .vs-country { display: none; }
 .live-sf .live-vs .vs-clock { grid-column: 3; grid-row: 2; justify-self: end; min-width: 3.9rem; padding: .1rem .35rem; font-size: .95rem; }
+
+.live-press.on { border-color: var(--accent); }
