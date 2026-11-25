@@ -245,6 +245,8 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
     return `${f(a, { day: 'numeric', month: 'long' })} – ${f(z, { day: 'numeric', month: 'long', year: 'numeric' })}`;
   })();
   const players = (
+  <>
+    <p className="live-event f-mono"><span>2026 FIDE Dünya Satranç Şampiyonası</span>{list.length > 0 && <span>{matchDates}</span>}<span>Cenevre, İsviçre</span></p>
   <div className="live-vs">
     {([
       { k: 'g', img: 'dunya-fide-gukesh.jpg', left: '-53%', name: 'Gukesh Dommaraju', meta: 'Hindistan · 2710', clock: gClock, short: 'Gukesh' },
@@ -252,8 +254,8 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
     ].sort((a, b) => (a.k === (gukeshWhite ? 'g' : 's') ? -1 : b.k === (gukeshWhite ? 'g' : 's') ? 1 : 0))).map((p) => (
       <div key={p.k} className={`vs-${(p.k === 'g') === gukeshWhite ? 'white' : 'black'}`}><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/${p.img}`} alt="" style={{ left: p.left }} loading="lazy" /></span><i className="vs-side" aria-hidden="true">♚</i><p><b>{p.name}</b><span className="f-mono"><em>{(p.k === 'g') === gukeshWhite ? 'Beyaz' : 'Siyah'}</em> · <span className="vs-country">{p.meta.split(' · ')[0]} · </span>{p.meta.split(' · ')[1]}</span></p>{p.clock && <i className="vs-clock f-mono" title="Kalan süre" aria-label={`${p.short} kalan süre ${p.clock}`}>{p.clock}</i>}</div>
     ))}
-    <p className="live-event f-mono"><span>2026 FIDE Dünya Satranç Şampiyonası</span>{list.length > 0 && <span>{matchDates}</span>}<span>Cenevre, İsviçre</span></p>
   </div>
+  </>
   );
 
   return (
@@ -276,8 +278,10 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
         ) : undefined} idleText="Maç başlayınca canlı konum analizi buradan izlenebilecek." />
         <div ref={board} className={`cp-game live-board${idle ? ' live-wait' : ''}`}>
           <p className="live-video-label live-board-label f-mono"><i className={`live-dot${alert ? ' live-dot-alert' : ''}`} aria-hidden="true" /><span lang="en">Lichess</span> canlı yayını</p>
-          {count}
-          <div ref={host} />
+          <div className="live-board-body">
+            {count}
+            <div ref={host} />
+          </div>
         </div>
       </div>
       {live && (
