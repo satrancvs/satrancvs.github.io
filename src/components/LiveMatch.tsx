@@ -95,20 +95,6 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const idle = !live || !hasMoves;
   const src = idle ? IDLE_PGN : pgn;
 
-  // Skor (Gukesh – Sindarov): sonucu belli turlar.
-  const score = useMemo(() => {
-    let g = 0, s = 0, done = 0;
-    for (const r of started) {
-      const p = pgns[r.id]; if (!p) continue;
-      const res = tag(p, 'Result'); if (!/^(1-0|0-1|1\/2-1\/2)$/.test(res)) continue;
-      const gWhite = /gukesh/i.test(tag(p, 'White'));
-      const [a, b] = res === '1-0' ? [1, 0] : res === '0-1' ? [0, 1] : [.5, .5];
-      g += gWhite ? a : b; s += gWhite ? b : a; done++;
-    }
-    return { g, s, done };
-  }, [pgns, started.length]); // eslint-disable-line react-hooks/exhaustive-deps
-  const fmt = (n: number) => (Number.isInteger(n) ? String(n) : `${Math.floor(n) || ''}½`);
-
   const board = useRef<HTMLDivElement>(null);
   const rail = useRef<HTMLDivElement>(null);
   const firstRail = useRef(true);
@@ -251,6 +237,13 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   ) : undefined;
 
   // Oyuncular (fotoğraf, ad, renk, kalan süre): sol sütunda, logonun altında.
+  // Maçın başlangıç ve bitiş günü: ilk ve son turun (14. oyun) günü, TSİ ("24 Kasım – 11 Aralık 2026").
+  const matchDates = (() => {
+    if (!list.length) return '';
+    const f = (t: number, o: Intl.DateTimeFormatOptions) => new Date(t).toLocaleDateString('tr-TR', { ...o, timeZone: 'Europe/Istanbul' });
+    const a = list[0].startsAt, z = list[list.length - 1].startsAt;
+    return `${f(a, { day: 'numeric', month: 'long' })} – ${f(z, { day: 'numeric', month: 'long', year: 'numeric' })}`;
+  })();
   const players = (
   <div className="live-vs">
     {([
@@ -259,6 +252,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
     ].sort((a, b) => (a.k === (gukeshWhite ? 'g' : 's') ? -1 : b.k === (gukeshWhite ? 'g' : 's') ? 1 : 0))).map((p) => (
       <div key={p.k} className={`vs-${(p.k === 'g') === gukeshWhite ? 'white' : 'black'}`}><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/${p.img}`} alt="" style={{ left: p.left }} loading="lazy" /></span><i className="vs-side" aria-hidden="true">♚</i><p><b>{p.name}</b><span className="f-mono"><em>{(p.k === 'g') === gukeshWhite ? 'Beyaz' : 'Siyah'}</em> · <span className="vs-country">{p.meta.split(' · ')[0]} · </span>{p.meta.split(' · ')[1]}</span></p>{p.clock && <i className="vs-clock f-mono" title="Kalan süre" aria-label={`${p.short} kalan süre ${p.clock}`}>{p.clock}</i>}</div>
     ))}
+    <p className="live-event f-mono"><span>2026 FIDE Dünya Satranç Şampiyonası</span>{list.length > 0 && <span>{matchDates}</span>}<span>Cenevre, İsviçre</span></p>
   </div>
   );
 
@@ -266,11 +260,6 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
     <section className={`live-match${live ? ' is-live' : ''}`} aria-label="Dünya Şampiyonası 2026 canlı yayını">
       {!live && <p className="live-kicker f-mono">Çok yakında<span aria-hidden="true"> · </span>Dünya Şampiyonası 2026</p>}
       {!live && <p className="live-when f-mono">24 Kasım 2026 · 17.00 (TR saati) · Cenevre</p>}
-      {live && (
-        <p className="live-score f-mono" aria-label="Maç skoru">
-          <b>Gukesh {fmt(score.g)}</b><span> – </span><b>{fmt(score.s)} Sindarov</b>
-        </p>
-      )}
       {alert && !inView && createPortal(
         <button type="button" className="live-alert f-mono" onClick={toBoard} aria-label="Canlı oyunda yeni hamle oynandı; diyagrama git">
           <i className="live-dot live-dot-alert" aria-hidden="true" />Canlı · yeni hamle<span aria-hidden="true">{above ? ' ↑' : ' ↓'}</span>
