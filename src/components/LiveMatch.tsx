@@ -269,7 +269,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   })();
   const players = (
   <>
-    <p className="live-event f-mono"><span>2026 FIDE Dünya Satranç Şampiyonası</span>{list.length > 0 && <span>{matchDates}</span>}<span>Cenevre, İsviçre</span></p>
+    <p className="live-event f-mono"><span>FIDE Dünya Satranç Şampiyonası</span>{list.length > 0 && <span>{matchDates}</span>}<span>Cenevre, İsviçre</span></p>
   <div className="live-vs">
     {([
       { k: 'g', img: 'dunya-fide-gukesh.jpg', left: '-53%', name: 'Gukesh Dommaraju', meta: 'Hindistan · 2710', clock: gClock, short: 'Gukesh' },
