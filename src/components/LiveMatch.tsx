@@ -282,7 +282,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           {roundNo}. oyun · Beyaz: {white} · Siyah: {black} · {result && result !== '*' ? `Sonuç ${result.replace('1/2-1/2', '½–½')}` : 'Oyun sürüyor'}
         </p>
       )}
-      {live && !hasMoves && <p className="live-status f-mono">{nextReady ? `${roundNo}. oyuna hazır` : failed ? 'Canlı veriye ulaşılamadı' : 'İlk hamle bekleniyor…'}{shown && <> · <a href={`https://lichess.org/broadcast/-/-/${shown.id}`} target="_blank" rel="noopener noreferrer"><span lang="en">Lichess</span>’te izle</a></>}</p>}
+      {live && !hasMoves && !nextReady && <p className="live-status f-mono">{failed ? 'Canlı veriye ulaşılamadı' : 'İlk hamle bekleniyor…'}{shown && <> · <a href={`https://lichess.org/broadcast/-/-/${shown.id}`} target="_blank" rel="noopener noreferrer"><span lang="en">Lichess</span>’te izle</a></>}</p>}
       <LiveVideo key={stream?.id} video={stream} />
       {next && <div className="live-nexts">{(Array.isArray(next) ? next : [next]).map((t) => <SectionLink key={t.id} target={t} />)}</div>}
     </section>
