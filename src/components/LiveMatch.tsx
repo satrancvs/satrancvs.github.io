@@ -234,7 +234,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           { k: 'g', img: 'dunya-fide-gukesh.jpg', left: '-53%', name: 'Gukesh Dommaraju', meta: 'Hindistan · 2710', clock: gClock, short: 'Gukesh' },
           { k: 's', img: 'dunya-fide-sindarov.jpg', left: '-56%', name: 'Javokhir Sindarov', meta: 'Özbekistan · 2782', clock: sClock, short: 'Sindarov' },
         ].sort((a, b) => (a.k === (gukeshWhite ? 'g' : 's') ? -1 : b.k === (gukeshWhite ? 'g' : 's') ? 1 : 0))).map((p) => (
-          <div key={p.k}><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/${p.img}`} alt="" style={{ left: p.left }} loading="lazy" /></span><p><b>{p.name}</b><span className="f-mono">{p.meta}</span></p>{p.clock && <i className="vs-clock f-mono" title="Kalan süre" aria-label={`${p.short} kalan süre ${p.clock}`}>{p.clock}</i>}</div>
+          <div key={p.k} className={`vs-${(p.k === 'g') === gukeshWhite ? 'white' : 'black'}`}><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/${p.img}`} alt="" style={{ left: p.left }} loading="lazy" /></span><i className="vs-side" aria-hidden="true">♚</i><p><b>{p.name}</b><span className="f-mono"><em>{(p.k === 'g') === gukeshWhite ? 'Beyaz' : 'Siyah'}</em> · {p.meta}</span></p>{p.clock && <i className="vs-clock f-mono" title="Kalan süre" aria-label={`${p.short} kalan süre ${p.clock}`}>{p.clock}</i>}</div>
         ))}
       </div>
       {live && (
@@ -284,11 +284,6 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
             })}
           </div>
         </div>
-      )}
-      {live && hasMoves && (
-        <p className="live-status f-mono">
-          {roundNo}. oyun · Beyaz: {white} · Siyah: {black} · {result && result !== '*' ? `Sonuç ${result.replace('1/2-1/2', '½–½')}` : 'Oyun sürüyor'}
-        </p>
       )}
       {live && !hasMoves && !nextReady && <p className="live-status f-mono">{failed ? 'Canlı veriye ulaşılamadı' : 'İlk hamle bekleniyor…'}</p>}
       <LiveVideo key={stream?.id} video={stream} />
