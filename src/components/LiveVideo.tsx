@@ -1,15 +1,14 @@
 import { useEffect, useState } from 'react';
-import { pickGameStream } from '@/lib/championship';
 import type { FideVideo } from '@/lib/championship';
 
 // Canlı yayın görünümünde, sağ sütunun boşluğunda FIDE'nin oyun yayını videosu (YouTube; oynat düğmesine basılınca yüklenir).
 // Video, FIDE kanalının son videoları listesinden seçilir (public/fide-videos.json, bkz. src/lib/championship.ts `pickGameStream`).
-// Seçilen oyun yayını (LiveMatch de aynı videonun kapak resmini 1. oyun kartında kullanır).
-export function useGameStream() {
-  const [v, setV] = useState<FideVideo | undefined>();
+// Kanalın son videoları; LiveMatch bunlardan gösterilen oyunun yayınını seçer (`pickGameStream(videos, oyunNo)`), 1. oyun kartı da 1. oyunun yayınının kapağını kullanır.
+export function useFideVideos() {
+  const [v, setV] = useState<FideVideo[]>([]);
   useEffect(() => {
     let off = false;
-    fetch(`${import.meta.env.BASE_URL}fide-videos.json`).then((r) => r.json()).then((d) => { if (!off && Array.isArray(d?.videos)) setV(pickGameStream(d.videos)); }).catch(() => {});
+    fetch(`${import.meta.env.BASE_URL}fide-videos.json`).then((r) => r.json()).then((d) => { if (!off && Array.isArray(d?.videos)) setV(d.videos); }).catch(() => {});
     return () => { off = true; };
   }, []);
   return v;
