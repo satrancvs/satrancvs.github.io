@@ -95,3 +95,8 @@ export const pickGameStream = (videos: FideVideo[], game = 1): FideVideo | undef
   const pool = same.length ? same : all.filter((v) => streamGameNo(v) === Math.max(...all.map(streamGameNo)));
   return pool.sort((a, b) => (SILENT.test(a.title.trim()) ? 0 : 1) - (SILENT.test(b.title.trim()) ? 0 : 1) || +new Date(b.published ?? 0) - +new Date(a.published ?? 0))[0];
 };
+
+/** Turun basın toplantısı videosu ("Press Conference | Game N | …"); oyun numarasız olanlar (maç öncesi) sayılmaz. */
+export const pressConferenceOf = (videos: FideVideo[], game: number): FideVideo | undefined =>
+  videos.filter((v) => /press conference/i.test(v.title) && /\bgame\s*(\d+)/i.exec(v.title)?.[1] === String(game))
+    .sort((a, b) => +new Date(b.published ?? 0) - +new Date(a.published ?? 0))[0];
