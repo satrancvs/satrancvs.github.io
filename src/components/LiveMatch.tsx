@@ -64,21 +64,26 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   }, []);
 
   // Gösterilen tur: okurun seçtiği, yoksa başlamış olanların sonuncusu.
+  // Oyunlar arası (son başlayan tur bitti, sonraki tur var): okur bir oyun seçmediyse tahta SONRAKİ oyuna hazırdır (başlangıç konumu, geri sayım sol sütunda); bitmiş oyun şeritten seçilince tahtaya gelir.
   const started = list.filter((r) => r.startsAt <= now);
   const current = started[started.length - 1];
-  const shown = (pick && started.find((r) => r.id === pick)) || current;
+  const upcoming = list.find((r) => r.startsAt > now);
+  const curDone = !!current && (current.finished || /^(1-0|0-1|1\/2-1\/2)$/.test(tag(pgns[current.id] ?? '', 'Result')));
+  const between = live && !!upcoming && curDone;
+  const nextReady = between && !pick;
+  const shown = (pick && started.find((r) => r.id === pick)) || (nextReady ? upcoming : current);
   const finishedShown = !!shown && (shown.finished || /^(1-0|0-1|1\/2-1\/2)$/.test(tag(pgns[shown.id] ?? '', 'Result')));
 
   const fetchPgn = (id: string) => fetch(`${API}/api/broadcast/round/${id}.pgn`).then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.text(); })
     .then((t) => { setFailed(false); setPgns((p) => (p[id] === t ? p : { ...p, [id]: t })); })
     .catch(() => setFailed(true));
   useEffect(() => {
-    if (!live || !shown) return;
+    if (!live || !shown || nextReady) return; // sonraki oyuna hazırken (başlamamış tur) PGN istenmez
     fetchPgn(shown.id);
     if (finishedShown && pgns[shown.id]) return;
     const t = window.setInterval(() => fetchPgn(shown.id), POLL_MS);
     return () => window.clearInterval(t);
-  }, [live, shown?.id, finishedShown]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [live, shown?.id, finishedShown, nextReady]); // eslint-disable-line react-hooks/exhaustive-deps
   // Skor için daha önce biten turların sonuçları bir kez alınır.
   useEffect(() => {
     if (!live) return;
@@ -116,7 +121,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const [inView, setInView] = useState(true);
   const [alert, setAlert] = useState(false);
   const [above, setAbove] = useState(false); // tahta ekranın üstünde kaldıysa uyarıdaki ok yukarı bakar
-  const seenTotal = useRef(-1);
+  const seenTotal = useRef({ id: '', n: 0 }); // en son görülen tur ve hamle sayısı
   useEffect(() => {
     const el = board.current;
     if (!el || typeof IntersectionObserver === 'undefined') return;
@@ -125,9 +130,13 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
     return () => io.disconnect();
   }, []);
   useEffect(() => {
-    if (seenTotal.current >= 0 && total > seenTotal.current && !inView) setAlert(true);
-    seenTotal.current = total;
-  }, [total]); // eslint-disable-line react-hooks/exhaustive-deps
+    // Uyarı yalnızca sürmekte olan bir oyuna YENİ hamle gelirse çıkar: ilk yükleme (0 → N), tur değişimi ve biten oyun uyarı vermez.
+    const id = shown?.id ?? '';
+    const prev = seenTotal.current;
+    if (live && prev.id === id && prev.n > 0 && total > prev.n && !finishedShown && !inView) setAlert(true);
+    seenTotal.current = { id, n: total };
+    if (!live || finishedShown) setAlert(false);
+  }, [total, shown?.id, live, finishedShown]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => { if (inView) setAlert(false); }, [inView]);
   const toBoard = () => { setAlert(false); board.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }); };
   const fresh = analysing ? Math.max(0, total - base.current) : 0;
@@ -186,10 +195,6 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   };
   const gClock = clockOf('gukesh'), sClock = clockOf('sindarov');
 
-  // Oyunlar arası: son başlayan tur bittiyse ve sonraki tur varsa, sol sütunda sonraki oyuna geri sayım gösterilir (bitmiş oyun şeritte kalır).
-  const upcoming = list.find((r) => r.startsAt > now);
-  const curDone = !!current && (current.finished || /^(1-0|0-1|1\/2-1\/2)$/.test(tag(pgns[current.id] ?? '', 'Result')));
-  const between = live && !!upcoming && curDone;
   const target = between && upcoming ? upcoming.startsAt : start;
   const nextNo = upcoming ? list.indexOf(upcoming) + 1 : 1;
   const left = Math.max(0, target - now);
@@ -256,12 +261,12 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
               const done = /^(1-0|0-1|1\/2-1\/2)$/.test(res);
               const when = done ? `Sonuç: ${res.replace('1/2-1/2', '½–½').replace('-', '–')}` : ok ? 'Oyun sürüyor' : new Date(r.startsAt).toLocaleString('tr-TR', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' });
               return (
-                <button key={r.id} type="button" role="listitem" disabled={!ok} aria-current={on ? 'true' : undefined} title={`${i + 1}. oyun`}
-                  className={`mpb-card rd-card${on ? ' on' : ''}${ok ? '' : ' rd-off'}`} onClick={() => setPick(r.id === current?.id ? null : r.id)}>
+                <button key={r.id} type="button" role="listitem" disabled={!ok && !(between && r.id === upcoming?.id)} aria-current={on ? 'true' : undefined} title={`${i + 1}. oyun`}
+                  className={`mpb-card rd-card${on ? ' on' : ''}${ok ? '' : ' rd-off'}`} onClick={() => setPick(between ? (r.id === upcoming?.id ? null : r.id) : r.id === current?.id ? null : r.id)}>
                   <span className="mpb-thumb rd-thumb">
                     {i === 0 && stream ? <img className="rd-photo" src={streamThumb(stream.id)} alt="" loading="lazy" /> : null}
                     <span className={`rd-num f-display${i === 0 && stream ? ' rd-num-photo' : ''}`}>{i + 1}</span>
-                    {on ? <span className="mpb-now f-mono">▶ İzleniyor</span> : ok && !done ? <span className="mpb-now f-mono rd-live">● Canlı</span> : null}
+                    {on ? <span className="mpb-now f-mono">{ok ? '▶ İzleniyor' : '▶ Sıradaki'}</span> : ok && !done ? <span className="mpb-now f-mono rd-live">● Canlı</span> : null}
                   </span>
                   <span className="mpb-name"><b className="f-display">{i + 1}. oyun</b><span>{when}</span></span>
                 </button>
@@ -275,7 +280,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           {roundNo}. oyun · Beyaz: {white} · Siyah: {black} · {result && result !== '*' ? `Sonuç ${result.replace('1/2-1/2', '½–½')}` : 'Oyun sürüyor'}
         </p>
       )}
-      {live && !hasMoves && <p className="live-status f-mono">{failed ? 'Canlı veriye ulaşılamadı' : 'İlk hamle bekleniyor…'}{shown && <> · <a href={`https://lichess.org/broadcast/-/-/${shown.id}`} target="_blank" rel="noopener noreferrer"><span lang="en">Lichess</span>’te izle</a></>}</p>}
+      {live && !hasMoves && <p className="live-status f-mono">{nextReady ? `${roundNo}. oyuna hazır` : failed ? 'Canlı veriye ulaşılamadı' : 'İlk hamle bekleniyor…'}{shown && <> · <a href={`https://lichess.org/broadcast/-/-/${shown.id}`} target="_blank" rel="noopener noreferrer"><span lang="en">Lichess</span>’te izle</a></>}</p>}
       <LiveVideo video={stream} />
       {next && <div className="live-nexts">{(Array.isArray(next) ? next : [next]).map((t) => <SectionLink key={t.id} target={t} />)}</div>}
     </section>
