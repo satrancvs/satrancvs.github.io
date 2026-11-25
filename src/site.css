@@ -1437,3 +1437,12 @@ a.live-nextgame { text-decoration: none; }
 /* .live-sf .live-vs p { display: contents } künye satırını da dağıtıyordu: üç satır dış sütunun .85rem boşluğuyla ayrılıyordu */
 .live-sf .live-vs p.live-event { display: flex; flex-direction: column; gap: .15rem; line-height: 1.25; }
 .live-sf .live-vs p.live-event > span { line-height: 1.25; }
+
+/* Geri sayım: beklenen oyunda tahtanın üstünde (bitmiş oyunlarda yok) */
+.live-count-top { margin: 0 0 .7rem; }
+.live-count-top .live-count { margin: 0; max-width: none; padding: .5rem 0 .6rem; border: 0; border-bottom: 1px solid var(--line); }
+.live-count-top .live-count-label { margin: 0 0 .5rem; text-align: center; }
+.live-count-top .live-count-grid { gap: .25rem; max-width: 22rem; margin: 0 auto; }
+.live-count-top .live-cell { padding: .45rem 0 .4rem; }
+.live-count-top .live-num { font-size: 2rem; }
+.live-count-top .live-unit { font-size: 10px; letter-spacing: .1em; }
