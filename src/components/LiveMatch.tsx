@@ -144,10 +144,14 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
 
   const host = useRef<HTMLDivElement>(null);
   // Oyun başlamadan (ya da ilk hamle gelmeden) tahtada yalnızca oynatıcıyı kurmak için konan sahte tek hamlelik PGN ("1. e4") vardır: ok tuşları ve boşluk onu oynatmasın.
+  // Yalnızca etkin oynatıcı canlı tahtaysa engellenir (oynatıcı, üzerine gelinen/tıklanan ya da ekranda tam görünen oynatıcıyı etkinleştirir; sayfanın altındaki başka oynatıcıların tuşları serbest kalmalı).
   useEffect(() => {
     if (!idle) return;
     const block = (e: KeyboardEvent) => {
       if (!['ArrowLeft', 'ArrowRight', 'Home', 'End', 'Space'].includes(e.code)) return;
+      // Etkin oynatıcı (üzerine gelinen/tıklanan ya da ekranda tam görünen) canlı tahta değilse tuşlar serbest kalır.
+      const eng = (board.current?.querySelector('pgn-player') as (HTMLElement & { _engine?: { constructor: { activeEngine?: unknown } } }) | null)?._engine;
+      if (eng && eng.constructor.activeEngine !== eng) return;
       const t = e.target as HTMLElement | null;
       if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
       e.stopImmediatePropagation(); // sayfa kaydırma gibi varsayılan davranış korunur (preventDefault yok)

@@ -3186,10 +3186,18 @@ class PgnPlayerElement extends HTMLElement {
     /* Pause when scrolled fully out of view */
     if (typeof IntersectionObserver !== "undefined") {
       const io = new IntersectionObserver((entries) => {
-        if (!entries[0].isIntersecting && VideoEngine.activeEngine === engine && engine.state.playing) {
+        const en = entries[entries.length - 1];
+        if (!en.isIntersecting && VideoEngine.activeEngine === engine && engine.state.playing) {
           engine.pause();
         }
-      }, { threshold: 0 });
+        /* Fully visible on screen (or filling the whole viewport): becomes the
+           active player, so the keyboard works without hovering/clicking it. */
+        const rb = en.rootBounds;
+        if (en.isIntersecting && (en.intersectionRatio >= 0.98 ||
+            (rb && en.intersectionRect.height >= rb.height - 2))) {
+          engine._activate();
+        }
+      }, { threshold: [0, 0.25, 0.5, 0.75, 0.98, 1] });
       io.observe(this);
       engine._observers.push(io);
     }
