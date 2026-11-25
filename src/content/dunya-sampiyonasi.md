@@ -1,6 +1,6 @@
 [CANLI MAÇ]
 
-24 Kasım 2026 Salı günü İsviçre’nin Cenevre kantonundaki Cologny’de bir [Dünya Satranç Şampiyonası](https://worldchampionship.fide.com/) maçı başlıyor. Unesco Dünya Belleği Programı’na kayıtlı bir kütüphane ve müze olan Martin Bodmer Vakfı’nın (Fondation Martin Bodmer) binasında karşı karşıya gelenler ise şampiyon Gukesh Dommaraju (Hindistan, güncel Elo 2710, dünya sıralamasında 28. sırada) ve şampiyon adayı Javokhir Sindarov (Özbekistan, güncel Elo 2782, dünya sıralamasında 4. sırada). İkisi de 20 yaşında; FIDE’nin ifadesiyle bu, tarihin en genç dünya şampiyonası karşılaşması.
+24 Kasım 2026 Salı günü İsviçre’nin Cenevre kantonundaki Cologny’de bir [Dünya Satranç Şampiyonası](https://worldchampionship.fide.com/) maçı başladı. Unesco Dünya Belleği Programı’na kayıtlı bir kütüphane ve müze olan Martin Bodmer Vakfı’nın (Fondation Martin Bodmer) binasında karşı karşıya gelenler ise şampiyon Gukesh Dommaraju (Hindistan, güncel Elo 2710, dünya sıralamasında 28. sırada) ve şampiyon adayı Javokhir Sindarov (Özbekistan, güncel Elo 2782, dünya sıralamasında 4. sırada). İkisi de 20 yaşında; FIDE’nin ifadesiyle bu, tarihin en genç dünya şampiyonası karşılaşması.
 
 ![Gukesh Dommaraju](images/dunya-fide-gukesh.jpg "Gukesh Dommaraju · Resmî maç sitesi · [<span lang="en">worldchampionship.fide.com</span>](https://worldchampionship.fide.com/) · © <span lang="en">FIDE</span>")
 ![Javokhir Sindarov](images/dunya-fide-sindarov.jpg "Javokhir Sindarov · Resmî maç sitesi · [<span lang="en">worldchampionship.fide.com</span>](https://worldchampionship.fide.com/) · © <span lang="en">FIDE</span>")
@@ -11,7 +11,7 @@
 
 Gukesh ünvanı kazandıktan sonra iki yıl boyunca onu korumak için hazırlandı. Bugün karşısında, tıpkı onun gibi şampiyonluk maçına ulaşmak için çok zorlu bir eleme sürecinden geçen bir rakip var: Sindarov.
 
-**Sindarov**, sistemin ikinci kapısından, yani on dört turluk 2026 Adaylar Turnuvası’ndan birinci çıkarak şampiyon adayı oldu. Bu yolculuğun iki önemli durağı var:
+**Sindarov**, sistemin ikinci kapısından, yani on dört turluk 2026 Adaylar Turnuvası’ndan birinci çıkarak şampiyon adayı oldu. Bu yolun iki önemli durağı vardı:
 
 - Kasım 2025’te Goa’daki **FIDE Dünya Kupası**’nı (206 oyunculu eleme turnuvası) kazandı. 16. seri olarak başladığı turnuvada finalde Wei Yi’yi ikinci hızlı oyun sonunda yenebildi. 19 yaş 11 ayla en genç Dünya Kupası galibi ve ilk Özbek galip oldu; bu zafer ona Adaylar Turnuvası’na giriş bileti kazandırdı.
 - Mart–Nisan 2026’da Kıbrıs’ın Pegeia kasabasında oynanan, sekiz oyuncunun katıldığı çift turlu döner **[Adaylar Turnuvası](https://candidates2026.fide.com/)**’nı 14 turda **10 puanla** kazandı: sıfır yenilgi, altı galibiyet. Turnuvayı bir tur kala garantiledi ve çift turlu döner sistemde oynanan Adaylar Turnuvaları tarihinin en yüksek puanına ulaştı.
@@ -77,7 +77,7 @@ Bugünkü sistem, uzun bir tarihsel değişimin sonucu. Dünya şampiyonluğu il
 
 Çizelgede yer alan ünvan maçlarının her birinden bir oyun seçtik. 1886’dan bugüne uzanan bu seçkide toplam 56 oyun var. Stockfish analizine, değerlendirme çubuğu ve Stockfish’in hamle işaretleriyle birlikte göz atabilirsiniz.
 
-### 1886’dan bugüne 56 oyun
+### 1886’dan bugüne tüm ünvan maçlarından toplam 56 oyun
 
 [MAÇ SEÇİCİ GÖSTER: Tüm ünvan maçları]
 
@@ -273,7 +273,7 @@ Carlsen 10 oyunda 6½–3½ kazanıp şampiyon oldu. İzleyeceğiniz oyun, 9. oy
 [EventLine "Dünya Şampiyonası, 2. hızlı oyun, Moskova, 2012"]
 [View "player"]
 
-1. e4 c5 2. Nf3 Nc6 3. Bb5 e6 4. Bxc6 bxc6 5. b3 e5 6. Nxe5 Qe7 7. d4 d6 8. Nxc6 Qxe4+! 9. Qe2!! Qxe2+ 10. Kxe2 Bb7 11. Na5 Bxg2 12. Rg1 Bh3 13. dxc5 dxc5 14. Nc3 O-O-O 15. Bf4 Bd6 16. Bxd6 Rxd6 17. Rg5 Nf6 18. Rxc5+ Kb8 19. Nc4 Re8+ 20. Ne3 Ng4 21. Nd5 Nxe3 22. Nxe3 Bg4+ 23. f3 Bc8 24. Re1 Rh6 25. Rh1 Rhe6 26. Rc3! f5 27. Kd2 f4 28. Nd5 g5 29. Rd3 Re2+ 30. Kc1 Rf2 31. h4 Ree2 32. Rc3 Bb7 33. Rd1 gxh4 34. Nxf4 Re8! 35. Rh1 Rc8 36. Rxc8+ Bxc8 37. Rxh4 Bf5 38. Rh5 Bxc2 39. Rb5+ Ka8! 40. Nd5 a6! 41. Ra5 Kb7 42. Nb4 Bg6 43. Nxa6 Rxf3 44. Nc5+ Kb6 45. b4! Rf4 46. a3 Rg4 47. Kd2 h5 48. Nd7+ Kb7 49. Ne5 Rg2+! 50. Kc3 Be8 51. Nd3 h4 52. Re5 Bg6 53. Nf4 Rg3+ 54. Kd4 Bc2 55. Rh5 Rxa3 56. Rxh4 Rg3 57. Nd5 Rg5 58. b5 Bf5 59. Rh6 Bg4 60. Rf6 Rf5 61. Rb6+ Ka7 62. Rg6 Bf3 63. Rg7+ Kb8 64. Nc3 Bb7 65. Kc4 Bf3 66. Kb4 Bd5 67. Na4 Rf7 68. Rg5 Bf3 69. Nc5 Kc7 70. Rg6 Kd8 71. Ka5 Rf5? 72. Ne6+! Kc8?! 73. Nd4! Rf8 74. Nxf3! Rxf3 75. Kb6 Rb3 76. Rg8+ Kd7 77. Rb8 1-0
+1. e4 c5 2. Nf3 Nc6 3. Bb5 e6 4. Bxc6 bxc6 5. b3 e5 6. Nxe5 Qe7 7. d4 d6 8. Nxc6 Qxe4+ 9. Qe2 Qxe2+ 10. Kxe2 Bb7 11. Na5 Bxg2 12. Rg1 Bh3 13. dxc5 dxc5 14. Nc3 O-O-O 15. Bf4 Bd6 16. Bxd6 Rxd6 17. Rg5 Nf6 18. Rxc5+ Kb8 19. Nc4 Re8+ 20. Ne3 Ng4 21. Nd5 Nxe3 22. Nxe3 Bg4+ 23. f3 Bc8 24. Re1 Rh6 25. Rh1 Rhe6 26. Rc3! f5 27. Kd2 f4 28. Nd5 g5 29. Rd3 Re2+ 30. Kc1 Rf2 31. h4 Ree2 32. Rc3 Bb7 33. Rd1 gxh4 34. Nxf4 Re8! 35. Rh1 Rc8 36. Rxc8+ Bxc8 37. Rxh4 Bf5 38. Rh5 Bxc2 39. Rb5+ Ka8! 40. Nd5 a6! 41. Ra5 Kb7 42. Nb4 Bg6 43. Nxa6 Rxf3 44. Nc5+ Kb6 45. b4! Rf4 46. a3 Rg4 47. Kd2 h5 48. Nd7+ Kb7 49. Ne5 Rg2+! 50. Kc3 Be8 51. Nd3 h4 52. Re5 Bg6 53. Nf4 Rg3+ 54. Kd4 Bc2 55. Rh5 Rxa3 56. Rxh4 Rg3 57. Nd5 Rg5 58. b5 Bf5 59. Rh6 Bg4 60. Rf6 Rf5 61. Rb6+ Ka7 62. Rg6 Bf3 63. Rg7+ Kb8 64. Nc3 Bb7 65. Kc4 Bf3 66. Kb4 Bd5 67. Na4 Rf7 68. Rg5 Bf3 69. Nc5 Kc7 70. Rg6 Kd8 71. Ka5 Rf5? 72. Ne6+! Kc8?! 73. Nd4! Rf8 74. Nxf3! Rxf3 75. Kb6 Rb3 76. Rg8+ Kd7 77. Rb8 1-0
 
 #### 2010 · Anand – Topalov
 
