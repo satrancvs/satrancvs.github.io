@@ -143,6 +143,18 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   usePlayerLoaded(board, !!onLoaded, onLoaded);
 
   const host = useRef<HTMLDivElement>(null);
+  // Oyun başlamadan (ya da ilk hamle gelmeden) tahtada yalnızca oynatıcıyı kurmak için konan sahte tek hamlelik PGN ("1. e4") vardır: ok tuşları ve boşluk onu oynatmasın.
+  useEffect(() => {
+    if (!idle) return;
+    const block = (e: KeyboardEvent) => {
+      if (!['ArrowLeft', 'ArrowRight', 'Home', 'End', 'Space'].includes(e.code)) return;
+      const t = e.target as HTMLElement | null;
+      if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+      e.stopImmediatePropagation(); // sayfa kaydırma gibi varsayılan davranış korunur (preventDefault yok)
+    };
+    window.addEventListener('keydown', block, true);
+    return () => window.removeEventListener('keydown', block, true);
+  }, [idle]);
   useEffect(() => {
     const el = host.current;
     if (!el || !ready || analysing) return;
