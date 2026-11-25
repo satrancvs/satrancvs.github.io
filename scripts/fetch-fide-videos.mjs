@@ -33,6 +33,20 @@ try {
       if (id && title && /^[\w-]{11}$/.test(id) && !have.has(id) && /world championship/i.test(title) && (/\bgame\s*\d+/i.test(title) || /no commentary/i.test(title))) { videos.push({ id, title, published: now }); have.add(id); }
     }
   } catch (e) { console.warn(`canlı yayın sekmesi okunamadı (${e.message})`); }
+  // Maç basın toplantıları ("Press Conference | Game N | …") RSS'ten (son ~15 video) çabuk düşer: kanalın "Videolar" sekmesinden eklenir (LiveMatch "Basın toplantısı" kartı).
+  try {
+    const vr = await fetch(`https://www.youtube.com/channel/${CHANNEL}/videos?hl=en`, { signal: AbortSignal.timeout(15000), headers: { 'user-agent': 'Mozilla/5.0', 'accept-language': 'en' } });
+    const data = JSON.parse((await vr.text()).match(/var ytInitialData = (\{.*?\});<\/script>/s)[1]);
+    const found = [];
+    const walk = (o) => { if (Array.isArray(o)) o.forEach(walk); else if (o && typeof o === 'object') { if (o.lockupViewModel) found.push(o.lockupViewModel); Object.values(o).forEach(walk); } };
+    walk(data);
+    const have = new Set(videos.map((v) => v.id));
+    const day = new Date(Date.now() - 36e5).toISOString();
+    for (const l of found) {
+      const id = l.contentId, title = l.metadata?.lockupMetadataViewModel?.title?.content;
+      if (id && title && /^[\w-]{11}$/.test(id) && !have.has(id) && /press conference/i.test(title) && /world championship 2026/i.test(title) && /\bgame\s*\d+/i.test(title)) { videos.push({ id, title, published: day }); have.add(id); }
+    }
+  } catch (e) { console.warn(`videolar sekmesi okunamadı (${e.message})`); }
   writeFileSync(OUT, JSON.stringify({ channel: '@FIDE_chess', updated: new Date().toISOString(), videos }, null, 1) + '\n');
   console.log(`fide-videos.json: ${videos.length} video`);
 } catch (e) {
