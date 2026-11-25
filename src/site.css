@@ -1394,5 +1394,10 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .live-nextgame-text b { font-size: 1.15rem; font-weight: 400; color: var(--fg); }
 .live-nextgame-arrow { font-size: 1.4rem; color: var(--accent); transition: transform .15s; }
 .live-nextgame:hover .live-nextgame-arrow { transform: translateX(3px); }
-@media (min-width: 56em) { .live-match > .live-nextgame { grid-column: 2; grid-row: 8; align-self: end; } }
+@media (min-width: 56em) { .live-match > .live-after { grid-column: 2; grid-row: 8; align-self: end; } }
 .live-nextgame-text .f-mono { letter-spacing: .08em; white-space: nowrap; }
+
+.live-after { display: flex; flex-direction: column; gap: .6rem; width: 100%; max-width: 34rem; margin-top: 1rem; }
+.live-after > .live-nextgame { margin-top: 0; max-width: none; }
+a.live-nextgame { text-decoration: none; }
+.live-press .live-nextgame-text b { font-size: 1.05rem; }

@@ -5,7 +5,7 @@ import { usePlayerLoaded } from '@/lib/use-player-loaded';
 import SectionLink from '@/components/SectionLink';
 import LiveVideo, { streamThumb, useFideVideos } from '@/components/LiveVideo';
 import { centerCard } from '@/lib/center-card';
-import { API, FALLBACK, TOUR, gameStreamOf, pickGameStream, tag } from '@/lib/championship';
+import { API, FALLBACK, TOUR, gameStreamOf, pickGameStream, pressConferenceOf, tag } from '@/lib/championship';
 import type { Round } from '@/lib/championship';
 import type { SectionTarget } from '@/components/SectionLink';
 
@@ -143,6 +143,18 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   usePlayerLoaded(board, !!onLoaded, onLoaded);
 
   const host = useRef<HTMLDivElement>(null);
+  // Oyun başlamadan (ya da ilk hamle gelmeden) tahtada yalnızca oynatıcıyı kurmak için konan sahte tek hamlelik PGN ("1. e4") vardır: ok tuşları ve boşluk onu oynatmasın.
+  useEffect(() => {
+    if (!idle) return;
+    const block = (e: KeyboardEvent) => {
+      if (!['ArrowLeft', 'ArrowRight', 'Home', 'End', 'Space'].includes(e.code)) return;
+      const t = e.target as HTMLElement | null;
+      if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+      e.stopImmediatePropagation(); // sayfa kaydırma gibi varsayılan davranış korunur (preventDefault yok)
+    };
+    window.addEventListener('keydown', block, true);
+    return () => window.removeEventListener('keydown', block, true);
+  }, [idle]);
   useEffect(() => {
     const el = host.current;
     if (!el || !ready || analysing) return;
@@ -212,6 +224,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const shownIdx = shown ? list.indexOf(shown) : -1;
   const shownDone = !!shown && (shown.finished || /^(1-0|0-1|1\/2-1\/2)$/.test(tag(pgns[shown.id] ?? '', 'Result')));
   const nextRound = shownDone && shownIdx >= 0 ? list[shownIdx + 1] : undefined;
+  const press = shownDone && shownIdx >= 0 ? pressConferenceOf(videos, shownIdx + 1) : undefined; // biten oyunun basın toplantısı videosu
   const cardStream = (i: number) => gameStreamOf(videos, i + 1);
   const gukeshWhite = whiteTag ? /gukesh/i.test(whiteTag) : roundNo % 2 === 0;
 
@@ -291,17 +304,32 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           </div>
         </div>
       )}
-      {live && nextRound && (
-        <button type="button" className="live-nextgame" onClick={() => choose(nextRound)} aria-label={`Sıradaki oyun: ${shownIdx + 2}. oyun`}>
-          <span className="live-nextgame-thumb">
-            {cardStream(shownIdx + 1) ? <img src={streamThumb(cardStream(shownIdx + 1)!.id)} alt="" loading="lazy" /> : <span className="f-display">{shownIdx + 2}</span>}
-          </span>
-          <span className="live-nextgame-text">
-            <span className="f-mono">Sıradaki oyun · {shownIdx + 2}. oyun</span>
-            <b className="f-display">{new Date(nextRound.startsAt).toLocaleString('tr-TR', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' })}</b>
-          </span>
-          <span className="live-nextgame-arrow" aria-hidden="true">→</span>
-        </button>
+      {live && (press || nextRound) && (
+        <div className="live-after">
+          {press && (
+            <a className="live-nextgame live-press" href={`https://www.youtube.com/watch?v=${press.id}`} target="_blank" rel="noopener noreferrer" aria-label={`Basın toplantısı: ${shownIdx + 1}. oyun`}>
+              <span className="live-nextgame-thumb"><img src={streamThumb(press.id)} alt="" loading="lazy" /></span>
+              <span className="live-nextgame-text">
+                <span className="f-mono">Basın toplantısı · {shownIdx + 1}. oyun</span>
+                <b className="f-display">Oyun sonrası açıklamalar</b>
+              </span>
+              <span className="live-nextgame-arrow" aria-hidden="true">↗</span>
+            </a>
+          )}
+          {nextRound && (
+          <button type="button" className="live-nextgame" onClick={() => choose(nextRound)} aria-label={`Sıradaki oyun: ${shownIdx + 2}. oyun`}>
+            <span className="live-nextgame-thumb">
+              {cardStream(shownIdx + 1) ? <img src={streamThumb(cardStream(shownIdx + 1)!.id)} alt="" loading="lazy" /> : <span className="f-display">{shownIdx + 2}</span>}
+            </span>
+            <span className="live-nextgame-text">
+              <span className="f-mono">Sıradaki oyun · {shownIdx + 2}. oyun</span>
+              <b className="f-display">{new Date(nextRound.startsAt).toLocaleString('tr-TR', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' })}</b>
+            </span>
+            <span className="live-nextgame-arrow" aria-hidden="true">→</span>
+          </button>
+
+          )}
+        </div>
       )}
       {live && !hasMoves && !nextReady && <p className="live-status f-mono">{failed ? 'Canlı veriye ulaşılamadı' : 'İlk hamle bekleniyor…'}</p>}
       <LiveVideo key={stream?.id} video={stream} />
