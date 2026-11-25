@@ -1431,18 +1431,17 @@ a.live-nextgame { text-decoration: none; }
 .live-press.on { border-color: var(--accent); }
 
 /* Canlı yayın: oyuncu kartlarının altında PGN'in Event / Site bilgisi */
-.live-vs .live-event { margin: .15rem 0 0; display: flex; flex-direction: column; gap: 0; padding-top: .7rem; border-top: 1px solid var(--line); }
-.live-vs .live-event span { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); }
-.live-vs .live-event span:first-child { color: var(--fg); opacity: .85; }
-/* .live-sf .live-vs p { display: contents } künye satırını da dağıtıyordu: üç satır dış sütunun .85rem boşluğuyla ayrılıyordu */
-.live-sf .live-vs p.live-event { display: flex; flex-direction: column; gap: .15rem; line-height: 1.25; }
-.live-sf .live-vs p.live-event > span { line-height: 1.25; }
+.live-event { margin: 0 0 .9rem; padding: 0 0 .75rem; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: .15rem; line-height: 1.25; }
+.live-event > span { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); line-height: 1.25; }
+.live-event > span:first-child { color: var(--fg); opacity: .85; }
 
-/* Geri sayım: beklenen oyunda tahtanın üstünde (bitmiş oyunlarda yok) */
-.live-count-top { margin: 0 0 .7rem; }
-.live-count-top .live-count { margin: 0; max-width: none; padding: .5rem 0 .6rem; border: 0; border-bottom: 1px solid var(--line); }
-.live-count-top .live-count-label { margin: 0 0 .5rem; text-align: center; }
-.live-count-top .live-count-grid { gap: .25rem; max-width: 22rem; margin: 0 auto; }
-.live-count-top .live-cell { padding: .45rem 0 .4rem; }
+/* Geri sayım: beklenen oyunda tahtanın tam ortasında (bitmiş oyunlarda yok) */
+.live-board > .live-board-body { display: block; position: relative; }
+.live-board-body > div:not(.live-count-top) { display: flex; justify-content: center; }
+.live-count-top { position: absolute; left: var(--cx, 50%); top: var(--cy, 50%); transform: translate(-50%, -50%); z-index: 5; width: min(21rem, 88%); padding: .9rem 1rem 1rem; border: 1px solid var(--line); border-radius: 12px; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(6px); box-shadow: 0 .6rem 1.8rem rgb(0 0 0 / .28); pointer-events: none; }
+.live-count-top .live-count { margin: 0; max-width: none; padding: 0; border: 0; }
+.live-count-top .live-count-label { margin: 0 0 .6rem; text-align: center; }
+.live-count-top .live-count-grid { gap: .3rem; margin: 0 auto; }
+.live-count-top .live-cell { padding: .5rem 0 .45rem; }
 .live-count-top .live-num { font-size: 2rem; }
 .live-count-top .live-unit { font-size: 10px; letter-spacing: .1em; }

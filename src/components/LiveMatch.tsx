@@ -96,6 +96,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const src = idle ? IDLE_PGN : pgn;
 
   const board = useRef<HTMLDivElement>(null);
+  const bodyRef = useRef<HTMLDivElement>(null);
   const rail = useRef<HTMLDivElement>(null);
   const firstRail = useRef(true);
   useEffect(() => { if (!live) return; centerCard(rail.current, !firstRail.current); firstRail.current = false; }, [shown?.id, live]); // seçili oyun kartı şeritte ortaya gelir
@@ -220,8 +221,30 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const cardStream = (i: number) => gameStreamOf(videos, i + 1);
   const gukeshWhite = whiteTag ? /gukesh/i.test(whiteTag) : roundNo % 2 === 0;
 
+  // Geri sayım kartı diyagramın tam ortasında durur: diyagramın (değerlendirme çubuğu ve hamle listesi hariç) ölçüsünden `--cx`/`--cy` verilir.
+  const showCount = (!live || nextReady) && !analysing && mounted;
+  useEffect(() => {
+    const body = bodyRef.current;
+    if (!showCount || !body) return;
+    const place = () => {
+      const b = body.querySelector('.board-wrap') as HTMLElement | null;
+      if (!b) return;
+      const r = b.getBoundingClientRect(), o = body.getBoundingClientRect();
+      if (!r.width) return;
+      body.style.setProperty('--cx', `${r.left - o.left + r.width / 2}px`);
+      body.style.setProperty('--cy', `${r.top - o.top + r.height / 2}px`);
+    };
+    place();
+    const ro = new ResizeObserver(place);
+    ro.observe(body);
+    const mo = new MutationObserver(place);
+    mo.observe(body, { childList: true, subtree: true });
+    window.addEventListener('resize', place);
+    const t = window.setInterval(place, 1000);
+    return () => { ro.disconnect(); mo.disconnect(); window.removeEventListener('resize', place); window.clearInterval(t); body.style.removeProperty('--cx'); body.style.removeProperty('--cy'); };
+  }, [showCount]);
   // Geri sayım yalnızca beklenen oyunda (maç başlamadan ya da oyunlar arasında sonraki oyun tahtadayken) tahtanın üstünde durur; bitmiş oyunlarda gösterilmez.
-  const count = (!live || nextReady) && !analysing && mounted ? (
+  const count = showCount ? (
     <div className="live-count-top">
       <div className="live-count" role="timer" aria-label={`${nextNo}. oyuna kalan süre`}>
         {between && upcoming && (
@@ -245,6 +268,8 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
     return `${f(a, { day: 'numeric', month: 'long' })} – ${f(z, { day: 'numeric', month: 'long', year: 'numeric' })}`;
   })();
   const players = (
+  <>
+    <p className="live-event f-mono"><span>2026 FIDE Dünya Satranç Şampiyonası</span>{list.length > 0 && <span>{matchDates}</span>}<span>Cenevre, İsviçre</span></p>
   <div className="live-vs">
     {([
       { k: 'g', img: 'dunya-fide-gukesh.jpg', left: '-53%', name: 'Gukesh Dommaraju', meta: 'Hindistan · 2710', clock: gClock, short: 'Gukesh' },
@@ -252,8 +277,8 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
     ].sort((a, b) => (a.k === (gukeshWhite ? 'g' : 's') ? -1 : b.k === (gukeshWhite ? 'g' : 's') ? 1 : 0))).map((p) => (
       <div key={p.k} className={`vs-${(p.k === 'g') === gukeshWhite ? 'white' : 'black'}`}><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/${p.img}`} alt="" style={{ left: p.left }} loading="lazy" /></span><i className="vs-side" aria-hidden="true">♚</i><p><b>{p.name}</b><span className="f-mono"><em>{(p.k === 'g') === gukeshWhite ? 'Beyaz' : 'Siyah'}</em> · <span className="vs-country">{p.meta.split(' · ')[0]} · </span>{p.meta.split(' · ')[1]}</span></p>{p.clock && <i className="vs-clock f-mono" title="Kalan süre" aria-label={`${p.short} kalan süre ${p.clock}`}>{p.clock}</i>}</div>
     ))}
-    <p className="live-event f-mono"><span>2026 FIDE Dünya Satranç Şampiyonası</span>{list.length > 0 && <span>{matchDates}</span>}<span>Cenevre, İsviçre</span></p>
   </div>
+  </>
   );
 
   return (
@@ -276,8 +301,10 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
         ) : undefined} idleText="Maç başlayınca canlı konum analizi buradan izlenebilecek." />
         <div ref={board} className={`cp-game live-board${idle ? ' live-wait' : ''}`}>
           <p className="live-video-label live-board-label f-mono"><i className={`live-dot${alert ? ' live-dot-alert' : ''}`} aria-hidden="true" /><span lang="en">Lichess</span> canlı yayını</p>
-          {count}
-          <div ref={host} />
+          <div className="live-board-body" ref={bodyRef}>
+            {count}
+            <div ref={host} />
+          </div>
         </div>
       </div>
       {live && (
