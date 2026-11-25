@@ -116,7 +116,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const [inView, setInView] = useState(true);
   const [alert, setAlert] = useState(false);
   const [above, setAbove] = useState(false); // tahta ekranın üstünde kaldıysa uyarıdaki ok yukarı bakar
-  const seenTotal = useRef(-1);
+  const seenTotal = useRef({ id: '', n: 0 }); // en son görülen tur ve hamle sayısı
   useEffect(() => {
     const el = board.current;
     if (!el || typeof IntersectionObserver === 'undefined') return;
@@ -125,9 +125,13 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
     return () => io.disconnect();
   }, []);
   useEffect(() => {
-    if (seenTotal.current >= 0 && total > seenTotal.current && !inView) setAlert(true);
-    seenTotal.current = total;
-  }, [total]); // eslint-disable-line react-hooks/exhaustive-deps
+    // Uyarı yalnızca sürmekte olan bir oyuna YENİ hamle gelirse çıkar: ilk yükleme (0 → N), tur değişimi ve biten oyun uyarı vermez.
+    const id = shown?.id ?? '';
+    const prev = seenTotal.current;
+    if (live && prev.id === id && prev.n > 0 && total > prev.n && !finishedShown && !inView) setAlert(true);
+    seenTotal.current = { id, n: total };
+    if (!live || finishedShown) setAlert(false);
+  }, [total, shown?.id, live, finishedShown]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => { if (inView) setAlert(false); }, [inView]);
   const toBoard = () => { setAlert(false); board.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }); };
   const fresh = analysing ? Math.max(0, total - base.current) : 0;
