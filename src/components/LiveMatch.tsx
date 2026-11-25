@@ -96,6 +96,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const src = idle ? IDLE_PGN : pgn;
 
   const board = useRef<HTMLDivElement>(null);
+  const bodyRef = useRef<HTMLDivElement>(null);
   const rail = useRef<HTMLDivElement>(null);
   const firstRail = useRef(true);
   useEffect(() => { if (!live) return; centerCard(rail.current, !firstRail.current); firstRail.current = false; }, [shown?.id, live]); // seçili oyun kartı şeritte ortaya gelir
@@ -220,8 +221,30 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const cardStream = (i: number) => gameStreamOf(videos, i + 1);
   const gukeshWhite = whiteTag ? /gukesh/i.test(whiteTag) : roundNo % 2 === 0;
 
+  // Geri sayım kartı diyagramın tam ortasında durur: diyagramın (değerlendirme çubuğu ve hamle listesi hariç) ölçüsünden `--cx`/`--cy` verilir.
+  const showCount = (!live || nextReady) && !analysing && mounted;
+  useEffect(() => {
+    const body = bodyRef.current;
+    if (!showCount || !body) return;
+    const place = () => {
+      const b = body.querySelector('.board-wrap') as HTMLElement | null;
+      if (!b) return;
+      const r = b.getBoundingClientRect(), o = body.getBoundingClientRect();
+      if (!r.width) return;
+      body.style.setProperty('--cx', `${r.left - o.left + r.width / 2}px`);
+      body.style.setProperty('--cy', `${r.top - o.top + r.height / 2}px`);
+    };
+    place();
+    const ro = new ResizeObserver(place);
+    ro.observe(body);
+    const mo = new MutationObserver(place);
+    mo.observe(body, { childList: true, subtree: true });
+    window.addEventListener('resize', place);
+    const t = window.setInterval(place, 1000);
+    return () => { ro.disconnect(); mo.disconnect(); window.removeEventListener('resize', place); window.clearInterval(t); body.style.removeProperty('--cx'); body.style.removeProperty('--cy'); };
+  }, [showCount]);
   // Geri sayım yalnızca beklenen oyunda (maç başlamadan ya da oyunlar arasında sonraki oyun tahtadayken) tahtanın üstünde durur; bitmiş oyunlarda gösterilmez.
-  const count = (!live || nextReady) && !analysing && mounted ? (
+  const count = showCount ? (
     <div className="live-count-top">
       <div className="live-count" role="timer" aria-label={`${nextNo}. oyuna kalan süre`}>
         {between && upcoming && (
@@ -278,7 +301,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
         ) : undefined} idleText="Maç başlayınca canlı konum analizi buradan izlenebilecek." />
         <div ref={board} className={`cp-game live-board${idle ? ' live-wait' : ''}`}>
           <p className="live-video-label live-board-label f-mono"><i className={`live-dot${alert ? ' live-dot-alert' : ''}`} aria-hidden="true" /><span lang="en">Lichess</span> canlı yayını</p>
-          <div className="live-board-body">
+          <div className="live-board-body" ref={bodyRef}>
             {count}
             <div ref={host} />
           </div>

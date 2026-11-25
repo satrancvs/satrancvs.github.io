@@ -1438,7 +1438,7 @@ a.live-nextgame { text-decoration: none; }
 /* Geri sayım: beklenen oyunda tahtanın tam ortasında (bitmiş oyunlarda yok) */
 .live-board > .live-board-body { display: block; position: relative; }
 .live-board-body > div:not(.live-count-top) { display: flex; justify-content: center; }
-.live-count-top { position: absolute; left: 50%; top: calc(50% - 23px); transform: translate(-50%, -50%); z-index: 5; width: min(21rem, 88%); padding: .9rem 1rem 1rem; border: 1px solid var(--line); border-radius: 12px; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(6px); box-shadow: 0 .6rem 1.8rem rgb(0 0 0 / .28); pointer-events: none; }
+.live-count-top { position: absolute; left: var(--cx, 50%); top: var(--cy, 50%); transform: translate(-50%, -50%); z-index: 5; width: min(21rem, 88%); padding: .9rem 1rem 1rem; border: 1px solid var(--line); border-radius: 12px; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(6px); box-shadow: 0 .6rem 1.8rem rgb(0 0 0 / .28); pointer-events: none; }
 .live-count-top .live-count { margin: 0; max-width: none; padding: 0; border: 0; }
 .live-count-top .live-count-label { margin: 0 0 .6rem; text-align: center; }
 .live-count-top .live-count-grid { gap: .3rem; margin: 0 auto; }
