@@ -144,16 +144,30 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
 
   const host = useRef<HTMLDivElement>(null);
   // Oyun başlamadan (ya da ilk hamle gelmeden) tahtada yalnızca oynatıcıyı kurmak için konan sahte tek hamlelik PGN ("1. e4") vardır: ok tuşları ve boşluk onu oynatmasın.
+  // Yalnızca etkin oynatıcı canlı tahtaysa engellenir (oynatıcı, üzerine gelinen/tıklanan oyun alanını etkinleştirir; sayfanın altındaki başka oynatıcıların tuşları serbest kalmalı).
   useEffect(() => {
     if (!idle) return;
+    let liveActive = true; // sayfadaki ilk oynatıcı varsayılan olarak etkindir
+    const track = (e: Event) => {
+      const g = (e.target as Element | null)?.closest?.('.cp-game');
+      if (g) liveActive = g === board.current;
+    };
     const block = (e: KeyboardEvent) => {
-      if (!['ArrowLeft', 'ArrowRight', 'Home', 'End', 'Space'].includes(e.code)) return;
+      if (!liveActive || !['ArrowLeft', 'ArrowRight', 'Home', 'End', 'Space'].includes(e.code)) return;
       const t = e.target as HTMLElement | null;
       if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
       e.stopImmediatePropagation(); // sayfa kaydırma gibi varsayılan davranış korunur (preventDefault yok)
     };
+    window.addEventListener('mouseover', track, true);
+    window.addEventListener('click', track, true);
+    window.addEventListener('touchstart', track, { capture: true, passive: true });
     window.addEventListener('keydown', block, true);
-    return () => window.removeEventListener('keydown', block, true);
+    return () => {
+      window.removeEventListener('mouseover', track, true);
+      window.removeEventListener('click', track, true);
+      window.removeEventListener('touchstart', track, true);
+      window.removeEventListener('keydown', block, true);
+    };
   }, [idle]);
   useEffect(() => {
     const el = host.current;
