@@ -1407,3 +1407,25 @@ a.live-nextgame { text-decoration: none; }
   .live-match > .live-vs { margin-bottom: 1rem; }
   .live-match > .live-score { margin-bottom: .8rem; }
 }
+/* Canlı yayın: oyuncular sol sütunda, logonun altında (SfPanel `players`): fotoğraf solda, ad/renk/ülke ve kalan süre sağda */
+.live-sf .live-vs { flex-direction: column; flex-wrap: nowrap; gap: .85rem; margin: 0 0 1rem; }
+.live-sf .live-vs > div { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; column-gap: .75rem; row-gap: .35rem; }
+.live-sf .live-vs .vs-photo { grid-row: 1 / span 2; }
+.live-sf .live-vs p { grid-column: 2; }
+.live-sf .live-vs p .f-mono { white-space: normal; line-height: 1.5; }
+.live-sf .live-vs .vs-clock { grid-column: 2; justify-self: start; min-width: 4.4rem; }
+.live-sf .live-vs b { font-size: 1.1rem; }
+/* Logonun sol üst köşesi: analiz açıkken kart overflow:hidden olduğundan simgenin ince çerçevesi kırpılıyordu */
+.live-sf-brand { padding: 3px 0 0 3px; }
+/* Sol sütunda oyuncu bloğu kompakt: ad, altında renk · Elo ve kalan süre aynı satırda (yükseklik az, Stockfish kartına yer kalır) */
+.live-sf .live-vs { gap: .6rem; margin-bottom: .8rem; }
+.live-sf .live-vs > div { grid-template-columns: auto minmax(0, 1fr) auto; column-gap: .65rem; row-gap: .1rem; }
+.live-sf .live-vs .vs-photo { grid-row: 1 / span 2; width: 2.9rem; height: 2.9rem; }
+.live-sf .live-vs .vs-side { left: 1.75rem; top: 1.75rem; width: 1.3rem; height: 1.3rem; font-size: .9rem; }
+.live-sf .live-vs p { display: contents; }
+.live-sf .live-vs p b { grid-column: 2 / span 2; grid-row: 1; align-self: end; font-size: 1.05rem; white-space: nowrap; }
+.live-sf .live-vs p .f-mono { grid-column: 2; grid-row: 2; white-space: nowrap; letter-spacing: .06em; }
+.live-sf .live-vs p .f-mono .vs-country { display: none; }
+.live-sf .live-vs .vs-clock { grid-column: 3; grid-row: 2; justify-self: end; min-width: 3.9rem; padding: .1rem .35rem; font-size: .95rem; }
+
+.live-press.on { border-color: var(--accent); }

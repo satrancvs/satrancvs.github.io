@@ -61,7 +61,7 @@ export function SfSettings() {
 }
 
 // Stockfish canlı analiz paneli (canlı ekran ve maç seçici): `boardRef` içindeki oynatıcıların `cp-sf` olaylarını (eval-bar.ts) dinler.
-export default function SfPanel({ boardRef, idle = false, idleText = '', intro, brand = false }: { boardRef: RefObject<HTMLElement>; idle?: boolean; idleText?: string; intro?: ReactNode; brand?: boolean }) {
+export default function SfPanel({ boardRef, idle = false, idleText = '', intro, brand = false, players }: { boardRef: RefObject<HTMLElement>; idle?: boolean; idleText?: string; intro?: ReactNode; brand?: boolean; players?: ReactNode }) {
   const [sf, setSf] = useState<Sf | null>(null);
   const [engineOn, setEngineOn] = useState(engineEnabled);
   const [cfg, setCfg] = useState(engineSettings);
@@ -96,6 +96,7 @@ export default function SfPanel({ boardRef, idle = false, idleText = '', intro, 
       {brand && (
         <p className="live-sf-brand f-display"><img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" aria-hidden="true" width={28} height={28} />Satranç <em>vs.</em></p>
       )}
+      {players}
       <div className="live-sf-body" data-n={cfg.lines}>
       <div className="live-sf-head f-mono">
         <img src={`${import.meta.env.BASE_URL}stockfish/logo.png`} alt="" width="22" height="22" />

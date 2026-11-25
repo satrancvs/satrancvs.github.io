@@ -219,6 +219,8 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   // Beyaz taşları kimin oynadığı: PGN künyesi; PGN yoksa (oyun başlamadı) renkler her turda değişir (1. oyunda Beyaz Sindarov, 2. oyunda Gukesh).
   const whiteTag = tag(raw, 'White');
   // Bir oyunu tahtaya getirir: sıradaki (başlamamış) oyun "hazır" konumdur, şu an oynanan oyun canlıyı izler (seçim kalkar), diğerleri seçilir.
+  const [showPress, setShowPress] = useState(false); // basın toplantısı videosu sağ üstteki video alanında oynatılıyor
+  useEffect(() => { setShowPress(false); }, [shown?.id]);
   const choose = (r: Round) => setPick(between ? (r.id === upcoming?.id ? null : r.id) : r.id === current?.id ? null : r.id);
   // Gösterilen oyun bittiyse ve ondan sonra bir tur varsa sağ altta "Sıradaki oyun" kartı çıkar.
   const shownIdx = shown ? list.indexOf(shown) : -1;
@@ -244,18 +246,22 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
     </div>
   ) : undefined;
 
+  // Oyuncular (fotoğraf, ad, renk, kalan süre): sol sütunda, logonun altında.
+  const players = (
+  <div className="live-vs">
+    {([
+      { k: 'g', img: 'dunya-fide-gukesh.jpg', left: '-53%', name: 'Gukesh Dommaraju', meta: 'Hindistan · 2710', clock: gClock, short: 'Gukesh' },
+      { k: 's', img: 'dunya-fide-sindarov.jpg', left: '-56%', name: 'Javokhir Sindarov', meta: 'Özbekistan · 2782', clock: sClock, short: 'Sindarov' },
+    ].sort((a, b) => (a.k === (gukeshWhite ? 'g' : 's') ? -1 : b.k === (gukeshWhite ? 'g' : 's') ? 1 : 0))).map((p) => (
+      <div key={p.k} className={`vs-${(p.k === 'g') === gukeshWhite ? 'white' : 'black'}`}><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/${p.img}`} alt="" style={{ left: p.left }} loading="lazy" /></span><i className="vs-side" aria-hidden="true">♚</i><p><b>{p.name}</b><span className="f-mono"><em>{(p.k === 'g') === gukeshWhite ? 'Beyaz' : 'Siyah'}</em> · <span className="vs-country">{p.meta.split(' · ')[0]} · </span>{p.meta.split(' · ')[1]}</span></p>{p.clock && <i className="vs-clock f-mono" title="Kalan süre" aria-label={`${p.short} kalan süre ${p.clock}`}>{p.clock}</i>}</div>
+    ))}
+  </div>
+  );
+
   return (
     <section className={`live-match${live ? ' is-live' : ''}`} aria-label="Dünya Şampiyonası 2026 canlı yayını">
       {!live && <p className="live-kicker f-mono">Çok yakında<span aria-hidden="true"> · </span>Dünya Şampiyonası 2026</p>}
       {!live && <p className="live-when f-mono">24 Kasım 2026 · 17.00 (TR saati) · Cenevre</p>}
-      <div className="live-vs">
-        {([
-          { k: 'g', img: 'dunya-fide-gukesh.jpg', left: '-53%', name: 'Gukesh Dommaraju', meta: 'Hindistan · 2710', clock: gClock, short: 'Gukesh' },
-          { k: 's', img: 'dunya-fide-sindarov.jpg', left: '-56%', name: 'Javokhir Sindarov', meta: 'Özbekistan · 2782', clock: sClock, short: 'Sindarov' },
-        ].sort((a, b) => (a.k === (gukeshWhite ? 'g' : 's') ? -1 : b.k === (gukeshWhite ? 'g' : 's') ? 1 : 0))).map((p) => (
-          <div key={p.k} className={`vs-${(p.k === 'g') === gukeshWhite ? 'white' : 'black'}`}><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/${p.img}`} alt="" style={{ left: p.left }} loading="lazy" /></span><i className="vs-side" aria-hidden="true">♚</i><p><b>{p.name}</b><span className="f-mono"><em>{(p.k === 'g') === gukeshWhite ? 'Beyaz' : 'Siyah'}</em> · {p.meta}</span></p>{p.clock && <i className="vs-clock f-mono" title="Kalan süre" aria-label={`${p.short} kalan süre ${p.clock}`}>{p.clock}</i>}</div>
-        ))}
-      </div>
       {live && (
         <p className="live-score f-mono" aria-label="Maç skoru">
           <b>Gukesh {fmt(score.g)}</b><span> – </span><b>{fmt(score.s)} Sindarov</b>
@@ -266,7 +272,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
           <i className="live-dot live-dot-alert" aria-hidden="true" />Canlı · yeni hamle<span aria-hidden="true">{above ? ' ↑' : ' ↓'}</span>
         </button>, document.body)}
       <div className="live-stage">
-        <SfPanel brand boardRef={board} idle={false} intro={analysing ? (
+        <SfPanel brand players={players} boardRef={board} idle={false} intro={analysing ? (
           <div className="live-sf-intro">
             {fresh > 0 && <div className="sf-intro-card live-newmove" role="status"><p>Canlı oyunda {fresh} yeni hamle oynandı.</p></div>}
           <button type="button" className="sf-intro-back" aria-label="Canlı konuma dön" title="Canlı konuma dön" onClick={() => board.current?.querySelector('pgn-player')?.dispatchEvent(new CustomEvent('cp-analysis-exit'))}>
@@ -307,14 +313,14 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
       {live && (press || nextRound) && (
         <div className="live-after">
           {press && (
-            <a className="live-nextgame live-press" href={`https://www.youtube.com/watch?v=${press.id}`} target="_blank" rel="noopener noreferrer" aria-label={`Basın toplantısı: ${shownIdx + 1}. oyun`}>
+            <button type="button" className={`live-nextgame live-press${showPress ? ' on' : ''}`} aria-pressed={showPress} onClick={() => { setShowPress((v) => !v); window.setTimeout(() => document.querySelector('.live-video')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 60); }} aria-label={`Basın toplantısı: ${shownIdx + 1}. oyun`}>
               <span className="live-nextgame-thumb"><img src={streamThumb(press.id)} alt="" loading="lazy" /></span>
               <span className="live-nextgame-text">
                 <span className="f-mono">Basın toplantısı · {shownIdx + 1}. oyun</span>
-                <b className="f-display">Oyun sonrası açıklamalar</b>
+                <b className="f-display">{showPress ? 'Oynatılıyor' : 'Oyun sonrası açıklamalar'}</b>
               </span>
-              <span className="live-nextgame-arrow" aria-hidden="true">↗</span>
-            </a>
+              <span className="live-nextgame-arrow" aria-hidden="true">{showPress ? '■' : '▶'}</span>
+            </button>
           )}
           {nextRound && (
           <button type="button" className="live-nextgame" onClick={() => choose(nextRound)} aria-label={`Sıradaki oyun: ${shownIdx + 2}. oyun`}>
@@ -332,7 +338,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
         </div>
       )}
       {live && !hasMoves && !nextReady && <p className="live-status f-mono">{failed ? 'Canlı veriye ulaşılamadı' : 'İlk hamle bekleniyor…'}</p>}
-      <LiveVideo key={stream?.id} video={stream} />
+      <LiveVideo key={showPress && press ? press.id : stream?.id} video={showPress && press ? press : stream} autoplay={showPress && !!press} label={showPress && press ? 'Basın toplantısı' : 'FIDE canlı yayını'} live={!(showPress && press)} />
       {next && <div className="live-nexts">{(Array.isArray(next) ? next : [next]).map((t) => <SectionLink key={t.id} target={t} />)}</div>}
     </section>
   );

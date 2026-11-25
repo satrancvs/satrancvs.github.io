@@ -15,12 +15,12 @@ export function useFideVideos() {
 }
 export const streamThumb = (id: string) => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
 
-export default function LiveVideo({ video: v }: { video?: FideVideo }) {
-  const [on, setOn] = useState(false);
+export default function LiveVideo({ video: v, autoplay = false, label = 'FIDE canlı yayını', live = true }: { video?: FideVideo; autoplay?: boolean; label?: string; live?: boolean }) {
+  const [on, setOn] = useState(autoplay);
   if (!v) return null;
   return (
-    <div className="live-video" role="group" aria-label="FIDE canlı yayını">
-      <p className="live-video-label f-mono"><i className="live-dot" aria-hidden="true" />FIDE canlı yayını</p>
+    <div className="live-video" role="group" aria-label={label}>
+      <p className="live-video-label f-mono">{live && <i className="live-dot" aria-hidden="true" />}{label}</p>
       <div className="vp-embed">
         {on ? (
           <iframe src={`https://www.youtube.com/embed/${v.id}?rel=0&iv_load_policy=3&playsinline=1&autoplay=1`} title={v.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" />
