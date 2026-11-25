@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 import SfPanel from '@/components/SfPanel';
 import { usePlayerLoaded } from '@/lib/use-player-loaded';
 import SectionLink from '@/components/SectionLink';
-import LiveVideo from '@/components/LiveVideo';
+import LiveVideo, { streamThumb, useGameStream } from '@/components/LiveVideo';
 import { centerCard } from '@/lib/center-card';
 import { API, FALLBACK, TOUR, tag } from '@/lib/championship';
 import type { Round } from '@/lib/championship';
@@ -33,6 +33,7 @@ const two = (n: number) => String(n).padStart(2, '0');
 const nm = (s: string) => (s.includes(',') ? s.split(',').map((x) => x.trim()).reverse().join(' ') : s);
 
 export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; onLoaded?: () => void; next?: SectionTarget | SectionTarget[] }) {
+  const stream = useGameStream(); // sağ üstteki oyun yayını; kapak resmi 1. oyun kartında da kullanılır
   const [mounted, setMounted] = useState(false);
   const [now, setNow] = useState(0);
   const [rounds, setRounds] = useState<Round[]>(FALLBACK);
@@ -258,8 +259,8 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
                 <button key={r.id} type="button" role="listitem" disabled={!ok} aria-current={on ? 'true' : undefined} title={`${i + 1}. oyun`}
                   className={`mpb-card rd-card${on ? ' on' : ''}${ok ? '' : ' rd-off'}`} onClick={() => setPick(r.id === current?.id ? null : r.id)}>
                   <span className="mpb-thumb rd-thumb">
-                    {i === 0 ? <img className="rd-photo" src={`${import.meta.env.BASE_URL}images/dunya-fide-oyun1.jpg`} alt="" loading="lazy" /> : null}
-                    <span className={`rd-num f-display${i === 0 ? ' rd-num-photo' : ''}`}>{i + 1}</span>
+                    {i === 0 && stream ? <img className="rd-photo" src={streamThumb(stream.id)} alt="" loading="lazy" /> : null}
+                    <span className={`rd-num f-display${i === 0 && stream ? ' rd-num-photo' : ''}`}>{i + 1}</span>
                     {on ? <span className="mpb-now f-mono">▶ İzleniyor</span> : ok && !done ? <span className="mpb-now f-mono rd-live">● Canlı</span> : null}
                   </span>
                   <span className="mpb-name"><b className="f-display">{i + 1}. oyun</b><span>{when}</span></span>
@@ -275,7 +276,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
         </p>
       )}
       {live && !hasMoves && <p className="live-status f-mono">{failed ? 'Canlı veriye ulaşılamadı' : 'İlk hamle bekleniyor…'}{shown && <> · <a href={`https://lichess.org/broadcast/-/-/${shown.id}`} target="_blank" rel="noopener noreferrer"><span lang="en">Lichess</span>’te izle</a></>}</p>}
-      <LiveVideo />
+      <LiveVideo video={stream} />
       {next && <div className="live-nexts">{(Array.isArray(next) ? next : [next]).map((t) => <SectionLink key={t.id} target={t} />)}</div>}
     </section>
   );
