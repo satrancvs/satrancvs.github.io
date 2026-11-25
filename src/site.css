@@ -1429,3 +1429,8 @@ a.live-nextgame { text-decoration: none; }
 .live-sf .live-vs .vs-clock { grid-column: 3; grid-row: 2; justify-self: end; min-width: 3.9rem; padding: .1rem .35rem; font-size: .95rem; }
 
 .live-press.on { border-color: var(--accent); }
+
+/* Canlı yayın: oyuncu kartlarının altında PGN'in Event / Site bilgisi */
+.live-vs .live-event { margin: .15rem 0 0; display: flex; flex-direction: column; gap: .15rem; padding-top: .7rem; border-top: 1px solid var(--line); }
+.live-vs .live-event span { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); }
+.live-vs .live-event span:first-child { color: var(--fg); opacity: .85; }

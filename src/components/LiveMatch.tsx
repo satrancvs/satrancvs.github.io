@@ -259,6 +259,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
     ].sort((a, b) => (a.k === (gukeshWhite ? 'g' : 's') ? -1 : b.k === (gukeshWhite ? 'g' : 's') ? 1 : 0))).map((p) => (
       <div key={p.k} className={`vs-${(p.k === 'g') === gukeshWhite ? 'white' : 'black'}`}><span className="vs-photo"><img src={`${import.meta.env.BASE_URL}images/${p.img}`} alt="" style={{ left: p.left }} loading="lazy" /></span><i className="vs-side" aria-hidden="true">♚</i><p><b>{p.name}</b><span className="f-mono"><em>{(p.k === 'g') === gukeshWhite ? 'Beyaz' : 'Siyah'}</em> · <span className="vs-country">{p.meta.split(' · ')[0]} · </span>{p.meta.split(' · ')[1]}</span></p>{p.clock && <i className="vs-clock f-mono" title="Kalan süre" aria-label={`${p.short} kalan süre ${p.clock}`}>{p.clock}</i>}</div>
     ))}
+    <p className="live-event f-mono" lang="en"><span>{tag(raw, 'Event') || 'FIDE World Chess Championship Match'}</span><span>{tag(raw, 'Site') || 'Geneva, Switzerland'}</span></p>
   </div>
   );
 
