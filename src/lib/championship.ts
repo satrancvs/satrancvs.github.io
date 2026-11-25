@@ -79,10 +79,16 @@ export function useChampionship(): { phase: Phase; now: number } {
 
 // FIDE kanalının oyun yayını videoları (başlığı "World Championship" + "Game N" ya da "No Commentary"): VideoPlaylist başa alır, canlı görünümdeki video (LiveVideo) bunlardan birini gömer.
 export type FideVideo = { id: string; title: string; published?: string };
-// Gerçek oyun yayınlarının başlığında "… | Game N | …" ya da "… | No Commentary" biçimi vardır; "The ceremonial first moves of Game 1 …" gibi kısa videolar sayılmaz.
-const COMMENTARY = /\|\s*game\s*\d+\s*\|/i, SILENT = /\|\s*no commentary\s*$/i;
-export const isGameStream = (v: FideVideo) => /world championship/i.test(v.title) && (COMMENTARY.test(v.title) || SILENT.test(v.title.trim()));
+// Gerçek oyun yayınlarının başlığında "… | Game N | …" ya da "… | No Commentary" biçimi vardır; "The ceremonial first moves of Game 1 …", "Recap | Game 1 |", "Game 1 Moments" gibi özet/kısa videolar sayılmaz.
+const COMMENTARY = /\|\s*game\s*\d+\s*\|/i, SILENT = /\|\s*no commentary\s*$/i, NOT_STREAM = /\b(recap|moments|minutes|highlights|interview|press conference)\b/i;
+export const isGameStream = (v: FideVideo) => /world championship/i.test(v.title) && !NOT_STREAM.test(v.title) && (COMMENTARY.test(v.title) || SILENT.test(v.title.trim()));
 export const gameRank = (v: FideVideo) => (COMMENTARY.test(v.title) ? 0 : SILENT.test(v.title.trim()) ? 1 : 2);
-/** Canlı görünümde gömülen oyun yayını: yorumsuz ("No Commentary") yayın önce, yoksa yorumlu "Game N"; aynı sınıfta en yenisi. */
-export const pickGameStream = (videos: FideVideo[]): FideVideo | undefined =>
-  videos.filter(isGameStream).sort((a, b) => (SILENT.test(a.title.trim()) ? 0 : 1) - (SILENT.test(b.title.trim()) ? 0 : 1) || +new Date(b.published ?? 0) - +new Date(a.published ?? 0))[0];
+/** Yayının oyun numarası: başlıktaki "Game N"; numarasız yorumsuz yayın (ilk gün) 1. oyundur. */
+export const streamGameNo = (v: FideVideo) => { const m = /\bgame\s*(\d+)/i.exec(v.title); return m ? +m[1] : 1; };
+/** Canlı görünümde gömülen oyun yayını: istenen oyunun yayını (yorumsuz "No Commentary" önce, yoksa yorumlu "Game N"; aynı sınıfta en yenisi); o oyun için yayın yoksa en son oyunun yayını. */
+export const pickGameStream = (videos: FideVideo[], game = 1): FideVideo | undefined => {
+  const all = videos.filter(isGameStream);
+  const same = all.filter((v) => streamGameNo(v) === game);
+  const pool = same.length ? same : all.filter((v) => streamGameNo(v) === Math.max(...all.map(streamGameNo)));
+  return pool.sort((a, b) => (SILENT.test(a.title.trim()) ? 0 : 1) - (SILENT.test(b.title.trim()) ? 0 : 1) || +new Date(b.published ?? 0) - +new Date(a.published ?? 0))[0];
+};
