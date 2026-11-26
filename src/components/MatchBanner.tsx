@@ -7,11 +7,11 @@ import { useChampionship } from '@/lib/championship';
 //  - Oyunlar arasında: skor + sonraki oyuna geri sayım.
 //  - Maç bitince (bir oyuncu 7,5 puana ulaşınca ya da 20 Aralık'tan sonra) duyuru kalkar.
 const pad = (n: number) => String(n).padStart(2, '0');
-const clock = (ms: number) => {
+// Sayaç hücreleri (sayfadaki canlı yayın sayacıyla aynı): en az bir gün varsa gün / saat / dakika; bir günden azsa saat / dakika / saniye; saat de 0 olunca dakika / saniye.
+const cellsOf = (ms: number): [number, string][] => {
   const t = Math.max(0, Math.floor(ms / 1000));
-  const h = Math.floor(t / 3600);
-  // Saat 0 ise gösterilmez ("00:" yazılmaz): 45:12 ; 1 saat ve üstünde 01:45:12
-  return `${h > 0 ? `${pad(h)}:` : ''}${pad(Math.floor(t / 60) % 60)}:${pad(t % 60)}`;
+  const d = Math.floor(t / 86400), h = Math.floor(t / 3600) % 24, m = Math.floor(t / 60) % 60, sec = t % 60;
+  return d > 0 ? [[d, 'gün'], [h, 'saat'], [m, 'dk']] : h > 0 ? [[h, 'saat'], [m, 'dk'], [sec, 'sn']] : [[m, 'dk'], [sec, 'sn']];
 };
 const fmt = (n: number) => (Number.isInteger(n) ? String(n) : `${Math.floor(n) || ''}½`);
 
@@ -38,7 +38,11 @@ export default function MatchBanner() {
         <span className="mb-cta f-mono">Canlı izle <span aria-hidden="true">→</span></span>
       ) : phase.kind === 'before' || phase.at ? (
         <span className="mb-count" role="timer" aria-label={phase.kind === 'before' ? '1. oyuna kalan süre' : 'Sonraki oyuna kalan süre'}>
-          <span className="mb-num f-display">{clock((phase.kind === 'before' ? phase.at : phase.at!) - now)}</span>
+          <span className="mb-cells">
+            {cellsOf((phase.kind === 'before' ? phase.at : phase.at!) - now).map(([v, l]) => (
+              <span key={l} className="mb-cell"><span className="mb-num f-display">{pad(v)}</span><span className="mb-cu f-mono">{l}</span></span>
+            ))}
+          </span>
           <span className="mb-unit f-mono">{phase.kind === 'before' ? '1. oyuna kalan' : `${phase.n}. oyuna kalan`}</span>
         </span>
       ) : (
