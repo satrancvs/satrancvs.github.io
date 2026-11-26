@@ -201,9 +201,9 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const target = between && upcoming ? upcoming.startsAt : start;
   const nextNo = upcoming ? list.indexOf(upcoming) + 1 : 1;
   const left = Math.max(0, target - now);
-  // Geri sayım: en az bir gün varsa gün / saat / dakika, yoksa saat / dakika / saniye.
+  // Geri sayım: en az bir gün varsa gün / saat / dakika; bir günden azsa saat / dakika / saniye; saat de 0 olunca dakika / saniye (iki kutu).
   const days = Math.floor(left / 864e5), h = Math.floor(left / 36e5) % 24, m = Math.floor(left / 6e4) % 60, s = Math.floor(left / 1e3) % 60;
-  const cells: [number, string][] = days > 0 ? [[days, 'gün'], [h, 'saat'], [m, 'dakika']] : [[h, 'saat'], [m, 'dakika'], [s, 'saniye']];
+  const cells: [number, string][] = days > 0 ? [[days, 'gün'], [h, 'saat'], [m, 'dakika']] : h > 0 ? [[h, 'saat'], [m, 'dakika'], [s, 'saniye']] : [[m, 'dakika'], [s, 'saniye']];
   const white = nm(tag(pgn, 'White')), black = nm(tag(pgn, 'Black'));
   const result = tag(pgn, 'Result');
   const roundNo = shown ? list.indexOf(shown) + 1 : 0;
@@ -258,7 +258,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
         {between && upcoming && (
           <p className="live-count-label f-mono">{nextNo}. oyuna kalan süre<span className="live-count-when">{new Date(upcoming.startsAt).toLocaleString('tr-TR', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' })}</span></p>
         )}
-        <div className="live-count-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
+        <div className="live-count-grid" style={{ gridTemplateColumns: `repeat(${cells.length}, 1fr)` }}>
           {cells.map(([v, l]) => (
             <div key={l as string} className="live-cell"><span className="live-num f-display">{two(v as number)}</span><span className="live-unit f-mono">{l}</span></div>
           ))}

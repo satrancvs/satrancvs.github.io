@@ -1449,3 +1449,8 @@ a.live-nextgame { text-decoration: none; }
 /* “Beklerken göz at” kartı(ları): oyun şeridinin altında ortalı */
 .live-match > .live-nexts { margin-inline: auto; justify-content: center; }
 .live-match > .live-nexts .sec-link { margin-inline: auto; }
+
+/* Ana sayfa duyuru bandı: sayaç hücreleri (gün / saat / dakika ya da saat / dakika / saniye ya da dakika / saniye) */
+.mb-cells { display: flex; align-items: flex-start; gap: .55rem; }
+.mb-cell { display: flex; flex-direction: column; align-items: center; gap: .1rem; min-width: 1.9rem; }
+.mb-cu { font-size: 8.5px; letter-spacing: .1em; text-transform: uppercase; color: #A89A88; line-height: 1; }
