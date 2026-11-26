@@ -1,3 +1,4 @@
+import LiveScore from '../components/LiveScore';
 import { useCallback, useEffect, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import { Moon, Sun, X } from 'lucide-react';
@@ -169,6 +170,7 @@ function PostPage() {
         {(a.dek ?? a.excerpt) && (
           <p className="text-[1.3125rem] leading-[1.6] text-[color:rgb(var(--fg-rgb)/0.85)] mt-8">
             <Markdown options={{ forceInline: true }}>{(a.dek ?? a.excerpt) as string}</Markdown>
+            {a.id === 'dunya-sampiyonasi' && <LiveScore />}
           </p>
         )}
         <div className="mt-8 pb-8 border-b border-[color:var(--line)]">

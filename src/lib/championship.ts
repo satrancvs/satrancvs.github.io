@@ -28,7 +28,7 @@ export type Phase =
 
 const resultsCache: Record<string, { g: number; s: number }> = {};
 
-export function useChampionship(): { phase: Phase; now: number } {
+export function useChampionship(): { phase: Phase; now: number; score: { g: number; s: number }; scoreReady: boolean } {
   const [now, setNow] = useState(() => Date.now());
   const [rounds, setRounds] = useState<Round[]>(FALLBACK);
   const [, bump] = useState(0);
@@ -69,12 +69,15 @@ export function useChampionship(): { phase: Phase; now: number } {
 
   const done = rounds.filter((r) => resultsCache[r.id]);
   const g = done.reduce((t, r) => t + resultsCache[r.id].g, 0), s = done.reduce((t, r) => t + resultsCache[r.id].s, 0);
-  if (over || g >= WIN || s >= WIN) return { phase: { kind: 'ended' }, now };
-  if (now < start) return { phase: { kind: 'before', at: start }, now };
+  const score = { g, s };
+  // Skor yalnızca biten her turun sonucu alındıysa doğrudur (eksik tur varken yanlış skor gösterilmesin).
+  const scoreReady = rounds.some((r) => r.finished) ? rounds.filter((r) => r.finished).every((r) => resultsCache[r.id]) : now >= start - 36e5;
+  if (over || g >= WIN || s >= WIN) return { phase: { kind: 'ended' }, now, score, scoreReady };
+  if (now < start) return { phase: { kind: 'before', at: start }, now, score, scoreReady };
   const liveIdx = rounds.findIndex((r) => r.startsAt <= now && !r.finished && now < r.startsAt + LIVE_WINDOW);
-  if (liveIdx >= 0) return { phase: { kind: 'live', n: liveIdx + 1 }, now };
+  if (liveIdx >= 0) return { phase: { kind: 'live', n: liveIdx + 1 }, now, score, scoreReady };
   const next = rounds.findIndex((r) => r.startsAt > now && !r.finished);
-  return { phase: { kind: 'between', n: next >= 0 ? next + 1 : rounds.length, at: next >= 0 ? rounds[next].startsAt : undefined, g, s }, now };
+  return { phase: { kind: 'between', n: next >= 0 ? next + 1 : rounds.length, at: next >= 0 ? rounds[next].startsAt : undefined, g, s }, now, score, scoreReady };
 }
 
 // FIDE kanalının oyun yayını videoları (başlığı "World Championship" + "Game N" ya da "No Commentary"): VideoPlaylist başa alır, canlı görünümdeki video (LiveVideo) bunlardan birini gömer.
