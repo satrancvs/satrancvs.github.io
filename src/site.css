@@ -1318,7 +1318,7 @@ html.post-custom-sb::-webkit-scrollbar { display: none; width: 0; height: 0; }
 @media (min-width: 56em) {
   .live-match > .live-video { grid-column: 2; grid-row: 8; align-self: end; margin-top: 1rem; }
   .live-match > .live-nexts { grid-column: 1 / -1; grid-row: 9; flex-direction: row; max-width: none; gap: 1rem; margin-top: 1.6rem; }
-  .live-match > .live-nexts .sec-link { flex: 1 1 0; min-width: 0; }
+  .live-match > .live-nexts .sec-link { flex: 1 1 0; min-width: 0; max-width: 34rem; }
 }
 
 /* Canlı görünüm, geniş ekran: sağ sütunda FIDE canlı yayın videosu üstte, yarışmacı/skor/durum bilgisi altta (tahtanın alt kenarına hizalı) */

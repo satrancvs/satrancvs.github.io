@@ -223,11 +223,15 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
 
   // Geri sayım kartı diyagramın tam ortasında durur: diyagramın (değerlendirme çubuğu ve hamle listesi hariç) ölçüsünden `--cx`/`--cy` verilir.
   const showCount = (!live || nextReady) && !analysing && mounted;
+  // Diyagram yüklenirken ("Oyun yükleniyor…", dönen simge) sayaç gösterilmez; oyun çizilince görünür.
+  const [boardOk, setBoardOk] = useState(false);
   useEffect(() => {
     const body = bodyRef.current;
     if (!showCount || !body) return;
     const place = () => {
       const b = body.querySelector('.board-wrap') as HTMLElement | null;
+      const loading = !b || !b.closest('pgn-player')?.querySelector('.player-container') || !!body.querySelector('.cp-loading') && !body.querySelector('pgn-player .player-wrapper') || !!b.querySelector('.board-loading:not(.hidden)');
+      setBoardOk(!loading);
       if (!b) return;
       const r = b.getBoundingClientRect(), o = body.getBoundingClientRect();
       if (!r.width) return;
@@ -238,13 +242,13 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
     const ro = new ResizeObserver(place);
     ro.observe(body);
     const mo = new MutationObserver(place);
-    mo.observe(body, { childList: true, subtree: true });
+    mo.observe(body, { childList: true, subtree: true, attributes: true, attributeFilter: ['class'] });
     window.addEventListener('resize', place);
     const t = window.setInterval(place, 1000);
     return () => { ro.disconnect(); mo.disconnect(); window.removeEventListener('resize', place); window.clearInterval(t); body.style.removeProperty('--cx'); body.style.removeProperty('--cy'); };
   }, [showCount]);
   // Geri sayım yalnızca beklenen oyunda (maç başlamadan ya da oyunlar arasında sonraki oyun tahtadayken) tahtanın üstünde durur; bitmiş oyunlarda gösterilmez.
-  const count = showCount ? (
+  const count = showCount && boardOk ? (
     <div className="live-count-top">
       <div className="live-count" role="timer" aria-label={`${nextNo}. oyuna kalan süre`}>
         {between && upcoming && (
