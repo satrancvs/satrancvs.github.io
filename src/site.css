@@ -1445,3 +1445,7 @@ a.live-nextgame { text-decoration: none; }
 .live-count-top .live-cell { padding: .5rem 0 .45rem; }
 .live-count-top .live-num { font-size: 2rem; }
 .live-count-top .live-unit { font-size: 10px; letter-spacing: .1em; }
+
+/* “Beklerken göz at” kartı(ları): oyun şeridinin altında ortalı */
+.live-match > .live-nexts { margin-inline: auto; justify-content: center; }
+.live-match > .live-nexts .sec-link { margin-inline: auto; }
