@@ -217,7 +217,9 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const shownIdx = shown ? list.indexOf(shown) : -1;
   const shownDone = !!shown && (shown.finished || /^(1-0|0-1|1\/2-1\/2)$/.test(tag(pgns[shown.id] ?? '', 'Result')));
   const nextRound = shownDone && shownIdx >= 0 ? list[shownIdx + 1] : undefined;
-  const press = shownDone && shownIdx >= 0 ? pressConferenceOf(videos, shownIdx + 1) : undefined; // biten oyunun basın toplantısı videosu
+  // Basın toplantısı: gösterilen oyun bittiyse onunki; tahta sıradaki oyuna hazırken (nextReady) en son biten oyunun toplantısı.
+  const pressNo = shownDone && shownIdx >= 0 ? shownIdx + 1 : nextReady && shownIdx > 0 ? shownIdx : 0;
+  const press = pressNo ? pressConferenceOf(videos, pressNo) : undefined;
   const cardStream = (i: number) => gameStreamOf(videos, i + 1);
   const gukeshWhite = whiteTag ? /gukesh/i.test(whiteTag) : roundNo % 2 === 0;
 
@@ -341,7 +343,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
             <button type="button" className={`live-nextgame live-press${showPress ? ' on' : ''}`} aria-pressed={showPress} onClick={() => { setShowPress((v) => !v); window.setTimeout(() => document.querySelector('.live-video')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 60); }} aria-label={`Basın toplantısı: ${shownIdx + 1}. oyun`}>
               <span className="live-nextgame-thumb"><img src={streamThumb(press.id)} alt="" loading="lazy" /></span>
               <span className="live-nextgame-text">
-                <span className="f-mono">Basın toplantısı · {shownIdx + 1}. oyun</span>
+                <span className="f-mono">Basın toplantısı · {pressNo}. oyun</span>
                 <b className="f-display">{showPress ? 'Oynatılıyor' : 'Oyun sonrası açıklamalar'}</b>
               </span>
               <span className="live-nextgame-arrow" aria-hidden="true">{showPress ? '■' : '▶'}</span>
