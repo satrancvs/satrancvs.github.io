@@ -5,7 +5,7 @@ import { usePlayerLoaded } from '@/lib/use-player-loaded';
 import SectionLink from '@/components/SectionLink';
 import LiveVideo, { streamThumb, useFideVideos } from '@/components/LiveVideo';
 import { centerCard } from '@/lib/center-card';
-import { API, FALLBACK, TOUR, gameStreamOf, pickGameStream, pressConferenceOf, tag } from '@/lib/championship';
+import { API, FALLBACK, TOUR, gameStreamOf, pressConferenceOf, tag } from '@/lib/championship';
 import type { Round } from '@/lib/championship';
 import type { SectionTarget } from '@/components/SectionLink';
 
@@ -207,7 +207,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const white = nm(tag(pgn, 'White')), black = nm(tag(pgn, 'Black'));
   const result = tag(pgn, 'Result');
   const roundNo = shown ? list.indexOf(shown) + 1 : 0;
-  const stream = pickGameStream(videos, roundNo || 1); // sağ üstteki video: gösterilen oyunun yayını
+  const stream = gameStreamOf(videos, roundNo || 1); // sağ üstteki video: yalnızca gösterilen oyunun KENDİ yayını (henüz başlamamış oyunda önceki oyunun yayını gösterilmez)
   // Oyunların kart kapakları: o oyunun kendi yayın videosunun kapak resmi (yayın yoksa numara).
   // Beyaz taşları kimin oynadığı: PGN künyesi; PGN yoksa (oyun başlamadı) renkler her turda değişir (1. oyunda Beyaz Sindarov, 2. oyunda Gukesh).
   const whiteTag = tag(raw, 'White');
@@ -219,9 +219,8 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
   const shownIdx = shown ? list.indexOf(shown) : -1;
   const shownDone = !!shown && (shown.finished || /^(1-0|0-1|1\/2-1\/2)$/.test(tag(pgns[shown.id] ?? '', 'Result')));
   const nextRound = shownDone && shownIdx >= 0 ? list[shownIdx + 1] : undefined;
-  // Basın toplantısı: gösterilen oyun bittiyse onunki; tahta sıradaki oyuna hazırken (nextReady) en son biten oyunun toplantısı.
-  const pressNo = shownDone && shownIdx >= 0 ? shownIdx + 1 : nextReady && shownIdx > 0 ? shownIdx : 0;
-  const press = pressNo ? pressConferenceOf(videos, pressNo) : undefined;
+  // Basın toplantısı yalnızca BİTEN ve gösterilen oyun için (sıradaki oyuna hazırken ya da başka bir oyun seçiliyken önceki oyunun toplantısı gösterilmez).
+  const press = shownDone && shownIdx >= 0 ? pressConferenceOf(videos, shownIdx + 1) : undefined;
   const cardStream = (i: number) => gameStreamOf(videos, i + 1);
   const gukeshWhite = whiteTag ? /gukesh/i.test(whiteTag) : roundNo % 2 === 0;
 
@@ -345,7 +344,7 @@ export default function LiveMatch({ ready, onLoaded, next }: { ready: boolean; o
             <button type="button" className={`live-nextgame live-press${showPress ? ' on' : ''}`} aria-pressed={showPress} onClick={() => { setShowPress((v) => !v); window.setTimeout(() => document.querySelector('.live-video')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 60); }} aria-label={`Basın toplantısı: ${shownIdx + 1}. oyun`}>
               <span className="live-nextgame-thumb"><img src={streamThumb(press.id)} alt="" loading="lazy" /></span>
               <span className="live-nextgame-text">
-                <span className="f-mono">Basın toplantısı · {pressNo}. oyun</span>
+                <span className="f-mono">Basın toplantısı · {shownIdx + 1}. oyun</span>
                 <b className="f-display">{showPress ? 'Oynatılıyor' : 'Oyun sonrası açıklamalar'}</b>
               </span>
               <span className="live-nextgame-arrow" aria-hidden="true">{showPress ? '■' : '▶'}</span>
